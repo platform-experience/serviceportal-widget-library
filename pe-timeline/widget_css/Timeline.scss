@@ -1,0 +1,104 @@
+.tl-item {
+	font-size: 14px;
+	opacity: 0.7;
+}
+.tl-time {
+	display: inline-block;
+	width: 40px;
+	vertical-align: top;
+}
+.tl-content {
+	margin-left: 10px;
+	position: relative;
+	display: inline-block;
+	width: 270px;
+	border-left: 1px solid $slate;
+	padding: 0 5px 5px 20px;
+}
+.tl-content > * {
+	margin-bottom: 5px;
+}
+.tl-icon {
+	position: absolute;
+	top: 0;
+	left: -10px;
+	width: 20px;
+	height: 20px;
+	background-color: $steel-grey;
+	border-radius: 10px;
+	text-align: center;
+	fill: #fff;
+}
+.tl-item.not-faded {
+	opacity: 1;
+}
+.tl-item.tl-item-new {
+	opacity: 1;
+	.tl-icon {
+		background-color: $kelly-green;
+	}
+}
+.tl-item.tl-item-summary {
+	opacity: 1;
+	.tl-icon { 
+		color: #fff;
+	}
+}
+.tl-item:last-child {
+	opacity: 1;
+	.tl-content {
+		border-left-color: rgba(0,0,0,0);
+	}
+}
+
+.status-preapproved .pill {
+	background-color: $kelly-green;
+}
+.status-passed .pill {
+	background-color: $kelly-green;
+}
+
+.user-photo-inline {
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 35px;
+}
+.user-details-inline {
+	display: inline-block;
+}
+
+
+
+.tl-item-action-icon {
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.tl-item-action-details {
+	display: inline-block;
+}
+.user-details-name {
+	font-size: 16px;
+	font-weight: 200;
+}
+.user-details-role {
+	font-size: 12px;
+	font-weight: 200;
+}
+
+.svg-wrapper.icon-bigger {
+	height: 1.2em;
+	width: 1.2em;
+}
+.expander-button-wrapper {
+	text-align: center;
+	margin: 10px 0;
+}
+.expander-button {
+	display: inline-block;
+	padding: 3px 10px;
+	border-right: 1px solid $steel-grey;
+}
+.expander-button:last-child {
+	border-right: none;
+}
