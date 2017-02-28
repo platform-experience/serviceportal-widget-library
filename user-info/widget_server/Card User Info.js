@@ -12,10 +12,12 @@
 		data.user_full_name = userGR.getDisplayValue('name');
 		data.user_job_title = userGR.getDisplayValue('title');
 		data.user_photo = userGR.getDisplayValue('photo');
+		data.user_phone = userGR.getDisplayValue('phone');
 		data.user_initials = data.user_first_name.charAt(0) + data.user_last_name.charAt(0);		
 	}
 	
 	data.show_only_picture = options.show_only_picture || input.only_picture;
 	data.show_job_title = options.show_job_title || input.show_job_title;
+	data.show_call_and_chat = options.show_call_and_chat || input.show_call_and_chat;
 
 })();
