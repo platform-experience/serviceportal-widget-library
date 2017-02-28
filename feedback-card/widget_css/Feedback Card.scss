@@ -1,0 +1,79 @@
+.emoji-rating {
+  width: $pe-feedback-card-width;
+  height: $pe-feedback-card-height;
+  margin: 10px;
+  padding: 20px;
+  padding-top: 10px;
+  overflow: auto;
+  border-radius: 5px;
+  background-color: $pe-feedback-card-bg;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  p {
+    margin-bottom: 0px;
+  }
+  .flex-it {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .rand {
+      font-size: 36px;
+      font-weight: 600;
+      color: $pe-feedback-card-text;
+    }
+  }
+  .svg-icon {
+    width: 20px;
+    height: 20px;
+    stroke: $pe-feedback-card-text;
+    fill: $pe-feedback-card-text;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .step-one {
+    text-align: center;
+  }
+  .step-two {
+    text-align: center;
+  }
+  .step-three {
+    text-align: center;
+    .fa {
+      margin: 0px !important;
+    }
+  }
+  .fa {
+    cursor: pointer;
+    font-size: 50px;
+    color: $pe-feedback-card-text;
+    padding: 10px;
+  }
+  .fa-smile-o {
+    color: $pe-feedback-card-text;
+  }
+  .fa-meh-o {
+    color: $pe-feedback-card-text;
+    margin: 0 35px;
+  }
+  .fa-frown-o {
+    color: $pe-feedback-card-text;
+  }
+  .selected {
+    font-weight: bold;
+  }
+  .message {
+    font-family:  $pe-feedback-card-font-family;
+    font-size: $pe-feedback-card-font-size;
+    font-weight: $pe-feedback-card-font-weight;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: $pe-feedback-card-text;
+  }
+}
