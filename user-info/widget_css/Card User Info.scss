@@ -10,6 +10,20 @@
     margin: 0px;
     .media-body {
         width: 100%;
+        .people_name_title {
+            .title {
+                font-size: 15px;
+                font-weight: normal;
+                margin-bottom: 0px;
+                color: #81878e;
+            }
+            .subtitle {
+                font-size: 13px;
+                font-weight: normal;
+                margin-bottom: 0px;
+                color: #a8abaf;
+            }
+        }
     }
     .media-left {
         .list__photo {
@@ -29,18 +43,12 @@
             background: #AEB2B3;
         }
     }
-    .people_name_title {
-        .title {
-            font-size: 15px;
-            font-weight: normal;
-            margin-bottom: 0px;
-            color: #81878e;
+    .media-right {
+        width: 40%;
+        .fa-color {
+            color: $pe-brand-primary;
+            margin-right: 10px;
         }
-        .subtitle {
-            font-size: 13px;
-            font-weight: normal;
-            margin-bottom: 0px;
-            color: #a8abaf;
-        }
+        
     }
 }

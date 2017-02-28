@@ -1,4 +1,10 @@
 function($scope) {
-	var c = this;
-	console.log(c);
+    //Client script
+    var c = this;
+    
+    c.call = function(telnumber) {
+        if (telnumber) {
+            window.location.href = "tel://" + telnumber;
+        } 
+    };
 }
