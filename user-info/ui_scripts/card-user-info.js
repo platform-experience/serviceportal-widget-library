@@ -1,7 +1,7 @@
 function openChat(elem) {
 
 
-    console.log('**** Opening Chat w/ ' + elem.id);
+    console.log('***** Opening Chat w/ ' + elem.id);
     var requestBody = '';
     var client = new XMLHttpRequest();
 

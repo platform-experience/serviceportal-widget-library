@@ -4,16 +4,16 @@
 		var liveprofile = {};
 		if(request.queryParams.user_id) {
 			userID = request.queryParams.user_id;
-			gs.info("user id "+userID);
+			//gs.info("user id "+userID);
 			var gr = new GlideRecord('live_profile');
 			gr.addQuery('table','sys_user');
 			gr.addQuery('document',userID);
 			gr.query();
 			if(gr.next()){
-				gs.info("user id found "+userID);
+			//	gs.info("user id found "+userID);
 				liveprofile.profile_id = gr.sys_id.toString();
 			} else {
-				gs.info("user id not found "+userID);
+				//gs.info("user id not found "+userID);
 				var grTwo = new GlideRecord('live_profile');
 				grTwo.initialize(); 
 				grTwo.table = 'sys_user'; 
