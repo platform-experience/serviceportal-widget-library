@@ -1,12 +1,12 @@
 function openChat(elem) {
 
 
-    console.log('**** Opening Chat w/ ' + elem.id);
+    console.log('***** Opening Chat w/ ' + elem.id);
     var requestBody = '';
     var client = new XMLHttpRequest();
 
 
-    var url = "/api/snc/launch_connect/launch?user_id=" + elem.id;
+    var url = "/api/snc/pe_people_info_launch_connect/launch?user_id=" + elem.id;
     client.open("get", url, false);
     client.setRequestHeader('Accept', 'application/json');
     client.setRequestHeader('Content-Type', 'application/json');
