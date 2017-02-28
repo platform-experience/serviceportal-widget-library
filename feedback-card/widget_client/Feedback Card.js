@@ -1,8 +1,14 @@
 function($timeout, $rootScope) {
   var c = this;
-  
+
   c.showSurvey = true;
-  c.step = 'one';
+  c.stepId = 'one';
+  c.stepMessages = [
+      'We would like you to take a survey to see how we are doing.',
+      'How would you rate your overall experience using this?',
+      'People like you rate this service at:'
+  ];
+
   c.goodrandom = Math.floor(Math.random() * 21) + 80;
   c.badrandom = Math.floor(Math.random() * 6) + 1;
   
@@ -11,7 +17,7 @@ function($timeout, $rootScope) {
   };
 
   c.gotoNext = function (step, icon) {
-    c.step = step;
+    c.stepId = step;
     c.selectedIcon = icon;
   }
 
