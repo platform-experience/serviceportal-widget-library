@@ -38,7 +38,7 @@ For Ex at Widget level:
 
 ***
 
-##List of SASS variables defined so far
+## List of SASS variables defined so far
 
 `$pe-brand-primary:         #337ab7;`
 
