@@ -41,11 +41,17 @@ For Ex at Widget level:
 ##List of SASS variables defined so far
 
 `$pe-brand-primary:         #337ab7;`
+
 `$pe-brand-success:         #5cb85c;`
+
 `$pe-brand-info:            #5bc0de;`
+
 `$pe-brand-warning:         #f0ad4e;`
+
 `$pe-brand-danger:          #d9534f;`
+
 `$pe-brand-text-color: 		#fff;`
+
 `$pe-brand-text-size-normal: 15px;`
 
 
