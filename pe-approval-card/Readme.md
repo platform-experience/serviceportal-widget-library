@@ -39,13 +39,13 @@ After installing above widget you can just download the update set **pe-approval
 
 We provide options to make the it easy for to change **title**,**purpose titile** and **purpose icon** easily.
 
-**title** the default message for this is **Destination Services.**
+**"title"** the default message for this is **Destination Services.**
 
-**purpose** the default message for this is **Relocation Package**
+**"purpose"** the default message for this is **Relocation Package**
 
-**icon** we make use of font-awesome icons for this option, default value here is **fa fa-bell fa-2x**, which is a bell icon. You can replace with any supported font-awesome class.
+**"icon"** we make use of font-awesome icons for this option, default value here is **fa fa-bell fa-2x**, which is a bell icon. You can replace with any supported font-awesome class.
 
-
+***
 
 We provide four SASS variables to control the Button Text/Border Color, Font Awesome Icon Color.
 
