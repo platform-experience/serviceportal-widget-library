@@ -8,7 +8,7 @@ This widget can be used to create a simple people card with user avatar, name, t
 
 You can just download the update set **pe-people-info-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
-We provide few options to load data easily and also to change the appearnce of the widget.
+We provide few options to load data easily and also to change the appearance of the widget.
 
 **"User Sys ID"** This is to pass the user sys id you want to display. We pull all the user details associated with this sys_id. The default sys_id for this is **9ec35b8713453a007e94fc5ed144b09a**, which is demo user included as part of the update set.
 
