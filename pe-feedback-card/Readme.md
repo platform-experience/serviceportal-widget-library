@@ -10,11 +10,11 @@ Installation is very simple, you can just download the update set **pe-feedback-
 
 There are 3 steps for feedback, and to make the it easy for to swap messaging on each step we are providing 3 options.
 
-**"step_1_message"** the default message for this is **We would like you to take a survey to see how we are doing.**
+**"Step 1 message"** the default message for this is **We would like you to take a survey to see how we are doing.**
 
-**"step_2_message"** the default message for this is **How would you rate your overall experience using this?**
+**"Step 2 message"** the default message for this is **How would you rate your overall experience using this?**
 
-**"step_3_message"** the default message for this is **People like you rate this service at:**
+**"Step 3 message"** the default message for this is **People like you rate this service at:**
 
 ***
 
