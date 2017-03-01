@@ -6,7 +6,7 @@ function ($rootScope, spUtil) {
         purpose: c.options.purpose,
         icon: c.options.icon
 	};
-	
+	/*Data needed for the people-info widget*/
 	c.data.user_info = {
 		user_sys_id: "9ec35b8713453a007e94fc5ed144b09a",
 		show_only_picture: false,
@@ -18,6 +18,7 @@ function ($rootScope, spUtil) {
 	{
 		user_sys_id: c.data.user_info.user_sys_id,
 		show_job_title: c.data.user_info.show_job_title,
+		show_call_and_chat: c.data.user_info.show_call_and_chat,
 		show_only_picture: c.data.user_info.show_only_picture
 			}).then(function(response){
 			c.data.embedded_widget = response

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-01 02:03:33">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>This widget creates a simple HTML card, with title and purpose of the card with an icon.  This Widget depends on another widget called "People Info" widget. We are injecting the people info widget here. So please install that first.</description>
+<inserted/>
+<name>Approval Card</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>bd4b16f61385f600d15e3d7ed144b0e4</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 02:03:33</sys_created_on>
+<sys_id>b00fe0281359ba007e94fc5ed144b0e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 02:03:33</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_de98a0ae130db600d15e3d7ed144b08f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ($rootScope, spUtil) {
+	var c = this;
+	
+	c.data.widget = {
+        title: c.options.title,
+        purpose: c.options.purpose,
+        icon: c.options.icon
+	};
+	/*Data needed for the people-info widget*/
+	c.data.user_info = {
+		user_sys_id: "9ec35b8713453a007e94fc5ed144b09a",
+		show_only_picture: false,
+		show_job_title: true,
+		show_call_and_chat:false
+	}
+	
+	spUtil.get('pe-people-info',
+	{
+		user_sys_id: c.data.user_info.user_sys_id,
+		show_job_title: c.data.user_info.show_job_title,
+		show_call_and_chat: c.data.user_info.show_call_and_chat,
+		show_only_picture: c.data.user_info.show_only_picture
+			}).then(function(response){
+			c.data.embedded_widget = response
+	});
+	
+} ]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-brand-success:         #5cb85c !default;&amp;#13;
+$pe-brand-warning:         #f0ad4e !default;&amp;#13;
+$pe-brand-danger:          #d9534f !default;&amp;#13;
+$pe-brand-info:            #5bc0de !default;&amp;#13;
+&amp;#13;
+&amp;#13;
+.encloser {&amp;#13;
+    .actual-card {&amp;#13;
+        clear: both;&amp;#13;
+        background: #fff;&amp;#13;
+        margin-bottom: 10px;&amp;#13;
+        border: 1px solid #e6e8ea;&amp;#13;
+        .padd-it {&amp;#13;
+            .heading {&amp;#13;
+                font-size: 18px;&amp;#13;
+                font-weight: bold;&amp;#13;
+                color: #81878e;&amp;#13;
+                padding: 10px 15px;&amp;#13;
+                padding-bottom: 0px;&amp;#13;
+            }&amp;#13;
+            .details {&amp;#13;
+                padding: 10px 15px;&amp;#13;
+                padding-top: 0px;&amp;#13;
+                border-bottom: 1px solid #e6e8ea;&amp;#13;
+                overflow: hidden;&amp;#13;
+                .each-div {&amp;#13;
+                    width: 50%;&amp;#13;
+                    overflow: hidden;&amp;#13;
+                    float: left;&amp;#13;
+                }&amp;#13;
+                .purpose {&amp;#13;
+                    padding: 10px;&amp;#13;
+                    display: flex;&amp;#13;
+                    align-items: center;&amp;#13;
+                    justify-content: flex-end;&amp;#13;
+                    p {&amp;#13;
+                        font-size: 15px;&amp;#13;
+                        color: #81878e;&amp;#13;
+                        margin-bottom: 0px;&amp;#13;
+                        line-height: 1;&amp;#13;
+                        margin-left: 10px;&amp;#13;
+                        width: 75px;&amp;#13;
+                    }&amp;#13;
+                    .purpose-icon {&amp;#13;
+                        color: $pe-brand-info;&amp;#13;
+                    }&amp;#13;
+                }&amp;#13;
+            }&amp;#13;
+        }&amp;#13;
+        .buttons {&amp;#13;
+            overflow: hidden;&amp;#13;
+            clear: both;&amp;#13;
+            .approve-button {&amp;#13;
+                color: $pe-brand-success;&amp;#13;
+                border-bottom: 3px solid $pe-brand-success;&amp;#13;
+            }&amp;#13;
+            .reject-button {&amp;#13;
+                color: $pe-brand-danger;&amp;#13;
+                border-bottom: 3px solid $pe-brand-danger;&amp;#13;
+            }&amp;#13;
+            .view-button {&amp;#13;
+                color: $pe-brand-warning;&amp;#13;
+                border-bottom: 3px solid $pe-brand-warning;&amp;#13;
+            }&amp;#13;
+            .each-button {&amp;#13;
+                width: 33.3%;&amp;#13;
+                float: left;&amp;#13;
+                padding: 15px 20px;&amp;#13;
+                text-align: center;&amp;#13;
+                border-right: solid 1px #e6e8ea;&amp;#13;
+                p {&amp;#13;
+                    margin-bottom: 0px;&amp;#13;
+                    font-size: 15px;&amp;#13;
+                }&amp;#13;
+            }&amp;#13;
+            .last-button {&amp;#13;
+                border-right: 0px;&amp;#13;
+            }&amp;#13;
+        }&amp;#13;
+    }&amp;#13;
+} &lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Approval card widget, another widget called "pe-people-info" is embedded inside this widget.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-approval-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Approval Card&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","default_value":"Destination Services","label":"Title","type":"string"},{"name":"purpose","default_value":"Relocation Package","label":"Purpose","type":"string"},{"name":"icon","default_value":"fa fa-bell fa-2x","label":"Icon","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+})(); ]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-22 20:34:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;de98a0ae130db600d15e3d7ed144b08f&lt;/sys_id&gt;&lt;sys_mod_count&gt;120&lt;/sys_mod_count&gt;&lt;sys_name&gt;Approval Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_de98a0ae130db600d15e3d7ed144b08f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-01 02:01:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="encloser"&gt;
+
+    &lt;div class="actual-card"&gt;
+        &lt;div class="padd-it"&gt;
+            &lt;div class="heading "&gt;
+                &lt;p&gt;{{c.data.widget.title}}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="details "&gt;
+                &lt;div class="each-div"&gt;
+                    &lt;sp-widget widget="c.data.embedded_widget"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+                &lt;div class="purpose each-div"&gt;
+                    &lt;i class="{{c.data.widget.icon}} purpose-icon" aria-hidden="true"&gt;&lt;/i&gt;
+                    &lt;p&gt;{{c.data.widget.purpose}}&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="buttons "&gt;
+            &lt;div class="each-button approve-button" ng-click=""&gt;
+                &lt;p&gt;Accept&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="each-button reject-button" ng-click=""&gt;
+                &lt;p&gt;Decline&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="each-button view-button last-button" ng-click=""&gt;
+                &lt;p&gt;View&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt; ]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Approval Card">b00fe0281359ba007e94fc5ed144b0e0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 02:03:33</sys_created_on>
+<sys_id>740fe0281359ba007e94fc5ed144b0e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 02:03:33</sys_updated_on>
+<table/>
+<target_name>Approval Card</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
