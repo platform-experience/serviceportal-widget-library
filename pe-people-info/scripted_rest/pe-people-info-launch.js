@@ -10,7 +10,7 @@
 			gr.addQuery('document',userID);
 			gr.query();
 			if(gr.next()){
-			//	gs.info("user id found "+userID);
+				//gs.info("user id found "+userID);
 				liveprofile.profile_id = gr.sys_id.toString();
 			} else {
 				//gs.info("user id not found "+userID);

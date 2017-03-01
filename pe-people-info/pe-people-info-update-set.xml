@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-01 01:58:32">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>This widget will create a html card with user avatar, name,title with call and connect functionality.</description>
+<inserted/>
+<name>People Info</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>ff98935013d5ba007e94fc5ed144b070</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>67dd68e41359ba007e94fc5ed144b0ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_2326170813dd7a007e94fc5ed144b0c9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;pe-people-info-launch&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	try{
+		var userID='';
+		var liveprofile = {};
+		if(request.queryParams.user_id) {
+			userID = request.queryParams.user_id;
+			//gs.info("user id "+userID);
+			var gr = new GlideRecord('live_profile');
+			gr.addQuery('table','sys_user');
+			gr.addQuery('document',userID);
+			gr.query();
+			if(gr.next()){
+				//gs.info("user id found "+userID);
+				liveprofile.profile_id = gr.sys_id.toString();
+			} else {
+				//gs.info("user id not found "+userID);
+				var grTwo = new GlideRecord('live_profile');
+				grTwo.initialize(); 
+				grTwo.table = 'sys_user'; 
+				grTwo.document = userID; 
+				grTwo.type = 'User';
+				
+				var gruser = new GlideRecord('sys_user');
+                    gruser.addQuery('sys_id',userID);
+			        gruser.query();
+			       if(gruser.next()){
+						grTwo.name =gruser.name.toString() ;
+                        liveprofile.profile_id = grTwo.insert();
+                   }
+				 
+			}
+		
+		}
+		if(liveprofile)
+			response.setBody(liveprofile);
+		else
+			response.setBody('Error');
+		
+	}catch(e){
+		response.setBody('Error : '+ e.message);
+	}
+    // implement resource here
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/pe_people_info_launch_connect/launch&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/launch&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 00:57:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;2326170813dd7a007e94fc5ed144b0c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-people-info-launch&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_2326170813dd7a007e94fc5ed144b0c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 23:32:45&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Launch connect chat"&gt;52f5930813dd7a007e94fc5ed144b0f9&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>23dd68e41359ba007e94fc5ed144b0ae</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>pe-people-info-launch</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_11f38daa134db600d15e3d7ed144b0fa</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+    //Client script
+    var c = this;
+    
+    c.call = function(telnumber) {
+        if (telnumber) {
+            window.location.href = "tel://" + telnumber;
+        } 
+    };
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-brand-primary:#337ab7 !default;
+
+.people-card-media {
+    padding:10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    float: left;
+  	background:#fff;
+    margin: 0px;
+    .media-body {
+        width: 100%;
+        .people_name_title {
+            .title {
+                font-size: 15px;
+                font-weight: normal;
+                margin-bottom: 0px;
+                color: #81878e;
+            }
+            .subtitle {
+                font-size: 13px;
+                font-weight: normal;
+                margin-bottom: 0px;
+                color: #a8abaf;
+            }
+        }
+    }
+    .media-left {
+        .list__photo {
+            width: 35px;
+            height: 35px;
+        }
+        .initials-badge {
+            min-width: 36px;
+            float: left;
+            margin-top: 0px;
+            border-radius: 50%;
+            line-height: 1;
+            font-size: 14px;
+            margin-left: 0px;
+            padding: 10px 10px;
+            font-weight: 300;
+            background: #AEB2B3;
+        }
+    }
+    .media-right {
+        width: 40%;
+        .fa-color {
+            color: $pe-brand-primary;
+            margin-right: 10px;
+        }
+        
+    }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;People Info widget for displaying user avatar, name, titile with call/chat functionality.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-people-info&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;People Info&lt;/name&gt;&lt;option_schema&gt;[{"name":"user_sys_id","default_value":"9ec35b8713453a007e94fc5ed144b09a","label":"User Sys ID","type":"string"},{"name":"show_only_picture","default_value":"false","label":"Show Only Picture","type":"boolean"},{"name":"show_job_title","default_value":"true","label":"Show Job Title","type":"boolean"},{"name":"show_call_and_chat","default_value":"true","label":"Show Call and Chat","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+		
+	data.user_sys_id = options.user_sys_id || input.user_sys_id;
+	
+	//function to check if we are injecteding any options from server side or options
+	var getBoolValue = function(inputVal, optionVal){
+		if(inputVal == null){
+			return (optionVal === 'true');
+		} else{
+			return (inputVal === 'true');
+		}
+	};
+	
+	var userGR = new GlideRecord('sys_user');
+	userGR.addQuery('sys_id',data.user_sys_id);
+	userGR.query();
+
+	while(userGR.next()){
+		data.user_first_name = userGR.getDisplayValue('first_name');
+		data.user_last_name = userGR.getDisplayValue('last_name');
+		data.user_full_name = userGR.getDisplayValue('name');
+		data.user_job_title = userGR.getDisplayValue('title');
+		data.user_photo = userGR.getDisplayValue('photo');
+		data.user_phone = userGR.phone.toString().replace(/[- )(]/g,'');
+		data.user_initials = data.user_first_name.charAt(0) + data.user_last_name.charAt(0);		
+	}
+	
+	
+	data.show_only_picture = getBoolValue(input.only_picture,options.show_only_picture);
+	data.show_job_title = getBoolValue(input.show_job_title,options.show_job_title);
+	data.show_call_and_chat = getBoolValue(input.show_call_and_chat,options.show_call_and_chat);
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-22 22:35:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;11f38daa134db600d15e3d7ed144b0fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;127&lt;/sys_mod_count&gt;&lt;sys_name&gt;People Info&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_11f38daa134db600d15e3d7ed144b0fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-01 01:52:04&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="media  people-card-media" &gt;
+
+    &lt;div class="media-left "&gt;
+        &lt;div class="person-photo"&gt;
+            &lt;img ng-if="data.user_photo" class="media-object list__photo img-circle" ng-src="{{data.user_photo}}" /&gt;
+            &lt;div ng-if="!data.user_photo" class="badge initials-badge" data-original-title="" title=""&gt;
+                &lt;span class=""&gt;{{data.user_initials}}&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div ng-if="!data.show_only_picture" class="media-body"&gt;
+        &lt;div class="people_name_title"&gt;
+            &lt;h4 class="media-heading title"&gt;{{data.user_full_name}}&lt;/h4&gt;
+            &lt;h4 ng-if="data.show_job_title" class="media-heading subtitle"&gt;{{data.user_job_title}}&lt;/h4&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="media-right" ng-if="data.show_call_and_chat"&gt;
+
+
+        &lt;i class="fa fa-comment fa-2x fa-color" onclick="openChat(this);" id="{{data.user_sys_id}}" aria-hidden="true"&gt;&lt;/i&gt;
+
+        &lt;i ng-click="c.call(data.user_phone)" class="fa fa-phone fa-2x fa-color" aria-hidden="true"&gt;&lt;/i&gt;
+
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>27dd68e41359ba007e94fc5ed144b0ad</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>People Info</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_a22a978813dd7a007e94fc5ed144b0c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="pe-people-info-launch-connect">c3f9578813dd7a007e94fc5ed144b0c7</sp_dependency><sp_js_include display_value="pe-people-info-launch-connect">7a1a978813dd7a007e94fc5ed144b0fd</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:14:22</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a22a978813dd7a007e94fc5ed144b0c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>launch-connect.launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_a22a978813dd7a007e94fc5ed144b0c7</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 01:14:22</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>2bdd68e41359ba007e94fc5ed144b0ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>launch-connect.launch-connect</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_theme_12ff167a1385f600d15e3d7ed144b0a3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme"><sp_theme action="INSERT_OR_UPDATE"><css_variables>$pe-brand-primary:         #337ab7;&#13;
+$pe-brand-success:         #5cb85c !default;&#13;
+$pe-brand-info:            #5bc0de !default;&#13;
+$pe-brand-warning:         #f0ad4e !default;&#13;
+$pe-brand-danger:          #d9534f !default;&#13;
+&#13;
+$pe-feedback-card-bg:      #268cf8;&#13;
+$pe-feedback-card-text:    #fff;&#13;
+$pe-feedback-card-width:   95%;&#13;
+$pe-feedback-card-height:  10%;&#13;
+$pe-feedback-card-font-family:  'SourceSansPro', sans-serif;&#13;
+$pe-feedback-card-font-size:    15px;&#13;
+$pe-feedback-card-font-weight:  600;&#13;
+</css_variables><footer/><footer_fixed>true</footer_fixed><header display_value="Stock Header ">bf5ec2f2cb10120000f8d856634c9c0c</header><name>widgitize</name><navbar_fixed>true</navbar_fixed><sys_class_name>sp_theme</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-02-23 23:47:51</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>12ff167a1385f600d15e3d7ed144b0a3</sys_id><sys_mod_count>11</sys_mod_count><sys_name>widgitize</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_theme_12ff167a1385f600d15e3d7ed144b0a3</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 23:42:53</sys_updated_on></sp_theme></record_update>]]></payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>63dd68e41359ba007e94fc5ed144b0ad</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>widgitize</target_name>
+<type>Theme</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_52f5930813dd7a007e94fc5ed144b0f9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/pe_people_info_launch_connect</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>Launch connect chat</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>pe_people_info_launch_connect</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 00:56:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>52f5930813dd7a007e94fc5ed144b0f9</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Launch connect chat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_52f5930813dd7a007e94fc5ed144b0f9</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:09:03</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>6fdd68e41359ba007e94fc5ed144b0ad</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>Launch connect chat</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_9ec35b8713453a007e94fc5ed144b09a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_user"><sys_user action="INSERT_OR_UPDATE"><accumulated_roles/><active>true</active><building/><calendar_integration>1</calendar_integration><city/><company/><cost_center/><country/><date_format/><default_perspective/><department/><edu_status>faculty</edu_status><email>suzy@example.com</email><employee_number/><failed_attempts/><first_name>Suzy</first_name><gender/><home_phone/><internal_integration_user>false</internal_integration_user><introduction/><last_login/><last_login_device/><last_login_time/><last_name>Ham</last_name><last_password/><ldap_server/><location/><locked_out>false</locked_out><manager/><middle_name/><mobile_phone/><name>Suzy Ham</name><notification>2</notification><password_needs_reset>false</password_needs_reset><phone>(858) 876-6870</phone><photo/><preferred_language/><roles/><schedule/><source/><state/><street/><sys_class_name>sys_user</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:13:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9ec35b8713453a007e94fc5ed144b09a</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-24 22:14:04</sys_updated_on><time_format/><time_zone/><title>Developer</title><user_name>suzy.ham</user_name><user_password/><vip>false</vip><web_service_access_only>false</web_service_access_only><zip/></sys_user><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#843d29</average_image_color><compressed>true</compressed><content_type>image/jpeg</content_type><file_name>photo</file_name><image_height>128</image_height><image_width>128</image_width><size_bytes>4896</size_bytes><size_compressed>4603</size_compressed><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>eb16d7c713453a007e94fc5ed144b055</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-24 22:22:45</sys_updated_on><table_name>ZZ_YYsys_user</table_name><table_sys_id>9ec35b8713453a007e94fc5ed144b09a</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>2f16d7c713453a007e94fc5ed144b055</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>1</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>af16d7c713453a007e94fc5ed144b055</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2392</length><position>2</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>2316d7c713453a007e94fc5ed144b056</sys_id></sys_attachment_doc></record_update>]]></payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>abdd68e41359ba007e94fc5ed144b0ad</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>Suzy Ham</target_name>
+<type>User</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-people-info-launch-connect</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:14:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7a1a978813dd7a007e94fc5ed144b0fd</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-people-info-launch-connect-ui-script">9ff4d7c413dd7a007e94fc5ed144b0e7</sys_ui_script><sys_update_name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:57</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>afdd68e41359ba007e94fc5ed144b0ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>pe-people-info-launch-connect</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_9ff4d7c413dd7a007e94fc5ed144b0e7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-people-info-launch-connect-ui-script&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function openChat(elem) {
+
+
+    console.log('***** Opening Chat w/ ' + elem.id);
+    var requestBody = '';
+    var client = new XMLHttpRequest();
+
+
+    var url = "/api/snc/pe_people_info_launch_connect/launch?user_id=" + elem.id;
+    client.open("get", url, false);
+    client.setRequestHeader('Accept', 'application/json');
+    client.setRequestHeader('Content-Type', 'application/json');
+    client.setRequestHeader('X-UserToken', window.g_ck);
+    client.send(requestBody);
+    if (client.status === 200) {
+        var liveProfileID = JSON.parse(client.response).result;
+        console.log('**** Channel ID received ' + liveProfileID.profile_id);
+        url = '/$c.do#?user=' + liveProfileID.profile_id;
+        window.open(url, "_blank");
+    } else {
+        console.log('**** No Channel ID received.');
+        url = '/$c.do';
+        window.open(url, "_blank");
+    }
+}
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 00:55:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9ff4d7c413dd7a007e94fc5ed144b0e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-people-info-launch-connect-ui-script&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_9ff4d7c413dd7a007e94fc5ed144b0e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 19:10:59&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>e7dd68e41359ba007e94fc5ed144b0ad</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>pe-people-info-launch-connect-ui-script</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-people-info-launch-connect</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:13:54</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c3f9578813dd7a007e94fc5ed144b0c7</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:41</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="People Info">67dd68e41359ba007e94fc5ed144b0ac</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-01 01:58:32</sys_created_on>
+<sys_id>ebdd68e41359ba007e94fc5ed144b0ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-01 01:58:32</sys_updated_on>
+<table/>
+<target_name>pe-people-info-launch-connect</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
