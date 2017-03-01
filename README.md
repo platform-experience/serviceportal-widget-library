@@ -10,6 +10,12 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 ***
 
+## Widget Name
+
+All widget name should start prefix **PE**, this will help in searching widgets easy.
+
+***
+
 ## Widget ID Naming
 
 Widgets and Pages IDs need to be unique in an instance, we need to take care while naming ID's to aviod collisions when Widget or Page is being loaded into instance or while committing an Update Set, or when an Upgrade or Plugin is applied. Thus we need to keep these points in mind. 
