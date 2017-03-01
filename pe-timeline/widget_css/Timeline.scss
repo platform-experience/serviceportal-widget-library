@@ -1,5 +1,4 @@
-$list-item-color: #ff6f00;
-
+$pe-timeline-items-color: #ff6f00 !default;
 .expanded {
   .panel-proper {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
@@ -8,7 +7,7 @@ $list-item-color: #ff6f00;
     transform: translateY(0);
   }
   .panel-drawer-wrapper {
-    max-height: 1000px; // what is the biggest the drawer might get?
+    max-height: 1000px;
   }
 }
 
@@ -132,8 +131,8 @@ $list-item-color: #ff6f00;
 }
 
 .key-value {
-  color: $list-item-color;
-  fill: $list-item-color;
+  color: $pe-timeline-items-color;
+  fill: $pe-timeline-items-color;
   font-size: 36px;
   font-weight: 200;
   height: 40px;
