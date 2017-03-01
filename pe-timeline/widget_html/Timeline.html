@@ -1,72 +1,74 @@
-<div ng-show="!(c.hideWhenRecovered && c.recovered)" class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': c.recovered, 'expanded-wrapper': c.expandedWrapper }">
-	<div class="panel-proper">
-		<div class="panel-header">
-			<span>{{c.title}}</span>
-			<span class="title-icon">
+<div ng-show="!(c.recovered)" class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'expanded-wrapper': c.expandedWrapper }">
+  <div class="panel-proper">
+    <div class="panel-header">
+      <span>{{c.title}}</span>
+      <span class="counter">
 				{{c.itemCount}}
 			</span>
-		</div>
-		<div class="panel-content">
+    </div>
+    <div class="panel-content">
 
-			<div class="tl-wrapper">
+      <div>
 
-				<div ng-repeat="item in c.initialEvents | limitTo: c.shownInitialEvents" class="tl-item" ng-class="c.fadeOldEvents ? '' : 'not-faded' "
-					ng-click="c.nextInitialEvent()">
-					<div class="tl-time">{{item.time}}</div>
-					<div class="tl-content">
-						<div class="tl-icon">
-							<i class="{{item.icon}}"></i>
-						</div>
-						<div>{{item.description}}</div>
-						<div ng-if="item.stats" class="row text-center">
-							<div ng-repeat="stat in item.stats" class="col-xs-{{ 12 / item.stats.length }}">
-								<div class="key-value key-smaller">
-									<span ng-if="stat.icon" class="slate icon-inline">
+        <div ng-repeat="item in c.initialEvents | limitTo: c.shownInitialEvents" class="tl-item" ng-class="c.fadeOldEvents ? '' : 'not-faded' "
+          ng-click="c.nextInitialEvent()">
+          <div class="tl-time">{{item.time}}</div>
+          <div class="tl-content">
+            <div class="timeline-icon"></div>
+            <div class="tl-icon">
+              <i class="{{item.icon}}"></i>
+            </div>
+            <div>{{item.description}}</div>
+            <div ng-if="item.stats" class="row text-center">
+              <div ng-repeat="stat in item.stats" class="col-xs-{{ 12 / item.stats.length }}">
+                <div class="key-value key-smaller">
+                  <span ng-if="stat.icon" class="icon-inline">
 							<i class="{{stat.icon}}"></i>
-						</span> {{stat.value}}
-									<span ng-if="stat.iconSuffix" class="icon-inline">
-										<i class="{{stat.iconSuffix}}"></i>
 						</span>
-								</div>
-								<div class="subtitle">
-									{{stat.name}}
-								</div>
-							</div>
-						</div>
-					</div>
-			</div>
+						<span class="stat-text">{{stat.value}}</span>
+                  <span ng-if="stat.iconSuffix" class="icon-inline">
+<i class="{{stat.iconSuffix}}"></i>
+</span>
+                </div>
+                <div class="subtitle">
+                  {{stat.name}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<div ng-if="!c.recovered && c.shownInitialEvents === 0" class="expander-button-wrapper">
-				<div class="expander-button" ng-click="c.expandInitialEvents()">
-					<span class="icon-inline">
+        <div ng-if="!c.recovered && c.shownInitialEvents === 0" class="expander-button-wrapper">
+          <div class="expander-button" ng-click="c.expandInitialEvents()">
+            <span class="icon-inline">
 						<i class="fa fa-expand fa-lg"></i>
 
 			</span> Expand Timeline
-				</div>
-				<div class="expander-button" ng-click="c.nextInitialEvent()">
-					<span class="icon-inline">
+          </div>
+          <div class="expander-button" ng-click="c.nextInitialEvent()">
+            <span class="icon-inline">
 				<i class="fa fa-play-circle-o fa-lg"></i>
 
 
 			</span> Timeline Playback
-				</div>
-			</div>
-		</div>
+          </div>
+        </div>
+      </div>
 
-		<div ng-if="!c.recovered && c.shownInitialEvents > 0" class="expander-button-wrapper">
-			<div class="expander-button" ng-click="c.collapseInitialEvents()">
-				<span class="icon-inline">
+      <div ng-if="!c.recovered && c.shownInitialEvents > 0" class="expander-button-wrapper">
+        <div class="expander-button" ng-click="c.collapseInitialEvents()">
+          <span class="icon-inline">
 			<i class="fa fa-compress fa-lg"></i>
 		</span> Collapse Timeline
-			</div>
-			<div ng-if="c.shownInitialEvents < c.initialEvents.length" class="expander-button" ng-click="c.nextInitialEvent()">
-				<span class="icon-inline">
+        </div>
+        <div ng-if="c.shownInitialEvents < c.initialEvents.length" class="expander-button" ng-click="c.nextInitialEvent()">
+          <span class="icon-inline">
 			<i class="fa fa-play-circle-o fa-lg"></i>
 		</span> Continue Playback
-			</div>
-		</div>
+        </div>
+      </div>
 
-	</div>
-</div>
+    </div>
+  </div>
 
 </div>
