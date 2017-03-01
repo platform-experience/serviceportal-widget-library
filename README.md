@@ -56,7 +56,7 @@ For Ex at Widget level:
 
 `$pe-timeline-items-color: #ff6f00`
 
-#plan to add following variables:#
+*plan to add following variables:*
 
 `pe-brand-secondary`
 
