@@ -54,8 +54,20 @@ For Ex at Widget level:
 
 `$pe-brand-text-size-normal: 15px;`
 
+`$pe-timeline-items-color: #ff6f00`
 
+#plan to add following variables:
 
+`pe-brand-secondary`
 
+`pe-text-title-color`
 
+`pe-text-header-color`
 
+`pe-icons-color`
+
+`pe-header-font-size`
+
+`pe-header-font-weight`
+
+*etc.*
