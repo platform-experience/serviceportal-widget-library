@@ -1,7 +1,8 @@
-## Synopsis
+## Synopsis: Timeline
+
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot.png "Timeline Widget")
 
 This widget can be used to quickly opbtain an initial implementation of a timeline.
-
 
 ## Installation
 
