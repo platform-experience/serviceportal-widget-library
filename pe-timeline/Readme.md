@@ -25,4 +25,3 @@ We provide four SASS variables to control the color of the statistics shown in t
 `$pe-timeline-items-color: #ff6f00 !default;`
 
 You can overide these variables at portal level using the **themes**.
-
