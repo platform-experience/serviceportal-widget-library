@@ -1,4 +1,4 @@
-## Synopsis: Timeline
+## Synopsis: Timeline Widget
 
 ![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot.png "Timeline Widget")
 
