@@ -1,4 +1,4 @@
-## Synopsis
+## Synopsis: Approval Card Widget
 
 ![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/approval.png "Approval Card Widget")
 
