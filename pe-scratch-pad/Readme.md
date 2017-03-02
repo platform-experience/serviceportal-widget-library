@@ -1,4 +1,4 @@
-## Synopsis
+## Synopsis: Scratch Pad Widget
 
 ![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/scratch_pad.png "Scratch Pad")
 
