@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-01 23:53:28">
+<unload unload_date="2017-03-02 02:04:42">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -18,59 +18,15 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>4dda51781351fa007e94fc5ed144b0f8</sys_id>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>1fd875b41391fa007e94fc5ed144b0af</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
 </sys_remote_update_set>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_dependency_js_include_c4d82b081311ba007e94fc5ed144b096</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="scratch-pad">85b8e7081311ba007e94fc5ed144b0b0</sp_dependency><sp_js_include display_value="scratch-pad">9ac82b081311ba007e94fc5ed144b08e</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 02:18:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c4d82b081311ba007e94fc5ed144b096</sys_id><sys_mod_count>0</sys_mod_count><sys_name>scratch-pad.scratch-pad</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_c4d82b081311ba007e94fc5ed144b096</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 02:18:21</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Scratch Pad">4dda51781351fa007e94fc5ed144b0f8</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>01da51781351fa007e94fc5ed144b0f9</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
-<table/>
-<target_name>scratch-pad.scratch-pad</target_name>
-<type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_dependency_85b8e7081311ba007e94fc5ed144b0b0</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-scratch-pad</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 02:18:01</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>85b8e7081311ba007e94fc5ed144b0b0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>pe-scratch-pad</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_85b8e7081311ba007e94fc5ed144b0b0</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 19:19:36</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Scratch Pad">4dda51781351fa007e94fc5ed144b0f8</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>0dda51781351fa007e94fc5ed144b0f9</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
-<table/>
-<target_name>pe-scratch-pad</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
 <sys_update_xml action="INSERT_OR_UPDATE">
 <action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
@@ -82,14 +38,14 @@
  * (c) 2015 Szymon Nowak | Released under the MIT license
  */
 var a=function(a){"use strict";var b=function(a,b){var c=this,d=b||{};this.velocityFilterWeight=d.velocityFilterWeight||.7,this.minWidth=d.minWidth||.5,this.maxWidth=d.maxWidth||2.5,this.dotSize=d.dotSize||function(){return(this.minWidth+this.maxWidth)/2},this.penColor=d.penColor||"black",this.backgroundColor=d.backgroundColor||"rgba(0,0,0,0)",this.onEnd=d.onEnd,this.onBegin=d.onBegin,this._canvas=a,this._ctx=a.getContext("2d"),this.clear(),this._handleMouseDown=function(a){1===a.which&amp;&amp;(c._mouseButtonDown=!0,c._strokeBegin(a))},this._handleMouseMove=function(a){c._mouseButtonDown&amp;&amp;c._strokeUpdate(a)},this._handleMouseUp=function(a){1===a.which&amp;&amp;c._mouseButtonDown&amp;&amp;(c._mouseButtonDown=!1,c._strokeEnd(a))},this._handleTouchStart=function(a){if(1==a.targetTouches.length){var b=a.changedTouches[0];c._strokeBegin(b)}},this._handleTouchMove=function(a){a.preventDefault();var b=a.targetTouches[0];c._strokeUpdate(b)},this._handleTouchEnd=function(a){var b=a.target===c._canvas;b&amp;&amp;(a.preventDefault(),c._strokeEnd(a))},this._handleMouseEvents(),this._handleTouchEvents()};b.prototype.clear=function(){var a=this._ctx,b=this._canvas;a.fillStyle=this.backgroundColor,a.clearRect(0,0,b.width,b.height),a.fillRect(0,0,b.width,b.height),this._reset()},b.prototype.toDataURL=function(){var a=this._canvas;return a.toDataURL.apply(a,arguments)},b.prototype.fromDataURL=function(a){var b=this,c=new Image,d=window.devicePixelRatio||1,e=this._canvas.width/d,f=this._canvas.height/d;this._reset(),c.src=a,c.onload=function(){b._ctx.drawImage(c,0,0,e,f)},this._isEmpty=!1},b.prototype._strokeUpdate=function(a){var b=this._createPoint(a);this._addPoint(b)},b.prototype._strokeBegin=function(a){this._reset(),this._strokeUpdate(a),"function"==typeof this.onBegin&amp;&amp;this.onBegin(a)},b.prototype._strokeDraw=function(a){var b=this._ctx,c="function"==typeof this.dotSize?this.dotSize():this.dotSize;b.beginPath(),this._drawPoint(a.x,a.y,c),b.closePath(),b.fill()},b.prototype._strokeEnd=function(a){var b=this.points.length&gt;2,c=this.points[0];!b&amp;&amp;c&amp;&amp;this._strokeDraw(c),"function"==typeof this.onEnd&amp;&amp;this.onEnd(a)},b.prototype._handleMouseEvents=function(){this._mouseButtonDown=!1,this._canvas.addEventListener("mousedown",this._handleMouseDown),this._canvas.addEventListener("mousemove",this._handleMouseMove),a.addEventListener("mouseup",this._handleMouseUp)},b.prototype._handleTouchEvents=function(){this._canvas.style.msTouchAction="none",this._canvas.addEventListener("touchstart",this._handleTouchStart),this._canvas.addEventListener("touchmove",this._handleTouchMove),a.addEventListener("touchend",this._handleTouchEnd)},b.prototype.on=function(){this._handleMouseEvents(),this._handleTouchEvents()},b.prototype.off=function(){this._canvas.removeEventListener("mousedown",this._handleMouseDown),this._canvas.removeEventListener("mousemove",this._handleMouseMove),a.removeEventListener("mouseup",this._handleMouseUp),this._canvas.removeEventListener("touchstart",this._handleTouchStart),this._canvas.removeEventListener("touchmove",this._handleTouchMove),a.removeEventListener("touchend",this._handleTouchEnd)},b.prototype.isEmpty=function(){return this._isEmpty},b.prototype._reset=function(){this.points=[],this._lastVelocity=0,this._lastWidth=(this.minWidth+this.maxWidth)/2,this._isEmpty=!0,this._ctx.fillStyle=this.penColor},b.prototype._createPoint=function(a){var b=this._canvas.getBoundingClientRect();return new c(a.clientX-b.left,a.clientY-b.top)},b.prototype._addPoint=function(a){var b,c,e,f,g=this.points;g.push(a),g.length&gt;2&amp;&amp;(3===g.length&amp;&amp;g.unshift(g[0]),f=this._calculateCurveControlPoints(g[0],g[1],g[2]),b=f.c2,f=this._calculateCurveControlPoints(g[1],g[2],g[3]),c=f.c1,e=new d(g[1],b,c,g[2]),this._addCurve(e),g.shift())},b.prototype._calculateCurveControlPoints=function(a,b,d){var e=a.x-b.x,f=a.y-b.y,g=b.x-d.x,h=b.y-d.y,i={x:(a.x+b.x)/2,y:(a.y+b.y)/2},j={x:(b.x+d.x)/2,y:(b.y+d.y)/2},k=Math.sqrt(e*e+f*f),l=Math.sqrt(g*g+h*h),m=i.x-j.x,n=i.y-j.y,o=l/(k+l),p={x:j.x+m*o,y:j.y+n*o},q=b.x-p.x,r=b.y-p.y;return{c1:new c(i.x+q,i.y+r),c2:new c(j.x+q,j.y+r)}},b.prototype._addCurve=function(a){var b,c,d=a.startPoint,e=a.endPoint;b=e.velocityFrom(d),b=this.velocityFilterWeight*b+(1-this.velocityFilterWeight)*this._lastVelocity,c=this._strokeWidth(b),this._drawCurve(a,this._lastWidth,c),this._lastVelocity=b,this._lastWidth=c},b.prototype._drawPoint=function(a,b,c){var d=this._ctx;d.moveTo(a,b),d.arc(a,b,c,0,2*Math.PI,!1),this._isEmpty=!1},b.prototype._drawCurve=function(a,b,c){var d,e,f,g,h,i,j,k,l,m,n,o=this._ctx,p=c-b;for(d=Math.floor(a.length()),o.beginPath(),f=0;d&gt;f;f++)g=f/d,h=g*g,i=h*g,j=1-g,k=j*j,l=k*j,m=l*a.startPoint.x,m+=3*k*g*a.control1.x,m+=3*j*h*a.control2.x,m+=i*a.endPoint.x,n=l*a.startPoint.y,n+=3*k*g*a.control1.y,n+=3*j*h*a.control2.y,n+=i*a.endPoint.y,e=b+i*p,this._drawPoint(m,n,e);o.closePath(),o.fill()},b.prototype._strokeWidth=function(a){return Math.max(this.maxWidth/(a+1),this.minWidth)};var c=function(a,b,c){this.x=a,this.y=b,this.time=c||(new Date).getTime()};c.prototype.velocityFrom=function(a){return this.time!==a.time?this.distanceTo(a)/(this.time-a.time):1},c.prototype.distanceTo=function(a){return Math.sqrt(Math.pow(this.x-a.x,2)+Math.pow(this.y-a.y,2))};var d=function(a,b,c,d){this.startPoint=a,this.control1=b,this.control2=c,this.endPoint=d};return d.prototype.length=function(){var a,b,c,d,e,f,g,h,i=10,j=0;for(a=0;i&gt;=a;a++)b=a/i,c=this._point(b,this.startPoint.x,this.control1.x,this.control2.x,this.endPoint.x),d=this._point(b,this.startPoint.y,this.control1.y,this.control2.y,this.endPoint.y),a&gt;0&amp;&amp;(g=c-e,h=d-f,j+=Math.sqrt(g*g+h*h)),e=c,f=d;return j},d.prototype._point=function(a,b,c,d,e){return b*(1-a)*(1-a)*(1-a)+3*c*(1-a)*(1-a)*a+3*d*(1-a)*a*a+e*a*a*a},b}(document);return a});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 02:16:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;526827081311ba007e94fc5ed144b00b&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-scratch-pad-ui-script&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_526827081311ba007e94fc5ed144b00b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 19:20:13&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Scratch Pad">4dda51781351fa007e94fc5ed144b0f8</remote_update_set>
+<remote_update_set display_value="PE Scratch Pad">1fd875b41391fa007e94fc5ed144b0af</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>45da51781351fa007e94fc5ed144b0fa</sys_id>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>27d875b41391fa007e94fc5ed144b0b1</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
 <table/>
 <target_name>pe-scratch-pad-ui-script</target_name>
 <type>UI Script</type>
@@ -254,14 +210,14 @@ var a=function(a){"use strict";var b=function(a,b){var c=this,d=b||{};this.veloc
 
 }
 ]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sp_angular_provider&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 02:15:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;860823081311ba007e94fc5ed144b0cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;scratchPad&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_angular_provider_860823081311ba007e94fc5ed144b0cc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 02:23:48&lt;/sys_updated_on&gt;&lt;type&gt;directive&lt;/type&gt;&lt;/sp_angular_provider&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Scratch Pad">4dda51781351fa007e94fc5ed144b0f8</remote_update_set>
+<remote_update_set display_value="PE Scratch Pad">1fd875b41391fa007e94fc5ed144b0af</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>49da51781351fa007e94fc5ed144b0f9</sys_id>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>2bd875b41391fa007e94fc5ed144b0b0</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
 <table/>
 <target_name>scratchPad</target_name>
 <type>Widget Angular Provider</type>
@@ -289,40 +245,41 @@ var a=function(a){"use strict";var b=function(a,b){var c=this,d=b||{};this.veloc
         }
     }
 }
-]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.signature-main-div {
-    margin: 10px;
-    margin-top: 40px;
-    border-radius: 6px;
-    .signature {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-    }
-    .signature canvas {
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        margin: 0 auto;
-        cursor: pointer;
-    }
-}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.signature-main-div {&amp;#13;
+    margin: 10px;&amp;#13;
+    margin-top: 40px;&amp;#13;
+    border-radius: 6px;&amp;#13;
+    .signature {&amp;#13;
+        margin-left: auto;&amp;#13;
+        margin-right: auto;&amp;#13;
+        margin-bottom: 10px;&amp;#13;
+        background: #fff;&amp;#13;
+    }&amp;#13;
+    .signature canvas {&amp;#13;
+        border: 1px solid #ddd;&amp;#13;
+        border-radius: 6px;&amp;#13;
+        margin: 0 auto;&amp;#13;
+        cursor: pointer;&amp;#13;
+    }&amp;#13;
+}&amp;#13;
 &lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;scratch pad widget&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-scratch-pad&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Scratch Pad&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 02:06:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;271623c41311ba007e94fc5ed144b0b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Scratch Pad&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_271623c41311ba007e94fc5ed144b0b8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-01 23:53:10&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="signature-main-div"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 02:06:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;271623c41311ba007e94fc5ed144b0b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;28&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Scratch Pad&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_271623c41311ba007e94fc5ed144b0b8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-02 02:03:48&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="signature-main-div"&gt;
     &lt;scratch-pad accept="accept" clear="clear" height="150" width="350"&gt;&lt;/scratch-pad&gt;
     &lt;button class="btn btn-danger" ng-click="clear()"&gt;Clear signature&lt;/button&gt;
     &lt;button class="btn btn-primary" ng-click="c.done()"&gt;Accept signature&lt;/button&gt;
 &lt;/div&gt;
 ]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Scratch Pad">4dda51781351fa007e94fc5ed144b0f8</remote_update_set>
+<remote_update_set display_value="PE Scratch Pad">1fd875b41391fa007e94fc5ed144b0af</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>81da51781351fa007e94fc5ed144b0fa</sys_id>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>63d875b41391fa007e94fc5ed144b0b1</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
 <table/>
 <target_name>PE Scratch Pad</target_name>
 <type>Widget</type>
@@ -337,14 +294,14 @@ var a=function(a){"use strict";var b=function(a,b){var c=this,d=b||{};this.veloc
 <comments/>
 <name>m2m_sp_widget_dependency_87b8e7081311ba007e94fc5ed144b0ef</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="scratch-pad">85b8e7081311ba007e94fc5ed144b0b0</sp_dependency><sp_widget display_value="Scratch Pad">271623c41311ba007e94fc5ed144b0b8</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 02:18:01</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>87b8e7081311ba007e94fc5ed144b0ef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>scratch-pad.Scratch Pad</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_87b8e7081311ba007e94fc5ed144b0ef</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 02:18:01</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Scratch Pad">4dda51781351fa007e94fc5ed144b0f8</remote_update_set>
+<remote_update_set display_value="PE Scratch Pad">1fd875b41391fa007e94fc5ed144b0af</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>85da51781351fa007e94fc5ed144b0f9</sys_id>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>67d875b41391fa007e94fc5ed144b0b0</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
 <table/>
 <target_name>scratch-pad.Scratch Pad</target_name>
 <type>Widget Dependency</type>
@@ -359,14 +316,14 @@ var a=function(a){"use strict";var b=function(a,b){var c=this,d=b||{};this.veloc
 <comments/>
 <name>m2m_sp_ng_pro_sp_widget_7018afc41311ba007e94fc5ed144b0a3</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="scratch-pad">860823081311ba007e94fc5ed144b0cc</sp_angular_provider><sp_widget display_value="Scratch Pad">271623c41311ba007e94fc5ed144b0b8</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 02:15:08</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7018afc41311ba007e94fc5ed144b0a3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>scratch-pad.Scratch Pad</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_7018afc41311ba007e94fc5ed144b0a3</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 02:15:08</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
-<remote_update_set display_value="PE Scratch Pad">4dda51781351fa007e94fc5ed144b0f8</remote_update_set>
+<remote_update_set display_value="PE Scratch Pad">1fd875b41391fa007e94fc5ed144b0af</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>c1da51781351fa007e94fc5ed144b0f9</sys_id>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>93d875b41391fa007e94fc5ed144b0b0</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
 <table/>
 <target_name>scratch-pad.Scratch Pad</target_name>
 <type>Angular Providers</type>
@@ -381,17 +338,61 @@ var a=function(a){"use strict";var b=function(a,b){var c=this,d=b||{};this.veloc
 <comments/>
 <name>sp_js_include_9ac82b081311ba007e94fc5ed144b08e</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-scratch-pad</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 02:18:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9ac82b081311ba007e94fc5ed144b08e</sys_id><sys_mod_count>2</sys_mod_count><sys_name>pe-scratch-pad</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="scratch-pad">526827081311ba007e94fc5ed144b00b</sys_ui_script><sys_update_name>sp_js_include_9ac82b081311ba007e94fc5ed144b08e</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 19:19:54</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Scratch Pad">4dda51781351fa007e94fc5ed144b0f8</remote_update_set>
+<remote_update_set display_value="PE Scratch Pad">1fd875b41391fa007e94fc5ed144b0af</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>sush</sys_created_by>
-<sys_created_on>2017-03-01 23:53:28</sys_created_on>
-<sys_id>cdda51781351fa007e94fc5ed144b0f9</sys_id>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>afd875b41391fa007e94fc5ed144b0b0</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>sush</sys_updated_by>
-<sys_updated_on>2017-03-01 23:53:28</sys_updated_on>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
 <table/>
 <target_name>pe-scratch-pad</target_name>
 <type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_c4d82b081311ba007e94fc5ed144b096</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="scratch-pad">85b8e7081311ba007e94fc5ed144b0b0</sp_dependency><sp_js_include display_value="scratch-pad">9ac82b081311ba007e94fc5ed144b08e</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 02:18:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c4d82b081311ba007e94fc5ed144b096</sys_id><sys_mod_count>0</sys_mod_count><sys_name>scratch-pad.scratch-pad</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_c4d82b081311ba007e94fc5ed144b096</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 02:18:21</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Scratch Pad">1fd875b41391fa007e94fc5ed144b0af</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>dfd875b41391fa007e94fc5ed144b0af</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
+<table/>
+<target_name>scratch-pad.scratch-pad</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_85b8e7081311ba007e94fc5ed144b0b0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-scratch-pad</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 02:18:01</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>85b8e7081311ba007e94fc5ed144b0b0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>pe-scratch-pad</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_85b8e7081311ba007e94fc5ed144b0b0</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 19:19:36</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Scratch Pad">1fd875b41391fa007e94fc5ed144b0af</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-02 02:04:42</sys_created_on>
+<sys_id>ebd875b41391fa007e94fc5ed144b0b0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-02 02:04:42</sys_updated_on>
+<table/>
+<target_name>pe-scratch-pad</target_name>
+<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
