@@ -77,10 +77,20 @@ $pe-timeline-items-color: #ff6f00 !default;
 }
 
 .stat-text {
+  font-size: 36px;
+  font-weight: 200;
   vertical-align: middle;
+  &.key-smaller {
+    font-size: 24px;
+    height: 24px;
+  }
+  &.key-bigger {
+    font-size: 44px;
+    height: 44px;
+  }
 }
 
-.tl-time {
+.left-description {
   font-size: 14px;
   opacity: 0.7;
   display: inline-block;
@@ -93,7 +103,7 @@ $pe-timeline-items-color: #ff6f00 !default;
   opacity: 0.7;
 }
 
-.tl-time {
+.left-description {
   display: inline-block;
   width: 40px;
   vertical-align: top;
@@ -112,12 +122,12 @@ $pe-timeline-items-color: #ff6f00 !default;
 
 .tl-item:last-child {
   opacity: 1;
-  .tl-content {
+  .right-content {
     border-left-color: rgba(0, 0, 0, 0);
   }
 }
 
-.tl-content {
+.right-content {
   margin-left: 10px;
   position: relative;
   display: inline-block;
@@ -126,29 +136,27 @@ $pe-timeline-items-color: #ff6f00 !default;
   padding: 0 5px 5px 20px;
 }
 
-.tl-content>* {
-  margin-bottom: 5px;
+.right-content>* {
+  margin-bottom: 8px;
+}
+
+.right-content-title {
+  margin-left: 3px;
 }
 
 .key-value {
   color: $pe-timeline-items-color;
   fill: $pe-timeline-items-color;
-  font-size: 36px;
-  font-weight: 200;
-  height: 40px;
+  height: 26px;
   white-space: nowrap;
   line-height: 1;
-  &.key-smaller {
-    font-size: 24px;
-    height: 24px;
-  }
-  &.key-bigger {
-    font-size: 44px;
-    height: 44px;
-  }
 }
 
 .icon-inline {
+  vertical-align: middle;
+}
+
+.text-inline {
   vertical-align: middle;
 }
 

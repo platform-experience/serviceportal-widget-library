@@ -3,7 +3,7 @@
     <div class="panel-header">
       <span>{{c.title}}</span>
       <span class="counter">
-				{{c.itemCount}}
+				{{c.itemsCount}}
 			</span>
     </div>
     <div class="panel-content">
@@ -12,20 +12,20 @@
 
         <div ng-repeat="item in c.initialEvents | limitTo: c.shownInitialEvents" class="tl-item" ng-class="c.fadeOldEvents ? '' : 'not-faded' "
           ng-click="c.nextInitialEvent()">
-          <div class="tl-time">{{item.time}}</div>
-          <div class="tl-content">
+          <div ng-if="c.data.show_ldescriptions" class="left-description">{{item.leftDescription}}</div>
+          <div class="right-content">
             <div class="timeline-icon"></div>
-            <div class="tl-icon">
+            <div ng-if="c.data.show_icons" class="tl-icon">
               <i class="{{item.icon}}"></i>
             </div>
-            <div>{{item.description}}</div>
-            <div ng-if="item.stats" class="row text-center">
+            <div class="right-content-title">{{item.description}}</div>
+            <div ng-if="item.stats" class="row text-center right-content-title">
               <div ng-repeat="stat in item.stats" class="col-xs-{{ 12 / item.stats.length }}">
-                <div class="key-value key-smaller">
+                <div class="key-value">
                   <span ng-if="stat.icon" class="icon-inline">
 							<i class="{{stat.icon}}"></i>
 						</span>
-                  <span class="stat-text">{{stat.value}}</span>
+                  <span class="stat-text key-smaller">{{stat.value}}</span>
                   <span ng-if="stat.iconSuffix" class="icon-inline">
 <i class="{{stat.iconSuffix}}"></i>
 </span>
@@ -42,15 +42,12 @@
           <div class="expander-button" ng-click="c.expandInitialEvents()">
             <span class="icon-inline">
 						<i class="fa fa-expand fa-lg"></i>
-
-			</span> Expand Timeline
+			</span><span class="text-inline">Expand Timeline</span>
           </div>
           <div class="expander-button" ng-click="c.nextInitialEvent()">
             <span class="icon-inline">
 				<i class="fa fa-play-circle-o fa-lg"></i>
-
-
-			</span> Timeline Playback
+			</span><span class="text-inline">Timeline Playback</span>
           </div>
         </div>
       </div>
@@ -59,12 +56,12 @@
         <div class="expander-button" ng-click="c.collapseInitialEvents()">
           <span class="icon-inline">
 			<i class="fa fa-compress fa-lg"></i>
-		</span> Collapse Timeline
+		</span><span class="text-inline">Collapse Timeline</span>
         </div>
         <div ng-if="c.shownInitialEvents < c.initialEvents.length" class="expander-button" ng-click="c.nextInitialEvent()">
           <span class="icon-inline">
 			<i class="fa fa-play-circle-o fa-lg"></i>
-		</span> Continue Playback
+		</span><span class="text-inline">Continue Playback</span>
         </div>
       </div>
 
