@@ -1,4 +1,12 @@
-## Synopsis
+## Synopsis: People Info
+
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-screenshot-01.png "People Info")
+
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-screenshot-02.png "People Info - With option Only Picture set to True")
+
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-screenshot-03.png "People Info - With option Job Title set to False")
+
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-screenshot-04.png "People Info - With option Call And Chat set to False")
 
 This widget can be used to create a simple people card with user avatar, name, title, call and chat functionality. 
 

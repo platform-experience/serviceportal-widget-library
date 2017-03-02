@@ -1,9 +1,10 @@
 ## Synopsis: Feedback card
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-feedback-card-screenshot-01.png "Timeline Widget")
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-feedback-card-screenshot-02.png "Timeline Widget")
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-feedback-card-screenshot-01.png "Timeline Widget - Step 1")
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-feedback-card-screenshot-03.png "Timeline Widget")
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-feedback-card-screenshot-02.png "Timeline Widget- Step 2")
+
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-feedback-card-screenshot-03.png "Timeline Widget- Step 3")
 
 This widget can be used to create a simple emoji rating/feedback card.
 
