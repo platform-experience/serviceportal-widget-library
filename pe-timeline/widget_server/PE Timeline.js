@@ -9,9 +9,17 @@
 		}
 	};
 	
+	var getIntValue = function(inputVal, optionVal){
+		if((inputVal == null || inputVal == undefined) && (optionVal >=0)){
+			return (parseInt(optionVal));
+		} else if (inputVal != null && inputVal != undefined){
+			return (parseInt(inputVal));
+		}
+	};
+	
 	data.title = options.title || input.title;
 	data.show_icons = getBoolValue(input.show_icons,options.show_icons);
 	data.show_ldescriptions = getBoolValue(input.show_ldescriptions,options.show_ldescriptions);
-	data.initial_elements = options.initial_elements || input.initial_elements;
-data.initial_elements = parseInt(data.initial_elements);
+	data.initial_elements = getIntValue(options.initial_elements, input.initial_elements);
+
 })();

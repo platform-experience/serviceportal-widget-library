@@ -1,6 +1,7 @@
 function ($rootScope, $scope) {
   /* widget controller */
   var c = this;
+	
   Object.size = function (obj) {
     var size = 0,
       key;
@@ -59,17 +60,20 @@ function ($rootScope, $scope) {
   }
   ];
 
-  c.title = 'Timeline'
+  c.title = c.data.title;
   c.itemsCount = Object.size(c.initialEvents);
-  c.fadeOldEvents = true;
+  c.fadeOldEvents = false;
   c.shownInitialEvents = c.data.initial_elements;
-  
+	if (c.shownInitialEvents === undefined){
+		c.shownInitialEvents = 0;
+	}
+	
 	c.nextInitialEvent = function () {
     if (c.shownInitialEvents < c.initialEvents.length) {
       c.shownInitialEvents++
     } else {
       c.shownInitialEvents = 0;
-      c.fadeOldEvents = true;
+      c.fadeOldEvents = false;
     }
   }
 
@@ -80,7 +84,7 @@ function ($rootScope, $scope) {
 
   c.collapseInitialEvents = function () {
     c.shownInitialEvents = 0;
-    c.fadeOldEvents = true;
+    c.fadeOldEvents = false;
   }
 
 }
