@@ -1,9 +1,6 @@
 ## Synopsis
 
-![alt text][image]
-
-[image]: https://gitlab.com/dev-practice/platexp-widget-library/blob/master/images/approval.png "Approval Card Widget"
-
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/approval.png "Approval Card Widget")
 
 
 This widget can be used to create a simple approval card with three button **Accept**,**Reject**,**View**. This widget also displays user avatar, name and title etc
