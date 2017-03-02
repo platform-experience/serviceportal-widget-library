@@ -1,5 +1,7 @@
 ## Synopsis
 
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/scratch_pad.png "Scratch Pad")
+
 This widget can be used to create a simple signature pad/scratch pad.
 
 
