@@ -56,24 +56,26 @@ For Ex at Widget level:
 
 `$pe-brand-danger:          #d9534f;`
 
-`$pe-brand-text-color: 		#fff;`
+`$pe-brand-text-color-primary: 	#a8abaf;`
 
-`$pe-brand-text-size-normal: 15px;`
+`$pe-brand-text-color-secondary: #fff;`
 
-`$pe-timeline-items-color: #ff6f00`
+`$pe-brand-text-size-small: 12px;`
 
-*plan to add following variables:*
+`$pe-brand-text-size-medium: 18px;`
 
-`pe-brand-secondary`
+`$pe-brand-text-size-big: 24px;`
 
-`pe-text-title-color`
+`$pe-brand-text-size-normal: 16px;`
 
-`pe-text-header-color`
+`$pe-timeline-items-color: #ff6f00;`
 
-`pe-icons-color`
 
-`pe-header-font-size`
+**plan to add following variables:**
 
-`pe-header-font-weight`
+`$pe-brand-secondary`
+
+`$pe-icons-color`
+
 
 *etc.*
