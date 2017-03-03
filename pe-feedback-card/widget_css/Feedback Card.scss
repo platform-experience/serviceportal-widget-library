@@ -1,81 +1,82 @@
 $pe-brand-primary: #337ab7 !default;
 $pe-brand-text-color: #fff !default;
 $pe-brand-text-size-normal: 15px !default;
+
 .emoji-rating {
-    width: 100%;
-    height: 10%;
-    padding: 20px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    overflow: auto;
-    border-radius: 5px;
-    background-color: $pe-brand-primary;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-    p {
-        margin-bottom: 0px;
+  width: 100%;
+  height: 10%;
+  padding: 20px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+  border-radius: 5px;
+  background-color: $pe-brand-primary;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  p {
+    margin-bottom: 0px;
+  }
+  .flex-it {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .rand {
+      font-size: 36px;
+      font-weight: 600;
+      color: $pe-brand-text-color;
     }
-    .flex-it {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .rand {
-            font-size: 36px;
-            font-weight: 600;
-            color: $pe-brand-text-color;
-        }
-    }
-    .svg-icon {
-        width: 20px;
-        height: 20px;
-        stroke: $pe-brand-text-color;
-        fill: $pe-brand-text-color;
-        position: absolute;
-        top: 5px;
-        right: 5px;
-    }
-    .step-one {
-        text-align: center;
-    }
-    .step-two {
-        text-align: center;
-    }
-    .step-three {
-        text-align: center;
-        .fa {
-            margin: 0px !important;
-        }
-    }
+  }
+  .svg-icon {
+    width: 20px;
+    height: 20px;
+    stroke: $pe-brand-text-color;
+    fill: $pe-brand-text-color;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .step-one {
+    text-align: center;
+  }
+  .step-two {
+    text-align: center;
+  }
+  .step-three {
+    text-align: center;
     .fa {
-        cursor: pointer;
-        font-size: 50px;
-        color: $pe-brand-text-color;
-        padding: 10px;
+      margin: 0px !important;
     }
-    .fa-smile-o {
-        color: $pe-brand-text-color;
-    }
-    .fa-meh-o {
-        color: $pe-brand-text-color;
-        margin: 0 35px;
-    }
-    .fa-frown-o {
-        color: $pe-brand-text-color;
-    }
-    .selected {
-        font-weight: bold;
-    }
-    .message {
-        font-size: $pe-brand-text-size-normal;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.13;
-        padding-top: 6px;
-        padding-bottom: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
-        text-align: center;
-        color: $pe-brand-text-color;
-    }
+  }
+  .fa {
+    cursor: pointer;
+    font-size: 50px;
+    color: $pe-brand-text-color;
+    padding: 10px;
+  }
+  .fa-smile-o {
+    color: $pe-brand-text-color;
+  }
+  .fa-meh-o {
+    color: $pe-brand-text-color;
+    margin: 0 35px;
+  }
+  .fa-frown-o {
+    color: $pe-brand-text-color;
+  }
+  .selected {
+    font-weight: bold;
+  }
+  .message {
+    font-size: $pe-brand-text-size-normal;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    color: $pe-brand-text-color;
+  }
 }

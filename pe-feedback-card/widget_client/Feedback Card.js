@@ -1,29 +1,28 @@
-function ($timeout) {
+function($timeout) {
   var c = this;
+  c.chosenFeedback = chosenFeedback;
+  c.closeSurvery = closeSurvery;
+  c.setRating = setRating;
 
-  c.showSurvey = true;
-  c.stepId = 'one';
-  
-  c.goodrandom = Math.floor(Math.random() * 21) + 80;
-  c.badrandom = Math.floor(Math.random() * 6) + 1;
-
-  c.$onInit = function () {
-    c.setRating = setRating;
+  c.$onInit = function() {
+    c.badRandom = Math.floor(Math.random() * 6) + 1;
+    c.goodRandom = Math.floor(Math.random() * 21) + 80;
+    c.showSurvey = true;
+    c.stepId = 'one';
   };
 
-  c.chosenFeedback = function (feedback, icon) {
-    console.log(feedback);
-    c.stepId = "three";
+  function chosenFeedback(feedback, icon) {
+    c.stepId = 'three';
     c.selectedIcon = icon;
-  };
+  }
 
-  c.closeSurvery = function () {
+  function closeSurvery() {
     c.showSurvey = false;
-  };
+  }
 
   function setRating(event) {
     angular.element(event.target).addClass('selected animated rubberBand');
-    $timeout(function () {
+    $timeout(function() {
       angular.element('.emoji-rating').addClass('animated fadeOut');
     }, 1000);
   }
