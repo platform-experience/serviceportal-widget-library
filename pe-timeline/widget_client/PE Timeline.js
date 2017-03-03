@@ -1,7 +1,7 @@
 function ($rootScope, $scope) {
   /* widget controller */
   var c = this;
-	
+
   Object.size = function (obj) {
     var size = 0,
       key;
@@ -67,11 +67,11 @@ function ($rootScope, $scope) {
   c.itemsCount = Object.size(c.initialEvents);
   c.fadeOldEvents = false;
   c.shownInitialEvents = c.data.initial_elements;
-	if (c.shownInitialEvents === undefined){
-		c.shownInitialEvents = 0;
-	}
-	
-	c.nextInitialEvent = function () {
+  if (c.shownInitialEvents === undefined) {
+    c.shownInitialEvents = 0;
+  }
+
+  c.nextInitialEvent = function () {
     if (c.shownInitialEvents < c.initialEvents.length) {
       c.shownInitialEvents++
     } else {
