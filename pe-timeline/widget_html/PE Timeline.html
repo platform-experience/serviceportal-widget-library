@@ -14,7 +14,9 @@
           ng-click="c.nextInitialEvent()">
           <div ng-if="c.data.show_ldescriptions" class="left-description">{{item.leftDescription}}</div>
           <div class="right-content">
-            <div class="timeline-icon"></div>
+            <div ng-if="!c.data.show_colors" class="timeline-icon"></div>
+            <div ng-if="c.data.show_colors" class="timeline-icon" style="background: {{item.color}}"></div>
+
             <div ng-if="c.data.show_icons" class="tl-icon">
               <i class="{{item.icon}}"></i>
             </div>

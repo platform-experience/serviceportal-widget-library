@@ -21,5 +21,6 @@
 	data.show_icons = getBoolValue(input.show_icons,options.show_icons);
 	data.show_ldescriptions = getBoolValue(input.show_ldescriptions,options.show_ldescriptions);
 	data.initial_elements = getIntValue(options.initial_elements, input.initial_elements);
+	data.show_colors = getBoolValue(input.show_colors,options.show_colors);
 
 })();

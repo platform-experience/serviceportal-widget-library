@@ -15,6 +15,7 @@ function ($rootScope, $scope) {
     description: 'Automated Event Correlation',
     leftDescription: '14:22',
     icon: 'fa fa-bolt fa-lg',
+    color: '#dbcb33',
     stats: [{
       name: 'Events',
       value: 20
@@ -29,6 +30,7 @@ function ($rootScope, $scope) {
     description: 'Automated Service Correlation',
     leftDescription: '14:22',
     icon: 'fa fa-bolt fa-lg',
+    color: '#d86431',
     stats: [{
       name: 'In Total',
       value: 2
@@ -44,6 +46,7 @@ function ($rootScope, $scope) {
     description: 'Automated Risk Assessment',
     leftDescription: '14:23',
     icon: 'fa fa-bolt fa-lg',
+    color: '#903f5c',
     stats: [{
       value: '1.2M',
       icon: 'fa fa-usd fa-lg'
