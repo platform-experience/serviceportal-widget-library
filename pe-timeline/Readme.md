@@ -8,6 +8,8 @@
 
 ![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot-04.png "Timeline Widget - With the option Show Icons and Show Colors set to True")
 
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot-05.png "Timeline Widget - With the option Show Colors set to True")
+
 This widget can be used to quickly opbtain an initial implementation of a timeline.
 
 ## Installation
