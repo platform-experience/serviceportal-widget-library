@@ -1,10 +1,10 @@
-function($scope) {
-    //Client script
-    var c = this;
-    
-    c.call = function(telnumber) {
-        if (telnumber) {
-            window.location.href = "tel://" + telnumber;
-        } 
-    };
+function PeopleInfoController($window) {
+  var c = this;
+  c.call = call;
+
+  function call(telNumber) {
+    if (telNumber) {
+      $window.location.href = 'tel://' + telNumber;
+    }
+  }
 }

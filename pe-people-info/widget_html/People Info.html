@@ -1,22 +1,20 @@
-<div class="media  people-card-media" >
-
-    <div class="media-left ">
-        <div class="person-photo">
-            <img ng-if="data.user_photo" class="media-object list__photo img-circle" ng-src="{{data.user_photo}}" />
-            <div ng-if="!data.user_photo" class="badge initials-badge" data-original-title="" title="">
-                <span class="">{{data.user_initials}}</span>
-            </div>
-        </div>
+<div class="media people-card-media">
+  <div class="media-left">
+    <div class="person-photo">
+      <img ng-if="data.user_photo" class="media-object list__photo img-circle" ng-src="{{data.user_photo}}">
+      <div ng-if="!data.user_photo" class="badge initials-badge" data-original-title="" title="">
+        <span class="">{{::data.user_initials}}</span>
+      </div>
     </div>
-    <div ng-if="!data.show_only_picture" class="media-body">
-        <div class="people_name_title">
-            <h4 class="media-heading title">{{data.user_full_name}}</h4>
-            <h4 ng-if="data.show_job_title" class="media-heading subtitle">{{data.user_job_title}}</h4>
-        </div>
+  </div>
+  <div ng-if="!data.show_only_picture" class="media-body">
+    <div class="people_name_title">
+      <h4 class="media-heading title">{{::data.user_full_name}}</h4>
+      <h4 ng-if="data.show_job_title" class="media-heading subtitle">{{::data.user_job_title}}</h4>
     </div>
-    <div class="media-right" ng-if="data.show_call_and_chat">
-        <i class="fa fa-comment fa-2x fa-color" onclick="openChat(this);" id="{{data.user_sys_id}}" aria-hidden="true"></i>
-        <i ng-click="c.call(data.user_phone)" class="fa fa-phone fa-2x fa-color" aria-hidden="true"></i>
-    </div>
-
+  </div>
+  <div class="media-right" ng-if="data.show_call_and_chat">
+    <i class="fa fa-comment fa-2x fa-color" onclick="openChat(this)" id="{{data.user_sys_id}}" aria-hidden="true"></i>
+    <i ng-click="c.call(data.user_phone)" class="fa fa-phone fa-2x fa-color" aria-hidden="true"></i>
+  </div>
 </div>
