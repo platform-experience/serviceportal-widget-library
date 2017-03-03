@@ -1,81 +1,80 @@
-$pe-brand-success:         #5cb85c !default;
-$pe-brand-warning:         #f0ad4e !default;
-$pe-brand-danger:          #d9534f !default;
-$pe-brand-info:            #5bc0de !default;
-
+$pe-brand-success : #5cb85c !default;
+$pe-brand-warning : #f0ad4e !default;
+$pe-brand-danger : #d9534f !default;
+$pe-brand-info : #5bc0de !default;
 
 .encloser {
-    .actual-card {
-        clear: both;
-        background: #fff;
-        margin-bottom: 10px;
-        border: 1px solid #e6e8ea;
-        .padd-it {
-            .heading {
-                font-size: 18px;
-                font-weight: bold;
-                color: #81878e;
-                padding: 10px 15px;
-                padding-bottom: 0px;
-            }
-            .details {
-                padding: 10px 15px;
-                padding-top: 0px;
-                border-bottom: 1px solid #e6e8ea;
-                overflow: hidden;
-                .each-div {
-                    width: 50%;
-                    overflow: hidden;
-                    float: left;
-                }
-                .purpose {
-                    padding: 10px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    p {
-                        font-size: 15px;
-                        color: #81878e;
-                        margin-bottom: 0px;
-                        line-height: 1;
-                        margin-left: 10px;
-                        width: 75px;
-                    }
-                    .purpose-icon {
-                        color: $pe-brand-info;
-                    }
-                }
-            }
+  .actual-card {
+    clear: both;
+    background: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #e6e8ea;
+    .padd-it {
+      .heading {
+        font-size: 18px;
+        font-weight: bold;
+        color: #81878e;
+        padding: 10px 15px;
+        padding-bottom: 0px;
+      }
+      .details {
+        padding: 10px 15px;
+        padding-top: 0px;
+        border-bottom: 1px solid #e6e8ea;
+        overflow: hidden;
+        .each-div {
+          width: 50%;
+          overflow: hidden;
+          float: left;
         }
-        .buttons {
-            overflow: hidden;
-            clear: both;
-            .approve-button {
-                color: $pe-brand-success;
-                border-bottom: 3px solid $pe-brand-success;
-            }
-            .reject-button {
-                color: $pe-brand-danger;
-                border-bottom: 3px solid $pe-brand-danger;
-            }
-            .view-button {
-                color: $pe-brand-warning;
-                border-bottom: 3px solid $pe-brand-warning;
-            }
-            .each-button {
-                width: 33.3%;
-                float: left;
-                padding: 15px 20px;
-                text-align: center;
-                border-right: solid 1px #e6e8ea;
-                p {
-                    margin-bottom: 0px;
-                    font-size: 15px;
-                }
-            }
-            .last-button {
-                border-right: 0px;
-            }
+        .purpose {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          p {
+            font-size: 15px;
+            color: #81878e;
+            margin-bottom: 0px;
+            line-height: 1;
+            margin-left: 10px;
+            width: 75px;
+          }
+          .purpose-icon {
+            color: $pe-brand-info;
+          }
         }
+      }
     }
-} 
+    .buttons {
+      overflow: hidden;
+      clear: both;
+      .approve-button {
+        color: $pe-brand-success;
+        border-bottom: 3px solid $pe-brand-success;
+      }
+      .reject-button {
+        color: $pe-brand-danger;
+        border-bottom: 3px solid $pe-brand-danger;
+      }
+      .view-button {
+        color: $pe-brand-warning;
+        border-bottom: 3px solid $pe-brand-warning;
+      }
+      .each-button {
+        width: 33.3%;
+        float: left;
+        padding: 15px 20px;
+        text-align: center;
+        border-right: solid 1px #e6e8ea;
+        p {
+          margin-bottom: 0px;
+          font-size: 15px;
+        }
+      }
+      .last-button {
+        border-right: 0px;
+      }
+    }
+  }
+}
