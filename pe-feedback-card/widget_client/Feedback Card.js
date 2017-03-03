@@ -1,4 +1,4 @@
-function($timeout) {
+function FeedbackCardController($timeout) {
   var c = this;
   c.chosenFeedback = chosenFeedback;
   c.closeSurvery = closeSurvery;

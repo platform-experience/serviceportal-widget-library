@@ -1,4 +1,4 @@
-function(spUtil) {
+function ApprovalCardController(spUtil) {
   var c = this;
 
   c.data.widget = {
@@ -12,7 +12,7 @@ function(spUtil) {
     show_only_picture: false,
     show_job_title: true,
     show_call_and_chat: false
-  }
+  };
 
   spUtil.get('pe-people-info', {
     user_sys_id: c.data.user_info.user_sys_id,
@@ -20,6 +20,6 @@ function(spUtil) {
     show_call_and_chat: c.data.user_info.show_call_and_chat,
     show_only_picture: c.data.user_info.show_only_picture
   }).then(function(response) {
-    c.data.embedded_widget = response
+    c.data.embedded_widget = response;
   });
 }
