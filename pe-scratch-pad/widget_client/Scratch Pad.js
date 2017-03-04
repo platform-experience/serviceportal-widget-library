@@ -1,14 +1,13 @@
-function($scope) {
-    /* widget controller */
-    var c = this;
+function ScratchPadController() {
+  var c = this;
+  c.done = done;
 
-    /*Check if signaute is done*/
-    c.done = function() {
-        var signature = $scope.accept();
-        if (signature.isEmpty) {
-            console.log("scratch pad empty");
-        } else {
-            console.log(signature.dataUrl);
-        }
+  function done() {
+    var signature = c.accept();
+    if (signature.isEmpty) {
+      console.log('scratch pad empty');
+    } else {
+      console.log(signature.dataUrl);
     }
+  }
 }

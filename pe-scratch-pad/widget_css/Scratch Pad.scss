@@ -1,16 +1,16 @@
 .signature-main-div {
-    margin: 10px;
-    margin-top: 40px;
+  margin: 10px;
+  margin-top: 40px;
+  border-radius: 6px;
+  .signature {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  .signature canvas {
+    border: 1px solid #ddd;
     border-radius: 6px;
-    .signature {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-    }
-    .signature canvas {
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        margin: 0 auto;
-        cursor: pointer;
-    }
+    margin: 0 auto;
+    cursor: pointer;
+  }
 }
