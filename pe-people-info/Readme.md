@@ -8,7 +8,7 @@
 
 ![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-04.png "People Info - With option Call And Chat set to False")
 
-This widget can be used to create a simple people card with user avatar, name, title, call and chat functionality. 
+This widget can be used to create a simple people card with user avatar, name, title, call and chat functionality.
 
 ***
 
@@ -32,7 +32,7 @@ We provide four SASS variables to control the chat and call icon colors.
 
 `$pe-brand-primary:#337ab7 !default;`
 
-You can overide these variables at portal level using the **themes**.
+You can override these variables at portal level using the **themes**.
 
 
 

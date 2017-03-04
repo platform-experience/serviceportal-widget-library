@@ -6,7 +6,7 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 ## Update Set
 
-**Please make sure you capture widget related updates correctly.** update set should start with prefix **pe-** and end with **update-set**. For example ***pe-approval-card-update-set.xmml**. Make sure you dont capture widget instance related records/ grid related records like row, column etc. Keep the update set clean and capture on widget related stuff.
+**Please make sure you capture widget related updates correctly.** update set should start with prefix **pe-** and end with **update-set**. For example ***pe-approval-card-update-set.xml**. Make sure you don't capture widget instance related records/ grid related records like row, column etc. Keep the update set clean and capture on widget related stuff.
 
 ***
 
@@ -18,7 +18,7 @@ All widget name should start prefix **PE**, this will help in searching widgets 
 
 ## Widget ID Naming
 
-Widgets and Pages IDs need to be unique in an instance, we need to take care while naming ID's to aviod collisions when Widget or Page is being loaded into instance or while committing an Update Set, or when an Upgrade or Plugin is applied. Thus we need to keep these points in mind. 
+Widgets and Pages IDs need to be unique in an instance, we need to take care while naming ID's to avoid collisions when Widget or Page is being loaded into instance or while committing an Update Set, or when an Upgrade or Plugin is applied. Thus we need to keep these points in mind.
 
 1. Every Widget must have an ID
 2. IDs should be hyphenated alphanumeric strings (i.e. no spaces, no special characters)
@@ -31,8 +31,8 @@ Ex: **pe-approval-card**
 
 ## SASS Variables
 
-All SASS vafiables created for this project will start with prefix **$pe-**. You can add the varaibles at the Theme level as well as at the widget level.
-While adding the variable at widget level make sure you use **!default** keyword. This will let us overide these variables at the theme level. This will make the widget self-contained. We can easlity drag and drop them on to any page.
+All SASS variables created for this project will start with prefix **$pe-**. You can add the variables at the Theme level as well as at the widget level.
+While adding the variable at widget level make sure you use **!default** keyword. This will let us override these variables at the theme level. This will make the widget self-contained. We can easily drag and drop them on to any page.
 
 For Ex at Theme level:
 

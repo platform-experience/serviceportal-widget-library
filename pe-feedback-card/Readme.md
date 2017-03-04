@@ -1,4 +1,4 @@
-## Synopsis: Feedback card
+## Synopsis: Feedback Card
 
 ![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-feedback-card-screenshot-01.png "Timeline Widget - Step 1")
 
@@ -34,7 +34,7 @@ We provide three SASS variables to control the Background Color, Text/Emoji Colo
 
 
 
-You can overide these variables at portal level using the **themes**.
+You can override these variables at portal level using the **themes**.
 
 
 

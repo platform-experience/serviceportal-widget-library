@@ -10,7 +10,7 @@
 
 ![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot-05.png "Timeline Widget - With the option Show Colors set to True")
 
-This widget can be used to quickly opbtain an initial implementation of a timeline.
+This widget can be used to quickly obtain an initial implementation of a timeline.
 
 ## Installation
 
@@ -34,4 +34,4 @@ We provide four SASS variables to control the color of the statistics shown in t
 
 `$pe-timeline-items-color: #ff6f00 !default;`
 
-You can overide these variables at portal level using the **themes**.
+You can override these variables at portal level using the **themes**.

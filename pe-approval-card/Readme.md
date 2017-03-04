@@ -3,7 +3,7 @@
 ![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/approval.png "Approval Card Widget")
 
 
-This widget can be used to create a simple approval card with three button **Accept**,**Reject**,**View**. This widget also displays user avatar, name and title etc
+This widget can be used to create a simple approval card with three button **Accept**, **Reject**, **View**. This widget also displays user avatar, name and title etc.
 
 ***
 
@@ -15,24 +15,23 @@ People Info widget is injected dynamically in client controller.
 
 ```javascript
 c.data.user_info = {
-		user_sys_id: "9ec35b8713453a007e94fc5ed144b09a",
-		show_only_picture: false,
-		show_job_title: true,
-		show_call_and_chat:false
-	}
-	
-spUtil.get('pe-people-info',
-	{
-		user_sys_id: c.data.user_info.user_sys_id,
-		show_job_title: c.data.user_info.show_job_title,
-		show_call_and_chat: c.data.user_info.show_call_and_chat,
-		show_only_picture: c.data.user_info.show_only_picture
-			}).then(function(response){
-			c.data.embedded_widget = response
-	});
+  user_sys_id: '9ec35b8713453a007e94fc5ed144b09a',
+  show_only_picture: false,
+  show_job_title: true,
+  show_call_and_chat:false
+}
+
+spUtil.get('pe-people-info', {
+  user_sys_id: c.data.user_info.user_sys_id,
+  show_job_title: c.data.user_info.show_job_title,
+  show_call_and_chat: c.data.user_info.show_call_and_chat,
+  show_only_picture: c.data.user_info.show_only_picture
+}).then(function(response) {
+  c.data.embedded_widget = response;
+});
 ```
 
-Since we dont want to show Call/Chat functionality the option **show_call_and_chat** is false.
+Since we don't want to show Call/Chat functionality the option **show_call_and_chat** is false.
 
 
 ***
@@ -40,7 +39,7 @@ Since we dont want to show Call/Chat functionality the option **show_call_and_ch
 
 After installing above widget you can just download the update set **pe-approval-card-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
-We provide options to make the it easy for to change **title**,**purpose titile** and **purpose icon** easily.
+We provide options to make the it easy for to change **title**, **purpose title** and **purpose icon** easily.
 
 **"title"** the default message for this is **Destination Services.**
 
@@ -62,7 +61,7 @@ We provide four SASS variables to control the Button Text/Border Color, Font Awe
 
 
 
-You can overide these variables at portal level using the **themes**.
+You can override these variables at portal level using the **themes**.
 
 
 
