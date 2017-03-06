@@ -62,7 +62,6 @@ Ex: **pe-approval-card**
 
 ***
 
-
 ## SASS Variables
 
 All SASS variables created for this project will start with prefix **$pe-**. You can add the variables at the Theme level as well as at the widget level.
@@ -113,3 +112,15 @@ For Ex at Widget level:
 
 
 *etc.*
+
+## Includes (JS, CSS, etc.)
+
+Even the includes with standard FWs should be renamed with prefix **pe-**. This to avoid duplication errors during the import of the update set in existing instances.
+
+For instance:
+
+`highcharts-ng`
+
+should be renamed to:
+
+`pe-highcharts-ng`
