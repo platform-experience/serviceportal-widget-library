@@ -1,7 +1,7 @@
 function FeedbackCardController($timeout) {
   var c = this;
   c.chosenFeedback = chosenFeedback;
-  c.closeSurvery = closeSurvery;
+  c.closeSurvey = closeSurvey;
   c.setRating = setRating;
 
   c.$onInit = function() {
@@ -16,7 +16,7 @@ function FeedbackCardController($timeout) {
     c.selectedIcon = icon;
   }
 
-  function closeSurvery() {
+  function closeSurvey() {
     c.showSurvey = false;
   }
 
