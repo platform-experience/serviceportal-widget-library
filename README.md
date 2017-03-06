@@ -20,9 +20,9 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 *Widgets in progress*
 
-* Incident Feddback Card
+* Incident Card
 
-* Case Card
+* Case
 
 * Inbox
 
