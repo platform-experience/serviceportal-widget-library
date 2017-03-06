@@ -4,6 +4,40 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 ***
 
+## Widgets
+
+**Widgets list available now:**
+
+* [Approval Card](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-approval-card)
+
+* [Feedback Card](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-feedback-card)
+
+* [People Info](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-people-info)
+
+* [Scratch Pad](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-scratch-pad)
+
+* [Timeline](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-timeline)
+
+*Widgets in progress*
+
+* Incident Feddback Card
+
+* Case Card
+
+* Inbox
+
+* Response Card
+
+* Popup
+
+* Tabs Selection
+
+* Inner Bar Chart
+
+* Timeline Chart
+
+***
+
 ## Update Set
 
 **Please make sure you capture widget related updates correctly.** update set should start with prefix **pe-** and end with **update-set**. For example ***pe-approval-card-update-set.xml**. Make sure you don't capture widget instance related records/ grid related records like row, column etc. Keep the update set clean and capture on widget related stuff.
