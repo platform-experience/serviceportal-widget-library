@@ -1,0 +1,40 @@
+<div>
+  <!-- your widget template -->
+    <div class="provider-switcher">
+        <!-- <p class="heading">View By Provider</p> -->
+        <div class="provider-filters col-xs-12 remove-padding scroll-wrapper">
+            <div class="inner-wrapper">
+                <div ng-class="{'active':c.selectedProvider == 'all'}" ng-click="c.switchIt('all')" class="all-filter text-center">
+                    <p class="remove-margin-bottom">All Providers</p>
+                </div>
+                <div ng-class="{'active aws-color':c.selectedProvider == 'aws'}" ng-click="c.switchIt('aws')" class=" each-filter">
+                    <!-- <i class="fa fa-2x fa-apple" aria-hidden="true"></i> -->
+                    <svg class="svg-icon">
+                        <use xlink:href='#icon-aws'></use>
+                    </svg>
+                    <p class="remove-margin-bottom">AWS</p>
+                </div>
+
+                <div ng-click="c.switchIt('azure')" ng-class="{'active azure-color':c.selectedProvider == 'azure'}" class="each-filter border-none">
+                    <svg class="svg-icon">
+                        <use xlink:href='#icon-azure'></use>
+                    </svg>
+                    <p class="remove-margin-bottom">Azure</p>
+
+                </div>
+                <div ng-click="c.switchIt('vmware')" ng-class="{'active vm-color':c.selectedProvider == 'vmware'}" class="each-filter">
+                    <!-- <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i> -->
+                    <!-- <p class="remove-margin-bottom">VMWare</p> -->
+                    <svg class="vm-svg-icon">
+                        <use xlink:href='#icon-vmware'></use>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div ng-if="false" class="header">
+        <p>Current MOnth</p>
+    </div>
+  
+</div>
