@@ -1,14 +1,14 @@
 ## Synopsis: Timeline Widget
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot.png "Timeline Widget")
+![alt text](../images/pe-timeline-screenshot.png "Timeline Widget")
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot-02.png "Timeline Widget - Collapsed")
+![alt text](../images/pe-timeline-screenshot-02.png "Timeline Widget - Collapsed")
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot-03.png "Timeline Widget - In playback mode")
+![alt text](../images/pe-timeline-screenshot-03.png "Timeline Widget - In playback mode")
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot-04.png "Timeline Widget - With the option Show Icons and Show Colors set to True")
+![alt text](../images/pe-timeline-screenshot-04.png "Timeline Widget - With the option Show Icons and Show Colors set to True")
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-timeline-screenshot-05.png "Timeline Widget - With the option Show Colors set to True")
+![alt text](../images/pe-timeline-screenshot-05.png "Timeline Widget - With the option Show Colors set to True")
 
 This widget can be used to quickly obtain an initial implementation of a timeline.
 
