@@ -1,0 +1,45 @@
+[{
+	"name": "interval",
+	"label": "Update Interval",
+	"type": "glide_duration"
+},{
+	"name": "table",
+	"label": "Table",
+	"type": "string"
+}, {
+	"name": "fields",
+	"label": "Field",
+	"type": "field_name"
+}, {
+	"name": "encoded_query",
+	"label": "Encoded Query",
+	"type": "string"
+}, {
+	"name": "script_include",
+	"label": "Script Include",
+	"type": "string"
+}, {
+	"name": "function_name",
+	"label": "Process Function Name",
+	"type": "string"
+}, {
+	"name": "param1",
+	"label": "Parameter 1",
+	"type": "string"
+}, {
+	"name": "exporting",
+	"label": "Enable Export",
+	"type": "choice",
+	"choices": [{
+		"label": "Enable",
+		"value": "true"
+	}, {
+		"label": "Disable",
+		"value": "false"
+	}]
+}, {
+	"name": "advance",
+	"label": "Set your own Chart object",
+	"instructions": "<p>Options available can be seen here <a targe=\"_blank\" href=\"http://api.highcharts.com/highcharts\">Highcharts Doc</a>.<br/>A example of the output is as follows</p><pre><code>{\n\toptions:{\n\t\tplotOptions:{\n\t\t\tpie:{\n\t\t\t\tinnerSize:\"40%\"\n\t\t\t}\n\t\t}\n\t}\n}</code></pre>",
+	"type": "script"
+}]

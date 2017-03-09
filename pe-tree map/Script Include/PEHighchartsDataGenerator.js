@@ -18,25 +18,29 @@ PEHighchartsDataGenerator.prototype = {
 				for (var i = 0; i != dataLength; i++) {
 					var currentData = dataArray[i];
 					var y = 0;
-					switch (currentData) {
-						case "very high":
-							y = scope.randNumber((dataGeneratorGR.max * 0.80), dataGeneratorGR.max, dataGeneratorGR.round_to);
-							break;
-						case "high":
-							y = scope.randNumber((dataGeneratorGR.max * 0.60), (dataGeneratorGR.max * 0.79), dataGeneratorGR.round_to);
-							break;
-						case "medium":
-							y = scope.randNumber((dataGeneratorGR.max * 0.40), (dataGeneratorGR.max * 0.59), dataGeneratorGR.round_to);
-							break;
-						case "low":
-							y = scope.randNumber((dataGeneratorGR.max * 0.20), (dataGeneratorGR.max * 0.39), dataGeneratorGR.round_to);
-							break;
-						case "very low":
-							y = scope.randNumber(dataGeneratorGR.min, (dataGeneratorGR.max * 0.19), dataGeneratorGR.round_to);
-							break;
-						default:
-							y = scope.randNumber(dataGeneratorGR.min, dataGeneratorGR.max, dataGeneratorGR.round_to);
-							break;
+					if (typeof currentData == "string" || !currentData) {
+						switch (currentData) {
+							case "very high":
+								y = scope.randNumber((dataGeneratorGR.max * 0.80), dataGeneratorGR.max, dataGeneratorGR.round_to);
+								break;
+							case "high":
+								y = scope.randNumber((dataGeneratorGR.max * 0.60), (dataGeneratorGR.max * 0.79), dataGeneratorGR.round_to);
+								break;
+							case "medium":
+								y = scope.randNumber((dataGeneratorGR.max * 0.40), (dataGeneratorGR.max * 0.59), dataGeneratorGR.round_to);
+								break;
+							case "low":
+								y = scope.randNumber((dataGeneratorGR.max * 0.20), (dataGeneratorGR.max * 0.39), dataGeneratorGR.round_to);
+								break;
+							case "very low":
+								y = scope.randNumber(dataGeneratorGR.min, (dataGeneratorGR.max * 0.19), dataGeneratorGR.round_to);
+								break;
+							default:
+								y = scope.randNumber(dataGeneratorGR.min, dataGeneratorGR.max, dataGeneratorGR.round_to);
+								break;
+						}
+					} else {
+						y = currentData;
 					}
 					dataArray[i] = {
 						name: dataGeneratorGR.name.toString() + " " + (i + 1),

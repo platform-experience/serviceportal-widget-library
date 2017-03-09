@@ -655,10 +655,12 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
 						"zoomType": "xy",
 						"events": {
 							load: function() {
-								if (options.interval) {
+								if (options.interval && options.interval != "1970-01-01 00:00:00") {
+									var dateTime = moment(options.interval);
+									var time = (dateTime.seconds() + ((dateTime.minutes() + (dateTime.hours() * 60)) * 60)) * 1000;
 									$interval(function() {
 										scope.get();
-									}, (options.interval * 1000));
+									}, time);
 								}
 							}
 						}

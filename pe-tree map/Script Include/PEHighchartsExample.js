@@ -51,43 +51,13 @@ PEHighchartsExample.prototype = {
 		}];
 	},
 	getGaugeDemoData: function(param1, options) {
-		//radius = this.json.decode(radius);
 		var scope = this;
 		var dataSeries = [{
 			"name": "Random Data 1",
 			"data": [{
-					name: "Data Point 1",
-					y: scope.randNumber(1, 100)
-				}
-				/*,{
-								name:"Data Point 2",
-								y:scope.randNumber(1,100)
-							},{
-								name:"Data Point 3",
-								y:scope.randNumber(1,100)
-							},{
-								name:"Data Point 4",
-								y:scope.randNumber(1,100)
-							},{
-								name:"Data Point 5",
-								y:scope.randNumber(1,100)
-							},{
-								name:"Data Point 6",
-								y:scope.randNumber(1,100)
-							},{
-								name:"Data Point 7",
-								y:scope.randNumber(1,100)
-							},{
-								name:"Data Point 8",
-								y:scope.randNumber(1,100)
-							},{
-								name:"Data Point 9",
-								y:scope.randNumber(1,100)
-							},{
-								name:"Data Point 10",
-								y:scope.randNumber(1,100)
-							}*/
-			]
+				name: "Data Point 1",
+				y: scope.randNumber(1, 100)
+			}]
 		}];
 		dataSeries.forEach(function(currentSeries) {
 			currentSeries.data.map(function(data, index, dataArray) {
@@ -97,6 +67,23 @@ PEHighchartsExample.prototype = {
 			});
 		});
 		return dataSeries;
+	},
+	getHeatmapDemoData: function() {
+		var scope = this;
+		var series = [{
+			data: [
+				[0, 0, scope.randNumber(1, 100)],
+				[0, 1, scope.randNumber(1, 100)],
+				[0, 2, scope.randNumber(1, 100)],
+				[1, 0, scope.randNumber(1, 100)],
+				[1, 1, scope.randNumber(1, 100)],
+				[1, 2, scope.randNumber(1, 100)],
+				[2, 0, scope.randNumber(1, 100)],
+				[2, 1, scope.randNumber(1, 100)],
+				[2, 2, scope.randNumber(1, 100)]
+			]
+		}];
+		return series;
 	},
 	randNumber: function(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
