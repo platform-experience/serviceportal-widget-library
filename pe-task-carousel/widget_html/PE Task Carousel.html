@@ -1,0 +1,290 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="left-arrow">
+    <svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>arrow circle left 6.3.3.1 copy@3x</title>
+      <desc>Created with Sketch.</desc>
+      <defs></defs>
+      <g id="Security---SKO-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0.2b---Task-Orchestration---Containment-Collapsed" transform="translate(-108.000000, -143.000000)" stroke-width="0.800000012"
+          stroke="#FFFFFF">
+          <g id="Group-2" transform="translate(93.000000, 131.000000)">
+            <g id="arrow-circle-left-6.3.3.1-copy" transform="translate(19.000000, 19.000000) rotate(-180.000000) translate(-19.000000, -19.000000) translate(15.000000, 12.000000)">
+              <polyline id="Shape" points="0.729166667 13.5492424 7.46941667 7.0040303 0.729166667 0.450757576"></polyline>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </symbol>
+</svg>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="right-arrow">
+    <svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>arrow circle right 6.3.3.1@3x</title>
+      <desc>Created with Sketch.</desc>
+      <defs></defs>
+      <g id="Security---SKO-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0.2b---Task-Orchestration---Containment-Collapsed" transform="translate(-260.000000, -143.000000)" stroke-width="0.800000012"
+          stroke="#FFFFFF">
+          <g id="Group" transform="translate(245.000000, 131.000000)">
+            <g id="arrow-circle-right-6.3.3.1" transform="translate(15.000000, 12.000000)">
+              <polyline id="Shape" points="0.729166667 13.5492424 7.46941667 7.0040303 0.729166667 0.450757576"></polyline>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </symbol>
+</svg>
+
+<div class="row task-carousel">
+  <div class="col-xs-12" ng-swipe-left="c.nextPhase()" ng-swipe-right="c.prevPhase()">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="panel panel-default">
+            <div class="panel-heading panel-analysis">
+              <h3 class="text-center">
+                <svg class="left-arrow" href="#myCarousel" role="button" data-slide="prev" ng-click="c.setDefaults()">
+                  <use xlink:href="#left-arrow"></use>
+                </svg>
+                <span>Analysis</span>
+                <svg class="right-arrow" href="#myCarousel" role="button" data-slide="next" ng-click="c.setDefaults()">
+                  <use xlink:href="#right-arrow"></use>
+                </svg>
+              </h3>
+            </div>
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-5">Task</div>
+                <div class="col-xs-3">Automation</div>
+                <div class="col-xs-4">Time Savings</div>
+              </div>
+            </div>
+            <div class="panel-body panel-body-tasks">
+              <div class="row">
+                <div class="col-xs-5">Incident Creation</div>
+                <div class="col-xs-3 text-center">98%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[0]"></sp-widget>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">Impact Assessment</div>
+                <div class="col-xs-3 text-center">66%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[1]"></sp-widget>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">Forensics Collection</div>
+                <div class="col-xs-3 text-center">71%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[2]"></sp-widget>
+                </div>
+              </div>
+              <div ng-show="c.isToggled == true">
+                <div class="row">
+                  <div class="col-xs-5">Threat Intel Correlation</div>
+                  <div class="col-xs-3 text-center">80%</div>
+                  <div class="col-xs-4 text-center">
+                    <sp-widget widget="c.sparkline[3]"></sp-widget>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-5">Vulnerability Analysis</div>
+                  <div class="col-xs-3 text-center">92%</div>
+                  <div class="col-xs-4 text-center">
+                    <sp-widget widget="c.sparkline[4]"></sp-widget>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer panel-footer-analysis text-center">
+              <span class="show-more" ng-click="c.toggleTasks()">show {{c.toggleState}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="panel panel-default">
+            <div class="panel-heading panel-analysis">
+              <h3 class="text-center">
+                <svg class="left-arrow" href="#myCarousel" role="button" data-slide="prev" ng-click="c.setDefaults()">
+                  <use xlink:href="#left-arrow"></use>
+                </svg>
+                <span>Containment</span>
+                <svg class="right-arrow" href="#myCarousel" role="button" data-slide="next" ng-click="c.setDefaults()">
+                  <use xlink:href="#right-arrow"></use>
+                </svg>
+              </h3>
+            </div>
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-5">Task</div>
+                <div class="col-xs-3">Automation</div>
+                <div class="col-xs-4">Time Savings</div>
+              </div>
+            </div>
+            <div class="panel-body panel-body-tasks">
+              <div class="row">
+                <div class="col-xs-5">Account Management</div>
+                <div class="col-xs-3 text-center">75%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[5]"></sp-widget>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">Firewall Rule Creation</div>
+                <div class="col-xs-3 text-center">97%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[6]"></sp-widget>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">Host Isolation</div>
+                <div class="col-xs-3 text-center">78%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[7]"></sp-widget>
+                </div>
+              </div>
+              <div ng-show="c.isToggled == true">
+                <div class="row">
+                  <div class="col-xs-5">Mail Filter Creation</div>
+                  <div class="col-xs-3 text-center">54%</div>
+                  <div class="col-xs-4 text-center">
+                    <sp-widget widget="c.sparkline[8]"></sp-widget>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-5">Vulnerability Analysis</div>
+                  <div class="col-xs-3 text-center">92%</div>
+                  <div class="col-xs-4 text-center">
+                    <sp-widget widget="c.sparkline[9]"></sp-widget>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer panel-footer-analysis text-center">
+              <span class="show-more" ng-click="c.toggleTasks()">show {{c.toggleState}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="panel panel-default">
+            <div class="panel-heading panel-analysis">
+              <h3 class="text-center">
+                <svg class="left-arrow" href="#myCarousel" role="button" data-slide="prev" ng-click="c.setDefaults()">
+                  <use xlink:href="#left-arrow"></use>
+                </svg>
+                <span>Eradication</span>
+                <svg class="right-arrow" href="#myCarousel" role="button" data-slide="next" ng-click="c.setDefaults()">
+                  <use xlink:href="#right-arrow"></use>
+                </svg>
+              </h3>
+            </div>
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-5">Task</div>
+                <div class="col-xs-3">Automation</div>
+                <div class="col-xs-4">Time Savings</div>
+              </div>
+            </div>
+            <div class="panel-body panel-body-tasks">
+              <div class="row">
+                <div class="col-xs-5">Account Management</div>
+                <div class="col-xs-3 text-center">74%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[10]"></sp-widget>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">Malware Removal</div>
+                <div class="col-xs-3 text-center">51%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[11]"></sp-widget>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">Re-Imaging Systems</div>
+                <div class="col-xs-3 text-center">83%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[12]"></sp-widget>
+                </div>
+              </div>
+              <div ng-show="c.isToggled == true">
+                <div class="row">
+                  <div class="col-xs-5">Restoration from Backup</div>
+                  <div class="col-xs-3 text-center">67%</div>
+                  <div class="col-xs-4 text-center">
+                    <sp-widget widget="c.sparkline[13]"></sp-widget>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-5">Phishing Email Deletion</div>
+                  <div class="col-xs-3 text-center">96%</div>
+                  <div class="col-xs-4 text-center">
+                    <sp-widget widget="c.sparkline[14]"></sp-widget>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer panel-footer-analysis text-center">
+              <span class="show-more" ng-click="c.toggleTasks()">show {{c.toggleState}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="panel panel-default">
+            <div class="panel-heading panel-analysis">
+              <h3 class="text-center">
+                <svg class="left-arrow" href="#myCarousel" role="button" data-slide="prev">
+                  <use xlink:href="#left-arrow"></use>
+                </svg>
+                <span>Recovery</span>
+                <svg class="right-arrow" href="#myCarousel" role="button" data-slide="next">
+                  <use xlink:href="#right-arrow"></use>
+                </svg>
+              </h3>
+            </div>
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-5">Task</div>
+                <div class="col-xs-3">Automation</div>
+                <div class="col-xs-4">Time Savings</div>
+              </div>
+            </div>
+            <div class="panel-body panel-body-tasks">
+              <div class="row">
+                <div class="col-xs-5">Damage Assessment</div>
+                <div class="col-xs-3 text-center">74%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[15]"></sp-widget>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5">Notifications</div>
+                <div class="col-xs-3 text-center">51%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[16]"></sp-widget>
+                </div>
+              </div>
+              <div class="row no-border-bottom">
+                <div class="col-xs-5">Service Recovery</div>
+                <div class="col-xs-3 text-center">83%</div>
+                <div class="col-xs-4 text-center">
+                  <sp-widget widget="c.sparkline[17]"></sp-widget>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
