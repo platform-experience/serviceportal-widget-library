@@ -1,0 +1,60 @@
+$pe-anchor-color: #68acd8 !default;
+$pe-status-color-danger: #ff0050 !default;
+$pe-status-color-normal: #6ee520 !default;
+$pe-status-color-warning: #ffce00 !default;
+
+.status-card {
+  .panel-heading {
+    background-color: #283347;
+    border-bottom: 0;
+    color: #fff;
+    padding: 14px;
+    text-transform: uppercase;
+  }
+  .panel-body {
+    background-color: #1c2432;
+    color: #fff;
+    h4 {
+      font-size: 24px;
+    }
+    .sub-text {
+      color: $pe-anchor-color;
+      font-size: 10px;
+      margin-top: -5px;
+      text-transform: uppercase;
+    }
+  }
+  .status-circle {
+    border-radius: 50%;
+    content: '';
+    height: 10px;
+    margin-left: 5px;
+    position: absolute;
+    top: 23%;
+    width: 10px;
+  }
+  .status-circle-danger {
+    h4 {
+      &:after {
+        @extend .status-circle;
+        background-color: $pe-status-color-danger;
+      }
+    }
+  }
+  .status-circle-normal {
+    h4 {
+      &:after {
+        @extend .status-circle;
+        background-color: $pe-status-color-normal;
+      }
+    }
+  }
+  .status-circle-warning {
+    h4 {
+      &:after {
+        @extend .status-circle;
+        background-color: $pe-status-color-warning;
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-09 00:47:08">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Status Card</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>2fa9adc3db193200b793f2b6ae9619bb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-09 00:47:08</sys_created_on>
+<sys_id>e33aadc3db193200b793f2b6ae9619a1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-09 00:47:08</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_c4987f7edb95320062e479daae9619bc</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function StatusCardController() {
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-anchor-color: #68acd8 !default;&amp;#13;
+$pe-status-color-danger: #ff0050 !default;&amp;#13;
+$pe-status-color-normal: #6ee520 !default;&amp;#13;
+$pe-status-color-warning: #ffce00 !default;&amp;#13;
+&amp;#13;
+.status-card {&amp;#13;
+  .panel-heading {&amp;#13;
+    background-color: #283347;&amp;#13;
+    border-bottom: 0;&amp;#13;
+    color: #fff;&amp;#13;
+    padding: 14px;&amp;#13;
+    text-transform: uppercase;&amp;#13;
+  }&amp;#13;
+  .panel-body {&amp;#13;
+    background-color: #1c2432;&amp;#13;
+    color: #fff;&amp;#13;
+    h4 {&amp;#13;
+      font-size: 24px;&amp;#13;
+    }&amp;#13;
+    .sub-text {&amp;#13;
+      color: $pe-anchor-color;&amp;#13;
+      font-size: 10px;&amp;#13;
+      margin-top: -5px;&amp;#13;
+      text-transform: uppercase;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .status-circle {&amp;#13;
+    border-radius: 50%;&amp;#13;
+    content: '';&amp;#13;
+    height: 10px;&amp;#13;
+    margin-left: 5px;&amp;#13;
+    position: absolute;&amp;#13;
+    top: 23%;&amp;#13;
+    width: 10px;&amp;#13;
+  }&amp;#13;
+  .status-circle-danger {&amp;#13;
+    h4 {&amp;#13;
+      &amp;amp;:after {&amp;#13;
+        @extend .status-circle;&amp;#13;
+        background-color: $pe-status-color-danger;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .status-circle-normal {&amp;#13;
+    h4 {&amp;#13;
+      &amp;amp;:after {&amp;#13;
+        @extend .status-circle;&amp;#13;
+        background-color: $pe-status-color-normal;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .status-circle-warning {&amp;#13;
+    h4 {&amp;#13;
+      &amp;amp;:after {&amp;#13;
+        @extend .status-circle;&amp;#13;
+        background-color: $pe-status-color-warning;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-status-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Status Card&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","label":"Title","type":"string"},{"name":"status_number1","label":"Status Number 1","type":"integer"},{"name":"status_number2","label":"Status Number 2","type":"integer"},{"name":"status_number3","label":"Status Number 3","type":"integer"},{"name":"sub_text1","label":"Sub Text 1","type":"string"},{"name":"sub_text2","label":"Sub Text 2","type":"string"},{"name":"sub_text3","label":"Sub Text 3","type":"string"},{"name":"status_indicator2","label":"Status Indicator 2","type":"choice","choices":[{"label":"danger","value":"danger"},{"label":"normal","value":"normal"},{"label":"warning","value":"warning"}]},{"name":"status_indicator3","label":"Status Indicator 3","type":"choice","choices":[{"label":"danger","value":"danger"},{"label":"normal","value":"normal"},{"label":"warning","value":"warning"}]}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+  options.title = options.title || serverOptions.title || 'Business Critical Services';
+  options.statusIndicator2 = options.status_indicator2 || serverOptions.status_indicator2 || 'warning';
+  options.statusIndicator3 = options.status_indicator3 || serverOptions.status_indicator3 || 'normal';
+  options.statusNumber1 = options.status_number1 || serverOptions.status_number1 || 5;
+  options.statusNumber2 = options.status_number2 || serverOptions.status_number2 || 148;
+  options.statusNumber3 = options.status_number3 || serverOptions.status_number3 || 78;
+  options.subText1 = options.sub_text1 || serverOptions.sub_text1 || 'With Critical Incidents';
+  options.subText2 = options.sub_text2 || serverOptions.sub_text2 || 'Severe Vulnerabilities';
+  options.subText3 = options.sub_text3 || serverOptions.sub_text3 || 'Control Effectiveness';
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 16:30:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c4987f7edb95320062e479daae9619bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;63&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Status Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_c4987f7edb95320062e479daae9619bc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 00:29:39&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row status-card"&gt;
+  &lt;div class="col-xs-12"&gt;
+    &lt;div class="panel panel-default"&gt;
+      &lt;div class="panel-heading"&gt;{{::options.title}}&lt;/div&gt;
+      &lt;div class="panel-body"&gt;
+        &lt;div class="row text-center"&gt;
+          &lt;div class="col-xs-4"&gt;
+            &lt;h4&gt;{{::options.statusNumber1}}&lt;/h4&gt;
+            &lt;p class="sub-text"&gt;{{::options.subText1}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="col-xs-4"&gt;
+            &lt;div class="status-circle-{{::options.statusIndicator2}}"&gt;
+              &lt;h4&gt;{{::options.statusNumber2}}&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;p class="sub-text"&gt;{{::options.subText2}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="col-xs-4"&gt;
+            &lt;div class="status-circle-{{::options.statusIndicator3}}"&gt;
+              &lt;h4&gt;{{::options.statusNumber3}}%&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;p class="sub-text"&gt;{{::options.subText3}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Status Card">e33aadc3db193200b793f2b6ae9619a1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-09 00:47:08</sys_created_on>
+<sys_id>673aadc3db193200b793f2b6ae9619a1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-09 00:47:08</sys_updated_on>
+<table/>
+<target_name>PE Status Card</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
