@@ -1,0 +1,46 @@
+[{
+	"name": "bar_type",
+	"label": "Type",
+	"type": "choice",
+	"choices": [{
+		"label": "Bar",
+		"value": "bar"
+	}, {
+		"label": "Column",
+		"value": "column"
+	}]
+},{
+	"instructions": "<p>Number of seconds for each refresh</p>",
+	"name": "interval",
+	"label": "Update Interval(seconds)",
+	"type": "integer"
+}, {
+	"name": "table",
+	"label": "Table",
+	"type": "string"
+}, {
+	"name": "fields",
+	"label": "Fields",
+	"type": "field_list"
+}, {
+	"name": "encoded_query",
+	"label": "Encoded Query",
+	"type": "string"
+}, {
+	"name": "script_include",
+	"label": "Script Include",
+	"type": "string"
+}, {
+	"name": "function_name",
+	"label": "Process Function Name",
+	"type": "string"
+}, {
+	"name": "param1",
+	"label": "Parameter 1",
+	"type": "string"
+}, {
+	"name": "advance",
+	"label": "Set your own Chart object",
+	"instructions": "<p>All items in THIS JSON object will override any above selected options. <br/> Options available can be seen here <a targe=\"_blank\" href=\"http://api.highcharts.com/highcharts\">Highcharts Doc</a>.<br/>A example of the output is as follows</p><pre><code>{\n\ttitle:{\n\t\ttext:\"hello&nbspworld\"\n\t}\n}</code></pre>",
+	"type": "script"
+}]
