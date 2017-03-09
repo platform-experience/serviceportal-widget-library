@@ -3,7 +3,7 @@ PEHighchartsExample.prototype = {
 	initialize: function(request, response) {
 		this.json = new JSON();
 	},
-	getDemoData: function(param1, options) {
+	getDemoData: function(param1) {
 		var scope = this;
 		return [{
 			"name": "Random Data 1",
@@ -30,7 +30,7 @@ PEHighchartsExample.prototype = {
 			]
 		}];
 	},
-	getPieDemoData: function(param1, options) {
+	getPieDemoData: function(param1) {
 		var scope = this;
 		return [{
 			"name": "Random Data 1",
@@ -50,7 +50,7 @@ PEHighchartsExample.prototype = {
 			]
 		}];
 	},
-	getGaugeDemoData: function(param1, options) {
+	getGaugeDemoData: function(param1) {
 		var scope = this;
 		var dataSeries = [{
 			"name": "Random Data 1",
@@ -59,16 +59,9 @@ PEHighchartsExample.prototype = {
 				y: scope.randNumber(1, 100)
 			}]
 		}];
-		dataSeries.forEach(function(currentSeries) {
-			currentSeries.data.map(function(data, index, dataArray) {
-				var width = (options.outer_radius - options.inner_radius) / dataArray.length;
-				data.innerRadius = index * width + options.inner_radius;
-				data.radius = ((index + 1) == dataArray.length) ? options.outer_radius : ((index + 1) * width + options.inner_radius) - 1;
-			});
-		});
 		return dataSeries;
 	},
-	getHeatmapDemoData: function() {
+	getHeatmapDemoData: function(param1) {
 		var scope = this;
 		var series = [{
 			data: [
@@ -81,6 +74,50 @@ PEHighchartsExample.prototype = {
 				[2, 0, scope.randNumber(1, 100)],
 				[2, 1, scope.randNumber(1, 100)],
 				[2, 2, scope.randNumber(1, 100)]
+			]
+		}];
+		return series;
+	},
+	getTreemapDemoData: function(param1) {
+		var scope = this;
+		var series = [{
+			data: [
+				{
+					name:"A", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"B", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"C", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"D",
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"E", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"F", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"G", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"H", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"I", 
+					value:scope.randNumber(1, 100)
+				}
 			]
 		}];
 		return series;

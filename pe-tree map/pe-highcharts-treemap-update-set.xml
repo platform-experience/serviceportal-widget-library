@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-09 20:42:37">
+<unload unload_date="2017-03-09 20:36:41">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE Highcharts - Bar Chart</name>
+<name>PE Highcharts - Treemap</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>11f4e0cbdb1932002e5df2b6ae96199a</remote_sys_id>
+<remote_sys_id>5cf4b11bdbd532002e5df2b6ae961918</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>a3dbb59fdbd532002e5df2b6ae9619c3</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>2c8ab95fdbd532002e5df2b6ae96190b</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,54 +32,68 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_14c5b087dbd53200f687dfea5e9619b8</name>
+<name>m2m_sp_dependency_js_include_2c96fd9bdbd532002e5df2b6ae96194f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>400</order><sp_dependency display_value="PE Highcharts 5.0.5 Treemap">fc86bd9bdbd532002e5df2b6ae961959</sp_dependency><sp_js_include display_value="PE Highcharts-Treemap">7d86bd9bdbd532002e5df2b6ae9619c6</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:19:29</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2c96fd9bdbd532002e5df2b6ae96194f</sys_id><sys_mod_count>3</sys_mod_count><sys_name>PE Highcharts 5.0.5 Treemap.PE Highcharts-Treemap</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_2c96fd9bdbd532002e5df2b6ae96194f</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:20:16</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>208ab95fdbd532002e5df2b6ae96190c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5 Treemap.PE Highcharts-Treemap</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_c305719bdbd532002e5df2b6ae9619f4</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, HighchartsConfigService) {
 	var c = this;
-	var chartType = c.options.bar_type;
-	var hcs = new HighchartsConfigService(c.options, chartType, c.data);
-	c.chartConfig = hcs.getChartConfig();
-	hcs.get();
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{&amp;#13;
-	"data": [&amp;#13;
-		["Jan", 31],&amp;#13;
-		["Feb", 28],&amp;#13;
-		["Mar", 31],&amp;#13;
-		["Apr", 30],&amp;#13;
-		["May", 31],&amp;#13;
-		["Jun", 30],&amp;#13;
-		["Jul", 31],&amp;#13;
-		["Aug", 31],&amp;#13;
-		["Sep", 30],&amp;#13;
-		["Oct", 31],&amp;#13;
-		["Nov", 30],&amp;#13;
-		["Dec", 31]&amp;#13;
-	]&amp;#13;
-}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-bar-chart&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Bar Chart&lt;/name&gt;&lt;option_schema&gt;[{"name":"bar_type","label":"Type","type":"choice","choices":[{"label":"Bar","value":"bar"},{"label":"Column","value":"column"}]},{"name":"interval","label":"Update Interval","type":"glide_duration"},{"name":"table","label":"Table","type":"string"},{"name":"fields","label":"Fields","type":"field_list"},{"name":"encoded_query","label":"Encoded Query","type":"string"},{"name":"script_include","label":"Script Include","type":"string"},{"name":"function_name","label":"Process Function Name","type":"string"},{"name":"param1","label":"Parameter 1","type":"string"},{"name":"advance","label":"Set your own Chart object","instructions":"&amp;lt;p&amp;gt;All items in THIS JSON object will override any above selected options. &amp;lt;br/&amp;gt; Options available can be seen here &amp;lt;a targe=\"_blank\" href=\"http://api.highcharts.com/highcharts\"&amp;gt;Highcharts Doc&amp;lt;/a&amp;gt;.&amp;lt;br/&amp;gt;A example of the output is as follows&amp;lt;/p&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;{\n\ttitle:{\n\t\ttext:\"hello&amp;amp;nbspworld\"\n\t}\n}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;","type":"script"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	var hcsTreemap = new HighchartsConfigService(c.options, "treemap", c.data);
+	c.chartConfig = hcsTreemap.getChartConfig();
+	hcsTreemap.get();
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-treemap&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Treemap&lt;/name&gt;&lt;option_schema&gt;[{"name":"interval","label":"Update Interval","type":"glide_duration"},{"name":"table","label":"Table","type":"string"},{"name":"fields","label":"Fields","type":"field_list"},{"name":"encoded_query","label":"Encoded Query","type":"string"},{"name":"script_include","label":"Script Include","type":"string"},{"name":"function_name","label":"Process Function Name","type":"string"},{"name":"param1","label":"Parameter 1","type":"string"},{"name":"advance","label":"Set your own Chart object","instructions":"&amp;lt;p&amp;gt;Options available can be seen here &amp;lt;a targe=\"_blank\" href=\"http://api.highcharts.com/highcharts\"&amp;gt;Highcharts Doc&amp;lt;/a&amp;gt;.&amp;lt;br/&amp;gt;A example of the output is as follows&amp;lt;/p&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;{\n\ttitle:{\n\t\ttext:\"hello&amp;amp;nbspworld\"\n\t}\n}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;","type":"script"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
 	var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-	options.bar_type = options.bar_type || serverOptions.bar_type || "bar";
 	options.interval = options.interval || serverOptions.interval;
 	options.table = options.table || serverOptions.table;
 	options.fields = options.fields || serverOptions.fields;
 	options.encoded_query = options.encoded_query || serverOptions.encoded_query;
 	options.script_include = options.script_include || serverOptions.script_include || "PEHighchartsExample";
-	options.function_name = options.function_name || serverOptions.function_name || "getDemoData";
+	options.function_name = options.function_name || serverOptions.function_name || "getTreemapDemoData";
 	options.param1 = options.param1 || serverOptions.param1;
 	options.advance = options.advance || serverOptions.advance || JSON.stringify({
 		"title": {
-			"text": "Bar Chart"
+			"text": "Treemap"
+		},
+		"options": {
+			"plotOptions": {
+				"series": {
+					"dataLabels": {
+						"enabled": true
+					}
+				}
+			}
 		}
-	})
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 20:57:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;14c5b087dbd53200f687dfea5e9619b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;49&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Bar Chart&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_14c5b087dbd53200f687dfea5e9619b8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 17:10:16&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;highchart config="c.chartConfig" class="pe-highchart-class pe-highchart-bar-chart"&gt;&lt;/highchart&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+	});
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 20:12:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c305719bdbd532002e5df2b6ae9619f4&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Treemap&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_c305719bdbd532002e5df2b6ae9619f4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 20:22:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;highchart config="c.chartConfig" class="pe-highchart-class pe-highchart-treemap"&gt;&lt;/highchart&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>23dbb59fdbd532002e5df2b6ae9619c6</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>208ab95fdbd532002e5df2b6ae96190f</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE Bar Chart</target_name>
+<target_name>PE Treemap</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -90,18 +104,18 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_js_include_64940147db5932002e5df2b6ae961981</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts No Data</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>64940147db5932002e5df2b6ae961981</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts No Data</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts No Data">26c3854bdbd53200f687dfea5e9619ac</sys_ui_script><sys_update_name>sp_js_include_64940147db5932002e5df2b6ae961981</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:41</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sp_js_include_6c74cd07db5932002e5df2b6ae961982</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE highcharts-more</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6c74cd07db5932002e5df2b6ae961982</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE highcharts-more</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE highcharts-more">3793058bdbd53200f687dfea5e9619fb</sys_ui_script><sys_update_name>sp_js_include_6c74cd07db5932002e5df2b6ae961982</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:06</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>27dbb59fdbd532002e5df2b6ae9619c5</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>248ab95fdbd532002e5df2b6ae96190e</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE Highcharts No Data</target_name>
+<target_name>PE highcharts-more</target_name>
 <type>JS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -112,18 +126,18 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_widget_dependency_99b40147db5932002e5df2b6ae961987</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE HighchartsNG">c722c9c3db5932002e5df2b6ae96193b</sp_dependency><sp_widget display_value="PE Bar Chart">14c5b087dbd53200f687dfea5e9619b8</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:03:08</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>99b40147db5932002e5df2b6ae961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG.PE Bar Chart</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_99b40147db5932002e5df2b6ae961987</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:03:08</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sp_dependency_c722c9c3db5932002e5df2b6ae96193b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>pe-highcharts-ng</module><name>PE HighchartsNG</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 21:52:03</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c722c9c3db5932002e5df2b6ae96193b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c722c9c3db5932002e5df2b6ae96193b</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 21:52:03</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>2bdbb59fdbd532002e5df2b6ae9619c4</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>288ab95fdbd532002e5df2b6ae96190d</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE HighchartsNG.PE Bar Chart</target_name>
+<target_name>PE HighchartsNG</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -134,18 +148,92 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_ba94cd07db5932002e5df2b6ae9619f5</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>300</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE Highcharts No Data">64940147db5932002e5df2b6ae961981</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ba94cd07db5932002e5df2b6ae9619f5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Highcharts No Data</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_ba94cd07db5932002e5df2b6ae9619f5</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:46</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sys_ui_script_d836f99bdbd532002e5df2b6ae961920</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts-Treemap&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
+ Highcharts JS v5.0.9 (2017-03-08)
+
+ (c) 2014 Highsoft AS
+ Authors: Jon Arild Nygard / Oystein Moseng
+
+ License: www.highcharts.com/license
+*/
+(function(q){"object"===typeof module&amp;&amp;module.exports?module.exports=q:q(Highcharts)})(function(q){(function(g){var q=g.seriesType,l=g.seriesTypes,E=g.map,v=g.merge,y=g.extend,z=g.noop,p=g.each,x=g.grep,F=g.isNumber,A=g.isString,k=g.pick,u=g.Series,G=g.stableSort,B=g.Color,H=function(a,b,c){var d;c=c||this;for(d in a)a.hasOwnProperty(d)&amp;&amp;b.call(c,a[d],d,a)},C=function(a,b,c,d){d=d||this;a=a||[];p(a,function(e,f){c=b.call(d,c,e,f,a)});return c},w=function(a,b,c){c=c||this;a=b.call(c,a);!1!==a&amp;&amp;w(a,
+b,c)};q("treemap","scatter",{showInLegend:!1,marker:!1,dataLabels:{enabled:!0,defer:!1,verticalAlign:"middle",formatter:function(){return this.point.name||this.point.id},inside:!0},tooltip:{headerFormat:"",pointFormat:"\x3cb\x3e{point.name}\x3c/b\x3e: {point.value}\x3c/b\x3e\x3cbr/\x3e"},ignoreHiddenPoint:!0,layoutAlgorithm:"sliceAndDice",layoutStartingDirection:"vertical",alternateStartingDirection:!1,levelIsConstant:!0,drillUpButton:{position:{align:"right",x:-10,y:10}},borderColor:"#e6e6e6",borderWidth:1,
+opacity:.15,states:{hover:{borderColor:"#999999",brightness:l.heatmap?0:.1,opacity:.75,shadow:!1}}},{pointArrayMap:["value"],axisTypes:l.heatmap?["xAxis","yAxis","colorAxis"]:["xAxis","yAxis"],optionalAxis:"colorAxis",getSymbol:z,parallelArrays:["x","y","value","colorValue"],colorKey:"colorValue",translateColors:l.heatmap&amp;&amp;l.heatmap.prototype.translateColors,trackerGroups:["group","dataLabelsGroup"],getListOfParents:function(a,b){a=C(a,function(a,b,e){b=k(b.parent,"");void 0===a[b]&amp;&amp;(a[b]=[]);a[b].push(e);
+return a},{});H(a,function(a,d,e){""!==d&amp;&amp;-1===g.inArray(d,b)&amp;&amp;(p(a,function(a){e[""].push(a)}),delete e[d])});return a},getTree:function(){var a=E(this.data,function(a){return a.id}),a=this.getListOfParents(this.data,a);this.nodeMap=[];return this.buildNode("",-1,0,a,null)},init:function(a,b){u.prototype.init.call(this,a,b);this.options.allowDrillToNode&amp;&amp;g.addEvent(this,"click",this.onClickDrillToNode)},buildNode:function(a,b,c,d,e){var f=this,h=[],D=f.points[b],m;p(d[a]||[],function(b){m=f.buildNode(f.points[b].id,
+b,c+1,d,a);h.push(m)});b={id:a,i:b,children:h,level:c,parent:e,visible:!1};f.nodeMap[b.id]=b;D&amp;&amp;(D.node=b);return b},setTreeValues:function(a){var b=this,c=b.options,d=0,e=[],f,h=b.points[a.i];w(b.nodeMap[b.rootNode],function(a){var c=!1,e=a.parent;a.visible=!0;if(e||""===e)c=b.nodeMap[e];return c});w(b.nodeMap[b.rootNode].children,function(a){var b=!1;p(a,function(a){a.visible=!0;a.children.length&amp;&amp;(b=(b||[]).concat(a.children))});return b});p(a.children,function(a){a=b.setTreeValues(a);e.push(a);
+a.ignore?w(a.children,function(a){var b=!1;p(a,function(a){y(a,{ignore:!0,isLeaf:!1,visible:!1});a.children.length&amp;&amp;(b=(b||[]).concat(a.children))});return b}):d+=a.val});G(e,function(a,b){return a.sortIndex-b.sortIndex});f=k(h&amp;&amp;h.options.value,d);h&amp;&amp;(h.value=f);y(a,{children:e,childrenTotal:d,ignore:!(k(h&amp;&amp;h.visible,!0)&amp;&amp;0&lt;f),isLeaf:a.visible&amp;&amp;!d,levelDynamic:c.levelIsConstant?a.level:a.level-b.nodeMap[b.rootNode].level,name:k(h&amp;&amp;h.name,""),sortIndex:k(h&amp;&amp;h.sortIndex,-f),val:f});return a},calculateChildrenAreas:function(a,
+b){var c=this,d=c.options,e=this.levelMap[a.levelDynamic+1],f=k(c[e&amp;&amp;e.layoutAlgorithm]&amp;&amp;e.layoutAlgorithm,d.layoutAlgorithm),h=d.alternateStartingDirection,g=[];a=x(a.children,function(a){return!a.ignore});e&amp;&amp;e.layoutStartingDirection&amp;&amp;(b.direction="vertical"===e.layoutStartingDirection?0:1);g=c[f](b,a);p(a,function(a,e){e=g[e];a.values=v(e,{val:a.childrenTotal,direction:h?1-b.direction:b.direction});a.pointValues=v(e,{x:e.x/c.axisRatio,width:e.width/c.axisRatio});a.children.length&amp;&amp;c.calculateChildrenAreas(a,
+a.values)})},setPointValues:function(){var a=this,b=a.xAxis,c=a.yAxis;p(a.points,function(d){var e=d.node,f=e.pointValues,h,g,m;m=(a.pointAttribs(d)["stroke-width"]||0)%2/2;f&amp;&amp;e.visible?(e=Math.round(b.translate(f.x,0,0,0,1))-m,h=Math.round(b.translate(f.x+f.width,0,0,0,1))-m,g=Math.round(c.translate(f.y,0,0,0,1))-m,f=Math.round(c.translate(f.y+f.height,0,0,0,1))-m,d.shapeType="rect",d.shapeArgs={x:Math.min(e,h),y:Math.min(g,f),width:Math.abs(h-e),height:Math.abs(f-g)},d.plotX=d.shapeArgs.x+d.shapeArgs.width/
+2,d.plotY=d.shapeArgs.y+d.shapeArgs.height/2):(delete d.plotX,delete d.plotY)})},setColorRecursive:function(a,b,c){var d=this,e,f;a&amp;&amp;(e=d.points[a.i],f=d.levelMap[a.levelDynamic],b=k(e&amp;&amp;e.options.color,f&amp;&amp;f.color,b,d.color),c=k(e&amp;&amp;e.options.colorIndex,f&amp;&amp;f.colorIndex,c,d.colorIndex),e&amp;&amp;(e.color=b,e.colorIndex=c),a.children.length&amp;&amp;p(a.children,function(a){d.setColorRecursive(a,b,c)}))},algorithmGroup:function(a,b,c,d){this.height=a;this.width=b;this.plot=d;this.startDirection=this.direction=c;this.lH=
+this.nH=this.lW=this.nW=this.total=0;this.elArr=[];this.lP={total:0,lH:0,nH:0,lW:0,nW:0,nR:0,lR:0,aspectRatio:function(a,b){return Math.max(a/b,b/a)}};this.addElement=function(a){this.lP.total=this.elArr[this.elArr.length-1];this.total+=a;0===this.direction?(this.lW=this.nW,this.lP.lH=this.lP.total/this.lW,this.lP.lR=this.lP.aspectRatio(this.lW,this.lP.lH),this.nW=this.total/this.height,this.lP.nH=this.lP.total/this.nW,this.lP.nR=this.lP.aspectRatio(this.nW,this.lP.nH)):(this.lH=this.nH,this.lP.lW=
+this.lP.total/this.lH,this.lP.lR=this.lP.aspectRatio(this.lP.lW,this.lH),this.nH=this.total/this.width,this.lP.nW=this.lP.total/this.nH,this.lP.nR=this.lP.aspectRatio(this.lP.nW,this.nH));this.elArr.push(a)};this.reset=function(){this.lW=this.nW=0;this.elArr=[];this.total=0}},algorithmCalcPoints:function(a,b,c,d){var e,f,h,g,m=c.lW,k=c.lH,n=c.plot,l,r=0,t=c.elArr.length-1;b?(m=c.nW,k=c.nH):l=c.elArr[c.elArr.length-1];p(c.elArr,function(a){if(b||r&lt;t)0===c.direction?(e=n.x,f=n.y,h=m,g=a/h):(e=n.x,f=
+n.y,g=k,h=a/g),d.push({x:e,y:f,width:h,height:g}),0===c.direction?n.y+=g:n.x+=h;r+=1});c.reset();0===c.direction?c.width-=m:c.height-=k;n.y=n.parent.y+(n.parent.height-c.height);n.x=n.parent.x+(n.parent.width-c.width);a&amp;&amp;(c.direction=1-c.direction);b||c.addElement(l)},algorithmLowAspectRatio:function(a,b,c){var d=[],e=this,f,g={x:b.x,y:b.y,parent:b},k=0,m=c.length-1,l=new this.algorithmGroup(b.height,b.width,b.direction,g);p(c,function(c){f=c.val/b.val*b.height*b.width;l.addElement(f);l.lP.nR&gt;l.lP.lR&amp;&amp;
+e.algorithmCalcPoints(a,!1,l,d,g);k===m&amp;&amp;e.algorithmCalcPoints(a,!0,l,d,g);k+=1});return d},algorithmFill:function(a,b,c){var d=[],e,f=b.direction,g=b.x,k=b.y,m=b.width,l=b.height,n,q,r,t;p(c,function(c){e=c.val/b.val*b.height*b.width;n=g;q=k;0===f?(t=l,r=e/t,m-=r,g+=r):(r=m,t=e/r,l-=t,k+=t);d.push({x:n,y:q,width:r,height:t});a&amp;&amp;(f=1-f)});return d},strip:function(a,b){return this.algorithmLowAspectRatio(!1,a,b)},squarified:function(a,b){return this.algorithmLowAspectRatio(!0,a,b)},sliceAndDice:function(a,
+b){return this.algorithmFill(!0,a,b)},stripes:function(a,b){return this.algorithmFill(!1,a,b)},translate:function(){var a=this.rootNode=k(this.rootNode,this.options.rootId,""),b,c;u.prototype.translate.call(this);this.levelMap=C(this.options.levels,function(a,b){a[b.level]=b;return a},{});c=this.tree=this.getTree();b=this.nodeMap[a];""===a||b&amp;&amp;b.children.length||(this.drillToNode("",!1),a=this.rootNode,b=this.nodeMap[a]);this.setTreeValues(c);this.axisRatio=this.xAxis.len/this.yAxis.len;this.nodeMap[""].pointValues=
+a={x:0,y:0,width:100,height:100};this.nodeMap[""].values=a=v(a,{width:a.width*this.axisRatio,direction:"vertical"===this.options.layoutStartingDirection?0:1,val:c.val});this.calculateChildrenAreas(c,a);this.colorAxis?this.translateColors():this.options.colorByPoint||this.setColorRecursive(this.tree);this.options.allowDrillToNode&amp;&amp;(b=b.pointValues,this.xAxis.setExtremes(b.x,b.x+b.width,!1),this.yAxis.setExtremes(b.y,b.y+b.height,!1),this.xAxis.setScale(),this.yAxis.setScale());this.setPointValues()},
+drawDataLabels:function(){var a=this,b=x(a.points,function(a){return a.node.visible}),c,d;p(b,function(b){d=a.levelMap[b.node.levelDynamic];c={style:{}};b.node.isLeaf||(c.enabled=!1);d&amp;&amp;d.dataLabels&amp;&amp;(c=v(c,d.dataLabels),a._hasPointLabels=!0);b.shapeArgs&amp;&amp;(c.style.width=b.shapeArgs.width,b.dataLabel&amp;&amp;b.dataLabel.css({width:b.shapeArgs.width+"px"}));b.dlOptions=v(c,b.options.dataLabels)});u.prototype.drawDataLabels.call(this)},alignDataLabel:function(a){l.column.prototype.alignDataLabel.apply(this,
+arguments);a.dataLabel&amp;&amp;a.dataLabel.attr({zIndex:a.node.zIndex+1})},pointAttribs:function(a,b){var c=this.levelMap[a.node.levelDynamic]||{},d=this.options,e=b&amp;&amp;d.states[b]||{},f=a.getClassName();a={stroke:a.borderColor||c.borderColor||e.borderColor||d.borderColor,"stroke-width":k(a.borderWidth,c.borderWidth,e.borderWidth,d.borderWidth),dashstyle:a.borderDashStyle||c.borderDashStyle||e.borderDashStyle||d.borderDashStyle,fill:a.color||this.color};-1!==f.indexOf("highcharts-above-level")?(a.fill="none",
+a["stroke-width"]=0):-1!==f.indexOf("highcharts-internal-node-interactive")?(b=k(e.opacity,d.opacity),a.fill=B(a.fill).setOpacity(b).get(),a.cursor="pointer"):-1!==f.indexOf("highcharts-internal-node")?a.fill="none":b&amp;&amp;(a.fill=B(a.fill).brighten(e.brightness).get());return a},drawPoints:function(){var a=this,b=x(a.points,function(a){return a.node.visible});p(b,function(b){var c="levelGroup-"+b.node.levelDynamic;a[c]||(a[c]=a.chart.renderer.g(c).attr({zIndex:1E3-b.node.levelDynamic}).add(a.group));
+b.group=a[c]});l.column.prototype.drawPoints.call(this);a.options.allowDrillToNode&amp;&amp;p(b,function(b){b.graphic&amp;&amp;(b.drillId=a.options.interactByLeaf?a.drillToByLeaf(b):a.drillToByGroup(b))})},onClickDrillToNode:function(a){var b=(a=a.point)&amp;&amp;a.drillId;A(b)&amp;&amp;(a.setState(""),this.drillToNode(b))},drillToByGroup:function(a){var b=!1;1!==a.node.level-this.nodeMap[this.rootNode].level||a.node.isLeaf||(b=a.id);return b},drillToByLeaf:function(a){var b=!1;if(a.node.parent!==this.rootNode&amp;&amp;a.node.isLeaf)for(a=
+a.node;!b;)a=this.nodeMap[a.parent],a.parent===this.rootNode&amp;&amp;(b=a.id);return b},drillUp:function(){var a=this.nodeMap[this.rootNode];a&amp;&amp;A(a.parent)&amp;&amp;this.drillToNode(a.parent)},drillToNode:function(a,b){var c=this.nodeMap[a];this.rootNode=a;""===a?this.drillUpButton=this.drillUpButton.destroy():this.showDrillUpButton(c&amp;&amp;c.name||a);this.isDirty=!0;k(b,!0)&amp;&amp;this.chart.redraw()},showDrillUpButton:function(a){var b=this;a=a||"\x3c Back";var c=b.options.drillUpButton,d,e;c.text&amp;&amp;(a=c.text);this.drillUpButton?
+this.drillUpButton.attr({text:a}).align():(e=(d=c.theme)&amp;&amp;d.states,this.drillUpButton=this.chart.renderer.button(a,null,null,function(){b.drillUp()},d,e&amp;&amp;e.hover,e&amp;&amp;e.select).attr({align:c.position.align,zIndex:7}).add().align(c.position,!1,c.relativeTo||"plotBox"))},buildKDTree:z,drawLegendSymbol:g.LegendSymbolMixin.drawRectangle,getExtremes:function(){u.prototype.getExtremes.call(this,this.colorValueData);this.valueMin=this.dataMin;this.valueMax=this.dataMax;u.prototype.getExtremes.call(this)},
+getExtremesFromAll:!0,bindAxes:function(){var a={endOnTick:!1,gridLineWidth:0,lineWidth:0,min:0,dataMin:0,minPadding:0,max:100,dataMax:100,maxPadding:0,startOnTick:!1,title:null,tickPositions:[]};u.prototype.bindAxes.call(this);g.extend(this.yAxis.options,a);g.extend(this.xAxis.options,a)}},{getClassName:function(){var a=g.Point.prototype.getClassName.call(this),b=this.series,c=b.options;this.node.level&lt;=b.nodeMap[b.rootNode].level?a+=" highcharts-above-level":this.node.isLeaf||k(c.interactByLeaf,
+!c.allowDrillToNode)?this.node.isLeaf||(a+=" highcharts-internal-node"):a+=" highcharts-internal-node-interactive";return a},isValid:function(){return F(this.value)},setState:function(a){g.Point.prototype.setState.call(this,a);this.graphic&amp;&amp;this.graphic.attr({zIndex:"hover"===a?1:0})},setVisible:l.pie.prototype.pointClass.prototype.setVisible})})(q)});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 20:18:35&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;d836f99bdbd532002e5df2b6ae961920&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts-Treemap&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_d836f99bdbd532002e5df2b6ae961920&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 20:18:35&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>2fdbb59fdbd532002e5df2b6ae9619c3</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>288ab95fdbd532002e5df2b6ae961910</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE Highcharts 5.0.5.PE Highcharts No Data</target_name>
+<target_name>PE Highcharts-Treemap</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_query_parameter_9acc160bdbd932002e5df2b6ae9619f8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>HighchartsHelper</example_value><name>script_include</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:28:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9acc160bdbd932002e5df2b6ae9619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>script_include</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_9acc160bdbd932002e5df2b6ae9619f8</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:28:12</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>288ab95fdbd532002e5df2b6ae9619e4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>script_include</target_name>
+<type>Scripted REST Query Parameter</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_bd340d07db5932002e5df2b6ae9619ec</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE HighchartsNG">c722c9c3db5932002e5df2b6ae96193b</sp_dependency><sp_js_include display_value="PE highcharts-ng">b3244d07db5932002e5df2b6ae96197e</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:00:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bd340d07db5932002e5df2b6ae9619ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG.PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_bd340d07db5932002e5df2b6ae9619ec</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:00:59</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>2c8ab95fdbd532002e5df2b6ae96190c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PE HighchartsNG.PE highcharts-ng</target_name>
 <type>Dependency JS Includes</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -1281,14 +1369,14 @@
 		})
 	})(w)
 });]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:58:23&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;3793058bdbd53200f687dfea5e9619fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE highcharts-more&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_3793058bdbd53200f687dfea5e9619fb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:26&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>2fdbb59fdbd532002e5df2b6ae9619c6</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>2c8ab95fdbd532002e5df2b6ae96190f</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
 <target_name>PE highcharts-more</target_name>
 <type>UI Script</type>
@@ -1301,216 +1389,18 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_ws_query_parameter_dfdc560bdbd932002e5df2b6ae961979</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value/><name>param1</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:28:23</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>dfdc560bdbd932002e5df2b6ae961979</sys_id><sys_mod_count>0</sys_mod_count><sys_name>param1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_dfdc560bdbd932002e5df2b6ae961979</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:28:23</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sp_js_include_64940147db5932002e5df2b6ae961981</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts No Data</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>64940147db5932002e5df2b6ae961981</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts No Data</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts No Data">26c3854bdbd53200f687dfea5e9619ac</sys_ui_script><sys_update_name>sp_js_include_64940147db5932002e5df2b6ae961981</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:41</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>37dbb59fdbd532002e5df2b6ae9619c8</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>608ab95fdbd532002e5df2b6ae96190e</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
-<table/>
-<target_name>param1</target_name>
-<type>Scripted REST Query Parameter</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ws_definition_226c520bdbd932002e5df2b6ae961978</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/pe_highcharts_helper</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>PE Highcharts Helper</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>pe_highcharts_helper</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:26:20</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>226c520bdbd932002e5df2b6ae961978</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts Helper</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_226c520bdbd932002e5df2b6ae961978</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:26:20</sys_updated_on></sys_ws_definition></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>3bdbb59fdbd532002e5df2b6ae9619c7</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
-<table/>
-<target_name>PE Highcharts Helper</target_name>
-<type>Scripted REST API</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_js_include_6043c507db5932002e5df2b6ae96196c</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts 5_0_5</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 21:56:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6043c507db5932002e5df2b6ae96196c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5_0_5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts 5_0_5">5752058bdbd53200f687dfea5e9619f8</sys_ui_script><sys_update_name>sp_js_include_6043c507db5932002e5df2b6ae96196c</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 21:56:59</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>63dbb59fdbd532002e5df2b6ae9619c5</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5_0_5</target_name>
-<type>JS Include</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_widget_dependency_91b40147db5932002e5df2b6ae961987</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_widget display_value="PE Bar Chart">14c5b087dbd53200f687dfea5e9619b8</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:03:08</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>91b40147db5932002e5df2b6ae961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Bar Chart</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_91b40147db5932002e5df2b6ae961987</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:03:08</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>67dbb59fdbd532002e5df2b6ae9619c4</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5.0.5.PE Bar Chart</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_dependency_js_include_ba84cd07db5932002e5df2b6ae961987</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE Highcharts Export">9084cd07db5932002e5df2b6ae9619f0</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:25</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ba84cd07db5932002e5df2b6ae961987</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Highcharts Export</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_ba84cd07db5932002e5df2b6ae961987</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:30</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>6bdbb59fdbd532002e5df2b6ae9619c3</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5.0.5.PE Highcharts Export</target_name>
-<type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_script_26c3854bdbd53200f687dfea5e9619ac</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts No Data&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
- Highcharts JS v4.2.6 (2016-08-02)
- Plugin for displaying a message when there is no data visible in chart.
-
- (c) 2010-2016 Highsoft AS
- Author: Oystein Moseng
- License: www.highcharts.com/license
-*/
-(function(a) {
-	typeof module === "object" &amp;&amp; module.exports ? module.exports = a : a(Highcharts)
-})(function(a) {
-	function h() {
-		return !!this.points.length
-	}
-
-	function d() {
-		this.hasData() ? this.hideNoData() : this.showNoData()
-	}
-	var e = a.seriesTypes,
-		c = a.Chart.prototype,
-		f = a.getOptions(),
-		g = a.extend,
-		i = a.each;
-	g(f.lang, {
-		noData: "No data to display"
-	});
-	f.noData = {
-		position: {
-			x: 0,
-			y: 0,
-			align: "center",
-			verticalAlign: "middle"
-		},
-		attr: {},
-		style: {
-			fontWeight: "bold",
-			fontSize: "12px",
-			color: "#60606a"
-		}
-	};
-	i(["pie", "gauge", "waterfall", "bubble", "treemap"],
-		function(b) {
-			if (e[b]) e[b].prototype.hasData = h
-		});
-	a.Series.prototype.hasData = function() {
-		return this.visible &amp;&amp; this.dataMax !== void 0 &amp;&amp; this.dataMin !== void 0
-	};
-	c.showNoData = function(b) {
-		var a = this.options,
-			b = b || a.lang.noData,
-			a = a.noData;
-		if (!this.noDataLabel) this.noDataLabel = this.renderer.label(b, 0, 0, null, null, null, a.useHTML, null, "no-data").attr(a.attr).css(a.style).add(), this.noDataLabel.align(g(this.noDataLabel.getBBox(), a.position), !1, "plotBox")
-	};
-	c.hideNoData = function() {
-		if (this.noDataLabel) this.noDataLabel =
-			this.noDataLabel.destroy()
-	};
-	c.hasData = function() {
-		for (var a = this.series, c = a.length; c--;)
-			if (a[c].hasData() &amp;&amp; !a[c].options.isInternal) return !0;
-		return !1
-	};
-	c.callbacks.push(function(b) {
-		a.addEvent(b, "load", d);
-		a.addEvent(b, "redraw", d)
-	})
-});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:59:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;26c3854bdbd53200f687dfea5e9619ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts No Data&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_26c3854bdbd53200f687dfea5e9619ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:19&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>6bdbb59fdbd532002e5df2b6ae9619c6</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
 <target_name>PE Highcharts No Data</target_name>
-<type>UI Script</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_js_include_b3244d07db5932002e5df2b6ae96197e</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE highcharts-ng</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:00:58</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b3244d07db5932002e5df2b6ae96197e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE highcharts-ng">b9d1058bdbd53200f687dfea5e9619f6</sys_ui_script><sys_update_name>sp_js_include_b3244d07db5932002e5df2b6ae96197e</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:00:58</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>6fdbb59fdbd532002e5df2b6ae9619c5</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
-<table/>
-<target_name>PE highcharts-ng</target_name>
 <type>JS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -1521,19 +1411,19 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_ws_query_parameter_bdbc160bdbd932002e5df2b6ae961962</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>process</example_value><name>function</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:27:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bdbc160bdbd932002e5df2b6ae961962</sys_id><sys_mod_count>0</sys_mod_count><sys_name>function</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_bdbc160bdbd932002e5df2b6ae961962</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:27:50</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>m2m_sp_widget_dependency_e9d671dbdbd532002e5df2b6ae96191a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE Highcharts 5.0.5 Treemap">fc86bd9bdbd532002e5df2b6ae961959</sp_dependency><sp_widget display_value="PE Treemap">c305719bdbd532002e5df2b6ae9619f4</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:20:37</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e9d671dbdbd532002e5df2b6ae96191a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5 Treemap.PE Treemap</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_e9d671dbdbd532002e5df2b6ae96191a</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:20:37</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>73dbb59fdbd532002e5df2b6ae9619c8</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>648ab95fdbd532002e5df2b6ae96190d</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>function</target_name>
-<type>Scripted REST Query Parameter</type>
+<target_name>PE Highcharts 5.0.5 Treemap.PE Treemap</target_name>
+<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -2277,14 +2167,14 @@
 		return hcs;
 	}
 }());]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:50:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b9d1058bdbd53200f687dfea5e9619f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE highcharts-ng&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_b9d1058bdbd53200f687dfea5e9619f6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 16:53:50&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>77dbb59fdbd532002e5df2b6ae9619c7</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>648ab95fdbd532002e5df2b6ae961910</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
 <target_name>PE highcharts-ng</target_name>
 <type>UI Script</type>
@@ -2297,18 +2187,43 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_c874cd07db5932002e5df2b6ae961919</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE Highcharts 5_0_5">6043c507db5932002e5df2b6ae96196c</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:01:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c874cd07db5932002e5df2b6ae961919</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Highcharts 5_0_5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_c874cd07db5932002e5df2b6ae961919</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:01:57</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sys_ws_operation_a9fc960bdbd932002e5df2b6ae961971</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;PE Get Data&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	var highchartsHelper = new PEHighchartsHelper(request,response);
+	return highchartsHelper.process();
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/pe_highcharts_helper/get_data&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/get_data&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 04:30:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a9fc960bdbd932002e5df2b6ae961971&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Get Data&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_a9fc960bdbd932002e5df2b6ae961971&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 04:31:07&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="PE Highcharts Helper"&gt;226c520bdbd932002e5df2b6ae961978&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>a3dbb59fdbd532002e5df2b6ae9619c4</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>648ab95fdbd532002e5df2b6ae9619e4</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE Highcharts 5.0.5.PE Highcharts 5_0_5</target_name>
+<target_name>PE Get Data</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_b8a6fd9bdbd532002e5df2b6ae961961</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE Highcharts 5.0.5 Treemap">fc86bd9bdbd532002e5df2b6ae961959</sp_dependency><sp_js_include display_value="PE Highcharts 5_0_5">6043c507db5932002e5df2b6ae96196c</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:19:45</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b8a6fd9bdbd532002e5df2b6ae961961</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5 Treemap.PE Highcharts 5_0_5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_b8a6fd9bdbd532002e5df2b6ae961961</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:19:45</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>688ab95fdbd532002e5df2b6ae96190c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5 Treemap.PE Highcharts 5_0_5</target_name>
 <type>Dependency JS Includes</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -2319,175 +2234,85 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_5674cd07db5932002e5df2b6ae96193f</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>150</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE highcharts-more">6c74cd07db5932002e5df2b6ae961982</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5674cd07db5932002e5df2b6ae96193f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE highcharts-more</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_5674cd07db5932002e5df2b6ae96193f</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:13</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>a7dbb59fdbd532002e5df2b6ae9619c3</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5.0.5.PE highcharts-more</target_name>
-<type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_script_include_c7ab5d83db9932002e5df2b6ae961969</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PEHighchartsExample&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PEHighchartsExample&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PEHighchartsExample = Class.create();
-PEHighchartsExample.prototype = {
-	initialize: function(request, response) {
-		this.json = new JSON();
-	},
-	getDemoData: function(param1) {
-		var scope = this;
-		return [{
-			"name": "Random Data 1",
-			"data": [
-				["Data Point 1", scope.randNumber(1, 100)],
-				["Data Point 2", scope.randNumber(1, 100)],
-				["Data Point 3", scope.randNumber(1, 100)],
-				["Data Point 4", scope.randNumber(1, 100)],
-				["Data Point 5", scope.randNumber(1, 100)],
-				["Data Point 6", scope.randNumber(1, 100)],
-				["Data Point 7", scope.randNumber(1, 100)],
-				["Data Point 8", scope.randNumber(1, 100)],
-				["Data Point 9", scope.randNumber(1, 100)]
-			]
-		}, {
-			"name": "Random Data 2",
-			"data": [
-				["Data Point 1", scope.randNumber(1, 100)],
-				["Data Point 2", scope.randNumber(1, 100)],
-				["Data Point 3", scope.randNumber(1, 100)],
-				["Data Point 4", scope.randNumber(1, 100)],
-				["Data Point 5", scope.randNumber(1, 100)],
-				["Data Point 6", scope.randNumber(1, 100)]
-			]
-		}];
-	},
-	getPieDemoData: function(param1) {
-		var scope = this;
-		return [{
-			"name": "Random Data 1",
-			"data": [
-				["Data Point 1", scope.randNumber(1, 100)],
-				["Data Point 2", scope.randNumber(1, 100)],
-				["Data Point 3", scope.randNumber(1, 100)],
-				["Data Point 4", scope.randNumber(1, 100)],
-				["Data Point 5", scope.randNumber(1, 100)],
-				["Data Point 6", scope.randNumber(1, 100)],
-				["Data Point 7", scope.randNumber(1, 100)],
-				["Data Point 8", scope.randNumber(1, 100)],
-				["Data Point 9", scope.randNumber(1, 100)],
-				["Data Point 10", scope.randNumber(1, 100)],
-				["Data Point 11", scope.randNumber(1, 100)],
-				["Data Point 12", scope.randNumber(1, 100)]
-			]
-		}];
-	},
-	getGaugeDemoData: function(param1) {
-		var scope = this;
-		var dataSeries = [{
-			"name": "Random Data 1",
-			"data": [{
-				name: "Data Point 1",
-				y: scope.randNumber(1, 100)
-			}]
-		}];
-		return dataSeries;
-	},
-	getHeatmapDemoData: function(param1) {
-		var scope = this;
-		var series = [{
-			data: [
-				[0, 0, scope.randNumber(1, 100)],
-				[0, 1, scope.randNumber(1, 100)],
-				[0, 2, scope.randNumber(1, 100)],
-				[1, 0, scope.randNumber(1, 100)],
-				[1, 1, scope.randNumber(1, 100)],
-				[1, 2, scope.randNumber(1, 100)],
-				[2, 0, scope.randNumber(1, 100)],
-				[2, 1, scope.randNumber(1, 100)],
-				[2, 2, scope.randNumber(1, 100)]
-			]
-		}];
-		return series;
-	},
-	getTreemapDemoData: function(param1) {
-		var scope = this;
-		var series = [{
-			data: [
-				{
-					name:"A", 
-					value:scope.randNumber(1, 100)
-				},
-				{
-					name:"B", 
-					value:scope.randNumber(1, 100)
-				},
-				{
-					name:"C", 
-					value:scope.randNumber(1, 100)
-				},
-				{
-					name:"D",
-					value:scope.randNumber(1, 100)
-				},
-				{
-					name:"E", 
-					value:scope.randNumber(1, 100)
-				},
-				{
-					name:"F", 
-					value:scope.randNumber(1, 100)
-				},
-				{
-					name:"G", 
-					value:scope.randNumber(1, 100)
-				},
-				{
-					name:"H", 
-					value:scope.randNumber(1, 100)
-				},
-				{
-					name:"I", 
-					value:scope.randNumber(1, 100)
-				}
-			]
-		}];
-		return series;
-	},
-	randNumber: function(min, max) {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-	},
-	getParamAsString: function(paramName) {
-		if (this.request.queryParams.hasOwnProperty(paramName)) {
-			return this.request.queryParams[paramName] + '';
+<name>sys_ui_script_26c3854bdbd53200f687dfea5e9619ac</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts No Data&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
+ Highcharts JS v4.2.6 (2016-08-02)
+ Plugin for displaying a message when there is no data visible in chart.
+
+ (c) 2010-2016 Highsoft AS
+ Author: Oystein Moseng
+ License: www.highcharts.com/license
+*/
+(function(a) {
+	typeof module === "object" &amp;&amp; module.exports ? module.exports = a : a(Highcharts)
+})(function(a) {
+	function h() {
+		return !!this.points.length
+	}
+
+	function d() {
+		this.hasData() ? this.hideNoData() : this.showNoData()
+	}
+	var e = a.seriesTypes,
+		c = a.Chart.prototype,
+		f = a.getOptions(),
+		g = a.extend,
+		i = a.each;
+	g(f.lang, {
+		noData: "No data to display"
+	});
+	f.noData = {
+		position: {
+			x: 0,
+			y: 0,
+			align: "center",
+			verticalAlign: "middle"
+		},
+		attr: {},
+		style: {
+			fontWeight: "bold",
+			fontSize: "12px",
+			color: "#60606a"
 		}
-		return false;
-	},
-	type: 'PEHighchartsExample'
-};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 23:43:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c7ab5d83db9932002e5df2b6ae961969&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEHighchartsExample&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c7ab5d83db9932002e5df2b6ae961969&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 20:25:42&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+	};
+	i(["pie", "gauge", "waterfall", "bubble", "treemap"],
+		function(b) {
+			if (e[b]) e[b].prototype.hasData = h
+		});
+	a.Series.prototype.hasData = function() {
+		return this.visible &amp;&amp; this.dataMax !== void 0 &amp;&amp; this.dataMin !== void 0
+	};
+	c.showNoData = function(b) {
+		var a = this.options,
+			b = b || a.lang.noData,
+			a = a.noData;
+		if (!this.noDataLabel) this.noDataLabel = this.renderer.label(b, 0, 0, null, null, null, a.useHTML, null, "no-data").attr(a.attr).css(a.style).add(), this.noDataLabel.align(g(this.noDataLabel.getBBox(), a.position), !1, "plotBox")
+	};
+	c.hideNoData = function() {
+		if (this.noDataLabel) this.noDataLabel =
+			this.noDataLabel.destroy()
+	};
+	c.hasData = function() {
+		for (var a = this.series, c = a.length; c--;)
+			if (a[c].hasData() &amp;&amp; !a[c].options.isInternal) return !0;
+		return !1
+	};
+	c.callbacks.push(function(b) {
+		a.addEvent(b, "load", d);
+		a.addEvent(b, "redraw", d)
+	})
+});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:59:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;26c3854bdbd53200f687dfea5e9619ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts No Data&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_26c3854bdbd53200f687dfea5e9619ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:19&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>a7dbb59fdbd532002e5df2b6ae9619c6</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>688ab95fdbd532002e5df2b6ae96190f</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PEHighchartsExample</target_name>
-<type>Script Include</type>
+<target_name>PE Highcharts No Data</target_name>
+<type>UI Script</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -2497,18 +2322,18 @@ PEHighchartsExample.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_js_include_9084cd07db5932002e5df2b6ae9619f0</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts Export</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:25</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9084cd07db5932002e5df2b6ae9619f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts Export</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts Export">85b3854bdbd53200f687dfea5e9619ab</sys_ui_script><sys_update_name>sp_js_include_9084cd07db5932002e5df2b6ae9619f0</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:25</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sp_js_include_b3244d07db5932002e5df2b6ae96197e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE highcharts-ng</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:00:58</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b3244d07db5932002e5df2b6ae96197e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE highcharts-ng">b9d1058bdbd53200f687dfea5e9619f6</sys_ui_script><sys_update_name>sp_js_include_b3244d07db5932002e5df2b6ae96197e</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:00:58</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>abdbb59fdbd532002e5df2b6ae9619c5</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>6c8ab95fdbd532002e5df2b6ae96190e</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE Highcharts Export</target_name>
+<target_name>PE highcharts-ng</target_name>
 <type>JS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -2519,18 +2344,18 @@ PEHighchartsExample.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_dependency_c722c9c3db5932002e5df2b6ae96193b</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>pe-highcharts-ng</module><name>PE HighchartsNG</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 21:52:03</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c722c9c3db5932002e5df2b6ae96193b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c722c9c3db5932002e5df2b6ae96193b</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 21:52:03</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>m2m_sp_widget_dependency_0705719bdbd532002e5df2b6ae9619f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE HighchartsNG">c722c9c3db5932002e5df2b6ae96193b</sp_dependency><sp_widget display_value="PE Treemap">c305719bdbd532002e5df2b6ae9619f4</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:12:48</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>0705719bdbd532002e5df2b6ae9619f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG.Copy of PE Heatmap</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_0705719bdbd532002e5df2b6ae9619f6</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:12:48</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>afdbb59fdbd532002e5df2b6ae9619c4</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>a08ab95fdbd532002e5df2b6ae96190d</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE HighchartsNG</target_name>
+<target_name>PE HighchartsNG.Copy of PE Heatmap</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -2944,14 +2769,14 @@ PEHighchartsExample.prototype = {
 		}
 	})
 });]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:58:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;85b3854bdbd53200f687dfea5e9619ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts Export&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_85b3854bdbd53200f687dfea5e9619ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:12&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>b3dbb59fdbd532002e5df2b6ae9619c7</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>a08ab95fdbd532002e5df2b6ae961910</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
 <target_name>PE Highcharts Export</target_name>
 <type>UI Script</type>
@@ -2964,19 +2789,285 @@ PEHighchartsExample.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_ws_query_parameter_9acc160bdbd932002e5df2b6ae9619f8</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>HighchartsHelper</example_value><name>script_include</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:28:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9acc160bdbd932002e5df2b6ae9619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>script_include</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_9acc160bdbd932002e5df2b6ae9619f8</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:28:12</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sys_ws_definition_226c520bdbd932002e5df2b6ae961978</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/pe_highcharts_helper</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>PE Highcharts Helper</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>pe_highcharts_helper</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:26:20</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>226c520bdbd932002e5df2b6ae961978</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts Helper</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_226c520bdbd932002e5df2b6ae961978</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:26:20</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>bfdbb59fdbd532002e5df2b6ae9619c7</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>a08ab95fdbd532002e5df2b6ae9619e4</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>script_include</target_name>
+<target_name>PE Highcharts Helper</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_78a6fd9bdbd532002e5df2b6ae961963</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>500</order><sp_dependency display_value="PE Highcharts 5.0.5 Treemap">fc86bd9bdbd532002e5df2b6ae961959</sp_dependency><sp_js_include display_value="PE Highcharts Export">9084cd07db5932002e5df2b6ae9619f0</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:19:45</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>78a6fd9bdbd532002e5df2b6ae961963</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5 Treemap.PE Highcharts Export</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_78a6fd9bdbd532002e5df2b6ae961963</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:20:06</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>a48ab95fdbd532002e5df2b6ae96190c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5 Treemap.PE Highcharts Export</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_c7ab5d83db9932002e5df2b6ae961969</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PEHighchartsExample&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PEHighchartsExample&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PEHighchartsExample = Class.create();
+PEHighchartsExample.prototype = {
+	initialize: function(request, response) {
+		this.json = new JSON();
+	},
+	getDemoData: function(param1) {
+		var scope = this;
+		return [{
+			"name": "Random Data 1",
+			"data": [
+				["Data Point 1", scope.randNumber(1, 100)],
+				["Data Point 2", scope.randNumber(1, 100)],
+				["Data Point 3", scope.randNumber(1, 100)],
+				["Data Point 4", scope.randNumber(1, 100)],
+				["Data Point 5", scope.randNumber(1, 100)],
+				["Data Point 6", scope.randNumber(1, 100)],
+				["Data Point 7", scope.randNumber(1, 100)],
+				["Data Point 8", scope.randNumber(1, 100)],
+				["Data Point 9", scope.randNumber(1, 100)]
+			]
+		}, {
+			"name": "Random Data 2",
+			"data": [
+				["Data Point 1", scope.randNumber(1, 100)],
+				["Data Point 2", scope.randNumber(1, 100)],
+				["Data Point 3", scope.randNumber(1, 100)],
+				["Data Point 4", scope.randNumber(1, 100)],
+				["Data Point 5", scope.randNumber(1, 100)],
+				["Data Point 6", scope.randNumber(1, 100)]
+			]
+		}];
+	},
+	getPieDemoData: function(param1) {
+		var scope = this;
+		return [{
+			"name": "Random Data 1",
+			"data": [
+				["Data Point 1", scope.randNumber(1, 100)],
+				["Data Point 2", scope.randNumber(1, 100)],
+				["Data Point 3", scope.randNumber(1, 100)],
+				["Data Point 4", scope.randNumber(1, 100)],
+				["Data Point 5", scope.randNumber(1, 100)],
+				["Data Point 6", scope.randNumber(1, 100)],
+				["Data Point 7", scope.randNumber(1, 100)],
+				["Data Point 8", scope.randNumber(1, 100)],
+				["Data Point 9", scope.randNumber(1, 100)],
+				["Data Point 10", scope.randNumber(1, 100)],
+				["Data Point 11", scope.randNumber(1, 100)],
+				["Data Point 12", scope.randNumber(1, 100)]
+			]
+		}];
+	},
+	getGaugeDemoData: function(param1) {
+		var scope = this;
+		var dataSeries = [{
+			"name": "Random Data 1",
+			"data": [{
+				name: "Data Point 1",
+				y: scope.randNumber(1, 100)
+			}]
+		}];
+		return dataSeries;
+	},
+	getHeatmapDemoData: function(param1) {
+		var scope = this;
+		var series = [{
+			data: [
+				[0, 0, scope.randNumber(1, 100)],
+				[0, 1, scope.randNumber(1, 100)],
+				[0, 2, scope.randNumber(1, 100)],
+				[1, 0, scope.randNumber(1, 100)],
+				[1, 1, scope.randNumber(1, 100)],
+				[1, 2, scope.randNumber(1, 100)],
+				[2, 0, scope.randNumber(1, 100)],
+				[2, 1, scope.randNumber(1, 100)],
+				[2, 2, scope.randNumber(1, 100)]
+			]
+		}];
+		return series;
+	},
+	getTreemapDemoData: function(param1) {
+		var scope = this;
+		var series = [{
+			data: [
+				{
+					name:"A", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"B", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"C", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"D",
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"E", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"F", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"G", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"H", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"I", 
+					value:scope.randNumber(1, 100)
+				}
+			]
+		}];
+		return series;
+	},
+	randNumber: function(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	},
+	getParamAsString: function(paramName) {
+		if (this.request.queryParams.hasOwnProperty(paramName)) {
+			return this.request.queryParams[paramName] + '';
+		}
+		return false;
+	},
+	type: 'PEHighchartsExample'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 23:43:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c7ab5d83db9932002e5df2b6ae961969&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEHighchartsExample&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c7ab5d83db9932002e5df2b6ae961969&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 20:25:42&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>a48ab95fdbd532002e5df2b6ae96190f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PEHighchartsExample</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_9084cd07db5932002e5df2b6ae9619f0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts Export</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:25</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9084cd07db5932002e5df2b6ae9619f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts Export</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts Export">85b3854bdbd53200f687dfea5e9619ab</sys_ui_script><sys_update_name>sp_js_include_9084cd07db5932002e5df2b6ae9619f0</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:25</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>a88ab95fdbd532002e5df2b6ae96190e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PE Highcharts Export</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_6043c507db5932002e5df2b6ae96196c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts 5_0_5</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 21:56:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6043c507db5932002e5df2b6ae96196c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5_0_5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts 5_0_5">5752058bdbd53200f687dfea5e9619f8</sys_ui_script><sys_update_name>sp_js_include_6043c507db5932002e5df2b6ae96196c</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 21:56:59</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>ac8ab95fdbd532002e5df2b6ae96190d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5_0_5</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_query_parameter_dfdc560bdbd932002e5df2b6ae961979</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value/><name>param1</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:28:23</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>dfdc560bdbd932002e5df2b6ae961979</sys_id><sys_mod_count>0</sys_mod_count><sys_name>param1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_dfdc560bdbd932002e5df2b6ae961979</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:28:23</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>ac8ab95fdbd532002e5df2b6ae9619e4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>param1</target_name>
 <type>Scripted REST Query Parameter</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_34a6fd9bdbd532002e5df2b6ae961965</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>300</order><sp_dependency display_value="PE Highcharts 5.0.5 Treemap">fc86bd9bdbd532002e5df2b6ae961959</sp_dependency><sp_js_include display_value="PE Highcharts No Data">64940147db5932002e5df2b6ae961981</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:19:45</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>34a6fd9bdbd532002e5df2b6ae961965</sys_id><sys_mod_count>3</sys_mod_count><sys_name>PE Highcharts 5.0.5 Treemap.PE Highcharts No Data</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_34a6fd9bdbd532002e5df2b6ae961965</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:20:14</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>e08ab95fdbd532002e5df2b6ae96190c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5 Treemap.PE Highcharts No Data</target_name>
+<type>Dependency JS Includes</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -3220,15 +3311,15 @@ PEHighchartsHelper.prototype = {
 		return false;
 	},
 	type: 'PEHighchartsHelper'
-};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 23:43:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a1bb59c3db9932002e5df2b6ae9619e4&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEHighchartsHelper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a1bb59c3db9932002e5df2b6ae9619e4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-08 23:46:01&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 23:43:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a1bb59c3db9932002e5df2b6ae9619e4&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEHighchartsHelper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a1bb59c3db9932002e5df2b6ae9619e4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:10:05&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>e3dbb59fdbd532002e5df2b6ae9619c6</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>e08ab95fdbd532002e5df2b6ae96190f</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
 <target_name>PEHighchartsHelper</target_name>
 <type>Script Include</type>
@@ -3241,18 +3332,18 @@ PEHighchartsHelper.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_js_include_6c74cd07db5932002e5df2b6ae961982</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE highcharts-more</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6c74cd07db5932002e5df2b6ae961982</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE highcharts-more</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE highcharts-more">3793058bdbd53200f687dfea5e9619fb</sys_ui_script><sys_update_name>sp_js_include_6c74cd07db5932002e5df2b6ae961982</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:06</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sp_js_include_7d86bd9bdbd532002e5df2b6ae9619c6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts-Treemap</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:19:29</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7d86bd9bdbd532002e5df2b6ae9619c6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts-Treemap</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts-Treemap">d836f99bdbd532002e5df2b6ae961920</sys_ui_script><sys_update_name>sp_js_include_7d86bd9bdbd532002e5df2b6ae9619c6</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:19:29</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>e7dbb59fdbd532002e5df2b6ae9619c5</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>e48ab95fdbd532002e5df2b6ae96190e</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE highcharts-more</target_name>
+<target_name>PE Highcharts-Treemap</target_name>
 <type>JS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -3263,18 +3354,18 @@ PEHighchartsHelper.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_dependency_5a548d07db5932002e5df2b6ae9619bf</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>PE Highcharts 5.0.5</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:01:46</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5a548d07db5932002e5df2b6ae9619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_5a548d07db5932002e5df2b6ae9619bf</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:01:46</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sp_dependency_fc86bd9bdbd532002e5df2b6ae961959</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>PE Highcharts 5.0.5 Treemap</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:19:13</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>fc86bd9bdbd532002e5df2b6ae961959</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5 Treemap</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_fc86bd9bdbd532002e5df2b6ae961959</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:19:13</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>ebdbb59fdbd532002e5df2b6ae9619c4</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>e88ab95fdbd532002e5df2b6ae96190d</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE Highcharts 5.0.5</target_name>
+<target_name>PE Highcharts 5.0.5 Treemap</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -3285,18 +3376,40 @@ PEHighchartsHelper.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_bd340d07db5932002e5df2b6ae9619ec</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE HighchartsNG">c722c9c3db5932002e5df2b6ae96193b</sp_dependency><sp_js_include display_value="PE highcharts-ng">b3244d07db5932002e5df2b6ae96197e</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:00:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bd340d07db5932002e5df2b6ae9619ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG.PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_bd340d07db5932002e5df2b6ae9619ec</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:00:59</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<name>sys_ws_query_parameter_bdbc160bdbd932002e5df2b6ae961962</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>process</example_value><name>function</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:27:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bdbc160bdbd932002e5df2b6ae961962</sys_id><sys_mod_count>0</sys_mod_count><sys_name>function</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_bdbc160bdbd932002e5df2b6ae961962</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:27:50</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>efdbb59fdbd532002e5df2b6ae9619c3</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>e88ab95fdbd532002e5df2b6ae9619e4</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
-<target_name>PE HighchartsNG.PE highcharts-ng</target_name>
+<target_name>function</target_name>
+<type>Scripted REST Query Parameter</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_fca6fd9bdbd532002e5df2b6ae961966</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="PE Highcharts 5.0.5 Treemap">fc86bd9bdbd532002e5df2b6ae961959</sp_dependency><sp_js_include display_value="PE highcharts-more">6c74cd07db5932002e5df2b6ae961982</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 20:19:45</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>fca6fd9bdbd532002e5df2b6ae961966</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5 Treemap.PE highcharts-more</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_fca6fd9bdbd532002e5df2b6ae961966</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 20:20:13</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>ec8ab95fdbd532002e5df2b6ae96190c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5 Treemap.PE highcharts-more</target_name>
 <type>Dependency JS Includes</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -11685,42 +11798,17 @@ PEHighchartsHelper.prototype = {
 	})(M);
 	return M
 });]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:52:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5752058bdbd53200f687dfea5e9619f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts 5_0_5&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5752058bdbd53200f687dfea5e9619f8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:09:37&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Treemap">2c8ab95fdbd532002e5df2b6ae96190b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>efdbb59fdbd532002e5df2b6ae9619c6</sys_id>
+<sys_created_on>2017-03-09 20:36:41</sys_created_on>
+<sys_id>ec8ab95fdbd532002e5df2b6ae96190f</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
+<sys_updated_on>2017-03-09 20:36:41</sys_updated_on>
 <table/>
 <target_name>PE Highcharts 5_0_5</target_name>
 <type>UI Script</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ws_operation_a9fc960bdbd932002e5df2b6ae961971</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;GET&lt;/http_method&gt;&lt;name&gt;PE Get Data&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-	var highchartsHelper = new PEHighchartsHelper(request,response);
-	return highchartsHelper.process();
-})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/pe_highcharts_helper/get_data&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/get_data&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 04:30:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a9fc960bdbd932002e5df2b6ae961971&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Get Data&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_a9fc960bdbd932002e5df2b6ae961971&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 04:31:07&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="PE Highcharts Helper"&gt;226c520bdbd932002e5df2b6ae961978&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Bar Chart">a3dbb59fdbd532002e5df2b6ae9619c3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 20:42:37</sys_created_on>
-<sys_id>fbdbb59fdbd532002e5df2b6ae9619c7</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 20:42:37</sys_updated_on>
-<table/>
-<target_name>PE Get Data</target_name>
-<type>Scripted REST Resource</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>

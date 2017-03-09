@@ -78,6 +78,50 @@ PEHighchartsExample.prototype = {
 		}];
 		return series;
 	},
+	getTreemapDemoData: function(param1) {
+		var scope = this;
+		var series = [{
+			data: [
+				{
+					name:"A", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"B", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"C", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"D",
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"E", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"F", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"G", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"H", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"I", 
+					value:scope.randNumber(1, 100)
+				}
+			]
+		}];
+		return series;
+	},
 	randNumber: function(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	},

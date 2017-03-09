@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-09 17:56:17">
+<unload unload_date="2017-03-09 20:42:50">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -18,11 +18,11 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>4bc51d17db9532002e5df2b6ae961969</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>7aeb399fdbd532002e5df2b6ae961924</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -34,1622 +34,17 @@
 <comments/>
 <name>m2m_sp_dependency_js_include_ba84cd07db5932002e5df2b6ae961987</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE Highcharts Export">9084cd07db5932002e5df2b6ae9619f0</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:25</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ba84cd07db5932002e5df2b6ae961987</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Highcharts Export</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_ba84cd07db5932002e5df2b6ae961987</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:30</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>03c51d17db9532002e5df2b6ae96196a</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>32eb399fdbd532002e5df2b6ae961925</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
 <target_name>PE Highcharts 5.0.5.PE Highcharts Export</target_name>
 <type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_script_26c3854bdbd53200f687dfea5e9619ac</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts No Data&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
- Highcharts JS v4.2.6 (2016-08-02)
- Plugin for displaying a message when there is no data visible in chart.
-
- (c) 2010-2016 Highsoft AS
- Author: Oystein Moseng
- License: www.highcharts.com/license
-*/
-(function(a) {
-	typeof module === "object" &amp;&amp; module.exports ? module.exports = a : a(Highcharts)
-})(function(a) {
-	function h() {
-		return !!this.points.length
-	}
-
-	function d() {
-		this.hasData() ? this.hideNoData() : this.showNoData()
-	}
-	var e = a.seriesTypes,
-		c = a.Chart.prototype,
-		f = a.getOptions(),
-		g = a.extend,
-		i = a.each;
-	g(f.lang, {
-		noData: "No data to display"
-	});
-	f.noData = {
-		position: {
-			x: 0,
-			y: 0,
-			align: "center",
-			verticalAlign: "middle"
-		},
-		attr: {},
-		style: {
-			fontWeight: "bold",
-			fontSize: "12px",
-			color: "#60606a"
-		}
-	};
-	i(["pie", "gauge", "waterfall", "bubble", "treemap"],
-		function(b) {
-			if (e[b]) e[b].prototype.hasData = h
-		});
-	a.Series.prototype.hasData = function() {
-		return this.visible &amp;&amp; this.dataMax !== void 0 &amp;&amp; this.dataMin !== void 0
-	};
-	c.showNoData = function(b) {
-		var a = this.options,
-			b = b || a.lang.noData,
-			a = a.noData;
-		if (!this.noDataLabel) this.noDataLabel = this.renderer.label(b, 0, 0, null, null, null, a.useHTML, null, "no-data").attr(a.attr).css(a.style).add(), this.noDataLabel.align(g(this.noDataLabel.getBBox(), a.position), !1, "plotBox")
-	};
-	c.hideNoData = function() {
-		if (this.noDataLabel) this.noDataLabel =
-			this.noDataLabel.destroy()
-	};
-	c.hasData = function() {
-		for (var a = this.series, c = a.length; c--;)
-			if (a[c].hasData() &amp;&amp; !a[c].options.isInternal) return !0;
-		return !1
-	};
-	c.callbacks.push(function(b) {
-		a.addEvent(b, "load", d);
-		a.addEvent(b, "redraw", d)
-	})
-});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:59:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;26c3854bdbd53200f687dfea5e9619ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts No Data&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_26c3854bdbd53200f687dfea5e9619ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:19&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>03c51d17db9532002e5df2b6ae96196d</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts No Data</target_name>
-<type>UI Script</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_js_include_b3244d07db5932002e5df2b6ae96197e</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE highcharts-ng</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:00:58</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b3244d07db5932002e5df2b6ae96197e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE highcharts-ng">b9d1058bdbd53200f687dfea5e9619f6</sys_ui_script><sys_update_name>sp_js_include_b3244d07db5932002e5df2b6ae96197e</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:00:58</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>07c51d17db9532002e5df2b6ae96196c</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE highcharts-ng</target_name>
-<type>JS Include</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_js_include_6043c507db5932002e5df2b6ae96196c</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts 5_0_5</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 21:56:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6043c507db5932002e5df2b6ae96196c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5_0_5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts 5_0_5">5752058bdbd53200f687dfea5e9619f8</sys_ui_script><sys_update_name>sp_js_include_6043c507db5932002e5df2b6ae96196c</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 21:56:59</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>0bc51d17db9532002e5df2b6ae96196b</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5_0_5</target_name>
-<type>JS Include</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ws_query_parameter_bdbc160bdbd932002e5df2b6ae961962</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>process</example_value><name>function</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:27:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bdbc160bdbd932002e5df2b6ae961962</sys_id><sys_mod_count>0</sys_mod_count><sys_name>function</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_bdbc160bdbd932002e5df2b6ae961962</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:27:50</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>0bc51d17db9532002e5df2b6ae96196e</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>function</target_name>
-<type>Scripted REST Query Parameter</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_widget_dependency_06f359d3db9532002e5df2b6ae961929</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_widget display_value="PE Pie Chart">343199d7db513200f687dfea5e961957</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 17:48:17</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>06f359d3db9532002e5df2b6ae961929</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Pie Chart</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_06f359d3db9532002e5df2b6ae961929</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 17:48:17</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>0fc51d17db9532002e5df2b6ae96196a</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5.0.5.PE Pie Chart</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_script_b9d1058bdbd53200f687dfea5e9619f6</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE highcharts-ng&lt;/name&gt;&lt;script&gt;&lt;![CDATA[if (typeof module !== 'undefined' &amp;&amp; typeof exports !== 'undefined' &amp;&amp; module.exports === exports) {
-	module.exports = 'highcharts-ng';
-}
-
-(function() {
-
-	'use strict';
-	/*global angular: false, Highcharts: false */
-
-	angular.module('highcharts-ng', [])
-		.provider('highchartsNG', highchartsNGProvider)
-		.directive('highchart', ['highchartsNG', '$timeout', highchart])
-		.factory('HighchartsConfigService', ['$interval', '$http', '$q', HighchartsConfigService]);
-
-	function highchartsNGProvider() {
-		var modules = [];
-		var basePath = false;
-		var lazyLoad = false;
-		return {
-			HIGHCHART: 'highcharts.js',
-			HIGHSTOCK: 'stock/highstock.js',
-			basePath: function(p) {
-				basePath = p;
-			},
-			lazyLoad: function(list) {
-				if (list === undefined) {
-					modules = [this.HIGHCHART];
-				} else {
-					modules = list;
-				}
-				lazyLoad = true;
-			},
-			$get: ['$window', '$rootScope', function($window, $rootScope) {
-				if (!basePath) {
-					basePath = (window.location.protocol === 'https:' ? 'https' : 'http') + '://code.highcharts.com/';
-				}
-				return highchartsNG($window, $rootScope, lazyLoad, basePath, modules);
-			}]
-		};
-	}
-
-	function highchartsNG($window, $rootScope, lazyload, basePath, modules) {
-		var readyQueue = [];
-		var loading = false;
-		return {
-			lazyLoad: lazyload,
-			ready: function(callback, thisArg) {
-				if (typeof $window.Highcharts !== 'undefined' || !lazyload) {
-					callback();
-				} else {
-					readyQueue.push([callback, thisArg]);
-					if (loading) {
-						return;
-					}
-					loading = true;
-					var self = this;
-					if (typeof jQuery === 'undefined') {
-						modules.unshift('adapters/standalone-framework.js');
-					}
-					var doWork = function() {
-						if (modules.length === 0) {
-							loading = false;
-							$rootScope.$apply(function() {
-								angular.forEach(readyQueue, function(e) {
-									// invoke callback passing 'thisArg'
-									e[0].apply(e[1], []);
-								});
-							});
-						} else {
-							var s = modules.shift();
-							self.loadScript(s, doWork);
-						}
-					};
-					doWork();
-				}
-			},
-			loadScript: function(path, callback) {
-				var s = document.createElement('script');
-				s.type = 'text/javascript';
-				s.src = basePath + path;
-				s.onload = callback;
-				document.getElementsByTagName('body')[0].appendChild(s);
-			},
-			//IE8 support
-			indexOf: function(arr, find, i /*opt*/ ) {
-				if (i === undefined) i = 0;
-				if (i &lt; 0) i += arr.length;
-				if (i &lt; 0) i = 0;
-				for (var n = arr.length; i &lt; n; i++)
-					if (i in arr &amp;&amp; arr[i] === find)
-						return i;
-				return -1;
-			},
-
-			prependMethod: function(obj, method, func) {
-				var original = obj[method];
-				obj[method] = function() {
-					var args = Array.prototype.slice.call(arguments);
-					func.apply(this, args);
-					if (original) {
-						return original.apply(this, args);
-					} else {
-						return;
-					}
-
-				};
-			},
-
-			deepExtend: function deepExtend(destination, source) {
-				//Slightly strange behaviour in edge cases (e.g. passing in non objects)
-				//But does the job for current use cases.
-				if (angular.isArray(source)) {
-					destination = angular.isArray(destination) ? destination : [];
-					for (var i = 0; i &lt; source.length; i++) {
-						destination[i] = deepExtend(destination[i] || {}, source[i]);
-					}
-				} else if (angular.isObject(source)) {
-					destination = angular.isObject(destination) ? destination : {};
-					for (var property in source) {
-						destination[property] = deepExtend(destination[property] || {}, source[property]);
-					}
-				} else {
-					destination = source;
-				}
-				return destination;
-			}
-		};
-	}
-
-	function highchart(highchartsNGUtils, $timeout) {
-
-		// acceptable shared state
-		var seriesId = 0;
-		var ensureIds = function(series) {
-			var changed = false;
-			angular.forEach(series, function(s) {
-				if (!angular.isDefined(s.id)) {
-					s.id = 'series-' + seriesId++;
-					changed = true;
-				}
-			});
-			return changed;
-		};
-
-		// immutable
-		var axisNames = ['xAxis', 'yAxis'];
-		var chartTypeMap = {
-			'stock': 'StockChart',
-			'map': 'Map',
-			'chart': 'Chart'
-		};
-
-		var getMergedOptions = function(scope, element, config) {
-			var mergedOptions = {};
-
-			var defaultOptions = {
-				chart: {
-					events: {}
-				},
-				title: {},
-				subtitle: {},
-				series: [],
-				credits: {},
-				plotOptions: {},
-				navigator: {
-					enabled: false
-				},
-				xAxis: {
-					events: {}
-				},
-				yAxis: {
-					events: {}
-				}
-			};
-
-			if (config.options) {
-				mergedOptions = highchartsNGUtils.deepExtend(defaultOptions, config.options);
-			} else {
-				mergedOptions = defaultOptions;
-			}
-			mergedOptions.chart.renderTo = element[0];
-
-			angular.forEach(axisNames, function(axisName) {
-				if (angular.isDefined(config[axisName])) {
-					mergedOptions[axisName] = highchartsNGUtils.deepExtend(mergedOptions[axisName] || {}, config[axisName]);
-
-					if (angular.isDefined(config[axisName].currentMin) ||
-						angular.isDefined(config[axisName].currentMax)) {
-
-						highchartsNGUtils.prependMethod(mergedOptions.chart.events, 'selection', function(e) {
-							var thisChart = this;
-							if (e[axisName]) {
-								scope.$apply(function() {
-									scope.config[axisName].currentMin = e[axisName][0].min;
-									scope.config[axisName].currentMax = e[axisName][0].max;
-								});
-							} else {
-								//handle reset button - zoom out to all
-								scope.$apply(function() {
-									scope.config[axisName].currentMin = thisChart[axisName][0].dataMin;
-									scope.config[axisName].currentMax = thisChart[axisName][0].dataMax;
-								});
-							}
-						});
-
-						highchartsNGUtils.prependMethod(mergedOptions.chart.events, 'addSeries', function(e) {
-							scope.config[axisName].currentMin = this[axisName][0].min || scope.config[axisName].currentMin;
-							scope.config[axisName].currentMax = this[axisName][0].max || scope.config[axisName].currentMax;
-						});
-						highchartsNGUtils.prependMethod(mergedOptions[axisName].events, 'setExtremes', function(e) {
-							if (e.trigger &amp;&amp; e.trigger !== 'zoom') { // zoom trigger is handled by selection event
-								$timeout(function() {
-									scope.config[axisName].currentMin = e.min;
-									scope.config[axisName].currentMax = e.max;
-									scope.config[axisName].min = e.min; // set min and max to adjust scrollbar/navigator
-									scope.config[axisName].max = e.max;
-								}, 0);
-							}
-						});
-					}
-				}
-			});
-
-			if (config.title) {
-				mergedOptions.title = config.title;
-			}
-			if (config.subtitle) {
-				mergedOptions.subtitle = config.subtitle;
-			}
-			if (config.credits) {
-				mergedOptions.credits = config.credits;
-			}
-			if (config.size) {
-				if (config.size.width) {
-					mergedOptions.chart.width = config.size.width;
-				}
-				if (config.size.height) {
-					mergedOptions.chart.height = config.size.height;
-				}
-			}
-			return mergedOptions;
-		};
-
-		var updateZoom = function(axis, modelAxis) {
-			var extremes = axis.getExtremes();
-			if (modelAxis.currentMin !== extremes.dataMin || modelAxis.currentMax !== extremes.dataMax) {
-				if (axis.setExtremes) {
-					axis.setExtremes(modelAxis.currentMin, modelAxis.currentMax, false);
-				} else {
-					axis.detachedsetExtremes(modelAxis.currentMin, modelAxis.currentMax, false);
-				}
-			}
-		};
-
-		var processExtremes = function(chart, axis, axisName) {
-			if (axis.currentMin || axis.currentMax) {
-				chart[axisName][0].setExtremes(axis.currentMin, axis.currentMax, true);
-			}
-		};
-
-		var chartOptionsWithoutEasyOptions = function(options) {
-			return angular.extend(
-				highchartsNGUtils.deepExtend({}, options), {
-					data: null,
-					visible: null
-				}
-			);
-		};
-
-		var getChartType = function(scope) {
-			if (scope.config === undefined) return 'Chart';
-			return chartTypeMap[('' + scope.config.chartType).toLowerCase()] ||
-				(scope.config.useHighStocks ? 'StockChart' : 'Chart');
-		};
-
-		var res = {
-			restrict: 'EAC',
-			replace: true,
-			template: '&lt;div&gt;&lt;/div&gt;',
-			scope: {
-				config: '=',
-				disableDataWatch: '='
-			},
-			link: function(scope, element, attrs) {
-				// We keep some chart-specific variables here as a closure
-				// instead of storing them on 'scope'.
-
-				// prevSeriesOptions is maintained by processSeries
-				var prevSeriesOptions = {};
-
-				var processSeries = function(series) {
-					var i;
-					var ids = [];
-
-					if (series) {
-						var setIds = ensureIds(series);
-						if (setIds &amp;&amp; !scope.disableDataWatch) {
-							//If we have set some ids this will trigger another digest cycle.
-							//In this scenario just return early and let the next cycle take care of changes
-							return false;
-						}
-
-						//Find series to add or update
-						angular.forEach(series, function(s) {
-							ids.push(s.id);
-							var chartSeries = chart.get(s.id);
-							if (chartSeries) {
-								if (!angular.equals(prevSeriesOptions[s.id], chartOptionsWithoutEasyOptions(s))) {
-									chartSeries.update(angular.copy(s), false);
-								} else {
-									if (s.visible !== undefined &amp;&amp; chartSeries.visible !== s.visible) {
-										chartSeries.setVisible(s.visible, false);
-									}
-									chartSeries.setData(angular.copy(s.data), false);
-								}
-							} else {
-								chart.addSeries(angular.copy(s), false);
-							}
-							prevSeriesOptions[s.id] = chartOptionsWithoutEasyOptions(s);
-						});
-
-						//  Shows no data text if all series are empty
-						if (scope.config.noData) {
-							var chartContainsData = false;
-
-							for (i = 0; i &lt; series.length; i++) {
-								if (series[i].data &amp;&amp; series[i].data.length &gt; 0) {
-									chartContainsData = true;
-
-									break;
-								}
-							}
-
-							if (!chartContainsData) {
-								chart.showLoading(scope.config.noData);
-							} else {
-								chart.hideLoading();
-							}
-						}
-					}
-
-					//Now remove any missing series
-					for (i = chart.series.length - 1; i &gt;= 0; i--) {
-						var s = chart.series[i];
-						if (s.options.id !== 'highcharts-navigator-series' &amp;&amp; highchartsNGUtils.indexOf(ids, s.options.id) &lt; 0) {
-							s.remove(false);
-						}
-					}
-
-					return true;
-				};
-
-				// chart is maintained by initChart
-				var chart = false;
-				var initChart = function() {
-					if (chart) chart.destroy();
-					prevSeriesOptions = {};
-					var config = scope.config || {};
-					var mergedOptions = getMergedOptions(scope, element, config);
-					var func = config.func || undefined;
-					var chartType = getChartType(scope);
-
-					chart = new Highcharts[chartType](mergedOptions, func);
-
-					for (var i = 0; i &lt; axisNames.length; i++) {
-						if (config[axisNames[i]]) {
-							processExtremes(chart, config[axisNames[i]], axisNames[i]);
-						}
-					}
-					if (config.loading) {
-						chart.showLoading();
-					}
-					config.getHighcharts = function() {
-						return chart;
-					};
-
-				};
-				initChart();
-
-
-				if (scope.disableDataWatch) {
-					scope.$watchCollection('config.series', function(newSeries, oldSeries) {
-						processSeries(newSeries);
-						chart.redraw();
-					});
-				} else {
-					scope.$watch('config.series', function(newSeries, oldSeries) {
-						var needsRedraw = processSeries(newSeries);
-						if (needsRedraw) {
-							chart.redraw();
-						}
-					}, true);
-				}
-
-				scope.$watch('config.title', function(newTitle) {
-					chart.setTitle(newTitle, true);
-				}, true);
-
-				scope.$watch('config.subtitle', function(newSubtitle) {
-					chart.setTitle(true, newSubtitle);
-				}, true);
-
-				scope.$watch('config.loading', function(loading) {
-					if (loading) {
-						chart.showLoading(loading === true ? null : loading);
-					} else {
-						chart.hideLoading();
-					}
-				});
-				scope.$watch('config.noData', function(noData) {
-					if (scope.config &amp;&amp; scope.config.loading) {
-						chart.showLoading(noData);
-					}
-				}, true);
-
-				scope.$watch('config.credits.enabled', function(enabled) {
-					if (enabled) {
-						chart.credits.show();
-					} else if (chart.credits) {
-						chart.credits.hide();
-					}
-				});
-
-				scope.$watch(getChartType, function(chartType, oldChartType) {
-					if (chartType === oldChartType) return;
-					initChart();
-				});
-
-				angular.forEach(axisNames, function(axisName) {
-					scope.$watch('config.' + axisName, function(newAxes, oldAxes) {
-						if (newAxes === oldAxes || !newAxes) {
-							return;
-						}
-
-						if (angular.isArray(newAxes)) {
-
-							for (var axisIndex = 0; axisIndex &lt; newAxes.length; axisIndex++) {
-								var axis = newAxes[axisIndex];
-
-								if (axisIndex &lt; chart[axisName].length) {
-									chart[axisName][axisIndex].update(axis, false);
-									updateZoom(chart[axisName][axisIndex], angular.copy(axis));
-								}
-
-							}
-
-						} else {
-							// update single axis
-							chart[axisName][0].update(newAxes, false);
-							updateZoom(chart[axisName][0], angular.copy(newAxes));
-						}
-
-						chart.redraw();
-					}, true);
-				});
-				scope.$watch('config.options', function(newOptions, oldOptions, scope) {
-					//do nothing when called on registration
-					if (newOptions === oldOptions) return;
-					initChart();
-					processSeries(scope.config.series);
-					chart.redraw();
-				}, true);
-
-				scope.$watch('config.size', function(newSize, oldSize) {
-					if (newSize === oldSize) return;
-					if (newSize) {
-						chart.setSize(newSize.width || chart.chartWidth, newSize.height || chart.chartHeight);
-					}
-				}, true);
-
-				scope.$on('highchartsng.reflow', function() {
-					chart.reflow();
-				});
-
-				scope.$on('$destroy', function() {
-					if (chart) {
-						try {
-							chart.destroy();
-						} catch (ex) {
-							// fail silently as highcharts will throw exception if element doesn't exist
-						}
-
-						$timeout(function() {
-							element.remove();
-						}, 0);
-					}
-				});
-
-			}
-		};
-
-		// override link fn if lazy loading is enabled
-		if (highchartsNGUtils.lazyLoad) {
-			var oldLink = res.link;
-			res.link = function() {
-				var args = arguments;
-				highchartsNGUtils.ready(function() {
-					oldLink.apply(this, args);
-				}, this);
-			};
-		}
-		return res;
-	}
-
-	function HighchartsConfigService($interval, $http, $q) {
-		function setDataPoint(dataPoint, newValue) {
-			if (typeof dataPoint == "number") {
-				return newValue;
-			}
-			if (Array.isArray(dataPoint)) {
-				dataPoint[1] = newValue[1];
-				return dataPoint;
-			}
-			dataPoint.y = newValue.y;
-			return dataPoint;
-		}
-
-		function getData(url) {
-			var scope = this;
-			var deferred = $q.defer();
-			if (!scope.chartConfig.series) {
-				scope.chartConfig.series = [];
-			}
-			$http({
-					"method": "GET",
-					"headers": {
-						"X-UserToken": window.g_ck
-					},
-					"url": url
-				})
-				.success(function(data) {
-					deferred.resolve(set.call(scope, data));
-				})
-				.error(function(data) {
-					deferred.reject(setError.call(scope, data));
-				});
-			return deferred.promise;
-		}
-
-		function set(data) {
-			if (this.options.table) {
-				return setData.call(this, data);
-			} else if (this.options.script_include) {
-				return setScriptedData.call(this, data);
-			}
-		}
-
-		function setScriptedData(data) {
-			//Look for new columns
-			var results = data.result;
-			if (results.length == 0) {
-				return setError(data);
-			}
-			if (this.chartConfig.series.length == 0) {
-				this.chartConfig.series = results;
-			} else {
-				if (this.chartConfig.series.length &gt; results.length) {
-					while (this.chartConfig.series.length &gt; results.length) {
-						this.chartConfig.series.pop();
-					}
-				}
-				this.chartConfig.series.forEach(function(currentSeries, seriesIndex) {
-					var resultSeries = results[seriesIndex];
-					currentSeries.data = resultSeries.data;
-				});
-				if (this.chartConfig.series.length &lt; results.length) {
-					var startIndex = this.chartConfig.series.length;
-					for (var x = startIndex; x != results.length; x++) {
-						this.chartConfig.series.push(results[x]);
-					}
-				}
-			}
-			return this.chartConfig;
-		}
-
-		function setData(data) {
-			var scope = this;
-			var results = data.result;
-			if (results.length == 0) {
-				return setOnError(data);
-			}
-			scope.chartConfig.series.forEach(function(currentSeries) {
-				currentSeries.data.forEach(function(currentData, index) {
-					var resultData = results[index];
-					currentData = setDataPoint(currentData, resultData);
-				});
-			});
-			results.forEach(function(result) {
-				var count = parseInt(result.stats.count);
-				var fields = result.groupby_fields;
-				fields.forEach(function(field) {
-					var re = /(\b[a-z](?!\s))/g;
-					var fieldName = field.field.replace(/_/g, " ").replace(re, function(x) {
-						return x.toUpperCase();
-					});
-					var fieldValue = field.field;
-					var fieldDisplay = field.display_value || "None";
-					var currentSeriesIndex = scope.chartConfig.series.findIndex(function(seriesObject) {
-						return seriesObject.name == fieldName;
-					});
-					if (currentSeriesIndex != -1) {
-						var currentDataIndex = scope.chartConfig.series[currentSeriesIndex].data.findIndex(function(currentData) {
-							return currentData.name == fieldDisplay;
-						});
-						if (currentDataIndex != -1) {
-							scope.chartConfig.series[currentSeriesIndex].data[currentDataIndex].y = count;
-						} else {
-							scope.chartConfig.series[currentSeriesIndex].data.push({
-								"name": fieldDisplay,
-								"y": count,
-								"id": fieldValue
-							});
-						}
-					} else {
-						var tempObject = {
-							"name": fieldName,
-							"data": [{
-								"name": fieldDisplay,
-								"y": count,
-								"id": fieldValue
-							}],
-							"stack": scope.stackObject ? scope.stackObject[fieldValue] : fieldValue
-						};
-						scope.chartConfig.series.push(tempObject);
-					}
-				});
-			});
-			if (scope.chartConfig.options.chart.type == "solidgauge") {
-				scope.chartConfig.series.forEach(function(currentSeries) {
-					currentSeries.data.map(function(data, index, dataArray) {
-						var width = (scope.options.outer_radius - scope.options.inner_radius) / dataArray.length;
-						data.innerRadius = index * width + scope.options.inner_radius;
-						data.radius = ((index + 1) == dataArray.length) ? scope.options.outer_radius : ((index + 1) * width + scope.options.inner_radius) - 1;
-					});
-				});
-			}
-			scope.chartConfig.loading = false;
-			return scope.chartConfig;
-		}
-
-		function setError(data) {
-			this.chartConfig.options.lang.noData = "No data to display&lt;br/&gt;" + (data.error ? (data.error.detail ? data.error.detail.toString() : data.error.message.toString()) : "");
-			delete this.chartConfig.series;
-			return this.chartConfig;
-		}
-		var hcs = function(options, type, data, stackObject) {
-			var scope = this;
-			scope.options = options;
-			scope.data = data;
-			scope.chartConfig = {
-				"options": {
-					"chart": {
-						"borderWidth": 0,
-						"type": type || "line",
-						"zoomType": "xy",
-						"events": {
-							load: function() {
-								if (options.interval &amp;&amp; options.interval != "1970-01-01 00:00:00") {
-									var dateTime = moment(options.interval);
-									var time = (dateTime.seconds() + ((dateTime.minutes() + (dateTime.hours() * 60)) * 60)) * 1000;
-									$interval(function() {
-										scope.get();
-									}, time);
-								}
-							}
-						}
-					},
-					"lang": {
-						"noData": "No data to display"
-					},
-					"plotOptions": {
-						"series": {
-							"allowPointSelect": true,
-						}
-					},
-				},
-				"loading": data ? false : true,
-				"credits": {
-					"enabled": false
-				}
-			};
-		};
-		hcs.prototype.getChartConfig = function() {
-			var scope = this;
-			if (scope.options.advance) {
-				scope.chartConfig = Highcharts.merge(scope.chartConfig, JSON.parse(scope.options.advance));
-			}
-			return scope.chartConfig;
-		};
-		hcs.prototype.setError = function(data) {
-			return setError.call(this, data);
-		};
-		hcs.prototype.getData = function() {
-			var url = "/api/now/stats/" + this.options.table.toLowerCase() + "?sysparm_display_value=all&amp;sysparm_count=true&amp;sysparm_group_by=" + this.options.fields;
-			url += this.options.encoded_query ? "&amp;sysparm_query=" + this.options.encoded_query : "";
-			return getData.call(this, url);
-		};
-		hcs.prototype.getScriptedData = function() {
-			var url = "/api/snc/pe_highcharts_helper/get_data?script_include=" + this.options.script_include;
-			url += "&amp;options=" + JSON.stringify(this.options);
-			url += this.options.function_name ? "&amp;function_name=" + this.options.function_name : "";
-			url += this.options.param1 ? "&amp;param1=" + this.options.param1 : "";
-			return getData.call(this, url);
-		};
-		hcs.prototype.setScriptedData = function(data) {
-			return setScriptedData.call(this, data);
-		};
-		hcs.prototype.setData = function(data) {
-			return setData.call(this, data);
-		};
-		hcs.prototype.get = function() {
-			var scope = this;
-			if (scope.options.table) {
-				return scope.getData();
-			} else if (scope.options.script_include) {
-				return scope.getScriptedData();
-			}
-			this.chartConfig.series = [{
-				"data": scope.data
-			}];
-			return scope.getChartConfig();
-		};
-		hcs.prototype.set = function(data) {
-			var scope = this;
-			if (scope.options.table) {
-				return scope.setData(data);
-			} else if (scope.options.script_include) {
-				return scope.setScriptedData(data);
-			}
-		};
-		return hcs;
-	}
-}());]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:50:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b9d1058bdbd53200f687dfea5e9619f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE highcharts-ng&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_b9d1058bdbd53200f687dfea5e9619f6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 16:53:50&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>0fc51d17db9532002e5df2b6ae96196d</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE highcharts-ng</target_name>
-<type>UI Script</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_js_include_9084cd07db5932002e5df2b6ae9619f0</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts Export</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:25</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9084cd07db5932002e5df2b6ae9619f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts Export</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts Export">85b3854bdbd53200f687dfea5e9619ab</sys_ui_script><sys_update_name>sp_js_include_9084cd07db5932002e5df2b6ae9619f0</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:25</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>43c51d17db9532002e5df2b6ae96196c</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts Export</target_name>
-<type>JS Include</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_dependency_c722c9c3db5932002e5df2b6ae96193b</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>pe-highcharts-ng</module><name>PE HighchartsNG</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 21:52:03</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c722c9c3db5932002e5df2b6ae96193b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c722c9c3db5932002e5df2b6ae96193b</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 21:52:03</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>47c51d17db9532002e5df2b6ae96196b</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE HighchartsNG</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ws_query_parameter_9acc160bdbd932002e5df2b6ae9619f8</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>HighchartsHelper</example_value><name>script_include</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:28:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9acc160bdbd932002e5df2b6ae9619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>script_include</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_9acc160bdbd932002e5df2b6ae9619f8</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:28:12</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>47c51d17db9532002e5df2b6ae96196e</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>script_include</target_name>
-<type>Scripted REST Query Parameter</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_dependency_js_include_c874cd07db5932002e5df2b6ae961919</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE Highcharts 5_0_5">6043c507db5932002e5df2b6ae96196c</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:01:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c874cd07db5932002e5df2b6ae961919</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Highcharts 5_0_5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_c874cd07db5932002e5df2b6ae961919</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:01:57</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>4bc51d17db9532002e5df2b6ae96196a</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5.0.5.PE Highcharts 5_0_5</target_name>
-<type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_script_85b3854bdbd53200f687dfea5e9619ab</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts Export&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
- Highcharts JS v4.2.6 (2016-08-02)
- Exporting module
-
- (c) 2010-2016 Torstein Honsi
-
- License: www.highcharts.com/license
-*/
-(function(f) {
-	typeof module === "object" &amp;&amp; module.exports ? module.exports = f : f(Highcharts)
-})(function(f) {
-	var s = f.win,
-		j = s.document,
-		B = f.Chart,
-		u = f.addEvent,
-		C = f.removeEvent,
-		D = f.fireEvent,
-		r = f.createElement,
-		t = f.discardElement,
-		w = f.css,
-		l = f.merge,
-		m = f.each,
-		q = f.extend,
-		F = f.splat,
-		G = Math.max,
-		H = f.isTouchDevice,
-		I = f.Renderer.prototype.symbols,
-		z = f.getOptions(),
-		A;
-	q(z.lang, {
-		printChart: "Print chart",
-		downloadPNG: "Download PNG image",
-		downloadJPEG: "Download JPEG image",
-		downloadPDF: "Download PDF document",
-		downloadSVG: "Download SVG vector image",
-		contextButtonTitle: "Chart context menu"
-	});
-	z.navigation = {
-		menuStyle: {
-			border: "1px solid #A0A0A0",
-			background: "#FFFFFF",
-			padding: "5px 0"
-		},
-		menuItemStyle: {
-			padding: "0 10px",
-			background: "none",
-			color: "#303030",
-			fontSize: H ? "14px" : "11px"
-		},
-		menuItemHoverStyle: {
-			background: "#4572A5",
-			color: "#FFFFFF"
-		},
-		buttonOptions: {
-			symbolFill: "#E0E0E0",
-			symbolSize: 14,
-			symbolStroke: "#666",
-			symbolStrokeWidth: 3,
-			symbolX: 12.5,
-			symbolY: 10.5,
-			align: "right",
-			buttonSpacing: 3,
-			height: 22,
-			theme: {
-				fill: "white",
-				stroke: "none"
-			},
-			verticalAlign: "top",
-			width: 24
-		}
-	};
-	z.exporting = {
-		type: "image/png",
-		url: "https://export.highcharts.com/",
-		printMaxWidth: 780,
-		scale: 2,
-		buttons: {
-			contextButton: {
-				menuClassName: "highcharts-contextmenu",
-				symbol: "menu",
-				_titleKey: "contextButtonTitle",
-				menuItems: [{
-						textKey: "printChart",
-						onclick: function() {
-							this.print()
-						}
-					}, {
-						separator: !0
-					}, {
-						textKey: "downloadPNG",
-						onclick: function() {
-							this.exportChart()
-						}
-					}, {
-						textKey: "downloadJPEG",
-						onclick: function() {
-							this.exportChart({
-								type: "image/jpeg"
-							})
-						}
-					}, {
-						textKey: "downloadPDF",
-						onclick: function() {
-							this.exportChart({
-								type: "application/pdf"
-							})
-						}
-					},
-					{
-						textKey: "downloadSVG",
-						onclick: function() {
-							this.exportChart({
-								type: "image/svg+xml"
-							})
-						}
-					}
-				]
-			}
-		}
-	};
-	f.post = function(a, b, e) {
-		var c, a = r("form", l({
-			method: "post",
-			action: a,
-			enctype: "multipart/form-data"
-		}, e), {
-			display: "none"
-		}, j.body);
-		for (c in b) r("input", {
-			type: "hidden",
-			name: c,
-			value: b[c]
-		}, null, a);
-		a.submit();
-		t(a)
-	};
-	q(B.prototype, {
-		sanitizeSVG: function(a) {
-			return a.replace(/zIndex="[^"]+"/g, "").replace(/isShadow="[^"]+"/g, "").replace(/symbolName="[^"]+"/g, "").replace(/jQuery[0-9]+="[^"]+"/g, "").replace(/url\([^#]+#/g, "url(#").replace(/&lt;svg /,
-				'&lt;svg xmlns:xlink="http://www.w3.org/1999/xlink" ').replace(/ (NS[0-9]+\:)?href=/g, " xlink:href=").replace(/\n/, " ").replace(/&lt;\/svg&gt;.*?$/, "&lt;/svg&gt;").replace(/(fill|stroke)="rgba\(([ 0-9]+,[ 0-9]+,[ 0-9]+),([ 0-9\.]+)\)"/g, '$1="rgb($2)" $1-opacity="$3"').replace(/&amp;nbsp;/g, "\u00a0").replace(/&amp;shy;/g, "\u00ad").replace(/&lt;IMG /g, "&lt;image ").replace(/&lt;(\/?)TITLE&gt;/g, "&lt;$1title&gt;").replace(/height=([^" ]+)/g, 'height="$1"').replace(/width=([^" ]+)/g, 'width="$1"').replace(/hc-svg-href="([^"]+)"&gt;/g, 'xlink:href="$1"/&gt;').replace(/ id=([^" &gt;]+)/g,
-				' id="$1"').replace(/class=([^" &gt;]+)/g, 'class="$1"').replace(/ transform /g, " ").replace(/:(path|rect)/g, "$1").replace(/style="([^"]+)"/g, function(a) {
-				return a.toLowerCase()
-			})
-		},
-		getChartHTML: function() {
-			return this.container.innerHTML
-		},
-		getSVG: function(a) {
-			var b = this,
-				e, c, g, k, h, d = l(b.options, a),
-				n = d.exporting.allowHTML;
-			if (!j.createElementNS) j.createElementNS = function(a, b) {
-				return j.createElement(b)
-			};
-			c = r("div", null, {
-				position: "absolute",
-				top: "-9999em",
-				width: b.chartWidth + "px",
-				height: b.chartHeight + "px"
-			}, j.body);
-			g = b.renderTo.style.width;
-			h = b.renderTo.style.height;
-			g = d.exporting.sourceWidth || d.chart.width || /px$/.test(g) &amp;&amp; parseInt(g, 10) || 600;
-			h = d.exporting.sourceHeight || d.chart.height || /px$/.test(h) &amp;&amp; parseInt(h, 10) || 400;
-			q(d.chart, {
-				animation: !1,
-				renderTo: c,
-				forExport: !0,
-				renderer: "SVGRenderer",
-				width: g,
-				height: h
-			});
-			d.exporting.enabled = !1;
-			delete d.data;
-			d.series = [];
-			m(b.series, function(a) {
-				k = l(a.userOptions, {
-					animation: !1,
-					enableMouseTracking: !1,
-					showCheckbox: !1,
-					visible: a.visible
-				});
-				k.isInternal || d.series.push(k)
-			});
-			a &amp;&amp; m(["xAxis",
-				"yAxis"
-			], function(b) {
-				m(F(a[b]), function(a, c) {
-					d[b][c] = l(d[b][c], a)
-				})
-			});
-			e = new f.Chart(d, b.callback);
-			m(["xAxis", "yAxis"], function(a) {
-				m(b[a], function(b, c) {
-					var d = e[a][c],
-						f = b.getExtremes(),
-						g = f.userMin,
-						f = f.userMax;
-					d &amp;&amp; (g !== void 0 || f !== void 0) &amp;&amp; d.setExtremes(g, f, !0, !1)
-				})
-			});
-			g = e.getChartHTML();
-			d = null;
-			e.destroy();
-			t(c);
-			if (n &amp;&amp; (c = g.match(/&lt;\/svg&gt;(.*?$)/))) c = '&lt;foreignObject x="0" y="0" width="200" height="200"&gt;&lt;body xmlns="http://www.w3.org/1999/xhtml"&gt;' + c[1] + "&lt;/body&gt;&lt;/foreignObject&gt;", g = g.replace("&lt;/svg&gt;", c + "&lt;/svg&gt;");
-			g = this.sanitizeSVG(g);
-			return g = g.replace(/(url\(#highcharts-[0-9]+)&amp;quot;/g, "$1").replace(/&amp;quot;/g, "'")
-		},
-		getSVGForExport: function(a, b) {
-			var e = this.options.exporting;
-			return this.getSVG(l({
-				chart: {
-					borderRadius: 0
-				}
-			}, e.chartOptions, b, {
-				exporting: {
-					sourceWidth: a &amp;&amp; a.sourceWidth || e.sourceWidth,
-					sourceHeight: a &amp;&amp; a.sourceHeight || e.sourceHeight
-				}
-			}))
-		},
-		exportChart: function(a, b) {
-			var e = this.getSVGForExport(a, b),
-				a = l(this.options.exporting, a);
-			f.post(a.url, {
-				filename: a.filename || "chart",
-				type: a.type,
-				width: a.width || 0,
-				scale: a.scale,
-				svg: e
-			}, a.formAttributes)
-		},
-		print: function() {
-			var a = this,
-				b = a.container,
-				e = [],
-				c = b.parentNode,
-				f = j.body,
-				k = f.childNodes,
-				h = a.options.exporting.printMaxWidth,
-				d, n;
-			if (!a.isPrinting) {
-				a.isPrinting = !0;
-				a.pointer.reset(null, 0);
-				D(a, "beforePrint");
-				if (n = h &amp;&amp; a.chartWidth &gt; h) d = [a.options.chart.width, void 0, !1], a.setSize(h, void 0, !1);
-				m(k, function(a, b) {
-					if (a.nodeType === 1) e[b] = a.style.display, a.style.display = "none"
-				});
-				f.appendChild(b);
-				s.focus();
-				s.print();
-				setTimeout(function() {
-					c.appendChild(b);
-					m(k, function(a, b) {
-						if (a.nodeType ===
-							1) a.style.display = e[b]
-					});
-					a.isPrinting = !1;
-					n &amp;&amp; a.setSize.apply(a, d);
-					D(a, "afterPrint")
-				}, 1E3)
-			}
-		},
-		contextMenu: function(a, b, e, c, f, k, h) {
-			var d = this,
-				n = d.options.navigation,
-				l = n.menuItemStyle,
-				o = d.chartWidth,
-				p = d.chartHeight,
-				E = "cache-" + a,
-				i = d[E],
-				v = G(f, k),
-				x, y, s, t = function(b) {
-					d.pointer.inClass(b.target, a) || y()
-				};
-			if (!i) d[E] = i = r("div", {
-				className: a
-			}, {
-				position: "absolute",
-				zIndex: 1E3,
-				padding: v + "px"
-			}, d.container), x = r("div", null, q({
-					MozBoxShadow: "3px 3px 10px #888",
-					WebkitBoxShadow: "3px 3px 10px #888",
-					boxShadow: "3px 3px 10px #888"
-				},
-				n.menuStyle), i), y = function() {
-				w(i, {
-					display: "none"
-				});
-				h &amp;&amp; h.setState(0);
-				d.openMenu = !1
-			}, u(i, "mouseleave", function() {
-				s = setTimeout(y, 500)
-			}), u(i, "mouseenter", function() {
-				clearTimeout(s)
-			}), u(j, "mouseup", t), u(d, "destroy", function() {
-				C(j, "mouseup", t)
-			}), m(b, function(a) {
-				if (a) {
-					var b = a.separator ? r("hr", null, null, x) : r("div", {
-						onmouseover: function() {
-							w(this, n.menuItemHoverStyle)
-						},
-						onmouseout: function() {
-							w(this, l)
-						},
-						onclick: function(b) {
-							b &amp;&amp; b.stopPropagation();
-							y();
-							a.onclick &amp;&amp; a.onclick.apply(d, arguments)
-						},
-						innerHTML: a.text ||
-							d.options.lang[a.textKey]
-					}, q({
-						cursor: "pointer"
-					}, l), x);
-					d.exportDivElements.push(b)
-				}
-			}), d.exportDivElements.push(x, i), d.exportMenuWidth = i.offsetWidth, d.exportMenuHeight = i.offsetHeight;
-			b = {
-				display: "block"
-			};
-			e + d.exportMenuWidth &gt; o ? b.right = o - e - f - v + "px" : b.left = e - v + "px";
-			c + k + d.exportMenuHeight &gt; p &amp;&amp; h.alignOptions.verticalAlign !== "top" ? b.bottom = p - c - v + "px" : b.top = c + k - v + "px";
-			w(i, b);
-			d.openMenu = !0
-		},
-		addButton: function(a) {
-			var b = this,
-				e = b.renderer,
-				c = l(b.options.navigation.buttonOptions, a),
-				g = c.onclick,
-				k = c.menuItems,
-				h, d, n = {
-					stroke: c.symbolStroke,
-					fill: c.symbolFill
-				},
-				j = c.symbolSize || 12;
-			if (!b.btnCount) b.btnCount = 0;
-			if (!b.exportDivElements) b.exportDivElements = [], b.exportSVGElements = [];
-			if (c.enabled !== !1) {
-				var o = c.theme,
-					p = o.states,
-					m = p &amp;&amp; p.hover,
-					p = p &amp;&amp; p.select,
-					i;
-				delete o.states;
-				g ? i = function(a) {
-					a.stopPropagation();
-					g.call(b, a)
-				} : k &amp;&amp; (i = function() {
-					b.contextMenu(d.menuClassName, k, d.translateX, d.translateY, d.width, d.height, d);
-					d.setState(2)
-				});
-				c.text &amp;&amp; c.symbol ? o.paddingLeft = f.pick(o.paddingLeft, 25) : c.text || q(o, {
-					width: c.width,
-					height: c.height,
-					padding: 0
-				});
-				d = e.button(c.text, 0, 0, i, o, m, p).attr({
-					title: b.options.lang[c._titleKey],
-					"stroke-linecap": "round",
-					zIndex: 3
-				});
-				d.menuClassName = a.menuClassName || "highcharts-menu-" + b.btnCount++;
-				c.symbol &amp;&amp; (h = e.symbol(c.symbol, c.symbolX - j / 2, c.symbolY - j / 2, j, j).attr(q(n, {
-					"stroke-width": c.symbolStrokeWidth || 1,
-					zIndex: 1
-				})).add(d));
-				d.add().align(q(c, {
-					width: d.width,
-					x: f.pick(c.x, A)
-				}), !0, "spacingBox");
-				A += (d.width + c.buttonSpacing) * (c.align === "right" ? -1 : 1);
-				b.exportSVGElements.push(d, h)
-			}
-		},
-		destroyExport: function(a) {
-			var a =
-				a.target,
-				b, e;
-			for (b = 0; b &lt; a.exportSVGElements.length; b++)
-				if (e = a.exportSVGElements[b]) e.onclick = e.ontouchstart = null, a.exportSVGElements[b] = e.destroy();
-			for (b = 0; b &lt; a.exportDivElements.length; b++) e = a.exportDivElements[b], C(e, "mouseleave"), a.exportDivElements[b] = e.onmouseout = e.onmouseover = e.ontouchstart = e.onclick = null, t(e)
-		}
-	});
-	I.menu = function(a, b, e, c) {
-		return ["M", a, b + 2.5, "L", a + e, b + 2.5, "M", a, b + c / 2 + 0.5, "L", a + e, b + c / 2 + 0.5, "M", a, b + c - 1.5, "L", a + e, b + c - 1.5]
-	};
-	B.prototype.callbacks.push(function(a) {
-		var b, e = a.options.exporting,
-			c = e.buttons;
-		A = 0;
-		if (e.enabled !== !1) {
-			for (b in c) a.addButton(c[b]);
-			u(a, "destroy", a.destroyExport)
-		}
-	})
-});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:58:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;85b3854bdbd53200f687dfea5e9619ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts Export&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_85b3854bdbd53200f687dfea5e9619ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:12&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>4bc51d17db9532002e5df2b6ae96196d</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts Export</target_name>
-<type>UI Script</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_dependency_js_include_5674cd07db5932002e5df2b6ae96193f</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>150</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE highcharts-more">6c74cd07db5932002e5df2b6ae961982</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5674cd07db5932002e5df2b6ae96193f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE highcharts-more</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_5674cd07db5932002e5df2b6ae96193f</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:13</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>4fc51d17db9532002e5df2b6ae961969</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5.0.5.PE highcharts-more</target_name>
-<type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_script_include_c7ab5d83db9932002e5df2b6ae961969</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PEHighchartsExample&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PEHighchartsExample&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PEHighchartsExample = Class.create();
-PEHighchartsExample.prototype = {
-	initialize: function(request, response) {
-		this.json = new JSON();
-	},
-	getDemoData: function(param1, options) {
-		var scope = this;
-		return [{
-			"name": "Random Data 1",
-			"data": [
-				["Data Point 1", scope.randNumber(1, 100)],
-				["Data Point 2", scope.randNumber(1, 100)],
-				["Data Point 3", scope.randNumber(1, 100)],
-				["Data Point 4", scope.randNumber(1, 100)],
-				["Data Point 5", scope.randNumber(1, 100)],
-				["Data Point 6", scope.randNumber(1, 100)],
-				["Data Point 7", scope.randNumber(1, 100)],
-				["Data Point 8", scope.randNumber(1, 100)],
-				["Data Point 9", scope.randNumber(1, 100)]
-			]
-		}, {
-			"name": "Random Data 2",
-			"data": [
-				["Data Point 1", scope.randNumber(1, 100)],
-				["Data Point 2", scope.randNumber(1, 100)],
-				["Data Point 3", scope.randNumber(1, 100)],
-				["Data Point 4", scope.randNumber(1, 100)],
-				["Data Point 5", scope.randNumber(1, 100)],
-				["Data Point 6", scope.randNumber(1, 100)]
-			]
-		}];
-	},
-	getPieDemoData: function(param1, options) {
-		var scope = this;
-		return [{
-			"name": "Random Data 1",
-			"data": [
-				["Data Point 1", scope.randNumber(1, 100)],
-				["Data Point 2", scope.randNumber(1, 100)],
-				["Data Point 3", scope.randNumber(1, 100)],
-				["Data Point 4", scope.randNumber(1, 100)],
-				["Data Point 5", scope.randNumber(1, 100)],
-				["Data Point 6", scope.randNumber(1, 100)],
-				["Data Point 7", scope.randNumber(1, 100)],
-				["Data Point 8", scope.randNumber(1, 100)],
-				["Data Point 9", scope.randNumber(1, 100)],
-				["Data Point 10", scope.randNumber(1, 100)],
-				["Data Point 11", scope.randNumber(1, 100)],
-				["Data Point 12", scope.randNumber(1, 100)]
-			]
-		}];
-	},
-	getGaugeDemoData: function(param1, options) {
-		var scope = this;
-		var dataSeries = [{
-			"name": "Random Data 1",
-			"data": [{
-					name: "Data Point 1",
-					y: scope.randNumber(1, 100)
-				}
-			]
-		}];
-		dataSeries.forEach(function(currentSeries) {
-			currentSeries.data.map(function(data, index, dataArray) {
-				var width = (options.outer_radius - options.inner_radius) / dataArray.length;
-				data.innerRadius = index * width + options.inner_radius;
-				data.radius = ((index + 1) == dataArray.length) ? options.outer_radius : ((index + 1) * width + options.inner_radius) - 1;
-			});
-		});
-		return dataSeries;
-	},
-	getHeatmapDemoData: function() {
-		var scope = this;
-		var series = [{
-			data:[
-				[0,0,scope.randNumber(1, 100)],
-				[0,1,scope.randNumber(1, 100)],
-				[0,2,scope.randNumber(1, 100)],
-				[1,0,scope.randNumber(1, 100)],
-				[1,1,scope.randNumber(1, 100)],
-				[1,2,scope.randNumber(1, 100)],
-				[2,0,scope.randNumber(1, 100)],
-				[2,1,scope.randNumber(1, 100)],
-				[2,2,scope.randNumber(1, 100)]
-			]
-		}];
-		return series;
-	},
-	randNumber: function(min, max) {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-	},
-	getParamAsString: function(paramName) {
-		if (this.request.queryParams.hasOwnProperty(paramName)) {
-			return this.request.queryParams[paramName] + '';
-		}
-		return false;
-	},
-	type: 'PEHighchartsExample'
-};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 23:43:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c7ab5d83db9932002e5df2b6ae961969&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEHighchartsExample&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c7ab5d83db9932002e5df2b6ae961969&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 15:28:04&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>4fc51d17db9532002e5df2b6ae96196c</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PEHighchartsExample</target_name>
-<type>Script Include</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_dependency_5a548d07db5932002e5df2b6ae9619bf</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>PE Highcharts 5.0.5</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:01:46</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5a548d07db5932002e5df2b6ae9619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_5a548d07db5932002e5df2b6ae9619bf</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:01:46</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>83c51d17db9532002e5df2b6ae96196b</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts 5.0.5</target_name>
-<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -1664,14 +59,14 @@ PEHighchartsExample.prototype = {
 	var highchartsHelper = new PEHighchartsHelper(request,response);
 	return highchartsHelper.process();
 })(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/pe_highcharts_helper/get_data&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/get_data&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 04:30:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a9fc960bdbd932002e5df2b6ae961971&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Get Data&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_a9fc960bdbd932002e5df2b6ae961971&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 04:31:07&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="PE Highcharts Helper"&gt;226c520bdbd932002e5df2b6ae961978&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>83c51d17db9532002e5df2b6ae96196e</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>32eb399fdbd532002e5df2b6ae961942</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
 <target_name>PE Get Data</target_name>
 <type>Scripted REST Resource</type>
@@ -1684,19 +79,19 @@ PEHighchartsExample.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_bd340d07db5932002e5df2b6ae9619ec</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE HighchartsNG">c722c9c3db5932002e5df2b6ae96193b</sp_dependency><sp_js_include display_value="PE highcharts-ng">b3244d07db5932002e5df2b6ae96197e</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:00:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bd340d07db5932002e5df2b6ae9619ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG.PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_bd340d07db5932002e5df2b6ae9619ec</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:00:59</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<name>sp_js_include_b3244d07db5932002e5df2b6ae96197e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE highcharts-ng</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:00:58</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b3244d07db5932002e5df2b6ae96197e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE highcharts-ng">b9d1058bdbd53200f687dfea5e9619f6</sys_ui_script><sys_update_name>sp_js_include_b3244d07db5932002e5df2b6ae96197e</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:00:58</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>87c51d17db9532002e5df2b6ae96196a</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>36eb399fdbd532002e5df2b6ae961927</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
-<target_name>PE HighchartsNG.PE highcharts-ng</target_name>
-<type>Dependency JS Includes</type>
+<target_name>PE highcharts-ng</target_name>
+<type>JS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -10084,17 +8479,39 @@ PEHighchartsExample.prototype = {
 	})(M);
 	return M
 });]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:52:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5752058bdbd53200f687dfea5e9619f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts 5_0_5&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5752058bdbd53200f687dfea5e9619f8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:09:37&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>87c51d17db9532002e5df2b6ae96196d</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>36eb399fdbd532002e5df2b6ae961941</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
 <target_name>PE Highcharts 5_0_5</target_name>
 <type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_6043c507db5932002e5df2b6ae96196c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts 5_0_5</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 21:56:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6043c507db5932002e5df2b6ae96196c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5_0_5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts 5_0_5">5752058bdbd53200f687dfea5e9619f8</sys_ui_script><sys_update_name>sp_js_include_6043c507db5932002e5df2b6ae96196c</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 21:56:59</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>3aeb399fdbd532002e5df2b6ae961926</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5_0_5</target_name>
+<type>JS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -10339,14 +8756,14 @@ PEHighchartsHelper.prototype = {
 	},
 	type: 'PEHighchartsHelper'
 };]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 23:43:38&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a1bb59c3db9932002e5df2b6ae9619e4&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEHighchartsHelper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_a1bb59c3db9932002e5df2b6ae9619e4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:10:05&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>8bc51d17db9532002e5df2b6ae96196c</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>3aeb399fdbd532002e5df2b6ae961940</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
 <target_name>PEHighchartsHelper</target_name>
 <type>Script Include</type>
@@ -10359,19 +8776,19 @@ PEHighchartsHelper.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_js_include_6c74cd07db5932002e5df2b6ae961982</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE highcharts-more</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6c74cd07db5932002e5df2b6ae961982</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE highcharts-more</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE highcharts-more">3793058bdbd53200f687dfea5e9619fb</sys_ui_script><sys_update_name>sp_js_include_6c74cd07db5932002e5df2b6ae961982</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:06</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<name>m2m_sp_widget_dependency_06f359d3db9532002e5df2b6ae961929</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_widget display_value="PE Pie Chart">343199d7db513200f687dfea5e961957</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 17:48:17</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>06f359d3db9532002e5df2b6ae961929</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Pie Chart</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_06f359d3db9532002e5df2b6ae961929</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 17:48:17</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>8fc51d17db9532002e5df2b6ae96196b</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>3eeb399fdbd532002e5df2b6ae961925</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
-<target_name>PE highcharts-more</target_name>
-<type>JS Include</type>
+<target_name>PE Highcharts 5.0.5.PE Pie Chart</target_name>
+<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -10381,19 +8798,19 @@ PEHighchartsHelper.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_ba94cd07db5932002e5df2b6ae9619f5</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>300</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE Highcharts No Data">64940147db5932002e5df2b6ae961981</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ba94cd07db5932002e5df2b6ae9619f5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Highcharts No Data</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_ba94cd07db5932002e5df2b6ae9619f5</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:46</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<name>sp_js_include_9084cd07db5932002e5df2b6ae9619f0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts Export</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:25</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9084cd07db5932002e5df2b6ae9619f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts Export</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts Export">85b3854bdbd53200f687dfea5e9619ab</sys_ui_script><sys_update_name>sp_js_include_9084cd07db5932002e5df2b6ae9619f0</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:25</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>c3c51d17db9532002e5df2b6ae96196a</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>72eb399fdbd532002e5df2b6ae961927</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
-<target_name>PE Highcharts 5.0.5.PE Highcharts No Data</target_name>
-<type>Dependency JS Includes</type>
+<target_name>PE Highcharts Export</target_name>
+<type>JS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -11528,17 +9945,1101 @@ PEHighchartsHelper.prototype = {
 		})
 	})(w)
 });]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:58:23&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;3793058bdbd53200f687dfea5e9619fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE highcharts-more&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_3793058bdbd53200f687dfea5e9619fb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:26&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>c3c51d17db9532002e5df2b6ae96196d</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>72eb399fdbd532002e5df2b6ae961941</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
 <target_name>PE highcharts-more</target_name>
 <type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_c722c9c3db5932002e5df2b6ae96193b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>pe-highcharts-ng</module><name>PE HighchartsNG</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 21:52:03</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c722c9c3db5932002e5df2b6ae96193b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c722c9c3db5932002e5df2b6ae96193b</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 21:52:03</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>76eb399fdbd532002e5df2b6ae961926</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE HighchartsNG</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_c874cd07db5932002e5df2b6ae961919</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE Highcharts 5_0_5">6043c507db5932002e5df2b6ae96196c</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:01:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c874cd07db5932002e5df2b6ae961919</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Highcharts 5_0_5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_c874cd07db5932002e5df2b6ae961919</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:01:57</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>7aeb399fdbd532002e5df2b6ae961925</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5.PE Highcharts 5_0_5</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_query_parameter_dfdc560bdbd932002e5df2b6ae961979</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value/><name>param1</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:28:23</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>dfdc560bdbd932002e5df2b6ae961979</sys_id><sys_mod_count>0</sys_mod_count><sys_name>param1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_dfdc560bdbd932002e5df2b6ae961979</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:28:23</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>7aeb399fdbd532002e5df2b6ae961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>param1</target_name>
+<type>Scripted REST Query Parameter</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_5674cd07db5932002e5df2b6ae96193f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>150</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE highcharts-more">6c74cd07db5932002e5df2b6ae961982</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5674cd07db5932002e5df2b6ae96193f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE highcharts-more</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_5674cd07db5932002e5df2b6ae96193f</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:13</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>7eeb399fdbd532002e5df2b6ae961924</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5.PE highcharts-more</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_226c520bdbd932002e5df2b6ae961978</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/pe_highcharts_helper</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>PE Highcharts Helper</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>pe_highcharts_helper</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:26:20</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>226c520bdbd932002e5df2b6ae961978</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts Helper</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_226c520bdbd932002e5df2b6ae961978</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:26:20</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>7eeb399fdbd532002e5df2b6ae961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE Highcharts Helper</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_5a548d07db5932002e5df2b6ae9619bf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>PE Highcharts 5.0.5</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:01:46</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5a548d07db5932002e5df2b6ae9619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts 5.0.5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_5a548d07db5932002e5df2b6ae9619bf</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:01:46</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>b2eb399fdbd532002e5df2b6ae961926</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_bd340d07db5932002e5df2b6ae9619ec</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE HighchartsNG">c722c9c3db5932002e5df2b6ae96193b</sp_dependency><sp_js_include display_value="PE highcharts-ng">b3244d07db5932002e5df2b6ae96197e</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:00:59</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bd340d07db5932002e5df2b6ae9619ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG.PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_bd340d07db5932002e5df2b6ae9619ec</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:00:59</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>b6eb399fdbd532002e5df2b6ae961925</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE HighchartsNG.PE highcharts-ng</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_query_parameter_bdbc160bdbd932002e5df2b6ae961962</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>process</example_value><name>function</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:27:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bdbc160bdbd932002e5df2b6ae961962</sys_id><sys_mod_count>0</sys_mod_count><sys_name>function</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_bdbc160bdbd932002e5df2b6ae961962</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:27:50</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>b6eb399fdbd532002e5df2b6ae961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>function</target_name>
+<type>Scripted REST Query Parameter</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_b9d1058bdbd53200f687dfea5e9619f6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE highcharts-ng&lt;/name&gt;&lt;script&gt;&lt;![CDATA[if (typeof module !== 'undefined' &amp;&amp; typeof exports !== 'undefined' &amp;&amp; module.exports === exports) {
+	module.exports = 'highcharts-ng';
+}
+
+(function() {
+
+	'use strict';
+	/*global angular: false, Highcharts: false */
+
+	angular.module('highcharts-ng', [])
+		.provider('highchartsNG', highchartsNGProvider)
+		.directive('highchart', ['highchartsNG', '$timeout', highchart])
+		.factory('HighchartsConfigService', ['$interval', '$http', '$q', HighchartsConfigService]);
+
+	function highchartsNGProvider() {
+		var modules = [];
+		var basePath = false;
+		var lazyLoad = false;
+		return {
+			HIGHCHART: 'highcharts.js',
+			HIGHSTOCK: 'stock/highstock.js',
+			basePath: function(p) {
+				basePath = p;
+			},
+			lazyLoad: function(list) {
+				if (list === undefined) {
+					modules = [this.HIGHCHART];
+				} else {
+					modules = list;
+				}
+				lazyLoad = true;
+			},
+			$get: ['$window', '$rootScope', function($window, $rootScope) {
+				if (!basePath) {
+					basePath = (window.location.protocol === 'https:' ? 'https' : 'http') + '://code.highcharts.com/';
+				}
+				return highchartsNG($window, $rootScope, lazyLoad, basePath, modules);
+			}]
+		};
+	}
+
+	function highchartsNG($window, $rootScope, lazyload, basePath, modules) {
+		var readyQueue = [];
+		var loading = false;
+		return {
+			lazyLoad: lazyload,
+			ready: function(callback, thisArg) {
+				if (typeof $window.Highcharts !== 'undefined' || !lazyload) {
+					callback();
+				} else {
+					readyQueue.push([callback, thisArg]);
+					if (loading) {
+						return;
+					}
+					loading = true;
+					var self = this;
+					if (typeof jQuery === 'undefined') {
+						modules.unshift('adapters/standalone-framework.js');
+					}
+					var doWork = function() {
+						if (modules.length === 0) {
+							loading = false;
+							$rootScope.$apply(function() {
+								angular.forEach(readyQueue, function(e) {
+									// invoke callback passing 'thisArg'
+									e[0].apply(e[1], []);
+								});
+							});
+						} else {
+							var s = modules.shift();
+							self.loadScript(s, doWork);
+						}
+					};
+					doWork();
+				}
+			},
+			loadScript: function(path, callback) {
+				var s = document.createElement('script');
+				s.type = 'text/javascript';
+				s.src = basePath + path;
+				s.onload = callback;
+				document.getElementsByTagName('body')[0].appendChild(s);
+			},
+			//IE8 support
+			indexOf: function(arr, find, i /*opt*/ ) {
+				if (i === undefined) i = 0;
+				if (i &lt; 0) i += arr.length;
+				if (i &lt; 0) i = 0;
+				for (var n = arr.length; i &lt; n; i++)
+					if (i in arr &amp;&amp; arr[i] === find)
+						return i;
+				return -1;
+			},
+
+			prependMethod: function(obj, method, func) {
+				var original = obj[method];
+				obj[method] = function() {
+					var args = Array.prototype.slice.call(arguments);
+					func.apply(this, args);
+					if (original) {
+						return original.apply(this, args);
+					} else {
+						return;
+					}
+
+				};
+			},
+
+			deepExtend: function deepExtend(destination, source) {
+				//Slightly strange behaviour in edge cases (e.g. passing in non objects)
+				//But does the job for current use cases.
+				if (angular.isArray(source)) {
+					destination = angular.isArray(destination) ? destination : [];
+					for (var i = 0; i &lt; source.length; i++) {
+						destination[i] = deepExtend(destination[i] || {}, source[i]);
+					}
+				} else if (angular.isObject(source)) {
+					destination = angular.isObject(destination) ? destination : {};
+					for (var property in source) {
+						destination[property] = deepExtend(destination[property] || {}, source[property]);
+					}
+				} else {
+					destination = source;
+				}
+				return destination;
+			}
+		};
+	}
+
+	function highchart(highchartsNGUtils, $timeout) {
+
+		// acceptable shared state
+		var seriesId = 0;
+		var ensureIds = function(series) {
+			var changed = false;
+			angular.forEach(series, function(s) {
+				if (!angular.isDefined(s.id)) {
+					s.id = 'series-' + seriesId++;
+					changed = true;
+				}
+			});
+			return changed;
+		};
+
+		// immutable
+		var axisNames = ['xAxis', 'yAxis'];
+		var chartTypeMap = {
+			'stock': 'StockChart',
+			'map': 'Map',
+			'chart': 'Chart'
+		};
+
+		var getMergedOptions = function(scope, element, config) {
+			var mergedOptions = {};
+
+			var defaultOptions = {
+				chart: {
+					events: {}
+				},
+				title: {},
+				subtitle: {},
+				series: [],
+				credits: {},
+				plotOptions: {},
+				navigator: {
+					enabled: false
+				},
+				xAxis: {
+					events: {}
+				},
+				yAxis: {
+					events: {}
+				}
+			};
+
+			if (config.options) {
+				mergedOptions = highchartsNGUtils.deepExtend(defaultOptions, config.options);
+			} else {
+				mergedOptions = defaultOptions;
+			}
+			mergedOptions.chart.renderTo = element[0];
+
+			angular.forEach(axisNames, function(axisName) {
+				if (angular.isDefined(config[axisName])) {
+					mergedOptions[axisName] = highchartsNGUtils.deepExtend(mergedOptions[axisName] || {}, config[axisName]);
+
+					if (angular.isDefined(config[axisName].currentMin) ||
+						angular.isDefined(config[axisName].currentMax)) {
+
+						highchartsNGUtils.prependMethod(mergedOptions.chart.events, 'selection', function(e) {
+							var thisChart = this;
+							if (e[axisName]) {
+								scope.$apply(function() {
+									scope.config[axisName].currentMin = e[axisName][0].min;
+									scope.config[axisName].currentMax = e[axisName][0].max;
+								});
+							} else {
+								//handle reset button - zoom out to all
+								scope.$apply(function() {
+									scope.config[axisName].currentMin = thisChart[axisName][0].dataMin;
+									scope.config[axisName].currentMax = thisChart[axisName][0].dataMax;
+								});
+							}
+						});
+
+						highchartsNGUtils.prependMethod(mergedOptions.chart.events, 'addSeries', function(e) {
+							scope.config[axisName].currentMin = this[axisName][0].min || scope.config[axisName].currentMin;
+							scope.config[axisName].currentMax = this[axisName][0].max || scope.config[axisName].currentMax;
+						});
+						highchartsNGUtils.prependMethod(mergedOptions[axisName].events, 'setExtremes', function(e) {
+							if (e.trigger &amp;&amp; e.trigger !== 'zoom') { // zoom trigger is handled by selection event
+								$timeout(function() {
+									scope.config[axisName].currentMin = e.min;
+									scope.config[axisName].currentMax = e.max;
+									scope.config[axisName].min = e.min; // set min and max to adjust scrollbar/navigator
+									scope.config[axisName].max = e.max;
+								}, 0);
+							}
+						});
+					}
+				}
+			});
+
+			if (config.title) {
+				mergedOptions.title = config.title;
+			}
+			if (config.subtitle) {
+				mergedOptions.subtitle = config.subtitle;
+			}
+			if (config.credits) {
+				mergedOptions.credits = config.credits;
+			}
+			if (config.size) {
+				if (config.size.width) {
+					mergedOptions.chart.width = config.size.width;
+				}
+				if (config.size.height) {
+					mergedOptions.chart.height = config.size.height;
+				}
+			}
+			return mergedOptions;
+		};
+
+		var updateZoom = function(axis, modelAxis) {
+			var extremes = axis.getExtremes();
+			if (modelAxis.currentMin !== extremes.dataMin || modelAxis.currentMax !== extremes.dataMax) {
+				if (axis.setExtremes) {
+					axis.setExtremes(modelAxis.currentMin, modelAxis.currentMax, false);
+				} else {
+					axis.detachedsetExtremes(modelAxis.currentMin, modelAxis.currentMax, false);
+				}
+			}
+		};
+
+		var processExtremes = function(chart, axis, axisName) {
+			if (axis.currentMin || axis.currentMax) {
+				chart[axisName][0].setExtremes(axis.currentMin, axis.currentMax, true);
+			}
+		};
+
+		var chartOptionsWithoutEasyOptions = function(options) {
+			return angular.extend(
+				highchartsNGUtils.deepExtend({}, options), {
+					data: null,
+					visible: null
+				}
+			);
+		};
+
+		var getChartType = function(scope) {
+			if (scope.config === undefined) return 'Chart';
+			return chartTypeMap[('' + scope.config.chartType).toLowerCase()] ||
+				(scope.config.useHighStocks ? 'StockChart' : 'Chart');
+		};
+
+		var res = {
+			restrict: 'EAC',
+			replace: true,
+			template: '&lt;div&gt;&lt;/div&gt;',
+			scope: {
+				config: '=',
+				disableDataWatch: '='
+			},
+			link: function(scope, element, attrs) {
+				// We keep some chart-specific variables here as a closure
+				// instead of storing them on 'scope'.
+
+				// prevSeriesOptions is maintained by processSeries
+				var prevSeriesOptions = {};
+
+				var processSeries = function(series) {
+					var i;
+					var ids = [];
+
+					if (series) {
+						var setIds = ensureIds(series);
+						if (setIds &amp;&amp; !scope.disableDataWatch) {
+							//If we have set some ids this will trigger another digest cycle.
+							//In this scenario just return early and let the next cycle take care of changes
+							return false;
+						}
+
+						//Find series to add or update
+						angular.forEach(series, function(s) {
+							ids.push(s.id);
+							var chartSeries = chart.get(s.id);
+							if (chartSeries) {
+								if (!angular.equals(prevSeriesOptions[s.id], chartOptionsWithoutEasyOptions(s))) {
+									chartSeries.update(angular.copy(s), false);
+								} else {
+									if (s.visible !== undefined &amp;&amp; chartSeries.visible !== s.visible) {
+										chartSeries.setVisible(s.visible, false);
+									}
+									chartSeries.setData(angular.copy(s.data), false);
+								}
+							} else {
+								chart.addSeries(angular.copy(s), false);
+							}
+							prevSeriesOptions[s.id] = chartOptionsWithoutEasyOptions(s);
+						});
+
+						//  Shows no data text if all series are empty
+						if (scope.config.noData) {
+							var chartContainsData = false;
+
+							for (i = 0; i &lt; series.length; i++) {
+								if (series[i].data &amp;&amp; series[i].data.length &gt; 0) {
+									chartContainsData = true;
+
+									break;
+								}
+							}
+
+							if (!chartContainsData) {
+								chart.showLoading(scope.config.noData);
+							} else {
+								chart.hideLoading();
+							}
+						}
+					}
+
+					//Now remove any missing series
+					for (i = chart.series.length - 1; i &gt;= 0; i--) {
+						var s = chart.series[i];
+						if (s.options.id !== 'highcharts-navigator-series' &amp;&amp; highchartsNGUtils.indexOf(ids, s.options.id) &lt; 0) {
+							s.remove(false);
+						}
+					}
+
+					return true;
+				};
+
+				// chart is maintained by initChart
+				var chart = false;
+				var initChart = function() {
+					if (chart) chart.destroy();
+					prevSeriesOptions = {};
+					var config = scope.config || {};
+					var mergedOptions = getMergedOptions(scope, element, config);
+					var func = config.func || undefined;
+					var chartType = getChartType(scope);
+
+					chart = new Highcharts[chartType](mergedOptions, func);
+
+					for (var i = 0; i &lt; axisNames.length; i++) {
+						if (config[axisNames[i]]) {
+							processExtremes(chart, config[axisNames[i]], axisNames[i]);
+						}
+					}
+					if (config.loading) {
+						chart.showLoading();
+					}
+					config.getHighcharts = function() {
+						return chart;
+					};
+
+				};
+				initChart();
+
+
+				if (scope.disableDataWatch) {
+					scope.$watchCollection('config.series', function(newSeries, oldSeries) {
+						processSeries(newSeries);
+						chart.redraw();
+					});
+				} else {
+					scope.$watch('config.series', function(newSeries, oldSeries) {
+						var needsRedraw = processSeries(newSeries);
+						if (needsRedraw) {
+							chart.redraw();
+						}
+					}, true);
+				}
+
+				scope.$watch('config.title', function(newTitle) {
+					chart.setTitle(newTitle, true);
+				}, true);
+
+				scope.$watch('config.subtitle', function(newSubtitle) {
+					chart.setTitle(true, newSubtitle);
+				}, true);
+
+				scope.$watch('config.loading', function(loading) {
+					if (loading) {
+						chart.showLoading(loading === true ? null : loading);
+					} else {
+						chart.hideLoading();
+					}
+				});
+				scope.$watch('config.noData', function(noData) {
+					if (scope.config &amp;&amp; scope.config.loading) {
+						chart.showLoading(noData);
+					}
+				}, true);
+
+				scope.$watch('config.credits.enabled', function(enabled) {
+					if (enabled) {
+						chart.credits.show();
+					} else if (chart.credits) {
+						chart.credits.hide();
+					}
+				});
+
+				scope.$watch(getChartType, function(chartType, oldChartType) {
+					if (chartType === oldChartType) return;
+					initChart();
+				});
+
+				angular.forEach(axisNames, function(axisName) {
+					scope.$watch('config.' + axisName, function(newAxes, oldAxes) {
+						if (newAxes === oldAxes || !newAxes) {
+							return;
+						}
+
+						if (angular.isArray(newAxes)) {
+
+							for (var axisIndex = 0; axisIndex &lt; newAxes.length; axisIndex++) {
+								var axis = newAxes[axisIndex];
+
+								if (axisIndex &lt; chart[axisName].length) {
+									chart[axisName][axisIndex].update(axis, false);
+									updateZoom(chart[axisName][axisIndex], angular.copy(axis));
+								}
+
+							}
+
+						} else {
+							// update single axis
+							chart[axisName][0].update(newAxes, false);
+							updateZoom(chart[axisName][0], angular.copy(newAxes));
+						}
+
+						chart.redraw();
+					}, true);
+				});
+				scope.$watch('config.options', function(newOptions, oldOptions, scope) {
+					//do nothing when called on registration
+					if (newOptions === oldOptions) return;
+					initChart();
+					processSeries(scope.config.series);
+					chart.redraw();
+				}, true);
+
+				scope.$watch('config.size', function(newSize, oldSize) {
+					if (newSize === oldSize) return;
+					if (newSize) {
+						chart.setSize(newSize.width || chart.chartWidth, newSize.height || chart.chartHeight);
+					}
+				}, true);
+
+				scope.$on('highchartsng.reflow', function() {
+					chart.reflow();
+				});
+
+				scope.$on('$destroy', function() {
+					if (chart) {
+						try {
+							chart.destroy();
+						} catch (ex) {
+							// fail silently as highcharts will throw exception if element doesn't exist
+						}
+
+						$timeout(function() {
+							element.remove();
+						}, 0);
+					}
+				});
+
+			}
+		};
+
+		// override link fn if lazy loading is enabled
+		if (highchartsNGUtils.lazyLoad) {
+			var oldLink = res.link;
+			res.link = function() {
+				var args = arguments;
+				highchartsNGUtils.ready(function() {
+					oldLink.apply(this, args);
+				}, this);
+			};
+		}
+		return res;
+	}
+
+	function HighchartsConfigService($interval, $http, $q) {
+		function setDataPoint(dataPoint, newValue) {
+			if (typeof dataPoint == "number") {
+				return newValue;
+			}
+			if (Array.isArray(dataPoint)) {
+				dataPoint[1] = newValue[1];
+				return dataPoint;
+			}
+			dataPoint.y = newValue.y;
+			return dataPoint;
+		}
+
+		function getData(url) {
+			var scope = this;
+			var deferred = $q.defer();
+			if (!scope.chartConfig.series) {
+				scope.chartConfig.series = [];
+			}
+			$http({
+					"method": "GET",
+					"headers": {
+						"X-UserToken": window.g_ck
+					},
+					"url": url
+				})
+				.success(function(data) {
+					deferred.resolve(set.call(scope, data));
+				})
+				.error(function(data) {
+					deferred.reject(setError.call(scope, data));
+				});
+			return deferred.promise;
+		}
+
+		function set(data) {
+			if (this.options.table) {
+				return setData.call(this, data);
+			} else if (this.options.script_include) {
+				return setScriptedData.call(this, data);
+			}
+		}
+
+		function setScriptedData(data) {
+			//Look for new columns
+			var results = data.result;
+			if (results.length == 0) {
+				return setError(data);
+			}
+			if (this.chartConfig.series.length == 0) {
+				this.chartConfig.series = results;
+			} else {
+				if (this.chartConfig.series.length &gt; results.length) {
+					while (this.chartConfig.series.length &gt; results.length) {
+						this.chartConfig.series.pop();
+					}
+				}
+				this.chartConfig.series.forEach(function(currentSeries, seriesIndex) {
+					var resultSeries = results[seriesIndex];
+					currentSeries.data = resultSeries.data;
+				});
+				if (this.chartConfig.series.length &lt; results.length) {
+					var startIndex = this.chartConfig.series.length;
+					for (var x = startIndex; x != results.length; x++) {
+						this.chartConfig.series.push(results[x]);
+					}
+				}
+			}
+			return this.chartConfig;
+		}
+
+		function setData(data) {
+			var scope = this;
+			var results = data.result;
+			if (results.length == 0) {
+				return setOnError(data);
+			}
+			scope.chartConfig.series.forEach(function(currentSeries) {
+				currentSeries.data.forEach(function(currentData, index) {
+					var resultData = results[index];
+					currentData = setDataPoint(currentData, resultData);
+				});
+			});
+			results.forEach(function(result) {
+				var count = parseInt(result.stats.count);
+				var fields = result.groupby_fields;
+				fields.forEach(function(field) {
+					var re = /(\b[a-z](?!\s))/g;
+					var fieldName = field.field.replace(/_/g, " ").replace(re, function(x) {
+						return x.toUpperCase();
+					});
+					var fieldValue = field.field;
+					var fieldDisplay = field.display_value || "None";
+					var currentSeriesIndex = scope.chartConfig.series.findIndex(function(seriesObject) {
+						return seriesObject.name == fieldName;
+					});
+					if (currentSeriesIndex != -1) {
+						var currentDataIndex = scope.chartConfig.series[currentSeriesIndex].data.findIndex(function(currentData) {
+							return currentData.name == fieldDisplay;
+						});
+						if (currentDataIndex != -1) {
+							scope.chartConfig.series[currentSeriesIndex].data[currentDataIndex].y = count;
+						} else {
+							scope.chartConfig.series[currentSeriesIndex].data.push({
+								"name": fieldDisplay,
+								"y": count,
+								"id": fieldValue
+							});
+						}
+					} else {
+						var tempObject = {
+							"name": fieldName,
+							"data": [{
+								"name": fieldDisplay,
+								"y": count,
+								"id": fieldValue
+							}],
+							"stack": scope.stackObject ? scope.stackObject[fieldValue] : fieldValue
+						};
+						scope.chartConfig.series.push(tempObject);
+					}
+				});
+			});
+			if (scope.chartConfig.options.chart.type == "solidgauge") {
+				scope.chartConfig.series.forEach(function(currentSeries) {
+					currentSeries.data.map(function(data, index, dataArray) {
+						var width = (scope.options.outer_radius - scope.options.inner_radius) / dataArray.length;
+						data.innerRadius = index * width + scope.options.inner_radius;
+						data.radius = ((index + 1) == dataArray.length) ? scope.options.outer_radius : ((index + 1) * width + scope.options.inner_radius) - 1;
+					});
+				});
+			}
+			scope.chartConfig.loading = false;
+			return scope.chartConfig;
+		}
+
+		function setError(data) {
+			this.chartConfig.options.lang.noData = "No data to display&lt;br/&gt;" + (data.error ? (data.error.detail ? data.error.detail.toString() : data.error.message.toString()) : "");
+			delete this.chartConfig.series;
+			return this.chartConfig;
+		}
+		var hcs = function(options, type, data, stackObject) {
+			var scope = this;
+			scope.options = options;
+			scope.data = data;
+			scope.chartConfig = {
+				"options": {
+					"chart": {
+						"borderWidth": 0,
+						"type": type || "line",
+						"zoomType": "xy",
+						"events": {
+							load: function() {
+								if (options.interval &amp;&amp; options.interval != "1970-01-01 00:00:00") {
+									var dateTime = moment(options.interval);
+									var time = (dateTime.seconds() + ((dateTime.minutes() + (dateTime.hours() * 60)) * 60)) * 1000;
+									$interval(function() {
+										scope.get();
+									}, time);
+								}
+							}
+						}
+					},
+					"lang": {
+						"noData": "No data to display"
+					},
+					"plotOptions": {
+						"series": {
+							"allowPointSelect": true,
+						}
+					},
+				},
+				"loading": data ? false : true,
+				"credits": {
+					"enabled": false
+				}
+			};
+		};
+		hcs.prototype.getChartConfig = function() {
+			var scope = this;
+			if (scope.options.advance) {
+				scope.chartConfig = Highcharts.merge(scope.chartConfig, JSON.parse(scope.options.advance));
+			}
+			return scope.chartConfig;
+		};
+		hcs.prototype.setError = function(data) {
+			return setError.call(this, data);
+		};
+		hcs.prototype.getData = function() {
+			var url = "/api/now/stats/" + this.options.table.toLowerCase() + "?sysparm_display_value=all&amp;sysparm_count=true&amp;sysparm_group_by=" + this.options.fields;
+			url += this.options.encoded_query ? "&amp;sysparm_query=" + this.options.encoded_query : "";
+			return getData.call(this, url);
+		};
+		hcs.prototype.getScriptedData = function() {
+			var url = "/api/snc/pe_highcharts_helper/get_data?script_include=" + this.options.script_include;
+			url += "&amp;options=" + JSON.stringify(this.options);
+			url += this.options.function_name ? "&amp;function_name=" + this.options.function_name : "";
+			url += this.options.param1 ? "&amp;param1=" + this.options.param1 : "";
+			return getData.call(this, url);
+		};
+		hcs.prototype.setScriptedData = function(data) {
+			return setScriptedData.call(this, data);
+		};
+		hcs.prototype.setData = function(data) {
+			return setData.call(this, data);
+		};
+		hcs.prototype.get = function() {
+			var scope = this;
+			if (scope.options.table) {
+				return scope.getData();
+			} else if (scope.options.script_include) {
+				return scope.getScriptedData();
+			}
+			this.chartConfig.series = [{
+				"data": scope.data
+			}];
+			return scope.getChartConfig();
+		};
+		hcs.prototype.set = function(data) {
+			var scope = this;
+			if (scope.options.table) {
+				return scope.setData(data);
+			} else if (scope.options.script_include) {
+				return scope.setScriptedData(data);
+			}
+		};
+		return hcs;
+	}
+}());]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:50:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b9d1058bdbd53200f687dfea5e9619f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE highcharts-ng&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_b9d1058bdbd53200f687dfea5e9619f6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 16:53:50&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>baeb399fdbd532002e5df2b6ae961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE highcharts-ng</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_6c74cd07db5932002e5df2b6ae961982</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE highcharts-more</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6c74cd07db5932002e5df2b6ae961982</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE highcharts-more</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE highcharts-more">3793058bdbd53200f687dfea5e9619fb</sys_ui_script><sys_update_name>sp_js_include_6c74cd07db5932002e5df2b6ae961982</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:06</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>beeb399fdbd532002e5df2b6ae961926</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE highcharts-more</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_26c3854bdbd53200f687dfea5e9619ac</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts No Data&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
+ Highcharts JS v4.2.6 (2016-08-02)
+ Plugin for displaying a message when there is no data visible in chart.
+
+ (c) 2010-2016 Highsoft AS
+ Author: Oystein Moseng
+ License: www.highcharts.com/license
+*/
+(function(a) {
+	typeof module === "object" &amp;&amp; module.exports ? module.exports = a : a(Highcharts)
+})(function(a) {
+	function h() {
+		return !!this.points.length
+	}
+
+	function d() {
+		this.hasData() ? this.hideNoData() : this.showNoData()
+	}
+	var e = a.seriesTypes,
+		c = a.Chart.prototype,
+		f = a.getOptions(),
+		g = a.extend,
+		i = a.each;
+	g(f.lang, {
+		noData: "No data to display"
+	});
+	f.noData = {
+		position: {
+			x: 0,
+			y: 0,
+			align: "center",
+			verticalAlign: "middle"
+		},
+		attr: {},
+		style: {
+			fontWeight: "bold",
+			fontSize: "12px",
+			color: "#60606a"
+		}
+	};
+	i(["pie", "gauge", "waterfall", "bubble", "treemap"],
+		function(b) {
+			if (e[b]) e[b].prototype.hasData = h
+		});
+	a.Series.prototype.hasData = function() {
+		return this.visible &amp;&amp; this.dataMax !== void 0 &amp;&amp; this.dataMin !== void 0
+	};
+	c.showNoData = function(b) {
+		var a = this.options,
+			b = b || a.lang.noData,
+			a = a.noData;
+		if (!this.noDataLabel) this.noDataLabel = this.renderer.label(b, 0, 0, null, null, null, a.useHTML, null, "no-data").attr(a.attr).css(a.style).add(), this.noDataLabel.align(g(this.noDataLabel.getBBox(), a.position), !1, "plotBox")
+	};
+	c.hideNoData = function() {
+		if (this.noDataLabel) this.noDataLabel =
+			this.noDataLabel.destroy()
+	};
+	c.hasData = function() {
+		for (var a = this.series, c = a.length; c--;)
+			if (a[c].hasData() &amp;&amp; !a[c].options.isInternal) return !0;
+		return !1
+	};
+	c.callbacks.push(function(b) {
+		a.addEvent(b, "load", d);
+		a.addEvent(b, "redraw", d)
+	})
+});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:59:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;26c3854bdbd53200f687dfea5e9619ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts No Data&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_26c3854bdbd53200f687dfea5e9619ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:19&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>beeb399fdbd532002e5df2b6ae961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE Highcharts No Data</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_ba94cd07db5932002e5df2b6ae9619f5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>300</order><sp_dependency display_value="PE Highcharts 5.0.5">5a548d07db5932002e5df2b6ae9619bf</sp_dependency><sp_js_include display_value="PE Highcharts No Data">64940147db5932002e5df2b6ae961981</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ba94cd07db5932002e5df2b6ae9619f5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Highcharts 5.0.5.PE Highcharts No Data</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_ba94cd07db5932002e5df2b6ae9619f5</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:46</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>f2eb399fdbd532002e5df2b6ae961925</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE Highcharts 5.0.5.PE Highcharts No Data</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_query_parameter_9acc160bdbd932002e5df2b6ae9619f8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value>HighchartsHelper</example_value><name>script_include</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:28:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9acc160bdbd932002e5df2b6ae9619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>script_include</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_9acc160bdbd932002e5df2b6ae9619f8</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:28:12</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>f2eb399fdbd532002e5df2b6ae961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>script_include</target_name>
+<type>Scripted REST Query Parameter</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -11594,14 +11095,14 @@ PEHighchartsHelper.prototype = {
 		}
 	});
 })();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 17:36:11&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;343199d7db513200f687dfea5e961957&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Pie Chart&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_343199d7db513200f687dfea5e961957&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 17:53:05&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;highchart config="c.chartConfig" class="pe-highchart-class pe-highchart-pie-chart"&gt;&lt;/highchart&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>c7c51d17db9532002e5df2b6ae96196c</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>f6eb399fdbd532002e5df2b6ae961927</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
 <target_name>PE Pie Chart</target_name>
 <type>Widget</type>
@@ -11614,16 +11115,439 @@ PEHighchartsHelper.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_js_include_64940147db5932002e5df2b6ae961981</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts No Data</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>64940147db5932002e5df2b6ae961981</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts No Data</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts No Data">26c3854bdbd53200f687dfea5e9619ac</sys_ui_script><sys_update_name>sp_js_include_64940147db5932002e5df2b6ae961981</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:41</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<name>sys_ui_script_85b3854bdbd53200f687dfea5e9619ab</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts Export&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
+ Highcharts JS v4.2.6 (2016-08-02)
+ Exporting module
+
+ (c) 2010-2016 Torstein Honsi
+
+ License: www.highcharts.com/license
+*/
+(function(f) {
+	typeof module === "object" &amp;&amp; module.exports ? module.exports = f : f(Highcharts)
+})(function(f) {
+	var s = f.win,
+		j = s.document,
+		B = f.Chart,
+		u = f.addEvent,
+		C = f.removeEvent,
+		D = f.fireEvent,
+		r = f.createElement,
+		t = f.discardElement,
+		w = f.css,
+		l = f.merge,
+		m = f.each,
+		q = f.extend,
+		F = f.splat,
+		G = Math.max,
+		H = f.isTouchDevice,
+		I = f.Renderer.prototype.symbols,
+		z = f.getOptions(),
+		A;
+	q(z.lang, {
+		printChart: "Print chart",
+		downloadPNG: "Download PNG image",
+		downloadJPEG: "Download JPEG image",
+		downloadPDF: "Download PDF document",
+		downloadSVG: "Download SVG vector image",
+		contextButtonTitle: "Chart context menu"
+	});
+	z.navigation = {
+		menuStyle: {
+			border: "1px solid #A0A0A0",
+			background: "#FFFFFF",
+			padding: "5px 0"
+		},
+		menuItemStyle: {
+			padding: "0 10px",
+			background: "none",
+			color: "#303030",
+			fontSize: H ? "14px" : "11px"
+		},
+		menuItemHoverStyle: {
+			background: "#4572A5",
+			color: "#FFFFFF"
+		},
+		buttonOptions: {
+			symbolFill: "#E0E0E0",
+			symbolSize: 14,
+			symbolStroke: "#666",
+			symbolStrokeWidth: 3,
+			symbolX: 12.5,
+			symbolY: 10.5,
+			align: "right",
+			buttonSpacing: 3,
+			height: 22,
+			theme: {
+				fill: "white",
+				stroke: "none"
+			},
+			verticalAlign: "top",
+			width: 24
+		}
+	};
+	z.exporting = {
+		type: "image/png",
+		url: "https://export.highcharts.com/",
+		printMaxWidth: 780,
+		scale: 2,
+		buttons: {
+			contextButton: {
+				menuClassName: "highcharts-contextmenu",
+				symbol: "menu",
+				_titleKey: "contextButtonTitle",
+				menuItems: [{
+						textKey: "printChart",
+						onclick: function() {
+							this.print()
+						}
+					}, {
+						separator: !0
+					}, {
+						textKey: "downloadPNG",
+						onclick: function() {
+							this.exportChart()
+						}
+					}, {
+						textKey: "downloadJPEG",
+						onclick: function() {
+							this.exportChart({
+								type: "image/jpeg"
+							})
+						}
+					}, {
+						textKey: "downloadPDF",
+						onclick: function() {
+							this.exportChart({
+								type: "application/pdf"
+							})
+						}
+					},
+					{
+						textKey: "downloadSVG",
+						onclick: function() {
+							this.exportChart({
+								type: "image/svg+xml"
+							})
+						}
+					}
+				]
+			}
+		}
+	};
+	f.post = function(a, b, e) {
+		var c, a = r("form", l({
+			method: "post",
+			action: a,
+			enctype: "multipart/form-data"
+		}, e), {
+			display: "none"
+		}, j.body);
+		for (c in b) r("input", {
+			type: "hidden",
+			name: c,
+			value: b[c]
+		}, null, a);
+		a.submit();
+		t(a)
+	};
+	q(B.prototype, {
+		sanitizeSVG: function(a) {
+			return a.replace(/zIndex="[^"]+"/g, "").replace(/isShadow="[^"]+"/g, "").replace(/symbolName="[^"]+"/g, "").replace(/jQuery[0-9]+="[^"]+"/g, "").replace(/url\([^#]+#/g, "url(#").replace(/&lt;svg /,
+				'&lt;svg xmlns:xlink="http://www.w3.org/1999/xlink" ').replace(/ (NS[0-9]+\:)?href=/g, " xlink:href=").replace(/\n/, " ").replace(/&lt;\/svg&gt;.*?$/, "&lt;/svg&gt;").replace(/(fill|stroke)="rgba\(([ 0-9]+,[ 0-9]+,[ 0-9]+),([ 0-9\.]+)\)"/g, '$1="rgb($2)" $1-opacity="$3"').replace(/&amp;nbsp;/g, "\u00a0").replace(/&amp;shy;/g, "\u00ad").replace(/&lt;IMG /g, "&lt;image ").replace(/&lt;(\/?)TITLE&gt;/g, "&lt;$1title&gt;").replace(/height=([^" ]+)/g, 'height="$1"').replace(/width=([^" ]+)/g, 'width="$1"').replace(/hc-svg-href="([^"]+)"&gt;/g, 'xlink:href="$1"/&gt;').replace(/ id=([^" &gt;]+)/g,
+				' id="$1"').replace(/class=([^" &gt;]+)/g, 'class="$1"').replace(/ transform /g, " ").replace(/:(path|rect)/g, "$1").replace(/style="([^"]+)"/g, function(a) {
+				return a.toLowerCase()
+			})
+		},
+		getChartHTML: function() {
+			return this.container.innerHTML
+		},
+		getSVG: function(a) {
+			var b = this,
+				e, c, g, k, h, d = l(b.options, a),
+				n = d.exporting.allowHTML;
+			if (!j.createElementNS) j.createElementNS = function(a, b) {
+				return j.createElement(b)
+			};
+			c = r("div", null, {
+				position: "absolute",
+				top: "-9999em",
+				width: b.chartWidth + "px",
+				height: b.chartHeight + "px"
+			}, j.body);
+			g = b.renderTo.style.width;
+			h = b.renderTo.style.height;
+			g = d.exporting.sourceWidth || d.chart.width || /px$/.test(g) &amp;&amp; parseInt(g, 10) || 600;
+			h = d.exporting.sourceHeight || d.chart.height || /px$/.test(h) &amp;&amp; parseInt(h, 10) || 400;
+			q(d.chart, {
+				animation: !1,
+				renderTo: c,
+				forExport: !0,
+				renderer: "SVGRenderer",
+				width: g,
+				height: h
+			});
+			d.exporting.enabled = !1;
+			delete d.data;
+			d.series = [];
+			m(b.series, function(a) {
+				k = l(a.userOptions, {
+					animation: !1,
+					enableMouseTracking: !1,
+					showCheckbox: !1,
+					visible: a.visible
+				});
+				k.isInternal || d.series.push(k)
+			});
+			a &amp;&amp; m(["xAxis",
+				"yAxis"
+			], function(b) {
+				m(F(a[b]), function(a, c) {
+					d[b][c] = l(d[b][c], a)
+				})
+			});
+			e = new f.Chart(d, b.callback);
+			m(["xAxis", "yAxis"], function(a) {
+				m(b[a], function(b, c) {
+					var d = e[a][c],
+						f = b.getExtremes(),
+						g = f.userMin,
+						f = f.userMax;
+					d &amp;&amp; (g !== void 0 || f !== void 0) &amp;&amp; d.setExtremes(g, f, !0, !1)
+				})
+			});
+			g = e.getChartHTML();
+			d = null;
+			e.destroy();
+			t(c);
+			if (n &amp;&amp; (c = g.match(/&lt;\/svg&gt;(.*?$)/))) c = '&lt;foreignObject x="0" y="0" width="200" height="200"&gt;&lt;body xmlns="http://www.w3.org/1999/xhtml"&gt;' + c[1] + "&lt;/body&gt;&lt;/foreignObject&gt;", g = g.replace("&lt;/svg&gt;", c + "&lt;/svg&gt;");
+			g = this.sanitizeSVG(g);
+			return g = g.replace(/(url\(#highcharts-[0-9]+)&amp;quot;/g, "$1").replace(/&amp;quot;/g, "'")
+		},
+		getSVGForExport: function(a, b) {
+			var e = this.options.exporting;
+			return this.getSVG(l({
+				chart: {
+					borderRadius: 0
+				}
+			}, e.chartOptions, b, {
+				exporting: {
+					sourceWidth: a &amp;&amp; a.sourceWidth || e.sourceWidth,
+					sourceHeight: a &amp;&amp; a.sourceHeight || e.sourceHeight
+				}
+			}))
+		},
+		exportChart: function(a, b) {
+			var e = this.getSVGForExport(a, b),
+				a = l(this.options.exporting, a);
+			f.post(a.url, {
+				filename: a.filename || "chart",
+				type: a.type,
+				width: a.width || 0,
+				scale: a.scale,
+				svg: e
+			}, a.formAttributes)
+		},
+		print: function() {
+			var a = this,
+				b = a.container,
+				e = [],
+				c = b.parentNode,
+				f = j.body,
+				k = f.childNodes,
+				h = a.options.exporting.printMaxWidth,
+				d, n;
+			if (!a.isPrinting) {
+				a.isPrinting = !0;
+				a.pointer.reset(null, 0);
+				D(a, "beforePrint");
+				if (n = h &amp;&amp; a.chartWidth &gt; h) d = [a.options.chart.width, void 0, !1], a.setSize(h, void 0, !1);
+				m(k, function(a, b) {
+					if (a.nodeType === 1) e[b] = a.style.display, a.style.display = "none"
+				});
+				f.appendChild(b);
+				s.focus();
+				s.print();
+				setTimeout(function() {
+					c.appendChild(b);
+					m(k, function(a, b) {
+						if (a.nodeType ===
+							1) a.style.display = e[b]
+					});
+					a.isPrinting = !1;
+					n &amp;&amp; a.setSize.apply(a, d);
+					D(a, "afterPrint")
+				}, 1E3)
+			}
+		},
+		contextMenu: function(a, b, e, c, f, k, h) {
+			var d = this,
+				n = d.options.navigation,
+				l = n.menuItemStyle,
+				o = d.chartWidth,
+				p = d.chartHeight,
+				E = "cache-" + a,
+				i = d[E],
+				v = G(f, k),
+				x, y, s, t = function(b) {
+					d.pointer.inClass(b.target, a) || y()
+				};
+			if (!i) d[E] = i = r("div", {
+				className: a
+			}, {
+				position: "absolute",
+				zIndex: 1E3,
+				padding: v + "px"
+			}, d.container), x = r("div", null, q({
+					MozBoxShadow: "3px 3px 10px #888",
+					WebkitBoxShadow: "3px 3px 10px #888",
+					boxShadow: "3px 3px 10px #888"
+				},
+				n.menuStyle), i), y = function() {
+				w(i, {
+					display: "none"
+				});
+				h &amp;&amp; h.setState(0);
+				d.openMenu = !1
+			}, u(i, "mouseleave", function() {
+				s = setTimeout(y, 500)
+			}), u(i, "mouseenter", function() {
+				clearTimeout(s)
+			}), u(j, "mouseup", t), u(d, "destroy", function() {
+				C(j, "mouseup", t)
+			}), m(b, function(a) {
+				if (a) {
+					var b = a.separator ? r("hr", null, null, x) : r("div", {
+						onmouseover: function() {
+							w(this, n.menuItemHoverStyle)
+						},
+						onmouseout: function() {
+							w(this, l)
+						},
+						onclick: function(b) {
+							b &amp;&amp; b.stopPropagation();
+							y();
+							a.onclick &amp;&amp; a.onclick.apply(d, arguments)
+						},
+						innerHTML: a.text ||
+							d.options.lang[a.textKey]
+					}, q({
+						cursor: "pointer"
+					}, l), x);
+					d.exportDivElements.push(b)
+				}
+			}), d.exportDivElements.push(x, i), d.exportMenuWidth = i.offsetWidth, d.exportMenuHeight = i.offsetHeight;
+			b = {
+				display: "block"
+			};
+			e + d.exportMenuWidth &gt; o ? b.right = o - e - f - v + "px" : b.left = e - v + "px";
+			c + k + d.exportMenuHeight &gt; p &amp;&amp; h.alignOptions.verticalAlign !== "top" ? b.bottom = p - c - v + "px" : b.top = c + k - v + "px";
+			w(i, b);
+			d.openMenu = !0
+		},
+		addButton: function(a) {
+			var b = this,
+				e = b.renderer,
+				c = l(b.options.navigation.buttonOptions, a),
+				g = c.onclick,
+				k = c.menuItems,
+				h, d, n = {
+					stroke: c.symbolStroke,
+					fill: c.symbolFill
+				},
+				j = c.symbolSize || 12;
+			if (!b.btnCount) b.btnCount = 0;
+			if (!b.exportDivElements) b.exportDivElements = [], b.exportSVGElements = [];
+			if (c.enabled !== !1) {
+				var o = c.theme,
+					p = o.states,
+					m = p &amp;&amp; p.hover,
+					p = p &amp;&amp; p.select,
+					i;
+				delete o.states;
+				g ? i = function(a) {
+					a.stopPropagation();
+					g.call(b, a)
+				} : k &amp;&amp; (i = function() {
+					b.contextMenu(d.menuClassName, k, d.translateX, d.translateY, d.width, d.height, d);
+					d.setState(2)
+				});
+				c.text &amp;&amp; c.symbol ? o.paddingLeft = f.pick(o.paddingLeft, 25) : c.text || q(o, {
+					width: c.width,
+					height: c.height,
+					padding: 0
+				});
+				d = e.button(c.text, 0, 0, i, o, m, p).attr({
+					title: b.options.lang[c._titleKey],
+					"stroke-linecap": "round",
+					zIndex: 3
+				});
+				d.menuClassName = a.menuClassName || "highcharts-menu-" + b.btnCount++;
+				c.symbol &amp;&amp; (h = e.symbol(c.symbol, c.symbolX - j / 2, c.symbolY - j / 2, j, j).attr(q(n, {
+					"stroke-width": c.symbolStrokeWidth || 1,
+					zIndex: 1
+				})).add(d));
+				d.add().align(q(c, {
+					width: d.width,
+					x: f.pick(c.x, A)
+				}), !0, "spacingBox");
+				A += (d.width + c.buttonSpacing) * (c.align === "right" ? -1 : 1);
+				b.exportSVGElements.push(d, h)
+			}
+		},
+		destroyExport: function(a) {
+			var a =
+				a.target,
+				b, e;
+			for (b = 0; b &lt; a.exportSVGElements.length; b++)
+				if (e = a.exportSVGElements[b]) e.onclick = e.ontouchstart = null, a.exportSVGElements[b] = e.destroy();
+			for (b = 0; b &lt; a.exportDivElements.length; b++) e = a.exportDivElements[b], C(e, "mouseleave"), a.exportDivElements[b] = e.onmouseout = e.onmouseover = e.ontouchstart = e.onclick = null, t(e)
+		}
+	});
+	I.menu = function(a, b, e, c) {
+		return ["M", a, b + 2.5, "L", a + e, b + 2.5, "M", a, b + c / 2 + 0.5, "L", a + e, b + c / 2 + 0.5, "M", a, b + c - 1.5, "L", a + e, b + c - 1.5]
+	};
+	B.prototype.callbacks.push(function(a) {
+		var b, e = a.options.exporting,
+			c = e.buttons;
+		A = 0;
+		if (e.enabled !== !1) {
+			for (b in c) a.addButton(c[b]);
+			u(a, "destroy", a.destroyExport)
+		}
+	})
+});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:58:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;85b3854bdbd53200f687dfea5e9619ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts Export&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_85b3854bdbd53200f687dfea5e9619ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:12&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>cbc51d17db9532002e5df2b6ae96196b</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>f6eb399fdbd532002e5df2b6ae961941</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
+<table/>
+<target_name>PE Highcharts Export</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_64940147db5932002e5df2b6ae961981</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Highcharts No Data</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-08 22:02:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>64940147db5932002e5df2b6ae961981</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts No Data</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Highcharts No Data">26c3854bdbd53200f687dfea5e9619ac</sys_ui_script><sys_update_name>sp_js_include_64940147db5932002e5df2b6ae961981</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-08 22:02:41</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>faeb399fdbd532002e5df2b6ae961926</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
 <target_name>PE Highcharts No Data</target_name>
 <type>JS Include</type>
@@ -11636,19 +11560,153 @@ PEHighchartsHelper.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_ws_query_parameter_dfdc560bdbd932002e5df2b6ae961979</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_query_parameter"><sys_ws_query_parameter action="INSERT_OR_UPDATE"><example_value/><name>param1</name><required>false</required><short_description/><sys_class_name>sys_ws_query_parameter</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:28:23</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>dfdc560bdbd932002e5df2b6ae961979</sys_id><sys_mod_count>0</sys_mod_count><sys_name>param1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_query_parameter_dfdc560bdbd932002e5df2b6ae961979</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:28:23</sys_updated_on><web_service_definition display_value="PE Highcharts Helper">226c520bdbd932002e5df2b6ae961978</web_service_definition></sys_ws_query_parameter></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<name>sys_script_include_c7ab5d83db9932002e5df2b6ae961969</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PEHighchartsExample&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PEHighchartsExample&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PEHighchartsExample = Class.create();
+PEHighchartsExample.prototype = {
+	initialize: function(request, response) {
+		this.json = new JSON();
+	},
+	getDemoData: function(param1) {
+		var scope = this;
+		return [{
+			"name": "Random Data 1",
+			"data": [
+				["Data Point 1", scope.randNumber(1, 100)],
+				["Data Point 2", scope.randNumber(1, 100)],
+				["Data Point 3", scope.randNumber(1, 100)],
+				["Data Point 4", scope.randNumber(1, 100)],
+				["Data Point 5", scope.randNumber(1, 100)],
+				["Data Point 6", scope.randNumber(1, 100)],
+				["Data Point 7", scope.randNumber(1, 100)],
+				["Data Point 8", scope.randNumber(1, 100)],
+				["Data Point 9", scope.randNumber(1, 100)]
+			]
+		}, {
+			"name": "Random Data 2",
+			"data": [
+				["Data Point 1", scope.randNumber(1, 100)],
+				["Data Point 2", scope.randNumber(1, 100)],
+				["Data Point 3", scope.randNumber(1, 100)],
+				["Data Point 4", scope.randNumber(1, 100)],
+				["Data Point 5", scope.randNumber(1, 100)],
+				["Data Point 6", scope.randNumber(1, 100)]
+			]
+		}];
+	},
+	getPieDemoData: function(param1) {
+		var scope = this;
+		return [{
+			"name": "Random Data 1",
+			"data": [
+				["Data Point 1", scope.randNumber(1, 100)],
+				["Data Point 2", scope.randNumber(1, 100)],
+				["Data Point 3", scope.randNumber(1, 100)],
+				["Data Point 4", scope.randNumber(1, 100)],
+				["Data Point 5", scope.randNumber(1, 100)],
+				["Data Point 6", scope.randNumber(1, 100)],
+				["Data Point 7", scope.randNumber(1, 100)],
+				["Data Point 8", scope.randNumber(1, 100)],
+				["Data Point 9", scope.randNumber(1, 100)],
+				["Data Point 10", scope.randNumber(1, 100)],
+				["Data Point 11", scope.randNumber(1, 100)],
+				["Data Point 12", scope.randNumber(1, 100)]
+			]
+		}];
+	},
+	getGaugeDemoData: function(param1) {
+		var scope = this;
+		var dataSeries = [{
+			"name": "Random Data 1",
+			"data": [{
+				name: "Data Point 1",
+				y: scope.randNumber(1, 100)
+			}]
+		}];
+		return dataSeries;
+	},
+	getHeatmapDemoData: function(param1) {
+		var scope = this;
+		var series = [{
+			data: [
+				[0, 0, scope.randNumber(1, 100)],
+				[0, 1, scope.randNumber(1, 100)],
+				[0, 2, scope.randNumber(1, 100)],
+				[1, 0, scope.randNumber(1, 100)],
+				[1, 1, scope.randNumber(1, 100)],
+				[1, 2, scope.randNumber(1, 100)],
+				[2, 0, scope.randNumber(1, 100)],
+				[2, 1, scope.randNumber(1, 100)],
+				[2, 2, scope.randNumber(1, 100)]
+			]
+		}];
+		return series;
+	},
+	getTreemapDemoData: function(param1) {
+		var scope = this;
+		var series = [{
+			data: [
+				{
+					name:"A", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"B", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"C", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"D",
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"E", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"F", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"G", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"H", 
+					value:scope.randNumber(1, 100)
+				},
+				{
+					name:"I", 
+					value:scope.randNumber(1, 100)
+				}
+			]
+		}];
+		return series;
+	},
+	randNumber: function(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	},
+	getParamAsString: function(paramName) {
+		if (this.request.queryParams.hasOwnProperty(paramName)) {
+			return this.request.queryParams[paramName] + '';
+		}
+		return false;
+	},
+	type: 'PEHighchartsExample'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 23:43:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c7ab5d83db9932002e5df2b6ae961969&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEHighchartsExample&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c7ab5d83db9932002e5df2b6ae961969&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 20:25:42&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>cbc51d17db9532002e5df2b6ae96196e</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>faeb399fdbd532002e5df2b6ae961940</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
-<target_name>param1</target_name>
-<type>Scripted REST Query Parameter</type>
+<target_name>PEHighchartsExample</target_name>
+<type>Script Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -11660,39 +11718,17 @@ PEHighchartsHelper.prototype = {
 <comments/>
 <name>m2m_sp_widget_dependency_c6f359d3db9532002e5df2b6ae9619cd</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE HighchartsNG">c722c9c3db5932002e5df2b6ae96193b</sp_dependency><sp_widget display_value="PE Pie Chart">343199d7db513200f687dfea5e961957</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 17:48:17</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c6f359d3db9532002e5df2b6ae9619cd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG.PE Pie Chart</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_c6f359d3db9532002e5df2b6ae9619cd</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 17:48:17</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
+<remote_update_set display_value="PE Highcharts - Pie Chart">7aeb399fdbd532002e5df2b6ae961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>cfc51d17db9532002e5df2b6ae96196a</sys_id>
+<sys_created_on>2017-03-09 20:42:50</sys_created_on>
+<sys_id>feeb399fdbd532002e5df2b6ae961925</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
+<sys_updated_on>2017-03-09 20:42:50</sys_updated_on>
 <table/>
 <target_name>PE HighchartsNG.PE Pie Chart</target_name>
 <type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ws_definition_226c520bdbd932002e5df2b6ae961978</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/pe_highcharts_helper</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>PE Highcharts Helper</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>pe_highcharts_helper</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>dachtman</sys_created_by><sys_created_on>2017-03-09 04:26:20</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>226c520bdbd932002e5df2b6ae961978</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Highcharts Helper</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_226c520bdbd932002e5df2b6ae961978</sys_update_name><sys_updated_by>dachtman</sys_updated_by><sys_updated_on>2017-03-09 04:26:20</sys_updated_on></sys_ws_definition></record_update>]]></payload>
-<remote_update_set display_value="PE Highcharts - Pie Chart">4bc51d17db9532002e5df2b6ae961969</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>dachtman</sys_created_by>
-<sys_created_on>2017-03-09 17:56:17</sys_created_on>
-<sys_id>cfc51d17db9532002e5df2b6ae96196d</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>dachtman</sys_updated_by>
-<sys_updated_on>2017-03-09 17:56:17</sys_updated_on>
-<table/>
-<target_name>PE Highcharts Helper</target_name>
-<type>Scripted REST API</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
