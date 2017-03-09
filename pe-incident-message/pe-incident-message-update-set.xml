@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-09 18:30:47">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Incident Message</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>b06d1517db1d3200b793f2b6ae961900</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-09 18:30:46</sys_created_on>
+<sys_id>d8bd9917db1d3200b793f2b6ae9619f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-09 18:30:46</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_a1e0159fdbd93200b793f2b6ae9619bf</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function IncidentMessageController() {
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-status-color-danger: #6b0022 !default;&amp;#13;
+$pe-badge-danger: #a40034 !default;&amp;#13;
+$pe-background-header-danger: #dd0047 !default;&amp;#13;
+$pe-background-body-danger: #be003d !default;&amp;#13;
+&amp;#13;
+.incident-message {&amp;#13;
+  .badge {&amp;#13;
+    background-color: $pe-badge-danger;&amp;#13;
+    border-radius: 100px;&amp;#13;
+    float: right;&amp;#13;
+    font-size: 12px;&amp;#13;
+    font-weight: normal;&amp;#13;
+    height: 28px;&amp;#13;
+    margin-top: -5px;&amp;#13;
+    padding-top: 7px;&amp;#13;
+    text-transform: lowercase;&amp;#13;
+    width: 76px;&amp;#13;
+  }&amp;#13;
+  .panel {&amp;#13;
+    color: #fff;&amp;#13;
+    .panel-heading {&amp;#13;
+      border-bottom: 0;&amp;#13;
+      color: #fff;&amp;#13;
+      font-size: 12px;&amp;#13;
+      padding: 14px;&amp;#13;
+      text-transform: uppercase;&amp;#13;
+    }&amp;#13;
+    .panel-body {&amp;#13;
+      .status-circle-small-left {&amp;#13;
+        background: $pe-status-color-danger;&amp;#13;
+        border-radius: 10px;&amp;#13;
+        float: left;&amp;#13;
+        height: 10px;&amp;#13;
+        margin: 5px 10px 0 0;&amp;#13;
+        width: 10px;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .panel-header-high-risk {&amp;#13;
+      background-color: $pe-background-header-danger;&amp;#13;
+    }&amp;#13;
+    .panel-body-high-risk {&amp;#13;
+      background-color: $pe-background-body-danger;&amp;#13;
+      font-size: 15px;&amp;#13;
+      font-weight: 400;&amp;#13;
+      padding-bottom: 5px;&amp;#13;
+      .status-message {&amp;#13;
+        font-weight: 100;&amp;#13;
+        margin-left: 20px;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-incident-message&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Incident Message&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","label":"Title","type":"string"},{"name":"message_time","label":"Message Time","type":"string"},{"name":"message_header","label":"Message Header","type":"string"},{"name":"message_body","label":"Message Body","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+  options.title = options.title || serverOptions.title || 'Torrentjack Ransomware';
+  options.messageTime = options.message_time || serverOptions.message_time || '38m ago';
+  options.messageHeader = options.message_header || serverOptions.message_header || 'SIR0001932 - TorrentJack Ransomware';
+  options.messageBody = options.message_body || serverOptions.message_body || 'Palo Alto Wildefire detected 1631 emails tied to a phishing attack.';
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 17:35:55&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a1e0159fdbd93200b793f2b6ae9619bf&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Incident Message&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a1e0159fdbd93200b793f2b6ae9619bf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 18:23:36&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row incident-message"&gt;
+  &lt;div class="col-xs-12"&gt;
+    &lt;div class="panel panel-default"&gt;
+      &lt;div class="panel-heading panel-header-high-risk"&gt;{{::options.title}}
+        &lt;span class="badge"&gt;{{::options.messageTime}}&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="panel-body panel-body-high-risk"&gt;
+        &lt;p&gt;&lt;i class="status-circle-small-left"&gt;&lt;/i&gt;{{options.messageHeader}}&lt;/p&gt;
+        &lt;p class="status-message"&gt;{{options.messageBody}}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Incident Message">d8bd9917db1d3200b793f2b6ae9619f5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-09 18:30:46</sys_created_on>
+<sys_id>5cbd9917db1d3200b793f2b6ae9619f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-09 18:30:46</sys_updated_on>
+<table/>
+<target_name>PE Incident Message</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
