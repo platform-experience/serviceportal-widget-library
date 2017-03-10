@@ -1,8 +1,8 @@
 function TimelineController(eventsService) {
   var c = this;
-  c.nextInitialEvent = nextInitialEvent;
-  c.expandInitialEvents = expandInitialEvents;
   c.collapseInitialEvents = collapseInitialEvents;
+  c.expandInitialEvents = expandInitialEvents;
+  c.nextInitialEvent = nextInitialEvent;
 
   c.$onInit = function() {
     c.title = c.data.title;
@@ -11,17 +11,14 @@ function TimelineController(eventsService) {
     c.fadeOldEvents = false;
   };
 
-  function showEvents() {
-    c.shownInitialEvents = c.data.initial_elements;
-    if (c.shownInitialEvents === undefined) {
-      c.shownInitialEvents = 0;
-    }
+  function collapseInitialEvents() {
+    c.shownInitialEvents = 0;
+    c.fadeOldEvents = false;
   }
 
-  function getInitialEvents() {
-    showEvents();
-    var events = eventsService.getInitialEvents();
-    return events;
+  function expandInitialEvents() {
+    c.shownInitialEvents = c.initialEvents.length;
+    c.fadeOldEvents = false;
   }
 
   function nextInitialEvent() {
@@ -33,13 +30,16 @@ function TimelineController(eventsService) {
     }
   }
 
-  function expandInitialEvents() {
-    c.shownInitialEvents = c.initialEvents.length;
-    c.fadeOldEvents = false;
+  function getInitialEvents() {
+    showEvents();
+    var events = eventsService.getInitialEvents();
+    return events;
   }
 
-  function collapseInitialEvents() {
-    c.shownInitialEvents = 0;
-    c.fadeOldEvents = false;
+  function showEvents() {
+    c.shownInitialEvents = c.data.initial_elements;
+    if (c.shownInitialEvents === undefined) {
+      c.shownInitialEvents = 0;
+    }
   }
 }
