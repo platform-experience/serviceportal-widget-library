@@ -18,6 +18,8 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-timeline)
 
+* [Emp Exp Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-timeline-emp-exp)
+
 *Widgets in progress*
 
 * Incident Card
