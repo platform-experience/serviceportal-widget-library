@@ -8,15 +8,15 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 **Widgets list available now:**
 
-* [Approval Card](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-approval-card)
+* [Approval Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approval-card)
 
-* [Feedback Card](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-feedback-card)
+* [Feedback Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-feedback-card)
 
-* [People Info](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-people-info)
+* [People Info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-people-info)
 
-* [Scratch Pad](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-scratch-pad)
+* [Scratch Pad](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-scratch-pad)
 
-* [Timeline](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-timeline)
+* [Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-timeline)
 
 *Widgets in progress*
 
