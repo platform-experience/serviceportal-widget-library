@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-10 23:55:25">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Task Carousel 2</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>6372b99bdb1d3200b793f2b6ae961977</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-10 23:55:25</sys_created_on>
+<sys_id>2591f763dbd17200b793f2b6ae961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-10 23:55:25</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_da2f8e53db5d3200b793f2b6ae961978</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>0</order><short_description/><size>md</size><sp_column display_value="1">d46a77bedb95320062e479daae961996</sp_column><sp_widget display_value="PE Task Carousel">149cc253db5d3200b793f2b6ae9619a4</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 22:06:55</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>da2f8e53db5d3200b793f2b6ae961978</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_da2f8e53db5d3200b793f2b6ae961978</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 22:07:47</sys_updated_on><title/><url/><widget_parameters/></sp_instance></record_update>]]></payload>
+<remote_update_set display_value="PE Task Carousel 2">2591f763dbd17200b793f2b6ae961993</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-10 23:55:25</sys_created_on>
+<sys_id>6991f763dbd17200b793f2b6ae961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-10 23:55:25</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_91a60627db517200b793f2b6ae9619d2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PESparkline&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PESparkline&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PESparkline = Class.create();
+PESparkline.prototype = {
+    initialize: function() {
+    },
+	randNumber: function(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	},
+	getSparklineData: function(param1) {
+		var scope = this;
+		return [{
+			"name": "Random Data 1",
+			"data": [
+				["Data Point 1", scope.randNumber(60, 100)],
+				["Data Point 2", scope.randNumber(60, 100)],
+				["Data Point 3", scope.randNumber(60, 100)],
+				["Data Point 4", scope.randNumber(60, 100)],
+				["Data Point 5", scope.randNumber(60, 100)],
+				["Data Point 6", scope.randNumber(60, 100)],
+				["Data Point 7", scope.randNumber(60, 100)]
+			]
+		}];
+	},
+
+    type: 'PESparkline'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-10 16:09:02&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;91a60627db517200b793f2b6ae9619d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PESparkline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_91a60627db517200b793f2b6ae9619d2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-10 16:15:41&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Task Carousel 2">2591f763dbd17200b793f2b6ae961993</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-10 23:55:25</sys_created_on>
+<sys_id>6d91f763dbd17200b793f2b6ae961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-10 23:55:25</sys_updated_on>
+<table/>
+<target_name>PESparkline</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_149cc253db5d3200b793f2b6ae9619a4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TaskCarouselController(spUtil) {
+  var c = this;
+  c.prevPhase = prevPhase;
+  c.nextPhase = nextPhase;
+  c.setDefaults = setDefaults;
+  c.toggleTasks = toggleTasks;
+
+  c.$onInit = function() {
+    activateCharts();
+    setDefaults();
+  };
+
+  function activateCharts() {
+    var count = 0;
+    c.sparkline = [];
+    while (count !== 18) {
+      if (!c.sparkline[count]) {
+        spUtil.get('pe-sparkline', {
+          options: {
+            gradientEnd: 'rgba(0, 59, 210, 1)',
+            gradientStart: 'rgba(0, 201, 199, 1)'
+          }
+        }).then(function(response) {
+          c.sparkline.push(response);
+        });
+      }
+      count++;
+    }
+  }
+
+  function prevPhase() {
+    angular.element('.carousel').carousel('prev');
+  }
+
+  function nextPhase() {
+    angular.element('.carousel').carousel('next');
+  }
+
+  function setDefaults() {
+    c.isToggled = false;
+    c.toggleState = 'more';
+  }
+
+  function toggleTasks() {
+    c.toggleState = c.isToggled === true ? 'more' : 'less';
+    c.isToggled = !c.isToggled;
+  }
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-light-theme: #283347 !default;&amp;#13;
+$pe-dark-theme: #1c2432 !default;&amp;#13;
+&amp;#13;
+.task-carousel {&amp;#13;
+  h2 {&amp;#13;
+    color: $pe-header-color;&amp;#13;
+    font-size: 24px;&amp;#13;
+    font-weight: 600;&amp;#13;
+    height: 28px;&amp;#13;
+    margin: 0 0 10px 0;&amp;#13;
+  }&amp;#13;
+  .carousel {&amp;#13;
+    margin-bottom: 25px;&amp;#13;
+    .carousel-indicators {&amp;#13;
+      margin-bottom: -6%;&amp;#13;
+      li {&amp;#13;
+        border: 1px solid $pe-light-theme;&amp;#13;
+        opacity: .3;&amp;#13;
+      }&amp;#13;
+      .active {&amp;#13;
+        background-color: $pe-dark-theme;&amp;#13;
+        opacity: 1;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .panel {&amp;#13;
+    border: 0;&amp;#13;
+    color: #fff;&amp;#13;
+    background-color: transparent;&amp;#13;
+    .panel-heading {&amp;#13;
+      border-bottom: 0 !important;&amp;#13;
+      background-color: $pe-light-theme !important;&amp;#13;
+      color: #fff;&amp;#13;
+      font-size: 12px;&amp;#13;
+      padding: 14px;&amp;#13;
+      text-transform: uppercase;&amp;#13;
+    }&amp;#13;
+    .panel-body {&amp;#13;
+      background-color: $pe-dark-theme;&amp;#13;
+      color: #fff;&amp;#13;
+    }&amp;#13;
+    .panel-analysis {&amp;#13;
+      background-color: $pe-dark-theme !important;&amp;#13;
+      h3 {&amp;#13;
+        font-size: 18px;&amp;#13;
+        text-transform: capitalize;&amp;#13;
+        margin: 0 !important;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .panel-body-tasks {&amp;#13;
+      font-weight: 100 !important;&amp;#13;
+      padding-bottom: 0;&amp;#13;
+      padding-top: 0;&amp;#13;
+      white-space: nowrap;&amp;#13;
+      img {&amp;#13;
+        height: 24.1px;&amp;#13;
+        width: 79px;&amp;#13;
+      }&amp;#13;
+      .row {&amp;#13;
+        border-bottom: 2px solid #3d4e6d;&amp;#13;
+        padding: 15px 0 8px 0 !important;&amp;#13;
+      }&amp;#13;
+      .no-border-bottom {&amp;#13;
+        border: none !important;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .panel-footer-analysis {&amp;#13;
+      background-color: $pe-dark-theme !important;&amp;#13;
+      border-color: $pe-dark-theme !important;&amp;#13;
+      padding: 14px 0 20px 0;&amp;#13;
+      .show-more {&amp;#13;
+        background-color: $pe-light-theme;&amp;#13;
+        border-radius: 25px;&amp;#13;
+        color: #fff;&amp;#13;
+        font-size: 12px;&amp;#13;
+        padding: 7px 16.5px;&amp;#13;
+        text-transform: uppercase;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .left-arrow {&amp;#13;
+    height: 14px;&amp;#13;
+    margin-right: 50px;&amp;#13;
+    width: 8px;&amp;#13;
+  }&amp;#13;
+  .right-arrow {&amp;#13;
+    height: 14px;&amp;#13;
+    margin-left: 50px;&amp;#13;
+    width: 8px;&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-task-carousel&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Task Carousel&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 21:56:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;149cc253db5d3200b793f2b6ae9619a4&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Task Carousel&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_149cc253db5d3200b793f2b6ae9619a4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-10 22:44:32&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+  &lt;symbol id="left-arrow"&gt;
+    &lt;svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+      &lt;title&gt;arrow circle left 6.3.3.1 copy@3x&lt;/title&gt;
+      &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+      &lt;defs&gt;&lt;/defs&gt;
+      &lt;g id="Security---SKO-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"&gt;
+        &lt;g id="1.0.2b---Task-Orchestration---Containment-Collapsed" transform="translate(-108.000000, -143.000000)" stroke-width="0.800000012"
+          stroke="#FFFFFF"&gt;
+          &lt;g id="Group-2" transform="translate(93.000000, 131.000000)"&gt;
+            &lt;g id="arrow-circle-left-6.3.3.1-copy" transform="translate(19.000000, 19.000000) rotate(-180.000000) translate(-19.000000, -19.000000) translate(15.000000, 12.000000)"&gt;
+              &lt;polyline id="Shape" points="0.729166667 13.5492424 7.46941667 7.0040303 0.729166667 0.450757576"&gt;&lt;/polyline&gt;
+            &lt;/g&gt;
+          &lt;/g&gt;
+        &lt;/g&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/symbol&gt;
+&lt;/svg&gt;
+&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+  &lt;symbol id="right-arrow"&gt;
+    &lt;svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+      &lt;title&gt;arrow circle right 6.3.3.1@3x&lt;/title&gt;
+      &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+      &lt;defs&gt;&lt;/defs&gt;
+      &lt;g id="Security---SKO-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"&gt;
+        &lt;g id="1.0.2b---Task-Orchestration---Containment-Collapsed" transform="translate(-260.000000, -143.000000)" stroke-width="0.800000012"
+          stroke="#FFFFFF"&gt;
+          &lt;g id="Group" transform="translate(245.000000, 131.000000)"&gt;
+            &lt;g id="arrow-circle-right-6.3.3.1" transform="translate(15.000000, 12.000000)"&gt;
+              &lt;polyline id="Shape" points="0.729166667 13.5492424 7.46941667 7.0040303 0.729166667 0.450757576"&gt;&lt;/polyline&gt;
+            &lt;/g&gt;
+          &lt;/g&gt;
+        &lt;/g&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/symbol&gt;
+&lt;/svg&gt;
+
+&lt;div class="row task-carousel"&gt;
+  &lt;div class="col-xs-12" ng-swipe-left="c.nextPhase()" ng-swipe-right="c.prevPhase()"&gt;
+    &lt;div id="myCarousel" class="carousel slide" data-ride="carousel"&gt;
+      &lt;ol class="carousel-indicators"&gt;
+        &lt;li data-target="#myCarousel" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+        &lt;li data-target="#myCarousel" data-slide-to="1"&gt;&lt;/li&gt;
+        &lt;li data-target="#myCarousel" data-slide-to="2"&gt;&lt;/li&gt;
+        &lt;li data-target="#myCarousel" data-slide-to="3"&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div class="carousel-inner" role="listbox"&gt;
+        &lt;div class="item active"&gt;
+          &lt;div class="panel panel-default"&gt;
+            &lt;div class="panel-heading panel-analysis"&gt;
+              &lt;h3 class="text-center"&gt;
+                &lt;svg class="left-arrow" href="#myCarousel" role="button" data-slide="prev" ng-click="c.setDefaults()"&gt;
+                  &lt;use xlink:href="#left-arrow"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span&gt;Analysis&lt;/span&gt;
+                &lt;svg class="right-arrow" href="#myCarousel" role="button" data-slide="next" ng-click="c.setDefaults()"&gt;
+                  &lt;use xlink:href="#right-arrow"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-heading"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Task&lt;/div&gt;
+                &lt;div class="col-xs-3"&gt;Automation&lt;/div&gt;
+                &lt;div class="col-xs-4"&gt;Time Savings&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body panel-body-tasks"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Incident Creation&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;98%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[0]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Impact Assessment&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;66%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[1]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Forensics Collection&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;71%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[2]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div ng-show="c.isToggled == true"&gt;
+                &lt;div class="row"&gt;
+                  &lt;div class="col-xs-5"&gt;Threat Intel Correlation&lt;/div&gt;
+                  &lt;div class="col-xs-3 text-center"&gt;80%&lt;/div&gt;
+                  &lt;div class="col-xs-4 text-center"&gt;
+                    &lt;sp-widget widget="c.sparkline[3]"&gt;&lt;/sp-widget&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row"&gt;
+                  &lt;div class="col-xs-5"&gt;Vulnerability Analysis&lt;/div&gt;
+                  &lt;div class="col-xs-3 text-center"&gt;92%&lt;/div&gt;
+                  &lt;div class="col-xs-4 text-center"&gt;
+                    &lt;sp-widget widget="c.sparkline[4]"&gt;&lt;/sp-widget&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-footer panel-footer-analysis text-center"&gt;
+              &lt;span class="show-more" ng-click="c.toggleTasks()"&gt;show {{c.toggleState}}&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+          &lt;div class="panel panel-default"&gt;
+            &lt;div class="panel-heading panel-analysis"&gt;
+              &lt;h3 class="text-center"&gt;
+                &lt;svg class="left-arrow" href="#myCarousel" role="button" data-slide="prev" ng-click="c.setDefaults()"&gt;
+                  &lt;use xlink:href="#left-arrow"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span&gt;Containment&lt;/span&gt;
+                &lt;svg class="right-arrow" href="#myCarousel" role="button" data-slide="next" ng-click="c.setDefaults()"&gt;
+                  &lt;use xlink:href="#right-arrow"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-heading"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Task&lt;/div&gt;
+                &lt;div class="col-xs-3"&gt;Automation&lt;/div&gt;
+                &lt;div class="col-xs-4"&gt;Time Savings&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body panel-body-tasks"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Account Management&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;75%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[5]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Firewall Rule Creation&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;97%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[6]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Host Isolation&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;78%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[7]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div ng-show="c.isToggled == true"&gt;
+                &lt;div class="row"&gt;
+                  &lt;div class="col-xs-5"&gt;Mail Filter Creation&lt;/div&gt;
+                  &lt;div class="col-xs-3 text-center"&gt;54%&lt;/div&gt;
+                  &lt;div class="col-xs-4 text-center"&gt;
+                    &lt;sp-widget widget="c.sparkline[8]"&gt;&lt;/sp-widget&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row"&gt;
+                  &lt;div class="col-xs-5"&gt;Vulnerability Analysis&lt;/div&gt;
+                  &lt;div class="col-xs-3 text-center"&gt;92%&lt;/div&gt;
+                  &lt;div class="col-xs-4 text-center"&gt;
+                    &lt;sp-widget widget="c.sparkline[9]"&gt;&lt;/sp-widget&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-footer panel-footer-analysis text-center"&gt;
+              &lt;span class="show-more" ng-click="c.toggleTasks()"&gt;show {{c.toggleState}}&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+          &lt;div class="panel panel-default"&gt;
+            &lt;div class="panel-heading panel-analysis"&gt;
+              &lt;h3 class="text-center"&gt;
+                &lt;svg class="left-arrow" href="#myCarousel" role="button" data-slide="prev" ng-click="c.setDefaults()"&gt;
+                  &lt;use xlink:href="#left-arrow"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span&gt;Eradication&lt;/span&gt;
+                &lt;svg class="right-arrow" href="#myCarousel" role="button" data-slide="next" ng-click="c.setDefaults()"&gt;
+                  &lt;use xlink:href="#right-arrow"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-heading"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Task&lt;/div&gt;
+                &lt;div class="col-xs-3"&gt;Automation&lt;/div&gt;
+                &lt;div class="col-xs-4"&gt;Time Savings&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body panel-body-tasks"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Account Management&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;74%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[10]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Malware Removal&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;51%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[11]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Re-Imaging Systems&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;83%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[12]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div ng-show="c.isToggled == true"&gt;
+                &lt;div class="row"&gt;
+                  &lt;div class="col-xs-5"&gt;Restoration from Backup&lt;/div&gt;
+                  &lt;div class="col-xs-3 text-center"&gt;67%&lt;/div&gt;
+                  &lt;div class="col-xs-4 text-center"&gt;
+                    &lt;sp-widget widget="c.sparkline[13]"&gt;&lt;/sp-widget&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="row"&gt;
+                  &lt;div class="col-xs-5"&gt;Phishing Email Deletion&lt;/div&gt;
+                  &lt;div class="col-xs-3 text-center"&gt;96%&lt;/div&gt;
+                  &lt;div class="col-xs-4 text-center"&gt;
+                    &lt;sp-widget widget="c.sparkline[14]"&gt;&lt;/sp-widget&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-footer panel-footer-analysis text-center"&gt;
+              &lt;span class="show-more" ng-click="c.toggleTasks()"&gt;show {{c.toggleState}}&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+          &lt;div class="panel panel-default"&gt;
+            &lt;div class="panel-heading panel-analysis"&gt;
+              &lt;h3 class="text-center"&gt;
+                &lt;svg class="left-arrow" href="#myCarousel" role="button" data-slide="prev"&gt;
+                  &lt;use xlink:href="#left-arrow"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;span&gt;Recovery&lt;/span&gt;
+                &lt;svg class="right-arrow" href="#myCarousel" role="button" data-slide="next"&gt;
+                  &lt;use xlink:href="#right-arrow"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-heading"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Task&lt;/div&gt;
+                &lt;div class="col-xs-3"&gt;Automation&lt;/div&gt;
+                &lt;div class="col-xs-4"&gt;Time Savings&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body panel-body-tasks"&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Damage Assessment&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;74%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[15]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row"&gt;
+                &lt;div class="col-xs-5"&gt;Notifications&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;51%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[16]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="row no-border-bottom"&gt;
+                &lt;div class="col-xs-5"&gt;Service Recovery&lt;/div&gt;
+                &lt;div class="col-xs-3 text-center"&gt;83%&lt;/div&gt;
+                &lt;div class="col-xs-4 text-center"&gt;
+                  &lt;sp-widget widget="c.sparkline[17]"&gt;&lt;/sp-widget&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Task Carousel 2">2591f763dbd17200b793f2b6ae961993</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-10 23:55:25</sys_created_on>
+<sys_id>a991f763dbd17200b793f2b6ae961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-10 23:55:25</sys_updated_on>
+<table/>
+<target_name>PE Task Carousel</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_131e99ed49e8950002ad45cc9609026f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;
+&lt;action_name&gt;add_update_set&lt;/action_name&gt;
+&lt;active&gt;true&lt;/active&gt;
+&lt;client&gt;false&lt;/client&gt;
+&lt;comments&gt;Use this UI Action to force any record (and it's attachments) into the current update set.&lt;/comments&gt;
+&lt;condition&gt;gs.hasRole('admin')&lt;/condition&gt;
+&lt;form_action&gt;true&lt;/form_action&gt;
+&lt;form_button&gt;false&lt;/form_button&gt;
+&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;
+&lt;form_link&gt;true&lt;/form_link&gt;
+&lt;hint/&gt;
+&lt;keyboard_shortcut/&gt;
+&lt;list_action&gt;true&lt;/list_action&gt;
+&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;
+&lt;list_button&gt;false&lt;/list_button&gt;
+&lt;list_choice&gt;true&lt;/list_choice&gt;
+&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;
+&lt;list_link&gt;false&lt;/list_link&gt;
+&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;
+&lt;name&gt;Add to Update Set&lt;/name&gt;
+&lt;onclick/&gt;
+&lt;order&gt;100&lt;/order&gt;
+&lt;script&gt;&lt;![CDATA[addToUpdateSet();
+
+function addToUpdateSet(){
+	//Get current URL for return
+	var url = GlideSession.get().getStack().bottom();
+
+	//Save current record
+	current.update();
+
+	//Initialize updateManager
+	var updateManager = new GlideUpdateManager2();
+
+	//Add record to update set
+	updateManager.saveRecord(current);
+
+	//If the current record is an attachment, add the chunks
+	//(Attachments and chunks for other record types are auto-added)
+	if (current.getTableName() == 'sys_attachment')
+		addAttachmentChunks(current);
+
+	//If attachments are not detected, check the sys_attachment table anyway
+	//(Known attachments are auto-added, missing unknown attachments)
+	//(sys_user seems to be an exception)
+	else if (!current.hasAttachments() &amp;&amp; current.getTableName() != 'sys_user')
+		addAttachments(current);
+
+	//Display confirmation
+	var currentSet = new GlideRecord('sys_update_set');
+	currentSet.get(gs.getPreference('sys_update_set'));
+	gs.flushMessages(); //Flush to avoid multiples when list updating
+	gs.addInfoMessage('Record(s) added to update set ' + currentSet.name + '.');
+	action.setRedirectURL(url);
+}
+
+//Add attachments to the update set
+function addAttachments(record){
+	var updateManager = new GlideUpdateManager2();
+	var attach = new GlideRecord("sys_attachment");
+	attach.addQuery("table_sys_id", record.sys_id.toString());
+	attach.query();
+	while (attach.next()) {
+		//Process main sys_attachment record
+		updateManager.saveRecord(attach);
+
+		//Process sys_attachment_doc chunks
+		addAttachmentChunks(attach);
+	}
+}
+
+//Add attachment chunks to the update set
+function addAttachmentChunks(attachment){
+	var updateManager = new GlideUpdateManager2();
+	var attach_doc = new GlideRecord("sys_attachment_doc");
+	attach_doc.addQuery("sys_attachment", attachment.sys_id.toString());
+	attach_doc.orderBy("position");
+	attach_doc.query();
+	while (attach_doc.next())
+		updateManager.saveRecord(attach_doc);
+}]]&gt;&lt;/script&gt;
+&lt;show_insert&gt;true&lt;/show_insert&gt;
+&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;
+&lt;show_query&gt;false&lt;/show_query&gt;
+&lt;show_update&gt;true&lt;/show_update&gt;
+&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;ben.hollifield_SHARE_SHARE&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2013-10-21 00:09:52&lt;/sys_created_on&gt;
+&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;
+&lt;sys_domain&gt;global&lt;/sys_domain&gt;
+&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+&lt;sys_id&gt;131e99ed49e8950002ad45cc9609026f&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;Add to Update Set&lt;/sys_name&gt;
+&lt;sys_overrides display_value=""/&gt;
+&lt;sys_package display_value="Global"&gt;global&lt;/sys_package&gt;
+&lt;sys_policy/&gt;
+&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;
+&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;sys_ui_action_131e99ed49e8950002ad45cc9609026f&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;ben.hollifield@snc_SHARE&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2016-07-12 17:03:01&lt;/sys_updated_on&gt;
+&lt;table&gt;global&lt;/table&gt;
+&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;
+&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;
+&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Task Carousel 2">2591f763dbd17200b793f2b6ae961993</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-10 23:55:25</sys_created_on>
+<sys_id>ad91f763dbd17200b793f2b6ae961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-10 23:55:25</sys_updated_on>
+<table>global</table>
+<target_name>Add to Update Set</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_688c55d3db1d3200b793f2b6ae961926</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><short_description/><size>md</size><sp_column display_value="1">d46a77bedb95320062e479daae961996</sp_column><sp_widget display_value="PE Incident Message">a1e0159fdbd93200b793f2b6ae9619bf</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-09 18:25:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>688c55d3db1d3200b793f2b6ae961926</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_688c55d3db1d3200b793f2b6ae961926</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-09 22:06:55</sys_updated_on><title/><url/><widget_parameters/></sp_instance></record_update>]]></payload>
+<remote_update_set display_value="PE Task Carousel 2">2591f763dbd17200b793f2b6ae961993</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-10 23:55:25</sys_created_on>
+<sys_id>e591f763dbd17200b793f2b6ae961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-10 23:55:25</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_ab44aa5bdb5d3200b793f2b6ae961973</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function(spUtil) {
+	var c = this;
+	if (!c.myAreaChart) {
+		spUtil.get("pe-area-chart", {
+			options: {
+				script_include: "PESparkline",
+				function_name: "getSparklineData",
+				advance: JSON.stringify(c.data.chart)
+			}
+		}).then(function(response) {
+			c.myAreaChart = response;
+		});
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-sparkline&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Sparkline&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+  serverOptions.gradientEnd = serverOptions.gradientEnd || "rgba(255, 0, 80, 1)";
+  serverOptions.gradientStart = serverOptions.gradientStart || "rgba(255, 207, 96, 1)";
+  data.chart = {
+    xAxis: {
+      visible: false
+    },
+    yAxis: {
+      visible: false,
+      max: 100,
+      min: 0,
+      gridLineWidth: 0
+    },
+    title: {
+      text: ''
+    },
+    options: {
+      exporting: {
+        enabled: false
+      },
+      legend: {
+        enabled: false
+      },
+      chart: {
+        //type:"areaspline",
+        backgroundColor: null,
+        margin: [2, 0, 2, 0],
+        borderWidth: 0,
+        height:25,
+        width:79
+      },
+      plotOptions: {
+        series: {
+          enableMouseTracking: false,
+          marker: {
+            enabled: false
+          },
+          lineColor: serverOptions.gradientStart,
+          lineWidth: 0,
+          fillColor: {
+            linearGradient: [0, 0, 0, 20],
+            stops: [
+              [0, serverOptions.gradientStart],
+              [1, serverOptions.gradientEnd]
+            ]
+          }
+        }
+      }
+    }
+  };
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 23:40:16&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ab44aa5bdb5d3200b793f2b6ae961973&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Sparkline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ab44aa5bdb5d3200b793f2b6ae961973&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-10 16:20:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;sp-widget widget="c.myAreaChart"&gt;&lt;/sp-widget&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Task Carousel 2">2591f763dbd17200b793f2b6ae961993</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-10 23:55:25</sys_created_on>
+<sys_id>e991f763dbd17200b793f2b6ae961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-10 23:55:25</sys_updated_on>
+<table/>
+<target_name>PE Sparkline</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

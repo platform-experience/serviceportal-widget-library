@@ -1,4 +1,5 @@
-$pe-header-color: #1c2432 !default;
+$pe-light-theme: #283347 !default;
+$pe-dark-theme: #1c2432 !default;
 
 .task-carousel {
   h2 {
@@ -13,11 +14,11 @@ $pe-header-color: #1c2432 !default;
     .carousel-indicators {
       margin-bottom: -6%;
       li {
-        border: 1px solid #283347;
+        border: 1px solid $pe-light-theme;
         opacity: .3;
       }
       .active {
-        background-color: #1c2432;
+        background-color: $pe-dark-theme;
         opacity: 1;
       }
     }
@@ -28,18 +29,18 @@ $pe-header-color: #1c2432 !default;
     background-color: transparent;
     .panel-heading {
       border-bottom: 0 !important;
-      background-color: #283347 !important;
+      background-color: $pe-light-theme !important;
       color: #fff;
       font-size: 12px;
       padding: 14px;
       text-transform: uppercase;
     }
     .panel-body {
-      background-color: #1c2432;
+      background-color: $pe-dark-theme;
       color: #fff;
     }
     .panel-analysis {
-      background-color: #1c2432 !important;
+      background-color: $pe-dark-theme !important;
       h3 {
         font-size: 18px;
         text-transform: capitalize;
@@ -64,11 +65,11 @@ $pe-header-color: #1c2432 !default;
       }
     }
     .panel-footer-analysis {
-      background-color: #1c2432 !important;
-      border-color: #1c2432 !important;
+      background-color: $pe-dark-theme !important;
+      border-color: $pe-dark-theme !important;
       padding: 14px 0 20px 0;
       .show-more {
-        background-color: #283347;
+        background-color: $pe-light-theme;
         border-radius: 25px;
         color: #fff;
         font-size: 12px;
