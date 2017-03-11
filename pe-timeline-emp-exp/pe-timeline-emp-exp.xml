@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-11 02:00:30">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Timeline Emp Exp</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>cfe6f22b1315b200d15e3d7ed144b0af</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>f93e447f13d5b200d15e3d7ed144b0c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_1527762b1315b200d15e3d7ed144b04f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TimelineController(timelineService) {
+  var c = this;
+
+  c.$onInit = function () {
+    c.timelinedata = getInitialEvents();
+    console.log(c.timelinedata);
+
+  };
+
+  function getInitialEvents() {
+    var events = timelineService.getInitialEvents();
+    return events;
+  }
+
+
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-timeline-items-color: #ff6f00 !default;&amp;#13;
+.heading {&amp;#13;
+    padding: 10px;&amp;#13;
+    display: flex;&amp;#13;
+    justify-content: space-between;&amp;#13;
+    .left-side {&amp;#13;
+        display: flex;&amp;#13;
+        align-items: center;&amp;#13;
+        .people-card-media {&amp;#13;
+            float: left;&amp;#13;
+            margin: 0px;&amp;#13;
+            padding: 0px 10px 0px 0px;&amp;#13;
+            .media-body {&amp;#13;
+                width: 100%;&amp;#13;
+            }&amp;#13;
+            .media-left {&amp;#13;
+                //  width: 60px;&amp;#13;
+                .list__photo {&amp;#13;
+                    width: 35px;&amp;#13;
+                    height: 35px;&amp;#13;
+                }&amp;#13;
+                .initials-badge {&amp;#13;
+                    min-width: 36px;&amp;#13;
+                    float: left;&amp;#13;
+                    margin-top: 0px;&amp;#13;
+                    border-radius: 50%;&amp;#13;
+                    line-height: 1;&amp;#13;
+                    font-size: 14px;&amp;#13;
+                    margin-left: 0px;&amp;#13;
+                    padding: 10px 10px;&amp;#13;
+                    font-weight: 300;&amp;#13;
+                    background: #AEB2B3;&amp;#13;
+                }&amp;#13;
+            }&amp;#13;
+        }&amp;#13;
+    }&amp;#13;
+    .text {&amp;#13;
+        font-size: 18px;&amp;#13;
+        color: #fff;&amp;#13;
+        font-weight: normal;&amp;#13;
+    }&amp;#13;
+    .remaining {&amp;#13;
+        font-size: 15px;&amp;#13;
+        color: #fff;&amp;#13;
+        display: flex;&amp;#13;
+        align-items: center;&amp;#13;
+        .badge {&amp;#13;
+            background: #fff;&amp;#13;
+            color: #fff;&amp;#13;
+            margin-right: 5px;&amp;#13;
+            padding: 5px 8px;&amp;#13;
+        }&amp;#13;
+    }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-wrapper {&amp;#13;
+    margin-bottom: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-proper {&amp;#13;
+    background-color: #fff;&amp;#13;
+    border-radius: 5px;&amp;#13;
+    transition: box-shadow 0.5s;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.timeline-icon {&amp;#13;
+    background: #fff;&amp;#13;
+    color: #737881;&amp;#13;
+    display: block;&amp;#13;
+    width: 1.6em;&amp;#13;
+    height: 1.6em;&amp;#13;
+    -webkit-background-clip: padding-box;&amp;#13;
+    -moz-background-clip: padding;&amp;#13;
+    background-clip: padding-box;&amp;#13;
+    -webkit-border-radius: 20px;&amp;#13;
+    -moz-border-radius: 20px;&amp;#13;
+    border-radius: 20px;&amp;#13;
+    text-align: center;&amp;#13;
+    line-height: 40px;&amp;#13;
+    font-size: 15px;&amp;#13;
+    float: left;&amp;#13;
+    position: absolute;&amp;#13;
+    top: 0px;&amp;#13;
+    left: -9px;&amp;#13;
+    &amp;amp;:first-child {&amp;#13;
+        margin-left: -5px;&amp;#13;
+    }&amp;#13;
+    &amp;amp;.red {&amp;#13;
+        background: #f95050 !important;&amp;#13;
+    }&amp;#13;
+    &amp;amp;.green {&amp;#13;
+        background: #53c25b !important;&amp;#13;
+    }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.tl-icon {&amp;#13;
+    color: #fff;&amp;#13;
+    position: absolute;&amp;#13;
+    top: 1px;&amp;#13;
+    left: -6px;&amp;#13;
+    text-align: center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-content {&amp;#13;
+    .only-content {&amp;#13;
+        background: #f5f5f5;&amp;#13;
+        padding: 12px;&amp;#13;
+    }&amp;#13;
+    .btn {&amp;#13;
+        padding: 15px;&amp;#13;
+        text-align: center;&amp;#13;
+        border-bottom: 3px solid #278efc;&amp;#13;
+        width: 100%;&amp;#13;
+        p {&amp;#13;
+            color: #278efc;&amp;#13;
+            font-size: 18px;&amp;#13;
+            font-weight: 600;&amp;#13;
+        }&amp;#13;
+    }&amp;#13;
+    .signature {&amp;#13;
+        display: flex;&amp;#13;
+        align-items: center;&amp;#13;
+        margin-top: 10px;&amp;#13;
+        .svg-icon {&amp;#13;
+            width: 32px;&amp;#13;
+            height: 32px;&amp;#13;
+            fill: #278efc;&amp;#13;
+            stroke: #278efc;&amp;#13;
+        }&amp;#13;
+        p {&amp;#13;
+            display: inline-block;&amp;#13;
+            margin-left: 5px;&amp;#13;
+            color: #278efc;&amp;#13;
+        }&amp;#13;
+    }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.left-description {&amp;#13;
+    font-size: 14px;&amp;#13;
+    //opacity: 0.7;&amp;#13;
+    display: inline-block;&amp;#13;
+    width: 40px;&amp;#13;
+    vertical-align: top;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.tl-item {&amp;#13;
+    font-size: 14px;&amp;#13;
+    //opacity: 0.7;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.left-description {&amp;#13;
+    display: inline-block;&amp;#13;
+    width: 40px;&amp;#13;
+    vertical-align: top;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.tl-item:last-child {&amp;#13;
+    opacity: 1;&amp;#13;
+    .right-content {&amp;#13;
+        border-left-color: rgba(0, 0, 0, 0);&amp;#13;
+    }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.right-content {&amp;#13;
+    margin-left: 10px;&amp;#13;
+    position: relative;&amp;#13;
+    display: inline-block;&amp;#13;
+    width: 83%;&amp;#13;
+    border-left: 2px solid #cecece;&amp;#13;
+    padding: 0 5px 5px 20px;&amp;#13;
+    span.complete {&amp;#13;
+        display: block;&amp;#13;
+        text-align: center;&amp;#13;
+        color: #fff;&amp;#13;
+        margin-top: 1px;&amp;#13;
+        font-family: arial;&amp;#13;
+        -ms-transform: scaleX(-1) rotate(-35deg);&amp;#13;
+        -webkit-transform: scaleX(-1) rotate(-35deg);&amp;#13;
+        transform: scaleX(-1) rotate(-45deg);&amp;#13;
+    }&amp;#13;
+    span.complete:after {&amp;#13;
+        content: "L";&amp;#13;
+    }&amp;#13;
+    .attn-text {&amp;#13;
+        p {&amp;#13;
+            margin: 0px;&amp;#13;
+        }&amp;#13;
+        .attn-top {&amp;#13;
+            text-transform: uppercase;&amp;#13;
+            color: #f95050;&amp;#13;
+            margin-right: 5px;&amp;#13;
+            font-weight: bold;&amp;#13;
+            .fa {&amp;#13;
+                margin-left: 5px;&amp;#13;
+            }&amp;#13;
+        }&amp;#13;
+        .attn-sub {&amp;#13;
+            font-size: 12px;&amp;#13;
+            color: #696d71;&amp;#13;
+        }&amp;#13;
+    }&amp;#13;
+    .dept-contact {&amp;#13;
+        .badge {&amp;#13;
+            background: #fff;&amp;#13;
+            border-radius: 4px;&amp;#13;
+            color: #696d71;&amp;#13;
+            text-transform: uppercase;&amp;#13;
+            font-size: 15px;&amp;#13;
+            margin-right: 10px;&amp;#13;
+        }&amp;#13;
+        p {&amp;#13;
+            font-size: 15px;&amp;#13;
+            color: #696d71;&amp;#13;
+            display: inline-block;&amp;#13;
+        }&amp;#13;
+    }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.right-content&amp;gt;* {&amp;#13;
+    margin-bottom: 8px;&amp;#13;
+    font-size: 15px;&amp;#13;
+    color: #696d71;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.right-content-title {&amp;#13;
+    margin-left: 3px;&amp;#13;
+    font-size: 15px;&amp;#13;
+    color: #696d71;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-timeline-emp-exp&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Timeline Emp Exp&lt;/name&gt;&lt;option_schema&gt;[{"name":"show_ldescriptions","default_value":"false","label":"Show Left Descriptions","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var getBoolValue = function(inputVal, optionVal) {
+    if (inputVal == null) {
+      return (optionVal === 'true');
+    } else {
+      return (inputVal === 'true');
+    }
+  };
+
+  var getIntValue = function(inputVal, optionVal) {
+    if ((inputVal == null || inputVal == undefined) &amp;&amp; (optionVal &gt;= 0)) {
+      return (parseInt(optionVal));
+    } else if (inputVal != null &amp;&amp; inputVal != undefined) {
+      return (parseInt(inputVal));
+    }
+  };
+
+
+  data.show_ldescriptions = getBoolValue(input.show_ldescriptions, options.show_ldescriptions);
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-10 19:40:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;1527762b1315b200d15e3d7ed144b04f&lt;/sys_id&gt;&lt;sys_mod_count&gt;53&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Timeline Emp Exp&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_1527762b1315b200d15e3d7ed144b04f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-11 01:46:20&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+
+    &lt;symbol x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" id="icon-signature" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+        &lt;g&gt;
+            &lt;path d="M14.4,85.5h16.4v5.8h15.3l5.8-5.8h27c1.1,0,2-0.9,2-2v-27l6.6-6.6L81,43.3V10.6c0-1.1-0.9-2-2-2H14.4c-1.1,0-2,0.9-2,2   v72.9C12.4,84.6,13.3,85.5,14.4,85.5z M76.9,81.5H56l20.9-20.9V81.5z M81.8,49.9L44.4,87.3h-9.5v-9.5l37.4-37.4L81.8,49.9z    M16.5,12.7h60.5v26.5l-4.6-4.6L61.9,45H26.1v4.1h31.7L45.2,61.7H26.1v4.1h15.1L30.8,76.1v5.4H16.5V12.7z"&gt;&lt;/path&gt;
+            &lt;rect x="26.1" y="28.4" width="41.3" height="4.1"&gt;&lt;/rect&gt;
+        &lt;/g&gt;
+    &lt;/symbol&gt;
+
+
+&lt;/svg&gt;
+&lt;div class="panel-wrapper row"&gt;
+    &lt;div class="panel-proper"&gt;
+        &lt;!--############# HEADING START#######################--&gt;
+        &lt;div class="panel-header heading" ng-style="{'background':c.timelinedata.header.color}"&gt;
+            &lt;div class="left-side"&gt;
+                &lt;!--If user pic is availble--&gt;
+                &lt;div ng-if="c.timelinedata.header.userPic" class="media  people-card-media"&gt;
+                    &lt;div class="media-left "&gt;
+                        &lt;div class="person-photo available presence"&gt;
+                            &lt;img class="media-object list__photo img-circle" ng-src="{{c.timelinedata.header.userPic}}" /&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p class="text"&gt;{{c.timelinedata.header.text}}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;!--IF remaining is not empty, show badge--&gt;
+            &lt;p ng-show="c.timelinedata.header.remaining &gt; 0" class="remaining"&gt;&lt;span class="badge" ng-style="{'color':c.timelinedata.header.color}"&gt;{{c.timelinedata.header.remaining}}&lt;/span&gt;Remaining&lt;/p&gt;
+            &lt;!--IF remaining is  empty, show all completed--&gt;
+            &lt;p class="remaining" ng-show="!c.timelinedata.header.remaining"&gt;All Completed&lt;/p&gt;
+
+        &lt;/div&gt;
+        &lt;!--############# HEADING END#######################--&gt;
+
+        &lt;div class="panel-content"&gt;
+            &lt;!--#############BODY ############################--&gt;
+            &lt;div class="only-content"&gt;
+
+                &lt;div ng-repeat="eachtimeline in c.timelinedata.timelineArray | limitTo:c.timelinedata.show" class="tl-item"&gt;
+                    &lt;div ng-if="c.data.show_ldescriptions" class="left-description"&gt;{{item.leftDescription}}&lt;/div&gt;
+                    &lt;div class="right-content"&gt;
+                        &lt;!--Circle  start--&gt;
+                        &lt;div class="timeline-icon" ng-class="{'green': eachtimeline.state == 'good', 'red':eachtimeline.state == 'attention'}"&gt;&lt;/div&gt;
+                        &lt;span ng-show="eachtimeline.state == 'good'" class="complete tl-icon"&gt;&lt;/span&gt;
+                        &lt;!--Circle end--&gt;
+                        &lt;div class="right-content-title"&gt;{{eachtimeline.title}}&lt;/div&gt;
+                        &lt;p ng-show="eachtimeline.due" class="due"&gt;Due &lt;span&gt;{{eachtimeline.due}}&lt;/span&gt;&lt;/p&gt;
+                        &lt;!--RED TEXT and grey subtext--&gt;
+                        &lt;div class="attn-text"&gt;
+                            &lt;p ng-show="eachtimeline.attenText" class="attn-top"&gt;{{eachtimeline.attenText}}&lt;i class="fa fa-exclamation" aria-hidden="true"&gt;&lt;/i&gt;&lt;/p&gt;
+                            &lt;p ng-show="eachtimeline.attenSubText" class="attn-sub"&gt;{{eachtimeline.attenSubText}}&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;!--RED TEXT and grey subtext end--&gt;
+                        &lt;div class="dept-contact" ng-if="eachtimeline.dept"&gt;
+                            &lt;span class="badge"&gt;{{eachtimeline.dept}}&lt;/span&gt;
+                            &lt;p&gt;{{eachtimeline.contact}}&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div ng-show="eachtimeline.signature" class="signature" ng-click="triggerSomething(c.timelinedata)"&gt;
+
+
+                            &lt;svg icon="#icon-signature" class="svg-icon"&gt;&lt;use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-signature"&gt;&lt;/use&gt;&lt;/svg&gt;
+                            &lt;p class=""&gt;Digital Signature&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div ng-show="c.timelinedata.timelineArray.length &gt; 2"&gt;
+                &lt;div class="btn" ng-show="c.timelinedata.show == 2" ng-click="c.timelinedata.show = c.timelinedata.timelineArray.length"&gt;
+                    &lt;p&gt;View More&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="btn" ng-show="c.timelinedata.show &gt; 2" ng-click="c.timelinedata.show = 2"&gt;
+                    &lt;p&gt;View Less&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>353e447f13d5b200d15e3d7ed144b0c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>PE Timeline Emp Exp</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_912a3e6b1315b200d15e3d7ed144b0ff</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="pe-timeline-emp-exp">6db73a2b1315b200d15e3d7ed144b0e6</sp_dependency><sp_widget display_value="PE Timeline Emp Exp">1527762b1315b200d15e3d7ed144b04f</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-03-10 19:53:11</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>912a3e6b1315b200d15e3d7ed144b0ff</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-timeline-emp-exp.PE Timeline Emp Exp</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_912a3e6b1315b200d15e3d7ed144b0ff</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-03-10 19:53:11</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>393e447f13d5b200d15e3d7ed144b0c2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>pe-timeline-emp-exp.PE Timeline Emp Exp</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_1f0b76ab1315b200d15e3d7ed144b061</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-timeline-emp-exp-events.module</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-03-10 19:57:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1f0b76ab1315b200d15e3d7ed144b061</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-timeline-emp-exp-events.module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-timeline-emp-exp-events.module">5c0b36ab1315b200d15e3d7ed144b0b9</sys_ui_script><sys_update_name>sp_js_include_1f0b76ab1315b200d15e3d7ed144b061</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-03-10 19:57:09</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>713e447f13d5b200d15e3d7ed144b0c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>pe-timeline-emp-exp-events.module</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_a12b76ab1315b200d15e3d7ed144b066</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="pe-timeline-emp-exp">6db73a2b1315b200d15e3d7ed144b0e6</sp_dependency><sp_js_include display_value="pe-timeline-emp-exp-events.module">1f0b76ab1315b200d15e3d7ed144b061</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-03-10 19:57:35</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a12b76ab1315b200d15e3d7ed144b066</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-timeline-emp-exp.pe-timeline-emp-exp-events.module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_a12b76ab1315b200d15e3d7ed144b066</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-03-10 19:57:35</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>753e447f13d5b200d15e3d7ed144b0c2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>pe-timeline-emp-exp.pe-timeline-emp-exp-events.module</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_99cab2ab1315b200d15e3d7ed144b077</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="pe-timeline-emp-exp">6db73a2b1315b200d15e3d7ed144b0e6</sp_dependency><sp_js_include display_value="pe-timeline-emp-exp-events.service">1e7a32ab1315b200d15e3d7ed144b020</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-03-10 19:55:55</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>99cab2ab1315b200d15e3d7ed144b077</sys_id><sys_mod_count>1</sys_mod_count><sys_name>pe-timeline-emp-exp.pe-timeline-emp-exp-events.service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_99cab2ab1315b200d15e3d7ed144b077</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-03-10 23:02:31</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>b13e447f13d5b200d15e3d7ed144b0c2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>pe-timeline-emp-exp.pe-timeline-emp-exp-events.service</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_5caa32ab1315b200d15e3d7ed144b063</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-timeline-emp-exp-events.service&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    'use strict';
+
+    function timelineService() {
+        var service = {
+            getInitialEvents: getInitialEvents
+        };
+        return service;
+
+        function getInitialEvents() {
+
+
+            var timeLineData = {
+                show: 2,
+                user: "Suzy Ham",
+
+                title: "LOA Agreement",
+                sub_title: "LOA",
+                header: {
+                    text: "Suzy Ham",
+                    color: "#a7a7a7",
+                    remaining: 2,
+                    userPic: "eb16d7c713453a007e94fc5ed144b055.iix"
+                },
+                timelineArray: [{
+                        state: "good",
+                        title: "Confirm return"
+
+
+                    }, {
+                        state: "good",
+                        title: "Sign LOA Agreement",
+                        signature: true
+
+                    },
+                    {
+                        state: "attention",
+                        title: "Reactivate Badge",
+                        attenText: "Escalated",
+                        attenSubText: "Reactivate badge on 12/8 ",
+                        dept: "IT",
+                        contact: "Bill Woods"
+                    }
+                ]
+            };
+            return timeLineData;
+        }
+    }
+
+    angular
+        .module('pe-timeline-emp-exp')
+        .service('timelineService', timelineService);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-10 19:55:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5caa32ab1315b200d15e3d7ed144b063&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-timeline-emp-exp-events.service&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5caa32ab1315b200d15e3d7ed144b063&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-11 01:45:08&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>b93e447f13d5b200d15e3d7ed144b0c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>pe-timeline-emp-exp-events.service</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_1e7a32ab1315b200d15e3d7ed144b020</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-timeline-emp-exp-events.service</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-03-10 19:54:37</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1e7a32ab1315b200d15e3d7ed144b020</sys_id><sys_mod_count>1</sys_mod_count><sys_name>pe-timeline-emp-exp-events.service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-timeline-emp-exp-events.service">5caa32ab1315b200d15e3d7ed144b063</sys_ui_script><sys_update_name>sp_js_include_1e7a32ab1315b200d15e3d7ed144b020</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-03-10 19:55:35</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>bd3e447f13d5b200d15e3d7ed144b0c2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>pe-timeline-emp-exp-events.service</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_5c0b36ab1315b200d15e3d7ed144b0b9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-timeline-emp-exp-events.module&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  angular.module('pe-timeline-emp-exp', []);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-10 19:56:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5c0b36ab1315b200d15e3d7ed144b0b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-timeline-emp-exp-events.module&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5c0b36ab1315b200d15e3d7ed144b0b9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-10 19:56:57&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>f53e447f13d5b200d15e3d7ed144b0c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>pe-timeline-emp-exp-events.module</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_6db73a2b1315b200d15e3d7ed144b0e6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>pe-timeline-emp-exp</module><name>pe-timeline-emp-exp</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-03-10 19:42:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6db73a2b1315b200d15e3d7ed144b0e6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-timeline-emp-exp</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_6db73a2b1315b200d15e3d7ed144b0e6</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-03-10 19:42:33</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline Emp Exp">f93e447f13d5b200d15e3d7ed144b0c1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush</sys_created_by>
+<sys_created_on>2017-03-11 02:00:30</sys_created_on>
+<sys_id>f93e447f13d5b200d15e3d7ed144b0c2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush</sys_updated_by>
+<sys_updated_on>2017-03-11 02:00:30</sys_updated_on>
+<table/>
+<target_name>pe-timeline-emp-exp</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
