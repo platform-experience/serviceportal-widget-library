@@ -1,6 +1,6 @@
 ## Synopsis: Donut Chart
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-donut-chart.png "Donut Chart")
+![alt text](../images/pe-donut-chart.png "Donut Chart")
 
 This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
 
