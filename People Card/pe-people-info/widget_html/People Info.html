@@ -1,4 +1,4 @@
-<div class="media people-card-media">
+<div class="media people-card-media" ng-style="data.show_text_below_picture == true ? { 'padding-bottom':'2px' } : { 'padding-bottom':'10px' }">
   <div class="media-left">
     <div class="person-photo">
       <img ng-if="data.user_photo" class="media-object list__photo img-circle" ng-src="{{data.user_photo}}">
@@ -7,14 +7,21 @@
       </div>
     </div>
   </div>
-  <div ng-if="!data.show_only_picture" class="media-body">
+  <div ng-if="!data.show_only_picture && !data.show_text_below_picture" class="media-body">
     <div class="people_name_title">
       <h4 class="media-heading title">{{::data.user_full_name}}</h4>
       <h4 ng-if="data.show_job_title" class="media-heading subtitle">{{::data.user_job_title}}</h4>
     </div>
   </div>
+
   <div class="media-right" ng-if="data.show_call_and_chat">
     <i class="fa fa-comment fa-2x fa-color" onclick="openChat(this)" id="{{data.user_sys_id}}" aria-hidden="true"></i>
     <i ng-click="c.call(data.user_phone)" class="fa fa-phone fa-2x fa-color" aria-hidden="true"></i>
+  </div>
+</div>
+
+<div ng-if="data.show_text_below_picture" class="show-text-bottom">
+  <div class="people_name_title">
+    <h4 class="title">{{::data.user_full_name}}</h4>
   </div>
 </div>

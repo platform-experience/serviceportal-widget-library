@@ -1,12 +1,14 @@
 ## Synopsis: People Info
 
-![alt text](../../images/pe-people-info-01.png "People Info")
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-01.png "People Info")
 
-![alt text](../../images/pe-people-info-02.png "People Info - With option Only Picture set to True")
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-02.png "People Info - With option Only Picture set to True")
 
-![alt text](../../images/pe-people-info-03.png "People Info - With option Job Title set to False")
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-03.png "People Info - With option Job Title set to False")
 
-![alt text](../../images/pe-people-info-04.png "People Info - With option Call And Chat set to False")
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-04.png "People Info - With option Call And Chat set to False")
+
+![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-people-info-05.png "People Info - With option Show Text Below Picture set to True")
 
 This widget can be used to create a simple people card with user avatar, name, title, call and chat functionality.
 
@@ -25,6 +27,8 @@ We provide few options to load data easily and also to change the appearance of 
 **"Show Job Title"** this is a boolean variable, when checked we show the user job tile below his name, default value here is **true**.
 
 **"Show Call and Chat"** this is a boolean variable, when checked we show chat and call icons, default value here is **true**.
+
+**"Show Text Below Picture"** this is a boolean variable, when checked we show the name below the picture, default value here is **false**.
 
 ***
 

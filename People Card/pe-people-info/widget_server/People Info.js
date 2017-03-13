@@ -3,7 +3,8 @@
 
   // function to check if we are injecteding any options from server side or options
   var getBoolValue = function(inputVal, optionVal) {
-    if (inputVal == null) {
+
+    if (inputVal === null || inputVal === "" || inputVal === undefined) {
       return (optionVal === 'true');
     } else {
       return (inputVal === 'true');
@@ -27,4 +28,6 @@
   data.show_only_picture = getBoolValue(input.only_picture, options.show_only_picture);
   data.show_job_title = getBoolValue(input.show_job_title, options.show_job_title);
   data.show_call_and_chat = getBoolValue(input.show_call_and_chat, options.show_call_and_chat);
+  data.show_text_below_picture = getBoolValue(input.show_text_below_picture, options.show_text_below_picture);
+
 })();
