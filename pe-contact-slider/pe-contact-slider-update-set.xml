@@ -148,7 +148,7 @@
   &lt;div class="col-xs-12" ng-swipe-left="c.nextPhase()"&gt;
     &lt;div class="panel panel-default"&gt;
       &lt;div class="panel-heading"&gt;informed parties&lt;/div&gt;
-      &lt;div id="myCarousel" class="contact-carousel slide" data-ride="contact-carousel"&gt;
+      &lt;div id="contactSliderCarousel" class="contact-carousel slide" data-ride="contact-carousel"&gt;
         &lt;div class="carousel-inner" role="listbox"&gt;
           &lt;div class="item" ng-repeat="user in c.data.users track by $index" ng-class="{'active' : $index == 0}"&gt;
             &lt;div class="panel-body"&gt;

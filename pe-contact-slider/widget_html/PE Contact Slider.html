@@ -3,7 +3,7 @@
   <div class="col-xs-12" ng-swipe-left="c.nextPhase()">
     <div class="panel panel-default">
       <div class="panel-heading">informed parties</div>
-      <div id="myCarousel" class="contact-carousel slide" data-ride="contact-carousel">
+      <div id="contactSliderCarousel" class="contact-carousel slide" data-ride="contact-carousel">
         <div class="carousel-inner" role="listbox">
           <div class="item" ng-repeat="user in c.data.users track by $index" ng-class="{'active' : $index == 0}">
             <div class="panel-body">
