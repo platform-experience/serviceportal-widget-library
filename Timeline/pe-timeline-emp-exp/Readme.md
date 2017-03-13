@@ -1,6 +1,6 @@
 ## Synopsis: Timeline Widget Variation Used In Employee Experience
 
-![alt text](../images/pe-timeline-emp-exp.png "Timeline Widget")
+![alt text](.../images/pe-timeline-emp-exp.png "Timeline Widget")
 
 
 This widget can be used to implement timeline. A variation of the pe-timeline widget, used in Consumerize Employee Experience.
