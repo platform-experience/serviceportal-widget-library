@@ -1,0 +1,23 @@
+<div class="single-bar-widget">
+  <div class="info">
+    <div class="left-side">
+      <i class="fa fa-money fa-lg"></i>
+      <div class="nums-texts">
+        <p class="text-twenty-four">{{::c.data.lnumber}}</p>
+        <p class="text-twelve">{{::c.data.lnumber_text}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="bar-graph">
+    <div class="bars" ng-style="{'width': each_graph.width}" ng-repeat="each_graph in c.data.graph_data">
+
+      <div class="inner-bar" ng-style="{'background': each_graph.color}">
+        <div class="legend text-eleven">
+          <p>{{::each_graph.info_text}}</p>
+          <p>{{::each_graph.info_number}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
