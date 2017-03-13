@@ -26,6 +26,8 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Emp Exp Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Timeline/pe-timeline-emp-exp)
 
+* [Horizontal Stacked Bar](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-horizontal-stacked-bar)
+
 **Snippets list available now:**
 
 * [Status Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-status-card-snippet)
