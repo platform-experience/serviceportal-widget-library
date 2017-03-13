@@ -12,10 +12,6 @@
 
             var timeLineData = {
                 show: 2,
-                user: "Suzy Ham",
-
-                title: "LOA Agreement",
-                sub_title: "LOA",
                 header: {
                     text: "Suzy Ham",
                     color: "#a7a7a7",

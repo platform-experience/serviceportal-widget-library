@@ -12,13 +12,13 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Feedback Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-feedback-card)
 
-* [People Info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-people-info)
+* [People Info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info)
 
 * [Scratch Pad](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-scratch-pad)
 
-* [Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-timeline)
+* [Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Timeline/pe-timeline)
 
-* [Emp Exp Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-timeline-emp-exp)
+* [Emp Exp Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Timeline/pe-timeline-emp-exp)
 
 *Widgets in progress*
 
