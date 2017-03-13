@@ -1,7 +1,7 @@
 ## Synopsis: Area Chart
 
-![](../images/pe-bar-chart.png)
-![](../images/pe-column-chart.png)
+![](../../images/pe-bar-chart.png)
+![](../../images/pe-column-chart.png)
 
 This is used to create a simple Bar Chart, Or a Column Chart
 

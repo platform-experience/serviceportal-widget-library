@@ -1,7 +1,7 @@
 ## Synopsis: Area Chart
 
-![](../images/pe-area-chart.png)
-![](../images/pe-area-spline-chart.png)
+![](../../images/pe-area-chart.png)
+![](../../images/pe-area-spline-chart.png)
 
 This is used to create a simple Area Chart, Or a Area Spline Chart
 

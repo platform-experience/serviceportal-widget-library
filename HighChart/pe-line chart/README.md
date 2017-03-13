@@ -1,8 +1,8 @@
 ## Synopsis: Area Chart
 
-![](../images/pe-line-chart.png)
-![](../images/pe-spline-chart.png)
-![](../images/pe-polar-chart.png)
+![](../../images/pe-line-chart.png)
+![](../../images/pe-spline-chart.png)
+![](../../images/pe-polar-chart.png)
 
 This is used to create a simple Line Chart, Spline Chart or Web
 

@@ -1,6 +1,6 @@
 ## Synopsis: Area Chart
 
-![](../images/pe-treemap-chart.png)
+![](../../images/pe-treemap-chart.png)
 
 This is used to create a simple Treemap
 

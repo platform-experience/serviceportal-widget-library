@@ -1,7 +1,7 @@
 ## Synopsis: Area Chart
 
-![](../images/pe-pie-chart.png)
-![](../images/pe-donut-chart.png)
+![](../../images/pe-pie-chart.png)
+![](../../images/pe-donut-chart.png)
 
 This is used to create a simple Pie Chart, or Donut Chart
 

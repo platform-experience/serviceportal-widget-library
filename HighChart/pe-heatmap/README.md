@@ -1,6 +1,6 @@
 ## Synopsis: Area Chart
 
-![](../images/pe-heatmap-chart.png)
+![](../../images/pe-heatmap-chart.png)
 
 This is used to create a simple Heatmap
 

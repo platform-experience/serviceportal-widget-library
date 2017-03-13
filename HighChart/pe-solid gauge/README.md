@@ -1,7 +1,7 @@
 ## Synopsis: Area Chart
 
-![](../images/pe-solid-gauge-chart.png)
-![](../images/pe-solid-gauge-arc-chart.png)
+![](../../images/pe-solid-gauge-chart.png)
+![](../../images/pe-solid-gauge-arc-chart.png)
 
 This is used to create a simple Solid Gauge, or Solid Gauge Arc
 
