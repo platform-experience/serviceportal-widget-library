@@ -17,7 +17,13 @@ We provide a single option to make easy to build the stacked bar graph:
 
 ***
 
-You can override these variables at portal level using the **themes**.
+We provide four SASS variables to control the chat and call icon colors.
 
 `$pe-brand-primary:#337ab7 !default;`
+
+You can override these variables at portal level using the **themes**.
+
+
+
+
 
