@@ -1,0 +1,104 @@
+$pe-brand-widget-bg-color: #2f65bc !default;
+$pe-brand-widget-text-color: #e5efff !default;
+.encloser {
+  background: $pe-brand-widget-bg-color;
+  padding: 10px;
+  margin-bottom: 10px;
+  .approval-head {
+    overflow: hidden;
+    padding: 10px;
+    p {
+      margin-bottom: 0px;
+    }
+    .head {
+      font-size: 22px;
+      color: $pe-brand-widget-text-color;
+      font-weight: bold;
+    }
+    .badge-color {
+      background: #f95050;
+      margin-right: 5px;
+    }
+    .remaining {
+      font-size: 15px;
+      font-weight: normal;
+      color: $pe-brand-widget-text-color;
+      margin-top: 5px;
+    }
+  }
+  .actual-card {
+    clear: both;
+    background: #fff;
+    margin-bottom: 10px;
+    .padd-it {
+      .heading {
+        font-size: 18px;
+        font-weight: bold;
+        color: #81878e;
+        padding: 10px 15px;
+        padding-bottom: 0px;
+      }
+      .details {
+        padding: 10px 15px;
+        padding-top: 0px;
+        border-bottom: 1px solid #e6e8ea;
+        overflow: hidden;
+        .each-div {
+          width: 50%;
+          overflow: hidden;
+          float: left;
+        }
+        .purpose {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          p {
+            font-size: 15px;
+            color: #81878e;
+            margin-bottom: 0px;
+            line-height: 1;
+            margin-left: 10px;
+            width: 75px;
+          }
+        }
+        .svg-icon {
+          width: 38px;
+          height: 38px;
+          stroke: #268cf8;
+          fill: #268cf8;
+        }
+      }
+    }
+    .buttons {
+      overflow: hidden;
+      clear: both;
+      .blue-border {
+        color: #278efc;
+        border-bottom: 3px solid #278efc;
+      }
+      .red-border {
+        color: #f95050;
+        border-bottom: 3px solid #f95050;
+      }
+      .orange-border {
+        color: #fc8a3d;
+        border-bottom: 3px solid #fc8a3d;
+      }
+      .each-button {
+        width: 33.3%;
+        float: left;
+        padding: 15px 20px;
+        text-align: center;
+        border-right: solid 1px #e6e8ea;
+        p {
+          margin-bottom: 0px;
+          font-size: 15px;
+        }
+        .last-button {
+          border: 0px;
+        }
+      }
+    }
+  }
+}

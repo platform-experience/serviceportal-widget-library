@@ -1,0 +1,175 @@
+.svg-icon {
+  width: 38px;
+  height: 38px;
+  stroke: #268cf8;
+  fill: #268cf8;
+}
+
+
+/********* status card  *********/
+
+.status-card {
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 10px;
+  p {
+    margin-bottom: 0px;
+  }
+  .header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #81878e;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e6e8ea;
+  }
+  .details {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .each-div {
+      width: 50%;
+      float: left;
+      border-right: 1px solid #e6e8ea;
+      .title {
+        font-size: 18px;
+        color: #81878e;
+        padding: 10px 10px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+      }
+      .flex-it {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .text {
+        font-size: 15px;
+        color: #696d71;
+        .days {
+          font-weight: normal;
+          color: #268cf8;
+          margin-left: 3px;
+          font-weight: 600;
+        }
+      }
+      /*****************/
+      .card {
+        background: #fff;
+        padding: 0px;
+        .donut-chart {
+          position: relative;
+          border-radius: 50%;
+          overflow: hidden;
+          .slice {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          .chart-center {
+            position: absolute;
+            border-radius: 50%;
+          }
+          .chart-center span.in-progress {
+            display: block;
+            text-align: center;
+          }
+          .chart-center span.complete {
+            display: block;
+            text-align: center;
+            //font-size: 11px;
+            //line-height: 20px;
+            color: #268cf8;
+            font-family: arial;
+            -ms-transform: scaleX(-1) rotate(-35deg);
+            /* IE 9 */
+            -webkit-transform: scaleX(-1) rotate(-35deg);
+            /* Chrome, Safari, Opera */
+            transform: scaleX(-1) rotate(-35deg);
+            &:after {
+              content: "L";
+            }
+          }
+        }
+        .chart {
+          width: 34px;
+          height: 34px;
+        }
+      }
+      /*******************/
+      .top-section {
+        padding: 10px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        //border-left: 1px solid #e6e8ea;
+        .percent {
+          font-size: 15px;
+          font-weight: normal;
+          color: #696d71;
+          span {
+            color: #268cf8;
+            margin-right: 3px;
+            font-weight: 600;
+          }
+        }
+      }
+      .bottom-section {
+        text-align: center;
+        span {
+          font-size: 15px;
+          margin-right: 5px;
+          border-radius: 4px;
+        }
+        .state {
+          color: #696d71;
+          font-size: 15px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .people-card-media {
+    //background:
+    padding: 10px;
+    //border: solid 1px #e6e8ea;
+  }
+  .buttons {
+    border-top: solid 1px #e6e8ea;
+    clear: both;
+    .each-button {
+      width: 50%;
+      float: left;
+      padding: 20px;
+      text-align: center;
+      border-right: solid 1px #e6e8ea;
+      p {
+        margin-bottom: 0px;
+        font-size: 15px;
+      }
+      &.orange {
+        border-bottom: 3px solid #fc8a3d;
+        color: #fc8a3d;
+      }
+      &.green {
+        border-bottom: 3px solid #54c25b;
+        color: #54c25b;
+        border-right: 0px;
+      }
+    }
+  }
+}
+
+.people-info-container {
+  height: 80px;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-around;
+}
+
+
+/********************************/

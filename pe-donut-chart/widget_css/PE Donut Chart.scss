@@ -1,0 +1,50 @@
+.donut-chart-container {
+  position: relative;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+.icon-container {
+  position: absolute;
+  left: 67px;
+  top: 63px;
+}
+
+.circle_animation {
+ /*stroke-dasharray: 68.36;
+  stroke-dashoffset: 68.36;*/
+}
+
+
+.donut-chart-common {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.donut-chart-bg .circle_animation {
+  -webkit-animation: donut-chart-bg 1s ease-out forwards;
+  animation: donut-chart-bg 1s ease-out forwards;
+}
+
+.donut-chart-1 .circle_animation {
+  -webkit-animation: donut-chart-1 1s ease-out forwards;
+  animation: donut-chart-1 1s ease-out forwards;
+}
+
+@keyframes donut-chart-bg {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes donut-chart-1 {
+  to {
+    stroke-dashoffset: 34;
+  }
+}

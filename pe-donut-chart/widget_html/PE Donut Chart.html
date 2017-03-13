@@ -1,0 +1,29 @@
+<div>
+  <div ng-show="c.data.data.show_title">
+    <h3>{{c.data.title}}</h3>
+  </div>
+  <div class="donut-chart-container">
+    <div class="donut-chart-common donut-chart-bg">
+      <svg ng-style="
+    {'height':c.data.height, 'width': c.data.width}">
+        <g>
+          <circle id="circle-base" class="circle_animation" ng-attr-r='{{c.data.r}}' ng-attr-cy='{{c.data.cy}}' ng-attr-cx='{{c.data.cx}}' stroke-width="{{c.data.border_width}}"
+            stroke="{{c.data.background_color}}" fill="none" />
+        </g>
+      </svg>
+    </div>
+    <div id="chart-1" class="donut-chart-common donut-chart-1">
+      <!--ng-class='{"stroke-dashoffset": 25}'-->
+      <svg ng-style="
+    {'height':c.data.height, 'width': c.data.width}">
+        <g>
+          <circle id="circle" class="circle_animation" ng-attr-r="{{c.data.r}}" ng-attr-cy="{{c.data.cy}}" ng-attr-cx="{{c.data.cx}}" stroke-width="{{c.data.border_width}}"
+            stroke="{{c.data.active_color}}" fill="none" ng-style="{'stroke-dasharray': {{c.data.strokeDashArray}}, 'stroke-dashoffset': {{c.data.strokeDashOffset}}}"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="icon-container" ng-show="c.data.show_icon">
+    <i class="{{c.data.fa_icon}}" aria-hidden="true"></i>
+  </div>
+</div>
