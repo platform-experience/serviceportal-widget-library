@@ -1,10 +1,10 @@
 ## Synopsis: Tabs Selector
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-tabs-selector-01.png "Tabs Selector - No tab selection")
+![alt text](../images/pe-tabs-selector-01.png "Tabs Selector - No tab selection")
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-tabs-selector-02.png "Tabs Selector - Tab selected")
+![alt text](../images/pe-tabs-selector-02.png "Tabs Selector - Tab selected")
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-tabs-selector-03.png "Tabs Selector - Horizontal scrolling")
+![alt text](../images/pe-tabs-selector-03.png "Tabs Selector - Horizontal scrolling")
 
 This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
 

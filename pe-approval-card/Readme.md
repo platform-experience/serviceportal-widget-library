@@ -9,7 +9,7 @@ This widget can be used to create a simple approval card with three button **Acc
 
 ## Installation
 
-**Important note: This widget makes use of [pe-people-info widget](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-people-info) to display user avatar, name and title, this widget is already part of the update set.
+**Important note: This widget makes use of [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info) to display user avatar, name and title, this widget is already part of the update set.
 
 People Info widget is injected dynamically in client controller.
 

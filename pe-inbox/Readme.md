@@ -1,6 +1,6 @@
 ## Synopsis: Inbox
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-inbox-01.png "Inbox")
+![alt text](../images/pe-inbox-01.png "Inbox")
 
 This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
 

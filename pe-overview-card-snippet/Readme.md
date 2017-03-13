@@ -1,6 +1,6 @@
 ## Synopsis: Overview Card Snippet
 
-![alt text](https://gitlab.com/dev-practice/platexp-widget-library/raw/master/images/pe-overview-card-snippet.png "Status Card Snippet")
+![alt text](../images/pe-overview-card-snippet.png "Status Card Snippet")
 
 This snippet can be used to have a valid starting point for displaying a status card.
 
@@ -10,7 +10,7 @@ This snippet can be used to have a valid starting point for displaying a status 
 
 Installation is very simple, you can just download the update set **pe-overview-card-snippet-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
-**Important note: This widget makes use of [pe-people-info widget](https://gitlab.com/dev-practice/platexp-widget-library/tree/master/pe-people-info) to display user avatar, name and title, this widget is already part of the update set.
+**Important note: This widget makes use of [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info) to display user avatar, name and title, this widget is already part of the update set.
 
 People Info widget is injected dynamically in client controller.
 
