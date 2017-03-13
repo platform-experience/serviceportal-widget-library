@@ -19,7 +19,4 @@ We provide a single option to make easy to build the stacked bar graph:
 
 You can override these variables at portal level using the **themes**.
 
-
-
-
-
+`$pe-brand-primary:#337ab7 !default;`
