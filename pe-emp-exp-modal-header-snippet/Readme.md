@@ -1,6 +1,6 @@
 ## Synopsis: Employee Experience Modal Snippet
 
-![alt text](../images/pe-emp-exp-modal-header-snippet "Modal Snippet")
+![alt text](../images/pe-emp-exp-modal-header-snippet.png "Modal Snippet")
 
 
 This is the snippet for signature modal in employee experience.
