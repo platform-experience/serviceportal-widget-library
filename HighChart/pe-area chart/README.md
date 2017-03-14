@@ -50,7 +50,12 @@ We provide some options to configure the widget.
         },
 		"legend":{
 			"enabled":false
-		}
+		},
+        "plotOptions":{
+            "series":{
+                "stacking":"normal"
+            }
+        }
     }
 }
 ```
