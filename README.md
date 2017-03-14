@@ -36,7 +36,7 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Status Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-status-card-snippet)
 
-* [Overview Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-overview-card-snippet)
+* [Overview Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Overview%20Cards/pe-overview-card-snippet)
 
 * [Employee Experience Signature Modal Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-emp-exp-signature-modal-snippet)
 
