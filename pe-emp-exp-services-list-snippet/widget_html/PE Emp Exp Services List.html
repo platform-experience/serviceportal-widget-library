@@ -1,0 +1,15 @@
+<div ng-include src="'services-svgs'"></div>
+<div class="services row">
+    <!-- your widget template -->
+    <div class="services-list">
+        <div class="each-service" ng-repeat="service in c.servicesList" ng-class="{'selected':service.selected}" ng-click="service.selected = !service.selected">
+            <svg class="svg-icon">
+                <use xlink:href='{{service.icon}}'></use>
+            </svg>
+            <p> {{service.name}}</p>
+        </div>
+    </div>
+    <div class="accept-btn" ng-click="">
+        <p> Accept</p>
+    </div>
+</div>
