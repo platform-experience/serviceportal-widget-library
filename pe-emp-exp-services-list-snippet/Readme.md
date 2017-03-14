@@ -1,6 +1,6 @@
 ## Synopsis: Employee Experience Modal Snippet
 
-![alt text](../images/pe-emp-exp-services-list "Services List")
+![alt text](../images/pe-emp-exp-services-list.png "Services List")
 
 
 This is the snippet to display list for services in employee experience.
