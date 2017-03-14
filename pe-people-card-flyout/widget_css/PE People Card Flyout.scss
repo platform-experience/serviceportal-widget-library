@@ -1,0 +1,112 @@
+$pe-theme-color: #283347 !default;
+$pe-theme-background-color: #1c2432 !default;
+$pe-text-color: #fff !default;
+$pe-sub-text-color: #68acd8 !default;
+$pe-status-color-normal: #29bd00 !default;
+
+.people-card-flyout {
+  .badge {
+    border-radius: 100px;
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    height: 28px;
+    margin-top: -5px;
+    padding-top: 7px;
+  }
+  .photo {
+    img {
+      height: 40px;
+      width: 40px;
+    }
+    &:after {
+      background-color: $pe-status-color-normal;
+      border-radius: 50%;
+      content: '';
+      height: 10px;
+      left: 80%;
+      position: absolute;
+      top: 78%;
+      width: 10px;
+    }
+  }
+  color: $pe-text-color;
+  .panel {
+    border: 0;
+    color: $pe-text-color;
+    background-color: transparent;
+    .panel-heading {
+      border-bottom: 0 !important;
+      background-color: $pe-theme-color !important;
+      color: $pe-text-color !important;
+      font-size: 12px;
+      padding: 14px;
+      text-transform: uppercase;
+    }
+    .panel-body {
+      background-color: $pe-theme-background-color;
+      color: $pe-text-color;
+      h4 {
+        font-size: 24px;
+        margin-top: -5px !important;
+      }
+      .user-sub-text {
+        color: $pe-sub-text-color;
+        font-size: 12px;
+        margin-bottom: -5px;
+        margin-top: -5px;
+      }
+      .sub-text {
+        color: $pe-sub-text-color;
+        font-size: 10px;
+        margin: -5px 0 -5px 0;
+        text-transform: uppercase;
+      }
+    }
+    .panel-vips {
+      .panel-heading {
+        background-color: #394b6b !important;
+        padding-bottom: 15px;
+      }
+      .star-ribbon {
+        margin-right: 16px;
+      }
+      .lower-case {
+        margin-left: -2px;
+      }
+      .badge {
+        background-color: $pe-theme-color;
+        width: 76px;
+      }
+      .user-sub-text {
+        margin-top: -10px;
+      }
+      .row {
+        margin-bottom: 30px;
+        &:first-child {
+          margin-top: 5px;
+        }
+        &:last-child {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .header-left-icon {
+    margin: 0 0 7px 11%;
+    span {
+      float: right;
+      margin-right: 40%;
+    }
+  }
+  .add-circle,
+  .close-circle {
+    height: 23px;
+    margin-top: -3px;
+    width: 23px;
+  }
+  .star-ribbon {
+    height: 24px;
+    width: 18px;
+  }
+}
