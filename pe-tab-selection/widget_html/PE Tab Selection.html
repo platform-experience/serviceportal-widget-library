@@ -1,0 +1,140 @@
+<div ng-include="'pe-tab-selection-svgs'"></div>
+<div class="row tab-selection">
+  <div class="col-xs-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">{{::options.title}}</div>
+      <div class="panel-body panel-padding-bottom">
+        <div class="row text-center">
+          <div class="col-xs-4" ng-click="c.selection = 1" ng-class="{'selected': c.selection === 1}">
+            <div class="attack-profiles">
+              <span>IOC</span>
+            </div>
+            <p class="sub-text" ng-class="{'selected': c.selection === 1}">torrentjack</p>
+            <div ng-show="c.selection === 1" class="arrow-up"></div>
+          </div>
+          <div class="col-xs-4" ng-click="c.selection = 2">
+            <div class="attack-profiles">
+              <div ng-hide="c.selection === 2">
+                <svg class="server">
+                  <use xlink:href="#server"></use>
+                </svg>
+              </div>
+              <div ng-hide="c.selection !== 2">
+                <svg class="server-red">
+                  <use xlink:href="#server-red"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="sub-text" ng-class="{'selected': c.selection === 2}">mail-east-001</p>
+            <div ng-show="c.selection === 2" class="arrow-up"></div>
+          </div>
+          <div class="col-xs-4" ng-click="c.selection = 3">
+            <div class="attack-profiles">
+              <div ng-hide="c.selection === 3">
+                <svg class="radio-active">
+                  <use xlink:href="#radio-active"></use>
+                </svg>
+              </div>
+              <div ng-hide="c.selection !== 3">
+                <svg class="radio-active-red">
+                  <use xlink:href="#radio-active-red"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="sub-text" ng-class="{'selected': c.selection === 3}">cve-2016-0537</p>
+            <div ng-show="c.selection === 3" class="arrow-up"></div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer panel-footer-danger">
+        <div ng-show="c.selection === 1">
+          <svg class="fishing">
+            <use xlink:href="#fishing"></use>
+          </svg>
+          <p>Phishing</p>
+          <svg class="user-chat-dollar">
+            <use xlink:href="#user-chat-dollar"></use>
+          </svg>
+          <p>Ransomware</p>
+        </div>
+        <div ng-show="c.selection === 2">
+          <svg class="exchange-server">
+            <use xlink:href="#exchange-server"></use>
+          </svg>
+          <p>Exchange Server</p>
+          <svg class="location-pin">
+            <use xlink:href="#location-pin"></use>
+          </svg>
+          <p>Dulles DC</p>
+        </div>
+        <div ng-show="c.selection === 3">
+          <div class="row">
+            <div class="col-xs-4">
+              <p class="pull-right"><span class="danger-text">CVSS</span> 6.4</p>
+            </div>
+            <div class="col-xs-4">
+              <p class="no-margin"><span class="danger-text">Risk</span> Medium</p>
+            </div>
+            <div class="col-xs-4">
+              <svg class="network-web">
+                <use xlink:href="#network-web"></use>
+              </svg>
+              <p class="no-margin"><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0537" target="_blank" class="default-anchor">mitre.org</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-show="c.selection === 3" class="radio-active-content">
+        <div class="text-center">
+          <p class="cwe">CWE-119: Improper Restriction of Memory Buffer</p>
+        </div>
+        <div class="panel-heading panel-heading-active">exposure</div>
+        <div class="panel-body">
+          <div class="row text-center">
+            <div class="col-xs-4">
+              <p class="radio-active-header-text">attack vector</p>
+              <div class="status-circle-warning-left">
+                <h4>Local</h4>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <p class="radio-active-header-text">attack complexity</p>
+              <div class="status-circle-warning-left">
+                <h4>Med</h4>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <p class="radio-active-header-text">priviledges req’d</p>
+              <div class="status-circle-danger-left">
+                <h4>Low</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-heading">impact</div>
+        <div class="panel-body">
+          <div class="row text-center">
+            <div class="col-xs-4">
+              <p class="radio-active-header-text">confidentiality</p>
+              <div class="status-circle-danger-left">
+                <h4>High</h4>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <p class="radio-active-header-text">integrity</p>
+              <div class="status-circle-warning-left">
+                <h4>Med</h4>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <p class="radio-active-header-text">availability</p>
+              <div class="status-circle-danger-left">
+                <h4>High</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

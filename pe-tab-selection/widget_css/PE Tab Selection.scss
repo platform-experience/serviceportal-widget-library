@@ -1,0 +1,189 @@
+$pe-theme-color: #68acd8 !default;
+$pe-text-color: #fff !default;
+$pe-status-color-warning: #ffce00 !default;
+$pe-status-color-critical: #ff0050 !default;
+
+.tab-selection {
+  .status-circle-left {
+    border-radius: 50%;
+    bottom: 21%;
+    content: '';
+    height: 10px;
+    margin-left: -18px;
+    position: absolute;
+    width: 10px;
+  }
+  .status-circle-warning-left {
+    h4 {
+      &:before {
+        @extend .status-circle-left;
+        background-color: $pe-status-color-warning;
+      }
+    }
+  }
+  .status-circle-danger-left {
+    h4 {
+      &:before {
+        @extend .status-circle-left;
+        background-color: $pe-status-color-critical;
+      }
+    }
+  }
+  color: $pe-text-color;
+  .panel {
+    border: 0;
+    color: $pe-text-color;
+    background-color: transparent;
+    .panel-heading {
+      border-bottom: 0 !important;
+      background-color: #283347 !important;
+      color: $pe-text-color !important;
+      font-size: 12px;
+      padding: 14px;
+      text-transform: uppercase;
+    }
+    .panel-body {
+      background-color: #1c2432;
+      color: $pe-text-color;
+      h4 {
+        font-size: 24px;
+        margin-top: -5px !important;
+      }
+      .header-text {
+        color: $pe-theme-color;
+        font-size: 16px;
+        height: 30px;
+        width: 110px;
+        .pii {
+          margin: 3% 42% 0 -31px;
+        }
+        .pci {
+          margin: 3% 42% 0 -12px;
+        }
+      }
+      .sub-text {
+        color: $pe-theme-color;
+        font-size: 10px;
+        margin: -5px 0 -5px 0;
+        text-transform: uppercase;
+      }
+      .attack-profiles {
+        height: 40px;
+        vertical-align: middle;
+        span {
+          color: $pe-theme-color;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .radio-active-content {
+    background-color: #1c2432;
+    padding-top: 16px;
+    h4 {
+      margin-bottom: 1px !important;
+    }
+    .panel-heading {
+      background-color: #394b6b !important;
+    }
+    .cwe {
+      font-weight: 100;
+      font-size: 14px;
+      padding-bottom: 6px;
+    }
+    .radio-active-header-text {
+      color: $pe-theme-color;
+      font-size: 9px;
+      margin-bottom: 8px;
+      margin-top: 4px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+  .panel-footer-danger {
+    background-color: #be003c !important;
+    border-color: #be003c !important;
+    height: 43px;
+    p {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 100 !important;
+      margin: 0 10px 12px 3px;
+    }
+    svg {
+      vertical-align: middle;
+    }
+    .no-margin {
+      margin: 0 !important;
+    }
+    .default-anchor {
+      color: $pe-text-color;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      text-transform: lowercase;
+      text-decoration: underline;
+    }
+    .danger-text {
+      color: #500018;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+  }
+  .panel-padding-bottom {
+    padding-bottom: 30px !important;
+  }
+  .arrow-up {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #be003d;
+    bottom: -32px;
+    height: 0;
+    left: 43%;
+    position: absolute;
+    width: 0;
+  }
+  .selected {
+    color: $pe-text-color !important;
+    span {
+      color: #be003d !important;
+    }
+  }
+  .server {
+    height: 27px;
+    width: 27px;
+  }
+  .radio-active {
+    height: 23px;
+    width: 24px;
+  }
+  .fishing {
+    height: 24px;
+    width: 24px;
+  }
+  .user-chat-dollar {
+    height: 24px;
+    width: 24px;
+  }
+  .exchange-server {
+    height: 22px;
+    width: 20px;
+  }
+  .location-pin {
+    height: 23px;
+    width: 16px;
+  }
+  .network-web {
+    height: 22px;
+    margin-right: 2px;
+    width: 24px;
+  }
+  .server-red {
+    height: 27px;
+    width: 27px;
+  }
+  .radio-active-red {
+    height: 23px;
+    width: 24px;
+  }
+}
