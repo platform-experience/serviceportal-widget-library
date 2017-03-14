@@ -28,6 +28,10 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Horizontal Stacked Bar](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-horizontal-stacked-bar)
 
+* [Approve Reject Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Approve%20Card/pe-approve-reject-card)
+
+* [Approve Reject Inbox](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approve-reject-inbox)
+
 **Snippets list available now:**
 
 * [Status Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-status-card-snippet)
