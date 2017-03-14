@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-03 18:04:07">
+<unload unload_date="2017-03-14 17:37:14">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE Timeline</name>
+<name>PE Update Timeline</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>cd650505135dba00d15e3d7ed144b01e</remote_sys_id>
+<remote_sys_id>fab047f4dba5b20062e479daae96195d</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-03 18:04:07</sys_created_on>
-<sys_id>2f0e9e1d1355fa00d15e3d7ed144b06a</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-14 17:37:13</sys_created_on>
+<sys_id>a0614ff4dba5b20062e479daae96191a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-03 18:04:07</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-14 17:37:13</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,99 +33,52 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_eab344e01319ba007e94fc5ed144b041</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ($rootScope, $scope) {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TimelineController(eventsService) {
   var c = this;
+  c.collapseInitialEvents = collapseInitialEvents;
+  c.expandInitialEvents = expandInitialEvents;
+  c.nextInitialEvent = nextInitialEvent;
 
-  Object.size = function (obj) {
-    var size = 0,
-      key;
-    for (key in obj) {
-      if (obj.hasOwnProperty(key)) size++;
-    }
-    return size;
+  c.$onInit = function() {
+    c.title = c.data.title;
+    c.initialEvents = getInitialEvents();
+    c.itemsCount = c.initialEvents.length;
+    c.fadeOldEvents = false;
   };
 
-  c.initialEvents = [{
-    description: 'Automated Event Correlation',
-    leftDescription: '14:22',
-    icon: 'fa fa-bolt fa-lg',
-    color: '#dbcb33',
-    stats: [{
-      name: 'Events',
-      value: 20
-    },
-    {
-      name: 'Sources',
-      value: 5
-    }
-    ]
-  },
-  {
-    description: 'Automated Service Correlation',
-    leftDescription: '14:22',
-    icon: 'fa fa-bolt fa-lg',
-    color: '#d86431',
-    stats: [{
-      name: 'In Total',
-      value: 2
-    },
-    {
-      name: 'Tier 1 Service',
-      value: 1,
-      iconSuffix: 'fa fa-shopping-cart fa-lg'
-    }
-    ]
-  },
-  {
-    description: 'Automated Risk Assessment',
-    leftDescription: '14:23',
-    icon: 'fa fa-bolt fa-lg',
-    color: '#903f5c',
-    stats: [{
-      value: '1.2M',
-      icon: 'fa fa-usd fa-lg'
-    },
-    {
-      value: '42K',
-      icon: 'fa fa-users fa-lg'
-    },
-    {
-      value: '3',
-      icon: 'fa fa-globe fa-lg'
-    }
-    ]
-  }
-  ];
-
-  c.title = c.data.title;
-  c.itemsCount = Object.size(c.initialEvents);
-  c.fadeOldEvents = false;
-  c.shownInitialEvents = c.data.initial_elements;
-  if (c.shownInitialEvents === undefined) {
+  function collapseInitialEvents() {
     c.shownInitialEvents = 0;
+    c.fadeOldEvents = false;
   }
 
-  c.nextInitialEvent = function () {
+  function expandInitialEvents() {
+    c.shownInitialEvents = c.initialEvents.length;
+    c.fadeOldEvents = false;
+  }
+
+  function nextInitialEvent() {
     if (c.shownInitialEvents &lt; c.initialEvents.length) {
-      c.shownInitialEvents++
+      c.shownInitialEvents++;
     } else {
       c.shownInitialEvents = 0;
       c.fadeOldEvents = false;
     }
   }
 
-  c.expandInitialEvents = function () {
-    c.shownInitialEvents = c.initialEvents.length;
-    c.fadeOldEvents = false;
+  function getInitialEvents() {
+    showEvents();
+    var events = eventsService.getInitialEvents();
+    return events;
   }
 
-  c.collapseInitialEvents = function () {
-    c.shownInitialEvents = 0;
-    c.fadeOldEvents = false;
+  function showEvents() {
+    c.shownInitialEvents = c.data.initial_elements;
+    if (c.shownInitialEvents === undefined) {
+      c.shownInitialEvents = 0;
+    }
   }
-
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-timeline-items-color: #ff6f00 !default;&amp;#13;
+&amp;#13;
 .expanded {&amp;#13;
   .panel-proper {&amp;#13;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);&amp;#13;
@@ -319,50 +272,44 @@
 .expander-button:last-child {&amp;#13;
   border-right: none;&amp;#13;
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-timeline&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Timeline&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","default_value":"Alert Timeline","label":"Title","type":"string"},{"name":"show_ldescriptions","default_value":"true","label":"Show Left Descriptions","type":"boolean"},{"name":"show_icons","default_value":"false","label":"Show Icons","type":"boolean"},&amp;#13;
-{"name":"show_colors","default_value":"false","label":"Show Colors","type":"boolean"},{"name":"initial_elements","default_value":"0","label":"Initial Elements","type":"integer"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
-	/* populate the 'data' object */
-	/* e.g., data.table = $sp.getValue('table'); */
-	var getBoolValue = function (inputVal, optionVal) {
-		if (inputVal == null) {
-			return (optionVal === 'true');
-		} else {
-			return (inputVal === 'true');
-		}
-	};
+{"name":"show_colors","default_value":"false","label":"Show Colors","type":"boolean"},{"name":"initial_elements","default_value":"0","label":"Initial Elements","type":"integer"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var getBoolValue = function(inputVal, optionVal) {
+    if (inputVal == null) {
+      return (optionVal === 'true');
+    } else {
+      return (inputVal === 'true');
+    }
+  };
 
-	var getIntValue = function (inputVal, optionVal) {
-		if ((inputVal == null || inputVal == undefined) &amp;&amp; (optionVal &gt;= 0)) {
-			return (parseInt(optionVal));
-		} else if (inputVal != null &amp;&amp; inputVal != undefined) {
-			return (parseInt(inputVal));
-		}
-	};
+  var getIntValue = function(inputVal, optionVal) {
+    if ((inputVal == null || inputVal == undefined) &amp;&amp; (optionVal &gt;= 0)) {
+      return (parseInt(optionVal));
+    } else if (inputVal != null &amp;&amp; inputVal != undefined) {
+      return (parseInt(inputVal));
+    }
+  };
 
-	data.title = options.title || input.title;
-	data.show_icons = getBoolValue(input.show_icons, options.show_icons);
-	data.show_ldescriptions = getBoolValue(input.show_ldescriptions, options.show_ldescriptions);
-	data.initial_elements = getIntValue(options.initial_elements, input.initial_elements);
-	data.show_colors = getBoolValue(input.show_colors, options.show_colors);
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 22:57:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;eab344e01319ba007e94fc5ed144b041&lt;/sys_id&gt;&lt;sys_mod_count&gt;282&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Timeline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_eab344e01319ba007e94fc5ed144b041&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-03 17:50:24&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-show="!(c.recovered)" class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'expanded-wrapper': c.expandedWrapper }"&gt;
+  data.title = options.title || input.title;
+  data.show_icons = getBoolValue(input.show_icons, options.show_icons);
+  data.show_ldescriptions = getBoolValue(input.show_ldescriptions, options.show_ldescriptions);
+  data.initial_elements = getIntValue(options.initial_elements, input.initial_elements);
+  data.show_colors = getBoolValue(input.show_colors, options.show_colors);
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 22:57:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;eab344e01319ba007e94fc5ed144b041&lt;/sys_id&gt;&lt;sys_mod_count&gt;304&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Timeline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_eab344e01319ba007e94fc5ed144b041&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-10 17:44:07&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-show="!(c.recovered)" class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'expanded-wrapper': c.expandedWrapper }"&gt;
   &lt;div class="panel-proper"&gt;
     &lt;div class="panel-header"&gt;
       &lt;span&gt;{{c.title}}&lt;/span&gt;
       &lt;span class="counter"&gt;
-				{{c.itemsCount}}
-			&lt;/span&gt;
+        {{c.itemsCount}}
+      &lt;/span&gt;
     &lt;/div&gt;
     &lt;div class="panel-content"&gt;
-
       &lt;div&gt;
-
         &lt;div ng-repeat="item in c.initialEvents | limitTo: c.shownInitialEvents" class="tl-item" ng-class="c.fadeOldEvents ? '' : 'not-faded' "
           ng-click="c.nextInitialEvent()"&gt;
           &lt;div ng-if="c.data.show_ldescriptions" class="left-description"&gt;{{item.leftDescription}}&lt;/div&gt;
           &lt;div class="right-content"&gt;
             &lt;div ng-if="!c.data.show_colors" class="timeline-icon" style="background: #737881;"&gt;&lt;/div&gt;
             &lt;div ng-if="c.data.show_colors" class="timeline-icon" style="background: {{item.color}}"&gt;&lt;/div&gt;
-
             &lt;div ng-if="c.data.show_icons" class="tl-icon"&gt;
               &lt;i class="{{item.icon}}"&gt;&lt;/i&gt;
             &lt;/div&gt;
@@ -371,12 +318,12 @@
               &lt;div ng-repeat="stat in item.stats" class="col-xs-{{ 12 / item.stats.length }}"&gt;
                 &lt;div class="key-value"&gt;
                   &lt;span ng-if="stat.icon" class="icon-inline"&gt;
-							&lt;i class="{{stat.icon}}"&gt;&lt;/i&gt;
-						&lt;/span&gt;
+                    &lt;i class="{{stat.icon}}"&gt;&lt;/i&gt;
+                  &lt;/span&gt;
                   &lt;span class="stat-text key-smaller"&gt;{{stat.value}}&lt;/span&gt;
                   &lt;span ng-if="stat.iconSuffix" class="icon-inline"&gt;
-&lt;i class="{{stat.iconSuffix}}"&gt;&lt;/i&gt;
-&lt;/span&gt;
+                    &lt;i class="{{stat.iconSuffix}}"&gt;&lt;/i&gt;
+                  &lt;/span&gt;
                 &lt;/div&gt;
                 &lt;div class="subtitle"&gt;
                   {{stat.name}}
@@ -385,49 +332,165 @@
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-
         &lt;div ng-if="!c.recovered &amp;&amp; c.shownInitialEvents === 0" class="expander-button-wrapper"&gt;
           &lt;div class="expander-button" ng-click="c.expandInitialEvents()"&gt;
             &lt;span class="icon-inline"&gt;
-						&lt;i class="fa fa-expand fa-lg"&gt;&lt;/i&gt;
-			&lt;/span&gt;&lt;span class="text-inline"&gt;Expand Timeline&lt;/span&gt;
+              &lt;i class="fa fa-expand fa-lg"&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span class="text-inline"&gt;Expand Timeline&lt;/span&gt;
           &lt;/div&gt;
           &lt;div class="expander-button" ng-click="c.nextInitialEvent()"&gt;
             &lt;span class="icon-inline"&gt;
-				&lt;i class="fa fa-play-circle-o fa-lg"&gt;&lt;/i&gt;
-			&lt;/span&gt;&lt;span class="text-inline"&gt;Timeline Playback&lt;/span&gt;
+              &lt;i class="fa fa-play-circle-o fa-lg"&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span class="text-inline"&gt;Timeline Playback&lt;/span&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-
       &lt;div ng-if="!c.recovered &amp;&amp; c.shownInitialEvents &gt; 0" class="expander-button-wrapper"&gt;
         &lt;div class="expander-button" ng-click="c.collapseInitialEvents()"&gt;
           &lt;span class="icon-inline"&gt;
-			&lt;i class="fa fa-compress fa-lg"&gt;&lt;/i&gt;
-		&lt;/span&gt;&lt;span class="text-inline"&gt;Collapse Timeline&lt;/span&gt;
+            &lt;i class="fa fa-compress fa-lg"&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;span class="text-inline"&gt;Collapse Timeline&lt;/span&gt;
         &lt;/div&gt;
         &lt;div ng-if="c.shownInitialEvents &lt; c.initialEvents.length" class="expander-button" ng-click="c.nextInitialEvent()"&gt;
           &lt;span class="icon-inline"&gt;
-			&lt;i class="fa fa-play-circle-o fa-lg"&gt;&lt;/i&gt;
-		&lt;/span&gt;&lt;span class="text-inline"&gt;Continue Playback&lt;/span&gt;
+            &lt;i class="fa fa-play-circle-o fa-lg"&gt;&lt;/i&gt;
+          &lt;/span&gt;
+          &lt;span class="text-inline"&gt;Continue Playback&lt;/span&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-
     &lt;/div&gt;
   &lt;/div&gt;
-
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Timeline">2f0e9e1d1355fa00d15e3d7ed144b06a</remote_update_set>
+<remote_update_set display_value="PE Update Timeline">a0614ff4dba5b20062e479daae96191a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-03 18:04:07</sys_created_on>
-<sys_id>e30e9e1d1355fa00d15e3d7ed144b06b</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-14 17:37:13</sys_created_on>
+<sys_id>24614ff4dba5b20062e479daae96191a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-03 18:04:07</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-14 17:37:13</sys_updated_on>
 <table/>
 <target_name>PE Timeline</target_name>
 <type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_79942e26db51320062e479daae9619e6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-events.module&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  angular.module('pe-timeline', []);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-07 15:45:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;79942e26db51320062e479daae9619e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-events.module&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_79942e26db51320062e479daae9619e6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-07 15:45:18&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Update Timeline">a0614ff4dba5b20062e479daae96191a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-14 17:37:13</sys_created_on>
+<sys_id>64614ff4dba5b20062e479daae96191a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-14 17:37:13</sys_updated_on>
+<table/>
+<target_name>pe-events.module</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_a08cfd5adb15b600b793f2b6ae9619a7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-events.service&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  function eventsService() {
+    var service = {
+      getInitialEvents: getInitialEvents
+    };
+    return service;
+
+    function getInitialEvents() {
+      var events = [{
+          description: 'Automated Event Correlation',
+          leftDescription: '14:22',
+          icon: 'fa fa-bolt fa-lg',
+          color: '#dbcb33',
+          stats: [{
+              name: 'Events',
+              value: 20
+            },
+            {
+              name: 'Sources',
+              value: 5
+            }
+          ]
+        },
+        {
+          description: 'Automated Service Correlation',
+          leftDescription: '14:22',
+          icon: 'fa fa-bolt fa-lg',
+          color: '#d86431',
+          stats: [{
+              name: 'In Total',
+              value: 2
+            },
+            {
+              name: 'Tier 1 Service',
+              value: 1,
+              iconSuffix: 'fa fa-shopping-cart fa-lg'
+            }
+          ]
+        },
+        {
+          description: 'Automated Risk Assessment',
+          leftDescription: '14:23',
+          icon: 'fa fa-bolt fa-lg',
+          color: '#903f5c',
+          stats: [{
+              value: '1.2M',
+              icon: 'fa fa-usd fa-lg'
+            },
+            {
+              value: '42K',
+              icon: 'fa fa-users fa-lg'
+            },
+            {
+              value: '3',
+              icon: 'fa fa-globe fa-lg'
+            }
+          ]
+        }
+      ];
+      return events;
+    }
+  }
+
+  angular
+    .module('pe-timeline')
+    .service('eventsService', eventsService);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-06 18:12:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a08cfd5adb15b600b793f2b6ae9619a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-events.service&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_a08cfd5adb15b600b793f2b6ae9619a7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-07 15:42:52&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Update Timeline">a0614ff4dba5b20062e479daae96191a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-14 17:37:13</sys_created_on>
+<sys_id>a4614ff4dba5b20062e479daae96191a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-14 17:37:13</sys_updated_on>
+<table/>
+<target_name>pe-events.service</target_name>
+<type>UI Script</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>

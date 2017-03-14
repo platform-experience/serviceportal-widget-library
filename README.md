@@ -6,9 +6,9 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 ## Widgets
 
-**Widgets list available now:**
+**Widgets available now:**
 
-* [Approval Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approval-card)
+* [Approval Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Approve%20Card/pe-approval-card)
 
 * [Feedback Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-feedback-card)
 
@@ -30,9 +30,9 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Approve Reject Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Approve%20Card/pe-approve-reject-card)
 
-* [Approve Reject Inbox](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approve-reject-inbox)
+* [Approve Reject Card With Accordion](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approve-reject-inbox)
 
-**Snippets list available now:**
+**Snippets available now:**
 
 * [Status Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-status-card-snippet)
 
@@ -42,23 +42,6 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Employee Experience Services List Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-emp-exp-services-list-snippet)
 
-*Widgets in progress*
-
-* Incident Card
-
-* Case
-
-* Inbox
-
-* Response Card
-
-* Popup
-
-* Tabs Selection
-
-* Inner Bar Chart
-
-* Timeline Chart
 
 ***
 
