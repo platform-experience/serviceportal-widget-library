@@ -1,7 +1,7 @@
 ## Synopsis: Area Chart
 
-![](../../images/pe-area-chart.png)
-![](../../images/pe-area-spline-chart.png)
+![alt text](../../images/pe-area-chart.png "Basic Setup")
+![alt text](../../images/pe-area-spline-chart.png "Basic Setup")
 
 This is used to create a simple Area Chart, Or a Area Spline Chart. This uses the [Highcharts API](highcharts.com), and [highcharts-ng](https://github.com/pablojim/highcharts-ng)
 
@@ -33,12 +33,12 @@ We provide some options to configure the widget.
 {
     "title":{
         "text":"Area Chart",
-				"style":{
-					"color":"white"
-				}
+        "style":{
+            "color":"white"
+        }
     },
     "options":{
-				"colors": ["rgba(255, 0, 0,1)", "rgba(0, 255, 0,1)", "rgba(0, 0, 255,1)"],
+        "colors": ["rgba(255, 0, 0,1)", "rgba(0, 255, 0,1)", "rgba(0, 0, 255,1)"],
         "exporting":{
             "enabled":false
         },
@@ -54,4 +54,5 @@ We provide some options to configure the widget.
     }
 }
 ```
-![](../../images/pe-area-chart-modified.png)
+![alt text](../../images/pe-area-chart-modified.png "Modified Version Using Advanced")
+![alt text](../../images/pe-area-spline-chart-modified.png "Modified Version Using Advanced")
