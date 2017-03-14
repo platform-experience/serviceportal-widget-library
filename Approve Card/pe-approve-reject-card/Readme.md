@@ -1,6 +1,6 @@
 ## Synopsis: Approve Reject Card
 
-![alt text](../images/pe-approve-reject-card.png "Approve Reject Card")
+![alt text](../../images/pe-approve-reject-card.png "Approve Reject Card")
 
 
 This widget can be used to create a simple approval card with three button **Accept**, **Reject**, **View**.
