@@ -6,7 +6,7 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 ## Widgets
 
-**Widgets list available now:**
+**Widgets available now:**
 
 * [Approval Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approval-card)
 
@@ -32,7 +32,7 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Approve Reject Inbox](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approve-reject-inbox)
 
-**Snippets list available now:**
+**Snippets available now:**
 
 * [Status Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-status-card-snippet)
 
