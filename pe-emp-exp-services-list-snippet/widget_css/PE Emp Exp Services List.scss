@@ -1,0 +1,50 @@
+$pe-blue-color: #268cf8 !default;
+.services {
+    p {
+        margin-bottom: 0px;
+    }
+    .accept-btn {
+        padding: 20px;
+        border-bottom: 3px solid $pe-blue-color;
+        text-align: center;
+        p {
+            font-size: 18px;
+            color: $pe-blue-color;
+        }
+    }
+    .services-list {
+        background: #f5f5f5;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+        .each-service {
+            padding: 10px 20px;
+            display: flex;
+            border-bottom: solid 1px #e6e8ea;
+            align-items: center;
+            &.selected {
+                background: $pe-blue-color;
+                .svg-icon {
+                    width: 35px;
+                    height: 35px;
+                    fill: #fff;
+                    stroke: #fff;
+                    margin-right: 20px;
+                }
+                p {
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+            .svg-icon {
+                width: 35px;
+                height: 35px;
+                fill: #696d71;
+                stroke: #696d71;
+                margin-right: 20px;
+            }
+            p {
+                font-size: 18px;
+                color: #696d71;
+            }
+        }
+    }
+}
