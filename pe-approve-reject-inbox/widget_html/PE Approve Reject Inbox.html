@@ -4,7 +4,7 @@
       <div uib-accordion-heading="">
         <div class="header" ng-class="{'bg-white': c.graphdata.status, 'bg-light': !c.graphdata.status}">
           <div class="title">
-            <p class="text-fourteen card-header">{{c.graphdata.card_header}}</p>
+            <p class="text-fourteen card-header">{{::c.graphdata.card_header}}</p>
           </div>
           <div class="expand-icon">
             <i class="fa fa-plus-circle" ng-class="{'fa-plus-rotate': c.graphdata.status}" aria-hidden="true"></i>
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="body">
-
+<sp-widget widget="c.data.embedded_widget"></sp-widget>
       </div>
     </div>
   </div>

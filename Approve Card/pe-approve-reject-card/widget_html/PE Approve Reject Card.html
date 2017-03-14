@@ -1,0 +1,52 @@
+<div class="approve-reject">
+  <div class="body">
+    <div class="body-wrapper">
+      <div class="card">
+        <div class="first-line">
+
+          <p class="title">{{::data.cardData.title}}</p>
+          <div class="attn-text" ng-show="data.cardData.type != 'automatic'">
+            <p class="text-twelve text-upper">{{::data.cardData.attention_text}}</p>
+            <span class="attn-icon"><i class="fa fa-2x" ng-class="data.cardData.attention_icon" aria-hidden="true"></i></span>
+          </div>
+          <div ng-show="data.cardData.type == 'automatic'">
+
+            <p class="text-thirtysix">{{::data.cardData.big_text}}</p>
+          </div>
+        </div>
+        <div class="second-line">
+          <p class="sub-title text-sixteen text-upper">{{::data.cardData.sub_title}}</p>
+          <div class="right-side" ng-show="data.cardData.type != 'automatic'">
+            <span class="icon">
+  <i class="fa fa-money fa-2x" aria-hidden="true"></i>
+  </span>
+
+            <p class="text-thirtysix">{{::data.cardData.big_text}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div ng-show="data.cardData.type != 'automatic'" class="buttons">
+          <button class="approve-btn btn green-text" ng-click="approve(data.cardData)"><i class="fa fa-check" aria-hidden="true"></i>approve</button>
+          <button class="btn middle-btn red-text" ng-click="reject(data.cardData)"><i class="fa fa-times" aria-hidden="true"></i>reject</button>
+          <button class="view-btn btn"><i class="fa fa-plus" aria-hidden="true"></i>view</button>
+        </div>
+        <div ng-show="data.cardData.type == 'automatic'" class="automatic-approval">
+          <button class="approve-btn btn green-text"><i class="fa fa-check" aria-hidden="true"></i>approved by stystem</button>
+          <button class="view-btn btn" ng-click="data.cardData.showCriteria = true">
+  <div class="criteria-met">
+  <p>criteria met <i class="fa fa-check-circle" aria-hidden="true"></i></p>
+  </div>
+  <div>
+  <i class="fa fa-plus" aria-hidden="true"></i>
+  <span>view</span>
+  </div>
+
+  </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
