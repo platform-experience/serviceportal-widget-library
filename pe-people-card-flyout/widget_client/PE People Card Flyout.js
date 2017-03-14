@@ -1,4 +1,4 @@
-function PeopleCardFlyout() {
+function PeopleCardFlyoutController() {
   var c = this;
   c.toggleTrends = toggleTrends;
 

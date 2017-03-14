@@ -228,7 +228,7 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_5f8feff0dbe5b20062e479daae9619fc</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function PeopleCardFlyout() {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function PeopleCardFlyoutController() {
   var c = this;
   c.toggleTrends = toggleTrends;
 
