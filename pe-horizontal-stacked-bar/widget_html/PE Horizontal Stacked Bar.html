@@ -3,10 +3,33 @@
     <div class="left-side">
       <i class="fa fa-money fa-lg"></i>
       <div class="nums-texts">
-        <p class="text-twenty-four">{{::c.data.lnumber}}</p>
-        <p class="text-twelve">{{::c.data.lnumber_text}}</p>
+        <p class="text-twenty-four">{{::c.data.l_number}}</p>
+        <p class="text-twelve">{{::c.data.l_number_text}}</p>
       </div>
     </div>
+
+    <div class="right-side" ng-class="{'red-text': data.r_info_color == 'red', 'green-text': bdata.r_info_color == 'green' }">
+      <div class="bar-in" ng-show="c.data.r_info_type == 'bar'">
+        <div class="bar-title">
+          <p class="title">{{::c.data.r_info_bar_title}}</p>
+          <div class="right-side">
+            <p><span class="remaining"><span>$</span>{{::c.data.r_info_bar_remaining}}K</span><span class="slash">/</span><span>$</span>{{::c.data.r_info_total}}K</p>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" ng-style="c.getPercent(c.data.r_info_remaining, c.data.r_info_total)">
+          </div>
+        </div>
+      </div>
+      <div class="nums-texts " ng-show="!c.data.r_info_type">
+        <div class="arrow-left">
+          <div class="arrow-up"></div>
+          <p class="text-twenty-four ">{{::c.data.r_number}}</p>
+        </div>
+        <p class="text-ten right-text">{{::c.data.r_number_text}}</p>
+      </div>
+    </div>
+
   </div>
   <div class="bar-graph">
     <div class="bars" ng-style="{'width': each_graph.width}" ng-repeat="each_graph in c.data.graph_data">

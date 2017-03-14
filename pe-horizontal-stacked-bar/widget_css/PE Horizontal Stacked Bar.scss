@@ -29,6 +29,74 @@ $pe-brand-primary:#337ab7 !default;
         height: 31px;
       }
     }
+    .right-side {
+      width: 50%;
+      p {
+        margin-bottom: 0px;
+        line-height: 1;
+      }
+      .bar-in {
+        padding: 5px 10px;
+        .bar-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .title {
+            font-size: 11px;
+            color: #485562;
+            text-transform: uppercase;
+            font-weight: 600;
+          }
+          .right-side {
+            font-size: 11px;
+            font-weight: 600;
+            color: #9f9f9f;
+            text-align: right;
+            .remaining {
+              color: #ff3d21;
+            }
+            .slash {
+              margin-left: 5px;
+              margin-right: 5px;
+            }
+          }
+        }
+        .progress {
+          height: 12px;
+          margin-bottom: 0px;
+          border-radius: 2px;
+          .progress-bar {
+            background: #ee525e;
+          }
+        }
+      }
+      .nums-texts {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        .arrow-left {
+          display: flex;
+          align-items: center;
+          p {
+            font-weight: 600;
+          }
+          .arrow-up {
+            margin-right: 5px;
+          }
+        }
+        .right-text {
+          color: #9f9f9f;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-left: 5px;
+        }
+      }
+      .arrow {
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
   }
   .bar-graph {
     width: 100%;

@@ -15,6 +15,29 @@ We provide a single option to make easy to build the stacked bar graph:
 
 **"Graph Data"** the default message for this is a sample JSON object.
 
+```javascript
+    [
+      {
+          "width":"60%",
+          "color":"rgb(19, 35, 71)",
+          "info_text":"AWS",
+          "info_number":""
+      },
+      {
+          "width":"20%",
+          "color":"rgb(28, 91, 125)",
+          "info_text":"AZURE",
+          "info_number":""
+      },
+      {
+          "width":"20%",
+          "color":"rgb(150, 198, 200)",
+          "info_text":"VMW",
+          "info_number":""
+      }
+    ]
+```
+
 ***
 
 We provide four SASS variables to control the chat and call icon colors.
