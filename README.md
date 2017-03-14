@@ -42,23 +42,6 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Employee Experience Services List Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-emp-exp-services-list-snippet)
 
-*Widgets in progress*
-
-* Incident Card
-
-* Case
-
-* Inbox
-
-* Response Card
-
-* Popup
-
-* Tabs Selection
-
-* Inner Bar Chart
-
-* Timeline Chart
 
 ***
 
