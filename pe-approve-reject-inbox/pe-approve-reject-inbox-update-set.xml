@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-14 01:39:53">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Approve Reject Card</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>31d56fe013613600d15e3d7ed144b0cf</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-14 01:39:53</sys_created_on>
+<sys_id>c146a32413613600d15e3d7ed144b00b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-14 01:39:53</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_cb8b6a6013edf200d15e3d7ed144b0c0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ApproveRejectInbox(spUtil) {
+  /* widget controller */
+  var c = this;
+  c.graphdata = {};
+  c.graphdata = {
+    widget_heading: 'cloud budget',
+    left_info: {
+      icon: 'dollar-bag.png',
+      number: '$230K',
+      number_text: 'Spent'
+
+    },
+    right_info: {
+      type: 'bar',
+      bar_title: '5 days to $0',
+      remaining: 46,
+      total: 276
+    },
+    card_header: 'budget requests',
+    approvals: [{
+        title: 'Budget Request',
+        sub_title: 'Engineering',
+        attention_text: 'Tier 1',
+        attention_icon: 'fa-exclamation-circle',
+        big_text: '$25k',
+        state: 'pending',
+        //big_text_icon: 'fa-money'
+        big_text_icon: 'coins.png'
+      }
+
+    ],
+
+    graph_numbers: [{
+      color: '#132347',
+      width: '60%',
+      info_text: 'AWS'
+      //info_number: '14'
+    }, {
+      color: '#1c5b7d',
+      width: '20%',
+      info_text: 'AZURE'
+      //info_number: '12'
+    }, {
+      color: '#96c6c8',
+      width: '20%',
+      info_text: 'VMW'
+      //info_number: '14'
+    }]
+  };
+
+  spUtil.get('pe-approve-reject-card', {
+    card_data: c.card_data
+  }).then(function (response) {
+    c.data.embedded_widget = response;
+  });
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;body {
+  background: #D7D7D7;
+}
+
+body.fixed-header section.page,
+body.fixed-footer section.page {
+  background: #d7d7d7;
+  height: 100%;
+}
+
+
+/** approve rejct ***/
+
+.row:before,
+.row:after {
+  display: block;
+}
+
+.whole-div {
+  margin-bottom: 10px;
+}
+
+.approve-reject {
+  //margin-right: 10px;
+  //margin-left: 10px;
+  background: #f9f9f9;
+  clear: both;
+  .bg-light {
+    background: #f9f9f9;
+  }
+  .bg-white {
+    background: #fff;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    background: #fff;
+    border-top: 1px solid #e9e9e9;
+    color: #485562;
+    // margin-left: -10px;
+    // margin-right: -10px;
+    .expand-icon {
+      .fa {
+        transition: transform .5s;
+        color: #199cdb;
+        margin-left: 10px;
+        font-size: 20px;
+      }
+      .fa-plus-rotate {
+        transform: rotate(135deg);
+      }
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    .title {
+      display: flex;
+      .text {
+        padding-top: 2px;
+      }
+      .card-header {
+        text-transform: uppercase;
+      }
+      .badge {
+        margin-left: 5px;
+        color: #fff;
+        background: #ee525e;
+      }
+    }
+  }
+  .panel-default {
+    border: 0px;
+    .panel-heading {
+      padding: 0px;
+      // color: #000;
+      background: #fff;
+      border: 0px;
+    }
+  }
+  .panel {
+    border-radius: 0px !important;
+    margin-bottom: 0px;
+    background: #fff;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .panel-body {
+    padding: 0px;
+    border: 0px;
+    border-top: 0px !important;
+  }
+  .panel-group {
+    margin-bottom: 10px;
+  }
+  .body-wrapper {
+    margin: 10px;
+    margin-bottom: 0px;
+    background: #fff;
+  }
+  .body {
+    background: #D7D7D7;
+    // margin-bottom: 10px;
+    border: 1px solid #e6e6e6;
+    p {
+      margin-bottom: 0px;
+    }
+    .card {
+      padding: 10px;
+      .first-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+          font-size: 24px;
+          font-weight: 500;
+          color: #000;
+        }
+        .attn-text {
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          p {
+            padding-right: 5px;
+            color: #ed5460;
+          }
+          .attn-icon {
+            color: #ed5460;
+          }
+        }
+      }
+      .second-line {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .sub-title {
+          p {
+            color: #e6e6e6;
+          }
+        }
+        .right-side {
+          display: flex;
+          align-items: center;
+          p {
+            font-size: 36px;
+            padding-left: 5px;
+            color: #000;
+          }
+          .icon {
+            color: #000;
+            img {
+              height: 35px;
+            }
+            .fa {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .buttons {
+      border-top: 1px solid #ddd;
+      button {
+        width: 32%;
+        text-align: center;
+        text-transform: uppercase;
+        background: inherit;
+        border-radius: 0px;
+        .fa {
+          margin-right: 2px;
+        }
+      }
+      .approve-btn {
+        &amp;amp;:active {
+          color: #2abd68;
+        }
+      }
+      .view-btn {
+        color: #199cdb;
+        &amp;amp;:active {
+          color: #199cdb;
+        }
+      }
+      .middle-btn {
+        &amp;amp;:active {
+          color: #ed5460;
+        }
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+      }
+    }
+    .automatic-approval {
+      display: flex;
+      .criteria-met {
+        color: #2abd68;
+        font-size: 12px;
+        .fa {
+          margin-left: 5px;
+        }
+      }
+      button {
+        text-align: center;
+        text-transform: uppercase;
+        background: inherit;
+        border-radius: 0px;
+        .fa {
+          margin-right: 2px;
+        }
+      }
+      .approve-btn {
+        width: 60%;
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        &amp;amp;:active {
+          color: #2abd68;
+        }
+      }
+      .view-btn {
+        width: 40%;
+        color: #199cdb;
+        border-top: 1px solid #ddd;
+        &amp;amp;:active {
+          color: #199cdb;
+        }
+      }
+    }
+    .criteria-details {
+      padding: 10px;
+      p {
+        margin-bottom: 0px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #9f9f9f;
+        padding: 0px;
+        border-top: 0px;
+        .heading {
+          font-size: 20px;
+        }
+      }
+      .sub_title {
+        font-size: 14px;
+        color: #9f9f9f;
+      }
+      .all-criterias {
+        padding-top: 10px;
+        .title {
+          text-transform: uppercase;
+          font-size: 14px;
+          color: #000;
+        }
+        .each-criteria {
+          font-size: 18px;
+          color: #000;
+          .fa {
+            font-size: 20px;
+            margin-right: 10px;
+            color: #2abd68;
+          }
+        }
+      }
+    }
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-approve-reject-inbox&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Approve Reject Inbox&lt;/name&gt;&lt;option_schema&gt;[{"name":"card_data","default_value":"{     \"title\": \"BudgetRequest\",     \"sub_title\": \"Engineering\",     \"attention_text\": \"Tier1\",     \"attention_icon\": \"fa-exclamation-circle\",     \"big_text\": \"$25k\",     \"state\": \"pending\",     \"big_text_icon\": \"coins.png\"   }","label":"Card Data","type":"json","mandatory":true}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.card_data = input.card_data || options.card_data;
+  data.card_data = JSON.parse(data.card_data);
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-13 21:53:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cb8b6a6013edf200d15e3d7ed144b0c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;42&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Approve Reject Inbox&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cb8b6a6013edf200d15e3d7ed144b0c0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-14 01:39:34&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="approve-reject"&gt;
+  &lt;div uib-accordion=""&gt;
+    &lt;div uib-accordion-group="" class="panel-default" is-open="c.graphdata.status"&gt;
+      &lt;div uib-accordion-heading=""&gt;
+        &lt;div class="header" ng-class="{'bg-white': c.graphdata.status, 'bg-light': !c.graphdata.status}"&gt;
+          &lt;div class="title"&gt;
+            &lt;p class="text-fourteen card-header"&gt;{{::c.graphdata.card_header}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="expand-icon"&gt;
+            &lt;i class="fa fa-plus-circle" ng-class="{'fa-plus-rotate': c.graphdata.status}" aria-hidden="true"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="body"&gt;
+&lt;sp-widget widget="c.data.embedded_widget"&gt;&lt;/sp-widget&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Approve Reject Card">c146a32413613600d15e3d7ed144b00b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-14 01:39:53</sys_created_on>
+<sys_id>0d46a32413613600d15e3d7ed144b00b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-14 01:39:53</sys_updated_on>
+<table/>
+<target_name>PE Approve Reject Inbox</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_0f7b432013213600d15e3d7ed144b0ca</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ApproveRejectCard() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;&amp;#13;
+/** approve rejct ***/&amp;#13;
+&amp;#13;
+.row:before,&amp;#13;
+.row:after {&amp;#13;
+  display: block;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.whole-div {&amp;#13;
+  margin-bottom: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.green-text {&amp;#13;
+    color: #2abd68 !important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.red-text {&amp;#13;
+    color: #ff3d00 !important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.approve-reject {&amp;#13;
+  background: #f9f9f9;&amp;#13;
+  clear: both;&amp;#13;
+  .bg-light {&amp;#13;
+    background: #f9f9f9;&amp;#13;
+  }&amp;#13;
+  .bg-white {&amp;#13;
+    background: #fff;&amp;#13;
+  }&amp;#13;
+  .header {&amp;#13;
+    display: flex;&amp;#13;
+    align-items: center;&amp;#13;
+    justify-content: center;&amp;#13;
+    padding: 13px;&amp;#13;
+    background: #fff;&amp;#13;
+    border-top: 1px solid #e9e9e9;&amp;#13;
+    color: #485562;&amp;#13;
+    .expand-icon {&amp;#13;
+      .fa {&amp;#13;
+        transition: transform .5s;&amp;#13;
+        color: #199cdb;&amp;#13;
+        margin-left: 10px;&amp;#13;
+        font-size: 20px;&amp;#13;
+      }&amp;#13;
+      .fa-plus-rotate {&amp;#13;
+        transform: rotate(135deg);&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    p {&amp;#13;
+      margin-bottom: 0px;&amp;#13;
+    }&amp;#13;
+    .title {&amp;#13;
+      display: flex;&amp;#13;
+      .text {&amp;#13;
+        padding-top: 2px;&amp;#13;
+      }&amp;#13;
+      .card-header {&amp;#13;
+        text-transform: uppercase;&amp;#13;
+      }&amp;#13;
+      .badge {&amp;#13;
+        margin-left: 5px;&amp;#13;
+        color: #fff;&amp;#13;
+        background: #ee525e;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .panel-default {&amp;#13;
+    border: 0px;&amp;#13;
+    .panel-heading {&amp;#13;
+      padding: 0px;&amp;#13;
+      // color: #000;&amp;#13;
+      background: #fff;&amp;#13;
+      border: 0px;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .panel {&amp;#13;
+    border-radius: 0px !important;&amp;#13;
+    margin-bottom: 0px;&amp;#13;
+    background: #fff;&amp;#13;
+    border: 0px;&amp;#13;
+    border-radius: 0px;&amp;#13;
+    box-shadow: none;&amp;#13;
+  }&amp;#13;
+  .panel-body {&amp;#13;
+    padding: 0px;&amp;#13;
+    border: 0px;&amp;#13;
+    border-top: 0px !important;&amp;#13;
+  }&amp;#13;
+  .panel-group {&amp;#13;
+    margin-bottom: 10px;&amp;#13;
+  }&amp;#13;
+  .body-wrapper {&amp;#13;
+    background: #fff;&amp;#13;
+  }&amp;#13;
+  .body {&amp;#13;
+    background: #D7D7D7;&amp;#13;
+    // margin-bottom: 10px;&amp;#13;
+    border: 1px solid #e6e6e6;&amp;#13;
+    p {&amp;#13;
+      margin-bottom: 0px;&amp;#13;
+    }&amp;#13;
+    .card {&amp;#13;
+      padding: 10px;&amp;#13;
+      .first-line {&amp;#13;
+        display: flex;&amp;#13;
+        align-items: center;&amp;#13;
+        justify-content: space-between;&amp;#13;
+        .title {&amp;#13;
+          font-size: 24px;&amp;#13;
+          font-weight: 500;&amp;#13;
+          color: #000;&amp;#13;
+        }&amp;#13;
+        .attn-text {&amp;#13;
+          font-size: 16px;&amp;#13;
+          display: flex;&amp;#13;
+          align-items: center;&amp;#13;
+          p {&amp;#13;
+            padding-right: 5px;&amp;#13;
+            color: #ed5460;&amp;#13;
+          }&amp;#13;
+          .attn-icon {&amp;#13;
+            color: #ed5460;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .second-line {&amp;#13;
+        display: flex;&amp;#13;
+        align-items: flex-start;&amp;#13;
+        justify-content: space-between;&amp;#13;
+        .sub-title {&amp;#13;
+          p {&amp;#13;
+            color: #e6e6e6;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+        .right-side {&amp;#13;
+          display: flex;&amp;#13;
+          align-items: center;&amp;#13;
+          p {&amp;#13;
+            font-size: 36px;&amp;#13;
+            padding-left: 5px;&amp;#13;
+            color: #000;&amp;#13;
+          }&amp;#13;
+          .icon {&amp;#13;
+            color: #000;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .buttons {&amp;#13;
+      border-top: 1px solid #ddd;&amp;#13;
+      button {&amp;#13;
+        width: 32%;&amp;#13;
+        text-align: center;&amp;#13;
+        text-transform: uppercase;&amp;#13;
+        background: inherit;&amp;#13;
+        border-radius: 0px;&amp;#13;
+        .fa {&amp;#13;
+          margin-right: 2px;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .approve-btn {&amp;#13;
+        &amp;amp;:active {&amp;#13;
+          color: #2abd68;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .view-btn {&amp;#13;
+        color: #199cdb;&amp;#13;
+        &amp;amp;:active {&amp;#13;
+          color: #199cdb;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .middle-btn {&amp;#13;
+        &amp;amp;:active {&amp;#13;
+          color: #ed5460;&amp;#13;
+        }&amp;#13;
+        border-left: 1px solid #ddd;&amp;#13;
+        border-right: 1px solid #ddd;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .automatic-approval {&amp;#13;
+      display: flex;&amp;#13;
+      .criteria-met {&amp;#13;
+        color: #2abd68;&amp;#13;
+        font-size: 12px;&amp;#13;
+        .fa {&amp;#13;
+          margin-left: 5px;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      button {&amp;#13;
+        text-align: center;&amp;#13;
+        text-transform: uppercase;&amp;#13;
+        background: inherit;&amp;#13;
+        border-radius: 0px;&amp;#13;
+        .fa {&amp;#13;
+          margin-right: 2px;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .approve-btn {&amp;#13;
+        width: 60%;&amp;#13;
+        border-top: 1px solid #ddd;&amp;#13;
+        border-right: 1px solid #ddd;&amp;#13;
+        &amp;amp;:active {&amp;#13;
+          color: #2abd68;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .view-btn {&amp;#13;
+        width: 40%;&amp;#13;
+        color: #199cdb;&amp;#13;
+        border-top: 1px solid #ddd;&amp;#13;
+        &amp;amp;:active {&amp;#13;
+          color: #199cdb;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .criteria-details {&amp;#13;
+      padding: 10px;&amp;#13;
+      p {&amp;#13;
+        margin-bottom: 0px;&amp;#13;
+      }&amp;#13;
+      .header {&amp;#13;
+        display: flex;&amp;#13;
+        align-items: center;&amp;#13;
+        justify-content: space-between;&amp;#13;
+        color: #9f9f9f;&amp;#13;
+        padding: 0px;&amp;#13;
+        border-top: 0px;&amp;#13;
+        .heading {&amp;#13;
+          font-size: 20px;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .sub_title {&amp;#13;
+        font-size: 14px;&amp;#13;
+        color: #9f9f9f;&amp;#13;
+      }&amp;#13;
+      .all-criterias {&amp;#13;
+        padding-top: 10px;&amp;#13;
+        .title {&amp;#13;
+          text-transform: uppercase;&amp;#13;
+          font-size: 14px;&amp;#13;
+          color: #000;&amp;#13;
+        }&amp;#13;
+        .each-criteria {&amp;#13;
+          font-size: 18px;&amp;#13;
+          color: #000;&amp;#13;
+          .fa {&amp;#13;
+            font-size: 20px;&amp;#13;
+            margin-right: 10px;&amp;#13;
+            color: #2abd68;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-approve-reject-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Approve Reject Card&lt;/name&gt;&lt;option_schema&gt;[{"name":"card_data","default_value":"{     \"title\": \"BudgetRequest\",     \"sub_title\": \"Engineering\",     \"attention_text\": \"Tier1\",     \"attention_icon\": \"fa-exclamation-circle\",     \"big_text\": \"$25k\",     \"state\": \"pending\",     \"big_text_icon\": \"coins.png\"   }","label":"Card Data","type":"json","mandatory":true}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.cardData = input.card_data || options.card_data;
+  data.cardData = JSON.parse(data.cardData);
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-13 23:44:22&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0f7b432013213600d15e3d7ed144b0ca&lt;/sys_id&gt;&lt;sys_mod_count&gt;59&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Approve Reject Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0f7b432013213600d15e3d7ed144b0ca&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-14 01:39:00&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="approve-reject"&gt;
+  &lt;div class="body"&gt;
+    &lt;div class="body-wrapper"&gt;
+      &lt;div class="card"&gt;
+        &lt;div class="first-line"&gt;
+
+          &lt;p class="title"&gt;{{::data.cardData.title}}&lt;/p&gt;
+          &lt;div class="attn-text" ng-show="data.cardData.type != 'automatic'"&gt;
+            &lt;p class="text-twelve text-upper"&gt;{{::data.cardData.attention_text}}&lt;/p&gt;
+            &lt;span class="attn-icon"&gt;&lt;i class="fa fa-2x" ng-class="data.cardData.attention_icon" aria-hidden="true"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div ng-show="data.cardData.type == 'automatic'"&gt;
+
+            &lt;p class="text-thirtysix"&gt;{{::data.cardData.big_text}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="second-line"&gt;
+          &lt;p class="sub-title text-sixteen text-upper"&gt;{{::data.cardData.sub_title}}&lt;/p&gt;
+          &lt;div class="right-side" ng-show="data.cardData.type != 'automatic'"&gt;
+            &lt;span class="icon"&gt;
+  &lt;i class="fa fa-money fa-2x" aria-hidden="true"&gt;&lt;/i&gt;
+  &lt;/span&gt;
+
+            &lt;p class="text-thirtysix"&gt;{{::data.cardData.big_text}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;div ng-show="data.cardData.type != 'automatic'" class="buttons"&gt;
+          &lt;button class="approve-btn btn green-text" ng-click="approve(data.cardData)"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;approve&lt;/button&gt;
+          &lt;button class="btn middle-btn red-text" ng-click="reject(data.cardData)"&gt;&lt;i class="fa fa-times" aria-hidden="true"&gt;&lt;/i&gt;reject&lt;/button&gt;
+          &lt;button class="view-btn btn"&gt;&lt;i class="fa fa-plus" aria-hidden="true"&gt;&lt;/i&gt;view&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div ng-show="data.cardData.type == 'automatic'" class="automatic-approval"&gt;
+          &lt;button class="approve-btn btn green-text"&gt;&lt;i class="fa fa-check" aria-hidden="true"&gt;&lt;/i&gt;approved by stystem&lt;/button&gt;
+          &lt;button class="view-btn btn" ng-click="data.cardData.showCriteria = true"&gt;
+  &lt;div class="criteria-met"&gt;
+  &lt;p&gt;criteria met &lt;i class="fa fa-check-circle" aria-hidden="true"&gt;&lt;/i&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+  &lt;i class="fa fa-plus" aria-hidden="true"&gt;&lt;/i&gt;
+  &lt;span&gt;view&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;/button&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Approve Reject Card">c146a32413613600d15e3d7ed144b00b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-14 01:39:53</sys_created_on>
+<sys_id>4946a32413613600d15e3d7ed144b00b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-14 01:39:53</sys_updated_on>
+<table/>
+<target_name>PE Approve Reject Card</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_3d4af22813edf200d15e3d7ed144b0d3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="DELETE"><sp_dependency display_value="donutDirective">b44ab62813edf200d15e3d7ed144b0d4</sp_dependency><sp_widget display_value="PE Approve Reject Inbox">cb8b6a6013edf200d15e3d7ed144b0c0</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-13 22:27:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3d4af22813edf200d15e3d7ed144b0d3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.PE Approve Reject Inbox</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_3d4af22813edf200d15e3d7ed144b0d3</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-13 22:27:41</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Approve Reject Card">c146a32413613600d15e3d7ed144b00b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-14 01:39:53</sys_created_on>
+<sys_id>8546a32413613600d15e3d7ed144b00b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-14 01:39:53</sys_updated_on>
+<table/>
+<target_name>donutDirective.PE Approve Reject Inbox</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
