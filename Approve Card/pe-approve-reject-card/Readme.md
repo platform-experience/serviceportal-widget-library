@@ -15,6 +15,18 @@ We provide a single option to fill the card with sample data:
 
 **"Card Data"** the default message for this is a sample JSON object.
 
+```javascript
+    {
+      "title":"BudgetRequest",
+      "sub_title":"Engineering",
+      "attention_text":"Tier1",
+      "attention_icon":"fa-exclamation-circle",
+      "big_text":"$25k",
+      "state":"pending",
+      "big_text_icon":"coins.png"
+    }
+```
+
 ***
 
 
