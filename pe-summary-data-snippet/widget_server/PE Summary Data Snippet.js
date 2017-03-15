@@ -1,4 +1,4 @@
-(function() {
+(function () {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 
@@ -24,11 +24,11 @@
   };
 
   data.chart = {
-    primary_color : '#e74c3c',
-    background_color : '#9b9b9b',
-    chart_width : '60',
-    font_size : '18px',
-  font_weight : '600'
+    primary_color: '#e74c3c',
+    background_color: '#9b9b9b',
+    chart_width: '60',
+    font_size: '18px',
+    font_weight: '600'
   };
 
   data.chart_data = {

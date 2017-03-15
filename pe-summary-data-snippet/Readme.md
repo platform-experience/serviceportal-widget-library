@@ -2,7 +2,7 @@
 
 ![](../images/pe-summary-data-snippet.png)
 
-This widget can be used to quickly obtain a card containing sub sections with data and a sample charts.
+This snippet can be used to quickly obtain a card containing sub sections with data and a sample charts.
 
 ## Installation
 
