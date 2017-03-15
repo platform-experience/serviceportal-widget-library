@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-15 23:06:18">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Tier Overview</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>bd1691d913617600d15e3d7ed144b0f9</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-15 23:06:18</sys_created_on>
+<sys_id>b646151d13617600d15e3d7ed144b0f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-15 23:06:18</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_d923455113617600d15e3d7ed144b0f6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.tier-widget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ddd;
+    .box {
+        width: 20%;
+        text-align: center;
+        .top-box{
+            height: 35px;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+        .sub-text {
+            font-size: 12px;
+            color: #b4b2b3;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .badge {
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .fa{
+            color: #65666a;
+        }
+    }
+    .percent-box {
+        .percentage {
+            font-size: 24px;
+            color: #65666a;
+            font-weight: bold;
+        }
+    }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-tier-overview&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Tier Overview&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.card_data = {
+    "tier_icon": "fa-shield",
+    "tier_text": "Gold",
+    "percent_change": "40%",
+    "percernt_text": "changes automated",
+    "first_label": "defined",
+    "first_label_color": "#70be5a",
+    "first_label_subtext": "SLA",
+    "second_label": "tested",
+    "second_label_color": "#70be5a",
+    "second_label_subtext": "Enterprise services"
+  };
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-15 21:48:09&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;d923455113617600d15e3d7ed144b0f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;39&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Tier Overview&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_d923455113617600d15e3d7ed144b0f6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 22:40:33&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="tier-widget"&gt;
+    &lt;!-- your widget template --&gt;
+    &lt;div class="tier-box box"&gt;
+        &lt;div class="top-box"&gt;
+            &lt;i class="fa fa-2x" ng-class="c.data.card_data.tier_icon"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;p class="sub-text"&gt;{{::c.data.card_data.tier_text}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="percent-box box"&gt;
+        &lt;div class="top-box"&gt;
+            &lt;p class="percentage"&gt;{{::c.data.card_data.percent_change}}&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p class="sub-text"&gt;{{::c.data.card_data.percernt_text}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="defined-box box"&gt;
+        &lt;div class="top-box"&gt;
+            &lt;div class="badge" ng-style="{'background':c.data.card_data.first_label_color}"&gt;
+                {{::c.data.card_data.first_label}}
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class="sub-text"&gt;{{::c.data.card_data.first_label_subtext}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="tested-box box"&gt;
+        &lt;div class="top-box"&gt;
+            &lt;i class="fa fa-2x fa-shopping-cart" aria-hidden="true"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;p class="sub-text"&gt;{{::c.data.card_data.second_label_subtext}}&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Tier Overview">b646151d13617600d15e3d7ed144b0f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-15 23:06:18</sys_created_on>
+<sys_id>7a46151d13617600d15e3d7ed144b0f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-15 23:06:18</sys_updated_on>
+<table/>
+<target_name>PE Tier Overview</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
