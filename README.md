@@ -48,6 +48,10 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Cloud Sprawl Overview Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-cloud-sprawl-overview-snippet)
 
+* [Tier Overview Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-tier-overview-snippet)
+
+
+
 ***
 
 ## Update Set
