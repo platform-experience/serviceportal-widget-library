@@ -10,7 +10,7 @@ Installation is very simple, you can just download the update set **pe-summary-d
 
 **Important note: This widget makes use of [pe-donut-chart-wizard](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Charts/pe-donut-chart-wizard) to display user avatar, name and title, this widget is already part of the update set.
 
-People Info widget is injected dynamically in client controller.
+Donut Chart Wizards widget is injected dynamically in client controller.
 
 ```javascript
 
