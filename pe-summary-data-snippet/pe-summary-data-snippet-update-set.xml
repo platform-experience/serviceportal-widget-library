@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-15 19:07:29">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Summary Data</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>117e9c5d13ed3600d15e3d7ed144b0b3</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-15 19:07:29</sys_created_on>
+<sys_id>6caf501113217600d15e3d7ed144b043</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-15 19:07:29</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_0bc1804513293600d15e3d7ed144b0f2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function DonutChartWizard() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.div-center {
+    text-align: center;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-donut-chart-wizard&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Donut Chart Wizard&lt;/name&gt;&lt;option_schema&gt;[{"name":"chart_data","default_value":"{    \"label\":\"1/5\",    \"current\":1,    \"total\":5 }","label":"Chart Data","type":"json","mandatory":true},{"name":"primary_color","default_value":"#4286f4","label":"Color","type":"string"},{"name":"background_color","default_value":"#c2d1e8","label":"Background Color","type":"string"},{"name":"chart_width","default_value":"80","label":"Width","type":"string"},{"name":"font_size","default_value":"24px","label":"Font Size","type":"string"},{"name":"font_weight","default_value":"800","label":"Font Weight","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.primary_color = input.primary_color || options.primary_color;
+  data.background_color = input.background_color || options.background_color;
+  data.chart_width = input.chart_width || options.chart_width;
+  data.font_size = input.font_size || options.font_size;
+  data.font_weight = input.font_weight || options.font_weight;
+  data.chart_data = input.chart_data || options.chart_data;
+  if (data.isJson(data.chart_data) === false) {
+    data.chart_data = JSON.parse(data.chart_data);
+  };
+
+  data.isJson = function (str) {
+    try {
+      JSON.parse(str);
+    } catch (e) {
+      return false;
+    }
+    return true;
+  };
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-14 22:19:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0bc1804513293600d15e3d7ed144b0f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;105&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Donut Chart Wizard&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0bc1804513293600d15e3d7ed144b0f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 19:06:27&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="container-fluid"&gt;
+  &lt;div class="row div-center"&gt;
+  &lt;donut-directive data-count="data.chart_data.current"
+  data-displayvalue="{{data.chart_data.label}}"
+  data-total="data.chart_data.total"
+    data-show-value="true"
+    data-show-value-as-count="true"
+    data-width="data.chart_width"
+    data-font-size="{{data.font_size}}"
+    data-font-weight="data.font_weight"
+    data-color-fill="{{data.primary_color}}"
+    data-color-bg="{{data.background_color}}"
+    href="donutTemplate"&gt;
+  &lt;/donut-directive&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Summary Data">6caf501113217600d15e3d7ed144b043</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-15 19:07:29</sys_created_on>
+<sys_id>24af501113217600d15e3d7ed144b044</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-15 19:07:29</sys_updated_on>
+<table/>
+<target_name>PE Donut Chart Wizard</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_c0e4ccd113ed3600d15e3d7ed144b094</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function SummaryDataSnippet(spUtil) {
+  /* widget controller */
+  var c = this;
+
+  spUtil.get('pe-donut-chart-wizard', {
+    primary_color: c.data.chart.primary_color,
+    background_color: c.data.chart.background_color,
+    chart_width: c.data.chart.chart_width,
+    font_size: c.data.chart.font_size,
+    font_weight: c.data.chart.font_weight,
+    chart_data: c.data.chart_data
+  }).then(function (response) {
+    c.data.embedded_widget = response;
+  });
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;&amp;#13;
+/*** vms widget ***/&amp;#13;
+&amp;#13;
+.vms {&amp;#13;
+  overflow: hidden;&amp;#13;
+  margin-bottom: 10px;&amp;#13;
+  background: #f9f9f9;&amp;#13;
+  display: flex;&amp;#13;
+  &amp;amp;:after {&amp;#13;
+    content: "";&amp;#13;
+    display: table;&amp;#13;
+  }&amp;#13;
+  .color-red {&amp;#13;
+    color: #ff402c !important;&amp;#13;
+  }&amp;#13;
+  .arrow-up {&amp;#13;
+    margin-right: 3px;&amp;#13;
+    width: 0;&amp;#13;
+    height: 0;&amp;#13;
+    border-left: 7px solid transparent;&amp;#13;
+    border-right: 7px solid transparent;&amp;#13;
+    border-bottom: 7px solid #70be5a;&amp;#13;
+  }&amp;#13;
+  .flex-it {&amp;#13;
+    display: flex;&amp;#13;
+    align-items: center;&amp;#13;
+    justify-content: center;&amp;#13;
+    color: #70be5a;&amp;#13;
+    p {&amp;#13;
+      font-size: 12px;&amp;#13;
+      font-weight: 600;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .each-box {&amp;#13;
+    width: 33.3%;&amp;#13;
+    padding: 10px 10px 20px;&amp;#13;
+    float: left;&amp;#13;
+    text-align: center;&amp;#13;
+    .bottom-part {&amp;#13;
+      margin-left: -7px;&amp;#13;
+      margin-right: -7px;&amp;#13;
+    }&amp;#13;
+    .top-text {&amp;#13;
+      height: 34px;&amp;#13;
+      display: flex;&amp;#13;
+      align-items: flex-end;&amp;#13;
+      justify-content: center;&amp;#13;
+      margin-bottom: 8px;&amp;#13;
+    }&amp;#13;
+    .top-box {&amp;#13;
+      height: 65px;&amp;#13;
+      display: flex;&amp;#13;
+      align-items: flex-start;&amp;#13;
+      justify-content: center;&amp;#13;
+    }&amp;#13;
+    p {&amp;#13;
+      margin-bottom: 0px;&amp;#13;
+    }&amp;#13;
+    .sub-title {&amp;#13;
+      font-size: 12px;&amp;#13;
+      color: #9f9f9f;&amp;#13;
+      text-transform: uppercase;&amp;#13;
+      font-weight: bold;&amp;#13;
+    }&amp;#13;
+    .top-title {&amp;#13;
+      font-size: 12px;&amp;#13;
+      color: #65666a;&amp;#13;
+      text-transform: uppercase;&amp;#13;
+      font-weight: bold;&amp;#13;
+    }&amp;#13;
+    .middle-big-text {&amp;#13;
+      font-size: 38px;&amp;#13;
+      color: #65666a;&amp;#13;
+      //font-weight: bold;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .middle-box {&amp;#13;
+    border-right: 1px solid #ddd;&amp;#13;
+    border-left: 1px solid #ddd;&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-summary-data-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Summary Data Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  data.card = {
+    filter: 'all',
+    donut_data: {
+      total: 100,
+      completed: 85,
+      display_value: '21%',
+      sub_title: 'NONCOMPLIANT spend',
+      bottom_text: '$50k UNACCOUNTED'
+    },
+    second_box: {
+      top_text: 'savings',
+      middle_text: '$69k',
+      sub_title: '47 RECLAIMED VMs'
+    },
+    third_box: {
+      big_text: '78%',
+      sub_title: 'UTILIZATION RATE',
+      sub_sub_title: '3% M/M'
+    }
+  };
+
+  data.chart = {
+    primary_color : '#e74c3c',
+    background_color : '#9b9b9b',
+    chart_width : '60',
+    font_size : '18px',
+  font_weight : '600'
+  };
+
+  data.chart_data = {
+    label: '21%',
+    current: 1,
+    total: 5
+  };
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-15 17:13:30&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c0e4ccd113ed3600d15e3d7ed144b094&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Summary Data Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_c0e4ccd113ed3600d15e3d7ed144b094&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 19:06:03&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="vms"&gt;
+  &lt;!-- your widget template --&gt;
+  &lt;div class="each-box unaccounted-box" ui-sref="unaccountedvm"&gt;
+    &lt;div class="top-text"&gt;
+      &lt;p class="sub-title"&gt;{{::data.card.donut_data.sub_title}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="top-box"&gt;
+
+      &lt;sp-widget widget="c.data.embedded_widget"&gt;&lt;/sp-widget&gt;
+
+    &lt;/div&gt;
+    &lt;p class="top-title bottom-part"&gt;{{::data.card.donut_data.bottom_text}}&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="each-box middle-box" ui-sref="vmsreclaimed({filter:data.filter})"&gt;
+    &lt;div class="top-text"&gt;
+      &lt;p class="sub-title"&gt;{{::data.card.second_box.top_text}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="top-box"&gt;
+
+      &lt;p class="middle-big-text"&gt;{{::data.card.second_box.middle_text}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class="top-title"&gt;{{::data.card.second_box.sub_title}}&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="each-box" ui-sref="utilization"&gt;
+    &lt;div class="top-text"&gt;
+      &lt;p class="sub-title"&gt;{{::data.card.third_box.sub_title}}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="top-box"&gt;
+
+      &lt;p class="middle-big-text color-red"&gt;{{::data.card.third_box.big_text}}&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="flex-it"&gt;
+      &lt;div class="arrow-up"&gt;&lt;/div&gt;
+      &lt;p&gt;{{::data.card.third_box.sub_sub_title}}&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Summary Data">6caf501113217600d15e3d7ed144b043</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-15 19:07:29</sys_created_on>
+<sys_id>e4af501113217600d15e3d7ed144b044</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-15 19:07:29</sys_updated_on>
+<table/>
+<target_name>PE Summary Data Snippet</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
