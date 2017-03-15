@@ -44,6 +44,9 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Employee Experience Services List Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-emp-exp-services-list-snippet)
 
+* [Summary Data Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-summary-data-snippet)
+
+* [Cloud Sprawl Overview Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-cloud-sprawl-overview-snippet)
 
 ***
 
