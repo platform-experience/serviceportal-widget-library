@@ -1,0 +1,33 @@
+<div class="diff-services ">
+  <div class="each-service">
+    <div class="title-stuff">
+      <div class="service-title">
+        <p class="title ">
+          {{::data.card_data.title}}
+        </p>
+        <p class="sub-title">
+          {{::data.card_data.sub_title}}
+        </p>
+      </div>
+      <div class="percent-like" ng-class="{'green-color': data.card_data.thumbs == 'up', 'red-color': data.card_data.thumbs == 'down'}">
+        <p class="uptime">UPTIME</p>
+        <p>99%</p>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="{'width': data.card_data.progress}">
+
+      </div>
+      <span>UTILIZATION RATE</span>
+      <p>{{::data.card_data.progress}}</p>
+    </div>
+    <div class="last-row">
+      <p class="left-most">{{::data.card_data.bottom_dollor}}</p>
+      <p class="center">4</p>
+      <div class="right-most" ng-class="{'red-color':data.card_data.right_attn_color == 'red', 'green-color':data.card_data.right_attn_color == 'green'}">
+        <p>{{::data.card_data.right_attn_count}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>
