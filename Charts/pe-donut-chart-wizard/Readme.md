@@ -2,7 +2,6 @@
 
 ![alt text](../../images/pe-donut-chart-wizard.png "Donut Chart Wizard")
 
-
 This widget can be used to represent data in a simple Donut Chart.
 
 ***

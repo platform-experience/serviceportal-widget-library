@@ -20,7 +20,9 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Tabs Selector](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-tabs-selector)
 
-* [Donut Chart](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-donut-chart)
+* [Donut Chart](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Charts/pe-donut-chart)
+
+* [Donut Chart Wizard](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Charts/pe-donut-chart-wizard)
 
 * [Inbox](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-inbox)
 
