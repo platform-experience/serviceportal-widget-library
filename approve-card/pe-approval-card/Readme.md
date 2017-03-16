@@ -37,7 +37,7 @@ Since we don't want to show Call/Chat functionality the option **show_call_and_c
 ***
 
 
-After installing above widget you can just download the update set **pe-approval-card-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+After installing above widget you can just download the update set **pe-approval-card.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 We provide options to make the it easy for to change **title**, **purpose title** and **purpose icon** easily.
 
