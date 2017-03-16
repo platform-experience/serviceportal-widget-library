@@ -13,7 +13,7 @@ Installation is very simple, you can just download the update set **pe-horizonta
 
 We provide a single option to make easy to build the stacked bar graph:
 
-**"Graph Data"** the default message for this is a sample JSON object.
+**"Graph Data"**, the value is a sample JSON object that you can copy from here:
 
 ```javascript
     [

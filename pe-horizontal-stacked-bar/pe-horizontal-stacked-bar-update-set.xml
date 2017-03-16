@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-13 21:09:43">
+<unload unload_date="2017-03-16 17:54:51">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>pe-horizontal-stacked-bar</name>
+<name>pe-horizontal-stacked-bar2</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>04d7aeec13adf200d15e3d7ed144b094</remote_sys_id>
+<remote_sys_id>1068d1a1136176007e94fc5ed144b0a1</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-13 21:09:43</sys_created_on>
-<sys_id>6f68662013edf200d15e3d7ed144b0ac</sys_id>
+<sys_created_on>2017-03-16 17:54:51</sys_created_on>
+<sys_id>9e981da1136176007e94fc5ed144b000</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-13 21:09:43</sys_updated_on>
+<sys_updated_on>2017-03-16 17:54:51</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -36,6 +36,15 @@
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function HorizontalStakedBar() {
   /* widget controller */
   var c = this;
+
+  c.getPercent = function (remaining, total) {
+    //debugger;
+    var percent = (total - remaining) / total * 100;
+    return {
+      'width': percent + '%'
+    };
+  };
+
 
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-brand-primary:#337ab7 !default;&amp;#13;
 .single-bar-widget {&amp;#13;
@@ -66,6 +75,74 @@
       }&amp;#13;
       img {&amp;#13;
         height: 31px;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .right-side {&amp;#13;
+      width: 50%;&amp;#13;
+      p {&amp;#13;
+        margin-bottom: 0px;&amp;#13;
+        line-height: 1;&amp;#13;
+      }&amp;#13;
+      .bar-in {&amp;#13;
+        padding: 5px 10px;&amp;#13;
+        .bar-title {&amp;#13;
+          display: flex;&amp;#13;
+          align-items: center;&amp;#13;
+          justify-content: space-between;&amp;#13;
+          .title {&amp;#13;
+            font-size: 11px;&amp;#13;
+            color: #485562;&amp;#13;
+            text-transform: uppercase;&amp;#13;
+            font-weight: 600;&amp;#13;
+          }&amp;#13;
+          .right-side {&amp;#13;
+            font-size: 11px;&amp;#13;
+            font-weight: 600;&amp;#13;
+            color: #9f9f9f;&amp;#13;
+            text-align: right;&amp;#13;
+            .remaining {&amp;#13;
+              color: #ff3d21;&amp;#13;
+            }&amp;#13;
+            .slash {&amp;#13;
+              margin-left: 5px;&amp;#13;
+              margin-right: 5px;&amp;#13;
+            }&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+        .progress {&amp;#13;
+          height: 12px;&amp;#13;
+          margin-bottom: 0px;&amp;#13;
+          border-radius: 2px;&amp;#13;
+          .progress-bar {&amp;#13;
+            background: #ee525e;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .nums-texts {&amp;#13;
+        font-size: 12px;&amp;#13;
+        display: flex;&amp;#13;
+        align-items: center;&amp;#13;
+        .arrow-left {&amp;#13;
+          display: flex;&amp;#13;
+          align-items: center;&amp;#13;
+          p {&amp;#13;
+            font-weight: 600;&amp;#13;
+          }&amp;#13;
+          .arrow-up {&amp;#13;
+            margin-right: 5px;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+        .right-text {&amp;#13;
+          color: #9f9f9f;&amp;#13;
+          text-transform: uppercase;&amp;#13;
+          font-weight: 600;&amp;#13;
+          margin-left: 5px;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .arrow {&amp;#13;
+        -ms-transform: rotate(45deg);&amp;#13;
+        -webkit-transform: rotate(45deg);&amp;#13;
+        transform: rotate(45deg);&amp;#13;
       }&amp;#13;
     }&amp;#13;
   }&amp;#13;
@@ -101,22 +178,59 @@
       }&amp;#13;
     }&amp;#13;
   }&amp;#13;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-horizontal-stacked-bar&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Horizontal Stacked Bar&lt;/name&gt;&lt;option_schema&gt;[{"name":"graph_data","label":"Graph Data","type":"json","mandatory":true}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+}&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-horizontal-stacked-bar&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Horizontal Stacked Bar&lt;/name&gt;&lt;option_schema&gt;[{"name":"graph_data","label":"Graph Data","type":"json","mandatory":true}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-  data.lnumber = '$230';
-  data.lnumber_text = 'SPENT';
+  data.l_number = '$230';
+  data.l_number_text = 'SPENT';
+
   data.graph_data = input.graph_data || options.graph_data;
-  data.graph_data = JSON.parse(data.graph_data);
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-13 18:29:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8163c22c136df200d15e3d7ed144b0cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;52&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Horizontal Stacked Bar&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8163c22c136df200d15e3d7ed144b0cc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-13 21:09:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="single-bar-widget"&gt;
+  if (data.graph_data !== null &amp;&amp; data.graph_data !== undefined) {
+    data.graph_data = JSON.parse(data.graph_data);
+  }
+
+  data.r_info_color = 'red';
+  data.r_info_type = 'bar';
+  data.r_info_bar_title = '5 days to $0';
+  data.r_info_bar_remaining = '46';
+  data.r_info_total = '276';
+  data.r_number = '';
+  data.r_number_text = '';
+  data.r_info_remaining = 20;
+  data.r_info_total = 100;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-13 18:29:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8163c22c136df200d15e3d7ed144b0cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;56&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Horizontal Stacked Bar&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8163c22c136df200d15e3d7ed144b0cc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-16 17:50:26&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="single-bar-widget"&gt;
   &lt;div class="info"&gt;
     &lt;div class="left-side"&gt;
       &lt;i class="fa fa-money fa-lg"&gt;&lt;/i&gt;
       &lt;div class="nums-texts"&gt;
-        &lt;p class="text-twenty-four"&gt;{{::c.data.lnumber}}&lt;/p&gt;
-        &lt;p class="text-twelve"&gt;{{::c.data.lnumber_text}}&lt;/p&gt;
+        &lt;p class="text-twenty-four"&gt;{{::c.data.l_number}}&lt;/p&gt;
+        &lt;p class="text-twelve"&gt;{{::c.data.l_number_text}}&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
+
+    &lt;div class="right-side" ng-class="{'red-text': data.r_info_color == 'red', 'green-text': bdata.r_info_color == 'green' }"&gt;
+      &lt;div class="bar-in" ng-show="c.data.r_info_type == 'bar'"&gt;
+        &lt;div class="bar-title"&gt;
+          &lt;p class="title"&gt;{{::c.data.r_info_bar_title}}&lt;/p&gt;
+          &lt;div class="right-side"&gt;
+            &lt;p&gt;&lt;span class="remaining"&gt;&lt;span&gt;$&lt;/span&gt;{{::c.data.r_info_bar_remaining}}K&lt;/span&gt;&lt;span class="slash"&gt;/&lt;/span&gt;&lt;span&gt;$&lt;/span&gt;{{::c.data.r_info_total}}K&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="progress"&gt;
+          &lt;div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" ng-style="c.getPercent(c.data.r_info_remaining, c.data.r_info_total)"&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="nums-texts " ng-show="!c.data.r_info_type"&gt;
+        &lt;div class="arrow-left"&gt;
+          &lt;div class="arrow-up"&gt;&lt;/div&gt;
+          &lt;p class="text-twenty-four "&gt;{{::c.data.r_number}}&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p class="text-ten right-text"&gt;{{::c.data.r_number_text}}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
   &lt;/div&gt;
   &lt;div class="bar-graph"&gt;
     &lt;div class="bars" ng-style="{'width': each_graph.width}" ng-repeat="each_graph in c.data.graph_data"&gt;
@@ -131,14 +245,14 @@
 
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-horizontal-stacked-bar">6f68662013edf200d15e3d7ed144b0ac</remote_update_set>
+<remote_update_set display_value="pe-horizontal-stacked-bar2">9e981da1136176007e94fc5ed144b000</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-13 21:09:43</sys_created_on>
-<sys_id>2368662013edf200d15e3d7ed144b0ad</sys_id>
+<sys_created_on>2017-03-16 17:54:51</sys_created_on>
+<sys_id>52981da1136176007e94fc5ed144b001</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-13 21:09:43</sys_updated_on>
+<sys_updated_on>2017-03-16 17:54:51</sys_updated_on>
 <table/>
 <target_name>PE Horizontal Stacked Bar</target_name>
 <type>Widget</type>

@@ -22,7 +22,7 @@ We are providing these options:
 
 **"Font Width"**
 
-**"Chart Data"** the default sample JSON data is:
+**"Chart Data"** the value is a sample JSON object that you can copy from here:
 
 ```javascript
     {
