@@ -34,6 +34,8 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Approve Reject Card With Accordion](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approve-reject-inbox)
 
+* [Dynamic Tabs Widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-dynamic-tabs-widget)
+
 **Snippets available now:**
 
 * [Status Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-status-card-snippet)
