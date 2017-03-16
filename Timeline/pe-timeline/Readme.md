@@ -14,7 +14,7 @@ This widget can be used to quickly obtain an initial implementation of a timelin
 
 ## Installation
 
-Installation is very simple, you can just download the update set "pe-timeline-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set "pe-timeline.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 We provide few options to load data easily and also to change the appearance of the widget.
 

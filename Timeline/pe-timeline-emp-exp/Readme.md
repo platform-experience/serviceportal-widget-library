@@ -7,7 +7,7 @@ This widget can be used to implement timeline. A variation of the pe-timeline wi
 
 ## Installation
 
-Installation is very simple, you can just download the update set "pe-timeline-emp-exp.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page. This widget is driven by the data injected into it. The data is injected using "timelineService".
+Installation is very simple, you can just download the update set "pe-timeline-emp-exp.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page. This widget is driven by the data injected into it. The data is injected using "timelineService".
 
 ```javascript
             var timeLineData = {
