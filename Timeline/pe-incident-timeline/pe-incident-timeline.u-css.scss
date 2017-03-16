@@ -1,0 +1,79 @@
+.remediation-timeline {
+  position: relative;
+  .panel-heading {
+    background-color: #283347;
+    border-bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    padding: 14px;
+    text-transform: uppercase;
+  }
+  .panel-body {
+    background-color: #1c2432;
+    color: #fff;
+    h4 {
+      font-size: 24px;
+    }
+    .sub-text {
+      color: $pe-anchor-color;
+      font-size: 10px;
+      margin-top: -5px;
+      text-transform: uppercase;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    img {
+      height: 18px;
+      margin-right: 6px;
+      width: 18px;
+    }
+  }
+  .workflow-icon {
+    position: relative;
+    z-index: 200;
+  }
+  .row {
+    padding-bottom: 12px;
+  }
+  .workflow-user {
+    font-weight: 400;
+  }
+  .panel-body {
+    padding-bottom: 0px !important;
+  }
+  &:before {
+    background-color: #3d4e6d;
+    content: '';
+    height: 884px;
+    left: 11%;
+    opacity: 0.5;
+    position: absolute;
+    top: 6%;
+    width: 2px;
+    z-index: 1;
+  }
+  .badge {
+    background-color: #1c2432;
+    border-radius: 100px;
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    height: 28px;
+    margin-top: -5px;
+    padding-top: 7px;
+    width: 116px;
+  }
+  .panel-header-timeline-complete {
+    background-color: #2ad587 !important;
+    color: #0a4529 !important;
+    font-weight: bold;
+    .badge {
+      background-color: #198453;
+      width: 116px;
+    }
+    position: relative;
+    z-index: 200;
+  }
+}
