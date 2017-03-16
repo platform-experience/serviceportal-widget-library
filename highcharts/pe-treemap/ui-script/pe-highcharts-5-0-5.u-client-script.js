@@ -1,6 +1,6 @@
 /*
  Highcharts JS v5.0.5 (2016-11-29)
- 
+
  (c) 2009-2016 Torstein Honsi
 
  License: www.highcharts.com/license
