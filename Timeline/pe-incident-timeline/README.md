@@ -1,7 +1,7 @@
 ## Synopsis: Incident Timeline Widget
 
-![](../images/pe-incident-timeline-1.png)
-![](../images/pe-incident-timeline-2.png)
+![](../../images/pe-incident-timeline-1.png)
+![](../../images/pe-incident-timeline-2.png)
 
 This can be used to quickly craft an incident timeline widget.
 
