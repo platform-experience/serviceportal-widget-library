@@ -1,0 +1,141 @@
+.status-wrapper {
+    margin-top: -10px;
+}
+
+.status-box {
+    background: $status-gradient;
+    color: #fff;
+    fill: #fff;
+    margin: 0 -8px 10px -8px;
+    padding: 15px 23px;
+    .pill {
+        background-color: #fff;
+        color: $status-color;
+    }
+}
+
+.flexbox {
+    display: flex;
+}
+
+.subtitle-inline {
+    flex: 1;
+}
+
+.status-row {
+    height: 125px;
+}
+
+.status-key {
+    float: left;
+    width: 140px;
+}
+
+.status-detail {
+    padding-top: 20px;
+    .status-time {
+        display: inline;
+        font-size: 24px;
+    }
+}
+
+.alert-summary {
+    margin: 10px 5px;
+}
+
+.recovered {
+    .status-box {
+        background: $status-recovered-gradient;
+        .pill {
+            color: $status-recovered-color;
+        }
+    }
+}
+
+.big-icon {
+    margin: 15px auto;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50px;
+    border: 10px solid #fff;
+    fill: #fff;
+    .svg-wrapper {
+        position: relative;
+        vertical-align: top;
+        top: 15px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+// HIGHCHART
+.highcharts-background {
+    fill: none;
+}
+
+.highcharts-plot-bands-0 {
+    opacity: 0.5;
+}
+
+.highchart-data-label {
+    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 400;
+    margin-top: -27px;
+    >* {
+        display: inline;
+    }
+    &::after {
+        content: "%";
+        // font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+.highcharts-axis,
+.highcharts-axis-labels {
+    visibility: hidden;
+}
+
+// SPINNER
+.spinny {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.spinny>div {
+    width: 9px;
+    height: 9px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    vertical-align: 10%;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}

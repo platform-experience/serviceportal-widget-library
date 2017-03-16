@@ -1,0 +1,75 @@
+<div ng-class="{ 'recovered': c.recovered }" class="status-wrapper">
+    <div class="status-box">
+        <div class="title">{{c.status.name}}</div>
+        <div class="flexbox">
+            <div class="subtitle-inline subtitle-larger">
+                <span class="icon-inline">
+					<svg class="svg-wrapper svg-larger">
+						<use xlink:href="#scart"></use>
+					</svg>
+				</span> {{c.status.bu}}
+            </div>
+            <div class="pill">
+                {{c.status.number}} | {{c.recovered ? 'Closed' : 'Created'}} {{c.status.createdAgo}} ago
+            </div>
+        </div>
+        <div ng-if="!c.recovered" class="status-row">
+            <div class="status-key">
+                <!--<sp-widget widget="c.data.probabilityGauge"></sp-widget>-->
+            </div>
+            <div class="status-detail">
+                <div>Probability that an outage will occur in</div>
+                <div class="spinny">
+                    <div class="bouncy1" style="animation-delay: -0.32s;"></div>
+                    <div class="bouncy2" style="animation-delay: -0.16s;"></div>
+                    <div class="bouncy3"></div>
+                </div>
+                <div class="status-time">30 minutes</div>
+            </div>
+        </div>
+        <div ng-if="c.recovered" class="status-row">
+            <div class="status-key">
+                <div class="big-icon">
+                    <svg class="svg-wrapper">
+						<use xlink:href="#check-mark"></use>
+					</svg>
+                </div>
+            </div>
+            <div class="status-detail">
+                <div class="title"><strong>Outage Prevented</strong></div>
+                <div>There was a {{c.status.probability}}% chance this incident would cause an outage</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="svgs-to-inline">
+
+    <svg version="1.1" id="check-mark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 574.6 468" style="enable-background:new 0 0 574.6 468;" xml:space="preserve">
+<g>
+	<path d="M0,292.6c-0.1-6.5,2.2-12.1,6.8-16.7c14.9-15,29.8-30,44.9-44.9c10-9.8,24.1-9.4,34.4,0.8c23.4,23.3,46.7,46.6,70,70
+		c12.6,12.6,25.7,12.5,38.3-0.1C291.9,204.2,389.5,106.6,487,9c7.3-7.3,15.6-11.1,25.6-7.8c4.1,1.4,8.1,4.1,11.2,7.1
+		c14.2,13.8,28.1,27.9,42.2,42c11.4,11.4,11.5,25.1,0.1,36.5C502.9,150,439.7,213.2,376.6,276.3C315.9,337,255.2,397.7,194.5,458.4
+		c-12.8,12.8-25.9,12.9-38.6,0.1c-49.1-49.1-98.3-98.3-147.5-147.4C3.3,305.9-0.2,300.1,0,292.6z"/>
+</g>
+</svg>
+
+    <svg version="1.1" id="scart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 462.5 368.8" style="enable-background:new 0 0 462.5 368.8;" xml:space="preserve">
+<g>
+	<path d="M90.9,0c3.4,16.6,6.8,33.2,10.2,49.8c1.9,9.3,4,18.6,5.7,27.9c0.5,2.9,1.8,4,4.6,3.8c1.5-0.1,3,0,4.5,0c113,0,226,0,339,0
+		c2.3,0,4.6,0,7.8,0c-0.8,2.5-1.3,4.3-1.9,6.1c-20.1,55.7-40.3,111.4-60.2,167.1c-1.3,3.6-2.9,4.8-6.7,4.8
+		c-88.2-0.1-176.3-0.1-264.5,0c-4.2,0-5.6-1.3-6.4-5.3C107.3,177.3,91.6,100.6,76,23.8c-0.3-1.5-0.8-2.9-1.3-4.8
+		C49.9,19,25.1,19,0,19C0,12.4,0,6.3,0,0C30.3,0,60.4,0,90.9,0z M435.1,101c-108,0-215.4,0-323.6,0c9.5,46.4,18.9,92.5,28.3,138.6
+		c1.7,0.1,3.1,0.2,4.4,0.2c78.8,0,157.7,0,236.5,0.1c3.5,0,4.8-1.2,5.9-4.3c11.8-33.1,23.8-66.1,35.7-99.1
+		C426.5,124.8,430.7,113.1,435.1,101z"/>
+	<path d="M360.5,368.8c-25.9-0.1-47-21.2-47.1-47.1c-0.1-26,21.3-47.5,47.4-47.5c26.1,0,47.3,21.3,47.3,47.5
+		C408,347.8,386.8,368.8,360.5,368.8z M360.7,293.7c-15.4,0-27.8,12.5-27.8,28c0,15.2,12.3,27.6,27.6,27.8
+		c15.3,0.2,28-12.4,28.1-27.8C388.7,306.2,376.2,293.7,360.7,293.7z"/>
+	<path d="M179.3,368.8c-26.2,0-47.3-21.1-47.2-47.4c0-26.1,21.5-47.4,47.5-47.2c26,0.2,47,21.3,47.1,47.2
+		C226.8,347.4,205.4,368.8,179.3,368.8z M207.1,321.6c0-15.4-12.4-27.9-27.9-27.9c-15.4,0-28,12.7-27.8,28
+		c0.1,15.2,12.5,27.6,27.7,27.7C194.4,349.6,207.1,337,207.1,321.6z"/>
+</g>
+</svg>
+
+</div>
