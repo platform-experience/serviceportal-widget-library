@@ -1,0 +1,38 @@
+<div class="vms-status-tabs">
+    <div class="three-tabs row">
+        <!-- your widget template -->
+        <div class="all-tabs">
+            <div class="each-tab" ng-click="c.selectedTab = 'expired'" ng-class="{'active':c.selectedTab == 'expired'}">
+                <p class="badge circle-badge" ng-class="c.tabs.first_tab.badge_color">{{::c.tabs.first_tab.badge_number}}</p>
+                <p class="name">{{::c.tabs.first_tab.name}}</p>
+            </div>
+            <div class="each-tab " ng-click="c.selectedTab = 'expiring'" ng-class="{'active':c.selectedTab == 'expiring'}">
+                <p class="badge circle-badge" ng-class="c.tabs.second_tab.badge_color">{{::c.tabs.second_tab.badge_number}}</p>
+                <p class="name">{{::c.tabs.second_tab.name}}</p>
+            </div>
+            <div class="each-tab" ng-click="c.selectedTab = 'new'" ng-class="{'active':c.selectedTab == 'new'}">
+                <p class="badge circle-badge" ng-class="c.tabs.third_tab.badge_color">{{::c.tabs.third_tab.badge_number}}</p>
+                <p class="name">{{::c.tabs.third_tab.name}}</p>
+            </div>
+        </div>
+        <div class="tab-details">
+            <div ng-show="c.selectedTab == 'expired'">
+                <div class="tab-details" ng-class-even="'light-grey-bg'">
+                    <p>Tab 1</p>
+                </div>
+            </div>
+            <div ng-show="c.selectedTab == 'expiring'">
+                <div class="tab-details" ng-class-even="'light-grey-bg'">
+                    <p>Tab 2</p>
+                </div>
+            </div>
+            <div ng-show="c.selectedTab == 'new'">
+                <div class="tab-details" ng-class-even="'light-grey-bg'">
+                   <p>Tab 3</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
