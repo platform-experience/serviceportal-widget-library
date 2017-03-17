@@ -6,7 +6,7 @@ This widget can be used to quickly craft an incident message or alert with confi
 
 ## Installation
 
-Installation is very simple, you can just download the update set "pe-incident-message-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set "pe-incident-message.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 ## Configuration
 
