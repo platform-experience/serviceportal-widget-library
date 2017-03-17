@@ -149,10 +149,14 @@ should be renamed to:
 1. Create a folder with widget name for ex: **pe-people-card**
 2. Create another folder called **widget** inside the above folder.
 3. Widget record fields should go inside **widget** folder. Fields must be named as follows
-⋅⋅* HTML->               <widget-name>.u-body-html-template.html
+⋅⋅* HTML->               <widget-name>.u-body-html-template.html.
+
 ⋅⋅* Client Controller->  <widget-name>.u-client-script.js
+
 ⋅⋅* Server Script->      <widget-name>.u-server-script.js
+
 ⋅⋅* CSS->                <widget-name>.u-css.scss
+
 4. UI Scripts should go inside a folder called **ui-script** , all ui scripts should be named as follows
 ⋅⋅* <widget-name>-<purpose>.u-client-script.js .. some purspose examples can be **service**, **factory**, **module**
 If its a js library file, which users dont need to edit for ex: "highcart-ng", emit this **u-client-script** part in name. This will make sure we dont pull the huge library files from SNOW.
