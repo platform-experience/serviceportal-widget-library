@@ -8,51 +8,41 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 **Widgets available now:**
 
-* [Approval Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Approve%20Card/pe-approval-card)
+* [Approval Cards](https://github.com/platform-experience/serviceportal-widget-library/tree/master/approve-card)
 
 * [Feedback Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-feedback-card)
 
-* [People Info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info)
+* [People Info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info)
 
 * [Scratch Pad](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-scratch-pad)
 
-* [Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Timeline/pe-timeline)
+* [Timelines](https://github.com/platform-experience/serviceportal-widget-library/tree/master/timeline/)
 
-* [Tabs Selector](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-tabs-selector)
+* [Tabs Selector](https://github.com/platform-experience/serviceportal-widget-library/tree/master/tabs)
 
-* [Donut Chart](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Charts/pe-donut-chart)
-
-* [Donut Chart Wizard](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Charts/pe-donut-chart-wizard)
-
-* [Inbox](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-inbox)
-
-* [Emp Exp Timeline](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Timeline/pe-timeline-emp-exp)
+* [Donut Charts](https://github.com/platform-experience/serviceportal-widget-library/tree/master/donut-widgets)
 
 * [Horizontal Stacked Bar](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-horizontal-stacked-bar)
 
-* [Approve Reject Card](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Approve%20Card/pe-approve-reject-card)
-
-* [Approve Reject Card With Accordion](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-approve-reject-inbox)
-
-* [Dynamic Tabs Widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-dynamic-tabs-widget)
-
 **Snippets available now:**
+
+* [Inbox](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-emp-exp-inbox-snippet)
 
 * [Status Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-status-card-snippet)
 
-* [Overview Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Overview%20Cards/pe-overview-card-snippet)
+* [Employee Experience Overview Card Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-emp-exp-overview-card-snippet)
 
 * [Employee Experience Signature Modal Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-emp-exp-signature-modal-snippet)
 
 * [Employee Experience Services List Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-emp-exp-services-list-snippet)
 
-* [Summary Data Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-summary-data-snippet)
+* [Cloud Sprawl Summary Data Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-cloud-sprawl-vm-summary-snippet)
 
 * [Cloud Sprawl Overview Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-cloud-sprawl-overview-snippet)
 
-* [Tier Overview Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-tier-overview-snippet)
+* [Tier Overview Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-cloud-sprawl-tier-overview-snippet)
 
-* [Tab Chart Selector Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-tab-chart-selector-snippet)
+* [Tab Chart Selector Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/tabs/pe-cloud-sprawl-tab-with-donut-chart-snippet)
 
 ***
 
