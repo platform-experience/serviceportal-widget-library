@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-03-17 01:32:22">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Tab Chart Selector Snippet</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>b25ffae9132576007e94fc5ed144b089</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-17 01:32:22</sys_created_on>
+<sys_id>80518b2d132576007e94fc5ed144b033</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-17 01:32:22</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_96f7616d136176007e94fc5ed144b087</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TabChartSelector(spUtil) {
+  /* widget controller */
+  var c = this;
+
+  spUtil.get('pe-donut-chart-wizard', {
+    primary_color: c.data.chart_1.primary_color,
+    background_color: c.data.chart_1.background_color,
+    chart_width: c.data.chart_1.chart_width,
+    font_size: c.data.chart_1.font_size,
+    font_weight: c.data.chart_1.font_weight,
+    chart_data: c.data.chart_1.data
+  }).then(function (response) {
+    c.data.embedded_widget_1 = response;
+  });
+
+  spUtil.get('pe-donut-chart-wizard', {
+    primary_color: c.data.chart_2.primary_color,
+    background_color: c.data.chart_2.background_color,
+    chart_width: c.data.chart_2.chart_width,
+    font_size: c.data.chart_2.font_size,
+    font_weight: c.data.chart_2.font_weight,
+    chart_data: c.data.chart_2.data
+  }).then(function (response) {
+    c.data.embedded_widget_2 = response;
+  });
+
+
+  c.selectedTab = 'unaccounted';
+
+  c.second_tab = {
+      name: "expiring lease",
+      badge_number: 5,
+      badge_color: "bg-orange",
+      list: [{
+        icon: "#icon-azure",
+        company: "Azure",
+        lease: "Jan 5 2017",
+        vimnumber: "VM1",
+        vim_number: "",
+        user: {
+          fname: "edward",
+          lname: "scott",
+          name: "Edward Scott",
+          photo: "47161dae1358fe00f7f5bcc32244b03c.iix",
+          title: "IT Manager",
+          phone: "8581234567"
+
+        }
+      }, {
+
+        icon: "#icon-aws",
+        company: "AWS",
+        lease: "Feb 5 2017",
+        vimnumber: "VM23",
+        vim_number: "",
+        user: {
+          fname: "Andrew",
+          lname: "Garner",
+          name: "Jose Riley",
+          photo: "90f8d5621398fe00f7f5bcc32244b00b.iix",
+          title: "Application Manager",
+          phone: "8581234567"
+
+        }
+      }, {
+
+        icon: "#icon-aws",
+        company: "AWS",
+        lease: "Feb 5 2017",
+        vimnumber: "VM13",
+        vim_number: "",
+        user: {
+          fname: "jose",
+          lname: "riley",
+          name: "Jose Riley",
+          photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
+          title: "Application Manager",
+          phone: "8581234567"
+
+        }
+      }, {
+
+        icon: "#icon-aws",
+        company: "AWS",
+        lease: "Feb 25 2017",
+        vimnumber: "VM4",
+        vim_number: "",
+        user: {
+          fname: "greg",
+          lname: "hill",
+          name: "Greg Hill",
+          photo: "743a51a21398fe00f7f5bcc32244b067.iix",
+          title: "Application Manager",
+          phone: "8581234567"
+
+        }
+      }, {
+
+        icon: "#icon-aws",
+        company: "AWS",
+        lease: "Feb 35 2017",
+        vimnumber: "VM5",
+        vim_number: "",
+        user: {
+          fname: "David",
+          lname: "Hoffman",
+          name: "David Hoffman",
+          photo: "22d959621398fe00f7f5bcc32244b0d2.iix",
+          title: "Application Manager",
+          phone: "8581234567"
+
+        }
+      }, {
+
+        icon: "#icon-aws",
+        company: "AWS",
+        lease: "Feb 45 2017",
+        vimnumber: "VM6",
+        vim_number: "",
+        user: {
+          fname: "Gary",
+          lname: "Kim",
+          name: "Gary Kim",
+          photo: "61ba9d621398fe00f7f5bcc32244b023.iix",
+          title: "Application Manager",
+          phone: "8581234567"
+        }
+      }, {
+
+        icon: "#icon-azure",
+        company: "Azure",
+        lease: "Feb 5 2017",
+        vimnumber: "VM17",
+        vim_number: "",
+        user: {
+          fname: "edward",
+          lname: "scott",
+          name: "Edward Scott",
+          photo: "47161dae1358fe00f7f5bcc32244b03c.iix",
+          title: "IT Manager",
+          phone: "8581234567"
+
+        }
+      }, {
+
+        icon: "#icon-azure",
+        company: "Azure",
+        lease: "Feb 5 2017",
+        vimnumber: "VM18",
+        vim_number: "",
+        user: {
+          fname: "edward",
+          lname: "scott",
+          name: "Edward Scott",
+          photo: "47161dae1358fe00f7f5bcc32244b03c.iix",
+          title: "IT Manager",
+          phone: "8581234567"
+
+        }
+      }, {
+
+        icon: "#icon-vmware",
+        company: "VMW",
+        lease: "Feb 5 2017",
+        vimnumber: "VM39",
+        vim_number: "",
+        user: {
+          fname: "jose",
+          lname: "riley",
+          name: "Jose Riley",
+          photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
+          title: "Application Manager",
+          phone: "8581234567"
+
+        }
+      }, {
+
+        icon: "#icon-vmware",
+        company: "VMW",
+        lease: "Feb 5 2017",
+        vimnumber: "VM10",
+        vim_number: "",
+        user: {
+          fname: "jose",
+          lname: "riley",
+          name: "Jose Riley",
+          photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
+          title: "Application Manager",
+          phone: "8581234567"
+
+        }
+      }]
+    },
+
+    c.userOne = {
+      fname: "jose",
+      lname: "riley",
+      name: "Jose Riley",
+      photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
+      title: "Application Manager",
+      phone: "8581234567",
+
+      spending: [
+
+        {
+          text: "$8K this month",
+          icon: "#icon-aws",
+          company: "AWS"
+        }, {
+          text: "$22K this month",
+          icon: "#icon-azure",
+          company: "Azure"
+        }
+      ]
+    };
+  c.userTwo = {
+    fname: "edward",
+    lname: "scott",
+    name: "Edward Scott",
+    photo: "47161dae1358fe00f7f5bcc32244b03c.iix",
+    title: "IT Manager",
+    phone: "8581234567",
+
+    spending: [
+
+      {
+        text: "$7K this month",
+        icon: "#icon-aws",
+        company: "AWS"
+      }, {
+        text: "$13K this month",
+        icon: "#icon-azure",
+        company: "Azure"
+      }
+    ]
+  };
+
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.unaccounted-vms {
+  background: #F7F7F7;
+  padding: 20px;
+  .green-bg {
+    background: #70be5a;
+  }
+  .second-tab-details {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .flex-it {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .svg-icon {
+        height: 23px;
+        width: 27px;
+        fill: #9C9C9C;
+      }
+      p {
+        margin-left: 5px;
+        margin-bottom: 0px;
+      }
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    .vm-num {
+      .big-text {
+        font-size: 20px;
+        color: #595959;
+      }
+      .small-text {
+        font-size: 13px;
+        color: #909090;
+      }
+    }
+    .lease {
+      .lease-head {
+        text-transform: uppercase;
+      }
+      .big-text {
+        font-size: 20px;
+        color: #595959;
+      }
+      .small-text {
+        font-size: 13px;
+        color: #909090;
+      }
+    }
+    .people-card-media {
+      padding-right: 10px;
+      padding-left: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      float: left;
+      margin: 0px;
+      width: initial;
+      .flex-it-align-top {
+        display: flex;
+        justify-content: space-between;
+      }
+      .media-left {
+        //  width: 60px;
+        .list__photo {
+          width: 35px;
+          height: 35px;
+        }
+        .initials-badge {
+          min-width: 36px;
+          float: left;
+          margin-top: 0px;
+          border-radius: 50%;
+          line-height: 1;
+          font-size: 14px;
+          margin-left: 0px;
+          padding: 10px 10px;
+          font-weight: 300;
+          background: #AEB2B3;
+        }
+      }
+    }
+  }
+  .people-card-media {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: #fff;
+    border-bottom: 1px solid #f3f3f3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    float: left;
+    margin: 0px;
+    .flex-it-align-top {
+      display: flex;
+      justify-content: space-between;
+    }
+    .webicon-down {
+      fill: transparent;
+      stroke: $brand-primary;
+      width: 22px;
+      height: 22px;
+      vertical-align: bottom;
+    }
+    .media-body {
+      width: 60%;
+    }
+    .media-left {
+      //  width: 60px;
+      .list__photo {
+        width: 35px;
+        height: 35px;
+      }
+      .initials-badge {
+        min-width: 36px;
+        float: left;
+        margin-top: 0px;
+        border-radius: 50%;
+        line-height: 1;
+        font-size: 14px;
+        margin-left: 0px;
+        padding: 10px 10px;
+        font-weight: 300;
+        background: #AEB2B3;
+      }
+      .not-available.presence:after {
+        background-color: #FA5B5A;
+      }
+      .available.presence:after {
+        background-color: #7CE684;
+      }
+      .presence {
+        position: relative;
+      }
+      .presence:after {
+        width: 10px;
+        height: 10px;
+        top: 26px;
+        left: 25px;
+        position: absolute;
+        content: "";
+        border-radius: 50%;
+      }
+    }
+    .media-right {
+      text-align: center;
+      width: 40%;
+      .fa-color {
+        color: #3d5483;
+        margin-right: 10px;
+      }
+      .add-unnssigned {
+        font-size: 30px;
+        color: $brand-primary;
+      }
+    }
+    .people_name_title {
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        color: #666;
+        //font-weight: 300;
+      }
+      .list__subtitle {
+        font-size: 14px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        margin-bottom: 0px;
+        color: #565656;
+      }
+      .list__sub_subtitle {
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 0px;
+        color: #9f9f9f;
+      }
+    }
+    .list__body {
+      //width: 200px;
+    }
+    .contact-div {
+      clear: both;
+    }
+  }
+  .red-bg {
+    background: #ee525e;
+  }
+  .body-div {
+    background: #fff;
+    .heading {
+      font-weight: 600;
+      font-size: 24px;
+      color: #333;
+      padding: 10px;
+    }
+    .spending-month {
+      display: flex;
+      .first-div {
+        width: 50%;
+        //background: #ececec;
+        padding: 20px;
+        border-right: 1px solid #f3f3f3;
+        border-bottom: 1px solid #f3f3f3;
+        &amp;amp;.active {
+          background: #f2f2f2;
+          border-bottom: 2px solid #d1232b;
+        }
+        .top-box {
+          height: 70px;
+          text-align: center;
+          .big-text {
+            font-size: 46px;
+            font-weight: 300;
+            text-align: center;
+          }
+        }
+        .sub-title {
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #9f9f9f;
+          margin-bottom: 0px;
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+      .second-div {
+        border-right: 1px solid #f3f3f3;
+        border-bottom: 1px solid #f3f3f3;
+        // background: #ececec;
+        width: 50%;
+        padding: 20px;
+        &amp;amp;.active {
+          background: #f2f2f2;
+          border-bottom: 2px solid #d1232b;
+        }
+        .top-box {
+          height: 70px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 3px;
+          .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #70be5a;
+          }
+          .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #ee525e;
+          }
+          .badge-custom {
+            padding: 16px 6px;
+            font-size: 24px;
+            border-radius: 50%;
+            font-weight: 300;
+            margin-left: 10px;
+          }
+          .big-text {
+            font-size: 46px;
+            font-weight: 300;
+            text-align: center;
+          }
+        }
+        .sub-title {
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #9f9f9f;
+          margin-bottom: 0px;
+          margin-top: 7px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .spending-foruser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f3f3f3;
+    .left-text {
+      font-size: 20px;
+      color: #595959;
+      p {
+        margin-bottom: 0px;
+      }
+    }
+    .right-text {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #9c9c9c;
+      .svg-icon {
+        height: 23px;
+        width: 27px;
+        fill: #9C9C9C;
+      }
+      p {
+        margin-left: 5px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-tab-chart-selector-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Tab Chart Selector Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.chart_1 = {
+    primary_color: '#29bd00',
+    background_color: '#b4b2b3',
+    chart_width: '70',
+    font_size: '18px',
+    font_weight: '600',
+    data: {
+      label: '$50k',
+      current: 50,
+      total: 200
+    }
+  };
+
+  data.chart_2 = {
+    primary_color: '#f5a623',
+    background_color: '#b4b2b3',
+    chart_width: '70',
+    font_size: '18px',
+    font_weight: '600',
+    data: {
+      label: '10',
+      current: 10,
+      total: 20
+    }
+  };
+
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-16 19:02:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;96f7616d136176007e94fc5ed144b087&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Tab Chart Selector Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_96f7616d136176007e94fc5ed144b087&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-17 01:23:44&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+
+    &lt;symbol id="icon-azure" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+      &lt;g id="Page-1"&gt;
+        &lt;g id="1.0-Home-Dashboard---All-Providers" transform="translate(-259.000000, -91.000000)"&gt;
+          &lt;g id="Azure-Windows" transform="translate(259.000000, 91.000000)"&gt;
+            &lt;polygon id="Fill-1" points="22.4150943 0 9.96226415 1.70692087 9.96226415 10.7924528 22.4150943 10.7924528"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-2" points="0 2.9814456 0 10.7924528 9.54716981 10.7924528 9.54716981 1.66037736"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-3" points="9.96226415 11.2075472 9.96226415 20.2927819 22.4150943 22 22.4150943 11.2075472"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-4" points="0 11.2075472 0 19.0182292 9.54716981 20.3396226 9.54716981 11.2075472"&gt;&lt;/polygon&gt;
+          &lt;/g&gt;
+        &lt;/g&gt;
+      &lt;/g&gt;
+    &lt;/symbol&gt;
+    &lt;symbol id="icon-aws" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+      &lt;g id="Page-1"&gt;
+        &lt;g id="1.0-Home-Dashboard---All-Providers" transform="translate(-154.000000, -90.000000)"&gt;
+          &lt;g id="AWS" transform="translate(154.000000, 90.000000)"&gt;
+            &lt;polygon id="Fill-1" points="6.6969 21.9822 12.3219 24.0002 12.3219 15.6532 6.6969 13.7372"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-2" points="13.3533 15.6534 13.3533 24.0004 18.9783 21.9824 18.9783 13.7374"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-3" points="7.2751 13.1206 12.9681 11.5176 18.2471 13.2206 12.9681 15.0126"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-4" points="0 10.464 5.625 12.482 5.625 4.136 0 2.219"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-5" points="6.6565 12.4819 12.2815 10.4639 12.2815 2.2189 6.6565 4.1359"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-6" points="6.2712 -0.0003 0.5792 1.6027 6.2712 3.4947 11.5502 1.7027"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-7" points="18.7507 12.4819 13.1257 10.4639 13.1257 2.2189 18.7507 4.1359"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-8" points="19.782 4.1361 19.782 12.4821 25.407 10.4641 25.407 2.2191"&gt;&lt;/polygon&gt;
+            &lt;polygon id="Fill-9" points="19.3959 -0.0003 13.7029 1.6027 19.3959 3.4947 24.6749 1.7027"&gt;&lt;/polygon&gt;
+          &lt;/g&gt;
+        &lt;/g&gt;
+      &lt;/g&gt;
+    &lt;/symbol&gt;
+    &lt;symbol id="icon-vmware" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+      &lt;g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+        &lt;g id="Artboard" transform="translate(-355.000000, -91.000000)"&gt;
+          &lt;g id="vmware" transform="translate(355.000000, 91.000000)"&gt;
+            &lt;path d="M35.552092,12.1418391 L31.9286437,2.05172414 C31.8817471,1.91195402 31.8127816,1.72850575 31.8127816,1.56712644 C31.8127816,1.12896552 32.1824368,0.714252874 32.7116322,0.714252874 C33.1741609,0.714252874 33.4748506,1.01356322 33.6137011,1.45126437 L36.6150805,10.1455172 L39.6389885,1.42735632 C39.7764598,1.01356322 40.0546207,0.714252874 40.513931,0.714252874 L40.6072644,0.714252874 C41.0932414,0.714252874 41.3934713,1.01356322 41.5309425,1.42735632 L44.5309425,10.1455172 L47.5805977,1.40574713 C47.6969195,1.03609195 47.9484138,0.714252874 48.4343908,0.714252874 C48.941977,0.714252874 49.3116322,1.1045977 49.3116322,1.54413793 C49.3116322,1.70551724 49.2422069,1.88850575 49.1966897,2.0291954 L45.5497931,12.1418391 C45.3626667,12.6696552 44.9953103,12.9473563 44.5787586,12.9473563 L44.5102529,12.9473563 C44.0477241,12.9473563 43.7005977,12.6696552 43.5387586,12.1418391 L40.5631264,3.56804598 L37.5603678,12.1418391 C37.3994483,12.6696552 37.0523218,12.9473563 36.5916322,12.9473563 L36.5433563,12.9473563 C36.1056552,12.9473563 35.7369195,12.6696552 35.552092,12.1418391"
+              id="Fill-1"&gt;&lt;/path&gt;
+            &lt;path d="M61.9657471,1.5936092 C61.9657471,1.10671264 62.3583908,0.69108046 62.8429885,0.69108046 C63.3533333,0.69108046 63.7455172,1.08372414 63.7455172,1.5936092 L63.7455172,3.64142529 C64.6236782,1.652 66.5712644,0.714068966 67.8613793,0.714068966 C68.3951724,0.714068966 68.7422989,1.10671264 68.7422989,1.61521839 C68.7422989,2.1011954 68.4186207,2.44602299 67.9537931,2.51682759 C65.6406897,2.79406897 63.7455172,4.52878161 63.7455172,7.97567816 L63.7455172,12.0294713 C63.7455172,12.5154483 63.3754023,12.9301609 62.8673563,12.9301609 C62.3583908,12.9301609 61.9657471,12.5361379 61.9657471,12.0294713 L61.9657471,1.5936092 Z"
+              id="Fill-3"&gt;&lt;/path&gt;
+            &lt;path d="M74.4545287,13.0434483 C71.2365977,13.0434483 68.6085517,10.5473563 68.6085517,6.8862069 L68.6085517,6.83885057 C68.6085517,3.43057471 70.9878621,0.682988506 74.2278621,0.682988506 C77.6931494,0.682988506 79.6664828,3.54229885 79.6664828,6.67931034 C79.6664828,7.16068966 79.2775172,7.5045977 78.849931,7.5045977 L70.3782069,7.5045977 C70.6255632,10.065977 72.4145287,11.5087356 74.5009655,11.5087356 C75.9506207,11.5087356 77.0136092,10.9358621 77.8756782,10.1354023 C78.0103908,10.0222989 78.1703908,9.93034483 78.3745287,9.93034483 C78.8044138,9.93034483 79.1446437,10.2742529 79.1446437,10.6871264 C79.1446437,10.8917241 79.0554483,11.0986207 78.872,11.2567816 C77.7625747,12.3321839 76.4476322,13.0434483 74.4545287,13.0434483 L74.4545287,13.0434483 Z M77.9211954,6.19885057 C77.740046,4.04712644 76.5142989,2.17172414 74.1818851,2.17172414 C72.1423448,2.17172414 70.6007356,3.88666667 70.3782069,6.19885057 L77.9211954,6.19885057 Z"
+              id="Fill-5"&gt;&lt;/path&gt;
+            &lt;path d="M49.3436322,9.33788506 L49.3436322,9.29052874 C49.3436322,6.77834483 51.4194943,5.43995402 54.4378851,5.43995402 C55.9606437,5.43995402 57.0434023,5.64777011 58.1063908,5.94891954 L58.1063908,5.53236782 C58.1063908,3.38937931 56.7886897,2.28133333 54.5546667,2.28133333 C53.3551264,2.28133333 52.6567356,2.43443678 51.7794943,2.82478161 C51.6654713,2.87167816 51.5491494,2.89512644 51.4590345,2.89512644 C51.0434023,2.89512644 50.6742069,2.548 50.6742069,2.1342069 C50.6742069,1.76593103 50.8342069,1.5388046 51.1588046,1.39489655 C52.3321379,0.885471264 53.2181149,0.715816092 54.7385747,0.715816092 C56.4208736,0.715816092 57.711908,1.15213793 58.5868506,2.02937931 C59.3937471,2.83627586 59.8102989,3.98891954 59.8102989,5.51029885 L59.8102989,12.0886897 C59.8102989,12.5944368 59.4415632,12.9645517 58.9542069,12.9645517 C58.4498391,12.9645517 58.1063908,12.5944368 58.1063908,12.1342069 L58.1063908,10.9962759 C57.2755862,12.0813333 55.8902989,13.0491494 53.7965057,13.0491494 C51.5813333,13.0491494 49.3436322,11.7811034 49.3436322,9.33788506 M58.128,8.41558621 L58.128,7.26248276 C57.2507586,7.00914943 56.0737471,6.75351724 54.6227126,6.75351724 C52.3891494,6.75351724 51.1417931,7.72409195 51.1417931,9.22110345 L51.1417931,9.26754023 C51.1417931,10.7654713 52.5247816,11.6417931 54.139954,11.6417931 C56.328,11.6417931 58.128,10.3043218 58.128,8.41558621"
+              id="Fill-7"&gt;&lt;/path&gt;
+            &lt;path d="M3.25503448,1.46229885 C2.86422989,0.606206897 1.89963218,0.21816092 0.998482759,0.61954023 C0.0964137931,1.02 -0.23554023,2.02 0.172275862,2.87747126 L3.9548046,11.0990805 C4.5502069,12.3887356 5.17733333,13.0641379 6.35388506,13.0641379 C7.61135632,13.0641379 8.1594023,12.3285057 8.75388506,11.0990805 C8.75388506,11.0990805 12.0536552,3.91425287 12.0862989,3.83977011 C12.1203218,3.76344828 12.226069,3.53126437 12.5621609,3.53310345 C12.8458391,3.53632184 13.0844598,3.76206897 13.0844598,4.06505747 L13.0844598,11.0926437 C13.0844598,12.1754023 13.6858391,13.0641379 14.8412414,13.0641379 C15.9957241,13.0641379 16.620092,12.1754023 16.620092,11.0926437 L16.620092,5.34367816 C16.620092,4.23471264 17.4145747,3.51517241 18.4973333,3.51517241 C19.5805517,3.51517241 20.3010115,4.25954023 20.3010115,5.34367816 L20.3010115,11.0926437 C20.3010115,12.1754023 20.9042299,13.0641379 22.0577931,13.0641379 C23.2122759,13.0641379 23.8394023,12.1754023 23.8394023,11.0926437 L23.8394023,5.34367816 C23.8394023,4.23471264 24.6311264,3.51517241 25.7152644,3.51517241 C26.7961839,3.51517241 27.5194023,4.25954023 27.5194023,5.34367816 L27.5194023,11.0926437 C27.5194023,12.1754023 28.1212414,13.0641379 29.2761839,13.0641379 C30.4297471,13.0641379 31.0564138,12.1754023 31.0564138,11.0926437 L31.0564138,4.5491954 C31.0564138,2.14413793 29.1230805,0.45954023 26.7961839,0.45954023 C24.4715862,0.45954023 23.015954,2.06781609 23.015954,2.06781609 C22.2426207,1.0645977 21.175954,0.46137931 19.3708966,0.46137931 C17.4665287,0.46137931 15.7994023,2.06781609 15.7994023,2.06781609 C15.0251494,1.0645977 13.7069885,0.46137931 12.615954,0.46137931 C10.9281379,0.46137931 9.58790805,1.20390805 8.76997701,3.07333333 L6.35388506,8.76804598 L3.25503448,1.46229885 Z"
+              id="Fill-9"&gt;&lt;/path&gt;
+          &lt;/g&gt;
+        &lt;/g&gt;
+      &lt;/g&gt;
+    &lt;/symbol&gt;
+  &lt;/svg&gt;
+  &lt;div class="unaccounted-vms row"&gt;
+    &lt;div class="body-div"&gt;
+      &lt;div class="spending-month"&gt;
+        &lt;div class="first-div" ng-class="{'active': c.selectedTab =='unaccounted' }" ng-click="c.selectedTab = 'unaccounted'"&gt;
+          &lt;div class="top-box"&gt;
+            &lt;sp-widget widget="c.data.embedded_widget_1"&gt;&lt;/sp-widget&gt;
+          &lt;/div&gt;
+          &lt;p class="sub-title"&gt;
+            {{c.unaccountedData.first_box.sub_title}}
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="second-div" ng-class="{'active': c.selectedTab == 'noncomplaint' }" ng-click="c.selectedTab = 'noncomplaint'"&gt;
+          &lt;div class="top-box"&gt;
+            &lt;sp-widget widget="c.data.embedded_widget_2"&gt;&lt;/sp-widget&gt;
+          &lt;/div&gt;
+          &lt;p class="sub-title"&gt;
+            {{c.unaccountedData.second_box.sub_title}}
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div ng-show="c.selectedTab == 'unaccounted'"&gt;
+        &lt;people-card type="mem" user="c.userOne"&gt;&lt;/people-card&gt;
+        &lt;div ng-repeat="spend in c.userOne.spending" class="spending-foruser"&gt;
+          &lt;p class="left-text"&gt;{{spend.text}}&lt;/p&gt;
+          &lt;div class="right-text"&gt;
+            &lt;svg class="svg-icon"&gt;
+              &lt;use xlink:href='{{spend.icon}}'&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+            &lt;p&gt;{{spend.company}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;people-card type="mem" user="c.userTwo"&gt;&lt;/people-card&gt;
+        &lt;div ng-repeat="spend in c.userTwo.spending" class="spending-foruser"&gt;
+          &lt;p class="left-text"&gt;{{spend.text}}&lt;/p&gt;
+          &lt;div class="right-text"&gt;
+            &lt;svg class="svg-icon"&gt;
+              &lt;use xlink:href='{{spend.icon}}'&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+            &lt;p&gt;{{spend.company}}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div ng-show="c.selectedTab == 'noncomplaint'"&gt;
+        &lt;div class="second-tab-details" ng-repeat="each in c.second_tab.list" ng-class-even="'light-grey-bg'"&gt;
+          &lt;div class="vm-num"&gt;
+            &lt;p class="big-text"&gt;{{each.vimnumber}}&lt;/p&gt;
+            &lt;p class="small-text"&gt;{{each.vim_number}}&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="lease"&gt;
+            &lt;p class="lease-head"&gt;created on&lt;/p&gt;
+            &lt;p class="small-text"&gt;{{each.lease}}&lt;/p&gt;
+          &lt;/div&gt;
+
+
+          &lt;div class="flex-it"&gt;
+            &lt;svg ng-class="{'vmwwidth': each.company == 'VMW'}" class="svg-icon"&gt;
+              &lt;use xlink:href='{{each.icon}}'&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+            &lt;p ng-if="each.company != 'VMW'"&gt;{{each.company}}&lt;/p&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Tab Chart Selector Snippet">80518b2d132576007e94fc5ed144b033</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-17 01:32:22</sys_created_on>
+<sys_id>08518b2d132576007e94fc5ed144b034</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-17 01:32:22</sys_updated_on>
+<table/>
+<target_name>PE Tab Chart Selector Snippet</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_774c54c113693600d15e3d7ed144b0da</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>donutDirective</name><source>local</source><sp_css display_value="donutDirective">362c548113693600d15e3d7ed144b0c1</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:48</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>774c54c113693600d15e3d7ed144b0da</sys_id><sys_mod_count>4</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_774c54c113693600d15e3d7ed144b0da</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:52</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<remote_update_set display_value="PE Tab Chart Selector Snippet">80518b2d132576007e94fc5ed144b033</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-17 01:32:22</sys_created_on>
+<sys_id>0c518b2d132576007e94fc5ed144b033</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-17 01:32:22</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_0bc1804513293600d15e3d7ed144b0f2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function DonutChartWizard() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.div-center {
+    text-align: center;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-donut-chart-wizard&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Donut Chart Wizard&lt;/name&gt;&lt;option_schema&gt;[{"name":"chart_data","default_value":"{\"label\":\"1/5\",\"current\":1,\"total\":5}","label":"Chart Data","type":"json","mandatory":true},{"name":"primary_color","default_value":"#4286f4","label":"Color","type":"string"},{"name":"background_color","default_value":"#c2d1e8","label":"Background Color","type":"string"},{"name":"chart_width","default_value":"80","label":"Width","type":"string"},{"name":"font_size","default_value":"24px","label":"Font Size","type":"string"},{"name":"font_weight","default_value":"800","label":"Font Weight","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.toJson = function (str) {
+    if (typeof str == 'string') {
+      str = JSON.parse(str);
+    }
+    if (typeof str == 'object') {
+      ret = true;
+      try {
+        JSON.parse(str);
+      } catch (e) {
+        ret = false;
+      }
+      if (ret === true) {
+        str = JSON.parse(str);
+      }
+    } else if (str != undefined &amp;&amp; str !== null) {
+      str = JSON.parse(str);
+    } else {
+      str = JSON.parse('');
+    }
+    return str;
+  };
+
+  data.primary_color = input.primary_color || options.primary_color;
+  data.background_color = input.background_color || options.background_color;
+  data.chart_width = input.chart_width || options.chart_width;
+  data.font_size = input.font_size || options.font_size;
+  data.font_weight = input.font_weight || options.font_weight;
+  data.chart_data = input.chart_data || options.chart_data;
+  data.chart_data = data.toJson(data.chart_data);
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-14 22:19:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0bc1804513293600d15e3d7ed144b0f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;148&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Donut Chart Wizard&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0bc1804513293600d15e3d7ed144b0f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-16 18:59:18&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="container-fluid"&gt;
+  &lt;div class="row div-center"&gt;
+  &lt;donut-directive data-count="data.chart_data.current"
+  data-displayvalue="{{data.chart_data.label}}"
+  data-total="data.chart_data.total"
+    data-show-value="true"
+    data-show-value-as-count="true"
+    data-width="data.chart_width"
+    data-font-size="{{data.font_size}}"
+    data-font-weight="data.font_weight"
+    data-color-fill="{{data.primary_color}}"
+    data-color-bg="{{data.background_color}}"
+    href="donutTemplate"&gt;
+  &lt;/donut-directive&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Tab Chart Selector Snippet">80518b2d132576007e94fc5ed144b033</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-17 01:32:22</sys_created_on>
+<sys_id>44518b2d132576007e94fc5ed144b034</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-17 01:32:22</sys_updated_on>
+<table/>
+<target_name>PE Donut Chart Wizard</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_362c548113693600d15e3d7ed144b0c1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css"><sp_css action="INSERT_OR_UPDATE"><css>/* Donut CSS */&#13;
+&#13;
+.progress-pie-chart {&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    border-radius: 50%;&#13;
+    background-color: #E5E5E5;&#13;
+    position: relative;&#13;
+    display: inline-block;&#13;
+    cursor: pointer;&#13;
+}&#13;
+&#13;
+.progress-pie-chart.gt-50 {&#13;
+    background-color: #81CE97;&#13;
+}&#13;
+&#13;
+.ppc-progress {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 50px);&#13;
+    top: calc(50% - 50px);&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    clip: rect(0, 100px, 100px, 50px);&#13;
+}&#13;
+&#13;
+.ppc-progress .ppc-progress-fill {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 50px);&#13;
+    top: calc(50% - 50px);&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    clip: rect(0, 50px, 100px, 0);&#13;
+    background: #81CE97;&#13;
+    transform: rotate(60deg);&#13;
+}&#13;
+&#13;
+.gt-50 .ppc-progress {&#13;
+    clip: rect(0, 50px, 100px, 0);&#13;
+}&#13;
+&#13;
+.gt-50 .ppc-progress .ppc-progress-fill {&#13;
+    clip: rect(0, 100px, 100px, 50px);&#13;
+    background: #E5E5E5;&#13;
+}&#13;
+&#13;
+.ppc-percents {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 80px/2);&#13;
+    top: calc(50% - 80px/2);&#13;
+    width: 80px;&#13;
+    height: 80px;&#13;
+    background: #fff;&#13;
+    text-align: center;&#13;
+    display: table;&#13;
+}&#13;
+&#13;
+.ppc-percents span {&#13;
+    display: block;&#13;
+    font-size: inherit;&#13;
+    color: #81CE97;&#13;
+}&#13;
+&#13;
+.pcc-percents-wrapper {&#13;
+    display: table-cell;&#13;
+    vertical-align: middle;&#13;
+}</css><name>donutDirective</name><sys_class_name>sp_css</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>362c548113693600d15e3d7ed144b0c1</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_362c548113693600d15e3d7ed144b0c1</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:00</sys_updated_on></sp_css></record_update>]]></payload>
+<remote_update_set display_value="PE Tab Chart Selector Snippet">80518b2d132576007e94fc5ed144b033</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-17 01:32:22</sys_created_on>
+<sys_id>48518b2d132576007e94fc5ed144b033</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-17 01:32:22</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>Style Sheet</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_cc585c0113693600d15e3d7ed144b07d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>donutDirective</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-14 23:57:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>cc585c0113693600d15e3d7ed144b07d</sys_id><sys_mod_count>3</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="donutDirective">25689c0113693600d15e3d7ed144b0d6</sys_ui_script><sys_update_name>sp_js_include_cc585c0113693600d15e3d7ed144b07d</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:40:30</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Tab Chart Selector Snippet">80518b2d132576007e94fc5ed144b033</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-17 01:32:22</sys_created_on>
+<sys_id>80518b2d132576007e94fc5ed144b034</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-17 01:32:22</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_25689c0113693600d15e3d7ed144b0d6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;donutDirective&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+    var donutTemplate = '&lt;div class="progress-pie-chart ppc-{{randomID}}"&gt;' +
+        '&lt;div class="ppc-progress"&gt;' +
+        '&lt;div class="ppc-progress-fill"&gt;&lt;/div&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;div class="ppc-percents"&gt;' +
+        '&lt;div class="pcc-percents-wrapper"&gt;' +
+        '&lt;span ng-style="{\'font-size\':fontSize , \'font-weight\':fontWeight}"&gt;{{displayvalue}}&lt;/span&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;/div&gt;';
+
+    angular.module('donutDirective', []).directive('donutDirective', function($timeout) {
+        return {
+            restrict: 'AE',
+            // templateUrl: function (element, attrs) {
+            //     return attrs.href;
+            // },
+            template: donutTemplate,
+            scope: {
+                count: '=',
+                total: '=',
+                displayvalue: '@',
+                showValue: '=',
+                showValueAsCount: '=',
+                width: '=',
+                colorFill: '@',
+                colorBg: '@',
+                inverted: '=',
+                fontSize: '@',
+                fontWeight: '='
+            },
+            link: function(scope, element, attrs) {
+                //console.log("displayvalue " + scope.displayvalue);
+                var randomId = Math.round((Math.random() * 100000000)),
+                    percent = (scope.count / scope.total) * 100,
+                    colors = undefined;
+
+                if (scope.colorFill || scope.colorBg) {
+                    colors = {
+                        fill: scope.colorFill,
+                        bg: scope.colorBg
+                    };
+                }
+                scope.randomID = randomId;
+                /*  $timeout(function(){
+                 calculateDonut(scope.width, percent, scope.showValue,
+                 scope.showValueAsCount, scope.count, colors, scope.inverted, randomId);
+                 }, 1);*/
+
+
+                scope.$watch(function(scope) {
+                        return scope.count
+                    },
+                    function() {
+                        percent = (scope.count / scope.total) * 100;
+                        calculateDonut(scope.width, percent, scope.showValue,
+                            scope.showValueAsCount, scope.count, colors, scope.inverted, randomId, scope.displayvalue);
+                    }
+                );
+            }
+
+        };
+
+        function calculateDonut(width, percent, showValue, showValueAsCount, count, colors, inverted, id, displayvalue) {
+            var $ = jQuery,
+                ppc = $('.progress-pie-chart.ppc-' + id),
+                ppcProgress = $('.ppc-' + id + ' .ppc-progress'),
+                ppcProgressFill = $('.ppc-' + id + ' .ppc-progress-fill'),
+                ppcPercents = $('.ppc-' + id + ' .ppc-percents'),
+                deg = 360 * percent / 100,
+                fontSize = width * 20 / 55;
+
+            percent = parseInt(percent);
+            width = parseInt(width);
+
+            //Value display control - start
+            if (showValue) {
+                if (showValueAsCount)
+                    ppcPercents.find('span').html(displayvalue);
+                else
+                    ppcPercents.find('span').html(percent + '%');
+            }
+            //Value display control - end
+
+            //Invert the colors if needed
+            if (inverted) {
+                percent = 100 - percent;
+                deg = 360 * percent / 100;
+                colors = {
+                    fill: colors.bg,
+                    bg: colors.fill
+                };
+            }
+
+            if (percent &gt; 50) {
+                ppc.addClass('gt-50');
+            }
+            ppcProgressFill.css('transform', 'rotate(' + deg + 'deg)');
+
+            //Donut re-Size - start : change as per width specified
+            ppc.add(ppcProgress).add(ppcProgressFill)
+                .css({
+                    "width": width + 'px',
+                    "height": width + 'px'
+                });
+            ppcProgress.add(ppcProgressFill)
+                .css({
+                    "left": 'calc(50% - ' + width / 2 + 'px)',
+                    "top": 'calc(50% - ' + width / 2 + 'px)'
+                });
+
+            if (percent &gt; 50) {
+                $('.gt-50.ppc-' + id + ' .ppc-progress').css("clip", 'rect(0,' + width / 2 + 'px,' + width + 'px,0)');
+                $('.gt-50.ppc-' + id + ' .ppc-progress .ppc-progress-fill').css("clip", 'rect(0,' + width + 'px,' + width + 'px,' + width / 2 + 'px)');
+            } else {
+                ppcProgress.css("clip", 'rect(0,' + width + 'px,' + width + 'px,' + width / 2 + 'px)');
+                ppcProgressFill.css("clip", 'rect(0,' + width / 2 + 'px,' + width + 'px,0)');
+            }
+
+            ppcPercents.css({
+                "left": 'calc(50% - ' + (width - width / 5) / 2 + 'px)',
+                "top": 'calc(50% - ' + (width - width / 5) / 2 + 'px)',
+                "font-size": fontSize + 'px',
+                "width": function() {
+                    if (width % 10 &gt; 0)
+                        return width - width / 5 - 1;
+                    else return width - width / 5;
+                },
+                "height": function() {
+                    if (width % 10 &gt; 0)
+                        return width - width / 5 - 1;
+                    else return width - width / 5;
+                }
+            });
+            //Donut re-Sizing - end
+
+            //change colors accordingly
+            if (colors) {
+                if (percent &gt; 50) {
+                    if (colors.fill) {
+                        $('.progress-pie-chart.gt-50.ppc-' + id).css('background-color', colors.fill);
+                        ppcPercents.find('span').css('color', colors.fill);
+                    }
+                    if (colors.bg) {
+                        $('.gt-50.ppc-' + id + ' .ppc-progress .ppc-progress-fill').css('background-color', colors.bg);
+                    }
+                } else {
+                    if (colors.fill) {
+                        ppcProgressFill.css('background-color', colors.fill);
+                        ppcPercents.find('span').css('color', colors.fill);
+                    }
+                    if (colors.bg) {
+                        ppc.css('background-color', colors.bg);
+                    }
+                }
+                if (inverted) {
+                    ppcPercents.find('span').css('color', colors.bg);
+                }
+            }
+            //color change - end
+        }
+    });
+})();
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-14 23:57:37&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;25689c0113693600d15e3d7ed144b0d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;donutDirective&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_25689c0113693600d15e3d7ed144b0d6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 00:38:49&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Tab Chart Selector Snippet">80518b2d132576007e94fc5ed144b033</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-17 01:32:22</sys_created_on>
+<sys_id>c8518b2d132576007e94fc5ed144b034</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-17 01:32:22</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_4438d80113693600d15e3d7ed144b0c6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>donutDirective</module><name>donutDirective</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-14 23:56:34</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>4438d80113693600d15e3d7ed144b0c6</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_4438d80113693600d15e3d7ed144b0c6</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:20</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Tab Chart Selector Snippet">80518b2d132576007e94fc5ed144b033</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-03-17 01:32:22</sys_created_on>
+<sys_id>cc518b2d132576007e94fc5ed144b033</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-03-17 01:32:22</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
