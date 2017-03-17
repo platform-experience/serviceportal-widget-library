@@ -6,7 +6,7 @@
 
 ## Installation
 
-Installation is very simple, you can just download the update set **pe-cloud-sprawl-overview-snippet-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set **pe-cloud-sprawl-overview-snippet.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 There is one option with a sample data set.
 
