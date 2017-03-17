@@ -12,7 +12,7 @@ This widget can be used to create a simple emoji rating/feedback card.
 
 ## Installation
 
-Installation is very simple, you can just download the update set **pe-feedback-card-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set **pe-feedback-card.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 There are 3 steps for feedback, and to make the it easy for to swap messaging on each step we are providing 3 options.
 
