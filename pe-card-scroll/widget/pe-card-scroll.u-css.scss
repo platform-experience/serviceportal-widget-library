@@ -1,0 +1,108 @@
+$pe-theme-color: #1c2432 !default;
+$pe-anchor-color: #68acd8 !default;
+$pe-header-color: #fff !default;
+$pe-status-color-normal: #6ee520 !default;
+
+#security-trends {
+  h2 {
+    color: $pe-theme-color;
+    font-size: 22px;
+    font-weight: bold;
+    height: 28px;
+    margin: 0 0 10px 0;
+  }
+  a {
+    color: $pe-anchor-color;
+    cursor: pointer;
+    font-size: 11px;
+    margin: 0 0 10px 0;
+    padding-top: 6px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .status-circle {
+    border-radius: 50%;
+    content: '';
+    height: 10px;
+    margin-left: 5px;
+    position: absolute;
+    top: 9%;
+    width: 10px;
+  }
+  .status-circle-normal {
+    h4 {
+      &:after {
+        @extend .status-circle;
+        background-color: $pe-status-color-normal;
+      }
+    }
+  }
+  .status-circle-normal-small {
+    h4 {
+      &:after {
+        @extend .status-circle;
+        background-color: $pe-status-color-normal;
+        top: 14%;
+      }
+    }
+  }
+  .circle-toggle {
+    border-radius: 100px;
+    background-color: #202a3c;
+    border: solid 1px #3e6a87;
+    cursor: pointer;
+    height: 25px;
+    margin-left: 10px;
+    padding-left: 4.5px;
+    float: right;
+    width: 25px;
+    .arrow {
+      margin-top: -4px;
+    }
+  }
+  .panel {
+    border: 0;
+    color: $pe-header-color;
+    background-color: transparent;
+    .panel-heading {
+      background-color: #283347;
+      border-bottom: 0;
+      color: $pe-header-color;
+      padding: 14px;
+      text-transform: uppercase;
+    }
+    .panel-body {
+      background-color: $pe-theme-color;
+      color: $pe-header-color;
+      h4 {
+        font-size: 24px;
+        margin-top: -5px;
+      }
+      i {
+        float: left;
+        margin-top: 2px;
+      }
+      .sub-text {
+        color: $pe-anchor-color;
+        font-size: 10px;
+        margin: -5px 0 -5px 0;
+        text-transform: uppercase;
+      }
+      .status-header-small {
+        font-size: 18px !important;
+        padding-top: 6px !important;
+      }
+    }
+  }
+  .carrot-toggle {
+    height: 7px;
+    margin-bottom: 4px;
+    width: 14px;
+  }
+  .down-arrow,
+  .up-arrow {
+    height: 14px;
+    margin-right: -8px;
+    width: 24px;
+  }
+}
