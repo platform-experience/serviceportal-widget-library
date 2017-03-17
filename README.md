@@ -142,3 +142,28 @@ For instance:
 should be renamed to:
 
 `pe-highcharts-ng`
+
+
+## Folder and File Naming Convention
+
+1. Create a folder with widget name for ex: **pe-people-card**
+2. Create another folder called **widget** inside the above folder.
+3. Widget record fields should go inside **widget** folder. Fields must be named as follows
+⋅⋅* HTML->               <widget-name>.u-body-html-template.html
+⋅⋅* Client Controller->  <widget-name>.u-client-script.js
+⋅⋅* Server Script->      <widget-name>.u-server-script.js
+⋅⋅* CSS->                <widget-name>.u-css.scss
+4. UI Scripts should go inside a folder called **ui-script** , all ui scripts should be named as follows
+⋅⋅* <widget-name>-<purpose>.u-client-script.js .. some purspose examples can be **service**, **factory**, **module**
+If its a js library file, which users dont need to edit for ex: "highcart-ng", emit this **u-client-script** part in name. This will make sure we dont pull the huge library files from SNOW.
+5. Style Sheets should go inside a folder called **style-sheet** , all stylesheets should be named as follows.
+⋅⋅* <widget-name>-<purpose>.u-css.scss
+If its a css library file, which users dont need to edit for ex: "animates.css", emit this **u-css** part in name. This will make sure we dont pull the huge library files from SNOW.
+6. Angular Providers should go inside a folder called **angular-provider** , all providers should be named as follows
+⋅⋅* <widget-name>-<purpose>.u-client-script.js
+7. Angular Templates should go inside a folder called **angular-template** , all ui scripts should be named as follows
+<widget-name>-<template-id>.u-body-html-template.html
+8. Script Includes should go inside a folder called **script-include** , all these scripts should be named as follows
+⋅⋅* <widget-name>-<purpose>.u-client-script.js
+9. Update Sets must be named as follows
+⋅⋅* <widget_name>.u-update-set.xml
