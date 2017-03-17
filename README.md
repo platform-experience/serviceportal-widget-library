@@ -52,7 +52,7 @@ This a guide to be followed for widgetizing. Each section below is something we 
 
 * [Tier Overview Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-tier-overview-snippet)
 
-
+* [Tab Chart Selector Snippet](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-tab-chart-selector-snippet)
 
 ***
 
