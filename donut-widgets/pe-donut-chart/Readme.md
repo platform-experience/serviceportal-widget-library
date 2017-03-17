@@ -8,7 +8,7 @@ This widget can be used to quicly show a list of tabs, managin selection and wit
 
 ## Installation
 
-Installation is very simple, you can just download the update set **pe-donut-chart-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set **pe-donut-chart.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 There is one option and a sample data set available in the Server script resource.
 

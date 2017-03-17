@@ -8,7 +8,7 @@ This widget can be used to represent data in a simple Donut Chart.
 
 ## Installation
 
-Installation is very simple, you can just download the update set **pe-donut-chart-wizard-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set **pe-donut-chart-two.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 We are providing these options:
 
