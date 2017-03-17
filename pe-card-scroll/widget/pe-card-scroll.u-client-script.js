@@ -4,7 +4,6 @@ function CardScrollController($document, $timeout) {
   var scrollOffset = 30;
   c.toggleTrends = toggleTrends;
 
-
   c.$onInit = function() {
     c.isToggled = false;
     c.isVisible = false;

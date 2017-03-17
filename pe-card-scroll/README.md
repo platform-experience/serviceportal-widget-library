@@ -4,7 +4,7 @@
 
 ![](../images/pe-card-scroll-2.png)
 
-This widget be used to quickly craft a card that scrolls on toggle to display hidden content.
+This widget can be used to quickly craft a card that scrolls on toggle to display hidden content.
 
 ## Installation
 
