@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-10 18:51:27">
+<unload unload_date="2017-03-17 03:52:37">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -13,16 +13,16 @@
 <name>PE Donut Chart</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>df851d8713157200d15e3d7ed144b0ea</remote_sys_id>
+<remote_sys_id>50e857e51329b60083a7bd522244b029</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-10 18:51:27</sys_created_on>
-<sys_id>f40c6ae31315b200d15e3d7ed144b065</sys_id>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:36</sys_created_on>
+<sys_id>2261afed1329b60083a7bd522244b08c</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-10 18:51:27</sys_updated_on>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:36</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,143 +32,499 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_ef16387e131d3200d15e3d7ed144b045</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function DonutChartController() {
+<name>sp_js_include_cc585c0113693600d15e3d7ed144b07d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>donutDirective</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-14 23:57:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>cc585c0113693600d15e3d7ed144b07d</sys_id><sys_mod_count>3</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="donutDirective">25689c0113693600d15e3d7ed144b0d6</sys_ui_script><sys_update_name>sp_js_include_cc585c0113693600d15e3d7ed144b07d</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:40:30</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:37</sys_created_on>
+<sys_id>2261afed1329b60083a7bd522244b08e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:37</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_362c548113693600d15e3d7ed144b0c1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css"><sp_css action="INSERT_OR_UPDATE"><css>/* Donut CSS */&#13;
+&#13;
+.progress-pie-chart {&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    border-radius: 50%;&#13;
+    background-color: #E5E5E5;&#13;
+    position: relative;&#13;
+    display: inline-block;&#13;
+    cursor: pointer;&#13;
+}&#13;
+&#13;
+.progress-pie-chart.gt-50 {&#13;
+    background-color: #81CE97;&#13;
+}&#13;
+&#13;
+.ppc-progress {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 50px);&#13;
+    top: calc(50% - 50px);&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    clip: rect(0, 100px, 100px, 50px);&#13;
+}&#13;
+&#13;
+.ppc-progress .ppc-progress-fill {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 50px);&#13;
+    top: calc(50% - 50px);&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    clip: rect(0, 50px, 100px, 0);&#13;
+    background: #81CE97;&#13;
+    transform: rotate(60deg);&#13;
+}&#13;
+&#13;
+.gt-50 .ppc-progress {&#13;
+    clip: rect(0, 50px, 100px, 0);&#13;
+}&#13;
+&#13;
+.gt-50 .ppc-progress .ppc-progress-fill {&#13;
+    clip: rect(0, 100px, 100px, 50px);&#13;
+    background: #E5E5E5;&#13;
+}&#13;
+&#13;
+.ppc-percents {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 80px/2);&#13;
+    top: calc(50% - 80px/2);&#13;
+    width: 80px;&#13;
+    height: 80px;&#13;
+    background: #fff;&#13;
+    text-align: center;&#13;
+    display: table;&#13;
+}&#13;
+&#13;
+.ppc-percents span {&#13;
+    display: block;&#13;
+    font-size: inherit;&#13;
+    color: #81CE97;&#13;
+}&#13;
+&#13;
+.pcc-percents-wrapper {&#13;
+    display: table-cell;&#13;
+    vertical-align: middle;&#13;
+}</css><name>donutDirective</name><sys_class_name>sp_css</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>362c548113693600d15e3d7ed144b0c1</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_362c548113693600d15e3d7ed144b0c1</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:00</sys_updated_on></sp_css></record_update>]]></payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:36</sys_created_on>
+<sys_id>2661afed1329b60083a7bd522244b08d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:36</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>Style Sheet</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_25689c0113693600d15e3d7ed144b0d6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;donutDirective&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+    var donutTemplate = '&lt;div class="progress-pie-chart ppc-{{randomID}}"&gt;' +
+        '&lt;div class="ppc-progress"&gt;' +
+        '&lt;div class="ppc-progress-fill"&gt;&lt;/div&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;div class="ppc-percents"&gt;' +
+        '&lt;div class="pcc-percents-wrapper"&gt;' +
+        '&lt;span ng-style="{\'font-size\':fontSize , \'font-weight\':fontWeight}"&gt;{{displayvalue}}&lt;/span&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;/div&gt;';
+
+    angular.module('donutDirective', []).directive('donutDirective', function($timeout) {
+        return {
+            restrict: 'AE',
+            // templateUrl: function (element, attrs) {
+            //     return attrs.href;
+            // },
+            template: donutTemplate,
+            scope: {
+                count: '=',
+                total: '=',
+                displayvalue: '@',
+                showValue: '=',
+                showValueAsCount: '=',
+                width: '=',
+                colorFill: '@',
+                colorBg: '@',
+                inverted: '=',
+                fontSize: '@',
+                fontWeight: '='
+            },
+            link: function(scope, element, attrs) {
+                //console.log("displayvalue " + scope.displayvalue);
+                var randomId = Math.round((Math.random() * 100000000)),
+                    percent = (scope.count / scope.total) * 100,
+                    colors = undefined;
+
+                if (scope.colorFill || scope.colorBg) {
+                    colors = {
+                        fill: scope.colorFill,
+                        bg: scope.colorBg
+                    };
+                }
+                scope.randomID = randomId;
+                /*  $timeout(function(){
+                 calculateDonut(scope.width, percent, scope.showValue,
+                 scope.showValueAsCount, scope.count, colors, scope.inverted, randomId);
+                 }, 1);*/
+
+
+                scope.$watch(function(scope) {
+                        return scope.count
+                    },
+                    function() {
+                        percent = (scope.count / scope.total) * 100;
+                        calculateDonut(scope.width, percent, scope.showValue,
+                            scope.showValueAsCount, scope.count, colors, scope.inverted, randomId, scope.displayvalue);
+                    }
+                );
+            }
+
+        };
+
+        function calculateDonut(width, percent, showValue, showValueAsCount, count, colors, inverted, id, displayvalue) {
+            var $ = jQuery,
+                ppc = $('.progress-pie-chart.ppc-' + id),
+                ppcProgress = $('.ppc-' + id + ' .ppc-progress'),
+                ppcProgressFill = $('.ppc-' + id + ' .ppc-progress-fill'),
+                ppcPercents = $('.ppc-' + id + ' .ppc-percents'),
+                deg = 360 * percent / 100,
+                fontSize = width * 20 / 55;
+
+            percent = parseInt(percent);
+            width = parseInt(width);
+
+            //Value display control - start
+            if (showValue) {
+                if (showValueAsCount)
+                    ppcPercents.find('span').html(displayvalue);
+                else
+                    ppcPercents.find('span').html(percent + '%');
+            }
+            //Value display control - end
+
+            //Invert the colors if needed
+            if (inverted) {
+                percent = 100 - percent;
+                deg = 360 * percent / 100;
+                colors = {
+                    fill: colors.bg,
+                    bg: colors.fill
+                };
+            }
+
+            if (percent &gt; 50) {
+                ppc.addClass('gt-50');
+            }
+            ppcProgressFill.css('transform', 'rotate(' + deg + 'deg)');
+
+            //Donut re-Size - start : change as per width specified
+            ppc.add(ppcProgress).add(ppcProgressFill)
+                .css({
+                    "width": width + 'px',
+                    "height": width + 'px'
+                });
+            ppcProgress.add(ppcProgressFill)
+                .css({
+                    "left": 'calc(50% - ' + width / 2 + 'px)',
+                    "top": 'calc(50% - ' + width / 2 + 'px)'
+                });
+
+            if (percent &gt; 50) {
+                $('.gt-50.ppc-' + id + ' .ppc-progress').css("clip", 'rect(0,' + width / 2 + 'px,' + width + 'px,0)');
+                $('.gt-50.ppc-' + id + ' .ppc-progress .ppc-progress-fill').css("clip", 'rect(0,' + width + 'px,' + width + 'px,' + width / 2 + 'px)');
+            } else {
+                ppcProgress.css("clip", 'rect(0,' + width + 'px,' + width + 'px,' + width / 2 + 'px)');
+                ppcProgressFill.css("clip", 'rect(0,' + width / 2 + 'px,' + width + 'px,0)');
+            }
+
+            ppcPercents.css({
+                "left": 'calc(50% - ' + (width - width / 5) / 2 + 'px)',
+                "top": 'calc(50% - ' + (width - width / 5) / 2 + 'px)',
+                "font-size": fontSize + 'px',
+                "width": function() {
+                    if (width % 10 &gt; 0)
+                        return width - width / 5 - 1;
+                    else return width - width / 5;
+                },
+                "height": function() {
+                    if (width % 10 &gt; 0)
+                        return width - width / 5 - 1;
+                    else return width - width / 5;
+                }
+            });
+            //Donut re-Sizing - end
+
+            //change colors accordingly
+            if (colors) {
+                if (percent &gt; 50) {
+                    if (colors.fill) {
+                        $('.progress-pie-chart.gt-50.ppc-' + id).css('background-color', colors.fill);
+                        ppcPercents.find('span').css('color', colors.fill);
+                    }
+                    if (colors.bg) {
+                        $('.gt-50.ppc-' + id + ' .ppc-progress .ppc-progress-fill').css('background-color', colors.bg);
+                    }
+                } else {
+                    if (colors.fill) {
+                        ppcProgressFill.css('background-color', colors.fill);
+                        ppcPercents.find('span').css('color', colors.fill);
+                    }
+                    if (colors.bg) {
+                        ppc.css('background-color', colors.bg);
+                    }
+                }
+                if (inverted) {
+                    ppcPercents.find('span').css('color', colors.bg);
+                }
+            }
+            //color change - end
+        }
+    });
+})();
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-14 23:57:37&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;25689c0113693600d15e3d7ed144b0d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;donutDirective&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_25689c0113693600d15e3d7ed144b0d6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 00:38:49&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:37</sys_created_on>
+<sys_id>6261a3211369b60083a7bd522244b04c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:37</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_e7de9f2d1329b60083a7bd522244b064</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="donutDirective">4438d80113693600d15e3d7ed144b0c6</sp_dependency><sp_widget display_value="PE Donut Chart Wizard">0bc1804513293600d15e3d7ed144b0f2</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-03-17 03:41:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e7de9f2d1329b60083a7bd522244b064</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.PE Donut Chart Wizard</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_e7de9f2d1329b60083a7bd522244b064</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-03-17 03:41:50</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:36</sys_created_on>
+<sys_id>6261afed1329b60083a7bd522244b08d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:36</sys_updated_on>
+<table/>
+<target_name>donutDirective.PE Donut Chart Wizard</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_4438d80113693600d15e3d7ed144b0c6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>donutDirective</module><name>donutDirective</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-14 23:56:34</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>4438d80113693600d15e3d7ed144b0c6</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_4438d80113693600d15e3d7ed144b0c6</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:20</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:36</sys_created_on>
+<sys_id>6e61afed1329b60083a7bd522244b08d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:36</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_bf3c14c113693600d15e3d7ed144b09b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>donutDirective</name><source>local</source><sp_css display_value="donutDirective">362c548113693600d15e3d7ed144b0c1</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bf3c14c113693600d15e3d7ed144b09b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_bf3c14c113693600d15e3d7ed144b09b</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:00</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:36</sys_created_on>
+<sys_id>aa61afed1329b60083a7bd522244b08d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:36</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_0bc1804513293600d15e3d7ed144b0f2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;async&gt;false&lt;/async&gt;&lt;client_script&gt;&lt;![CDATA[function DonutChartWizard() {
   /* widget controller */
   var c = this;
+/*  c.data.donutData = {
+    'label': '1/5',
+    'current': 1,
+    'total': 5
+  };*/
 
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.donut-chart-container {
-  position: relative;
-  align-content: center;
-  text-align: center;
-  vertical-align: middle;
-}
+/*  c.change = function(current, total){
+    c.data.donutData.current = current;
+    c.data.donutData.total = total;
+    c.data.donutData.label = current + '/' + total;
+  };*/
 
-svg {
-  transform: rotate(-90deg);
-}
-
-.icon-container {
-  position: absolute;
-  left: 67px;
-  top: 63px;
-}
-
-.circle_animation {
-  stroke-dasharray: 68.36;
-  stroke-dashoffset: 68.36;
-}
-
-
-.donut-chart-common {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.donut-chart-bg .circle_animation {
-  -webkit-animation: donut-chart-bg 1s ease-out forwards;
-  animation: donut-chart-bg 1s ease-out forwards;
-}
-
-.donut-chart-1 .circle_animation {
-  -webkit-animation: donut-chart-1 1s ease-out forwards;
-  animation: donut-chart-1 1s ease-out forwards;
-}
-
-@keyframes donut-chart-bg {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes donut-chart-1 {
-  to {
-    stroke-dashoffset: 50;
-  }
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-donut-chart&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Donut Chart&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","default_value":"Donut chart","label":"Title","type":"string"},{"name":"show_title","default_value":"false","label":"Show Title","type":"boolean"},{"name":"show_icon","default_value":"false","label":"Show Icon","type":"string"},{"name":"active_color","default_value":"#7eacf7","label":"Active Color","type":"string"},{"name":"background_color","default_value":"#e6e8ed","label":"Background Color","type":"string"},{"name":"fa_icon","default_value":"fa fa-tachometer fa-2x","label":"Font Awesome Icon","type":"string"},{"name":"border_width","default_value":"16","label":"Border Width","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.div-center {
+    text-align: center;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-donut-chart&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Donut Chart&lt;/name&gt;&lt;option_schema&gt;[{"name":"chart_data","default_value":"{    \"label\":\"1/5\",    \"current\":1,    \"total\":5 }","label":"Chart Data","type":"json","mandatory":true},{"name":"primary_color","default_value":"#4286f4","label":"Color","type":"string"},{"name":"background_color","default_value":"#c2d1e8","label":"Background Color","type":"string"},{"name":"chart_width","default_value":"80","label":"Width","type":"string"},{"name":"font_size","default_value":"24px","label":"Font Size","type":"string"},{"name":"font_weight","default_value":"800","label":"Font Weight","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-    var getBoolValue = function(inputVal, optionVal) {
-
-    if (inputVal === null || inputVal === "" || inputVal === undefined) {
-      return (optionVal === 'true');
-    } else {
-      return (inputVal === 'true');
-    }
-  };
-
-
-  data.title = input.title || options.title;
-/*  data.percentage = input.percentage || options.percentage;
-  data.percentage = parseInt(data.percentage);
-  data.percentage = (data.percentage*200)/100;*/
-
-  data.active_color = input.active_color || options.active_color;
+  data.primary_color = input.primary_color || options.primary_color;
   data.background_color = input.background_color || options.background_color;
-  data.fa_icon = input.fa_icon || options.fa_icon;
-
-  data.show_title = getBoolValue(input.show_title, options.show_title);
-  data.show_icon = getBoolValue(input.show_icon, options.show_icon);
-  //data.border_width = input.border_width || options.border_width;
-  data.border_width = 12;
-  data.height = 34;
-  data.width = 34;
-
-  data.r = 0;
-  data.cx = 0;
-  data.cy = 0;
-
-  data.r = (data.width*32)/100;
-  data.cx = data.width/2;
-  data.cy = data.height/2;
+  data.chart_width = input.chart_width || options.chart_width;
+  data.font_size = input.font_size || options.font_size;
+  data.font_weight = input.font_weight || options.font_weight;
+  data.chart_data = input.chart_data || options.chart_data;
+  data.chart_data = JSON.parse(data.chart_data);
 
 
-
-
-
-
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 02:21:20&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ef16387e131d3200d15e3d7ed144b045&lt;/sys_id&gt;&lt;sys_mod_count&gt;256&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Donut Chart&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ef16387e131d3200d15e3d7ed144b045&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-10 18:50:51&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
-  &lt;div ng-show="c.data.data.show_title"&gt;
-    &lt;h3&gt;{{c.data.title}}&lt;/h3&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-14 22:19:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0bc1804513293600d15e3d7ed144b0f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;85&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Donut Chart&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0bc1804513293600d15e3d7ed144b0f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-17 03:49:27&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="container-fluid"&gt;
+  &lt;div class="row div-center"&gt;
+  &lt;donut-directive data-count="data.chart_data.current"
+  data-displayvalue="{{data.chart_data.label}}"
+  data-total="data.chart_data.total"
+    data-show-value="true"
+    data-show-value-as-count="true"
+    data-width="data.chart_width"
+    data-font-size="{{data.font_size}}"
+    data-font-weight="data.font_weight"
+    data-color-fill="{{data.primary_color}}"
+    data-color-bg="{{data.background_color}}"
+    href="donutTemplate"&gt;
+  &lt;/donut-directive&gt;
   &lt;/div&gt;
-  &lt;div class="donut-chart-container"&gt;
-    &lt;div class="donut-chart-common donut-chart-bg"&gt;
-      &lt;svg ng-style="
-    {'height':c.data.height, 'width': c.data.width}"&gt;
-        &lt;g&gt;
-          &lt;circle id="circle-base" class="circle_animation" ng-attr-r='{{c.data.r}}' ng-attr-cy='{{c.data.cy}}' ng-attr-cx='{{c.data.cx}}' stroke-width="{{c.data.border_width}}"
-            stroke="{{c.data.background_color}}" fill="none" /&gt;
-        &lt;/g&gt;
-      &lt;/svg&gt;
-    &lt;/div&gt;
-    &lt;div id="chart-1" class="donut-chart-common donut-chart-1"&gt;
-      &lt;!--ng-class='{"stroke-dashoffset": 25}'--&gt;
-      &lt;svg ng-style="
-    {'height':c.data.height, 'width': c.data.width}"&gt;
-        &lt;g&gt;
-          &lt;circle id="circle" class="circle_animation" ng-attr-r="{{c.data.r}}" ng-attr-cy="{{c.data.cy}}" ng-attr-cx="{{c.data.cx}}" stroke-width="{{c.data.border_width}}"
-            stroke="{{c.data.active_color}}" fill="none" /&gt;
-        &lt;/g&gt;
-      &lt;/svg&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="icon-container" ng-show="c.data.show_icon"&gt;
-    &lt;i class="{{c.data.fa_icon}}" aria-hidden="true"&gt;&lt;/i&gt;
-  &lt;/div&gt;
+  &lt;!--&lt;div class="row div-center"&gt;&lt;button class="btn btn-primary" ng-click="c.change(3,5)"&gt;Change Value&lt;/button&gt;&lt;/div&gt;--&gt;
+
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Donut Chart">f40c6ae31315b200d15e3d7ed144b065</remote_update_set>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-10 18:51:27</sys_created_on>
-<sys_id>bc0c6ae31315b200d15e3d7ed144b065</sys_id>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:37</sys_created_on>
+<sys_id>ae61a3211369b60083a7bd522244b04b</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-10 18:51:27</sys_updated_on>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:37</sys_updated_on>
 <table/>
 <target_name>PE Donut Chart</target_name>
 <type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_0f4f5b6d1329b60083a7bd522244b027</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="donutDirective">4438d80113693600d15e3d7ed144b0c6</sp_dependency><sp_js_include display_value="donutDirective">cc585c0113693600d15e3d7ed144b07d</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-03-17 03:43:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>0f4f5b6d1329b60083a7bd522244b027</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_0f4f5b6d1329b60083a7bd522244b027</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-03-17 03:43:33</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:36</sys_created_on>
+<sys_id>ae61afed1329b60083a7bd522244b08c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:36</sys_updated_on>
+<table/>
+<target_name>donutDirective.donutDirective</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_774c54c113693600d15e3d7ed144b0da</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>donutDirective</name><source>local</source><sp_css display_value="donutDirective">362c548113693600d15e3d7ed144b0c1</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:48</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>774c54c113693600d15e3d7ed144b0da</sys_id><sys_mod_count>4</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_774c54c113693600d15e3d7ed144b0da</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:52</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:36</sys_created_on>
+<sys_id>e661afed1329b60083a7bd522244b08d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:36</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_css_include_0f8fdb6d1329b60083a7bd522244b021</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="donutDirective">774c54c113693600d15e3d7ed144b0da</sp_css_include><sp_dependency display_value="donutDirective">4438d80113693600d15e3d7ed144b0c6</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-03-17 03:44:46</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>0f8fdb6d1329b60083a7bd522244b021</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_0f8fdb6d1329b60083a7bd522244b021</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-03-17 03:44:46</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+<remote_update_set display_value="PE Donut Chart">2261afed1329b60083a7bd522244b08c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-03-17 03:52:36</sys_created_on>
+<sys_id>ea61afed1329b60083a7bd522244b08c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-03-17 03:52:36</sys_updated_on>
+<table/>
+<target_name>donutDirective.donutDirective</target_name>
+<type>Dependency CSS Includes</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
