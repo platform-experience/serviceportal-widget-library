@@ -6,7 +6,7 @@ This snippet can be used to quickly obtain a card containing sub sections with d
 
 ## Installation
 
-Installation is very simple, you can just download the update set **pe-summary-data-snippet-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set **pe-cloud-sprawl-vm-summary-snippet.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 **Important note: This widget makes use of [pe-donut-chart-wizard](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Charts/pe-donut-chart-wizard) to display user avatar, name and title, this widget is already part of the update set.
 
