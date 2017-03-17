@@ -149,13 +149,14 @@ should be renamed to:
 1. Create a folder with widget name for ex: **pe-people-card**
 2. Create another folder called **widget** inside the above folder.
 3. Widget record fields should go inside **widget** folder. Fields must be named as follows
-⋅⋅* HTML->               <widget-name>.u-body-html-template.html.
 
-⋅⋅* Client Controller->  <widget-name>.u-client-script.js
+* HTML->               <widget-name>.u-body-html-template.html.
 
-⋅⋅* Server Script->      <widget-name>.u-server-script.js
+* Client Controller->  <widget-name>.u-client-script.js
 
-⋅⋅* CSS->                <widget-name>.u-css.scss
+* Server Script->      <widget-name>.u-server-script.js
+
+* CSS->                <widget-name>.u-css.scss
 
 4. UI Scripts should go inside a folder called **ui-script** , all ui scripts should be named as follows
 ⋅⋅* <widget-name>-<purpose>.u-client-script.js .. some purspose examples can be **service**, **factory**, **module**
