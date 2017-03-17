@@ -6,7 +6,7 @@ This widget can be used to quickly generate a carousel with table slides and are
 
 ## Installation
 
-Installation is very simple, you can just download the update set "pe-task-carousel-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set "pe-task-carousel.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 ## Sass Variables
 

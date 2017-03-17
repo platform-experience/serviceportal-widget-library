@@ -8,7 +8,7 @@ This widget can be used to quickly craft a status card with configurable options
 
 ## Installation
 
-Installation is very simple, you can just download the update set "pe-status-card-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set "pe-status-card.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 ## Configuration
 
