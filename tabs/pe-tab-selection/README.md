@@ -1,8 +1,8 @@
 ## Synopsis: Tab Selection Widget
 
-![](../images/pe-tab-selection-1.png)
+![](../../images/pe-tab-selection-1.png)
 
-![](../images/pe-tab-selection-2.png)
+![](../../images/pe-tab-selection-2.png)
 
 This can be used to quickly craft a tab selection widget with an option.
 

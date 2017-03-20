@@ -1,6 +1,6 @@
 ## Synopsis: Dynamic Tabs Widget
 
-![alt text](../images/pe-dynamic-tabs-widget.png "Tier Overview")
+![alt text](../../images/pe-dynamic-tabs-widget.png "Tier Overview")
 
 ***
 
