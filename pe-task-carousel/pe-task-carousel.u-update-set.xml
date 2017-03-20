@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-13 22:31:43">
+<unload unload_date="2017-03-20 21:09:53">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,23 +10,45 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE Task Carousel Merge</name>
+<name>PE Task Carousel Updated</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>271afa6cdba1b200b793f2b6ae961915</remote_sys_id>
+<remote_sys_id>8af622f2dba5360062e479daae9619e3</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-13 22:31:43</sys_created_on>
-<sys_id>e83bfe6cdba1b200b793f2b6ae96192c</sys_id>
+<sys_created_on>2017-03-20 21:09:52</sys_created_on>
+<sys_id>4e9bea76dba5360062e479daae961925</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-13 22:31:43</sys_updated_on>
+<sys_updated_on>2017-03-20 21:09:52</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
 </sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_cfd29ee8db61b200b793f2b6ae961979</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>angular-touch</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-13 19:35:38</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>cfd29ee8db61b200b793f2b6ae961979</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-touch</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="angular-touch">d7b11ae8db61b200b793f2b6ae96194f</sys_ui_script><sys_update_name>sp_js_include_cfd29ee8db61b200b793f2b6ae961979</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-13 19:35:38</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Task Carousel Updated">4e9bea76dba5360062e479daae961925</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-20 21:09:52</sys_created_on>
+<sys_id>029bea76dba5360062e479daae961926</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-20 21:09:52</sys_updated_on>
+<table/>
+<target_name>angular-touch</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
 <sys_update_xml action="INSERT_OR_UPDATE">
 <action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
@@ -58,14 +80,14 @@ PESparkline.prototype = {
 
     type: 'PESparkline'
 };]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-10 16:09:02&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;91a60627db517200b793f2b6ae9619d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PESparkline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_91a60627db517200b793f2b6ae9619d2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-10 16:15:41&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Task Carousel Merge">e83bfe6cdba1b200b793f2b6ae96192c</remote_update_set>
+<remote_update_set display_value="PE Task Carousel Updated">4e9bea76dba5360062e479daae961925</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-13 22:31:43</sys_created_on>
-<sys_id>203bfe6cdba1b200b793f2b6ae96192d</sys_id>
+<sys_created_on>2017-03-20 21:09:52</sys_created_on>
+<sys_id>069bea76dba5360062e479daae961926</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-13 22:31:43</sys_updated_on>
+<sys_updated_on>2017-03-20 21:09:52</sys_updated_on>
 <table/>
 <target_name>PESparkline</target_name>
 <type>Script Include</type>
@@ -78,19 +100,92 @@ PESparkline.prototype = {
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_widget_dependency_e415b22cdba1b200b793f2b6ae961900</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="angular-touch">2b621ee8db61b200b793f2b6ae96190b</sp_dependency><sp_widget display_value="PE Task Carousel">149cc253db5d3200b793f2b6ae9619a4</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-13 22:04:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e415b22cdba1b200b793f2b6ae961900</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-touch.PE Task Carousel</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_e415b22cdba1b200b793f2b6ae961900</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-13 22:04:57</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Task Carousel Merge">e83bfe6cdba1b200b793f2b6ae96192c</remote_update_set>
+<name>sp_ng_template_2af9a236dba5360062e479daae96198d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;pe-task-carousel-svgs&lt;/id&gt;&lt;sp_widget display_value="PE Task Carousel"&gt;149cc253db5d3200b793f2b6ae9619a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-20 21:03:21&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;2af9a236dba5360062e479daae96198d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-task-carousel-svgs&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_2af9a236dba5360062e479daae96198d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-20 21:03:21&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+  &lt;symbol id="left-arrow"&gt;
+    &lt;svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+      &lt;title&gt;arrow circle left 6.3.3.1 copy@3x&lt;/title&gt;
+      &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+      &lt;defs&gt;&lt;/defs&gt;
+      &lt;g id="Security---SKO-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"&gt;
+        &lt;g id="1.0.2b---Task-Orchestration---Containment-Collapsed" transform="translate(-108.000000, -143.000000)" stroke-width="0.800000012"
+          stroke="#FFFFFF"&gt;
+          &lt;g id="Group-2" transform="translate(93.000000, 131.000000)"&gt;
+            &lt;g id="arrow-circle-left-6.3.3.1-copy" transform="translate(19.000000, 19.000000) rotate(-180.000000) translate(-19.000000, -19.000000) translate(15.000000, 12.000000)"&gt;
+              &lt;polyline id="Shape" points="0.729166667 13.5492424 7.46941667 7.0040303 0.729166667 0.450757576"&gt;&lt;/polyline&gt;
+            &lt;/g&gt;
+          &lt;/g&gt;
+        &lt;/g&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/symbol&gt;
+&lt;/svg&gt;
+&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+  &lt;symbol id="right-arrow"&gt;
+    &lt;svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+      &lt;title&gt;arrow circle right 6.3.3.1@3x&lt;/title&gt;
+      &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+      &lt;defs&gt;&lt;/defs&gt;
+      &lt;g id="Security---SKO-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"&gt;
+        &lt;g id="1.0.2b---Task-Orchestration---Containment-Collapsed" transform="translate(-260.000000, -143.000000)" stroke-width="0.800000012"
+          stroke="#FFFFFF"&gt;
+          &lt;g id="Group" transform="translate(245.000000, 131.000000)"&gt;
+            &lt;g id="arrow-circle-right-6.3.3.1" transform="translate(15.000000, 12.000000)"&gt;
+              &lt;polyline id="Shape" points="0.729166667 13.5492424 7.46941667 7.0040303 0.729166667 0.450757576"&gt;&lt;/polyline&gt;
+            &lt;/g&gt;
+          &lt;/g&gt;
+        &lt;/g&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/symbol&gt;
+&lt;/svg&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Task Carousel Updated">4e9bea76dba5360062e479daae961925</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-13 22:31:43</sys_created_on>
-<sys_id>6c3bfe6cdba1b200b793f2b6ae96192c</sys_id>
+<sys_created_on>2017-03-20 21:09:52</sys_created_on>
+<sys_id>429bea76dba5360062e479daae961926</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-13 22:31:43</sys_updated_on>
+<sys_updated_on>2017-03-20 21:09:52</sys_updated_on>
 <table/>
-<target_name>angular-touch.PE Task Carousel</target_name>
-<type>Widget Dependency</type>
+<target_name>pe-task-carousel-svgs</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_d7b11ae8db61b200b793f2b6ae96194f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;angular-touch&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
+ AngularJS v1.6.2
+ (c) 2010-2017 Google, Inc. http://angularjs.org
+ License: MIT
+*/
+(function(x,n){'use strict';function s(f,k){var e=!1,a=!1;this.ngClickOverrideEnabled=function(b){return n.isDefined(b)?(b&amp;&amp;!a&amp;&amp;(a=!0,t.$$moduleName="ngTouch",k.directive("ngClick",t),f.decorator("ngClickDirective",["$delegate",function(a){if(e)a.shift();else for(var b=a.length-1;0&lt;=b;){if("ngTouch"===a[b].$$moduleName){a.splice(b,1);break}b--}return a}])),e=b,this):e};this.$get=function(){return{ngClickOverrideEnabled:function(){return e}}}}function v(f,k,e){p.directive(f,["$parse","$swipe",function(a,
+b){return function(l,u,g){function h(c){if(!d)return!1;var a=Math.abs(c.y-d.y);c=(c.x-d.x)*k;return r&amp;&amp;75&gt;a&amp;&amp;0&lt;c&amp;&amp;30&lt;c&amp;&amp;.3&gt;a/c}var m=a(g[f]),d,r,c=["touch"];n.isDefined(g.ngSwipeDisableMouse)||c.push("mouse");b.bind(u,{start:function(c,a){d=c;r=!0},cancel:function(c){r=!1},end:function(c,d){h(c)&amp;&amp;l.$apply(function(){u.triggerHandler(e);m(l,{$event:d})})}},c)}}])}var p=n.module("ngTouch",[]);p.provider("$touch",s);s.$inject=["$provide","$compileProvider"];p.factory("$swipe",[function(){function f(a){a=
+a.originalEvent||a;var b=a.touches&amp;&amp;a.touches.length?a.touches:[a];a=a.changedTouches&amp;&amp;a.changedTouches[0]||b[0];return{x:a.clientX,y:a.clientY}}function k(a,b){var l=[];n.forEach(a,function(a){(a=e[a][b])&amp;&amp;l.push(a)});return l.join(" ")}var e={mouse:{start:"mousedown",move:"mousemove",end:"mouseup"},touch:{start:"touchstart",move:"touchmove",end:"touchend",cancel:"touchcancel"},pointer:{start:"pointerdown",move:"pointermove",end:"pointerup",cancel:"pointercancel"}};return{bind:function(a,b,l){var e,
+g,h,m,d=!1;l=l||["mouse","touch","pointer"];a.on(k(l,"start"),function(c){h=f(c);d=!0;g=e=0;m=h;b.start&amp;&amp;b.start(h,c)});var r=k(l,"cancel");if(r)a.on(r,function(c){d=!1;b.cancel&amp;&amp;b.cancel(c)});a.on(k(l,"move"),function(c){if(d&amp;&amp;h){var a=f(c);e+=Math.abs(a.x-m.x);g+=Math.abs(a.y-m.y);m=a;10&gt;e&amp;&amp;10&gt;g||(g&gt;e?(d=!1,b.cancel&amp;&amp;b.cancel(c)):(c.preventDefault(),b.move&amp;&amp;b.move(a,c)))}});a.on(k(l,"end"),function(c){d&amp;&amp;(d=!1,b.end&amp;&amp;b.end(f(c),c))})}}}]);var t=["$parse","$timeout","$rootElement",function(f,k,e){function a(a,
+d,b){for(var c=0;c&lt;a.length;c+=2){var g=a[c+1],e=b;if(25&gt;Math.abs(a[c]-d)&amp;&amp;25&gt;Math.abs(g-e))return a.splice(c,c+2),!0}return!1}function b(b){if(!(2500&lt;Date.now()-u)){var d=b.touches&amp;&amp;b.touches.length?b.touches:[b],e=d[0].clientX,d=d[0].clientY;if(!(1&gt;e&amp;&amp;1&gt;d||h&amp;&amp;h[0]===e&amp;&amp;h[1]===d)){h&amp;&amp;(h=null);var c=b.target;"label"===n.lowercase(c.nodeName||c[0]&amp;&amp;c[0].nodeName)&amp;&amp;(h=[e,d]);a(g,e,d)||(b.stopPropagation(),b.preventDefault(),b.target&amp;&amp;b.target.blur&amp;&amp;b.target.blur())}}}function l(a){a=a.touches&amp;&amp;a.touches.length?
+a.touches:[a];var b=a[0].clientX,e=a[0].clientY;g.push(b,e);k(function(){for(var a=0;a&lt;g.length;a+=2)if(g[a]===b&amp;&amp;g[a+1]===e){g.splice(a,a+2);break}},2500,!1)}var u,g,h;return function(h,d,k){var c=f(k.ngClick),w=!1,q,p,s,t;d.on("touchstart",function(a){w=!0;q=a.target?a.target:a.srcElement;3===q.nodeType&amp;&amp;(q=q.parentNode);d.addClass("ng-click-active");p=Date.now();a=a.originalEvent||a;a=(a.touches&amp;&amp;a.touches.length?a.touches:[a])[0];s=a.clientX;t=a.clientY});d.on("touchcancel",function(a){w=!1;d.removeClass("ng-click-active")});
+d.on("touchend",function(c){var h=Date.now()-p,f=c.originalEvent||c,m=(f.changedTouches&amp;&amp;f.changedTouches.length?f.changedTouches:f.touches&amp;&amp;f.touches.length?f.touches:[f])[0],f=m.clientX,m=m.clientY,v=Math.sqrt(Math.pow(f-s,2)+Math.pow(m-t,2));w&amp;&amp;750&gt;h&amp;&amp;12&gt;v&amp;&amp;(g||(e[0].addEventListener("click",b,!0),e[0].addEventListener("touchstart",l,!0),g=[]),u=Date.now(),a(g,f,m),q&amp;&amp;q.blur(),n.isDefined(k.disabled)&amp;&amp;!1!==k.disabled||d.triggerHandler("click",[c]));w=!1;d.removeClass("ng-click-active")});d.onclick=
+function(a){};d.on("click",function(a,b){h.$apply(function(){c(h,{$event:b||a})})});d.on("mousedown",function(a){d.addClass("ng-click-active")});d.on("mousemove mouseup",function(a){d.removeClass("ng-click-active")})}}];v("ngSwipeLeft",-1,"swipeleft");v("ngSwipeRight",1,"swiperight")})(window,window.angular);
+//# sourceMappingURL=angular-touch.min.js.map
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-13 19:30:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;d7b11ae8db61b200b793f2b6ae96194f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;angular-touch&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_d7b11ae8db61b200b793f2b6ae96194f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-13 19:30:49&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Task Carousel Updated">4e9bea76dba5360062e479daae961925</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-20 21:09:52</sys_created_on>
+<sys_id>469bea76dba5360062e479daae961926</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-20 21:09:52</sys_updated_on>
+<table/>
+<target_name>angular-touch</target_name>
+<type>UI Script</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -241,45 +336,7 @@ $pe-dark-theme: #1c2432 !default;&amp;#13;
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-task-carousel&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Task Carousel&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 21:56:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;149cc253db5d3200b793f2b6ae9619a4&lt;/sys_id&gt;&lt;sys_mod_count&gt;41&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Task Carousel&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_149cc253db5d3200b793f2b6ae9619a4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-13 22:04:12&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
-  &lt;symbol id="left-arrow"&gt;
-    &lt;svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
-      &lt;title&gt;arrow circle left 6.3.3.1 copy@3x&lt;/title&gt;
-      &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
-      &lt;defs&gt;&lt;/defs&gt;
-      &lt;g id="Security---SKO-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"&gt;
-        &lt;g id="1.0.2b---Task-Orchestration---Containment-Collapsed" transform="translate(-108.000000, -143.000000)" stroke-width="0.800000012"
-          stroke="#FFFFFF"&gt;
-          &lt;g id="Group-2" transform="translate(93.000000, 131.000000)"&gt;
-            &lt;g id="arrow-circle-left-6.3.3.1-copy" transform="translate(19.000000, 19.000000) rotate(-180.000000) translate(-19.000000, -19.000000) translate(15.000000, 12.000000)"&gt;
-              &lt;polyline id="Shape" points="0.729166667 13.5492424 7.46941667 7.0040303 0.729166667 0.450757576"&gt;&lt;/polyline&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-      &lt;/g&gt;
-    &lt;/svg&gt;
-  &lt;/symbol&gt;
-&lt;/svg&gt;
-&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
-  &lt;symbol id="right-arrow"&gt;
-    &lt;svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
-      &lt;title&gt;arrow circle right 6.3.3.1@3x&lt;/title&gt;
-      &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
-      &lt;defs&gt;&lt;/defs&gt;
-      &lt;g id="Security---SKO-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"&gt;
-        &lt;g id="1.0.2b---Task-Orchestration---Containment-Collapsed" transform="translate(-260.000000, -143.000000)" stroke-width="0.800000012"
-          stroke="#FFFFFF"&gt;
-          &lt;g id="Group" transform="translate(245.000000, 131.000000)"&gt;
-            &lt;g id="arrow-circle-right-6.3.3.1" transform="translate(15.000000, 12.000000)"&gt;
-              &lt;polyline id="Shape" points="0.729166667 13.5492424 7.46941667 7.0040303 0.729166667 0.450757576"&gt;&lt;/polyline&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-      &lt;/g&gt;
-    &lt;/svg&gt;
-  &lt;/symbol&gt;
-&lt;/svg&gt;
-
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 21:56:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;149cc253db5d3200b793f2b6ae9619a4&lt;/sys_id&gt;&lt;sys_mod_count&gt;42&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Task Carousel&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_149cc253db5d3200b793f2b6ae9619a4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-20 21:04:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-include="'pe-task-carousel-svgs'"&gt;&lt;/div&gt;
 &lt;div class="row task-carousel"&gt;
   &lt;div class="col-xs-12" ng-swipe-left="c.nextPhase()" ng-swipe-right="c.prevPhase()"&gt;
     &lt;div id="taskCarousel" class="carousel slide" data-ride="carousel"&gt;
@@ -531,14 +588,14 @@ $pe-dark-theme: #1c2432 !default;&amp;#13;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Task Carousel Merge">e83bfe6cdba1b200b793f2b6ae96192c</remote_update_set>
+<remote_update_set display_value="PE Task Carousel Updated">4e9bea76dba5360062e479daae961925</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-13 22:31:43</sys_created_on>
-<sys_id>ac3bfe6cdba1b200b793f2b6ae96192c</sys_id>
+<sys_created_on>2017-03-20 21:09:52</sys_created_on>
+<sys_id>829bea76dba5360062e479daae961926</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-13 22:31:43</sys_updated_on>
+<sys_updated_on>2017-03-20 21:09:52</sys_updated_on>
 <table/>
 <target_name>PE Task Carousel</target_name>
 <type>Widget</type>
@@ -619,17 +676,39 @@ $pe-dark-theme: #1c2432 !default;&amp;#13;
     }
   };
 })();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 23:40:16&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ab44aa5bdb5d3200b793f2b6ae961973&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Sparkline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ab44aa5bdb5d3200b793f2b6ae961973&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-10 16:20:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;sp-widget widget="c.myAreaChart"&gt;&lt;/sp-widget&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Task Carousel Merge">e83bfe6cdba1b200b793f2b6ae96192c</remote_update_set>
+<remote_update_set display_value="PE Task Carousel Updated">4e9bea76dba5360062e479daae961925</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-13 22:31:43</sys_created_on>
-<sys_id>ec3bfe6cdba1b200b793f2b6ae96192c</sys_id>
+<sys_created_on>2017-03-20 21:09:52</sys_created_on>
+<sys_id>c29bea76dba5360062e479daae961926</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-13 22:31:43</sys_updated_on>
+<sys_updated_on>2017-03-20 21:09:52</sys_updated_on>
 <table/>
 <target_name>PE Sparkline</target_name>
 <type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_2b621ee8db61b200b793f2b6ae96190b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>ngTouch</module><name>angular-touch</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-13 19:34:03</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2b621ee8db61b200b793f2b6ae96190b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-touch</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_2b621ee8db61b200b793f2b6ae96190b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-13 19:34:03</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Task Carousel Updated">4e9bea76dba5360062e479daae961925</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-20 21:09:52</sys_created_on>
+<sys_id>ce9bea76dba5360062e479daae961925</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-20 21:09:52</sys_updated_on>
+<table/>
+<target_name>angular-touch</target_name>
+<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
