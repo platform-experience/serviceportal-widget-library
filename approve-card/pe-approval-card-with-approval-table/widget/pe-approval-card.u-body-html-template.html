@@ -1,0 +1,29 @@
+<div class="encloser">
+  <div class="actual-card">
+    <div class="padd-it">
+      <div class="heading">
+        <p>{{::c.data.widget.title}}</p>
+      </div>
+      <div class="details">
+        <div class="each-div">
+          <sp-widget widget="c.data.embedded_widget"></sp-widget>
+        </div>
+        <div class="purpose each-div">
+          <i class="{{c.data.widget.icon}} purpose-icon" aria-hidden="true"></i>
+          <p>{{::c.data.widget.purpose}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="each-button approve-button" ng-click="">
+        <p>Accept</p>
+      </div>
+      <div class="each-button reject-button" ng-click="">
+        <p>Decline</p>
+      </div>
+      <div class="each-button view-button last-button" ng-click="">
+        <p>View</p>
+      </div>
+    </div>
+  </div>
+</div>
