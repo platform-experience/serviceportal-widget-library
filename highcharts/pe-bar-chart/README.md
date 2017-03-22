@@ -11,4 +11,5 @@ Installation is very simple, you can just download the update set "pe-contact-sl
 
 ## Configuration
 
-This is a update for joe
+This is a update for joe.
+He says it will work this time
