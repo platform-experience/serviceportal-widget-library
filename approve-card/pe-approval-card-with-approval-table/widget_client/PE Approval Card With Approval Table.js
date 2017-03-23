@@ -14,7 +14,7 @@ function ApprovalCardController(spUtil) {
   };
 
   c.data.user_info = {
-    user_sys_id: "9ec35b8713453a007e94fc5ed144b09a",
+    user_sys_id: c.data.task.assigned_to.value,
     show_only_picture: false,
     show_job_title: true,
     show_call_and_chat: false
