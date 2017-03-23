@@ -1,7 +1,7 @@
 (function () {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-  var task_sysid = options.task_record;
+  var task_sysid = options.task_record || input.task_record;
   var taskGr = new GlideRecord('sc_task');
   if (!taskGr.get(task_sysid)) {
     return
