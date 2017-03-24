@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-16 23:15:49">
+<unload unload_date="2017-03-24 00:09:35">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE Approval Card</name>
+<name>approval cards updated</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>2cafd22d13e176007e94fc5ed144b08c</remote_sys_id>
+<remote_sys_id>bb7072f3db65f600ad01f9361d96197e</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 23:15:49</sys_created_on>
-<sys_id>330262ad13e176007e94fc5ed144b0a6</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-24 00:09:35</sys_created_on>
+<sys_id>b3713af3db65f600ad01f9361d9619e0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 23:15:49</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-24 00:09:35</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,30 +33,55 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_de98a0ae130db600d15e3d7ed144b08f</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ApprovalCardController(spUtil) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ApprovalCardController(spUtil, $scope) {
   var c = this;
 
-  c.data.widget = {
-    title: c.options.title,
-    purpose: c.options.purpose,
-    icon: c.options.icon
+  c.approve = approve;
+  c.reject = reject;
+  c.view = view;
+
+  c.$onInit = function () {
+    c.data.widget = {
+      title: c.options.title,
+      purpose: c.options.purpose,
+      icon: c.options.icon
+    };
+
+    c.data.user_info = {
+      user_sys_id: c.options.user || '9ec35b8713453a007e94fc5ed144b09a',
+      show_only_picture: false,
+      show_job_title: true,
+      show_call_and_chat: false
+    };
+    /*Inject People info widget here*/
+    spUtil.get('pe-people-info', {
+      user_sys_id: c.data.user_info.user_sys_id,
+      show_job_title: c.data.user_info.show_job_title,
+      show_call_and_chat: c.data.user_info.show_call_and_chat,
+      show_only_picture: c.data.user_info.show_only_picture
+    }).then(function (response) {
+      c.data.embedded_widget = response;
+    });
+
+
+    $scope.$on('card-update', function (event, param) {
+      c.hideActions = true;
+    })
+
   };
 
-  c.data.user_info = {
-    user_sys_id: "9ec35b8713453a007e94fc5ed144b09a",
-    show_only_picture: false,
-    show_job_title: true,
-    show_call_and_chat: false
-  };
+  function approve() {
+    $scope.$emit('cart-solved', {card: c, status: 'approve'});
+  }
 
-  spUtil.get('pe-people-info', {
-    user_sys_id: c.data.user_info.user_sys_id,
-    show_job_title: c.data.user_info.show_job_title,
-    show_call_and_chat: c.data.user_info.show_call_and_chat,
-    show_only_picture: c.data.user_info.show_only_picture
-  }).then(function(response) {
-    c.data.embedded_widget = response;
-  });
+  function reject() {
+    $scope.$emit('cart-solved', {card: c, status: 'reject'});
+  }
+
+  function view() {
+    $scope.$emit('cart-view', {card: c});
+  }
+
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-brand-success : #5cb85c !default;&amp;#13;
 $pe-brand-warning : #f0ad4e !default;&amp;#13;
 $pe-brand-danger : #d9534f !default;&amp;#13;
@@ -136,10 +161,12 @@ $pe-brand-info : #5bc0de !default;&amp;#13;
       }&amp;#13;
     }&amp;#13;
   }&amp;#13;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Approval card widget, another widget called "pe-people-info" is embedded inside this widget&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-approval-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Approval Card&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","default_value":"Destination Services","label":"Title","type":"string"},{"name":"purpose","default_value":"Relocation Package","label":"Purpose","type":"string"},{"name":"icon","default_value":"fa fa-bell fa-2x","label":"Icon","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-22 20:34:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;de98a0ae130db600d15e3d7ed144b08f&lt;/sys_id&gt;&lt;sys_mod_count&gt;129&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Approval Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_de98a0ae130db600d15e3d7ed144b08f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-16 22:59:28&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="encloser"&gt;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Approval card widget, another widget called "pe-people-info" is embedded inside this widget&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-approval-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Approval Card&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","default_value":"Destination Services","label":"Title","type":"string"},{"name":"purpose","default_value":"Relocation Package","label":"Purpose","type":"string"},{"name":"icon","default_value":"fa fa-bell fa-2x","label":"Icon","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  options.title = input.title || options.title;
+  options.purpose =  input.purpose || options.purpose;
+  options.icon = input.icon || options.icon;
+  options.user = input.user;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-22 20:34:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;de98a0ae130db600d15e3d7ed144b08f&lt;/sys_id&gt;&lt;sys_mod_count&gt;146&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Approval Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_de98a0ae130db600d15e3d7ed144b08f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-24 00:02:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="encloser"&gt;
   &lt;div class="actual-card"&gt;
     &lt;div class="padd-it"&gt;
       &lt;div class="heading"&gt;
@@ -155,27 +182,30 @@ $pe-brand-info : #5bc0de !default;&amp;#13;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="buttons"&gt;
-      &lt;div class="each-button approve-button" ng-click=""&gt;
+
+    &lt;div class="buttons" ng-hide="c.hideActions"&gt;
+
+      &lt;div class="each-button approve-button" ng-click="c.approve();"&gt;
         &lt;p&gt;Accept&lt;/p&gt;
       &lt;/div&gt;
-      &lt;div class="each-button reject-button" ng-click=""&gt;
+      &lt;div class="each-button reject-button" ng-click="c.reject();"&gt;
         &lt;p&gt;Decline&lt;/p&gt;
       &lt;/div&gt;
-      &lt;div class="each-button view-button last-button" ng-click=""&gt;
+      &lt;div class="each-button view-button last-button" ng-click="c.view();"&gt;
         &lt;p&gt;View&lt;/p&gt;
       &lt;/div&gt;
+
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Approval Card">330262ad13e176007e94fc5ed144b0a6</remote_update_set>
+<remote_update_set display_value="approval cards updated">b3713af3db65f600ad01f9361d9619e0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 23:15:49</sys_created_on>
-<sys_id>3f0262ad13e176007e94fc5ed144b0a6</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-24 00:09:35</sys_created_on>
+<sys_id>37713af3db65f600ad01f9361d9619e1</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 23:15:49</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-24 00:09:35</sys_updated_on>
 <table/>
 <target_name>PE Approval Card</target_name>
 <type>Widget</type>
@@ -263,7 +293,7 @@ $pe-brand-info : #5bc0de !default;&amp;#13;
     }
   }
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;People Info widget for displaying user avatar, name, titile with call/chat functionality.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-people-info&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE People Info&lt;/name&gt;&lt;option_schema&gt;[{"name":"user_sys_id","default_value":"9ec35b8713453a007e94fc5ed144b09a","label":"User Sys ID","type":"string"},{"name":"show_only_picture","default_value":"false","label":"Show Only Picture","type":"boolean"},{"name":"show_job_title","default_value":"true","label":"Show Job Title","type":"boolean"},{"name":"show_call_and_chat","default_value":"false","label":"Show Call and Chat","type":"boolean"},{"name":"show_text_below_picture","default_value":"false","label":"Show Text Below Picture","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
-  data.user_sys_id = options.user_sys_id || input.user_sys_id;
+  data.user_sys_id = input.user_sys_id || options.user_sys_id;
 
   var getBoolValue = function (inputVal, optionVal) {
     if (inputVal === null || inputVal === "" || inputVal === undefined) {
@@ -281,6 +311,7 @@ $pe-brand-info : #5bc0de !default;&amp;#13;
     }
   };
 
+
   var userGR = new GlideRecord('sys_user');
   if (userGR.get(data.user_sys_id)) {
     data.user_first_name = userGR.getDisplayValue('first_name');
@@ -297,7 +328,7 @@ $pe-brand-info : #5bc0de !default;&amp;#13;
   data.show_call_and_chat = getBoolValue(input.show_call_and_chat, options.show_call_and_chat);
   data.show_text_below_picture = getBoolValue(input.show_text_below_picture, options.show_text_below_picture);
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-22 22:35:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;11f38daa134db600d15e3d7ed144b0fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;214&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE People Info&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_11f38daa134db600d15e3d7ed144b0fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-16 23:02:48&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="media people-card-media" ng-style="data.show_text_below_picture == true ? { 'padding-bottom':'2px' } : { 'padding-bottom':'10px' }"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-22 22:35:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;11f38daa134db600d15e3d7ed144b0fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;224&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE People Info&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_11f38daa134db600d15e3d7ed144b0fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-24 00:09:09&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="media people-card-media" ng-style="data.show_text_below_picture == true ? { 'padding-bottom':'2px' } : { 'padding-bottom':'10px' }"&gt;
   &lt;div class="media-left"&gt;
     &lt;div class="person-photo"&gt;
       &lt;img ng-if="data.user_photo" class="media-object list__photo img-circle" ng-src="{{data.user_photo}}"&gt;
@@ -324,14 +355,14 @@ $pe-brand-info : #5bc0de !default;&amp;#13;
     &lt;h4 class="title"&gt;{{::data.user_full_name}}&lt;/h4&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Approval Card">330262ad13e176007e94fc5ed144b0a6</remote_update_set>
+<remote_update_set display_value="approval cards updated">b3713af3db65f600ad01f9361d9619e0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 23:15:49</sys_created_on>
-<sys_id>7b0262ad13e176007e94fc5ed144b0a6</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-24 00:09:35</sys_created_on>
+<sys_id>73713af3db65f600ad01f9361d9619e1</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 23:15:49</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-24 00:09:35</sys_updated_on>
 <table/>
 <target_name>PE People Info</target_name>
 <type>Widget</type>
@@ -346,39 +377,17 @@ $pe-brand-info : #5bc0de !default;&amp;#13;
 <comments/>
 <name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-people-info-launch-connect</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:14:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7a1a978813dd7a007e94fc5ed144b0fd</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-people-info-launch-connect-ui-script">9ff4d7c413dd7a007e94fc5ed144b0e7</sys_ui_script><sys_update_name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:57</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Approval Card">330262ad13e176007e94fc5ed144b0a6</remote_update_set>
+<remote_update_set display_value="approval cards updated">b3713af3db65f600ad01f9361d9619e0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 23:15:49</sys_created_on>
-<sys_id>b70262ad13e176007e94fc5ed144b0a6</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-24 00:09:35</sys_created_on>
+<sys_id>bf713af3db65f600ad01f9361d9619e0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 23:15:49</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-24 00:09:35</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch-connect</target_name>
 <type>JS Include</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-people-info-launch-connect</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:13:54</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c3f9578813dd7a007e94fc5ed144b0c7</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:41</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Approval Card">330262ad13e176007e94fc5ed144b0a6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 23:15:49</sys_created_on>
-<sys_id>f30262ad13e176007e94fc5ed144b0a6</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 23:15:49</sys_updated_on>
-<table/>
-<target_name>pe-people-info-launch-connect</target_name>
-<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -415,17 +424,39 @@ $pe-brand-info : #5bc0de !default;&amp;#13;
     }
 }
 ]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 00:55:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9ff4d7c413dd7a007e94fc5ed144b0e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-people-info-launch-connect-ui-script&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_9ff4d7c413dd7a007e94fc5ed144b0e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 19:10:59&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Approval Card">330262ad13e176007e94fc5ed144b0a6</remote_update_set>
+<remote_update_set display_value="approval cards updated">b3713af3db65f600ad01f9361d9619e0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 23:15:49</sys_created_on>
-<sys_id>ff0262ad13e176007e94fc5ed144b0a6</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-24 00:09:35</sys_created_on>
+<sys_id>f7713af3db65f600ad01f9361d9619e1</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 23:15:49</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-24 00:09:35</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch-connect-ui-script</target_name>
 <type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-people-info-launch-connect</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:13:54</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c3f9578813dd7a007e94fc5ed144b0c7</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:41</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="approval cards updated">b3713af3db65f600ad01f9361d9619e0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-03-24 00:09:35</sys_created_on>
+<sys_id>fb713af3db65f600ad01f9361d9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-03-24 00:09:35</sys_updated_on>
+<table/>
+<target_name>pe-people-info-launch-connect</target_name>
+<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
