@@ -7,7 +7,7 @@ This is used to create a simple Area Chart, Or a Area Spline Chart. This uses th
 
 ## Installation
 
-Installation is very simple, you can just download the update set "pe-highcharts-area-chart-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set "pe-area-chart.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 ## Configuration
 We provide some options to configure the widget.
