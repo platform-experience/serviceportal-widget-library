@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-15 21:35:00">
+<unload unload_date="2017-03-28 23:16:50">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE Cloud Sprawl Overview</name>
+<name>pe-cloud-sprawl-info-with-user-snippet</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>e2f0cddd13217600d15e3d7ed144b01a</remote_sys_id>
+<remote_sys_id>3234542d13353200d15e3d7ed144b050</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 21:35:00</sys_created_on>
-<sys_id>2161091113617600d15e3d7ed144b091</sys_id>
+<sys_created_on>2017-03-28 23:16:50</sys_created_on>
+<sys_id>f355dc2d13353200d15e3d7ed144b049</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 21:35:00</sys_updated_on>
+<sys_updated_on>2017-03-28 23:16:50</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,309 +32,326 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_78c2645113217600d15e3d7ed144b0b9</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function CloudSprawlOverview() {
+<name>sp_widget_b349c71513f532007e94fc5ed144b08f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function InfoUserSnippet($scope) {
   /* widget controller */
   var c = this;
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.search {
-    position: relative;
-    .search-bar {
-        input {
-            height: 62px;
-            border: 0px;
-            padding: 20px;
-            font-size: 24px;
-            box-shadow: none;
-            border-bottom: 1px solid #ddd;
-            border-radius: 0px;
-        }
-    }
-    .fa-search {
-        position: absolute;
-        top: 18px;
-        right: 15px;
-    }
-}
 
-.diff-services {
-    background: #f1f1f1;
-}
+  $scope.getinitials = function (user) {
 
-.each-service {
-    background: #fff;
-    margin-top: 10px;
-    padding: 20px;
-    font-weight: normal;
-    &amp;amp;.ng-enter {
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-        margin-left: 100%;
-        width: 100%;
+    var initials = "";
+    if (user &amp;&amp; !user.photo) {
+      if (!user.first_name || !user.last_name) {
+        initials = angular.uppercase(user.name.charAt(0));
+      } else {
+        initials = angular.uppercase(user.first_name.charAt(0));
+        initials = initials + angular.uppercase(user.last_name.charAt(0));
+      }
+
     }
-    &amp;amp;.ng-enter-active {
-        margin-left: 0;
-    }
-    &amp;amp;.ng-leave {
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-        margin-left: 0;
-        width: 100%;
-    }
-    &amp;amp;.ng-leave-active {
-        margin-left: 100%;
-    }
-    .green-color {
-        color: #2abd68 !important;
-    }
-    .red-color {
-        color: #ff4000 !important;
+    return initials;
+  };
+
+
+  c.second_tab = {
+    name: "expiring lease",
+    badge_number: 5,
+    badge_color: "bg-orange",
+    list: [{
+      icon: "#icon-azure",
+      company: "Azure",
+      lease: "Jan 5 2017",
+      vimnumber: "VM1",
+      vim_number: "",
+      user: {
+        fname: "edward",
+        lname: "scott",
+        name: "Edward Scott",
+        photo: "47161dae1358fe00f7f5bcc32244b03c.iix",
+        title: "IT Manager",
+        phone: "8581234567"
+
+      }
+    }, {
+
+      icon: "#icon-aws",
+      company: "AWS",
+      lease: "Feb 5 2017",
+      vimnumber: "VM23",
+      vim_number: "",
+      user: {
+        fname: "Andrew",
+        lname: "Garner",
+        name: "Jose Riley",
+        photo: "90f8d5621398fe00f7f5bcc32244b00b.iix",
+        title: "Application Manager",
+        phone: "8581234567"
+
+      }
+    }, {
+
+      icon: "#icon-aws",
+      company: "AWS",
+      lease: "Feb 5 2017",
+      vimnumber: "VM13",
+      vim_number: "",
+      user: {
+        fname: "jose",
+        lname: "riley",
+        name: "Jose Riley",
+        photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
+        title: "Application Manager",
+        phone: "8581234567"
+
+      }
+    }, {
+
+      icon: "#icon-aws",
+      company: "AWS",
+      lease: "Feb 25 2017",
+      vimnumber: "VM4",
+      vim_number: "",
+      user: {
+        fname: "greg",
+        lname: "hill",
+        name: "Greg Hill",
+        photo: "743a51a21398fe00f7f5bcc32244b067.iix",
+        title: "Application Manager",
+        phone: "8581234567"
+
+      }
+    }, {
+
+      icon: "#icon-aws",
+      company: "AWS",
+      lease: "Feb 35 2017",
+      vimnumber: "VM5",
+      vim_number: "",
+      user: {
+        fname: "David",
+        lname: "Hoffman",
+        name: "David Hoffman",
+        photo: "22d959621398fe00f7f5bcc32244b0d2.iix",
+        title: "Application Manager",
+        phone: "8581234567"
+
+      }
+    }, {
+
+      icon: "#icon-aws",
+      company: "AWS",
+      lease: "Feb 45 2017",
+      vimnumber: "VM6",
+      vim_number: "",
+      user: {
+        fname: "Gary",
+        lname: "Kim",
+        name: "Gary Kim",
+        photo: "61ba9d621398fe00f7f5bcc32244b023.iix",
+        title: "Application Manager",
+        phone: "8581234567"
+      }
+    }, {
+
+      icon: "#icon-azure",
+      company: "Azure",
+      lease: "Feb 5 2017",
+      vimnumber: "VM17",
+      vim_number: "",
+      user: {
+        fname: "edward",
+        lname: "scott",
+        name: "Edward Scott",
+        photo: "47161dae1358fe00f7f5bcc32244b03c.iix",
+        title: "IT Manager",
+        phone: "8581234567"
+
+      }
+    }, {
+
+      icon: "#icon-azure",
+      company: "Azure",
+      lease: "Feb 5 2017",
+      vimnumber: "VM18",
+      vim_number: "",
+      user: {
+        fname: "edward",
+        lname: "scott",
+        name: "Edward Scott",
+        photo: "47161dae1358fe00f7f5bcc32244b03c.iix",
+        title: "IT Manager",
+        phone: "8581234567"
+
+      }
+    }, {
+
+      icon: "#icon-vmware",
+      company: "VMW",
+      lease: "Feb 5 2017",
+      vimnumber: "VM39",
+      vim_number: "",
+      user: {
+        fname: "jose",
+        lname: "riley",
+        name: "Jose Riley",
+        photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
+        title: "Application Manager",
+        phone: "8581234567"
+
+      }
+    }, {
+
+      icon: "#icon-vmware",
+      company: "VMW",
+      lease: "Feb 5 2017",
+      vimnumber: "VM10",
+      vim_number: "",
+      user: {
+        fname: "jose",
+        lname: "riley",
+        name: "Jose Riley",
+        photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
+        title: "Application Manager",
+        phone: "8581234567"
+
+      }
+    }]
+  };
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.second-tab-details {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .flex-it {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .svg-icon {
+      height: 23px;
+      width: 27px;
+      fill: #9C9C9C;
     }
     p {
-        margin-bottom: 0px;
+      margin-left: 5px;
+      margin-bottom: 0px;
     }
-    .title-stuff {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        .service-title {
-            .title {
-                font-size: 20px;
-                font-weight: normal;
-            }
-            .sub-title {
-                font-size: 14px;
-                font-weight: normal;
-                color: #909090;
-                text-transform: uppercase;
-            }
-        }
-        .percent-like {
-            //display: flex;
-            //justify-content: space-between;
-            //align-items: baseline;
-            text-align: center;
-            font-size: 20px;
-            font-weight: normal;
-            .uptime {
-                color: #909090;
-                font-size: 14px;
-            }
-            .fa {
-                font-size: 1em;
-                margin-right: 10px;
-            }
-        }
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  .vm-num {
+    .big-text {
+      font-size: 20px;
+      color: #595959;
     }
-    .progress {
-        height: 36px;
-        position: relative;
-        .progress-bar {
-            background-color: #2abd68;
-        }
-        span {
-            position: absolute;
-            left: 5px;
-            top: 9px;
-            color: #fff;
-            font-size: 14px;
-        }
-        p {
-            position: absolute;
-            right: 6px;
-            top: 8px;
-            font-size: 14px;
-        }
+    .small-text {
+      font-size: 13px;
+      color: #909090;
     }
-    .last-row {
-        display: flex;
-        justify-content: space-between;
-        p.left-most,
-        p.center {
-            font-size: 20px;
-            color: #0099ff;
-        }
-        .left-most {
-            color: #23bd61 !important;
-        }
-        .right-most {
-            display: flex;
-            align-items: center;
-            p {
-                font-size: 20px;
-            }
-            i {
-                font-size: 20px;
-                margin-right: 5px;
-            }
-        }
+  }
+  .lease {
+    .lease-head {
+      text-transform: uppercase;
     }
-}
+    .big-text {
+      font-size: 20px;
+      color: #595959;
+    }
+    .small-text {
+      font-size: 13px;
+      color: #909090;
+    }
+  }
 
-.provider-switcher {
-    //padding: 10px;
-    background: $theme-swicther-bg;
-    color: $theme-switcher-textcolor;
-    &amp;amp;:after {
-        content: " ";
-        display: block;
-        clear: both;
+  .people-card-media {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+    margin: 0px;
+    width: initial;
+    .flex-it-align-top {
+      display: flex;
+      justify-content: space-between;
     }
-    .scroll-wrapper {
-        width: 100%;
-        white-space: nowrap;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-        // Toggle this depending upon whether you want to see the scrollbar
-        &amp;amp;::-webkit-scrollbar {
-            display: none;
-        }
-        .inner-wrapper {
-            min-width: 500px;
-            &amp;amp;:after {
-                content: " ";
-                display: block;
-                clear: both;
-            }
-        }
+    .media-left {
+      //  width: 60px;
+      .list__photo {
+        width: 35px;
+        height: 35px;
+      }
+      .initials-badge {
+        min-width: 36px;
+        float: left;
+        margin-top: 0px;
+        border-radius: 50%;
+        line-height: 1;
+        font-size: 14px;
+        margin-left: 0px;
+        padding: 10px 10px;
+        font-weight: 300;
+        background: #AEB2B3;
+      }
     }
-    .heading {
-        margin: 0;
-        text-align: center;
-        padding: 10px;
-    }
-    .border-none {
-        border: 0px !important;
-    }
-    .provider-filters {
-        .all-filter {
-            width: 120px;
-            float: left;
-            font-size: 18px;
-            padding: 14px;
-            background: #373737;
-            color: #9c9c9c;
-            //border-right: 1px solid #fff;
-        }
-        .each-filter {
-            padding: 10px;
-            width: 120px;
-            height: 53px;
-            font-size: 18px;
-            float: left;
-            display: flex;
-            color: #9c9c9c;
-            align-items: center;
-            justify-content: space-around;
-            background: #373737;
-            //border-right: 1px solid #fff;
-            .provider-logos {
-                height: 27px;
-            }
-        }
-    }
-}
-
-.svg-icon {
-    height: 23px;
-    width: 27px;
-    fill: #9C9C9C;
-}
-
-.active {
-    background: #4d4d4d !important;
-    color: #fff !important;
-}
-
-.aws-color {
-    .svg-icon {
-        fill: orange;
-    }
-}
-
-.azure-color {
-    .svg-icon {
-        fill: #32A6DC;
-    }
-}
-
-.vm-svg-icon {
-    height: 14px;
-    width: 80px;
-    fill: #9C9C9C;
-}
-
-.vm-color {
-    .vm-svg-icon {
-        fill: #fff;
-    }
-}
-
-.providers-div {
-    background: #d7d7d7;
-}
-&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-cloud-sprawl-overview-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Sprawl Overview Snippet&lt;/name&gt;&lt;option_schema&gt;[{"name":"card_data","default_value":"{ \"title\": \"RetailPOS\", \"sluged\": \"retail_pos\", \"sub_title\": \"Marketing\", \"right_percent\": \"98%\", \"type\": \"aws\", \"thumbs\": \"up\", \"progress\": \"60%\", \"bottom_dollor\": \"$12,100\", \"right_attn_count\": \"3\", \"right_attn_color\": \"red\" }","label":"Card Data","type":"json","mandatory":true}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-cloud-sprawl-info-with-user-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Sprawl Info With User Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-  data.card_data = input.card_data || options.card_data;
-  data.card_data = JSON.parse(data.card_data);
 
-  if (data.isJson(data.card_data) === false) {
-    data.card_data = JSON.parse(data.card_data);
-  };
+  /* e.g., how to extract current logged user info sample */
+  data.user_sys_id = gs.getUserID();
+  var userGR = new GlideRecord('sys_user');
+  if (userGR.get(data.user_sys_id)) {
+    data.user_first_name = userGR.getDisplayValue('first_name');
+    data.user_last_name = userGR.getDisplayValue('last_name');
+    data.user_full_name = userGR.getDisplayValue('name');
+    data.user_job_title = userGR.getDisplayValue('title');
+    data.user_photo = userGR.getDisplayValue('photo');
+    data.user_phone = userGR.phone.toString().replace(/[- )(]/g, '');
+    data.user_initials = data.user_first_name.charAt(0) + data.user_last_name.charAt(0);
+  }
 
-  data.isJson = function (str) {
-    try {
-      JSON.parse(str);
-    } catch (e) {
-      return false;
-    }
-    return true;
-  };
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-28 17:45:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b349c71513f532007e94fc5ed144b08f&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Sprawl Info With User Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b349c71513f532007e94fc5ed144b08f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-28 18:17:04&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="second-tab-details" ng-repeat="each in c.second_tab.list" ng-class-even="'light-grey-bg'"&gt;
+  &lt;div class="vm-num"&gt;
+    &lt;p class="big-text"&gt;{{each.vimnumber}}&lt;/p&gt;
+    &lt;p class="small-text"&gt;{{each.vim_number}}&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="lease"&gt;
+    &lt;p class="lease-head"&gt;created on&lt;/p&gt;
+    &lt;p class="small-text"&gt;{{each.lease}}&lt;/p&gt;
+  &lt;/div&gt;
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-15 19:21:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;78c2645113217600d15e3d7ed144b0b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Sprawl Overview Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_78c2645113217600d15e3d7ed144b0b9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 21:34:13&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="diff-services "&gt;
-  &lt;div class="each-service"&gt;
-    &lt;div class="title-stuff"&gt;
-      &lt;div class="service-title"&gt;
-        &lt;p class="title "&gt;
-          {{::data.card_data.title}}
-        &lt;/p&gt;
-        &lt;p class="sub-title"&gt;
-          {{::data.card_data.sub_title}}
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class="percent-like" ng-class="{'green-color': data.card_data.thumbs == 'up', 'red-color': data.card_data.thumbs == 'down'}"&gt;
-        &lt;p class="uptime"&gt;UPTIME&lt;/p&gt;
-        &lt;p&gt;99%&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress"&gt;
-      &lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="{'width': data.card_data.progress}"&gt;
-
-      &lt;/div&gt;
-      &lt;span&gt;UTILIZATION RATE&lt;/span&gt;
-      &lt;p&gt;{{::data.card_data.progress}}&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="last-row"&gt;
-      &lt;p class="left-most"&gt;{{::data.card_data.bottom_dollor}}&lt;/p&gt;
-      &lt;p class="center"&gt;4&lt;/p&gt;
-      &lt;div class="right-most" ng-class="{'red-color':data.card_data.right_attn_color == 'red', 'green-color':data.card_data.right_attn_color == 'green'}"&gt;
-        &lt;p&gt;{{::data.card_data.right_attn_count}}&lt;/p&gt;
+  &lt;div class="media people-card-media"&gt;
+    &lt;div class="media-left "&gt;
+      &lt;div class="person-photo "&gt;
+        &lt;img ng-if="each.user.photo" class="media-object list__photo img-circle ng-scope" ng-src="{{data.user_photo}}"&gt;
+        &lt;div ng-if="!each.user.photo " class="badge initials-badge" data-original-title="" title=""&gt;
+          &lt;span class="" ng-bind="getinitials(each.user)"&gt;&lt;/span&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
   &lt;/div&gt;
+  &lt;div class="flex-it"&gt;
+    &lt;svg ng-class="{'vmwwidth': each.company == 'VMW'}" class="svg-icon"&gt;
+      &lt;use xlink:href='{{each.icon}}'&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;p ng-if="each.company != 'VMW'"&gt;{{each.company}}&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Cloud Sprawl Overview">2161091113617600d15e3d7ed144b091</remote_update_set>
+<remote_update_set display_value="pe-cloud-sprawl-info-with-user-snippet">f355dc2d13353200d15e3d7ed144b049</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 21:35:00</sys_created_on>
-<sys_id>e561091113617600d15e3d7ed144b091</sys_id>
+<sys_created_on>2017-03-28 23:16:50</sys_created_on>
+<sys_id>b755dc2d13353200d15e3d7ed144b049</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 21:35:00</sys_updated_on>
+<sys_updated_on>2017-03-28 23:16:50</sys_updated_on>
 <table/>
-<target_name>PE Cloud Sprawl Overview Snippet</target_name>
+<target_name>PE Cloud Sprawl Info With User Snippet</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-15 21:35:00">
+<unload unload_date="2017-03-28 22:56:18">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE Cloud Sprawl Overview</name>
+<name>pe-cloud-sprawl-info-snippet</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>e2f0cddd13217600d15e3d7ed144b01a</remote_sys_id>
+<remote_sys_id>253098a913353200d15e3d7ed144b011</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 21:35:00</sys_created_on>
-<sys_id>2161091113617600d15e3d7ed144b091</sys_id>
+<sys_created_on>2017-03-28 22:56:18</sys_created_on>
+<sys_id>3ea05ca913353200d15e3d7ed144b0df</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 21:35:00</sys_updated_on>
+<sys_updated_on>2017-03-28 22:56:18</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,309 +32,137 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_78c2645113217600d15e3d7ed144b0b9</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function CloudSprawlOverview() {
+<name>sp_widget_1e650f5113f532007e94fc5ed144b0c9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function InfoSnippet() {
   /* widget controller */
   var c = this;
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.search {
-    position: relative;
-    .search-bar {
-        input {
-            height: 62px;
-            border: 0px;
-            padding: 20px;
-            font-size: 24px;
-            box-shadow: none;
-            border-bottom: 1px solid #ddd;
-            border-radius: 0px;
-        }
-    }
-    .fa-search {
-        position: absolute;
-        top: 18px;
-        right: 15px;
-    }
-}
 
-.diff-services {
-    background: #f1f1f1;
-}
 
-.each-service {
-    background: #fff;
-    margin-top: 10px;
-    padding: 20px;
-    font-weight: normal;
-    &amp;amp;.ng-enter {
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-        margin-left: 100%;
-        width: 100%;
+  c.userOne = {
+    fname: "jose",
+    lname: "riley",
+    name: "Jose Riley",
+    photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
+    title: "Application Manager",
+    phone: "8581234567",
+
+    spending: [
+
+      {
+        text: "$8K this month",
+        icon: "#icon-aws",
+        company: "AWS"
+      }, {
+        text: "$22K this month",
+        icon: "#icon-azure",
+        company: "Azure"
+      }
+    ]
+  };
+
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.spending-foruser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f3f3f3;
+  .left-text {
+    font-size: 20px;
+    color: #595959;
+    p {
+      margin-bottom: 0px;
     }
-    &amp;amp;.ng-enter-active {
-        margin-left: 0;
-    }
-    &amp;amp;.ng-leave {
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-        margin-left: 0;
-        width: 100%;
-    }
-    &amp;amp;.ng-leave-active {
-        margin-left: 100%;
-    }
-    .green-color {
-        color: #2abd68 !important;
-    }
-    .red-color {
-        color: #ff4000 !important;
+  }
+  .right-text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #9c9c9c;
+    .svg-icon {
+      height: 23px;
+      width: 27px;
+      fill: #9C9C9C;
     }
     p {
-        margin-bottom: 0px;
+      margin-left: 5px;
+      margin-bottom: 0px;
     }
-    .title-stuff {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        .service-title {
-            .title {
-                font-size: 20px;
-                font-weight: normal;
-            }
-            .sub-title {
-                font-size: 14px;
-                font-weight: normal;
-                color: #909090;
-                text-transform: uppercase;
-            }
-        }
-        .percent-like {
-            //display: flex;
-            //justify-content: space-between;
-            //align-items: baseline;
-            text-align: center;
-            font-size: 20px;
-            font-weight: normal;
-            .uptime {
-                color: #909090;
-                font-size: 14px;
-            }
-            .fa {
-                font-size: 1em;
-                margin-right: 10px;
-            }
-        }
-    }
-    .progress {
-        height: 36px;
-        position: relative;
-        .progress-bar {
-            background-color: #2abd68;
-        }
-        span {
-            position: absolute;
-            left: 5px;
-            top: 9px;
-            color: #fff;
-            font-size: 14px;
-        }
-        p {
-            position: absolute;
-            right: 6px;
-            top: 8px;
-            font-size: 14px;
-        }
-    }
-    .last-row {
-        display: flex;
-        justify-content: space-between;
-        p.left-most,
-        p.center {
-            font-size: 20px;
-            color: #0099ff;
-        }
-        .left-most {
-            color: #23bd61 !important;
-        }
-        .right-most {
-            display: flex;
-            align-items: center;
-            p {
-                font-size: 20px;
-            }
-            i {
-                font-size: 20px;
-                margin-right: 5px;
-            }
-        }
-    }
-}
-
-.provider-switcher {
-    //padding: 10px;
-    background: $theme-swicther-bg;
-    color: $theme-switcher-textcolor;
-    &amp;amp;:after {
-        content: " ";
-        display: block;
-        clear: both;
-    }
-    .scroll-wrapper {
-        width: 100%;
-        white-space: nowrap;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-        // Toggle this depending upon whether you want to see the scrollbar
-        &amp;amp;::-webkit-scrollbar {
-            display: none;
-        }
-        .inner-wrapper {
-            min-width: 500px;
-            &amp;amp;:after {
-                content: " ";
-                display: block;
-                clear: both;
-            }
-        }
-    }
-    .heading {
-        margin: 0;
-        text-align: center;
-        padding: 10px;
-    }
-    .border-none {
-        border: 0px !important;
-    }
-    .provider-filters {
-        .all-filter {
-            width: 120px;
-            float: left;
-            font-size: 18px;
-            padding: 14px;
-            background: #373737;
-            color: #9c9c9c;
-            //border-right: 1px solid #fff;
-        }
-        .each-filter {
-            padding: 10px;
-            width: 120px;
-            height: 53px;
-            font-size: 18px;
-            float: left;
-            display: flex;
-            color: #9c9c9c;
-            align-items: center;
-            justify-content: space-around;
-            background: #373737;
-            //border-right: 1px solid #fff;
-            .provider-logos {
-                height: 27px;
-            }
-        }
-    }
-}
-
-.svg-icon {
-    height: 23px;
-    width: 27px;
-    fill: #9C9C9C;
-}
-
-.active {
-    background: #4d4d4d !important;
-    color: #fff !important;
-}
-
-.aws-color {
-    .svg-icon {
-        fill: orange;
-    }
-}
-
-.azure-color {
-    .svg-icon {
-        fill: #32A6DC;
-    }
-}
-
-.vm-svg-icon {
-    height: 14px;
-    width: 80px;
-    fill: #9C9C9C;
-}
-
-.vm-color {
-    .vm-svg-icon {
-        fill: #fff;
-    }
-}
-
-.providers-div {
-    background: #d7d7d7;
-}
-&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-cloud-sprawl-overview-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Sprawl Overview Snippet&lt;/name&gt;&lt;option_schema&gt;[{"name":"card_data","default_value":"{ \"title\": \"RetailPOS\", \"sluged\": \"retail_pos\", \"sub_title\": \"Marketing\", \"right_percent\": \"98%\", \"type\": \"aws\", \"thumbs\": \"up\", \"progress\": \"60%\", \"bottom_dollor\": \"$12,100\", \"right_attn_count\": \"3\", \"right_attn_color\": \"red\" }","label":"Card Data","type":"json","mandatory":true}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-cloud-sprawl-info-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Sprawl Info Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-  data.card_data = input.card_data || options.card_data;
-  data.card_data = JSON.parse(data.card_data);
 
-  if (data.isJson(data.card_data) === false) {
-    data.card_data = JSON.parse(data.card_data);
-  };
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-28 17:28:21&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;1e650f5113f532007e94fc5ed144b0c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Sprawl Info Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_1e650f5113f532007e94fc5ed144b0c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-28 17:40:45&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
 
-  data.isJson = function (str) {
-    try {
-      JSON.parse(str);
-    } catch (e) {
-      return false;
-    }
-    return true;
-  };
+        &lt;symbol id="icon-azure" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+            &lt;g id="Page-1"&gt;
+                &lt;g id="1.0-Home-Dashboard---All-Providers" transform="translate(-259.000000, -91.000000)"&gt;
+                    &lt;g id="Azure-Windows" transform="translate(259.000000, 91.000000)"&gt;
+                        &lt;polygon id="Fill-1" points="22.4150943 0 9.96226415 1.70692087 9.96226415 10.7924528 22.4150943 10.7924528"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-2" points="0 2.9814456 0 10.7924528 9.54716981 10.7924528 9.54716981 1.66037736"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-3" points="9.96226415 11.2075472 9.96226415 20.2927819 22.4150943 22 22.4150943 11.2075472"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-4" points="0 11.2075472 0 19.0182292 9.54716981 20.3396226 9.54716981 11.2075472"&gt;&lt;/polygon&gt;
+                    &lt;/g&gt;
+                &lt;/g&gt;
+            &lt;/g&gt;
+        &lt;/symbol&gt;
+        &lt;symbol id="icon-aws" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+            &lt;g id="Page-1"&gt;
+                &lt;g id="1.0-Home-Dashboard---All-Providers" transform="translate(-154.000000, -90.000000)"&gt;
+                    &lt;g id="AWS" transform="translate(154.000000, 90.000000)"&gt;
+                        &lt;polygon id="Fill-1" points="6.6969 21.9822 12.3219 24.0002 12.3219 15.6532 6.6969 13.7372"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-2" points="13.3533 15.6534 13.3533 24.0004 18.9783 21.9824 18.9783 13.7374"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-3" points="7.2751 13.1206 12.9681 11.5176 18.2471 13.2206 12.9681 15.0126"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-4" points="0 10.464 5.625 12.482 5.625 4.136 0 2.219"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-5" points="6.6565 12.4819 12.2815 10.4639 12.2815 2.2189 6.6565 4.1359"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-6" points="6.2712 -0.0003 0.5792 1.6027 6.2712 3.4947 11.5502 1.7027"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-7" points="18.7507 12.4819 13.1257 10.4639 13.1257 2.2189 18.7507 4.1359"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-8" points="19.782 4.1361 19.782 12.4821 25.407 10.4641 25.407 2.2191"&gt;&lt;/polygon&gt;
+                        &lt;polygon id="Fill-9" points="19.3959 -0.0003 13.7029 1.6027 19.3959 3.4947 24.6749 1.7027"&gt;&lt;/polygon&gt;
+                    &lt;/g&gt;
+                &lt;/g&gt;
+            &lt;/g&gt;
+        &lt;/symbol&gt;
+        &lt;symbol id="icon-vmware" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+            &lt;g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
+                &lt;g id="Artboard" transform="translate(-355.000000, -91.000000)"&gt;
+                    &lt;g id="vmware" transform="translate(355.000000, 91.000000)"&gt;
+                        &lt;path d="M35.552092,12.1418391 L31.9286437,2.05172414 C31.8817471,1.91195402 31.8127816,1.72850575 31.8127816,1.56712644 C31.8127816,1.12896552 32.1824368,0.714252874 32.7116322,0.714252874 C33.1741609,0.714252874 33.4748506,1.01356322 33.6137011,1.45126437 L36.6150805,10.1455172 L39.6389885,1.42735632 C39.7764598,1.01356322 40.0546207,0.714252874 40.513931,0.714252874 L40.6072644,0.714252874 C41.0932414,0.714252874 41.3934713,1.01356322 41.5309425,1.42735632 L44.5309425,10.1455172 L47.5805977,1.40574713 C47.6969195,1.03609195 47.9484138,0.714252874 48.4343908,0.714252874 C48.941977,0.714252874 49.3116322,1.1045977 49.3116322,1.54413793 C49.3116322,1.70551724 49.2422069,1.88850575 49.1966897,2.0291954 L45.5497931,12.1418391 C45.3626667,12.6696552 44.9953103,12.9473563 44.5787586,12.9473563 L44.5102529,12.9473563 C44.0477241,12.9473563 43.7005977,12.6696552 43.5387586,12.1418391 L40.5631264,3.56804598 L37.5603678,12.1418391 C37.3994483,12.6696552 37.0523218,12.9473563 36.5916322,12.9473563 L36.5433563,12.9473563 C36.1056552,12.9473563 35.7369195,12.6696552 35.552092,12.1418391"
+                        id="Fill-1"&gt;&lt;/path&gt;
+                        &lt;path d="M61.9657471,1.5936092 C61.9657471,1.10671264 62.3583908,0.69108046 62.8429885,0.69108046 C63.3533333,0.69108046 63.7455172,1.08372414 63.7455172,1.5936092 L63.7455172,3.64142529 C64.6236782,1.652 66.5712644,0.714068966 67.8613793,0.714068966 C68.3951724,0.714068966 68.7422989,1.10671264 68.7422989,1.61521839 C68.7422989,2.1011954 68.4186207,2.44602299 67.9537931,2.51682759 C65.6406897,2.79406897 63.7455172,4.52878161 63.7455172,7.97567816 L63.7455172,12.0294713 C63.7455172,12.5154483 63.3754023,12.9301609 62.8673563,12.9301609 C62.3583908,12.9301609 61.9657471,12.5361379 61.9657471,12.0294713 L61.9657471,1.5936092 Z"
+                        id="Fill-3"&gt;&lt;/path&gt;
+                        &lt;path d="M74.4545287,13.0434483 C71.2365977,13.0434483 68.6085517,10.5473563 68.6085517,6.8862069 L68.6085517,6.83885057 C68.6085517,3.43057471 70.9878621,0.682988506 74.2278621,0.682988506 C77.6931494,0.682988506 79.6664828,3.54229885 79.6664828,6.67931034 C79.6664828,7.16068966 79.2775172,7.5045977 78.849931,7.5045977 L70.3782069,7.5045977 C70.6255632,10.065977 72.4145287,11.5087356 74.5009655,11.5087356 C75.9506207,11.5087356 77.0136092,10.9358621 77.8756782,10.1354023 C78.0103908,10.0222989 78.1703908,9.93034483 78.3745287,9.93034483 C78.8044138,9.93034483 79.1446437,10.2742529 79.1446437,10.6871264 C79.1446437,10.8917241 79.0554483,11.0986207 78.872,11.2567816 C77.7625747,12.3321839 76.4476322,13.0434483 74.4545287,13.0434483 L74.4545287,13.0434483 Z M77.9211954,6.19885057 C77.740046,4.04712644 76.5142989,2.17172414 74.1818851,2.17172414 C72.1423448,2.17172414 70.6007356,3.88666667 70.3782069,6.19885057 L77.9211954,6.19885057 Z"
+                        id="Fill-5"&gt;&lt;/path&gt;
+                        &lt;path d="M49.3436322,9.33788506 L49.3436322,9.29052874 C49.3436322,6.77834483 51.4194943,5.43995402 54.4378851,5.43995402 C55.9606437,5.43995402 57.0434023,5.64777011 58.1063908,5.94891954 L58.1063908,5.53236782 C58.1063908,3.38937931 56.7886897,2.28133333 54.5546667,2.28133333 C53.3551264,2.28133333 52.6567356,2.43443678 51.7794943,2.82478161 C51.6654713,2.87167816 51.5491494,2.89512644 51.4590345,2.89512644 C51.0434023,2.89512644 50.6742069,2.548 50.6742069,2.1342069 C50.6742069,1.76593103 50.8342069,1.5388046 51.1588046,1.39489655 C52.3321379,0.885471264 53.2181149,0.715816092 54.7385747,0.715816092 C56.4208736,0.715816092 57.711908,1.15213793 58.5868506,2.02937931 C59.3937471,2.83627586 59.8102989,3.98891954 59.8102989,5.51029885 L59.8102989,12.0886897 C59.8102989,12.5944368 59.4415632,12.9645517 58.9542069,12.9645517 C58.4498391,12.9645517 58.1063908,12.5944368 58.1063908,12.1342069 L58.1063908,10.9962759 C57.2755862,12.0813333 55.8902989,13.0491494 53.7965057,13.0491494 C51.5813333,13.0491494 49.3436322,11.7811034 49.3436322,9.33788506 M58.128,8.41558621 L58.128,7.26248276 C57.2507586,7.00914943 56.0737471,6.75351724 54.6227126,6.75351724 C52.3891494,6.75351724 51.1417931,7.72409195 51.1417931,9.22110345 L51.1417931,9.26754023 C51.1417931,10.7654713 52.5247816,11.6417931 54.139954,11.6417931 C56.328,11.6417931 58.128,10.3043218 58.128,8.41558621"
+                        id="Fill-7"&gt;&lt;/path&gt;
+                        &lt;path d="M3.25503448,1.46229885 C2.86422989,0.606206897 1.89963218,0.21816092 0.998482759,0.61954023 C0.0964137931,1.02 -0.23554023,2.02 0.172275862,2.87747126 L3.9548046,11.0990805 C4.5502069,12.3887356 5.17733333,13.0641379 6.35388506,13.0641379 C7.61135632,13.0641379 8.1594023,12.3285057 8.75388506,11.0990805 C8.75388506,11.0990805 12.0536552,3.91425287 12.0862989,3.83977011 C12.1203218,3.76344828 12.226069,3.53126437 12.5621609,3.53310345 C12.8458391,3.53632184 13.0844598,3.76206897 13.0844598,4.06505747 L13.0844598,11.0926437 C13.0844598,12.1754023 13.6858391,13.0641379 14.8412414,13.0641379 C15.9957241,13.0641379 16.620092,12.1754023 16.620092,11.0926437 L16.620092,5.34367816 C16.620092,4.23471264 17.4145747,3.51517241 18.4973333,3.51517241 C19.5805517,3.51517241 20.3010115,4.25954023 20.3010115,5.34367816 L20.3010115,11.0926437 C20.3010115,12.1754023 20.9042299,13.0641379 22.0577931,13.0641379 C23.2122759,13.0641379 23.8394023,12.1754023 23.8394023,11.0926437 L23.8394023,5.34367816 C23.8394023,4.23471264 24.6311264,3.51517241 25.7152644,3.51517241 C26.7961839,3.51517241 27.5194023,4.25954023 27.5194023,5.34367816 L27.5194023,11.0926437 C27.5194023,12.1754023 28.1212414,13.0641379 29.2761839,13.0641379 C30.4297471,13.0641379 31.0564138,12.1754023 31.0564138,11.0926437 L31.0564138,4.5491954 C31.0564138,2.14413793 29.1230805,0.45954023 26.7961839,0.45954023 C24.4715862,0.45954023 23.015954,2.06781609 23.015954,2.06781609 C22.2426207,1.0645977 21.175954,0.46137931 19.3708966,0.46137931 C17.4665287,0.46137931 15.7994023,2.06781609 15.7994023,2.06781609 C15.0251494,1.0645977 13.7069885,0.46137931 12.615954,0.46137931 C10.9281379,0.46137931 9.58790805,1.20390805 8.76997701,3.07333333 L6.35388506,8.76804598 L3.25503448,1.46229885 Z"
+                        id="Fill-9"&gt;&lt;/path&gt;
+                    &lt;/g&gt;
+                &lt;/g&gt;
+            &lt;/g&gt;
+        &lt;/symbol&gt;
+    &lt;/svg&gt;
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-15 19:21:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;78c2645113217600d15e3d7ed144b0b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Sprawl Overview Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_78c2645113217600d15e3d7ed144b0b9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 21:34:13&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="diff-services "&gt;
-  &lt;div class="each-service"&gt;
-    &lt;div class="title-stuff"&gt;
-      &lt;div class="service-title"&gt;
-        &lt;p class="title "&gt;
-          {{::data.card_data.title}}
-        &lt;/p&gt;
-        &lt;p class="sub-title"&gt;
-          {{::data.card_data.sub_title}}
-        &lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class="percent-like" ng-class="{'green-color': data.card_data.thumbs == 'up', 'red-color': data.card_data.thumbs == 'down'}"&gt;
-        &lt;p class="uptime"&gt;UPTIME&lt;/p&gt;
-        &lt;p&gt;99%&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="progress"&gt;
-      &lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="{'width': data.card_data.progress}"&gt;
-
-      &lt;/div&gt;
-      &lt;span&gt;UTILIZATION RATE&lt;/span&gt;
-      &lt;p&gt;{{::data.card_data.progress}}&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="last-row"&gt;
-      &lt;p class="left-most"&gt;{{::data.card_data.bottom_dollor}}&lt;/p&gt;
-      &lt;p class="center"&gt;4&lt;/p&gt;
-      &lt;div class="right-most" ng-class="{'red-color':data.card_data.right_attn_color == 'red', 'green-color':data.card_data.right_attn_color == 'green'}"&gt;
-        &lt;p&gt;{{::data.card_data.right_attn_count}}&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
+&lt;div ng-repeat="spend in c.userOne.spending" class="spending-foruser"&gt;
+  &lt;p class="left-text"&gt;{{spend.text}}&lt;/p&gt;
+  &lt;div class="right-text"&gt;
+    &lt;svg class="svg-icon"&gt;
+      &lt;use xlink:href='{{spend.icon}}'&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;p&gt;{{spend.company}}&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Cloud Sprawl Overview">2161091113617600d15e3d7ed144b091</remote_update_set>
+<remote_update_set display_value="pe-cloud-sprawl-info-snippet">3ea05ca913353200d15e3d7ed144b0df</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 21:35:00</sys_created_on>
-<sys_id>e561091113617600d15e3d7ed144b091</sys_id>
+<sys_created_on>2017-03-28 22:56:18</sys_created_on>
+<sys_id>fea05ca913353200d15e3d7ed144b0df</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 21:35:00</sys_updated_on>
+<sys_updated_on>2017-03-28 22:56:18</sys_updated_on>
 <table/>
-<target_name>PE Cloud Sprawl Overview Snippet</target_name>
+<target_name>PE Cloud Sprawl Info Snippet</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
