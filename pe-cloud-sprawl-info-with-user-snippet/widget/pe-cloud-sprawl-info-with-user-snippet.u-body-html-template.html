@@ -1,0 +1,28 @@
+<div class="second-tab-details" ng-repeat="each in c.second_tab.list" ng-class-even="'light-grey-bg'">
+  <div class="vm-num">
+    <p class="big-text">{{each.vimnumber}}</p>
+    <p class="small-text">{{each.vim_number}}</p>
+  </div>
+  <div class="lease">
+    <p class="lease-head">created on</p>
+    <p class="small-text">{{each.lease}}</p>
+  </div>
+
+  <div class="media people-card-media">
+    <div class="media-left ">
+      <div class="person-photo ">
+        <img ng-if="each.user.photo" class="media-object list__photo img-circle ng-scope" ng-src="{{data.user_photo}}">
+        <div ng-if="!each.user.photo " class="badge initials-badge" data-original-title="" title="">
+          <span class="" ng-bind="getinitials(each.user)"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="flex-it">
+    <svg ng-class="{'vmwwidth': each.company == 'VMW'}" class="svg-icon">
+      <use xlink:href='{{each.icon}}'></use>
+    </svg>
+    <p ng-if="each.company != 'VMW'">{{each.company}}</p>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+.second-tab-details {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .flex-it {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .svg-icon {
+      height: 23px;
+      width: 27px;
+      fill: #9C9C9C;
+    }
+    p {
+      margin-left: 5px;
+      margin-bottom: 0px;
+    }
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  .vm-num {
+    .big-text {
+      font-size: 20px;
+      color: #595959;
+    }
+    .small-text {
+      font-size: 13px;
+      color: #909090;
+    }
+  }
+  .lease {
+    .lease-head {
+      text-transform: uppercase;
+    }
+    .big-text {
+      font-size: 20px;
+      color: #595959;
+    }
+    .small-text {
+      font-size: 13px;
+      color: #909090;
+    }
+  }
+
+  .people-card-media {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+    margin: 0px;
+    width: initial;
+    .flex-it-align-top {
+      display: flex;
+      justify-content: space-between;
+    }
+    .media-left {
+      //  width: 60px;
+      .list__photo {
+        width: 35px;
+        height: 35px;
+      }
+      .initials-badge {
+        min-width: 36px;
+        float: left;
+        margin-top: 0px;
+        border-radius: 50%;
+        line-height: 1;
+        font-size: 14px;
+        margin-left: 0px;
+        padding: 10px 10px;
+        font-weight: 300;
+        background: #AEB2B3;
+      }
+    }
+  }
+}

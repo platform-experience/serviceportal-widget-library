@@ -1,0 +1,31 @@
+.first-tab-details {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .flex-it {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      color: #9C9C9C;
+    }
+  }
+  .svg-icon {
+    height: 23px;
+    width: 27px;
+    fill: #9C9C9C;
+  }
+  p {
+    margin-left: 5px;
+    margin-bottom: 0px;
+  }
+  .detail-numbers {
+    font-size: 18px;
+    color: #595959;
+  }
+}
+
+.vmwwidth {
+  width: 80px !important;
+}

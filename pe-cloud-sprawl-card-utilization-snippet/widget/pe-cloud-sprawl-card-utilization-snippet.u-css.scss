@@ -1,0 +1,176 @@
+.each-row {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+  .people-card-media {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+    margin: 0px;
+    .flex-it-align-top {
+      display: flex;
+      justify-content: space-between;
+    }
+    .media-left {
+      //  width: 60px;
+      .list__photo {
+        width: 35px;
+        height: 35px;
+      }
+      .initials-badge {
+        min-width: 36px;
+        float: left;
+        margin-top: 0px;
+        border-radius: 50%;
+        line-height: 1;
+        font-size: 14px;
+        margin-left: 0px;
+        padding: 10px 10px;
+        font-weight: 300;
+        background: #AEB2B3;
+      }
+    }
+  }
+  .first-box {
+    .big-text {
+      font-size: 20px;
+      color: #595959;
+    }
+    .small-text {
+      font-size: 11px;
+      color: #909090;
+    }
+  }
+  .second-box {
+    width: 50%;
+    p {
+      margin-left: 0px;
+    }
+    .progress-text {
+      color: #3693e1;
+    }
+    .percent-complete {
+      color: #909090;
+    }
+    .progress {
+      margin-bottom: 0px;
+      height: 14px;
+      .progress-bar {
+        background: #3693e1;
+      }
+    }
+  }
+}
+
+.underutil {
+  padding: 10px 0px;
+  .heading {
+    font-size: 18px;
+    color: #626262;
+    font-weight: 600;
+    padding: 0px 10px;
+  }
+  .util {
+    width: 30%;
+    .percent-number {
+      font-size: 18px;
+      text-align: center;
+      color: #2abd68;
+    }
+    .progress-bar {
+      background: #2abd68;
+    }
+    .bottom-title {
+      font-size: 10px;
+      font-weight: 600;
+      text-align: center;
+      color: #9f9f9f;
+    }
+  }
+  .light-grey-bg {
+    background: #f9f9f9 !important;
+  }
+  .underutil-prog {
+    width: 30%;
+    .percent-number {
+      font-size: 18px;
+      text-align: center;
+      color: #e51b24;
+    }
+    .progress-bar {
+      background: #e51b24;
+    }
+    .bottom-title {
+      font-size: 10px;
+      font-weight: 600;
+      text-align: center;
+      color: #9f9f9f;
+    }
+  }
+  .panel-default {
+    border: 0px;
+    .panel-heading {
+      padding: 20px 10px; // color: #000;
+      background: inherit;
+      border: 0px;
+    }
+  }
+  .panel {
+    border-radius: 0px !important;
+    margin-bottom: 0px;
+    background: #fff;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .panel-body {
+    padding: 0px;
+    border: 0px;
+    border-top: 0px !important;
+  }
+  .panel-collapse {
+    padding: 10px 10px;
+  }
+  .each-company {
+    // padding: 20px 10px;
+    border-bottom: 1px solid #dcdcdc;
+    .heading-little {
+      font-size: 12px;
+      text-align: center;
+      font-weight: bold;
+      color: #595959;
+      text-transform: uppercase;
+    }
+    .flex-them {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .progress {
+        //width: 25%;
+        margin-bottom: 0px;
+        height: 5px;
+        .progress-bar {
+          height: 5px;
+        }
+      }
+    }
+    .svg-icon {
+      height: 23px;
+      width: 27px;
+      fill: #9C9C9C;
+    }
+    p {
+      margin-left: 5px;
+      margin-bottom: 0px;
+    }
+    .flex-it {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}

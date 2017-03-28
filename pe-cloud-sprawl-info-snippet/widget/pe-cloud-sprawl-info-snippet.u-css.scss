@@ -1,0 +1,29 @@
+.spending-foruser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f3f3f3;
+  .left-text {
+    font-size: 20px;
+    color: #595959;
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  .right-text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #9c9c9c;
+    .svg-icon {
+      height: 23px;
+      width: 27px;
+      fill: #9C9C9C;
+    }
+    p {
+      margin-left: 5px;
+      margin-bottom: 0px;
+    }
+  }
+}

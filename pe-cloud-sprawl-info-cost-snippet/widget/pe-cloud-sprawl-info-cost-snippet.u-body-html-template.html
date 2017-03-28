@@ -1,0 +1,16 @@
+<div class="first-tab-details" ng-repeat="each in c.threetabs.first_tab.list | filter:filter" ng-class-even="'light-grey-bg'">
+  <div class="flex-it">
+    <svg ng-class="{'vmwwidth': each.company == 'VMW'}" class="svg-icon">
+      <use xlink:href='{{each.icon}}'></use>
+    </svg>
+    <p ng-if="each.company != 'VMW'">{{each.company}}</p>
+  </div>
+  <div>
+    <p class="small-text">cost</p>
+    <p class="detail-numbers">{{each.cost}}</p>
+  </div>
+  <div>
+    <p class="small-text">virtual machines</p>
+    <p class="detail-numbers">{{each.virtual_m}}</p>
+  </div>
+</div>
