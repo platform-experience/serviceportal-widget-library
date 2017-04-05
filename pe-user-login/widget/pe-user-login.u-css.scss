@@ -1,0 +1,28 @@
+$button-color: #d1232b !default;
+$button-state-color: #c42229 !default;
+
+input {
+  border: none;
+  border-bottom: solid 1px #cecece;
+}
+
+.form-verify {
+  margin-top: 25px;
+  padding: 0 35px;
+}
+
+.full-width {
+  margin: 15px -15px;
+  button {
+    border-color: $button-color;
+    border-radius: 0;
+    width: 70%;
+    background-color: $button-color;
+    font-size: 16px;
+  }
+  button:active,
+  button:hover {
+    background-color: $button-state-color;
+    border-color: $button-state-color;
+  }
+}
