@@ -12,6 +12,6 @@ Installation is very simple, you can just download the update set "pe-user-login
 
 We provide two Sass variables to control the button color.
 
-`$button-color: #d1232b !default`
+`$pe-button-color: #d1232b !default;`
 
-`$button-state-color: #c42229 !default`
+`$pe-button-state-color: #c42229 !default;`

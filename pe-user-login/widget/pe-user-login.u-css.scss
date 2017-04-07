@@ -1,5 +1,5 @@
-$button-color: #d1232b !default;
-$button-state-color: #c42229 !default;
+$pe-button-color: #d1232b !default;
+$pe-button-state-color: #c42229 !default;
 
 input {
   border: none;
@@ -14,15 +14,15 @@ input {
 .full-width {
   margin: 15px -15px;
   button {
-    border-color: $button-color;
+    border-color: $pe-button-color;
     border-radius: 0;
     width: 70%;
-    background-color: $button-color;
+    background-color: $pe-button-color;
     font-size: 16px;
   }
   button:active,
   button:hover {
-    background-color: $button-state-color;
-    border-color: $button-state-color;
+    background-color: $pe-button-state-color;
+    border-color: $pe-button-state-color;
   }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-04-06 21:18:35">
+<unload unload_date="2017-04-07 02:26:24">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE User Login</name>
+<name>PE User Login 2</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>2c301e10db42b200b793f2b6ae961947</remote_sys_id>
+<remote_sys_id>1f5697dcdb42b200b793f2b6ae961949</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-06 21:18:35</sys_created_on>
-<sys_id>1f909e10db42b200b793f2b6ae961993</sys_id>
+<sys_created_on>2017-04-07 02:26:24</sys_created_on>
+<sys_id>18179b90db82b200b793f2b6ae961904</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-06 21:18:35</sys_updated_on>
+<sys_updated_on>2017-04-07 02:26:24</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -40,8 +40,8 @@
   function goHome() {
     $rootScope.loginState = 2;
   }
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$button-color: #d1232b !default;&amp;#13;
-$button-state-color: #c42229 !default;&amp;#13;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-button-color: #d1232b !default;&amp;#13;
+$pe-button-state-color: #c42229 !default;&amp;#13;
 &amp;#13;
 input {&amp;#13;
   border: none;&amp;#13;
@@ -56,22 +56,22 @@ input {&amp;#13;
 .full-width {&amp;#13;
   margin: 15px -15px;&amp;#13;
   button {&amp;#13;
-    border-color: $button-color;&amp;#13;
+    border-color: $pe-button-color;&amp;#13;
     border-radius: 0;&amp;#13;
     width: 70%;&amp;#13;
-    background-color: $button-color;&amp;#13;
+    background-color: $pe-button-color;&amp;#13;
     font-size: 16px;&amp;#13;
   }&amp;#13;
   button:active,&amp;#13;
   button:hover {&amp;#13;
-    background-color: $button-state-color;&amp;#13;
-    border-color: $button-state-color;&amp;#13;
+    background-color: $pe-button-state-color;&amp;#13;
+    border-color: $pe-button-state-color;&amp;#13;
   }&amp;#13;
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-user-login&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE User Login&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-05 19:58:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3762b884dbca7200b793f2b6ae961981&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE User Login&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3762b884dbca7200b793f2b6ae961981&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-06 20:34:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-05 19:58:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3762b884dbca7200b793f2b6ae961981&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE User Login&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3762b884dbca7200b793f2b6ae961981&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-07 02:24:14&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
   &lt;div class="row form form-verify"&gt;
     &lt;div class="col-xs-12"&gt;
       &lt;div class="form-group"&gt;
@@ -90,14 +90,14 @@ input {&amp;#13;
     &lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE User Login">1f909e10db42b200b793f2b6ae961993</remote_update_set>
+<remote_update_set display_value="PE User Login 2">18179b90db82b200b793f2b6ae961904</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-06 21:18:35</sys_created_on>
-<sys_id>9f909e10db42b200b793f2b6ae961993</sys_id>
+<sys_created_on>2017-04-07 02:26:24</sys_created_on>
+<sys_id>98179b90db82b200b793f2b6ae961904</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-06 21:18:35</sys_updated_on>
+<sys_updated_on>2017-04-07 02:26:24</sys_updated_on>
 <table/>
 <target_name>PE User Login</target_name>
 <type>Widget</type>
