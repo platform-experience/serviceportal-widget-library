@@ -1,6 +1,6 @@
 ## Synopsis: Animated Timeline Widget
 
-![](../images/pe-animated-timeline-1.png)
+![](../../images/pe-animated-timeline-1.gif)
 
 This can be used to quickly craft an animated timeline widget.
 
