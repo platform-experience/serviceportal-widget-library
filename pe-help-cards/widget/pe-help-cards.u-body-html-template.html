@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-12 cards modernizeit-no-bg-color-square">
+    <h3>{{::options.title}}</h3>
+    <div class="content-wrapper">
+      <div class="scroll-wrapper">
+        <div ng-repeat="item in ::data.items track by $index" class="item">
+          <div class="icon">
+            <img src="{{::item['sc_cat_item.icon'].display_value || 'placeholder1.jpg'}}" alt="">
+          </div>
+          <div class="content">
+            <div class="name">{{::item['sc_cat_item.name'].value}}</div>
+            <div class="sub-title">{{::item['sc_cat_item.short_description'].value}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
