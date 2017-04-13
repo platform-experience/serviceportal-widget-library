@@ -1,0 +1,85 @@
+$pe-description-color: #9fa4ad !default;
+$pe-box-color: #fdfdfd !default;
+$pe-green-item-color: #77b176 !default;
+$pe-red-item-color: #dc7f63 !default;
+$pe-yellow-item-color: #d7ba4b !default;
+$pe-blue-item-color: #6d9dcd !default;
+$pe-background-color: transparent !default;
+.because-you {
+	background: $pe-background-color;
+}
+
+.cards {
+	padding: 0 10px;
+	margin-top: 15px;
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.widget-wrapper {
+	background-color: $pe-box-color;
+	border-radius: 3px;
+	h3 {
+		padding: 13px;
+		padding-bottom: 0;
+	}
+}
+
+.scroll-wrapper {
+	padding-bottom: 15px;
+	display: flex;
+	width: 100%;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.item:first-child {
+	margin-left: 13px;
+}
+
+.item {
+	position: relative;
+	width: 55px;
+	flex-shrink: 0;
+	vertical-align: top;
+	margin-left: 38px;
+	text-align: center;
+	padding: 15px 0px 5px 0;
+	white-space: normal;
+	.icon {
+		height: 53px;
+		width: 53px;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.content {
+		margin-top: 10px;
+		letter-spacing: -.4px;
+	}
+}
+
+.description {
+	font-size: 11px;
+	text-align: center;
+	color: $pe-description-color;
+}
+
+.green .icon {
+	background-color: $pe-green-item-color;
+}
+
+.yellow .icon {
+	background-color: $pe-yellow-item-color;
+}
+
+.blue .icon {
+	background-color: $pe-blue-item-color;
+}
+
+.red .icon {
+	background-color: $pe-red-item-color;
+}

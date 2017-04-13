@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-13 19:31:06">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Enduser Login</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>66711c9adbca3a002e5df2b6ae96195e</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-04-13 19:31:06</sys_created_on>
+<sys_id>552bbdaedb467a002e5df2b6ae96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-04-13 19:31:06</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_68dc7bcedb8a3a002e5df2b6ae9619dc</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;input {&amp;#13;
+  border: none;&amp;#13;
+  border-bottom: solid 1px #cecece;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.form--verify {&amp;#13;
+  margin-top: 70px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.full_width {&amp;#13;
+  margin: 15px -15px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.icon {&amp;#13;
+  position: absolute;&amp;#13;
+  left: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+button {&amp;#13;
+  position: relative;&amp;#13;
+  border-radius: 2px;&amp;#13;
+  width: 70%;&amp;#13;
+  background-color: #d1232b;&amp;#13;
+  font-size: 16px;&amp;#13;
+  margin-top: 12px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.or {&amp;#13;
+  margin-top: 12px;&amp;#13;
+&amp;#13;
+}&amp;#13;
+&amp;#13;
+.login {&amp;#13;
+  color: white;&amp;#13;
+  background-color: #c0351d;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.facebook {&amp;#13;
+  color: white;&amp;#13;
+  background-color: #3c5193;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.google {&amp;#13;
+  color: #757575;&amp;#13;
+  background-color: #ffffff;&amp;#13;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);&amp;#13;
+  background-color: white&amp;#13;
+  margin-top: 15px;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-enduser-login&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Enduser Login&lt;/name&gt;&lt;option_schema&gt;[{"name":"table","default_value":"sys_user","label":"Table","type":"string"},{"name":"email_address_field","default_value":"email","label":"Email Address Field","type":"field_name"},{"name":"encoded_query","default_value":"email!=NULL^GOTOnameLIKESystem Administrator","label":"Encoded Query","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+	var tableName = serverOptions.table || options.table;
+	var encodedQuery = serverOptions.encoded_query || options.encoded_query;
+	var emailField = serverOptions.email_address_field || options.email_address_field
+	data.user_email = "jet.wheeler@servicenow.com";
+	data.password = "password";
+	
+	var userGR = new GlideRecord(tableName);
+	userGR.addEncodedQuery(encodedQuery);
+	userGR.query();
+	if(userGR.next()){
+		data.user_email = userGR.getDisplayValue(emailField).toString();
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-12 15:44:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;68dc7bcedb8a3a002e5df2b6ae9619dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;66&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Enduser Login&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_68dc7bcedb8a3a002e5df2b6ae9619dc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-12 17:09:50&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+	&lt;div class="row form form--verify"&gt;
+		&lt;div class="col-xs-12"&gt;
+			&lt;div class="form-group"&gt;
+				&lt;label class="form__label"&gt;Email&lt;/label&gt;
+				&lt;input type="email" placeholder="" class="form-control form__input form__input--secure" ng-model="c.data.user_email" /&gt;
+			&lt;/div&gt;
+			&lt;div class="form-group"&gt;
+				&lt;label class="form__label"&gt;Password&lt;/label&gt;
+				&lt;input type="password" placeholder="" class="form-control form__input" ng-model="c.data.password" /&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="full_width text-center"&gt;
+		&lt;button class="btn btn-primary login" data-toggle="modal" data-target="#touchModal"&gt;
+            &lt;div class="icon"&gt;
+
+                &lt;svg width="21px" height="15px" viewBox="11 13 21 15" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+                    &lt;!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch --&gt;
+                    &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+                    &lt;defs&gt;&lt;/defs&gt;
+                    &lt;g id="email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                       transform="translate(11.000000, 13.000000)"&gt;
+                        &lt;g id="Group" transform="translate(0.000000, 0.225895)" fill="#FFFFFF"&gt;
+                            &lt;path d="M1.08283,0.128272083 L10.5,8.395875 L19.91717,0.128272083 L1.08283,0.128272083 Z M0,1.04690958 L0,12.8782792 C0,13.2706958 0.3122,13.5866125 0.7,13.5866125 L20.3,13.5866125 C20.6878,13.5866125 21,13.2706958 21,12.8782792 L21,1.04690958 L10.959375,9.8678625 C10.6959573,10.0996518 10.3040427,10.0996518 10.040625,9.8678625 L0,1.04690958 Z"
+                                  id="Shape"&gt;&lt;/path&gt;
+                        &lt;/g&gt;
+                    &lt;/g&gt;
+                &lt;/svg&gt;
+
+            &lt;/div&gt;
+            Sign in
+        &lt;/button&gt;
+		&lt;div class="or"&gt;OR&lt;/div&gt;
+		&lt;button class="btn btn-primary facebook" data-toggle="modal" data-target="#touchModal"&gt;
+            &lt;div class="icon"&gt;
+
+                &lt;svg width="11px" height="21px" viewBox="14 10 11 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+                    &lt;!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch --&gt;
+                    &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+                    &lt;defs&gt;&lt;/defs&gt;
+                    &lt;path d="M14,16.8762222 L16.2980903,16.8762222 L16.2980903,14.7874444 C16.2980903,13.8658889 16.3229275,12.4456667 17.0392833,11.5656667 C17.7922412,10.6331111 18.8275583,10 20.6066829,10 C23.5060937,10 24.7270359,10.3862222 24.7270359,10.3862222 L24.153167,13.5713333 C24.153167,13.5713333 23.1949757,13.311 22.3008382,13.311 C21.4080079,13.311 20.6066829,13.6116667 20.6066829,14.4464444 L20.6066829,16.8762222 L24.2721239,16.8762222 L24.0172162,19.9867778 L20.6066829,19.9867778 L20.6066829,30.7912222 L16.2980903,30.7912222 L16.2980903,19.9867778 L14,19.9867778 L14,16.8762222" id="Imported-Layers" stroke="none" fill="#FFFFFF" fill-rule="evenodd"&gt;&lt;/path&gt;
+                &lt;/svg&gt;
+
+            &lt;/div&gt;
+            Sign in with Facebook
+        &lt;/button&gt;
+		&lt;button class="btn btn-primary google" data-toggle="modal" data-target="#touchModal"&gt;
+            &lt;div class="icon"&gt;
+
+                &lt;svg width="18px" height="19px" viewBox="11 11 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+                    &lt;!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch --&gt;
+                    &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+                    &lt;defs&gt;&lt;/defs&gt;
+                    &lt;g id="logo_googleg_48dp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(11.000000, 11.000000)"&gt;
+                        &lt;path d="M17.64,9.20454545 C17.64,8.56636364 17.5827273,7.95272727 17.4763636,7.36363636 L9,7.36363636 L9,10.845 L13.8436364,10.845 C13.635,11.97 13.0009091,12.9231818 12.0477273,13.5613636 L12.0477273,15.8195455 L14.9563636,15.8195455 C16.6581818,14.2527273 17.64,11.9454545 17.64,9.20454545 L17.64,9.20454545 Z" id="Shape" fill="#4285F4"&gt;&lt;/path&gt;
+                        &lt;path d="M9,18 C11.43,18 13.4672727,17.1940909 14.9563636,15.8195455 L12.0477273,13.5613636 C11.2418182,14.1013636 10.2109091,14.4204545 9,14.4204545 C6.65590909,14.4204545 4.67181818,12.8372727 3.96409091,10.71 L0.957272727,10.71 L0.957272727,13.0418182 C2.43818182,15.9831818 5.48181818,18 9,18 L9,18 Z" id="Shape" fill="#34A853"&gt;&lt;/path&gt;
+                        &lt;path d="M3.96409091,10.71 C3.78409091,10.17 3.68181818,9.59318182 3.68181818,9 C3.68181818,8.40681818 3.78409091,7.83 3.96409091,7.29 L3.96409091,4.95818182 L0.957272727,4.95818182 C0.347727273,6.17318182 0,7.54772727 0,9 C0,10.4522727 0.347727273,11.8268182 0.957272727,13.0418182 L3.96409091,10.71 L3.96409091,10.71 Z" id="Shape" fill="#FBBC05"&gt;&lt;/path&gt;
+                        &lt;path d="M9,3.57954545 C10.3213636,3.57954545 11.5077273,4.03363636 12.4404545,4.92545455 L15.0218182,2.34409091 C13.4631818,0.891818182 11.4259091,0 9,0 C5.48181818,0 2.43818182,2.01681818 0.957272727,4.95818182 L3.96409091,7.29 C4.67181818,5.16272727 6.65590909,3.57954545 9,3.57954545 L9,3.57954545 Z" id="Shape" fill="#EA4335"&gt;&lt;/path&gt;
+                    &lt;/g&gt;
+                &lt;/svg&gt;
+
+            &lt;/div&gt;
+            Sign in with Google
+        &lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Enduser Login">552bbdaedb467a002e5df2b6ae96196f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dachtman</sys_created_by>
+<sys_created_on>2017-04-13 19:31:06</sys_created_on>
+<sys_id>592bbdaedb467a002e5df2b6ae96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dachtman</sys_updated_by>
+<sys_updated_on>2017-04-13 19:31:06</sys_updated_on>
+<table/>
+<target_name>PE Enduser Login</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

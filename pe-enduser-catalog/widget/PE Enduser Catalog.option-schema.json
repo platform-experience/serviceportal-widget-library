@@ -1,0 +1,16 @@
+[{
+	"name": "encoded_query",
+	"default_value": "title=PE Enduser Catalog",
+	"label": "Encoded Query",
+	"type": "string"
+}, {
+	"name": "additional_query_for_categories",
+	"default_value": "active=true^ORDERBYorder",
+	"label": "Additional Query for Categories",
+	"type": "string"
+}, {
+	"name": "additional_query_for_items",
+	"default_value": "sc_cat_item.active=true^ORDERBY sc_cat_item.order",
+	"label": "Additional Query for Items",
+	"type": "string"
+}]

@@ -1,0 +1,20 @@
+<div class="row because-you">
+	<div class="col-xs-12 cards" ng-repeat="category in c.data.categories">
+		<div class="widget-wrapper">
+			<h3>{{category.title}}</h3>
+			<div class="category-items content-wrapper" ng-show="category.items.length > 0">
+				<div class="scroll-wrapper">
+					<div ng-repeat="item in category.items" class="item" ng-class="item.demo_item ? item.color_class : ''">
+						<div class="icon">
+							<img src="{{item.image}}" />
+						</div>
+						<div class="content">
+							<div class="name">{{item.title}}</div>
+							<div class="description">{{item.short_desc}}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
