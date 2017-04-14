@@ -1,0 +1,103 @@
+.pe-user-request {
+  h2 {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1b485e;
+    text-align: center;
+  }
+  h4.title {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #343d47 !important;
+    margin-bottom: 6px !important;
+  }
+  h4.subtitle {
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: #343d47 !important;
+  }
+  .btn {
+    border-radius: 0;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+  .btn-primary {
+    background-color: #3f4c5c;
+    border: none;
+  }
+  .btn-alternate {
+    background-color: #fff;
+    border: solid 1px #5a889f;
+    color: #3f4c5c;
+  }
+  .manager {
+    margin-bottom: -15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    .img-circle {
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 50%;
+    }
+    .info {
+      margin-left: 5px;
+    }
+  }
+  .actions {
+    text-align: center;
+    margin-top: 35px;
+    button {
+      margin-left: 10px;
+    }
+    button:first-child {
+      margin-left: 0;
+    }
+  }
+  .step2 {
+    h2 {
+      margin-top: 35px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #2a3342;
+      text-align: center;
+      padding-left: 70px;
+      span {
+        margin-left: 15px;
+      }
+    }
+  }
+  .step3 {
+    .done {
+      text-align: center;
+      margin-top: 35px;
+    }
+    h2 {
+      text-align: center;
+      padding-left: 0;
+      margin: 0;
+    }
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  preloader {
+    display: block;
+    position: absolute;
+    .spinner>div {
+      background-color: #2a3342;
+    }
+  }
+  .fadeIn.ng-hide {
+    opacity: 0;
+  }
+  .fadeIn.ng-hide-remove,
+  .fadeIn.ng-hide-add {
+    display: block !important;
+  }
+  .fadeIn.ng-hide-remove {
+    transition: all linear 1000ms;
+  }
+}

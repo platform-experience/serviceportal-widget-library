@@ -1,0 +1,25 @@
+<div ng-include="'pe-user-request-svg'"></div>
+<div class="pe-user-request">
+  <h2>{{::options.header}}</h2>
+  <div class="manager">
+    <sp-widget widget="c.data.peopleInfoWidget"></sp-widget>
+  </div>
+  <div class="actions" ng-click="c.sending = true" ng-show="c.step == 1">
+    <button class="btn btn-alternate">Cancel</button>
+    <button class="btn btn-primary" ng-click="c.sendRequest()">Request Privileges</button>
+  </div>
+  <div class="step2" ng-show="c.step == 2">
+    <h2>
+      <preloader></preloader>
+      <span>Sending Request</span>
+    </h2>
+  </div>
+  <div class="step3 fadeIn" ng-show="c.step == 3">
+    <div class="done">
+      <svg>
+        <use xlink:href="#done"></use>
+      </svg>
+    </div>
+    <h2>Lease Extended</h2>
+  </div>
+</div>
