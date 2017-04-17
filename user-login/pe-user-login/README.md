@@ -1,6 +1,6 @@
 ## Synopsis: User Login Widget
 
-![](../images/pe-user-login-1.png)
+![](../../images/pe-user-login-1.png)
 
 This widget can be used to quickly craft a user login.
 
