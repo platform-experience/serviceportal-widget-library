@@ -3,7 +3,6 @@ function UserRequestController($timeout, spUtil) {
   c.sendRequest = sendRequest;
 
   c.$onInit = function() {
-    var c = this;
     c.step = 1;
     getUserInfo();
     activateWidget();
