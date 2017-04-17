@@ -1,0 +1,54 @@
+.pe-support-options {
+  margin-top: 20px;
+  p {
+    font-size: 18px;
+    color: #485563;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a3342;
+  }
+  .options {
+    margin: 0 -15px;
+    padding: 0;
+    li {
+      padding-left: 15px;
+      font-size: 16px;
+      border-top: solid 1px #cccccc;
+      position: relative;
+      svg {
+        stroke: #4a4a4a;
+        fill: #4a4a4a;
+      }
+    }
+    li:first-child {
+      border: none;
+    }
+    li:hover,
+    li:active {
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #2a3342;
+      svg {
+        stroke: #fff;
+        fill: #fff;
+      }
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      margin-top: -12px;
+    }
+    .info {
+      padding: 10px 0 10px 30px;
+      .title {
+        font-size: 16px;
+      }
+      .subtitle {
+        font-size: 15px;
+        color: #808080;
+      }
+    }
+  }
+}
