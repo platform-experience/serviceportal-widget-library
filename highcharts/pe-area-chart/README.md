@@ -3,7 +3,7 @@
 ![alt text](../../images/pe-area-chart.png "Basic Setup")
 ![alt text](../../images/pe-area-spline-chart.png "Basic Setup")
 
-This is used to create a simple Area Chart, Or a Area Spline Chart. This uses the [Highcharts API](highcharts.com), and [highcharts-ng](https://github.com/pablojim/highcharts-ng)
+This is used to create a simple Area Chart, Or a Area Spline Chart. This uses the [Highcharts API](https://highcharts.com), and [highcharts-ng](https://github.com/pablojim/highcharts-ng)
 
 ## Installation
 
