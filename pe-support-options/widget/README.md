@@ -1,1 +1,0 @@
-## Synopsis: Support Options Widget
