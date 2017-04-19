@@ -1,0 +1,9 @@
+<div class="pe-report-issue">
+  <p>{{::options.title}}</p>
+  <div class="grid">
+    <div ng-repeat="item in ::c.data.items" class="item">
+      <div class="icon"><img src="{{::item['sc_cat_item.icon'].display_value}}"></div>
+      <div class="name">{{::item['sc_cat_item.name'].value}}</div>
+    </div>
+  </div>
+</div>
