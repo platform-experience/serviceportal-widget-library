@@ -1,0 +1,50 @@
+<div ng-include="'pe-travel-card-svg'"></div>
+<div class="pe-travel-card">
+  <div class="row" ng-show="!c.data.hideWidget">
+    <div class="col-xs-12">
+      <div class="reminder" ng-show="!c.data.canceled" ng-click="c.cancelAction()">
+        <div class="icon">
+          <img src="roaming.png" width="47" height="46" />
+        </div>
+        <div class="description-wrapper">
+          <div class="description">
+            <span class="highlight">Automatically enabled international roaming</span> because you are traveling to London
+            Feb 1 - 4
+          </div>
+        </div>
+        <ul class="actions">
+          <li class="change">
+            <a href="">
+              <svg>
+                <use xlink:href="#change"></use>
+              </svg>
+              Change
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg>
+                <use xlink:href="#cancel"></use>
+              </svg>
+              Cancel
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg>
+                <use xlink:href="#trash"></use>
+              </svg>
+              Don't Do Again
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="reminder cancel" ng-show="c.data.canceled">
+        <svg>
+          <use xlink:href="#close"></use>
+        </svg>
+        <h2>Cancel</h2>
+      </div>
+    </div>
+  </div>
+</div>
