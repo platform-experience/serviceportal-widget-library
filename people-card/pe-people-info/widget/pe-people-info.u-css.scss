@@ -1,66 +1,66 @@
 $pe-brand-primary:#337ab7 !default;
 .people-card-media {
-  padding: 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  float: left;
-  margin: 0px;
-  .media-body {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
-    .people_name_title {
-      .title {
-        font-size: 15px;
-        font-weight: normal;
-        margin-bottom: 0px;
-        color: #81878e;
-      }
-      .subtitle {
-        font-size: 13px;
-        font-weight: normal;
-        margin-bottom: 0px;
-        color: #a8abaf;
-      }
+    float: left;
+    margin: 0px;
+    .media-body {
+        width: 100%;
+        .people_name_title {
+            .title {
+                font-size: 15px;
+                font-weight: normal;
+                margin-bottom: 0px;
+                color: #81878e;
+            }
+            .subtitle {
+                font-size: 13px;
+                font-weight: normal;
+                margin-bottom: 0px;
+                color: #a8abaf;
+            }
+        }
     }
-  }
-  .media-left {
-    .list__photo {
-      width: 35px;
-      height: 35px;
+    .media-left {
+        .list__photo {
+            width: 35px;
+            height: 35px;
+        }
+        .initials-badge {
+            min-width: 36px;
+            float: left;
+            margin-top: 0px;
+            border-radius: 50%;
+            line-height: 1;
+            font-size: 14px;
+            margin-left: 0px;
+            padding: 10px 10px;
+            font-weight: 300;
+            background: #AEB2B3;
+        }
     }
-    .initials-badge {
-      min-width: 36px;
-      float: left;
-      margin-top: 0px;
-      border-radius: 50%;
-      line-height: 1;
-      font-size: 14px;
-      margin-left: 0px;
-      padding: 10px 10px;
-      font-weight: 300;
-      background: #AEB2B3;
+    .media-right {
+        width: 40%;
+        .fa-color {
+            color: $pe-brand-primary;
+            margin-right: 10px;
+        }
     }
-  }
-  .media-right {
-    width: 40%;
-    .fa-color {
-      color: $pe-brand-primary;
-      margin-right: 10px;
-    }
-  }
 }
 
 .show-text-bottom {
-  margin: 0px;
-  top: 50px;
-  .people_name_title {
-    .title {
-      margin-top: 0px;
-      font-size: 15px;
-      font-weight: normal;
-      margin-bottom: 0px;
-      color: #81878e;
+    margin: 0px;
+    top: 50px;
+    .people_name_title {
+        .title {
+            margin-top: 0px;
+            font-size: 15px;
+            font-weight: normal;
+            margin-bottom: 0px;
+            color: #81878e;
+        }
     }
-  }
 }
