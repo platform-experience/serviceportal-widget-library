@@ -10,6 +10,8 @@
 
 ![alt text](../../images/pe-people-info-05.png "People Info - With option Show Text Below Picture set to True")
 
+![alt text](../../images/pe-people-info-avatar-border.png "People Info - With option to Add border color around avatar")
+
 This widget can be used to create a simple people card with user avatar, name, title, call and chat functionality.
 
 ***
@@ -28,7 +30,10 @@ We provide few options to load data easily and also to change the appearance of 
 
 **"Show Call and Chat"** this is a boolean variable, when checked we show chat and call icons, default value here is **true**.
 
-**"Show Text Below Picture"** this is a boolean variable, when checked we show the name below the picture, default value here is **false**.
+**"Show Text Below Picture"** this is a boolean variable, when checked we show the name below the picture, default value here is
+ **false**.
+
+ **"Add border color around avatar"** this takes a hex code for color, and adds it as border to img.
 
 ***
 
