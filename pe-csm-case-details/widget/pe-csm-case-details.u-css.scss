@@ -1,0 +1,96 @@
+.critical-border {
+    border-left: solid 4px #e73c3c !important;
+}
+
+.completed-border {
+    border-left: solid 4px #5cb85c !important;
+}
+
+.summary-wrapper {
+    border: solid 1px #e4e5e6;
+    border-left: solid 4px #f0ad4e;
+    .tabs-wrapper {
+        display: flex;
+        .tab {
+            text-transform: uppercase;
+            text-align: center;
+            border: 1px solid #e4e5e6;
+            border-left: none;
+            flex-grow: 1;
+            flex-basis: 0;
+            font-size: 12px;
+            font-weight: 500;
+            color: #b4b2b3;
+            .big-number {
+                font-size: 34px;
+                font-weight: 300;
+                color: #2e2e2e;
+                height: 38px;
+                &.smaller {
+                    font-size: 24px;
+                    white-space: nowrap;
+                }
+                .locations {
+                    font-size: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .tab:last-of-type {
+            border-right: none;
+        }
+    }
+    .row1,
+    .tab {
+        padding: 15px;
+    }
+    .row1 {
+        position: relative;
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #65666a;
+        }
+        .description {
+            font-size: 12px;
+            color: #63585e;
+        }
+    }
+    .row3 {
+        font-size: 10px;
+        font-weight: 500;
+        color: #b4b2b3;
+        .right-column {
+            padding-right: 50px;
+        }
+    }
+    .tab {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+    //.row2 {
+    //  padding-right: 5px;
+    //  padding-left: 5px;
+    //}
+    .customers {
+        .big-number {
+            line-height: 34px;
+        }
+    }
+    .red {
+        font-size: 12px;
+        color: #e51b24;
+        margin-top: 4px;
+    }
+    .icon {
+        position: absolute;
+        right: 23px;
+        top: 50%;
+        margin-top: -7px;
+        svg {
+            height: 15px;
+            width: 10px;
+            fill: #e51b24;
+        }
+    }
+}

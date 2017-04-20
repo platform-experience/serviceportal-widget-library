@@ -1,0 +1,60 @@
+  .case {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: solid 1px #e4e5e6;
+      .person-photo {
+          width: 35px;
+          height: 35px;
+      }
+      .fa {
+          color: #e51b24;
+      }
+      &.resolved {
+          .case-info {
+              .status {
+                  color: #70BE5A;
+              }
+              .fa {
+                  color: #70BE5A;
+              }
+          }
+          .user img {
+              border-color: #57B957;
+          }
+      }
+      .title {
+          font-size: 18px;
+          font-weight: 500;
+          color: #2e2e2e;
+      }
+      .user {
+          margin-top: 10px;
+          margin-bottom: 0;
+      }
+      .case-info {
+          margin: 0 -15px;
+          position: relative;
+          font-size: 10px;
+          font-weight: 600;
+          text-align: center;
+          padding-top: 15px;
+          padding-right: 30px;
+          color: #65666a;
+          .status {
+              color: #e51b24;
+              text-transform: uppercase;
+          }
+      }
+      .arrow {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          margin-top: -8px;
+          &.rotate {
+              right: 24px;
+          }
+          .fa {
+              color: #DBDAD6;
+          }
+      }
+  }

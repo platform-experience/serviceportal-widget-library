@@ -1,0 +1,115 @@
+ .case-extended {
+     background-color: #fbfbfb;
+     border-bottom: solid 1px #e4e5e6;
+     padding-bottom: 15px;
+     padding-top: 15px;
+     .title {
+         margin-top: 15px;
+         font-size: 14px;
+         font-weight: 500;
+         color: #2e2e2e;
+     }
+     p {
+         font-size: 14px;
+         color: #65666a;
+     }
+     .timeline {
+         color: #65666a;
+         margin-top: 15px;
+         padding-top: 0;
+         margin-bottom: 25px;
+         .user {
+             margin-bottom: 12px;
+             margin-top: 10px;
+         }
+         @media screen and (max-width: 767px) {
+             dl {
+                 &:before {
+                     left: 60px;
+                 }
+                 dd {
+                     .circ {
+                         left: 60px;
+                     }
+                     .events {
+                         width: 70%;
+                         background-color: inherit;
+                     }
+                 }
+             }
+         }
+         &:before {
+             border-right: none;
+         }
+         dl {
+             padding: 0;
+             &:before {
+                 margin-left: 15px;
+             }
+             dd:last-of-type .events {
+                 margin-bottom: 0;
+             }
+             dd {
+                 h4 {
+                     font-weight: normal;
+                     margin: 0;
+                 }
+                 .circ {
+                     top: 0;
+                     margin-left: 5px;
+                     background-color: white;
+                     border-color: #dbdad6;
+                 }
+                 .time {
+                     color: inherit;
+                     top: 0;
+                     padding: 0;
+                     //padding-right: 5px;
+                     font-size: 12px;
+                     width: 70px;
+                     margin-top: -5px;
+                 }
+                 .events {
+                     margin-right: -10px;
+                     margin-bottom: 25px;
+                     margin-top: 5px;
+                     padding: 0;
+                     background-color: inherit;
+                     &:before {
+                         display: none;
+                     }
+                 }
+                 &.active {
+                     color: $red;
+                     .circ {
+                         background-color: $primary-color;
+                         border-color: $darker-red;
+                     }
+                 }
+             }
+         }
+         .circ .fa {
+             position: absolute;
+             top: -5px;
+             left: -5px;
+             color: green;
+         }
+     }
+     .actions {
+         margin-top: 25px;
+         button.btn-alternate2 {
+             color: #b4b2b3;
+             border-radius: 28px;
+             background-color: #ffffff;
+             border: solid 3px #dbdad6;
+         }
+         button.escalated {
+             border-color: #e51b24;
+             color: #e51b24;
+         }
+     }
+     .escalated-actions {
+         position: relative;
+         margin-top: 0;
+     }
+ }

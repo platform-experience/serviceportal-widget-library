@@ -1,0 +1,37 @@
+<div class="extended-wrapper">
+    <div class="tabs-wrapper">
+        <div class="tabs">
+            <div class="tab" ng-class="{'active':c.state == 1}" ng-click="c.state=1;">
+                <div>
+                    <i class="fa fa-2x" ng-class="c.options.first_tab_icon" aria-hidden="true"></i>
+                </div>
+                {{::c.options.first_tab_title}}
+            </div>
+            <div class="tab" ng-class="{'active':c.state == 2}" ng-click="c.state=2;">
+                <div>
+                    <i class="fa fa-2x" ng-class="c.options.second_tab_icon" aria-hidden="true"></i>
+                </div>
+                {{::c.options.second_tab_title}}
+            </div>
+            <div class="tab" ng-class="{'active':c.state == 3}" ng-click="c.state=3;">
+                <div>
+                    <i class="fa fa-2x" ng-class="c.options.third_tab_icon" aria-hidden="true"></i>
+                </div>
+                {{::c.options.third_tab_title}}
+            </div>
+        </div>
+        <div class="tabs-content">
+            <div class="tab-content text-center" ng-show="c.state == 1;">
+                <p>Include Widget Here</p>
+            </div>
+            <div class="tab-content text-center" ng-show="c.state == 2;">
+                <p>Include Widget Here</p>
+
+            </div>
+            <div class="tab-content text-center" ng-show="c.state == 3;">
+                <p>Include Widget Here</p>
+            </div>
+        </div>
+    </div>
+
+</div>

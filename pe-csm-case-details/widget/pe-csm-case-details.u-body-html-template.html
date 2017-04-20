@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="text-center" ng-if="!c.data.caseObj">
+            <p>Nothing to display</p>
+        </div>
+        <div ng-if="c.data.caseObj" class="summary-wrapper" ng-class="{ 'critical-border':c.data.caseObj.priority.value==1}">
+            <div class="row1" ng-click="">
+                <div class="title">{{c.data.caseObj.priority.display_value}}</div>
+                <div class="description">
+                    {{c.data.caseObj.short_description.display_value}}
+                </div>
+                <div class="icon">
+                    <svg>
+                        <use xlink:href='#list-arrow'></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="row2" ng-click="">
+                <div class="tabs-wrapper">
+                    <div class="tab customers">
+                        <div class="big-number">
+                            {{c.data.caseObj.account.display_value}}
+                        </div>
+                        <div>
+                            Customer Name
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="big-number smaller">
+                            {{c.data.caseObj.relatedCasesCount}}
+                        </div>
+                        <div>
+                            RELATED CASES
+                        </div>
+                    </div>
+
+                    <div class="tab">
+                        <div class="big-number smaller">
+                            {{c.data.caseObj.caseCost}}
+                        </div>
+                        <div>
+                            COST OF ACTIVE CASES
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row1 row3" ng-click="">
+                <div class="row">
+                    <div class="col-xs-6">
+                        FIX STATUS
+                        <div class="red">{{c.data.caseObj.sla.stage.display_value}}</div>
+                    </div>
+                    <div class="col-xs-6 text-right right-column">
+                        FIX SCHEDULE
+                        <div class="red">{{c.data.caseObj.sla.schedule.display_value}}</div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <svg>
+                        <use xlink:href='#list-arrow'></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

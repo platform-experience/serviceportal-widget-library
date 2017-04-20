@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-19 23:01:21">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE CSM Location</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>12d0d2371382fa00de8cb5b12244b094</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-04-19 23:01:20</sys_created_on>
+<sys_id>93c4e1e813da3e00de8cb5b12244b05f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-04-19 23:01:20</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_fb690aff1342fa00de8cb5b12244b020</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;async&gt;false&lt;/async&gt;&lt;client_script&gt;&lt;![CDATA[function csmLocationCtrl() {
+
+    var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.location-wrapper {
+    display: flex;
+    color: #2e2e2e;
+    &amp;gt;div {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    .map {
+        display: flex;
+        .img-responsive {
+            margin: 0 auto;
+        }
+    }
+    .status-wrapper {
+        display: flex;
+        flex-direction: column;
+        .status {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            .value {
+                font-size: 42px;
+                font-weight: 300;
+                .big-number {
+                    float: left;
+                }
+                .side-note {
+                    margin-top: 15px;
+                    margin-left: 5px;
+                    float: left;
+                    font-size: 10px;
+                    color: #b4b2b3;
+                }
+                &amp;amp;.positive svg {
+                    fill: #70be5a;
+                }
+                &amp;amp;.negative svg {
+                    fill: #e51b24;
+                }
+            }
+            .description {
+                font-size: 12px;
+                font-weight: 500;
+                color: #b4b2b3;
+            }
+        }
+        svg {
+            width: 20px;
+            height: 13px;
+        }
+    }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-csm-location&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Location&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-17 17:48:44&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;fb690aff1342fa00de8cb5b12244b020&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Location&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fb690aff1342fa00de8cb5b12244b020&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-17 22:31:13&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+    &lt;symbol viewBox="0 0 48 48" id="icon-down"&gt;
+        &lt;title&gt;Arrow_Down_v1a&lt;/title&gt;
+        &lt;style type="text/css"&gt;
+            .st0 {
+                fill: none;
+            }
+
+            .st1 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+            }
+        &lt;/style&gt;
+        &lt;rect x="-630.7" y="-782.6" class="st0" width="2511.9" height="1666.4"/&gt;
+        &lt;path class="st1" d="M24,37.9c-0.3,0-0.5-0.1-0.7-0.3L1.4,15.7c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0L24,35.5l21.2-21.2
+    c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4L24.7,37.6C24.5,37.8,24.3,37.9,24,37.9"/&gt;
+    &lt;/symbol&gt;
+    &lt;symbol id="arrow-up"&gt;
+        &lt;polygon id="Triangle" points="10 1.38555833e-14 20 13 0 13"&gt;&lt;/polygon&gt;
+
+    &lt;/symbol&gt;
+    &lt;symbol id="arrow-down"&gt;
+        &lt;polygon id="Triangle"
+                 transform="translate(10.000000, 6.500000) rotate(180.000000) translate(-10.000000, -6.500000) "
+                 points="10 1.38555833e-14 20 13 0 13"&gt;&lt;/polygon&gt;
+    &lt;/symbol&gt;
+&lt;/svg&gt;
+&lt;div class="location-wrapper widget-wrapper"&gt;
+    &lt;div class="status-wrapper"&gt;
+        &lt;div class="status"&gt;
+            &lt;div class="value"&gt;
+                &lt;div class="big-number"&gt;
+                    1.2k
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="description"&gt;AVERAGE COST PER CASE&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="status"&gt;
+            &lt;div class="value negative"&gt;
+                &lt;div class="big-number"&gt;
+                    4.5
+                &lt;/div&gt;
+                &lt;div class="side-note"&gt;
+                    HOURS
+                    &lt;svg&gt;
+                        &lt;use xlink:href='#arrow-down'&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="description"&gt;AVG CASE RESOLUTION TIME
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="status"&gt;
+            &lt;div class="value positive"&gt;
+                &lt;div class="big-number"&gt;
+                    9.1
+                &lt;/div&gt;
+                &lt;div class="side-note"&gt;
+                    &lt;svg&gt;
+                        &lt;use xlink:href='#arrow-up'&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="description"&gt;CSAT&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="map"&gt;&lt;img src="map.svg" class="img-responsive" /&gt;&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE CSM Location">93c4e1e813da3e00de8cb5b12244b05f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-04-19 23:01:20</sys_created_on>
+<sys_id>9bc4e1e813da3e00de8cb5b12244b05f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-04-19 23:01:20</sys_updated_on>
+<table/>
+<target_name>PE CSM Location</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>db_image_c4f056371382fa00de8cb5b12244b0a3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category>general</category><format/><height/><image/><name>map.svg</name><size_bytes>2573</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-17 18:19:00</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c4f056371382fa00de8cb5b12244b0a3</sys_id><sys_mod_count>1</sys_mod_count><sys_name>map.svg</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>db_image_c4f056371382fa00de8cb5b12244b0a3</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-17 18:19:08</sys_updated_on><thumbnail/><width/></db_image><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/svg+xml</content_type><encryption_context/><file_name>image</file_name><image_height/><image_width/><size_bytes>2573</size_bytes><size_compressed>1074</size_compressed><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-17 18:19:08</sys_created_on><sys_id>f90196371382fa00de8cb5b12244b0d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-17 18:19:08</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>c4f056371382fa00de8cb5b12244b0a3</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="f90196371382fa00de8cb5b12244b0d6">f90196371382fa00de8cb5b12244b0d6</sys_attachment><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-17 18:19:08</sys_created_on><sys_id>f10196371382fa00de8cb5b12244b0d7</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>tVZNb+M2EL3vr1DVyy4g0fwYzpCB7QWym/aSRQu0vezNayu2EMcyZG2c/Ps+SXZiBbGBHqqDTT6OH9+8GVIef356WCePRb0rq80kNUqnSbGZV4tys5yk//z9Wx7Sz9MP493jMtmXi2aFmEDbpzRZFeVy1WAq3fSxLPbX1dMk1YlOEJIAT0+JTZpgq81ukq6aZns1Gu33e7V3qqqXI6u1HmGLQ8jV07rc3L8XaGKMo241nX5I8Ix/yfPk92JT1LOmqq+Sv+6LZr5KyCibfHTeRfmU5MkJ0Y9qVTyUs0OKal49jHb9b/L8QNmUzbqYPsy241E/7OFFsZtPv9TFrCkW8KJZHTZT41G3dIy6201bBF89skzKxST9c7Yscniwa+rqvpikm2pTHGf50dk0uSvX6+NiO87rn2tEF4/FplosDkmf0KJg+dfZbvWjmtWLNGnq2WZ3V9UPk7QbriH2Y244KN09WZI74sPk0wndCeWyrn5uc23PsNlXLmf9GaoTOvh4hsmQfqGy5gJTx7adwXHwffOkXHBOKGR5R2DYMlK0Nrk9WUPONkYxPia3XZglF623jgZLNqoYdfCGshhU9KIRMoCNgTYy0RrwOyVaRJuYGUvKR+cjJbcsykhk0HfRxhrWgAVqHAVnZQDHqKDQi8kMOcUC9W6AslaOLDFijbUKaGDA4qApBieAXVQUmPw51LW5WGaAAQE4Ca1kzSqKDjoOYIkK2bHuKMQrETjlMiQlLNGH2MMOJ5oyEsU2UjQttfeKwCeZYywHluB7yczese9h7UlaZm3AzGRNZkUFCMYuA/hSNd+ufU++IcXW0c50JOZsX4sTOHrFZGz0sNfAXhs0M2XCimzst2ervPHaxjMoyJzu84qoFTGc8WdQ51BBTc53JqBpAjvPGZEishY90zqGGHwE6uEgmttoeG2jdZm3irCsSXpQoEFLJlqRR96hr0TQRBKyAOdiAJkbwEbbdui74jujoIc1YEdK0BxGhjDjhxxibKPR0pGEUfwBrEV5VNHYrK04C6MThjBOckQmGkdEApo+oGVjpwSnSBgC2algTIjBDGAk7Cgezhkc8bbrzvdr+/14P/56Qzf+hlNctO21cObGmJf1fF10l9Afj7N1biT/Um2f8f3K4821xXuq2s7mZfOMt5fi/h5q0TleZwYND9FOB8wRwITmhncG6zWWLc5O25XSiul3PCOnWK/L7e49PfpFj43XX7Ue6JHYPd72elDndnN0U68naBTbCZoAelq9rA5nBPPnwRwCDxr+s0K65JjvFfLRMbQ+9AU+KDRO1P+v0Fzy8I3CgPunrSiZQ0216vano8LXovYKB0W+rPBs0/HFpusFhnC0ELesJ6v5YCEO5tFSNF13/UC9sZeabjxavnm/nwIvk24wbv99Tf8FRIvn3g0KAAA=</data><length>1420</length><position>1</position><sys_attachment display_value="image" sys_id="f90196371382fa00de8cb5b12244b0d6">f90196371382fa00de8cb5b12244b0d6</sys_attachment><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-17 18:19:08</sys_created_on><sys_id>750196371382fa00de8cb5b12244b0d7</sys_id></sys_attachment_doc></record_update>]]></payload>
+<remote_update_set display_value="PE CSM Location">93c4e1e813da3e00de8cb5b12244b05f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-04-19 23:01:20</sys_created_on>
+<sys_id>d7c4e1e813da3e00de8cb5b12244b05f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-04-19 23:01:20</sys_updated_on>
+<table/>
+<target_name>map.svg</target_name>
+<type>Images</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

@@ -1,0 +1,11 @@
+<div>
+    <section>
+        <h3>{{c.options.widget_header}}</h3>
+        <div class="month"> {{c.options.progress_bar_left_text}}
+            <div class="cost">{{c.options.progress_bar_right_text}}</div>
+        </div>
+        <div class="bar" ng-style="{'border':'solid 3px '+c.options.progress_bar_color}">
+            <div class="bar-complete" ng-style="c.getStyle(c.options.progress_total, c.options.progress_value,c.options.progress_bar_color)">{{c.options.progress_bar_text}}</div>
+        </div>
+    </section>
+</div>

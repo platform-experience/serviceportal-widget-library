@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-19 23:02:49">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE CSM Case Details</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>0b1f5aae134a3a00de8cb5b12244b03d</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-04-19 23:02:49</sys_created_on>
+<sys_id>8925ed6c13da3e00de8cb5b12244b04d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-04-19 23:02:49</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_603e5e6e134a3a00de8cb5b12244b013</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;async&gt;false&lt;/async&gt;&lt;client_script&gt;&lt;![CDATA[function caseDetailsCtrl() {
+    /* widget controller */
+    var c = this;
+    console.log(c.data.caseObj);
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.critical-border {
+    border-left: solid 4px #e73c3c !important;
+}
+
+.completed-border {
+    border-left: solid 4px #5cb85c !important;
+}
+
+.summary-wrapper {
+    border: solid 1px #e4e5e6;
+    border-left: solid 4px #f0ad4e;
+    .tabs-wrapper {
+        display: flex;
+        .tab {
+            text-transform: uppercase;
+            text-align: center;
+            border: 1px solid #e4e5e6;
+            border-left: none;
+            flex-grow: 1;
+            flex-basis: 0;
+            font-size: 12px;
+            font-weight: 500;
+            color: #b4b2b3;
+            .big-number {
+                font-size: 34px;
+                font-weight: 300;
+                color: #2e2e2e;
+                height: 38px;
+                &amp;amp;.smaller {
+                    font-size: 24px;
+                    white-space: nowrap;
+                }
+                .locations {
+                    font-size: 10px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .tab:last-of-type {
+            border-right: none;
+        }
+    }
+    .row1,
+    .tab {
+        padding: 15px;
+    }
+    .row1 {
+        position: relative;
+        .title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #65666a;
+        }
+        .description {
+            font-size: 12px;
+            color: #63585e;
+        }
+    }
+    .row3 {
+        font-size: 10px;
+        font-weight: 500;
+        color: #b4b2b3;
+        .right-column {
+            padding-right: 50px;
+        }
+    }
+    .tab {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+    //.row2 {
+    //  padding-right: 5px;
+    //  padding-left: 5px;
+    //}
+    .customers {
+        .big-number {
+            line-height: 34px;
+        }
+    }
+    .red {
+        font-size: 12px;
+        color: #e51b24;
+        margin-top: 4px;
+    }
+    .icon {
+        position: absolute;
+        right: 23px;
+        top: 50%;
+        margin-top: -7px;
+        svg {
+            height: 15px;
+            width: 10px;
+            fill: #e51b24;
+        }
+    }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-csm-case-details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Case Details&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Sysid of the Case record","name":"case_sys_id","label":"Case Sys ID","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+    if (options.case_sys_id) {
+        var caseGr = new GlideRecord('sn_customerservice_case');
+        caseGr.addQuery('sys_id', options.case_sys_id);
+        caseGr.query();
+        if (caseGr.next()) {
+            //console.log(options.case_sys_id);
+            var caseObj = {};
+            $sp.getRecordElements(caseObj, caseGr, 'priority,short_description,account');
+
+            if (caseObj.account.value) {
+                var relatedGr = new GlideRecord('sn_customerservice_case');
+                relatedGr.addQuery('account', caseObj.account.value);
+                relatedGr.query();
+                caseObj.relatedCasesCount = relatedGr.getRowCount();
+            }
+            caseObj.caseCost = '$56.4k';
+
+            var slaGr = new GlideRecord('task_sla');
+            slaGr.addQuery('task', options.case_sys_id);
+            slaGr.query();
+            if (slaGr.next()) {
+                var obj = {};
+                $sp.getRecordElements(obj, slaGr, 'sla,stage,schedule');
+                caseObj.sla = obj;
+                // console.log(obj);
+            }
+            data.caseObj = caseObj;
+            // console.log(caseObj);
+
+        }
+    }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-13 22:06:09&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;603e5e6e134a3a00de8cb5b12244b013&lt;/sys_id&gt;&lt;sys_mod_count&gt;39&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Case Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_603e5e6e134a3a00de8cb5b12244b013&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-19 18:30:20&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row"&gt;
+    &lt;div class="col-xs-12"&gt;
+        &lt;div class="text-center" ng-if="!c.data.caseObj"&gt;
+            &lt;p&gt;Nothing to display&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div ng-if="c.data.caseObj" class="summary-wrapper" ng-class="{ 'critical-border':c.data.caseObj.priority.value==1}"&gt;
+            &lt;div class="row1" ng-click=""&gt;
+                &lt;div class="title"&gt;{{c.data.caseObj.priority.display_value}}&lt;/div&gt;
+                &lt;div class="description"&gt;
+                    {{c.data.caseObj.short_description.display_value}}
+                &lt;/div&gt;
+                &lt;div class="icon"&gt;
+                    &lt;svg&gt;
+                        &lt;use xlink:href='#list-arrow'&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row2" ng-click=""&gt;
+                &lt;div class="tabs-wrapper"&gt;
+                    &lt;div class="tab customers"&gt;
+                        &lt;div class="big-number"&gt;
+                            {{c.data.caseObj.account.display_value}}
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            Customer Name
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="tab"&gt;
+                        &lt;div class="big-number smaller"&gt;
+                            {{c.data.caseObj.relatedCasesCount}}
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            RELATED CASES
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="tab"&gt;
+                        &lt;div class="big-number smaller"&gt;
+                            {{c.data.caseObj.caseCost}}
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            COST OF ACTIVE CASES
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="row1 row3" ng-click=""&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-xs-6"&gt;
+                        FIX STATUS
+                        &lt;div class="red"&gt;{{c.data.caseObj.sla.stage.display_value}}&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-6 text-right right-column"&gt;
+                        FIX SCHEDULE
+                        &lt;div class="red"&gt;{{c.data.caseObj.sla.schedule.display_value}}&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="icon"&gt;
+                    &lt;svg&gt;
+                        &lt;use xlink:href='#list-arrow'&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE CSM Case Details">8925ed6c13da3e00de8cb5b12244b04d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-04-19 23:02:49</sys_created_on>
+<sys_id>cd25ed6c13da3e00de8cb5b12244b04d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-04-19 23:02:49</sys_updated_on>
+<table/>
+<target_name>PE CSM Case Details</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

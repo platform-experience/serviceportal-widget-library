@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-19 22:38:47">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE CSM Dashboard Tabs</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>22e4e49413123e00de8cb5b12244b02b</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-04-19 22:38:47</sys_created_on>
+<sys_id>b4af55a813da3e00de8cb5b12244b0d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-04-19 22:38:47</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_9615a89413123e00de8cb5b12244b01e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;async&gt;false&lt;/async&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.sla {
+    position: relative;
+    padding: 0 15px;
+    .chart-wrapper {
+        padding-right: 80px;
+        .title {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .chart {
+            margin-top: 10px;
+            overflow: hidden;
+        }
+    }
+    .hours {
+        position: absolute;
+        right: 0;
+        top: -18px;
+        width: 80px;
+        text-align: center;
+        font-size: 12px;
+        color: #b4b2b3;
+        .big-number {
+            font-size: 34px;
+            color: #2e2e2e;
+        }
+        .small {
+            font-size: 10px;
+        }
+    }
+}
+
+.tabs-wrapper {
+    margin: 0 -1px;
+}
+
+.tabs {
+    margin-top: 20px;
+    display: flex;
+    border: solid 1px #e4e5e6;
+    border-bottom: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #b4b2b3;
+    .tab {
+        text-transform: uppercase;
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 15px;
+        text-align: center;
+        border-right: 1px solid #e4e5e6;
+        border-bottom: 1px solid #e4e5e6;
+        background-color: #fbfbfb;
+        flex-direction: column;
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: #65666a;
+        }
+        &amp;amp;.active {
+            background-color: white;
+            border-bottom: none;
+            padding-bottom: 16px;
+            svg {
+                fill: #B4B2B3;
+            }
+        }
+    }
+    .tab:last-of-type {
+        border-right: none;
+    }
+}
+
+.tabs-content {
+    border: solid 1px #e4e5e6;
+    border-top: none;
+    border-bottom: none;
+    .tab-content {
+        padding: 0 15px;
+    }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-csm-dashboard-tab&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Dashboard Tabs&lt;/name&gt;&lt;option_schema&gt;[{"name":"first_tab_title","label":"First Tab Title","type":"string"},{"name":"first_tab_icon","label":"First Tab Icon","type":"string"},{"name":"second_tab_title","label":"Second Tab Title","type":"string"},{"name":"second_tab_icon","label":"Second Tab Icon","type":"string"},{"name":"third_tab_title","label":"Third Tab Title","type":"string"},{"name":"third_tab_icon","label":"Third Tab Icon","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-18 23:45:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9615a89413123e00de8cb5b12244b01e&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Dashboard Tabs&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_9615a89413123e00de8cb5b12244b01e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-19 00:29:26&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="extended-wrapper"&gt;
+    &lt;div class="tabs-wrapper"&gt;
+        &lt;div class="tabs"&gt;
+            &lt;div class="tab" ng-class="{'active':c.state == 1}" ng-click="c.state=1;"&gt;
+                &lt;div&gt;
+                    &lt;i class="fa fa-2x" ng-class="c.options.first_tab_icon" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                {{::c.options.first_tab_title}}
+            &lt;/div&gt;
+            &lt;div class="tab" ng-class="{'active':c.state == 2}" ng-click="c.state=2;"&gt;
+                &lt;div&gt;
+                    &lt;i class="fa fa-2x" ng-class="c.options.second_tab_icon" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                {{::c.options.second_tab_title}}
+            &lt;/div&gt;
+            &lt;div class="tab" ng-class="{'active':c.state == 3}" ng-click="c.state=3;"&gt;
+                &lt;div&gt;
+                    &lt;i class="fa fa-2x" ng-class="c.options.third_tab_icon" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                {{::c.options.third_tab_title}}
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="tabs-content"&gt;
+            &lt;div class="tab-content text-center" ng-show="c.state == 1;"&gt;
+                &lt;p&gt;Include Widget Here&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="tab-content text-center" ng-show="c.state == 2;"&gt;
+                &lt;p&gt;Include Widget Here&lt;/p&gt;
+
+            &lt;/div&gt;
+            &lt;div class="tab-content text-center" ng-show="c.state == 3;"&gt;
+                &lt;p&gt;Include Widget Here&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE CSM Dashboard Tabs">b4af55a813da3e00de8cb5b12244b0d9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2017-04-19 22:38:47</sys_created_on>
+<sys_id>f8af55a813da3e00de8cb5b12244b0d9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2017-04-19 22:38:47</sys_updated_on>
+<table/>
+<target_name>PE CSM Dashboard Tabs</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

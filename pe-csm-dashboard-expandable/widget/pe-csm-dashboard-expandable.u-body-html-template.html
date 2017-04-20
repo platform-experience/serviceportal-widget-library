@@ -1,0 +1,28 @@
+<div class="dashboard-item" ng-click="c.client['1'] = !c.client['1'];">
+    <div class="title">Austin Edison</div>
+    <div class="stats-wrapper">
+        <div class="gauge-wrapper">
+            <sp-widget widget="c.data.embedded_widget"></sp-widget>
+        </div>
+        <div class="stats critical">
+            <div class="col">
+                <div class="big-number critical">1</div>
+                <div class="status">Critical</div>
+            </div>
+            <div class="col open">
+                <div class="big-number">1</div>
+                <div class="status">Open</div>
+            </div>
+            <div class="col closed">
+                <div class="big-number">2</div>
+                <div class="status">Closed</div>
+            </div>
+        </div>
+    </div>
+    <div class="revenue">
+        $2M Revenue
+    </div>
+</div>
+<div class="dashboard-item-extend text-center" ng-show="c.client['1']">
+    <p>Include Widget Here</p>
+</div>

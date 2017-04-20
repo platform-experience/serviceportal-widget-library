@@ -1,0 +1,22 @@
+<div class="row">
+    <div ng-if="!c.data.caseObj" class="text-center">
+        <p>No Data to display</p>
+    </div>
+    <div ng-if="c.data.caseObj" class="col-xs-12">
+        <div class="summary-wrapper" ng-class="{ 'critical-border':c.data.caseObj.priority.value==1}">
+            <div class="row row1">
+                <div class="col-xs-7">
+                    <div class="title">{{c.data.caseObj.priority.display_value}}</div>
+                    <div class="description">
+                        {{c.data.caseObj.short_description.display_value}}
+                    </div>
+                </div>
+                <div class="col-xs-5 text-center">
+                    <div class="status1">{{c.data.caseObj.sla.stage.display_value}}</div>
+                    <div class="status2">Fix Status</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<div class="case-extended">
+    <div class="timeline">
+        <dl>
+            <dd class="pos-right clearfix assigned">
+                <div class="circ">
+
+                    <i class="fa fa-2x fa-check-circle" aria-hidden="true"></i>
+                </div>
+                <div class="time">Nov 10 11:15AM</div>
+                <div class="events">
+                    <div class="events-body">
+                        <h4 class="events-heading">Assigned</h4>
+                        <sp-widget widget="c.data.embedded_widget"></sp-widget>
+                    </div>
+            </dd>
+            <dd class="pos-right clearfix active">
+                <div class="circ"></div>
+                <div class="time">Nov 10 11:30AM</div>
+                <div class="events">
+                    <div class="events-body">
+                        <h4 class="events-heading">Dispatched</h4>
+                        <sp-widget widget="c.data.embedded_widget"></sp-widget>
+                        <div class="actions">
+                            <button class="btn btn-alternate2 btn-block" ng-class="{'escalated':c.escalated[c.caseExtended]}" ng-click="c.escalated[c.caseExtended]=true" ng-hide="c.escalated[c.caseExtended]">ESCALATE
+                                </button>
+                            <button class="btn btn-alternate2 btn-block escalated" ng-show="c.escalated[c.caseExtended]" ng-click="c.escalated[c.caseExtended]=false">
+                                    ESCALATED
+                                </button>
+                        </div>
+
+                        <div ng-show="c.escalated[c.caseExtended]">
+                            <sp-widget widget="c.data.embedded_widget"></sp-widget>
+                        </div>
+
+                    </div>
+                </div>
+            </dd>
+            <dd class="pos-right clearfix">
+                <div class="circ"></div>
+                <div class="events">
+                    <div class="events-body">
+                        <h4 class="events-heading">En Route</h4>
+                    </div>
+                </div>
+            </dd>
+            <dd class="pos-right clearfix">
+                <div class="circ"></div>
+                <div class="events">
+                    <div class="events-body">
+                        <h4 class="events-heading">Repair</h4>
+                    </div>
+                </div>
+            </dd>
+            <dd class="pos-right clearfix">
+                <div class="circ"></div>
+                <div class="events">
+                    <div class="events-body">
+                        <h4 class="events-heading">Testing</h4>
+                    </div>
+                </div>
+            </dd>
+            <dd class="pos-right clearfix">
+                <div class="circ"></div>
+                <div class="events">
+                    <div class="events-body">
+                        <h4 class="events-heading">Resolved</h4>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        </div>
+    </div>

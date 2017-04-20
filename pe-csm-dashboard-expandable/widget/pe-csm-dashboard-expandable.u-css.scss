@@ -1,0 +1,70 @@
+  .dashboard-item {
+      position: relative;
+      background-color: #ffffff;
+      border: solid 1px #e4e5e6;
+      padding: 15px 10px;
+      margin-top: 17px;
+      overflow: hidden;
+      .gauge-wrapper {
+          position: absolute;
+          margin-top: -5px;
+      }
+      .revenue {
+          position: absolute;
+          top: 15px;
+          right: 10px;
+          font-size: 10px;
+          font-weight: 600;
+          color: #2e2e2e;
+      }
+      .title {
+          font-size: 18px;
+          font-weight: 500;
+          color: #2e2e2e
+      }
+      .stats {
+          padding-left: 130px;
+      }
+      .status {
+          text-transform: uppercase;
+      }
+      .stats-wrapper {
+          display: flex;
+          .stats {
+              flex-grow: 1;
+              display: flex;
+              .col {
+                  flex-grow: 1;
+                  flex-basis: 0;
+                  text-align: center;
+                  justify-content: flex-end;
+                  display: flex;
+                  flex-direction: column;
+              }
+              .big-number {
+                  font-size: 34px;
+              }
+              .status {
+                  font-size: 12px;
+                  font-weight: 500;
+                  color: #b4b2b3;
+              }
+              .critical {
+                  color: #e51b24;
+              }
+              .closed {
+                  color: #2e2e2e;
+              }
+              .open {
+                  color: #70be5a;
+              }
+          }
+      }
+  }
+  
+  .dashboard-item-extend {
+      background-color: #ffffff;
+      border: solid 1px #e4e5e6;
+      border-top: none;
+      padding-top: 15px;
+  }
