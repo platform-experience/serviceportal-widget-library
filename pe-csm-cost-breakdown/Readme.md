@@ -1,6 +1,6 @@
 ## Synopsis: PE CSM Cost Breakdown
 
-![alt text](../images/pe-csm-cost-breakdown.png" Pe csm Cost breakdown")
+![alt text](../images/pe-csm-cost-breakdown.png "Pe csm Cost breakdown")
 
 This widget can be used to create a simple card with heading and two rows of data.
 
