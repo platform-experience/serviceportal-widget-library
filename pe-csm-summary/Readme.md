@@ -1,6 +1,6 @@
 ## Synopsis: PE CSM Summary
 
-![alt text](../images/pe-csm-summary.png" PE CSM Summary")
+![alt text](../images/pe-csm-summary.png "PE CSM Summary")
 
 This widget can be used to dispplay a quick summary of the customer.
 
