@@ -1,6 +1,6 @@
 ## Synopsis: PE CSM Case Details
 
-![alt text](../images/pe-csm-case-details.png" People Info")
+![alt text](../images/pe-csm-case-details.png "PE CSM Case Details")
 
 This widget is driven by **sn_customerservice_case** table. You can provide a case sysid in the options, widget will fetch details from the record and the associated SLA to display information.
 
