@@ -1,22 +1,22 @@
-<div ng-include="'pe-svgs'"></div>
-<div class="row contact-slider">
+<div ng-include="'pe-contact-slider-svg'"></div>
+<div class="row pe-contact-slider">
   <div class="col-xs-12" ng-swipe-left="c.nextPhase()">
     <div class="panel panel-default">
       <div class="panel-heading">informed parties</div>
       <div id="contactSliderCarousel" class="contact-carousel slide" data-ride="contact-carousel">
         <div class="carousel-inner" role="listbox">
-          <div class="item" ng-repeat="user in c.data.users track by $index" ng-class="{'active' : $index == 0}">
+          <div class="item" ng-repeat="user in ::c.data.users track by $index" ng-class="{'active' : $index == 0}">
             <div class="panel-body">
               <div class="row">
                 <div class="col-xs-1 minimal-width"></div>
                 <div class="col-xs-2">
                   <div class="photo">
-                    <img class="img-circle" ng-src="{{user.photo.display_value}}">
+                    <img class="img-circle" ng-src="{{::user.photo.display_value}}">
                   </div>
                 </div>
                 <div class="col-xs-5">
-                  <h5>{{user.first_name.display_value}} {{user.last_name.display_value}}</h5>
-                  <p class="user-sub-text">{{user.title.display_value}}</p>
+                  <h5>{{::user.first_name.display_value}} {{::user.last_name.display_value}}</h5>
+                  <p class="user-sub-text">{{::user.title.display_value}}</p>
                 </div>
                 <div class="col-xs-3">
                   <svg class="phone">
