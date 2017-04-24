@@ -1,0 +1,65 @@
+.report-issue {
+	h1 {
+		font-size: 18px;
+		font-weight: 600;
+		color: #3f4c5c;
+	}
+	.choices {
+		ul {
+			padding: 0;
+			clear: both;
+			li {
+				position: relative;
+				padding-left: 40px;
+				min-height: 50px;
+				line-height: 50px;
+				border-bottom: solid 0.5px #cccccc;
+			}
+			li:first-child {
+				border-top: solid 0.5px #cccccc;
+			}
+			li:hover,
+			li:active {
+				//font-weight: bold;
+				color: #ffffff;
+				background-color: #2a3342;
+				svg {
+					fill: #fff;
+				}
+			}
+		}
+		.arrow {
+			position: absolute;
+			right: 30px;
+			top: 5px;
+			svg {
+				width: 9px;
+				height: 18px;
+				fill: #3F4C5C;
+			}
+		}
+	}
+	.options {
+		h2 {
+			font-size: 18px;
+			font-weight: 600;
+			padding-left: 15px;
+		}
+		h3 {
+			font-size: 16px;
+			font-weight: normal;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		.choices {
+			//padding-left: 30px;
+			ul {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.light {
+	font-weight: normal;
+}

@@ -1,0 +1,17 @@
+<div class="inner-page">
+	<div class="report-issue">
+		<div class="choices row">
+			<div class="col-xs-12">
+				<h1>{{c.data.title}}</h1>
+			</div>
+			<ul>
+				<li ng-repeat="issue in c.data.issues track by issue.sys_id">
+					{{issue.text}}
+					<div class="arrow">
+						<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
