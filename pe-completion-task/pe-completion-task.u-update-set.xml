@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-21 23:32:46">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Update set containing the "Completion Task" widget, developed by the Platform Experience team at ServiceNow.</description>
+<inserted/>
+<name>Completion Task widget (Platform Experience)</name>
+<origin_sys_id/>
+<release_date>2017-04-22 00:00:00</release_date>
+<remote_sys_id>6fd407454f1a3a0022f40ccf0310c757</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:45</sys_created_on>
+<sys_id>0b2f3fc14f9a3a0022f40ccf0310c7bc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_instance_completion_task_u_validation_script_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_validation_script" label="Validation script" language="en" table="u_sp_instance_completion_task"><sys_documentation action="INSERT_OR_UPDATE"><element>u_validation_script</element><help/><hint/><label>Validation script</label><language>en</language><name>u_sp_instance_completion_task</name><plural>Validation scripts</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 20:53:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>eb9a9b8d4f1a3a0022f40ccf0310c7ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Validation script</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_instance_completion_task_u_validation_script_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 20:53:03</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:46</sys_created_on>
+<sys_id>032f3fc14f9a3a0022f40ccf0310c7be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>Instance of Completion Task.Validation script</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_override_b45eb7c14f9a3a0022f40ccf0310c729</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes/><attributes_override>false</attributes_override><base_table>sp_instance</base_table><calculation/><calculation_override>false</calculation_override><default_value>Task title</default_value><default_value_override>true</default_value_override><dependent/><dependent_override>false</dependent_override><display_override>false</display_override><element>title</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>u_sp_instance_completion_task</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual/><reference_qual_override>false</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 23:29:23</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b45eb7c14f9a3a0022f40ccf0310c729</sys_id><sys_mod_count>0</sys_mod_count><sys_name>title</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_override_b45eb7c14f9a3a0022f40ccf0310c729</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 23:29:23</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:45</sys_created_on>
+<sys_id>072f3fc14f9a3a0022f40ccf0310c7bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>title</target_name>
+<type>Dictionary Entry Override</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_5ad8978d4f1a3a0022f40ccf0310c7a0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_sp_instance_completion_task</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 20:45:19</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5ad8978d4f1a3a0022f40ccf0310c7a0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_instance_completion_task</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_5ad8978d4f1a3a0022f40ccf0310c7a0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 20:45:19</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:46</sys_created_on>
+<sys_id>0f2f3fc14f9a3a0022f40ccf0310c7be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:46</sys_updated_on>
+<table/>
+<target_name>u_sp_instance_completion_task</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_override_9e8e3bc14f9a3a0022f40ccf0310c75f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes/><attributes_override>false</attributes_override><base_table>sp_instance</base_table><calculation/><calculation_override>false</calculation_override><default_value>?id=index</default_value><default_value_override>true</default_value_override><dependent/><dependent_override>false</dependent_override><display_override>false</display_override><element>url</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>u_sp_instance_completion_task</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual/><reference_qual_override>false</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 23:30:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>9e8e3bc14f9a3a0022f40ccf0310c75f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>url</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_override_9e8e3bc14f9a3a0022f40ccf0310c75f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 23:30:09</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:45</sys_created_on>
+<sys_id>432f3fc14f9a3a0022f40ccf0310c7bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>url</target_name>
+<type>Dictionary Entry Override</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_e61b1bcd4f1a3a0022f40ccf0310c711</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="e61b1bcd4f1a3a0022f40ccf0310c711" sys_domain="global" table="u_sp_instance_completion_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>title</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 21:09:06</sys_created_on><sys_id>7a4e9b414f5a3a0022f40ccf0310c77e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_instance_completion_task" sys_domain="global" view="Default view">e61b1bcd4f1a3a0022f40ccf0310c711</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 21:09:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 21:09:06</sys_created_on><sys_id>fa4e9b414f5a3a0022f40ccf0310c77e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_instance_completion_task" sys_domain="global" view="Default view">e61b1bcd4f1a3a0022f40ccf0310c711</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 21:09:06</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>url</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 21:09:06</sys_created_on><sys_id>7e4e9b414f5a3a0022f40ccf0310c77e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_instance_completion_task" sys_domain="global" view="Default view">e61b1bcd4f1a3a0022f40ccf0310c711</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 21:09:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 21:09:06</sys_created_on><sys_id>fe4e9b414f5a3a0022f40ccf0310c77e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_instance_completion_task" sys_domain="global" view="Default view">e61b1bcd4f1a3a0022f40ccf0310c711</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 21:09:06</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 21:09:06</sys_created_on><sys_id>724e9b414f5a3a0022f40ccf0310c77f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_instance_completion_task" sys_domain="global" view="Default view">e61b1bcd4f1a3a0022f40ccf0310c711</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 21:09:06</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_validation_script</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 21:09:06</sys_created_on><sys_id>f24e9b414f5a3a0022f40ccf0310c77f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_instance_completion_task" sys_domain="global" view="Default view">e61b1bcd4f1a3a0022f40ccf0310c711</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 21:09:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_warning_message_script</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 21:09:06</sys_created_on><sys_id>764e9b414f5a3a0022f40ccf0310c77f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_instance_completion_task" sys_domain="global" view="Default view">e61b1bcd4f1a3a0022f40ccf0310c711</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 21:09:06</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_sp_instance_completion_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 20:55:10</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e61b1bcd4f1a3a0022f40ccf0310c711</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_instance_completion_task</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_e61b1bcd4f1a3a0022f40ccf0310c711</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 20:55:10</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:46</sys_created_on>
+<sys_id>4b2f3fc14f9a3a0022f40ccf0310c7be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:46</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>Instance of Completion Task</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_instance_completion_task_u_warning_message_script</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_warning_message_script" table="u_sp_instance_completion_task"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Warning message script&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;(function warnMessage(){&amp;#13;
+&amp;#13;
+    /* The return value of this function will determine what the warning&amp;#13;
+     * message will be. Simply return a string from this function and it will&amp;#13;
+      be shown below the title of the completion task. */&amp;#13;
+&amp;#13;
+    var message = 'Warning message';&amp;#13;
+&amp;#13;
+    return message;&amp;#13;
+&amp;#13;
+}());&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_warning_message_script&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Script"&gt;script&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;name&gt;u_sp_instance_completion_task&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 20:53:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c52a9b8d4f1a3a0022f40ccf0310c783&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Warning message script&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_instance_completion_task_u_warning_message_script&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-21 23:31:00&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:45</sys_created_on>
+<sys_id>4f2f3fc14f9a3a0022f40ccf0310c7bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>Instance of Completion Task.Warning message script</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_instance_completion_task__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Instance of Completion Task" language="en" table="u_sp_instance_completion_task"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Instance of Completion Task</label><language>en</language><name>u_sp_instance_completion_task</name><plural>Instance of Completion Tasks</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 20:45:19</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>12d8978d4f1a3a0022f40ccf0310c79a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Instance of Completion Task</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_instance_completion_task__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 20:45:19</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:46</sys_created_on>
+<sys_id>872f3fc14f9a3a0022f40ccf0310c7be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:46</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>Instance of Completion Task</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_instance_completion_task_u_validation_script</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_validation_script" table="u_sp_instance_completion_task"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Validation script&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;(function isCompleted(){&amp;#13;
+&amp;#13;
+    /* The return value of this function will determine whether to show the&amp;#13;
+     * "completed" tick next to the completion task. */&amp;#13;
+&amp;#13;
+    var completion = true;&amp;#13;
+&amp;#13;
+    return completion;&amp;#13;
+}());&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_validation_script&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Script"&gt;script&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;name&gt;u_sp_instance_completion_task&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 20:53:02&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b7d8178d4f1a3a0022f40ccf0310c79e&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validation script&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_instance_completion_task_u_validation_script&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-21 23:30:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:45</sys_created_on>
+<sys_id>8b2f3fc14f9a3a0022f40ccf0310c7bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>Instance of Completion Task.Validation script</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_7468d38d4f1a3a0022f40ccf0310c739</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Instance of Completion Task</label><live_feed_enabled>false</live_feed_enabled><name>u_sp_instance_completion_task</name><number_ref/><provider_class/><read_access>true</read_access><super_class display_value="Instance" name="sp_instance">52d90bef8561320092c05cf45eb450a4</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 20:45:18</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7468d38d4f1a3a0022f40ccf0310c739</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Instance of Completion Task</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_7468d38d4f1a3a0022f40ccf0310c739</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 20:45:18</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:45</sys_created_on>
+<sys_id>8f2f3fc14f9a3a0022f40ccf0310c7bc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>Instance of Completion Task</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_instance_completion_task_u_warning_message_script_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_warning_message_script" label="Warning message script" language="en" table="u_sp_instance_completion_task"><sys_documentation action="INSERT_OR_UPDATE"><element>u_warning_message_script</element><help/><hint/><label>Warning message script</label><language>en</language><name>u_sp_instance_completion_task</name><plural>Warning message scripts</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-21 20:53:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>339ad3cd4f1a3a0022f40ccf0310c739</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Warning message script</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_instance_completion_task_u_warning_message_script_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-21 20:53:03</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:46</sys_created_on>
+<sys_id>c32f3fc14f9a3a0022f40ccf0310c7be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:46</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>Instance of Completion Task.Warning message script</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_instance_completion_task_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_sp_instance_completion_task"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;update_synch=true&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_sp_instance_completion_task&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 20:45:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;42d8d38d4f1a3a0022f40ccf0310c776&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_sp_instance_completion_task&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_instance_completion_task_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-21 20:45:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:45</sys_created_on>
+<sys_id>c72f3fc14f9a3a0022f40ccf0310c7bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<table>u_sp_instance_completion_task</table>
+<target_name>Instance of Completion Task</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_52ddcf094f1a3a0022f40ccf0310c798</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-ct-heading: #117fc1 !default;
+$pe-ct-warning: #d35400 !default;
+$pe-ct-arrow: #117fc1 !default;
+$pe-ct-completed: green !default;
+
+.pe-ct-item {
+  padding: 20px 0;
+  margin: 5px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.pe-ct-status, .pe-ct-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.pe-ct-status {
+  left: 0;
+  font-size: 20px;
+  color: $pe-ct-completed;
+  margin-top: -14px;
+}
+
+.pe-ct-title {
+  color: $pe-ct-heading;
+}
+
+.pe-ct-warning {
+  text-transform: uppercase;
+  color: $pe-ct-warning;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+}
+
+.pe-ct-arrow {
+  right: 0;
+  color: $pe-ct-arrow;
+  top: 50%;
+  margin-top: -16px;
+}&lt;/css&gt;&lt;data_table&gt;u_sp_instance_completion_task&lt;/data_table&gt;&lt;demo_data&gt;{
+	"options": {
+		"title": "Task title",
+		"url": "?id=index"
+	},
+	"data": {
+		"completed": true,
+		"warning_message": "Warning text"
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;u_validation_script,u_warning_message_script&lt;/field_list&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-completion-task&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Completion Task&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function($sp) {
+	
+	// get the GlideRecord for the SP Instance.
+	var gr = $sp.getInstanceRecord();
+	
+	// If a validation script is set, execute it.
+	if (options.u_validation_script != '') {
+		data.completed = executeScript(gr, 'u_validation_script');
+	}
+	
+	// If a warning message script is set, execute it.
+	if (options.u_warning_message_script != '') {
+		data.warning_message = executeScript(gr, 'u_warning_message_script');
+	}
+  
+	function executeScript (gr, field) {
+		var evaluator = new GlideScopedEvaluator();
+		evaluator.putVariable('current', gr);
+		var exec = evaluator.evaluateScript(gr, field, null);
+		return exec;
+	}
+})($sp);]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 20:00:16&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;52ddcf094f1a3a0022f40ccf0310c798&lt;/sys_id&gt;&lt;sys_mod_count&gt;135&lt;/sys_mod_count&gt;&lt;sys_name&gt;Completion Task&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_52ddcf094f1a3a0022f40ccf0310c798&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-21 22:54:57&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a href="{{::options.url}}"&gt;
+  &lt;div class="pe-ct-item"&gt;
+    &lt;div class="pe-ct-status" ng-if="c.data.completed"&gt;
+      &lt;i class="fa fa-check-circle" aria-hidden="true" title="Completed"&gt;&lt;/i&gt;
+      &lt;span class="sr-only"&gt;Completed&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="pe-ct-title"&gt;{{::options.title}}&lt;/div&gt;
+    &lt;div class="pe-ct-warning"&gt;{{::c.data.warning_message}}&lt;/div&gt;
+    &lt;div class="pe-ct-arrow"&gt;&lt;i class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Completion Task widget (Platform Experience)">0b2f3fc14f9a3a0022f40ccf0310c7bc</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-21 23:32:45</sys_created_on>
+<sys_id>cb2f3fc14f9a3a0022f40ccf0310c7bc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-21 23:32:45</sys_updated_on>
+<table/>
+<target_name>Completion Task</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

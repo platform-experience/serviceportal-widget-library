@@ -1,0 +1,44 @@
+$pe-ct-heading: #117fc1 !default;
+$pe-ct-warning: #d35400 !default;
+$pe-ct-arrow: #117fc1 !default;
+$pe-ct-completed: green !default;
+
+.pe-ct-item {
+  padding: 20px 0;
+  margin: 5px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.pe-ct-status, .pe-ct-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.pe-ct-status {
+  left: 0;
+  font-size: 20px;
+  color: $pe-ct-completed;
+  margin-top: -14px;
+}
+
+.pe-ct-title {
+  color: $pe-ct-heading;
+}
+
+.pe-ct-warning {
+  text-transform: uppercase;
+  color: $pe-ct-warning;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+}
+
+.pe-ct-arrow {
+  right: 0;
+  color: $pe-ct-arrow;
+  top: 50%;
+  margin-top: -16px;
+}

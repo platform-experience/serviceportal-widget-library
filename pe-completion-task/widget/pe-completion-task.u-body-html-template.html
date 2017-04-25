@@ -1,0 +1,11 @@
+<a href="{{::options.url}}">
+  <div class="pe-ct-item">
+    <div class="pe-ct-status" ng-if="c.data.completed">
+      <i class="fa fa-check-circle" aria-hidden="true" title="Completed"></i>
+      <span class="sr-only">Completed</span>
+    </div>
+    <div class="pe-ct-title">{{::options.title}}</div>
+    <div class="pe-ct-warning">{{::c.data.warning_message}}</div>
+    <div class="pe-ct-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+  </div>
+</a>
