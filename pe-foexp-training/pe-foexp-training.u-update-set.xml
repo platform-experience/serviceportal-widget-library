@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-24 23:59:35">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Training widget (Platform Experience)</name>
+<origin_sys_id/>
+<release_date>2017-04-25 00:00:00</release_date>
+<remote_sys_id>24685fbd4f1e320022f40ccf0310c751</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1512e30a4f167200ab4450af0310c7f2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_cea20b464fd27200ab4450af0310c763</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>pe-bootflat.min.css</name><source>local</source><sp_css display_value="pe-bootflat.min.css">86b20b464fd27200ab4450af0310c7f2</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 21:42:47</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>cea20b464fd27200ab4450af0310c763</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-bootflat.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_cea20b464fd27200ab4450af0310c763</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 23:38:23</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1112e30a4f167200ab4450af0310c7f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>pe-bootflat.min.css</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_assignments_u_enrolled</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_enrolled" table="u_pe_training_assignments"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Enrolled&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_enrolled&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;glide_date_time&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_training_assignments&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 22:08:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;7b18874a4fd27200ab4450af0310c75f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Enrolled&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_assignments_u_enrolled&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 22:08:07&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1112e30a4f167200ab4450af0310c7f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>u_pe_training_assignments.u_enrolled</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_assignments__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Training Assignments" language="en" table="u_pe_training_assignments"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Training Assignments</label><language>en</language><name>u_pe_training_assignments</name><plural>Training Assignments</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e4988b4a4fd27200ab4450af0310c7f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Assignments</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_assignments__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:08:07</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1112e30a4f167200ab4450af0310c7f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Training Assignments</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_assignments_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_pe_training_assignments"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_training_assignments&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 22:08:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;68988b4a4fd27200ab4450af0310c7eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_pe_training_assignments&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_assignments_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 22:08:07&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1512e30a4f167200ab4450af0310c7f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Training Assignments</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_assignments_u_course_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_course" label="Course" language="en" table="u_pe_training_assignments"><sys_documentation action="INSERT_OR_UPDATE"><element>u_course</element><help/><hint/><label>Course</label><language>en</language><name>u_pe_training_assignments</name><plural>Courses</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>24988b4a4fd27200ab4450af0310c7f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Course</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_assignments_u_course_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:08:07</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1512e30a4f167200ab4450af0310c7f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Training Assignments.Course</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_6341ee424f927200ab4450af0310c7f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Training Category</label><live_feed_enabled>false</live_feed_enabled><name>u_pe_training_category</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:17:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6341ee424f927200ab4450af0310c7f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Category</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_6341ee424f927200ab4450af0310c7f6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:17:50</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1912e30a4f167200ab4450af0310c7f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_category</table>
+<target_name>Training Category</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_prerequisites_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_pe_training_prerequisites"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_training_prerequisites&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:52:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;78992e864f927200ab4450af0310c770&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_pe_training_prerequisites&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_prerequisites_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 19:52:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1912e30a4f167200ab4450af0310c7f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_prerequisites</table>
+<target_name>Training Prerequisites</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_5a912a824f927200ab4450af0310c70f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_pe_training_category</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:17:51</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5a912a824f927200ab4450af0310c70f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_training_category</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_5a912a824f927200ab4450af0310c70f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:17:51</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1d12270a4f167200ab4450af0310c7da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>u_pe_training_category</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_0a91e6824f927200ab4450af0310c7e6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Training">4291e6824f927200ab4450af0310c7e4</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Training Categories</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_pe_training_category</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:17:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0a91e6824f927200ab4450af0310c7e6</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Categories</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_0a91e6824f927200ab4450af0310c7e6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:12:11</sys_updated_on><timeline_page/><title>Categories</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1d12e30a4f167200ab4450af0310c7f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_category</table>
+<target_name>Categories</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_course_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_pe_training_course"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_training_course&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:19:44&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b9022e824f927200ab4450af0310c710&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_pe_training_course&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_course_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 19:19:44&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1d12e30a4f167200ab4450af0310c7f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>Training Course</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_course_u_name_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_name" label="Name" language="en" table="u_pe_training_course"><sys_documentation action="INSERT_OR_UPDATE"><element>u_name</element><help/><hint/><label>Name</label><language>en</language><name>u_pe_training_course</name><plural>Names</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 21:10:19</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7d5b36024fd27200ab4450af0310c751</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_course_u_name_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 21:10:19</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>1d12e30a4f167200ab4450af0310c7f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>Training Course.Name</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_bd092a864f927200ab4450af0310c733</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Training Prerequisites</label><live_feed_enabled>false</live_feed_enabled><name>u_pe_training_prerequisites</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:52:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bd092a864f927200ab4450af0310c733</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Prerequisites</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_bd092a864f927200ab4450af0310c733</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:52:42</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5112e30a4f167200ab4450af0310c7f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_prerequisites</table>
+<target_name>Training Prerequisites</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_assignments_u_completed_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_completed" label="Completed" language="en" table="u_pe_training_assignments"><sys_documentation action="INSERT_OR_UPDATE"><element>u_completed</element><help/><hint/><label>Completed</label><language>en</language><name>u_pe_training_assignments</name><plural>Completed</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>68988b4a4fd27200ab4450af0310c7f4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Completed</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_assignments_u_completed_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:08:07</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5112e30a4f167200ab4450af0310c7f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Training Assignments.Completed</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_e498cb4a4fd27200ab4450af0310c70d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_pe_training_assignments</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:08</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e498cb4a4fd27200ab4450af0310c70d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_training_assignments</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_e498cb4a4fd27200ab4450af0310c70d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:08:08</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5512270a4f167200ab4450af0310c7db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>u_pe_training_assignments</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_7d02ea824f927200ab4450af0310c7ea</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Training">4291e6824f927200ab4450af0310c7e4</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Training Courses</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_pe_training_course</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:19:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7d02ea824f927200ab4450af0310c7ea</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Courses</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_7d02ea824f927200ab4450af0310c7ea</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:12:25</sys_updated_on><timeline_page/><title>Courses</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5512e30a4f167200ab4450af0310c7f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>Courses</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_course_u_order</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_order" table="u_pe_training_course"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Order&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_order&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_training_course&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:19:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ecc16a824f927200ab4450af0310c702&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Order&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_course_u_order&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 19:19:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5512e30a4f167200ab4450af0310c7f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>u_pe_training_course.u_order</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_prerequisites__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Training Prerequisites" language="en" table="u_pe_training_prerequisites"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Training Prerequisites</label><language>en</language><name>u_pe_training_prerequisites</name><plural>Training Prerequisites</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:52:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>05992e864f927200ab4450af0310c777</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Prerequisites</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_prerequisites__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:52:42</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5912270a4f167200ab4450af0310c7da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_prerequisites</table>
+<target_name>Training Prerequisites</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_4291e6824f927200ab4450af0310c7e4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>PE - Training Widget</name><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:17:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4291e6824f927200ab4450af0310c7e4</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Training</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_4291e6824f927200ab4450af0310c7e4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:11:48</sys_updated_on><title>Training</title><view_name/></sys_app_application></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5912e30a4f167200ab4450af0310c7f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>Training</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_category_u_name</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_name" table="u_pe_training_category"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Name&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;true&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;256&lt;/max_length&gt;&lt;name&gt;u_pe_training_category&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:17:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0c5162824f927200ab4450af0310c73b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Name&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_category_u_name&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 19:40:32&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5912e30a4f167200ab4450af0310c7f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_category</table>
+<target_name>Training Category.Name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_course_u_category_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_category" label="Category" language="en" table="u_pe_training_course"><sys_documentation action="INSERT_OR_UPDATE"><element>u_category</element><help/><hint/><label>Category</label><language>en</language><name>u_pe_training_course</name><plural>Categories</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:19:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c6022e824f927200ab4450af0310c719</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Category</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_course_u_category_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:19:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5912e30a4f167200ab4450af0310c7f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>Training Course.Category</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_86b20b464fd27200ab4450af0310c7f2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css"><sp_css action="INSERT_OR_UPDATE"><css>/*&#13;
+ * bootflat 2.0.4&#13;
+ *&#13;
+ * Description: BOOTFLAT is an open source Flat UI KIT based on Bootstrap 3.2.0 CSS framework. It provides a faster, easier and less repetitive way for web developers to create elegant web apps.&#13;
+ *&#13;
+ * Homepage: http://bootflat.github.com/&#13;
+ *&#13;
+ * By @Flathemes &lt;info@flathemes.com&gt;&#13;
+ *&#13;
+ * Last modify time: 2014-09-03&#13;
+ *&#13;
+ * Licensed under the MIT license. Please see LICENSE for more information.&#13;
+ *&#13;
+ * Copyright 2013 FLATHEMES.&#13;
+ *&#13;
+ */&#13;
+&#13;
+body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#434a54;background-color:#fff}a{color:#3bafda;text-decoration:none}a:focus,a:hover{color:#4fc1e9;text-decoration:none}a:focus{outline:0}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:inherit;font-weight:700;line-height:1.1;color:inherit}.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#e7e9ec}h1,h2,h3{margin-top:30px;margin-bottom:15px}h4,h5,h6{margin-top:15px;margin-bottom:15px}h6{font-weight:400}.h1,h1{font-size:51px}.h2,h2{font-size:43px}.h3,h3{font-size:30px}.h4,h4{font-size:19px}.h5,h5{font-size:18px}.h6,h6{font-size:14px}blockquote{border-left:3px solid #ccd1d9}.img-rounded{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.img-comment{margin:24px 0;font-size:15px;font-style:italic;line-height:1.2}.btn{color:#fff}.btn,.btn.disabled,.btn[disabled]{background-color:#aab2bd;border-color:#aab2bd}.btn.active,.btn:active,.btn:focus,.btn:hover{color:#fff;background-color:#ccd1d9;border-color:#ccd1d9;outline:0!important}.btn.active,.btn:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.125);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.125);box-shadow:inset 0 1px 2px rgba(0,0,0,.125)}.btn.disabled,.btn[disabled]{filter:alpha(opacity=45);opacity:.45}.btn-link,.btn-link.active,.btn-link.disabled,.btn-link:active,.btn-link:focus,.btn-link:hover,.btn-link[disabled]{color:#3bafda;background-color:transparent;&#13;
+ border-color:transparent;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.btn-link:focus,.btn-link:hover{text-decoration:underline}.btn-default{color:#434a54;border-color:#aab2bd!important}.btn-default.active,.btn-default:active,.btn-default:focus,.btn-default:hover{background-color:#ccd1d9;border-color:#ccd1d9}.btn-default,.btn-default.disabled,.btn-default[disabled]{background-color:#fff}.open .dropdown-toggle.btn-default{background-color:#ccd1d9;border-color:#ccd1d9}.btn-primary,.btn-primary.active,.btn-primary.disabled,.btn-primary:active,.btn-primary[disabled]{background-color:#3bafda;border-color:#3bafda}.btn-primary:focus,.btn-primary:hover,.open .dropdown-toggle.btn-primary{background-color:#4fc1e9;border-color:#4fc1e9}.btn-info,.btn-info.active,.btn-info.disabled,.btn-info:active,.btn-info[disabled]{background-color:#37bc9b;border-color:#37bc9b}.btn-info:focus,.btn-info:hover,.open .dropdown-toggle.btn-info{background-color:#48cfad;border-color:#48cfad}.btn-success,.btn-success.active,.btn-success.disabled,.btn-success:active,.btn-success[disabled]{background-color:#8cc152;border-color:#8cc152}.btn-success:focus,.btn-success:hover,.open .dropdown-toggle.btn-success{background-color:#a0d468;border-color:#a0d468}.btn-warning,.btn-warning.active,.btn-warning.disabled,.btn-warning:active,.btn-warning[disabled]{background-color:#f6bb42;border-color:#f6bb42}.btn-warning:focus,.btn-warning:hover,.open .dropdown-toggle.btn-warning{background-color:#ffce54;border-color:#ffce54}.btn-danger,.btn-danger .open .dropdown-toggle.btn,.btn-danger.active,.btn-danger.disabled,.btn-danger:active,.btn-danger[disabled]{background-color:#da4453;border-color:#da4453}.btn-danger:focus,.btn-danger:hover,.open .dropdown-toggle.btn-danger{background-color:#ed5565;border-color:#ed5565}.btn-group.open .dropdown-toggle{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.125);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.125);box-shadow:inset 0 1px 2px rgba(0,0,0,.125)}.btn-group .btn{border-left-color:#96a0ad}.btn-group .btn-default.active,.btn-group .btn-default:active,.btn-group .btn-default:focus,.btn-group.open .btn-default.dropdown-toggle{color:#fff}.btn-group .btn-primary,.btn-group .btn-primary.active,.btn-group .btn-primary:active,.btn-group .btn-primary:focus{border-left-color:#269ecb}.btn-group .btn-success,.btn-group .btn-success.active,.btn-group .btn-success:active,.btn-group .btn-success:focus{border-left-color:#7ab03f}.btn-group .btn-warning,.btn-group .btn-warning.active,.btn-group .btn-warning:active,.btn-group .btn-warning:focus{border-left-color:#efa50b}.btn-group .btn-danger,.btn-group .btn-danger.active,.btn-group .btn-danger:active,.btn-group .btn-danger:focus{border-left-color:#d1293a}.btn-group .btn-info,.btn-group .btn-info.active,.btn-group .btn-info:active,.btn-group .btn-info:focus{border-left-color:#2fa084}.btn-group .btn-danger:first-child,.btn-group .btn-info:first-child,.btn-group .btn-primary:first-child,.btn-group .btn-success:first-child,.btn-group .btn-warning:first-child,.btn-group .btn:first-child{border-left-color:transparent}.btn-group-vertical .btn,.btn-group-vertical .btn-group .btn-primary{border-top-color:#96a0ad!important}.btn-group-vertical .btn-group .btn-primary,.btn-group-vertical .btn-primary,.btn-group-vertical .btn-primary.active,.btn-group-vertical .btn-primary:active,.btn-group-vertical .btn-primary:focus{border-top-color:#269ecb!important}.btn-group-vertical .btn-group .btn-success,.btn-group-vertical .btn-success,.btn-group-vertical .btn-success.active,.btn-group-vertical .btn-success:active,.btn-group-vertical .btn-success:focus{border-top-color:#7ab03f!important}.btn-group-vertical .btn-group .btn-warning,.btn-group-vertical .btn-warning,.btn-group-vertical .btn-warning.active,.btn-group-vertical .btn-warning:active,.btn-group-vertical .btn-warning:focus{border-top-color:#efa50b!important}.btn-group-vertical .btn-danger,.btn-group-vertical .btn-danger.active,.btn-group-vertical .btn-danger:active,.btn-group-vertical .btn-danger:focus,.btn-group-vertical .btn-group .btn-danger{border-top-color:#d1293a!important}.btn-group-vertical .btn-group .btn-info,.btn-group-vertical .btn-info,.btn-group-vertical .btn-info.active,.btn-group-vertical .btn-info:active,.btn-group-vertical .btn-info:focus{border-top-color:#2fa084!important}.btn-group-vertical .btn-danger:first-child,.btn-group-vertical .btn-info:first-child,.btn-group-vertical .btn-primary:first-child,.btn-group-vertical .btn-success:first-child,.btn-group-vertical .btn-warning:first-child,.btn-group-vertical .btn:not(.btn-default):first-child{border-top:none}.badge,.label{background-color:#aab2bd}.badge-default,.label-default{color:#434a54;background-color:#fff;&#13;
+ border:1px solid #aab2bd}.badge-primary,.label-primary{background-color:#3bafda;border-color:#3bafda}.badge-success,.label-success{background-color:#8cc152;border-color:#8cc152}.badge-danger,.label-danger{background-color:#da4453;border-color:#da4453}.badge-warning,.label-warning{background-color:#f6bb42;border-color:#f6bb42}.badge-info,.label-info{background-color:#37bc9b;border-color:#37bc9b}.tooltip-inner{color:#fff;background-color:#434a54}.tooltip.top .tooltip-arrow,.tooltip.top-left .tooltip-arrow,.tooltip.top-right .tooltip-arrow{border-top-color:#434a54}.tooltip.right .tooltip-arrow{border-right-color:#434a54}.tooltip.left .tooltip-arrow{border-left-color:#434a54}.tooltip.bottom .tooltip-arrow,.tooltip.bottom-left .tooltip-arrow,.tooltip.bottom-right .tooltip-arrow{border-bottom-color:#434a54}.popover{color:#fff;&#13;
+ background-color:#434a54;border-color:#434a54}.popover-title{padding-bottom:0;font-weight:700;color:#aab2bd;background-color:transparent;border-bottom:none}.popover.top .arrow,.popover.top .arrow:after{border-top-color:#434a54}.popover.right .arrow,.popover.right .arrow:after{border-right-color:#434a54}.popover.bottom .arrow,.popover.bottom .arrow:after{border-bottom-color:#434a54}.popover.left .arrow,.popover.left .arrow:after{border-left-color:#434a54}.progress{background-color:#e6e9ed;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.progress-bar{background-color:#3bafda;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.progress-bar-success{background-color:#8cc152}.progress-bar-info{background-color:#37bc9b}.progress-bar-warning{background-color:#f6bb42}.progress-bar-danger{background-color:#da4453}.breadcrumb{color:#434a54;background-color:#e6e9ed}.breadcrumb&gt;.active{color:#434a54}.breadcrumb a{color:#3bafda}.breadcrumb-arrow{height:36px;&#13;
+ padding:0;line-height:36px;list-style:none;background-color:#e6e9ed}.breadcrumb-arrow li:first-child a{border-radius:4px 0 0 4px;-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px}.breadcrumb-arrow li,.breadcrumb-arrow li a,.breadcrumb-arrow li span{display:inline-block;vertical-align:top}.breadcrumb-arrow li:not(:first-child){margin-left:-5px}.breadcrumb-arrow li+li:before{padding:0;content:""}.breadcrumb-arrow li span{padding:0 10px}.breadcrumb-arrow li a,.breadcrumb-arrow li:not(:first-child) span{height:36px;&#13;
+ padding:0 10px 0 25px;line-height:36px}.breadcrumb-arrow li:first-child a{padding:0 10px}.breadcrumb-arrow li a{position:relative;color:#fff;text-decoration:none;background-color:#3bafda;border:1px solid #3bafda}.breadcrumb-arrow li:first-child a{padding-left:10px}.breadcrumb-arrow li a:after,.breadcrumb-arrow li a:before{position:absolute;top:-1px;width:0;height:0;content:'';border-top:18px solid transparent;border-bottom:18px solid transparent}.breadcrumb-arrow li a:before{right:-10px;z-index:3;border-left-color:#3bafda;border-left-style:solid;border-left-width:11px}.breadcrumb-arrow li a:after{right:-11px;z-index:2;border-left:11px solid #2494be}.breadcrumb-arrow li a:focus,.breadcrumb-arrow li a:hover{background-color:#4fc1e9;border:1px solid #4fc1e9}.breadcrumb-arrow li a:focus:before,.breadcrumb-arrow li a:hover:before{border-left-color:#4fc1e9}.breadcrumb-arrow li a:active{background-color:#2494be;border:1px solid #2494be}.breadcrumb-arrow li a:active:after,.breadcrumb-arrow li a:active:before{border-left-color:#2494be}.breadcrumb-arrow li span{color:#434a54}.pagination&gt;li&gt;a,.pagination&gt;li&gt;span{color:#434a54;background-color:#fff;border-color:#ccd1d9}.pagination&gt;li&gt;a:focus,.pagination&gt;li&gt;a:hover,.pagination&gt;li&gt;span:focus,.pagination&gt;li&gt;span:hover{color:#fff;background-color:#ccd1d9;border-color:#ccd1d9}.pagination&gt;.active&gt;a,.pagination&gt;.active&gt;a:focus,.pagination&gt;.active&gt;a:hover,.pagination&gt;.active&gt;span,.pagination&gt;.active&gt;span:focus,.pagination&gt;.active&gt;span:hover{color:#fff;background-color:#8cc152;border-color:#8cc152}.pagination&gt;.disabled&gt;a,.pagination&gt;.disabled&gt;a:focus,.pagination&gt;.disabled&gt;a:hover,.pagination&gt;.disabled&gt;span,.pagination&gt;.disabled&gt;span:focus,.pagination&gt;.disabled&gt;span:hover{color:#e6e9ed;background-color:#fff;border-color:#ccd1d9}.pager li&gt;a,.pager li&gt;span{color:#fff;background-color:#8cc152;border-color:#8cc152}.pager li&gt;a:focus,.pager li&gt;a:hover{background-color:#a0d468;border-color:#a0d468}.pager .disabled&gt;a,.pager .disabled&gt;a:focus,.pager .disabled&gt;a:hover,.pager .disabled&gt;span{color:#e6e9ed;background-color:#fff;border-color:#e6e9ed}.form-control{color:#434a54;border-color:#aab2bd}.form-control,.form-control:focus{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.form-control:focus{border-color:#3bafda}.form-control:-ms-input-placeholder,.form-control::-moz-placeholder,.form-control::-webkit-input-placeholder{color:#e6e9ed}.form-control.disabled,.form-control[disabled]{background-color:#e6e9ed;border-color:#e6e9ed}.input-group-btn .btn+.btn{border-color:#96a0ad;border-style:solid;&#13;
+ border-width:1px}.input-group-btn .btn+.btn.btn-default{border-color:#ededed}.input-group-btn .btn+.btn.btn-primary{border-color:#269ecb}.input-group-btn .btn+.btn.btn-info{border-color:#2fa084}.input-group-btn .btn+.btn.btn-success{border-color:#7ab03f}.input-group-btn .btn+.btn.btn-warning{border-color:#f4af20}.input-group-btn .btn+.btn.btn-danger{border-color:#d1293a}.input-group-addon{color:#fff;background-color:#aab2bd;border-color:#96a0ad}.input-group-addon .checkbox,.input-group-addon .radio{margin:-3px 0 -4px!important}.form-search .search-query,.form-search .search-query:first-child,.form-search .search-query:last-child{padding:0 17px;border-radius:17px;-webkit-border-radius:17px;-moz-border-radius:17px}.input-group .form-control:last-child{border-top-left-radius:0;border-bottom-left-radius:0;-webkit-border-top-left-radius:0;-moz-border-radius-topleft:0;-webkit-border-bottom-left-radius:0;-moz-border-radius-bottomleft:0}.input-group .form-control:first-child{border-top-right-radius:0;border-bottom-right-radius:0;-webkit-border-top-right-radius:0;-moz-border-radius-topright:0;-webkit-border-bottom-right-radius:0;-moz-border-radius-bottomright:0}.form-search .btn{border-radius:17px;-webkit-border-radius:17px;-moz-border-radius:17px}.search-only{position:relative}.search-only .search-icon{position:absolute;top:2px;left:8.5px;z-index:20;width:30px;font-size:17px;line-height:30px;color:#e6e9ed;text-align:center}.search-only .form-control:last-child{padding-left:40px}.has-success .checkbox,.has-success .checkbox-inline,.has-success .control-label,.has-success .help-block,.has-success .radio,.has-success .radio-inline{color:#8cc152}.has-success .form-control,.has-success .form-control:focus{border-color:#8cc152;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.has-success .input-group-addon{background-color:#8cc152;border-color:#8cc152}.has-success .form-control-feedback{color:#8cc152}.has-warning .checkbox,.has-warning .checkbox-inline,.has-warning .control-label,.has-warning .help-block,.has-warning .radio,.has-warning .radio-inline{color:#f6bb42}.has-warning .form-control,.has-warning .form-control:focus{border-color:#f6bb42;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.has-warning .input-group-addon{background-color:#f6bb42;border-color:#f6bb42}.has-warning .form-control-feedback{color:#f6bb42}.has-error .checkbox,.has-error .checkbox-inline,.has-error .control-label,.has-error .help-block,.has-error .radio,.has-error .radio-inline{color:#da4453}.has-error .form-control,.has-error .form-control:focus{border-color:#da4453;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.has-error .input-group-addon{background-color:#da4453;border-color:#da4453}.has-error .form-control-feedback{color:#da4453}.stepper .stepper-input{overflow:hidden;-moz-appearance:textfield}.stepper .stepper-input::-webkit-inner-spin-button,.stepper .stepper-input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.stepper .stepper-arrow{position:absolute;right:15px;display:block;width:20px;height:50%;text-indent:-99999px;cursor:pointer;&#13;
+ background-color:#3bafda}.stepper .stepper-arrow:active,.stepper .stepper-arrow:hover{background-color:#4fc1e9}.stepper .up{top:0;border:1px solid #269ecb;border-top-right-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px}.stepper .down{bottom:0;border-bottom-right-radius:3px;-webkit-border-bottom-right-radius:3px;-moz-border-radius-bottomright:3px}.stepper .down::before,.stepper .up::before{position:absolute;width:0;height:0;&#13;
+ content:"";border-right:4px solid transparent;border-left:4px solid transparent}.stepper .up::before{top:5px;left:5px;border-bottom:4px solid #fff}.stepper .down:before{bottom:5px;left:6px;border-top:4px solid #fff}.stepper.disabled .stepper-arrow{background-color:#3bafda;filter:alpha(opacity=45);opacity:.45}.selecter{position:relative;z-index:1;&#13;
+ display:block;max-width:100%;outline:0}.selecter .selecter-element{position:absolute;left:0;z-index:0;display:none;width:100%;height:100%;filter:alpha(opacity=0);opacity:0;*left:-999999px}.selecter .selecter-element,.selecter .selecter-element:focus{outline:0;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent}.selecter .selecter-selected{position:relative;z-index:2;display:block;padding:6px 10px;overflow:hidden;text-overflow:clip;cursor:pointer;&#13;
+ background-color:#fff;border:1px solid #aab2bd;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.selecter .selecter-selected:after{position:absolute;top:14px;right:10px;width:0;height:0;content:"";border-top:4px solid #000;border-right:4px solid transparent;border-left:4px solid transparent}.selecter .selecter-options{position:absolute;top:100%;left:0;z-index:50;display:none;width:100%;max-height:260px;overflow:auto;overflow-x:hidden;background-color:#fff;&#13;
+ border:1px solid #aab2bd;border-width:0 1px 1px;border-radius:0 0 4px 4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);-moz-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175);-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;*width:auto}.selecter .selecter-group{display:block;padding:5px 10px 4px;font-size:11px;color:#aab2bd;text-transform:uppercase;background-color:#f5f7fa;&#13;
+ border-bottom:1px solid #e6e9ed}.selecter .selecter-item{display:block;width:100%;padding:6px 10px;margin:0;overflow:hidden;text-overflow:ellipsis;cursor:pointer;&#13;
+ background-color:#fff;border-bottom:1px solid #e6e9ed}.selecter .selecter-item.selected{color:#fff;background-color:#3bafda;border-bottom-color:#4fc1e9}.selecter .selecter-item.disabled{color:#aab2bd;cursor:default}.selecter .selecter-item:first-child{border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}.selecter .selecter-item:last-child{border-bottom:0;border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px}.selecter .selecter-item:hover{background-color:#e6e9ed}.selecter .selecter-item.selected:hover{background-color:#3bafda}.selecter .selecter-item.disabled:hover,.selecter.disabled .selecter-item:hover,.selecter:hover .selecter-selected{background-color:#fff}.selecter.open{z-index:3;outline:0}.selecter.open .selecter-selected{z-index:51;border:1px solid #3bafda;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.selecter.focus .selecter-selected,.selecter.open .selecter-selected{background-color:#fff}.selecter.cover .selecter-options{top:0;border-width:1px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.selecter.cover .selecter-options .selecter-item.first{border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.selecter.cover.open .selecter-selected{z-index:49;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.selecter.bottom .selecter-options{top:auto;bottom:100%;&#13;
+ border-width:1px 1px 0}.selecter.bottom .selecter-item:last-child{border:none;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}.selecter.bottom.open .selecter-selected{border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px}.selecter.bottom.open .selecter-options{border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.selecter.bottom.cover .selecter-options{top:auto;bottom:0}.selecter.bottom.cover.open .selecter-options,.selecter.bottom.cover.open .selecter-selected{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.selecter.multiple .selecter-options{position:static;display:block;width:100%;border-width:1px;border-radius:4px;box-shadow:none;-webkit-border-radius:4px;-moz-border-radius:4px}.selecter.disabled .selecter-selected{color:#aab2bd;cursor:default;background-color:#e6e9ed;border-color:#e6e9ed}.selecter.disabled .selecter-options{background-color:#e6e9ed;border-color:#e6e9ed}.selecter.disabled .selecter-group,.selecter.disabled .selecter-item{color:#aab2bd;cursor:default;background-color:#e6e9ed;border-color:#e6e9ed}.selecter.disabled .selecter-item.selected{color:#fff;background-color:#3bafda;filter:alpha(opacity=45);opacity:.45}.selecter .selecter-options.scroller{overflow:hidden}.selecter .selecter-options.scroller .scroller-content{max-height:260px;padding:0}.checkbox,.radio{padding-left:0;margin-top:0}.checkbox label,.radio label{position:relative;top:2px;padding-left:5px}.icheckbox_flat,.iradio_flat{display:inline-block;width:20px;height:20px;padding:0!important;margin:0;vertical-align:middle;cursor:pointer;background:url(../bootflat/img/check_flat/default.png) no-repeat;border:none;*display:inline}.icheckbox_flat{background-position:0 0}.icheckbox_flat.checked{background-position:-22px 0}.icheckbox_flat.disabled{cursor:default;background-position:-44px 0}.icheckbox_flat.checked.disabled{background-position:-66px 0}.iradio_flat{background-position:-88px 0}.iradio_flat.checked{background-position:-110px 0}.iradio_flat.disabled{cursor:default;background-position:-132px 0}.iradio_flat.checked.disabled{background-position:-154px 0}.toggle{height:32px}.toggle input[type=checkbox],.toggle input[type=radio]{width:0;height:0;padding:0;margin:0;text-indent:-100000px;filter:alpha(opacity=0);opacity:0}.toggle .handle{position:relative;top:-20px;left:0;&#13;
+ display:block;width:50px;height:32px;background-color:#fff;border-radius:19px;-webkit-box-shadow:inset 0 0 0 1px #b8bfc8;-moz-box-shadow:inset 0 0 0 1px #b8bfc8;box-shadow:inset 0 0 0 1px #b8bfc8;-webkit-border-radius:19px;-moz-border-radius:19px}.toggle .handle:after,.toggle .handle:before{position:absolute;top:1px;left:1px;display:block;width:30px;height:30px;&#13;
+ content:"";background-color:#fff;border-radius:30px;-webkit-box-shadow:inset 0 0 0 1px #b8bfc8,1px 1px 1px #c7ccd3;-moz-box-shadow:inset 0 0 0 1px #b8bfc8,1px 1px 1px #c7ccd3;box-shadow:inset 0 0 0 1px #b8bfc8,1px 1px 1px #c7ccd3;-webkit-transition:all .25s ease-in-out;-moz-transition:all .25s ease-in-out;transition:all .25s ease-in-out;-webkit-border-radius:30px;-moz-border-radius:30px}.toggle input[type=checkbox]:disabled+.handle,.toggle input[type=checkbox]:disabled+.handle:after,.toggle input[type=checkbox]:disabled+.handle:before,.toggle input[type=radio]:disabled+.handle,.toggle input[type=radio]:disabled+.handle:after,.toggle input[type=radio]:disabled+.handle:before{background-color:#e6e9ed;filter:alpha(opacity=60);&#13;
+ opacity:.6}.toggle input[type=checkbox]:checked+.handle:before,.toggle input[type=radio]:checked+.handle:before{width:50px;background-color:#a0d468}.toggle input[type=checkbox]:checked+.handle:after,.toggle input[type=radio]:checked+.handle:after{left:20px;-webkit-box-shadow:inset 0 0 0 1px #f5f7fa,1px 1px 1px #c7ccd3;-moz-box-shadow:inset 0 0 0 1px #f5f7fa,1px 1px 1px #c7ccd3;box-shadow:inset 0 0 0 1px #f5f7fa,1px 1px 1px #c7ccd3}.calendar{padding:20px;color:#fff;background-color:#fd9883;border-radius:4px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2);-webkit-border-radius:4px;-moz-border-radius:4px}.calendar .unit{float:left;width:14.28%;text-align:center}.calendar .years .prev{text-align:left}.calendar .years .next{text-align:right}.calendar .years .next em,.calendar .years .prev em{position:relative;display:inline-block;width:34px;height:34px;cursor:pointer;border:1px solid #fff;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%}.calendar .years .next em:before,.calendar .years .prev em:before{position:absolute;display:block;width:0;height:0;margin-top:6px;font-size:0;content:"";border-style:solid;border-width:7px}.calendar .years .prev em:before{top:3px;left:4px;border-color:transparent #fff transparent transparent}.calendar .years .next em:before{top:3px;left:13px;border-color:transparent transparent transparent #fff}.calendar .years .next em:active,.calendar .years .next em:hover,.calendar .years .prev em:active,.calendar .years .prev em:hover{border-color:#e9573f}.calendar .years .prev em:active:before,.calendar .years .prev em:hover:before{border-color:transparent #e9573f transparent transparent}.calendar .years .next em:active:before,.calendar .years .next em:hover:before{border-color:transparent transparent transparent #e9573f}.calendar .years .monyear{float:left;width:71.42%;height:34px;line-height:34px;text-align:center}.calendar .days{padding-top:15px;&#13;
+ margin-top:15px;border-top:1px solid #ee7f6d}.calendar .days .unit{height:34px;&#13;
+ margin-bottom:3px;line-height:34px;text-align:center}.calendar .days .unit b{width:34px;height:34px;font-weight:400;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%}.calendar .days .unit.active b,.calendar .days .unit:active b,.calendar .days .unit:hover b{display:inline-block;color:#e9573f;cursor:pointer;background-color:#fff;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;transition:all .2s ease-in-out}.calendar .days .unit.older b{width:auto;height:auto;color:#e9573f;cursor:default;background-color:transparent}.pricing ul{padding:0;list-style:none}.pricing .unit{position:relative;display:inline-block;min-width:250px;text-align:center;border-radius:4px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2);-webkit-border-radius:4px;-moz-border-radius:4px}.pricing .unit.active{top:5px;z-index:1;margin-right:-36px;margin-left:-36px;-webkit-box-shadow:0 0 8px rgba(0,0,0,.6);-moz-box-shadow:0 0 8px rgba(0,0,0,.6);box-shadow:0 0 8px rgba(0,0,0,.6)}.pricing .unit.active .price-title h3{font-size:40px}@media screen and (max-width:767px){.pricing .unit{display:block;margin-bottom:20px}.pricing .unit.active{top:0;margin-right:0;margin-left:0}.pricing .unit.active .price-title h3{font-size:30px}}.pricing .price-title{padding:20px 20px 10px;color:#fff;border-top-left-radius:4px;border-top-right-radius:4px;-webkit-border-top-left-radius:4px;-moz-border-radius-topleft:4px;-webkit-border-top-right-radius:4px;-moz-border-radius-topright:4px}.pricing .price-title h3,.pricing .price-title h3&gt;p{margin:0}.pricing .price-body{padding:20px 20px 10px}.pricing .price-body ul{padding-top:10px}.pricing .price-body li{margin-bottom:10px}.pricing .price-body h4{margin:0}.pricing .price-foot{padding:20px;background-color:#e6e9ed;border-bottom-right-radius:4px;border-bottom-left-radius:4px;-webkit-border-bottom-left-radius:4px;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-right-radius:4px;-moz-border-radius-bottomright:4px}.pricing .price-primary .price-title{background-color:#4fc1e9}.pricing .price-primary .price-body{background-color:#d7f1fa}.pricing .price-primary .price-body ul{border-top:1px solid #aae1f4}.pricing .price-success .price-title{background-color:#a0d468}.pricing .price-success .price-body{background-color:#ebf6df}.pricing .price-success .price-body ul{border-top:1px solid #d2ebb7}.pricing .price-warning .price-title{background-color:#ffce54}.pricing .price-warning .price-body{background-color:#fffaed}.pricing .price-warning .price-body ul{border-top:1px solid #ffebba}.alert h4{margin-bottom:10px;font-weight:700}.alert-dismissable .close{color:#000}.alert-info{background-color:#7cd1ef;border:#4fc1e9}.alert-warning{background-color:#ffdd87;border:#ffce54}.alert-danger{background-color:#f2838f;border:#ed5565}.alert-success{background-color:#b9df90;border:#a0d468}.alert .alert-link{text-decoration:underline;&#13;
+ cursor:pointer;filter:alpha(opacity=65);opacity:.65}.alert .alert-link:focus,.alert .alert-link:hover{filter:alpha(opacity=45);opacity:.45}.alert .btn-link,.alert .btn-link:focus,.alert .btn-link:hover{color:#000;filter:alpha(opacity=65);opacity:.65}.alert .btn-link:focus,.alert .btn-link:hover{text-decoration:none;filter:alpha(opacity=40);opacity:.4}.nav-tabs{background-color:#e6e9ed;&#13;
+ border-bottom:none;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.nav-tabs&gt;li{margin-bottom:0;border-left:1px solid #ccd1d9}.nav-tabs&gt;li:first-child{border-left:none}.nav-tabs&gt;li&gt;a{margin-right:0;color:#434a54;border:none;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}.nav-tabs&gt;li:first-child&gt;a{border-radius:4px 0 0;-webkit-border-radius:4px 0 0;-moz-border-radius:4px 0 0}.nav-tabs&gt;li&gt;a:focus,.nav-tabs&gt;li&gt;a:hover{background-color:#f5f7fa;border:none}.nav-tabs&gt;li.active&gt;a,.nav-tabs&gt;li.active&gt;a:focus,.nav-tabs&gt;li.active&gt;a:hover{background-color:#fff!important;border:none}.nav-tabs .dropdown-toggle,.nav-tabs .dropdown-toggle:focus,.nav-tabs .dropdown-toggle:hover{color:#434a54}.nav-tabs li.dropdown.open .dropdown-toggle{color:#434a54;background-color:#f5f7fa}.nav-tabs li.dropdown.active.open .dropdown-toggle{color:#434a54}.nav-tabs .dropdown-toggle .caret,.nav-tabs .dropdown-toggle:focus .caret,.nav-tabs .dropdown-toggle:hover .caret,.nav-tabs li.dropdown.active .dropdown-toggle .caret,.nav-tabs li.dropdown.active.open .dropdown-toggle .caret,.nav-tabs li.dropdown.open .caret,.nav-tabs li.dropdown.open a:focus .caret,.nav-tabs li.dropdown.open a:hover .caret,.nav-tabs li.dropdown.open.active .caret{border-top-color:#434a54;border-bottom-color:#434a54}.nav-tabs.nav-justified&gt;li&gt;a{margin-bottom:0;text-align:center}.nav-tabs.nav-justified&gt;.dropdown .dropdown-menu{top:auto;left:auto}.nav-tabs.nav-justified&gt;li&gt;a{border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}.nav-tabs.nav-justified&gt;li:first-child&gt;a{border-radius:4px 0 0;-webkit-border-radius:4px 0 0;-moz-border-radius:4px 0 0}.nav-tabs.nav-justified&gt;li:last-child&gt;a{border-radius:0 4px 0 0;-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0}.nav-tabs.nav-justified&gt;.active&gt;a,.nav-tabs.nav-justified&gt;.active&gt;a:focus,.nav-tabs.nav-justified&gt;.active&gt;a:hover{border:none}@media (min-width:768px){.nav-tabs.nav-justified&gt;li&gt;a{border-bottom:none;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}.nav-tabs.nav-justified&gt;.active&gt;a,.nav-tabs.nav-justified&gt;.active&gt;a:focus,.nav-tabs.nav-justified&gt;.active&gt;a:hover{border-bottom:none}}.tab-content{padding:10px}.tabs-below .nav-tabs{border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px}.tabs-below .nav-tabs&gt;li:first-child&gt;a{border-radius:0 0 0 4px;-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px}.tabs-below .nav-tabs.nav-justified&gt;li:last-child&gt;a{border-radius:0 0 4px;-webkit-border-radius:0 0 4px;-moz-border-radius:0 0 4px}.tabs-left .nav-tabs&gt;li,.tabs-right .nav-tabs&gt;li{float:none;border-top:1px solid #ccd1d9;border-left:none}.tabs-left .nav-tabs&gt;li:first-child,.tabs-right .nav-tabs&gt;li:first-child{border-top:none}.tabs-left .nav-tabs&gt;li&gt;a,.tabs-right .nav-tabs&gt;li&gt;a{min-width:74px;margin-right:0}.tabs-left .nav-tabs{float:left;margin-right:19px;border-radius:4px 0 0 4px;-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px}.tabs-left .nav-tabs&gt;li:first-child&gt;a{border-radius:4px 0 0;-webkit-border-radius:4px 0 0;-moz-border-radius:4px 0 0}.tabs-left .nav-tabs&gt;li:last-child&gt;a{border-radius:0 0 0 4px;-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px}.tabs-right .nav-tabs{float:right;margin-left:19px;border-radius:0 4px 4px 0;-webkit-border-radius:0 4px 4px 0;-moz-border-radius:0 4px 4px 0}.tabs-right .nav-tabs&gt;li:first-child&gt;a{border-radius:0 4px 0 0;-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0}.tabs-right .nav-tabs&gt;li:last-child&gt;a{border-radius:0 0 4px;-webkit-border-radius:0 0 4px;-moz-border-radius:0 0 4px}.nav-pills&gt;li.active&gt;a,.nav-pills&gt;li.active&gt;a:focus,.nav-pills&gt;li.active&gt;a:hover{color:#fff;background-color:#3bafda}.nav-pills&gt;li&gt;a{color:#3bafda}.nav-pills&gt;li&gt;a:hover{color:#434a54;background-color:#e6e9ed}.nav-pills&gt;.active&gt;a&gt;.badge{color:#3bafda}.nav-pills .open&gt;a,.nav-pills .open&gt;a:focus,.nav-pills .open&gt;a:hover{color:#434a54;background-color:#e6e9ed}.navbar-form{padding:0!important}.navbar-default{background-color:#37bc9b;border-color:#37bc9b}.navbar-default .btn-link,.navbar-default .navbar-brand,.navbar-default .navbar-link{color:#26816a}.navbar-default .btn-link:focus,.navbar-default .btn-link:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover,.navbar-default .navbar-link:hover{color:#fff;background-color:transparent}.navbar-default .navbar-nav&gt;li&gt;a,.navbar-default .navbar-text{color:#26816a}.navbar-default .navbar-nav&gt;li&gt;a:focus,.navbar-default .navbar-nav&gt;li&gt;a:hover{color:#fff}.navbar-default .navbar-nav&gt;.active&gt;a,.navbar-default .navbar-nav&gt;.active&gt;a:focus,.navbar-default .navbar-nav&gt;.active&gt;a:hover{color:#fff;background-color:#48cfad}.navbar-default .btn-link[disabled]:focus,.navbar-default .btn-link[disabled]:hover,.navbar-default .navbar-nav&gt;.disabled&gt;a,.navbar-default .navbar-nav&gt;.disabled&gt;a:focus,.navbar-default .navbar-nav&gt;.disabled&gt;a:hover,fieldset[disabled] .navbar-default .btn-link:focus,fieldset[disabled] .navbar-default .btn-link:hover{color:#2e9c81;background-color:transparent}.navbar-default .navbar-toggle{background-color:#26816a;border-color:#26816a}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:#2b957a;border-color:#2b957a}.navbar-default .navbar-toggle .icon-bar{background-color:#37bc9b}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#48cfad}.navbar-default .navbar-nav&gt;.open&gt;a,.navbar-default .navbar-nav&gt;.open&gt;a:focus,.navbar-default .navbar-nav&gt;.open&gt;a:hover{color:#fff;background-color:#37bc9b}@media (max-width:767px){.navbar-default .navbar-nav .open .dropdown-menu&gt;.divider,.navbar-default .navbar-nav&gt;li&gt;a:focus,.navbar-default .navbar-nav&gt;li&gt;a:hover{background-color:#48cfad}.navbar-default .navbar-nav .open .dropdown-menu&gt;li&gt;a{color:#26816a}.navbar-default .navbar-nav .open .dropdown-menu&gt;.active&gt;a,.navbar-default .navbar-nav .open .dropdown-menu&gt;.active&gt;a:focus,.navbar-default .navbar-nav .open .dropdown-menu&gt;.active&gt;a:hover,.navbar-default .navbar-nav .open .dropdown-menu&gt;li&gt;a:focus,.navbar-default .navbar-nav .open .dropdown-menu&gt;li&gt;a:hover{color:#fff;background-color:#48cfad}.navbar-default .navbar-nav .open .dropdown-menu&gt;.dropdown-header{color:#26816a}.navbar-default .navbar-nav .open .dropdown-menu&gt;.disabled&gt;a,.navbar-default .navbar-nav .open .dropdown-menu&gt;.disabled&gt;a:focus,.navbar-default .navbar-nav .open .dropdown-menu&gt;.disabled&gt;a:hover{color:#2b957a}}.navbar-inverse{background-color:#333;border-color:#333}.navbar-inverse .btn-link,.navbar-inverse .navbar-brand,.navbar-inverse .navbar-link{color:#8c8c8c}.navbar-inverse .btn-link:focus,.navbar-inverse .btn-link:hover,.navbar-inverse .navbar-brand:focus,.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-link:hover{color:#fff;background-color:transparent}.navbar-inverse .navbar-nav&gt;li&gt;a,.navbar-inverse .navbar-text{color:#8c8c8c}.navbar-inverse .navbar-nav&gt;li&gt;a:focus,.navbar-inverse .navbar-nav&gt;li&gt;a:hover{color:#fff}.navbar-inverse .navbar-nav&gt;.active&gt;a,.navbar-inverse .navbar-nav&gt;.active&gt;a:focus,.navbar-inverse .navbar-nav&gt;.active&gt;a:hover{color:#fff;background-color:#000}.navbar-inverse .btn-link[disabled]:focus,.navbar-inverse .btn-link[disabled]:hover,.navbar-inverse .navbar-nav&gt;.disabled&gt;a,.navbar-inverse .navbar-nav&gt;.disabled&gt;a:focus,.navbar-inverse .navbar-nav&gt;.disabled&gt;a:hover,fieldset[disabled] .navbar-inverse .btn-link:focus,fieldset[disabled] .navbar-inverse .btn-link:hover{color:#666;background-color:transparent}.navbar-inverse .navbar-toggle{background-color:#000;border-color:#000}.navbar-inverse .navbar-toggle:focus,.navbar-inverse .navbar-toggle:hover{background-color:#1a1a1a;border-color:#1a1a1a}.navbar-inverse .navbar-toggle .icon-bar{background-color:#8c8c8c}.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form{border-color:#000}.navbar-inverse .navbar-nav&gt;.open&gt;a,.navbar-inverse .navbar-nav&gt;.open&gt;a:focus,.navbar-inverse .navbar-nav&gt;.open&gt;a:hover{color:#fff;background-color:#000}@media (max-width:767px){.navbar-inverse .navbar-nav .open .dropdown-menu&gt;.divider,.navbar-inverse .navbar-nav&gt;li&gt;a:focus,.navbar-inverse .navbar-nav&gt;li&gt;a:hover{background-color:#000}.navbar-inverse .navbar-nav .open .dropdown-menu&gt;li&gt;a{color:#8c8c8c}.navbar-inverse .navbar-nav .open .dropdown-menu&gt;.active&gt;a,.navbar-inverse .navbar-nav .open .dropdown-menu&gt;.active&gt;a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu&gt;.active&gt;a:hover,.navbar-inverse .navbar-nav .open .dropdown-menu&gt;li&gt;a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu&gt;li&gt;a:hover{color:#fff;background-color:#000}.navbar-inverse .navbar-nav .open .dropdown-menu&gt;.dropdown-header{color:#bfbfbf}.navbar-inverse .navbar-nav .open .dropdown-menu&gt;.disabled&gt;a,.navbar-inverse .navbar-nav .open .dropdown-menu&gt;.disabled&gt;a:focus,.navbar-inverse .navbar-nav .open .dropdown-menu&gt;.disabled&gt;a:hover{color:#666}}.list-group{border-radius:4px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2);-webkit-border-radius:4px;-moz-border-radius:4px}.list-group-item{border-color:transparent;border-top-color:#e6e9ed}.list-group-item:first-child{border-top:none}.list-group-item-heading,a.list-group-item{color:#434a54}a.list-group-item .list-group-item-heading{font-size:16px;color:#434a54}a.list-group-item:focus,a.list-group-item:hover{background-color:#e6e9ed}a.list-group-item.active,a.list-group-item.active:focus,a.list-group-item.active:hover{background-color:#4fc1e9;border-color:#4fc1e9}a.list-group-item.active .list-group-item-text,a.list-group-item.active:focus .list-group-item-text,a.list-group-item.active:hover .list-group-item-text{color:#fff}.list-group-item-primary{color:#22b1e3;background-color:#4fc1e9;border-color:#3bafda transparent transparent}.list-group-item-primary:first-child{border-color:transparent}a.list-group-item-primary{color:#126d8d}a.list-group-item-primary:focus,a.list-group-item-primary:hover{color:#fff}a.list-group-item-primary.active,a.list-group-item-primary:focus,a.list-group-item-primary:hover{background-color:#3bafda;border-color:#4fc1e9 transparent transparent}.list-group-item-success{color:#87c940;background-color:#a0d468;border-color:#8cc152 transparent transparent}.list-group-item-success:first-child{border-color:transparent}a.list-group-item-success{color:#537f24}a.list-group-item-success:focus,a.list-group-item-success:hover{color:#fff}a.list-group-item-success.active,a.list-group-item-success:focus,a.list-group-item-success:hover{background-color:#8cc152;border-color:#a0d468 transparent transparent}.list-group-item-warning{color:#ffbf21;background-color:#ffce54;border-color:#f6bb42 transparent transparent}.list-group-item-warning:first-child{border-color:transparent}a.list-group-item-warning{color:#876000}a.list-group-item-warning:focus,a.list-group-item-warning:hover{color:#fff}a.list-group-item-warning.active,a.list-group-item-warning:focus,a.list-group-item-warning:hover{background-color:#f6bb42;border-color:#ffce54 transparent transparent}.list-group-item-info{color:#2fb593;background-color:#48cfad;border-color:#37bc9b transparent transparent}.list-group-item-info:first-child{border-color:transparent}a.list-group-item-info{color:#1a6451}a.list-group-item-info:focus,a.list-group-item-info:hover{color:#fff}a.list-group-item-info.active,a.list-group-item-info:focus,a.list-group-item-info:hover{background-color:#37bc9b;border-color:#48cfad transparent transparent}.list-group-item-danger{color:#e8273b;background-color:#ed5565;border-color:#da4453 transparent transparent}.list-group-item-danger:first-child{border-color:transparent}a.list-group-item-danger{color:#99101f}a.list-group-item-danger:focus,a.list-group-item-danger:hover{color:#fff}a.list-group-item-danger.active,a.list-group-item-danger:focus,a.list-group-item-danger:hover{background-color:#da4453;border-color:#ed5565 transparent transparent}.media-list{color:#aab2bd}.media-heading{font-size:14px;color:#434a54}.modal-content{color:#434a54;&#13;
+ border:none;border-radius:4px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2);-webkit-border-radius:4px;-moz-border-radius:4px}.modal-header{border-bottom:none}.modal-body{padding:0 15px}.modal-footer{border-top:none}.well{padding:10px;color:#434a54;background-color:#fff;border:none;border-radius:4px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2);-webkit-border-radius:4px;-moz-border-radius:4px}.well blockquote{border-color:#ccd1d9}.well-lg{padding:20px}.well-sm{padding:5px}.thumbnail{border:none;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2)}.thumbnail a&gt;img,.thumbnail&gt;img{width:100%}.thumbnail .caption{font-size:14px}.thumbnail .caption h1,.thumbnail .caption h2,.thumbnail .caption h3,.thumbnail .caption h4,.thumbnail .caption h5,.thumbnail .caption h6{margin:5px 0 10px;font-size:16px}.jumbotron{padding:0;&#13;
+ margin-bottom:20px;background-color:#fff;border-radius:4px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2);-webkit-border-radius:4px;-moz-border-radius:4px}.container .jumbotron{border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.jumbotron&gt;.jumbotron-photo img{width:100%;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.jumbotron .jumbotron-contents{padding:20px;color:#434a54}.jumbotron .carousel,.jumbotron .carousel-inner,.jumbotron .carousel-inner&gt;.item.active img{border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.jumbotron .carousel-inner&gt;.item&gt;a&gt;img,.jumbotron .carousel-inner&gt;.item&gt;img{width:100%}.jumbotron .carousel-control.left{border-radius:4px 0 0;-webkit-border-radius:4px 0 0;-moz-border-radius:4px 0 0}.jumbotron .carousel-control.right{border-radius:0 4px 0 0;-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0}.jumbotron .h1,.jumbotron .h2,.jumbotron h1,.jumbotron h2{font-weight:400}.jumbotron .h1,.jumbotron h1{font-size:28px}.jumbotron .h2,.jumbotron h2{font-size:24px}.jumbotron p{font-size:14px}@media screen and (min-width:768px){.container .jumbotron,.jumbotron{padding:0}.jumbotron .h1,.jumbotron h1{font-size:28px}}.panel{background-color:#fff;border:none;border-radius:4px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2);-webkit-border-radius:4px;-moz-border-radius:4px}.panel .list-group{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.panel .list-group-item:first-child{border-top:1px solid #e6e9ed}.panel-heading{border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.panel-title{font-size:14px;font-weight:400;color:#434a54}.panel-footer{background-color:#e6e9ed;border-top-color:#e6e9ed;border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px}.panel-default{border-color:#e6e9ed}.panel-default&gt;.panel-heading{color:#434a54;background-color:#e6e9ed;border-color:#e6e9ed}.panel-primary{border-color:#3bafda}.panel-primary&gt;.panel-heading{color:#fff;background-color:#3bafda;border-color:#3bafda}.panel-success{border-color:#8cc152}.panel-success&gt;.panel-heading{color:#fff;background-color:#8cc152;border-color:#8cc152}.panel-info{border-color:#37bc9b}.panel-info&gt;.panel-heading{color:#fff;background-color:#37bc9b;border-color:#37bc9b}.panel-warning{border-color:#f6bb42}.panel-warning&gt;.panel-heading{color:#fff;background-color:#f6bb42;border-color:#f6bb42}.panel-danger{border-color:#da4453}.panel-danger&gt;.panel-heading{color:#fff;background-color:#da4453;border-color:#da4453}.panel-danger&gt;.panel-heading&gt;.panel-title,.panel-info&gt;.panel-heading&gt;.panel-title,.panel-primary&gt;.panel-heading&gt;.panel-title,.panel-success&gt;.panel-heading&gt;.panel-title,.panel-warning&gt;.panel-heading&gt;.panel-title{color:#fff}.panel&gt;.list-group:first-child .list-group-item:first-child,.panel&gt;.table-responsive:first-child&gt;.table:first-child,.panel&gt;.table:first-child{border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.panel&gt;.list-group:last-child .list-group-item:last-child{border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px}.panel&gt;.table-responsive:first-child&gt;.table:first-child&gt;tbody:first-child&gt;tr:first-child td:first-child,.panel&gt;.table-responsive:first-child&gt;.table:first-child&gt;tbody:first-child&gt;tr:first-child th:first-child,.panel&gt;.table-responsive:first-child&gt;.table:first-child&gt;thead:first-child&gt;tr:first-child td:first-child,.panel&gt;.table-responsive:first-child&gt;.table:first-child&gt;thead:first-child&gt;tr:first-child th:first-child,.panel&gt;.table:first-child&gt;tbody:first-child&gt;tr:first-child td:first-child,.panel&gt;.table:first-child&gt;tbody:first-child&gt;tr:first-child th:first-child,.panel&gt;.table:first-child&gt;thead:first-child&gt;tr:first-child td:first-child,.panel&gt;.table:first-child&gt;thead:first-child&gt;tr:first-child th:first-child{border-radius:4px 0 0;-webkit-border-radius:4px 0 0;-moz-border-radius:4px 0 0}.panel&gt;.table-responsive:first-child&gt;.table:first-child&gt;tbody:first-child&gt;tr:first-child td:last-child,.panel&gt;.table-responsive:first-child&gt;.table:first-child&gt;tbody:first-child&gt;tr:first-child th:last-child,.panel&gt;.table-responsive:first-child&gt;.table:first-child&gt;thead:first-child&gt;tr:first-child td:last-child,.panel&gt;.table-responsive:first-child&gt;.table:first-child&gt;thead:first-child&gt;tr:first-child th:last-child,.panel&gt;.table:first-child&gt;tbody:first-child&gt;tr:first-child td:last-child,.panel&gt;.table:first-child&gt;tbody:first-child&gt;tr:first-child th:last-child,.panel&gt;.table:first-child&gt;thead:first-child&gt;tr:first-child td:last-child,.panel&gt;.table:first-child&gt;thead:first-child&gt;tr:first-child th:last-child{border-radius:0 4px 0 0;-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0}.panel&gt;.table-responsive:last-child&gt;.table:last-child,.panel&gt;.table:last-child{border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px}.panel&gt;.table-responsive:last-child&gt;.table:last-child&gt;tbody:last-child&gt;tr:last-child td:first-child,.panel&gt;.table-responsive:last-child&gt;.table:last-child&gt;tbody:last-child&gt;tr:last-child th:first-child,.panel&gt;.table-responsive:last-child&gt;.table:last-child&gt;tfoot:last-child&gt;tr:last-child td:first-child,.panel&gt;.table-responsive:last-child&gt;.table:last-child&gt;tfoot:last-child&gt;tr:last-child th:first-child,.panel&gt;.table:last-child&gt;tbody:last-child&gt;tr:last-child td:first-child,.panel&gt;.table:last-child&gt;tbody:last-child&gt;tr:last-child th:first-child,.panel&gt;.table:last-child&gt;tfoot:last-child&gt;tr:last-child td:first-child,.panel&gt;.table:last-child&gt;tfoot:last-child&gt;tr:last-child th:first-child{border-radius:0 0 0 4px;-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px}.panel&gt;.table-responsive:last-child&gt;.table:last-child&gt;tbody:last-child&gt;tr:last-child td:last-child,.panel&gt;.table-responsive:last-child&gt;.table:last-child&gt;tbody:last-child&gt;tr:last-child th:last-child,.panel&gt;.table-responsive:last-child&gt;.table:last-child&gt;tfoot:last-child&gt;tr:last-child td:last-child,.panel&gt;.table-responsive:last-child&gt;.table:last-child&gt;tfoot:last-child&gt;tr:last-child th:last-child,.panel&gt;.table:last-child&gt;tbody:last-child&gt;tr:last-child td:last-child,.panel&gt;.table:last-child&gt;tbody:last-child&gt;tr:last-child th:last-child,.panel&gt;.table:last-child&gt;tfoot:last-child&gt;tr:last-child td:last-child,.panel&gt;.table:last-child&gt;tfoot:last-child&gt;tr:last-child th:last-child{border-radius:0 0 4px;-webkit-border-radius:0 0 4px;-moz-border-radius:0 0 4px}.panel&gt;.panel-body+.table,.panel&gt;.panel-body+.table-responsive{border-top-color:#e6e9ed}.panel-group .panel{background-color:transparent;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;-webkit-border-radius:0;-moz-border-radius:0}.panel-group .panel+.panel{margin-top:0}.panel-group .panel-heading{padding:0;border-bottom-color:transparent}.panel-group .panel-heading+.panel-collapse .panel-body{padding:15px 0;border-top-color:transparent}.panel-group .panel-title a{display:block;padding:10px 0}.panel-group-lists .panel{background-color:#fff;&#13;
+ border-bottom:1px solid #e6e9ed;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);-moz-box-shadow:0 1px 2px rgba(0,0,0,.2);box-shadow:0 1px 2px rgba(0,0,0,.2)}.panel-group-lists .panel:first-child{border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.panel-group-lists .panel:last-child{border-bottom:none;border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px}.panel-group-lists .panel-heading+.panel-collapse .panel-body{padding:15px;border-top-color:#e6e9ed}.panel-group-lists .panel-title a{padding:10px 15px;color:#434a54}.panel-group-lists .panel-title a:active,.panel-group-lists .panel-title a:focus,.panel-group-lists .panel-title a:hover{color:#aab2bd}.footer{padding:40px 0;background-color:#434a54}.footer-logo,.footer-nav{float:left;width:20%;padding:0 20px}@media (max-width:768px){.footer-logo{margin-bottom:20px}.footer-logo,.footer-nav{display:block;&#13;
+ float:none;width:100%}}.footer-logo{height:32px;&#13;
+ margin-top:-5px;line-height:32px}.footer-logo img{margin-right:10px}.footer-logo a{font-size:20px;font-weight:700;color:#fff}.footer-logo a:active,.footer-logo a:hover{text-decoration:none}.footer-nav .nav-title{margin-bottom:15px;color:#e6e9ed}.footer-nav .nav-item{line-height:28px}.footer-nav .nav-item&gt;a{color:#aab2bd}.footer-nav .nav-item&gt;a:active,.footer-nav .nav-item&gt;a:hover{color:#ccd1d9;text-decoration:none}.footer-copyright{color:#aab2bd}.timeline dl{position:relative;top:0;padding:20px 0;margin:0}.timeline dl:before{position:absolute;top:0;bottom:0;left:50%;z-index:100;width:2px;margin-left:-1px;content:'';background-color:#ccd1d9}.timeline dl dt{position:relative;top:30px;z-index:200;width:120px;padding:3px 5px;margin:0 auto 30px;font-weight:400;color:#fff;text-align:center;background-color:#aab2bd;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.timeline dl dd{position:relative;z-index:200}.timeline dl dd .circ{position:absolute;top:40px;left:50%;z-index:200;width:22px;height:22px;margin-left:-11px;background-color:#4fc1e9;border:4px solid #f5f7fa;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%}.timeline dl dd .time{position:absolute;top:31px;left:50%;display:inline-block;width:100px;padding:10px 20px;color:#4fc1e9}.timeline dl dd .events{position:relative;width:47%;padding:10px 10px 0;margin-top:31px;background-color:#fff;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.timeline dl dd .events:before{position:absolute;top:12px;width:0;height:0;content:'';border-style:solid;border-width:6px}.timeline dl dd .events .events-object{margin-right:10px}.timeline dl dd .events .events-body{overflow:hidden;zoom:1}.timeline dl dd .events .events-body .events-heading{margin:0 0 10px;font-size:14px}.timeline dl dd.pos-right .time{margin-left:-100px;text-align:right}.timeline dl dd.pos-right .events{float:right}.timeline dl dd.pos-right .events:before{left:-12px;border-color:transparent #fff transparent transparent}.timeline dl dd.pos-left .time{margin-left:0;text-align:left}.timeline dl dd.pos-left .events{float:left}.timeline dl dd.pos-left .events:before{right:-12px;border-color:transparent transparent transparent #fff}@media screen and (max-width:767px){.timeline dl:before{left:60px}.timeline dl dt{margin:0 0 30px}.timeline dl dd .circ{left:60px}.timeline dl dd .time{left:0}.timeline dl dd.pos-left .time{padding:10px 0;&#13;
+ margin-left:0;text-align:left}.timeline dl dd.pos-left .events{float:right;width:84%}.timeline dl dd.pos-left .events:before{left:-12px;border-color:transparent #fff transparent transparent}.timeline dl dd.pos-right .time{padding:10px 0;&#13;
+ margin-left:0;text-align:left}.timeline dl dd.pos-right .events{float:right;width:84%}}.dropdown-menu{background-color:#434a54;border:none}.dropdown-menu .dropdown-header{padding:5px 20px;font-size:14px;font-weight:700;color:#aab2bd}.dropdown-menu li a{padding:5px 20px;color:#fff}.dropdown-menu .active a,.dropdown-menu .active a:focus,.dropdown-menu .active a:hover,.dropdown-menu li a:focus,.dropdown-menu li a:hover{color:#fff;background-color:#656d78;outline:0}.dropdown-menu .disabled a,.dropdown-menu .disabled a:focus,.dropdown-menu .disabled a:hover{color:#656d78;cursor:default}.dropdown-menu .divider{background-color:#656d78;border-bottom:none}.dropup .dropdown-menu{margin-bottom:0;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.dropdown-submenu{position:relative}.dropdown-submenu .dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;border-radius:0 4px 4px;-webkit-border-radius:0 4px 4px;-moz-border-radius:0 4px 4px}.dropdown-submenu:hover .dropdown-menu{display:block}.dropup .dropdown-submenu .dropdown-menu{top:auto;bottom:0;margin-top:0;margin-bottom:-2px;border-radius:4px 4px 4px 0;-webkit-border-radius:4px 4px 4px 0;-moz-border-radius:4px 4px 4px 0}.dropdown-submenu&gt;a:after{display:block;float:right;width:0;height:0;margin-top:5px;margin-right:-10px;content:" ";border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#fff}.dropdown-default .dropdown-submenu&gt;a:after{border-left-color:#434a54}.dropdown-submenu:hover a:after{border-left-color:#fff}.dropdown-submenu.pull-left{float:none}.dropdown-submenu.pull-left .dropdown-menu{left:-100%;margin-left:10px;border-radius:4px 0 4px 4px;-webkit-border-radius:4px 0 4px 4px;-moz-border-radius:4px 0 4px 4px}</css><name>pe-bootflat.min.css</name><sys_class_name>sp_css</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 21:42:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>86b20b464fd27200ab4450af0310c7f2</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-bootflat.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_86b20b464fd27200ab4450af0310c7f2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 23:38:23</sys_updated_on></sp_css></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5d12e30a4f167200ab4450af0310c7f2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>pe-bootflat.min.css</target_name>
+<type>Style Sheet</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_assignments_u_due</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_due" table="u_pe_training_assignments"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Due&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_due&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;glide_date_time&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_training_assignments&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 22:08:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c118874a4fd27200ab4450af0310c755&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Due&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_assignments_u_due&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 22:08:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5d12e30a4f167200ab4450af0310c7f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>u_pe_training_assignments.u_due</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_assignments_u_user_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_user" label="User" language="en" table="u_pe_training_assignments"><sys_documentation action="INSERT_OR_UPDATE"><element>u_user</element><help/><hint/><label>User</label><language>en</language><name>u_pe_training_assignments</name><plural>Users</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:08</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>64988b4a4fd27200ab4450af0310c7fb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_assignments_u_user_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:08:08</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>5d12e30a4f167200ab4450af0310c7f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Training Assignments.User</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_ce022e824f927200ab4450af0310c72d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_pe_training_course</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:19:45</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ce022e824f927200ab4450af0310c72d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_training_course</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_ce022e824f927200ab4450af0310c72d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:19:45</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9112270a4f167200ab4450af0310c7db</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>u_pe_training_course</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_7c992e864f927200ab4450af0310c761</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Training">4291e6824f927200ab4450af0310c7e4</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Training Prerequisites</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_pe_training_prerequisites</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:52:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7c992e864f927200ab4450af0310c761</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Prerequisites</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_7c992e864f927200ab4450af0310c761</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:12:38</sys_updated_on><timeline_page/><title>Prerequisites</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9112e30a4f167200ab4450af0310c7f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_prerequisites</table>
+<target_name>Prerequisites</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_course_u_name</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_name" table="u_pe_training_course"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Name&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;true&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;256&lt;/max_length&gt;&lt;name&gt;u_pe_training_course&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 21:10:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8b3bf2024fd27200ab4450af0310c7a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Name&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_course_u_name&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 21:10:28&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9112e30a4f167200ab4450af0310c7f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>Training Course.Name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_course__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Training Course" language="en" table="u_pe_training_course"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Training Course</label><language>en</language><name>u_pe_training_course</name><plural>Training Courses</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:19:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>86022e824f927200ab4450af0310c717</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Course</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_course__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:19:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9112e30a4f167200ab4450af0310c7fa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>Training Course</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_prerequisites_u_prerequisite_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_prerequisite" label="Prerequisite" language="en" table="u_pe_training_prerequisites"><sys_documentation action="INSERT_OR_UPDATE"><element>u_prerequisite</element><help/><hint/><label>Prerequisite</label><language>en</language><name>u_pe_training_prerequisites</name><plural>Prerequisites</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:52:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>81992e864f927200ab4450af0310c77b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Prerequisite</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_prerequisites_u_prerequisite_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:52:43</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9512270a4f167200ab4450af0310c7da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_prerequisites</table>
+<target_name>Training Prerequisites.Prerequisite</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_f1e85fbd4f1e320022f40ccf0310c7b5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  var c = this;
+	
+	c.enroll = function (item) {
+		c.server.get({action: 'enroll', sys_id: item.course}).then(function (result) {
+			item.enrolled = result.data.enrolled;
+		});
+	}
+	
+	c.remove = function (item) {
+		c.server.get({action: 'remove', sys_id: item.course}).then(function () {
+			item.enrolled = null;
+		});
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$page-bg: #f5f5f5 !default;
+$primary-color: #117fc1 !default;
+$primary-color-darker: #0065d3 !default;
+$secondary-color: #2980b9 !default;
+$border-color: #1aa5be !default;
+$alternate-color: #34495e !default;
+
+.timeline {
+    dl dd {
+        .circ {
+            border: solid 2px #ccd1da;
+            i {
+                display: none;
+            }
+        }
+        &amp;amp;.success {
+            .circ {
+                border: none;
+                background-color: $page-bg;
+                color: #57c446;
+                i {
+                    display: block;
+                    font-size: 20px;
+                }
+            }
+        }
+        .fail {
+            .circ {
+                background-color: #ff0000;
+            }
+        }
+    }
+    &amp;amp;::before {
+        border: 0;
+    }
+    dl {
+        padding: 0;
+        dd {
+            .circ {
+                background-color: $page-bg;
+                top: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .events {
+                &amp;amp;::before {
+                    display: none;
+                }
+                background-color: transparent;
+                margin-top: 0;
+                padding-top: 0;
+                .events-body .events-heading {
+                    margin-bottom: 25px;
+                }
+                .events-subheading {
+                    position: absolute;
+                    color: $primary-color;
+                }
+            }
+            &amp;amp;:last-child {
+                .events .events-body .events-heading:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        dl {
+            &amp;amp;:before {
+                left: 15px;
+            }
+            dd {
+                &amp;amp;.pos-right .events {
+                    float: left;
+                    margin-left: 30px;
+                }
+                .circ {
+                    left: 15px;
+                }
+            }
+        }
+    }
+    .icon {
+        float: left;
+        margin-top: 3px;
+    }
+    .events-subheading {
+        margin-top: 5px;
+    }
+    .subheading-label {
+        margin-left: 10px;
+        float: left;
+        width: 72px;
+    }
+    .event-action {
+        button {
+            font-size: 12px;
+            padding: 7px 25px;
+            border: none;
+            border-radius: 3px;
+            background-color: $secondary-color;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.subheader {
+    .title {
+        margin: 0 -15px;
+        padding: 7px 15px;
+        background-color: $primary-color;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .action {
+        margin: 0 -35px;
+        margin-top: 10px;
+        button {
+            border-radius: 0;
+        }
+    }
+}
+
+.choices {
+    button {
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: solid 2px $border-color;
+        color: $border-color;
+        padding: 10px 0;
+        font-size: 22px;
+        font-weight: 600;
+        &amp;amp;.active {
+            background-color: $border-color;
+            color: white;
+        }
+    }
+}
+
+.action {
+    margin: 0 -15px;
+    button {
+        border: none;
+        width: 100%;
+        height: 80px;
+        background-color: $border-color;
+        color: white;
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 20px 0;
+    }
+}
+
+.action-table-list {
+    .warning {
+        font-size: 13px;
+        color: #d35400;
+        text-transform: uppercase;
+    }
+}
+
+.subheader {
+    .title {
+        display: flex;
+        align-items: center;
+    }
+    .subheader-title {
+        flex-grow: 1;
+    }
+    .remaining {
+        position: relative;
+        font-size: 14px;
+        font-weight: normal;
+        padding-left: 30px;
+        .count {
+            background-color: white;
+            color: $secondary-color;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            top: -3px;
+        }
+    }
+}
+
+.timeline {
+    .event-action {
+        position: absolute;
+        right: 0;
+        top: -4px;
+    }
+    .events-body-extra {
+        position: absolute;
+        top: 20px;
+    }
+    dl dd .events .events-body .events-heading {
+        margin-bottom: 75px;
+    }
+    .pre-requisite {
+        font-size: 13px;
+        font-weight: 600;
+        color: #d35400;
+        .pre-requisite-label {
+            text-transform: uppercase;
+        }
+        .pre-requisite-items {
+            padding-left: 0;
+            .pre-requisite-item {
+                list-style: none;
+                font-weight: lighter;
+                font-size: 12px;
+            }
+        }
+    }
+    .enrolled {
+        color: $primary-color-darker;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-training&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Training&lt;/name&gt;&lt;option_schema&gt;[{"displayValue":"Training Category","hint":"The training category to show in this widget (leave blank to use 'category' parameter passed in via URL)","name":"category","label":"Category","type":"reference","value":"u_pe_training_category","ed":{"reference":"u_pe_training_category"}}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function($sp) {
+	var obj;
+  var gr;
+	
+	var category = options.category || $sp.getParameter('category');
+	
+	if (input.action == 'remove') {
+		
+		gr = new GlideRecord('u_pe_training_assignments');
+		if (gr.get(input.sys_id)) {
+			gr.u_enrolled = "";
+			gr.update();
+		}
+		return;
+	}
+	
+	if (input.action == 'enroll') {
+		gr = new GlideRecord('u_pe_training_assignments');
+		if (gr.get(input.sys_id)) {
+			var now = gs.nowDateTime();
+			gr.u_enrolled = now;
+			data.enrolled = now;
+			gr.update();
+		}
+		return;
+	}
+	
+	data.item = {};
+	gr = new GlideRecord('u_pe_training_category');
+	if (gr.get(category)) {
+		data.item.title = gr.u_name.toString();
+	} else {
+		return;
+	}
+	
+	gr = new GlideRecord('u_pe_training_assignments');
+	gr.addQuery('u_course.u_category', category);
+	gr.addQuery('u_user', gs.getUserID());
+	gr.orderBy('u_course.u_order');
+	gr.query();
+	data.item.remaining = 0;
+	data.items = [];
+	var training_list = [];
+	data.requirements = {};
+	var training_completed = {};
+	while (gr.next()) {
+		obj = {};
+		
+		obj.name = gr.u_course.u_name.toString();
+		obj.course = gr.sys_id.toString();
+		obj.sys_id = gr.u_training.sys_id.toString();
+		obj.enrolled = gr.u_enrolled.toString();
+		obj.completed = gr.u_completed.toString();
+		obj.due = gr.u_due.toString();
+
+		data.requirements[obj.sys_id] = [];
+		training_completed[obj.sys_id] = obj.completed;
+
+		if (!obj.completed) {
+			data.item.remaining = data.item.remaining + 1;
+		}
+
+		data.items.push(obj);
+		if (!obj.completed) {
+			training_list.push(gr.u_course.sys_id.toString());
+		}
+	}
+	
+	
+	gr = new GlideRecord('u_pe_training_prerequisites');
+	gr.addQuery('u_course', 'IN', training_list);
+	gr.query();
+
+	while (gr.next()) {
+		obj = {};
+		obj.sys_id = gr.u_course.sys_id.toString();
+		obj.title = gr.u_course.u_name.toString();
+
+		var training_id = gr.u_prerequisite.sys_id.toString();
+
+		if (!training_completed[obj.sys_id]) {
+			data.requirements[training_id].push(obj);
+		}
+	}
+
+	
+})($sp);]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 04:41:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;f1e85fbd4f1e320022f40ccf0310c7b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;75&lt;/sys_mod_count&gt;&lt;sys_name&gt;Training&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_f1e85fbd4f1e320022f40ccf0310c7b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 23:11:34&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="c.data.items"&gt;
+    &lt;div class="subheader"&gt;
+        &lt;div class="title"&gt;
+            &lt;div class="subheader-title"&gt;{{c.data.item.title}}&lt;/div&gt;
+            &lt;div class="remaining"&gt;
+                &lt;span class="count"&gt;{{c.data.item.remaining}}&lt;/span&gt; Remaining
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="content"&gt;
+        &lt;div class="timeline"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="col-md-12"&gt;
+                    &lt;dl&gt;
+                        &lt;dd class="pos-right clearfix circ-wrapper" ng-repeat="item in c.data.items track by $index" ng-class="{'success' : item.completed}"&gt;
+                            &lt;div class="circ"&gt;
+                                &lt;i class="fa fa-check-circle" aria-hidden="true"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class="events"&gt;
+                                &lt;div class="events-body"&gt;
+                                    &lt;div&gt;
+                                        &lt;div class="events-heading"&gt;{{item.name}}&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="events-body-extra"&gt;
+                                    &lt;div class="enrolled" ng-show="item.enrolled &amp;&amp; !  item.completed"&gt;Enrolled&lt;/div&gt;
+                                    &lt;div class="pre-requisite" ng-show="!item.enrolled &amp;&amp;  !item.completed &amp;&amp; c.data.requirements[item.sys_id].length"&gt;
+                                        &lt;span class="pre-requisite-label"&gt;Pre-requisite&lt;/span&gt;
+                                        &lt;ul class="pre-requisite-items"&gt;
+                                            &lt;li class="pre-requisite-item" ng-repeat="requirement in c.data.requirements[item.sys_id]"&gt;
+                                                {{requirement.title}}
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="event-action"&gt;
+                                &lt;button ng-show="!item.enrolled &amp;&amp; c.data.requirements[item.sys_id].length == 0" ng-click="c.enroll(item)"&gt;
+                                    Enroll
+                                &lt;/button&gt;
+                                &lt;button ng-show="item.enrolled &amp;&amp; !item.completed" ng-click="c.remove(item)"&gt;
+                                    Remove
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/dd&gt;
+                    &lt;/dl&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div ng-if="!c.data.items"&gt;
+  &lt;div class="alert alert-warning" role="alert"&gt;No result found&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9512e30a4f167200ab4450af0310c7f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>Training</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_category_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_pe_training_category"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_training_category&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:17:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;4291e6824f927200ab4450af0310c7e9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_pe_training_category&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_category_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 19:17:50&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9512e30a4f167200ab4450af0310c7f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_category</table>
+<target_name>Training Category</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_category__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Training Category" language="en" table="u_pe_training_category"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Training Category</label><language>en</language><name>u_pe_training_category</name><plural>Training Categories</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:17:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>8291e6824f927200ab4450af0310c7fc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Category</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_category__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:17:50</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9512e30a4f167200ab4450af0310c7f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_category</table>
+<target_name>Training Category</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_46b06bc64f167200ab4450af0310c7a6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="Training widget dependencies">1d92c7464fd27200ab4450af0310c7d3</sp_dependency><sp_widget display_value="Training">f1e85fbd4f1e320022f40ccf0310c7b5</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 23:53:37</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>46b06bc64f167200ab4450af0310c7a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training widget dependencies.Training</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_46b06bc64f167200ab4450af0310c7a6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 23:53:37</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9912e30a4f167200ab4450af0310c7f2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>Training widget dependencies.Training</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_assignments_u_course</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_course" table="u_pe_training_assignments"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Course&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_course&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;u_pe_training_assignments&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="u_pe_training_course"&gt;u_pe_training_course&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 22:08:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;96e7874a4fd27200ab4450af0310c75e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Course&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_assignments_u_course&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 22:08:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9912e30a4f167200ab4450af0310c7f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>u_pe_training_assignments.u_course</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_assignments_u_enrolled_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_enrolled" label="Enrolled" language="en" table="u_pe_training_assignments"><sys_documentation action="INSERT_OR_UPDATE"><element>u_enrolled</element><help/><hint/><label>Enrolled</label><language>en</language><name>u_pe_training_assignments</name><plural>Enrolled</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:08</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a8988b4a4fd27200ab4450af0310c7f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Enrolled</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_assignments_u_enrolled_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:08:08</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9912e30a4f167200ab4450af0310c7f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Training Assignments.Enrolled</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_a5e74f0a4fd27200ab4450af0310c7e5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Training Assignments</label><live_feed_enabled>false</live_feed_enabled><name>u_pe_training_assignments</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a5e74f0a4fd27200ab4450af0310c7e5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Assignments</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_a5e74f0a4fd27200ab4450af0310c7e5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:08:07</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9d12e30a4f167200ab4450af0310c7f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Training Assignments</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_prerequisites_u_prerequisite</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_prerequisite" table="u_pe_training_prerequisites"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Prerequisite&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_prerequisite&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;u_pe_training_prerequisites&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="u_pe_training_course"&gt;u_pe_training_course&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:52:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;4b592a864f927200ab4450af0310c751&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Prerequisite&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_prerequisites_u_prerequisite&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 19:52:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>9d12e30a4f167200ab4450af0310c7f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_prerequisites</table>
+<target_name>u_pe_training_prerequisites.u_prerequisite</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_prerequisites_u_course_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_course" label="Course" language="en" table="u_pe_training_prerequisites"><sys_documentation action="INSERT_OR_UPDATE"><element>u_course</element><help/><hint/><label>Course</label><language>en</language><name>u_pe_training_prerequisites</name><plural>Courses</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:52:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c5992e864f927200ab4450af0310c779</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Course</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_prerequisites_u_course_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:52:43</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d112270a4f167200ab4450af0310c7da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_prerequisites</table>
+<target_name>Training Prerequisites.Course</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_1d92c7464fd27200ab4450af0310c7d3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>Training widget dependencies</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 21:42:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1d92c7464fd27200ab4450af0310c7d3</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Training widget dependencies</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_1d92c7464fd27200ab4450af0310c7d3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 21:43:15</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d112e30a4f167200ab4450af0310c7f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>Training widget dependencies</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_assignments_u_user</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_user" table="u_pe_training_assignments"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;User&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_user&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;u_pe_training_assignments&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sys_user"&gt;sys_user&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 22:08:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;fe18874a4fd27200ab4450af0310c75e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;User&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_assignments_u_user&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 22:08:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d112e30a4f167200ab4450af0310c7f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>u_pe_training_assignments.u_user</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_category_u_name_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_name" label="Name" language="en" table="u_pe_training_category"><sys_documentation action="INSERT_OR_UPDATE"><element>u_name</element><help/><hint/><label>Name</label><language>en</language><name>u_pe_training_category</name><plural>Names</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:17:50</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c291e6824f927200ab4450af0310c7fe</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_category_u_name_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:17:50</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d112e30a4f167200ab4450af0310c7f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_category</table>
+<target_name>Training Category.Name</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_css_include_59f0ebc64f167200ab4450af0310c728</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="pe-bootflat.min.css">cea20b464fd27200ab4450af0310c763</sp_css_include><sp_dependency display_value="Training widget dependencies">1d92c7464fd27200ab4450af0310c7d3</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 23:54:40</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>59f0ebc64f167200ab4450af0310c728</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-bootflat.min.css.Training widget dependencies</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_59f0ebc64f167200ab4450af0310c728</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 23:54:40</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d512e30a4f167200ab4450af0310c7f2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>pe-bootflat.min.css.Training widget dependencies</target_name>
+<type>Dependency CSS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_assignments_u_completed</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_completed" table="u_pe_training_assignments"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Completed&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_completed&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;glide_date_time&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_training_assignments&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 22:08:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ab08874a4fd27200ab4450af0310c754&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Completed&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_assignments_u_completed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 22:08:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d512e30a4f167200ab4450af0310c7f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>u_pe_training_assignments.u_completed</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_assignments_u_due_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_due" label="Due" language="en" table="u_pe_training_assignments"><sys_documentation action="INSERT_OR_UPDATE"><element>u_due</element><help/><hint/><label>Due</label><language>en</language><name>u_pe_training_assignments</name><plural>Dues</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:08</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ec988b4a4fd27200ab4450af0310c7f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Due</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_assignments_u_due_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:08:08</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d512e30a4f167200ab4450af0310c7f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Training Assignments.Due</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_70a162824f927200ab4450af0310c741</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Training Course</label><live_feed_enabled>false</live_feed_enabled><name>u_pe_training_course</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:19:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>70a162824f927200ab4450af0310c741</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Training Course</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_70a162824f927200ab4450af0310c741</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:40:46</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d912e30a4f167200ab4450af0310c7f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>Training Course</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_prerequisites_u_course</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_course" table="u_pe_training_prerequisites"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Course&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;true&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_course&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;u_pe_training_prerequisites&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="u_pe_training_course"&gt;u_pe_training_course&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:52:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;1e096e464f927200ab4450af0310c7db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Course&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_prerequisites_u_course&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 19:52:42&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>d912e30a4f167200ab4450af0310c7f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_prerequisites</table>
+<target_name>u_pe_training_prerequisites.u_course</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_c9992e864f927200ab4450af0310c799</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_pe_training_prerequisites</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:52:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c9992e864f927200ab4450af0310c799</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_training_prerequisites</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_c9992e864f927200ab4450af0310c799</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:52:43</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>dd12270a4f167200ab4450af0310c7da</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table/>
+<target_name>u_pe_training_prerequisites</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_24988b4a4fd27200ab4450af0310c7e9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Training">4291e6824f927200ab4450af0310c7e4</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Training Assignments</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_pe_training_assignments</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 22:08:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>24988b4a4fd27200ab4450af0310c7e9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Assignments</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_24988b4a4fd27200ab4450af0310c7e9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 22:12:01</sys_updated_on><timeline_page/><title>Assignments</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>dd12e30a4f167200ab4450af0310c7f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_assignments</table>
+<target_name>Assignments</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_training_course_u_category</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_category" table="u_pe_training_course"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Category&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_category&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;u_pe_training_course&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="u_pe_training_category"&gt;u_pe_training_category&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:19:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a5a162824f927200ab4450af0310c745&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Category&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_training_course_u_category&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 19:19:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>dd12e30a4f167200ab4450af0310c7f6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>u_pe_training_course.u_category</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_training_course_u_order_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_order" label="Order" language="en" table="u_pe_training_course"><sys_documentation action="INSERT_OR_UPDATE"><element>u_order</element><help/><hint/><label>Order</label><language>en</language><name>u_pe_training_course</name><plural>Orders</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-24 19:19:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>02022e824f927200ab4450af0310c71b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Order</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_training_course_u_order_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-24 19:19:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Training widget (Platform Experience)">1512e30a4f167200ab4450af0310c7f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-24 23:59:35</sys_created_on>
+<sys_id>dd12e30a4f167200ab4450af0310c7f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-24 23:59:35</sys_updated_on>
+<table>u_pe_training_course</table>
+<target_name>Training Course.Order</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

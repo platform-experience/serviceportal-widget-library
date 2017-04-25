@@ -1,0 +1,54 @@
+<div ng-if="c.data.items">
+    <div class="subheader">
+        <div class="title">
+            <div class="subheader-title">{{c.data.item.title}}</div>
+            <div class="remaining">
+                <span class="count">{{c.data.item.remaining}}</span> Remaining
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="timeline">
+            <div class="row">
+                <div class="col-md-12">
+                    <dl>
+                        <dd class="pos-right clearfix circ-wrapper" ng-repeat="item in c.data.items track by $index" ng-class="{'success' : item.completed}">
+                            <div class="circ">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="events">
+                                <div class="events-body">
+                                    <div>
+                                        <div class="events-heading">{{item.name}}</div>
+                                    </div>
+                                </div>
+                                <div class="events-body-extra">
+                                    <div class="enrolled" ng-show="item.enrolled && !  item.completed">Enrolled</div>
+                                    <div class="pre-requisite" ng-show="!item.enrolled &&  !item.completed && c.data.requirements[item.sys_id].length">
+                                        <span class="pre-requisite-label">Pre-requisite</span>
+                                        <ul class="pre-requisite-items">
+                                            <li class="pre-requisite-item" ng-repeat="requirement in c.data.requirements[item.sys_id]">
+                                                {{requirement.title}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event-action">
+                                <button ng-show="!item.enrolled && c.data.requirements[item.sys_id].length == 0" ng-click="c.enroll(item)">
+                                    Enroll
+                                </button>
+                                <button ng-show="item.enrolled && !item.completed" ng-click="c.remove(item)">
+                                    Remove
+                                </button>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-if="!c.data.items">
+  <div class="alert alert-warning" role="alert">No result found</div>
+</div>
