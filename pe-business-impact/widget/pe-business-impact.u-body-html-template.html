@@ -1,0 +1,64 @@
+<div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.incident.state.value >= 6) }">
+	<div class="panel-proper">
+		<div class="panel-header">
+			<span ng-if="options.titleIconClasses" class="title-icon">
+				<i class="{{options.titleIconClasses}}" aria-hidden="true"></i>
+			</span>
+			<span>Business Impact</span>
+			<div class="panel-expander-wrapper" ng-click="c.expanded = !c.expanded" data-toggle="collapse" data-target="#panel-drawer" aria-expanded="false" aria-controls="panel-drawer">
+				<svg class="panel-expander">
+					<use xlink:href="#plus"></use>
+				</svg>
+			</div>
+		</div>
+		<div class="panel-content" id="panel-content">
+
+			<div class="row triptych">
+				<div class="col-xs-4" ng-repeat="item in c.stats">
+					<div class="key-value">
+						<span ng-if="item.value">{{item.value}}</span>
+						<span ng-if="item.icon" class="icon-inline">
+							<svg class="svg-wrapper half-width">
+								<use xlink:href={{item.icon}}></use>
+							</svg>
+						</span>
+					</div>
+					<div class="subtitle">
+						{{item.name}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="panel-drawer collapse" id="panel-drawer">
+			<sp-widget widget="c.data.drawerWidget"></sp-widget>
+		</div>
+</div>
+
+<div class="hidden">
+
+	<svg version="1.1" id="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+		<path d="M11.5,0C5.2,0,0,5.2,0,11.5S5.2,23,11.5,23S23,17.8,23,11.5S17.8,0,11.5,0z M11.5,22C5.7,22,1,17.3,1,11.5S5.7,1,11.5,1
+			S22,5.7,22,11.5S17.3,22,11.5,22z"/>
+		<path d="M11.5,18c-0.3,0-0.5-0.2-0.5-0.5v-12C11,5.2,11.2,5,11.5,5S12,5.2,12,5.5v12C12,17.8,11.8,18,11.5,18z"/>
+		<path d="M17.5,12h-12C5.2,12,5,11.8,5,11.5S5.2,11,5.5,11h12c0.3,0,0.5,0.2,0.5,0.5S17.8,12,17.5,12z"/>
+	</svg>
+
+	<svg version="1.1" id="flash" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 9 11" style="enable-background:new 0 0 9 11;" xml:space="preserve">
+		<g id="Symbols">
+			<g id="Root-Cause_x2F_Default" transform="translate(-20.000000, -12.000000)">
+				<g id="Group-2" transform="translate(14.000000, 7.000000)">
+					<g id="Group-2-Copy-2">
+						<g transform="translate(6.666667, 4.761905)">
+							<path d="M3.3,11.5l-0.9-0.4l0.8-3.7H-1l5.3-7.5l0.9,0.4L4.4,4h4.2L3.3,11.5z M1,6.4h3.5L3.9,8.9L6.6,5H3.2l0.6-2.5
+								L1,6.4z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</svg>
+
+</div>

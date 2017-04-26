@@ -1,0 +1,45 @@
+$slate: #485563;
+
+.row {
+	margin: 0 -7px;
+	padding: 12px;
+	border-top: solid 0.5px rgba(52, 61, 71, 0.15);
+}
+
+.left-padded {
+	text-align: left;
+	padding-top: 15px;
+}
+
+.col-xs-4 {
+	padding: 0 7.5px;
+}
+
+.dollar-icon {
+	fill: $slate;
+	height: 0.8em;
+	width: 0.5em;
+}
+.user-icon {
+	fill: $slate;
+	height: 0.8em;
+	width: 0.8em;
+}
+
+.key-value-grouped-label {
+	text-align: left;
+	margin-top: 0;
+}
+
+.key-group {
+	display: inline-block;
+}
+
+.key-float-group > * {
+	height: 55px;
+	float: left;
+	margin-right: 5px;
+	&:last-child {
+		margin-right: none;
+	}
+}

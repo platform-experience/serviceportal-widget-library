@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-26 13:08:40">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-remediation-actions</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>2c5d87de13d2b200ba3a7b1a6144b018</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:08:40</sys_created_on>
+<sys_id>bd402322131ab200ba3a7b1a6144b0f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:08:40</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_847d0bde13d2b200ba3a7b1a6144b012</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+
+  c.incident = c.data.incident;
+
+  c.actions = [
+  	{
+  		name: "Rollback",
+  		iconClasses: "fa fa-refresh",
+  		confidence: 98,
+  		duration: 10,
+  		change_request: 'CHG000123',
+  		href: 'https://www.example.com'
+  	},
+  	{
+  		name: "Fix",
+  		iconClasses: "fa fa-wrench",
+  		confidence: 76,
+  		duration: 30,
+  		change_request: 'CHG000123',
+  		href: 'https://www.example.com'
+  	},
+  	{
+  		name: "Failover",
+  		iconClasses: "fa fa-refresh",
+  		confidence: 35,
+  		duration: 90,
+  		change_request: 'CHG000123',
+  		href: 'https://www.example.com'
+  	}
+  ];
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
+
+$icon-circle-color: #7e848b !default;
+$good-color: #3abe43 !default;
+$bad-color: #ff402c !default;
+
+.panel-wrapper {
+	margin-bottom: 10px;
+}
+.panel-proper {
+	background-color: #fff;
+	border-radius: 5px;
+	transition: box-shadow 0.5s;
+	position: relative;
+}
+.panel-header {
+	position: relative;
+	padding: 7px 12px;
+	font-size: 16px;
+	font-weight: 600;
+	border-bottom: 0.5px solid #7E848B;
+}
+
+.panel-content {
+	padding: 12px;
+}
+
+.title-icon {
+	display: inline-block;
+	background-color: $icon-circle-color;
+	width: 22px;
+	height: 22px;
+	fill: #fff;
+	color: #fff;
+	text-align: center;
+	border-radius: 11px;
+	margin: 0 2px;
+	font-weight: 400;
+	&amp;amp;:first-child {
+		margin-left: -5px;
+	}
+}
+
+.scroll-wrapper {
+  margin: 10px -12px 0 -12px;
+  position: relative;
+}
+.scroll {
+  width: 100%;
+  padding-left: 12px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.scroll-item {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  background: #fff;
+  margin-right: 12px;
+  width: 150px;
+  height: 250px;
+  // border-radius: 5px;
+  text-align: center;
+  border: 0.5px solid rgba(72, 85, 99, 0.5);
+  // padding: 20px;
+  font-size: 15px;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.scroll-item-header {
+  background-color: $slate;
+  padding: 15px 15px 5px 15px;
+  .action-key {
+    fill: #fff;
+    color: #fff;
+  }
+  .action-title {
+    color: #fff;
+  }
+}
+.scroll-item-body {
+  padding: 5px 15px 15px 15px;
+  line-height: 1.3;
+}
+.action-key {
+  font-size: 50px;
+  line-height: 1;
+}
+.action-title {
+  font-size: 18px;
+}
+.action-subtitle {
+  font-weight: 600;
+  margin-top: 5px;
+}
+.action-subtitle-smaller {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.color-by-status-good {
+	color: $good-color;
+	font-weight: bold;
+}
+.color-by-status-bad {
+	color: $bad-color;
+	font-weight: bold;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-remediation-actions&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-remediation-actions&lt;/name&gt;&lt;option_schema&gt;[{"name":"incident","label":"Incident sys_id","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+  options.incident = options.incident || serverOptions.incident  || 'd71f7935c0a8016700802b64c67c11c6';
+
+  var getState = function(stateValue, table ){
+		var state = new GlideRecord('sys_choice');
+    state.addQuery('element','state');
+    state.addQuery('name', table);
+    state.addQuery('value', stateValue);
+    state.query();
+    while(state.next()){
+    	stateObj = {
+      	value: stateValue,
+      	label: state.label.toString()
+      };
+    };
+		return stateObj;
+	};
+
+  if (options.incident){
+  	
+  	var incidentGR = new GlideRecord('incident');
+		if (incidentGR.get(options.incident)) {
+			var incident = {
+				sys_id: incidentGR.sys_id.toString(),
+				state: getState(incidentGR.state.toString(), 'incident')
+			};
+
+			data.incident = incident;
+			
+		}
+
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-25 17:08:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;847d0bde13d2b200ba3a7b1a6144b012&lt;/sys_id&gt;&lt;sys_mod_count&gt;36&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-remediation-actions&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_847d0bde13d2b200ba3a7b1a6144b012&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-25 18:59:04&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="c.incident.state.value &lt; 6" class="panel-wrapper"&gt;
+	&lt;div class="panel-proper"&gt;
+		&lt;div class="panel-header"&gt;
+			&lt;span&gt;Remediation Actions&lt;/span&gt;
+			&lt;span class="title-icon"&gt;
+				{{c.actions.length}}
+			&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="panel-content" id="panel-content"&gt;
+
+			&lt;div&gt;The following actions are recommended:&lt;/div&gt;
+			&lt;div class="scroll-wrapper"&gt;
+				&lt;div class="scroll"&gt;
+					&lt;div ng-repeat="action in c.actions track by $index" class="scroll-item" ng-href="action.href"&gt;
+						&lt;div class="scroll-item-header"&gt;
+							&lt;div class="action-key"&gt;
+								&lt;span class="icon-inline"&gt;
+									&lt;i class="{{action.iconClasses}}" aria-hidden="true"&gt;&lt;/i&gt;
+								&lt;/span&gt;
+							&lt;/div&gt;
+							&lt;div class="action-title"&gt;{{action.name}}&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="scroll-item-body"&gt;
+							&lt;div class="action-subtitle"&gt;Confidence&lt;/div&gt;
+							&lt;div ng-class="{ 'color-by-status-good': (action.confidence &gt; 80), 'color-by-status-bad': (action.confidence &lt; 40) }"&gt;{{action.confidence}}%&lt;/div&gt;
+							&lt;div class="action-subtitle"&gt;Est duration&lt;/div&gt;
+							&lt;div ng-class="{ 'color-by-status-good': (action.duration &lt; 15), 'color-by-status-bad': (action.duration &gt; 30) }"&gt;{{action.duration}} min&lt;/div&gt;
+							&lt;div class="action-subtitle"&gt;Change Request&lt;/div&gt;
+							&lt;div&gt;{{action.change_request}}&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="pe-remediation-actions">bd402322131ab200ba3a7b1a6144b0f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:08:40</sys_created_on>
+<sys_id>31402322131ab200ba3a7b1a6144b0f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:08:40</sys_updated_on>
+<table/>
+<target_name>pe-remediation-actions</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

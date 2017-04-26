@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-26 13:09:29">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-status-alert</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>db711122130e320040c770a76144b0ef</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:09:29</sys_created_on>
+<sys_id>39706fee13d6b200ba3a7b1a6144b0f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:09:29</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_b2d19122130e320040c770a76144b0ab</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $interval, $filter) {
+  /* widget controller */
+  var c = this;
+  var d = new Date();
+
+  c.inc = $scope.data.inc;
+  c.probabilityGauge = $scope.data.probabilityGauge;
+
+  if (c.inc.opened_at) {
+  	c.inc.opened_at_date = new Date(c.inc.opened_at);
+  	c.inc.opened_at_string = $filter('date')(c.inc.opened_at_date, 'short');
+  };
+  if (c.inc.closed_at) {
+  	c.inc.closed_at_date = new Date(c.inc.closed_at);
+  	c.inc.closed_at_string = $filter('date')(c.inc.closed_at_date, 'short');
+  };
+  if (c.inc.resolved_at) {
+  	c.inc.resolved_at_date = new Date(c.inc.resolved_at);
+  	c.inc.resolved_at_string = $filter('date')(c.inc.resolved_at_date, 'short');
+  };
+
+  // console.log(c.inc);
+
+  // fake close for demo/testing
+  c.closeIncident = function(){
+  	c.inc.closed_at = new Date();
+  	c.inc.closed_at_string = $filter('date')(c.inc.closed_at, 'short');
+  	c.inc.state = {
+  		value: 7,
+  		label: 'Closed'
+  	}
+  }
+
+  // get minutes to possible outage, else default to count down from 30
+  var default_min_to_eta = 30;
+  if (c.options.outage_eta) {
+	  var outage_eta = new Date(c.options.outage_eta);
+	} else {
+		var outage_eta = new Date( d.getTime() + default_min_to_eta*60000 );
+	}
+
+  c.min_to_eta = Math.floor( ( outage_eta.getTime() - d.getTime() ) / 60000 );
+  if (c.min_to_eta &lt; 0) {
+  	c.min_to_eta = 0;
+  } else {
+  	$interval( function(){
+	  	c.min_to_eta -= 1;
+	  }, 60000, c.min_to_eta);
+  }  
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
+$mango: #fe8a30;
+$orange: #ff6f00;
+$medium-green: #34ba3d;
+$lightish-green-two: #6ce474;
+
+$text-color: $slate !default;
+
+$status-alert-color: $orange !default;
+$status-alert-gradient: linear-gradient($mango, $orange) !default;
+$status-recovered-color: $medium-green !default;
+$status-recovered-gradient: linear-gradient($lightish-green-two, $medium-green) !default;
+
+.status-wrapper {
+	margin: -10px -15px 0 -15px;
+}
+
+.status-box {
+	background: $status-alert-gradient;
+	color: #fff;
+	fill: #fff;
+  margin-bottom: 10px;
+  padding: 15px 23px;
+  .title {
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+	.pill {
+		background-color: #fff;
+		color: $status-alert-color;
+		display: inline-block;
+		font-size: 14px;
+		padding: 1px 8px;
+		border-radius: 14px;
+		margin: 5px 0;
+	}
+}
+
+.recovered {
+	.status-box {
+		background: $status-recovered-gradient;
+		.pill {
+			color: $status-recovered-color;
+		}
+	}
+}
+
+.status-row {
+	height: 125px;
+}
+.status-key {
+	float: left;
+	width: 140px;
+}
+.status-detail {
+	padding-top: 20px;
+	.status-time {
+		display: inline;
+		font-size: 24px;
+	}
+}
+
+.big-icon {
+	margin: 15px auto;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	border-radius: 50px;
+	border: 10px solid #fff;
+	fill: #fff;
+	.svg-wrapper {
+		position: relative;
+		vertical-align: top;
+		top: 15px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+// HIGHCHART
+
+.highcharts-axis, .highcharts-axis-labels, .highcharts-data-label-box, .highcharts-text-outline {
+	visibility: hidden;
+}
+
+// SPINNER
+
+.spinny {
+  display: inline-block;
+  margin-right: 5px;
+}
+.spinny &amp;gt; div {
+  width: 9px;
+  height: 9px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  vertical-align: 10%;
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-status-alert&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-status-alert&lt;/name&gt;&lt;option_schema&gt;[{"name":"incident","label":"Incident sys_id","type":"string"},{"name":"probability","label":"Probability of outage","instructions":"in percent","type":"integer"},{"name":"outage_eta","label":"ETA of outage","instructions":"as datetime string","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+	options.incident = options.incident || serverOptions.incident || 'd71f7935c0a8016700802b64c67c11c6';
+	options.probability = options.probability || serverOptions.probability || 67;
+	options.outage_eta = options.outage_eta || serverOptions.outage_eta;
+
+
+	if (options.incident){
+		var incidentGR = new GlideRecord('incident');
+		if (incidentGR.get(options.incident)) {
+			var inc = {};
+      inc.short_description = incidentGR.short_description.toString();
+      inc.number = incidentGR.number.toString();
+      inc.opened_at = incidentGR.opened_at.toString();
+      inc.closed_at = incidentGR.closed_at.toString();
+      inc.resolved_at = incidentGR.resolved_at.toString();
+      inc.state = {};
+      inc.state.value = incidentGR.state.toString();
+
+      var state = new GlideRecord('sys_choice');
+      state.addQuery('element','state');
+      state.addQuery('name','incident');
+      state.addQuery('value', incidentGR.state.toString() );
+      state.query();
+      while(state.next()){
+      	inc.state.label = state.label.toString();
+      }
+
+      data.inc = inc;
+		}
+	}
+	
+
+  data.probabilityGauge = $sp.getWidget("pe-solid-gauge", {
+
+  	script_include: 'PEChartData',
+  	function_name: 'getData',
+  	param1: options.probability,
+
+    advance: JSON.stringify({
+  		options: {
+  			title: {
+	  			text: null
+	  		},
+  			chart: {
+					height: 140,
+					width: 140,
+					backgroundColor: null
+				},
+				pane: {
+	  			background: {
+	  				backgroundColor: 'rgba(255,255,255,0.5)',
+	  				borderColor: null,
+	  				shape: 'solid',
+	  				innerRadius: '60%',
+	  				outerRadius: '100%'
+	  			}
+	  		},
+	  		exporting: {
+	  			enabled: false
+	  		},
+	  		legend: {
+	  			enabled: false
+	  		},
+	  		yAxis: {
+	    		min: 0,
+					max: 100,
+					tickAmount: 0,
+					tickWidth: 0,
+		      stops: [
+	          [0, 'rgba(255,255,255,0.5)'],
+	          [1, 'rgba(255,255,255,1)']
+		      ]
+	    	},
+	    	plotOptions: {
+	    		solidgauge: {
+	    			dataLabels: {
+	    				format: "{y}%",
+	    				color: "white",
+	    				style: {
+	    					fontFamily: "'SourceSansPro', Helvetica, Arial, sans-serif",
+								fontSize: "24px",
+								fontWeight: "400"
+	    				},
+	    				y: -20
+	    			}
+	    		}
+	    	}
+	  	}
+  	
+  	})
+    
+  });
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-13 16:37:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b2d19122130e320040c770a76144b0ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;226&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-status-alert&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b2d19122130e320040c770a76144b0ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-21 14:09:14&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-class="{ 'recovered': c.inc.state.value &gt; 5 }" class="status-wrapper"&gt;
+	&lt;div class="status-box"&gt;
+		&lt;header class="title"&gt;{{c.inc.short_description}}&lt;/header&gt;
+		&lt;div class="pill"&gt;
+			{{ c.inc.number }} |
+			&lt;span ng-if="c.inc.state.value &lt; 4"&gt;{{ 'Created ' + c.inc.opened_at_string }}&lt;/span&gt;
+			&lt;span ng-if="c.inc.state.value &gt; 5"&gt;{{ c.inc.state.label + ' ' + (c.inc.resolved_at_string || c.inc.closed_at_string) }}&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div ng-if="c.inc.state.value &lt; 4" class="status-row"&gt;
+			&lt;div class="status-key"&gt;
+				&lt;sp-widget widget="c.probabilityGauge"&gt;&lt;/sp-widget&gt;
+			&lt;/div&gt;
+			&lt;div class="status-detail"&gt;
+				&lt;div&gt;Probability that an outage will occur in&lt;/div&gt;
+				&lt;div class="spinny"&gt;
+				  &lt;div class="bouncy1" style="animation-delay: -0.32s;"&gt;&lt;/div&gt;
+				  &lt;div class="bouncy2" style="animation-delay: -0.16s;"&gt;&lt;/div&gt;
+				  &lt;div class="bouncy3"&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="status-time"&gt;
+					{{c.min_to_eta}} {{c.min_to_eta == 1 ? 'minute' : 'minutes'}}
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div ng-if="c.inc.state.value &gt; 5" class="status-row"&gt;
+			&lt;div class="status-key"&gt;
+				&lt;div class="big-icon"&gt;
+					&lt;svg class="svg-wrapper"&gt;
+						&lt;use xlink:href="#check-mark"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="status-detail"&gt;
+				&lt;div class="title"&gt;&lt;strong&gt;Outage Prevented&lt;/strong&gt;&lt;/div&gt;
+				&lt;div&gt;There was a {{c.options.probability}}% chance this incident would cause an outage&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="hidden"&gt;
+&lt;svg version="1.1" id="check-mark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0px" y="0px" viewBox="0 0 574.6 468" xml:space="preserve"&gt;
+	&lt;g&gt;
+		&lt;path d="M0,292.6c-0.1-6.5,2.2-12.1,6.8-16.7c14.9-15,29.8-30,44.9-44.9c10-9.8,24.1-9.4,34.4,0.8c23.4,23.3,46.7,46.6,70,70
+			c12.6,12.6,25.7,12.5,38.3-0.1C291.9,204.2,389.5,106.6,487,9c7.3-7.3,15.6-11.1,25.6-7.8c4.1,1.4,8.1,4.1,11.2,7.1
+			c14.2,13.8,28.1,27.9,42.2,42c11.4,11.4,11.5,25.1,0.1,36.5C502.9,150,439.7,213.2,376.6,276.3C315.9,337,255.2,397.7,194.5,458.4
+			c-12.8,12.8-25.9,12.9-38.6,0.1c-49.1-49.1-98.3-98.3-147.5-147.4C3.3,305.9-0.2,300.1,0,292.6z"/&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="pe-status-alert">39706fee13d6b200ba3a7b1a6144b0f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:09:29</sys_created_on>
+<sys_id>3d706fee13d6b200ba3a7b1a6144b0f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:09:29</sys_updated_on>
+<table/>
+<target_name>pe-status-alert</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_5c4ad5bf138e720040c770a76144b0c9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PEChartData&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PEChartData&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PEChartData = Class.create();
+PEChartData.prototype = {
+    initialize: function(request, response) {
+		this.json = new JSON();
+    },
+	getData: function(param1){
+		return [{
+			"name": "Probability",
+			"data": [ parseInt(param1) ]
+		}];
+	},
+    type: 'PEChartData'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-17 14:25:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5c4ad5bf138e720040c770a76144b0c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEChartData&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_5c4ad5bf138e720040c770a76144b0c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-17 17:08:01&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="pe-status-alert">39706fee13d6b200ba3a7b1a6144b0f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:09:29</sys_created_on>
+<sys_id>7d706fee13d6b200ba3a7b1a6144b0f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:09:29</sys_updated_on>
+<table/>
+<target_name>PEChartData</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_c4d02a721342720040c770a76144b0a5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE HighchartsNG">c722c9c3db5932002e5df2b6ae96193b</sp_dependency><sp_js_include display_value="PE highcharts-ng">b3244d07db5932002e5df2b6ae96197e</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>jacob</sys_created_by><sys_created_on>2017-04-14 16:54:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c4d02a721342720040c770a76144b0a5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE HighchartsNG.PE highcharts-ng</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_c4d02a721342720040c770a76144b0a5</sys_update_name><sys_updated_by>jacob</sys_updated_by><sys_updated_on>2017-04-14 16:54:09</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="pe-status-alert">39706fee13d6b200ba3a7b1a6144b0f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:09:29</sys_created_on>
+<sys_id>b9706fee13d6b200ba3a7b1a6144b0f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:09:29</sys_updated_on>
+<table/>
+<target_name>PE HighchartsNG.PE highcharts-ng</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_4657a11fdb9532002e5df2b6ae961996</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $timeout, HighchartsConfigService) {
+	var c = this;
+
+	var hcs = new HighchartsConfigService(c.options, "solidgauge", c.data);
+	c.chartConfig = hcs.getChartConfig();
+	hcs.get();
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"data": [{
+		"name": "Jan",
+		"y": 31
+	}, {
+		"name": "Feb",
+		"y": 28
+	}, {
+		"name": "Mar",
+		"y": 31
+	}, {
+		"name": "Apr",
+		"y": 30
+	}, {
+		"name": "May",
+		"y": 31
+	}, {
+		"name": "Jun",
+		"y": 30
+	}, {
+		"name": "Jul",
+		"y": 31
+	}, {
+		"name": "Aug",
+		"y": 31
+	}, {
+		"name": "Sep",
+		"y": 30
+	}, {
+		"name": "Oct",
+		"y": 31
+	}, {
+		"name": "Nov",
+		"y": 30
+	}, {
+		"name": "Dec",
+		"y": 31
+	}]
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-solid-gauge&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Solid Gauge&lt;/name&gt;&lt;option_schema&gt;[{"name":"interval","label":"Update Interval","type":"glide_duration"},{"name":"table","label":"Table","type":"string"},{"name":"fields","label":"Field","type":"field_name"},{"name":"encoded_query","label":"Encoded Query","type":"string"},{"name":"script_include","label":"Script Include","type":"string"},{"name":"function_name","label":"Process Function Name","type":"string"},{"name":"param1","label":"Parameter 1","type":"string"},{"name":"advance","label":"Set your own Chart object","instructions":"&amp;lt;p&amp;gt;Options available can be seen here &amp;lt;a targe=\"_blank\" href=\"http://api.highcharts.com/highcharts\"&amp;gt;Highcharts Doc&amp;lt;/a&amp;gt;.&amp;lt;br/&amp;gt;A example of the output is as follows&amp;lt;/p&amp;gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;{\n\ttitle:{\n\t\ttext:\"hello&amp;amp;nbspworld\"\n\t}\n}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;","type":"script"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+	options.interval = options.interval || serverOptions.interval;
+	options.table = options.table || serverOptions.table;
+	options.fields = options.fields || serverOptions.fields;
+	options.encoded_query = options.encoded_query || serverOptions.encoded_query;
+	options.script_include = options.script_include || serverOptions.script_include || "PEHighchartsExample";
+	options.function_name = options.function_name || serverOptions.function_name || "getGaugeDemoData";
+	options.param1 = options.param1 || serverOptions.param1;
+	options.advance = options.advance || serverOptions.advance || JSON.stringify({
+		"options":{
+			"pane":{
+				"startAngle":-90,
+				"endAngle":90,
+				"background":{
+					"shape":"arc"
+				}
+			},
+			"yAxis":{
+				"softMin":0,
+				"softMax":100
+			}
+		},
+		"title":{
+			"text":"Solid Arc Gauge"
+		}
+	});
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-09 19:12:56&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;4657a11fdb9532002e5df2b6ae961996&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Solid Gauge&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4657a11fdb9532002e5df2b6ae961996&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-14 15:39:20&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;highchart config="c.chartConfig" class="pe-highchart-class pe-highchart-solid-gauge-chart"&gt;&lt;/highchart&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="pe-status-alert">39706fee13d6b200ba3a7b1a6144b0f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:09:29</sys_created_on>
+<sys_id>f9706fee13d6b200ba3a7b1a6144b0f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:09:29</sys_updated_on>
+<table/>
+<target_name>PE Solid Gauge</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

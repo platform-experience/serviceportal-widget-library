@@ -1,0 +1,132 @@
+$slate: #485563;
+$orange: #ff6f00;
+$medium-green: #34ba3d;
+
+$icon-circle-color: #7e848b !default;
+
+$text-color: $slate !default;
+$divider-color: #7E848B !default;
+
+$status-alert-color: $orange !default;
+$status-recovered-color: $medium-green !default;
+
+.panel-wrapper {
+	margin-bottom: 10px;
+}
+.panel-proper {
+	background-color: #fff;
+	border-radius: 5px;
+	transition: box-shadow 0.5s;
+	position: relative;
+}
+.panel-header {
+	position: relative;
+	padding: 7px 12px;
+	font-size: 16px;
+	font-weight: 600;
+	border-bottom: 0.5px solid #7E848B;
+}
+.title-icon {
+	display: inline-block;
+	background-color: $icon-circle-color;
+	width: 22px;
+	height: 22px;
+	fill: #fff;
+	color: #fff;
+	text-align: center;
+	border-radius: 11px;
+	margin: 0 2px;
+	font-weight: 400;
+	&:first-child {
+		margin-left: -5px;
+	}
+}
+.panel-expander-wrapper {
+	position: absolute;
+	cursor: pointer;
+	top: 7px;
+	right: 7px;
+	width: 20px;
+	height: 20px;
+	transition: transform 0.5s;
+	fill: $slate;
+}
+
+.panel-expander {
+	height: 20px;
+	width: 20px;
+}
+
+.panel-content {
+	padding: 12px;
+}
+.panel-drawer.collapsing {
+	position: inherit;
+	z-index: -1;
+}
+.panel-drawer {
+	background-color: rgba(255,255,255,1);
+	border-radius: 0 0 5px 5px;
+	margin-top: -5px;
+	overflow: hidden;
+}
+
+.triptych {
+	text-align: center;
+	.col-xs-4 {
+		border-right: 1px solid $divider-color;
+	}
+	.col-xs-4:last-child {
+		border-right: none;
+	}
+}
+
+.key-value {
+	color: $status-alert-color;
+	fill: $status-alert-color;
+	font-size: 36px;
+	font-weight: 200;
+	height: 40px;
+	white-space: nowrap;
+	line-height: 1;
+}
+
+.key-value-label {
+	font-size: 14px;
+	color: $status-alert-color;
+	margin-top: -10px;
+}
+
+.drawer-list-header {
+	background-color: #e8e8e8;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 8px 12px;
+	&:first-child {
+		padding-top: 13px;
+	} 
+}
+.drawer-list-item {
+	margin-bottom: 10px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.expanded {
+	.panel-expander-wrapper {
+		transform: rotate(135deg);
+	}
+	.panel-proper {
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+	}
+}
+.recovered {
+	.key-value {
+		color: $status-recovered-color;
+		fill: $status-recovered-color;
+	}
+	.key-value-label {
+		color: $status-recovered-color;
+	}
+}

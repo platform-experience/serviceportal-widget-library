@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-26 13:09:03">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-root-cause</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>8afad6c513127200ba3a7b1a6144b028</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:09:03</sys_created_on>
+<sys_id>2b506fee13d6b200ba3a7b1a6144b0f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:09:03</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_3ba4a20a13de7200ba3a7b1a6144b09f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+
+  c.incident = c.data.incident;
+  
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$list-header-bg-color: #e8e8e8 !default;
+$state-default-color: #557f90 !default;
+$state-positive: #3abe43 !default;
+$state-negative: #ff402c !default;
+
+.event {
+	font-size: 15px;
+}
+.event-state {
+	font-size: 13px;
+}
+
+.drawer-list {
+	padding: 12px;
+	&amp;amp;:first-child {
+		padding-top: 17px;
+	}
+}
+
+.drawer-list-header {
+	border-top: solid 0.5px rgba(52, 61, 71, 0.15);
+	background-color: $list-header-bg-color;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 8px 12px;
+	&amp;amp;:first-child {
+		padding-top: 13px;
+	}
+}
+.drawer-list-item {
+	margin-bottom: 10px;
+	&amp;amp;:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.event-state {
+	color: $state-default-color;
+}
+.state-closed, .state-canceled {
+	color: $state-positive;
+}
+.state-open, .state-in-progress {
+	color: $state-negative;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-root-cause-details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-root-cause-details&lt;/name&gt;&lt;option_schema&gt;[{"name":"incident","label":"Incident sys_id","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+  options.incident = options.incident || serverOptions.incident  || 'd71f7935c0a8016700802b64c67c11c6';
+
+  var getState = function(stateValue, table ){
+		var state = new GlideRecord('sys_choice');
+    state.addQuery('element','state');
+    state.addQuery('name', table);
+    state.addQuery('value', stateValue);
+    state.query();
+    while(state.next()){
+    	stateObj = {
+      	value: stateValue,
+      	label: state.label.toString(),
+      	labelClass: state.label.toLowerCase().split(' ').join('-')
+      };
+    };
+		return stateObj;
+	};
+
+  if (options.incident){
+  	
+  	var incidentGR = new GlideRecord('incident');
+		if (incidentGR.get(options.incident)) {
+			var incident = {
+				sys_id: incidentGR.sys_id.toString(),
+				ci: {
+					name: incidentGR.cmdb_ci.name.toString(),
+					sys_id: incidentGR.cmdb_ci.toString(),
+					number: incidentGR.cmdb_ci.number.toString()
+				},
+				problem: {
+					description: incidentGR.problem_id.short_description.toString(),
+					number: incidentGR.problem_id.number.toString(),
+					sys_id: incidentGR.problem_id.toString(),
+					state: getState(incidentGR.problem_id.state.toString(), 'problem'),
+					other_incidents: []
+				},
+				cause: {
+					number: incidentGR.caused_by.number.toString(),
+					description: incidentGR.caused_by.short_description.toString(),
+					state: getState(incidentGR.caused_by.state.toString(), 'change_request'),
+					sys_id: incidentGR.caused_by.toString()
+				}
+			};
+
+			if (incident.problem.sys_id) {
+				var otherIncidents = [];
+				var otherIncidentGR = new GlideRecord('incident');
+				otherIncidentGR.addQuery('problem_id', incident.problem.sys_id);
+				otherIncidentGR.query();
+				while(otherIncidentGR.next()){
+					if(otherIncidentGR.sys_id.toString() !== incident.sys_id){
+						otherIncidents.push({
+							sys_id: otherIncidentGR.sys_id.toString(),
+							description: otherIncidentGR.short_description.toString(),
+							number: otherIncidentGR.number.toString(),
+							state: getState(otherIncidentGR.state.toString(), 'incident')
+						});
+					}
+				}
+				incident.problem.other_incidents = otherIncidents;
+			}
+
+			data.incident = incident;
+
+		}
+
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:31:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3ba4a20a13de7200ba3a7b1a6144b09f&lt;/sys_id&gt;&lt;sys_mod_count&gt;49&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-root-cause-details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3ba4a20a13de7200ba3a7b1a6144b09f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-25 17:06:48&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="drawer-list-header"&gt;
+	Related Problem
+&lt;/div&gt;
+&lt;div class="drawer-list"&gt;
+	&lt;div class="drawer-list-item row"&gt;
+		&lt;div class="col-xs-8"&gt;
+			&lt;div class="event"&gt;{{c.incident.problem.description}}&lt;/div&gt;
+			&lt;div class="event-state state-{{c.incident.problem.state.labelClass}}"&gt;{{c.incident.problem.state.label}}&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xs-4"&gt;
+			&lt;div class="event"&gt;{{c.incident.problem.number}}&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="drawer-list-header"&gt;
+	Caused by Change
+&lt;/div&gt;
+&lt;div class="drawer-list"&gt;
+	&lt;div class="drawer-list-item row"&gt;
+		&lt;div class="col-xs-8"&gt;
+			&lt;div class="event"&gt;{{c.incident.cause.description}}&lt;/div&gt;
+			&lt;div class="event-state state-{{c.incident.cause.state.labelClass}}"&gt;{{c.incident.cause.state.label}}&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xs-4"&gt;
+			&lt;div class="event"&gt;{{c.incident.cause.number}}&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="drawer-list-header"&gt;
+	Related Incidents
+&lt;/div&gt;
+&lt;div class="drawer-list"&gt;
+	&lt;div ng-repeat="item in c.incident.problem.other_incidents" class="drawer-list-item row"&gt;
+		&lt;div class="col-xs-8"&gt;
+			&lt;div class="event"&gt;{{item.description}}&lt;/div&gt;
+			&lt;div class="event-state state-{{item.state.labelClass}}"&gt;{{item.state.label}}&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xs-4"&gt;
+			&lt;div class="event"&gt;{{item.number}}&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="pe-root-cause">2b506fee13d6b200ba3a7b1a6144b0f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:09:03</sys_created_on>
+<sys_id>ab506fee13d6b200ba3a7b1a6144b0f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:09:03</sys_updated_on>
+<table/>
+<target_name>pe-root-cause-details</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_8d2b96c513127200ba3a7b1a6144b0ed</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+
+  c.incident = c.data.incident;
+
+  c.stats = [
+  	{ name: c.incident.ci.name, icon: '#server' },
+  	{ name: 'Memory Leak', icon: '#computer-ram' },
+  	{ name: 'Cause', icon: "#calendar", detail: c.incident.cause.number }
+  ];
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
+$orange: #ff6f00;
+$medium-green: #34ba3d;
+
+$icon-circle-color: #7e848b !default;
+
+$text-color: $slate !default;
+$divider-color: #7E848B !default;
+
+$status-alert-color: $orange !default;
+$status-recovered-color: $medium-green !default;
+
+.panel-wrapper {
+	margin-bottom: 10px;
+}
+.panel-proper {
+	background-color: #fff;
+	border-radius: 5px;
+	transition: box-shadow 0.5s;
+	position: relative;
+}
+.panel-header {
+	position: relative;
+	padding: 7px 12px;
+	font-size: 16px;
+	font-weight: 600;
+	border-bottom: 0.5px solid #7E848B;
+}
+.title-icon {
+	display: inline-block;
+	background-color: $icon-circle-color;
+	width: 22px;
+	height: 22px;
+	fill: #fff;
+	color: #fff;
+	text-align: center;
+	border-radius: 11px;
+	margin: 0 2px;
+	font-weight: 400;
+	&amp;amp;:first-child {
+		margin-left: -5px;
+	}
+}
+.panel-expander-wrapper {
+	position: absolute;
+	cursor: pointer;
+	top: 7px;
+	right: 7px;
+	width: 20px;
+	height: 20px;
+	transition: transform 0.5s;
+	fill: $slate;
+}
+
+.panel-expander {
+	height: 20px;
+	width: 20px;
+}
+
+.panel-content {
+	padding: 12px;
+}
+.panel-drawer.collapsing {
+	position: inherit;
+	z-index: -1;
+}
+.panel-drawer {
+	background-color: rgba(255,255,255,1);
+	border-radius: 0 0 5px 5px;
+	margin-top: -5px;
+	overflow: hidden;
+}
+
+.triptych {
+	text-align: center;
+	.col-xs-4 {
+		border-right: 1px solid $divider-color;
+	}
+	.col-xs-4:last-child {
+		border-right: none;
+	}
+}
+
+.subtitle {
+	font-size: 15px;
+}
+.subtitle-small {
+	font-size: 12px;
+}
+
+.key-value {
+	color: $status-alert-color;
+	fill: $status-alert-color;
+	font-size: 36px;
+	font-weight: 200;
+	height: 40px;
+	white-space: nowrap;
+	line-height: 1;
+}
+
+.key-value-label {
+	font-size: 14px;
+	color: $status-alert-color;
+	margin-top: -10px;
+}
+
+.key-icon {
+	vertical-align: middle;
+	svg {
+		width: 0.8em;
+		height: 0.8em;
+	}
+}
+
+.drawer-list-header {
+	background-color: #e8e8e8;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 8px 12px;
+	&amp;amp;:first-child {
+		padding-top: 13px;
+	} 
+}
+.drawer-list-item {
+	margin-bottom: 10px;
+	&amp;amp;:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.expanded {
+	.panel-expander-wrapper {
+		transform: rotate(135deg);
+	}
+	.panel-proper {
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+	}
+}
+.recovered {
+	.key-value {
+		color: $status-recovered-color;
+		fill: $status-recovered-color;
+	}
+	.key-value-label {
+		color: $status-recovered-color;
+	}
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-root-cause&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-root-cause&lt;/name&gt;&lt;option_schema&gt;[{"name":"incident","label":"Incident sys_id","type":"string"},{"name":"titleIconClasses","label":"FontAwesome classes for icon to display next to title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+  options.incident = options.incident || serverOptions.incident || 'd71f7935c0a8016700802b64c67c11c6';
+  options.titleIconClasses = options.titleIconClasses || serverOptions.titleIconClasses || 'fa fa-bolt';
+
+  var getState = function(stateValue, table ){
+		var state = new GlideRecord('sys_choice');
+    state.addQuery('element','state');
+    state.addQuery('name', table);
+    state.addQuery('value', stateValue);
+    state.query();
+    while(state.next()){
+    	stateObj = {
+      	value: stateValue,
+      	label: state.label.toString()
+      };
+    };
+		return stateObj;
+	};
+
+  if (options.incident){
+  	
+  	var incidentGR = new GlideRecord('incident');
+		if (incidentGR.get(options.incident)) {
+			var incident = {
+				sys_id: incidentGR.sys_id.toString(),
+				state: getState(incidentGR.state.toString(), 'incident'),
+				ci: {
+					name: incidentGR.cmdb_ci.name.toString(),
+					sys_id: incidentGR.cmdb_ci.toString(),
+				},
+				problem: {
+					name: incidentGR.problem_id.name.toString(),
+					sys_id: incidentGR.problem_id.toString(),
+					other_incidents: []
+				},
+				cause: {
+					number: incidentGR.caused_by.number.toString(),
+					description: incidentGR.short_description.toString(),
+					sys_id: incidentGR.caused_by.toString()
+				}
+			};
+
+			data.incident = incident;
+
+			data.drawerWidget = $sp.getWidget('pe-root-cause-details', {
+		    incident: incident.sys_id
+		  });
+
+		}
+
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 16:16:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8d2b96c513127200ba3a7b1a6144b0ed&lt;/sys_id&gt;&lt;sys_mod_count&gt;48&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-root-cause&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8d2b96c513127200ba3a7b1a6144b0ed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-25 18:55:10&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.incident.state.value &gt;= 6) }"&gt;
+	&lt;div class="panel-proper"&gt;
+		&lt;div class="panel-header"&gt;
+			&lt;span ng-if="options.titleIconClasses" class="title-icon"&gt;
+				&lt;i class="{{options.titleIconClasses}}" aria-hidden="true"&gt;&lt;/i&gt;
+			&lt;/span&gt;
+			&lt;span&gt;Root Cause Identified&lt;/span&gt;
+			&lt;div class="panel-expander-wrapper" ng-click="c.expanded = !c.expanded" data-toggle="collapse" data-target="#root-cause-drawer" aria-expanded="false" aria-controls="root-cause-drawer"&gt;
+				&lt;svg class="panel-expander"&gt;
+					&lt;use xlink:href="#plus"&gt;&lt;/use&gt;
+				&lt;/svg&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="panel-content" id="panel-content"&gt;
+
+			&lt;div class="row triptych"&gt;
+				&lt;div class="col-xs-4" ng-repeat="item in c.stats"&gt;
+					&lt;div class="key-value"&gt;
+						&lt;span ng-if="item.value"&gt;{{item.value}}&lt;/span&gt;
+						&lt;span ng-if="item.icon" class="key-icon"&gt;
+							&lt;svg&gt;
+								&lt;use xlink:href={{item.icon}}&gt;&lt;/use&gt;
+							&lt;/svg&gt;
+						&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div class="subtitle"&gt;
+						{{item.name}}
+					&lt;/div&gt;
+					&lt;div ng-if="item.detail" class="subtitle-small"&gt;
+						{{item.detail}}
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="panel-drawer collapse" id="root-cause-drawer"&gt;
+		&lt;sp-widget widget="c.data.drawerWidget"&gt;&lt;/sp-widget&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="hidden"&gt;
+
+	&lt;svg version="1.1" id="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve"&gt;
+		&lt;path d="M11.5,0C5.2,0,0,5.2,0,11.5S5.2,23,11.5,23S23,17.8,23,11.5S17.8,0,11.5,0z M11.5,22C5.7,22,1,17.3,1,11.5S5.7,1,11.5,1
+			S22,5.7,22,11.5S17.3,22,11.5,22z"/&gt;
+		&lt;path d="M11.5,18c-0.3,0-0.5-0.2-0.5-0.5v-12C11,5.2,11.2,5,11.5,5S12,5.2,12,5.5v12C12,17.8,11.8,18,11.5,18z"/&gt;
+		&lt;path d="M17.5,12h-12C5.2,12,5,11.8,5,11.5S5.2,11,5.5,11h12c0.3,0,0.5,0.2,0.5,0.5S17.8,12,17.5,12z"/&gt;
+	&lt;/svg&gt;
+
+&lt;svg version="1.1" id="server" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 593.6 593.3" style="enable-background:new 0 0 593.6 593.3;" xml:space="preserve"&gt;
+&lt;g&gt;
+	&lt;path d="M593.6,212.1c0,56.6,0,112.7,0,169.2c-197.8,0-395.5,0-593.4,0c0-56.3,0-112.6,0-169.2
+		C197.8,212.1,395.5,212.1,593.6,212.1z M90.9,308.9c53.4,0,106.2,0,159.3,0c0-8.3,0-16.2,0-24.3c-53.2,0-106.1,0-159.3,0
+		C90.9,292.7,90.9,300.6,90.9,308.9z M410.9,268.2c0,19.3,0,38.3,0,57.4c8.3,0,16.3,0,24.4,0c0-19.4,0-38.3,0-57.4
+		C427,268.2,419.1,268.2,410.9,268.2z M515.7,325.8c0-19.5,0-38.4,0-57.6c-8.2,0-16.1,0-24.3,0c0,19.3,0,38.3,0,57.6
+		C499.6,325.8,507.5,325.8,515.7,325.8z"/&gt;
+	&lt;path d="M0.2,0c197.9,0,395.3,0,593.1,0c0,56.5,0,112.9,0,169.5c-197.7,0-395.2,0-593.1,0C0.2,113.2,0.2,56.8,0.2,0z M250.3,72.8
+		c-53.2,0-106.2,0-159.3,0c0,8.3,0,16.3,0,24.3c53.3,0,106.1,0,159.3,0C250.3,88.9,250.3,81,250.3,72.8z M410.2,56.3
+		c0,19.4,0,38.2,0,57.1c8.3,0,16.2,0,24.3,0c0-19.1,0-38,0-57.1C426.3,56.3,418.4,56.3,410.2,56.3z M491.1,56.4
+		c0,19.3,0,38.2,0,56.9c8.3,0,16.3,0,24.3,0c0-19.1,0-37.9,0-56.9C507.2,56.4,499.3,56.4,491.1,56.4z"/&gt;
+	&lt;path d="M0,593.3c0-56.6,0-112.7,0-169.2c197.8,0,395.5,0,593.4,0c0,56.3,0,112.6,0,169.2C395.8,593.3,198.1,593.3,0,593.3z
+		 M569.1,449.1c-181.7,0-362.8,0-543.9,0c0,40.2,0,79.9,0,119.7c181.5,0,362.6,0,543.9,0C569.1,528.7,569.1,489,569.1,449.1z"/&gt;
+	&lt;path d="M250.3,496.4c0,8.2,0,16.1,0,24.3c-53.1,0-106,0-159.3,0c0-8,0-16,0-24.3C144.1,496.4,197.1,496.4,250.3,496.4z"/&gt;
+	&lt;path d="M435.3,537.7c-8.2,0-16.1,0-24.3,0c0-19.1,0-38.1,0-57.6c7.9,0,16,0,24.3,0C435.3,499.3,435.3,518.2,435.3,537.7z"/&gt;
+	&lt;path d="M515.8,537.6c-8.4,0-16.3,0-24.5,0c0-19.2,0-38.1,0-57.4c8.1,0,16.2,0,24.5,0C515.8,499.3,515.8,518.3,515.8,537.6z"/&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;svg id="computer-ram" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 27.6 27.6" style="enable-background:new 0 0 27.6 27.6;" xml:space="preserve"&gt;
+&lt;g&gt;
+	&lt;g transform="translate(-167.000000, -56.000000)"&gt;
+		&lt;g transform="translate(128.000000, 56.000000)"&gt;
+			&lt;g transform="translate(39.000000, 0.000000)"&gt;
+				&lt;path d="M27.4,7.6L20,0.2c-0.2-0.2-0.6-0.2-0.8,0l-8.2,8.2c-0.2,0.2-0.2,0.6,0,0.8l0.4,0.4
+					c1.1,1.1-0.6,2.7-1.6,1.7l-0.4-0.4c-0.2-0.2-0.6-0.2-0.8,0l-8.2,8.2c-0.2,0.2-0.2,0.6,0,0.8l7.4,7.4c0.2,0.2,0.6,0.2,0.8,0
+					l19-19C27.6,8.2,27.6,7.8,27.4,7.6z M18.7,2.2l1.7,1.7l-0.8,0.8L17.9,3L18.7,2.2z M17.1,3.9l1.7,1.7l-0.8,0.8l-1.7-1.7L17.1,3.9
+					z M15.4,5.5l1.7,1.7L16.3,8l-1.7-1.7L15.4,5.5z M13.8,7.2l1.7,1.7l-0.8,0.8L12.9,8L13.8,7.2z M8,13l1.6,1.6l-0.8,0.8l-1.6-1.6
+					L8,13z M6.4,14.6L8,16.3l-0.8,0.8l-1.6-1.6L6.4,14.6z M4.7,16.3l1.6,1.6l-0.8,0.8l-1.6-1.6L4.7,16.3z M3.9,20.4l-1.6-1.6
+					l0.8-0.8l1.6,1.6L3.9,20.4z M8,23.7l-2.5-2.5l4.1-4.1l2.5,2.5L8,23.7z M13.8,17.9l-2.5-2.5l4.1-4.1l2.5,2.5L13.8,17.9z
+					 M19.6,12.1l-2.5-2.5l4.1-4.1L23.7,8L19.6,12.1z"/&gt;
+			&lt;/g&gt;
+		&lt;/g&gt;
+	&lt;/g&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;svg version="1.1" id="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"&gt;
+&lt;path d="M23.5,24h-23C0.2,24,0,23.8,0,23.5v-21C0,2.2,0.2,2,0.5,2h4C4.8,2,5,2.2,5,2.5S4.8,3,4.5,3H1v20h22V3h-3.5
+	C19.2,3,19,2.8,19,2.5S19.2,2,19.5,2h4C23.8,2,24,2.2,24,2.5v21C24,23.8,23.8,24,23.5,24z"/&gt;
+&lt;path d="M7.5,5h-3C4.2,5,4,4.8,4,4.5v-4C4,0.2,4.2,0,4.5,0h3C7.8,0,8,0.2,8,0.5v4C8,4.8,7.8,5,7.5,5z M5,4h2V1H5V4z"/&gt;
+&lt;path d="M19.5,5h-3C16.2,5,16,4.8,16,4.5v-4C16,0.2,16.2,0,16.5,0h3C19.8,0,20,0.2,20,0.5v4C20,4.8,19.8,5,19.5,5z M17,4h2V1h-2V4z"
+	/&gt;
+&lt;path d="M16.5,3h-9C7.2,3,7,2.8,7,2.5S7.2,2,7.5,2h9C16.8,2,17,2.2,17,2.5S16.8,3,16.5,3z"/&gt;
+&lt;path d="M23.5,8h-23C0.2,8,0,7.8,0,7.5S0.2,7,0.5,7h23C23.8,7,24,7.2,24,7.5S23.8,8,23.5,8z"/&gt;
+&lt;path d="M6.5,22C6.2,22,6,21.8,6,21.5v-12C6,9.2,6.2,9,6.5,9S7,9.2,7,9.5v12C7,21.8,6.8,22,6.5,22z"/&gt;
+&lt;path d="M11.5,22c-0.3,0-0.5-0.2-0.5-0.5v-12C11,9.2,11.2,9,11.5,9S12,9.2,12,9.5v12C12,21.8,11.8,22,11.5,22z"/&gt;
+&lt;path d="M16.5,22c-0.3,0-0.5-0.2-0.5-0.5v-12C16,9.2,16.2,9,16.5,9S17,9.2,17,9.5v12C17,21.8,16.8,22,16.5,22z"/&gt;
+&lt;path d="M21.5,12h-19C2.2,12,2,11.8,2,11.5S2.2,11,2.5,11h19c0.3,0,0.5,0.2,0.5,0.5S21.8,12,21.5,12z"/&gt;
+&lt;path d="M21.5,16h-19C2.2,16,2,15.8,2,15.5S2.2,15,2.5,15h19c0.3,0,0.5,0.2,0.5,0.5S21.8,16,21.5,16z"/&gt;
+&lt;path d="M21.5,20h-19C2.2,20,2,19.8,2,19.5S2.2,19,2.5,19h19c0.3,0,0.5,0.2,0.5,0.5S21.8,20,21.5,20z"/&gt;
+&lt;/svg&gt;
+
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="pe-root-cause">2b506fee13d6b200ba3a7b1a6144b0f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2017-04-26 13:09:03</sys_created_on>
+<sys_id>eb506fee13d6b200ba3a7b1a6144b0f8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2017-04-26 13:09:03</sys_updated_on>
+<table/>
+<target_name>pe-root-cause</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
