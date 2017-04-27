@@ -1,0 +1,25 @@
+<div>
+	<!--[if lt IE 9]>
+	<div class='circle-container lt-ie9'><![endif]-->
+  <!--[if gte IE 9]><!-->
+  <div class='circle-container'><!--<![endif]-->
+    <div class="items">
+      <div ng-repeat="item in c.data.items" class='item'>
+        <a ng-href="{{item.link}}">
+          <div class="circle" ng-style="{'background-image': 'url(' + item.image + ')'}">
+            <i ng-if="!item.image" class="{{item.icon}} circle-icon" aria-hidden="true"></i>
+          </div>
+          <div class="circle-label">{{item.title}}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class='user-container'>
+    <div class="user-pic" ng-style="{'background-image': 'url(' + c.data.mainImage + ')'}">
+      <i ng-if="!c.data.mainImage" class="{{c.data.mainIcon}}" aria-hidden="true"></i>
+    </div>
+    <div class="user-info text-center">
+      <h2 class="title">{{c.data.mainTitle}}</h2>
+    </div>
+  </div>
+</div>

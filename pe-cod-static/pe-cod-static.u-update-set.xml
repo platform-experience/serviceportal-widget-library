@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-27 22:59:09">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Circle of Destiny - Static (Platform Experience)</name>
+<origin_sys_id/>
+<release_date>2017-04-27 23:00:00</release_date>
+<remote_sys_id>059aea874f5eb200ab4450af0310c7e2</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-27 22:59:08</sys_created_on>
+<sys_id>0101b60f4f5eb200ab4450af0310c7ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-27 22:59:08</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_4dcaae0b4f5eb200ab4450af0310c7c4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$primary-color: red !default;
+$icon-color: white !default;
+
+.circle-container {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+  border-radius: 50%;
+  margin: 0 auto;
+  .circle {
+    position: relative;
+    background-color: $primary-color;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+
+    .fa-check-circle {
+      display: none;
+      position: absolute;
+      font-size: 25px;
+      right: -5px;
+      top: -9px;
+      color: #2ecc71;
+    }
+
+  }
+  .circle-label {
+    text-align: center;
+    color: #404040;
+    margin: 0 -30px;
+  }
+}
+
+.activity {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.items {
+  position: absolute;
+  left: 50%;
+  margin-top: 150px;
+
+  .item {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -2em;
+  }
+
+  .item:nth-child(1) {
+    -webkit-transform: rotate(210deg) translate(10em) rotate(-210deg);
+    -moz-transform: rotate(210deg) translate(10em) rotate(-210deg);
+    -ms-transform: rotate(210deg) translate(10em) rotate(-210deg);
+    -o-transform: rotate(210deg) translate(10em) rotate(-210210);
+    transform: rotate(210deg) translate(10em) rotate(-210deg);
+  }
+
+  .item:nth-child(2) {
+    -webkit-transform: rotate(270deg) translate(10em) rotate(-270deg);
+    -moz-transform: rotate(270deg) translate(10em) rotate(-270deg);
+    -ms-transform: rotate(270deg) translate(10em) rotate(-270deg);
+    -o-transform: rotate(270deg) translate(10em) rotate(-270deg);
+    transform: rotate(270deg) translate(10em) rotate(-270deg);
+  }
+
+  .item:nth-child(3) {
+    -webkit-transform: rotate(330deg) translate(10em) rotate(-330deg);
+    -moz-transform: rotate(330deg) translate(10em) rotate(-330deg);
+    -ms-transform: rotate(330deg) translate(10em) rotate(-330deg);
+    -o-transform: rotate(330deg) translate(10em) rotate(-330deg);
+    transform: rotate(330deg) translate(10em) rotate(-330deg);
+  }
+
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200px;
+
+  div.user-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    overflow: hidden;
+    font-size: 80px;
+    color: $icon-color;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    
+    i {
+      line-height: 120px;
+    }
+  }
+
+  .user-info {
+    h2 {
+      font-size: 30px;
+      margin: 0;
+      margin-top: 10px;
+    }
+    .subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .profile-pic {
+    width:120px;
+  }
+}
+
+.success {
+  .fa-check-circle {
+    display: block !important;
+  }
+}
+
+.circle-icon {
+  font-size: 40px;
+  line-height: 60px;
+  color: $icon-color;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-cod-static&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Circle of Destiny (static)&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	
+	if (options.items) {
+		
+		data.items = options.items;
+		
+	} else {
+		
+		data.items = [
+			{
+				link: 'https://www.servicenow.com',
+				title: 'My Friends',
+				icon: 'fa fa-users',
+				image: ''
+			},
+			{
+				link: 'https://www.apple.com',
+				title: 'My Events',
+				icon: 'fa fa-calendar',
+				image: ''
+			},
+			{
+				link: 'https://www.google.com',
+				title: 'My Books',
+				icon: 'fa fa-book',
+				image: ''
+			}
+		];
+	}
+	
+	data.mainTitle = options.mainTitle ? options.mainTitle : 'Welcome, Fred!';
+	data.mainIcon = options.mainIcon ? options.mainIcon : 'fa fa-bullseye';
+	data.mainImage = options.mainImage ? options.mainImage : '';
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-27 22:32:29&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;4dcaae0b4f5eb200ab4450af0310c7c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name&gt;Circle of Destiny (static)&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4dcaae0b4f5eb200ab4450af0310c7c4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-27 22:57:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+	&lt;!--[if lt IE 9]&gt;
+	&lt;div class='circle-container lt-ie9'&gt;&lt;![endif]--&gt;
+  &lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+  &lt;div class='circle-container'&gt;&lt;!--&lt;![endif]--&gt;
+    &lt;div class="items"&gt;
+      &lt;div ng-repeat="item in c.data.items" class='item'&gt;
+        &lt;a ng-href="{{item.link}}"&gt;
+          &lt;div class="circle" ng-style="{'background-image': 'url(' + item.image + ')'}"&gt;
+            &lt;i ng-if="!item.image" class="{{item.icon}} circle-icon" aria-hidden="true"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;div class="circle-label"&gt;{{item.title}}&lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='user-container'&gt;
+    &lt;div class="user-pic" ng-style="{'background-image': 'url(' + c.data.mainImage + ')'}"&gt;
+      &lt;i ng-if="!c.data.mainImage" class="{{c.data.mainIcon}}" aria-hidden="true"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="user-info text-center"&gt;
+      &lt;h2 class="title"&gt;{{c.data.mainTitle}}&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Circle of Destiny - Static (Platform Experience)">0101b60f4f5eb200ab4450af0310c7ce</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-27 22:59:08</sys_created_on>
+<sys_id>c101b60f4f5eb200ab4450af0310c7ce</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-27 22:59:08</sys_updated_on>
+<table/>
+<target_name>Circle of Destiny (static)</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

@@ -1,0 +1,139 @@
+$primary-color: red !default;
+$icon-color: white !default;
+
+.circle-container {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+  border-radius: 50%;
+  margin: 0 auto;
+  .circle {
+    position: relative;
+    background-color: $primary-color;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+
+    .fa-check-circle {
+      display: none;
+      position: absolute;
+      font-size: 25px;
+      right: -5px;
+      top: -9px;
+      color: #2ecc71;
+    }
+
+  }
+  .circle-label {
+    text-align: center;
+    color: #404040;
+    margin: 0 -30px;
+  }
+}
+
+.activity {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.items {
+  position: absolute;
+  left: 50%;
+  margin-top: 150px;
+
+  .item {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -2em;
+  }
+
+  .item:nth-child(1) {
+    -webkit-transform: rotate(210deg) translate(10em) rotate(-210deg);
+    -moz-transform: rotate(210deg) translate(10em) rotate(-210deg);
+    -ms-transform: rotate(210deg) translate(10em) rotate(-210deg);
+    -o-transform: rotate(210deg) translate(10em) rotate(-210210);
+    transform: rotate(210deg) translate(10em) rotate(-210deg);
+  }
+
+  .item:nth-child(2) {
+    -webkit-transform: rotate(270deg) translate(10em) rotate(-270deg);
+    -moz-transform: rotate(270deg) translate(10em) rotate(-270deg);
+    -ms-transform: rotate(270deg) translate(10em) rotate(-270deg);
+    -o-transform: rotate(270deg) translate(10em) rotate(-270deg);
+    transform: rotate(270deg) translate(10em) rotate(-270deg);
+  }
+
+  .item:nth-child(3) {
+    -webkit-transform: rotate(330deg) translate(10em) rotate(-330deg);
+    -moz-transform: rotate(330deg) translate(10em) rotate(-330deg);
+    -ms-transform: rotate(330deg) translate(10em) rotate(-330deg);
+    -o-transform: rotate(330deg) translate(10em) rotate(-330deg);
+    transform: rotate(330deg) translate(10em) rotate(-330deg);
+  }
+
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200px;
+
+  div.user-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    overflow: hidden;
+    font-size: 80px;
+    color: $icon-color;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    
+    i {
+      line-height: 120px;
+    }
+  }
+
+  .user-info {
+    h2 {
+      font-size: 30px;
+      margin: 0;
+      margin-top: 10px;
+    }
+    .subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .profile-pic {
+    width:120px;
+  }
+}
+
+.success {
+  .fa-check-circle {
+    display: block !important;
+  }
+}
+
+.circle-icon {
+  font-size: 40px;
+  line-height: 60px;
+  color: $icon-color;
+}
