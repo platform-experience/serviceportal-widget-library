@@ -12,7 +12,7 @@ When a tab is clicked, a container is displayed, to the left of the tabs; with a
 
 ## Installation
 
-Download and installation of update set **[pe-tabbed-panel-vertical.u-update-set.xml]()** includes this widget.
+Download and installation of update set **[pe-tabbed-panel-vertical.u-update-set.xml](pe-tabbed-panel-vertical.u-update-set.xml)** includes this widget.
 <br/>After installation, the widget can be accessed via the Service Portal > Widgets section for use and customization.
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 

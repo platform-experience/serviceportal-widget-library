@@ -10,7 +10,7 @@ The widget is customized to show the data labels moved Left and Right of the res
 
 ## Installation
 
-Download the update set **[pe-itbm-organizational-spend-alignment.u-update-set.xml]()** and install to the desired instance.
+Download the update set **[pe-itbm-organizational-spend-alignment.u-update-set.xml](pe-itbm-organizational-spend-alignment.u-update-set.xml)** and install to the desired instance.
 <br/>After installation, the widget can be accessed via the Service Portal > Widgets section for use and customization.
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 

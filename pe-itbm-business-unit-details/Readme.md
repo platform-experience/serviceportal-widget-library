@@ -8,7 +8,7 @@ This widget provides the ability to cascade multiple panels of information and r
 
 ## Installation
 
-Download the update set **[pe-itbm-business-unit-details.u-update-set.xml]()** and install to the desired instance.
+Download the update set **[pe-itbm-business-unit-details.u-update-set.xml](pe-itbm-business-unit-details.u-update-set.xml)** and install to the desired instance.
 <br/>After installation, the widget can be accessed via the Service Portal > Widgets section for use and customization.
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 
