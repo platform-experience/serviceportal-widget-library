@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-26 12:49:55">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE ITBM Widget - Interaction Note</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>14a77cfb1386ba006749bccf3244b019</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-26 12:49:54</sys_created_on>
+<sys_id>13fbdfee4f12fe0005be4d6e0210c7bb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-26 12:49:54</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_4930fd01135a3e006749bccf3244b026</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $rootScope, $q, $window, $document, $timeout, $http) {
+  /* widget controller */
+  var inf = this;
+	
+  inf.users = [];
+	inf.formData = {
+		reminderDate : new Date(),
+		reminderText : ""
+	}
+	for(var x=0;x&lt;inf.data.users.length;x++){
+		inf.users.push({'photo' : inf.data.users[x].photo, 'status': inf.data.users[x].status ? 'online' : 'offline'});
+	}
+	
+	inf.btnClick = function(btn){
+		inf.selectedButton = btn;
+		el = angular.element(document.getElementById("datepicker"));
+		switch(btn){
+			case 1:
+				inf.tomorrow();
+				el.removeClass('in');
+				break;
+			case 2:
+				inf.weekFromToday();
+				el.removeClass('in');
+				break;
+			default:
+				el.toggleClass('in');
+				break;
+		}
+	}
+	
+  inf.showSubmit = function(){
+		var goAnchor = document.getElementById("pageTop");
+		goAnchor.scrollIntoView({block: "start", behavior: "smooth"});
+		el = document.getElementById("overlay");
+		el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+		
+/* 
+	EXAMPLE REST call to SUBMIT data to an instance table.
+*/
+/**
+		
+		// Change to appropriate instance table.
+		var table_name = "u_some_instance_table";
+		
+		// Change 'u_tableField_*' references to appropriate fields.  Add additional if necessary. 
+		var data_to_post = {
+			u_tableField_reminderText : inf.formData.reminderText,
+			u_tableField_reminderDate : inf.formData.reminderDate
+		}
+		
+		var request = {
+			method: 'POST',
+			url: $window.location.origin+'/api/now/v2/table/' + table_name,
+			data: data_to_post
+		};
+
+		$http(request).success(function (response) {
+			console.log(response);
+		}).error(function (response) {
+			console.warn("~~ ERR: HTTP POST FAILED ~~");
+			console.warn(response);
+		});
+**/
+  };
+	
+  inf.closeSubmit = function(){
+		el = document.getElementById("overlay");
+		el.style.visibility = "hidden";
+		
+		inf.cancelSubmit();	  
+  };
+	
+  inf.cancelSubmit = function(){
+		
+		$window.history.back();	  
+  };
+
+  inf.selectedButton = 1;
+
+  inf.today = function() {
+    inf.formData.reminderDate = new Date();
+  };
+
+  inf.tomorrow = function() {
+    var today = new Date();
+    inf.formData.reminderDate = new Date(today.getFullYear(), today.getMonth(), today.getDate()+1);
+  };
+  inf.tomorrow();
+
+  inf.weekFromToday = function() {
+    var today = new Date();
+    inf.formData.reminderDate = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7);
+  };
+
+  inf.options = {
+    minDate: new Date(),
+    showWeeks: false
+  };
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;inf&lt;/controller_as&gt;&lt;css&gt;$inf-font-color: #2E2E2E !default;
+$inf-font-softcolor: #65666A !default;
+$inf-font-notselected: #c2c2c2 !default;
+$inf-background-color: #ffffff !default;
+$inf-border-color: #E4E5E6 !default;
+$inf-red: #E51B24 !default;
+$inf-black: #000000 !default;
+$inf-white: #ffffff !default;
+$inf-green: #57B957 !default;
+
+
+.row.inner-row {
+	margin: 0 -5px;
+}
+
+.button {
+	width: 100%;
+	height: 40px;
+	color: $inf-font-notselected;
+	border: 3px solid $inf-border-color;
+	border-radius: 8px;
+	background-color: $inf-background-color;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	&amp;amp;.button-selected {
+		color: $inf-font-color;
+		border-color: $inf-font-color;
+	}
+	&amp;amp;.button-primary {
+		border: none;
+		background-color: $inf-red;
+		color: $inf-white;
+	}
+	&amp;amp;.button-no-border {
+		border: none;
+	}
+}
+.button-icon {
+	color: $inf-red;
+	font-size: 18px;
+	margin: 0 3px;
+}
+
+.card {
+	border: 1px solid $inf-border-color;
+	padding: 10px;
+}
+.card-title {
+	font-size: 18px;
+	font-weight: 500;
+	color: $inf-font-softcolor;
+}
+.card-subheader {
+	font-size: 12px;
+	font-weight: bold;
+	color: $inf-font-color;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin: 20px 0 10px 0;
+	border-bottom: 1px solid $inf-border-color;
+}
+
+.user-bubble {
+	height: 55px;
+	width: 55px;
+	border-radius: 100%;
+	border: 2.5px solid $inf-border-color;
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 15px;
+	img {
+		width: 100%;
+	}
+	&amp;amp;.user-online {
+		border-color: $inf-green;
+	}
+	&amp;amp;.user-offline {
+		border-color: $inf-red;
+	}
+}
+
+textarea {
+	border: 1px solid $inf-border-color;
+	width: 100%;
+}
+.outer-div {
+  visibility: hidden;
+  position: absolute;
+  margin-top: -10px;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  padding: 0px;
+  height:1000px;
+  background: rgba(0,0,0,0.6);
+  z-index: 600;
+}
+.inner-div {
+  margin: 80px auto;
+  width: 90%;
+  background-color: $inf-white;
+  border: 1px solid $inf-border-color;
+  border-radius: 2px;
+  padding: 20px;
+  padding-bottom: 10px;
+  z-index: 700;
+}
+.msg-text{
+  height: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $inf-font-softcolor;
+}
+.msg-title{
+  height: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  color: $inf-font-color;
+}
+
+.uib-datepicker.well {
+  background-color: transparent;
+}
+.uib-datepicker .uib-daypicker {
+  margin: 0 auto;
+}
+.uib-datepicker .btn {
+  border-radius: 0;
+  border: none;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-itbm-interaction-note&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE ITBM Interaction Note&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Name of the System User Group","name":"group_name","label":"Group Name","type":"string"},{"name":"card_title","default_value":"","label":"Card Title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.users = [];
+	data.activeUsers = false;
+	
+	data.groupName = options.group_name || "INF Test Group";
+  data.cardTitle = options.card_title || "Interaction Form";
+
+	var usgr = new GlideRecord('sys_user_group');
+	usgr.addQuery('name', data.groupName);
+	usgr.query();
+
+	if (usgr.next()) {
+		var grmem = new GlideRecord('sys_user_grmember');
+		grmem.addQuery('group', usgr.sys_id);
+		grmem.query();
+		var x = 0;
+		while (grmem.next()) {
+			var usr = new GlideRecord('sys_user');
+			usr.addQuery('sys_id', grmem.user.toString());
+			usr.query();
+			if (usr.next()) {
+				var user = {
+					'id': grmem.user.toString(),
+					'name': usr.user_name.getDisplayValue(),
+					'lname': usr.last_name.getDisplayValue(),
+					'fname': usr.first_name.getDisplayValue(),
+					'title': usr.title.getDisplayValue(),
+					'photo': usr.photo.getDisplayValue(),
+					'status': usr.active.getDisplayValue()
+				}
+				data.users.push(user);
+			}
+		}
+	}
+	data.activeUsers = (data.users.length &gt; 0);
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 13:09:20&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;4930fd01135a3e006749bccf3244b026&lt;/sys_id&gt;&lt;sys_mod_count&gt;48&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE ITBM Interaction Note&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4930fd01135a3e006749bccf3244b026&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-26 12:35:46&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a id="pageTop"&gt;&lt;/a&gt;
+&lt;div class="card"&gt;
+	&lt;div class="card-title"&gt;{{::inf.data.cardTitle}}&lt;/div&gt;
+	&lt;div  ng-show='inf.data.activeUsers'&gt;
+  	&lt;div class="card-subheader"&gt;Spoken With&lt;/div&gt;
+		&lt;div ng-repeat="user in inf.users" class="user-bubble user-{{user.status}}"&gt;
+			&lt;img src="{{user.photo}}"&gt;
+		&lt;/div&gt;
+  &lt;/div&gt;
+	&lt;div class="card-subheader"&gt;Description&lt;/div&gt;
+	&lt;textarea rows="3" ng-model="inf.formData.reminderText" placeholder="Type text here"&gt;&lt;/textarea&gt;
+	&lt;div class="card-subheader"&gt;Reminder {{inf.formData.reminderDate | date: 'shortDate'}}&lt;/div&gt;
+	&lt;div class="row inner-row"&gt;
+		&lt;div class="col-xs-4"&gt;
+			&lt;button class="button" ng-class="{'button-selected': inf.selectedButton === 1}" ng-click="inf.btnClick(1)"&gt;Tmrw&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xs-4"&gt;
+			&lt;button class="button" ng-class="{'button-selected': inf.selectedButton === 2}" ng-click="inf.btnClick(2)"&gt;1 Week&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xs-4"&gt;
+			&lt;button class="button" type="button" ng-class="{'button-selected': inf.selectedButton === -1}" aria-expanded="false" aria-controls="datepicker" ng-click="inf.btnClick(-1)"&gt;
+				&lt;small&gt;Pick Date&lt;/small&gt;
+				&lt;i class="fa fa-calendar button-icon" aria-hidden="true"&gt;&lt;/i&gt;
+			&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="collapse" id="datepicker"&gt;
+		&lt;div uib-datepicker ng-model="inf.formData.reminderDate" class="well well-sm" datepicker-options="inf.options"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;button class="button button-primary" ng-click='inf.showSubmit()'&gt;Submit&lt;/button&gt;
+	&lt;button class="button" ng-click='inf.cancelSubmit()'&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id="overlay" class='outer-div'&gt;&lt;div class='inner-div'&gt;
+  &lt;div class='msg-title'&gt;SUBMITTED&lt;/div&gt;
+  &lt;hr/&gt;
+  &lt;div class='msg-text'&gt;Your form has been submitted.&lt;/div&gt;
+  &lt;button class="button button-primary" style='margin-top:20px;' ng-click='inf.closeSubmit()'&gt;CLOSE&lt;/button&gt;
+&lt;/div&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE ITBM Widget - Interaction Note">13fbdfee4f12fe0005be4d6e0210c7bb</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-26 12:49:54</sys_created_on>
+<sys_id>d3fbdfee4f12fe0005be4d6e0210c7bb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-26 12:49:54</sys_updated_on>
+<table/>
+<target_name>PE ITBM Interaction Note</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

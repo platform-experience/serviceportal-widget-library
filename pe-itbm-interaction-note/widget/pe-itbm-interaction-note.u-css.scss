@@ -1,0 +1,132 @@
+$inf-font-color: #2E2E2E !default;
+$inf-font-softcolor: #65666A !default;
+$inf-font-notselected: #c2c2c2 !default;
+$inf-background-color: #ffffff !default;
+$inf-border-color: #E4E5E6 !default;
+$inf-red: #E51B24 !default;
+$inf-black: #000000 !default;
+$inf-white: #ffffff !default;
+$inf-green: #57B957 !default;
+
+
+.row.inner-row {
+	margin: 0 -5px;
+}
+
+.button {
+	width: 100%;
+	height: 40px;
+	color: $inf-font-notselected;
+	border: 3px solid $inf-border-color;
+	border-radius: 8px;
+	background-color: $inf-background-color;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	&.button-selected {
+		color: $inf-font-color;
+		border-color: $inf-font-color;
+	}
+	&.button-primary {
+		border: none;
+		background-color: $inf-red;
+		color: $inf-white;
+	}
+	&.button-no-border {
+		border: none;
+	}
+}
+.button-icon {
+	color: $inf-red;
+	font-size: 18px;
+	margin: 0 3px;
+}
+
+.card {
+	border: 1px solid $inf-border-color;
+	padding: 10px;
+}
+.card-title {
+	font-size: 18px;
+	font-weight: 500;
+	color: $inf-font-softcolor;
+}
+.card-subheader {
+	font-size: 12px;
+	font-weight: bold;
+	color: $inf-font-color;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin: 20px 0 10px 0;
+	border-bottom: 1px solid $inf-border-color;
+}
+
+.user-bubble {
+	height: 55px;
+	width: 55px;
+	border-radius: 100%;
+	border: 2.5px solid $inf-border-color;
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 15px;
+	img {
+		width: 100%;
+	}
+	&.user-online {
+		border-color: $inf-green;
+	}
+	&.user-offline {
+		border-color: $inf-red;
+	}
+}
+
+textarea {
+	border: 1px solid $inf-border-color;
+	width: 100%;
+}
+.outer-div {
+  visibility: hidden;
+  position: absolute;
+  margin-top: -10px;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  padding: 0px;
+  height:1000px;
+  background: rgba(0,0,0,0.6);
+  z-index: 600;
+}
+.inner-div {
+  margin: 80px auto;
+  width: 90%;
+  background-color: $inf-white;
+  border: 1px solid $inf-border-color;
+  border-radius: 2px;
+  padding: 20px;
+  padding-bottom: 10px;
+  z-index: 700;
+}
+.msg-text{
+  height: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $inf-font-softcolor;
+}
+.msg-title{
+  height: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+  color: $inf-font-color;
+}
+
+.uib-datepicker.well {
+  background-color: transparent;
+}
+.uib-datepicker .uib-daypicker {
+  margin: 0 auto;
+}
+.uib-datepicker .btn {
+  border-radius: 0;
+  border: none;
+}

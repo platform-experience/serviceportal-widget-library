@@ -1,0 +1,23 @@
+<div id='pnlEasePrj{{c.buIdx}}' class='tpv-frame'>
+    <div class='tpv-content'>
+        <div class='tpv-left'>
+            <div class='tpb-left-panel' ng-show='tpv.showPanel==0'>
+                Tab: {{::tpv.tabLabel[0]}}<br/>
+                <em><i>Replace content in this div panel with desired information.</i></em>
+            </div>
+            <div class='tpb-left-panel' ng-show='tpv.showPanel==1'>
+                Tab: {{::tpv.tabLabel[1]}}<br/>
+                <em><i>Replace content in this div panel with desired information.</i></em>
+            </div>
+            <div class='tpb-left-panel' ng-show='tpv.showPanel==2'>
+                Tab: {{::tpv.tabLabel[2]}}<br/>
+                <em><i>Replace content in this div panel with desired information.</i></em>
+            </div>
+        </div>
+        <div class='tpv-tabs'>
+            <div class='tpv-tab tpv-tab-first' ng-click='tpv.showPanel=0' ng-class='{"tpv-tab-active":tpv.showPanel==0}'><span class='tpv-tab-text'>{{::tpv.tabLabel[0]}}</span></div>
+            <div class='tpv-tab tpv-tab-middle' ng-click='tpv.showPanel=1' ng-class='{"tpv-tab-active":tpv.showPanel==1}'><span class='tpv-tab-text'>{{::tpv.tabLabel[1]}}</span></div>
+            <div class='tpv-tab tpv-tab-last' ng-click='tpv.showPanel=2' ng-class='{"tpv-tab-active":tpv.showPanel==2}'><span class='tpv-tab-text'>{{::tpv.tabLabel[2]}}</span></div>
+        </div>
+    </div>
+</div>

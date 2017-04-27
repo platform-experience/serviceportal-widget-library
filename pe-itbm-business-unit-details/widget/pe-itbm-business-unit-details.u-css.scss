@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$bud-font-color: #65666A !default;
+$bud-font-softcolor: #b4b2b3 !default;
+$bud-background-color: #FFFFFF !default;
+$bud-border-color: #E4E5E6 !default;
+$bud-btn-border: #DBDAD6 !default;
+$bud-red: #e51b24 !default;
+$bud-orange: #e89033 !default;
+$bud-green: #70BE5A !default;
+
+.highcharts-root{
+  font-family: inherit !important;
+}
+.bud-details{
+  margin-top: 10px;
+  font-family: "Montserrat","SourceSansPro", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  background-color: $bud-background-color;
+}
+.bud-details-top{
+  border: 1px solid $bud-border-color;
+  padding: 5px;
+  padding-bottom: 15px;
+}
+.bud-details-title{
+  margin-left: 10px;
+  height: 18px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $bud-font-color;
+}
+.bud-details-bigmoney{
+  text-align: center;
+  height: 44px;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 41px;
+  color: $bud-green;
+  padding-top: 10px;
+}
+.bud-details-subtitle{
+  text-align: center;
+  height: 12px;
+  font-size: 12px;
+  line-height: 14px;
+  color: $bud-font-softcolor;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.prj-details {
+  margin-left: 0px;
+  border-left: solid 3px $bud-green;
+  border-bottom: 1px solid $bud-border-color;
+  border-right: 1px solid $bud-border-color;
+  margin-right: 0px;
+  line-height: 50px;
+}
+.prj-details-red{
+  border-left: solid 3px $bud-red;
+}
+.prj-details-org{
+  border-left: solid 3px $bud-orange;
+}
+.prj-name {
+  text-align:left;
+  font-size: 18px;
+}
+.prj-cat {
+  padding-top:5px;
+  text-align:center;
+  font-size: 22px;
+  line-height: 28px;
+  color: $bud-green;
+}
+.prj-cat-red{
+  color: $bud-red;
+}
+.prj-cat-org{
+  color: $bud-orange;
+}
+.prj-text-sm{
+  font-size: 9px;
+  color: $bud-font-softcolor;
+  text-align:center;
+  line-height: 10px;
+}
+.bud-btn-align{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.bud-btn{
+  width: 90%;
+  height: 50px;
+  background-color: $bud-background-color;
+  border: 3px solid $bud-btn-border;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  color: $bud-font-softcolor;  
+}
+.bud-hidden-projects {
+  display: none;
+  margin-top: -1px;
+  padding: 0px;
+  background-color: $bud-background-color;
+  border: 1px solid #E4E5E6;
+  border-bottom: 0px solid transparent;
+}
+.bud-show-projects{
+  display: block;
+}
+.bud-hidden-button{
+  display: none;
+}
+.bud-show-button{
+  display: block;
+}
+.bud-prj-pipeline-top{
+  background-color: $bud-background-color;
+  border: 1px solid $bud-border-color;
+  padding: 5px;
+  margin-left: -7px;
+  margin-right: -8px;
+}
+.bud-prj-pipeline{
+  background-color: $bud-background-color;
+  border: 1px solid $bud-border-color;
+  padding: 5px;
+  margin-left: -7px;
+  margin-right: -8px;
+  min-height: 110px;
+}
+.bud-prj-pipeline-title{
+  height: 16px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+  color: $bud-font-color;
+  padding-bottom: 5px;
+}
+.bud-prj-pipeline-prj{
+  height: 14px;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 14px;
+  color: $bud-font-color;
+  padding-top: 5px;
+}
+.bud-prj-pipeline-money{
+  float: right;
+  width: 150px;
+  height: 44px;
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 44px;
+  color: $bud-font-color;  
+}
+.bud-prj-pipeline-cost{
+  padding-top: 20px;
+  height: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 29px;
+  color: #70BE5A;
+  padding-bottom: 5px;
+  margin-left: 5px;
+}
+.bud-prj-pipeline-label{
+  padding-top: 20px;
+  height: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 14px;
+  color: $bud-font-softcolor;
+  margin-left: 5px;
+}
+.bud-prj-pipeline-subtitle{
+  height: 16px;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 19px;
+  color: $bud-font-softcolor;
+  padding-top: 3px;
+}

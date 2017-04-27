@@ -1,0 +1,48 @@
+$osa-font-color: #2e2e2e !default;
+$osa-background-color: #ffffff !default;
+$osa-border-color: #E4E5E6 !default;
+
+/* Frame around widget */
+.osa-frame {
+    color: $osa-font-color;
+    background-color: $osa-background-color;
+    width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid $osa-border-color;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+/* Title */
+.osa-title {
+    margin-top: 17px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $osa-font-color;
+    border: 0px;
+}
+
+/* Horizontal Rule */
+.osa-hr {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 7px;
+    margin-bottom: 2px;
+    line-height: 1px
+}
+
+.osa-spacer {
+    padding-bottom: 10px;
+}

@@ -1,0 +1,40 @@
+<a id="pageTop"></a>
+<div class="card">
+    <div class="card-title">{{::inf.data.cardTitle}}</div>
+    <div ng-show='inf.data.activeUsers'>
+        <div class="card-subheader">Spoken With</div>
+        <div ng-repeat="user in inf.users" class="user-bubble user-{{user.status}}">
+            <img src="{{user.photo}}">
+        </div>
+    </div>
+    <div class="card-subheader">Description</div>
+    <textarea rows="3" ng-model="inf.formData.reminderText" placeholder="Type text here"></textarea>
+    <div class="card-subheader">Reminder {{inf.formData.reminderDate | date: 'shortDate'}}</div>
+    <div class="row inner-row">
+        <div class="col-xs-4">
+            <button class="button" ng-class="{'button-selected': inf.selectedButton === 1}" ng-click="inf.btnClick(1)">Tmrw</button>
+        </div>
+        <div class="col-xs-4">
+            <button class="button" ng-class="{'button-selected': inf.selectedButton === 2}" ng-click="inf.btnClick(2)">1 Week</button>
+        </div>
+        <div class="col-xs-4">
+            <button class="button" type="button" ng-class="{'button-selected': inf.selectedButton === -1}" aria-expanded="false" aria-controls="datepicker" ng-click="inf.btnClick(-1)">
+				<small>Pick Date</small>
+				<i class="fa fa-calendar button-icon" aria-hidden="true"></i>
+			</button>
+        </div>
+    </div>
+    <div class="collapse" id="datepicker">
+        <div uib-datepicker ng-model="inf.formData.reminderDate" class="well well-sm" datepicker-options="inf.options"></div>
+    </div>
+    <button class="button button-primary" ng-click='inf.showSubmit()'>Submit</button>
+    <button class="button" ng-click='inf.cancelSubmit()'>Cancel</button>
+</div>
+<div id="overlay" class='outer-div'>
+    <div class='inner-div'>
+        <div class='msg-title'>SUBMITTED</div>
+        <hr/>
+        <div class='msg-text'>Your form has been submitted.</div>
+        <button class="button button-primary" style='margin-top:20px;' ng-click='inf.closeSubmit()'>CLOSE</button>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+<div class='container bud-details' ng-repeat='item in bud.data.details track by $index'>
+    <div class='row bud-details-top'>
+        <div class='col'>
+            <div class='row'>
+                <div class='col bud-details-title'>{{::item.title}}</div>
+            </div>
+            <div class='row'>
+                <div class='col bud-details-bigmoney' ng-click='bud.showPrj($index)'>{{::item.value}}</div>
+            </div>
+            <div class='row'>
+                <div class='col bud-details-subtitle' ng-click='bud.showPrj($index)'>{{::item.label}}</div>
+            </div>
+        </div>
+    </div>
+    <div ng-show='bud.showPrjIdx == {{$index}}'>
+        <div class='row' id='proj{{$index}}'>
+            <div class='col'>
+                <div class='row prj-details' ng-repeat='prj in item.projects' ng-class="{'prj-details-red': prj.status===1,'prj-details-org': prj.status===2}">
+                    <div class='col-xs-3 prj-name'>{{::prj.title}}</div>
+                    <div class='col-xs-3' ng-repeat='cat in prj.category'>
+                        <div class='row'>
+                            <div class='col prj-cat' ng-class="{'prj-cat-red': cat.status===1,'prj-cat-org': cat.status===2}">{{::cat.value}}</div>
+                        </div>
+                        <div class='row'>
+                            <div class='col prj-text-sm'>{{::cat.title}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row' id='rvwBtn{{$index}}' ng-show='item.pipeline.projects > 0'>
+            <div class='col-xs-12 bud-btn-align'><button type="button" class="btn bud-btn" ng-click='bud.showPrjRvw($index)'>REVIEW PROJECTS</button></div>
+        </div>
+    </div>
+</div>
+<div class='container bud-details' ng-repeat='item in bud.data.details track by $index' id='pnlReview{{$index}}'>
+    <div ng-show='bud.showPrjRvwIdx == {{$index}}'>
+        <div class='container bud-prj-pipeline-top'>
+            <div class='row'>
+                <div class='col-xs-6'>
+                    <div class='bud-prj-pipeline-title'>Project Pipeline</div>
+                    <div class='bud-prj-pipeline-prj'>{{::item.pipeline.projects}} Projects</div>
+                </div>
+                <div class='col-xs-6'>
+                    <div class='bud-prj-pipeline-money'>{{::item.pipeline.value}}</div>
+                </div>
+            </div>
+        </div>
+        <div class='container bud-prj-pipeline' style='border-top: 0px;' ng-repeat='pipe in item.pipeline.project'>
+            <div class='row'>
+                <div class='col-xs-12'>
+                    <div class='bud-prj-pipeline-title'>{{::pipe.title}}</div>
+                    <div class='bud-prj-pipeline-subtitle'>{{::pipe.subtitle}}</div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-xs-4'>
+                    <div class='bud-prj-pipeline-cost'>{{::pipe.value}}</div>
+                    <div class='bud-prj-pipeline-label'>PROJECT COST</div>
+                </div>
+                <div class='col-xs-8'>
+                    <div class='row'>
+                        <div class='col-xs-6'>
+                            <div id='chtROI{{$index}}' class='roi' data-value='{{::pipe.roi}}' style='float:right;margin-right:-10px;margin-top:5px;'>X</div>
+                        </div>
+                        <div class='col-xs-6'>
+                            <div id='chtRisk{{$index}}' class='risk' data-value='{{::pipe.risk}}' style='float:right;margin-right:10px;margin-top:5px;'>X</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row' id='rvwBtn{{$index}}' ng-show='item.pipeline.projects > 0'>
+            <div class='col-xs-12 bud-btn-align'><button type="button" class="btn bud-btn" ng-click='bud.showPrjRvw($index)'>CLOSE REVIEW</button></div>
+        </div>
+    </div>
+</div>

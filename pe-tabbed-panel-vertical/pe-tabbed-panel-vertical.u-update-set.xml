@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-26 12:47:11">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Tabbed Panel Vertical</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>6bc845464f12be0005be4d6e0210c76c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-26 12:47:11</sys_created_on>
+<sys_id>9f5bdbee4f12fe0005be4d6e0210c744</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-26 12:47:11</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_e4d8d60a4f92be0005be4d6e0210c71c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TabbedPanelVerticalController(){
+  /* widget controller */
+  var tpv = this;
+	tpv.showPanel = 0;
+	tpv.tabLabel = ["ACTIVE PROJECTS","PIPELINE AGING","STRATEGIC ALIGNMENT"];
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;tpv&lt;/controller_as&gt;&lt;css&gt;$tpv-font-color: #2e2e2e !default;
+$tpv-darkgray: #65666A !default;
+$tpv-lightgray: #dcdcdc !default;
+$tpv-superlightgray: #f1f1f1 !default;
+$tpv-red: #e51b24 !default;
+$tpv-orange: #e89033 !default;
+$tpv-green: #70be5a !default;
+$tpv-background-color: #ffffff !default;
+$tpv-border-color: #dcdcdc !default;
+
+.tpv-frame {
+  width: 100%;
+  min-width: 300px;
+  height: 297px;
+  padding: 0px;
+  color: $tpv-font-color;
+  background-color: $tpv-background-color;
+  border: 1px solid $tpv-border-color;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.tpv-content{
+  margin: 0 auto;
+  padding: 0px;
+}
+.tpv-left{
+  float: left;
+  height: 297px;
+  min-width: 200px;
+  padding: 0px;
+}
+.tpb-left-panel{
+  padding: 5px;
+}
+.tpv-tab{
+  width: 100px;
+  height: 99px;
+  padding: 0px;
+  background-color: $tpv-superlightgray;
+  display: inline-flex;
+}
+.tpv-tabs{
+  float: right;
+  margin-top: -1px;
+  margin-right: 0px;
+  max-width: 100px;
+  padding: 0px;
+}
+.tpv-tab-first {
+  border-top: 1px solid $tpv-border-color;  
+  border-left: 1px solid $tpv-border-color;
+}
+.tpv-tab-middle {
+  border-top: 1px solid $tpv-border-color;  
+  border-bottom: 1px solid $tpv-border-color;  
+  border-left: 1px solid $tpv-border-color;
+}
+.tpv-tab-last {
+  border-left: 1px solid $tpv-border-color;
+  border-bottom: 1px solid $tpv-border-color;
+}
+.tpv-tab-text {
+  margin: 0 auto;
+  width: 80px;
+  font-size: 12px;
+  text-align: center;
+  color: $tpv-font-color;
+  transform: translateY(35%);
+}
+.tpv-tab:hover{
+  background-color: $tpv-lightgray;
+}
+.tpv-tab-active {
+  background-color: #ffffff;
+  border-left: 0px solid transparent;
+}
+.tpv-tab-active:hover {
+  background-color: #ffffff;
+  cursor: default;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-tabbed-panel-vertical&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Tabbed Panel Vertical&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 18:39:56&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;e4d8d60a4f92be0005be4d6e0210c71c&lt;/sys_id&gt;&lt;sys_mod_count&gt;68&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Tabbed Panel Vertical&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_e4d8d60a4f92be0005be4d6e0210c71c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-25 13:30:00&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div id='pnlEasePrj{{c.buIdx}}' class='tpv-frame'&gt;
+&lt;div class='tpv-content'&gt;
+  &lt;div class='tpv-left'&gt;
+    &lt;div class='tpb-left-panel' ng-show='tpv.showPanel==0'&gt;
+      Tab: {{::tpv.tabLabel[0]}}&lt;br/&gt;
+      &lt;em&gt;&lt;i&gt;Replace content in this div panel with desired information.&lt;/i&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class='tpb-left-panel' ng-show='tpv.showPanel==1'&gt;
+      Tab: {{::tpv.tabLabel[1]}}&lt;br/&gt;
+      &lt;em&gt;&lt;i&gt;Replace content in this div panel with desired information.&lt;/i&gt;&lt;/em&gt;
+    &lt;/div&gt;
+    &lt;div class='tpb-left-panel' ng-show='tpv.showPanel==2'&gt;
+      Tab: {{::tpv.tabLabel[2]}}&lt;br/&gt;
+      &lt;em&gt;&lt;i&gt;Replace content in this div panel with desired information.&lt;/i&gt;&lt;/em&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='tpv-tabs'&gt;
+    &lt;div class='tpv-tab tpv-tab-first' ng-click='tpv.showPanel=0' ng-class='{"tpv-tab-active":tpv.showPanel==0}'&gt;&lt;span class='tpv-tab-text'&gt;{{::tpv.tabLabel[0]}}&lt;/span&gt;&lt;/div&gt;
+    &lt;div class='tpv-tab tpv-tab-middle' ng-click='tpv.showPanel=1' ng-class='{"tpv-tab-active":tpv.showPanel==1}'&gt;&lt;span class='tpv-tab-text'&gt;{{::tpv.tabLabel[1]}}&lt;/span&gt;&lt;/div&gt;
+    &lt;div class='tpv-tab tpv-tab-last' ng-click='tpv.showPanel=2' ng-class='{"tpv-tab-active":tpv.showPanel==2}'&gt;&lt;span class='tpv-tab-text'&gt;{{::tpv.tabLabel[2]}}&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Tabbed Panel Vertical">9f5bdbee4f12fe0005be4d6e0210c744</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-26 12:47:11</sys_created_on>
+<sys_id>575bdbee4f12fe0005be4d6e0210c745</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-26 12:47:11</sys_updated_on>
+<table/>
+<target_name>PE Tabbed Panel Vertical</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

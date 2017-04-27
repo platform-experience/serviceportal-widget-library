@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-26 12:48:20">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Tabbed Panel Horizontal</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>15b805464f12be0005be4d6e0210c7bd</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-26 12:48:20</sys_created_on>
+<sys_id>8cab9bee4f12fe0005be4d6e0210c7a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-26 12:48:20</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_dce885464f12be0005be4d6e0210c7c2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TabbedPanelHorizontalController($timeout) {
+  /* widget controller */
+  var tph = this;
+
+	$timeout(function(){
+		/* Set the conditions for not showing the sub-cards and niblets */
+		tph.showBtmCard = new Array(tph.data.cards.length);
+		tph.nib = new Array(tph.data.cards.length);
+
+		for(var x=0;x&lt;tph.showBtmCard.length;x++){
+			tph.showBtmCard[x] = new Array(tph.data.cards[x].tabs.length);
+			tph.nib[x] = new Array(tph.data.cards.length);
+			for(var y=0;y&lt;tph.showBtmCard[x].length;y++){
+				tph.showBtmCard[x][y] = 0;
+				tph.nib[x][y] = 0;
+			}
+		}
+		
+		/* Need to make sure the niblets are at the bottom of the tab's cells */
+		var result = document.getElementsByClassName("tph-innercard-tabs");
+		var divHeight = result[0].offsetHeight;
+		for(var i=1;i&lt;result.length;i++){
+			if(divHeight &lt; result[i].offsetHeight){
+				divHeight = result[i].offsetHeight;
+			}
+		}
+		for(var i=0;i&lt;result.length;i++){
+			angular.element(result[i]).css('height',divHeight);
+		}
+	});
+	
+	tph.showPanel = function(item,tab,status){
+		if(tph.showBtmCard[item.cardIndex][tab.tabIndex]===1){
+			tph.showBtmCard[item.cardIndex][tab.tabIndex] = 0;
+			tph.nib[item.cardIndex][tab.tabIndex] = 0;
+		}else{
+			for(var x=0;x&lt;tph.showBtmCard.length;x++){
+				for(var y=0;y&lt;tph.showBtmCard[x].length;y++){
+					tph.showBtmCard[x][y] = 0;
+					tph.nib[x][y] = 0;
+				}
+			}
+			tph.showBtmCard[item.cardIndex][tab.tabIndex] = 1;
+			tph.nib[item.cardIndex][tab.tabIndex] = 1;
+		}
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;tph&lt;/controller_as&gt;&lt;css&gt;$tph-font-color: #2e2e2e !default;
+$tph-gray-color: #65666A !default;
+$tph-red-color: #e51b24 !default;
+$tph-orange-color: #e89033 !default;
+$tph-green-color: #70be5a !default;
+$tph-background-color: #ffffff !default;
+$tph-border-color: #e4e5e6 !default;
+$tph-niblet-color: #e51b24 !default;
+
+.tph-frame {
+  width: 100%;
+  min-width: 300px;
+  color: $tph-font-color;
+  background-color: $tph-background-color;
+  border: 1px solid $tph-border-color;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.tph-frame-title {
+  height: 16px;
+  line-height: 16px;
+  font-size: 16px;
+  border: 0px solid transparent;
+}
+.tph-frame-subtitle {
+  font-size: 12px;
+  color: $tph-red-color;
+}
+.tph-cards{
+  padding-top: 10px;
+}
+.tph-innercard {
+  border: 1px solid $tph-border-color;
+  border-left: solid 3px $tph-green-color;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.tph-innercard-title {
+  width: 100%;
+  border-bottom: 1px solid $tph-border-color;
+  height: 55px;
+  padding-bottom: 10px;
+}
+.tph-innercard-text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 55px;
+  color: $tph-gray-color;
+  padding-left: 10px;
+}
+.tph-status-1{
+  border-left: solid 3px $tph-red-color;
+}
+.tph-status-2{
+  border-left: solid 3px $tph-orange-color;
+}
+.tph-status-3{
+  border-left: solid 3px $tph-green-color;
+}
+.tph-innercard-tabs{
+  display: inline-flex;
+  width: 33.3%;
+  text-align: center;
+  position: relative;
+}
+.tph-innercard-status { 
+  display: inline-block;
+  margin: 0 auto;
+  white-space: initial;
+  line-height: normal;
+  font-size: 40px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.tph-innercard-status: hover { 
+  background-color: lightgray;
+}
+.tph-innercard-label {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 14px;
+  color: $font-color;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.tph-circle-red{
+	color: $tph-red-color;
+}
+.tph-circle-orange{
+	color: $tph-orange-color;
+}
+.tph-circle-green{
+	color: $tph-green-color;
+}
+.wgt-bottom-inner{
+  width: 100%;
+  border: 0px transparent;
+  margin: 0px;
+  margin-top: -11px;
+}
+.tph-bottom-innercard{
+  display: block;
+  border: solid 1px $tph-border-color;
+  border-top: solid 0px transparent;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  min-height: 50px;
+}
+
+
+/* Active Tab Niblets - Bottom Border Indicator */
+.nib-wrapper {
+  position: absolute;
+  bottom: 0;
+  border-bottom: 2px solid $tph-niblet-color;
+  transition: left 0.5s;
+}
+.nib {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid $tph-niblet-color;
+}
+.nib-wrapper.nib-cntr {
+  width: 100%;
+}
+.nib-hide {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .tph-innercard-status { 
+    max-width: 100px;
+	}
+}
+@media (max-width: 320px) {
+  .tph-frame {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-tabbed-panel-horizontal&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Tabbed Panel Horizontal&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Frame Title","name":"frame_title","default_value":"Title","label":"Frame Title","type":"string"},{"hint":"Frame Sub-Title","name":"frame_sub_title","default_value":"Sub-Title","label":"Frame Sub Title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	/* Used to set the Tab's name property */
+	var tabLabel = ["SPEND","PROJECTS","SERVICE QUALITY"];
+	/* 
+		Use Widget Schema options to set Frame Title and SubTitle
+		OR hard code Title and SubTitle below.
+	*/
+	
+	data.frame = {
+		title: options.frame_title,
+		subtitle: options.frame_sub_title
+	}
+	
+	/* ITBM Demo Data - Comment out or Remove to use structure above */
+	data.frame = {
+		title: "Business Unit Performance",
+		subtitle: "1 BU at risk"
+	}
+		
+	/*
+		Card's Tabs can have a different label by setting the 'name' property for the respective tab.
+		Status values (1,2,3) of Cards and Tabs control colors red,orange,green [repectively] of Card's left borders and Tab's circles
+	*/
+	data.cards = [{
+		name: "Human Resources",
+		status: 1,
+		tabs:[{
+			name: tabLabel[0],
+			status: 1
+		},{
+			name: tabLabel[1],
+			status: 3
+		},{
+			name: tabLabel[2],
+			status: 3
+		}]
+	},{
+		name: "Marketing",
+		status: 3,
+		tabs:[{
+			name: tabLabel[0],
+			status: 3
+		},{
+			name: tabLabel[1],
+			status: 3
+		},{
+			name: tabLabel[2],
+			status: 3
+		}]
+	}]
+	
+	
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 12:50:44&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;dce885464f12be0005be4d6e0210c7c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;154&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Tabbed Panel Horizontal&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_dce885464f12be0005be4d6e0210c7c2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-25 12:15:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class='tph-frame'&gt;
+  &lt;div class='tph-frame-title'&gt;{{::tph.data.frame.title}}&lt;/div&gt;
+  &lt;div class='tph-frame-subtitle'&gt;{{::tph.data.frame.subtitle}}&lt;/div&gt;
+  &lt;div ng-class="{'tph-cards': $first }" ng-repeat='card in tph.data.cards' ng-init="cardIndex=$index"&gt;
+    &lt;div class='tph-innercard' ng-class="{'tph-status-1': card.status===1,'tph-status-2': card.status===2}"&gt;
+      &lt;div class='tph-innercard-title'&gt;&lt;div class='tph-innercard-text'&gt;{{::card.name}}&lt;/div&gt;&lt;/div&gt;
+      &lt;div id='crdTab{{::cardIndex}}{{::tabIndex}}' class='tph-innercard-tabs' ng-repeat='tab in card.tabs' ng-init="tabIndex=$index"&gt;
+        &lt;div class='tph-innercard-status' ng-click='tph.showPanel({::cardIndex},{::tabIndex},tab.status)'&gt;
+          &lt;i class="fa fa-circle" ng-class="{'tph-circle-red': tab.status===1,'tph-circle-orange': tab.status===2,'tph-circle-green': tab.status===3}" aria-hidden="true"&gt;&lt;/i&gt;
+        	&lt;div class="tph-innercard-label"&gt;{{tab.name}}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id='nib{{::cardIndex}}{{::tabIndex}}' class='nib-wrapper nib-cntr' ng-class="{'nib-hide' : tph.nib[{{::cardIndex}}][{{::tabIndex}}]==0}"&gt;&lt;div class='nib'&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="btmCard{{::cardIndex}}{{::tabIndex}}" ng-repeat='tab in card.tabs' ng-init="tabIndex=$index" class='tph-bottom-innercard' ng-show="tph.showBtmCard[{{::cardIndex}}][{{::tabIndex}}]===1"&gt;
+      &lt;div style='padding-left: 10px;'&gt;
+      	Card: {{::card.name}} | Index: {{::cardIndex}} &lt;br/&gt;
+      	Tab: {{::tab.name}} | Index: {{::tabIndex}}&lt;br/&gt;
+      	&lt;em&gt;&lt;i&gt;Replace content in this tab with desired information.&lt;/i&gt;&lt;/em&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Tabbed Panel Horizontal">8cab9bee4f12fe0005be4d6e0210c7a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-26 12:48:20</sys_created_on>
+<sys_id>40ab9bee4f12fe0005be4d6e0210c7a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-26 12:48:20</sys_updated_on>
+<table/>
+<target_name>PE Tabbed Panel Horizontal</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

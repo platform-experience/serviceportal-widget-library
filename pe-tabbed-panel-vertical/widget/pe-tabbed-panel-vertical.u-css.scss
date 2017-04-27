@@ -1,0 +1,84 @@
+$tpv-font-color: #2e2e2e !default;
+$tpv-darkgray: #65666A !default;
+$tpv-lightgray: #dcdcdc !default;
+$tpv-superlightgray: #f1f1f1 !default;
+$tpv-red: #e51b24 !default;
+$tpv-orange: #e89033 !default;
+$tpv-green: #70be5a !default;
+$tpv-background-color: #ffffff !default;
+$tpv-border-color: #dcdcdc !default;
+
+.tpv-frame {
+  width: 100%;
+  min-width: 300px;
+  height: 297px;
+  padding: 0px;
+  color: $tpv-font-color;
+  background-color: $tpv-background-color;
+  border: 1px solid $tpv-border-color;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.tpv-content{
+  margin: 0 auto;
+  padding: 0px;
+}
+.tpv-left{
+  float: left;
+  height: 297px;
+  min-width: 200px;
+  padding: 0px;
+}
+.tpb-left-panel{
+  padding: 5px;
+}
+.tpv-tab{
+  width: 100px;
+  height: 99px;
+  padding: 0px;
+  background-color: $tpv-superlightgray;
+  display: inline-flex;
+}
+.tpv-tabs{
+  float: right;
+  margin-top: -1px;
+  margin-right: 0px;
+  max-width: 100px;
+  padding: 0px;
+}
+.tpv-tab-first {
+  border-top: 1px solid $tpv-border-color;  
+  border-left: 1px solid $tpv-border-color;
+}
+.tpv-tab-middle {
+  border-top: 1px solid $tpv-border-color;  
+  border-bottom: 1px solid $tpv-border-color;  
+  border-left: 1px solid $tpv-border-color;
+}
+.tpv-tab-last {
+  border-left: 1px solid $tpv-border-color;
+  border-bottom: 1px solid $tpv-border-color;
+}
+.tpv-tab-text {
+  margin: 0 auto;
+  width: 80px;
+  font-size: 12px;
+  text-align: center;
+  color: $tpv-font-color;
+  transform: translateY(35%);
+}
+.tpv-tab:hover{
+  background-color: $tpv-lightgray;
+}
+.tpv-tab-active {
+  background-color: #ffffff;
+  border-left: 0px solid transparent;
+}
+.tpv-tab-active:hover {
+  background-color: #ffffff;
+  cursor: default;
+}
