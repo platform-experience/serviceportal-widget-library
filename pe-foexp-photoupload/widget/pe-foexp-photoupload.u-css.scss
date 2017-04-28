@@ -1,0 +1,43 @@
+.profile {
+  i {
+    font-size: 40px;
+  }
+  width: 210px;
+  height: 210px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #828282;
+  background-size: cover;
+}
+
+.info {
+  text-align: center;
+  color: #404040;
+  margin-top: 10px;
+  .confirmation {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+.action {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+  margin: 0;
+}
+
+.preloader {
+  height: 50px;
+}
