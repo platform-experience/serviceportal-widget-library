@@ -1,4 +1,4 @@
-# Synopsis: ITBM Experience - Interaction Note (IU)
+# Synopsis: ITBM Experience - Interaction Note Form (INF)
 
 
 The widget provides and interactive form for capturing notes or reminder for posting back to an instance table/list.
