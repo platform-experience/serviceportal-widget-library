@@ -8,6 +8,8 @@ The widget provides the ability to have three (3) vertically aligned tabs to the
 
 When a tab is clicked, a container is displayed, to the left of the tabs; with additional information as part of the widget or another widget element/component.
 
+**NOTE** - data and coding for graphs on the individual panels is not included with the update set.
+
 ***
 
 ## Installation
