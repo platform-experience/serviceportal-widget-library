@@ -1,0 +1,50 @@
+$button-bg: #ffffff;
+
+$button: #1aa5be;
+
+> div {
+  overflow-x: hidden;
+}
+
+.percentage {
+  text-align: center;
+  font-size: 75px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.choices {
+  display: flex;
+  margin-top: 20px;
+  button {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: 15px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.signature {
+  margin-top: 20px;
+
+  .signature-main-div {
+    margin: 0 !important;
+  }
+}
+
+.choices button {
+    border-radius: 3px;
+    background-color: $button-bg;
+    border: solid 2px $button;
+    color: $button;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: 600;
+  
+}

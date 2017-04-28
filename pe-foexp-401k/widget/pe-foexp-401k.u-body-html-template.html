@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="card">
+            <h3 class="text-center">401 Enrollment</h3>
+            <div class="percentage"> {{c.percentage || "0"}}%</div>
+            <div class="description text-center">Pre-Tax</div>
+            <div class="subtitle">Pre Tax Contributions</div>
+            <div class="choices">
+              <button ng-class="{ 'active': c.percentage == 0 }" ng-click="c.enroll(0)">0%</button>
+                <button ng-class="{ 'active': c.percentage == 5 }" ng-click="c.enroll(5)">5%</button>
+                <button ng-class="{ 'active': c.percentage == 10 }" ng-click="c.enroll(10)">10%</button>
+                <button ng-class="{ 'active': c.percentage == 15 }" ng-click="c.enroll(15)">15%</button>
+            </div>
+        </div>
+    </div>
+</div>
