@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-04-28 19:57:39">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>FOEXP Debit Details (Platform Experience)</name>
+<origin_sys_id/>
+<release_date>2017-04-28 20:00:00</release_date>
+<remote_sys_id>c80983874f9eb200ab4450af0310c7c6</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>2c11171b4f16320022f40ccf0310c712</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_user_debit_details_u_user</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_user" table="u_user_debit_details"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;User&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;true&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_user&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;u_user_debit_details&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sys_user"&gt;sys_user&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-28 18:29:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;576cf25f4fd2320022f40ccf0310c7c1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;User&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_user_debit_details_u_user&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-28 18:29:26&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>2011171b4f16320022f40ccf0310c715</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>u_user_debit_details.u_user</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_user_debit_details_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_user_debit_details"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_user_debit_details&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-28 18:29:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;e4ecb29f4fd2320022f40ccf0310c71a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_user_debit_details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_user_debit_details_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-28 18:29:27&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>2411171b4f16320022f40ccf0310c714</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_345947874f9eb200ab4450af0310c7e5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function DebitDetailsCtrl(spUtil, $window, $timeout) {
+	var c = this;
+	
+	c.routing = c.data.routing ? c.data.routing : '';
+	c.account = c.data.account ? c.data.account : '';
+	c.bank = c.data.bank ? c.data.bank : '';
+	
+	toMain();
+
+	c.toConfirm = toConfirm;
+	c.toMain = toMain;
+	c.submit = submit;
+
+	function submit() {
+		c.server.get({
+			action: 'submit',
+			bank: c.bank,
+			routing: c.routing,
+			account: c.account
+		}).then(function (response) {
+			spUtil.addInfoMessage('Details submitted!');
+			
+			$timeout(function() {
+				$window.location.reload();
+			}, 2000);
+		})
+	}
+	
+	function toMain() {
+		c.view = 'pe-foexp-debit-details-main.html';
+		c.showBack = false;
+	}
+	
+	function toConfirm() {
+		if (!c.bank || !c.routing || !c.account) {
+			spUtil.addErrorMessage("You haven't completed the form correctly. Please ensure all fields are completed.")
+			return;
+		}
+		
+		c.view = 'pe-foexp-debit-details-confirm.html';
+		c.showBack = true;
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$button-bg: #1aa5be !default;
+$label: #2980b9 !default;
+
+
+.check {
+  img {
+    margin: 0 auto;
+  }
+}
+
+.deposit-form {
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: $label;
+  }
+
+  .account {
+    margin-top: 20px;
+  }
+
+  input {
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #cecece;
+    background-color: transparent;
+    padding-left: 0;
+    outline: none;
+    outline-color: transparent;
+    box-shadow: inset 0px 0px 0px 0px red;
+  }
+  
+  input:focus {
+    outline:none;
+}
+}
+
+.action {
+  margin: 0 -15px;
+  margin-top: 100px;
+
+  button {
+    border-radius: 0;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+}
+
+.bank-label {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+.bank-value {
+  font-family: SourceSansPro;
+  font-size: 30px;
+  color: #34495e;
+}
+
+.action {
+  margin-top: 100px;
+}
+
+.action button {
+	border: none;
+	width: 100%;
+	height: 80px;
+	background-color: $button-bg;
+	color: white;
+	font-size: 28px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 20px 0;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-foexp-debit-details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;FOEXP Debit Details&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+	var gr = new GlideRecord('u_user_debit_details');
+	var user_id = gs.getUserID();
+	gr.addQuery('u_user', user_id);
+	gr.setLimit(1);
+	gr.query();
+	
+	if (input.action == 'submit') {
+		if (gr.getRowCount() &gt; 0) {
+			gr.next();
+			gr.u_bank = input.bank;
+			gr.u_routing = input.routing;
+			gr.u_account = input.account;
+			gr.update();
+			data.bank = gr.u_bank.toString();
+			data.routing = gr.u_routing.toString();
+			data.account = gr.u_account.toString();
+		} else {
+			gr = new GlideRecord('u_user_debit_details');
+			gr.u_user = user_id;
+			gr.u_bank = input.bank;
+			gr.u_routing = input.routing;
+			gr.u_account = input.account;
+			gr.insert();
+			data.bank = gr.u_bank.toString();
+			data.routing = gr.u_routing.toString();
+			data.account = gr.u_account.toString();
+		}
+	} else {
+		if (gr.getRowCount() &gt; 0) {
+			gr.next();
+			data.bank = gr.u_bank.toString();
+			data.routing = gr.u_routing.toString();
+			data.account = gr.u_account.toString();
+		}
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-28 00:45:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;345947874f9eb200ab4450af0310c7e5&lt;/sys_id&gt;&lt;sys_mod_count&gt;46&lt;/sys_mod_count&gt;&lt;sys_name&gt;FOEXP Debit Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_345947874f9eb200ab4450af0310c7e5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-28 19:57:26&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="pe-foexp-details-back" ng-click="c.toMain()" ng-if="c.showBack"&gt;&lt;i class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/i&gt;&amp;nbsp;Back&lt;/div&gt;
+&lt;div ng-include="c.view"&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>2811171b4f16320022f40ccf0310c713</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table/>
+<target_name>FOEXP Debit Details</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_user_debit_details_u_user_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_user" label="User" language="en" table="u_user_debit_details"><sys_documentation action="INSERT_OR_UPDATE"><element>u_user</element><help/><hint/><label>User</label><language>en</language><name>u_user_debit_details</name><plural>Users</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:29:28</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>64ecb29f4fd2320022f40ccf0310c725</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_user_debit_details_u_user_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:29:28</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>2c11171b4f16320022f40ccf0310c715</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details.User</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_526cbe5f4fd2320022f40ccf0310c79e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>User Debit Details</label><live_feed_enabled>false</live_feed_enabled><name>u_user_debit_details</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:29:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>526cbe5f4fd2320022f40ccf0310c79e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User Debit Details</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_526cbe5f4fd2320022f40ccf0310c79e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:29:27</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>6011171b4f16320022f40ccf0310c714</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_e297fadb4fd2320022f40ccf0310c73e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;pe-foexp-debit-details-confirm.html&lt;/id&gt;&lt;sp_widget display_value="FOEXP Debit Details"&gt;345947874f9eb200ab4450af0310c7e5&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-28 18:06:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;e297fadb4fd2320022f40ccf0310c73e&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-foexp-debit-details-confirm.html&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_e297fadb4fd2320022f40ccf0310c73e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-28 19:01:57&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+    &lt;div class="bank-label"&gt;Bank&lt;/div&gt;
+    &lt;div class="bank-value"&gt;{{c.bank}}&lt;/div&gt;
+    &lt;div class="bank-label"&gt;Routing Number&lt;/div&gt;
+    &lt;div class="bank-value"&gt;{{c.routing}}&lt;/div&gt;
+    &lt;div class="bank-label"&gt;Account Number&lt;/div&gt;
+    &lt;div class="bank-value"&gt;{{c.account}}&lt;/div&gt;
+
+    &lt;div class="action"&gt;
+		&lt;button ng-click="c.submit()"&gt;Confirm&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>6411171b4f16320022f40ccf0310c713</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table/>
+<target_name>pe-foexp-debit-details-confirm.html</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_user_debit_details_u_routing_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_routing" label="Routing Number" language="en" table="u_user_debit_details"><sys_documentation action="INSERT_OR_UPDATE"><element>u_routing</element><help/><hint/><label>Routing Number</label><language>en</language><name>u_user_debit_details</name><plural>Routing Numbers</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:29:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a8ecb29f4fd2320022f40ccf0310c723</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Routing Number</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_user_debit_details_u_routing_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:29:27</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>6811171b4f16320022f40ccf0310c715</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details.Routing Number</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_user_debit_details_u_routing</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_routing" table="u_user_debit_details"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Routing Number&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_routing&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_user_debit_details&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-28 18:29:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;278c361f4fd2320022f40ccf0310c77b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Routing Number&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_user_debit_details_u_routing&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-28 18:29:26&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>6c11171b4f16320022f40ccf0310c714</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>u_user_debit_details.u_routing</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_30b7fadb4fd2320022f40ccf0310c742</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;pe-foexp-debit-details-main.html&lt;/id&gt;&lt;sp_widget display_value="FOEXP Debit Details"&gt;345947874f9eb200ab4450af0310c7e5&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-28 18:06:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;30b7fadb4fd2320022f40ccf0310c742&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-foexp-debit-details-main.html&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_30b7fadb4fd2320022f40ccf0310c742&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-28 19:36:21&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-xs-12"&gt;
+
+            &lt;div class="check"&gt;
+                &lt;img class="img-responsive" src="pe-foexp-debit-details-image.png"/&gt;
+            &lt;/div&gt;
+
+            &lt;div class="deposit-form"&gt;
+              &lt;div class="account"&gt;
+                    &lt;label for="routing"&gt;BANK #&lt;/label&gt;
+                    &lt;input type="text" class="form-control" id="bank" placeholder="" ng-model="c.bank"/&gt;
+                &lt;/div&gt;
+                &lt;div class="routing"&gt;
+                    &lt;label for="routing"&gt;ROUTING #&lt;/label&gt;
+                    &lt;input type="text" class="form-control" id="routing" placeholder="" ng-model="c.routing"/&gt;
+                &lt;/div&gt;
+                &lt;div class="account"&gt;
+                    &lt;label for="routing"&gt;ACCOUNT #&lt;/label&gt;
+                    &lt;input type="text" class="form-control" id="account" placeholder="" ng-model="c.account"/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="action"&gt;
+        &lt;button class="btn btn-block btn-primary" ng-click="c.toConfirm()"&gt;
+            SUBMIT
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>a011171b4f16320022f40ccf0310c713</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table/>
+<target_name>pe-foexp-debit-details-main.html</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_38ecb29f4fd2320022f40ccf0310c737</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_user_debit_details</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:29:28</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>38ecb29f4fd2320022f40ccf0310c737</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_user_debit_details</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_38ecb29f4fd2320022f40ccf0310c737</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:29:28</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>a011171b4f16320022f40ccf0310c716</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table/>
+<target_name>u_user_debit_details</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_user_debit_details_u_bank_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_bank" label="Bank" language="en" table="u_user_debit_details"><sys_documentation action="INSERT_OR_UPDATE"><element>u_bank</element><help/><hint/><label>Bank</label><language>en</language><name>u_user_debit_details</name><plural>Banks</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:39:30</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>fb2f72df4fd2320022f40ccf0310c7f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Bank</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_user_debit_details_u_bank_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:39:30</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>a411171b4f16320022f40ccf0310c715</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details.Bank</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_user_debit_details_u_bank</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_bank" table="u_user_debit_details"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Bank&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_bank&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_user_debit_details&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-28 18:39:30&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ac2ffe9f4fd2320022f40ccf0310c77b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Bank&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_user_debit_details_u_bank&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-28 18:39:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>a811171b4f16320022f40ccf0310c714</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details.Bank</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_e0ecb29f4fd2320022f40ccf0310c718</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Direct Debit">6cecb29f4fd2320022f40ccf0310c715</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>User Debit Details</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_user_debit_details</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:29:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>e0ecb29f4fd2320022f40ccf0310c718</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User Debit Details</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_e0ecb29f4fd2320022f40ccf0310c718</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:29:27</sys_updated_on><timeline_page/><title>User Debit Details</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>ac11171b4f16320022f40ccf0310c713</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_user_debit_details_u_account_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_account" label="Account Number" language="en" table="u_user_debit_details"><sys_documentation action="INSERT_OR_UPDATE"><element>u_account</element><help/><hint/><label>Account Number</label><language>en</language><name>u_user_debit_details</name><plural>Account Numbers</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:29:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ececb29f4fd2320022f40ccf0310c721</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Account Number</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_user_debit_details_u_account_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:29:27</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>e011171b4f16320022f40ccf0310c715</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details.Account Number</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_user_debit_details_u_account</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_account" table="u_user_debit_details"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Account Number&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_account&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_user_debit_details&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-28 18:29:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;baacf25f4fd2320022f40ccf0310c7c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Account Number&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_user_debit_details_u_account&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-28 18:29:27&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>e411171b4f16320022f40ccf0310c714</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>u_user_debit_details.u_account</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_6cecb29f4fd2320022f40ccf0310c715</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Direct Debit</name><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:29:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>6cecb29f4fd2320022f40ccf0310c715</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Direct Debit</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_6cecb29f4fd2320022f40ccf0310c715</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:29:27</sys_updated_on><title>Direct Debit</title><view_name/></sys_app_application></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>e811171b4f16320022f40ccf0310c713</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table/>
+<target_name>Direct Debit</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>db_image_b428fedb4fd2320022f40ccf0310c78a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category>Service Portal</category><format>png</format><height>314</height><image/><name>pe-foexp-debit-details-image.png</name><size_bytes>23321</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:07</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b428fedb4fd2320022f40ccf0310c78a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>pe-foexp-debit-details-image.png</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>db_image_b428fedb4fd2320022f40ccf0310c78a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:09:12</sys_updated_on><thumbnail/><width>600</width></db_image><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/png</content_type><file_name>image</file_name><image_height/><image_width/><size_bytes>23321</size_bytes><size_compressed>20558</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>33383edb4fd2320022f40ccf0310c7b2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:09:12</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>b428fedb4fd2320022f40ccf0310c78a</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>0</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>08483edb4fd2320022f40ccf0310c7b2</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>1</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>88483edb4fd2320022f40ccf0310c7b2</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>2</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>0c483edb4fd2320022f40ccf0310c7b2</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>3</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>8c483edb4fd2320022f40ccf0310c7b2</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>4</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>00483edb4fd2320022f40ccf0310c7b3</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>5</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>80483edb4fd2320022f40ccf0310c7b3</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>1w77fQPPDVSBfT34AF31t3wNbGE7Ly9v+rZPu1KwWD/sj1CqXQ3ckXVFf90+gWzjHKmbVJLLQKIZONxi1zO6Gjy6nDF0WnjaZYd/ZL2ZFyOsLjiVNNTVPeZRyOxs6ki+at+fWbdqzH6Kp3MjP9Mo1PMJ/cptLWP5QLoWYHKxkm1jXHnAGVHwHIJnY4JTpTCh2kIsi5zApu/rDRadFxC4NOUm759KKzOEW1SCfx4+Hv7MRFdcziUPMNLR2R6ernl1vuA4/KI5KY+x39kEk6JyTZEe+iqBEH4+3xp8k1im/MPQhOn9rzNc1GaJJR9O8IiOliiRkOHkVUtgaIbeu3eOo79kYkXtOc+rU0WvSeePFSRFJ4xylPxO54MBThZgSFYa38hKQqYRizYJu+czj/8=</data><length>404</length><position>6</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>04483edb4fd2320022f40ccf0310c7b3</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>7</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>84483edb4fd2320022f40ccf0310c7b3</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>vhE3K2Pi7D1Y13Ku5osYbpmzObnyZfXMJvhwEkPvVZeOumR+pYX/NSfvyS6rK7sxnr6eruMSVoSiRnqrqqfjlpgQnc15u3rU8PBg/Ut47MOdmcxbZdASmIKzC+NvZjSO8D2M3R3RdatW0ejQT9wbnGvah7S3RSMJv4NhYbqXc4dbfdF48yNfQJ8cTR0PyLa9x1b5fPLenaQ5+x/9v1PHMWnDvW0ROcOUtxxeh5AgZJczYTdE8AqWLSkr3NrHzYxNDMXM2MTfK8ZmN+BQFiIgAj2AQMmargMP9/+wTRIe8OVB3m6SsG/5bHtUUs/Mg9J+cTVhwoRWD20MhAcwAKbwEB3LA3ZX0o9gclmKG551scmoo7amz2T9gjxuZAVgFLpfIp9h1Okd3Df59v5wZyYY9GyVIFylQPfZXGUSdx352sqZHaxvNemSh63AhQeO2bZ6N1setPf3cDGDsj/5NGRLw6RqhulJ/PrtClZO7AyPTUKDyX8+Zb4J+9q6urpcRmm7LJlkA/iGfUU+L7gE5PUy4VDOjwemOXkPd+3v9rlx9yHGgI2VrJfFMS4Oo+0bWwL0FrVNCOtHeXv5lz/++GNbKTSDxcafjdEP4VaHUZxzcrd3YDG29nryySd3p5/2Q2dDbqvfHHQf2W233abbFwlk7S4zYhCezSsK/sTnqIp+sC2+tdCdj2vjahJjP/yC0k45LeDM1Ft492V7cA9c+zuTX8S1vxVo8mfRfwW33UXd7qOt71kE/jfaJUBg2/iwG0e67dPxGeMnS/pzKHNQJ9K1U2Ulrp7t1LA/qcvTLgFtsR/NhPJ+/fpl5C5ergiIgAjki8D/A0qKLNHuy+fjAAAAAElFTkSuQmCCzP1ksRlbAAA=</data><length>876</length><position>8</position><sys_attachment display_value="image" sys_id="33383edb4fd2320022f40ccf0310c7b2">33383edb4fd2320022f40ccf0310c7b2</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:09:12</sys_created_on><sys_id>08483edb4fd2320022f40ccf0310c7b3</sys_id></sys_attachment_doc></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>ec11171b4f16320022f40ccf0310c712</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table/>
+<target_name>pe-foexp-debit-details-image.png</target_name>
+<type>Images</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_user_debit_details__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="User Debit Details" language="en" table="u_user_debit_details"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>User Debit Details</label><language>en</language><name>u_user_debit_details</name><plural>User Debit Details</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-28 18:29:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e0ecb29f4fd2320022f40ccf0310c720</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User Debit Details</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_user_debit_details__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-28 18:29:27</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="FOEXP Debit Details (Platform Experience)">2c11171b4f16320022f40ccf0310c712</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-04-28 19:57:39</sys_created_on>
+<sys_id>ec11171b4f16320022f40ccf0310c715</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-04-28 19:57:39</sys_updated_on>
+<table>u_user_debit_details</table>
+<target_name>User Debit Details</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
