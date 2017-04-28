@@ -15,7 +15,7 @@ Download the update set **[pe-itbm-business-unit-details.u-update-set.xml](pe-it
 
 ## Sample Data
 
-There are two types of sample data sets provided.  
+There are two types of sample data sets provided and included in the Server Script file.  
 <br/>First, the data set that is used to build the multiple panels. 
 <br/>And, the data set - chartOptions - used to build the two donut charts (ROI and RISK SCORE).
 <br/>Both are included as part of the Server Script file.
