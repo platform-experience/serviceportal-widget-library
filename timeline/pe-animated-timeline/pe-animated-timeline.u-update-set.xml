@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-04-12 16:21:04">
+<unload unload_date="2017-04-29 02:47:24">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -13,184 +13,26 @@
 <name>PE Animated Timeline</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>3e63401adbc6320062e479daae96195e</remote_sys_id>
+<remote_sys_id>7da70ce7db123200d8ebd65fdf96192e</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>7b06c05adbc6320062e479daae961956</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>e6deac2fdb523200d8ebd65fdf961989</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
 </sys_remote_update_set>
 <sys_update_xml action="INSERT_OR_UPDATE">
-<action>DELETE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_widget_6b2ca37ddb8af200b793f2b6ae96194f</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="DELETE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
-  /* widget controller */
-  var c = this;
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-anchor-color: #68acd8 !default;&amp;#13;
-$pe-status-color-danger: #ff0050 !default;&amp;#13;
-$pe-status-color-normal: #6ee520 !default;&amp;#13;
-$pe-status-color-warning: #ffce00 !default;&amp;#13;
-&amp;#13;
-.status-card {&amp;#13;
-  .panel-heading {&amp;#13;
-    background-color: #283347;&amp;#13;
-    border-bottom: 0;&amp;#13;
-    color: #fff;&amp;#13;
-    padding: 14px;&amp;#13;
-    text-transform: uppercase;&amp;#13;
-  }&amp;#13;
-  .panel-body {&amp;#13;
-    background-color: #1c2432;&amp;#13;
-    color: #fff;&amp;#13;
-    h4 {&amp;#13;
-      font-size: 24px;&amp;#13;
-    }&amp;#13;
-    .sub-text {&amp;#13;
-      color: $pe-anchor-color;&amp;#13;
-      font-size: 10px;&amp;#13;
-      margin-top: -5px;&amp;#13;
-      text-transform: uppercase;&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  .status-circle {&amp;#13;
-    border-radius: 50%;&amp;#13;
-    content: '';&amp;#13;
-    height: 10px;&amp;#13;
-    margin-left: 5px;&amp;#13;
-    position: absolute;&amp;#13;
-    top: 23%;&amp;#13;
-    width: 10px;&amp;#13;
-  }&amp;#13;
-  .status-circle-danger {&amp;#13;
-    h4 {&amp;#13;
-      &amp;amp;:after {&amp;#13;
-        @extend .status-circle;&amp;#13;
-        background-color: $pe-status-color-danger;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  .status-circle-normal {&amp;#13;
-    h4 {&amp;#13;
-      &amp;amp;:after {&amp;#13;
-        @extend .status-circle;&amp;#13;
-        background-color: $pe-status-color-normal;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  .status-circle-warning {&amp;#13;
-    h4 {&amp;#13;
-      &amp;amp;:after {&amp;#13;
-        @extend .status-circle;&amp;#13;
-        background-color: $pe-status-color-warning;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-test&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Test&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-11 19:51:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;6b2ca37ddb8af200b793f2b6ae96194f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Test&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_6b2ca37ddb8af200b793f2b6ae96194f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-11 19:51:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row status-card"&gt;
-  &lt;div class="col-xs-12"&gt;
-    &lt;div class="panel panel-default"&gt;
-      &lt;div class="panel-heading"&gt;{{::options.title}}&lt;/div&gt;
-      &lt;div class="panel-body"&gt;
-        &lt;div class="row text-center"&gt;
-          &lt;div class="col-xs-4"&gt;
-            &lt;h4&gt;{{::options.statusNumber1}}&lt;/h4&gt;
-            &lt;p class="sub-text"&gt;{{::options.subText1}}&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div class="col-xs-4"&gt;
-            &lt;div class="status-circle-{{::options.statusIndicator2}}"&gt;
-              &lt;h4&gt;{{::options.statusNumber2}}&lt;/h4&gt;
-            &lt;/div&gt;
-            &lt;p class="sub-text"&gt;{{::options.subText2}}&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div class="col-xs-4"&gt;
-            &lt;div class="status-circle-{{::options.statusIndicator3}}"&gt;
-              &lt;h4&gt;{{::options.statusNumber3}}%&lt;/h4&gt;
-            &lt;/div&gt;
-            &lt;p class="sub-text"&gt;{{::options.subText3}}&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>3306c05adbc6320062e479daae961957</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table/>
-<target_name>PE Test</target_name>
-<type>Widget</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
 <action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_security_acl_3544d3a5db86f200b793f2b6ae961986</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_pe_animated_timeline</description><name>u_pe_animated_timeline</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:26:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3544d3a5db86f200b793f2b6ae961986</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_3544d3a5db86f200b793f2b6ae961986</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 23:26:36</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>3706c05adbc6320062e479daae961957</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table>u_pe_animated_timeline</table>
-<target_name>u_pe_animated_timeline</target_name>
-<type>Access Control</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_section_37b4c81adbc6320062e479daae96192e</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="37b4c81adbc6320062e479daae96192e" sys_domain="global" table="v_index_creator" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>index_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_id>b3b4c81adbc6320062e479daae96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="v_index_creator" sys_domain="global" view="Default view">37b4c81adbc6320062e479daae96192e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>index_col_name</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_id>37b4c81adbc6320062e479daae96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="v_index_creator" sys_domain="global" view="Default view">37b4c81adbc6320062e479daae96192e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>logical_table_name</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_id>b7b4c81adbc6320062e479daae96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="v_index_creator" sys_domain="global" view="Default view">37b4c81adbc6320062e479daae96192e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_id>3bb4c81adbc6320062e479daae96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="v_index_creator" sys_domain="global" view="Default view">37b4c81adbc6320062e479daae96192e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>table</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_id>bbb4c81adbc6320062e479daae96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="v_index_creator" sys_domain="global" view="Default view">37b4c81adbc6320062e479daae96192e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_id>3fb4c81adbc6320062e479daae96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="v_index_creator" sys_domain="global" view="Default view">37b4c81adbc6320062e479daae96192e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>slow_query</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_id>bfb4c81adbc6320062e479daae96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="v_index_creator" sys_domain="global" view="Default view">37b4c81adbc6320062e479daae96192e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_id>33b4c81adbc6320062e479daae961930</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="v_index_creator" sys_domain="global" view="Default view">37b4c81adbc6320062e479daae96192e</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>v_index_creator</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:19</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>37b4c81adbc6320062e479daae96192e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>v_index_creator</sys_name><sys_overrides/><sys_package display_value="Index Creator" source="com.glide.db_index_creator">af7e9c72db00320062e479daae9619da</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_37b4c81adbc6320062e479daae96192e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:19</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>3b06c05adbc6320062e479daae961957</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table>v_index_creator</table>
-<target_name>Database Indexes</target_name>
-<type>Form Layout</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_css_8253fb2cdb86b200b793f2b6ae9619cb</name>
+<name>sp_css_6cb9006bdb123200d8ebd65fdf96192a</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css"><sp_css action="INSERT_OR_UPDATE"><css>/*&#13;
  * bootflat 2.0.4&#13;
  *&#13;
@@ -236,15 +78,15 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
  float:none;width:100%}}.footer-logo{height:32px;&#13;
  margin-top:-5px;line-height:32px}.footer-logo img{margin-right:10px}.footer-logo a{font-size:20px;font-weight:700;color:#fff}.footer-logo a:active,.footer-logo a:hover{text-decoration:none}.footer-nav .nav-title{margin-bottom:15px;color:#e6e9ed}.footer-nav .nav-item{line-height:28px}.footer-nav .nav-item&gt;a{color:#aab2bd}.footer-nav .nav-item&gt;a:active,.footer-nav .nav-item&gt;a:hover{color:#ccd1d9;text-decoration:none}.footer-copyright{color:#aab2bd}.timeline dl{position:relative;top:0;padding:20px 0;margin:0}.timeline dl:before{position:absolute;top:0;bottom:0;left:50%;z-index:100;width:2px;margin-left:-1px;content:'';background-color:#ccd1d9}.timeline dl dt{position:relative;top:30px;z-index:200;width:120px;padding:3px 5px;margin:0 auto 30px;font-weight:400;color:#fff;text-align:center;background-color:#aab2bd;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.timeline dl dd{position:relative;z-index:200}.timeline dl dd .circ{position:absolute;top:40px;left:50%;z-index:200;width:22px;height:22px;margin-left:-11px;background-color:#4fc1e9;border:4px solid #f5f7fa;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%}.timeline dl dd .time{position:absolute;top:31px;left:50%;display:inline-block;width:100px;padding:10px 20px;color:#4fc1e9}.timeline dl dd .events{position:relative;width:47%;padding:10px 10px 0;margin-top:31px;background-color:#fff;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.timeline dl dd .events:before{position:absolute;top:12px;width:0;height:0;content:'';border-style:solid;border-width:6px}.timeline dl dd .events .events-object{margin-right:10px}.timeline dl dd .events .events-body{overflow:hidden;zoom:1}.timeline dl dd .events .events-body .events-heading{margin:0 0 10px;font-size:14px}.timeline dl dd.pos-right .time{margin-left:-100px;text-align:right}.timeline dl dd.pos-right .events{float:right}.timeline dl dd.pos-right .events:before{left:-12px;border-color:transparent #fff transparent transparent}.timeline dl dd.pos-left .time{margin-left:0;text-align:left}.timeline dl dd.pos-left .events{float:left}.timeline dl dd.pos-left .events:before{right:-12px;border-color:transparent transparent transparent #fff}@media screen and (max-width:767px){.timeline dl:before{left:60px}.timeline dl dt{margin:0 0 30px}.timeline dl dd .circ{left:60px}.timeline dl dd .time{left:0}.timeline dl dd.pos-left .time{padding:10px 0;&#13;
  margin-left:0;text-align:left}.timeline dl dd.pos-left .events{float:right;width:84%}.timeline dl dd.pos-left .events:before{left:-12px;border-color:transparent #fff transparent transparent}.timeline dl dd.pos-right .time{padding:10px 0;&#13;
- margin-left:0;text-align:left}.timeline dl dd.pos-right .events{float:right;width:84%}}.dropdown-menu{background-color:#434a54;border:none}.dropdown-menu .dropdown-header{padding:5px 20px;font-size:14px;font-weight:700;color:#aab2bd}.dropdown-menu li a{padding:5px 20px;color:#fff}.dropdown-menu .active a,.dropdown-menu .active a:focus,.dropdown-menu .active a:hover,.dropdown-menu li a:focus,.dropdown-menu li a:hover{color:#fff;background-color:#656d78;outline:0}.dropdown-menu .disabled a,.dropdown-menu .disabled a:focus,.dropdown-menu .disabled a:hover{color:#656d78;cursor:default}.dropdown-menu .divider{background-color:#656d78;border-bottom:none}.dropup .dropdown-menu{margin-bottom:0;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.dropdown-submenu{position:relative}.dropdown-submenu .dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;border-radius:0 4px 4px;-webkit-border-radius:0 4px 4px;-moz-border-radius:0 4px 4px}.dropdown-submenu:hover .dropdown-menu{display:block}.dropup .dropdown-submenu .dropdown-menu{top:auto;bottom:0;margin-top:0;margin-bottom:-2px;border-radius:4px 4px 4px 0;-webkit-border-radius:4px 4px 4px 0;-moz-border-radius:4px 4px 4px 0}.dropdown-submenu&gt;a:after{display:block;float:right;width:0;height:0;margin-top:5px;margin-right:-10px;content:" ";border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#fff}.dropdown-default .dropdown-submenu&gt;a:after{border-left-color:#434a54}.dropdown-submenu:hover a:after{border-left-color:#fff}.dropdown-submenu.pull-left{float:none}.dropdown-submenu.pull-left .dropdown-menu{left:-100%;margin-left:10px;border-radius:4px 0 4px 4px;-webkit-border-radius:4px 0 4px 4px;-moz-border-radius:4px 0 4px 4px}</css><name>bootflat.min.css</name><sys_class_name>sp_css</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-07 23:08:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>8253fb2cdb86b200b793f2b6ae9619cb</sys_id><sys_mod_count>1</sys_mod_count><sys_name>bootflat.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_8253fb2cdb86b200b793f2b6ae9619cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-07 23:09:11</sys_updated_on></sp_css></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+ margin-left:0;text-align:left}.timeline dl dd.pos-right .events{float:right;width:84%}}.dropdown-menu{background-color:#434a54;border:none}.dropdown-menu .dropdown-header{padding:5px 20px;font-size:14px;font-weight:700;color:#aab2bd}.dropdown-menu li a{padding:5px 20px;color:#fff}.dropdown-menu .active a,.dropdown-menu .active a:focus,.dropdown-menu .active a:hover,.dropdown-menu li a:focus,.dropdown-menu li a:hover{color:#fff;background-color:#656d78;outline:0}.dropdown-menu .disabled a,.dropdown-menu .disabled a:focus,.dropdown-menu .disabled a:hover{color:#656d78;cursor:default}.dropdown-menu .divider{background-color:#656d78;border-bottom:none}.dropup .dropdown-menu{margin-bottom:0;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.dropdown-submenu{position:relative}.dropdown-submenu .dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;border-radius:0 4px 4px;-webkit-border-radius:0 4px 4px;-moz-border-radius:0 4px 4px}.dropdown-submenu:hover .dropdown-menu{display:block}.dropup .dropdown-submenu .dropdown-menu{top:auto;bottom:0;margin-top:0;margin-bottom:-2px;border-radius:4px 4px 4px 0;-webkit-border-radius:4px 4px 4px 0;-moz-border-radius:4px 4px 4px 0}.dropdown-submenu&gt;a:after{display:block;float:right;width:0;height:0;margin-top:5px;margin-right:-10px;content:" ";border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#fff}.dropdown-default .dropdown-submenu&gt;a:after{border-left-color:#434a54}.dropdown-submenu:hover a:after{border-left-color:#fff}.dropdown-submenu.pull-left{float:none}.dropdown-submenu.pull-left .dropdown-menu{left:-100%;margin-left:10px;border-radius:4px 0 4px 4px;-webkit-border-radius:4px 0 4px 4px;-moz-border-radius:4px 0 4px 4px}</css><name>bootflat.min.css</name><sys_class_name>sp_css</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:05:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6cb9006bdb123200d8ebd65fdf96192a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_6cb9006bdb123200d8ebd65fdf96192a</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:05:30</sys_updated_on></sp_css></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>3f06c05adbc6320062e479daae961956</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>22deac2fdb523200d8ebd65fdf96198a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <table/>
 <target_name>bootflat.min.css</target_name>
 <type>Style Sheet</type>
@@ -257,19 +99,19 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>u_pe_animated_timeline_fb88d329db86f200b793f2b6ae96196f</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="u_pe_animated_timeline"&gt;&lt;u_pe_animated_timeline action="INSERT_OR_UPDATE"&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-10 23:45:31&lt;/sys_created_on&gt;&lt;sys_id&gt;fb88d329db86f200b793f2b6ae96196f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-10 23:45:31&lt;/sys_updated_on&gt;&lt;u_delay/&gt;&lt;u_end&gt;false&lt;/u_end&gt;&lt;u_fail&gt;false&lt;/u_fail&gt;&lt;u_html_description&gt;&lt;![CDATA[&lt;p&gt;Your personalized &lt;span class="red"&gt;Lightspeed Service Portal&lt;/span&gt; is ready&lt;/p&gt;]]&gt;&lt;/u_html_description&gt;&lt;u_name/&gt;&lt;u_order&gt;200&lt;/u_order&gt;&lt;u_subtitle/&gt;&lt;/u_pe_animated_timeline&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+<name>sys_documentation_u_pe_animated_timeline_u_delay_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_delay" label="Delay" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element>u_delay</element><help/><hint/><label>Delay</label><language>en</language><name>u_pe_animated_timeline</name><plural>Delays</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:29:43</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>b55fc02fdb123200d8ebd65fdf961920</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Delay</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline_u_delay_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:29:43</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>3f06c05adbc6320062e479daae961957</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>22deac2fdb523200d8ebd65fdf96198d</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table/>
-<target_name/>
-<type>PE Animated Timeline</type>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Delay</target_name>
+<type>Field Label</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -279,35 +121,145 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_72e39eacdb06b200b793f2b6ae96193c</name>
+<name>sys_ui_application_542c84abdb123200d8ebd65fdf961946</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>PE Animated Timeline</name><order/><roles>u_pe_animated_timeline_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>542c84abdb123200d8ebd65fdf961946</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Animated Timeline</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_application_542c84abdb123200d8ebd65fdf961946</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:42</sys_updated_on></sys_ui_application></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>22deac2fdb523200d8ebd65fdf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>PE Animated Timeline</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_animated_timeline_u_html_description</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_html_description" table="u_pe_animated_timeline"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;HTML Description&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_html_description&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="HTML"&gt;html&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;name&gt;u_pe_animated_timeline&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:27:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;d9cec8ebdb123200d8ebd65fdf9619c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;HTML Description&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_animated_timeline_u_html_description&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:27:31&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>26deac2fdb523200d8ebd65fdf96198c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.HTML Description</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_a42c84abdb123200d8ebd65fdf96195a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a42c84abdb123200d8ebd65fdf96195a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline.u_pe_animated_timeline_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_pe_animated_timeline">e82c84abdb123200d8ebd65fdf961957</sys_security_acl><sys_update_name>sys_security_acl_role_a42c84abdb123200d8ebd65fdf96195a</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:43</sys_updated_on><sys_user_role display_value="u_pe_animated_timeline_user" name="u_pe_animated_timeline_user">102cc0abdb123200d8ebd65fdf9619cc</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>26deac2fdb523200d8ebd65fdf96198f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>u_pe_animated_timeline.u_pe_animated_timeline_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_animated_timeline_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_pe_animated_timeline"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_animated_timeline&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:15:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a82c84abdb123200d8ebd65fdf961962&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_pe_animated_timeline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_animated_timeline_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:15:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>2adeac2fdb523200d8ebd65fdf96198b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_942c84abdb123200d8ebd65fdf96194b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_pe_animated_timeline</description><name>u_pe_animated_timeline</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>942c84abdb123200d8ebd65fdf96194b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_942c84abdb123200d8ebd65fdf96194b</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:42</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>2adeac2fdb523200d8ebd65fdf96198e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>u_pe_animated_timeline</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_3878802bdb123200d8ebd65fdf961931</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function AnimatedTimelineController($timeout) {
   var c = this;
 
-  if (c.data.interval) {
-    $timeout.cancel(c.data.interval);
-    c.data.items.forEach(function(item) {
-      item.completed = false;
-    });
-    c.data.completed = false;
-  }
-
-  activateNext(c.data.items);
+  c.$onInit = function() {
+    activateNext(c.data.items);
+  };
 
   function activateNext(items) {
-    if (typeof(c.itemActivated) === 'undefined')
+    if (typeof(c.itemActivated) === 'undefined') {
       c.itemActivated = -1;
+    }
     c.itemActivated++;
-
-    c.data.interval = $timeout(function() {
+    $timeout(function() {
       items[c.itemActivated].completed = true;
       if (c.itemActivated &lt; items.length) {
         if (!items[c.itemActivated].end) {
           activateNext(items);
-        } else {
-          group.end = true;
         }
-      } else {
-        group.end = true;
       }
     }, items[c.itemActivated].delay * 1000);
   }
@@ -395,29 +347,29 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
     margin-right: -5px;&amp;#13;
   }&amp;#13;
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-animated-timeline&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Animated Timeline&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  var gr = GlideRecord('u_pe_animated_timeline');
-  gr.orderBy('u_order');
-  gr.query();
+  var grTimeline = GlideRecord('u_pe_animated_timeline');
+  grTimeline.orderBy('u_order');
+  grTimeline.query();
   var items = [];
   var obj;
-  while (gr.next()) {
+  while (grTimeline.next()) {
     obj = {};
-    obj.name = gr.u_name.toString();
-    obj.subtitle = gr.u_subtitle.toString();
-    obj.html = gr.u_html_description.toString();
-    obj.delay = parseInt(gr.u_delay.toString());
-    obj.fail = gr.u_fail.toString() === 'true';
-    obj.end = gr.u_end.toString() === 'true';
-    obj.order = parseInt(gr.u_order.toString());
+    obj.name = grTimeline.u_name.toString();
+    obj.subtitle = grTimeline.u_subtitle.toString();
+    obj.html = grTimeline.u_html_description.toString();
+    obj.delay = parseInt(grTimeline.u_delay.toString());
+    obj.fail = grTimeline.u_fail.toString() === 'true';
+    obj.end = grTimeline.u_end.toString() === 'true';
+    obj.order = parseInt(grTimeline.u_order.toString());
     items.push(obj);
   }
   data.items = items;
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-07 16:23:58&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;72e39eacdb06b200b793f2b6ae96193c&lt;/sys_id&gt;&lt;sys_mod_count&gt;76&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Animated Timeline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_72e39eacdb06b200b793f2b6ae96193c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-11 00:06:55&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-include="'pe-animated-timeline-svg'"&gt;&lt;/div&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:01:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3878802bdb123200d8ebd65fdf961931&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Animated Timeline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3878802bdb123200d8ebd65fdf961931&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 02:30:21&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-include="'pe-animated-timeline-svg'"&gt;&lt;/div&gt;
 &lt;div class="timeline"&gt;
   &lt;div class="row"&gt;
     &lt;div class="col-md-12"&gt;
       &lt;dl&gt;
-        &lt;dd class="pos-right clearfix circ-wrapper" ng-repeat="item in c.data.items track by $index" ng-if="$index &lt;= c.itemActivated"
+        &lt;dd class="pos-right clearfix circ-wrapper" ng-repeat="item in ::c.data.items track by $index" ng-if="$index &lt;= c.itemActivated"
           ng-class="{'completed': item.completed, 'error': item.fail}"&gt;
           &lt;div class="circ"&gt;
             &lt;svg class="loading" viewBox="0 0 33 33" width="24px" height="24px"&gt;
@@ -428,8 +380,8 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
             &lt;div class="events-body"&gt;
               &lt;div&gt;
                 &lt;div class="events-heading" ng-if="item.html" ng-bind-html="item.html"&gt;&lt;/div&gt;
-                &lt;div class="events-heading" ng-if="!item.html"&gt;{{item.name}}&lt;/div&gt;
-                &lt;div class="events-subtitle"&gt;{{item.subtitle}}&lt;/div&gt;
+                &lt;div class="events-heading" ng-if="!item.html"&gt;{{::item.name}}&lt;/div&gt;
+                &lt;div class="events-subtitle"&gt;{{::item.subtitle}}&lt;/div&gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
@@ -437,23 +389,15 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
       &lt;/dl&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="widget-oncomplete" ng-if="c.data.completed || c.data.items.length == 0"&gt;
-  &lt;div ng-if="c.data.oncomplete"&gt;
-    &lt;include-widget id="{{c.data.oncomplete}}"&gt;&lt;/include-widget&gt;
-  &lt;/div&gt;
-  &lt;div ng-if="!c.data.oncomplete"&gt;
-    &lt;include-widget id="modernizeit-diagnostic-fallback"&gt;&lt;/include-widget&gt;
-  &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>7306c05adbc6320062e479daae961957</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>2edeac2fdb523200d8ebd65fdf96198a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <table/>
 <target_name>PE Animated Timeline</target_name>
 <type>Widget</type>
@@ -466,16 +410,87 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_security_acl_6d44d3a5db86f200b793f2b6ae961984</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_pe_animated_timeline</description><name>u_pe_animated_timeline</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:26:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6d44d3a5db86f200b793f2b6ae961984</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_6d44d3a5db86f200b793f2b6ae961984</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 23:26:36</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+<name>sys_documentation_u_pe_animated_timeline_u_name_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_name" label="Name" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element>u_name</element><help/><hint/><label>Name</label><language>en</language><name>u_pe_animated_timeline</name><plural>Names</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:26:51</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>bfaec4ebdb123200d8ebd65fdf9619ef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline_u_name_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:26:51</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>7706c05adbc6320062e479daae961957</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>2edeac2fdb523200d8ebd65fdf96198d</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Name</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_852c84abdb123200d8ebd65fdf96197b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_pe_animated_timeline</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>852c84abdb123200d8ebd65fdf96197b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_852c84abdb123200d8ebd65fdf96197b</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:44</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>2edeac2fdb523200d8ebd65fdf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>u_pe_animated_timeline</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_animated_timeline_u_fail</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_fail" table="u_pe_animated_timeline"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Fail&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_fail&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_animated_timeline&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:28:10&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9eee4cebdb123200d8ebd65fdf9619c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Fail&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_animated_timeline_u_fail&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:28:10&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>62deac2fdb523200d8ebd65fdf96198c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Fail</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e82c84abdb123200d8ebd65fdf961957</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_pe_animated_timeline</description><name>u_pe_animated_timeline</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e82c84abdb123200d8ebd65fdf961957</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_e82c84abdb123200d8ebd65fdf961957</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:43</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>62deac2fdb523200d8ebd65fdf96198f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <table>u_pe_animated_timeline</table>
 <target_name>u_pe_animated_timeline</target_name>
 <type>Access Control</type>
@@ -488,82 +503,16 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>u_pe_animated_timeline_33f8d729db86f200b793f2b6ae961989</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_pe_animated_timeline"><u_pe_animated_timeline action="INSERT_OR_UPDATE"><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:47:37</sys_created_on><sys_id>33f8d729db86f200b793f2b6ae961989</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 23:47:37</sys_updated_on><u_delay>1</u_delay><u_end>false</u_end><u_fail>false</u_fail><u_html_description/><u_name>Reviewing your apps and devices</u_name><u_order>20</u_order><u_subtitle/></u_pe_animated_timeline></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+<name>sys_db_object_72eb04abdb123200d8ebd65fdf9619f4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>PE Animated Timeline</label><live_feed_enabled>false</live_feed_enabled><name>u_pe_animated_timeline</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>72eb04abdb123200d8ebd65fdf9619f4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Animated Timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_72eb04abdb123200d8ebd65fdf9619f4</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:41</sys_updated_on><update_access>false</update_access><user_role display_value="u_pe_animated_timeline_user" name="u_pe_animated_timeline_user">102cc0abdb123200d8ebd65fdf9619cc</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>7b06c05adbc6320062e479daae961957</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>66deac2fdb523200d8ebd65fdf96198b</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table/>
-<target_name>Reviewing your apps and devices</target_name>
-<type>PE Animated Timeline</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_css_include_bd733f2cdb86b200b793f2b6ae961982</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>bootflat.min.css</name><source>local</source><sp_css display_value="bootflat.min.css">8253fb2cdb86b200b793f2b6ae9619cb</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-07 23:08:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bd733f2cdb86b200b793f2b6ae961982</sys_id><sys_mod_count>1</sys_mod_count><sys_name>bootflat.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_bd733f2cdb86b200b793f2b6ae961982</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-07 23:09:11</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>7f06c05adbc6320062e479daae961956</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table/>
-<target_name>bootflat.min.css</target_name>
-<type>CSS Include</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>v_index_creator_1eb40c1adbc6320062e479daae961974</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="v_index_creator"><v_index_creator action="INSERT_OR_UPDATE"><index_col_name>sys_id</index_col_name><index_name>PRIMARY</index_name><logical_table_name>u_pe_animated_timeline</logical_table_name><slow_query/><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 16:15:13</sys_created_on><sys_id>1eb40c1adbc6320062e479daae961974</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:15:13</sys_updated_on><table display_value="PE Animated Timeline" name="u_pe_animated_timeline">e4721b65db86f200b793f2b6ae961926</table></v_index_creator></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>7f06c05adbc6320062e479daae961957</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table>e4721b65db86f200b793f2b6ae961926</table>
-<target_name>PRIMARY</target_name>
-<type>Database Indexes</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_db_object_e4721b65db86f200b793f2b6ae961926</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>PE Animated Timeline</label><live_feed_enabled>false</live_feed_enabled><name>u_pe_animated_timeline</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:26:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e4721b65db86f200b793f2b6ae961926</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Animated Timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_e4721b65db86f200b793f2b6ae961926</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 16:14:43</sys_updated_on><update_access>false</update_access><user_role display_value="u_pe_animated_timeline_user" name="u_pe_animated_timeline_user">7044d3a5db86f200b793f2b6ae96197f</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>b306c05adbc6320062e479daae961957</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <table>u_pe_animated_timeline</table>
 <target_name>PE Animated Timeline</target_name>
 <type>Table</type>
@@ -576,82 +525,16 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_security_acl_a544d3a5db86f200b793f2b6ae961983</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_pe_animated_timeline</description><name>u_pe_animated_timeline</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:26:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a544d3a5db86f200b793f2b6ae961983</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_a544d3a5db86f200b793f2b6ae961983</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 23:26:36</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>b706c05adbc6320062e479daae961957</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table>u_pe_animated_timeline</table>
-<target_name>u_pe_animated_timeline</target_name>
-<type>Access Control</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>u_pe_animated_timeline_51291b29db86f200b793f2b6ae961982</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_pe_animated_timeline"><u_pe_animated_timeline action="INSERT_OR_UPDATE"><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:48:20</sys_created_on><sys_id>51291b29db86f200b793f2b6ae961982</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 23:48:20</sys_updated_on><u_delay>1</u_delay><u_end>false</u_end><u_fail>false</u_fail><u_html_description/><u_name>Learning from integrated systems</u_name><u_order>150</u_order><u_subtitle>(Travel, Collaboration, etc)</u_subtitle></u_pe_animated_timeline></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>bb06c05adbc6320062e479daae961957</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table/>
-<target_name>Learning from integrated systems</target_name>
-<type>PE Animated Timeline</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_dependency_de23bb2cdb86b200b793f2b6ae961986</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-user-timeline-dependency</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-07 23:07:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>de23bb2cdb86b200b793f2b6ae961986</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-user-timeline-dependency</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_de23bb2cdb86b200b793f2b6ae961986</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-07 23:07:57</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>bf06c05adbc6320062e479daae961956</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table/>
-<target_name>pe-user-timeline-dependency</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
 <name>sys_documentation_u_pe_animated_timeline__en</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="PE Animated Timeline" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>PE Animated Timeline</label><language>en</language><name>u_pe_animated_timeline</name><plural>PE Animated Timelines</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:26:37</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>b14417a5db86f200b793f2b6ae961952</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Animated Timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 23:26:37</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="PE Animated Timeline" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>PE Animated Timeline</label><language>en</language><name>u_pe_animated_timeline</name><plural>PE Animated Timelines</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b42c84abdb123200d8ebd65fdf961969</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Animated Timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline__en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:44</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>f306c05adbc6320062e479daae961957</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>66deac2fdb523200d8ebd65fdf96198e</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <table>u_pe_animated_timeline</table>
 <target_name>PE Animated Timeline</target_name>
 <type>Field Label</type>
@@ -664,40 +547,145 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_security_acl_f944d3a5db86f200b793f2b6ae961987</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_pe_animated_timeline</description><name>u_pe_animated_timeline</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:26:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>f944d3a5db86f200b793f2b6ae961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_f944d3a5db86f200b793f2b6ae961987</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 23:26:36</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+<name>u_pe_animated_timeline_9ea15c6fdb123200d8ebd65fdf9619fa</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="u_pe_animated_timeline"&gt;&lt;u_pe_animated_timeline action="INSERT_OR_UPDATE"&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:40:07&lt;/sys_created_on&gt;&lt;sys_id&gt;9ea15c6fdb123200d8ebd65fdf9619fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 01:49:31&lt;/sys_updated_on&gt;&lt;u_delay/&gt;&lt;u_end&gt;true&lt;/u_end&gt;&lt;u_fail&gt;false&lt;/u_fail&gt;&lt;u_html_description&gt;&lt;![CDATA[&lt;p&gt;Your personalized &lt;span class="red"&gt;Lightspeed Service Portal&lt;/span&gt; is ready&lt;/p&gt;]]&gt;&lt;/u_html_description&gt;&lt;u_name/&gt;&lt;u_order&gt;200&lt;/u_order&gt;&lt;u_subtitle/&gt;&lt;/u_pe_animated_timeline&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>f706c05adbc6320062e479daae961957</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>66deac2fdb523200d8ebd65fdf961991</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
-<table>u_pe_animated_timeline</table>
-<target_name>u_pe_animated_timeline</target_name>
-<type>Access Control</type>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name/>
+<type>PE Animated Timeline</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
 <sys_update_xml action="INSERT_OR_UPDATE">
-<action>DELETE</action>
+<action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_widget_dependency_f93ac221db46f200b793f2b6ae961919</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="DELETE"><sp_dependency display_value="pe-user-timeline-dependency">de23bb2cdb86b200b793f2b6ae961986</sp_dependency><sp_widget display_value="">353ac221db46f200b793f2b6ae961919</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 18:03:02</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>f93ac221db46f200b793f2b6ae961919</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-user-timeline-dependency.Copy of PE User Timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_f93ac221db46f200b793f2b6ae961919</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 18:03:02</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+<name>sp_ng_template_b8e8c42bdb123200d8ebd65fdf961954</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;pe-animated-timeline-svg&lt;/id&gt;&lt;sp_widget display_value="PE Animated Timeline"&gt;3878802bdb123200d8ebd65fdf961931&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:01:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b8e8c42bdb123200d8ebd65fdf961954&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-animated-timeline-svg&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_b8e8c42bdb123200d8ebd65fdf961954&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:01:43&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+  &lt;symbol id="loading"&gt;
+    &lt;circle cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+    &lt;circle transform="rotate(45 16 16)" cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.125s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+    &lt;circle transform="rotate(90 16 16)" cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.25s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+    &lt;circle transform="rotate(135 16 16)" cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.375s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+    &lt;circle transform="rotate(180 16 16)" cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.5s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+    &lt;circle transform="rotate(225 16 16)" cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.625s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+    &lt;circle transform="rotate(270 16 16)" cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.75s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+    &lt;circle transform="rotate(315 16 16)" cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.875s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+    &lt;circle transform="rotate(180 16 16)" cx="16" cy="3" r="0"&gt;
+      &lt;animate attributeName="r" values="0;3;0;0" dur="1s" repeatCount="indefinite" begin="0.5s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8"
+        calcMode="spline" /&gt;
+    &lt;/circle&gt;
+  &lt;/symbol&gt;
+&lt;/svg&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>fb06c05adbc6320062e479daae961956</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>6adeac2fdb523200d8ebd65fdf96198a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <table/>
-<target_name>pe-user-timeline-dependency.Copy of PE User Timeline</target_name>
+<target_name>pe-animated-timeline-svg</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_animated_timeline_u_html_description_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_html_description" label="HTML Description" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element>u_html_description</element><help/><hint/><label>HTML Description</label><language>en</language><name>u_pe_animated_timeline</name><plural>HTML Descriptions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:27:32</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>edde0cebdb123200d8ebd65fdf96196a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>HTML Description</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline_u_html_description_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:27:32</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>6adeac2fdb523200d8ebd65fdf96198d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.HTML Description</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_102cc0abdb123200d8ebd65fdf9619cc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>u_pe_animated_timeline_user</name><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>102cc0abdb123200d8ebd65fdf9619cc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_102cc0abdb123200d8ebd65fdf9619cc</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:41</sys_updated_on></sys_user_role></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>6adeac2fdb523200d8ebd65fdf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>u_pe_animated_timeline_user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_97790c2bdb123200d8ebd65fdf961986</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="pe-user-timeline-dependency">32694c2bdb123200d8ebd65fdf96192d</sp_dependency><sp_widget display_value="PE Animated Timeline">3878802bdb123200d8ebd65fdf961931</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:04:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>97790c2bdb123200d8ebd65fdf961986</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-user-timeline-dependency.PE Animated Timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_97790c2bdb123200d8ebd65fdf961986</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:04:09</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>6edeac2fdb523200d8ebd65fdf961989</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>pe-user-timeline-dependency.PE Animated Timeline</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -708,16 +696,432 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>u_pe_animated_timeline_88599b29db86f200b793f2b6ae961968</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_pe_animated_timeline"><u_pe_animated_timeline action="INSERT_OR_UPDATE"><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-10 23:48:59</sys_created_on><sys_id>88599b29db86f200b793f2b6ae961968</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-10 23:48:59</sys_updated_on><u_delay>1</u_delay><u_end>false</u_end><u_fail>false</u_fail><u_html_description/><u_name>Analyzing your usage behavior</u_name><u_order>50</u_order><u_subtitle/></u_pe_animated_timeline></record_update>]]></payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+<name>sys_dictionary_u_pe_animated_timeline_u_subtitle</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_subtitle" table="u_pe_animated_timeline"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Subtitle&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_subtitle&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;u_pe_animated_timeline&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:17:16&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;f74c08abdb123200d8ebd65fdf9619c7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Subtitle&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_animated_timeline_u_subtitle&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:17:16&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>fb06c05adbc6320062e479daae961957</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>6edeac2fdb523200d8ebd65fdf96198c</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Subtitle</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_ac2c84abdb123200d8ebd65fdf96195f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ac2c84abdb123200d8ebd65fdf96195f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline.u_pe_animated_timeline_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_pe_animated_timeline">e02c84abdb123200d8ebd65fdf96195d</sys_security_acl><sys_update_name>sys_security_acl_role_ac2c84abdb123200d8ebd65fdf96195f</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:43</sys_updated_on><sys_user_role display_value="u_pe_animated_timeline_user" name="u_pe_animated_timeline_user">102cc0abdb123200d8ebd65fdf9619cc</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>6edeac2fdb523200d8ebd65fdf96198f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>u_pe_animated_timeline.u_pe_animated_timeline_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_182c84abdb123200d8ebd65fdf961943</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="PE Animated Timeline">dc2cc0abdb123200d8ebd65fdf9619d2</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>PE Animated Timelines</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_pe_animated_timeline</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>u_pe_animated_timeline_user</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>182c84abdb123200d8ebd65fdf961943</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Animated Timelines</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_182c84abdb123200d8ebd65fdf961943</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:41</sys_updated_on><timeline_page/><title>PE Animated Timelines</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>a2deac2fdb523200d8ebd65fdf96198b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timelines</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_animated_timeline_u_subtitle_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_subtitle" label="Subtitle" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element>u_subtitle</element><help/><hint/><label>Subtitle</label><language>en</language><name>u_pe_animated_timeline</name><plural>Subtitles</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:17:16</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>237cc4abdb123200d8ebd65fdf9619c0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Subtitle</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline_u_subtitle_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:17:16</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>a2deac2fdb523200d8ebd65fdf96198e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Subtitle</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>u_pe_animated_timeline_7701586fdb123200d8ebd65fdf9619f8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_pe_animated_timeline"><u_pe_animated_timeline action="INSERT_OR_UPDATE"><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:42</sys_created_on><sys_id>7701586fdb123200d8ebd65fdf9619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:42</sys_updated_on><u_delay>1</u_delay><u_end>false</u_end><u_fail>false</u_fail><u_html_description/><u_name>Reviewing your apps and devices</u_name><u_order>20</u_order><u_subtitle/></u_pe_animated_timeline></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>a2deac2fdb523200d8ebd65fdf961991</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>Reviewing your apps and devices</target_name>
+<type>PE Animated Timeline</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_32694c2bdb123200d8ebd65fdf96192d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-user-timeline-dependency</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:04:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>32694c2bdb123200d8ebd65fdf96192d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-user-timeline-dependency</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_32694c2bdb123200d8ebd65fdf96192d</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:04:09</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>a6deac2fdb523200d8ebd65fdf96198a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>pe-user-timeline-dependency</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_animated_timeline_u_fail_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_fail" label="Fail" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element>u_fail</element><help/><hint/><label>Fail</label><language>en</language><name>u_pe_animated_timeline</name><plural>Fails</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:28:10</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>87fe4cebdb123200d8ebd65fdf9619ef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Fail</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline_u_fail_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:28:10</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>a6deac2fdb523200d8ebd65fdf96198d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Fail</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_7b40582fdb123200d8ebd65fdf9619cb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="7b40582fdb123200d8ebd65fdf9619cb" sys_domain="global" table="u_pe_animated_timeline" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_name</element><position>0</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>7501586fdb123200d8ebd65fdf961966</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_subtitle</element><position>1</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>f501586fdb123200d8ebd65fdf961966</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_delay</element><position>2</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>7901586fdb123200d8ebd65fdf961966</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>f901586fdb123200d8ebd65fdf961966</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_order</element><position>4</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>7d01586fdb123200d8ebd65fdf961966</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>5</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>fd01586fdb123200d8ebd65fdf961966</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_html_description</element><position>6</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>7101586fdb123200d8ebd65fdf961967</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_fail</element><position>7</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>f101586fdb123200d8ebd65fdf961967</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_end</element><position>8</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:37:05</sys_created_on><sys_id>7501586fdb123200d8ebd65fdf961967</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_pe_animated_timeline" sys_domain="global" view="Default view">7b40582fdb123200d8ebd65fdf9619cb</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:37:05</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_pe_animated_timeline</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:33:57</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7b40582fdb123200d8ebd65fdf9619cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_7b40582fdb123200d8ebd65fdf9619cb</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:33:57</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>a6deac2fdb523200d8ebd65fdf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_css_include_cfe9006bdb123200d8ebd65fdf9619e6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="bootflat.min.css">43c9006bdb123200d8ebd65fdf96192f</sp_css_include><sp_dependency display_value="pe-user-timeline-dependency">32694c2bdb123200d8ebd65fdf96192d</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:06:03</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>cfe9006bdb123200d8ebd65fdf9619e6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat.min.css.pe-user-timeline-dependency</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_cfe9006bdb123200d8ebd65fdf9619e6</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:06:03</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>aadeac2fdb523200d8ebd65fdf961989</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>bootflat.min.css.pe-user-timeline-dependency</target_name>
+<type>Dependency CSS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_animated_timeline_u_order</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_order" table="u_pe_animated_timeline"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Order&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_order&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_animated_timeline&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:26:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;517ec4ebdb123200d8ebd65fdf9619e4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Order&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_animated_timeline_u_order&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:26:13&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>aadeac2fdb523200d8ebd65fdf96198c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Order</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_ac2c84abdb123200d8ebd65fdf961954</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ac2c84abdb123200d8ebd65fdf961954</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline.u_pe_animated_timeline_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_pe_animated_timeline">e02c84abdb123200d8ebd65fdf961952</sys_security_acl><sys_update_name>sys_security_acl_role_ac2c84abdb123200d8ebd65fdf961954</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:42</sys_updated_on><sys_user_role display_value="u_pe_animated_timeline_user" name="u_pe_animated_timeline_user">102cc0abdb123200d8ebd65fdf9619cc</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>aadeac2fdb523200d8ebd65fdf96198f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>u_pe_animated_timeline.u_pe_animated_timeline_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_animated_timeline_u_end</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_end" table="u_pe_animated_timeline"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;End&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_end&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_animated_timeline&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:29:04&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5e1f8cebdb123200d8ebd65fdf9619f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;End&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_animated_timeline_u_end&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:29:04&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>aedeac2fdb523200d8ebd65fdf96198b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.End</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e02c84abdb123200d8ebd65fdf96195d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_pe_animated_timeline</description><name>u_pe_animated_timeline</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:43</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e02c84abdb123200d8ebd65fdf96195d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_e02c84abdb123200d8ebd65fdf96195d</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:43</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>aedeac2fdb523200d8ebd65fdf96198e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>u_pe_animated_timeline</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_43c9006bdb123200d8ebd65fdf96192f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>bootflat.min.css</name><source>local</source><sp_css display_value="bootflat.min.css">6cb9006bdb123200d8ebd65fdf96192a</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:05:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>43c9006bdb123200d8ebd65fdf96192f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_43c9006bdb123200d8ebd65fdf96192f</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:05:30</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>e2deac2fdb523200d8ebd65fdf96198a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>bootflat.min.css</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_animated_timeline_u_end_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_end" label="End" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element>u_end</element><help/><hint/><label>End</label><language>en</language><name>u_pe_animated_timeline</name><plural>Ends</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:29:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>543f002fdb123200d8ebd65fdf96196b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>End</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline_u_end_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:29:05</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>e2deac2fdb523200d8ebd65fdf96198d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.End</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_module_d82c84abdb123200d8ebd65fdf961948</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="PE Animated Timeline">542c84abdb123200d8ebd65fdf961946</application><filter/><name>PE Animated Timelines</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>u_pe_animated_timeline_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>d82c84abdb123200d8ebd65fdf961948</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Animated Timelines</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_module_d82c84abdb123200d8ebd65fdf961948</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:42</sys_updated_on><table>u_pe_animated_timeline</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>e2deac2fdb523200d8ebd65fdf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timelines</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_pe_animated_timeline_u_name</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_name" table="u_pe_animated_timeline"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Name&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;true&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;u_pe_animated_timeline&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:26:51&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;f79e48ebdb123200d8ebd65fdf96194c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Name&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_animated_timeline_u_name&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:26:51&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>e6deac2fdb523200d8ebd65fdf96198c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_ac2c84abdb123200d8ebd65fdf96194e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ac2c84abdb123200d8ebd65fdf96194e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline.u_pe_animated_timeline_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_pe_animated_timeline">942c84abdb123200d8ebd65fdf96194b</sys_security_acl><sys_update_name>sys_security_acl_role_ac2c84abdb123200d8ebd65fdf96194e</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:42</sys_updated_on><sys_user_role display_value="u_pe_animated_timeline_user" name="u_pe_animated_timeline_user">102cc0abdb123200d8ebd65fdf9619cc</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>e6deac2fdb523200d8ebd65fdf96198f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>u_pe_animated_timeline.u_pe_animated_timeline_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>u_pe_animated_timeline_e5911c6fdb123200d8ebd65fdf961915</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_pe_animated_timeline"><u_pe_animated_timeline action="INSERT_OR_UPDATE"><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:39:50</sys_created_on><sys_id>e5911c6fdb123200d8ebd65fdf961915</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:39:50</sys_updated_on><u_delay>1</u_delay><u_end>false</u_end><u_fail>false</u_fail><u_html_description/><u_name>Analyzing your usage behavior</u_name><u_order>50</u_order><u_subtitle/></u_pe_animated_timeline></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>eadea46fdb523200d8ebd65fdf961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <table/>
 <target_name>Analyzing your usage behavior</target_name>
 <type>PE Animated Timeline</type>
@@ -726,190 +1130,116 @@ $pe-brand-error: #ff0000 !default;&amp;#13;
 <view/>
 </sys_update_xml>
 <sys_update_xml action="INSERT_OR_UPDATE">
-<action>DELETE</action>
+<action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_353ac221db46f200b793f2b6ae961919</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="DELETE"&gt;&lt;client_script&gt;&lt;![CDATA[function($timeout) {
-  var c = this;
+<name>sys_dictionary_u_pe_animated_timeline_u_delay</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_delay" table="u_pe_animated_timeline"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
 
-  if (c.data.interval) {
-    $timeout.cancel(c.data.interval);
-    c.data.items.forEach(function(item) {
-      item.completed = false;
-    });
-    c.data.completed = false;
-  }
+	// Add your code here
+	return '';  // return the calculated value
 
-  activateNext(c.data.items);
-
-  function activateNext(items) {
-    if (typeof(c.itemActivated) === 'undefined')
-      c.itemActivated = -1;
-      c.itemActivated++;
-
-    // if (c.itemActivated &gt;= items.length) {
-    //   c.data.completed = true;
-    //   return;
-    // }
-
-    c.data.interval = $timeout(function() {
-      items[c.itemActivated].completed = true;
-      if (c.itemActivated &lt; items.length) {
-        if (!items[c.itemActivated].end) {
-          activateNext(items);
-        } else {
-          group.end = true;
-        }
-      } else {
-        group.end = true;
-      }
-    }, items[c.itemActivated].delay * 1000);
-  }
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.timeline dl {&amp;#13;
-  padding: 0;&amp;#13;
-  dd {&amp;#13;
-    .events {&amp;#13;
-      margin-top: 0;&amp;#13;
-      padding-top: 0;&amp;#13;
-      .events-body .events-heading {&amp;#13;
-        margin-bottom: 25px;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-    .circ {&amp;#13;
-      top: 0px;&amp;#13;
-      border: none;&amp;#13;
-      background-color: #d8d8d8;&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  dd {&amp;#13;
-    &amp;amp;.success {&amp;#13;
-      .circ {&amp;#13;
-        background-color: #57c446;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-    &amp;amp;.fail {&amp;#13;
-      .circ {&amp;#13;
-        background-color: #ff0000;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  dd.circ-wrapper .circ {&amp;#13;
-    background-color: $body-bg;&amp;#13;
-    svg {&amp;#13;
-      position: absolute;&amp;#13;
-      fill: #278EFC;&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  dd.completed .circ {&amp;#13;
-    background-color: #57c446;&amp;#13;
-    svg {&amp;#13;
-      display: none;&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  dd.completed.error .circ {&amp;#13;
-    background-color: red;&amp;#13;
-  }&amp;#13;
-  .events {&amp;#13;
-    &amp;amp;:before {&amp;#13;
-      display: none;&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  dd {&amp;#13;
-    margin-top: 25px;&amp;#13;
-    .events {&amp;#13;
-      background-color: transparent;&amp;#13;
-      height: 20px;&amp;#13;
-      position: relative;&amp;#13;
-      .events-body .events-heading {&amp;#13;
-        margin: 0;&amp;#13;
-      }&amp;#13;
-      .events-subtitle {&amp;#13;
-        font-size: 14px;&amp;#13;
-        font-weight: 300;&amp;#13;
-        color: #343d47;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-}&amp;#13;
-&amp;#13;
-.red {&amp;#13;
-  color: #c0351d;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.timeline:before {&amp;#13;
-  border-right: none;&amp;#13;
-}&amp;#13;
-&amp;#13;
-@media screen and (max-width: 767px) {&amp;#13;
-  .timeline dl dd .events {&amp;#13;
-    padding: 0px 0 0 25px;&amp;#13;
-    margin-right: -5px;&amp;#13;
-  }&amp;#13;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-user-timeline-2&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE User Timeline 2&lt;/name&gt;&lt;option_schema&gt;[{"name":"delay","label":"Delay","type":"integer"},{"name":"event_1","label":"Event 1","type":"string"},{"name":"event_2","label":"Event 2","type":"string"},{"name":"event_3","label":"Event 3","type":"string"},{"name":"event_4","label":"Event 4","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  var gr = GlideRecord('u_modernize_stages');
-  gr.orderBy('u_order');
-  gr.query();
-  var items = [];
-  var obj;
-  while (gr.next()) {
-    obj = {};
-    obj.name = gr.u_name.toString();
-    obj.subtitle = gr.u_subtitle.toString();
-    obj.html = gr.u_html_description.toString();
-    obj.delay = parseInt(gr.u_delay.toString());
-    obj.fail = gr.u_fail.toString() === 'true';
-    obj.end = gr.u_end.toString() === 'true';
-    obj.order = parseInt(gr.u_order.toString());
-    items.push(obj);
-  }
-  data.items = items;
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-10 18:03:02&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;353ac221db46f200b793f2b6ae961919&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE User Timeline 2&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_353ac221db46f200b793f2b6ae961919&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-10 19:09:17&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-include="'pe-user-timeline-svg'"&gt;&lt;/div&gt;
-&lt;div class="timeline"&gt;
-  &lt;div class="row"&gt;
-    &lt;div class="col-md-12"&gt;
-      &lt;dl&gt;
-        &lt;dd class="pos-right clearfix circ-wrapper" ng-repeat="item in c.data.items track by $index" ng-if="$index &lt;= c.itemActivated"
-          ng-class="{'completed': item.completed, 'error': item.fail}"&gt;
-          &lt;div class="circ"&gt;
-            &lt;svg class="loading" viewBox="0 0 33 33" width="24px" height="24px"&gt;
-              &lt;use xlink:href='#loading'&gt;&lt;/use&gt;
-            &lt;/svg&gt;
-          &lt;/div&gt;
-          &lt;div class="events"&gt;
-            &lt;div class="events-body"&gt;
-              &lt;div&gt;
-                &lt;div class="events-heading" ng-if="item.html" ng-bind-html="item.html"&gt;&lt;/div&gt;
-                &lt;div class="events-heading" ng-if="!item.html"&gt;{{item.name}}&lt;/div&gt;
-                &lt;div class="events-subtitle"&gt;{{item.subtitle}}&lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/dd&gt;
-      &lt;/dl&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="widget-oncomplete" ng-if="c.data.completed || c.data.items.length == 0"&gt;
-  &lt;div ng-if="c.data.oncomplete"&gt;
-    &lt;include-widget id="{{c.data.oncomplete}}"&gt;&lt;/include-widget&gt;
-  &lt;/div&gt;
-  &lt;div ng-if="!c.data.oncomplete"&gt;
-    &lt;include-widget id="modernizeit-diagnostic-fallback"&gt;&lt;/include-widget&gt;
-  &lt;/div&gt;
-&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Animated Timeline">7b06c05adbc6320062e479daae961956</remote_update_set>
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Delay&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_delay&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_pe_animated_timeline&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-29 00:29:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0b4f802fdb123200d8ebd65fdf961998&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Delay&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_pe_animated_timeline_u_delay&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-29 00:29:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-12 16:21:04</sys_created_on>
-<sys_id>ff06c05adbc6320062e479daae961956</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>eadeac2fdb523200d8ebd65fdf96198b</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-12 16:21:04</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Delay</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_e02c84abdb123200d8ebd65fdf961952</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_pe_animated_timeline</description><name>u_pe_animated_timeline</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>e02c84abdb123200d8ebd65fdf961952</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_pe_animated_timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_e02c84abdb123200d8ebd65fdf961952</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:42</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>eadeac2fdb523200d8ebd65fdf96198e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>u_pe_animated_timeline</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_dc2cc0abdb123200d8ebd65fdf9619d2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>PE Animated Timeline</name><order>100</order><roles>u_pe_animated_timeline_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:15:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path/><sys_id>dc2cc0abdb123200d8ebd65fdf9619d2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Animated Timeline</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_dc2cc0abdb123200d8ebd65fdf9619d2</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:15:41</sys_updated_on><title>PE Animated Timeline</title><view_name/></sys_app_application></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>eedeac2fdb523200d8ebd65fdf96198a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
 <table/>
-<target_name>PE User Timeline 2</target_name>
-<type>Widget</type>
+<target_name>PE Animated Timeline</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_pe_animated_timeline_u_order_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_order" label="Order" language="en" table="u_pe_animated_timeline"><sys_documentation action="INSERT_OR_UPDATE"><element>u_order</element><help/><hint/><label>Order</label><language>en</language><name>u_pe_animated_timeline</name><plural>Orders</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:26:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>668e48abdb123200d8ebd65fdf96191c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Order</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_pe_animated_timeline_u_order_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:26:13</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>eedeac2fdb523200d8ebd65fdf96198d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table>u_pe_animated_timeline</table>
+<target_name>PE Animated Timeline.Order</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>u_pe_animated_timeline_39711c6fdb123200d8ebd65fdf961910</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="u_pe_animated_timeline"><u_pe_animated_timeline action="INSERT_OR_UPDATE"><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-04-29 00:39:21</sys_created_on><sys_id>39711c6fdb123200d8ebd65fdf961910</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-04-29 00:39:21</sys_updated_on><u_delay>1</u_delay><u_end>false</u_end><u_fail>false</u_fail><u_html_description/><u_name>Learning from integrated systems</u_name><u_order>150</u_order><u_subtitle>(Travel, Collaboration, etc)</u_subtitle></u_pe_animated_timeline></record_update>]]></payload>
+<remote_update_set display_value="PE Animated Timeline">e6deac2fdb523200d8ebd65fdf961989</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-04-29 02:47:24</sys_created_on>
+<sys_id>eedeac2fdb523200d8ebd65fdf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-04-29 02:47:24</sys_updated_on>
+<table/>
+<target_name>Learning from integrated systems</target_name>
+<type>PE Animated Timeline</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>

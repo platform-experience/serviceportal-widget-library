@@ -1,9 +1,9 @@
-<div ng-include="'pe-user-timeline-svg'"></div>
+<div ng-include="'pe-animated-timeline-svg'"></div>
 <div class="timeline">
   <div class="row">
     <div class="col-md-12">
       <dl>
-        <dd class="pos-right clearfix circ-wrapper" ng-repeat="item in c.data.items track by $index" ng-if="$index <= c.itemActivated"
+        <dd class="pos-right clearfix circ-wrapper" ng-repeat="item in ::c.data.items track by $index" ng-if="$index <= c.itemActivated"
           ng-class="{'completed': item.completed, 'error': item.fail}">
           <div class="circ">
             <svg class="loading" viewBox="0 0 33 33" width="24px" height="24px">
@@ -14,21 +14,13 @@
             <div class="events-body">
               <div>
                 <div class="events-heading" ng-if="item.html" ng-bind-html="item.html"></div>
-                <div class="events-heading" ng-if="!item.html">{{item.name}}</div>
-                <div class="events-subtitle">{{item.subtitle}}</div>
+                <div class="events-heading" ng-if="!item.html">{{::item.name}}</div>
+                <div class="events-subtitle">{{::item.subtitle}}</div>
               </div>
             </div>
           </div>
         </dd>
       </dl>
     </div>
-  </div>
-</div>
-<div class="widget-oncomplete" ng-if="c.data.completed || c.data.items.length == 0">
-  <div ng-if="c.data.oncomplete">
-    <include-widget id="{{c.data.oncomplete}}"></include-widget>
-  </div>
-  <div ng-if="!c.data.oncomplete">
-    <include-widget id="modernizeit-diagnostic-fallback"></include-widget>
   </div>
 </div>
