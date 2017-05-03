@@ -177,3 +177,6 @@ If its a css library file, which users dont need to edit for ex: "animates.css",
 
 * `<widget_name>.u-update-set.xml`
 
+## Internationalization
+
+All Widgets should support [Internationlization](https://docs.servicenow.com/bundle/istanbul-servicenow-platform/page/build/service-portal/concept/c_WidgetLocalization.html), so that they can be translated into other languages in non-English speaking markets.
