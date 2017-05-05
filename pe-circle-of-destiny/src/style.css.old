@@ -1,0 +1,138 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: green;
+}
+
+pe-circle-of-destiny {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+    overflow: hidden;
+}
+
+pe-circle-of-destiny a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.pe-cod {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.pe-cod a {
+	text-decoration: none;
+}
+
+.pe-cod-surrounded, .pe-cod-surrounding {
+	display: inline-block;
+	position: absolute;
+}
+
+.pe-cod-surrounded {
+	top: 50%;
+	left: 50%;
+	margin-top: -165px;
+	margin-left: -165px;
+}
+
+.pe-cod-surrounding {
+	top: 0px;
+	left: 0px;
+	margin-top: -90px;
+	margin-left: -90px;
+}
+
+.pe-cod-circle {
+	border-radius: 50%;
+	text-align: center;
+	background-size: cover;
+	border: 1px solid #ccc;
+}
+
+.pe-cod-surrounding .pe-cod-circle {
+	height: 180px;
+	width: 180px;
+	background-color: red;
+	line-height: 180px;
+	font-size: 100px;
+	color: white;
+}
+
+.pe-cod-surrounding .pe-cod-icon {
+	height: 180px;
+}
+
+.pe-cod-surrounded .pe-cod-circle {
+	height: 330px;
+	width: 330px;
+	background-color: green;
+	font-size: 230px;
+	line-height: 360px;
+	color: white;
+}
+
+.pe-cod-surrounded .pe-cod-icon {
+	height: 330px;
+}
+
+.pe-cod-status {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 50px;
+	font-size: 50px;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	border-radius: 50%;
+	color: green;
+    text-align: center;
+}
+
+.pe-cod-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 46px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+    color: green;
+    text-align: center;
+    border: 3px solid white;
+    box-sizing: border-box;
+    color: white;
+}
+
+.pe-cod-label {
+	color: black;
+	font-weight: bold;
+	z-index: 100;
+	position: relative;
+	margin-left: -100%;
+	margin-right: -100%;
+	text-align: center;
+}
+
+.pe-cod-surrounded .pe-cod-label {
+	font-size: 70px;
+	line-height: 75px;
+	margin-top: 20px;
+}
+
+.pe-cod-surrounding .pe-cod-label {
+	font-size: 20px;
+	line-height: 23px;
+	margin-top: 10px;
+}

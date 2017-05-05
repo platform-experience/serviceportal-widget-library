@@ -1,0 +1,162 @@
+$pe-cod-border-color: grey !default;
+
+$pe-cod-inner-bg: #3a3f51 !default;
+$pe-cod-inner-color: white !default;
+$pe-cod-inner-label: black !default;
+$pe-cod-inner-font-size: 70px !default;
+$pe-cod-inner-icon-size: 150px !default;
+
+$pe-cod-outer-bg: #3a3f51 !default;
+$pe-cod-outer-color: white !default;
+$pe-cod-outer-label: black !default;
+$pe-cod-outer-font-size: 30px !default;
+$pe-cod-outer-icon-size: 80px !default;
+
+$pe-cod-count-color: white !default;
+$pe-cod-count-bg: red !default;
+$pe-cod-count-border: white !default;
+
+$pe-cod-success-color: green !default;
+$pe-cod-success-bg: white !default;
+
+.pe-cod-container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+
+  a:hover {
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+.pe-cod {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.pe-cod-surrounded, .pe-cod-surrounding {
+  display: inline-block;
+  position: absolute;
+}
+
+.pe-cod-surrounded {
+  top: 50%;
+  left: 50%;
+  margin-top: -165px;
+  margin-left: -165px;
+
+  .pe-cod-circle {
+    height: 330px;
+    width: 330px;
+    line-height: 330px;
+    font-size: $pe-cod-inner-icon-size;
+    background-color: $pe-cod-inner-bg;
+    color: $pe-cod-inner-color;
+  }
+
+  .pe-cod-icon {
+    height: 330px;
+  }
+
+  .pe-cod-label {
+    font-size: $pe-cod-inner-font-size;
+    line-height: 75px;
+    margin-top: 20px;
+  }
+}
+
+.pe-cod-surrounding {
+  top: 0;
+  left: 0;
+  margin-top: -90px;
+  margin-left: -90px;
+
+  .pe-cod-circle {
+    height: 180px;
+    width: 180px;
+    line-height: 180px;
+    margin-bottom: 40px;
+    font-size: $pe-cod-outer-icon-size;
+    background-color: $pe-cod-outer-bg;
+    color: $pe-cod-outer-color;
+  }
+
+  .pe-cod-icon {
+    height: 180px;
+  }
+
+  .pe-cod-label {
+    font-size: $pe-cod-outer-font-size;
+    line-height: 23px;
+    margin-top: 10px;
+  }
+}
+
+.pe-cod-circle {
+  border-radius: 50%;
+  text-align: center;
+  background-size: cover;
+  border: 1px solid $pe-cod-border-color;
+}
+
+.pe-cod-status, .pe-cod-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pe-cod-status {
+  font-size: 50px;
+  line-height: 40px;
+  border: 0;
+
+  &.success {
+    background-color: $pe-cod-success-bg;
+    color: $pe-cod-success-color;
+  }
+}
+
+.pe-cod-count {
+  box-sizing: border-box;
+  border: 3px solid $pe-cod-count-border;
+  background-color: $pe-cod-count-bg;
+  color: $pe-cod-count-color;
+}
+
+.pe-cod-label {
+  font-weight: bold;
+  z-index: 100;
+  position: relative;
+  margin-left: -100%;
+  margin-right: -100%;
+  text-align: center;
+  color: black;
+}

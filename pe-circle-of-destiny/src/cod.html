@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body ng-app="CoDTest">
+<div ng-controller="CoDTestCtrl" class="container-fluid">
+    <div class="row">
+        <pe-circle-of-destiny id="CoD1"
+                              pe-cod-items="items"
+                              pe-cod-main="main"
+                              class="col-sm-12 col-lg-6">
+                              <!--pe-cod-radius="320"-->
+                              <!--pe-cod-start="130"-->
+                              <!--pe-cod-end="230"-->
+                              <!--pe-cod-full="false"-->
+        </pe-circle-of-destiny>
+        <pe-circle-of-destiny id="CoD2"
+                              pe-cod-items="items"
+                              pe-cod-main="main2"
+                              pe-cod-radius="300"
+                              pe-cod-start="110"
+                              pe-cod-end="250"
+                              pe-cod-full="true"
+                              class="col-xs-12 col-sm-6">
+        </pe-circle-of-destiny>
+        <pe-circle-of-destiny id="CoD3"
+                              pe-cod-items="items"
+                              pe-cod-main="main"
+                              pe-cod-radius="400"
+                              pe-cod-start="110"
+                              pe-cod-end="250"
+                              pe-cod-full="false"
+                              class="col-xs-12 col-sm-6 col-lg-6">
+        </pe-circle-of-destiny>
+        <pe-circle-of-destiny id="CoD4"
+                              pe-cod-items="items2"
+                              pe-cod-main="main2"
+                              pe-cod-radius="500"
+                              class="col-xs-12 col-sm-6 col-lg-6">
+        </pe-circle-of-destiny>
+    </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"
+  crossorigin="anonymous"></script>
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+<script src="script.js"></script>
+
+<script>
+var CoD = angular.module('CoDTest', ['PeCircleOfDestiny']);
+
+CoD.controller('CoDTestCtrl', function CoDCtrl($scope) {
+
+  $scope.main = {
+      label: 'Technology Devices',
+    icon: 'fa fa-users',
+    url: 'https://www.dylanlindgren.com'
+  };
+  $scope.items = [
+    {
+        label: 'Phones',
+      url: 'https://www.google.com',
+      icon: 'fa fa-users',
+      completed: true
+    },
+    {
+        label: 'Laptops',
+      url: 'https://www.apple.com',
+      icon: 'fa fa-book',
+      completed: false,
+        color: 'blue',
+        count: 12
+    },
+    {
+        label: 'Tablets',
+      url: 'https://www.servicenow.com',
+      icon: 'fa fa-calendar',
+      completed: true
+    },
+      {
+          label: 'Phones',
+          url: 'https://www.google.com',
+          icon: 'fa fa-users',
+          completed: true
+      },
+      {
+          label: 'Laptops',
+          url: 'https://www.apple.com',
+          icon: 'fa fa-book',
+          completed: false,
+          color: 'blue',
+          count: 12
+      },
+      {
+          label: 'Tablets',
+          url: 'https://www.servicenow.com',
+          icon: 'fa fa-calendar',
+          completed: true
+      },
+      {
+          label: 'Phones',
+          url: 'https://www.google.com',
+          icon: 'fa fa-users',
+          completed: true
+      },
+      {
+          label: 'Laptops',
+          url: 'https://www.apple.com',
+          icon: 'fa fa-book',
+          completed: false,
+          color: 'blue',
+          count: 12
+      },
+      {
+          label: 'Tablets',
+          url: 'https://www.servicenow.com',
+          icon: 'fa fa-calendar',
+          completed: true
+      },
+      {
+          label: 'Phones',
+          url: 'https://www.google.com',
+          icon: 'fa fa-users',
+          completed: true
+      },
+      {
+          label: 'Laptops',
+          url: 'https://www.apple.com',
+          icon: 'fa fa-book',
+          completed: false,
+          color: 'blue',
+          count: 12
+      },
+      {
+          label: 'Tablets',
+          url: 'https://www.servicenow.com',
+          icon: 'fa fa-calendar',
+          completed: true
+      }
+  ];
+
+    $scope.main2 = {
+        label: 'Hello, Dylan!',
+        icon: 'fa fa-user-o',
+        image: 'https://image.freepik.com/free-vector/white-modern-car-graphic_1053-315.jpg'
+    };
+    $scope.items2 = [
+        {
+            label: 'Phones',
+            url: 'https://www.google.com',
+            icon: 'fa fa-users',
+            image: 'https://image.freepik.com/free-vector/white-modern-car-graphic_1053-315.jpg',
+            completed: true,
+            color: 'red'
+        },
+        {
+            label: 'Laptops',
+            url: 'https://www.apple.com',
+            icon: 'fa fa-book',
+            completed: false
+        },
+        {
+            label: 'Tablets',
+            url: 'https://www.servicenow.com',
+            icon: 'fa fa-calendar',
+            completed: true
+        },
+        {
+            label: 'Phones',
+            url: 'https://www.google.com',
+            icon: 'fa fa-users',
+            image: 'https://image.freepik.com/free-vector/white-modern-car-graphic_1053-315.jpg',
+            completed: true
+        },
+        {
+            label: 'Laptops',
+            url: 'https://www.apple.com',
+            icon: 'fa fa-book',
+            completed: false
+        },
+        {
+            label: 'Tablets',
+            url: 'https://www.servicenow.com',
+            icon: 'fa fa-calendar',
+            completed: true
+        }
+    ];
+});
+</script>
+</body>
+</html>

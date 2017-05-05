@@ -1,0 +1,123 @@
+* {
+  font-family: 'Roboto', sans-serif; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%; }
+
+.pe-cod-container {
+  background-color: rgba(255, 0, 0, 0.1); }
+
+.pe-cod-container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden; }
+  .pe-cod-container a:hover {
+    text-decoration: none;
+    cursor: pointer; }
+  .pe-cod-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  .pe-cod-container li {
+    padding: 0;
+    margin: 0;
+    border: 0; }
+
+.pe-cod {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto; }
+  .pe-cod a {
+    text-decoration: none; }
+
+.pe-cod-surrounded, .pe-cod-surrounding {
+  display: inline-block;
+  position: absolute; }
+
+.pe-cod-surrounded {
+  top: 50%;
+  left: 50%;
+  margin-top: -165px;
+  margin-left: -165px; }
+  .pe-cod-surrounded .pe-cod-circle {
+    height: 330px;
+    width: 330px;
+    line-height: 330px;
+    font-size: 150px;
+    background-color: #3a3f51;
+    color: white; }
+  .pe-cod-surrounded .pe-cod-icon {
+    height: 330px; }
+  .pe-cod-surrounded .pe-cod-label {
+    font-size: 70px;
+    line-height: 75px;
+    margin-top: 20px; }
+
+.pe-cod-surrounding {
+  top: 0;
+  left: 0;
+  margin-top: -90px;
+  margin-left: -90px; }
+  .pe-cod-surrounding .pe-cod-circle {
+    height: 180px;
+    width: 180px;
+    line-height: 180px;
+    margin-bottom: 40px;
+    font-size: 80px;
+    background-color: #3a3f51;
+    color: white; }
+  .pe-cod-surrounding .pe-cod-icon {
+    height: 180px; }
+  .pe-cod-surrounding .pe-cod-label {
+    font-size: 30px;
+    line-height: 23px;
+    margin-top: 10px; }
+
+.pe-cod-circle {
+  border-radius: 50%;
+  text-align: center;
+  background-size: cover;
+  border: 1px solid grey; }
+
+.pe-cod-status, .pe-cod-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle; }
+
+.pe-cod-status {
+  font-size: 50px;
+  line-height: 40px;
+  border: 0; }
+  .pe-cod-status.success {
+    background-color: white;
+    color: green; }
+
+.pe-cod-count {
+  box-sizing: border-box;
+  border: 3px solid white;
+  background-color: red;
+  color: white; }
+
+.pe-cod-label {
+  font-weight: bold;
+  z-index: 100;
+  position: relative;
+  margin-left: -100%;
+  margin-right: -100%;
+  text-align: center;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */

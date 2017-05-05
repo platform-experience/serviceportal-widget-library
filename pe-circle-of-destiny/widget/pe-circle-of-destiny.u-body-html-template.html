@@ -1,0 +1,17 @@
+<div class="pe-cod-container">
+  <div class="pe-cod"
+       pe-scale-to-parent="peCoDComplete">
+    <div class="pe-cod-inner">
+      <pe-cod-circle pecc-main="c.main"
+                     class="pe-cod-surrounded"></pe-cod-circle>
+      <ul>
+        <li ng-repeat="item in c.items track by $index"
+            pe-on-repeat-complete="c.onRepeatComplete()">
+          <pe-cod-circle pecc-item="item"
+                         pecc-main="c.main"
+                         class="pe-cod-surrounding"></pe-cod-circle>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
