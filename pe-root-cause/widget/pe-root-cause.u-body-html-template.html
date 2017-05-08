@@ -1,11 +1,14 @@
-<div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.incident.state.value >= 6) }">
+<div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.alert.state === 'Closed') }">
 	<div class="panel-proper">
 		<div class="panel-header">
 			<span ng-if="options.titleIconClasses" class="title-icon">
 				<i class="{{options.titleIconClasses}}" aria-hidden="true"></i>
 			</span>
 			<span>Root Cause Identified</span>
-			<div class="panel-expander-wrapper" ng-click="c.expanded = !c.expanded" data-toggle="collapse" data-target="#root-cause-drawer" aria-expanded="false" aria-controls="root-cause-drawer">
+			<div class="panel-expander-wrapper" 
+				ng-if="c.alert.incident && (c.alert.incident.problem.sys_id || c.alert.incident.cause.sys_id)"
+				ng-click="c.expanded = !c.expanded" data-toggle="collapse" data-target="#root-cause-drawer" 
+				aria-expanded="false" aria-controls="root-cause-drawer">
 				<svg class="panel-expander">
 					<use xlink:href="#plus"></use>
 				</svg>
@@ -33,8 +36,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="panel-drawer collapse" id="root-cause-drawer">
-		<sp-widget widget="c.data.drawerWidget"></sp-widget>
+	<div ng-if="c.drawerWidget" class="panel-drawer collapse" id="root-cause-drawer">
+		<sp-widget widget="c.drawerWidget"></sp-widget>
 	</div>
 </div>
 

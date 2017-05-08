@@ -4,7 +4,7 @@
 
 ![](../images/pe-status-alert-2.png "resolved")
 
-This widget displays information about an incident with a chance of becoming an outage.
+This widget displays information from an alert about an incident with a chance of causing an outage.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Installation is very simple, you can just download the update set "pe-status-ale
 
 Use the following options to configure the widget:
 
-1. **incident**: Provide an incident's sys_id and data in the widget will display based on the incident. The widget's view will change if the incident is closed.
+1. **alert**: Provide an anomaly alert's sys_id and data in the widget will display based on the alert. The widget's view will change if the alert is closed.
 
 1. **probability**: Provide a number for the percent chance of an outage by a certain time.
 

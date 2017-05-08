@@ -1,4 +1,4 @@
-<div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.incident.state.value >= 6) }">
+<div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.alert.state === 'Closed') }">
 	<div class="panel-proper">
 		<div class="panel-header">
 			<span ng-if="options.titleIconClasses" class="title-icon">

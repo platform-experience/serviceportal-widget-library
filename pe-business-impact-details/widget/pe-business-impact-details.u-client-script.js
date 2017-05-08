@@ -2,6 +2,7 @@ function() {
   /* widget controller */
   var c = this;
 
-  c.incident = c.data.incident;
+  c.alert = c.data.alert;
+  console.log(c.alert);
   
 }

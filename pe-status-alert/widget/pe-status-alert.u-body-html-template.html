@@ -1,12 +1,12 @@
-<div ng-class="{ 'recovered': c.inc.state.value > 5 }" class="status-wrapper">
+<div ng-class="{ 'recovered': c.alert.state === 'Closed' }" class="status-wrapper">
 	<div class="status-box">
-		<header class="title">{{c.inc.short_description}}</header>
+		<header class="title">{{c.alert.description}}</header>
 		<div class="pill">
-			{{ c.inc.number }} |
-			<span ng-if="c.inc.state.value < 4">{{ 'Created ' + c.inc.opened_at_string }}</span>
-			<span ng-if="c.inc.state.value > 5">{{ c.inc.state.label + ' ' + (c.inc.resolved_at_string || c.inc.closed_at_string) }}</span>
+			{{ c.alert.number }} |
+			<span ng-if="c.alert.state !== 'Closed'">{{ 'Created ' + c.alert.created_on_string }}</span>
+			<span ng-if="c.alert.state === 'Closed'">Closed</span>
 		</div>
-		<div ng-if="c.inc.state.value < 4" class="status-row">
+		<div ng-if="c.alert.state !== 'Closed'" class="status-row">
 			<div class="status-key">
 				<sp-widget widget="c.probabilityGauge"></sp-widget>
 			</div>
@@ -22,7 +22,7 @@
 				</div>
 			</div>
 		</div>
-		<div ng-if="c.inc.state.value > 5" class="status-row">
+		<div ng-if="c.alert.state === 'Closed'" class="status-row">
 			<div class="status-key">
 				<div class="big-icon">
 					<svg class="svg-wrapper">

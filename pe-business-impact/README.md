@@ -6,7 +6,7 @@
 
 ![](../images/pe-business-impact-2a.png "resolved")
 
-This widget displays information related to business services affected by an incident.
+This widget displays information related to business services related to an anomaly alert.
 
 ## Installation
 
@@ -16,13 +16,13 @@ Installation is very simple, you can just download the update set "pe-business-i
 
 Use the following options to configure the widget:
 
-1. **incident**: Provide an incident's sys_id and data in the widget will display based on related records.
+1. **alert**: Provide an anomaly alert's sys_id and data in the widget will display based on related records.
 
 1. **titleIconClasses**: Provide a set of Font Awesome css classes for an icon to display next to the title. Defaults to `'fa fa-bolt'`.
 
 ## Displayed Data
 
-The provided incident sys_id determines what is displayed in the widget. The services shown and number of users are counted from the business service associated with the incident and any *directly* dependent business services, and their user groups.
+The provided anomaly alert sys_id determines what is displayed in the widget. The services shown and number of users are counted from the business service associated with the alert and any dependent business services, and their user groups.
 
 Revenue information is currently faked, and would need to be coordinated with an appropriate record attribute to be accurate.
 
@@ -30,7 +30,7 @@ Revenue information is currently faked, and would need to be coordinated with an
 
 This widget makes use of the `pe-business-impact-details` widget, for the content of the expanded drawer. This additional widget is included in the update set.
 
-The entire incident object is passed through to the nested widget. Though the details widget it is not built to be used on its own, it could be altered to do so by adapting some server calls from the parent widget.
+The details widget can also be used on its own, given an alert's sys_id.
 
 ## Sass Variables
 

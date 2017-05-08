@@ -3,36 +3,29 @@
   /* e.g., data.table = $sp.getValue('table'); */
 
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.incident = options.incident || serverOptions.incident  || 'd71f7935c0a8016700802b64c67c11c6';
+  options.alert = options.alert || serverOptions.alert;
 
-  var getState = function(stateValue, table ){
-		var state = new GlideRecord('sys_choice');
-    state.addQuery('element','state');
-    state.addQuery('name', table);
-    state.addQuery('value', stateValue);
-    state.query();
-    while(state.next()){
-    	stateObj = {
-      	value: stateValue,
-      	label: state.label.toString()
-      };
+  var getAlert = function(gr){
+    return {
+      sys_id: gr.sys_id.toString(),
+      state: gr.state.toString()
     };
-		return stateObj;
-	};
+  };
 
-  if (options.incident){
-  	
-  	var incidentGR = new GlideRecord('incident');
-		if (incidentGR.get(options.incident)) {
-			var incident = {
-				sys_id: incidentGR.sys_id.toString(),
-				state: getState(incidentGR.state.toString(), 'incident')
-			};
+  var alertGR, alert;
+  if (options.alert) {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    alertGR.get(options.alert);
+    alert = getAlert( alertGR );
+  } else {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    // alertGR.addEncodedQuery('state!=Closed');
+    alertGR.orderByDesc('sys_created_on');
+    alertGR.query();
+    alertGR.next();
+    alert = getAlert( alertGR );
+  }
 
-			data.incident = incident;
-			
-		}
-
-	}
+  data.alert = alert;
 
 })();

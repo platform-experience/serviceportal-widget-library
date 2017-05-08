@@ -10,7 +10,7 @@ Installation is very simple, you can just download the update set "pe-remediatio
 
 ## Configuration
 
-Provide a sys_id to the **incident** option. The widget will not display if the incident is closed.
+Provide a sys_id of an anomaly alert to the **alert** option. The widget will not display if the alert is closed.
 
 ## Displayed Data
 

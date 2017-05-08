@@ -6,7 +6,7 @@
 
 ![](../images/pe-root-cause-2a.png "resolved")
 
-This widget displays information related an identified root cause of an incident.
+This widget displays information related an identified root cause of an anomaly alert's related incident.
 
 ## Installation
 
@@ -16,19 +16,19 @@ Installation is very simple, you can just download the update set "pe-root-cause
 
 Use the following options to configure the widget:
 
-1. **incident**: Provide an incident's sys_id and data in the widget will display based on related records.
+1. **alert**: Provide an anomaly alert's sys_id and data in the widget will display based on related records.
 
 1. **titleIconClasses**: Provide a set of Font Awesome css classes for an icon to display next to the title. Defaults to `'fa fa-bolt'`.
 
 ## Displayed Data
 
-The provided incident sys_id determines what is displayed in the widget. The incident's associated records are displayed: a Configuration Item, a Problem and a Change that has been identified as having caused the incident. From the Problem record, any other Incidents are listed in 'Related Incidents'.
+The provided anomaly alert sys_id determines what is displayed in the widget. The alert's associated records are displayed: a Configuration Item, and a Problem and a Change that has been identified as having caused the incident. From the Problem record, any other Incidents are listed in 'Related Incidents'.
 
 ## Bundled Widget
 
 This widget makes use of the `pe-root-cause-details` widget, for the content of the expanded drawer. This additional widget is included in the update set.
 
-The details widget can also be used on its own, given an incident's sys_id.
+The details widget can also be used on its own, given an anomaly alert's sys_id.
 
 ## Sass Variables
 

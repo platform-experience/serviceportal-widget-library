@@ -3,36 +3,34 @@
   /* e.g., data.table = $sp.getValue('table'); */
 
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-	options.incident = options.incident || serverOptions.incident || 'd71f7935c0a8016700802b64c67c11c6';
+	options.alert = options.alert || serverOptions.alert;
 	options.probability = options.probability || serverOptions.probability || 67;
 	options.outage_eta = options.outage_eta || serverOptions.outage_eta;
 
+	var getAlert = function(gr){
+    return {
+      sys_id: gr.sys_id.toString(),
+      number: gr.number.toString(),
+      created_on: gr.sys_created_on.toString(),
+      description: gr.description.toString(),
+      state: gr.state.toString(),
+    };
+  };
 
-	if (options.incident){
-		var incidentGR = new GlideRecord('incident');
-		if (incidentGR.get(options.incident)) {
-			var inc = {};
-      inc.short_description = incidentGR.short_description.toString();
-      inc.number = incidentGR.number.toString();
-      inc.opened_at = incidentGR.opened_at.toString();
-      inc.closed_at = incidentGR.closed_at.toString();
-      inc.resolved_at = incidentGR.resolved_at.toString();
-      inc.state = {};
-      inc.state.value = incidentGR.state.toString();
-
-      var state = new GlideRecord('sys_choice');
-      state.addQuery('element','state');
-      state.addQuery('name','incident');
-      state.addQuery('value', incidentGR.state.toString() );
-      state.query();
-      while(state.next()){
-      	inc.state.label = state.label.toString();
-      }
-
-      data.inc = inc;
-		}
-	}
-	
+  var alertGR, alert;
+  if (options.alert) {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    alertGR.get(options.alert);
+    alert = getAlert( alertGR );
+  } else {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    // alertGR.addEncodedQuery('state!=Closed');
+    alertGR.orderByDesc('sys_created_on');
+    alertGR.query();
+    alertGR.next();
+    alert = getAlert( alertGR );
+  }
+  data.alert = alert;
 
   data.probabilityGauge = $sp.getWidget("pe-solid-gauge", {
 

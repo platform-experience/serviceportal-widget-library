@@ -10,7 +10,8 @@
 	</div>
 </div>
 
-<div class="row text-center" ng-repeat="item in c.incident.business_services">
+<div class="row text-center" ng-repeat="item in c.alert.cis">
+<!-- | filter:{classification: 'Business Service'} -->
 	<div class="col-xs-4 left-padded">
 		{{item.name}}
 	</div>

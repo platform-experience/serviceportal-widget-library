@@ -3,95 +3,96 @@
   /* e.g., data.table = $sp.getValue('table'); */
 
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.incident = options.incident || serverOptions.incident || 'd71f7935c0a8016700802b64c67c11c6';
+  options.alert = options.alert || serverOptions.alert;
   options.titleIconClasses = options.titleIconClasses || serverOptions.titleIconClasses || 'fa fa-bolt';
 
-  var fakeRevenue = ['1.2M', '0.9M', '0.3M', '112K', '78K'];
+  var fakeRevenue = ['1.2M', '0.9M', '0.3M', '89K', '78K'];
+  
+  var summaryStats = {
+    users: [],
+    revenue: fakeRevenue[0]
+  };
 
-  if (options.incident){
-		var incidentGR = new GlideRecord('incident');
-		if (incidentGR.get(options.incident)) {
-			var inc = {};
-      inc.short_description = incidentGR.short_description.toString();
-      inc.number = incidentGR.number.toString();
-      inc.opened_at = incidentGR.opened_at.toString();
-      inc.closed_at = incidentGR.closed_at.toString();
-      inc.resolved_at = incidentGR.resolved_at.toString();
-      inc.all_users = [];
-      inc.all_revenue = fakeRevenue[0];
+  var REL_ID = (function(){
+    var rel = new GlideRecord('cmdb_rel_type');
+    rel.addQuery('name', 'Depends on::Used by');
+    rel.query();
+    rel.next();
+    return rel.sys_id.toString();
+  })();
 
-      var stateValue = incidentGR.state.toString();
-      var state = new GlideRecord('sys_choice');
-      state.addQuery('element','state');
-      state.addQuery('name','incident');
-      state.addQuery('value', stateValue );
-      state.query();
-      while(state.next()){
-      	inc.state = {
-	      	value: stateValue,
-	      	label: state.label.toString()
-	      };
-      };
+  var getUsers = function( userGroupID ){
+    var users = [];
+    var groupMember = new GlideRecord('sys_user_grmember');
+    groupMember.addQuery('group', userGroupID);
+    groupMember.query();
+    while (groupMember.next()) {
+      var userID = groupMember.user.sys_id.toString();
+      users.push( userID );
+      if (summaryStats.users.indexOf(userID) === -1) summaryStats.users.push(userID);
+    }
+    return users;
+  };
 
-      var userGroupMembers = [];
-      var groupMember = new GlideRecord('sys_user_grmember');
-      groupMember.addQuery('group.sys_id', incidentGR.business_service.user_group.toString());
-      groupMember.query();
-      while(groupMember.next()){
-        var userID = groupMember.user.sys_id.toString();
-        userGroupMembers.push( userID );
-      }
-    	inc.business_services = [{
-    		sys_id: incidentGR.business_service.toString(),
-    		name: incidentGR.business_service.name.toString(),
-        location: incidentGR.business_service.location.toString(),
-        user_group: incidentGR.business_service.user_group.toString(),
-        users: userGroupMembers,
-        revenue: fakeRevenue[1]
-    	}];
-      userGroupMembers.forEach( function(user){
-        if (inc.all_users.indexOf(user) === -1){
-          inc.all_users.push(user);
-        }
+  var getDependentCIs = function(gr, arr){
+    var userGroupID = gr.user_group.toString();
+    var userGroup = userGroupID !== '' ? getUsers( userGroupID ) : [];
+    arr.push({
+      sys_id: gr.sys_id.toString(),
+      name: gr.name.toString(),
+      location: gr.location.toString(),
+      classification: gr.service_classification.toString(),
+      users: userGroup,
+      revenue: fakeRevenue[Math.floor(Math.random()*5)]
+    });
+    var ciGR = new GlideRecord('cmdb_rel_ci');
+    ciGR.addQuery('type.sys_id', REL_ID );
+    ciGR.addQuery('child.sys_id', gr.sys_id.toString() );
+    ciGR.query();
+    while ( ciGR.next() ) {
+      var parentGR = new GlideRecord('cmdb_ci_service');
+      parentGR.get( ciGR.parent.toString() );
+      var dependentsArray = getDependentCIs(parentGR, []);
+      dependentsArray.forEach(function(ci){
+        arr.push(ci); 
       });
-      var rel = GlideRecord('cmdb_rel_type');
-      rel.addQuery('name', 'Depends on::Used by');
-      rel.query();
-      rel.next();
-      var service_dependency = new GlideRecord('cmdb_rel_ci');
-      service_dependency.addQuery('type.sys_id', rel.sys_id.toString() );
-      service_dependency.addQuery('child.sys_id', incidentGR.business_service.toString() );
-      service_dependency.query();
-      while ( service_dependency.next() ) {
-        // make this DRY!
-        var userGroupMembers = [];
-        var groupMember = new GlideRecord('sys_user_grmember');
-        groupMember.addQuery('group.sys_id', service_dependency.parent.user_group.toString());
-        groupMember.query();
-        while(groupMember.next()){
-          userGroupMembers.push( groupMember.user.sys_id.toString() );
-        }
-        inc.business_services.push({
-          sys_id: service_dependency.parent.sys_id.toString(),
-          name: service_dependency.parent.name.toString(),
-          location: service_dependency.parent.location.toString(),
-          user_group: service_dependency.parent.user_group.toString(),
-          users: userGroupMembers,
-          revenue: fakeRevenue[2]
-        });
-        userGroupMembers.forEach( function(user){
-          if (inc.all_users.indexOf(user) === -1){
-            inc.all_users.push(user);
-          }
-        });
-      }
-      data.incident = inc;
+    }
+    return arr;
+  };
 
-      data.drawerWidget = $sp.getWidget('pe-business-impact-details', {
-        incident: data.incident
-      });
+  var getAlert = function(gr){
+    var CIs = [];
+    var ciGR = new GlideRecord('cmdb_ci_service');
+    if ( ciGR.get( gr.cmdb_ci.toString() ) ) {
+      CIs = getDependentCIs(ciGR, CIs);
+    }
+    return {
+      sys_id: gr.sys_id.toString(),
+      type: gr.type.getDisplayValue(),
+      description: gr.description.toString(),
+      incident: gr.incident.sys_id.toString(),
+      state: gr.state.toString(),
+      cis: CIs
+    };
+  };
 
-		}
-	}
+  var alertGR, alert;
+  if (options.alert) {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    alertGR.get(options.alert);
+    alert = getAlert( alertGR );
+  } else {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    // alertGR.addEncodedQuery('state!=Closed');
+    alertGR.orderByDesc('sys_created_on');
+    alertGR.query();
+    alertGR.next();
+    alert = getAlert( alertGR );
+  }
+  alert.summaryStats = summaryStats;
+  data.alert = alert;
+  data.drawerWidget = $sp.getWidget('pe-business-impact-details', {
+    alert: alert.sys_id
+  });
 
 })();

@@ -1,14 +1,13 @@
-function($rootScope, $scope) {
+function($scope) {
   /* widget controller */
   var c = this;
 
-  c.incident = c.data.incident;
-  // console.log(c.incident);
+  c.alert = c.data.alert;
 
   c.stats = [
-  	{ name: 'Services', value: c.incident.business_services.length },
-  	{ name: '$ Per Hour', value: c.incident.all_revenue },
-  	{ name: 'Users', value: c.incident.all_users.length }
+  	{ name: 'Services', value: c.alert.cis.length },
+  	{ name: '$ Per Hour', value: c.alert.summaryStats.revenue },
+  	{ name: 'Users', value: c.alert.summaryStats.users.length }
   ];
 
 }

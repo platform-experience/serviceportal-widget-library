@@ -1,4 +1,4 @@
-<div ng-if="c.incident.state.value < 6" class="panel-wrapper">
+<div ng-if="c.alert.state !== 'Closed'" class="panel-wrapper">
 	<div class="panel-proper">
 		<div class="panel-header">
 			<span>Remediation Actions</span>
@@ -11,7 +11,7 @@
 			<div>The following actions are recommended:</div>
 			<div class="scroll-wrapper">
 				<div class="scroll">
-					<div ng-repeat="action in c.actions track by $index" class="scroll-item" ng-href="action.href">
+					<div ng-repeat="action in c.actions track by $index" class="scroll-item" ng-click="c.goToAction(action.href)">
 						<div class="scroll-item-header">
 							<div class="action-key">
 								<span class="icon-inline">

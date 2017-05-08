@@ -3,7 +3,7 @@
   /* e.g., data.table = $sp.getValue('table'); */
 
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.incident = options.incident || serverOptions.incident  || 'd71f7935c0a8016700802b64c67c11c6';
+  options.alert = options.alert || serverOptions.alert;
 
   var getState = function(stateValue, table ){
 		var state = new GlideRecord('sys_choice');
@@ -21,17 +21,40 @@
 		return stateObj;
 	};
 
-  if (options.incident){
+	var buildAlert = function(gr){
+		return {
+			sys_id: gr.sys_id.toString(),
+			type: gr.type.getDisplayValue(),
+			description: gr.description.toString(),
+			incident: gr.incident.sys_id.toString(),
+			ci: {
+				name: gr.cmdb_ci.name.toString(),
+				sys_id: gr.cmdb_ci.toString(),
+				number: gr.cmdb_ci.number.toString()
+			}
+		}
+	}
+
+	var alert;
+	var alertGR = new GlideRecord('em_alert_anomaly');
+	if (alertGR.get(options.alert)) {
+		alert = buildAlert( alertGR );
+	} else {
+  	alertGR = new GlideRecord('em_alert_anomaly');
+  	// alertGR.addEncodedQuery('state!=Closed');
+  	alertGR.orderByDesc('sys_created_on');
+  	alertGR.query();
+  	alertGR.next();
+  	alert = buildAlert( alertGR );
+  }
+	data.alert = alert;
+  
+  if(alert.incident){
   	
   	var incidentGR = new GlideRecord('incident');
-		if (incidentGR.get(options.incident)) {
+		if (incidentGR.get(alert.incident)) {
 			var incident = {
 				sys_id: incidentGR.sys_id.toString(),
-				ci: {
-					name: incidentGR.cmdb_ci.name.toString(),
-					sys_id: incidentGR.cmdb_ci.toString(),
-					number: incidentGR.cmdb_ci.number.toString()
-				},
 				problem: {
 					description: incidentGR.problem_id.short_description.toString(),
 					number: incidentGR.problem_id.number.toString(),
@@ -53,14 +76,12 @@
 				otherIncidentGR.addQuery('problem_id', incident.problem.sys_id);
 				otherIncidentGR.query();
 				while(otherIncidentGR.next()){
-					if(otherIncidentGR.sys_id.toString() !== incident.sys_id){
-						otherIncidents.push({
-							sys_id: otherIncidentGR.sys_id.toString(),
-							description: otherIncidentGR.short_description.toString(),
-							number: otherIncidentGR.number.toString(),
-							state: getState(otherIncidentGR.state.toString(), 'incident')
-						});
-					}
+					otherIncidents.push({
+						sys_id: otherIncidentGR.sys_id.toString(),
+						description: otherIncidentGR.short_description.toString(),
+						number: otherIncidentGR.number.toString(),
+						state: getState(otherIncidentGR.state.toString(), 'incident')
+					});
 				}
 				incident.problem.other_incidents = otherIncidents;
 			}

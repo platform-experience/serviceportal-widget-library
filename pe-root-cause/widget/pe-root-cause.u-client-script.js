@@ -2,12 +2,14 @@ function($scope) {
   /* widget controller */
   var c = this;
 
-  c.incident = c.data.incident;
+  c.alert = c.data.alert;
+  c.drawerWidget = c.data.drawerWidget;
+  console.log(c.alert);
 
   c.stats = [
-  	{ name: c.incident.ci.name, icon: '#server' },
-  	{ name: 'Memory Leak', icon: '#computer-ram' },
-  	{ name: 'Cause', icon: "#calendar", detail: c.incident.cause.number }
+  	{ name: c.alert.ci.name, icon: '#server' },
+  	{ name: c.alert.type, icon: '#computer-ram' },
+  	{ name: 'Cause', icon: "#calendar", detail: c.alert.incident.cause.number || "unknown" }
   ];
 
 }

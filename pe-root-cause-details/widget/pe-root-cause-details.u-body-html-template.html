@@ -1,7 +1,7 @@
-<div class="drawer-list-header">
+<div ng-if-start="c.incident.problem.sys_id" class="drawer-list-header">
 	Related Problem
 </div>
-<div class="drawer-list">
+<div ng-if-end class="drawer-list">
 	<div class="drawer-list-item row">
 		<div class="col-xs-8">
 			<div class="event">{{c.incident.problem.description}}</div>
@@ -13,10 +13,10 @@
 	</div>
 </div>
 
-<div class="drawer-list-header">
+<div ng-if-start="c.incident.cause.sys_id" class="drawer-list-header">
 	Caused by Change
 </div>
-<div class="drawer-list">
+<div ng-if-end class="drawer-list">
 	<div class="drawer-list-item row">
 		<div class="col-xs-8">
 			<div class="event">{{c.incident.cause.description}}</div>
@@ -28,10 +28,10 @@
 	</div>
 </div>
 
-<div class="drawer-list-header">
+<div ng-if-start="c.incident.problem.other_incidents.length" class="drawer-list-header">
 	Related Incidents
 </div>
-<div class="drawer-list">
+<div ng-if-end class="drawer-list">
 	<div ng-repeat="item in c.incident.problem.other_incidents" class="drawer-list-item row">
 		<div class="col-xs-8">
 			<div class="event">{{item.description}}</div>

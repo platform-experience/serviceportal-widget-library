@@ -1,8 +1,8 @@
-function($scope) {
+function($scope, $window) {
   /* widget controller */
   var c = this;
 
-  c.incident = c.data.incident;
+  c.alert = c.data.alert;
 
   c.actions = [
   	{
@@ -30,5 +30,9 @@ function($scope) {
   		href: 'https://www.example.com'
   	}
   ];
+
+  c.goToAction = function( href ){
+    $window.location.href = href;
+  }
 
 }

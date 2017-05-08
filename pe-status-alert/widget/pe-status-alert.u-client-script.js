@@ -3,33 +3,13 @@ function($scope, $interval, $filter) {
   var c = this;
   var d = new Date();
 
-  c.inc = $scope.data.inc;
-  c.probabilityGauge = $scope.data.probabilityGauge;
+  c.alert = c.data.alert;
+  c.probabilityGauge = c.data.probabilityGauge;
 
-  if (c.inc.opened_at) {
-  	c.inc.opened_at_date = new Date(c.inc.opened_at);
-  	c.inc.opened_at_string = $filter('date')(c.inc.opened_at_date, 'short');
+  if (c.alert.created_on) {
+  	c.alert.created_on_date = new Date(c.alert.created_on);
+  	c.alert.created_on_string = $filter('date')(c.alert.created_on_date, 'short');
   };
-  if (c.inc.closed_at) {
-  	c.inc.closed_at_date = new Date(c.inc.closed_at);
-  	c.inc.closed_at_string = $filter('date')(c.inc.closed_at_date, 'short');
-  };
-  if (c.inc.resolved_at) {
-  	c.inc.resolved_at_date = new Date(c.inc.resolved_at);
-  	c.inc.resolved_at_string = $filter('date')(c.inc.resolved_at_date, 'short');
-  };
-
-  // console.log(c.inc);
-
-  // fake close for demo/testing
-  c.closeIncident = function(){
-  	c.inc.closed_at = new Date();
-  	c.inc.closed_at_string = $filter('date')(c.inc.closed_at, 'short');
-  	c.inc.state = {
-  		value: 7,
-  		label: 'Closed'
-  	}
-  }
 
   // get minutes to possible outage, else default to count down from 30
   var default_min_to_eta = 30;

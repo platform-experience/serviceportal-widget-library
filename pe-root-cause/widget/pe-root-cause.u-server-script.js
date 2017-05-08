@@ -3,7 +3,7 @@
   /* e.g., data.table = $sp.getValue('table'); */
 
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.incident = options.incident || serverOptions.incident || 'd71f7935c0a8016700802b64c67c11c6';
+  options.alert = options.alert || serverOptions.alert;
   options.titleIconClasses = options.titleIconClasses || serverOptions.titleIconClasses || 'fa fa-bolt';
 
   var getState = function(stateValue, table ){
@@ -21,37 +21,50 @@
 		return stateObj;
 	};
 
-  if (options.incident){
-  	
-  	var incidentGR = new GlideRecord('incident');
-		if (incidentGR.get(options.incident)) {
-			var incident = {
-				sys_id: incidentGR.sys_id.toString(),
-				state: getState(incidentGR.state.toString(), 'incident'),
-				ci: {
-					name: incidentGR.cmdb_ci.name.toString(),
-					sys_id: incidentGR.cmdb_ci.toString(),
-				},
+	var buildAlert = function(gr){
+		return {
+			sys_id: gr.sys_id.toString(),
+			type: gr.type.getDisplayValue(),
+			description: gr.description.toString(),
+			state: gr.state.toString(),
+			incident: {
+				sys_id: gr.incident.sys_id.toString(),
+				state: getState(gr.incident.state.toString(), 'incident'),
 				problem: {
-					name: incidentGR.problem_id.name.toString(),
-					sys_id: incidentGR.problem_id.toString(),
+					name: gr.incident.problem_id.name.toString(),
+					sys_id: gr.incident.problem_id.toString(),
 					other_incidents: []
 				},
 				cause: {
-					number: incidentGR.caused_by.number.toString(),
-					description: incidentGR.short_description.toString(),
-					sys_id: incidentGR.caused_by.toString()
+					number: gr.incident.caused_by.number.toString(),
+					description: gr.incident.caused_by.short_description.toString(),
+					sys_id: gr.incident.caused_by.toString()
 				}
-			};
-
-			data.incident = incident;
-
-			data.drawerWidget = $sp.getWidget('pe-root-cause-details', {
-		    incident: incident.sys_id
-		  });
-
+			},
+			ci: {
+				name: gr.cmdb_ci.name.toString(),
+				sys_id: gr.cmdb_ci.toString(),
+				number: gr.cmdb_ci.number.toString()
+			}
 		}
-
 	}
 
+	var alert;
+	var alertGR = new GlideRecord('em_alert_anomaly');
+	if (alertGR.get(options.alert)) {
+		alert = buildAlert( alertGR );
+	} else {
+  	alertGR = new GlideRecord('em_alert_anomaly');
+  	// alertGR.addEncodedQuery('state!=Closed');
+  	alertGR.orderByDesc('sys_created_on');
+  	alertGR.query();
+  	alertGR.next();
+  	alert = buildAlert( alertGR );
+  }
+
+	data.alert = alert;
+	data.drawerWidget = $sp.getWidget('pe-root-cause-details', {
+	  alert: alert.sys_id
+	});
+	
 })();
