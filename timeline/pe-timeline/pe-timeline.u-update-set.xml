@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-14 17:37:14">
+<unload unload_date="2017-05-31 22:06:34">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,23 +10,227 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE Update Timeline</name>
+<name>PE Timeline</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>fab047f4dba5b20062e479daae96195d</remote_sys_id>
+<remote_sys_id>e61a294edb873200b793f2b6ae9619f7</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-14 17:37:13</sys_created_on>
-<sys_id>a0614ff4dba5b20062e479daae96191a</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>e20be58edb873200b793f2b6ae9619f8</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-14 17:37:13</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
 </sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_a08cfd5adb15b600b793f2b6ae9619a7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-events.service&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  function eventsService() {
+    var service = {
+      getInitialEvents: getInitialEvents
+    };
+    return service;
+
+    function getInitialEvents() {
+      var events = [{
+          description: 'Automated Event Correlation',
+          leftDescription: '14:22',
+          icon: 'fa fa-bolt fa-lg',
+          color: '#dbcb33',
+          stats: [{
+              name: 'Events',
+              value: 20
+            },
+            {
+              name: 'Sources',
+              value: 5
+            }
+          ]
+        },
+        {
+          description: 'Automated Service Correlation',
+          leftDescription: '14:22',
+          icon: 'fa fa-bolt fa-lg',
+          color: '#d86431',
+          stats: [{
+              name: 'In Total',
+              value: 2
+            },
+            {
+              name: 'Tier 1 Service',
+              value: 1,
+              iconSuffix: 'fa fa-shopping-cart fa-lg'
+            }
+          ]
+        },
+        {
+          description: 'Automated Risk Assessment',
+          leftDescription: '14:23',
+          icon: 'fa fa-bolt fa-lg',
+          color: '#903f5c',
+          stats: [{
+              value: '1.2M',
+              icon: 'fa fa-usd fa-lg'
+            },
+            {
+              value: '42K',
+              icon: 'fa fa-users fa-lg'
+            },
+            {
+              value: '3',
+              icon: 'fa fa-globe fa-lg'
+            }
+          ]
+        }
+      ];
+      return events;
+    }
+  }
+
+  angular
+    .module('pe-timeline')
+    .service('eventsService', eventsService);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-06 18:12:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a08cfd5adb15b600b793f2b6ae9619a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-events.service&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_a08cfd5adb15b600b793f2b6ae9619a7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-07 15:42:52&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>260b298edb873200b793f2b6ae9619c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
+<table/>
+<target_name>pe-events.service</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_0915a266db51320062e479daae96190f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-events-module</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-07 15:47:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>0915a266db51320062e479daae96190f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-events-module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-events.module">79942e26db51320062e479daae9619e6</sys_ui_script><sys_update_name>sp_js_include_0915a266db51320062e479daae96190f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-07 15:47:36</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>2a0b298edb873200b793f2b6ae9619c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
+<table/>
+<target_name>pe-events-module</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_1721d616db55b600b793f2b6ae961917</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="pe-timeline">211eca52db55b600b793f2b6ae961973</sp_dependency><sp_js_include display_value="pe-events-service">862e399adb15b600b793f2b6ae961968</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-06 19:41:48</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1721d616db55b600b793f2b6ae961917</sys_id><sys_mod_count>1</sys_mod_count><sys_name>pe-timeline.service.pe-events-service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_1721d616db55b600b793f2b6ae961917</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-07 15:47:52</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>2e0b298edb873200b793f2b6ae9619bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
+<table/>
+<target_name>pe-timeline.service.pe-events-service</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_79942e26db51320062e479daae9619e6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-events.module&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  angular.module('pe-timeline', []);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-07 15:45:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;79942e26db51320062e479daae9619e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-events.module&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_79942e26db51320062e479daae9619e6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-07 15:45:18&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>620b298edb873200b793f2b6ae9619c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
+<table/>
+<target_name>pe-events.module</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_211eca52db55b600b793f2b6ae961973</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>pe-timeline</module><name>pe-timeline</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-06 19:28:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>211eca52db55b600b793f2b6ae961973</sys_id><sys_mod_count>17</sys_mod_count><sys_name>pe-timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_211eca52db55b600b793f2b6ae961973</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-07 16:13:05</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>660b298edb873200b793f2b6ae9619c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
+<table/>
+<target_name>pe-timeline</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_c96eba16db95b600b793f2b6ae961908</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="pe-timeline">211eca52db55b600b793f2b6ae961973</sp_dependency><sp_widget display_value="PE Timeline">eab344e01319ba007e94fc5ed144b041</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sushruth.chandrashekar@snc</sys_created_by><sys_created_on>2017-03-06 22:59:20</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c96eba16db95b600b793f2b6ae961908</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-timeline-service.PE Timeline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_c96eba16db95b600b793f2b6ae961908</sys_update_name><sys_updated_by>sushruth.chandrashekar@snc</sys_updated_by><sys_updated_on>2017-03-06 22:59:20</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>a20b298edb873200b793f2b6ae9619c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
+<table/>
+<target_name>pe-timeline-service.PE Timeline</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
 <sys_update_xml action="INSERT_OR_UPDATE">
 <action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
@@ -364,14 +568,14 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Update Timeline">a0614ff4dba5b20062e479daae96191a</remote_update_set>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-14 17:37:13</sys_created_on>
-<sys_id>24614ff4dba5b20062e479daae96191a</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>ae0b298edb873200b793f2b6ae9619c0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-14 17:37:13</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
 <table/>
 <target_name>PE Timeline</target_name>
 <type>Widget</type>
@@ -384,23 +588,19 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_ui_script_79942e26db51320062e479daae9619e6</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-events.module&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  'use strict';
-
-  angular.module('pe-timeline', []);
-})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-07 15:45:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;79942e26db51320062e479daae9619e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-events.module&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_79942e26db51320062e479daae9619e6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-07 15:45:18&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Update Timeline">a0614ff4dba5b20062e479daae96191a</remote_update_set>
+<name>sp_js_include_862e399adb15b600b793f2b6ae961968</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-events-service</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-06 18:21:16</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>862e399adb15b600b793f2b6ae961968</sys_id><sys_mod_count>1</sys_mod_count><sys_name>pe-events-service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-events.service">a08cfd5adb15b600b793f2b6ae9619a7</sys_ui_script><sys_update_name>sp_js_include_862e399adb15b600b793f2b6ae961968</sys_update_name><sys_updated_by>arthur.oliveira@snc</sys_updated_by><sys_updated_on>2017-03-07 00:09:51</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-14 17:37:13</sys_created_on>
-<sys_id>64614ff4dba5b20062e479daae96191a</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>ea0b298edb873200b793f2b6ae9619c0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-14 17:37:13</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
 <table/>
-<target_name>pe-events.module</target_name>
-<type>UI Script</type>
+<target_name>pe-events-service</target_name>
+<type>JS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -410,87 +610,19 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_ui_script_a08cfd5adb15b600b793f2b6ae9619a7</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-events.service&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  'use strict';
-
-  function eventsService() {
-    var service = {
-      getInitialEvents: getInitialEvents
-    };
-    return service;
-
-    function getInitialEvents() {
-      var events = [{
-          description: 'Automated Event Correlation',
-          leftDescription: '14:22',
-          icon: 'fa fa-bolt fa-lg',
-          color: '#dbcb33',
-          stats: [{
-              name: 'Events',
-              value: 20
-            },
-            {
-              name: 'Sources',
-              value: 5
-            }
-          ]
-        },
-        {
-          description: 'Automated Service Correlation',
-          leftDescription: '14:22',
-          icon: 'fa fa-bolt fa-lg',
-          color: '#d86431',
-          stats: [{
-              name: 'In Total',
-              value: 2
-            },
-            {
-              name: 'Tier 1 Service',
-              value: 1,
-              iconSuffix: 'fa fa-shopping-cart fa-lg'
-            }
-          ]
-        },
-        {
-          description: 'Automated Risk Assessment',
-          leftDescription: '14:23',
-          icon: 'fa fa-bolt fa-lg',
-          color: '#903f5c',
-          stats: [{
-              value: '1.2M',
-              icon: 'fa fa-usd fa-lg'
-            },
-            {
-              value: '42K',
-              icon: 'fa fa-users fa-lg'
-            },
-            {
-              value: '3',
-              icon: 'fa fa-globe fa-lg'
-            }
-          ]
-        }
-      ];
-      return events;
-    }
-  }
-
-  angular
-    .module('pe-timeline')
-    .service('eventsService', eventsService);
-})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-06 18:12:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a08cfd5adb15b600b793f2b6ae9619a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-events.service&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_a08cfd5adb15b600b793f2b6ae9619a7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-07 15:42:52&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Update Timeline">a0614ff4dba5b20062e479daae96191a</remote_update_set>
+<name>m2m_sp_dependency_js_include_6a25a266db51320062e479daae96195f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="pe-timeline">211eca52db55b600b793f2b6ae961973</sp_dependency><sp_js_include display_value="pe-events-module">0915a266db51320062e479daae96190f</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-07 15:47:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6a25a266db51320062e479daae96195f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-timeline.service.pe-events-module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_6a25a266db51320062e479daae96195f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-07 15:47:36</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Timeline">e20be58edb873200b793f2b6ae9619f8</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-14 17:37:13</sys_created_on>
-<sys_id>a4614ff4dba5b20062e479daae96191a</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-05-31 22:06:34</sys_created_on>
+<sys_id>ee0b298edb873200b793f2b6ae9619bf</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-14 17:37:13</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-05-31 22:06:34</sys_updated_on>
 <table/>
-<target_name>pe-events.service</target_name>
-<type>UI Script</type>
+<target_name>pe-timeline.service.pe-events-module</target_name>
+<type>Dependency JS Includes</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
