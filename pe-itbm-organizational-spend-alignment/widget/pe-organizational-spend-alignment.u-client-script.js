@@ -1,9 +1,9 @@
-<div class='osa-title'>{{::osa.data.frameTitle}}</div>
-<hr class='osa-hr' />
-<div class='osa-spacer'></div>
-<div class='osa-frame'>
-    <div id='chtSpendLimit'></div>
-</div>otOpts.series = osa.data.series;
+function OrgSpendAlignmentController() {
+    /* widget controller */
+    var osa = this;
+
+    var plotOpts = osa.data.chartOptions;
+    plotOpts.series = osa.data.series;
     plotOpts.plotOptions.column.dataLabels.formatter = function() { return "$" + this.y + "M"; };
 
     var chtSpnLmt = new Highcharts.Chart('chtSpendLimit', plotOpts, function(chtObj) {
