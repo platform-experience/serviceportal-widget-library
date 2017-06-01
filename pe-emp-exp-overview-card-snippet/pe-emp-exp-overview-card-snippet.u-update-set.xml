@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-11 02:42:32">
+<unload unload_date="2017-06-01 23:29:32">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>PE Overview Card Snippet</name>
+<name>PE Overview Card</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>3237d0f31319b200d15e3d7ed144b083</remote_sys_id>
+<remote_sys_id>cd1daf4f13323200890b3092e144b01b</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-11 02:42:32</sys_created_on>
-<sys_id>e5d790371319b200d15e3d7ed144b0e5</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-01 23:29:32</sys_created_on>
+<sys_id>27978fda13c37600890b3092e144b056</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-11 02:42:32</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-01 23:29:32</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,22 +32,113 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
+<name>sys_attachment_doc_f8d00f1a13c37600890b3092e144b039</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_attachment_doc"><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="b8d00f1a13c37600890b3092e144b039">b8d00f1a13c37600890b3092e144b039</sys_attachment><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-01 22:59:51</sys_created_on><sys_id>f8d00f1a13c37600890b3092e144b039</sys_id></sys_attachment_doc></record_update>]]></payload>
+<remote_update_set display_value="PE Overview Card">27978fda13c37600890b3092e144b056</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-01 23:29:32</sys_created_on>
+<sys_id>27978fda13c37600890b3092e144b057</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-01 23:29:32</sys_updated_on>
+<table/>
+<target_name>f8d00f1a13c37600890b3092e144b039</target_name>
+<type>Attachment Document</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>db_image_51c0cb1a13c37600890b3092e144b0ab</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category/><format>png</format><height>26</height><image/><name>dots.png</name><size_bytes>1691</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-01 22:59:46</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>51c0cb1a13c37600890b3092e144b0ab</sys_id><sys_mod_count>2</sys_mod_count><sys_name>dots.png</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>true</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>db_image_51c0cb1a13c37600890b3092e144b0ab</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-01 23:01:38</sys_updated_on><thumbnail/><width>144</width></db_image><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#bdc0c4</average_image_color><compressed>true</compressed><content_type>image/png</content_type><file_name>image</file_name><image_height>26</image_height><image_width>144</image_width><size_bytes>1691</size_bytes><size_compressed>1714</size_compressed><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-01 22:59:51</sys_created_on><sys_id>b8d00f1a13c37600890b3092e144b039</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-01 22:59:51</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>51c0cb1a13c37600890b3092e144b0ab</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="b8d00f1a13c37600890b3092e144b039">b8d00f1a13c37600890b3092e144b039</sys_attachment><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-01 22:59:51</sys_created_on><sys_id>f8d00f1a13c37600890b3092e144b039</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2272</length><position>1</position><sys_attachment display_value="image" sys_id="b8d00f1a13c37600890b3092e144b039">b8d00f1a13c37600890b3092e144b039</sys_attachment><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-01 22:59:51</sys_created_on><sys_id>7cd00f1a13c37600890b3092e144b039</sys_id></sys_attachment_doc></record_update>]]></payload>
+<remote_update_set display_value="PE Overview Card">27978fda13c37600890b3092e144b056</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-01 23:29:32</sys_created_on>
+<sys_id>2b978fda13c37600890b3092e144b056</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-01 23:29:32</sys_updated_on>
+<table/>
+<target_name>dots.png</target_name>
+<type>Images</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_attachment_doc_7cd00f1a13c37600890b3092e144b039</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_attachment_doc"><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2272</length><position>1</position><sys_attachment display_value="image" sys_id="b8d00f1a13c37600890b3092e144b039">b8d00f1a13c37600890b3092e144b039</sys_attachment><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-01 22:59:51</sys_created_on><sys_id>7cd00f1a13c37600890b3092e144b039</sys_id></sys_attachment_doc></record_update>]]></payload>
+<remote_update_set display_value="PE Overview Card">27978fda13c37600890b3092e144b056</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-01 23:29:32</sys_created_on>
+<sys_id>63978fda13c37600890b3092e144b057</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-01 23:29:32</sys_updated_on>
+<table/>
+<target_name>7cd00f1a13c37600890b3092e144b039</target_name>
+<type>Attachment Document</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_attachment_b8d00f1a13c37600890b3092e144b039</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_attachment"><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#bdc0c4</average_image_color><compressed>true</compressed><content_type>image/png</content_type><file_name>image</file_name><image_height>26</image_height><image_width>144</image_width><size_bytes>1691</size_bytes><size_compressed>1714</size_compressed><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-01 22:59:51</sys_created_on><sys_id>b8d00f1a13c37600890b3092e144b039</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-01 22:59:51</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>51c0cb1a13c37600890b3092e144b0ab</table_sys_id></sys_attachment></record_update>]]></payload>
+<remote_update_set display_value="PE Overview Card">27978fda13c37600890b3092e144b056</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-01 23:29:32</sys_created_on>
+<sys_id>af978fda13c37600890b3092e144b056</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-01 23:29:32</sys_updated_on>
+<table>ZZ_YYdb_image</table>
+<target_name>image</target_name>
+<type>Attachment</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
 <name>sp_widget_0976bee71315b200d15e3d7ed144b05b</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function OverviewCardSnippetController(spUtil) {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function OverviewCardController(spUtil) {
   var c = this;
 
-  spUtil.get('pe-people-info', {
-    user_sys_id: c.data.user_sys_id,
-    show_job_title: 'false',
-    show_call_and_chat: 'false',
-    show_only_picture: 'false',
-    show_text_below_picture: 'true'
-  }).then(function (response) {
-    c.data.embedded_widget_1 = response;
-  });
+  c.$onInit = function() {
+    activateWidget();
+  };
 
-
+  function activateWidget() {
+    spUtil.get('pe-people-info', {
+      user_sys_id: c.data.user_sys_id,
+      show_job_title: false,
+      show_call_and_chat: false,
+      show_only_picture: false,
+      show_text_below_picture: true
+    }).then(function(response) {
+      c.data.peopleInfoWidget = response;
+    });
+  }
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.top-section {
   padding: 30px 40px;
   display: flex;
@@ -66,7 +157,6 @@
   }
   .icon-div {
     width: 50%;
-    //  display: flex;
     justify-content: center;
     text-align: center;
     p {
@@ -87,48 +177,45 @@
     stroke: #268cf8;
     fill: #268cf8;
   }
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-overview-card-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Overview Card Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-overview-card-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Overview Card Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   data.text = 'Starts in ';
   data.days = '2 days';
   data.user_sys_id = gs.getUserID();
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-10 19:41:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0976bee71315b200d15e3d7ed144b05b&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Overview Card Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0976bee71315b200d15e3d7ed144b05b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-11 02:41:22&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
-    &lt;symbol viewBox="0 0 576.3 576.2" style="enable-background:new 0 0 576.3 576.2;" xml:space="preserve" id="icon-timer" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
-        &lt;g&gt;
-            &lt;path d="M282.3,41.3c-60.5,0.8-118.2,24-166.3,70.5c-5.7,5.5-11.9,9.2-20,7.8c-7.9-1.4-13.4-5.8-15.8-13.5
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-10 19:41:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0976bee71315b200d15e3d7ed144b05b&lt;/sys_id&gt;&lt;sys_mod_count&gt;44&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Overview Card Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0976bee71315b200d15e3d7ed144b05b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-01 23:28:34&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+  &lt;symbol viewBox="0 0 576.3 576.2" style="enable-background:new 0 0 576.3 576.2;" xml:space="preserve" id="icon-timer" stroke="none"
+    stroke-width="1" fill-rule="evenodd"&gt;
+    &lt;g&gt;
+      &lt;path d="M282.3,41.3c-60.5,0.8-118.2,24-166.3,70.5c-5.7,5.5-11.9,9.2-20,7.8c-7.9-1.4-13.4-5.8-15.8-13.5
         c-2.5-8-0.9-15.2,5.1-21.2c17.2-17.4,36.2-32.5,57.3-44.9C197.3,7.6,256.6-5.1,319.9,1.9c125,13.8,227.2,108,251.1,230.9
         c30.3,155.8-71.1,306.6-227.2,337.9C208.3,597.9,69.8,522.1,20.3,393C-10.3,313.2-6,234.6,31.2,157.8c5.6-11.6,17.7-16,28.3-10.7
         c10.3,5.1,14.1,17.4,8.5,28.8c-13,26.2-21.7,53.6-25,82.7c-7.2,63.9,7.7,122.2,45.6,174c38.6,52.8,90.1,86.3,154.8,98
         c136.6,24.6,256.9-64.7,284.8-185.7C553,236.8,505.6,127,411.4,73.4C373.4,51.7,332.3,41.6,282.3,41.3z" /&gt;
-            &lt;path d="M310.3,211c0,25,0.1,50-0.1,75c0,3.2,1,5.1,3.5,7.1c30.2,23.8,60.4,47.7,90.5,71.6c11.3,9,12.4,23.1,2.5,32.4
+      &lt;path d="M310.3,211c0,25,0.1,50-0.1,75c0,3.2,1,5.1,3.5,7.1c30.2,23.8,60.4,47.7,90.5,71.6c11.3,9,12.4,23.1,2.5,32.4
         c-7.1,6.7-18.3,7.4-25.6,1.6c-34-27.1-67.9-54.2-102-81.2c-6.6-5.2-9.5-11.6-9.5-19.8c0.1-53.3,0-106.6,0.1-159.9
         c0-15.8,11.9-25.7,26-21.8c9,2.4,14.7,10.1,14.7,20.1C310.4,161.1,310.3,186.1,310.3,211z" /&gt;
-        &lt;/g&gt;
-    &lt;/symbol&gt;
+    &lt;/g&gt;
+  &lt;/symbol&gt;
 &lt;/svg&gt;
-
 &lt;div class="top-section"&gt;
   &lt;div class="avatar-div"&gt;
-    &lt;sp-widget widget="c.data.embedded_widget_1"&gt;&lt;/sp-widget&gt;
+    &lt;sp-widget widget="c.data.peopleInfoWidget"&gt;&lt;/sp-widget&gt;
   &lt;/div&gt;
-
-  &lt;div class="icon-div "&gt;
-    &lt;svg class="svg-icon " width="50 " height="50 "&gt;
+  &lt;div class="icon-div"&gt;
+    &lt;svg class="svg-icon" width="50" height="50"&gt;
       &lt;use xlink:href='#icon-timer'&gt;&lt;/use&gt;
     &lt;/svg&gt;
-    &lt;p&gt;{{c.data.text}}&lt;span class="selected-number "&gt;{{c.data.days}}&lt;/span&gt; &lt;/p&gt;
+    &lt;p&gt;{{::c.data.text}}&lt;span class="selected-number"&gt;{{::c.data.days}}&lt;/span&gt;&lt;/p&gt;
   &lt;/div&gt;
-  &lt;img class="dots-img " src="dots.png "/&gt;
+  &lt;img class="dots-img" src="dots.png" /&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Overview Card Snippet">e5d790371319b200d15e3d7ed144b0e5</remote_update_set>
+<remote_update_set display_value="PE Overview Card">27978fda13c37600890b3092e144b056</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-11 02:42:32</sys_created_on>
-<sys_id>a9d790371319b200d15e3d7ed144b0e5</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-01 23:29:32</sys_created_on>
+<sys_id>eb978fda13c37600890b3092e144b056</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-11 02:42:32</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-01 23:29:32</sys_updated_on>
 <table/>
 <target_name>PE Overview Card Snippet</target_name>
 <type>Widget</type>
