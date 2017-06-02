@@ -1,66 +1,54 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" id="icon-signature" stroke="none" stroke-width="1" fill-rule="evenodd">
-        <g>
-            <path d="M14.4,85.5h16.4v5.8h15.3l5.8-5.8h27c1.1,0,2-0.9,2-2v-27l6.6-6.6L81,43.3V10.6c0-1.1-0.9-2-2-2H14.4c-1.1,0-2,0.9-2,2   v72.9C12.4,84.6,13.3,85.5,14.4,85.5z M76.9,81.5H56l20.9-20.9V81.5z M81.8,49.9L44.4,87.3h-9.5v-9.5l37.4-37.4L81.8,49.9z    M16.5,12.7h60.5v26.5l-4.6-4.6L61.9,45H26.1v4.1h31.7L45.2,61.7H26.1v4.1h15.1L30.8,76.1v5.4H16.5V12.7z"></path>
-            <rect x="26.1" y="28.4" width="41.3" height="4.1"></rect>
-        </g>
-    </symbol>
-    <symbol x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" id="icon-close" stroke="none" stroke-width="1" fill-rule="evenodd">
-        <g>
-            <polygon points="83.2,12.5 49.7,46.1 16.1,12.5 11.9,16.8 45.4,50.3 11.9,83.9 16.1,88.1 49.7,54.6 83.2,88.1 87.5,83.9 53.9,50.3    87.5,16.8  "></polygon>
-        </g>
-    </symbol>
-
+  <symbol x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" id="icon-signature"
+    stroke="none" stroke-width="1" fill-rule="evenodd">
+    <g>
+      <path d="M14.4,85.5h16.4v5.8h15.3l5.8-5.8h27c1.1,0,2-0.9,2-2v-27l6.6-6.6L81,43.3V10.6c0-1.1-0.9-2-2-2H14.4c-1.1,0-2,0.9-2,2   v72.9C12.4,84.6,13.3,85.5,14.4,85.5z M76.9,81.5H56l20.9-20.9V81.5z M81.8,49.9L44.4,87.3h-9.5v-9.5l37.4-37.4L81.8,49.9z    M16.5,12.7h60.5v26.5l-4.6-4.6L61.9,45H26.1v4.1h31.7L45.2,61.7H26.1v4.1h15.1L30.8,76.1v5.4H16.5V12.7z"></path>
+      <rect x="26.1" y="28.4" width="41.3" height="4.1"></rect>
+    </g>
+  </symbol>
+  <symbol x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" id="icon-close"
+    stroke="none" stroke-width="1" fill-rule="evenodd">
+    <g>
+      <polygon points="83.2,12.5 49.7,46.1 16.1,12.5 11.9,16.8 45.4,50.3 11.9,83.9 16.1,88.1 49.7,54.6 83.2,88.1 87.5,83.9 53.9,50.3 87.5,16.8"></polygon>
+    </g>
+  </symbol>
 </svg>
 <div>
-    <div class="signature-div">
-
-        <div class="encloser">
-            <p class="title">{{c.title}}</p>
-            <p class="user">{{c.documentUser}} | {{c.sub_title}}</p>
-            <svg class="svg-icon-close" ng-click="c.closeSignature()">
-                <use xlink:href='#icon-close'></use>
-            </svg>
-
-            <svg class="svg-icon-sign">
-                <use xlink:href='#icon-signature'></use>
-            </svg>
-
-            <div class="date-sign">
-                <div class="flex-it">
-                    <p class="date">
-                        {{c.yestedaymonth}} {{c.yesterday}}
-                        <!-- October 21 -->
-                    </p>
-                    <div class="sign-donut">
-                        <div class="sign-section">
-                            <div class="card">
-
-
-                                <div class="donut-chart chart">
-                                    <div class="slice" ng-style="c.getCompleteStyleOne('complete')"></div>
-                                    <div class="slice" ng-style="c.getCompleteStyleTwo(360)"></div>
-                                    <div class="chart-center chart-center-complete">
-                                        <span class="complete">
-
-                                               </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <p class="percent">Signature Complete</p>
-                        </div>
-                    </div>
+  <div class="signature-div">
+    <div class="encloser">
+      <p class="title">{{::c.title}}</p>
+      <p class="user">{{::c.documentUser}} | {{::c.subTitle}}</p>
+      <svg class="svg-icon-close" ng-click="c.closeSignature()">
+        <use xlink:href='#icon-close'></use>
+      </svg>
+      <svg class="svg-icon-sign">
+        <use xlink:href='#icon-signature'></use>
+      </svg>
+      <div class="date-sign">
+        <div class="flex-it">
+          <p class="date">
+            {{c.month}} {{c.yesterday}}
+          </p>
+          <div class="sign-donut">
+            <div class="sign-section">
+              <div class="card">
+                <div class="donut-chart chart">
+                  <div class="slice" ng-style="c.getCompleteStyleOne('complete')"></div>
+                  <div class="slice" ng-style="c.getCompleteStyleTwo(360)"></div>
+                  <div class="chart-center chart-center-complete">
+                    <span class="complete"></span>
+                  </div>
                 </div>
-                <!-- <div ng-show="!signDone">
-                    <p class="msg">Please sign below</p>
-                </div> -->
-                <div class="triangle-down"></div>
+              </div>
+              <p class="percent">Signature Complete</p>
             </div>
-            <div class="">
-                <sp-widget widget="c.data.embedded_widget"></sp-widget>
-            </div>
+          </div>
         </div>
-
+        <div class="triangle-down"></div>
+      </div>
+      <div>
+        <sp-widget widget="c.data.scratchPadWidget"></sp-widget>
+      </div>
     </div>
+  </div>
 </div>
