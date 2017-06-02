@@ -1,16 +1,14 @@
-(function () {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+(function() {
   data.user_sys_id = gs.getUserID();
   data.title = input.title || options.title;
-  data.text = "Starts in";
-  data.days = "2 days";
+  data.text = 'Starts in';
+  data.days = '2 days';
 
-  //data.status = "complete";
-  data.status = "in_progress";
-  data.state = "In Progress";
+  // data.status = 'complete';
+  data.status = 'in-progress';
+  data.state = 'In Progress';
 
-  data.percent = "27";
+  data.percent = '27';
   data.depts = [{
     "name": "IT",
     "color": "rgb(148, 189, 105)"
@@ -24,5 +22,4 @@
     "name": "EMP",
     "color": "rgb(184, 124, 181)"
   }];
-
 })();

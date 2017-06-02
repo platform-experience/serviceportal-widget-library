@@ -17,62 +17,52 @@
   <symbol x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" id="icon-close"
     stroke="none" stroke-width="1" fill-rule="evenodd">
     <g>
-      <polygon points="83.2,12.5 49.7,46.1 16.1,12.5 11.9,16.8 45.4,50.3 11.9,83.9 16.1,88.1 49.7,54.6 83.2,88.1 87.5,83.9 53.9,50.3    87.5,16.8  "></polygon>
+      <polygon points="83.2,12.5 49.7,46.1 16.1,12.5 11.9,16.8 45.4,50.3 11.9,83.9 16.1,88.1 49.7,54.6 83.2,88.1 87.5,83.9 53.9,50.3 87.5,16.8"></polygon>
     </g>
   </symbol>
 </svg>
-
 <div class="status-card" ui-sref="others({})">
   <div class="header">
-    <p class="title">{{data.title}}</p>
+    <p class="title">{{::data.title}}</p>
   </div>
   <div class="details">
     <div class="each-div">
-
-      <sp-widget widget="c.data.embedded_widget_1"></sp-widget>
+      <sp-widget widget="c.data.peopleInfoWidget"></sp-widget>
       <div class="bottom-section">
-        <div class="flex-it" ng-show="data.status === 'in_progress'">
+        <div class="flex-it" ng-show="data.status === 'in-progress'">
           <svg class="svg-icon">
             <use xlink:href="#icon-timer"></use>
           </svg>
-
           <p class="text">{{data.text}}<span class="days">{{data.days}}</span></p>
         </div>
       </div>
-
-
     </div>
     <div class="each-div">
       <div class="top-section">
         <div class="card">
-          <div class="chart" ng-show="data.status == 'in_progress'">
-            <sp-widget widget="c.data.embedded_widget_donut_chart"></sp-widget>
+          <div class="chart" ng-show="data.status === 'in-progress'">
+            <sp-widget widget="c.data.donutChartWidget"></sp-widget>
           </div>
-          <div class="donut-chart chart" ng-show="data.status == 'complete'">
-
+          <div class="donut-chart chart" ng-show="data.status === 'complete'">
             <div class="chart-center chart-center-complete">
               <span class="complete"></span>
             </div>
           </div>
-
         </div>
         <p class="percent"><span>{{data.percent}}%</span>Complete</p>
       </div>
-      <div class="bottom-section" ng-show="data.status == 'in_progress'">
-
-        <span ng-repeat="dept in data.depts" class="badge" ng-style="{'background':dept.color}">{{dept.name}}</span>
+      <div class="bottom-section" ng-show="data.status === 'in-progress'">
+        <span ng-repeat="dept in data.depts" class="badge" ng-style="{'background': dept.color}">{{dept.name}}</span>
         <p class="state">{{data.state}}</p>
-
       </div>
-
     </div>
   </div>
-  <div ng-show="data.status == 'complete'" class="buttons">
+  <div ng-show="data.status === 'complete'" class="buttons">
     <div class="each-button orange" ui-sref="others({})">
-      <p> View</p>
+      <p>View</p>
     </div>
     <div class="each-button green">
-      <p> Archive</p>
+      <p>Archive</p>
     </div>
   </div>
 </div>
