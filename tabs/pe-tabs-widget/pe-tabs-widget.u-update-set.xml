@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-16 00:50:44">
+<unload unload_date="2017-06-03 16:58:36">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>Dynamic Tabs Widget</name>
+<name>PE Dynamic Tabs</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>8fcd615913a17600d15e3d7ed144b069</remote_sys_id>
+<remote_sys_id>9b4037ba1303b600d0cf3192e144b096</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 00:50:44</sys_created_on>
-<sys_id>a43ea15913a17600d15e3d7ed144b072</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>505188031383b600890b3092e144b05d</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 00:50:44</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,223 +33,395 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_f8a8555d13617600d15e3d7ed144b087</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function DynamicTabsWidget($scope) {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function DynamicTabsController(tabService) {
   var c = this;
-  c.selectedTab = "expired";
-  c.tabs = {
-    first_tab: {
-      name: "Reclaimed vms",
-      badge_number: 15,
-      badge_color: "bg-red"
 
-    },
-    second_tab: {
-      name: "Expiring soon",
-      badge_number: 5,
-      badge_color: "bg-orange"
-
-    },
-
-    third_tab: {
-      name: "new vms",
-      badge_number: 10,
-      badge_color: "bg-green"
-    }
+  c.$onInit = function() {
+    c.selectedTab = 'expired';
+    c.tabs = tabService.getTabs();
   };
-
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.vms-status-tabs {&amp;#13;
-    .small-text {&amp;#13;
-        font-size: 10px;&amp;#13;
-        color: #595959;&amp;#13;
-        text-transform: uppercase;&amp;#13;
-    }&amp;#13;
-    .light-grey-bg {&amp;#13;
-        background: #f9f9f9;&amp;#13;
-    }&amp;#13;
-    .people-card-media {&amp;#13;
-        padding-right: 10px;&amp;#13;
-        padding-left: 10px;&amp;#13;
-        display: flex;&amp;#13;
-        justify-content: flex-start;&amp;#13;
-        align-items: center;&amp;#13;
-        float: left;&amp;#13;
-        margin: 0px;&amp;#13;
-        .flex-it-align-top {&amp;#13;
-            display: flex;&amp;#13;
-            justify-content: space-between;&amp;#13;
-        }&amp;#13;
-        .media-left {&amp;#13;
-            //  width: 60px;&amp;#13;
-            .list__photo {&amp;#13;
-                width: 35px;&amp;#13;
-                height: 35px;&amp;#13;
-            }&amp;#13;
-            .initials-badge {&amp;#13;
-                min-width: 36px;&amp;#13;
-                float: left;&amp;#13;
-                margin-top: 0px;&amp;#13;
-                border-radius: 50%;&amp;#13;
-                line-height: 1;&amp;#13;
-                font-size: 14px;&amp;#13;
-                margin-left: 0px;&amp;#13;
-                padding: 10px 10px;&amp;#13;
-                font-weight: 300;&amp;#13;
-                background: #AEB2B3;&amp;#13;
-            }&amp;#13;
-        }&amp;#13;
-    }&amp;#13;
-    .three-tabs {&amp;#13;
-        .orange {&amp;#13;
-            color: #e89033;&amp;#13;
-        }&amp;#13;
-        .green {&amp;#13;
-            color: #70be5a;&amp;#13;
-        }&amp;#13;
-        .red {&amp;#13;
-            color: #ff4000;&amp;#13;
-        }&amp;#13;
-        .bg-green {&amp;#13;
-            background: #70be5a !important;&amp;#13;
-        }&amp;#13;
-        .bg-red {&amp;#13;
-            background: #ff4000 !important;&amp;#13;
-        }&amp;#13;
-        .bg-orange {&amp;#13;
-            background: #e89033;&amp;#13;
-        }&amp;#13;
-        .all-tabs {&amp;#13;
-            display: flex;&amp;#13;
-            padding: 10px;&amp;#13;
-            .each-tab {&amp;#13;
-                width: 33.3%;&amp;#13;
-                float: left;&amp;#13;
-                text-align: center;&amp;#13;
-                padding: 20px 10px;&amp;#13;
-                background: #fff;&amp;#13;
-                border-bottom: 1px solid #e4e5e6;&amp;#13;
-                &amp;amp;.active {&amp;#13;
-                    background: #f2f2f2;&amp;#13;
-                    border-left: 0px;&amp;#13;
-                    border-bottom: 0px;&amp;#13;
-                    border-right: 0px;&amp;#13;
-                    border-bottom: 1px solid #d31a1e;&amp;#13;
-                    .name {&amp;#13;
-                        color: #d31a1e;&amp;#13;
-                    }&amp;#13;
-                }&amp;#13;
-                p {&amp;#13;
-                    margin-bottom: 0px;&amp;#13;
-                }&amp;#13;
-                .name {&amp;#13;
-                    font-size: 12px;&amp;#13;
-                    font-weight: bold;&amp;#13;
-                    color: #909090;&amp;#13;
-                    text-transform: uppercase;&amp;#13;
-                    //background: #fbfbfb;&amp;#13;
-                }&amp;#13;
-                .fa {&amp;#13;
-                    color: #b4b2b3;&amp;#13;
-                }&amp;#13;
-                .circle-badge {&amp;#13;
-                    //border-radius: 50%;&amp;#13;
-                }&amp;#13;
-            }&amp;#13;
-        }&amp;#13;
-        .tab-details {&amp;#13;
-            padding: 20px;&amp;#13;
-            display: flex;&amp;#13;
-            justify-content: space-between;&amp;#13;
-            align-items: center;&amp;#13;
-            .flex-it {&amp;#13;
-                display: flex;&amp;#13;
-                align-items: center;&amp;#13;
-                justify-content: space-around;&amp;#13;
-            }&amp;#13;
-            .svg-icon {&amp;#13;
-                height: 23px;&amp;#13;
-                width: 27px;&amp;#13;
-                fill: #9C9C9C;&amp;#13;
-            }&amp;#13;
-            p {&amp;#13;
-                margin-left: 5px;&amp;#13;
-                margin-bottom: 0px;&amp;#13;
-            }&amp;#13;
-            .detail-numbers {&amp;#13;
-                font-size: 18px;&amp;#13;
-                color: #595959;&amp;#13;
-            }&amp;#13;
-        }&amp;#13;
-    }&amp;#13;
-}&amp;#13;
-&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-dynamic-tabs-widget&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Dynamic Tabs Widget&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.vms-status-tabs {
+  .small-text {
+    font-size: 10px;
+    color: #595959;
+    text-transform: uppercase;
+  }
+  .light-grey-bg {
+    background: #f9f9f9;
+  }
+  .people-card-media {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+    margin: 0px;
+    .flex-it-align-top {
+      display: flex;
+      justify-content: space-between;
+    }
+    .media-left {
+      .list__photo {
+        width: 35px;
+        height: 35px;
+      }
+      .initials-badge {
+        min-width: 36px;
+        float: left;
+        margin-top: 0px;
+        border-radius: 50%;
+        line-height: 1;
+        font-size: 14px;
+        margin-left: 0px;
+        padding: 10px 10px;
+        font-weight: 300;
+        background: #AEB2B3;
+      }
+    }
+  }
+  .three-tabs {
+    .orange {
+      color: #e89033;
+    }
+    .green {
+      color: #70be5a;
+    }
+    .red {
+      color: #ff4000;
+    }
+    .bg-green {
+      background: #70be5a !important;
+    }
+    .bg-red {
+      background: #ff4000 !important;
+    }
+    .bg-orange {
+      background: #e89033;
+    }
+    .all-tabs {
+      display: flex;
+      padding: 10px;
+      .each-tab {
+        width: 33.3%;
+        float: left;
+        text-align: center;
+        padding: 20px 10px;
+        background: #fff;
+        border-bottom: 1px solid #e4e5e6;
+        &amp;amp;.active {
+          background: #f2f2f2;
+          border-left: 0px;
+          border-bottom: 0px;
+          border-right: 0px;
+          border-bottom: 1px solid #d31a1e;
+          .name {
+            color: #d31a1e;
+          }
+        }
+        p {
+          margin-bottom: 0px;
+        }
+        .name {
+          font-size: 12px;
+          font-weight: bold;
+          color: #909090;
+          text-transform: uppercase; //background: #fbfbfb;
+        }
+        .fa {
+          color: #b4b2b3;
+        }
+      }
+    }
+    .tab-details {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .flex-it {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .svg-icon {
+        height: 23px;
+        width: 27px;
+        fill: #9C9C9C;
+      }
+      p {
+        margin-left: 5px;
+        margin-bottom: 0px;
+      }
+      .detail-numbers {
+        font-size: 18px;
+        color: #595959;
+      }
+    }
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-dynamic-tabs-widget&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Dynamic Tabs&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-  //data.threetabs
-  var userGR = new GlideRecord('sys_user');
-  userGR.addQuery('sys_id', gs.getUserID());
-  userGR.query();
 
-  while (userGR.next()) {
-    data.user_first_name = userGR.getDisplayValue('first_name');
-    data.user_last_name = userGR.getDisplayValue('last_name');
-    data.user_full_name = userGR.getDisplayValue('name');
-    data.user_job_title = userGR.getDisplayValue('title');
-    data.user_photo = userGR.getDisplayValue('photo');
-    data.user_phone = userGR.phone.toString().replace(/[- )(]/g, '');
-    data.user_initials = data.user_first_name.charAt(0) + data.user_last_name.charAt(0);
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-15 23:18:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;f8a8555d13617600d15e3d7ed144b087&lt;/sys_id&gt;&lt;sys_mod_count&gt;35&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Dynamic Tabs&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_f8a8555d13617600d15e3d7ed144b087&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-03 16:54:03&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="vms-status-tabs"&gt;
+  &lt;div class="three-tabs row"&gt;
+    &lt;div class="all-tabs"&gt;
+      &lt;div class="each-tab" ng-click="c.selectedTab = 'expired'" ng-class="{'active': c.selectedTab === 'expired'}"&gt;
+        &lt;p class="badge circle-badge" ng-class="c.tabs.firstTab.badgeColor"&gt;{{::c.tabs.firstTab.badgeNumber}}&lt;/p&gt;
+        &lt;p class="name"&gt;{{::c.tabs.firstTab.name}}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="each-tab" ng-click="c.selectedTab = 'expiring'" ng-class="{'active': c.selectedTab === 'expiring'}"&gt;
+        &lt;p class="badge circle-badge" ng-class="c.tabs.secondTab.badgeColor"&gt;{{::c.tabs.secondTab.badgeNumber}}&lt;/p&gt;
+        &lt;p class="name"&gt;{{::c.tabs.secondTab.name}}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="each-tab" ng-click="c.selectedTab = 'new'" ng-class="{'active': c.selectedTab === 'new'}"&gt;
+        &lt;p class="badge circle-badge" ng-class="c.tabs.thirdTab.badgeColor"&gt;{{::c.tabs.thirdTab.badgeNumber}}&lt;/p&gt;
+        &lt;p class="name"&gt;{{::c.tabs.thirdTab.name}}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tab-details"&gt;
+      &lt;div ng-show="c.selectedTab === 'expired'"&gt;
+        &lt;div class="tab-details" ng-class-even="'light-grey-bg'"&gt;
+          &lt;p&gt;Tab 1&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div ng-show="c.selectedTab === 'expiring'"&gt;
+        &lt;div class="tab-details" ng-class-even="'light-grey-bg'"&gt;
+          &lt;p&gt;Tab 2&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div ng-show="c.selectedTab === 'new'"&gt;
+        &lt;div class="tab-details" ng-class-even="'light-grey-bg'"&gt;
+          &lt;p&gt;Tab 3&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>105188031383b600890b3092e144b05f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
+<table/>
+<target_name>PE Dynamic Tabs</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_4db6b7be1303b600d0cf3192e144b055</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="Dynamic Tabs Dependencies">2986f7be1303b600d0cf3192e144b002</sp_dependency><sp_widget display_value="PE Dynamic Tabs">f8a8555d13617600d15e3d7ed144b087</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-03 16:12:13</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>4db6b7be1303b600d0cf3192e144b055</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Dynamic Tabs Dependencies.PE Dynamic Tabs</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_4db6b7be1303b600d0cf3192e144b055</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-03 16:12:13</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>145188031383b600890b3092e144b05e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
+<table/>
+<target_name>Dynamic Tabs Dependencies.PE Dynamic Tabs</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_a2e6f7be1303b600d0cf3192e144b05e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="Dynamic Tabs Dependencies">2986f7be1303b600d0cf3192e144b002</sp_dependency><sp_js_include display_value="Tab Module">01d67bbe1303b600d0cf3192e144b036</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-03 16:13:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a2e6f7be1303b600d0cf3192e144b05e</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Dynamic Tabs Dependencies.Tab Module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_a2e6f7be1303b600d0cf3192e144b05e</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-03 16:14:04</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>505188031383b600890b3092e144b05e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
+<table/>
+<target_name>Dynamic Tabs Dependencies.Tab Module</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_f7e6bbbe1303b600d0cf3192e144b019</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>Tab Service</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-03 16:13:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>f7e6bbbe1303b600d0cf3192e144b019</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Tab Service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="tab.service">ac5637be1303b600d0cf3192e144b014</sys_ui_script><sys_update_name>sp_js_include_f7e6bbbe1303b600d0cf3192e144b019</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-03 16:13:36</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>5c5188031383b600890b3092e144b05e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
+<table/>
+<target_name>Tab Service</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_ac5637be1303b600d0cf3192e144b014</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-tab.service&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  function tabService() {
+    var service = {
+      getTabs: getTabs
+    };
+    return service;
+
+    function getTabs() {
+      var tabs = {
+        firstTab: {
+          name: 'Reclaimed vms',
+          badgeNumber: 15,
+          badgeColor: 'bg-red'
+        },
+        secondTab: {
+          name: 'Expiring soon',
+          badgeNumber: 5,
+          badgeColor: 'bg-orange'
+        },
+        thirdTab: {
+          name: 'new vms',
+          badgeNumber: 10,
+          badgeColor: 'bg-green'
+        }
+      };
+      return tabs;
+    }
   }
 
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-15 23:18:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;f8a8555d13617600d15e3d7ed144b087&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Dynamic Tabs Widget&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_f8a8555d13617600d15e3d7ed144b087&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-16 00:41:38&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="vms-status-tabs"&gt;
-    &lt;div class="three-tabs row"&gt;
-        &lt;!-- your widget template --&gt;
-        &lt;div class="all-tabs"&gt;
-            &lt;div class="each-tab" ng-click="c.selectedTab = 'expired'" ng-class="{'active':c.selectedTab == 'expired'}"&gt;
-                &lt;p class="badge circle-badge" ng-class="c.tabs.first_tab.badge_color"&gt;{{::c.tabs.first_tab.badge_number}}&lt;/p&gt;
-                &lt;p class="name"&gt;{{::c.tabs.first_tab.name}}&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="each-tab " ng-click="c.selectedTab = 'expiring'" ng-class="{'active':c.selectedTab == 'expiring'}"&gt;
-                &lt;p class="badge circle-badge" ng-class="c.tabs.second_tab.badge_color"&gt;{{::c.tabs.second_tab.badge_number}}&lt;/p&gt;
-                &lt;p class="name"&gt;{{::c.tabs.second_tab.name}}&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="each-tab" ng-click="c.selectedTab = 'new'" ng-class="{'active':c.selectedTab == 'new'}"&gt;
-                &lt;p class="badge circle-badge" ng-class="c.tabs.third_tab.badge_color"&gt;{{::c.tabs.third_tab.badge_number}}&lt;/p&gt;
-                &lt;p class="name"&gt;{{::c.tabs.third_tab.name}}&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="tab-details"&gt;
-            &lt;div ng-show="c.selectedTab == 'expired'"&gt;
-                &lt;div class="tab-details" ng-class-even="'light-grey-bg'"&gt;
-                    &lt;p&gt;Tab 1&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div ng-show="c.selectedTab == 'expiring'"&gt;
-                &lt;div class="tab-details" ng-class-even="'light-grey-bg'"&gt;
-                    &lt;p&gt;Tab 2&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div ng-show="c.selectedTab == 'new'"&gt;
-                &lt;div class="tab-details" ng-class-even="'light-grey-bg'"&gt;
-                   &lt;p&gt;Tab 3&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="Dynamic Tabs Widget">a43ea15913a17600d15e3d7ed144b072</remote_update_set>
+  angular
+    .module('pe-dynamic-tabs')
+    .service('tabService', tabService);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-03 16:10:47&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;ac5637be1303b600d0cf3192e144b014&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-tab.service&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_ac5637be1303b600d0cf3192e144b014&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-03 16:51:00&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 00:50:44</sys_created_on>
-<sys_id>683ea15913a17600d15e3d7ed144b072</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>945188031383b600890b3092e144b05f</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 00:50:44</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
 <table/>
-<target_name>PE Dynamic Tabs Widget</target_name>
-<type>Widget</type>
+<target_name>pe-tab.service</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_11077bbe1303b600d0cf3192e144b05c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="Dynamic Tabs Dependencies">2986f7be1303b600d0cf3192e144b002</sp_dependency><sp_js_include display_value="Tab Service">f7e6bbbe1303b600d0cf3192e144b019</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-03 16:13:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>11077bbe1303b600d0cf3192e144b05c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Dynamic Tabs Dependencies.Tab Service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_11077bbe1303b600d0cf3192e144b05c</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-03 16:13:59</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>985188031383b600890b3092e144b05d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
+<table/>
+<target_name>Dynamic Tabs Dependencies.Tab Service</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_01d67bbe1303b600d0cf3192e144b036</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>Tab Module</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-03 16:13:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>01d67bbe1303b600d0cf3192e144b036</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Tab Module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="tab-service.module">020673be1303b600d0cf3192e144b0f5</sys_ui_script><sys_update_name>sp_js_include_01d67bbe1303b600d0cf3192e144b036</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-03 16:13:53</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>985188031383b600890b3092e144b05e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
+<table/>
+<target_name>Tab Module</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_020673be1303b600d0cf3192e144b0f5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;pe-tab.module&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  angular.module('pe-dynamic-tabs', []);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-03 16:09:36&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;020673be1303b600d0cf3192e144b0f5&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-tab.module&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_020673be1303b600d0cf3192e144b0f5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-03 16:42:14&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>d05188031383b600890b3092e144b05f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
+<table/>
+<target_name>pe-tab.module</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_2986f7be1303b600d0cf3192e144b002</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>Dynamic Tabs Dependencies</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-03 16:12:13</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2986f7be1303b600d0cf3192e144b002</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Dynamic Tabs Dependencies</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_2986f7be1303b600d0cf3192e144b002</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-03 16:12:13</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Dynamic Tabs">505188031383b600890b3092e144b05d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-03 16:58:36</sys_created_on>
+<sys_id>d45188031383b600890b3092e144b05e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-03 16:58:36</sys_updated_on>
+<table/>
+<target_name>Dynamic Tabs Dependencies</target_name>
+<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
