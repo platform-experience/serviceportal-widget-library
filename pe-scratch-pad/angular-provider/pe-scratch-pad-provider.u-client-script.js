@@ -25,10 +25,6 @@ function($interval, $timeout, $window, $rootScope) {
 
         $scope.onMouseup = function() {
           $scope.updateModel();
-
-          // notify that drawing has ended
-          console.log("sush");
-
           $scope.notifyDrawing({
             drawing: false
           });
