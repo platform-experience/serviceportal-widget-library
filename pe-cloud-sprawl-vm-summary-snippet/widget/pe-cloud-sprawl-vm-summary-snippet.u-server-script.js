@@ -1,7 +1,4 @@
-(function () {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
+(function() {
   data.card = {
     filter: 'all',
     donut_data: {
@@ -36,5 +33,4 @@
     current: 1,
     total: 5
   };
-
 })();

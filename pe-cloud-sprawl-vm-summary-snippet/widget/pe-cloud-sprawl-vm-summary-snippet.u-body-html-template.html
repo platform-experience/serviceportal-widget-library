@@ -1,23 +1,18 @@
 <div class="vms">
-  <!-- your widget template -->
   <div class="each-box unaccounted-box" ui-sref="unaccountedvm">
     <div class="top-text">
       <p class="sub-title">{{::data.card.donut_data.sub_title}}</p>
     </div>
     <div class="top-box">
-
-      <sp-widget widget="c.data.embedded_widget"></sp-widget>
-
+      <sp-widget widget="c.data.donutChartWizardWidget"></sp-widget>
     </div>
     <p class="top-title bottom-part">{{::data.card.donut_data.bottom_text}}</p>
-
   </div>
   <div class="each-box middle-box" ui-sref="vmsreclaimed({filter:data.filter})">
     <div class="top-text">
       <p class="sub-title">{{::data.card.second_box.top_text}}</p>
     </div>
     <div class="top-box">
-
       <p class="middle-big-text">{{::data.card.second_box.middle_text}}</p>
     </div>
     <p class="top-title">{{::data.card.second_box.sub_title}}</p>
@@ -27,14 +22,11 @@
       <p class="sub-title">{{::data.card.third_box.sub_title}}</p>
     </div>
     <div class="top-box">
-
       <p class="middle-big-text color-red">{{::data.card.third_box.big_text}}</p>
     </div>
-
     <div class="flex-it">
       <div class="arrow-up"></div>
       <p>{{::data.card.third_box.sub_sub_title}}</p>
     </div>
   </div>
-
 </div>
