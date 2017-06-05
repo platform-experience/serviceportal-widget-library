@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-04-19 22:59:31">
+<unload unload_date="2017-06-05 18:55:33">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -13,16 +13,16 @@
 <name>PE CSM Case Status</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>8b8507331306fa00de8cb5b12244b01c</remote_sys_id>
+<remote_sys_id>e167e2af4f87f20005be4d6e0210c7b1</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:59:30</sys_created_on>
-<sys_id>a064ade813da3e00de8cb5b12244b03b</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-05 18:55:33</sys_created_on>
+<sys_id>c54f62274fc7f20005be4d6e0210c719</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:59:30</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-05 18:55:33</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,9 +33,13 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_7c264b331306fa00de8cb5b12244b0f5</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;async&gt;false&lt;/async&gt;&lt;client_script&gt;&lt;![CDATA[function csmCaseStatus() {
-    /* widget controller */
-    var c = this;
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function csmCaseStatus() {
+	/* widget controller */
+	var c = this;
+	/*
+  console.log("----- From CSM Case Status -----");
+  console.log(c);
+  */
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.critical-border {
     border-left: solid 4px #e73c3c !important;
 }
@@ -64,60 +68,88 @@
         font-weight: 500;
         color: #b4b2b3;
     }
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-csm-case-status&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Case Status&lt;/name&gt;&lt;option_schema&gt;[{"name":"case_sysid","label":"Case Sysid","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-csm-case-status&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Case Status&lt;/name&gt;&lt;option_schema&gt;[{"name":"case_sys_id","default_value":"cf866683c3033100b12d9f2974d3ae1f","label":"Case Sysid","type":"string"},{"name":"case_table","default_value":"sn_customerservice_case","label":"Case Table","type":"string"},{"name":"sla_table","default_value":"task_sla","label":"SLA Table","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
     /* populate the 'data' object */
     /* e.g., data.table = $sp.getValue('table'); */
-    var caseGr = new GlideRecord('sn_customerservice_case');
-    caseGr.addQuery('sys_id', options.case_sysid);
-    caseGr.query();
-    if (caseGr.next()) {
+	
+	data.schema = {
+		case_table: options.case_table,
+		sla_table: options.sla_table,
+		case_id: options.case_sys_id,
+		caseGr: new GlideRecord(options.case_table),
+		slaGr: new GlideRecord(options.sla_table),
+		showMsg: true,
+		grMsg: "Case Table reference not provided or invalid."
+	};
 
-        var caseObj = {};
-        $sp.getRecordElements(caseObj, caseGr, 'priority,short_description');
+	//Check to see if the user provided a valid table? 
+	if (data.schema.case_table &amp;&amp; data.schema.caseGr.isValid()) {
+		//Check to see if the user provided a Case ID
+		if (data.schema.case_id) {
+			data.schema.caseGr.addQuery('sys_id', data.schema.case_id);
+			data.schema.caseGr.query();
 
-        var slaGr = new GlideRecord('task_sla');
-        slaGr.addQuery('task', options.case_sysid);
-        slaGr.query();
-        if (slaGr.next()) {
-            var obj = {};
-            $sp.getRecordElements(obj, slaGr, 'sla,stage,schedule');
-            caseObj.sla = obj;
-            // console.log(obj);
-        }
-        data.caseObj = caseObj;
+			//Did the Case ID produce results?
+			if (data.schema.caseGr.next()) {
+				data.schema.showMsg = false;
+				var caseObj = {};
 
+				$sp.getRecordElements(caseObj, data.schema.caseGr, 'priority,short_description');
 
-    }
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-17 22:11:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;7c264b331306fa00de8cb5b12244b0f5&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Case Status&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_7c264b331306fa00de8cb5b12244b0f5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-19 19:25:20&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row"&gt;
-    &lt;div ng-if="!c.data.caseObj" class="text-center"&gt;
-        &lt;p&gt;No Data to display&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div ng-if="c.data.caseObj" class="col-xs-12"&gt;
-        &lt;div class="summary-wrapper" ng-class="{ 'critical-border':c.data.caseObj.priority.value==1}"&gt;
-            &lt;div class="row row1"&gt;
-                &lt;div class="col-xs-7"&gt;
-                    &lt;div class="title"&gt;{{c.data.caseObj.priority.display_value}}&lt;/div&gt;
-                    &lt;div class="description"&gt;
-                        {{c.data.caseObj.short_description.display_value}}
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="col-xs-5 text-center"&gt;
-                    &lt;div class="status1"&gt;{{c.data.caseObj.sla.stage.display_value}}&lt;/div&gt;
-                    &lt;div class="status2"&gt;Fix Status&lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
+				if (data.schema.sla_table &amp;&amp; data.schema.slaGr.isValid()) {
+					data.schema.slaGr.addQuery('task', data.schema.case_id);
+					data.schema.slaGr.query();
+					if (data.schema.slaGr.next()) {
+						var obj = {};
+						$sp.getRecordElements(obj, data.schema.slaGr, 'sla,stage,schedule');
+						caseObj.sla = obj;
+					}
+				} else {
+					caseObj.sla = {
+						sla: '',
+						stage: '',
+						schedule: ''
+					};
+				}
+
+				data.caseObj = caseObj;
+
+			} else {
+				data.schema.grMsg = "Data query for Case ID: '" + data.schema.case_id + "' produced zero (0) results."
+			}
+		} else {
+			data.schema.grMsg = "Case ID reference not provided."
+		}
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-17 22:11:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;7c264b331306fa00de8cb5b12244b0f5&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Case Status&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_7c264b331306fa00de8cb5b12244b0f5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-05 18:46:32&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row"&gt;
+  &lt;div class="text-center" ng-if="c.data.schema.showMsg"&gt;
+    &lt;p&gt;{{c.data.schema.grMsg}}&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div ng-if="c.data.caseObj" class="col-xs-12"&gt;
+    &lt;div class="summary-wrapper" ng-class="{ 'critical-border':c.data.caseObj.priority.value==1}"&gt;
+      &lt;div class="row row1"&gt;
+        &lt;div class="col-xs-7"&gt;
+          &lt;div class="title"&gt;{{c.data.caseObj.priority.display_value}}&lt;/div&gt;
+          &lt;div class="description"&gt;
+            {{c.data.caseObj.short_description.display_value}}
+          &lt;/div&gt;
         &lt;/div&gt;
-
+        &lt;div class="col-xs-5 text-center"&gt;
+          &lt;div class="status1"&gt;{{c.data.caseObj.sla.stage.display_value}}&lt;/div&gt;
+          &lt;div class="status2"&gt;Fix Status&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE CSM Case Status">a064ade813da3e00de8cb5b12244b03b</remote_update_set>
+<remote_update_set display_value="PE CSM Case Status">c54f62274fc7f20005be4d6e0210c719</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:59:30</sys_created_on>
-<sys_id>e464ade813da3e00de8cb5b12244b03b</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-05 18:55:33</sys_created_on>
+<sys_id>014f62274fc7f20005be4d6e0210c71a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:59:30</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-05 18:55:33</sys_updated_on>
 <table/>
 <target_name>PE CSM Case Status</target_name>
 <type>Widget</type>

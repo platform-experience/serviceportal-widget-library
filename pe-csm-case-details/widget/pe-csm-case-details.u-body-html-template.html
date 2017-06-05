@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-xs-12">
-        <div class="text-center" ng-if="!c.data.caseObj">
-            <p>Nothing to display</p>
+        <div class="text-center" ng-if="c.data.schema.showMsg">
+            <p>{{c.data.schema.grMsg}}</p>
         </div>
         <div ng-if="c.data.caseObj" class="summary-wrapper" ng-class="{ 'critical-border':c.data.caseObj.priority.value==1}">
             <div class="row1" ng-click="">

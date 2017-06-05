@@ -1,35 +1,64 @@
 (function() {
     /* populate the 'data' object */
     /* e.g., data.table = $sp.getValue('table'); */
-    if (options.case_sys_id) {
-        var caseGr = new GlideRecord('sn_customerservice_case');
-        caseGr.addQuery('sys_id', options.case_sys_id);
-        caseGr.query();
-        if (caseGr.next()) {
-            //console.log(options.case_sys_id);
-            var caseObj = {};
-            $sp.getRecordElements(caseObj, caseGr, 'priority,short_description,account');
 
-            if (caseObj.account.value) {
-                var relatedGr = new GlideRecord('sn_customerservice_case');
-                relatedGr.addQuery('account', caseObj.account.value);
-                relatedGr.query();
-                caseObj.relatedCasesCount = relatedGr.getRowCount();
+    data.schema = {
+        case_table: options.case_table,
+        sla_table: options.sla_table,
+        case_id: options.case_sys_id,
+        case_cost: options.cost_value,
+        caseGr: new GlideRecord(options.case_table),
+        slaGr: new GlideRecord(options.sla_table),
+        showMsg: true,
+        grMsg: "Case Table reference not provided or invalid."
+    };
+
+    //Check to see if the user provided a valid table? 
+    if (data.schema.case_table && data.schema.caseGr.isValid()) {
+        //Check to see if the user provided a Case ID
+        if (data.schema.case_id) {
+            data.schema.caseGr.addQuery('sys_id', data.schema.case_id);
+            data.schema.caseGr.query();
+
+            //Did the Case ID produce results?
+            if (data.schema.caseGr.next()) {
+                data.schema.showMsg = false;
+                var caseObj = {};
+
+                $sp.getRecordElements(caseObj, data.schema.caseGr, 'priority,short_description,account');
+
+                if (caseObj.account.value) {
+                    var relatedGr = new GlideRecord(data.schema.case_table);
+                    relatedGr.addQuery('account', caseObj.account.value);
+                    relatedGr.query();
+                    caseObj.relatedCasesCount = relatedGr.getRowCount();
+                }
+
+                caseObj.caseCost = data.schema.case_cost;
+
+                if (data.schema.sla_table && data.schema.slaGr.isValid()) {
+                    data.schema.slaGr.addQuery('task', data.schema.case_id);
+                    data.schema.slaGr.query();
+                    if (data.schema.slaGr.next()) {
+                        var obj = {};
+                        $sp.getRecordElements(obj, data.schema.slaGr, 'sla,stage,schedule');
+                        caseObj.sla = obj;
+                    }
+                } else {
+                    caseObj.sla = {
+                        sla: '',
+                        stage: '',
+                        schedule: ''
+                    };
+                }
+
+                data.caseObj = caseObj;
+
+            } else {
+                data.schema.grMsg = "Data query for Case ID: '" + data.schema.case_id + "' produced zero (0) results."
             }
-            caseObj.caseCost = '$56.4k';
-
-            var slaGr = new GlideRecord('task_sla');
-            slaGr.addQuery('task', options.case_sys_id);
-            slaGr.query();
-            if (slaGr.next()) {
-                var obj = {};
-                $sp.getRecordElements(obj, slaGr, 'sla,stage,schedule');
-                caseObj.sla = obj;
-                // console.log(obj);
-            }
-            data.caseObj = caseObj;
-            // console.log(caseObj);
-
+        } else {
+            data.schema.grMsg = "Case ID reference not provided."
         }
     }
 })();
