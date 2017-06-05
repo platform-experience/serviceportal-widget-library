@@ -1,17 +1,7 @@
 function TimelineController(timelineService) {
   var c = this;
 
-  c.$onInit = function () {
-    c.timelinedata = getInitialEvents();
-    console.log(c.timelinedata);
-
+  c.$onInit = function() {
+    c.timelineData = timelineService.getInitialEvents();
   };
-
-  function getInitialEvents() {
-    var events = timelineService.getInitialEvents();
-    return events;
-  }
-
-
-
 }

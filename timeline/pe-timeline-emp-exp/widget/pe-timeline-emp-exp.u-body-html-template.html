@@ -1,79 +1,66 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;">
-
-    <symbol x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" id="icon-signature" stroke="none" stroke-width="1" fill-rule="evenodd">
-        <g>
-            <path d="M14.4,85.5h16.4v5.8h15.3l5.8-5.8h27c1.1,0,2-0.9,2-2v-27l6.6-6.6L81,43.3V10.6c0-1.1-0.9-2-2-2H14.4c-1.1,0-2,0.9-2,2   v72.9C12.4,84.6,13.3,85.5,14.4,85.5z M76.9,81.5H56l20.9-20.9V81.5z M81.8,49.9L44.4,87.3h-9.5v-9.5l37.4-37.4L81.8,49.9z    M16.5,12.7h60.5v26.5l-4.6-4.6L61.9,45H26.1v4.1h31.7L45.2,61.7H26.1v4.1h15.1L30.8,76.1v5.4H16.5V12.7z"></path>
-            <rect x="26.1" y="28.4" width="41.3" height="4.1"></rect>
-        </g>
-    </symbol>
-
-
+  <symbol x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" id="icon-signature"
+    stroke="none" stroke-width="1" fill-rule="evenodd">
+    <g>
+      <path d="M14.4,85.5h16.4v5.8h15.3l5.8-5.8h27c1.1,0,2-0.9,2-2v-27l6.6-6.6L81,43.3V10.6c0-1.1-0.9-2-2-2H14.4c-1.1,0-2,0.9-2,2   v72.9C12.4,84.6,13.3,85.5,14.4,85.5z M76.9,81.5H56l20.9-20.9V81.5z M81.8,49.9L44.4,87.3h-9.5v-9.5l37.4-37.4L81.8,49.9z    M16.5,12.7h60.5v26.5l-4.6-4.6L61.9,45H26.1v4.1h31.7L45.2,61.7H26.1v4.1h15.1L30.8,76.1v5.4H16.5V12.7z"></path>
+      <rect x="26.1" y="28.4" width="41.3" height="4.1"></rect>
+    </g>
+  </symbol>
 </svg>
 <div class="panel-wrapper row">
-    <div class="panel-proper">
-        <!--############# HEADING START#######################-->
-        <div class="panel-header heading" ng-style="{'background':c.timelinedata.header.color}">
-            <div class="left-side">
-                <!--If user pic is availble-->
-                <div ng-if="c.timelinedata.header.userPic" class="media  people-card-media">
-                    <div class="media-left ">
-                        <div class="person-photo available presence">
-                            <img class="media-object list__photo img-circle" ng-src="{{c.timelinedata.header.userPic}}" />
-                        </div>
-                    </div>
-                </div>
-                <p class="text">{{c.timelinedata.header.text}}</p>
+  <div class="panel-proper">
+    <div class="panel-header heading" ng-style="{'background': c.timelineData.header.color}">
+      <div class="left-side">
+        <div ng-if="c.timelineData.header.userPic" class="media people-card-media">
+          <div class="media-left ">
+            <div class="person-photo available presence">
+              <img class="media-object list__photo img-circle" ng-src="{{c.timelineData.header.userPic}}" />
             </div>
-            <!--IF remaining is not empty, show badge-->
-            <p ng-show="c.timelinedata.header.remaining > 0" class="remaining"><span class="badge" ng-style="{'color':c.timelinedata.header.color}">{{c.timelinedata.header.remaining}}</span>Remaining</p>
-            <!--IF remaining is  empty, show all completed-->
-            <p class="remaining" ng-show="!c.timelinedata.header.remaining">All Completed</p>
-
+          </div>
         </div>
-        <!--############# HEADING END#######################-->
-
-        <div class="panel-content">
-            <!--#############BODY ############################-->
-            <div class="only-content">
-
-                <div ng-repeat="eachtimeline in c.timelinedata.timelineArray | limitTo:c.timelinedata.show" class="tl-item">
-                    <div ng-if="c.data.show_ldescriptions" class="left-description">{{item.leftDescription}}</div>
-                    <div class="right-content">
-                        <!--Circle  start-->
-                        <div class="timeline-icon" ng-class="{'green': eachtimeline.state == 'good', 'red':eachtimeline.state == 'attention'}"></div>
-                        <span ng-show="eachtimeline.state == 'good'" class="complete tl-icon"></span>
-                        <!--Circle end-->
-                        <div class="right-content-title">{{eachtimeline.title}}</div>
-                        <p ng-show="eachtimeline.due" class="due">Due <span>{{eachtimeline.due}}</span></p>
-                        <!--RED TEXT and grey subtext-->
-                        <div class="attn-text">
-                            <p ng-show="eachtimeline.attenText" class="attn-top">{{eachtimeline.attenText}}<i class="fa fa-exclamation" aria-hidden="true"></i></p>
-                            <p ng-show="eachtimeline.attenSubText" class="attn-sub">{{eachtimeline.attenSubText}}</p>
-                        </div>
-                        <!--RED TEXT and grey subtext end-->
-                        <div class="dept-contact" ng-if="eachtimeline.dept">
-                            <span class="badge">{{eachtimeline.dept}}</span>
-                            <p>{{eachtimeline.contact}}</p>
-                        </div>
-                        <div ng-show="eachtimeline.signature" class="signature" ng-click="triggerSomething(c.timelinedata)">
-
-
-                            <svg icon="#icon-signature" class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-signature"></use></svg>
-                            <p class="">Digital Signature</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div ng-show="c.timelinedata.timelineArray.length > 2">
-                <div class="btn" ng-show="c.timelinedata.show == 2" ng-click="c.timelinedata.show = c.timelinedata.timelineArray.length">
-                    <p>View More</p>
-                </div>
-                <div class="btn" ng-show="c.timelinedata.show > 2" ng-click="c.timelinedata.show = 2">
-                    <p>View Less</p>
-                </div>
-            </div>
-
-        </div>
+        <p class="text">{{c.timelineData.header.text}}</p>
+      </div>
+      <p ng-show="c.timelineData.header.remaining > 0" class="remaining">
+        <span class="badge" ng-style="{'color': c.timelineData.header.color}">
+          {{c.timelineData.header.remaining}}
+        </span>Remaining
+      </p>
+      <p class="remaining" ng-show="!c.timelineData.header.remaining">All Completed</p>
     </div>
+    <div class="panel-content">
+      <div class="only-content">
+        <div ng-repeat="eachtimeline in c.timelineData.timelineArray | limitTo:c.timelineData.show" class="tl-item">
+          <div ng-if="c.data.show_ldescriptions" class="left-description">{{item.leftDescription}}</div>
+          <div class="right-content">
+            <div class="timeline-icon" ng-class="{'green': eachtimeline.state == 'good', 'red' :eachtimeline.state == 'attention'}"></div>
+            <span ng-show="eachtimeline.state == 'good'" class="complete tl-icon"></span>
+            <div class="right-content-title">{{eachtimeline.title}}</div>
+            <p ng-show="eachtimeline.due" class="due">Due <span>{{eachtimeline.due}}</span></p>
+            <div class="attn-text">
+              <p ng-show="eachtimeline.attenText" class="attn-top">{{eachtimeline.attenText}}<i class="fa fa-exclamation" aria-hidden="true"></i></p>
+              <p ng-show="eachtimeline.attenSubText" class="attn-sub">{{eachtimeline.attenSubText}}</p>
+            </div>
+            <div class="dept-contact" ng-if="eachtimeline.dept">
+              <span class="badge">{{eachtimeline.dept}}</span>
+              <p>{{eachtimeline.contact}}</p>
+            </div>
+            <div ng-show="eachtimeline.signature" class="signature" ng-click="triggerSomething(c.timelineData)">
+              <svg icon="#icon-signature" class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-signature"></use>
+              </svg>
+              <p class="">Digital Signature</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-show="c.timelineData.timelineArray.length > 2">
+        <div class="btn" ng-show="c.timelineData.show == 2" ng-click="c.timelineData.show = c.timelineData.timelineArray.length">
+          <p>View More</p>
+        </div>
+        <div class="btn" ng-show="c.timelineData.show > 2" ng-click="c.timelineData.show = 2">
+          <p>View Less</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
