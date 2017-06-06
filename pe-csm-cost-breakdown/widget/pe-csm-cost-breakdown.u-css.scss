@@ -1,12 +1,25 @@
 .description {
-    font-size: 12px;
-    font-weight: 200;
+  font-size: 12px;
+  font-weight: 200;
 }
 
 .breakdown {
-    .month,
-    .description {
-        clear: both;
-    }
-    margin-bottom: 50px;
+  .month,
+  .description {
+    clear: both;
+  }
+  .href{
+    color: #ff0000;
+  }
+  .header{
+    border: 0px transparent none;
+    border-bottom: 1px lightgray solid;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+  }
+  margin-bottom: 15px;
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-04-19 22:31:21">
+<unload unload_date="2017-06-06 20:20:34">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -13,16 +13,16 @@
 <name>PE CSM Timeline</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>a3a2295c13923e00de8cb5b12244b0bd</remote_sys_id>
+<remote_sys_id>d3da884c139336006749bccf3244b0a5</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>3beddd6813da3e00de8cb5b12244b0f8</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>005cc88c139336006749bccf3244b0bd</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,16 +32,38 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
+<name>m2m_sp_dependency_js_include_a22a978813dd7a007e94fc5ed144b0c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="pe-people-info-launch-connect">c3f9578813dd7a007e94fc5ed144b0c7</sp_dependency><sp_js_include display_value="pe-people-info-launch-connect">7a1a978813dd7a007e94fc5ed144b0fd</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:14:22</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a22a978813dd7a007e94fc5ed144b0c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>launch-connect.launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_a22a978813dd7a007e94fc5ed144b0c7</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 01:14:22</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>105cc88c139336006749bccf3244b0be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
+<table/>
+<target_name>launch-connect.launch-connect</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
 <name>sys_user_9ec35b8713453a007e94fc5ed144b09a</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_user"><sys_user action="INSERT_OR_UPDATE"><accumulated_roles/><active>true</active><agent_status/><average_daily_fte/><building/><calendar_integration>1</calendar_integration><city/><company/><cost_center/><country/><date_format/><default_perspective/><department/><edu_status>faculty</edu_status><email>suzy@example.com</email><employee_number/><failed_attempts/><first_name>Suzy</first_name><gender/><geolocation_tracked>false</geolocation_tracked><home_phone/><internal_integration_user>false</internal_integration_user><introduction/><last_login/><last_login_device/><last_login_time/><last_name>Ham</last_name><last_password/><last_position_update/><latitude/><ldap_server/><location/><locked_out>false</locked_out><longitude/><manager/><middle_name/><mobile_phone/><name>Suzy Ham</name><notification>2</notification><on_schedule/><password_needs_reset>false</password_needs_reset><phone>(858) 876-6870</phone><photo/><preferred_language/><roles/><schedule/><source/><state/><street/><sys_class_name>sys_user</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:13:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9ec35b8713453a007e94fc5ed144b09a</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-24 22:14:04</sys_updated_on><time_format/><time_zone/><title>Developer</title><u_demo_persona>false</u_demo_persona><user_name>suzy.ham</user_name><user_password/><vip>false</vip><web_service_access_only>false</web_service_access_only><zip/></sys_user><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#843d29</average_image_color><compressed>true</compressed><content_type>image/jpeg</content_type><encryption_context/><file_name>photo</file_name><image_height>128</image_height><image_width>128</image_width><size_bytes>4896</size_bytes><size_compressed>4603</size_compressed><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>eb16d7c713453a007e94fc5ed144b055</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-24 22:22:45</sys_updated_on><table_name>ZZ_YYsys_user</table_name><table_sys_id>9ec35b8713453a007e94fc5ed144b09a</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>2f16d7c713453a007e94fc5ed144b055</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>1</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>af16d7c713453a007e94fc5ed144b055</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2392</length><position>2</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>2316d7c713453a007e94fc5ed144b056</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>04fddd6813da3e00de8cb5b12244b0fb</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>145cc88c139336006749bccf3244b0c0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>Suzy Ham</target_name>
 <type>User</type>
@@ -56,14 +78,14 @@
 <comments/>
 <name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-people-info-launch-connect</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:14:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7a1a978813dd7a007e94fc5ed144b0fd</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-people-info-launch-connect-ui-script">9ff4d7c413dd7a007e94fc5ed144b0e7</sys_ui_script><sys_update_name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:57</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>08fddd6813da3e00de8cb5b12244b0fa</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>185cc88c139336006749bccf3244b0bf</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch-connect</target_name>
 <type>JS Include</type>
@@ -76,19 +98,19 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_a22a978813dd7a007e94fc5ed144b0c7</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="pe-people-info-launch-connect">c3f9578813dd7a007e94fc5ed144b0c7</sp_dependency><sp_js_include display_value="pe-people-info-launch-connect">7a1a978813dd7a007e94fc5ed144b0fd</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:14:22</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a22a978813dd7a007e94fc5ed144b0c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>launch-connect.launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_a22a978813dd7a007e94fc5ed144b0c7</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-28 01:14:22</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<name>sp_css_include_1c1cedd013d23e00de8cb5b12244b06d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>bootflat</name><source>local</source><sp_css display_value="bootflat">da0cadd013d23e00de8cb5b12244b0d4</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1c1cedd013d23e00de8cb5b12244b06d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_1c1cedd013d23e00de8cb5b12244b06d</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:36</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>33eddd6813da3e00de8cb5b12244b0f9</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>1c5cc88c139336006749bccf3244b0be</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
-<target_name>launch-connect.launch-connect</target_name>
-<type>Dependency JS Includes</type>
+<target_name>bootflat</target_name>
+<type>CSS Include</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -98,19 +120,19 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_css_include_1c1cedd013d23e00de8cb5b12244b06d</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>bootflat</name><source>local</source><sp_css display_value="bootflat">da0cadd013d23e00de8cb5b12244b0d4</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1c1cedd013d23e00de8cb5b12244b06d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_1c1cedd013d23e00de8cb5b12244b06d</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:36</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<name>m2m_sp_dependency_css_include_b41cedd013d23e00de8cb5b12244b0b3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="bootflat">800c6dd013d23e00de8cb5b12244b09f</sp_css_include><sp_dependency display_value="bootflat">53ebe9d013d23e00de8cb5b12244b059</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:39</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b41cedd013d23e00de8cb5b12244b0b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat.bootflat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_b41cedd013d23e00de8cb5b12244b0b3</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:39</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>3feddd6813da3e00de8cb5b12244b0f9</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>485cc88c139336006749bccf3244b0bd</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
-<target_name>bootflat</target_name>
-<type>CSS Include</type>
+<target_name>bootflat.bootflat</target_name>
+<type>Dependency CSS Includes</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -147,14 +169,14 @@
     }
 }
 ]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 00:55:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9ff4d7c413dd7a007e94fc5ed144b0e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-people-info-launch-connect-ui-script&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_9ff4d7c413dd7a007e94fc5ed144b0e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 19:10:59&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>40fddd6813da3e00de8cb5b12244b0fb</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>505cc88c139336006749bccf3244b0c0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch-connect-ui-script</target_name>
 <type>UI Script</type>
@@ -169,14 +191,14 @@
 <comments/>
 <name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-people-info-launch-connect</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:13:54</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c3f9578813dd7a007e94fc5ed144b0c7</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:41</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>44fddd6813da3e00de8cb5b12244b0fa</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>545cc88c139336006749bccf3244b0bf</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch-connect</target_name>
 <type>Widget Dependency</type>
@@ -236,14 +258,14 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
  margin-top:-5px;line-height:32px}.footer-logo img{margin-right:10px}.footer-logo a{font-size:20px;font-weight:700;color:#fff}.footer-logo a:active,.footer-logo a:hover{text-decoration:none}.footer-nav .nav-title{margin-bottom:15px;color:#e6e9ed}.footer-nav .nav-item{line-height:28px}.footer-nav .nav-item&gt;a{color:#aab2bd}.footer-nav .nav-item&gt;a:active,.footer-nav .nav-item&gt;a:hover{color:#ccd1d9;text-decoration:none}.footer-copyright{color:#aab2bd}.timeline dl{position:relative;top:0;padding:20px 0;margin:0}.timeline dl:before{position:absolute;top:0;bottom:0;left:50%;z-index:100;width:2px;margin-left:-1px;content:'';background-color:#ccd1d9}.timeline dl dt{position:relative;top:30px;z-index:200;width:120px;padding:3px 5px;margin:0 auto 30px;font-weight:400;color:#fff;text-align:center;background-color:#aab2bd;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.timeline dl dd{position:relative;z-index:200}.timeline dl dd .circ{position:absolute;top:40px;left:50%;z-index:200;width:22px;height:22px;margin-left:-11px;background-color:#4fc1e9;border:4px solid #f5f7fa;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%}.timeline dl dd .time{position:absolute;top:31px;left:50%;display:inline-block;width:100px;padding:10px 20px;color:#4fc1e9}.timeline dl dd .events{position:relative;width:47%;padding:10px 10px 0;margin-top:31px;background-color:#fff;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px}.timeline dl dd .events:before{position:absolute;top:12px;width:0;height:0;content:'';border-style:solid;border-width:6px}.timeline dl dd .events .events-object{margin-right:10px}.timeline dl dd .events .events-body{overflow:hidden;zoom:1}.timeline dl dd .events .events-body .events-heading{margin:0 0 10px;font-size:14px}.timeline dl dd.pos-right .time{margin-left:-100px;text-align:right}.timeline dl dd.pos-right .events{float:right}.timeline dl dd.pos-right .events:before{left:-12px;border-color:transparent #fff transparent transparent}.timeline dl dd.pos-left .time{margin-left:0;text-align:left}.timeline dl dd.pos-left .events{float:left}.timeline dl dd.pos-left .events:before{right:-12px;border-color:transparent transparent transparent #fff}@media screen and (max-width:767px){.timeline dl:before{left:60px}.timeline dl dt{margin:0 0 30px}.timeline dl dd .circ{left:60px}.timeline dl dd .time{left:0}.timeline dl dd.pos-left .time{padding:10px 0;&#13;
  margin-left:0;text-align:left}.timeline dl dd.pos-left .events{float:right;width:84%}.timeline dl dd.pos-left .events:before{left:-12px;border-color:transparent #fff transparent transparent}.timeline dl dd.pos-right .time{padding:10px 0;&#13;
  margin-left:0;text-align:left}.timeline dl dd.pos-right .events{float:right;width:84%}}.dropdown-menu{background-color:#434a54;border:none}.dropdown-menu .dropdown-header{padding:5px 20px;font-size:14px;font-weight:700;color:#aab2bd}.dropdown-menu li a{padding:5px 20px;color:#fff}.dropdown-menu .active a,.dropdown-menu .active a:focus,.dropdown-menu .active a:hover,.dropdown-menu li a:focus,.dropdown-menu li a:hover{color:#fff;background-color:#656d78;outline:0}.dropdown-menu .disabled a,.dropdown-menu .disabled a:focus,.dropdown-menu .disabled a:hover{color:#656d78;cursor:default}.dropdown-menu .divider{background-color:#656d78;border-bottom:none}.dropup .dropdown-menu{margin-bottom:0;border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0}.dropdown-submenu{position:relative}.dropdown-submenu .dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;border-radius:0 4px 4px;-webkit-border-radius:0 4px 4px;-moz-border-radius:0 4px 4px}.dropdown-submenu:hover .dropdown-menu{display:block}.dropup .dropdown-submenu .dropdown-menu{top:auto;bottom:0;margin-top:0;margin-bottom:-2px;border-radius:4px 4px 4px 0;-webkit-border-radius:4px 4px 4px 0;-moz-border-radius:4px 4px 4px 0}.dropdown-submenu&gt;a:after{display:block;float:right;width:0;height:0;margin-top:5px;margin-right:-10px;content:" ";border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#fff}.dropdown-default .dropdown-submenu&gt;a:after{border-left-color:#434a54}.dropdown-submenu:hover a:after{border-left-color:#fff}.dropdown-submenu.pull-left{float:none}.dropdown-submenu.pull-left .dropdown-menu{left:-100%;margin-left:10px;border-radius:4px 0 4px 4px;-webkit-border-radius:4px 0 4px 4px;-moz-border-radius:4px 0 4px 4px}</css><name>bootflat</name><sys_class_name>sp_css</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>da0cadd013d23e00de8cb5b12244b0d4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_da0cadd013d23e00de8cb5b12244b0d4</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:36</sys_updated_on></sp_css></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>7beddd6813da3e00de8cb5b12244b0f9</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>585cc88c139336006749bccf3244b0be</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>bootflat</target_name>
 <type>Style Sheet</type>
@@ -256,19 +278,19 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_css_include_b41cedd013d23e00de8cb5b12244b0b3</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="bootflat">800c6dd013d23e00de8cb5b12244b09f</sp_css_include><sp_dependency display_value="bootflat">53ebe9d013d23e00de8cb5b12244b059</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:39</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>b41cedd013d23e00de8cb5b12244b0b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat.bootflat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_b41cedd013d23e00de8cb5b12244b0b3</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:39</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<name>sp_dependency_53ebe9d013d23e00de8cb5b12244b059</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>bootflat</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>53ebe9d013d23e00de8cb5b12244b059</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_53ebe9d013d23e00de8cb5b12244b059</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:12</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>7feddd6813da3e00de8cb5b12244b0f8</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>905cc88c139336006749bccf3244b0bf</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
-<target_name>bootflat.bootflat</target_name>
-<type>Dependency CSS Includes</type>
+<target_name>bootflat</target_name>
+<type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -278,18 +300,18 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_dependency_53ebe9d013d23e00de8cb5b12244b059</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>bootflat</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>53ebe9d013d23e00de8cb5b12244b059</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_53ebe9d013d23e00de8cb5b12244b059</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:12</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<name>m2m_sp_widget_dependency_56fb25d013d23e00de8cb5b12244b000</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="bootflat">53ebe9d013d23e00de8cb5b12244b059</sp_dependency><sp_widget display_value="PE CSM Timline">3282a55c13923e00de8cb5b12244b0d0</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>56fb25d013d23e00de8cb5b12244b000</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat.PE CSM Timline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_56fb25d013d23e00de8cb5b12244b000</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:12</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>80fddd6813da3e00de8cb5b12244b0fa</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>945cc88c139336006749bccf3244b0be</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
-<target_name>bootflat</target_name>
+<target_name>bootflat.PE CSM Timline</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -345,14 +367,14 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
     // implement resource here
 
 })(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/pe_people_info_launch_connect/launch&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/launch&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 00:57:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;2326170813dd7a007e94fc5ed144b0c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-people-info-launch&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_2326170813dd7a007e94fc5ed144b0c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 23:32:45&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Launch connect chat"&gt;52f5930813dd7a007e94fc5ed144b0f9&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>88fddd6813da3e00de8cb5b12244b0fb</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>985cc88c139336006749bccf3244b0c0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch</target_name>
 <type>Scripted REST Resource</type>
@@ -366,18 +388,9 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <category>customer</category>
 <comments/>
 <name>sp_widget_3282a55c13923e00de8cb5b12244b0d0</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;async&gt;false&lt;/async&gt;&lt;client_script&gt;&lt;![CDATA[function peCSMTimlineCtrl(spUtil) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function peCSMTimlineCtrl(spUtil) {
     /* widget controller */
     var c = this;
-
-
-    c.data.user_info = {
-        user_sys_id: '9ec35b8713453a007e94fc5ed144b09a',
-        show_only_picture: false,
-        show_job_title: true,
-        show_call_and_chat: false,
-        avatar_border: 'red',
-    }
 
     spUtil.get('pe-people-info', {
         user_sys_id: c.data.user_info.user_sys_id,
@@ -390,125 +403,131 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
     });
 
 
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt; .case-extended {
-     background-color: #fbfbfb;
-     border-bottom: solid 1px #e4e5e6;
-     padding-bottom: 15px;
-     padding-top: 15px;
-     .title {
-         margin-top: 15px;
-         font-size: 14px;
-         font-weight: 500;
-         color: #2e2e2e;
-     }
-     p {
-         font-size: 14px;
-         color: #65666a;
-     }
-     .timeline {
-         color: #65666a;
-         margin-top: 15px;
-         padding-top: 0;
-         margin-bottom: 25px;
-         .user {
-             margin-bottom: 12px;
-             margin-top: 10px;
-         }
-         @media screen and (max-width: 767px) {
-             dl {
-                 &amp;amp;:before {
-                     left: 60px;
-                 }
-                 dd {
-                     .circ {
-                         left: 60px;
-                     }
-                     .events {
-                         width: 70%;
-                         background-color: inherit;
-                     }
-                 }
-             }
-         }
-         &amp;amp;:before {
-             border-right: none;
-         }
-         dl {
-             padding: 0;
-             &amp;amp;:before {
-                 margin-left: 15px;
-             }
-             dd:last-of-type .events {
-                 margin-bottom: 0;
-             }
-             dd {
-                 h4 {
-                     font-weight: normal;
-                     margin: 0;
-                 }
-                 .circ {
-                     top: 0;
-                     margin-left: 5px;
-                     background-color: white;
-                     border-color: #dbdad6;
-                 }
-                 .time {
-                     color: inherit;
-                     top: 0;
-                     padding: 0;
-                     //padding-right: 5px;
-                     font-size: 12px;
-                     width: 70px;
-                     margin-top: -5px;
-                 }
-                 .events {
-                     margin-right: -10px;
-                     margin-bottom: 25px;
-                     margin-top: 5px;
-                     padding: 0;
-                     background-color: inherit;
-                     &amp;amp;:before {
-                         display: none;
-                     }
-                 }
-                 &amp;amp;.active {
-                     color: $red;
-                     .circ {
-                         background-color: $primary-color;
-                         border-color: $darker-red;
-                     }
-                 }
-             }
-         }
-         .circ .fa {
-             position: absolute;
-             top: -5px;
-             left: -5px;
-             color: green;
-         }
-     }
-     .actions {
-         margin-top: 25px;
-         button.btn-alternate2 {
-             color: #b4b2b3;
-             border-radius: 28px;
-             background-color: #ffffff;
-             border: solid 3px #dbdad6;
-         }
-         button.escalated {
-             border-color: #e51b24;
-             color: #e51b24;
-         }
-     }
-     .escalated-actions {
-         position: relative;
-         margin-top: 0;
-     }
- }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-csm-timeline&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Timline&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-19 04:13:55&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3282a55c13923e00de8cb5b12244b0d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Timline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3282a55c13923e00de8cb5b12244b0d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-19 05:10:09&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="case-extended"&gt;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.case-extended {&amp;#13;
+  background-color: #fbfbfb;&amp;#13;
+  border-bottom: solid 1px #e4e5e6;&amp;#13;
+  padding-bottom: 15px;&amp;#13;
+  padding-top: 15px;&amp;#13;
+  .title {&amp;#13;
+    margin-top: 15px;&amp;#13;
+    font-size: 14px;&amp;#13;
+    font-weight: 500;&amp;#13;
+    color: #2e2e2e;&amp;#13;
+  }&amp;#13;
+  p {&amp;#13;
+    font-size: 14px;&amp;#13;
+    color: #65666a;&amp;#13;
+  }&amp;#13;
+  .timeline {&amp;#13;
+    color: #65666a;&amp;#13;
+    margin-top: 15px;&amp;#13;
+    padding-top: 0;&amp;#13;
+    margin-bottom: 25px;&amp;#13;
+    .user {&amp;#13;
+      margin-bottom: 12px;&amp;#13;
+      margin-top: 10px;&amp;#13;
+    }&amp;#13;
+    @media screen and (max-width: 767px) {&amp;#13;
+      dl {&amp;#13;
+        &amp;amp;:before {&amp;#13;
+          left: 60px;&amp;#13;
+        }&amp;#13;
+        dd {&amp;#13;
+          .circ {&amp;#13;
+            left: 60px;&amp;#13;
+          }&amp;#13;
+          .events {&amp;#13;
+            width: 70%;&amp;#13;
+            background-color: inherit;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    &amp;amp;:before {&amp;#13;
+      border-right: none;&amp;#13;
+    }&amp;#13;
+    dl {&amp;#13;
+      padding: 0;&amp;#13;
+      &amp;amp;:before {&amp;#13;
+        margin-left: 15px;&amp;#13;
+      }&amp;#13;
+      dd:last-of-type .events {&amp;#13;
+        margin-bottom: 0;&amp;#13;
+      }&amp;#13;
+      dd {&amp;#13;
+        h4 {&amp;#13;
+          font-weight: normal;&amp;#13;
+          margin: 0;&amp;#13;
+        }&amp;#13;
+        .circ {&amp;#13;
+          top: 0;&amp;#13;
+          margin-left: 5px;&amp;#13;
+          background-color: white;&amp;#13;
+          border-color: #dbdad6;&amp;#13;
+        }&amp;#13;
+        .time {&amp;#13;
+          color: inherit;&amp;#13;
+          top: 0;&amp;#13;
+          padding: 0;&amp;#13;
+          //padding-right: 5px;&amp;#13;
+          font-size: 12px;&amp;#13;
+          width: 70px;&amp;#13;
+          margin-top: -5px;&amp;#13;
+        }&amp;#13;
+        .events {&amp;#13;
+          margin-right: -10px;&amp;#13;
+          margin-bottom: 25px;&amp;#13;
+          margin-top: 5px;&amp;#13;
+          padding: 0;&amp;#13;
+          background-color: inherit;&amp;#13;
+          &amp;amp;:before {&amp;#13;
+            display: none;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+        &amp;amp;.active {&amp;#13;
+          color: $red;&amp;#13;
+          .circ {&amp;#13;
+            background-color: $primary-color;&amp;#13;
+            border-color: $darker-red;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .circ .fa {&amp;#13;
+      position: absolute;&amp;#13;
+      top: -5px;&amp;#13;
+      left: -5px;&amp;#13;
+      color: green;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .actions {&amp;#13;
+    margin-top: 25px;&amp;#13;
+    button.btn-alternate2 {&amp;#13;
+      color: #b4b2b3;&amp;#13;
+      border-radius: 28px;&amp;#13;
+      background-color: #ffffff;&amp;#13;
+      border: solid 3px #dbdad6;&amp;#13;
+    }&amp;#13;
+    button.escalated {&amp;#13;
+      border-color: #e51b24;&amp;#13;
+      color: #e51b24;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .escalated-actions {&amp;#13;
+    position: relative;&amp;#13;
+    margin-top: 0;&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-csm-timeline&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Timline&lt;/name&gt;&lt;option_schema&gt;[{"name":"user_sys_id","default_value":"9ec35b8713453a007e94fc5ed144b09a","label":"User Sys ID","type":"string"},{"name":"show_only_picture","default_value":"false","label":"Show Only Picture","type":"boolean"},{"name":"show_job_title","default_value":"true","label":"Show Job Title","type":"boolean"},{"name":"show_call_and_chat","default_value":"false","label":"Show Call and Chat","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+    data.user_info = {
+        user_sys_id: options.user_sys_id,
+        show_only_picture: options.show_only_picture,
+        show_job_title: options.show_job_title,
+        show_call_and_chat: options.show_call_and_chat,
+        avatar_border: '#e51b24'
+    }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-19 04:13:55&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3282a55c13923e00de8cb5b12244b0d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;23&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Timline&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3282a55c13923e00de8cb5b12244b0d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-06 20:19:16&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="case-extended"&gt;
     &lt;div class="timeline"&gt;
         &lt;dl&gt;
             &lt;dd class="pos-right clearfix assigned"&gt;
@@ -580,14 +599,14 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
         &lt;/dl&gt;
         &lt;/div&gt;
     &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>8cfddd6813da3e00de8cb5b12244b0fa</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>9c5cc88c139336006749bccf3244b0bf</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>PE CSM Timline</target_name>
 <type>Widget</type>
@@ -600,18 +619,18 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_widget_dependency_56fb25d013d23e00de8cb5b12244b000</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="bootflat">53ebe9d013d23e00de8cb5b12244b059</sp_dependency><sp_widget display_value="PE CSM Timline">3282a55c13923e00de8cb5b12244b0d0</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>56fb25d013d23e00de8cb5b12244b000</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat.PE CSM Timline</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_56fb25d013d23e00de8cb5b12244b000</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:12</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<name>m2m_sp_widget_dependency_3372305013523e00de8cb5b12244b044</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="pe-people-info-launch-connect">c3f9578813dd7a007e94fc5ed144b0c7</sp_dependency><sp_widget display_value="PE People Info">11f38daa134db600d15e3d7ed144b0fa</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 00:43:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3372305013523e00de8cb5b12244b044</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-people-info-launch-connect.PE People Info</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_3372305013523e00de8cb5b12244b044</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 00:43:05</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>b7eddd6813da3e00de8cb5b12244b0f9</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>d05cc88c139336006749bccf3244b0be</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
-<target_name>bootflat.PE CSM Timline</target_name>
+<target_name>pe-people-info-launch-connect.PE People Info</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -624,14 +643,14 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <comments/>
 <name>sys_ws_definition_52f5930813dd7a007e94fc5ed144b0f9</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/pe_people_info_launch_connect</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>Launch connect chat</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>pe_people_info_launch_connect</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 00:56:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>52f5930813dd7a007e94fc5ed144b0f9</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Launch connect chat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_52f5930813dd7a007e94fc5ed144b0f9</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:09:03</sys_updated_on></sys_ws_definition></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>c4fddd6813da3e00de8cb5b12244b0fb</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>d45cc88c139336006749bccf3244b0c0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>Launch connect chat</target_name>
 <type>Scripted REST API</type>
@@ -645,7 +664,7 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <category>customer</category>
 <comments/>
 <name>sp_widget_11f38daa134db600d15e3d7ed144b0fa</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;async&gt;false&lt;/async&gt;&lt;client_script&gt;&lt;![CDATA[function PeopleInfoController($window) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function PeopleInfoController($window) {
   var c = this;
   c.call = call;
   function call(telNumber) {
@@ -780,14 +799,14 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
     &lt;h4 class="title"&gt;{{::data.user_full_name}}&lt;/h4&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>c8fddd6813da3e00de8cb5b12244b0fa</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>d85cc88c139336006749bccf3244b0bf</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>PE People Info</target_name>
 <type>Widget</type>
@@ -800,38 +819,16 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_widget_dependency_3372305013523e00de8cb5b12244b044</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="pe-people-info-launch-connect">c3f9578813dd7a007e94fc5ed144b0c7</sp_dependency><sp_widget display_value="PE People Info">11f38daa134db600d15e3d7ed144b0fa</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 00:43:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3372305013523e00de8cb5b12244b044</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-people-info-launch-connect.PE People Info</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_3372305013523e00de8cb5b12244b044</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 00:43:05</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>f3eddd6813da3e00de8cb5b12244b0f9</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
-<table/>
-<target_name>pe-people-info-launch-connect.PE People Info</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
 <name>sp_css_include_800c6dd013d23e00de8cb5b12244b09f</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>bootflat</name><source>local</source><sp_css display_value="bootflat">da0cadd013d23e00de8cb5b12244b0d4</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 04:54:39</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>800c6dd013d23e00de8cb5b12244b09f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootflat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_800c6dd013d23e00de8cb5b12244b09f</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 04:54:39</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
-<remote_update_set display_value="PE CSM Timeline">3beddd6813da3e00de8cb5b12244b0f8</remote_update_set>
+<remote_update_set display_value="PE CSM Timeline">005cc88c139336006749bccf3244b0bd</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:31:21</sys_created_on>
-<sys_id>ffeddd6813da3e00de8cb5b12244b0f9</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 20:20:34</sys_created_on>
+<sys_id>dc5cc88c139336006749bccf3244b0be</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:31:21</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 20:20:34</sys_updated_on>
 <table/>
 <target_name>bootflat</target_name>
 <type>CSS Include</type>

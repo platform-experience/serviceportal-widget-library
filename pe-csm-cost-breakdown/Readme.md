@@ -10,17 +10,16 @@ This widget can be used to create a simple card with heading and two rows of dat
 
 You can just download the update set **pe-csm-cost-breakdown.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
-We provide few options to load data easily and also to change the appearance of the widget.
+## Configuration
 
-**"Heading"** Heading od widget
+Widget Option Schema parameters:
 
+**"Heading"** Heading of widget
 **"Left Top Text"** Text that goes to left top
-
 **"Left Bottom Text"** Text that goes to bottom left
-
 **"Right Top Text"** Text that goes to right top.
-
 **"Right Bottom Text"** Text that goes to right bottom.
+**"Right Bottom HREF"** Link URL for the right bottom text.
 
 ***
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-04-19 22:40:43">
+<unload unload_date="2017-06-06 18:13:10">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -13,16 +13,16 @@
 <name>PE CSM Cost Breakdown Widget</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>e23ee3c0139efa00de8cb5b12244b0dd</remote_sys_id>
+<remote_sys_id>6228362b4fc7f20005be4d6e0210c715</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:40:43</sys_created_on>
-<sys_id>d110ada813da3e00de8cb5b12244b0fb</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 18:13:10</sys_created_on>
+<sys_id>792fa3ff134336006749bccf3244b0b5</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:40:43</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 18:13:10</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,46 +33,59 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_b5a2f744139efa00de8cb5b12244b058</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;async&gt;false&lt;/async&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
   /* widget controller */
   var c = this;
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.description {
-    font-size: 12px;
-    font-weight: 200;
+  font-size: 12px;
+  font-weight: 200;
 }
 
 .breakdown {
-    .month,
-    .description {
-        clear: both;
-    }
-    margin-bottom: 50px;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-csm-cost-breakdown&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Cost Breakdown &lt;/name&gt;&lt;option_schema&gt;[{"name":"heading","label":"Heading","type":"string"},{"name":"left_top_text","label":"Left Top Text","type":"string"},{"name":"left_bottom_text","label":"Left Bottom Text","type":"string"},{"name":"right_top_text","label":"Right Top Text","type":"string"},{"name":"right_bottom_text","label":"Right Bottom Text","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  .month,
+  .description {
+    clear: both;
+  }
+  .href{
+    color: #ff0000;
+  }
+  .header{
+    border: 0px transparent none;
+    border-bottom: 1px lightgray solid;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+  }
+  margin-bottom: 15px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-csm-cost-breakdown&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Cost Breakdown &lt;/name&gt;&lt;option_schema&gt;[{"name":"heading","default_value":"Case Cost Breakdown","label":"Heading","type":"string"},{"name":"left_top_text","default_value":"January","label":"Left Top Text","type":"string"},{"name":"left_bottom_text","default_value":"47 Cases","label":"Left Bottom Text","type":"string"},{"name":"right_top_text","default_value":"$56.4k","label":"Right Top Text","type":"string"},{"name":"right_bottom_text","default_value":"Details","label":"Right Bottom Text","type":"string"},{"hint":"","name":"right_bottom_href","default_value":"http://www.servicenow.com","label":"Right Bottom HREF","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-18 20:04:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b5a2f744139efa00de8cb5b12244b058&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Cost Breakdown &lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b5a2f744139efa00de8cb5b12244b058&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-18 21:52:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-18 20:04:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b5a2f744139efa00de8cb5b12244b058&lt;/sys_id&gt;&lt;sys_mod_count&gt;35&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Cost Breakdown &lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b5a2f744139efa00de8cb5b12244b058&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-06 18:10:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
     &lt;section class="breakdown clearfix"&gt;
-        &lt;h3&gt;{{::c.options.heading}}&lt;/h3&gt;
+        &lt;div class='header'&gt;{{::c.options.heading}}&lt;/div&gt;
         &lt;div class="month"&gt;
             &lt;span class="pull-left"&gt;{{::c.options.left_top_text}}&lt;/span&gt;
-            &lt;span class="pull-right"&gt;{{::c.options.left_bottom_text}}&lt;/span&gt;
+            &lt;span class="pull-right"&gt;{{::c.options.right_top_text}}&lt;/span&gt;
         &lt;/div&gt;
         &lt;div class="description"&gt;
-            &lt;div class="pull-left"&gt;{{::c.options.right_top_text}}&lt;/div&gt;
-            &lt;div class="pull-right"&gt;&lt;a href=""&gt;{{::c.options.right_bottom_text}}&lt;/a&gt;&lt;/div&gt;
+            &lt;div class="pull-left"&gt;{{::c.options.left_bottom_text}}&lt;/div&gt;
+            &lt;div class="pull-right"&gt;&lt;a href="{{::c.options.right_bottom_href}}" class='href'&gt;{{::c.options.right_bottom_text}}&lt;/a&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div&gt;&lt;/div&gt;
     &lt;/section&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE CSM Cost Breakdown Widget">d110ada813da3e00de8cb5b12244b0fb</remote_update_set>
+<remote_update_set display_value="PE CSM Cost Breakdown Widget">792fa3ff134336006749bccf3244b0b5</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2017-04-19 22:40:43</sys_created_on>
-<sys_id>1910ada813da3e00de8cb5b12244b0fb</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-06 18:13:10</sys_created_on>
+<sys_id>822fa3ff134336006749bccf3244b0b6</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2017-04-19 22:40:43</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-06 18:13:10</sys_updated_on>
 <table/>
 <target_name>PE CSM Cost Breakdown </target_name>
 <type>Widget</type>
