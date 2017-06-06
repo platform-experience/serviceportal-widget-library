@@ -14,12 +14,12 @@ You can just download the update set **pe-csm-cost-breakdown.u-update-set.xml** 
 
 Widget Option Schema parameters:
 
-**"Heading"** Heading of widget
-**"Left Top Text"** Text that goes to left top
-**"Left Bottom Text"** Text that goes to bottom left
-**"Right Top Text"** Text that goes to right top.
-**"Right Bottom Text"** Text that goes to right bottom.
-**"Right Bottom HREF"** Link URL for the right bottom text.
+**"Heading"** Heading of widget<br/>
+**"Left Top Text"** Text that goes to left top<br/>
+**"Left Bottom Text"** Text that goes to bottom left<br/>
+**"Right Top Text"** Text that goes to right top.<br/>
+**"Right Bottom Text"** Text that goes to right bottom.<br/>
+**"Right Bottom HREF"** Link URL for the right bottom text.<br/>
 
 ***
 

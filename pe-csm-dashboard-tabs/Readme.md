@@ -17,12 +17,12 @@ For each **ICON** parameter, use the [fontawesome.io](http://fontawesome.io/chea
 
 Widget Option Schema parameters:
 
-**"First Tab Title"** Title for first tab.
-**"First Tab Icon"** Icon for first tab
-**"Second Tab Title"** Title for second tab.
-**"Second Tab Icon"** Icon for second tab
-**"Third Tab Title"** Title for third tab.
-**"Third Tab Icon"** Icon for third tab
+**"First Tab Title"** Title for first tab.<br/>
+**"First Tab Icon"** Icon for first tab.<br/>
+**"Second Tab Title"** Title for second tab.<br/>
+**"Second Tab Icon"** Icon for second tab.<br/>
+**"Third Tab Title"** Title for third tab.<br/>
+**"Third Tab Icon"** Icon for third tab.<br/>
 
 ***
 
