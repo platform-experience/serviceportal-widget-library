@@ -1,6 +1,5 @@
 <div>
   <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;">
-
     <symbol id="icon-azure" stroke="none" stroke-width="1" fill-rule="evenodd">
       <g id="Page-1">
         <g id="1.0-Home-Dashboard---All-Providers" transform="translate(-259.000000, -91.000000)">
@@ -54,7 +53,7 @@
       <div class="spending-month">
         <div class="first-div" ng-class="{'active': c.selectedTab =='unaccounted' }" ng-click="c.selectedTab = 'unaccounted'">
           <div class="top-box">
-            <sp-widget widget="c.data.embedded_widget_1"></sp-widget>
+            <sp-widget widget="c.data.donutChartWidget1"></sp-widget>
           </div>
           <p class="sub-title">
             {{c.unaccountedData.first_box.sub_title}}
@@ -62,14 +61,13 @@
         </div>
         <div class="second-div" ng-class="{'active': c.selectedTab == 'noncomplaint' }" ng-click="c.selectedTab = 'noncomplaint'">
           <div class="top-box">
-            <sp-widget widget="c.data.embedded_widget_2"></sp-widget>
+            <sp-widget widget="c.data.donutChartWidget2"></sp-widget>
           </div>
           <p class="sub-title">
             {{c.unaccountedData.second_box.sub_title}}
           </p>
         </div>
       </div>
-
       <div ng-show="c.selectedTab == 'unaccounted'">
         <people-card type="mem" user="c.userOne"></people-card>
         <div ng-repeat="spend in c.userOne.spending" class="spending-foruser">
@@ -93,26 +91,22 @@
         </div>
       </div>
       <div ng-show="c.selectedTab == 'noncomplaint'">
-        <div class="second-tab-details" ng-repeat="each in c.second_tab.list" ng-class-even="'light-grey-bg'">
+        <div class="second-tab-details" ng-repeat="item in c.secondTab.list" ng-class-even="'light-grey-bg'">
           <div class="vm-num">
-            <p class="big-text">{{each.vimnumber}}</p>
-            <p class="small-text">{{each.vim_number}}</p>
+            <p class="big-text">{{item.vimnumber}}</p>
+            <p class="small-text">{{item.vim_number}}</p>
           </div>
           <div class="lease">
             <p class="lease-head">created on</p>
-            <p class="small-text">{{each.lease}}</p>
+            <p class="small-text">{{item.lease}}</p>
           </div>
-
-
           <div class="flex-it">
-            <svg ng-class="{'vmwwidth': each.company == 'VMW'}" class="svg-icon">
-              <use xlink:href='{{each.icon}}'></use>
+            <svg ng-class="{'vmwwidth': item.company == 'VMW'}" class="svg-icon">
+              <use xlink:href='{{item.icon}}'></use>
             </svg>
-            <p ng-if="each.company != 'VMW'">{{each.company}}</p>
+            <p ng-if="each.company != 'VMW'">{{item.company}}</p>
           </div>
-
         </div>
       </div>
-
     </div>
   </div>
