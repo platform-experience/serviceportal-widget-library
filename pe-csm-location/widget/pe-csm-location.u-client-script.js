@@ -1,4 +1,3 @@
-function csmLocationCtrl() {
-
-    var c = this;
+function CsmLocationController() {
+  var c = this;
 }
