@@ -1,1 +1,1 @@
-[{"name":"alert","label":"Anomaly Alert sys_id","type":"string"},{"name":"probability","label":"Probability of outage","instructions":"in percent","type":"integer"},{"name":"outage_eta","label":"ETA of outage","instructions":"as datetime string","type":"string"}]
+[{ "name": "alert_sysid", "default_value": "", "label": "Anomaly Alert sys_id", "type": "string" }, { "instructions": "in percent", "name": "probability", "label": "Probability of outage", "type": "integer" }, { "instructions": "as datetime string", "name": "outage_eta", "label": "ETA of outage", "type": "string" }]

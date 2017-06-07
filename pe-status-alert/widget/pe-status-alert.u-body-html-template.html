@@ -1,46 +1,45 @@
 <div ng-class="{ 'recovered': c.alert.state === 'Closed' }" class="status-wrapper">
-	<div class="status-box">
-		<header class="title">{{c.alert.description}}</header>
-		<div class="pill">
-			{{ c.alert.number }} |
-			<span ng-if="c.alert.state !== 'Closed'">{{ 'Created ' + c.alert.created_on_string }}</span>
-			<span ng-if="c.alert.state === 'Closed'">Closed</span>
-		</div>
-		<div ng-if="c.alert.state !== 'Closed'" class="status-row">
-			<div class="status-key">
-				<sp-widget widget="c.probabilityGauge"></sp-widget>
-			</div>
-			<div class="status-detail">
-				<div>Probability that an outage will occur in</div>
-				<div class="spinny">
-				  <div class="bouncy1" style="animation-delay: -0.32s;"></div>
-				  <div class="bouncy2" style="animation-delay: -0.16s;"></div>
-				  <div class="bouncy3"></div>
-				</div>
-				<div class="status-time">
-					{{c.min_to_eta}} {{c.min_to_eta == 1 ? 'minute' : 'minutes'}}
-				</div>
-			</div>
-		</div>
-		<div ng-if="c.alert.state === 'Closed'" class="status-row">
-			<div class="status-key">
-				<div class="big-icon">
-					<svg class="svg-wrapper">
+    <div class="status-box">
+        <header class="title">{{c.alert.description}}</header>
+        <div class="pill">
+            {{ c.alert.number }} |
+            <span ng-if="c.alert.state !== 'Closed'">{{ 'Created ' + c.alert.created_on_string }}</span>
+            <span ng-if="c.alert.state === 'Closed'">Closed</span>
+        </div>
+        <div ng-if="c.alert.state !== 'Closed'" class="status-row">
+            <div class="status-key">
+                <sp-widget widget="c.probabilityGauge"></sp-widget>
+            </div>
+            <div class="status-detail">
+                <div>Probability that an outage will occur in</div>
+                <div class="spinny">
+                    <div class="bouncy1" style="animation-delay: -0.32s;"></div>
+                    <div class="bouncy2" style="animation-delay: -0.16s;"></div>
+                    <div class="bouncy3"></div>
+                </div>
+                <div class="status-time">
+                    {{c.min_to_eta}} {{c.min_to_eta == 1 ? 'minute' : 'minutes'}}
+                </div>
+            </div>
+        </div>
+        <div ng-if="c.alert.state === 'Closed'" class="status-row">
+            <div class="status-key">
+                <div class="big-icon">
+                    <svg class="svg-wrapper">
 						<use xlink:href="#check-mark"></use>
 					</svg>
-				</div>
-			</div>
-			<div class="status-detail">
-				<div class="title"><strong>Outage Prevented</strong></div>
-				<div>There was a {{c.options.probability}}% chance this incident would cause an outage</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+            <div class="status-detail">
+                <div class="title"><strong>Outage Prevented</strong></div>
+                <div>There was a {{c.options.probability}}% chance this incident would cause an outage</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="hidden">
-<svg version="1.1" id="check-mark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	x="0px" y="0px" viewBox="0 0 574.6 468" xml:space="preserve">
+    <svg version="1.1" id="check-mark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 574.6 468" xml:space="preserve">
 	<g>
 		<path d="M0,292.6c-0.1-6.5,2.2-12.1,6.8-16.7c14.9-15,29.8-30,44.9-44.9c10-9.8,24.1-9.4,34.4,0.8c23.4,23.3,46.7,46.6,70,70
 			c12.6,12.6,25.7,12.5,38.3-0.1C291.9,204.2,389.5,106.6,487,9c7.3-7.3,15.6-11.1,25.6-7.8c4.1,1.4,8.1,4.1,11.2,7.1
