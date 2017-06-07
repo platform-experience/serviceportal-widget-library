@@ -1,38 +1,35 @@
 <div ng-if="c.alert.state !== 'Closed'" class="panel-wrapper">
-	<div class="panel-proper">
-		<div class="panel-header">
-			<span>Remediation Actions</span>
-			<span class="title-icon">
-				{{c.actions.length}}
-			</span>
-		</div>
-		<div class="panel-content" id="panel-content">
-
-			<div>The following actions are recommended:</div>
-			<div class="scroll-wrapper">
-				<div class="scroll">
-					<div ng-repeat="action in c.actions track by $index" class="scroll-item" ng-click="c.goToAction(action.href)">
-						<div class="scroll-item-header">
-							<div class="action-key">
-								<span class="icon-inline">
-									<i class="{{action.iconClasses}}" aria-hidden="true"></i>
-								</span>
-							</div>
-							<div class="action-title">{{action.name}}</div>
-						</div>
-						<div class="scroll-item-body">
-							<div class="action-subtitle">Confidence</div>
-							<div ng-class="{ 'color-by-status-good': (action.confidence > 80), 'color-by-status-bad': (action.confidence < 40) }">{{action.confidence}}%</div>
-							<div class="action-subtitle">Est duration</div>
-							<div ng-class="{ 'color-by-status-good': (action.duration < 15), 'color-by-status-bad': (action.duration > 30) }">{{action.duration}} min</div>
-							<div class="action-subtitle">Change Request</div>
-							<div>{{action.change_request}}</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
+  <div class="panel-proper">
+    <div class="panel-header">
+      <span>Remediation Actions</span>
+      <span class="title-icon">
+        {{c.actions.length}}
+      </span>
+    </div>
+    <div class="panel-content" id="panel-content">
+      <div>The following actions are recommended:</div>
+      <div class="scroll-wrapper">
+        <div class="scroll">
+          <div ng-repeat="action in c.actions track by $index" class="scroll-item" ng-click="c.goToAction(action.href)">
+            <div class="scroll-item-header">
+              <div class="action-key">
+                <span class="icon-inline">
+                  <i class="{{action.iconClasses}}" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div class="action-title">{{action.name}}</div>
+            </div>
+            <div class="scroll-item-body">
+              <div class="action-subtitle">Confidence</div>
+              <div ng-class="{ 'color-by-status-good': (action.confidence > 80), 'color-by-status-bad': (action.confidence < 40) }">{{action.confidence}}%</div>
+              <div class="action-subtitle">Est duration</div>
+              <div ng-class="{ 'color-by-status-good': (action.duration < 15), 'color-by-status-bad': (action.duration > 30) }">{{action.duration}} min</div>
+              <div class="action-subtitle">Change Request</div>
+              <div>{{action.change_request}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-

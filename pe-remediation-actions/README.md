@@ -4,9 +4,13 @@
 
 This widget displays choices for remediation actions.
 
+## Prerequisites
+
+The **Performance Analytics - Content Pack - Event Management** plugin must be activated before installation.
+
 ## Installation
 
-Installation is very simple, you can just download the update set "pe-remediation-actions.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
+Installation is very simple, you can just download the update set **pe-remediation-actions.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
 ## Configuration
 
@@ -14,36 +18,38 @@ Provide a sys_id of an anomaly alert to the **alert** option. The widget will no
 
 ## Displayed Data
 
-Options are defined in an array in client script.
+Options are defined in an array in the UI Script: PE Remediation Actions Service.
 
+```javascript
+var actions = [{
+  name: 'Rollback',
+  iconClasses: 'fa fa-refresh',
+  confidence: 98,
+  duration: 10,
+  change_request: 'CHG000123',
+  href: 'https://www.example.com'
+},
+{
+  name: 'Fix',
+  iconClasses: 'fa fa-wrench',
+  confidence: 76,
+  duration: 30,
+  change_request: 'CHG000123',
+  href: 'https://www.example.com'
+},
+{
+  name: 'Failover',
+  iconClasses: 'fa fa-refresh',
+  confidence: 35,
+  duration: 90,
+  change_request: 'CHG000123',
+  href: 'https://www.example.com'
+}];
 ```
-c.actions = [
-	{
-		name: "Rollback",
-		iconClasses: "fa fa-refresh",
-		confidence: 98,
-		duration: 10,
-		change_request: 'CHG000123',
-		href: 'https://www.example.com'
-	},
-	{
-		name: "Fix",
-		iconClasses: "fa fa-wrench",
-		confidence: 76,
-		duration: 30,
-		change_request: 'CHG000123',
-		href: 'https://www.example.com'
-	},
-	{
-		name: "Failover",
-		iconClasses: "fa fa-refresh",
-		confidence: 35,
-		duration: 90,
-		change_request: 'CHG000123',
-		href: 'https://www.example.com'
-	}
-];
-```
+
+## System Tables
+
+em_alert_anomaly
 
 ## Sass Variables
 

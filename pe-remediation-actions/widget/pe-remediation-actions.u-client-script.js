@@ -1,38 +1,18 @@
-function($scope, $window) {
-  /* widget controller */
+function RemediationActionsController($window, actionService) {
   var c = this;
+  c.goToAction = goToAction;
 
-  c.alert = c.data.alert;
+  c.$onInit = function() {
+    c.alert = c.data.alert;
+    getActions();
+  };
 
-  c.actions = [
-  	{
-  		name: "Rollback",
-  		iconClasses: "fa fa-refresh",
-  		confidence: 98,
-  		duration: 10,
-  		change_request: 'CHG000123',
-  		href: 'https://www.example.com'
-  	},
-  	{
-  		name: "Fix",
-  		iconClasses: "fa fa-wrench",
-  		confidence: 76,
-  		duration: 30,
-  		change_request: 'CHG000123',
-  		href: 'https://www.example.com'
-  	},
-  	{
-  		name: "Failover",
-  		iconClasses: "fa fa-refresh",
-  		confidence: 35,
-  		duration: 90,
-  		change_request: 'CHG000123',
-  		href: 'https://www.example.com'
-  	}
-  ];
-
-  c.goToAction = function( href ){
-    $window.location.href = href;
+  function getActions() {
+    c.actions = actionService.getActions();
+    return c.actions;
   }
 
+  function goToAction(href) {
+    $window.location.href = href;
+  }
 }

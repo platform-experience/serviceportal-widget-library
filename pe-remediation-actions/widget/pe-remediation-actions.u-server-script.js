@@ -1,11 +1,8 @@
 (function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
   options.alert = options.alert || serverOptions.alert;
 
-  var getAlert = function(gr){
+  var getAlert = function(gr) {
     return {
       sys_id: gr.sys_id.toString(),
       state: gr.state.toString()
@@ -16,16 +13,14 @@
   if (options.alert) {
     alertGR = new GlideRecord('em_alert_anomaly');
     alertGR.get(options.alert);
-    alert = getAlert( alertGR );
+    alert = getAlert(alertGR);
   } else {
     alertGR = new GlideRecord('em_alert_anomaly');
-    // alertGR.addEncodedQuery('state!=Closed');
     alertGR.orderByDesc('sys_created_on');
     alertGR.query();
     alertGR.next();
-    alert = getAlert( alertGR );
+    alert = getAlert(alertGR);
   }
 
   data.alert = alert;
-
 })();

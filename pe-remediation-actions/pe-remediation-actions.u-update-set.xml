@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-05-08 16:05:27">
+<unload unload_date="2017-06-07 19:58:18">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>pe-remediation-actions</name>
+<name>PE Remediation Actions</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>2c5d87de13d2b200ba3a7b1a6144b018</remote_sys_id>
+<remote_sys_id>5a86d4c0db5bb200ded8b701ef961992</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>jacob</sys_created_by>
-<sys_created_on>2017-05-08 16:05:27</sys_created_on>
-<sys_id>24dbb962132ab20040c770a76144b088</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>ffc0119cdb93f200ded8b701ef9619d3</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>jacob</sys_updated_by>
-<sys_updated_on>2017-05-08 16:05:27</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,91 +32,143 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
+<name>m2m_sp_widget_dependency_3711cdc4db9bb200ded8b701ef9619bc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE Remediation Actions">ffa0c9c4db9bb200ded8b701ef961987</sp_dependency><sp_widget display_value="pe-remediation-actions">847d0bde13d2b200ba3a7b1a6144b012</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-07 00:11:17</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3711cdc4db9bb200ded8b701ef9619bc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Remediation Actions.pe-remediation-actions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_3711cdc4db9bb200ded8b701ef9619bc</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-07 00:11:17</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>3bc0119cdb93f200ded8b701ef9619d4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
+<table/>
+<target_name>PE Remediation Actions.pe-remediation-actions</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_48eab044db9bb200ded8b701ef9619be</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Remediation Actions Module&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  angular.module('pe-remediation-actions', []);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-06 23:44:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;48eab044db9bb200ded8b701ef9619be&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Remediation Actions Module&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_48eab044db9bb200ded8b701ef9619be&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-06 23:46:43&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>3fc0519cdb93f200ded8b701ef9619c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
+<table/>
+<target_name>PE Remediation Actions Module</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_d2d0c9c4db9bb200ded8b701ef9619cf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE Remediation Actions">ffa0c9c4db9bb200ded8b701ef961987</sp_dependency><sp_js_include display_value="PE Remediation Actions Module">8fc00dc4db9bb200ded8b701ef961979</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-07 00:10:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>d2d0c9c4db9bb200ded8b701ef9619cf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Remediation Actions.PE Remediation Actions Module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_d2d0c9c4db9bb200ded8b701ef9619cf</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-07 00:10:05</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>77c0119cdb93f200ded8b701ef9619d4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
+<table/>
+<target_name>PE Remediation Actions.PE Remediation Actions Module</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
 <name>sp_widget_847d0bde13d2b200ba3a7b1a6144b012</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $window) {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function RemediationActionsController($window, actionService) {
   var c = this;
+  c.goToAction = goToAction;
 
-  c.alert = c.data.alert;
+  c.$onInit = function() {
+    c.alert = c.data.alert;
+    getActions();
+  };
 
-  c.actions = [
-  	{
-  		name: "Rollback",
-  		iconClasses: "fa fa-refresh",
-  		confidence: 98,
-  		duration: 10,
-  		change_request: 'CHG000123',
-  		href: 'https://www.example.com'
-  	},
-  	{
-  		name: "Fix",
-  		iconClasses: "fa fa-wrench",
-  		confidence: 76,
-  		duration: 30,
-  		change_request: 'CHG000123',
-  		href: 'https://www.example.com'
-  	},
-  	{
-  		name: "Failover",
-  		iconClasses: "fa fa-refresh",
-  		confidence: 35,
-  		duration: 90,
-  		change_request: 'CHG000123',
-  		href: 'https://www.example.com'
-  	}
-  ];
-
-  c.goToAction = function( href ){
-    $window.location.href = href;
+  function getActions() {
+    c.actions = actionService.getActions();
+    return c.actions;
   }
 
+  function goToAction(href) {
+    $window.location.href = href;
+  }
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
-
 $icon-circle-color: #7e848b !default;
 $good-color: #3abe43 !default;
 $bad-color: #ff402c !default;
 
 .panel-wrapper {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 .panel-proper {
-	background-color: #fff;
-	border-radius: 5px;
-	transition: box-shadow 0.5s;
-	position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: box-shadow 0.5s;
+  position: relative;
 }
+
 .panel-header {
-	position: relative;
-	padding: 7px 12px;
-	font-size: 16px;
-	font-weight: 600;
-	border-bottom: 0.5px solid #7E848B;
+  position: relative;
+  padding: 7px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 0.5px solid #7E848B;
 }
 
 .panel-content {
-	padding: 12px;
+  padding: 12px;
 }
 
 .title-icon {
-	display: inline-block;
-	background-color: $icon-circle-color;
-	width: 22px;
-	height: 22px;
-	fill: #fff;
-	color: #fff;
-	text-align: center;
-	border-radius: 11px;
-	margin: 0 2px;
-	font-weight: 400;
-	&amp;amp;:first-child {
-		margin-left: -5px;
-	}
+  display: inline-block;
+  background-color: $icon-circle-color;
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+  color: #fff;
+  text-align: center;
+  border-radius: 11px;
+  margin: 0 2px;
+  font-weight: 400;
+  &amp;amp;:first-child {
+    margin-left: -5px;
+  }
 }
 
 .scroll-wrapper {
   margin: 10px -12px 0 -12px;
   position: relative;
 }
+
 .scroll {
   width: 100%;
   padding-left: 12px;
@@ -124,6 +176,7 @@ $bad-color: #ff402c !default;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
 .scroll-item {
   box-sizing: border-box;
   display: inline-block;
@@ -133,13 +186,11 @@ $bad-color: #ff402c !default;
   margin-right: 12px;
   width: 150px;
   height: 250px;
-  // border-radius: 5px;
   text-align: center;
   border: 0.5px solid rgba(72, 85, 99, 0.5);
-  // padding: 20px;
   font-size: 15px;
   margin-bottom: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -154,21 +205,26 @@ $bad-color: #ff402c !default;
     color: #fff;
   }
 }
+
 .scroll-item-body {
   padding: 5px 15px 15px 15px;
   line-height: 1.3;
 }
+
 .action-key {
   font-size: 50px;
   line-height: 1;
 }
+
 .action-title {
   font-size: 18px;
 }
+
 .action-subtitle {
   font-weight: 600;
   margin-top: 5px;
 }
+
 .action-subtitle-smaller {
   font-size: 12px;
   font-weight: 600;
@@ -176,20 +232,18 @@ $bad-color: #ff402c !default;
 }
 
 .color-by-status-good {
-	color: $good-color;
-	font-weight: bold;
+  color: $good-color;
+  font-weight: bold;
 }
-.color-by-status-bad {
-	color: $bad-color;
-	font-weight: bold;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-remediation-actions&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-remediation-actions&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert","label":"Anomaly Alert sys_id","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
 
+.color-by-status-bad {
+  color: $bad-color;
+  font-weight: bold;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-remediation-actions&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Remediation Actions&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert","label":"Anomaly Alert sys_id","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
   options.alert = options.alert || serverOptions.alert;
 
-  var getAlert = function(gr){
+  var getAlert = function(gr) {
     return {
       sys_id: gr.sys_id.toString(),
       state: gr.state.toString()
@@ -200,68 +254,213 @@ $bad-color: #ff402c !default;
   if (options.alert) {
     alertGR = new GlideRecord('em_alert_anomaly');
     alertGR.get(options.alert);
-    alert = getAlert( alertGR );
+    alert = getAlert(alertGR);
   } else {
     alertGR = new GlideRecord('em_alert_anomaly');
-    // alertGR.addEncodedQuery('state!=Closed');
     alertGR.orderByDesc('sys_created_on');
     alertGR.query();
     alertGR.next();
-    alert = getAlert( alertGR );
+    alert = getAlert(alertGR);
   }
 
   data.alert = alert;
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-25 17:08:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;847d0bde13d2b200ba3a7b1a6144b012&lt;/sys_id&gt;&lt;sys_mod_count&gt;48&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-remediation-actions&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_847d0bde13d2b200ba3a7b1a6144b012&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-05-08 15:57:33&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="c.alert.state !== 'Closed'" class="panel-wrapper"&gt;
-	&lt;div class="panel-proper"&gt;
-		&lt;div class="panel-header"&gt;
-			&lt;span&gt;Remediation Actions&lt;/span&gt;
-			&lt;span class="title-icon"&gt;
-				{{c.actions.length}}
-			&lt;/span&gt;
-		&lt;/div&gt;
-		&lt;div class="panel-content" id="panel-content"&gt;
-
-			&lt;div&gt;The following actions are recommended:&lt;/div&gt;
-			&lt;div class="scroll-wrapper"&gt;
-				&lt;div class="scroll"&gt;
-					&lt;div ng-repeat="action in c.actions track by $index" class="scroll-item" ng-click="c.goToAction(action.href)"&gt;
-						&lt;div class="scroll-item-header"&gt;
-							&lt;div class="action-key"&gt;
-								&lt;span class="icon-inline"&gt;
-									&lt;i class="{{action.iconClasses}}" aria-hidden="true"&gt;&lt;/i&gt;
-								&lt;/span&gt;
-							&lt;/div&gt;
-							&lt;div class="action-title"&gt;{{action.name}}&lt;/div&gt;
-						&lt;/div&gt;
-						&lt;div class="scroll-item-body"&gt;
-							&lt;div class="action-subtitle"&gt;Confidence&lt;/div&gt;
-							&lt;div ng-class="{ 'color-by-status-good': (action.confidence &gt; 80), 'color-by-status-bad': (action.confidence &lt; 40) }"&gt;{{action.confidence}}%&lt;/div&gt;
-							&lt;div class="action-subtitle"&gt;Est duration&lt;/div&gt;
-							&lt;div ng-class="{ 'color-by-status-good': (action.duration &lt; 15), 'color-by-status-bad': (action.duration &gt; 30) }"&gt;{{action.duration}} min&lt;/div&gt;
-							&lt;div class="action-subtitle"&gt;Change Request&lt;/div&gt;
-							&lt;div&gt;{{action.change_request}}&lt;/div&gt;
-						&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-remediation-actions">24dbb962132ab20040c770a76144b088</remote_update_set>
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-25 17:08:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;847d0bde13d2b200ba3a7b1a6144b012&lt;/sys_id&gt;&lt;sys_mod_count&gt;180&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Remediation Actions&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_847d0bde13d2b200ba3a7b1a6144b012&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-07 19:56:02&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="c.alert.state !== 'Closed'" class="panel-wrapper"&gt;
+  &lt;div class="panel-proper"&gt;
+    &lt;div class="panel-header"&gt;
+      &lt;span&gt;Remediation Actions&lt;/span&gt;
+      &lt;span class="title-icon"&gt;
+        {{c.actions.length}}
+      &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-content" id="panel-content"&gt;
+      &lt;div&gt;The following actions are recommended:&lt;/div&gt;
+      &lt;div class="scroll-wrapper"&gt;
+        &lt;div class="scroll"&gt;
+          &lt;div ng-repeat="action in c.actions track by $index" class="scroll-item" ng-click="c.goToAction(action.href)"&gt;
+            &lt;div class="scroll-item-header"&gt;
+              &lt;div class="action-key"&gt;
+                &lt;span class="icon-inline"&gt;
+                  &lt;i class="{{action.iconClasses}}" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class="action-title"&gt;{{action.name}}&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="scroll-item-body"&gt;
+              &lt;div class="action-subtitle"&gt;Confidence&lt;/div&gt;
+              &lt;div ng-class="{ 'color-by-status-good': (action.confidence &gt; 80), 'color-by-status-bad': (action.confidence &lt; 40) }"&gt;{{action.confidence}}%&lt;/div&gt;
+              &lt;div class="action-subtitle"&gt;Est duration&lt;/div&gt;
+              &lt;div ng-class="{ 'color-by-status-good': (action.duration &lt; 15), 'color-by-status-bad': (action.duration &gt; 30) }"&gt;{{action.duration}} min&lt;/div&gt;
+              &lt;div class="action-subtitle"&gt;Change Request&lt;/div&gt;
+              &lt;div&gt;{{action.change_request}}&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>jacob</sys_created_by>
-<sys_created_on>2017-05-08 16:05:27</sys_created_on>
-<sys_id>e4dbb962132ab20040c770a76144b088</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>7bc0519cdb93f200ded8b701ef9619c1</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>jacob</sys_updated_by>
-<sys_updated_on>2017-05-08 16:05:27</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
 <table/>
-<target_name>pe-remediation-actions</target_name>
+<target_name>PE Remediation Actions</target_name>
 <type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_66e04dc4db9bb200ded8b701ef96192a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="PE Remediation Actions">ffa0c9c4db9bb200ded8b701ef961987</sp_dependency><sp_js_include display_value="PE Remediation Actions Service">83d04dc4db9bb200ded8b701ef961921</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-07 00:10:22</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>66e04dc4db9bb200ded8b701ef96192a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Remediation Actions.PE Remediation Actions Service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_66e04dc4db9bb200ded8b701ef96192a</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-07 00:10:30</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>b3c0119cdb93f200ded8b701ef9619d4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
+<table/>
+<target_name>PE Remediation Actions.PE Remediation Actions Service</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_8fc00dc4db9bb200ded8b701ef961979</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Remediation Actions Module</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-07 00:10:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>8fc00dc4db9bb200ded8b701ef961979</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Remediation Actions Module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Remediation Actions Module">48eab044db9bb200ded8b701ef9619be</sys_ui_script><sys_update_name>sp_js_include_8fc00dc4db9bb200ded8b701ef961979</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-07 00:10:05</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>b7c0519cdb93f200ded8b701ef9619c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
+<table/>
+<target_name>PE Remediation Actions Module</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_83d04dc4db9bb200ded8b701ef961921</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Remediation Actions Service</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-07 00:10:22</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>83d04dc4db9bb200ded8b701ef961921</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Remediation Actions Service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Remediation Actions Service">4c9b3844db9bb200ded8b701ef961926</sys_ui_script><sys_update_name>sp_js_include_83d04dc4db9bb200ded8b701ef961921</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-07 00:10:22</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>bfc0119cdb93f200ded8b701ef9619d4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
+<table/>
+<target_name>PE Remediation Actions Service</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_ffa0c9c4db9bb200ded8b701ef961987</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>PE Remediation Actions</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2017-06-07 00:09:27</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ffa0c9c4db9bb200ded8b701ef961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Remediation Actions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_ffa0c9c4db9bb200ded8b701ef961987</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2017-06-07 00:09:27</sys_updated_on></sp_dependency></record_update>]]></payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>fbc0119cdb93f200ded8b701ef9619d4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
+<table/>
+<target_name>PE Remediation Actions</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_4c9b3844db9bb200ded8b701ef961926</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Remediation Actions Service&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  function actionService() {
+    var service = {
+      getActions: getActions
+    };
+    return service;
+
+    function getActions() {
+      var actions = [{
+        name: 'Rollback',
+        iconClasses: 'fa fa-refresh',
+        confidence: 98,
+        duration: 10,
+        change_request: 'CHG000123',
+        href: 'https://www.example.com'
+      },
+      {
+        name: 'Fix',
+        iconClasses: 'fa fa-wrench',
+        confidence: 76,
+        duration: 30,
+        change_request: 'CHG000123',
+        href: 'https://www.example.com'
+      },
+      {
+        name: 'Failover',
+        iconClasses: 'fa fa-refresh',
+        confidence: 35,
+        duration: 90,
+        change_request: 'CHG000123',
+        href: 'https://www.example.com'
+      }];
+      return actions;
+    }
+  }
+
+  angular
+    .module('pe-remediation-actions')
+    .service('actionService', actionService);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-06 23:48:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;4c9b3844db9bb200ded8b701ef961926&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Remediation Actions Service&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_4c9b3844db9bb200ded8b701ef961926&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-07 19:55:51&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Remediation Actions">ffc0119cdb93f200ded8b701ef9619d3</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-07 19:58:18</sys_created_on>
+<sys_id>ffc0519cdb93f200ded8b701ef9619c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-07 19:58:18</sys_updated_on>
+<table/>
+<target_name>PE Remediation Actions Service</target_name>
+<type>UI Script</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
