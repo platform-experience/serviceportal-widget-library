@@ -1,43 +1,43 @@
 section {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 h3 {
-    font-size: 13px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 h3,
 .month {
-    position: relative;
-    .cost {
-        position: absolute;
-        right: 0;
-        top: 0;
-        font-size: 20px;
-    }
-    .cost2 {
-        font-size: 12px;
-        font-weight: normal;
-    }
+  position: relative;
+  .cost {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+  }
+  .cost2 {
+    font-size: 12px;
+    font-weight: normal;
+  }
 }
 
 .month {
-    font-size: 12px;
-    font-weight: 300;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .bar {
-    margin-top: 10px;
-    border-radius: 28px;
-    background-color: #ffffff;
-    border: solid 3px #E7363D;
-    overflow: hidden;
-    color: white;
-    font-size: 12px;
-    .bar-complete {
-        background-color: #EC5F65;
-        width: 75%;
-        padding: 5px 0 5px 12px;
-    }
+  margin-top: 10px;
+  border-radius: 28px;
+  background-color: #ffffff;
+  border: solid 3px #E7363D;
+  overflow: hidden;
+  color: white;
+  font-size: 12px;
+  .bar-complete {
+    background-color: #EC5F65;
+    width: 75%;
+    padding: 5px 0 5px 12px;
+  }
 }

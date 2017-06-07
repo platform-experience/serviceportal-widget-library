@@ -10,9 +10,9 @@ This widget can be used to create a simple progress bar.
 
 You can just download the update set **pe-csm-progress-bar.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
 
-We provide few options to load data easily and also to change the appearance of the widget.
+We provide options to load data easily and also to change the appearance of the widget.
 
-**"Widget Header"** This is for header.
+**"Widget Header"** This is for the header.
 
 **"Progress Bar Left Text"** Left text on top of progress bar.
 
@@ -27,9 +27,4 @@ We provide few options to load data easily and also to change the appearance of 
  **"Progress Bar Color"** Color of the bar the progress bar.
 
 ***
-
-
-
-
-
 
