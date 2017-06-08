@@ -20,7 +20,7 @@
     var alertGR, alert;
     if (options.alert_sysid) {
         alertGR = new GlideRecord('em_alert_anomaly');
-        alertGR.get(options.alert);
+        alertGR.get(options.alert_sysid);
         alert = getAlert(alertGR);
     } else {
         alertGR = new GlideRecord('em_alert_anomaly');

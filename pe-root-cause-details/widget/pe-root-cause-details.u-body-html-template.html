@@ -1,44 +1,44 @@
 <div ng-if-start="c.incident.problem.sys_id" class="drawer-list-header">
-	Related Problem
+    Related Problem
 </div>
 <div ng-if-end class="drawer-list">
-	<div class="drawer-list-item row">
-		<div class="col-xs-8">
-			<div class="event">{{c.incident.problem.description}}</div>
-			<div class="event-state state-{{c.incident.problem.state.labelClass}}">{{c.incident.problem.state.label}}</div>
-		</div>
-		<div class="col-xs-4">
-			<div class="event">{{c.incident.problem.number}}</div>
-		</div>
-	</div>
+    <div class="drawer-list-item row">
+        <div class="col-xs-8">
+            <div class="event">{{c.incident.problem.description}}</div>
+            <div class="event-state state-{{c.incident.problem.state.labelClass}}">{{c.incident.problem.state.label}}</div>
+        </div>
+        <div class="col-xs-4">
+            <div class="event">{{c.incident.problem.number}}</div>
+        </div>
+    </div>
 </div>
 
 <div ng-if-start="c.incident.cause.sys_id" class="drawer-list-header">
-	Caused by Change
+    Caused by Change
 </div>
 <div ng-if-end class="drawer-list">
-	<div class="drawer-list-item row">
-		<div class="col-xs-8">
-			<div class="event">{{c.incident.cause.description}}</div>
-			<div class="event-state state-{{c.incident.cause.state.labelClass}}">{{c.incident.cause.state.label}}</div>
-		</div>
-		<div class="col-xs-4">
-			<div class="event">{{c.incident.cause.number}}</div>
-		</div>
-	</div>
+    <div class="drawer-list-item row">
+        <div class="col-xs-8">
+            <div class="event">{{c.incident.cause.description}}</div>
+            <div class="event-state state-{{c.incident.cause.state.labelClass}}">{{c.incident.cause.state.label}}</div>
+        </div>
+        <div class="col-xs-4">
+            <div class="event">{{c.incident.cause.number}}</div>
+        </div>
+    </div>
 </div>
 
 <div ng-if-start="c.incident.problem.other_incidents.length" class="drawer-list-header">
-	Related Incidents
+    Related Incidents
 </div>
 <div ng-if-end class="drawer-list">
-	<div ng-repeat="item in c.incident.problem.other_incidents" class="drawer-list-item row">
-		<div class="col-xs-8">
-			<div class="event">{{item.description}}</div>
-			<div class="event-state state-{{item.state.labelClass}}">{{item.state.label}}</div>
-		</div>
-		<div class="col-xs-4">
-			<div class="event">{{item.number}}</div>
-		</div>
-	</div>
+    <div ng-repeat="item in c.incident.problem.other_incidents" class="drawer-list-item row">
+        <div class="col-xs-8">
+            <div class="event">{{item.description}}</div>
+            <div class="event-state state-{{item.state.labelClass}}">{{item.state.label}}</div>
+        </div>
+        <div class="col-xs-4">
+            <div class="event">{{item.number}}</div>
+        </div>
+    </div>
 </div>

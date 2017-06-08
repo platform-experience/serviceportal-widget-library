@@ -2,44 +2,49 @@ $list-header-bg-color: #e8e8e8 !default;
 $state-default-color: #557f90 !default;
 $state-positive: #3abe43 !default;
 $state-negative: #ff402c !default;
-
 .event {
-	font-size: 15px;
+    font-size: 15px;
 }
+
 .event-state {
-	font-size: 13px;
+    font-size: 13px;
 }
 
 .drawer-list {
-	padding: 12px;
-	&:first-child {
-		padding-top: 17px;
-	}
+    padding: 12px;
+    &:first-child {
+        padding-top: 17px;
+    }
 }
 
 .drawer-list-header {
-	border-top: solid 0.5px rgba(52, 61, 71, 0.15);
-	background-color: $list-header-bg-color;
-	font-size: 15px;
-	font-weight: 600;
-	padding: 8px 12px;
-	&:first-child {
-		padding-top: 13px;
-	}
+    border-top: solid 0.5px rgba(52, 61, 71, 0.15);
+    background-color: $list-header-bg-color;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 12px;
+    &:first-child {
+        padding-top: 13px;
+    }
 }
+
 .drawer-list-item {
-	margin-bottom: 10px;
-	&:last-child {
-		margin-bottom: 0;
-	}
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .event-state {
-	color: $state-default-color;
+    color: $state-default-color;
 }
-.state-closed, .state-canceled {
-	color: $state-positive;
+
+.state-closed,
+.state-canceled {
+    color: $state-positive;
 }
-.state-open, .state-in-progress {
-	color: $state-negative;
+
+.state-open,
+.state-in-progress {
+    color: $state-negative;
 }

@@ -1,7 +1,11 @@
 function($scope) {
-  /* widget controller */
-  var c = this;
+    /* widget controller */
+    var c = this;
 
-  c.incident = c.data.incident;
-  
+    c.incident = c.data.incident;
+
+    /*
+    console.log("/---- RC Details ----/");
+    console.log(c);
+    */
 }

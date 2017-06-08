@@ -1,58 +1,53 @@
 <div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.alert.state === 'Closed') }">
-	<div class="panel-proper">
-		<div class="panel-header">
-			<span ng-if="options.titleIconClasses" class="title-icon">
+    <div class="panel-proper">
+        <div class="panel-header">
+            <span ng-if="options.titleIconClasses" class="title-icon">
 				<i class="{{options.titleIconClasses}}" aria-hidden="true"></i>
 			</span>
-			<span>Root Cause Identified</span>
-			<div class="panel-expander-wrapper" 
-				ng-if="c.alert.incident && (c.alert.incident.problem.sys_id || c.alert.incident.cause.sys_id)"
-				ng-click="c.expanded = !c.expanded" data-toggle="collapse" data-target="#root-cause-drawer" 
-				aria-expanded="false" aria-controls="root-cause-drawer">
-				<svg class="panel-expander">
+            <span>Root Cause Identified</span>
+            <div class="panel-expander-wrapper" ng-if="c.alert.incident && (c.alert.incident.problem.sys_id || c.alert.incident.cause.sys_id)" ng-click="c.expanded = !c.expanded" data-toggle="collapse" data-target="#root-cause-drawer" aria-expanded="false" aria-controls="root-cause-drawer">
+                <svg class="panel-expander">
 					<use xlink:href="#plus"></use>
 				</svg>
-			</div>
-		</div>
-		<div class="panel-content" id="panel-content">
+            </div>
+        </div>
+        <div class="panel-content" id="panel-content">
 
-			<div class="row triptych">
-				<div class="col-xs-4" ng-repeat="item in c.stats">
-					<div class="key-value">
-						<span ng-if="item.value">{{item.value}}</span>
-						<span ng-if="item.icon" class="key-icon">
+            <div class="row triptych">
+                <div class="col-xs-4" ng-repeat="item in c.stats">
+                    <div class="key-value">
+                        <span ng-if="item.value">{{item.value}}</span>
+                        <span ng-if="item.icon" class="key-icon">
 							<svg>
 								<use xlink:href={{item.icon}}></use>
 							</svg>
 						</span>
-					</div>
-					<div class="subtitle">
-						{{item.name}}
-					</div>
-					<div ng-if="item.detail" class="subtitle-small">
-						{{item.detail}}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div ng-if="c.drawerWidget" class="panel-drawer collapse" id="root-cause-drawer">
-		<sp-widget widget="c.drawerWidget"></sp-widget>
-	</div>
+                    </div>
+                    <div class="subtitle">
+                        {{item.name}}
+                    </div>
+                    <div ng-if="item.detail" class="subtitle-small">
+                        {{item.detail}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="c.drawerWidget" class="panel-drawer collapse" id="root-cause-drawer">
+        <sp-widget widget="c.drawerWidget"></sp-widget>
+    </div>
 </div>
 
 <div class="hidden">
 
-	<svg version="1.1" id="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+    <svg version="1.1" id="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
 		<path d="M11.5,0C5.2,0,0,5.2,0,11.5S5.2,23,11.5,23S23,17.8,23,11.5S17.8,0,11.5,0z M11.5,22C5.7,22,1,17.3,1,11.5S5.7,1,11.5,1
 			S22,5.7,22,11.5S17.3,22,11.5,22z"/>
 		<path d="M11.5,18c-0.3,0-0.5-0.2-0.5-0.5v-12C11,5.2,11.2,5,11.5,5S12,5.2,12,5.5v12C12,17.8,11.8,18,11.5,18z"/>
 		<path d="M17.5,12h-12C5.2,12,5,11.8,5,11.5S5.2,11,5.5,11h12c0.3,0,0.5,0.2,0.5,0.5S17.8,12,17.5,12z"/>
 	</svg>
 
-<svg version="1.1" id="server" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 593.6 593.3" style="enable-background:new 0 0 593.6 593.3;" xml:space="preserve">
+    <svg version="1.1" id="server" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 593.6 593.3" style="enable-background:new 0 0 593.6 593.3;" xml:space="preserve">
 <g>
 	<path d="M593.6,212.1c0,56.6,0,112.7,0,169.2c-197.8,0-395.5,0-593.4,0c0-56.3,0-112.6,0-169.2
 		C197.8,212.1,395.5,212.1,593.6,212.1z M90.9,308.9c53.4,0,106.2,0,159.3,0c0-8.3,0-16.2,0-24.3c-53.2,0-106.1,0-159.3,0
@@ -71,8 +66,7 @@
 </g>
 </svg>
 
-<svg id="computer-ram" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 27.6 27.6" style="enable-background:new 0 0 27.6 27.6;" xml:space="preserve">
+    <svg id="computer-ram" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27.6 27.6" style="enable-background:new 0 0 27.6 27.6;" xml:space="preserve">
 <g>
 	<g transform="translate(-167.000000, -56.000000)">
 		<g transform="translate(128.000000, 56.000000)">
@@ -90,8 +84,7 @@
 </g>
 </svg>
 
-<svg version="1.1" id="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+    <svg version="1.1" id="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
 <path d="M23.5,24h-23C0.2,24,0,23.8,0,23.5v-21C0,2.2,0.2,2,0.5,2h4C4.8,2,5,2.2,5,2.5S4.8,3,4.5,3H1v20h22V3h-3.5
 	C19.2,3,19,2.8,19,2.5S19.2,2,19.5,2h4C23.8,2,24,2.2,24,2.5v21C24,23.8,23.8,24,23.5,24z"/>
 <path d="M7.5,5h-3C4.2,5,4,4.8,4,4.5v-4C4,0.2,4.2,0,4.5,0h3C7.8,0,8,0.2,8,0.5v4C8,4.8,7.8,5,7.5,5z M5,4h2V1H5V4z"/>

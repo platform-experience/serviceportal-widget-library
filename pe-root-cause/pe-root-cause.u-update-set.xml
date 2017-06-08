@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-05-08 16:05:48">
+<unload unload_date="2017-06-08 13:26:26">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>pe-root-cause</name>
+<name>PE Root Cause</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>8afad6c513127200ba3a7b1a6144b028</remote_sys_id>
+<remote_sys_id>c1f9b490139f36006749bccf3244b0f3</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>jacob</sys_created_by>
-<sys_created_on>2017-05-08 16:05:48</sys_created_on>
-<sys_id>e1eb7d62132ab20040c770a76144b05a</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-08 13:26:26</sys_created_on>
+<sys_id>15b081e413d776006749bccf3244b0a1</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>jacob</sys_updated_by>
-<sys_updated_on>2017-05-08 16:05:48</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-08 13:26:26</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,21 +32,68 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
+<name>incident_a9e30c7dc61122760116894de7bcc7bd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="incident"><incident action="INSERT_OR_UPDATE"><active>true</active><activity_due/><additional_assignee_list/><approval>not requested</approval><approval_history/><approval_set/><assigned_to/><assignment_group display_value="Software" name="Software">8a4dde73c6112278017a6a4baf547aa7</assignment_group><business_duration/><business_service/><business_stc/><calendar_duration/><calendar_stc/><caller_id display_value="Bud Richman">46c6f9efa9fe198101ddf5eed9adf6e7</caller_id><category>software</category><caused_by display_value="CHG0000069">b1cd7552db252200a6a2b31be0b8f536</caused_by><child_incidents/><close_code/><close_notes/><closed_at/><closed_by/><cmdb_ci display_value="Sales Force Automation">a9c0c8d2c6112276018f7705562f9cb0</cmdb_ci><comments/><comments_and_work_notes/><company display_value="ACME North America">31bea3d53790200044e0bfc8bcbe5dec</company><contact_type>phone</contact_type><contract/><correlation_display/><correlation_id/><delivery_plan/><delivery_task/><description/><due_date/><escalation>0</escalation><expected_start/><follow_up/><group_list/><hold_reason/><impact>1</impact><incident_state>1</incident_state><knowledge>false</knowledge><location display_value="324 South State Street, Salt Lake City,UT">105cf7f3c611227501e75e08b14a38ba</location><made_sla>false</made_sla><notify>1</notify><number>INC0000046</number><opened_at>2017-01-08 22:04:15</opened_at><opened_by display_value="Bud Richman">46c6f9efa9fe198101ddf5eed9adf6e7</opened_by><order/><parent/><parent_incident/><priority>3</priority><problem_id display_value="PRB0000006">a9e4890bc6112276003d7a5a5c774a74</problem_id><reassignment_count>1</reassignment_count><rejection_goto/><reopen_count/><resolved_at/><resolved_by/><rfc/><severity>3</severity><short_description>Can't access SFA software</short_description><skills/><sla_due>2017-01-17 22:04:15</sla_due><state>1</state><subcategory/><sys_class_name>incident</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-01-07 22:05:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a9e30c7dc61122760116894de7bcc7bd</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-08 12:33:27</sys_updated_on><time_worked/><upon_approval/><upon_reject/><urgency>3</urgency><user_input/><variables/><watch_list/><wf_activity/><work_end/><work_notes/><work_notes_list/><work_start/></incident></record_update>]]></payload>
+<remote_update_set display_value="PE Root Cause">15b081e413d776006749bccf3244b0a1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-08 13:26:26</sys_created_on>
+<sys_id>15b081e413d776006749bccf3244b0a2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-08 13:26:26</sys_updated_on>
+<table/>
+<target_name>INC0000046</target_name>
+<type>Incident</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>em_event_type_8f36f42013d776006749bccf3244b045</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="em_event_type"><em_event_type action="INSERT_OR_UPDATE"><name>Slow Network Performance</name><pattern>Slow Network Performance</pattern><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-08 12:41:10</sys_created_on><sys_id>8f36f42013d776006749bccf3244b045</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-08 12:41:10</sys_updated_on></em_event_type></record_update>]]></payload>
+<remote_update_set display_value="PE Root Cause">15b081e413d776006749bccf3244b0a1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-08 13:26:26</sys_created_on>
+<sys_id>51b081e413d776006749bccf3244b0a2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-08 13:26:26</sys_updated_on>
+<table/>
+<target_name>Slow Network Performance</target_name>
+<type>Event Type</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
 <name>sp_widget_8d2b96c513127200ba3a7b1a6144b0ed</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
-  /* widget controller */
-  var c = this;
+	/* widget controller */
+	var c = this;
 
-  c.alert = c.data.alert;
-  c.drawerWidget = c.data.drawerWidget;
-  console.log(c.alert);
+	c.alert = c.data.alert;
+	c.drawerWidget = c.data.drawerWidget;
 
-  c.stats = [
-  	{ name: c.alert.ci.name, icon: '#server' },
-  	{ name: c.alert.type, icon: '#computer-ram' },
-  	{ name: 'Cause', icon: "#calendar", detail: c.alert.incident.cause.number || "unknown" }
-  ];
+	c.stats = [
+		{ name: c.alert.ci.name, icon: '#server' },
+		{ name: c.alert.type, icon: '#computer-ram' },
+		{ name: 'Cause', icon: "#calendar", detail: c.alert.incident.cause.number || "unknown" }
+	];
 
+	/*
+	console.log("/---- Root Cause ----/");
+	console.log(c);
+	*/
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
 $orange: #ff6f00;
 $medium-green: #34ba3d;
@@ -193,76 +240,78 @@ $status-recovered-color: $medium-green !default;
 	.key-value-label {
 		color: $status-recovered-color;
 	}
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-root-cause&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-root-cause&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert","label":"Anomaly Alert sys_id","type":"string"},{"name":"titleIconClasses","label":"FontAwesome classes for icon to display next to title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-root-cause&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Root Cause&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert_sysid","label":"Anomaly Alert sys_id","type":"string"},{"name":"titleIconClasses","label":"FontAwesome classes for icon to display next to title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
 
-  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.alert = options.alert || serverOptions.alert;
-  options.titleIconClasses = options.titleIconClasses || serverOptions.titleIconClasses || 'fa fa-bolt';
+	var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+	options.alert_sysid = options.alert_sysid || serverOptions.alert_sysid;
+	options.titleIconClasses = options.titleIconClasses || serverOptions.titleIconClasses || 'fa fa-bolt';
 
-  var getState = function(stateValue, table ){
+	var getState = function(stateValue, table ){
 		var state = new GlideRecord('sys_choice');
-    state.addQuery('element','state');
-    state.addQuery('name', table);
-    state.addQuery('value', stateValue);
-    state.query();
-    while(state.next()){
-    	stateObj = {
-      	value: stateValue,
-      	label: state.label.toString()
-      };
-    };
+		state.addQuery('element','state');
+		state.addQuery('name', table);
+		state.addQuery('value', stateValue);
+		state.query();
+		while(state.next()){
+			stateObj = {
+				value: stateValue,
+				label: state.label.toString()
+			};
+		}
 		return stateObj;
 	};
 
-	var buildAlert = function(gr){
+	var buildAlert = function(rec){
 		return {
-			sys_id: gr.sys_id.toString(),
-			type: gr.type.getDisplayValue(),
-			description: gr.description.toString(),
-			state: gr.state.toString(),
+			sys_id: rec.sys_id.toString(),
+			type: rec.type.getDisplayValue(),
+			description: rec.description.toString(),
+			state: rec.state.toString(),
 			incident: {
-				sys_id: gr.incident.sys_id.toString(),
-				state: getState(gr.incident.state.toString(), 'incident'),
+				sys_id: rec.incident.sys_id.toString(),
+				state: getState(rec.incident.state.toString(), 'incident'),
 				problem: {
-					name: gr.incident.problem_id.name.toString(),
-					sys_id: gr.incident.problem_id.toString(),
+					name: rec.incident.problem_id.short_description.toString(),
+					sys_id: rec.incident.problem_id.toString(),
 					other_incidents: []
 				},
 				cause: {
-					number: gr.incident.caused_by.number.toString(),
-					description: gr.incident.caused_by.short_description.toString(),
-					sys_id: gr.incident.caused_by.toString()
+					number: rec.incident.caused_by.number.toString(),
+					description: rec.incident.caused_by.short_description.toString(),
+					sys_id: rec.incident.caused_by.toString()
 				}
 			},
 			ci: {
-				name: gr.cmdb_ci.name.toString(),
-				sys_id: gr.cmdb_ci.toString(),
-				number: gr.cmdb_ci.number.toString()
+				name: rec.cmdb_ci.name.toString(),
+				sys_id: rec.cmdb_ci.toString(),
+				number: rec.cmdb_ci.number.toString()
 			}
 		}
 	}
 
 	var alert;
 	var alertGR = new GlideRecord('em_alert_anomaly');
-	if (alertGR.get(options.alert)) {
-		alert = buildAlert( alertGR );
-	} else {
-  	alertGR = new GlideRecord('em_alert_anomaly');
-  	// alertGR.addEncodedQuery('state!=Closed');
-  	alertGR.orderByDesc('sys_created_on');
-  	alertGR.query();
-  	alertGR.next();
-  	alert = buildAlert( alertGR );
+	if (options.alert_sysid) {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    alertGR.get(options.alert_sysid);
+    alert = buildAlert( alertGR );
+  } else {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    //alertGR.addEncodedQuery('state!=Closed');
+    alertGR.orderByDesc('sys_created_on');
+    alertGR.query();
+    alertGR.next();
+    alert = buildAlert( alertGR );
   }
 
 	data.alert = alert;
 	data.drawerWidget = $sp.getWidget('pe-root-cause-details', {
-	  alert: alert.sys_id
+		alert_sysid : options.alert_sysid
 	});
-	
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 16:16:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8d2b96c513127200ba3a7b1a6144b0ed&lt;/sys_id&gt;&lt;sys_mod_count&gt;74&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-root-cause&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8d2b96c513127200ba3a7b1a6144b0ed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-05-08 14:37:18&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.alert.state === 'Closed') }"&gt;
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 16:16:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8d2b96c513127200ba3a7b1a6144b0ed&lt;/sys_id&gt;&lt;sys_mod_count&gt;85&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Root Cause&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8d2b96c513127200ba3a7b1a6144b0ed&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-08 12:46:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.alert.state === 'Closed') }"&gt;
 	&lt;div class="panel-proper"&gt;
 		&lt;div class="panel-header"&gt;
 			&lt;span ng-if="options.titleIconClasses" class="title-icon"&gt;
@@ -372,16 +421,16 @@ $status-recovered-color: $medium-green !default;
 &lt;/svg&gt;
 
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-root-cause">e1eb7d62132ab20040c770a76144b05a</remote_update_set>
+<remote_update_set display_value="PE Root Cause">15b081e413d776006749bccf3244b0a1</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>jacob</sys_created_by>
-<sys_created_on>2017-05-08 16:05:48</sys_created_on>
-<sys_id>69eb7d62132ab20040c770a76144b05a</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-08 13:26:26</sys_created_on>
+<sys_id>5db081e413d776006749bccf3244b0a2</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>jacob</sys_updated_by>
-<sys_updated_on>2017-05-08 16:05:48</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-08 13:26:26</sys_updated_on>
 <table/>
-<target_name>pe-root-cause</target_name>
+<target_name>PE Root Cause</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -399,6 +448,10 @@ $status-recovered-color: $medium-green !default;
 
   c.incident = c.data.incident;
   
+	/*
+	console.log("/---- RC Details ----/");
+	console.log(c);
+	*/
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$list-header-bg-color: #e8e8e8 !default;
 $state-default-color: #557f90 !default;
 $state-positive: #3abe43 !default;
@@ -443,60 +496,63 @@ $state-negative: #ff402c !default;
 }
 .state-open, .state-in-progress {
 	color: $state-negative;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-root-cause-details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-root-cause-details&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert","label":"Anomaly Alert sys_id","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-root-cause-details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Root Cause Details&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert_sysid","label":"Anomaly Alert sys_id","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
 
-  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.alert = options.alert || serverOptions.alert;
+	var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+	options.alert_sysid = options.alert_sysid || serverOptions.alert_sysid;
 
-  var getState = function(stateValue, table ){
+	var getState = function(stateValue, table ){
 		var state = new GlideRecord('sys_choice');
-    state.addQuery('element','state');
-    state.addQuery('name', table);
-    state.addQuery('value', stateValue);
-    state.query();
-    while(state.next()){
-    	stateObj = {
-      	value: stateValue,
-      	label: state.label.toString(),
-      	labelClass: state.label.toLowerCase().split(' ').join('-')
-      };
-    };
+		state.addQuery('element','state');
+		state.addQuery('name', table);
+		state.addQuery('value', stateValue);
+		state.query();
+		while(state.next()){
+			stateObj = {
+				value: stateValue,
+				label: state.label.toString(),
+				labelClass: state.label.toLowerCase().split(' ').join('-')
+			};
+		};
 		return stateObj;
 	};
 
-	var buildAlert = function(gr){
+	var buildAlert = function(rec){
 		return {
-			sys_id: gr.sys_id.toString(),
-			type: gr.type.getDisplayValue(),
-			description: gr.description.toString(),
-			incident: gr.incident.sys_id.toString(),
+			sys_id: rec.sys_id.toString(),
+			type: rec.type.getDisplayValue(),
+			description: rec.description.toString(),
+			incident: rec.incident.sys_id.toString(),
 			ci: {
-				name: gr.cmdb_ci.name.toString(),
-				sys_id: gr.cmdb_ci.toString(),
-				number: gr.cmdb_ci.number.toString()
+				name: rec.cmdb_ci.name.toString(),
+				sys_id: rec.cmdb_ci.toString(),
+				number: rec.cmdb_ci.number.toString()
 			}
 		}
 	}
 
 	var alert;
 	var alertGR = new GlideRecord('em_alert_anomaly');
-	if (alertGR.get(options.alert)) {
-		alert = buildAlert( alertGR );
-	} else {
-  	alertGR = new GlideRecord('em_alert_anomaly');
-  	// alertGR.addEncodedQuery('state!=Closed');
-  	alertGR.orderByDesc('sys_created_on');
-  	alertGR.query();
-  	alertGR.next();
-  	alert = buildAlert( alertGR );
+	if (options.alert_sysid) {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    alertGR.get(options.alert_sysid);
+    alert = buildAlert( alertGR );
+  } else {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    //alertGR.addEncodedQuery('state!=Closed');
+    alertGR.orderByDesc('sys_created_on');
+    alertGR.query();
+    alertGR.next();
+    alert = buildAlert( alertGR );
   }
+	
 	data.alert = alert;
-  
-  if(alert.incident){
-  	
-  	var incidentGR = new GlideRecord('incident');
+
+	if(alert.incident){
+
+		var incidentGR = new GlideRecord('incident');
 		if (incidentGR.get(alert.incident)) {
 			var incident = {
 				sys_id: incidentGR.sys_id.toString(),
@@ -537,7 +593,7 @@ $state-negative: #ff402c !default;
 
 	}
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:31:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3ba4a20a13de7200ba3a7b1a6144b09f&lt;/sys_id&gt;&lt;sys_mod_count&gt;78&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-root-cause-details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3ba4a20a13de7200ba3a7b1a6144b09f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-05-08 14:35:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if-start="c.incident.problem.sys_id" class="drawer-list-header"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 19:31:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3ba4a20a13de7200ba3a7b1a6144b09f&lt;/sys_id&gt;&lt;sys_mod_count&gt;82&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Root Cause Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3ba4a20a13de7200ba3a7b1a6144b09f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-08 12:46:26&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if-start="c.incident.problem.sys_id" class="drawer-list-header"&gt;
 	Related Problem
 &lt;/div&gt;
 &lt;div ng-if-end class="drawer-list"&gt;
@@ -581,17 +637,96 @@ $state-negative: #ff402c !default;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-root-cause">e1eb7d62132ab20040c770a76144b05a</remote_update_set>
+<remote_update_set display_value="PE Root Cause">15b081e413d776006749bccf3244b0a1</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>jacob</sys_created_by>
-<sys_created_on>2017-05-08 16:05:48</sys_created_on>
-<sys_id>a5eb7d62132ab20040c770a76144b05a</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-08 13:26:26</sys_created_on>
+<sys_id>99b081e413d776006749bccf3244b0a2</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>jacob</sys_updated_by>
-<sys_updated_on>2017-05-08 16:05:48</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-08 13:26:26</sys_updated_on>
 <table/>
-<target_name>pe-root-cause-details</target_name>
+<target_name>PE Root Cause Details</target_name>
 <type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>em_alert_anomaly_6726b3c813db36006749bccf3244b025</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="em_alert_anomaly"><em_alert_anomaly action="INSERT_OR_UPDATE"><acknowledged>false</acknowledged><additional_info/><category>Default</category><classification>0</classification><cmdb_ci display_value="ny8500-nbxs08">55b35562c0a8010e01cff22378e0aea9</cmdb_ci><correlation_group>0</correlation_group><correlation_rule_group>0</correlation_rule_group><description>Abnormally High Response Times</description><event_class/><flap_count/><flap_last_state/><flap_last_update_time/><flap_start_window/><group/><group_source>6</group_source><impact_services/><incident display_value="INC0000046">a9e30c7dc61122760116894de7bcc7bd</incident><initial_event_time/><initial_remote_time/><is_group_alert>false</is_group_alert><kb/><kb_url>/kb_view.do?sysparm_article=</kb_url><last_event_time/><last_remote_time/><last_update_time_by_event/><maintenance>false</maintenance><message_key/><metric_name/><node/><number>Alert Anomaly10000</number><parent/><remote_task_id/><resource/><severity>1</severity><short_description/><source/><state>Open</state><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-07 13:26:35</sys_created_on><sys_domain>global</sys_domain><sys_id>6726b3c813db36006749bccf3244b025</sys_id><sys_mod_count>7</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-08 12:41:20</sys_updated_on><type display_value="Slow Network Performance">8f36f42013d776006749bccf3244b045</type><work_notes/></em_alert_anomaly></record_update>]]></payload>
+<remote_update_set display_value="PE Root Cause">15b081e413d776006749bccf3244b0a1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-08 13:26:26</sys_created_on>
+<sys_id>9db081e413d776006749bccf3244b0a1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-08 13:26:26</sys_updated_on>
+<table/>
+<target_name>Alert Anomaly10000</target_name>
+<type>Alert Anomaly</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>problem_a9e4890bc6112276003d7a5a5c774a74</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="problem"><problem action="INSERT_OR_UPDATE"><active>true</active><activity_due/><additional_assignee_list/><approval>not requested</approval><approval_history/><approval_set/><assigned_to display_value="ITIL User">681b365ec0a80164000fb0b05854a0cd</assigned_to><assignment_group/><business_duration/><business_service/><calendar_duration/><close_notes/><closed_at/><closed_by/><cmdb_ci display_value="Sales Force Automation">a9c0c8d2c6112276018f7705562f9cb0</cmdb_ci><comments/><comments_and_work_notes/><company/><contact_type>phone</contact_type><contract/><correlation_display/><correlation_id/><delivery_plan/><delivery_task/><description>Performance of the Siebel SFA software has been severely degraded since the upgrade performed this
+			weekend. &#13;
+			&#13;
+			We moved to an unsupported Oracle DB version.
+		</description><due_date/><escalation>2</escalation><expected_start/><follow_up/><group_list/><impact>3</impact><knowledge>false</knowledge><known_error>false</known_error><location/><made_sla>false</made_sla><number>PRB0000006</number><opened_at>2016-07-31 22:07:07</opened_at><opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by><order/><parent/><priority>3</priority><problem_state>2</problem_state><reassignment_count/><rejection_goto/><related_incidents/><rfc display_value="CHG0000001">a9e9c33dc61122760072455df62663d2</rfc><short_description>Can't access SFA software</short_description><skills/><sla_due/><state>2</state><sys_class_name>problem</sys_class_name><sys_created_by>ITIL User</sys_created_by><sys_created_on>2016-07-31 22:07:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a9e4890bc6112276003d7a5a5c774a74</sys_id><sys_mod_count>6</sys_mod_count><sys_updated_by>glide.maint</sys_updated_by><sys_updated_on>2016-08-30 22:39:56</sys_updated_on><time_worked/><upon_approval/><upon_reject/><urgency>3</urgency><user_input/><variables/><watch_list/><wf_activity/><work_around/><work_end/><work_notes/><work_notes_list/><work_start/></problem></record_update>]]></payload>
+<remote_update_set display_value="PE Root Cause">15b081e413d776006749bccf3244b0a1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-08 13:26:26</sys_created_on>
+<sys_id>d5b081e413d776006749bccf3244b0a2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-08 13:26:26</sys_updated_on>
+<table/>
+<target_name>PRB0000006</target_name>
+<type>Problem</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>change_request_a9e9c33dc61122760072455df62663d2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="change_request"><change_request action="INSERT_OR_UPDATE"><active>true</active><activity_due/><additional_assignee_list/><approval>requested</approval><approval_history/><approval_set/><assigned_to display_value="ITIL User">681b365ec0a80164000fb0b05854a0cd</assigned_to><assignment_group/><backout_plan>Current prod environment to be snapshotted with VmWare
+            prior to change.
+        </backout_plan><business_duration/><business_service/><cab_date/><cab_delegate/><cab_recommendation/><cab_required>false</cab_required><calendar_duration/><category>Software</category><change_plan>Backup dataset, image current system, reinstall previous
+            release, test
+        </change_plan><close_code/><close_notes/><closed_at>2017-01-24 09:46:25</closed_at><closed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</closed_by><cmdb_ci display_value="Sales Force Automation">a9c0c8d2c6112276018f7705562f9cb0</cmdb_ci><comments/><comments_and_work_notes/><company/><conflict_last_run/><conflict_status/><contact_type>phone</contact_type><contract/><correlation_display/><correlation_id/><delivery_plan/><delivery_task/><description>Performance of the Siebel SFA software has been severely
+            degraded since the upgrade performed this weekend.
+
+            We moved to an unsupported Oracle DB version. Need to rollback the
+            Oracle Instance to a supported version.
+        </description><due_date/><end_date>2017-01-17 01:00:00</end_date><escalation>0</escalation><expected_start/><follow_up/><group_list/><impact>3</impact><implementation_plan/><justification/><knowledge>false</knowledge><location/><made_sla>false</made_sla><number>CHG0000001</number><on_hold>false</on_hold><on_hold_reason/><opened_at>2016-07-25 22:12:50</opened_at><opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by><order/><outside_maintenance_schedule>false</outside_maintenance_schedule><parent/><phase>requested</phase><phase_state>open</phase_state><priority>3</priority><production_system>false</production_system><reason/><reassignment_count/><rejection_goto/><requested_by display_value="David Loo">5137153cc611227c000bbd1bd8cd2007</requested_by><requested_by_date>2016-08-01 00:00:00</requested_by_date><review_comments/><review_date/><review_status>3</review_status><risk>2</risk><risk_impact_analysis/><scope>3</scope><short_description>Rollback Oracle Version</short_description><skills/><sla_due/><start_date>2017-01-16 23:00:00</start_date><state>-5</state><std_change_producer_version/><sys_class_name>change_request</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-07-25 22:12:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a9e9c33dc61122760072455df62663d2</sys_id><sys_mod_count>21</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-01-29 12:42:23</sys_updated_on><test_plan>Multi-User testing on Sunday night</test_plan><time_worked/><type>normal</type><upon_approval/><upon_reject/><urgency>3</urgency><user_input/><variables/><watch_list/><wf_activity/><work_end/><work_notes/><work_notes_list/><work_start/></change_request></record_update>]]></payload>
+<remote_update_set display_value="PE Root Cause">15b081e413d776006749bccf3244b0a1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-08 13:26:26</sys_created_on>
+<sys_id>d9b081e413d776006749bccf3244b0a1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-08 13:26:26</sys_updated_on>
+<table/>
+<target_name>CHG0000001</target_name>
+<type>Change Request</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
