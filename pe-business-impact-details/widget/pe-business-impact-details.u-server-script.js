@@ -3,13 +3,13 @@
   /* e.g., data.table = $sp.getValue('table'); */
 
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.alert = options.alert || serverOptions.alert;
+  options.alert_sysid = options.alert_sysid || serverOptions.alert_sysid;
 
-  var fakeRevenue = ['1.2M', '0.9M', '0.3M', '89K', '78K'];
-  
+	var fakeRevenue = [1.2, 0.9, 0.3, 0.89, 0.78];
+  var totalFakeRevenue = 0.0;
   var summaryStats = {
-    users: [],
-    revenue: fakeRevenue[0]
+    users: 0.0,
+    revenue: 0.0
   };
 
   var REL_ID = (function(){
@@ -20,75 +20,79 @@
     return rel.sys_id.toString();
   })();
 
-  var getUsers = function( userGroupID ){
-    var users = [];
-    var groupMember = new GlideRecord('sys_user_grmember');
-    groupMember.addQuery('group', userGroupID);
-    groupMember.query();
-    while (groupMember.next()) {
-      var userID = groupMember.user.sys_id.toString();
-      users.push( userID );
-      if (summaryStats.users.indexOf(userID) === -1) summaryStats.users.push(userID);
-    }
-    return users;
-  };
+  var getDependentCIs = function(rec, arr){
 
-  var getDependentCIs = function(gr, arr){
-  	var userGroupID = gr.user_group.toString();
-    var userGroup = userGroupID.length ? getUsers( userGroupID ) : [];
-    arr.push({
-      sys_id: gr.sys_id.toString(),
-      name: gr.name.toString(),
-      location: gr.location.toString(),
-      classification: gr.service_classification.toString(),
-      users: userGroup,
-      revenue: fakeRevenue[Math.floor(Math.random()*5)]
+		//Fake Users and Revenue
+		var fakeUsers = (Math.floor(Math.random()*40)+1);
+		var fakeRev = fakeRevenue[Math.floor(Math.random()*5)];
+		summaryStats.revenue += fakeRev;
+		summaryStats.users += fakeUsers;
+
+		
+		arr.push({
+      sys_id: rec.sys_id.toString(),
+      name: rec.name.toString(),
+      location: rec.location.toString(),
+      classification: rec.service_classification.toString(),
+      users: fakeUsers.toString() + 'K',
+      revenue: fakeRev.toString() +'M'
     });
+		
     var ciGR = new GlideRecord('cmdb_rel_ci');
     ciGR.addQuery('type.sys_id', REL_ID );
-    ciGR.addQuery('child.sys_id', gr.sys_id.toString() );
+    ciGR.addQuery('child.sys_id', rec.sys_id.toString() );
     ciGR.query();
+		
     while ( ciGR.next() ) {
       var parentGR = new GlideRecord('cmdb_ci_service');
+			data.userGroups.push(ciGR.parent.toDisplayValue());
       parentGR.get( ciGR.parent.toString() );
       var dependentsArray = getDependentCIs(parentGR, []);
       dependentsArray.forEach(function(ci){
-        arr.push(ci);
-      });
+        arr.push(ci); 
+			});
     }
     return arr;
   };
 
-  var getAlert = function(gr){
+  var getAlert = function(rec){
     var CIs = [];
-    var ciGR = new GlideRecord('cmdb_ci_service');
-    if ( ciGR.get( gr.cmdb_ci.toString() ) ) {
+    var ciGR = new GlideRecord('cmdb_ci');
+		data.ciGRGet = rec.cmdb_ci.toString();
+    if ( ciGR.get( rec.cmdb_ci.toString() ) ) {
       CIs = getDependentCIs(ciGR, CIs);
     }
     return {
-      sys_id: gr.sys_id.toString(),
-      type: gr.type.getDisplayValue(),
-      description: gr.description.toString(),
-      incident: gr.incident.sys_id.toString(),
-      state: gr.state.toString(),
+      sys_id: rec.sys_id.toString(),
+      type: rec.type.getDisplayValue(),
+      description: rec.description.toString(),
+      incident: rec.incident.sys_id.toString(),
+      state: rec.state.toString(),
       cis: CIs
     };
   };
-
+	
   var alertGR, alert;
-  if (options.alert) {
-    alertGR = new GlideRecord('em_alert_anomaly');
-    alertGR.get(options.alert);
-    alert = getAlert( alertGR );
-  } else {
-    alertGR = new GlideRecord('em_alert_anomaly');
-    // alertGR.addEncodedQuery('state!=Closed');
-    alertGR.orderByDesc('sys_created_on');
-    alertGR.query();
-    alertGR.next();
-    alert = getAlert( alertGR );
-  }
-  alert.summaryStats = summaryStats;
-  data.alert = alert;
-
+	//Passed in from the Business Impact widget
+	if(options.alert){
+		data.alert = options.alert;		
+	}else{
+		if (options.alert_sysid) {
+			alertGR = new GlideRecord('em_alert_anomaly');
+			alertGR.get(options.alert_sysid);
+			alert = getAlert( alertGR );
+		} else {
+			alertGR = new GlideRecord('em_alert_anomaly');
+			// alertGR.addEncodedQuery('state!=Closed');
+			alertGR.orderByDesc('sys_created_on');
+			alertGR.query();
+			alertGR.next();
+			alert = getAlert( alertGR );
+		}
+		alert.summaryStats = summaryStats;
+		alert.summaryStats.users = alert.summaryStats.users.toFixed(0);
+		alert.summaryStats.revenue = alert.summaryStats.revenue.toFixed(1);
+		data.alert = alert;
+	}
+  
 })();

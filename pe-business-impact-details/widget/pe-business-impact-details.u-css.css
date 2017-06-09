@@ -1,9 +1,36 @@
 $slate: #485563;
+$orange: #ff6f00;
+$medium-green: #34ba3d;
+
+$icon-circle-color: #7e848b !default;
+
+$text-color: $slate !default;
+$divider-color: #7E848B !default;
+
+$status-alert-color: $orange !default;
+$status-recovered-color: $medium-green !default;
 
 .row {
 	margin: 0 -7px;
 	padding: 12px;
 	border-top: solid 0.5px rgba(52, 61, 71, 0.15);
+  background-color: #ffffff;
+}
+
+.drawer-list-header {
+	background-color: #e8e8e8;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 8px 12px;
+	&:first-child {
+		padding-top: 13px;
+	} 
+}
+.drawer-list-item {
+	margin-bottom: 10px;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .left-padded {
@@ -25,7 +52,21 @@ $slate: #485563;
 	height: 0.8em;
 	width: 0.8em;
 }
+.key-value {
+	color: $status-alert-color;
+	fill: $status-alert-color;
+	font-size: 36px;
+	font-weight: 200;
+	height: 40px;
+	white-space: nowrap;
+	line-height: 1;
+}
 
+.key-value-label {
+	font-size: 14px;
+	color: $status-alert-color;
+	margin-top: -10px;
+}
 .key-value-grouped-label {
 	text-align: left;
 	margin-top: 0;

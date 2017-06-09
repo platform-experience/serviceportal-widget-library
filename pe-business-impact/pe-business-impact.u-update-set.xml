@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-05-08 16:03:36">
+<unload unload_date="2017-06-09 14:44:20">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>pe-business-impact</name>
+<name>PE Business Impact</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>bd898ca813963200ba3a7b1a6144b033</remote_sys_id>
+<remote_sys_id>1db5145c131f36006749bccf3244b00b</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>jacob</sys_created_by>
-<sys_created_on>2017-05-08 16:03:36</sys_created_on>
-<sys_id>556b3962132ab20040c770a76144b0b4</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-09 14:44:20</sys_created_on>
+<sys_id>502c92b813d3b6006749bccf3244b0e8</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>jacob</sys_updated_by>
-<sys_updated_on>2017-05-08 16:03:36</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-09 14:44:20</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,19 +32,344 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_93c9cca813963200ba3a7b1a6144b0bd</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+<name>em_alert_anomaly_6726b3c813db36006749bccf3244b025</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="em_alert_anomaly"><em_alert_anomaly action="INSERT_OR_UPDATE"><acknowledged>false</acknowledged><additional_info/><category>Default</category><classification>0</classification><cmdb_ci display_value="ny8500-nbxs08">55b35562c0a8010e01cff22378e0aea9</cmdb_ci><correlation_group>0</correlation_group><correlation_rule_group>0</correlation_rule_group><description>Abnormally High Response Times</description><event_class/><flap_count/><flap_last_state/><flap_last_update_time/><flap_start_window/><group/><group_source>6</group_source><impact_services/><incident display_value="INC0000046">a9e30c7dc61122760116894de7bcc7bd</incident><initial_event_time/><initial_remote_time/><is_group_alert>false</is_group_alert><kb/><kb_url>/kb_view.do?sysparm_article=</kb_url><last_event_time/><last_remote_time/><last_update_time_by_event/><maintenance>false</maintenance><message_key/><metric_name/><node/><number>Alert Anomaly10000</number><parent/><remote_task_id/><resource/><severity>1</severity><short_description/><source/><state>Open</state><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-07 13:26:35</sys_created_on><sys_domain>global</sys_domain><sys_id>6726b3c813db36006749bccf3244b025</sys_id><sys_mod_count>7</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-08 12:41:20</sys_updated_on><type display_value="Slow Network Performance">8f36f42013d776006749bccf3244b045</type><work_notes/></em_alert_anomaly></record_update>]]></payload>
+<remote_update_set display_value="PE Business Impact">502c92b813d3b6006749bccf3244b0e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-09 14:44:20</sys_created_on>
+<sys_id>182c92b813d3b6006749bccf3244b0e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-09 14:44:20</sys_updated_on>
+<table/>
+<target_name>Alert Anomaly10000</target_name>
+<type>Alert Anomaly</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_fa62d4c5139e3200ba3a7b1a6144b0d0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
   /* widget controller */
   var c = this;
 
   c.alert = c.data.alert;
 
-  c.stats = [
-  	{ name: 'Services', value: c.alert.cis.length },
-  	{ name: '$ Per Hour', value: c.alert.summaryStats.revenue },
-  	{ name: 'Users', value: c.alert.summaryStats.users.length }
-  ];
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
+$orange: #ff6f00;
+$medium-green: #34ba3d;
 
+$icon-circle-color: #7e848b !default;
+
+$text-color: $slate !default;
+$divider-color: #7E848B !default;
+
+$status-alert-color: $orange !default;
+$status-recovered-color: $medium-green !default;
+
+.row {
+	margin: 0 -7px;
+	padding: 12px;
+	border-top: solid 0.5px rgba(52, 61, 71, 0.15);
+  background-color: #ffffff;
+}
+
+.drawer-list-header {
+	background-color: #e8e8e8;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 8px 12px;
+	&amp;amp;:first-child {
+		padding-top: 13px;
+	} 
+}
+.drawer-list-item {
+	margin-bottom: 10px;
+	&amp;amp;:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.left-padded {
+	text-align: left;
+	padding-top: 15px;
+}
+
+.col-xs-4 {
+	padding: 0 7.5px;
+}
+
+.dollar-icon {
+	fill: $slate;
+	height: 0.8em;
+	width: 0.5em;
+}
+.user-icon {
+	fill: $slate;
+	height: 0.8em;
+	width: 0.8em;
+}
+.key-value {
+	color: $status-alert-color;
+	fill: $status-alert-color;
+	font-size: 36px;
+	font-weight: 200;
+	height: 40px;
+	white-space: nowrap;
+	line-height: 1;
+}
+
+.key-value-label {
+	font-size: 14px;
+	color: $status-alert-color;
+	margin-top: -10px;
+}
+.key-value-grouped-label {
+	text-align: left;
+	margin-top: 0;
+}
+
+.key-group {
+	display: inline-block;
+}
+
+.key-float-group &amp;gt; * {
+	height: 55px;
+	float: left;
+	margin-right: 5px;
+	&amp;amp;:last-child {
+		margin-right: none;
+	}
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-business-impact-details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Business Impact Details&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert_sysid","label":"Anomaly Alert sys_id","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+  options.alert_sysid = options.alert_sysid || serverOptions.alert_sysid;
+
+	var fakeRevenue = [1.2, 0.9, 0.3, 0.89, 0.78];
+  var totalFakeRevenue = 0.0;
+  var summaryStats = {
+    users: 0.0,
+    revenue: 0.0
+  };
+
+  var REL_ID = (function(){
+    var rel = new GlideRecord('cmdb_rel_type');
+    rel.addQuery('name', 'Depends on::Used by');
+    rel.query();
+    rel.next();
+    return rel.sys_id.toString();
+  })();
+
+  var getDependentCIs = function(rec, arr){
+
+		//Fake Users and Revenue
+		var fakeUsers = (Math.floor(Math.random()*40)+1);
+		var fakeRev = fakeRevenue[Math.floor(Math.random()*5)];
+		summaryStats.revenue += fakeRev;
+		summaryStats.users += fakeUsers;
+
+		
+		arr.push({
+      sys_id: rec.sys_id.toString(),
+      name: rec.name.toString(),
+      location: rec.location.toString(),
+      classification: rec.service_classification.toString(),
+      users: fakeUsers.toString() + 'K',
+      revenue: fakeRev.toString() +'M'
+    });
+		
+    var ciGR = new GlideRecord('cmdb_rel_ci');
+    ciGR.addQuery('type.sys_id', REL_ID );
+    ciGR.addQuery('child.sys_id', rec.sys_id.toString() );
+    ciGR.query();
+		
+    while ( ciGR.next() ) {
+      var parentGR = new GlideRecord('cmdb_ci_service');
+			data.userGroups.push(ciGR.parent.toDisplayValue());
+      parentGR.get( ciGR.parent.toString() );
+      var dependentsArray = getDependentCIs(parentGR, []);
+      dependentsArray.forEach(function(ci){
+        arr.push(ci); 
+			});
+    }
+    return arr;
+  };
+
+  var getAlert = function(rec){
+    var CIs = [];
+    var ciGR = new GlideRecord('cmdb_ci');
+		data.ciGRGet = rec.cmdb_ci.toString();
+    if ( ciGR.get( rec.cmdb_ci.toString() ) ) {
+      CIs = getDependentCIs(ciGR, CIs);
+    }
+    return {
+      sys_id: rec.sys_id.toString(),
+      type: rec.type.getDisplayValue(),
+      description: rec.description.toString(),
+      incident: rec.incident.sys_id.toString(),
+      state: rec.state.toString(),
+      cis: CIs
+    };
+  };
+	
+  var alertGR, alert;
+	//Passed in from the Business Impact widget
+	if(options.alert){
+		data.alert = options.alert;		
+	}else{
+		if (options.alert_sysid) {
+			alertGR = new GlideRecord('em_alert_anomaly');
+			alertGR.get(options.alert_sysid);
+			alert = getAlert( alertGR );
+		} else {
+			alertGR = new GlideRecord('em_alert_anomaly');
+			// alertGR.addEncodedQuery('state!=Closed');
+			alertGR.orderByDesc('sys_created_on');
+			alertGR.query();
+			alertGR.next();
+			alert = getAlert( alertGR );
+		}
+		alert.summaryStats = summaryStats;
+		alert.summaryStats.users = alert.summaryStats.users.toFixed(0);
+		alert.summaryStats.revenue = alert.summaryStats.revenue.toFixed(1);
+		data.alert = alert;
+	}
+  
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 06:18:47&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;fa62d4c5139e3200ba3a7b1a6144b0d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;83&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Business Impact Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fa62d4c5139e3200ba3a7b1a6144b0d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-09 14:28:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row text-center drawer-list-header"&gt;
+	&lt;div class="col-xs-4 text-left"&gt;
+		Lines of Business
+	&lt;/div&gt;
+	&lt;div class="col-xs-4"&gt;
+		Revenue at Risk
+	&lt;/div&gt;
+	&lt;div class="col-xs-4"&gt;
+		Users Impacted
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row text-center" ng-repeat="item in c.alert.cis"&gt;
+&lt;!-- | filter:{classification: 'Business Service'} --&gt;
+	&lt;div class="col-xs-4 left-padded"&gt;
+		{{item.name}}
+	&lt;/div&gt;
+	&lt;div class="col-xs-4"&gt;
+		&lt;div class="key-value key-float-group"&gt;
+			&lt;span&gt;
+				&lt;svg class="dollar-icon"&gt;
+					&lt;use xlink:href="#dollar"&gt;&lt;/use&gt;
+				&lt;/svg&gt;
+			&lt;/span&gt;
+			&lt;div class="key-group"&gt;
+				{{item.revenue}}
+				&lt;div class="key-value-label key-value-grouped-label"&gt;
+					per hour
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="col-xs-4"&gt;
+		&lt;div class="key-value"&gt;
+			&lt;span&gt;
+				&lt;svg class="user-icon"&gt;
+					&lt;use xlink:href="#people"&gt;&lt;/use&gt;
+				&lt;/svg&gt;
+			&lt;/span&gt;
+			{{item.users}}
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="hidden"&gt;
+
+	&lt;svg version="1.1" id="dollar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 101.4 216.4" style="enable-background:new 0 0 101.4 216.4;" xml:space="preserve"&gt;
+		&lt;g&gt;
+			&lt;path d="M0,139c11.8-0.7,23.1-1.3,34.4-2c1.3,4.9,2.1,9.5,3.7,13.8c2.9,7.5,8.5,10.7,15.5,9.6c8.1-1.2,13.3-8.5,10.3-16
+				c-2-5-5.8-9.7-9.9-13.3c-8.8-7.7-18.4-14.3-27.4-21.7c-10.1-8.3-19.2-17.5-22.3-31C-0.6,57.2,9,38,29,30c3-1.2,3.9-2.7,3.8-5.8
+				c-0.2-8-0.1-15.9-0.1-24.2c10.4,0,20.3,0,30.6,0c0,9,0,17.8,0,26.9c12.3,2.7,22.9,7.7,29.9,18.4c4.6,7,6.7,14.7,7.1,23.5
+				c-11.5,1.7-23,3.4-34.7,5.2c-0.7-3.2-1.1-6.1-2-9c-2.4-8-8.3-11.6-15.5-9.6c-5.9,1.6-9.7,9.1-6.8,16c2.5,5.8,6.4,11.3,10.9,15.7
+				c5,5,11.4,8.6,17.2,12.8c9.4,6.8,17.9,14.4,24.2,24.2c16.9,26.5,4.8,56.7-25.7,64.3c-1.3,0.3-2.6,0.6-4.3,1c0,8.7,0,17.5,0,26.7
+				c-10.5,0-20.5,0-30.8,0c0-9.5,0-18.8,0-28.5C10.6,179.6,1.1,162.6,0,139z M72.7,64.4c6.1-0.9,12-1.8,18.1-2.8
+				c-0.2-1.3-0.3-2.1-0.6-2.9c-4.7-14.6-15.6-21.5-30.1-23.3c-4.7-0.6-5.6-2.4-5.5-6.5c0.3-6.8,0.1-13.5,0.1-20.4c-4.7,0-8.8,0-13.4,0
+				c0,7.4-0.2,14.5,0.1,21.6c0.2,3.8-1,5.3-4.9,6.3c-16.7,4.1-26,17.2-24.9,34.3c0.6,9.6,4.7,17.8,11.9,24
+				c11.6,10,23.9,19.2,35.4,29.3c4.7,4.1,9.1,9,11.8,14.5c3.9,7.7,3.4,15.9-2.6,22.9C58,173.4,40,171.6,32,157.7
+				c-2-3.5-3.3-7.5-5-11.7c-5.7,0.4-11.4,0.7-17.1,1.1c0.3,14.6,11.3,28.3,26.5,32.5c4.4,1.2,5.3,3.2,5.2,7.2
+				c-0.3,7.1-0.1,14.2-0.1,21.1c4.9,0,9,0,13.4,0c0-7,0.3-13.6-0.1-20.3c-0.3-4.7,1.1-6.2,5.9-6.5c16.6-1.1,28.8-11.7,31.7-27
+				c2.3-11.9-2-22-9.8-30.2c-7.6-8-16.7-14.6-25.2-21.8c-5.9-5.1-12.1-9.9-17.6-15.4c-4.6-4.7-7.1-10.8-7.6-17.5
+				c-0.8-10.3,5-19.6,13.8-21.8c10.8-2.7,20.2,1.8,24.7,11.8C71.3,60.6,71.9,62.2,72.7,64.4z"/&gt;
+		&lt;/g&gt;
+	&lt;/svg&gt;
+
+	&lt;svg version="1.1" id="people" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 479.5 362" style="enable-background:new 0 0 479.5 362;" xml:space="preserve"&gt;
+		&lt;g&gt;
+			&lt;path d="M198.2,170c-1-0.4-2.1-0.9-3.1-1.3c-17.4-7.3-28.1-20.5-29-39.1c-1.1-21.2-1.3-42.8,0.8-63.9c3.9-38.7,41.6-68.6,80.1-65.5
+				c32.3,2.7,63.3,31.2,67.4,63.6c1.8,14.5,1,29.3,1.2,43.9c0.1,8,0.7,16.1-0.5,24c-2.8,17.9-13.5,29.9-30,37.1
+				c-1.4,0.6-2.8,1.1-5.3,2c3.5,2.3,6.2,4.7,9.4,6.1c10.3,4.6,20.8,9,31.2,13.2c15,6.1,29.7,12.8,42.6,22.7
+				c22.6,17.2,33.9,40.5,36.2,68.5c0.9,11-6.2,21.2-17.6,25.9c-30,12.4-60,24.6-90,36.9c-11.7,4.8-23.4,9.5-35.1,14.4
+				c-11.7,4.8-23.3,4.8-35,0c-41.7-17.1-83.5-34.1-125.2-51.2c-13.3-5.5-19.1-16.4-17.2-30.8c4.3-33.3,21.5-57.7,50.8-73.3
+				c14.5-7.7,30.1-13.3,45.1-20.1c8-3.6,15.8-7.5,23.7-11.2C198.5,171.2,198.4,170.6,198.2,170z M297.2,100c0-8,0.2-16,0-24
+				c-0.7-31-27.5-57.8-57.6-57.7c-30.6,0.2-56.9,27.1-57,58.6c-0.1,14.5,0,29,0,43.5c0,17.6,6,26.1,22.7,32
+				c12.7,4.5,16.7,19.3,7.5,29.1c-3.6,3.8-8,7.2-12.6,9.7c-7.6,4.1-15.7,7.2-23.5,10.8c-15.2,7.1-31,13.2-45.3,21.8
+				c-20.7,12.4-31.2,32.1-33.9,56.1c-0.6,5.3,1.5,8.5,6.4,10.4c41.7,17,83.4,34.1,125.1,51.2c6.6,2.7,13.4,3,20,0.3
+				c42.2-17.2,84.3-34.5,126.5-51.8c3.9-1.6,5.7-4.2,5.2-8.5c-1.8-17.8-8-33.6-20.6-46.5c-10.7-10.9-23.8-18.1-37.7-23.9
+				c-12.1-5.1-24.5-9.5-36.4-15.2c-7.4-3.6-14.4-8.3-20.6-13.7c-6.8-5.9-6.8-16.3-0.6-22.9c2.6-2.8,6.3-5,9.9-6.3
+				c15.1-5.4,22.5-15.4,22.5-31.5C297.2,114.3,297.2,107.2,297.2,100z"/&gt;
+			&lt;path d="M379.7,158.5c7.1,3.3,12.9,6.1,18.8,8.7c12.1,5.4,24.7,10,36.4,16.2c25.4,13.4,40.4,34.4,44.2,63.2
+				c1.7,13-3.2,22.5-15.2,27.7c-12.5,5.4-25,10.8-37.6,16.1c-6.7,2.8-12.1,1.2-14.4-4.1c-2.3-5.5,0.2-10.2,7.1-13.2
+				c11.8-5.1,23.5-10.1,35.3-15.2c6.4-2.8,7-3.9,5.9-10.6c-3.1-19.6-13-35-30.2-44.8c-11.1-6.3-23.2-10.8-34.7-16.3
+				c-8.7-4.1-17.5-8.1-25.8-12.9c-5.2-3-9.4-7.5-10.1-14.1c-0.9-8.4,3.3-15,11.3-17.9c12.8-4.6,17.8-11.4,17.6-25.1
+				c-0.1-15,0.8-30.1-1-44.9c-3.4-27.6-34.6-48.7-61.5-36.3c-5.8,2.7-11.1,0.5-13.3-4.7c-2.2-5.2,0.2-10,6.3-12.7
+				c32.9-14.5,72.8,4.3,84.6,40.3c2.4,7.3,3.2,15.3,3.6,23c0.6,11.3-0.1,22.7,0.2,34C407.7,134.8,399.4,149.1,379.7,158.5z"/&gt;
+			&lt;path d="M100.3,158.4c-14.9-7-23-17.6-25.3-32.3c-0.8-4.9-0.6-10-0.5-15c0.2-14.6-0.6-29.4,1.2-43.9c3.8-29.5,29-52.3,58.5-54.6
+				c9.5-0.7,18.6,1.3,27.1,5.5c4.9,2.4,6.8,7.5,4.9,12.2c-1.9,4.6-7.1,6.7-12.1,5C123.2,24.8,94,44.7,92.8,77.5
+				c-0.5,14.3-0.3,28.7-0.1,43c0.2,10.5,5.5,17.3,15.6,20.8c11.3,3.9,15.6,17.4,7.4,26.2c-4.7,5.1-10.9,9.3-17.2,12.4
+				c-10.3,5.1-21.4,8.4-31.7,13.4c-9.2,4.5-18.4,9.4-26.6,15.5c-13,9.7-19.3,23.8-21.7,39.7c-0.8,5,1,7.7,5.6,9.5
+				c12.2,4.9,24.2,10.2,36.3,15.4c6.4,2.8,8.9,7.7,6.7,13c-2.2,5.1-7.7,6.7-14,4c-12.7-5.4-25.4-10.8-38.1-16.3
+				c-11.1-4.9-16.1-14.4-14.8-26.6c3.1-28.3,17.3-49.4,42-62.9c12.5-6.8,26.1-11.7,39.1-17.5C87.3,164.4,93.3,161.6,100.3,158.4z"/&gt;
+		&lt;/g&gt;
+	&lt;/svg&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Business Impact">502c92b813d3b6006749bccf3244b0e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-09 14:44:20</sys_created_on>
+<sys_id>502c92b813d3b6006749bccf3244b0e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-09 14:44:20</sys_updated_on>
+<table/>
+<target_name>PE Business Impact Details</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_93c9cca813963200ba3a7b1a6144b0bd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
+	/* widget controller */
+	var c = this;
+
+	c.alert = c.data.alert;
+
+	c.stats = [
+		{ name: 'Services', value: c.alert.cis.length },
+		{ name: '$ Per Hour', value: c.alert.summaryStats.revenue + 'M'},
+		{ name: 'Users', value: c.alert.summaryStats.users + 'K'}
+	];
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
 $orange: #ff6f00;
 $medium-green: #34ba3d;
@@ -176,19 +501,19 @@ $status-recovered-color: $medium-green !default;
 	.key-value-label {
 		color: $status-recovered-color;
 	}
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-business-impact&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-business-impact&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert","label":"Anomaly Alert sys_id","type":"string"},{"name":"titleIconClasses","label":"FontAwesome classes for icon to display next to title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-business-impact&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Business Impact&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert_sysid","label":"Anomaly Alert sys_id","type":"string"},{"name":"titleIconClasses","label":"FontAwesome classes for icon to display next to title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.alert = options.alert || serverOptions.alert;
+  options.alert_sysid = options.alert_sysid || serverOptions.alert_sysid;
   options.titleIconClasses = options.titleIconClasses || serverOptions.titleIconClasses || 'fa fa-bolt';
 
-  var fakeRevenue = ['1.2M', '0.9M', '0.3M', '89K', '78K'];
-  
+  var fakeRevenue = [1.2, 0.9, 0.3, 0.89, 0.78];
+  var totalFakeRevenue = 0.0;
   var summaryStats = {
-    users: [],
-    revenue: fakeRevenue[0]
+    users: 0.0,
+    revenue: 0.0
   };
 
   var REL_ID = (function(){
@@ -199,65 +524,62 @@ $status-recovered-color: $medium-green !default;
     return rel.sys_id.toString();
   })();
 
-  var getUsers = function( userGroupID ){
-    var users = [];
-    var groupMember = new GlideRecord('sys_user_grmember');
-    groupMember.addQuery('group', userGroupID);
-    groupMember.query();
-    while (groupMember.next()) {
-      var userID = groupMember.user.sys_id.toString();
-      users.push( userID );
-      if (summaryStats.users.indexOf(userID) === -1) summaryStats.users.push(userID);
-    }
-    return users;
-  };
+  var getDependentCIs = function(rec, arr){
 
-  var getDependentCIs = function(gr, arr){
-    var userGroupID = gr.user_group.toString();
-    var userGroup = userGroupID !== '' ? getUsers( userGroupID ) : [];
-    arr.push({
-      sys_id: gr.sys_id.toString(),
-      name: gr.name.toString(),
-      location: gr.location.toString(),
-      classification: gr.service_classification.toString(),
-      users: userGroup,
-      revenue: fakeRevenue[Math.floor(Math.random()*5)]
+		//Fake Users and Revenue
+		var fakeUsers = (Math.floor(Math.random()*40)+1);
+		var fakeRev = fakeRevenue[Math.floor(Math.random()*5)];
+		summaryStats.revenue += fakeRev;
+		summaryStats.users += fakeUsers;
+
+		
+		arr.push({
+      sys_id: rec.sys_id.toString(),
+      name: rec.name.toString(),
+      location: rec.location.toString(),
+      classification: rec.service_classification.toString(),
+      users: fakeUsers.toString() + 'K',
+      revenue: fakeRev.toString() +'M'
     });
+		
     var ciGR = new GlideRecord('cmdb_rel_ci');
     ciGR.addQuery('type.sys_id', REL_ID );
-    ciGR.addQuery('child.sys_id', gr.sys_id.toString() );
+    ciGR.addQuery('child.sys_id', rec.sys_id.toString() );
     ciGR.query();
+		
     while ( ciGR.next() ) {
       var parentGR = new GlideRecord('cmdb_ci_service');
+			data.userGroups.push(ciGR.parent.toDisplayValue());
       parentGR.get( ciGR.parent.toString() );
       var dependentsArray = getDependentCIs(parentGR, []);
       dependentsArray.forEach(function(ci){
         arr.push(ci); 
-      });
+			});
     }
     return arr;
   };
 
-  var getAlert = function(gr){
+  var getAlert = function(rec){
     var CIs = [];
-    var ciGR = new GlideRecord('cmdb_ci_service');
-    if ( ciGR.get( gr.cmdb_ci.toString() ) ) {
+    var ciGR = new GlideRecord('cmdb_ci');
+		data.ciGRGet = rec.cmdb_ci.toString();
+    if ( ciGR.get( rec.cmdb_ci.toString() ) ) {
       CIs = getDependentCIs(ciGR, CIs);
     }
     return {
-      sys_id: gr.sys_id.toString(),
-      type: gr.type.getDisplayValue(),
-      description: gr.description.toString(),
-      incident: gr.incident.sys_id.toString(),
-      state: gr.state.toString(),
+      sys_id: rec.sys_id.toString(),
+      type: rec.type.getDisplayValue(),
+      description: rec.description.toString(),
+      incident: rec.incident.sys_id.toString(),
+      state: rec.state.toString(),
       cis: CIs
     };
   };
 
   var alertGR, alert;
-  if (options.alert) {
+  if (options.alert_sysid) {
     alertGR = new GlideRecord('em_alert_anomaly');
-    alertGR.get(options.alert);
+    alertGR.get(options.alert_sysid);
     alert = getAlert( alertGR );
   } else {
     alertGR = new GlideRecord('em_alert_anomaly');
@@ -268,12 +590,14 @@ $status-recovered-color: $medium-green !default;
     alert = getAlert( alertGR );
   }
   alert.summaryStats = summaryStats;
+	alert.summaryStats.users = alert.summaryStats.users.toFixed(0);
+	alert.summaryStats.revenue = alert.summaryStats.revenue.toFixed(1);
   data.alert = alert;
   data.drawerWidget = $sp.getWidget('pe-business-impact-details', {
-    alert: alert.sys_id
+    alert : alert
   });
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-19 16:24:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;93c9cca813963200ba3a7b1a6144b0bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;157&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-business-impact&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_93c9cca813963200ba3a7b1a6144b0bd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-05-08 14:32:34&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.alert.state === 'Closed') }"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-19 16:24:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;93c9cca813963200ba3a7b1a6144b0bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;184&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Business Impact&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_93c9cca813963200ba3a7b1a6144b0bd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-09 14:28:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel-wrapper" ng-class="{ 'expanded': c.expanded, 'recovered': (c.alert.state === 'Closed') }"&gt;
 	&lt;div class="panel-proper"&gt;
 		&lt;div class="panel-header"&gt;
 			&lt;span ng-if="options.titleIconClasses" class="title-icon"&gt;
@@ -305,9 +629,9 @@ $status-recovered-color: $medium-green !default;
 			&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-		&lt;div class="panel-drawer collapse" id="panel-drawer"&gt;
-			&lt;sp-widget widget="c.data.drawerWidget"&gt;&lt;/sp-widget&gt;
-		&lt;/div&gt;
+  &lt;div class="panel-drawer collapse" id="panel-drawer"&gt;
+    &lt;sp-widget widget="c.data.drawerWidget"&gt;&lt;/sp-widget&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="hidden"&gt;
@@ -337,16 +661,16 @@ $status-recovered-color: $medium-green !default;
 	&lt;/svg&gt;
 
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-business-impact">556b3962132ab20040c770a76144b0b4</remote_update_set>
+<remote_update_set display_value="PE Business Impact">502c92b813d3b6006749bccf3244b0e8</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>jacob</sys_created_by>
-<sys_created_on>2017-05-08 16:03:36</sys_created_on>
-<sys_id>196b3962132ab20040c770a76144b0b4</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-09 14:44:20</sys_created_on>
+<sys_id>9c2c92b813d3b6006749bccf3244b0e8</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>jacob</sys_updated_by>
-<sys_updated_on>2017-05-08 16:03:36</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-09 14:44:20</sys_updated_on>
 <table/>
-<target_name>pe-business-impact</target_name>
+<target_name>PE Business Impact</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
@@ -357,257 +681,19 @@ $status-recovered-color: $medium-green !default;
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_fa62d4c5139e3200ba3a7b1a6144b0d0</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
-  /* widget controller */
-  var c = this;
-
-  c.alert = c.data.alert;
-  console.log(c.alert);
-  
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
-
-.row {
-	margin: 0 -7px;
-	padding: 12px;
-	border-top: solid 0.5px rgba(52, 61, 71, 0.15);
-}
-
-.left-padded {
-	text-align: left;
-	padding-top: 15px;
-}
-
-.col-xs-4 {
-	padding: 0 7.5px;
-}
-
-.dollar-icon {
-	fill: $slate;
-	height: 0.8em;
-	width: 0.5em;
-}
-.user-icon {
-	fill: $slate;
-	height: 0.8em;
-	width: 0.8em;
-}
-
-.key-value-grouped-label {
-	text-align: left;
-	margin-top: 0;
-}
-
-.key-group {
-	display: inline-block;
-}
-
-.key-float-group &amp;gt; * {
-	height: 55px;
-	float: left;
-	margin-right: 5px;
-	&amp;amp;:last-child {
-		margin-right: none;
-	}
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-business-impact-details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe-business-impact-details&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert","label":"Anomaly Alert sys_id","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
-  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.alert = options.alert || serverOptions.alert;
-
-  var fakeRevenue = ['1.2M', '0.9M', '0.3M', '89K', '78K'];
-  
-  var summaryStats = {
-    users: [],
-    revenue: fakeRevenue[0]
-  };
-
-  var REL_ID = (function(){
-    var rel = new GlideRecord('cmdb_rel_type');
-    rel.addQuery('name', 'Depends on::Used by');
-    rel.query();
-    rel.next();
-    return rel.sys_id.toString();
-  })();
-
-  var getUsers = function( userGroupID ){
-    var users = [];
-    var groupMember = new GlideRecord('sys_user_grmember');
-    groupMember.addQuery('group', userGroupID);
-    groupMember.query();
-    while (groupMember.next()) {
-      var userID = groupMember.user.sys_id.toString();
-      users.push( userID );
-      if (summaryStats.users.indexOf(userID) === -1) summaryStats.users.push(userID);
-    }
-    return users;
-  };
-
-  var getDependentCIs = function(gr, arr){
-  	var userGroupID = gr.user_group.toString();
-    var userGroup = userGroupID.length ? getUsers( userGroupID ) : [];
-    arr.push({
-      sys_id: gr.sys_id.toString(),
-      name: gr.name.toString(),
-      location: gr.location.toString(),
-      classification: gr.service_classification.toString(),
-      users: userGroup,
-      revenue: fakeRevenue[Math.floor(Math.random()*5)]
-    });
-    var ciGR = new GlideRecord('cmdb_rel_ci');
-    ciGR.addQuery('type.sys_id', REL_ID );
-    ciGR.addQuery('child.sys_id', gr.sys_id.toString() );
-    ciGR.query();
-    while ( ciGR.next() ) {
-      var parentGR = new GlideRecord('cmdb_ci_service');
-      parentGR.get( ciGR.parent.toString() );
-      var dependentsArray = getDependentCIs(parentGR, []);
-      dependentsArray.forEach(function(ci){
-        arr.push(ci);
-      });
-    }
-    return arr;
-  };
-
-  var getAlert = function(gr){
-    var CIs = [];
-    var ciGR = new GlideRecord('cmdb_ci_service');
-    if ( ciGR.get( gr.cmdb_ci.toString() ) ) {
-      CIs = getDependentCIs(ciGR, CIs);
-    }
-    return {
-      sys_id: gr.sys_id.toString(),
-      type: gr.type.getDisplayValue(),
-      description: gr.description.toString(),
-      incident: gr.incident.sys_id.toString(),
-      state: gr.state.toString(),
-      cis: CIs
-    };
-  };
-
-  var alertGR, alert;
-  if (options.alert) {
-    alertGR = new GlideRecord('em_alert_anomaly');
-    alertGR.get(options.alert);
-    alert = getAlert( alertGR );
-  } else {
-    alertGR = new GlideRecord('em_alert_anomaly');
-    // alertGR.addEncodedQuery('state!=Closed');
-    alertGR.orderByDesc('sys_created_on');
-    alertGR.query();
-    alertGR.next();
-    alert = getAlert( alertGR );
-  }
-  alert.summaryStats = summaryStats;
-  data.alert = alert;
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 06:18:47&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;fa62d4c5139e3200ba3a7b1a6144b0d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;63&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-business-impact-details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fa62d4c5139e3200ba3a7b1a6144b0d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-05-08 14:32:14&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row text-center drawer-list-header"&gt;
-	&lt;div class="col-xs-4 text-left"&gt;
-		Lines of Business
-	&lt;/div&gt;
-	&lt;div class="col-xs-4"&gt;
-		Revenue at Risk
-	&lt;/div&gt;
-	&lt;div class="col-xs-4"&gt;
-		Users Impacted
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="row text-center" ng-repeat="item in c.alert.cis"&gt;
-&lt;!-- | filter:{classification: 'Business Service'} --&gt;
-	&lt;div class="col-xs-4 left-padded"&gt;
-		{{item.name}}
-	&lt;/div&gt;
-	&lt;div class="col-xs-4"&gt;
-		&lt;div class="key-value key-float-group"&gt;
-			&lt;span&gt;
-				&lt;svg class="dollar-icon"&gt;
-					&lt;use xlink:href="#dollar"&gt;&lt;/use&gt;
-				&lt;/svg&gt;
-			&lt;/span&gt;
-			&lt;div class="key-group"&gt;
-				{{item.revenue}}
-				&lt;div class="key-value-label key-value-grouped-label"&gt;
-					per hour
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class="col-xs-4"&gt;
-		&lt;div class="key-value"&gt;
-			&lt;span&gt;
-				&lt;svg class="user-icon"&gt;
-					&lt;use xlink:href="#people"&gt;&lt;/use&gt;
-				&lt;/svg&gt;
-			&lt;/span&gt;
-			{{item.users.length}}
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="hidden"&gt;
-
-	&lt;svg version="1.1" id="dollar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 101.4 216.4" style="enable-background:new 0 0 101.4 216.4;" xml:space="preserve"&gt;
-		&lt;g&gt;
-			&lt;path d="M0,139c11.8-0.7,23.1-1.3,34.4-2c1.3,4.9,2.1,9.5,3.7,13.8c2.9,7.5,8.5,10.7,15.5,9.6c8.1-1.2,13.3-8.5,10.3-16
-				c-2-5-5.8-9.7-9.9-13.3c-8.8-7.7-18.4-14.3-27.4-21.7c-10.1-8.3-19.2-17.5-22.3-31C-0.6,57.2,9,38,29,30c3-1.2,3.9-2.7,3.8-5.8
-				c-0.2-8-0.1-15.9-0.1-24.2c10.4,0,20.3,0,30.6,0c0,9,0,17.8,0,26.9c12.3,2.7,22.9,7.7,29.9,18.4c4.6,7,6.7,14.7,7.1,23.5
-				c-11.5,1.7-23,3.4-34.7,5.2c-0.7-3.2-1.1-6.1-2-9c-2.4-8-8.3-11.6-15.5-9.6c-5.9,1.6-9.7,9.1-6.8,16c2.5,5.8,6.4,11.3,10.9,15.7
-				c5,5,11.4,8.6,17.2,12.8c9.4,6.8,17.9,14.4,24.2,24.2c16.9,26.5,4.8,56.7-25.7,64.3c-1.3,0.3-2.6,0.6-4.3,1c0,8.7,0,17.5,0,26.7
-				c-10.5,0-20.5,0-30.8,0c0-9.5,0-18.8,0-28.5C10.6,179.6,1.1,162.6,0,139z M72.7,64.4c6.1-0.9,12-1.8,18.1-2.8
-				c-0.2-1.3-0.3-2.1-0.6-2.9c-4.7-14.6-15.6-21.5-30.1-23.3c-4.7-0.6-5.6-2.4-5.5-6.5c0.3-6.8,0.1-13.5,0.1-20.4c-4.7,0-8.8,0-13.4,0
-				c0,7.4-0.2,14.5,0.1,21.6c0.2,3.8-1,5.3-4.9,6.3c-16.7,4.1-26,17.2-24.9,34.3c0.6,9.6,4.7,17.8,11.9,24
-				c11.6,10,23.9,19.2,35.4,29.3c4.7,4.1,9.1,9,11.8,14.5c3.9,7.7,3.4,15.9-2.6,22.9C58,173.4,40,171.6,32,157.7
-				c-2-3.5-3.3-7.5-5-11.7c-5.7,0.4-11.4,0.7-17.1,1.1c0.3,14.6,11.3,28.3,26.5,32.5c4.4,1.2,5.3,3.2,5.2,7.2
-				c-0.3,7.1-0.1,14.2-0.1,21.1c4.9,0,9,0,13.4,0c0-7,0.3-13.6-0.1-20.3c-0.3-4.7,1.1-6.2,5.9-6.5c16.6-1.1,28.8-11.7,31.7-27
-				c2.3-11.9-2-22-9.8-30.2c-7.6-8-16.7-14.6-25.2-21.8c-5.9-5.1-12.1-9.9-17.6-15.4c-4.6-4.7-7.1-10.8-7.6-17.5
-				c-0.8-10.3,5-19.6,13.8-21.8c10.8-2.7,20.2,1.8,24.7,11.8C71.3,60.6,71.9,62.2,72.7,64.4z"/&gt;
-		&lt;/g&gt;
-	&lt;/svg&gt;
-
-	&lt;svg version="1.1" id="people" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 479.5 362" style="enable-background:new 0 0 479.5 362;" xml:space="preserve"&gt;
-		&lt;g&gt;
-			&lt;path d="M198.2,170c-1-0.4-2.1-0.9-3.1-1.3c-17.4-7.3-28.1-20.5-29-39.1c-1.1-21.2-1.3-42.8,0.8-63.9c3.9-38.7,41.6-68.6,80.1-65.5
-				c32.3,2.7,63.3,31.2,67.4,63.6c1.8,14.5,1,29.3,1.2,43.9c0.1,8,0.7,16.1-0.5,24c-2.8,17.9-13.5,29.9-30,37.1
-				c-1.4,0.6-2.8,1.1-5.3,2c3.5,2.3,6.2,4.7,9.4,6.1c10.3,4.6,20.8,9,31.2,13.2c15,6.1,29.7,12.8,42.6,22.7
-				c22.6,17.2,33.9,40.5,36.2,68.5c0.9,11-6.2,21.2-17.6,25.9c-30,12.4-60,24.6-90,36.9c-11.7,4.8-23.4,9.5-35.1,14.4
-				c-11.7,4.8-23.3,4.8-35,0c-41.7-17.1-83.5-34.1-125.2-51.2c-13.3-5.5-19.1-16.4-17.2-30.8c4.3-33.3,21.5-57.7,50.8-73.3
-				c14.5-7.7,30.1-13.3,45.1-20.1c8-3.6,15.8-7.5,23.7-11.2C198.5,171.2,198.4,170.6,198.2,170z M297.2,100c0-8,0.2-16,0-24
-				c-0.7-31-27.5-57.8-57.6-57.7c-30.6,0.2-56.9,27.1-57,58.6c-0.1,14.5,0,29,0,43.5c0,17.6,6,26.1,22.7,32
-				c12.7,4.5,16.7,19.3,7.5,29.1c-3.6,3.8-8,7.2-12.6,9.7c-7.6,4.1-15.7,7.2-23.5,10.8c-15.2,7.1-31,13.2-45.3,21.8
-				c-20.7,12.4-31.2,32.1-33.9,56.1c-0.6,5.3,1.5,8.5,6.4,10.4c41.7,17,83.4,34.1,125.1,51.2c6.6,2.7,13.4,3,20,0.3
-				c42.2-17.2,84.3-34.5,126.5-51.8c3.9-1.6,5.7-4.2,5.2-8.5c-1.8-17.8-8-33.6-20.6-46.5c-10.7-10.9-23.8-18.1-37.7-23.9
-				c-12.1-5.1-24.5-9.5-36.4-15.2c-7.4-3.6-14.4-8.3-20.6-13.7c-6.8-5.9-6.8-16.3-0.6-22.9c2.6-2.8,6.3-5,9.9-6.3
-				c15.1-5.4,22.5-15.4,22.5-31.5C297.2,114.3,297.2,107.2,297.2,100z"/&gt;
-			&lt;path d="M379.7,158.5c7.1,3.3,12.9,6.1,18.8,8.7c12.1,5.4,24.7,10,36.4,16.2c25.4,13.4,40.4,34.4,44.2,63.2
-				c1.7,13-3.2,22.5-15.2,27.7c-12.5,5.4-25,10.8-37.6,16.1c-6.7,2.8-12.1,1.2-14.4-4.1c-2.3-5.5,0.2-10.2,7.1-13.2
-				c11.8-5.1,23.5-10.1,35.3-15.2c6.4-2.8,7-3.9,5.9-10.6c-3.1-19.6-13-35-30.2-44.8c-11.1-6.3-23.2-10.8-34.7-16.3
-				c-8.7-4.1-17.5-8.1-25.8-12.9c-5.2-3-9.4-7.5-10.1-14.1c-0.9-8.4,3.3-15,11.3-17.9c12.8-4.6,17.8-11.4,17.6-25.1
-				c-0.1-15,0.8-30.1-1-44.9c-3.4-27.6-34.6-48.7-61.5-36.3c-5.8,2.7-11.1,0.5-13.3-4.7c-2.2-5.2,0.2-10,6.3-12.7
-				c32.9-14.5,72.8,4.3,84.6,40.3c2.4,7.3,3.2,15.3,3.6,23c0.6,11.3-0.1,22.7,0.2,34C407.7,134.8,399.4,149.1,379.7,158.5z"/&gt;
-			&lt;path d="M100.3,158.4c-14.9-7-23-17.6-25.3-32.3c-0.8-4.9-0.6-10-0.5-15c0.2-14.6-0.6-29.4,1.2-43.9c3.8-29.5,29-52.3,58.5-54.6
-				c9.5-0.7,18.6,1.3,27.1,5.5c4.9,2.4,6.8,7.5,4.9,12.2c-1.9,4.6-7.1,6.7-12.1,5C123.2,24.8,94,44.7,92.8,77.5
-				c-0.5,14.3-0.3,28.7-0.1,43c0.2,10.5,5.5,17.3,15.6,20.8c11.3,3.9,15.6,17.4,7.4,26.2c-4.7,5.1-10.9,9.3-17.2,12.4
-				c-10.3,5.1-21.4,8.4-31.7,13.4c-9.2,4.5-18.4,9.4-26.6,15.5c-13,9.7-19.3,23.8-21.7,39.7c-0.8,5,1,7.7,5.6,9.5
-				c12.2,4.9,24.2,10.2,36.3,15.4c6.4,2.8,8.9,7.7,6.7,13c-2.2,5.1-7.7,6.7-14,4c-12.7-5.4-25.4-10.8-38.1-16.3
-				c-11.1-4.9-16.1-14.4-14.8-26.6c3.1-28.3,17.3-49.4,42-62.9c12.5-6.8,26.1-11.7,39.1-17.5C87.3,164.4,93.3,161.6,100.3,158.4z"/&gt;
-		&lt;/g&gt;
-	&lt;/svg&gt;
-&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-business-impact">556b3962132ab20040c770a76144b0b4</remote_update_set>
+<name>em_event_type_8f36f42013d776006749bccf3244b045</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="em_event_type"><em_event_type action="INSERT_OR_UPDATE"><name>Slow Network Performance</name><pattern>Slow Network Performance</pattern><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-08 12:41:10</sys_created_on><sys_id>8f36f42013d776006749bccf3244b045</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-08 12:41:10</sys_updated_on></em_event_type></record_update>]]></payload>
+<remote_update_set display_value="PE Business Impact">502c92b813d3b6006749bccf3244b0e8</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>jacob</sys_created_by>
-<sys_created_on>2017-05-08 16:03:36</sys_created_on>
-<sys_id>d96b3962132ab20040c770a76144b0b4</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-09 14:44:20</sys_created_on>
+<sys_id>d82c92b813d3b6006749bccf3244b0e8</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>jacob</sys_updated_by>
-<sys_updated_on>2017-05-08 16:03:36</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-09 14:44:20</sys_updated_on>
 <table/>
-<target_name>pe-business-impact-details</target_name>
-<type>Widget</type>
+<target_name>Slow Network Performance</target_name>
+<type>Event Type</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
