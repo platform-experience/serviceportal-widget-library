@@ -20,15 +20,17 @@
     var alertGR, alert;
     if (options.alert_sysid) {
         alertGR = new GlideRecord('em_alert_anomaly');
-        alertGR.get(options.alert_sysid);
-        alert = getAlert(alertGR);
+        if (alertGR.get(options.alert)) {
+            alert = getAlert(alertGR);
+        }
     } else {
         alertGR = new GlideRecord('em_alert_anomaly');
         //alertGR.addEncodedQuery('state!=Closed');
         alertGR.orderByDesc('sys_created_on');
         alertGR.query();
-        alertGR.next();
-        alert = getAlert(alertGR);
+        if (alertGR.next()) {
+            alert = getAlert(alertGR);
+        }
     }
     data.alert = alert;
 

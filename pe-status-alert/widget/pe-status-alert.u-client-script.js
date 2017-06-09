@@ -1,4 +1,4 @@
-function($interval, $filter) {
+function StatusAlert($interval, $filter) {
     /* widget controller */
     var c = this;
     var d = new Date();
