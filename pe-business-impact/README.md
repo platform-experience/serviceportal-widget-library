@@ -3,7 +3,7 @@
 ## Description - Use Case
 
 Query the most recent anonaly alert from the *em_alert_anomaly* table to provide Business Services impact information and associated Business Services details.
-Qhen the plus (+) graphic in the top right is selected/clicked, details about the Business Impact is displayed through use of the `pe-business-impact-details` widget (_included_).
+When the plus (+) graphic in the top right is selected/clicked, details about the Business Impact is displayed through use of the `pe-business-impact-details` widget (_included_).
 
 ## Screenshots
 ### Collapsed View
@@ -30,9 +30,8 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 ---
 Widget Option Schema parameters:
 
-1. **alert_sysid**: Provide an anomaly alert's sys_id and data in the widget will display based on related records.
-
-1. **titleIconClasses**: Provide a set of Font Awesome css classes for an icon to display next to the title. Defaults to `'fa fa-bolt'`.
+**alert_sysid**: Provide an anomaly alert's sys_id and data in the widget will display based on related records.
+**titleIconClasses**: Provide a set of Font Awesome css classes for an icon to display next to the title. Defaults to `'fa fa-bolt'`.
 
 ---
 ## Platform Dependencies
