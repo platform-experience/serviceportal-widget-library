@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-06-07 21:36:41">
+<unload unload_date="2017-06-09 22:18:54">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -18,11 +18,11 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-07 21:36:41</sys_created_on>
-<sys_id>41576598dbdff2008798ffa31d961982</sys_id>
+<sys_created_on>2017-06-09 22:18:54</sys_created_on>
+<sys_id>322448cddbd7b200abd4f9361d9619ab</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-07 21:36:41</sys_updated_on>
+<sys_updated_on>2017-06-09 22:18:54</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -85,11 +85,11 @@ h3,
     width: 75%;
     padding: 5px 0 5px 12px;
   }
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-csm-progressbar&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Progress Bar&lt;/name&gt;&lt;option_schema&gt;[{"name":"widget_header","label":"Widget Header","type":"string"},{"name":"progress_bar_left_text","label":"Progress Bar Left Text","type":"string"},{"name":"progress_bar_right_text","label":"Progress Bar Right Text","type":"string"},{"name":"progress_total","label":"Progress Total","type":"string"},{"name":"progress_value","label":"Progress Value","type":"string"},{"name":"progress_bar_text","label":"Progress Bar Text","type":"string"},{"name":"progress_bar_color","label":"Progress Bar Color","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-csm-progressbar&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE CSM Progress Bar&lt;/name&gt;&lt;option_schema&gt;[{"name":"widget_header","label":"Widget Header","type":"string","default_value":"This Month"},{"name":"progress_bar_left_text","label":"Progress Bar Left Text","type":"string","default_value":"January"},{"name":"progress_bar_right_text","label":"Progress Bar Right Text","type":"string","default_value":"$56.4k"},{"name":"progress_total","label":"Progress Total","type":"string","default_value":"100"},{"name":"progress_value","label":"Progress Value","type":"string","default_value":"50"},{"name":"progress_bar_text","label":"Progress Bar Text","type":"string","default_value":"Cases"},{"name":"progress_bar_color","label":"Progress Bar Color","type":"string","default_value":"#ff0000"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-17 22:47:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;444ec3f71306fa00de8cb5b12244b0ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Progress Bar&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_444ec3f71306fa00de8cb5b12244b0ec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-07 21:23:26&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-17 22:47:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;444ec3f71306fa00de8cb5b12244b0ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE CSM Progress Bar&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_444ec3f71306fa00de8cb5b12244b0ec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-09 22:14:36&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
   &lt;section&gt;
     &lt;h3&gt;{{::c.options.widget_header}}&lt;/h3&gt;
     &lt;div class="month"&gt;{{::c.options.progress_bar_left_text}}
@@ -100,14 +100,14 @@ h3,
     &lt;/div&gt;
   &lt;/section&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE CSM Progress Bar">41576598dbdff2008798ffa31d961982</remote_update_set>
+<remote_update_set display_value="PE CSM Progress Bar">322448cddbd7b200abd4f9361d9619ab</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-07 21:36:41</sys_created_on>
-<sys_id>89576598dbdff2008798ffa31d961982</sys_id>
+<sys_created_on>2017-06-09 22:18:54</sys_created_on>
+<sys_id>4b2448cddbd7b200abd4f9361d9619ab</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-07 21:36:41</sys_updated_on>
+<sys_updated_on>2017-06-09 22:18:54</sys_updated_on>
 <table/>
 <target_name>PE CSM Progress Bar</target_name>
 <type>Widget</type>
