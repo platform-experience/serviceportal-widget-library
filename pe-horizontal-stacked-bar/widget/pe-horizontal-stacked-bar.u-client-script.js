@@ -1,14 +1,11 @@
-function HorizontalStakedBar() {
-  /* widget controller */
+function HorizontalStackedBarController() {
   var c = this;
+  c.getPercent = getPercent;
 
-  c.getPercent = function (remaining, total) {
-    //debugger;
+  function getPercent(remaining, total) {
     var percent = (total - remaining) / total * 100;
     return {
       'width': percent + '%'
     };
-  };
-
-
+  }
 }

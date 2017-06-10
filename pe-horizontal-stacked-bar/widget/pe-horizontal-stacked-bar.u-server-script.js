@@ -1,10 +1,8 @@
-(function () {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-  data.toJson = function (str) {
-    if (typeof str == 'object') {
+(function() {
+  data.toJson = function(str) {
+    if (typeof str === 'object') {
       str = JSON.parse(str);
-    } else if (str != undefined && str !== null) {
+    } else if (str !== undefined && str !== null) {
       str = JSON.parse(str);
     } else {
       str = '';
@@ -14,10 +12,8 @@
 
   data.l_number = '$230';
   data.l_number_text = 'SPENT';
-
   data.graph_data = input.graph_data || options.graph_data;
   data.graph_data = data.toJson(data.graph_data);
-
   data.r_info_color = 'red';
   data.r_info_type = 'bar';
   data.r_info_bar_title = '5 days to $0';

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-16 17:54:51">
+<unload unload_date="2017-06-09 23:49:38">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,19 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>pe-horizontal-stacked-bar2</name>
+<name>PE Horizontal Stacked Bar</name>
 <origin_sys_id/>
 <release_date/>
-<remote_sys_id>1068d1a1136176007e94fc5ed144b0a1</remote_sys_id>
+<remote_sys_id>8a3a8081db1bb200abd4f9361d9619d8</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 17:54:51</sys_created_on>
-<sys_id>9e981da1136176007e94fc5ed144b000</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-09 23:49:37</sys_created_on>
+<sys_id>0cf85809db1bb200abd4f9361d9619ce</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 17:54:51</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-09 23:49:37</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,163 +33,186 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_8163c22c136df200d15e3d7ed144b0cc</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function HorizontalStakedBar() {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function HorizontalStackedBarController() {
   var c = this;
+  c.getPercent = getPercent;
 
-  c.getPercent = function (remaining, total) {
-    //debugger;
+  function getPercent(remaining, total) {
     var percent = (total - remaining) / total * 100;
     return {
       'width': percent + '%'
     };
+  }
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-brand-primary:#337ab7 !default;
+
+.single-bar-widget {
+  padding: 10px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  color: $pe-brand-primary;
+  .nums-texts {
+    padding-left: 10px;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .green-text {
+      color: #2abd68;
+    }
+    .red-text {
+      color: #ff3d00;
+    }
+    .left-side {
+      display: flex;
+      align-items: center;
+      p {
+        margin-bottom: 0px;
+        line-height: 1;
+      }
+      img {
+        height: 31px;
+      }
+    }
+    .right-side {
+      width: 50%;
+      p {
+        margin-bottom: 0px;
+        line-height: 1;
+      }
+      .bar-in {
+        padding: 5px 10px;
+        .bar-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .title {
+            font-size: 11px;
+            color: #485562;
+            text-transform: uppercase;
+            font-weight: 600;
+          }
+          .right-side {
+            font-size: 11px;
+            font-weight: 600;
+            color: #9f9f9f;
+            text-align: right;
+            .remaining {
+              color: #ff3d21;
+            }
+            .slash {
+              margin-left: 5px;
+              margin-right: 5px;
+            }
+          }
+        }
+        .progress {
+          height: 12px;
+          margin-bottom: 0px;
+          border-radius: 2px;
+          .progress-bar {
+            background: #ee525e;
+          }
+        }
+      }
+      .nums-texts {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        .arrow-left {
+          display: flex;
+          align-items: center;
+          p {
+            font-weight: 600;
+          }
+          .arrow-up {
+            margin-right: 5px;
+          }
+        }
+        .right-text {
+          color: #9f9f9f;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-left: 5px;
+        }
+      }
+      .arrow {
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .bar-graph {
+    width: 100%;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+    &amp;amp;:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+    .bars {
+      float: left;
+      position: relative;
+      height: 10px;
+      -webkit-transition: width .6s ease;
+      -o-transition: width .6s ease;
+      transition: width .6s ease;
+      .inner-bar {
+        height: inherit;
+        margin-right: 1px;
+        border-radius: 2px;
+      }
+      .legend {
+        position: absolute;
+        top: 10px;
+        p {
+          margin-bottom: 0px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-horizontal-stacked-bar&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Horizontal Stacked Bar&lt;/name&gt;&lt;option_schema&gt;[{&amp;#13;
+  "name": "graph_data",&amp;#13;
+  "label": "Graph Data",&amp;#13;
+  "type": "json",&amp;#13;
+  "mandatory": true,&amp;#13;
+  "default_value": [{&amp;#13;
+    "width": "60%",&amp;#13;
+    "color": "rgb(19, 35, 71)",&amp;#13;
+    "info_text": "AWS",&amp;#13;
+    "info_number": ""&amp;#13;
+  }, {&amp;#13;
+    "width": "20%",&amp;#13;
+    "color": "rgb(28, 91, 125)",&amp;#13;
+    "info_text": "AZURE",&amp;#13;
+    "info_number": ""&amp;#13;
+  }, {&amp;#13;
+    "width": "20%",&amp;#13;
+    "color": "rgb(150, 198, 200)",&amp;#13;
+    "info_text": "VMW",&amp;#13;
+    "info_number": ""&amp;#13;
+  }]&amp;#13;
+}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  data.toJson = function(str) {
+    if (typeof str === 'object') {
+      str = JSON.parse(str);
+    } else if (str !== undefined &amp;&amp; str !== null) {
+      str = JSON.parse(str);
+    } else {
+      str = '';
+    }
+    return str;
   };
 
-
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-brand-primary:#337ab7 !default;&amp;#13;
-.single-bar-widget {&amp;#13;
-  padding: 10px;&amp;#13;
-  padding-bottom: 40px;&amp;#13;
-  margin-top: 20px;&amp;#13;
-  color: $pe-brand-primary;&amp;#13;
-  .nums-texts {&amp;#13;
-    padding-left: 10px;&amp;#13;
-  }&amp;#13;
-  .info {&amp;#13;
-    display: flex;&amp;#13;
-    align-items: center;&amp;#13;
-    justify-content: space-between;&amp;#13;
-    margin-bottom: 10px;&amp;#13;
-    .green-text {&amp;#13;
-      color: #2abd68;&amp;#13;
-    }&amp;#13;
-    .red-text {&amp;#13;
-      color: #ff3d00;&amp;#13;
-    }&amp;#13;
-    .left-side {&amp;#13;
-      display: flex;&amp;#13;
-      align-items: center;&amp;#13;
-      p {&amp;#13;
-        margin-bottom: 0px;&amp;#13;
-        line-height: 1;&amp;#13;
-      }&amp;#13;
-      img {&amp;#13;
-        height: 31px;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-    .right-side {&amp;#13;
-      width: 50%;&amp;#13;
-      p {&amp;#13;
-        margin-bottom: 0px;&amp;#13;
-        line-height: 1;&amp;#13;
-      }&amp;#13;
-      .bar-in {&amp;#13;
-        padding: 5px 10px;&amp;#13;
-        .bar-title {&amp;#13;
-          display: flex;&amp;#13;
-          align-items: center;&amp;#13;
-          justify-content: space-between;&amp;#13;
-          .title {&amp;#13;
-            font-size: 11px;&amp;#13;
-            color: #485562;&amp;#13;
-            text-transform: uppercase;&amp;#13;
-            font-weight: 600;&amp;#13;
-          }&amp;#13;
-          .right-side {&amp;#13;
-            font-size: 11px;&amp;#13;
-            font-weight: 600;&amp;#13;
-            color: #9f9f9f;&amp;#13;
-            text-align: right;&amp;#13;
-            .remaining {&amp;#13;
-              color: #ff3d21;&amp;#13;
-            }&amp;#13;
-            .slash {&amp;#13;
-              margin-left: 5px;&amp;#13;
-              margin-right: 5px;&amp;#13;
-            }&amp;#13;
-          }&amp;#13;
-        }&amp;#13;
-        .progress {&amp;#13;
-          height: 12px;&amp;#13;
-          margin-bottom: 0px;&amp;#13;
-          border-radius: 2px;&amp;#13;
-          .progress-bar {&amp;#13;
-            background: #ee525e;&amp;#13;
-          }&amp;#13;
-        }&amp;#13;
-      }&amp;#13;
-      .nums-texts {&amp;#13;
-        font-size: 12px;&amp;#13;
-        display: flex;&amp;#13;
-        align-items: center;&amp;#13;
-        .arrow-left {&amp;#13;
-          display: flex;&amp;#13;
-          align-items: center;&amp;#13;
-          p {&amp;#13;
-            font-weight: 600;&amp;#13;
-          }&amp;#13;
-          .arrow-up {&amp;#13;
-            margin-right: 5px;&amp;#13;
-          }&amp;#13;
-        }&amp;#13;
-        .right-text {&amp;#13;
-          color: #9f9f9f;&amp;#13;
-          text-transform: uppercase;&amp;#13;
-          font-weight: 600;&amp;#13;
-          margin-left: 5px;&amp;#13;
-        }&amp;#13;
-      }&amp;#13;
-      .arrow {&amp;#13;
-        -ms-transform: rotate(45deg);&amp;#13;
-        -webkit-transform: rotate(45deg);&amp;#13;
-        transform: rotate(45deg);&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  .bar-graph {&amp;#13;
-    width: 100%;&amp;#13;
-    -webkit-transition: width .6s ease;&amp;#13;
-    -o-transition: width .6s ease;&amp;#13;
-    transition: width .6s ease;&amp;#13;
-    &amp;amp;:after {&amp;#13;
-      content: " ";&amp;#13;
-      display: block;&amp;#13;
-      clear: both;&amp;#13;
-    }&amp;#13;
-    .bars {&amp;#13;
-      float: left;&amp;#13;
-      position: relative;&amp;#13;
-      height: 10px;&amp;#13;
-      -webkit-transition: width .6s ease;&amp;#13;
-      -o-transition: width .6s ease;&amp;#13;
-      transition: width .6s ease;&amp;#13;
-      .inner-bar {&amp;#13;
-        height: inherit;&amp;#13;
-        margin-right: 1px;&amp;#13;
-        border-radius: 2px;&amp;#13;
-      }&amp;#13;
-      .legend {&amp;#13;
-        position: absolute;&amp;#13;
-        top: 10px;&amp;#13;
-        p {&amp;#13;
-          margin-bottom: 0px;&amp;#13;
-          line-height: 1;&amp;#13;
-        }&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-}&amp;#13;
-&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-horizontal-stacked-bar&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Horizontal Stacked Bar&lt;/name&gt;&lt;option_schema&gt;[{"name":"graph_data","label":"Graph Data","type":"json","mandatory":true}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
   data.l_number = '$230';
   data.l_number_text = 'SPENT';
-
   data.graph_data = input.graph_data || options.graph_data;
-  if (data.graph_data !== null &amp;&amp; data.graph_data !== undefined) {
-    data.graph_data = JSON.parse(data.graph_data);
-  }
-
+  data.graph_data = data.toJson(data.graph_data);
   data.r_info_color = 'red';
   data.r_info_type = 'bar';
   data.r_info_bar_title = '5 days to $0';
@@ -199,7 +222,7 @@
   data.r_number_text = '';
   data.r_info_remaining = 20;
   data.r_info_total = 100;
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-13 18:29:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8163c22c136df200d15e3d7ed144b0cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;56&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Horizontal Stacked Bar&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8163c22c136df200d15e3d7ed144b0cc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-16 17:50:26&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="single-bar-widget"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-13 18:29:06&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;8163c22c136df200d15e3d7ed144b0cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;60&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Horizontal Stacked Bar&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8163c22c136df200d15e3d7ed144b0cc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-09 23:44:48&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="single-bar-widget"&gt;
   &lt;div class="info"&gt;
     &lt;div class="left-side"&gt;
       &lt;i class="fa fa-money fa-lg"&gt;&lt;/i&gt;
@@ -208,8 +231,7 @@
         &lt;p class="text-twelve"&gt;{{::c.data.l_number_text}}&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-
-    &lt;div class="right-side" ng-class="{'red-text': data.r_info_color == 'red', 'green-text': bdata.r_info_color == 'green' }"&gt;
+    &lt;div class="right-side" ng-class="{'red-text': data.r_info_color == 'red', 'green-text': bdata.r_info_color == 'green'}"&gt;
       &lt;div class="bar-in" ng-show="c.data.r_info_type == 'bar'"&gt;
         &lt;div class="bar-title"&gt;
           &lt;p class="title"&gt;{{::c.data.r_info_bar_title}}&lt;/p&gt;
@@ -222,7 +244,7 @@
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="nums-texts " ng-show="!c.data.r_info_type"&gt;
+      &lt;div class="nums-texts" ng-show="!c.data.r_info_type"&gt;
         &lt;div class="arrow-left"&gt;
           &lt;div class="arrow-up"&gt;&lt;/div&gt;
           &lt;p class="text-twenty-four "&gt;{{::c.data.r_number}}&lt;/p&gt;
@@ -230,29 +252,26 @@
         &lt;p class="text-ten right-text"&gt;{{::c.data.r_number_text}}&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-
   &lt;/div&gt;
   &lt;div class="bar-graph"&gt;
-    &lt;div class="bars" ng-style="{'width': each_graph.width}" ng-repeat="each_graph in c.data.graph_data"&gt;
-
-      &lt;div class="inner-bar" ng-style="{'background': each_graph.color}"&gt;
+    &lt;div class="bars" ng-style="{'width': graph.width}" ng-repeat="graph in c.data.graph_data"&gt;
+      &lt;div class="inner-bar" ng-style="{'background': graph.color}"&gt;
         &lt;div class="legend text-eleven"&gt;
-          &lt;p&gt;{{::each_graph.info_text}}&lt;/p&gt;
-          &lt;p&gt;{{::each_graph.info_number}}&lt;/p&gt;
+          &lt;p&gt;{{::graph.info_text}}&lt;/p&gt;
+          &lt;p&gt;{{::graph.info_number}}&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-horizontal-stacked-bar2">9e981da1136176007e94fc5ed144b000</remote_update_set>
+<remote_update_set display_value="PE Horizontal Stacked Bar">0cf85809db1bb200abd4f9361d9619ce</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-16 17:54:51</sys_created_on>
-<sys_id>52981da1136176007e94fc5ed144b001</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-06-09 23:49:38</sys_created_on>
+<sys_id>44f85809db1bb200abd4f9361d9619cf</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-16 17:54:51</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-06-09 23:49:38</sys_updated_on>
 <table/>
 <target_name>PE Horizontal Stacked Bar</target_name>
 <type>Widget</type>
