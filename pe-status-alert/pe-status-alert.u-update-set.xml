@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-06-09 15:03:43">
+<unload unload_date="2017-06-12 20:10:08">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -18,11 +18,11 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-06-09 15:03:43</sys_created_on>
-<sys_id>c890e63c13d3b6006749bccf3244b066</sys_id>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>7d73c3b14f9b720005be4d6e0210c75e</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-06-09 15:03:43</sys_updated_on>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,749 +32,19 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_ui_script_85b3854bdbd53200f687dfea5e9619ab</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts Export&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
- Highcharts JS v4.2.6 (2016-08-02)
- Exporting module
-
- (c) 2010-2016 Torstein Honsi
-
- License: www.highcharts.com/license
-*/
-(function(f) {
-	typeof module === "object" &amp;&amp; module.exports ? module.exports = f : f(Highcharts)
-})(function(f) {
-	var s = f.win,
-		j = s.document,
-		B = f.Chart,
-		u = f.addEvent,
-		C = f.removeEvent,
-		D = f.fireEvent,
-		r = f.createElement,
-		t = f.discardElement,
-		w = f.css,
-		l = f.merge,
-		m = f.each,
-		q = f.extend,
-		F = f.splat,
-		G = Math.max,
-		H = f.isTouchDevice,
-		I = f.Renderer.prototype.symbols,
-		z = f.getOptions(),
-		A;
-	q(z.lang, {
-		printChart: "Print chart",
-		downloadPNG: "Download PNG image",
-		downloadJPEG: "Download JPEG image",
-		downloadPDF: "Download PDF document",
-		downloadSVG: "Download SVG vector image",
-		contextButtonTitle: "Chart context menu"
-	});
-	z.navigation = {
-		menuStyle: {
-			border: "1px solid #A0A0A0",
-			background: "#FFFFFF",
-			padding: "5px 0"
-		},
-		menuItemStyle: {
-			padding: "0 10px",
-			background: "none",
-			color: "#303030",
-			fontSize: H ? "14px" : "11px"
-		},
-		menuItemHoverStyle: {
-			background: "#4572A5",
-			color: "#FFFFFF"
-		},
-		buttonOptions: {
-			symbolFill: "#E0E0E0",
-			symbolSize: 14,
-			symbolStroke: "#666",
-			symbolStrokeWidth: 3,
-			symbolX: 12.5,
-			symbolY: 10.5,
-			align: "right",
-			buttonSpacing: 3,
-			height: 22,
-			theme: {
-				fill: "white",
-				stroke: "none"
-			},
-			verticalAlign: "top",
-			width: 24
-		}
-	};
-	z.exporting = {
-		type: "image/png",
-		url: "https://export.highcharts.com/",
-		printMaxWidth: 780,
-		scale: 2,
-		buttons: {
-			contextButton: {
-				menuClassName: "highcharts-contextmenu",
-				symbol: "menu",
-				_titleKey: "contextButtonTitle",
-				menuItems: [{
-						textKey: "printChart",
-						onclick: function() {
-							this.print()
-						}
-					}, {
-						separator: !0
-					}, {
-						textKey: "downloadPNG",
-						onclick: function() {
-							this.exportChart()
-						}
-					}, {
-						textKey: "downloadJPEG",
-						onclick: function() {
-							this.exportChart({
-								type: "image/jpeg"
-							})
-						}
-					}, {
-						textKey: "downloadPDF",
-						onclick: function() {
-							this.exportChart({
-								type: "application/pdf"
-							})
-						}
-					},
-					{
-						textKey: "downloadSVG",
-						onclick: function() {
-							this.exportChart({
-								type: "image/svg+xml"
-							})
-						}
-					}
-				]
-			}
-		}
-	};
-	f.post = function(a, b, e) {
-		var c, a = r("form", l({
-			method: "post",
-			action: a,
-			enctype: "multipart/form-data"
-		}, e), {
-			display: "none"
-		}, j.body);
-		for (c in b) r("input", {
-			type: "hidden",
-			name: c,
-			value: b[c]
-		}, null, a);
-		a.submit();
-		t(a)
-	};
-	q(B.prototype, {
-		sanitizeSVG: function(a) {
-			return a.replace(/zIndex="[^"]+"/g, "").replace(/isShadow="[^"]+"/g, "").replace(/symbolName="[^"]+"/g, "").replace(/jQuery[0-9]+="[^"]+"/g, "").replace(/url\([^#]+#/g, "url(#").replace(/&lt;svg /,
-				'&lt;svg xmlns:xlink="http://www.w3.org/1999/xlink" ').replace(/ (NS[0-9]+\:)?href=/g, " xlink:href=").replace(/\n/, " ").replace(/&lt;\/svg&gt;.*?$/, "&lt;/svg&gt;").replace(/(fill|stroke)="rgba\(([ 0-9]+,[ 0-9]+,[ 0-9]+),([ 0-9\.]+)\)"/g, '$1="rgb($2)" $1-opacity="$3"').replace(/&amp;nbsp;/g, "\u00a0").replace(/&amp;shy;/g, "\u00ad").replace(/&lt;IMG /g, "&lt;image ").replace(/&lt;(\/?)TITLE&gt;/g, "&lt;$1title&gt;").replace(/height=([^" ]+)/g, 'height="$1"').replace(/width=([^" ]+)/g, 'width="$1"').replace(/hc-svg-href="([^"]+)"&gt;/g, 'xlink:href="$1"/&gt;').replace(/ id=([^" &gt;]+)/g,
-				' id="$1"').replace(/class=([^" &gt;]+)/g, 'class="$1"').replace(/ transform /g, " ").replace(/:(path|rect)/g, "$1").replace(/style="([^"]+)"/g, function(a) {
-				return a.toLowerCase()
-			})
-		},
-		getChartHTML: function() {
-			return this.container.innerHTML
-		},
-		getSVG: function(a) {
-			var b = this,
-				e, c, g, k, h, d = l(b.options, a),
-				n = d.exporting.allowHTML;
-			if (!j.createElementNS) j.createElementNS = function(a, b) {
-				return j.createElement(b)
-			};
-			c = r("div", null, {
-				position: "absolute",
-				top: "-9999em",
-				width: b.chartWidth + "px",
-				height: b.chartHeight + "px"
-			}, j.body);
-			g = b.renderTo.style.width;
-			h = b.renderTo.style.height;
-			g = d.exporting.sourceWidth || d.chart.width || /px$/.test(g) &amp;&amp; parseInt(g, 10) || 600;
-			h = d.exporting.sourceHeight || d.chart.height || /px$/.test(h) &amp;&amp; parseInt(h, 10) || 400;
-			q(d.chart, {
-				animation: !1,
-				renderTo: c,
-				forExport: !0,
-				renderer: "SVGRenderer",
-				width: g,
-				height: h
-			});
-			d.exporting.enabled = !1;
-			delete d.data;
-			d.series = [];
-			m(b.series, function(a) {
-				k = l(a.userOptions, {
-					animation: !1,
-					enableMouseTracking: !1,
-					showCheckbox: !1,
-					visible: a.visible
-				});
-				k.isInternal || d.series.push(k)
-			});
-			a &amp;&amp; m(["xAxis",
-				"yAxis"
-			], function(b) {
-				m(F(a[b]), function(a, c) {
-					d[b][c] = l(d[b][c], a)
-				})
-			});
-			e = new f.Chart(d, b.callback);
-			m(["xAxis", "yAxis"], function(a) {
-				m(b[a], function(b, c) {
-					var d = e[a][c],
-						f = b.getExtremes(),
-						g = f.userMin,
-						f = f.userMax;
-					d &amp;&amp; (g !== void 0 || f !== void 0) &amp;&amp; d.setExtremes(g, f, !0, !1)
-				})
-			});
-			g = e.getChartHTML();
-			d = null;
-			e.destroy();
-			t(c);
-			if (n &amp;&amp; (c = g.match(/&lt;\/svg&gt;(.*?$)/))) c = '&lt;foreignObject x="0" y="0" width="200" height="200"&gt;&lt;body xmlns="http://www.w3.org/1999/xhtml"&gt;' + c[1] + "&lt;/body&gt;&lt;/foreignObject&gt;", g = g.replace("&lt;/svg&gt;", c + "&lt;/svg&gt;");
-			g = this.sanitizeSVG(g);
-			return g = g.replace(/(url\(#highcharts-[0-9]+)&amp;quot;/g, "$1").replace(/&amp;quot;/g, "'")
-		},
-		getSVGForExport: function(a, b) {
-			var e = this.options.exporting;
-			return this.getSVG(l({
-				chart: {
-					borderRadius: 0
-				}
-			}, e.chartOptions, b, {
-				exporting: {
-					sourceWidth: a &amp;&amp; a.sourceWidth || e.sourceWidth,
-					sourceHeight: a &amp;&amp; a.sourceHeight || e.sourceHeight
-				}
-			}))
-		},
-		exportChart: function(a, b) {
-			var e = this.getSVGForExport(a, b),
-				a = l(this.options.exporting, a);
-			f.post(a.url, {
-				filename: a.filename || "chart",
-				type: a.type,
-				width: a.width || 0,
-				scale: a.scale,
-				svg: e
-			}, a.formAttributes)
-		},
-		print: function() {
-			var a = this,
-				b = a.container,
-				e = [],
-				c = b.parentNode,
-				f = j.body,
-				k = f.childNodes,
-				h = a.options.exporting.printMaxWidth,
-				d, n;
-			if (!a.isPrinting) {
-				a.isPrinting = !0;
-				a.pointer.reset(null, 0);
-				D(a, "beforePrint");
-				if (n = h &amp;&amp; a.chartWidth &gt; h) d = [a.options.chart.width, void 0, !1], a.setSize(h, void 0, !1);
-				m(k, function(a, b) {
-					if (a.nodeType === 1) e[b] = a.style.display, a.style.display = "none"
-				});
-				f.appendChild(b);
-				s.focus();
-				s.print();
-				setTimeout(function() {
-					c.appendChild(b);
-					m(k, function(a, b) {
-						if (a.nodeType ===
-							1) a.style.display = e[b]
-					});
-					a.isPrinting = !1;
-					n &amp;&amp; a.setSize.apply(a, d);
-					D(a, "afterPrint")
-				}, 1E3)
-			}
-		},
-		contextMenu: function(a, b, e, c, f, k, h) {
-			var d = this,
-				n = d.options.navigation,
-				l = n.menuItemStyle,
-				o = d.chartWidth,
-				p = d.chartHeight,
-				E = "cache-" + a,
-				i = d[E],
-				v = G(f, k),
-				x, y, s, t = function(b) {
-					d.pointer.inClass(b.target, a) || y()
-				};
-			if (!i) d[E] = i = r("div", {
-				className: a
-			}, {
-				position: "absolute",
-				zIndex: 1E3,
-				padding: v + "px"
-			}, d.container), x = r("div", null, q({
-					MozBoxShadow: "3px 3px 10px #888",
-					WebkitBoxShadow: "3px 3px 10px #888",
-					boxShadow: "3px 3px 10px #888"
-				},
-				n.menuStyle), i), y = function() {
-				w(i, {
-					display: "none"
-				});
-				h &amp;&amp; h.setState(0);
-				d.openMenu = !1
-			}, u(i, "mouseleave", function() {
-				s = setTimeout(y, 500)
-			}), u(i, "mouseenter", function() {
-				clearTimeout(s)
-			}), u(j, "mouseup", t), u(d, "destroy", function() {
-				C(j, "mouseup", t)
-			}), m(b, function(a) {
-				if (a) {
-					var b = a.separator ? r("hr", null, null, x) : r("div", {
-						onmouseover: function() {
-							w(this, n.menuItemHoverStyle)
-						},
-						onmouseout: function() {
-							w(this, l)
-						},
-						onclick: function(b) {
-							b &amp;&amp; b.stopPropagation();
-							y();
-							a.onclick &amp;&amp; a.onclick.apply(d, arguments)
-						},
-						innerHTML: a.text ||
-							d.options.lang[a.textKey]
-					}, q({
-						cursor: "pointer"
-					}, l), x);
-					d.exportDivElements.push(b)
-				}
-			}), d.exportDivElements.push(x, i), d.exportMenuWidth = i.offsetWidth, d.exportMenuHeight = i.offsetHeight;
-			b = {
-				display: "block"
-			};
-			e + d.exportMenuWidth &gt; o ? b.right = o - e - f - v + "px" : b.left = e - v + "px";
-			c + k + d.exportMenuHeight &gt; p &amp;&amp; h.alignOptions.verticalAlign !== "top" ? b.bottom = p - c - v + "px" : b.top = c + k - v + "px";
-			w(i, b);
-			d.openMenu = !0
-		},
-		addButton: function(a) {
-			var b = this,
-				e = b.renderer,
-				c = l(b.options.navigation.buttonOptions, a),
-				g = c.onclick,
-				k = c.menuItems,
-				h, d, n = {
-					stroke: c.symbolStroke,
-					fill: c.symbolFill
-				},
-				j = c.symbolSize || 12;
-			if (!b.btnCount) b.btnCount = 0;
-			if (!b.exportDivElements) b.exportDivElements = [], b.exportSVGElements = [];
-			if (c.enabled !== !1) {
-				var o = c.theme,
-					p = o.states,
-					m = p &amp;&amp; p.hover,
-					p = p &amp;&amp; p.select,
-					i;
-				delete o.states;
-				g ? i = function(a) {
-					a.stopPropagation();
-					g.call(b, a)
-				} : k &amp;&amp; (i = function() {
-					b.contextMenu(d.menuClassName, k, d.translateX, d.translateY, d.width, d.height, d);
-					d.setState(2)
-				});
-				c.text &amp;&amp; c.symbol ? o.paddingLeft = f.pick(o.paddingLeft, 25) : c.text || q(o, {
-					width: c.width,
-					height: c.height,
-					padding: 0
-				});
-				d = e.button(c.text, 0, 0, i, o, m, p).attr({
-					title: b.options.lang[c._titleKey],
-					"stroke-linecap": "round",
-					zIndex: 3
-				});
-				d.menuClassName = a.menuClassName || "highcharts-menu-" + b.btnCount++;
-				c.symbol &amp;&amp; (h = e.symbol(c.symbol, c.symbolX - j / 2, c.symbolY - j / 2, j, j).attr(q(n, {
-					"stroke-width": c.symbolStrokeWidth || 1,
-					zIndex: 1
-				})).add(d));
-				d.add().align(q(c, {
-					width: d.width,
-					x: f.pick(c.x, A)
-				}), !0, "spacingBox");
-				A += (d.width + c.buttonSpacing) * (c.align === "right" ? -1 : 1);
-				b.exportSVGElements.push(d, h)
-			}
-		},
-		destroyExport: function(a) {
-			var a =
-				a.target,
-				b, e;
-			for (b = 0; b &lt; a.exportSVGElements.length; b++)
-				if (e = a.exportSVGElements[b]) e.onclick = e.ontouchstart = null, a.exportSVGElements[b] = e.destroy();
-			for (b = 0; b &lt; a.exportDivElements.length; b++) e = a.exportDivElements[b], C(e, "mouseleave"), a.exportDivElements[b] = e.onmouseout = e.onmouseover = e.ontouchstart = e.onclick = null, t(e)
-		}
-	});
-	I.menu = function(a, b, e, c) {
-		return ["M", a, b + 2.5, "L", a + e, b + 2.5, "M", a, b + c / 2 + 0.5, "L", a + e, b + c / 2 + 0.5, "M", a, b + c - 1.5, "L", a + e, b + c - 1.5]
-	};
-	B.prototype.callbacks.push(function(a) {
-		var b, e = a.options.exporting,
-			c = e.buttons;
-		A = 0;
-		if (e.enabled !== !1) {
-			for (b in c) a.addButton(c[b]);
-			u(a, "destroy", a.destroyExport)
-		}
-	})
-});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:58:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;85b3854bdbd53200f687dfea5e9619ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts Export&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_85b3854bdbd53200f687dfea5e9619ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:12&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Status Alert">c890e63c13d3b6006749bccf3244b066</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-06-09 15:03:43</sys_created_on>
-<sys_id>0090e63c13d3b6006749bccf3244b068</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-06-09 15:03:43</sys_updated_on>
-<table/>
-<target_name>PE Highcharts Export</target_name>
-<type>UI Script</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
 <name>sys_db_object_6211e40c13d336006749bccf3244b0df</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Alert Anomaly</label><live_feed_enabled>false</live_feed_enabled><name>em_alert_anomaly</name><number_ref display_value="Alert Anomaly">af26b3c813db36006749bccf3244b01c</number_ref><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2017-06-06 21:51:23</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>6211e40c13d336006749bccf3244b0df</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Alert Anomaly</sys_name><sys_package display_value="Event Management" source="com.glideapp.itom.snac">2060244813d336006749bccf3244b04c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_6211e40c13d336006749bccf3244b0df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-07 13:22:20</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
-<remote_update_set display_value="PE Status Alert">c890e63c13d3b6006749bccf3244b066</remote_update_set>
+<remote_update_set display_value="PE Status Alert">7d73c3b14f9b720005be4d6e0210c75e</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-06-09 15:03:43</sys_created_on>
-<sys_id>0490e63c13d3b6006749bccf3244b067</sys_id>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>3d73c3b14f9b720005be4d6e0210c75f</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-06-09 15:03:43</sys_updated_on>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
 <table>em_alert_anomaly</table>
 <target_name>Alert Anomaly</target_name>
 <type>Table</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_widget_b2d19122130e320040c770a76144b0ab</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function StatusAlert($interval, $filter) {
-	/* widget controller */
-	var c = this;
-	var d = new Date();
-
-	c.alert = c.data.alert;
-	c.probabilityGauge = c.data.probabilityGauge;
-
-	if (c.alert.created_on) {
-		c.alert.created_on_date = new Date(c.alert.created_on);
-		c.alert.created_on_string = $filter('date')(c.alert.created_on_date, 'short');
-	}
-
-	var outage_eta = new Date( d.getTime() + c.options.outage_eta*60000 );
-	c.min_to_eta = Math.floor( ( outage_eta.getTime() - d.getTime() ) / 60000 );
-
-	if (c.min_to_eta &lt; 0) {
-		c.min_to_eta = 0;
-	} else {
-		$interval( function(){
-			c.min_to_eta -= 1;
-		}, 60000, c.min_to_eta);
-	}  
-
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
-$mango: #fe8a30;
-$orange: #ff6f00;
-$medium-green: #34ba3d;
-$lightish-green-two: #6ce474;
-
-$text-color: $slate !default;
-
-$status-alert-color: $orange !default;
-$status-alert-gradient: linear-gradient($mango, $orange) !default;
-$status-recovered-color: $medium-green !default;
-$status-recovered-gradient: linear-gradient($lightish-green-two, $medium-green) !default;
-
-.status-wrapper {
-	margin: -10px -15px 0 -15px;
-}
-
-.status-box {
-	background: $status-alert-gradient;
-	color: #fff;
-	fill: #fff;
-  margin-bottom: 10px;
-  padding: 15px 23px;
-  .title {
-		font-size: 22px;
-		font-weight: 600;
-		margin-bottom: 5px;
-	}
-	.pill {
-		background-color: #fff;
-		color: $status-alert-color;
-		display: inline-block;
-		font-size: 14px;
-		padding: 1px 8px;
-		border-radius: 14px;
-		margin: 5px 0;
-	}
-}
-
-.recovered {
-	.status-box {
-		background: $status-recovered-gradient;
-		.pill {
-			color: $status-recovered-color;
-		}
-	}
-}
-
-.status-row {
-	height: 125px;
-}
-.status-key {
-	float: left;
-	width: 140px;
-}
-.status-detail {
-	padding-top: 20px;
-	.status-time {
-		display: inline;
-		font-size: 24px;
-	}
-}
-
-.big-icon {
-	margin: 15px auto;
-	height: 100px;
-	width: 100px;
-	text-align: center;
-	border-radius: 50px;
-	border: 10px solid #fff;
-	fill: #fff;
-	.svg-wrapper {
-		position: relative;
-		vertical-align: top;
-		top: 15px;
-		width: 50px;
-		height: 50px;
-	}
-}
-
-// HIGHCHART
-
-.highcharts-axis, .highcharts-axis-labels, .highcharts-data-label-box, .highcharts-text-outline {
-	visibility: hidden;
-}
-
-// SPINNER
-
-.spinny {
-  display: inline-block;
-  margin-right: 5px;
-}
-.spinny &amp;gt; div {
-  width: 9px;
-  height: 9px;
-  background-color: #fff;
-  border-radius: 100%;
-  display: inline-block;
-  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  vertical-align: 10%;
-}
-@-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% { -webkit-transform: scale(0) }
-  40% { -webkit-transform: scale(1.0) }
-}
-@keyframes sk-bouncedelay {
-  0%, 80%, 100% { 
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  } 40% { 
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-  }
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-status-alert&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Status Alert&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert_sysid","default_value":"","label":"Anomaly Alert sys_id","type":"string"},{"instructions":"in percent","name":"probability","label":"Probability of outage","type":"integer"},{"instructions":"as datetime string","name":"outage_eta","label":"ETA of outage","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
-  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-	options.alert_sysid = options.alert_sysid || serverOptions.alert_sysid;
-	options.probability = options.probability || serverOptions.probability || 67;
-	options.outage_eta = options.outage_eta || serverOptions.outage_eta || 30;
-
-	var getAlert = function(rec){
-    return {
-      sys_id: rec.sys_id.toString(),
-      number: rec.number.toString(),
-      created_on: rec.sys_created_on.toString(),
-      description: rec.description.toString(),
-      state: rec.state.toString()
-    };
-  };
-
-  var alertGR, alert;
-  if (options.alert_sysid) {
-    alertGR = new GlideRecord('em_alert_anomaly');
-    if(alertGR.get(options.alert)){
-		alert = getAlert( alertGR );
-	}
-  } else {
-    alertGR = new GlideRecord('em_alert_anomaly');
-    //alertGR.addEncodedQuery('state!=Closed');
-    alertGR.orderByDesc('sys_created_on');
-    alertGR.query();
-    if(alertGR.next()){
-		alert = getAlert( alertGR );
-	}
-  }
-  data.alert = alert;
-
-  data.probabilityGauge = $sp.getWidget("pe-solid-gauge", {
-
-		script_include: 'PEChartData',
-		function_name: 'getData',
-		param1: options.probability,
-
-		advance: JSON.stringify({
-			options: {
-				title: {
-					text: null
-				},
-				chart: {
-					height: 140,
-					width: 140,
-					backgroundColor: null
-				},
-				pane: {
-					background: {
-						backgroundColor: 'rgba(255,255,255,0.5)',
-						borderColor: null,
-						shape: 'solid',
-						innerRadius: '60%',
-						outerRadius: '100%'
-					}
-				},
-				exporting: {
-					enabled: false
-				},
-				legend: {
-					enabled: false
-				},
-				yAxis: {
-					min: 0,
-					max: 100,
-					tickAmount: 0,
-					tickWidth: 0,
-					stops: [
-						[0, 'rgba(255,255,255,0.5)'],
-						[1, 'rgba(255,255,255,1)']
-					]
-				},
-				plotOptions: {
-					solidgauge: {
-						dataLabels: {
-							format: "{y}%",
-							color: "white",
-							style: {
-								fontFamily: "'SourceSansPro', Helvetica, Arial, sans-serif",
-								fontSize: "24px",
-								fontWeight: "400"
-							},
-							y: -20
-						}
-					}
-				}
-			}
-
-		})
-
-	});
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-13 16:37:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b2d19122130e320040c770a76144b0ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;256&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Status Alert&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b2d19122130e320040c770a76144b0ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-09 15:03:25&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-class="{ 'recovered': c.alert.state === 'Closed' }" class="status-wrapper"&gt;
-	&lt;div class="status-box"&gt;
-		&lt;header class="title"&gt;{{c.alert.description}}&lt;/header&gt;
-		&lt;div class="pill"&gt;
-			{{ c.alert.number }} |
-			&lt;span ng-if="c.alert.state !== 'Closed'"&gt;{{ 'Created ' + c.alert.created_on_string }}&lt;/span&gt;
-			&lt;span ng-if="c.alert.state === 'Closed'"&gt;Closed&lt;/span&gt;
-		&lt;/div&gt;
-		&lt;div ng-if="c.alert.state !== 'Closed'" class="status-row"&gt;
-			&lt;div class="status-key"&gt;
-				&lt;sp-widget widget="c.probabilityGauge"&gt;&lt;/sp-widget&gt;
-			&lt;/div&gt;
-			&lt;div class="status-detail"&gt;
-				&lt;div&gt;Probability that an outage will occur in&lt;/div&gt;
-				&lt;div class="spinny"&gt;
-				  &lt;div class="bouncy1" style="animation-delay: -0.32s;"&gt;&lt;/div&gt;
-				  &lt;div class="bouncy2" style="animation-delay: -0.16s;"&gt;&lt;/div&gt;
-				  &lt;div class="bouncy3"&gt;&lt;/div&gt;
-				&lt;/div&gt;
-				&lt;div class="status-time"&gt;
-					{{c.min_to_eta}} {{c.min_to_eta == 1 ? 'minute' : 'minutes'}}
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div ng-if="c.alert.state === 'Closed'" class="status-row"&gt;
-			&lt;div class="status-key"&gt;
-				&lt;div class="big-icon"&gt;
-					&lt;svg class="svg-wrapper"&gt;
-						&lt;use xlink:href="#check-mark"&gt;&lt;/use&gt;
-					&lt;/svg&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-			&lt;div class="status-detail"&gt;
-				&lt;div class="title"&gt;&lt;strong&gt;Outage Prevented&lt;/strong&gt;&lt;/div&gt;
-				&lt;div&gt;There was a {{c.options.probability}}% chance this incident would cause an outage&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="hidden"&gt;
-&lt;svg version="1.1" id="check-mark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	x="0px" y="0px" viewBox="0 0 574.6 468" xml:space="preserve"&gt;
-	&lt;g&gt;
-		&lt;path d="M0,292.6c-0.1-6.5,2.2-12.1,6.8-16.7c14.9-15,29.8-30,44.9-44.9c10-9.8,24.1-9.4,34.4,0.8c23.4,23.3,46.7,46.6,70,70
-			c12.6,12.6,25.7,12.5,38.3-0.1C291.9,204.2,389.5,106.6,487,9c7.3-7.3,15.6-11.1,25.6-7.8c4.1,1.4,8.1,4.1,11.2,7.1
-			c14.2,13.8,28.1,27.9,42.2,42c11.4,11.4,11.5,25.1,0.1,36.5C502.9,150,439.7,213.2,376.6,276.3C315.9,337,255.2,397.7,194.5,458.4
-			c-12.8,12.8-25.9,12.9-38.6,0.1c-49.1-49.1-98.3-98.3-147.5-147.4C3.3,305.9-0.2,300.1,0,292.6z"/&gt;
-	&lt;/g&gt;
-&lt;/svg&gt;
-&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Status Alert">c890e63c13d3b6006749bccf3244b066</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-06-09 15:03:43</sys_created_on>
-<sys_id>4090e63c13d3b6006749bccf3244b067</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-06-09 15:03:43</sys_updated_on>
-<table/>
-<target_name>PE Status Alert</target_name>
-<type>Widget</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -9162,17 +8432,324 @@ $status-recovered-gradient: linear-gradient($lightish-green-two, $medium-green) 
 	})(M);
 	return M
 });]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:52:54&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5752058bdbd53200f687dfea5e9619f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts 5_0_5&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5752058bdbd53200f687dfea5e9619f8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:09:37&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Status Alert">c890e63c13d3b6006749bccf3244b066</remote_update_set>
+<remote_update_set display_value="PE Status Alert">7d73c3b14f9b720005be4d6e0210c75e</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-06-09 15:03:43</sys_created_on>
-<sys_id>4c90e63c13d3b6006749bccf3244b067</sys_id>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>3d73c3b14f9b720005be4d6e0210c7f5</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-06-09 15:03:43</sys_updated_on>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
 <table/>
 <target_name>PE Highcharts 5_0_5</target_name>
 <type>UI Script</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_b2d19122130e320040c770a76144b0ab</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function StatusAlert($interval, $filter) {
+	/* widget controller */
+	var c = this;
+	var d = new Date();
+
+	c.alert = c.data.alert;
+	c.probabilityGauge = c.data.probabilityGauge;
+
+	if (c.alert.created_on) {
+		c.alert.created_on_date = new Date(c.alert.created_on);
+		c.alert.created_on_string = $filter('date')(c.alert.created_on_date, 'short');
+	}
+
+	var outage_eta = new Date( d.getTime() + c.options.outage_eta*60000 );
+	c.min_to_eta = Math.floor( ( outage_eta.getTime() - d.getTime() ) / 60000 );
+
+	if (c.min_to_eta &lt; 0) {
+		c.min_to_eta = 0;
+	} else {
+		$interval( function(){
+			c.min_to_eta -= 1;
+		}, 60000, c.min_to_eta);
+	}  
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
+$mango: #fe8a30;
+$orange: #ff6f00;
+$medium-green: #34ba3d;
+$lightish-green-two: #6ce474;
+
+$text-color: $slate !default;
+
+$status-alert-color: $orange !default;
+$status-alert-gradient: linear-gradient($mango, $orange) !default;
+$status-recovered-color: $medium-green !default;
+$status-recovered-gradient: linear-gradient($lightish-green-two, $medium-green) !default;
+
+.status-wrapper {
+	margin: -10px -15px 0 -15px;
+}
+
+.status-box {
+	background: $status-alert-gradient;
+	color: #fff;
+	fill: #fff;
+  margin-bottom: 10px;
+  padding: 15px 23px;
+  .title {
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+	.pill {
+		background-color: #fff;
+		color: $status-alert-color;
+		display: inline-block;
+		font-size: 14px;
+		padding: 1px 8px;
+		border-radius: 14px;
+		margin: 5px 0;
+	}
+}
+
+.recovered {
+	.status-box {
+		background: $status-recovered-gradient;
+		.pill {
+			color: $status-recovered-color;
+		}
+	}
+}
+
+.status-row {
+	height: 125px;
+}
+.status-key {
+	float: left;
+	width: 140px;
+}
+.status-detail {
+	padding-top: 20px;
+	.status-time {
+		display: inline;
+		font-size: 24px;
+	}
+}
+
+.big-icon {
+	margin: 15px auto;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	border-radius: 50px;
+	border: 10px solid #fff;
+	fill: #fff;
+	.svg-wrapper {
+		position: relative;
+		vertical-align: top;
+		top: 15px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+// HIGHCHART
+
+.highcharts-axis, .highcharts-axis-labels, .highcharts-data-label-box, .highcharts-text-outline {
+	visibility: hidden;
+}
+
+// SPINNER
+
+.spinny {
+  display: inline-block;
+  margin-right: 5px;
+}
+.spinny &amp;gt; div {
+  width: 9px;
+  height: 9px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  vertical-align: 10%;
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-status-alert&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Status Alert&lt;/name&gt;&lt;option_schema&gt;[{"name":"alert_sysid","default_value":"","label":"Anomaly Alert sys_id","type":"string"},{"instructions":"in percent","name":"probability","label":"Probability of outage","type":"integer"},{"instructions":"as datetime string","name":"outage_eta","label":"ETA of outage","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+	options.alert_sysid = options.alert_sysid || serverOptions.alert_sysid;
+	options.probability = options.probability || serverOptions.probability || 67;
+	options.outage_eta = options.outage_eta || serverOptions.outage_eta || 30;
+
+	var getAlert = function(rec){
+    return {
+      sys_id: rec.sys_id.toString(),
+      number: rec.number.toString(),
+      created_on: rec.sys_created_on.toString(),
+      description: rec.description.toString(),
+      state: rec.state.toString()
+    };
+  };
+
+  var alertGR, alert;
+  if (options.alert_sysid) {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    if(alertGR.get(options.alert)){
+		alert = getAlert( alertGR );
+	}
+  } else {
+    alertGR = new GlideRecord('em_alert_anomaly');
+    //alertGR.addEncodedQuery('state!=Closed');
+    alertGR.orderByDesc('sys_created_on');
+    alertGR.query();
+    if(alertGR.next()){
+		alert = getAlert( alertGR );
+	}
+  }
+  data.alert = alert;
+
+  data.probabilityGauge = $sp.getWidget("pe-solid-gauge", {
+
+		script_include: 'PEChartData',
+		function_name: 'getData',
+		param1: options.probability,
+
+		advance: JSON.stringify({
+			options: {
+				title: {
+					text: null
+				},
+				chart: {
+					height: 140,
+					width: 140,
+					backgroundColor: null
+				},
+				pane: {
+					background: {
+						backgroundColor: 'rgba(255,255,255,0.5)',
+						borderColor: null,
+						shape: 'solid',
+						innerRadius: '60%',
+						outerRadius: '100%'
+					}
+				},
+				exporting: {
+					enabled: false
+				},
+				legend: {
+					enabled: false
+				},
+				yAxis: {
+					min: 0,
+					max: 100,
+					tickAmount: 0,
+					tickWidth: 0,
+					stops: [
+						[0, 'rgba(255,255,255,0.5)'],
+						[1, 'rgba(255,255,255,1)']
+					]
+				},
+				plotOptions: {
+					solidgauge: {
+						dataLabels: {
+							format: "{y}%",
+							color: "white",
+							style: {
+								fontFamily: "'SourceSansPro', Helvetica, Arial, sans-serif",
+								fontSize: "24px",
+								fontWeight: "400"
+							},
+							y: -20
+						}
+					}
+				}
+			}
+
+		})
+
+	});
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-13 16:37:07&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b2d19122130e320040c770a76144b0ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;256&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Status Alert&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b2d19122130e320040c770a76144b0ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-09 15:03:25&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-class="{ 'recovered': c.alert.state === 'Closed' }" class="status-wrapper"&gt;
+	&lt;div class="status-box"&gt;
+		&lt;header class="title"&gt;{{c.alert.description}}&lt;/header&gt;
+		&lt;div class="pill"&gt;
+			{{ c.alert.number }} |
+			&lt;span ng-if="c.alert.state !== 'Closed'"&gt;{{ 'Created ' + c.alert.created_on_string }}&lt;/span&gt;
+			&lt;span ng-if="c.alert.state === 'Closed'"&gt;Closed&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div ng-if="c.alert.state !== 'Closed'" class="status-row"&gt;
+			&lt;div class="status-key"&gt;
+				&lt;sp-widget widget="c.probabilityGauge"&gt;&lt;/sp-widget&gt;
+			&lt;/div&gt;
+			&lt;div class="status-detail"&gt;
+				&lt;div&gt;Probability that an outage will occur in&lt;/div&gt;
+				&lt;div class="spinny"&gt;
+				  &lt;div class="bouncy1" style="animation-delay: -0.32s;"&gt;&lt;/div&gt;
+				  &lt;div class="bouncy2" style="animation-delay: -0.16s;"&gt;&lt;/div&gt;
+				  &lt;div class="bouncy3"&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="status-time"&gt;
+					{{c.min_to_eta}} {{c.min_to_eta == 1 ? 'minute' : 'minutes'}}
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div ng-if="c.alert.state === 'Closed'" class="status-row"&gt;
+			&lt;div class="status-key"&gt;
+				&lt;div class="big-icon"&gt;
+					&lt;svg class="svg-wrapper"&gt;
+						&lt;use xlink:href="#check-mark"&gt;&lt;/use&gt;
+					&lt;/svg&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="status-detail"&gt;
+				&lt;div class="title"&gt;&lt;strong&gt;Outage Prevented&lt;/strong&gt;&lt;/div&gt;
+				&lt;div&gt;There was a {{c.options.probability}}% chance this incident would cause an outage&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="hidden"&gt;
+&lt;svg version="1.1" id="check-mark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0px" y="0px" viewBox="0 0 574.6 468" xml:space="preserve"&gt;
+	&lt;g&gt;
+		&lt;path d="M0,292.6c-0.1-6.5,2.2-12.1,6.8-16.7c14.9-15,29.8-30,44.9-44.9c10-9.8,24.1-9.4,34.4,0.8c23.4,23.3,46.7,46.6,70,70
+			c12.6,12.6,25.7,12.5,38.3-0.1C291.9,204.2,389.5,106.6,487,9c7.3-7.3,15.6-11.1,25.6-7.8c4.1,1.4,8.1,4.1,11.2,7.1
+			c14.2,13.8,28.1,27.9,42.2,42c11.4,11.4,11.5,25.1,0.1,36.5C502.9,150,439.7,213.2,376.6,276.3C315.9,337,255.2,397.7,194.5,458.4
+			c-12.8,12.8-25.9,12.9-38.6,0.1c-49.1-49.1-98.3-98.3-147.5-147.4C3.3,305.9-0.2,300.1,0,292.6z"/&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Status Alert">7d73c3b14f9b720005be4d6e0210c75e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>7973c3b14f9b720005be4d6e0210c75f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
+<table/>
+<target_name>PE Status Alert</target_name>
+<type>Widget</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
@@ -9250,14 +8827,14 @@ $status-recovered-gradient: linear-gradient($lightish-green-two, $medium-green) 
 		a.addEvent(b, "redraw", d)
 	})
 });]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:59:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;26c3854bdbd53200f687dfea5e9619ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts No Data&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_26c3854bdbd53200f687dfea5e9619ac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-18 12:39:29&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Status Alert">c890e63c13d3b6006749bccf3244b066</remote_update_set>
+<remote_update_set display_value="PE Status Alert">7d73c3b14f9b720005be4d6e0210c75e</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-06-09 15:03:43</sys_created_on>
-<sys_id>8890e63c13d3b6006749bccf3244b067</sys_id>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>7973c3b14f9b720005be4d6e0210c7f5</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-06-09 15:03:43</sys_updated_on>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
 <table/>
 <target_name>PE Highcharts No Data</target_name>
 <type>UI Script</type>
@@ -9272,14 +8849,14 @@ $status-recovered-gradient: linear-gradient($lightish-green-two, $medium-green) 
 <comments/>
 <name>em_alert_anomaly_6726b3c813db36006749bccf3244b025</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="em_alert_anomaly"><em_alert_anomaly action="INSERT_OR_UPDATE"><acknowledged>false</acknowledged><additional_info/><category>Default</category><classification>0</classification><cmdb_ci/><correlation_group>0</correlation_group><correlation_rule_group>0</correlation_rule_group><description>Abnormally High Response Times</description><event_class/><flap_count/><flap_last_state/><flap_last_update_time/><flap_start_window/><group/><group_source>6</group_source><impact_services/><incident/><initial_event_time/><initial_remote_time/><is_group_alert>false</is_group_alert><kb/><kb_url>/kb_view.do?sysparm_article=</kb_url><last_event_time/><last_remote_time/><last_update_time_by_event/><maintenance>false</maintenance><message_key/><metric_name/><node/><number>Alert Anomaly10000</number><parent/><remote_task_id/><resource/><severity>1</severity><short_description/><source/><state>Open</state><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-07 13:26:35</sys_created_on><sys_domain>global</sys_domain><sys_id>6726b3c813db36006749bccf3244b025</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-07 13:26:35</sys_updated_on><type/><work_notes/></em_alert_anomaly></record_update>]]></payload>
-<remote_update_set display_value="PE Status Alert">c890e63c13d3b6006749bccf3244b066</remote_update_set>
+<remote_update_set display_value="PE Status Alert">7d73c3b14f9b720005be4d6e0210c75e</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-06-09 15:03:43</sys_created_on>
-<sys_id>8c90e63c13d3b6006749bccf3244b066</sys_id>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>b573c3b14f9b720005be4d6e0210c75f</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-06-09 15:03:43</sys_updated_on>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
 <table/>
 <target_name>Alert Anomaly10000</target_name>
 <type>Alert Anomaly</type>
@@ -9292,19 +8869,476 @@ $status-recovered-gradient: linear-gradient($lightish-green-two, $medium-green) 
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_number_af26b3c813db36006749bccf3244b01c</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="em_alert_anomaly">em_alert_anomaly</category><maximum_digits>7</maximum_digits><number>10001</number><prefix>Alert Anomaly</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-07 13:22:20</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>af26b3c813db36006749bccf3244b01c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Alert Anomaly</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_number_af26b3c813db36006749bccf3244b01c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-07 13:22:20</sys_updated_on></sys_number></record_update>]]></payload>
-<remote_update_set display_value="PE Status Alert">c890e63c13d3b6006749bccf3244b066</remote_update_set>
+<name>sys_script_include_5c4ad5bf138e720040c770a76144b0c9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PEChartData&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PEChartData&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PEChartData = Class.create();
+PEChartData.prototype = {
+    initialize: function(request, response) {
+		this.json = new JSON();
+    },
+	getData: function(param1){
+		return [{
+			"name": "Probability",
+			"data": [ parseInt(param1) ]
+		}];
+	},
+    type: 'PEChartData'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-17 14:25:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5c4ad5bf138e720040c770a76144b0c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;PEChartData&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_5c4ad5bf138e720040c770a76144b0c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-17 17:08:01&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Status Alert">7d73c3b14f9b720005be4d6e0210c75e</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-06-09 15:03:43</sys_created_on>
-<sys_id>c490e63c13d3b6006749bccf3244b067</sys_id>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>b573c3b14f9b720005be4d6e0210c7f5</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-06-09 15:03:43</sys_updated_on>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
+<table/>
+<target_name>PEChartData</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_number_af26b3c813db36006749bccf3244b01c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="em_alert_anomaly">em_alert_anomaly</category><maximum_digits>7</maximum_digits><number>10001</number><prefix>Alert Anomaly</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-07 13:22:20</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>af26b3c813db36006749bccf3244b01c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Alert Anomaly</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_number_af26b3c813db36006749bccf3244b01c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-07 13:22:20</sys_updated_on></sys_number></record_update>]]></payload>
+<remote_update_set display_value="PE Status Alert">7d73c3b14f9b720005be4d6e0210c75e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>fd73c3b14f9b720005be4d6e0210c75f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
 <table/>
 <target_name>Alert Anomaly</target_name>
 <type>Number</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_85b3854bdbd53200f687dfea5e9619ab</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts Export&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
+ Highcharts JS v4.2.6 (2016-08-02)
+ Exporting module
+
+ (c) 2010-2016 Torstein Honsi
+
+ License: www.highcharts.com/license
+*/
+(function(f) {
+	typeof module === "object" &amp;&amp; module.exports ? module.exports = f : f(Highcharts)
+})(function(f) {
+	var s = f.win,
+		j = s.document,
+		B = f.Chart,
+		u = f.addEvent,
+		C = f.removeEvent,
+		D = f.fireEvent,
+		r = f.createElement,
+		t = f.discardElement,
+		w = f.css,
+		l = f.merge,
+		m = f.each,
+		q = f.extend,
+		F = f.splat,
+		G = Math.max,
+		H = f.isTouchDevice,
+		I = f.Renderer.prototype.symbols,
+		z = f.getOptions(),
+		A;
+	q(z.lang, {
+		printChart: "Print chart",
+		downloadPNG: "Download PNG image",
+		downloadJPEG: "Download JPEG image",
+		downloadPDF: "Download PDF document",
+		downloadSVG: "Download SVG vector image",
+		contextButtonTitle: "Chart context menu"
+	});
+	z.navigation = {
+		menuStyle: {
+			border: "1px solid #A0A0A0",
+			background: "#FFFFFF",
+			padding: "5px 0"
+		},
+		menuItemStyle: {
+			padding: "0 10px",
+			background: "none",
+			color: "#303030",
+			fontSize: H ? "14px" : "11px"
+		},
+		menuItemHoverStyle: {
+			background: "#4572A5",
+			color: "#FFFFFF"
+		},
+		buttonOptions: {
+			symbolFill: "#E0E0E0",
+			symbolSize: 14,
+			symbolStroke: "#666",
+			symbolStrokeWidth: 3,
+			symbolX: 12.5,
+			symbolY: 10.5,
+			align: "right",
+			buttonSpacing: 3,
+			height: 22,
+			theme: {
+				fill: "white",
+				stroke: "none"
+			},
+			verticalAlign: "top",
+			width: 24
+		}
+	};
+	z.exporting = {
+		type: "image/png",
+		url: "https://export.highcharts.com/",
+		printMaxWidth: 780,
+		scale: 2,
+		buttons: {
+			contextButton: {
+				menuClassName: "highcharts-contextmenu",
+				symbol: "menu",
+				_titleKey: "contextButtonTitle",
+				menuItems: [{
+						textKey: "printChart",
+						onclick: function() {
+							this.print()
+						}
+					}, {
+						separator: !0
+					}, {
+						textKey: "downloadPNG",
+						onclick: function() {
+							this.exportChart()
+						}
+					}, {
+						textKey: "downloadJPEG",
+						onclick: function() {
+							this.exportChart({
+								type: "image/jpeg"
+							})
+						}
+					}, {
+						textKey: "downloadPDF",
+						onclick: function() {
+							this.exportChart({
+								type: "application/pdf"
+							})
+						}
+					},
+					{
+						textKey: "downloadSVG",
+						onclick: function() {
+							this.exportChart({
+								type: "image/svg+xml"
+							})
+						}
+					}
+				]
+			}
+		}
+	};
+	f.post = function(a, b, e) {
+		var c, a = r("form", l({
+			method: "post",
+			action: a,
+			enctype: "multipart/form-data"
+		}, e), {
+			display: "none"
+		}, j.body);
+		for (c in b) r("input", {
+			type: "hidden",
+			name: c,
+			value: b[c]
+		}, null, a);
+		a.submit();
+		t(a)
+	};
+	q(B.prototype, {
+		sanitizeSVG: function(a) {
+			return a.replace(/zIndex="[^"]+"/g, "").replace(/isShadow="[^"]+"/g, "").replace(/symbolName="[^"]+"/g, "").replace(/jQuery[0-9]+="[^"]+"/g, "").replace(/url\([^#]+#/g, "url(#").replace(/&lt;svg /,
+				'&lt;svg xmlns:xlink="http://www.w3.org/1999/xlink" ').replace(/ (NS[0-9]+\:)?href=/g, " xlink:href=").replace(/\n/, " ").replace(/&lt;\/svg&gt;.*?$/, "&lt;/svg&gt;").replace(/(fill|stroke)="rgba\(([ 0-9]+,[ 0-9]+,[ 0-9]+),([ 0-9\.]+)\)"/g, '$1="rgb($2)" $1-opacity="$3"').replace(/&amp;nbsp;/g, "\u00a0").replace(/&amp;shy;/g, "\u00ad").replace(/&lt;IMG /g, "&lt;image ").replace(/&lt;(\/?)TITLE&gt;/g, "&lt;$1title&gt;").replace(/height=([^" ]+)/g, 'height="$1"').replace(/width=([^" ]+)/g, 'width="$1"').replace(/hc-svg-href="([^"]+)"&gt;/g, 'xlink:href="$1"/&gt;').replace(/ id=([^" &gt;]+)/g,
+				' id="$1"').replace(/class=([^" &gt;]+)/g, 'class="$1"').replace(/ transform /g, " ").replace(/:(path|rect)/g, "$1").replace(/style="([^"]+)"/g, function(a) {
+				return a.toLowerCase()
+			})
+		},
+		getChartHTML: function() {
+			return this.container.innerHTML
+		},
+		getSVG: function(a) {
+			var b = this,
+				e, c, g, k, h, d = l(b.options, a),
+				n = d.exporting.allowHTML;
+			if (!j.createElementNS) j.createElementNS = function(a, b) {
+				return j.createElement(b)
+			};
+			c = r("div", null, {
+				position: "absolute",
+				top: "-9999em",
+				width: b.chartWidth + "px",
+				height: b.chartHeight + "px"
+			}, j.body);
+			g = b.renderTo.style.width;
+			h = b.renderTo.style.height;
+			g = d.exporting.sourceWidth || d.chart.width || /px$/.test(g) &amp;&amp; parseInt(g, 10) || 600;
+			h = d.exporting.sourceHeight || d.chart.height || /px$/.test(h) &amp;&amp; parseInt(h, 10) || 400;
+			q(d.chart, {
+				animation: !1,
+				renderTo: c,
+				forExport: !0,
+				renderer: "SVGRenderer",
+				width: g,
+				height: h
+			});
+			d.exporting.enabled = !1;
+			delete d.data;
+			d.series = [];
+			m(b.series, function(a) {
+				k = l(a.userOptions, {
+					animation: !1,
+					enableMouseTracking: !1,
+					showCheckbox: !1,
+					visible: a.visible
+				});
+				k.isInternal || d.series.push(k)
+			});
+			a &amp;&amp; m(["xAxis",
+				"yAxis"
+			], function(b) {
+				m(F(a[b]), function(a, c) {
+					d[b][c] = l(d[b][c], a)
+				})
+			});
+			e = new f.Chart(d, b.callback);
+			m(["xAxis", "yAxis"], function(a) {
+				m(b[a], function(b, c) {
+					var d = e[a][c],
+						f = b.getExtremes(),
+						g = f.userMin,
+						f = f.userMax;
+					d &amp;&amp; (g !== void 0 || f !== void 0) &amp;&amp; d.setExtremes(g, f, !0, !1)
+				})
+			});
+			g = e.getChartHTML();
+			d = null;
+			e.destroy();
+			t(c);
+			if (n &amp;&amp; (c = g.match(/&lt;\/svg&gt;(.*?$)/))) c = '&lt;foreignObject x="0" y="0" width="200" height="200"&gt;&lt;body xmlns="http://www.w3.org/1999/xhtml"&gt;' + c[1] + "&lt;/body&gt;&lt;/foreignObject&gt;", g = g.replace("&lt;/svg&gt;", c + "&lt;/svg&gt;");
+			g = this.sanitizeSVG(g);
+			return g = g.replace(/(url\(#highcharts-[0-9]+)&amp;quot;/g, "$1").replace(/&amp;quot;/g, "'")
+		},
+		getSVGForExport: function(a, b) {
+			var e = this.options.exporting;
+			return this.getSVG(l({
+				chart: {
+					borderRadius: 0
+				}
+			}, e.chartOptions, b, {
+				exporting: {
+					sourceWidth: a &amp;&amp; a.sourceWidth || e.sourceWidth,
+					sourceHeight: a &amp;&amp; a.sourceHeight || e.sourceHeight
+				}
+			}))
+		},
+		exportChart: function(a, b) {
+			var e = this.getSVGForExport(a, b),
+				a = l(this.options.exporting, a);
+			f.post(a.url, {
+				filename: a.filename || "chart",
+				type: a.type,
+				width: a.width || 0,
+				scale: a.scale,
+				svg: e
+			}, a.formAttributes)
+		},
+		print: function() {
+			var a = this,
+				b = a.container,
+				e = [],
+				c = b.parentNode,
+				f = j.body,
+				k = f.childNodes,
+				h = a.options.exporting.printMaxWidth,
+				d, n;
+			if (!a.isPrinting) {
+				a.isPrinting = !0;
+				a.pointer.reset(null, 0);
+				D(a, "beforePrint");
+				if (n = h &amp;&amp; a.chartWidth &gt; h) d = [a.options.chart.width, void 0, !1], a.setSize(h, void 0, !1);
+				m(k, function(a, b) {
+					if (a.nodeType === 1) e[b] = a.style.display, a.style.display = "none"
+				});
+				f.appendChild(b);
+				s.focus();
+				s.print();
+				setTimeout(function() {
+					c.appendChild(b);
+					m(k, function(a, b) {
+						if (a.nodeType ===
+							1) a.style.display = e[b]
+					});
+					a.isPrinting = !1;
+					n &amp;&amp; a.setSize.apply(a, d);
+					D(a, "afterPrint")
+				}, 1E3)
+			}
+		},
+		contextMenu: function(a, b, e, c, f, k, h) {
+			var d = this,
+				n = d.options.navigation,
+				l = n.menuItemStyle,
+				o = d.chartWidth,
+				p = d.chartHeight,
+				E = "cache-" + a,
+				i = d[E],
+				v = G(f, k),
+				x, y, s, t = function(b) {
+					d.pointer.inClass(b.target, a) || y()
+				};
+			if (!i) d[E] = i = r("div", {
+				className: a
+			}, {
+				position: "absolute",
+				zIndex: 1E3,
+				padding: v + "px"
+			}, d.container), x = r("div", null, q({
+					MozBoxShadow: "3px 3px 10px #888",
+					WebkitBoxShadow: "3px 3px 10px #888",
+					boxShadow: "3px 3px 10px #888"
+				},
+				n.menuStyle), i), y = function() {
+				w(i, {
+					display: "none"
+				});
+				h &amp;&amp; h.setState(0);
+				d.openMenu = !1
+			}, u(i, "mouseleave", function() {
+				s = setTimeout(y, 500)
+			}), u(i, "mouseenter", function() {
+				clearTimeout(s)
+			}), u(j, "mouseup", t), u(d, "destroy", function() {
+				C(j, "mouseup", t)
+			}), m(b, function(a) {
+				if (a) {
+					var b = a.separator ? r("hr", null, null, x) : r("div", {
+						onmouseover: function() {
+							w(this, n.menuItemHoverStyle)
+						},
+						onmouseout: function() {
+							w(this, l)
+						},
+						onclick: function(b) {
+							b &amp;&amp; b.stopPropagation();
+							y();
+							a.onclick &amp;&amp; a.onclick.apply(d, arguments)
+						},
+						innerHTML: a.text ||
+							d.options.lang[a.textKey]
+					}, q({
+						cursor: "pointer"
+					}, l), x);
+					d.exportDivElements.push(b)
+				}
+			}), d.exportDivElements.push(x, i), d.exportMenuWidth = i.offsetWidth, d.exportMenuHeight = i.offsetHeight;
+			b = {
+				display: "block"
+			};
+			e + d.exportMenuWidth &gt; o ? b.right = o - e - f - v + "px" : b.left = e - v + "px";
+			c + k + d.exportMenuHeight &gt; p &amp;&amp; h.alignOptions.verticalAlign !== "top" ? b.bottom = p - c - v + "px" : b.top = c + k - v + "px";
+			w(i, b);
+			d.openMenu = !0
+		},
+		addButton: function(a) {
+			var b = this,
+				e = b.renderer,
+				c = l(b.options.navigation.buttonOptions, a),
+				g = c.onclick,
+				k = c.menuItems,
+				h, d, n = {
+					stroke: c.symbolStroke,
+					fill: c.symbolFill
+				},
+				j = c.symbolSize || 12;
+			if (!b.btnCount) b.btnCount = 0;
+			if (!b.exportDivElements) b.exportDivElements = [], b.exportSVGElements = [];
+			if (c.enabled !== !1) {
+				var o = c.theme,
+					p = o.states,
+					m = p &amp;&amp; p.hover,
+					p = p &amp;&amp; p.select,
+					i;
+				delete o.states;
+				g ? i = function(a) {
+					a.stopPropagation();
+					g.call(b, a)
+				} : k &amp;&amp; (i = function() {
+					b.contextMenu(d.menuClassName, k, d.translateX, d.translateY, d.width, d.height, d);
+					d.setState(2)
+				});
+				c.text &amp;&amp; c.symbol ? o.paddingLeft = f.pick(o.paddingLeft, 25) : c.text || q(o, {
+					width: c.width,
+					height: c.height,
+					padding: 0
+				});
+				d = e.button(c.text, 0, 0, i, o, m, p).attr({
+					title: b.options.lang[c._titleKey],
+					"stroke-linecap": "round",
+					zIndex: 3
+				});
+				d.menuClassName = a.menuClassName || "highcharts-menu-" + b.btnCount++;
+				c.symbol &amp;&amp; (h = e.symbol(c.symbol, c.symbolX - j / 2, c.symbolY - j / 2, j, j).attr(q(n, {
+					"stroke-width": c.symbolStrokeWidth || 1,
+					zIndex: 1
+				})).add(d));
+				d.add().align(q(c, {
+					width: d.width,
+					x: f.pick(c.x, A)
+				}), !0, "spacingBox");
+				A += (d.width + c.buttonSpacing) * (c.align === "right" ? -1 : 1);
+				b.exportSVGElements.push(d, h)
+			}
+		},
+		destroyExport: function(a) {
+			var a =
+				a.target,
+				b, e;
+			for (b = 0; b &lt; a.exportSVGElements.length; b++)
+				if (e = a.exportSVGElements[b]) e.onclick = e.ontouchstart = null, a.exportSVGElements[b] = e.destroy();
+			for (b = 0; b &lt; a.exportDivElements.length; b++) e = a.exportDivElements[b], C(e, "mouseleave"), a.exportDivElements[b] = e.onmouseout = e.onmouseover = e.ontouchstart = e.onclick = null, t(e)
+		}
+	});
+	I.menu = function(a, b, e, c) {
+		return ["M", a, b + 2.5, "L", a + e, b + 2.5, "M", a, b + c / 2 + 0.5, "L", a + e, b + c / 2 + 0.5, "M", a, b + c - 1.5, "L", a + e, b + c - 1.5]
+	};
+	B.prototype.callbacks.push(function(a) {
+		var b, e = a.options.exporting,
+			c = e.buttons;
+		A = 0;
+		if (e.enabled !== !1) {
+			for (b in c) a.addButton(c[b]);
+			u(a, "destroy", a.destroyExport)
+		}
+	})
+});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dachtman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 21:58:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;85b3854bdbd53200f687dfea5e9619ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Highcharts Export&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_85b3854bdbd53200f687dfea5e9619ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dachtman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 06:06:12&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="PE Status Alert">7d73c3b14f9b720005be4d6e0210c75e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-12 20:10:08</sys_created_on>
+<sys_id>fd73c3b14f9b720005be4d6e0210c7f5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-12 20:10:08</sys_updated_on>
+<table/>
+<target_name>PE Highcharts Export</target_name>
+<type>UI Script</type>
 <update_domain>global</update_domain>
 <update_set display_value=""/>
 <view/>
