@@ -1,17 +1,18 @@
-## Synopsis: Approval Card Widget
+## Title - Approval Card
 
+## Description - Use Case
+
+Displays a simple approval card with three buttons - **Accept**, **Reject**, **View**. Also displayed - user avatar, name, title and data relevant to the scenario where used.
+
+
+## Screenshots
 ![alt text](../../images/approval.png "Approval Card Widget")
 
+## Additional Information/Notes 
+This widget makes use of [pe-people-info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info) widget to display user's avatar, name and title. 
+> Widget is included with the update set.
 
-This widget can be used to create a simple approval card with three button **Accept**, **Reject**, **View**. This widget also displays user avatar, name and title etc.
-
-***
-
-## Installation
-
-**Important note: This widget makes use of [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info) to display user avatar, name and title, this widget is already part of the update set.
-
-People Info widget is injected dynamically in client controller.
+Widget is injected dynamically in Client Script controller.
 
 ```javascript
 c.data.user_info = {
@@ -30,40 +31,45 @@ spUtil.get('pe-people-info', {
   c.data.embedded_widget = response;
 });
 ```
+---
+## Installation
+---
+Download and install update set **[pe-approval-card.u-update-set.xml](pe-approval-card.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 
-Since we don't want to show Call/Chat functionality the option **show_call_and_chat** is false.
+---
+## Configuration
+---
+Widget Option Schema parameters:
 
+**"title"** `Default: Destination Services`
 
-***
+**"purpose"** `Default: Relocation Package`
 
+**"icon"** font-awesome icons' class reference `Default:  fa fa-bell fa-2x` (Bell icon)
 
-After installing above widget you can just download the update set **pe-approval-card.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> See 'Configuration' above
 
-We provide options to make the it easy for to change **title**, **purpose title** and **purpose icon** easily.
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
 
-**"title"** the default message for this is **Destination Services.**
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-**"purpose"** the default message for this is **Relocation Package**
-
-**"icon"** we make use of font-awesome icons for this option, default value here is **fa fa-bell fa-2x**, which is a bell icon. You can replace with any supported font-awesome class.
-
-***
-
-We provide four SASS variables to control the Button Text/Border Color, Font Awesome Icon Color.
-
-`$pe-brand-success: #5cb85c !default;`
-
-`$pe-brand-warning: #f0ad4e !default;`
-
-`$pe-brand-danger: #d9534f !default;`
-
-`$pe-brand-info: #5bc0de !default;`
-
-
-
-You can override these variables at portal level using the **themes**.
-
-
-
-
-
+`$pe-brand-success: #5cb85c !default;`<br/>
+`$pe-brand-warning: #f0ad4e !default;`<br/>
+`$pe-brand-danger: #d9534f !default;`<br/>
+`$pe-brand-info: #5bc0de !default;`<br/>

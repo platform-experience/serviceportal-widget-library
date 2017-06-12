@@ -1,16 +1,28 @@
-## Synopsis: Cloud Sprawl Overview Snippet
+## Title - Cloud Sprawl Overview Snippet
 
-![alt text](../images/pe-cloud-sprawl-overview-snippet.png "Tabs Selector - No tab selection")
+## Description - Use Case
 
-***
+This snippet can be used to quickly obtain a card containing quick reference data and chart(s).
 
+## Screenshots
+![](../images/pe-cloud-sprawl-overview-snippet.png "Tabs Selector - No tab selection")
+
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-cloud-sprawl-overview-snippet.u-update-set.xml](pe-cloud-sprawl-overview-snippet.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
 
-Installation is very simple, you can just download the update set **pe-cloud-sprawl-overview-snippet.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+**"Card Data"** JSON Data object
 
-There is one option with a sample data set.
-
-**"Card Data"** the default value for this is a sample **JSON object**
+Example:
 
 ```javascript
     {
@@ -26,3 +38,22 @@ There is one option with a sample data set.
       "right_attn_color": "red"
     }
 ```
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> See Configuration above.
+
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

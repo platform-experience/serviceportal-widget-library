@@ -1,36 +1,41 @@
-## Synopsis: Info Snippet
+## Title - Info Snippet
+
+## Description - Use Case
+
+This snippet can be used to quickly obtain a card containing quick reference data.
+
+## Screenshots
 ![](../images/pe-cloud-sprawl-info-snippet.png)
 
-This snippet can be used to quickly obtain a card containing sub sections with data and a sample charts.
-
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-cloud-sprawl-info-snippet.u-update-set.xml](pe-cloud-sprawl-info-snippet.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
+> None
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided as a JSON object in the Client Script controller.
 
-Installation is very simple, you can just download the update set **pe-cloud-sprawl-info-snippet.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
-A sample JSON object is defined in the client controller.
-
-```javascript
-
-c.userOne = {
-    fname: "jose",
-    lname: "riley",
-    name: "Jose Riley",
-    photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
-    title: "Application Manager",
-    phone: "8581234567",
-
-    spending: [
-
-      {
-        text: "$8K this month",
-        icon: "#icon-aws",
-        company: "AWS"
-      }, {
-        text: "$22K this month",
-        icon: "#icon-azure",
-        company: "Azure"
-      }
-    ]
-  };
-
-```
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

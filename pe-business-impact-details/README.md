@@ -8,13 +8,12 @@ Query the most recent anonaly alert from the *em_alert_anomaly* table to provide
 ![](../images/pe-business-impact-1b.png "expanded")
 
 ## Additional Information/Notes 
-Included as part of the update set **[pe-business-impact.u-update-set.xml](../pe-business-impact/pe-business-impact.u-update-set.xml)** <br/><br/>
+This widget is included as part of the update set **[pe-business-impact.u-update-set.xml](../pe-business-impact/pe-business-impact.u-update-set.xml)** <br/><br/>
 
 ---
 ## Installation
 ---
-See README for **[pe-business-impact](../pe-business-impact/README.md)** 
-
+> See README for **[pe-business-impact](../pe-business-impact/README.md)** 
 ---
 ## Configuration
 ---
@@ -27,9 +26,7 @@ Widget Option Schema parameters:
 ## Platform Dependencies
 ---
 ### SN Plugin Support
-
-See README for **[pe-business-impact](../pe-business-impact/README.md)** 
-
+> See README for **[pe-business-impact](../pe-business-impact/README.md)**
 ---
 ## CSS/SASS Variables
 ---

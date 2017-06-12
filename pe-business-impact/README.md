@@ -51,10 +51,12 @@ Performance Analytics content pack for Event Management core out-of-the-box KPIs
 ---
 ## Sample Data and Data Structures
 ---
-With the Performance Analytics - Content Pack - Event Management installed. The System table *em_alert_anomoly* is created.  `This update set will install a sample record into the table.`
+With the Performance Analytics - Content Pack - Event Management installed. The System table *em_alert_anomoly* is created.  
 
-`NOTE`
-There two (2) records provided as an insert or updates as part of the Update Set installation.
+> This update set will install a sample record into the table.`
+
+> **Note** :
+There are two (2) records provided as an insert or updates as part of the Update Set installation.
 The record for the *em_alert_anomaly* is updated to create the necessary links/connections with the required CMDB tables.
 Additionally, there is a single record created for the Event Type and added to the *em_event_type* table.
 
@@ -64,9 +66,7 @@ Revenue and User impact information is provided as 'demo only' data, and would n
 ## API Dependencies
 ---
 <i>Dependencies are included and configured as part of the provided Update Set.</i>
-
-None
-
+>None
 ---
 ## CSS/SASS Variables
 ---

@@ -1,70 +1,42 @@
-## Synopsis: Card Utilization Snippet
-![](../images/pe-cloud-sprawl-card-utilization-snippet.png)
+## Title - Card Utilization Snippet
+
+## Description - Use Case
 
 This snippet can be used to quickly obtain a card containing sub sections with data and a sample charts.
 
+## Screenshots
+![](../images/pe-cloud-sprawl-card-utilization-snippet.png)
+
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-cloud-sprawl-card-utilization-snippet.u-update-set.xml](pe-cloud-sprawl-card-utilization-snippet.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 
-Installation is very simple, you can just download the update set **pe-cloud-sprawl-card-utilization-snippet.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+---
+## Configuration
+---
+Widget Option Schema parameters:
+> None
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided as a JSON object in the Client Script controller.
 
-A sample JSON object is defined in the client controller.
-
-```javascript
-
-c.company = {
-    name: "AWS",
-    icon: "#icon-aws",
-
-    util_percent: "82%",
-    underutil_percent: "10%",
-
-    vm_list: [{
-      vmnumber: "VM1",
-      vm_number: "MARKETING",
-      progress_text: "m1.large",
-      progress: "32%",
-      user: {
-        fname: "jose",
-        lname: "riley",
-        name: "Jose Riley",
-        photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
-        title: "Application Manager",
-        phone: "8581234567"
-
-      }
-
-    }, {
-      vmnumber: "VM2",
-      vm_number: "MARKETING",
-      progress_text: "m1.large",
-      progress: "28%",
-      user: {
-        fname: "jose",
-        lname: "riley",
-        name: "Jose Riley",
-        photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
-        title: "Application Manager",
-        phone: "8581234567"
-
-      }
-
-    }, {
-      vmnumber: "VM3",
-      vm_number: "MARKETING",
-      progress_text: "m1.large",
-      progress: "18%",
-      user: {
-        fname: "jose",
-        lname: "riley",
-        name: "Jose Riley",
-        photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
-        title: "Application Manager",
-        phone: "8581234567"
-
-      }
-
-    }],
-
-  };
-
-```
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None
