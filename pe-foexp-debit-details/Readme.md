@@ -1,18 +1,43 @@
-## Synopsis: FOEXP Debit Details
+## Title - FOEXP Debit Details
 
-![FOEXP Debit Details](../images/pe-foexp-debit-details.gif "FOEXP Debit Details")
+## Description - Use Case
 
 This widget allows a user to submit and modify their debit details.
-***
 
+## Screenshots
+![FOEXP Debit Details](../images/pe-foexp-debit-details.gif "FOEXP Debit Details")
+
+## Additional Information/Notes 
+
+Update set installs the table 'User Debit Details' (u_user_debit_details) with sample data.
+
+---
 ## Installation
+---
+Download and install update set **[pe-foexp-debit-details.u-update-set.xml](pe-foexp-debit-details.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
+> None
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided by the update set installed table 'User Debit Details' (u_user_debit_details)
 
-Simply download the **pe-foexp-debit-details.u-update-set.xml** update set and install it on your instance. Once installed, the widget will be available on your instance to drag and drop onto any page via the Service Portal Page Designer.
-
-***
-
-There are two SASS variables which control the styling of the widget.
-
-`$button-bg: #1aa5be !default;`
-
-`$label: #2980b9 !default;`
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

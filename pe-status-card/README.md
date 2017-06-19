@@ -1,50 +1,61 @@
-## Synopsis: Status Card Widget
+## Title - Status Card
 
+## Description - Use Case
+
+This widget can be used to quickly craft a status card with configurable options.
+
+## Screenshots
 ![](../images/pe-status-card-1.png)
 
 ![](../images/pe-status-card-2.png)
 
-This widget can be used to quickly craft a status card with configurable options.
-
+## Additional Information/Notes 
+> None
+---
 ## Installation
-
-Installation is very simple, you can just download the update set "pe-status-card.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
+---
+Download and install update set **[pe-status-card.u-update-set.xml](pe-status-card.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
 ## Configuration
+---
+Widget Option Schema parameters:
 
-We provide some options to configure the widget.
-
-1. **"Title"** This is for changing the title in the panel header.
-
-1. **"Status Number 1"** This is for displaying the first status integer in the panel body.
-
-1. **"Status Number 2"** This is for displaying the second status integer in the panel body.
-
-1. **"Status Number 3"** This is for displaying the third status integer in the panel body.
-
-1. **"Sub Text 1"** This is for displaying the first sub-text copy.
-
-1. **"Sub Text 2"** This is for displaying the second sub-text copy.
-
-1. **"Sub Text 3"** This is for displaying the third sub-text copy.
-
-1. **"Status Indicator 2"** Provides you a choice of status indicators, which you can select.
-
-1. **"Status Indicator 3"** Provides you a choice of status indicators, which you can select.
+**"Title"** This is for changing the title in the panel header.<br/>
+**"Status Number 1"** This is for displaying the first status integer in the panel body.<br/>
+**"Status Number 2"** This is for displaying the second status integer in the panel body.<br/>
+**"Status Number 3"** This is for displaying the third status integer in the panel body.<br/>
+**"Sub Text 1"** This is for displaying the first sub-text copy.<br/>
+**"Sub Text 2"** This is for displaying the second sub-text copy.<br/>
+**"Sub Text 3"** This is for displaying the third sub-text copy.<br/>
+**"Status Indicator 2"** Provides you a choice of status indicators, which you can select.<br/>
+**"Status Indicator 3"** Provides you a choice of status indicators, which you can select.<br/>
 
 ### Status Indicator Choices
 * danger
 * normal
 * warning
 
-## Sass Variables
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> See 'Configuration' above
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-We provide four Sass variables to control the status indicator color and anchor text.
-
-`$pe-status-color-danger: #ff0050 !default;`
-
-`$pe-status-color-normal: #6ee520 !default;`
-
-`$pe-status-color-warning: #ffce00 !default;`
-
-`$pe-anchor-color: #68acd8 !default;`
+`$pe-status-color-danger: #ff0050 !default;`<br/>
+`$pe-status-color-normal: #6ee520 !default;`<br/>
+`$pe-status-color-warning: #ffce00 !default;`<br/>
+`$pe-anchor-color: #68acd8 !default;`<br/>

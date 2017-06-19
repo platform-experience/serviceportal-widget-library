@@ -1,33 +1,52 @@
-## Synopsis: Tabs Selector
+## Title - Tabs Selector
 
-![alt text](../images/pe-tabs-selector-01.png "Tabs Selector - No tab selection")
-
-![alt text](../images/pe-tabs-selector-02.png "Tabs Selector - Tab selected")
-
-![alt text](../images/pe-tabs-selector-03.png "Tabs Selector - Horizontal scrolling")
+## Description - Use Case
 
 This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
 
-***
+## Screenshots
+### No tab selected
+![alt text](../images/pe-tabs-selector-01.png "Tabs Selector - No tab selection")
+### Tab selected
+![alt text](../images/pe-tabs-selector-02.png "Tabs Selector - Tab selected")
+### Horizontal scrolling
+![alt text](../images/pe-tabs-selector-03.png "Tabs Selector - Horizontal scrolling")
 
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-horizontal-scroll-menu.u-update-set.xml](pe-horizontal-scroll-menu.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
 
-Installation is very simple, you can just download the update set **pe-horizontal-scroll-menu.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+**"Title"** Card Title `Default: All providers`
 
-There is one option and a sample data set available in the Server script resource.
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided as JSON objects in the Server Script.
 
-**"Title"** the default message for this is **All providers**
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-***
-
-We provide three SASS variables to control the Background Color, Text/Emoji Color, Messaging Text Size
-
-`$pe-tabs-selector-bg-color: #373737 !default;`
-
-`$pe-tabs-selector-bg-active-color: #4d4d4d !default;`
-
-`$pe-tabs-selector-text-color: #9c9c9c !default;`
-
-`$pe-tabs-selector-text-active-color: #fff !default;`
-
-You can override these variables at portal level using the **themes**.
+`$pe-tabs-selector-bg-color: #373737 !default;`<br/>
+`$pe-tabs-selector-bg-active-color: #4d4d4d !default;`<br/>
+`$pe-tabs-selector-text-color: #9c9c9c !default;`<br/>
+`$pe-tabs-selector-text-active-color: #fff !default;`<br/>

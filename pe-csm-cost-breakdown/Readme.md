@@ -1,17 +1,23 @@
-## Synopsis: PE CSM Cost Breakdown
+## Title - PE CSM Cost Breakdown
 
-![alt text](../images/pe-csm-cost-breakdown.png "Pe csm Cost breakdown")
+## Description - Use Case
 
 This widget can be used to create a simple card with heading and two rows of data.
 
-***
+## Screenshots
+![alt text](../images/pe-csm-cost-breakdown.png "Pe csm Cost breakdown")
 
+## Additional Information/Notes 
+> None
+---
 ## Installation
-
-You can just download the update set **pe-csm-cost-breakdown.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
+---
+Download and install update set **[pe-csm-cost-breakdown.u-update-set.xml](pe-csm-cost-breakdown.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
 ## Configuration
-
+---
 Widget Option Schema parameters:
 
 **"Heading"** Heading of widget<br/>
@@ -21,9 +27,21 @@ Widget Option Schema parameters:
 **"Right Bottom Text"** Text that goes to right bottom.<br/>
 **"Right Bottom HREF"** Link URL for the right bottom text.<br/>
 
-***
-
-
-
-
-
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> None
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

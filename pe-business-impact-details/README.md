@@ -5,7 +5,7 @@
 Query the most recent anonaly alert from the *em_alert_anomaly* table to provide Business Services Impact Details.
 
 ## Screenshots
-![](../images/pe-business-impact-1b.png "expanded")
+![alt text](../images/pe-business-impact-1b.png "expanded")
 
 ## Additional Information/Notes 
 This widget is included as part of the update set **[pe-business-impact.u-update-set.xml](../pe-business-impact/pe-business-impact.u-update-set.xml)** <br/><br/>

@@ -1,36 +1,43 @@
-## Synopsis: Employee Experience Modal Snippet
+## Title - Employee Experience Modal Snippet
 
-![alt text](../images/pe-emp-exp-modal-header-snippet.png "Modal Snippet")
-
-
+## Description - Use Case
 
 This is the snippet for signature modal in employee experience.
 
+## Screenshots
+![alt text](../images/pe-emp-exp-modal-header-snippet.png "Modal Snippet")
+
+## Additional Information/Notes 
+This snippet uses **pe-scratch-pad** widget for signature pad.
+> Widget is included with the update set.
+
+---
 ## Installation
+---
+Download and install update set **[pe-emp-exp-modal-header-snippet.u-update-set.xml](pe-emp-exp-modal-header-snippet.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
+> None
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided within the Client Script file.
 
-Installation is very simple, you can just download the update set "pe-emp-exp-modal-header-snippet" and install it on your instance. Then the widget is available for you to drag and drop on your page. This widget is driven by the data injected into it.
-
-```javascript
-        //use moment js to get yesterday's date
-        c.yesterday = moment(new Date()).subtract(1, 'days').date();
-        c.yestedaymonth = moment(new Date()).subtract(1, 'days').format("MMM");
-
-        c.documentUser = "Suzy Ham";
-        c.title = "TAX DOCUMENT";
-        c.sub_title = "RELOCATION";
-
-        spUtil.get('pe-scratch-pad', {
-         }).then(function(response) {
-             c.data.embedded_widget = response;
-         });
-```
-
-As you can see above this snippet uses "pe-scratch-pad" widget for signature pad. this widget is already included in the snippet update set.
-
-***
-
-We provide four SASS variables to control the color of the statistics shown in the timeline (both text and icon):
-
-`$pe-blue-color: #268cf8 !default;`
-
-You can override these variables at portal level using the **themes**.
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

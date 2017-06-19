@@ -1,25 +1,49 @@
-## Synopsis: Inbox
+# NEEDS TO BE REVIEWED FURTHER
 
-![alt text](../images/pe-inbox-01.png "Inbox")
+## Title - Inbox
+
+## Description - Use Case
 
 This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
 
-***
+## Screenshots
+![alt text](../images/pe-inbox-01.png "Inbox")
 
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
 
-Installation is very simple, you can just download the update set **pe-inbox-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+`Missing Update Set`
 
-There is one option and a sample data set available in the Server script resource.
+Download and install update set **[.u-update-set.xml](.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
 
-**"Title"** the default message for this is **My Inbox**
+**"Title"** title text - `Default: My Inbox`
 
-***
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> None
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-We provide three SASS variables to control the Background Color and Text Color
-
-`$pe-brand-widget-bg-color: #2f65bc !default;`
-
-`$pe-brand-widget-text-color: #e5efff !default;`
-
-You can override these variables at portal level using the **themes**.
+`$pe-brand-widget-bg-color: #2f65bc !default;`<br/>
+`$pe-brand-widget-text-color: #e5efff !default;`<br/>

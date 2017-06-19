@@ -1,14 +1,41 @@
-## Synopsis: Tab Chart Selector Snippet
+## Title - Tab Chart Selector Snippet
 
-![alt text](../images/pe-tab-chart-selector.png "Tab Chart Selector")
-
+## Description - Use Case
 
 This widget can be used to create a simple layout based on tabs.
 
-***
+## Screenshots
+![alt text](../images/pe-tab-chart-selector.png "Tab Chart Selector")
 
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-cloud-sprawl-tab-with-donut-chart-snippet.u-update-set.xml](pe-cloud-sprawl-tab-with-donut-chart-snippet.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
+> None
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided as JSON objects in the Server Script.
 
-Installation is very simple, you can just download the update set **pe-cloud-sprawl-tab-with-donut-chart-snippet.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
-***
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

@@ -1,53 +1,72 @@
-## Synopsis: Training widget (Financial Onboarding Experience)
+## Title - Training widget (Financial Onboarding Experience)
 
-![Training widget](../images/pe-foexp-training.png "Training widget")
+## Description - Use Case
 
 This widget can be used to show training courses allocated to the current user for a particular category of training courses. The user can enroll in, and un-enroll from those courses. Furthermore, they can see what courses they have completed in the category and which are remaining.
 
-***
+## Screenshots
+![Training widget](../images/pe-foexp-training.png "Training widget")
 
-## Installation
-
-Simply download the update set **pe-foexp-training.u-update-set.xml** and install it on your instance. The widget will be available to be dragged onto your page.
+## Additional Information/Notes 
 
 You can either use the "Category" option to select a category to always show in this widget, or pass the `category` parameter in via the URL to set which category the widget should show.
 
-This widget makes use of 4 new custom tables. You will need to populate data into these tables for the widget to work. See the customsation section for more information about this.
+This widget makes use of 4 new custom tables that are installed as part of the Update Set. You will need to populate data into these tables for the widget to work. See the customsation section for more information about this.
 
-***
-
-## Customisation
-
-### Tables
-
+---
+## Installation
+---
+Download and install update set **[pe-foexp-training.u-update-set.xml](pe-foexp-training.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
 This widget uses 4 new custom tables. All are accessible under the new "Training" module.
 
-#### Categories
+#### _Categories_
 This is a group of training courses which are all displayed in the widget together.
 
 These are stored in the `u_pe_training_category` table. 
 
-#### Courses
+#### _Courses_
 These are stored in the `u_pe_training_course` table.
 
-#### Prerequisites
+#### _Prerequisites_
 This allows you to link courses together and says that, for example, "Training Course A" must be completed before "Training Course B" is started.
 
 These are stored in the `u_pe_training_prerequisites` table. 
 
-#### Assignments
+#### _Assignments_
 The current user must be assigned a course for it to show up in the widget.
 
 These are stored in the `u_pe_training_assignments_list` table.
 
-### Colours
+<p/><br/>
+Widget Option Schema parameters: 
 
-`$page-bg: #f5f5f5 !default;`
+**Category**
 
-`$primary-color: #117fc1 !default;`
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> See 'Configuration' above
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$primary-color-darker: #0065d3 !default;`
-
-`$secondary-color: #2980b9 !default;`
-
-`$border-color: #1aa5be !default;`
+`$page-bg: #f5f5f5 !default;`<br/>
+`$primary-color: #117fc1 !default;`<br/>
+`$primary-color-darker: #0065d3 !default;`<br/>
+`$secondary-color: #2980b9 !default;`<br/>
+`$border-color: #1aa5be !default;`<br/>

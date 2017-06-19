@@ -9,11 +9,11 @@ The detailed data is shown when the plus (+) graphic in the top right is selecte
 
 ## Screenshots
 ### Collapsed View
-![](../images/pe-root-cause-1a.png "collapsed")
+![alt text](../images/pe-root-cause-1a.png "collapsed")
 ### Expanded View
-![](../images/pe-root-cause-1b.png "expanded")
+![alt text](../images/pe-root-cause-1b.png "expanded")
 ### Resolved View
-![](../images/pe-root-cause-2a.png "resolved")
+![alt text](../images/pe-root-cause-2a.png "resolved")
 
 ## Additional Information/Notes 
 The update set installs two (2) widgets - PE Root Cause and PE Root Cause Details.

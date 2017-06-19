@@ -7,9 +7,9 @@ Displays status information about the most recent alert record from the *em_aler
 
 ## Screenshots
 ### Alert/Warning View
-![](../images/pe-status-alert-1.png "alert view")
+![alt text](../images/pe-status-alert-1.png "alert view")
 ### Resolved View
-![](../images/pe-status-alert-2.png "resolved")
+![alt text](../images/pe-status-alert-2.png "resolved")
 
 ---
 ## Installation

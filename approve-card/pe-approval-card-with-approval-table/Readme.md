@@ -1,69 +1,54 @@
-## Synopsis: Approval Card Widget
+## Title - Approval Card
 
-![alt text](../../images/approval.png "Approval Card Widget")
-
+## Description - Use Case
 
 This widget can be used to create a simple approval card with three button **Accept**, **Reject**, **View**. This widget also displays user avatar, name and title etc.
 
-***
+## Screenshots
+![alt text](../../images/approval.png "Approval Card Widget")
 
-## Installation
+## Additional Information/Notes 
 
-**Important note: This widget makes use of [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info) to display user avatar, name and title, this widget is already part of the update set.
+This widget makes use of [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info) to display user avatar, name and title.
+
+> Widget is included with the update set.
 
 People Info widget is injected dynamically in client controller.
 
-```javascript
-c.data.user_info = {
-  user_sys_id: '9ec35b8713453a007e94fc5ed144b09a',
-  show_only_picture: false,
-  show_job_title: true,
-  show_call_and_chat:false
-}
+---
+## Installation
+---
+Download and install update set **[pe-approval-card-with-approval-table.u-update-set.xml](pe-approval-card-with-approval-table.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
 
-spUtil.get('pe-people-info', {
-  user_sys_id: c.data.user_info.user_sys_id,
-  show_job_title: c.data.user_info.show_job_title,
-  show_call_and_chat: c.data.user_info.show_call_and_chat,
-  show_only_picture: c.data.user_info.show_only_picture
-}).then(function(response) {
-  c.data.embedded_widget = response;
-});
-```
+**"title"**  `Default: Destination Services`<br/>
+**"purpose"**   `Default: Relocation Package`<br/>
+**"icon"** Use of font-awesome icons for this option  `Default: fa fa-bell fa-2x`, which is a bell icon. Can be replaced with any supported glyph/icon using the [fontawesome.io](http://fontawesome.io/cheatsheet/) classes.
 
-Since we don't want to show Call/Chat functionality the option **show_call_and_chat** is false.
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> See 'Configuration' above
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-
-***
-
-
-After installing above widget you can just download the update set **pe-approval-card.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
-We provide options to make the it easy for to change **title**, **purpose title** and **purpose icon** easily.
-
-**"title"** the default message for this is **Destination Services.**
-
-**"purpose"** the default message for this is **Relocation Package**
-
-**"icon"** we make use of font-awesome icons for this option, default value here is **fa fa-bell fa-2x**, which is a bell icon. You can replace with any supported font-awesome class.
-
-***
-
-We provide four SASS variables to control the Button Text/Border Color, Font Awesome Icon Color.
-
-`$pe-brand-success: #5cb85c !default;`
-
-`$pe-brand-warning: #f0ad4e !default;`
-
-`$pe-brand-danger: #d9534f !default;`
-
-`$pe-brand-info: #5bc0de !default;`
-
-
-
-You can override these variables at portal level using the **themes**.
-
-
-
-
-
+`$pe-brand-success: #5cb85c !default;`<br/>
+`$pe-brand-warning: #f0ad4e !default;`<br/>
+`$pe-brand-danger: #d9534f !default;`<br/>
+`$pe-brand-info: #5bc0de !default;`<br/>

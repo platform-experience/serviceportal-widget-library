@@ -1,21 +1,50 @@
-## Synopsis: Recommendation Cards Widget
+## Title - Recommendation Cards Widget
 
-![](../images/pe-recommendation-cards-1.png)
+## Description - Use Case
 
 This can be used to quickly craft a set of recommendation cards.
 
+## Screenshots
+![](../images/pe-recommendation-cards-1.png)
+
+## Additional Information/Notes 
+
+Uses ServiceNow® [Service Catalog](https://docs.servicenow.com/bundle/istanbul-it-service-management/page/product/service-catalog-management/concept/c_ServiceCatalogManagement.html)
+
+---
 ## Installation
-
-Installation is very simple, you can just download the update set "pe-recommendation-cards.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
+---
+Download and install update set **[pe-recommendation-cards.u-update-set.xml](pe-recommendation-cards.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
 ## Configuration
+---
+Widget Option Schema parameters:
 
-We provide 4 options to configure the widget.
+**"Title"** Widget Title.  `Default: Recommended for You`<br/>
+**"Category"** This is for defining a category  `Default: PE My Devices`<br/>
+**"Items"** This is for defining the item or items to display from the category using a comma separated list. For example: sc_cat_item.icon, sc_cat_item.name, etc.  `Default: sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description`<br/>
+**"Highlight"** This is for highlighting items, which adds a background color to the item or items using a comma separated list. For example: Office 2016, GL Reporting, etc.   `Default: Office 2016`<br/>
 
-1. **"Title"** This is for changing the title of the h3. The title, Recommended for You, will be the default if no option is defined.
-
-1. **"Category"** This is for defining a category; PE My Devices will be the default if no option is defined.
-
-1. **"Items"** This is for defining the item or items to display from the category. Please add multiple items in a comma separated list. For example: sc_cat_item.icon, sc_cat_item.name, etc. The following items are chosen by default if no options are defined: sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description.
-
-1. **"Highlight"** This is for highlighting items, which adds a background color to the item or items. Please add multiple highlighted items in a comma separated list. For example: Office 2016, GL Reporting, etc. By default Office 2016 is set as the highlighted item, if no options are defined.
+---
+## Platform Dependencies
+---
+### SN System Tables
+* sc_cat_item
+* sc_cat_item_category
+* sc_category
+---
+## Sample Data and Data Structures
+---
+> See 'Configuration' above
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

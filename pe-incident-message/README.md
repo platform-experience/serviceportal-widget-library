@@ -1,33 +1,50 @@
-## Synopsis: Incident Message Widget
+## Title - Incident Message
 
-![](../images/pe-incident-message.png)
+## Description - Use Case
 
 This widget can be used to quickly craft an incident message or alert with configurable options.
 
+## Screenshots
+![](../images/pe-incident-message.png)
+
+## Additional Information/Notes 
+> None
+---
 ## Installation
-
-Installation is very simple, you can just download the update set "pe-incident-message.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
+---
+Download and install update set **[pe-incident-message.u-update-set.xml](pe-incident-message.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
 ## Configuration
+---
+Widget Option Schema parameters:
 
-We provide some options to configure the widget.
+**"Title"** This is for changing the title in the panel header.<br/>
+**"Message Time"** This is for displaying the incident message time.<br/>
+**"Message Header"** This is for displaying the message header in the panel body.<br/>
+**"Message Body"** This is for displaying the message body in the panel body.<br/>
 
-1. **"Title"** This is for changing the title in the panel header.
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided as JSON objects in the Server Script.
 
-1. **"Message Time"** This is for displaying the incident message time.
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-1. **"Message Header"** This is for displaying the message header in the panel body.
-
-1. **"Message Body"** This is for displaying the message body in the panel body.
-
-## Sass Variables
-
-We provide four Sass variables to control the incident danger colors.
-
-`$pe-status-color-danger: #6b0022 !default;`
-
-`$pe-badge-danger: #a40034 !default;`
-
-`$pe-background-header-danger: #dd0047 !default;`
-
-`$pe-background-body-danger: #be003d !default;`
+`$pe-status-color-danger: #6b0022 !default;`<br/>
+`$pe-badge-danger: #a40034 !default;`<br/>
+`$pe-background-header-danger: #dd0047 !default;`<br/>
+`$pe-background-body-danger: #be003d !default;`<br/>

@@ -7,11 +7,11 @@ When the plus (+) graphic in the top right is selected/clicked, details about th
 
 ## Screenshots
 ### Collapsed View
-![](../images/pe-business-impact-1a.png "collapsed")
+![alt text](../images/pe-business-impact-1a.png "collapsed")
 ### Expanded View
-![](../images/pe-business-impact-1b.png "expanded")
+![alt text](../images/pe-business-impact-1b.png "expanded")
 ### Resolved View
-![](../images/pe-business-impact-2a.png "resolved")
+![alt text](../images/pe-business-impact-2a.png "resolved")
 
 ## Additional Information/Notes 
 The update set installs two (2) widgets - PE Business Impact and PE Business Impact Details.

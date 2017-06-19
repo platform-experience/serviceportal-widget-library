@@ -1,29 +1,46 @@
-## Synopsis: Overview Card Snippet
+## Title - Overview Card Snippet
 
-![alt text](../images/pe-overview-card-snippet.png "Status Card Snippet")
+## Description - Use Case
 
 This snippet can be used to have a valid starting point for displaying a status card.
 
-***
+## Screenshots
+![alt text](../images/pe-overview-card-snippet.png "Status Card Snippet")
 
-## Installation
+## Additional Information/Notes 
 
-Installation is very simple, you can just download the update set **pe-overview-card-snippet-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
-**Important note: This widget makes use of [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info) to display user avatar, name and title, this widget is already part of the update set.
+This widget makes use of [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info) to display user avatar, name and title.
+> Widget is included with the update set.
 
 People Info widget is injected dynamically in client controller.
 
-```javascript
-  spUtil.get('pe-people-info', {
-    user_sys_id: c.data.user_sys_id,
-    show_job_title: 'false',
-    show_call_and_chat: 'false',
-    show_only_picture: 'false',
-    show_text_below_picture: 'true'
-  }).then(function (response) {
-    c.data.embedded_widget_1 = response;
-  });
-```
+---
+## Installation
+---
+Download and install update set **[pe-emp-exp-overview-card-snippet.u-update-set.xml](pe-emp-exp-overview-card-snippet.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
+> None
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided in the Server Script file.
 
-***
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

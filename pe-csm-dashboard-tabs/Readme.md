@@ -1,20 +1,23 @@
-## Synopsis: PE CSM Dashboard Tabs
+## Title - PE CSM Dashboard Tabs
 
-![alt text](../images/pe-csm-dashboard-tabs.png "PE CSM Dashboard")
-
+## Description - Use Case
 
 This widget can be used to create a simple tabbed menu.
 
-***
+## Screenshots
+![alt text](../images/pe-csm-dashboard-tabs.png "PE CSM Dashboard")
 
+## Additional Information/Notes 
+> None
+---
 ## Installation
-
-You can just download the update set **pe-csm-dashboard-tabs.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
+---
+Download and install update set **[pe-csm-dashboard-tabs.u-update-set.xml](pe-csm-dashboard-tabs.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
 ## Configuration
-We provide few options to load data easily and also to change the appearance of the widget.
-For each **ICON** parameter, use the [fontawesome.io](http://fontawesome.io/cheatsheet/) classes.
-
+---
 Widget Option Schema parameters:
 
 **"First Tab Title"** Title for first tab.<br/>
@@ -24,9 +27,23 @@ Widget Option Schema parameters:
 **"Third Tab Title"** Title for third tab.<br/>
 **"Third Tab Icon"** Icon for third tab.<br/>
 
-***
+> For each **ICON** parameter, use the [fontawesome.io](http://fontawesome.io/cheatsheet/) classes.
 
-
-
-
-
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> None
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

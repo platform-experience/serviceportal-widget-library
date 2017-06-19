@@ -4,7 +4,6 @@
 
 Displays a simple approval card with three buttons - **Accept**, **Reject**, **View**. Also displayed - user avatar, name, title and data relevant to the scenario where used.
 
-
 ## Screenshots
 ![alt text](../../images/approval.png "Approval Card Widget")
 
@@ -14,23 +13,6 @@ This widget makes use of [pe-people-info](https://github.com/platform-experience
 
 Widget is injected dynamically in Client Script controller.
 
-```javascript
-c.data.user_info = {
-  user_sys_id: '9ec35b8713453a007e94fc5ed144b09a',
-  show_only_picture: false,
-  show_job_title: true,
-  show_call_and_chat:false
-}
-
-spUtil.get('pe-people-info', {
-  user_sys_id: c.data.user_info.user_sys_id,
-  show_job_title: c.data.user_info.show_job_title,
-  show_call_and_chat: c.data.user_info.show_call_and_chat,
-  show_only_picture: c.data.user_info.show_only_picture
-}).then(function(response) {
-  c.data.embedded_widget = response;
-});
-```
 ---
 ## Installation
 ---

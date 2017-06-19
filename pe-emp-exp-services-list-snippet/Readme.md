@@ -1,50 +1,42 @@
-## Synopsis: Employee Experience Modal Snippet
+## Title - Employee Experience Modal Snippet
 
-![alt text](../images/pe-emp-exp-services-list.png "Services List")
-
+## Description - Use Case
 
 This is the snippet to display list for services in employee experience.
 
+## Screenshots
+![alt text](../images/pe-emp-exp-services-list.png "Services List")
+
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-emp-exp-services-list-snippet.u-update-set.xml](pe-emp-exp-services-list-snippet.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
+## Configuration
+---
+Widget Option Schema parameters:
+> None
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+Sample data is provided as a JSON object in the Client Script file.
 
-Installation is very simple, you can just download the update set "pe-emp-exp-services-list-snippet" and install it on your instance. Then the widget is available for you to drag and drop on your page. This widget is driven by the data injected into it.
-
-```javascript
-        //use moment js to get yesterday's date
-       c.servicesList = [{
-            name: "Household Goods Shipment",
-            selected: true,
-            icon: "#icon-shipment"
-        }, {
-            name: "Temporary Housing",
-            selected: true,
-            icon: "#icon-house"
-        }, {
-            name: "Rental Furniture",
-            selected: false,
-            icon: "#icon-furniture"
-        }, {
-            name: "Activate Utilities",
-            selected: true,
-            icon: "#icon-util"
-        }, {
-            name: "Temporary Cars",
-            selected: false,
-            icon: "#icon-car"
-        }, {
-            name: "Pet Services",
-            selected: false,
-            icon: "#icon-pet"
-        }
-
-    ]
-```
-
-
-***
-
-We provide four SASS variables to control the color of the statistics shown in the timeline (both text and icon):
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
 `$pe-blue-color: #268cf8 !default;`
-
-You can override these variables at portal level using the **themes**.

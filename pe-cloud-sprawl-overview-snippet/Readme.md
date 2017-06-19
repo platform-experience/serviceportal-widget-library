@@ -5,7 +5,7 @@
 This snippet can be used to quickly obtain a card containing quick reference data and chart(s).
 
 ## Screenshots
-![](../images/pe-cloud-sprawl-overview-snippet.png "Tabs Selector - No tab selection")
+![alt text](../images/pe-cloud-sprawl-overview-snippet.png "Tabs Selector - No tab selection")
 
 ## Additional Information/Notes 
 > None
@@ -45,8 +45,7 @@ Example:
 ---
 ## Sample Data and Data Structures
 ---
-> See Configuration above.
-
+> See 'Configuration' above
 ---
 ## API Dependencies
 ---

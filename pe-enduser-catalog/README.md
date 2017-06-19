@@ -7,6 +7,8 @@ Displays a list of catalog items that are grouped by categories.
 ## Screenshots
 ![](../images/pe-enduser-catalog.png)
 
+## Additional Information/Notes 
+> None
 ---
 ## Installation
 ---

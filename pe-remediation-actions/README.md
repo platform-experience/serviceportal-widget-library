@@ -1,62 +1,58 @@
-## Synopsis: Remediation Actions Widget
+## Title - Remediation Actions
 
-![](../images/pe-remediation-actions.png)
+## Description - Use Case
 
 This widget displays choices for remediation actions.
 
-## Prerequisites
+## Screenshots
+![](../images/pe-remediation-actions.png)
 
-The **Performance Analytics - Content Pack - Event Management** plugin must be activated before installation.
+## Additional Information/Notes 
 
+Provide a sysid of an anomaly alert to the **alert** Widget Option schema. The widget will not display if the alert is closed.
+
+---
 ## Installation
-
-Installation is very simple, you can just download the update set **pe-remediation-actions.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
+---
+Ensure the that the **Performance Analytics - Content Pack - Event Management** plugin is Activated per the SN Plugin support section below.<br/><br/>
+Download and install update set **[pe-remediation-actions.u-update-set.xml](pe-remediation-actions.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+---
 ## Configuration
+---
+Widget Option Schema parameters:
 
-Provide a sys_id of an anomaly alert to the **alert** option. The widget will not display if the alert is closed.
+**alert**: Provide a specific *em_alert_anomaly* record sys_id to display.  `Default: Most recent record in the em_alert_anomaly table.`<br/>
 
-## Displayed Data
+---
+## Platform Dependencies
+---
 
-Options are defined in an array in the UI Script: PE Remediation Actions Service.
+### SN Plugin Support
 
-```javascript
-var actions = [{
-  name: 'Rollback',
-  iconClasses: 'fa fa-refresh',
-  confidence: 98,
-  duration: 10,
-  change_request: 'CHG000123',
-  href: 'https://www.example.com'
-},
-{
-  name: 'Fix',
-  iconClasses: 'fa fa-wrench',
-  confidence: 76,
-  duration: 30,
-  change_request: 'CHG000123',
-  href: 'https://www.example.com'
-},
-{
-  name: 'Failover',
-  iconClasses: 'fa fa-refresh',
-  confidence: 35,
-  duration: 90,
-  change_request: 'CHG000123',
-  href: 'https://www.example.com'
-}];
-```
+Widget support is provided by the ServiceNow® [Performance Analytics - Content Pack - Event Management](https://docs.servicenow.com/bundle/istanbul-performance-analytics-and-reporting/page/use/performance-analytics/reference/r_PALandingPage.html)<br/>
+Performance Analytics content pack for Event Management core out-of-the-box KPIs. <br/>
+**For Customers:** _Activation of this plugin on production instances may require a separate Performance Analytics license. Contact ServiceNow for details._
 
-## System Tables
+### SN System Tables
+* em_alert_anomaly
 
-em_alert_anomaly
+---
+## Sample Data and Data Structures
+---
+With the Performance Analytics - Content Pack - Event Management installed the System table *em_alert_anomoly* is created.
 
-## Sass Variables
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-The following Sass variables are given default values that can be overridden with theming or portal-level css.
-
-```
-$icon-circle-color: #7e848b !default;
-$good-color: #3abe43 !default;
-$bad-color: #ff402c !default;
-```
+`$icon-circle-color: #7e848b !default;`<br/>
+`$good-color: #3abe43 !default;`<br/>
+`$bad-color: #ff402c !default;`<br/>
