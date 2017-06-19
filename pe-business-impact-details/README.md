@@ -1,4 +1,4 @@
-## <center>Business Impact Details</center>
+## Business Impact Details
 
 ## Description
 

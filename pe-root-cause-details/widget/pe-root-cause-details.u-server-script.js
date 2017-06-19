@@ -6,6 +6,11 @@
     options.alert_sysid = options.alert_sysid || serverOptions.alert_sysid;
 
     var getState = function(stateValue, table) {
+        var stateObj = {
+            value: null,
+            label: 'Unknown State',
+            labelClass: ''
+        };
         var state = new GlideRecord('sys_choice');
         state.addQuery('element', 'state');
         state.addQuery('name', table);

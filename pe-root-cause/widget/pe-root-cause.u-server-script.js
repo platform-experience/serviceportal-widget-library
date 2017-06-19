@@ -7,6 +7,10 @@
     options.titleIconClasses = options.titleIconClasses || serverOptions.titleIconClasses || 'fa fa-bolt';
 
     var getState = function(stateValue, table) {
+        var stateObj = {
+            value: null,
+            label: 'Unknown State'
+        };
         var state = new GlideRecord('sys_choice');
         state.addQuery('element', 'state');
         state.addQuery('name', table);
