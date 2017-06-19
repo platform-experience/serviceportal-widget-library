@@ -1,6 +1,6 @@
-## Title - Business Impact
+## Business Impact
 
-## Description - Use Case
+## Description
 
 Query the most recent anonaly alert from the *em_alert_anomaly* table to provide Business Services impact information and associated Business Services details.
 When the plus (+) graphic in the top right is selected/clicked, details about the Business Impact is displayed through use of the `pe-business-impact-details` widget (_included_).

@@ -1,6 +1,6 @@
-## Title - FOEXP Devices
+## FOEXP Devices
 
-## Description - Use Case
+## Description
 
 This widget shows a **Circle of Destiny** containing three types of technology devices that must be ordered. You can click through the device to bring up a list of devices in that category, and to order one. Upon successfully ordering a device, a status tick appears on the relevant circle.
 ***

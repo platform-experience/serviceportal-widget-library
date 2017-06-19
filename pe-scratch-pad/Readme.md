@@ -1,6 +1,6 @@
-## Title - Scratch Pad
+## Scratch Pad
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple signature pad/scratch pad.
 

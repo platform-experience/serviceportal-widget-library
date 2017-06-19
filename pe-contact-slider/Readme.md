@@ -1,6 +1,6 @@
-## Title - Contact Slider Widget
+## Contact Slider Widget
 
-## Description - Use Case
+## Description
 
 This widget can be used to quickly generate a contact slider.
 

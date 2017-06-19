@@ -1,6 +1,6 @@
-## Title - Status Card Snippet
+## Status Card Snippet
 
-## Description - Use Case
+## Description
 
 This snippet can be used to have a valid starting point for displaying a status card.
 

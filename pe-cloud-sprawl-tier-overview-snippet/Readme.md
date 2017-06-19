@@ -1,8 +1,8 @@
 # NEEDS TO BE REVIEWED FURTHER
 
-## Title - Tier Overview
+## Tier Overview
 
-## Description - Use Case
+## Description
 
 This widget can be used to create `???` .
 

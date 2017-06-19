@@ -1,6 +1,6 @@
-## Title - Interaction Note Form (ITBM Experience)
+## Interaction Note Form (ITBM Experience)
 
-## Description - Use Case
+## Description
 
 The widget provides and interactive form for capturing notes or reminder for posting back to an instance table/list.
 

@@ -1,6 +1,6 @@
-## Title - FOEXP 401k Enrollment
+## FOEXP 401k Enrollment
 
-## Description - Use Case
+## Description
 
 This widget allows users to register their 401k contribution level. Simply clicking the buttons will register their contribution level.
 

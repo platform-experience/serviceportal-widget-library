@@ -1,6 +1,6 @@
-## Title - Remediation Actions
+## Remediation Actions
 
-## Description - Use Case
+## Description
 
 This widget displays choices for remediation actions.
 

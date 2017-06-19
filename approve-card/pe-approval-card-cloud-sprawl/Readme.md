@@ -1,6 +1,6 @@
-## Title - Approval / Reject Card
+## Approval / Reject Card
 
-## Description - Use Case
+## Description
 
 Displays a simple approval card with three buttons - **Accept**, **Reject**, **View**. 
 

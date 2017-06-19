@@ -1,6 +1,6 @@
-## Title - End User Survey Widget
+## End User Survey Widget
 
-## Description - Use Case
+## Description
 
 This can be used to display a list of a survey question's choices.
 

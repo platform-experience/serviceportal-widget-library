@@ -1,6 +1,6 @@
-## Title - Summary Data Snippet
+## Summary Data Snippet
 
-## Description - Use Case
+## Description
 
 This snippet can be used to quickly obtain a card containing sub sections with data and a sample charts.
 

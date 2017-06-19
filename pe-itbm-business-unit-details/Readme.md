@@ -1,6 +1,6 @@
-## Title - Business Unit Details (ITBM Experience)
+## Business Unit Details (ITBM Experience)
 
-## Description - Use Case
+## Description
 
 This widget provides the ability to cascade multiple panels of information and relevant data across small form factor elements.
 

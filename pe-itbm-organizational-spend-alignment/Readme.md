@@ -1,6 +1,6 @@
-## Title - Organziational Spend Alignment (ITBM Experience)
+## Organziational Spend Alignment (ITBM Experience)
 
-## Description - Use Case
+## Description
 
 This widget can be used to displays a two (2) stacked column chart.
 

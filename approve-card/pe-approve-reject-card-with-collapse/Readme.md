@@ -1,6 +1,6 @@
-## Title - Approve Reject Inbox
+## Approve Reject Inbox
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple expandable inbox containing cards.
 

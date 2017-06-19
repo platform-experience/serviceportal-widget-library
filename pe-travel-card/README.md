@@ -1,6 +1,6 @@
-## Title - Travel Card 
+## Travel Card 
 
-## Description - Use Case
+## Description
 
 This can be used to quickly craft a travel card widget.
 

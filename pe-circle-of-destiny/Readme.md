@@ -1,6 +1,6 @@
-## Title - Circle of Destiny
+## Circle of Destiny
 
-## Description - Use Case
+## Description
 
 The Circle of Destiny widget allows you to create an element on your page which consists of a large central circle, surrounded by smaller circles.
 

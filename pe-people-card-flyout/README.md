@@ -1,6 +1,6 @@
-## Title - People Card Flyout
+## People Card Flyout
 
-## Description - Use Case
+## Description
 
 This can be used to quickly craft a people card flyout widget with options.
 

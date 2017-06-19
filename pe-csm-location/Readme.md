@@ -1,8 +1,8 @@
 # NEEDS TO BE REVIEWED FURTHER
 
-## Title - PE CSM Location
+## PE CSM Location
 
-## Description - Use Case
+## Description
 
 This widget just displays `?? cot ??` and Map image.
 

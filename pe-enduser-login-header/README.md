@@ -1,6 +1,6 @@
-## Title - End User Login Header Widget
+## End User Login Header Widget
 
-## Description - Use Case
+## Description
 
 This can be used to quickly craft a login header widget.
 

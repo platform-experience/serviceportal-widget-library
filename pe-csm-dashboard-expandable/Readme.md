@@ -1,6 +1,6 @@
-## Title - PE CSM Dashboard Expandable
+## PE CSM Dashboard Expandable
 
-## Description - Use Case
+## Description
 
 This widget can be used to display customer status. Clicking anywhere on the widget will show the extended view container, where you can include additional data or inject another widget (_not configured_).
 

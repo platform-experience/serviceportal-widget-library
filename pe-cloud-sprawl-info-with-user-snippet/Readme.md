@@ -1,6 +1,6 @@
-## Title - Info With User Snippet
+## Info With User Snippet
 
-## Description - Use Case
+## Description
 
 This snippet can be used to quickly obtain a card containing quick reference data.
 

@@ -1,6 +1,6 @@
-## Title - Status Card
+## Status Card
 
-## Description - Use Case
+## Description
 
 This widget can be used to quickly craft a status card with configurable options.
 

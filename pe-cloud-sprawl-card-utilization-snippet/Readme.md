@@ -1,6 +1,6 @@
-## Title - Card Utilization Snippet
+## Card Utilization Snippet
 
-## Description - Use Case
+## Description
 
 This snippet can be used to quickly obtain a card containing sub sections with data and a sample charts.
 

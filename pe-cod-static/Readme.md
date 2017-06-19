@@ -1,8 +1,8 @@
 # NEEDS TO BE REVIEWED FURTHER
 
-## Title - Circle of Destiny (Static)
+## Circle of Destiny (Static)
 
-## Description - Use Case
+## Description
 
 This is a widget that shows a "Circle of Destiny". It is static, and is limited to 3 items, and is also limited in it's size.
 

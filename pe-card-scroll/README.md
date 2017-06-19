@@ -1,6 +1,6 @@
-## Title - Card Scroll
+## Card Scroll
 
-## Description - Use Case
+## Description
 
 Displays status information about the most recent alert record from the *em_alert_anomaly* table.
 

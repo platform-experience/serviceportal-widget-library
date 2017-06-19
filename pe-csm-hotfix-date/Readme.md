@@ -1,6 +1,6 @@
-## Title - PE CSM Hot Fix Dates
+## PE CSM Hot Fix Dates
 
-## Description - Use Case
+## Description
 
 This widget can be used to display important dates.
 

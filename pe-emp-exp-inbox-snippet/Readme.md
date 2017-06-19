@@ -1,8 +1,8 @@
 # NEEDS TO BE REVIEWED FURTHER
 
-## Title - Inbox
+## Inbox
 
-## Description - Use Case
+## Description
 
 This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
 

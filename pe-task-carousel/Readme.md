@@ -1,6 +1,6 @@
-## Title - Task Carousel
+## Task Carousel
 
-## Description - Use Case
+## Description
 
 This widget can be used to quickly generate a carousel with table slides and area charts.
 

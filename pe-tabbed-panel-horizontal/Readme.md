@@ -1,6 +1,6 @@
-## Title - PE Tabbed Panel Horizontal
+## PE Tabbed Panel Horizontal
 
-## Description - Use Case
+## Description
 
 The widget provides the ability to have three (3) horizontally aligned tabs.
 When a tab/indicator is clicked a container displays below the widget with additional information as part of the widget or another widget element/component.

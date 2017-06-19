@@ -1,6 +1,6 @@
-## Title - Feedback Card
+## Feedback Card
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple emoji rating/feedback card.
 

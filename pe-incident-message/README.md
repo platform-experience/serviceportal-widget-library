@@ -1,6 +1,6 @@
-## Title - Incident Message
+## Incident Message
 
-## Description - Use Case
+## Description
 
 This widget can be used to quickly craft an incident message or alert with configurable options.
 

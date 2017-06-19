@@ -1,8 +1,8 @@
 # NEEDS TO BE REVIEWED FURTHER
 
-## Title - Completion Task
+## Completion Task
 
-## Description - Use Case
+## Description
 
 This widget shows an individual task, the status of the task, and an optional message related to the task. When used multiple times on a page, it becomes a list of tasks, each of which can be given its own hyperlink to take you to another page.
 

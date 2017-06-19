@@ -1,6 +1,6 @@
-## Title - Approval Card
+## Approval Card
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple approval card with three button **Accept**, **Reject**, **View**. This widget also displays user avatar, name and title etc.
 

@@ -1,6 +1,6 @@
-## Title - End User Catalog
+## End User Catalog
 
-## Description - Use Case
+## Description
 
 Displays a list of catalog items that are grouped by categories.
 

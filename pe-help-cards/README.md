@@ -1,6 +1,6 @@
-## Title - Help Cards
+## Help Cards
 
-## Description - Use Case
+## Description
 
 This can be used to quickly craft a set of help cards.
 

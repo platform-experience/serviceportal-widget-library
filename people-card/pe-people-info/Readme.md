@@ -1,6 +1,6 @@
-## Title - People Info
+## People Info
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple people card with user avatar, name, title, call and chat functionality.
 

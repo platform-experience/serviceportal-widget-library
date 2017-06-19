@@ -1,6 +1,6 @@
-## Title - PE CSM Progress Bar
+## PE CSM Progress Bar
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple progress bar.
 

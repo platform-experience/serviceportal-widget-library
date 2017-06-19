@@ -1,6 +1,6 @@
-## Title - User Request
+## User Request
 
-## Description - Use Case
+## Description
 
 This can be used to quickly craft a user request widget.
 

@@ -1,6 +1,6 @@
-## Title - FOEXP Photo Upload
+## FOEXP Photo Upload
 
-## Description - Use Case
+## Description
 
 This widget allows a user to upload a new photo.
 

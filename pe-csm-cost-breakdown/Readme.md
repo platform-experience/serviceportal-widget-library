@@ -1,6 +1,6 @@
-## Title - PE CSM Cost Breakdown
+## PE CSM Cost Breakdown
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple card with heading and two rows of data.
 

@@ -1,6 +1,6 @@
-## Title - Employee Experience Modal Snippet
+## Employee Experience Modal Snippet
 
-## Description - Use Case
+## Description
 
 This is the snippet to display list for services in employee experience.
 

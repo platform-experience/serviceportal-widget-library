@@ -1,6 +1,6 @@
-## Title - Horizontal Stacked Bar
+## Horizontal Stacked Bar
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a horizontal stacked bar graph.
 

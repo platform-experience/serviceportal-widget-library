@@ -1,6 +1,6 @@
-## Title - Root Cause and Root Cause Details
+## Root Cause and Root Cause Details
 
-## Description - Use Case
+## Description
 
 Query the most recent anonaly alert from the *em_alert_anomaly* table and provide associated record details: Configuration Item, Problem, and Change that has been identified as having caused the Incident. From the Problem record, any other Incidents are listed in 'Related Incidents'.
 

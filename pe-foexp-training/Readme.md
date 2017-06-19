@@ -1,6 +1,6 @@
-## Title - Training widget (Financial Onboarding Experience)
+## Training widget (Financial Onboarding Experience)
 
-## Description - Use Case
+## Description
 
 This widget can be used to show training courses allocated to the current user for a particular category of training courses. The user can enroll in, and un-enroll from those courses. Furthermore, they can see what courses they have completed in the category and which are remaining.
 

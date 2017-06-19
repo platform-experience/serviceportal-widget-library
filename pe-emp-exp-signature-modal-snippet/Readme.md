@@ -1,6 +1,6 @@
-## Title - Employee Experience Modal Snippet
+## Employee Experience Modal Snippet
 
-## Description - Use Case
+## Description
 
 This is the snippet for signature modal in employee experience.
 

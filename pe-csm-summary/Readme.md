@@ -1,6 +1,6 @@
-## Title - PE CSM Summary
+## PE CSM Summary
 
-## Description - Use Case
+## Description
 
 This widget can be used to dispplay a quick summary of the customer.
 

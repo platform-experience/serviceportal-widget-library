@@ -1,6 +1,6 @@
-## Title - FOEXP Debit Details
+## FOEXP Debit Details
 
-## Description - Use Case
+## Description
 
 This widget allows a user to submit and modify their debit details.
 

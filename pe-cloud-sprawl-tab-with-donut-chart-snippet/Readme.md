@@ -1,6 +1,6 @@
-## Title - Tab Chart Selector Snippet
+## Tab Chart Selector Snippet
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple layout based on tabs.
 

@@ -1,6 +1,6 @@
-## Title - PE CSM Case Details
+## PE CSM Case Details
 
-## Description - Use Case
+## Description
 
 This widget can be used to create `??`.
 

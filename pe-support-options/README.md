@@ -1,6 +1,6 @@
-## Title - Support Options
+## Support Options
 
-## Description - Use Case
+## Description
 
 This can be used to quickly craft a configurable widget with a list items fed from a catalog.
 

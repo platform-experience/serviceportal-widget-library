@@ -1,6 +1,6 @@
-## Title - PE CSM Case Row
+## PE CSM Case Row
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple case card, with details like case number,person assigned, priority and short description.
 

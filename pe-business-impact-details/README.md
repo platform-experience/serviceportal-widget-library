@@ -1,6 +1,6 @@
-## Title - Business Impact Details
+## Business Impact Details
 
-## Description - Use Case
+## Description
 
 Query the most recent anonaly alert from the *em_alert_anomaly* table to provide Business Services Impact Details.
 

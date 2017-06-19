@@ -1,6 +1,6 @@
-## Title - PE CSM Dashboard Tabs
+## PE CSM Dashboard Tabs
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple tabbed menu.
 

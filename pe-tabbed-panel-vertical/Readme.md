@@ -1,6 +1,6 @@
-## Title - PE Tabbed Panel Vertical 
+## PE Tabbed Panel Vertical 
 
-## Description - Use Case
+## Description
 
 The widget provides the ability to have three (3) vertically aligned tabs to the right of the widget space.
 When a tab is clicked, a container is displayed, to the left of the tabs; with additional information as part of the widget or another widget element/component.

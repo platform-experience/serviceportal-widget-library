@@ -1,6 +1,6 @@
-## Title - PE CSM Case Status
+## PE CSM Case Status
 
-## Description - Use Case
+## Description
 
 This widget can be used to create a simple card to show the status of a incident/case.
 

@@ -1,6 +1,6 @@
-## Title - Report Issue
+## Report Issue
 
-## Description - Use Case
+## Description
 
 This can be used to quickly craft a configurable widget with a list of items fed from a catalog.
 

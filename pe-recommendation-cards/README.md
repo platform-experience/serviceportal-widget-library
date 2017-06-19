@@ -1,6 +1,6 @@
-## Title - Recommendation Cards Widget
+## Recommendation Cards Widget
 
-## Description - Use Case
+## Description
 
 This can be used to quickly craft a set of recommendation cards.
 

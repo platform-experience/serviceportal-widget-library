@@ -1,6 +1,6 @@
-## Title - Approval Card
+## Approval Card
 
-## Description - Use Case
+## Description
 
 Displays a simple approval card with three buttons - **Accept**, **Reject**, **View**. Also displayed - user avatar, name, title and data relevant to the scenario where used.
 
