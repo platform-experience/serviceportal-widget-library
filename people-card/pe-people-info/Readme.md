@@ -6,15 +6,10 @@ This widget can be used to create a simple people card with user avatar, name, t
 
 ## Screenshots
 ![alt text](../../images/pe-people-info-01.png "People Info")
-
 ![alt text](../../images/pe-people-info-02.png "People Info - With option Only Picture set to True")
-
 ![alt text](../../images/pe-people-info-03.png "People Info - With option Job Title set to False")
-
 ![alt text](../../images/pe-people-info-04.png "People Info - With option Call And Chat set to False")
-
 ![alt text](../../images/pe-people-info-05.png "People Info - With option Show Text Below Picture set to True")
-
 ![alt text](../../images/pe-people-info-avatar-border.png "People Info - With option to Add border color around avatar")
 
 ## Additional Information/Notes 

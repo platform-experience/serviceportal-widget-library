@@ -1,27 +1,53 @@
-## Synopsis: Donut Chart
+## Donut Chart
 
-![alt text](../../images/pe-donut-chart.png "Donut Chart")
+## Description
 
 This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
 
-***
+## Screenshots
 
+![alt text](../../images/pe-donut-chart.png "Donut Chart")
+
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-donut-chart.u-update-set.xml](pe-donut-chart.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 
-Installation is very simple, you can just download the update set **pe-donut-chart.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
+---
+## Configuration
+---
+Widget Option Schema parameters:
 
-There is one option and a sample data set available in the Server script resource.
+**"Title"** the default message for this is **Donut Chart**<br/>
+**"Active Color"** this is the color of the part representing the information we want to display<br/>
+**"Background Color"**<br/>
+**"Font Awesome Icon"** this is the style for the icon available from http://fontawesome.io/icons/<br/>
 
-**"Title"** the default message for this is **Donut Chart**
+> To modify the percentage value, it is required to modify the CSS elements in *@keyframes donut-chart-1 {* **stroke-dashoffset** from 0 (100%) to the value of the circumference.
 
-**"Active Color"** this is the color of the part representing the information we want to display
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> None
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
 
-**"Background Color"**
+* HighCharts API (v 5.0.5 - Recommended)  w/Export and No Data plug-ins
+  <br/>Latest version(s) available from [HighCharts.com](http://http://www.highcharts.com/products/highcharts/)
+  <br/>Additional HighCharts Utility - [highcharts-ng](https://github.com/pablojim/highcharts-ng) - Angular Directive for HighCharts (__not used or distributed__)
 
-**"Font Awesome Icon"** this is the style for the icon available from http://fontawesome.io/icons/
-
-***
-
-To modify the percentage value, it is required to modify the CSS elements in *@keyframes donut-chart-1 {* **stroke-dashoffset** from 0 (100%) to the value of the circumference.
-
-
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

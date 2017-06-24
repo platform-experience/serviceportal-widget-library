@@ -1,34 +1,40 @@
-## Synopsis: Area Chart
+## Area Chart
 
+## Description
+
+This is used to create a simple Area Chart, Or a Area Spline Chart. 
+
+## Screenshots
 ![alt text](../../images/pe-area-chart.png "Basic Setup")
 ![alt text](../../images/pe-area-spline-chart.png "Basic Setup")
+![alt text](../../images/pe-area-chart-modified.png "Modified Version Using Advanced")
+![alt text](../../images/pe-area-spline-chart-modified.png "Modified Version Using Advanced")
 
-This is used to create a simple Area Chart, Or a Area Spline Chart. This uses the [Highcharts API](https://highcharts.com), and [highcharts-ng](https://github.com/pablojim/highcharts-ng)
-
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-area-chart.u-update-set.xml](pe-area-chart.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 
-Installation is very simple, you can just download the update set "pe-area-chart.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
+---
 ## Configuration
-We provide some options to configure the widget.
+---
+Widget Option Schema parameters:
 
-1. **"Type"** This is for changing the chart from a Area Chart to a Area Spline chart. By default it is a Area chart.
+**"Type"** Toggle chart between Area chart and Area Spline chart. `Default: Area chart`<br/>
+**"Update Interval"** Chart refresh interval.<br/>
+**"Table"** Table from which to aggregate the data. `Overrides the Script Include parameter`<br/>
+**"Fields"** Table fields used for the aggregation of data.<br/>
+**"Encoded Query"** The encoded query limit the data returned.  `All data returned if empty.`<br/>
+**"Script Include"** Used to get specific calculated data or more advanced data sets. By default this value is `"PEHighchartsExample"` for demo purposes. `Overridden if the 'Table' parameter is used.`<br/>
+**"Function"** Function defined in the Script Include. `Default: "getDemoData"` for demo purposes<br/>
+**"Parameter1"** A parameter passed/sent to the Script Include and Function combination.<br/>
+**"Advance"** A JSON block; used to set specific attributes of the chart. All attributes that are editable can be found here [Highcharts Documentation](http://api.highcharts.com/highcharts). <br/>
 
-1. **"Update Interval"** This is how often you would like the data in the chart to be updated.
-
-1. **"Table"** The table to aggregate upon. If this is filled in the Script Include Option is not needed and will be ignored.
-
-1. **"Fields"** The fields to get a count of for the aggregation.
-
-1. **"Encoded Query"** The encoded query to for specifying the data returned, otherwise all data from a data will be returned.
-
-1. **"Script Include"** Instead of using a table to gather data this can be used to get specific calculated data or more advanced data sets. By default this value is "PEHighchartsExample" this is mostly for demo purposes.
-
-1. **"Function"** A specific function to use in the selected script include. By default this is "getDemoData". This is for demo purposes.
-
-1. **"Parameter1"** A parameter to send to the selected script include and function combination.
-
-1. **"Advance"** A JSON block. For setting specific attributes of the chart. All attributes that are editable can be found here [Highcharts Documentation](http://api.highcharts.com/highcharts). A example of this is as follows.
+Example:
 ```json
 {
     "title":{
@@ -59,5 +65,25 @@ We provide some options to configure the widget.
     }
 }
 ```
-![alt text](../../images/pe-area-chart-modified.png "Modified Version Using Advanced")
-![alt text](../../images/pe-area-spline-chart-modified.png "Modified Version Using Advanced")
+---
+## Platform Dependencies
+---
+> None
+---
+## Sample Data and Data Structures
+---
+> None
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+
+* HighCharts API (v 5.0.5 - Recommended)  w/Export and No Data plug-ins
+  <br/>Latest version(s) available from [HighCharts.com](http://http://www.highcharts.com/products/highcharts/)
+  <br/>Additional HighCharts Utility - [highcharts-ng](https://github.com/pablojim/highcharts-ng) - Angular Directive for HighCharts (__not used or distributed__)
+
+---
+## CSS/SASS Variables
+---
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None
