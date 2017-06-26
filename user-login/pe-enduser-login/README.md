@@ -1,19 +1,42 @@
-## Synopsis: End User Login Widget
+## End User Login
 
-![](../../images/pe-enduser-login.png)
+## Description
 
 This can be used to quickly craft a login widget.
 
+## Screenshots
+![](../../images/pe-enduser-login.png)
+
+## Additional Information/Notes 
+> None
+---
 ## Installation
+---
+Download and install update set **[pe-enduser-login.u-update-set.xml](pe-enduser-login.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 
-Installation is very simple, you can just download the update set **pe-enduser-login.u-update-set.xml** and install it on your instance. Then the widget is available for you to drag and drop on your page.
-
+---
 ## Configuration
+---
+Widget Option Schema parameters:
 
-We provide 3 options to configure the widget.
+**"table"** This is for changing the table that the default user is pulled from. It is defaulted to "sys_user"<br/>
+**"email_address_field"** This is the field that we will pull the email address from for the login. It is defaulted to "email"<br/>
+**"encoded_query"** This is for specifying a user, it will allow you to set the query for any parameters. The default value is "email!=NULL^GOTOnameLIKESystem Administrator"<br/>
 
-1. **"table"** This is for changing the table that the default user is pulled from. It is defaulted to "sys_user"
-
-1. **"email_address_field"** This is the field that we will pull the email address from for the login. It is defaulted to "email"
-
-1. **"encoded_query"** This is for specifying a user, it will allow you to set the query for any parameters. The default value is "email!=NULL^GOTOnameLIKESystem Administrator"
+---
+## Platform Dependencies
+> None
+---
+## Sample Data and Data Structures
+> None
+---
+## API Dependencies
+---
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

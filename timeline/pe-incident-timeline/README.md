@@ -1,10 +1,38 @@
-## Synopsis: Incident Timeline Widget
+# NEEDS TO BE REVISITED
 
-![](../../images/pe-incident-timeline-1.png)
-![](../../images/pe-incident-timeline-2.png)
+## Timeline - Variant Incident Timeline
+
+## Description
 
 This can be used to quickly craft an incident timeline widget.
 
-## Installation
+## Screenshots
+![](../../images/pe-incident-timeline-1.png)
+![](../../images/pe-incident-timeline-2.png)
 
-Installation is very simple, you can just download the update set "pe-incident-timeline.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page.
+## Additional Information/Notes 
+> None
+---
+## Installation
+Download and install update set **[pe-incident-timeline.u-update-set.xml](pe-incident-timeline.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+
+---
+## Configuration
+Widget Option Schema parameters:
+> None
+---
+## Platform Dependencies
+> None
+---
+## Sample Data and Data Structures
+> None
+---
+## API Dependencies
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None

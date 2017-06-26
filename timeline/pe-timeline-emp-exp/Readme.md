@@ -1,12 +1,33 @@
-## Synopsis: Timeline Widget Variation Used In Employee Experience
+## Timeline - Variant Used In Employee Experience
 
-![alt text](../../images/pe-timeline-emp-exp.png "Timeline Widget")
+## Description
 
 This widget can be used to implement a timeline widget. A variation of the pe-timeline, used in Consumerize the Employee Experience.
 
-## Installation
+## Screenshots
+![alt text](../../images/pe-timeline-emp-exp.png "Timeline Widget")
 
-Installation is very simple, you can just download the update set "pe-timeline-emp-exp.u-update-set.xml" and install it on your instance. Then the widget is available for you to drag and drop on your page. This widget is driven by the data injected into it. The data is injected using "timelineService".
+## Additional Information/Notes 
+> None
+---
+## Installation
+---
+Download and install update set **[pe-timeline-emp-exp.u-update-set.xml](pe-timeline-emp-exp.u-update-set.xml)** <br/><br/>
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+
+---
+## Configuration
+Widget Option Schema parameters:
+
+**"Show Left Descriptions"** This is for displaying text on the left for each element in the timeline. This is set to false by default
+
+---
+## Platform Dependencies
+> None
+---
+## Sample Data and Data Structures
+The key "show" and its value decide how many timeline events to be shown in the widget, currently its set to 2, so only 2 events are shown; to view more you need to click on the "view more" button. "timelineArray" defines the number of timeline events. We have 3 events
 
 ```javascript
 var timelineData = {
@@ -34,17 +55,12 @@ var timelineData = {
   }]
 };
 ```
-
-The key "show" and its value decide how many timeline events to be shown in the widget, currently its set to 2, so only 2 events are shown; to view more you need to click on the "view more" button. "timelineArray" defines the number of timeline events. We have 3 events.
-
-We provide an option to load data easily and to change the appearance of the widget.
-
-**"Show Left Descriptions"** This is for displaying text on the left for each element in the timeline. This is set to false by default.
-
-## Sass Variables
-
-We provide one Sass variable to control the color of the statistics shown in the timeline (both text and icon):
+---
+## API Dependencies
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+> None
+---
+## CSS/SASS Variables
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
 `$pe-timeline-items-color: #ff6f00 !default;`
-
-You can override these variables at portal level using the **themes**.
