@@ -1,0 +1,149 @@
+$btn-primary-background: #0096EC !default;
+$btn-hover-background: #2783FC !default;
+strong {
+    font-weight: 600;
+}
+
+.alert {
+    margin-top: 5px;
+}
+
+.alert-success {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: $btn-primary-background !important;
+    border-width: 0px;
+}
+
+.btn-primary:hover {
+    background-color: $btn-hover-background !important;
+    border-width: 0px;
+}
+
+.modalInlay {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 72px;
+    bottom: 65px;
+    background-color: #fff;
+    z-index: 999;
+    opacity: .5;
+}
+
+.starRatingContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.starRating {
+    display: inline-block;
+    width: 17%;
+}
+
+.starText {
+    font-size: 13px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.starUnselected,
+.starSelected {
+    cursor: pointer;
+}
+
+.starUnselected:focus,
+.starSelected:focus {
+    outline: 0px solid transparent;
+}
+
+.starSelected .starBorder {
+    color: #fcc742;
+}
+
+.starSelected .starFill {
+    color: #ffdb87;
+}
+
+.starBorder {
+    color: #979797;
+}
+
+.starFill {
+    color: #fff;
+}
+
+.showRating {
+    margin-top: 5px;
+}
+
+.showWho {
+    margin-top: -10px;
+}
+
+.showWho label {
+    margin-top: 5px;
+}
+
+.feedbackInput {
+    box-shadow: none;
+    color: 1px solid #ccc;
+    padding: 10px 15px 10px 15px;
+    resize: vertical;
+}
+
+#feedbackModal .fa-check-circle {
+    color: #71E279;
+}
+
+.frame-bottom {
+    position: fixed;
+    margin: 0px;
+    padding: 8px 0px 9px 0px;
+    bottom: 0px;
+    width: 114px;
+    z-index: 100;
+    font-size: 16px;
+    text-align: center;
+    font-weight: thin;
+    border-radius: 0px;
+    right: 75px;
+}
+
+.frame-right {
+    position: fixed;
+    margin: 0px;
+    padding: 8px 0px 9px 0px;
+    right: -40px;
+    width: 114px;
+    z-index: 100;
+    font-size: 16px;
+    text-align: center;
+    font-weight: thin;
+    border-radius: 0px;
+    top: calc(100%/2);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.hover-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border-width: 0px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    z-index: 200;
+    font-size: 26px;
+    font-weight: thin;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}

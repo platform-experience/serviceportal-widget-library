@@ -1,0 +1,72 @@
+<!-- Remove the buttons not needed -->
+<button ng-show="{{::c.data.wdtOptions.showFormButton}}" id="feedbackButton" class="btn btn-primary" data-toggle="modal" data-target="#feedbackModal" role="button"> <i style="margin-right:7px;" class="fa fa-comment"></i> <span>Feedback</span> </button>
+<button ng-show="{{::c.data.wdtOptions.showFormButton}}" id="feedbackButton" class="btn btn-primary frame-right" data-toggle="modal" data-target="#feedbackModal" role="button"> <i style="margin-right:7px;" class="fa fa-comment"></i> <span>Feedback</span> </button>
+<button ng-show="{{::c.data.wdtOptions.showFormButton}}" id="feedbackButton" class="btn btn-primary frame-bottom" data-toggle="modal" data-target="#feedbackModal" role="button"> <i style="margin-right:7px;" class="fa fa-comment"></i> <span>Feedback</span> </button>
+<button ng-show="{{::c.data.wdtOptions.showFormButton}}" id="feedbackButton" class="btn btn-primary hover-bottom" data-toggle="modal" data-target="#feedbackModal" role="button"><i class='fa fa-comments-o' aria-hidden='true' style='line-height:inherit;vertical-align:middle;margin-top: -8px;margin-left: -1px;'></i></button>
+<!-- END :: Remove the buttons not needed -->
+
+<div id="feedbackModal" class="modal fade" role="dialog" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form ng-model="feedback" class="ng-pristine ng-untouched ng-valid ng-not-empty" role="form" aria-invalid="false">
+                <!-- Header -->
+                <div ng-if="!feedbackSubmitted || !autoHide" class="modal-header">
+                    <button ng-disabled="feedbackSubmitting" type="button" class="close" data-dismiss="modal" role="button"><i class="fa fa-times"></i></button>
+                    <h4><i class="fa {{::c.data.wdtOptions.hdrIcon}}" aria-hidden="true"></i>&nbsp;&nbsp;{{::c.data.wdtOptions.hdrTitle}}</h4>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <div ng-if="!feedbackSubmitted" class='ng-scope'>
+                        <!-- Who -->
+                        <div class='showWho' ng-show="{{::c.data.wdtOptions.showWho}}">
+                            <label for='feedbackWho'><strong>Name:</strong></label><input name="feedbackWho" id="feedbackWho" ng-model='feedback.who' class="form-control feedbackInput ng-pristine ng-untouched ng-valid ng-empty" placeholder="Jane Doe"
+                                role="textbox" aria-invalid="false" />
+                            <label for='feedbackEmail'><strong>Email:</strong></label><input name="feedbackEmail" id="feedbackEmail" ng-model='feedback.email' ng-change="resetError()" class="form-control feedbackInput ng-pristine ng-untouched ng-valid ng-empty"
+                                placeholder="jane.doe@site.com" role="textbox" aria-invalid="false" />
+                        </div>
+
+                        <!-- Rating -->
+                        <div class='showRating' ng-show="{{::c.data.wdtOptions.showRating}}">
+                            <label for="feedbackText"><strong>{{::c.data.wdtOptions.txtRating}}</strong></label>
+                            <div class="starRatingContainer">
+
+                                <!-- Stars -->
+                                <div class="starRating" ng-repeat="item in c.data.wdtOptions.lvlRatingTxt">
+                                    <div class="starText hidden-xs">{{item.label}}</div>
+                                    <span class="fa-stack fa-lg starUnselected" ng-class="starClasses[item.value]" ng-click="setSelectedStars(item.value, true)" ng-mouseover="setSelectedStars(item.value)" ng-mouseleave="offStarHover()" role="button" style=""> <i class="fa fa-star fa-stack-2x starFill"></i> <i class="fa fa-star-o fa-stack-2x starBorder"></i> </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text entry -->
+                        <label for="feedbackTextInput"><strong>Enter Feedback Here:</strong></label>
+                        <textarea name="feedbackTextInput" id="feedbackTextInput" ng-model="feedback.text" class="form-control feedbackInput ng-pristine ng-untouched ng-valid ng-empty" placeholder="Your feedback is greatly appreciated." role="textbox" aria-invalid="false"></textarea>
+
+                    </div>
+
+                    <!-- Feedback Submitted / Error -->
+                    <div ng-if="feedbackSubmitted || feedbackError" class="ng-scope">
+                        <div ng-if="feedbackSubmitted" class="ng-scope">
+                            <div class="alert alert-success" role="alert">
+
+                            </div>
+                        </div>
+                        <div ng-if="feedbackError" class="ng-scope">
+                            <div class="alert alert-danger" role="alert">
+                                Error: {{::ErrMsg}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div ng-if="!feedbackSubmitted" class="modal-footer">
+                    <button type="button" ng-disabled="feedbackSubmitting" class="btn btn-default" data-dismiss="modal" role="button">Cancel</button>
+                    <button ng-disabled="feedback.text.length == 0 || feedback.who.length == 0 || feedback.email.length == 0 || feedbackSubmitting || guidLoading" ng-click="submitFeedback()" type="button" class="btn btn-primary" role="button" disabled="disabled">Send</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

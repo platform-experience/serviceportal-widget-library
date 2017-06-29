@@ -1,0 +1,14 @@
+[
+    { "name": "dataTable", "default_value": "u_simple_feedback", "label": "Data Table Name", "type": "string" },
+    { "name": "autoHideTY", "default_value": "true", "label": "Auto Hide Feedback Thank You", "type": "boolean" },
+    { "name": "autoHideDuration", "default_value": "3.5", "label": "Auto Hide Duration (in seconds)", "type": "string" },
+    { "name": "showFormButton", "default_value": "true", "label": "Show Form Button", "type": "boolean" },
+    { "name": "hdrTitle", "default_value": "Feedback", "label": "Header Title", "type": "string" },
+    { "name": "hdrIcon", "default_value": "fa-comment", "label": "Header Icon", "type": "string" },
+    { "name": "txtTYMsg", "default_value": "Thank you for your feedback.", "label": "Thank You Message", "type": "string" },
+    { "name": "showRating", "default_value": "true", "label": "Show Rating", "type": "boolean" },
+    { "name": "txtRating", "default_value": "Please rate your experience:", "label": "Rating Text", "type": "string" },
+    { "name": "lvlRating", "default_value": "5", "label": "Levels of Rating", "type": "string" },
+    { "name": "lvlRatingTxt", "default_value": "[{ \"label\": \"Extremely Dissatisfied\", \"value\": \"1\" }, { \"label\": \"Slightly Dissatisfied\", \"value\": \"2\" }, { \"label\": \"Neutral\", \"value\": \"3\" }, { \"label\": \"Moderately Satisfied\", \"value\": \"4\" }, { \"label\": \"Extremely Satisfied\", \"value\": \"5\" }]", "label": "Levels of Rating", "type": "string", "choices": "" },
+    { "name": "showWho", "default_value": "true", "label": "Show Who", "type": "boolean" }
+]

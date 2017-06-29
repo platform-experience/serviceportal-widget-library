@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-06-29 13:53:50">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Simple Feedback</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>c61155fc4f2f720005be4d6e0210c7c8</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>a750191f136ff2006749bccf3244b06d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_portal_sys_id</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_portal_sys_id" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Portal Sys ID&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_portal_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:11:37&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;a0f52d764f2bb20005be4d6e0210c748&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Portal Sys ID&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_portal_sys_id&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:11:37&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>2350191f136ff2006749bccf3244b070</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Portal Sys ID</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_d9d265f24f2bb20005be4d6e0210c764</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_simple_feedback</description><name>u_simple_feedback</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:32</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>d9d265f24f2bb20005be4d6e0210c764</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_d9d265f24f2bb20005be4d6e0210c764</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:32</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>2350191f136ff2006749bccf3244b073</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>u_simple_feedback</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_other</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_other" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Other&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_other&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-29 13:17:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b808c5d7136ff2006749bccf3244b034&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Other&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_other&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-29 13:17:45&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>2750191f136ff2006749bccf3244b06f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Other</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Simple Feedback" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Simple Feedback</label><language>en</language><name>u_simple_feedback</name><plural>Simple Feedbacks</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>edd265f24f2bb20005be4d6e0210c77f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Simple Feedback</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:33</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>2750191f136ff2006749bccf3244b072</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_email</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_email" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Email&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_email&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:00:33&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;29736df24f2bb20005be4d6e0210c789&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Email&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_email&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:06:58&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>2b50191f136ff2006749bccf3244b06e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Email</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_page_sys_id_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_page_sys_id" label="Page Sys ID" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_page_sys_id</element><help/><hint/><label>Page Sys ID</label><language>en</language><name>u_simple_feedback</name><plural>Page Sys IDs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:12:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>833621b64f2bb20005be4d6e0210c7d2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Page Sys ID</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_page_sys_id_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:12:24</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>2b50191f136ff2006749bccf3244b071</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Page Sys ID</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_location_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_location" label="Site Location" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_location</element><help/><hint/><label>Site Location</label><language>en</language><name>u_simple_feedback</name><plural>Site Locations</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:09:04</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5675ad364f2bb20005be4d6e0210c7c9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Site Location</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_location_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:12:45</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>2f50191f136ff2006749bccf3244b070</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Site Location</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_d9d265f24f2bb20005be4d6e0210c768</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:32</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>d9d265f24f2bb20005be4d6e0210c768</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback.u_simple_feedback_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_simple_feedback">d9d265f24f2bb20005be4d6e0210c764</sys_security_acl><sys_update_name>sys_security_acl_role_d9d265f24f2bb20005be4d6e0210c768</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:32</sys_updated_on><sys_user_role display_value="u_simple_feedback_user" name="u_simple_feedback_user">34d265f24f2bb20005be4d6e0210c735</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>2f50191f136ff2006749bccf3244b073</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>u_simple_feedback.u_simple_feedback_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_name</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_name" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Name&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:00:11&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3ce2e5f24f2bb20005be4d6e0210c74e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Name&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_name&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:06:41&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6350191f136ff2006749bccf3244b06f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_rating_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_rating" label="Rating" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_rating</element><help/><hint/><label>Rating</label><language>en</language><name>u_simple_feedback</name><plural>Ratings</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:09:59</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>2ba525764f2bb20005be4d6e0210c7db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Rating</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_rating_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:09:59</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6350191f136ff2006749bccf3244b072</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Rating</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 01:57:33&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;59d265f24f2bb20005be4d6e0210c76c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_simple_feedback&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 01:57:33&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6750191f136ff2006749bccf3244b06e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_page_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_page" label="Page" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_page</element><help/><hint/><label>Page</label><language>en</language><name>u_simple_feedback</name><plural>Pages</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:12:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>9226ad764f2bb20005be4d6e0210c7bc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Page</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_page_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:12:05</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6750191f136ff2006749bccf3244b071</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Page</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_29d265f24f2bb20005be4d6e0210c791</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_simple_feedback</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:34</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>29d265f24f2bb20005be4d6e0210c791</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_29d265f24f2bb20005be4d6e0210c791</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:34</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6750191f136ff2006749bccf3244b074</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table/>
+<target_name>u_simple_feedback</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_feedback_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_feedback" label="Feedback" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_feedback</element><help/><hint/><label>Feedback</label><language>en</language><name>u_simple_feedback</name><plural>Feedbacks</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:06:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>f5c469364f2bb20005be4d6e0210c721</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Feedback</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_feedback_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:06:03</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6b50191f136ff2006749bccf3244b070</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Feedback</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_5dd265f24f2bb20005be4d6e0210c758</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:32</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>5dd265f24f2bb20005be4d6e0210c758</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback.u_simple_feedback_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_simple_feedback">95d265f24f2bb20005be4d6e0210c748</sys_security_acl><sys_update_name>sys_security_acl_role_5dd265f24f2bb20005be4d6e0210c758</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:32</sys_updated_on><sys_user_role display_value="u_simple_feedback_user" name="u_simple_feedback_user">34d265f24f2bb20005be4d6e0210c735</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6b50191f136ff2006749bccf3244b073</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>u_simple_feedback.u_simple_feedback_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_portal</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_portal" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Portal&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_portal&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:11:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;32d5a9764f2bb20005be4d6e0210c78b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Portal&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_portal&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:11:03&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6f50191f136ff2006749bccf3244b06f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Portal</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_c1d265f24f2bb20005be4d6e0210c73e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_simple_feedback</description><name>u_simple_feedback</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:32</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c1d265f24f2bb20005be4d6e0210c73e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_c1d265f24f2bb20005be4d6e0210c73e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:32</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>6f50191f136ff2006749bccf3244b072</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>u_simple_feedback</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_d9a2e1f24f2bb20005be4d6e0210c790</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Simple Feedback</label><live_feed_enabled>false</live_feed_enabled><name>u_simple_feedback</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:31</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>d9a2e1f24f2bb20005be4d6e0210c790</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Simple Feedback</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_d9a2e1f24f2bb20005be4d6e0210c790</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 17:50:07</sys_updated_on><update_access>false</update_access><user_role display_value="u_simple_feedback_user" name="u_simple_feedback_user">34d265f24f2bb20005be4d6e0210c735</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>a350191f136ff2006749bccf3244b06e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_other_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_other" label="Other" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_other</element><help/><hint/><label>Other</label><language>en</language><name>u_simple_feedback</name><plural>Others</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-29 13:17:46</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>131889d7136ff2006749bccf3244b048</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Other</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_other_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-29 13:17:46</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>a350191f136ff2006749bccf3244b071</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Other</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_34d265f24f2bb20005be4d6e0210c735</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>u_simple_feedback_user</name><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:31</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>34d265f24f2bb20005be4d6e0210c735</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_34d265f24f2bb20005be4d6e0210c735</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:31</sys_updated_on></sys_user_role></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>a350191f136ff2006749bccf3244b074</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table/>
+<target_name>u_simple_feedback_user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_email_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_email" label="Email" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_email</element><help/><hint/><label>Email</label><language>en</language><name>u_simple_feedback</name><plural>Emails</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:00:33</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d5836df24f2bb20005be4d6e0210c700</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Email</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_email_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:00:33</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>a750191f136ff2006749bccf3244b070</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Email</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_4dd265f24f2bb20005be4d6e0210c742</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:32</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>4dd265f24f2bb20005be4d6e0210c742</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback.u_simple_feedback_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_simple_feedback">c1d265f24f2bb20005be4d6e0210c73e</sys_security_acl><sys_update_name>sys_security_acl_role_4dd265f24f2bb20005be4d6e0210c742</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:32</sys_updated_on><sys_user_role display_value="u_simple_feedback_user" name="u_simple_feedback_user">34d265f24f2bb20005be4d6e0210c735</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>a750191f136ff2006749bccf3244b073</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>u_simple_feedback.u_simple_feedback_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_page_sys_id</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_page_sys_id" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Page Sys ID&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_page_sys_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:12:24&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;232621b64f2bb20005be4d6e0210c7cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Page Sys ID&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_page_sys_id&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:12:24&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>ab50191f136ff2006749bccf3244b06f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Page Sys ID</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_95d265f24f2bb20005be4d6e0210c748</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_simple_feedback</description><name>u_simple_feedback</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:32</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>95d265f24f2bb20005be4d6e0210c748</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_95d265f24f2bb20005be4d6e0210c748</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:32</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>ab50191f136ff2006749bccf3244b072</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>u_simple_feedback</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_location</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_location" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Site Location&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_location&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;1500&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:09:04&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c82521764f2bb20005be4d6e0210c7ba&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Site Location&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_location&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:12:44&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>af50191f136ff2006749bccf3244b06e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Site Location</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_portal_sys_id_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_portal_sys_id" label="Portal Sys ID" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_portal_sys_id</element><help/><hint/><label>Portal Sys ID</label><language>en</language><name>u_simple_feedback</name><plural>Portal Sys IDs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:11:37</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>2706e9764f2bb20005be4d6e0210c72b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Portal Sys ID</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_portal_sys_id_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:11:37</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>af50191f136ff2006749bccf3244b071</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Portal Sys ID</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_rating</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_rating" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Rating&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_rating&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:09:58&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5e8565764f2bb20005be4d6e0210c7f5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Rating&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_rating&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:09:58&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>e350191f136ff2006749bccf3244b070</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Rating</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_1dd265f24f2bb20005be4d6e0210c760</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:32</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1dd265f24f2bb20005be4d6e0210c760</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback.u_simple_feedback_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_simple_feedback">1dd265f24f2bb20005be4d6e0210c75c</sys_security_acl><sys_update_name>sys_security_acl_role_1dd265f24f2bb20005be4d6e0210c760</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:32</sys_updated_on><sys_user_role display_value="u_simple_feedback_user" name="u_simple_feedback_user">34d265f24f2bb20005be4d6e0210c735</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>e350191f136ff2006749bccf3244b073</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>u_simple_feedback.u_simple_feedback_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_page</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_page" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Page&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_page&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;100&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:12:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;3016ad764f2bb20005be4d6e0210c7b3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Page&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_page&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:12:05&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>e750191f136ff2006749bccf3244b06f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Page</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_1dd265f24f2bb20005be4d6e0210c75c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_simple_feedback</description><name>u_simple_feedback</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 01:57:32</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>1dd265f24f2bb20005be4d6e0210c75c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_1dd265f24f2bb20005be4d6e0210c75c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 01:57:32</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>e750191f136ff2006749bccf3244b072</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>u_simple_feedback</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_simple_feedback_u_feedback</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_feedback" table="u_simple_feedback"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Feedback&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_feedback&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;1000&lt;/max_length&gt;&lt;name&gt;u_simple_feedback&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 02:06:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;be83edf24f2bb20005be4d6e0210c71c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Feedback&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_simple_feedback_u_feedback&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-28 02:06:03&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>eb50191f136ff2006749bccf3244b06e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Feedback</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_portal_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_portal" label="Portal" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_portal</element><help/><hint/><label>Portal</label><language>en</language><name>u_simple_feedback</name><plural>Portals</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:11:04</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>57e5e5764f2bb20005be4d6e0210c7b9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Portal</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_portal_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:11:04</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>eb50191f136ff2006749bccf3244b071</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Portal</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_b97fe7ae4fe3b20005be4d6e0210c7f7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function feedbackController($q, $scope, $http, $location, $window, $rootScope, $timeout, spUtil) {
+	var c = this;
+	c.autoHideDuration = 0.0;
+
+	$scope.starClasses = {
+		'1': 'starUnselected',
+		'2': 'starUnselected',
+		'3': 'starUnselected',
+		'4': 'starUnselected',
+		'5': 'starUnselected'
+	};
+
+	$scope.guid = null;
+	$scope.guidLoading = false;
+	$scope.ErrMsg = "Unknown Error";
+	$scope.feedbackError = false;
+	$scope.autoHide = c.data.wdtOptions.autoHideTY;
+
+	$scope.initializeFeedback = function() {
+		$scope.resetForm();
+
+		$scope.$on('openFeedback', function (event, args) {
+			$('#feedbackModal').modal('show');
+		});
+
+		$('#feedbackModal').on('hidden.bs.modal', function () {
+			if($scope.feedbackSubmitted) {
+				$timeout(function(){
+					$scope.resetForm();
+				}, 250);
+				$scope.setupGUID();
+			}
+		});
+
+		$scope.setupGUID();
+
+		$rootScope.$on('$locationChangeStart', function(evt) {
+			$scope.resetForm();
+		});
+	};
+
+	$scope.setupGUID = function() {
+		$scope.guidLoading = true;
+
+		$scope.guidLoading = false;
+	};
+
+	$scope.submitFeedback = function() {
+		var feedback = {};
+		
+		if(ValidateEmail($scope.feedback.email)){
+		if(c.data.tblExists){
+			$scope.showModalInlay = true;
+			$scope.feedbackSubmitting = true;
+
+			c.data.feedback = $scope.feedback;
+
+			c.server.update().then(function(result){
+				$scope.feedbackSubmitting = false;
+				$scope.feedbackSubmitted = true;
+				$scope.showModalInlay = false;
+			}).then(function(){
+				if(c.data.wdtOptions.autoHideTY){
+					$timeout(function(){
+						$('#feedbackModal').modal('hide');
+					}, ( c.autoHideDuration ));
+				}
+			});
+		}else{
+			$scope.ErrMsg = "DataTable configuration - Does not exist.";
+			$scope.feedbackError = true;
+		}}
+	};
+	$scope.resetError = function(){
+		$scope.feedbackError = false;
+	};
+	
+	$scope.resetForm = function() {
+		$scope.selectedStar = null;
+		if(c.data.wdtOptions.showRating === 'false'){
+			$scope.selectedStar = -1;
+		}
+		if(c.data.wdtOptions.autoHideTY){
+			c.autoHideDuration = parseFloat(c.data.wdtOptions.autoHideDuration)*1000;
+		}
+		$scope.feedback = {
+			who : '',
+			email : '',
+			text : '',
+			rating : -1,
+			page_id : $scope.page.id,
+			page_sysid : $scope.page.sys_id,
+			portal : $scope.portal.title,
+			portal_sysid : $scope.portal.sys_id,
+			location : $location.url()
+		};
+		if(c.data.currentUser.loggedIn){
+			c.data.wdtOptions.showWho = true;
+			$scope.userSysID = c.data.currentUser.sys_id;
+			$scope.feedback.who = c.data.currentUser.name;
+			$scope.feedback.email = c.data.currentUser.email;
+		}
+		$scope.showModalInlay = false;
+		$scope.feedbackSubmitting = false;
+		$scope.feedbackSubmitted = false;
+		$scope.offStarHover();
+	};
+
+	$scope.setSelectedStars = function(starNumber, setSelected) {
+		if(!setSelected &amp;&amp; $scope.selectedStar &amp;&amp; starNumber &lt;= $scope.selectedStar) {
+			return;
+		} else if(setSelected) {
+			$scope.feedback.rating = $scope.selectedStar = starNumber;
+		}
+		for(var i=1; i&lt;=5; i++) {
+			if(i&lt;=starNumber) {
+				$scope.starClasses[String(i)] = 'starSelected';
+			} else {
+				$scope.starClasses[String(i)] = 'starUnselected';
+			}
+		}
+	};
+
+	$scope.offStarHover = function() {
+		var selectedPoint = 0;
+		if($scope.selectedStar) {
+			selectedPoint = $scope.selectedStar;
+		}
+		for(var i=1; i&lt;=5; i++) {
+			if(i&lt;=selectedPoint) {
+				$scope.starClasses[String(i)] = 'starSelected';
+			} else {
+				$scope.starClasses[String(i)] = 'starUnselected';
+			}
+		}
+	};
+
+	$scope.initializeFeedback();
+
+	function ValidateEmail(mail){  
+		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){  
+			return (true); 
+		}
+		$scope.ErrMsg = "Invalid Email";
+		$scope.feedbackError = true;
+		return (false);
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$btn-primary-background: #0096EC !default;&amp;#13;
+$btn-hover-background: #2783FC !default;&amp;#13;
+&amp;#13;
+strong {&amp;#13;
+  font-weight: 600;&amp;#13;
+}&amp;#13;
+.alert {&amp;#13;
+  margin-top: 5px;&amp;#13;
+}&amp;#13;
+.alert-success {&amp;#13;
+  margin-top: 20px;&amp;#13;
+}&amp;#13;
+.btn-primary {&amp;#13;
+  background-color: $btn-primary-background !important;&amp;#13;
+  border-width: 0px;&amp;#13;
+}&amp;#13;
+.btn-primary:hover {&amp;#13;
+  background-color: $btn-hover-background !important;&amp;#13;
+  border-width: 0px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.modalInlay {&amp;#13;
+  position: absolute;&amp;#13;
+  left: 0px;&amp;#13;
+  right: 0px;&amp;#13;
+  top: 72px;&amp;#13;
+  bottom: 65px;&amp;#13;
+  background-color: #fff;&amp;#13;
+  z-index: 999;&amp;#13;
+  opacity: .5;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.starRatingContainer {&amp;#13;
+  margin-top: 10px;&amp;#13;
+  margin-bottom: 10px;&amp;#13;
+  text-align: center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.starRating {&amp;#13;
+  display: inline-block;&amp;#13;
+  width: 17%;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.starText {&amp;#13;
+  font-size: 13px;&amp;#13;
+  margin-bottom: 5px;&amp;#13;
+  word-wrap: break-word;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.starUnselected, &amp;#13;
+.starSelected {&amp;#13;
+  cursor: pointer;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.starUnselected:focus, &amp;#13;
+.starSelected:focus {&amp;#13;
+  outline: 0px solid transparent;&amp;#13;
+}&amp;#13;
+.starSelected .starBorder {&amp;#13;
+  color: #fcc742;&amp;#13;
+}&amp;#13;
+.starSelected .starFill {&amp;#13;
+  color: #ffdb87;&amp;#13;
+}&amp;#13;
+.starBorder {&amp;#13;
+  color: #979797;&amp;#13;
+}&amp;#13;
+.starFill {&amp;#13;
+  color: #fff;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.showRating {&amp;#13;
+  margin-top: 5px;&amp;#13;
+}&amp;#13;
+.showWho {&amp;#13;
+  margin-top: -10px;&amp;#13;
+}&amp;#13;
+.showWho label {&amp;#13;
+  margin-top: 5px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.feedbackInput {&amp;#13;
+  box-shadow: none;&amp;#13;
+  color: 1px solid #ccc;&amp;#13;
+  padding: 10px 15px 10px 15px;&amp;#13;
+  resize: vertical;&amp;#13;
+}&amp;#13;
+&amp;#13;
+#feedbackModal .fa-check-circle {&amp;#13;
+  color: #71E279;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.frame-bottom {&amp;#13;
+  position: fixed;&amp;#13;
+  margin: 0px;&amp;#13;
+  padding: 8px 0px 9px 0px;&amp;#13;
+  bottom: 0px;&amp;#13;
+  width: 114px;&amp;#13;
+  z-index: 100;&amp;#13;
+  font-size: 16px;&amp;#13;
+  text-align: center;&amp;#13;
+  font-weight: thin;&amp;#13;
+  border-radius: 0px;&amp;#13;
+  right: 75px;&amp;#13;
+}&amp;#13;
+.frame-right {&amp;#13;
+  position: fixed;&amp;#13;
+  margin: 0px;&amp;#13;
+  padding: 8px 0px 9px 0px;&amp;#13;
+  right: -40px;&amp;#13;
+  width: 114px;&amp;#13;
+  z-index: 100;&amp;#13;
+  font-size: 16px;&amp;#13;
+  text-align: center;&amp;#13;
+  font-weight: thin;&amp;#13;
+  border-radius: 0px;&amp;#13;
+  top: calc(100%/2);&amp;#13;
+  -webkit-transform: rotate(-90deg);&amp;#13;
+  -moz-transform: rotate(-90deg);&amp;#13;
+  -ms-transform: rotate(-90deg);&amp;#13;
+  -o-transform: rotate(-90deg);&amp;#13;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);&amp;#13;
+}&amp;#13;
+.hover-bottom{&amp;#13;
+  position:fixed; &amp;#13;
+  bottom:0; &amp;#13;
+  right:0; &amp;#13;
+  border-radius: 50%;&amp;#13;
+  border-width: 0px;&amp;#13;
+  width: 50px;&amp;#13;
+  height: 50px;&amp;#13;
+  margin-right: 10px;&amp;#13;
+  margin-bottom: 10px;&amp;#13;
+  z-index: 200;&amp;#13;
+  font-size: 26px;&amp;#13;
+  font-weight: thin;&amp;#13;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;simplefeedback&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Simple Feedback&lt;/name&gt;&lt;option_schema&gt;[{"name":"dataTable","default_value":"u_simple_feedback","label":"Data Table Name","type":"string"},{"name":"autoHideTY","default_value":"true","label":"Auto Hide Feedback Thank You","type":"boolean"},{"name":"autoHideDuration","default_value":"3.5","label":"Auto Hide Duration (in seconds)","type":"string"},{"name":"showFormButton","default_value":"true","label":"Show Form Button","type":"boolean"},{"name":"hdrTitle","default_value":"Feedback","label":"Header Title","type":"string"},{"name":"hdrIcon","default_value":"fa-comment","label":"Header Icon","type":"string"},{"name":"txtTYMsg","default_value":"Thank you for your feedback.","label":"Thank You Message","type":"string"},{"name":"showRating","default_value":"true","label":"Show Rating","type":"boolean"},{"name":"txtRating","default_value":"Please rate your experience:","label":"Rating Text","type":"string"},{"name":"lvlRating","default_value":"5","label":"Levels of Rating","type":"string"},{"name":"lvlRatingTxt","default_value":"[{ \"label\": \"Extremely Dissatisfied\", \"value\": \"1\" }, { \"label\": \"Slightly Dissatisfied\", \"value\": \"2\" }, { \"label\": \"Neutral\", \"value\": \"3\" }, { \"label\": \"Moderately Satisfied\", \"value\": \"4\" }, { \"label\": \"Extremely Satisfied\", \"value\": \"5\" }]","label":"Levels of Rating","type":"string","choices":""},{"name":"showWho","default_value":"true","label":"Show Who","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+	data.wdtOptions = {};
+	/*- User Info -*/
+	var session = gs.getSession();
+	var curUser = gs.getUser();
+	
+	data.tblExists = false;
+	
+	data.currentUser = {
+		loggedIn : session.isLoggedIn(),
+		sys_id : gs.getUserID(),
+		name : curUser.getFullName(),
+		email : curUser.getEmail()
+	};
+	
+	/*- Form Button Options -*/
+	data.wdtOptions.showFormButton = options.showFormButton || serverOptions.showFormButton;
+	data.wdtOptions.showFormButton = (data.wdtOptions.showFormButton ==='true');
+	
+	/*- Data Posting Options -*/
+	data.wdtOptions.dataTable = options.dataTable || serverOptions.dataTable;
+	data.tblExists = gs.tableExists(data.wdtOptions.dataTable);
+	
+	data.wdtOptions.autoHideTY = options.autoHideTY || serverOptions.autoHideTY;
+	data.wdtOptions.autoHideTY = (data.wdtOptions.autoHideTY ==='true');
+	
+	data.wdtOptions.autoHideDuration = options.autoHideDuration || serverOptions.autoHideDuration;
+	
+	/*- Header Options -*/
+	data.wdtOptions.hdrTitle = options.hdrTitle || serverOptions.hdrTitle;
+	data.wdtOptions.hdrIcon = options.hdrIcon || serverOptions.hdrIcon;
+	
+	/*- Rating Options -*/
+	data.wdtOptions.showRating = options.showRating || serverOptions.showRating;
+	data.wdtOptions.showRating = (data.wdtOptions.showRating ==='true');
+	
+	data.wdtOptions.txtRating = options.txtRating || serverOptions.txtRating;
+	data.wdtOptions.lvlRating = options.lvlRating || serverOptions.lvlRating;
+	data.wdtOptions.lvlRatingTxt = options.lvlRatingTxt || serverOptions.lvlRatingTxt;
+	if(data.wdtOptions.lvlRatingTxt.length &gt; 0){
+		data.wdtOptions.lvlRatingTxt = JSON.parse(data.wdtOptions.lvlRatingTxt);
+	}
+	/*- Who Options -*/
+	data.wdtOptions.showWho = options.showWho || serverOptions.showWho;
+	data.wdtOptions.showWho = (data.wdtOptions.showWho === 'true');
+	
+	/*- Other Options -*/
+	//Thank You Message
+	data.wdtOptions.txtTYMsg = options.txtTYMsg || serverOptions.txtTYMsg;
+	
+	if(input){
+		data.serverInput = input;
+		var grFeedback = new GlideRecord(input.wdtOptions.dataTable);
+		
+		grFeedback.initialize();
+
+		grFeedback.u_name = input.feedback.who.toString();
+		grFeedback.u_email = input.feedback.email.toString();
+		grFeedback.u_rating = input.feedback.rating.toString();
+		grFeedback.u_feedback = input.feedback.text.toString();
+		grFeedback.u_location = input.feedback.location.toString();
+		grFeedback.u_portal = input.feedback.portal.toString();
+		grFeedback.u_portal_sys_id = input.feedback.portal_sysid.toString();
+		grFeedback.u_page = input.feedback.page_id.toString();
+		grFeedback.u_page_sys_id = input.feedback.page_sysid.toString();
+		
+		//grFeedback.u_other =   /* Big (4k) String field to catch any additional info [without having to modify the table]*/
+
+		data.serverInput.SysID = grFeedback.insert();
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-27 17:33:58&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;b97fe7ae4fe3b20005be4d6e0210c7f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;203&lt;/sys_mod_count&gt;&lt;sys_name&gt;Simple Feedback&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_b97fe7ae4fe3b20005be4d6e0210c7f7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-29 13:28:24&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;!-- Remove the buttons not needed --&gt;
+&lt;button ng-show="{{::c.data.wdtOptions.showFormButton}}" id="feedbackButton" class="btn btn-primary"  data-toggle="modal" data-target="#feedbackModal" role="button"&gt; &lt;i style="margin-right:7px;" class="fa fa-comment"&gt;&lt;/i&gt; &lt;span&gt;Feedback&lt;/span&gt; &lt;/button&gt;
+&lt;button ng-show="{{::c.data.wdtOptions.showFormButton}}" id="feedbackButton" class="btn btn-primary frame-right"  data-toggle="modal" data-target="#feedbackModal" role="button"&gt; &lt;i style="margin-right:7px;" class="fa fa-comment"&gt;&lt;/i&gt; &lt;span&gt;Feedback&lt;/span&gt; &lt;/button&gt;
+&lt;button ng-show="{{::c.data.wdtOptions.showFormButton}}" id="feedbackButton" class="btn btn-primary frame-bottom"  data-toggle="modal" data-target="#feedbackModal" role="button"&gt; &lt;i style="margin-right:7px;" class="fa fa-comment"&gt;&lt;/i&gt; &lt;span&gt;Feedback&lt;/span&gt; &lt;/button&gt;
+&lt;button ng-show="{{::c.data.wdtOptions.showFormButton}}" id="feedbackButton" class="btn btn-primary hover-bottom" data-toggle="modal" data-target="#feedbackModal" role="button"&gt;&lt;i class='fa fa-comments-o' aria-hidden='true' style='line-height:inherit;vertical-align:middle;margin-top: -8px;margin-left: -1px;'&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;!-- END :: Remove the buttons not needed --&gt;
+
+&lt;div id="feedbackModal" class="modal fade" role="dialog" style="display: none"&gt; 
+  &lt;div class="modal-dialog"&gt; 
+    &lt;div class="modal-content"&gt; 
+      &lt;form ng-model="feedback" class="ng-pristine ng-untouched ng-valid ng-not-empty" role="form" aria-invalid="false"&gt; 
+        &lt;!-- Header --&gt; 
+        &lt;div ng-if="!feedbackSubmitted || !autoHide" class="modal-header"&gt; 
+          &lt;button ng-disabled="feedbackSubmitting" type="button" class="close" data-dismiss="modal" role="button"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/button&gt; 
+          &lt;h4&gt;&lt;i class="fa {{::c.data.wdtOptions.hdrIcon}}" aria-hidden="true"&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;{{::c.data.wdtOptions.hdrTitle}}&lt;/h4&gt; 
+        &lt;/div&gt;
+
+        &lt;!-- Body --&gt; 
+        &lt;div class="modal-body"&gt; 
+          &lt;div ng-if="!feedbackSubmitted" class='ng-scope'&gt; 
+            &lt;!-- Who --&gt;
+            &lt;div class='showWho' ng-show="{{::c.data.wdtOptions.showWho}}"&gt;
+              &lt;label for='feedbackWho'&gt;&lt;strong&gt;Name:&lt;/strong&gt;&lt;/label&gt;&lt;input name="feedbackWho" id="feedbackWho" ng-model='feedback.who'  class="form-control feedbackInput ng-pristine ng-untouched ng-valid ng-empty" placeholder="Jane Doe" role="textbox" aria-invalid="false"/&gt;
+              &lt;label for='feedbackEmail'&gt;&lt;strong&gt;Email:&lt;/strong&gt;&lt;/label&gt;&lt;input name="feedbackEmail" id="feedbackEmail" ng-model='feedback.email' ng-change="resetError()"  class="form-control feedbackInput ng-pristine ng-untouched ng-valid ng-empty" placeholder="jane.doe@site.com" role="textbox" aria-invalid="false"/&gt;
+            &lt;/div&gt;
+            
+            &lt;!-- Rating --&gt;
+            &lt;div class='showRating' ng-show="{{::c.data.wdtOptions.showRating}}"&gt;
+              &lt;label for="feedbackText"&gt;&lt;strong&gt;{{::c.data.wdtOptions.txtRating}}&lt;/strong&gt;&lt;/label&gt; 
+              &lt;div class="starRatingContainer"&gt; 
+
+                &lt;!-- Stars --&gt; 
+                &lt;div class="starRating" ng-repeat="item in c.data.wdtOptions.lvlRatingTxt"&gt; 
+                  &lt;div class="starText hidden-xs"&gt;{{item.label}}&lt;/div&gt; 
+                  &lt;span class="fa-stack fa-lg starUnselected" ng-class="starClasses[item.value]" ng-click="setSelectedStars(item.value, true)" ng-mouseover="setSelectedStars(item.value)" ng-mouseleave="offStarHover()" role="button" style=""&gt; &lt;i class="fa fa-star fa-stack-2x starFill"&gt;&lt;/i&gt; &lt;i class="fa fa-star-o fa-stack-2x starBorder"&gt;&lt;/i&gt; &lt;/span&gt; 
+                &lt;/div&gt; 
+              &lt;/div&gt; 
+            &lt;/div&gt;
+
+            &lt;!-- Text entry --&gt; 
+            &lt;label for="feedbackTextInput"&gt;&lt;strong&gt;Enter Feedback Here:&lt;/strong&gt;&lt;/label&gt; 
+            &lt;textarea name="feedbackTextInput" id="feedbackTextInput" ng-model="feedback.text" class="form-control feedbackInput ng-pristine ng-untouched ng-valid ng-empty" placeholder="Your feedback is greatly appreciated." role="textbox" aria-invalid="false"&gt;&lt;/textarea&gt; 
+
+          &lt;/div&gt;
+          
+          &lt;!-- Feedback Submitted / Error --&gt;
+          &lt;div ng-if="feedbackSubmitted || feedbackError" class="ng-scope"&gt; 
+            &lt;div ng-if="feedbackSubmitted" class="ng-scope"&gt; 
+              &lt;div class="alert alert-success" role="alert"&gt;
+                
+			  &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div ng-if="feedbackError" class="ng-scope"&gt; 
+              &lt;div class="alert alert-danger" role="alert"&gt;
+                Error: {{::ErrMsg}}
+			  &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt; 
+        
+		&lt;!-- Footer --&gt;
+        &lt;div ng-if="!feedbackSubmitted" class="modal-footer"&gt; 
+          &lt;button type="button" ng-disabled="feedbackSubmitting" class="btn btn-default" data-dismiss="modal" role="button"&gt;Cancel&lt;/button&gt; 
+          &lt;button ng-disabled="feedback.text.length == 0 || feedback.who.length == 0 || feedback.email.length == 0 || feedbackSubmitting || guidLoading" ng-click="submitFeedback()" type="button" class="btn btn-primary" role="button" disabled="disabled"&gt;Send&lt;/button&gt; 
+        &lt;/div&gt;
+
+      &lt;/form&gt;
+    &lt;/div&gt; 
+  &lt;/div&gt; 
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>ef50191f136ff2006749bccf3244b06d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table/>
+<target_name>Simple Feedback</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_simple_feedback_u_name_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_name" label="Name" language="en" table="u_simple_feedback"><sys_documentation action="INSERT_OR_UPDATE"><element>u_name</element><help/><hint/><label>Name</label><language>en</language><name>u_simple_feedback</name><plural>Names</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:00:11</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>04732df24f2bb20005be4d6e0210c758</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_simple_feedback_u_name_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:00:11</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>ef50191f136ff2006749bccf3244b070</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback.Name</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_9f9ae17a4f2bb20005be4d6e0210c773</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="9f9ae17a4f2bb20005be4d6e0210c773" sys_domain="global" table="u_simple_feedback" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>9f9ae17a4f2bb20005be4d6e0210c777</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_email</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>979ae17a4f2bb20005be4d6e0210c778</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_feedback</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>1b9ae17a4f2bb20005be4d6e0210c778</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_location</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>9b9ae17a4f2bb20005be4d6e0210c778</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_rating</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>1f9ae17a4f2bb20005be4d6e0210c778</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_portal</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>9f9ae17a4f2bb20005be4d6e0210c778</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_portal_sys_id</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>139ae17a4f2bb20005be4d6e0210c779</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_page</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>939ae17a4f2bb20005be4d6e0210c779</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_page_sys_id</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_id>279ae17a4f2bb20005be4d6e0210c779</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_other</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-29 13:17:46</sys_created_on><sys_id>5f1889d7136ff2006749bccf3244b043</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_simple_feedback" sys_domain="global" view="Default view">9f9ae17a4f2bb20005be4d6e0210c773</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-29 13:17:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_simple_feedback</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-06-28 02:31:33</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9f9ae17a4f2bb20005be4d6e0210c773</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_simple_feedback</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_9f9ae17a4f2bb20005be4d6e0210c773</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-06-28 02:31:33</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<remote_update_set display_value="Simple Feedback">a750191f136ff2006749bccf3244b06d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-06-29 13:53:49</sys_created_on>
+<sys_id>ef50191f136ff2006749bccf3244b073</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-06-29 13:53:49</sys_updated_on>
+<table>u_simple_feedback</table>
+<target_name>Simple Feedback</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
