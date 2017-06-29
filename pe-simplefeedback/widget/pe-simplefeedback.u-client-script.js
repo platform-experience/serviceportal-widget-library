@@ -96,7 +96,7 @@ function feedbackController($q, $scope, $http, $location, $window, $rootScope, $
             location: $location.url()
         };
         if (c.data.currentUser.loggedIn) {
-            c.data.wdtOptions.showWho = true;
+            c.data.wdtOptions.showWho = false;
             $scope.userSysID = c.data.currentUser.sys_id;
             $scope.feedback.who = c.data.currentUser.name;
             $scope.feedback.email = c.data.currentUser.email;
