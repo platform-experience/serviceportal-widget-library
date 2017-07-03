@@ -22,6 +22,14 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 ## Configuration
 Language variants can be created through the section System UI -> UI Messages, and displayed adding in the HTML body a statement with the syntax:<br/>
 * ${<i>key value specified in the Message record</i>}.
+
+Widget Option Schema parameters:
+
+**"Table"**  the table containing the products/items to search for<br/>
+**"Display field"**  the column name with the value to display on UI<br/>
+**"Lookup field"**  the column name containing the barcode<br/>
+**"Additional fields"**  additional columns to display on UI<br/>
+
 ---
 ## Platform Dependencies
 > None
