@@ -32,7 +32,6 @@ Language variants can be created through the section System UI -> UI Messages, a
 ## API Dependencies
 * QuaggaJS <br/>
 <i>Dependencies are included and configured as part of the provided Update Set.</i>
-> None
 ---
 ## CSS/SASS Variables
 The widget is using colors from Bootstrap SASS variables, and a minimal style configuration to make it easy to customize.
