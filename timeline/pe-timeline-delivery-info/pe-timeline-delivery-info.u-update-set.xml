@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-03 14:10:51">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-timeline-delivery-info.u-update-set.xml</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>5f3979a8db3bb2004e5cfa131f9619ab</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 14:10:51</sys_created_on>
+<sys_id>339a3de8db3bb2004e5cfa131f961912</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 14:10:51</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_bd932bbadbe7b20086da7d5e0f961934</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TimelineDeliveryInfoController() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.timeline:before {
+  left: 35px;
+  right: 0;
+  border-left: 2px #dee5e7 solid;
+  border-right: 0px;
+  z-index: -1;
+}
+
+.timeline {
+  padding-top: 0px;
+  margin-top: 30px;
+  dl {
+    margin-top: -25px;
+    margin-bottom: -25px;
+  }
+}
+
+.events-container {
+  margin-left: 24px;
+  z-index: 9999;
+  margin-bottom: 15px;
+}
+
+.details-image {
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.details-body {
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: solid 1px #d6ecf7;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;timeline-delivery-info&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Timeline Delivery Info&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.sampleSet = [{
+      'title': 'Requested Cable Box',
+      'subtitle': 'REQ000369',
+      'when': 'Thursday, 19 January',
+      'image': '#check'
+    },
+    {
+      'title': 'Shipped via FedEx',
+      'subtitle': 'Tracking No: #95671344266590',
+      'when': 'Friday, 20 January',
+      'image': '#check'
+    },
+    {
+      'title': 'Delivered (signed by Kathy Q)',
+      'subtitle': '',
+      'when': 'Monday, 23 January',
+      'image': '#check'
+    }
+  ];
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-28 11:27:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;bd932bbadbe7b20086da7d5e0f961934&lt;/sys_id&gt;&lt;sys_mod_count&gt;64&lt;/sys_mod_count&gt;&lt;sys_name&gt;Timeline Delivery Info&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_bd932bbadbe7b20086da7d5e0f961934&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-03 14:09:20&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+    &lt;symbol id="check"&gt;
+        &lt;svg width="25px" height="25px" viewBox="-1 78 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+            &lt;defs&gt;&lt;/defs&gt;
+            &lt;circle id="Oval-6" stroke="#22A0DF" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" cx="11.2666016" cy="90.2666016"
+                r="11.2666016"&gt;&lt;/circle&gt;
+            &lt;g id="approved" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(5.257747, 85.759961)"&gt;
+                &lt;g id="Layer_1" fill="#22A0DF"&gt;
+                    &lt;path d="M11.9957693,0.869853175 C11.998207,1.0288845 11.9421406,1.16863931 11.8373208,1.28670802 C11.8129441,1.31321324 11.7861298,1.33971846 11.7617531,1.36381412 C9.06569113,4.03120322 6.36719151,6.69618275 3.67112956,9.36357185 C3.47611604,9.55633709 3.25672583,9.64790058 2.98858223,9.56597536 C2.88376247,9.534651 2.7789427,9.4720023 2.70093729,9.3948962 C1.87212982,8.5828726 1.04819768,7.76843943 0.22670322,6.9515967 C-0.0463157116,6.67931579 -0.0438780426,6.30101399 0.22670322,6.02873308 C0.294957953,5.95885568 0.363212686,5.89138784 0.433905088,5.82392001 C0.709361689,5.55886779 1.0945134,5.55886779 1.36997,5.82873914 C1.79656208,6.24800355 2.22071649,6.66967753 2.6448709,7.08894194 C2.98858223,7.42869069 3.34448191,7.43110025 3.68575558,7.09376107 L10.6038603,0.255413952 C10.945134,-0.0819252297 11.3010336,-0.0819252297 11.6423073,0.255413952 C11.7008114,0.313243525 11.7593154,0.368663534 11.8153818,0.426493108 C11.9397029,0.551790518 11.9957693,0.696364453 11.9957693,0.869853175 Z"
+                        id="Shape"&gt;&lt;/path&gt;
+                &lt;/g&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/symbol&gt;
+&lt;/svg&gt;
+
+&lt;div class="row"&gt;
+    &lt;div class="col-md-12"&gt;
+        &lt;div class="timeline"&gt;
+            &lt;dl&gt;
+                &lt;dd class="events-container" ng-repeat="item in data.sampleSet"&gt;
+                    &lt;div class="media"&gt;
+                        &lt;div class="media-left media-middle"&gt;
+                            &lt;div class="details-image"&gt;
+                                &lt;svg&gt;
+                                    &lt;use xlink:href="{{item.image}}"&gt;&lt;/use&gt;
+                                &lt;/svg&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="media-body details-body"&gt;
+                            &lt;h4 class="media-heading"&gt;{{item.title}}&lt;/h4&gt;
+                            &lt;h5 class="media-heading"&gt;{{item.subtitle}}&lt;/h5&gt;
+                            &lt;h5 class="media-heading"&gt;{{item.when}}&lt;/h5&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/dd&gt;
+            &lt;/dl&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-319566031</payload_hash>
+<remote_update_set display_value="pe-timeline-delivery-info.u-update-set.xml">339a3de8db3bb2004e5cfa131f961912</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 14:10:51</sys_created_on>
+<sys_id>f39a3de8db3bb2004e5cfa131f961912</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d08c8bf920000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 14:10:51</sys_updated_on>
+<table/>
+<target_name>Timeline Delivery Info</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>2d4a31e8413bb200eb9a3decfd9c0ff7</update_guid>
+<update_guid_history>2d4a31e8413bb200eb9a3decfd9c0ff7:-319566031,5ce809ac0d3fb200cab14f38bf112f5c:-729029341,e1a885ac913fb200d5bf2b3c977b2791:-812736793,f17885ac7f3fb2002709f55c4c08ac8a:-538059610,246535638:246535638,-1728402795:-1728402795,1143588025:1143588025,445567039:445567039,2018532410:2018532410,-852582433:-852582433,1828902436:1828902436,1572372492:1572372492,155702592:155702592,-1219685664:-1219685664,-459785422:-459785422,-1144372661:-1144372661,-1859798110:-1859798110,-191910401:-191910401,-494113564:-494113564,-1177669275:-1177669275,868726854:868726854,503146681:503146681,1387127821:1387127821,-1869899510:-1869899510,2085168555:2085168555,-68770439:-68770439,-513054743:-513054743,-722841967:-722841967,-1263822095:-1263822095,930462144:930462144,-1666685032:-1666685032,1061466865:1061466865,132644849:132644849,1918837041:1918837041,1056228813:1056228813,502695629:502695629,-587141982:-587141982,-1008733667:-1008733667,-1369307828:-1369307828,1543358468:1543358468,275612454:275612454,-1478829290:-1478829290,-1649736202:-1649736202,-1388100704:-1388100704,2125414287:2125414287,-2072218831:-2072218831,1398813261:1398813261,-53455525:-53455525,894865545:894865545,838910332:838910332,894865545:894865545,-1951181080:-1951181080,811225403:811225403,-333312145:-333312145,-1838835595:-1838835595,-299910230:-299910230,-1920376795:-1920376795,-428289121:-428289121,1000242729:1000242729,-131336619:-131336619,1213557155:1213557155,342016931:342016931,82594019:82594019,1501674211:1501674211,896374565:896374565</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

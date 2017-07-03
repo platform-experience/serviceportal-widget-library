@@ -1,0 +1,58 @@
+.close {
+  opacity: 1;
+  margin-top: 7px;
+  svg {
+    fill: grey;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.overlay-wrap {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  .overlay-content {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.15);
+    background-color: white;
+    padding: 60px 10px 30px 10px;
+    .widget-container {
+      margin: 0 auto;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEB;
+  opacity: .9;
+  border: solid 10px #E9EAEB;
+}
+
+.item-status {
+  span {
+    position: relative;
+    padding-left: 25px;
+  }
+  svg {
+    position: absolute;
+    margin-top: -3px;
+  }
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.picture {
+  img {
+    width: 80%;
+  }
+}

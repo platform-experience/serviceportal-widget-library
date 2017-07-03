@@ -1,0 +1,21 @@
+$text-color: #3f4c5c !default;
+.outcome-feedback {
+  text-align: center;
+  .icon {
+    margin-top: 40px;
+  }
+  h1 {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: $text-color;
+  }
+  p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: $text-color;
+  }
+  button {
+    margin-top: 55px;
+  }
+}

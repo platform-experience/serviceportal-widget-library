@@ -1,0 +1,41 @@
+.timeline:before {
+  left: 35px;
+  right: 0;
+  border-left: 2px #dee5e7 solid;
+  border-right: 0px;
+  z-index: -1;
+}
+
+.timeline {
+  padding-top: 0px;
+  margin-top: 30px;
+  dl {
+    margin-top: -25px;
+    margin-bottom: -25px;
+  }
+}
+
+.events-container {
+  margin-left: 24px;
+  z-index: 9999;
+  margin-bottom: 15px;
+}
+
+.details-image {
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.details-body {
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: solid 1px #d6ecf7;
+}

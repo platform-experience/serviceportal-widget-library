@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-03 13:21:17">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-custom-overlay.u-update-set.xml</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>1dfee524db3bb2004e5cfa131f9619eb</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 13:21:17</sys_created_on>
+<sys_id>e54fa964db3bb2004e5cfa131f96199d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 13:21:17</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_1a7be09fdb63f20086da7d5e0f9619b1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ConfigurableOverlayController($scope) { /* widget controller */
+  var c = this;
+  //c.overlay = true;
+  c.overlay = true;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.close {
+  opacity: 1;
+  margin-top: 7px;
+  svg {
+    fill: grey;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.overlay-wrap {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  .overlay-content {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.15);
+    background-color: white;
+    padding: 60px 10px 30px 10px;
+    .widget-container {
+      margin: 0 auto;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEB;
+  opacity: .9;
+  border: solid 10px #E9EAEB;
+}
+
+.item-status {
+  span {
+    position: relative;
+    padding-left: 25px;
+  }
+  svg {
+    position: absolute;
+    margin-top: -3px;
+  }
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.picture {
+  img {
+    width: 80%;
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;custom-overlay&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Custom Overlay&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  data.sampleSet = {};
+
+  var ret = new GlideRecord('sc_cat_item');
+  ret.addQuery('sys_id', '060f3afa3731300054b6a3549dbe5d3e');
+  ret.query();
+
+  while (ret.next()) {
+    data.sampleSet.name = ret.getDisplayValue('name');
+    data.sampleSet.picture = ret.getDisplayValue('picture');
+    data.sampleSet.state = 'Transfer Service';
+  }
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-29 12:25:28&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;1a7be09fdb63f20086da7d5e0f9619b1&lt;/sys_id&gt;&lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;&lt;sys_name&gt;Custom Overlay&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_1a7be09fdb63f20086da7d5e0f9619b1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-03 13:20:31&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+    &lt;symbol id="close"&gt;
+        &lt;svg width="33px" height="33px" viewBox="324 9 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+            &lt;!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch --&gt;
+            &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+            &lt;defs&gt;&lt;/defs&gt;
+            &lt;g id="close" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(324.000000, 9.000000)"&gt;
+                &lt;path d="M17.424,0 C17.9685,0.0715 18.513,0.121 19.052,0.209 C22.7205,0.814 25.8335,2.4805 28.3965,5.159 C30.9045,7.7825 32.45,10.901 32.857,14.5145 C33.473,19.976 31.7185,24.629 27.786,28.435 C25.1955,30.943 22.066,32.461 18.48,32.8625 C13.0185,33.4785 8.3655,31.724 4.5595,27.7915 C2.046,25.201 0.5335,22.0715 0.132,18.4855 C-0.495,13.0185 1.265,8.3545 5.2085,4.5485 C7.788,2.0515 10.9065,0.605 14.465,0.1265 C14.828,0.077 15.191,0.044 15.554,0 L17.424,0 Z M1.4245,16.4835 C1.4135,24.893 8.063,31.5535 16.478,31.559 C24.871,31.5645 31.5315,24.926 31.548,16.5275 C31.5645,8.118 24.9205,1.452 16.511,1.4355 C8.096,1.4245 1.4355,8.074 1.4245,16.4835 Z"
+                    id="Shape"&gt;&lt;/path&gt;
+                &lt;path d="M16.313,15.389 C16.412,15.246 16.456,15.147 16.5275,15.0755 C18.0235,13.574 19.5195,12.078 21.021,10.5875 C21.164,10.4445 21.384,10.329 21.582,10.2905 C21.879,10.2355 22.1155,10.395 22.253,10.6645 C22.3905,10.934 22.363,11.198 22.1815,11.44 C22.121,11.5225 22.044,11.5885 21.9725,11.66 C20.504,13.134 19.03,14.6025 17.556,16.071 C17.4845,16.1425 17.402,16.1975 17.2975,16.2855 C17.402,16.3955 17.4735,16.4725 17.545,16.5495 C19.0575,18.062 20.5645,19.569 22.077,21.0815 C22.3135,21.318 22.4015,21.593 22.2805,21.9065 C22.1705,22.187 21.945,22.3795 21.648,22.3465 C21.4335,22.3245 21.1805,22.2145 21.0265,22.0605 C19.5195,20.5755 18.0235,19.074 16.5275,17.5725 C16.456,17.501 16.412,17.4075 16.3405,17.3085 C16.214,17.424 16.1425,17.49 16.071,17.5615 C14.5805,19.052 13.09,20.5425 11.594,22.033 C11.4785,22.1485 11.3465,22.2585 11.198,22.319 C10.901,22.44 10.5545,22.3135 10.373,22.0495 C10.197,21.7965 10.2025,21.4555 10.4005,21.2025 C10.461,21.1255 10.538,21.054 10.6095,20.9825 C12.089,19.503 13.563,18.0235 15.0425,16.5495 C15.114,16.478 15.2075,16.4285 15.2955,16.3625 C15.18,16.2415 15.114,16.17 15.0425,16.0985 C13.5465,14.6025 12.045,13.1065 10.5545,11.605 C10.4225,11.473 10.3125,11.297 10.263,11.1265 C10.1805,10.846 10.3345,10.549 10.582,10.395 C10.8405,10.2355 11.165,10.2465 11.407,10.439 C11.484,10.4995 11.5555,10.5765 11.627,10.648 C13.1065,12.1275 14.586,13.6015 16.06,15.081 C16.148,15.147 16.203,15.235 16.313,15.389 Z"
+                    id="Shape"&gt;&lt;/path&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/symbol&gt;
+&lt;/svg&gt;
+&lt;div ng-show="c.overlay"&gt;
+    &lt;div class="overlay" ng-click="c.overlay=false;"&gt;&lt;/div&gt;
+    &lt;div class="overlay-container"&gt;
+        &lt;div class="overlay-wrap"&gt;
+            &lt;div class="close" ng-click="c.overlay=false;"&gt;
+                &lt;button&gt;
+                    &lt;svg viewBox="0 0 33 33" width="34px" height="33px"&gt;
+                    &lt;use xlink:href="#close"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="overlay-content text-center"&gt;
+                &lt;div ng-if="data.sampleSet"&gt;
+                    &lt;div class="picture "&gt;
+                        &lt;img ng-src="{{data.sampleSet.picture}}" alt=""&gt;
+                    &lt;/div&gt;
+                    &lt;div class="content"&gt;
+                        &lt;h2&gt;{{data.sampleSet.state}}&lt;/h2&gt;
+                        &lt;div class="item-status" ng-show="c.item['sc_cat_item.state'].display_value"&gt;
+                            &lt;svg-icon icon="#{{ c.item['sc_cat_item.state'].value }}"&gt;&lt;/svg-icon&gt;
+                            &lt;span&gt;{{ c.item['sc_cat_item.state'].display_value }}&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-655246478</payload_hash>
+<remote_update_set display_value="pe-custom-overlay.u-update-set.xml">e54fa964db3bb2004e5cfa131f96199d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 13:21:17</sys_created_on>
+<sys_id>a94fa964db3bb2004e5cfa131f96199d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d089c0f560000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 13:21:17</sys_updated_on>
+<table/>
+<target_name>Custom Overlay</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>2e1f2964e43bb2004f087a995fdd6a65</update_guid>
+<update_guid_history>2e1f2964e43bb2004f087a995fdd6a65:-655246478,5d1f29645f3bb200de3721de38bfe619:672420008,afe80de41bb7b20031caa0f13252ae09:-655246478,b0c80de419b7b2003850c5c4a5d93e04:925234320,c38885acb33fb2003dc8b46ef6451ecd:-488767862,4469999bf42332000d9da5c9ab68b57a:254108634,ab49d19faaa73200b4b22a49b1c7dd2a:181813752,c818999727a732001d9f05205f597ed7:-852691404,60f7999722a73200c2f34325dbf6a2d3:244493654,127759dfe1673200d252ffd22d8e258e:-1810062601,2a571193bda73200336c663c26e4fbbe:899410353,bc57d11b132332005cf5eb5d29558d5d:603543728,cbf65d1bfa233200067926d3d3f29933:-1319178373,9596591b7d23320067c87d99d2f24695:1784663210,cc851517b5273200df73ee2708961fe4:-940551045,0c55d9d7ab233200ce28b17bc45092e1:-609942564,b9251dd7a3233200aa1f458d45a96e56:2105309703,7515591784673200a056f2abde8164cb:-502395562,c58311972923320024bd4c2b3e40d6cd:-649645140,df63155bf8e332008d8f352d436e9015:-310293567,0802d15750233200320ef30b5c087d6e:-2015670323,52e1d1d7a3e33200af83d7c55bc92f7c:-1010684667,57a1119782e33200c7edd1b878407fb9:-1937140761,29a111976de332006ab115a751065cb4:1798485121,-1729403639:-1729403639,418234170:418234170,-1997955716:-1997955716,-1174429991:-1174429991,1226364121:1226364121,-1017776498:-1017776498,-1118007039:-1118007039</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

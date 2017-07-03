@@ -1,0 +1,64 @@
+<div class="inner-page">
+
+  <div class="navbar navbar-default day-selector-background">
+    <div class="day-selector">
+      <a href="javascript:void(0)" ng-repeat="i in c.daysArray" ng-click="c.select($index,i.dayNumber,i.dayWord)" ng-class="{'sel': $index == c.selected}">
+        <h4>{{i.dayWord}}<br></h4>
+        {{i.dayNumber}}
+      </a>
+    </div>
+  </div>
+
+  <div id="timeSplash" class="time-section time-splash-screen">
+    <h3 class="text-center">${NDL Appointment Scheduler Title}<br><br><br><span class="glyphicon glyphicon-calendar"></span></h3>
+  </div>
+
+  <div id="timeSection" class="time-section hidden">
+
+    <div class="list-group">
+      <div class="list-group-item list-center-text list-header-text">
+        ${NDL Appointment Scheduler Morning}
+      </div>
+      <a href="javascript:void(0)" ng-repeat="i in c.morningTimes" ng-click="c.confirmMorning($index,i)" class="list-group-item list-center-text inactive"
+        ng-class="{'active': 'mo' + $index == c.timeSelected}">
+                {{i}}
+            </a>
+    </div>
+
+    <hr>
+
+    <div class="list-group">
+      <div class="list-group-item list-center-text list-header-text">
+        ${NDL Appointment Scheduler Afternoon}
+      </div>
+      <a href="javascript:void(0)" ng-repeat="i in c.afternoonTimes" ng-click="c.confirmAfternoon($index,i)" class="list-group-item list-center-text inactive"
+        ng-class="{'active': 'af' + $index == c.timeSelected}">
+                {{i}}
+            </a>
+    </div>
+
+    <hr>
+
+    <div class="list-group">
+      <div class="list-group-item list-center-text list-header-text">
+        ${NDL Appointment Scheduler Evening}
+      </div>
+      <a href="javascript:void(0)" ng-repeat="i in c.eveningTimes" ng-click="c.confirmEvening($index,i)" class="list-group-item list-center-text inactive"
+        ng-class="{'active': 'ev' + $index == c.timeSelected}">
+                {{i}}
+            </a>
+    </div>
+
+    <hr>
+
+    <div class="list-group">
+      <div class="list-group-item list-center-text list-header-text">
+        ${NDL Appointment Scheduler Late Evening}
+      </div>
+      <a href="javascript:void(0)" ng-repeat="i in c.lateTimes" ng-click="c.confirmLate($index,i)" class="list-group-item list-center-text inactive"
+        ng-class="{'active': 'la' + $index == c.timeSelected}">
+                {{i}}
+            </a>
+    </div>
+  </div>
+</div>

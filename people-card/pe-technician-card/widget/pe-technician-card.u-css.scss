@@ -1,0 +1,72 @@
+.images-card {
+  height: 90px;
+}
+
+.info {
+  border-radius: 3px;
+  border: solid 1px $gray-lighter;
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  h4 {
+    margin: 0;
+    margin-bottom: 13px;
+  }
+  .technician {
+    display: flex;
+    .col1 {
+      flex-grow: 1;
+    }
+    .col2 {
+      img {
+        height: 90px;
+      }
+    }
+    .user {
+      display: flex;
+      img {
+        border-radius: 50%;
+        border: solid 4px $gray-lighter;
+        height: 90px;
+      }
+      .user-info {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .name {
+          font-size: 16px;
+          font-weight: bold;
+          color: $gray;
+        }
+        .id {
+          color: $gray;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .actions {
+    margin: 15px -10px 0 -10px;
+    border-top: solid 1px $gray-lighter;
+    display: flex;
+    button {
+      padding-right: 0;
+      font-size: 13px;
+      flex-grow: 1;
+      flex-basis: 0;
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      background-color: transparent;
+      border: none;
+      svg {
+        margin-right: 2px;
+      }
+    }
+  }
+}
+
+.end .actions {
+  margin-top: 35px;
+  text-align: center;
+}

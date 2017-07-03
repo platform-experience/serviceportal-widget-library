@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-03 13:49:07">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-outcome-feedback.u-update-set.xml</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>6402f5a4db3bb2004e5cfa131f961904</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 13:49:07</sys_created_on>
+<sys_id>51a5fd28db3bb2004e5cfa131f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 13:49:07</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_dc081c13db63f20086da7d5e0f961920</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function OutcomeFeedbackController() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$text-color: #3f4c5c !default;
+.outcome-feedback {
+  text-align: center;
+  .icon {
+    margin-top: 40px;
+  }
+  h1 {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: $text-color;
+  }
+  p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: $text-color;
+  }
+  button {
+    margin-top: 55px;
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;outcome-feedback&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Outcome Feedback&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-29 10:04:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;dc081c13db63f20086da7d5e0f961920&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;Outcome Feedback&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_dc081c13db63f20086da7d5e0f961920&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-03 13:48:07&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg style="display: none;"&gt;
+    &lt;symbol id="checked"&gt;
+        &lt;svg width="50px" height="50px" viewBox="162 300 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+            &lt;defs&gt;&lt;/defs&gt;
+            &lt;g id="check-circle-2.3.3.1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(163.000000, 301.000000)"&gt;
+                &lt;polyline id="Shape" stroke="#3F4C5C" stroke-width="2" points="34.4166667 16.7083333 18.7916667 31.2916667 13.5833333 26.0833333"&gt;&lt;/polyline&gt;
+                &lt;circle id="Oval" stroke="#3F4C5C" stroke-width="2" cx="24" cy="24" r="23.9583333"&gt;&lt;/circle&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/symbol&gt;
+&lt;/svg&gt;
+
+&lt;div class="row outcome-feedback"&gt;
+    &lt;div class="col-xs-12"&gt;
+        &lt;div class="icon"&gt;
+            &lt;svg viewBox="0 0 50 50" width="51px" height="50px"&gt;
+                &lt;use xlink:href="#checked"&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;h1&gt;${NDL Outcome Feedback Title}&lt;/h1&gt;
+        &lt;p&gt;${NDL Outcome Feedback Subtitle}&lt;/p&gt;
+        &lt;button class="btn btn-primary" ng-click="c.done()"&gt;${NDL Outcome Feedback Action Label}&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-635895090</payload_hash>
+<remote_update_set display_value="pe-outcome-feedback.u-update-set.xml">51a5fd28db3bb2004e5cfa131f9619e1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 13:49:07</sys_created_on>
+<sys_id>15a5fd28db3bb2004e5cfa131f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d08b553060000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 13:49:07</sys_updated_on>
+<table/>
+<target_name>Outcome Feedback</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>fe65fd28e63bb2001b08de0d0cdbe72c</update_guid>
+<update_guid_history>fe65fd28e63bb2001b08de0d0cdbe72c:-635895090,2d453d28933bb2003cf0371dc298a6e7:2139349662,aa25796025bfb200d2bcb8c856f59df1:-1244345555,002271e4bb3bb20060e408cdd7981edc:-1733215549,7e1271e47f3bb20038294cced1371443:193347101,c5e809acaa3fb200b505a6ced6a4f060:-1733215549,b8b849e455b7b200da300435441104d9:-1589394019,767885ac3f3fb20071958765f40e7dc9:370269162,-753344685:-753344685,854839295:854839295,44440497:44440497,977884713:977884713,1007229137:1007229137,-241247168:-241247168,-1068138319:-1068138319,224184598:224184598,-174528169:-174528169,-291586261:-291586261,-1925439394:-1925439394,-1660354394:-1660354394,1354786524:1354786524,1048999639:1048999639</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_95bedc57db63f20086da7d5e0f961986</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>NDL Outcome Feedback</application><key>NDL Outcome Feedback Action Label</key><language>en</language><message>Done</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-06-29 10:17:01</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>95bedc57db63f20086da7d5e0f961986</sys_id><sys_mod_count>1</sys_mod_count><sys_name>NDL Outcome Feedback Action Label</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_95bedc57db63f20086da7d5e0f961986</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-07-03 13:46:32</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>1165369025</payload_hash>
+<remote_update_set display_value="pe-outcome-feedback.u-update-set.xml">51a5fd28db3bb2004e5cfa131f9619e1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 13:49:07</sys_created_on>
+<sys_id>5da5fd28db3bb2004e5cfa131f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d08b3e0fb0000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 13:49:07</sys_updated_on>
+<table/>
+<target_name>NDL Outcome Feedback Action Label</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>2f0575e4803bb200c11c7a1c1b4b4178</update_guid>
+<update_guid_history>2f0575e4803bb200c11c7a1c1b4b4178:1165369025,218802574:218802574</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_865edc57db63f20086da7d5e0f961907</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>NDL Outcome Feedback</application><key>NDL Outcome Feedback Subtitle</key><language>en</language><message>The device has also been added to your home screen for convenient access.</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-06-29 10:15:42</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>865edc57db63f20086da7d5e0f961907</sys_id><sys_mod_count>1</sys_mod_count><sys_name>NDL Outcome Feedback Subtitle</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_865edc57db63f20086da7d5e0f961907</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-07-03 13:46:53</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>1387070388</payload_hash>
+<remote_update_set display_value="pe-outcome-feedback.u-update-set.xml">51a5fd28db3bb2004e5cfa131f9619e1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 13:49:07</sys_created_on>
+<sys_id>99a5fd28db3bb2004e5cfa131f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d08b4329c0000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 13:49:07</sys_updated_on>
+<table/>
+<target_name>NDL Outcome Feedback Subtitle</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>fc25b928713bb200646870bb529c05c8</update_guid>
+<update_guid_history>fc25b928713bb200646870bb529c05c8:1387070388,1887594565:1887594565</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_861ed857db63f20086da7d5e0f9619f9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>NDL Outcome Feedback</application><key>NDL Outcome Feedback Title</key><language>en</language><message>Device Registered!</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-06-29 10:14:51</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>861ed857db63f20086da7d5e0f9619f9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>NDL Outcome Feedback Title</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_861ed857db63f20086da7d5e0f9619f9</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-07-03 13:47:19</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>-117614608</payload_hash>
+<remote_update_set display_value="pe-outcome-feedback.u-update-set.xml">51a5fd28db3bb2004e5cfa131f9619e1</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 13:49:07</sys_created_on>
+<sys_id>d5a5fd28db3bb2004e5cfa131f9619e1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d08b499220000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 13:49:07</sys_updated_on>
+<table/>
+<target_name>NDL Outcome Feedback Title</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>0f35b928863bb20069429822a077c1d1</update_guid>
+<update_guid_history>0f35b928863bb20069429822a077c1d1:-117614608,1169997505:1169997505</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

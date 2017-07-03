@@ -1,0 +1,71 @@
+h4 {
+  margin-top: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+a.icon-prev {
+  top: 118px;
+}
+
+a.icon-next {
+  top: -60px
+}
+
+div.day-selector {
+  color: #fff;
+  text-transform: uppercase;
+  overflow: auto;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: -1px;
+}
+
+div.day-selector a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+div.day-selector-background {
+  margin: 0 -15px;
+  background-color: $brand-primary;
+  border: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sel {
+  background-color: $gray-lighter;
+  color: $brand-primary !important;
+}
+
+.glyphicon.glyphicon-calendar {
+  font-size: 150px;
+}
+
+a.list-group-item {
+  border: none;
+}
+
+a.list-center-text {
+  text-align: center;
+}
+
+div.list-header-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+}
+
+div.confirm-btn {
+  padding-bottom: 20px;
+}
+
+a.active {
+  background-color: $brand-primary !important;
+}

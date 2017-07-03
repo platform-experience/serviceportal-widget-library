@@ -1,0 +1,66 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="barcode">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+      enable-background="new 0 0 1000 1000" xml:space="preserve">
+      <g>
+        <path d="M206,206h-65.3v588H206h65.3V206H206z M794,206h-65.3v588H794h65.3V206H794z M990,794V206h-65.3v588H990z M598,794V206h-65.3v588H598z M402,206h-65.3v588H402h65.3V206H402z M75.3,794V206H10v588H75.3z"
+        />
+      </g>
+    </svg>
+  </symbol>
+</svg>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h5>{{c.title}}</h5>
+    </div>
+    <div class="col-md-12">
+      <div class="input-group">
+        <span class="input-group-addon" id="search-input"><i class="glyphicon glyphicon-search"></i></span>
+        <input type="text" aria-describedby="search-input" class="form-control" placeholder="Type or Number Of The Machine" ng-model="c.barcode"
+          ng-change="c.searchUpdate(c.barcode)">
+      </div>
+      <div class="element-container">
+      <ul id="results" class="results">
+        <li ng-repeat="item in c.data.resultProducts">
+          <a href="javascript:void(0)" ng-click="c.hideResult(item)">
+            {{item.label}}<br/>
+            <span>{{item.lookup_value}}</span><br/>
+            <small ng-repeat="f in item.secondary_fields">
+            <span ng-if="!$first"> • </span>
+            <span ng-switch="f.type" title="{{::f.label}}">
+              <span ng-switch-when="glide_date"><sn-time-ago timestamp="::f.value" /></span>
+              <span ng-switch-when="glide_date_time"><sn-time-ago timestamp="::f.value" /></span>
+              <span ng-switch-default="">{{f.display_value}}</span>
+            </span>
+          </small>
+
+          </a>
+
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div class="col-md-12 ndl-alert" ng-show="c.callbackBarcode.warningText.length>0">
+      {{c.callbackBarcode.warningText}}
+    </div>
+    <div class="col-md-12 ndl-main-section ndl-center">
+      <svg viewBox="0 0 33 33" width="200px" height="150px">
+        <use xlink:href="#barcode"></use>
+      </svg>
+      <div>
+        <div class="form-group">
+          <label for="file-upload" class="custom-file-upload">Scan Barcode</label>
+          <input class="btn btn-default ndl-center" id="file-upload" type="file" accept="image/*;capture=camera" />
+        </div>
+        <div ng-show="result">
+          <div id="result_strip">
+            <ul class="thumbnails"></ul>
+          </div>
+        </div>
+        <div id="interactive" class="viewport" ng-show="result" ng-click="c.selectBarcode(result.codeResult.code)"></div>
+        <div id="debug" class="detection" ng-show="result"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-03 14:52:41">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-barcode-reader-fi.u-update-set.xml</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>0f47e160db3bb2004e5cfa131f9619cd</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 14:52:41</sys_created_on>
+<sys_id>a8348ae4db7bb2004e5cfa131f96190f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 14:52:41</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_8f2941efdb6f320086da7d5e0f9619ef</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function BarcodeReaderFiController($scope, $window) {
+  /* widget controller */
+  var c = this;
+  c.title = 'Barcode reader';
+
+  c.data.products = [];
+  c.callbackBarcode = {};
+  c.callbackBarcode.warningText = '';
+
+  c.getBarcode = function (input) {
+    if (input) {
+      if (input.codeResult) {
+
+        c.callbackBarcode = {};
+        c.callbackBarcode.warningText = '';
+        c.callbackBarcode = input;
+        //lockup
+        c.getProductModel(input.codeResult.code, true);
+
+      } else {
+        c.callbackBarcode = {};
+        c.callbackBarcode.warningText = 'The barcode was not aquired, please enter it manually';
+      }
+    }
+  };
+  c.searchUpdate = function (input) {
+    c.callbackBarcode.warningText = '';
+    if (input.length &gt;= 3) {
+
+      c.getProductModel(input, false);
+      c.data.resultProducts = c.data.products;
+    } else
+      c.data.resultProducts = [];
+  };
+
+  c.getProductModel = function (code, auto) {
+    c.server.get({
+      barcode: code
+    }).then(function (response) {
+
+      if (response.data.products.length &gt; 0) {
+        c.data.products = response.data.products;
+        if (auto == false)
+          c.data.resultProducts = c.data.products;
+
+        console.log(c.data.products);
+        return c.data.products;
+      } else {
+        c.data.resultProducts = [];
+      }
+    });
+  }
+
+  c.selectBarcode = function (code) {
+    if (code) {
+      console.log('barcode selected', code);
+    }
+  };
+
+  c.hideResult = function (item) {
+    if (item) {
+      document.getElementById('results').style.display = 'none';
+      document.getElementById('results').style.borderWidth = '0px';
+    }
+  };
+
+  if (!$scope.readers) {
+    $scope.readers = [{
+      format: 'code_128_reader',
+      config: {}
+    }];
+  }
+  if (!$scope.patchSize)
+    $scope.patchSize = 'large';
+  if (!$scope.size)
+    $scope.size = '800';
+  var multiple = false;
+  if ($scope.readers.length &gt; 1)
+    multiple = true;
+  c.input_properties = {
+    'inputStream': {
+      'size': $scope.size,
+      'singleChannel': false
+    },
+    'locator': {
+      'patchSize': $scope.patchSize,
+      'halfSample': true
+    },
+    'decoder': {
+      readers: $scope.readers,
+      multiple: false
+    },
+    'locate': true,
+    'src': null
+  };
+
+  console.log('QuaggaJS config used: ', c.input_properties);
+
+  var App = {
+    init: function () {
+      App.attachListeners();
+    },
+    attachListeners: function () {
+      var self = this;
+      $('.form-group input[type=file]').on('change', function (e) {
+        if (e.target.files &amp;&amp; e.target.files.length) {
+          App.decode(URL.createObjectURL(e.target.files[0]));
+        }
+      });
+    },
+    _accessByPath: function (obj, path, val) {
+      var parts = path.split('.'),
+        depth = parts.length,
+        setter = (typeof val !== 'undefined') ? true : false;
+      return parts.reduce(function (o, key, i) {
+        if (setter &amp;&amp; (i + 1) === depth) {
+          o[key] = val;
+        }
+        return key in o ? o[key] : {};
+      }, obj);
+    },
+    _convertNameToState: function (name) {
+      return name.replace('_', '.').split('-').reduce(function (result, value) {
+        return result + value.charAt(0).toUpperCase() + value.substring(1);
+      });
+    },
+    detachListeners: function () {
+      $('.form-group input[type=file]').off('change');
+    },
+    decode: function (src) {
+      var self = this,
+        config = $.extend({}, self.state, {
+          src: src
+        });
+      Quagga.decodeSingle(config, function (result) {
+        if (!result.codeResult) {
+          console.log('QuaggaJS barcode not aquired ', result);
+          c.getBarcode(result);
+
+
+        }
+      });
+    },
+    inputMapper: {
+      inputStream: {
+        size: function (value) {
+          return parseInt(value);
+        }
+      },
+      numOfWorkers: function (value) {
+        return parseInt(value);
+      },
+      decoder: {
+        readers: function (value) {
+          if (value === 'ean_extended') {
+            return [{
+              format: 'ean_reader',
+              config: {
+                supplements: [
+                  'ean_5_reader', 'ean_2_reader'
+                ]
+              }
+            }];
+          }
+          return [{
+            format: value + '_reader',
+            config: {}
+          }];
+        }
+      }
+    },
+    state: c.input_properties
+  };
+
+  App.init();
+
+  function calculateRectFromArea(canvas, area) {
+    var canvasWidth = canvas.width,
+      canvasHeight = canvas.height,
+      top = parseInt(area.top) / 100,
+      right = parseInt(area.right) / 100,
+      bottom = parseInt(area.bottom) / 100,
+      left = parseInt(area.left) / 100;
+    top *= canvasHeight;
+    right = canvasWidth - canvasWidth * right;
+    bottom = canvasHeight - canvasHeight * bottom;
+    left *= canvasWidth;
+    return {
+      x: left,
+      y: top,
+      width: right - left,
+      height: bottom - top
+    };
+  }
+  Quagga.onProcessed(function (result) {
+    var drawingCtx = Quagga.canvas.ctx.overlay,
+      drawingCanvas = Quagga.canvas.dom.overlay,
+      area;
+    if (result) {
+      if (result.boxes) {
+        drawingCtx.clearRect(0, 0, parseInt(drawingCanvas.getAttribute('width')), parseInt(drawingCanvas.getAttribute('height')));
+        result.boxes.filter(function (box) {
+          return box !== result.box;
+        }).forEach(function (box) {
+          Quagga.ImageDebug.drawPath(box, {
+            x: 0,
+            y: 1
+          }, drawingCtx, {
+              color: 'green',
+              lineWidth: 2
+            });
+        });
+      }
+      if (result.box) {
+        Quagga.ImageDebug.drawPath(result.box, {
+          x: 0,
+          y: 1
+        }, drawingCtx, {
+            color: '#00F',
+            lineWidth: 2
+          });
+      }
+      if (result.codeResult &amp;&amp; result.codeResult.code) {
+        Quagga.ImageDebug.drawPath(result.line, {
+          x: 'x',
+          y: 'y'
+        }, drawingCtx, {
+            color: 'red',
+            lineWidth: 3
+          });
+      }
+      if (App.state.inputStream.area) {
+        area = calculateRectFromArea(drawingCanvas, App.state.inputStream.area);
+        drawingCtx.strokeStyle = '#0F0';
+        drawingCtx.strokeRect(area.x, area.y, area.width, area.height);
+      }
+    }
+  });
+  Quagga.onDetected(function (result) {
+    var $node, code = result.codeResult.code,
+      canvas = Quagga.canvas.dom.image;
+    code = code.trim();
+    console.log('QuaggaJS detected code: ', code);
+    var array = [];
+    array.push(result);
+    result = {};
+    result = array[0];
+    result.canvas = canvas;
+    result.mainCanvas = Quagga.canvas;
+    result.canvasURL = canvas.toDataURL();
+    $scope.result = result;
+
+    $node = $('&lt;li&gt;&lt;div class="thumbnail"&gt;&lt;div class="imgWrapper"&gt;&lt;img /&gt;&lt;/div&gt;&lt;div class="caption"&gt;&lt;h4 class="code"&gt;&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;');
+    $node.find("img").attr("src", canvas.toDataURL());
+    $node.find("h4.code").html(code);
+    $("#result_strip ul.thumbnails").prepend($node);
+
+    c.getBarcode(result);
+  });
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  background-color: $gray-lighter;
+  border-radius: 4px;
+  height: 42px;
+  border: 0px;
+  width: 200px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.element-container input:focus+.results {
+  display: block
+}
+
+.element-container .results {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #cbcfe2 #c8cee7 #c4c7d7;
+  border-radius: 4px;
+  background-color: $gray-lighter;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.results-hide {
+  display: none;
+}
+
+.element-container .results li {
+  display: block
+}
+
+.element-container .results li:first-child {
+  margin-top: -1px
+}
+
+.element-container .results li:first-child:before,
+.element-container .results li:first-child:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  border: 5px outset transparent;
+}
+
+.element-container .results li:first-child:before {
+  border-bottom: 5px solid #c4c7d7;
+  top: -11px;
+}
+
+.element-container .results li:first-child:after {
+  border-bottom: 5px solid #fdfdfd;
+  top: -10px;
+}
+
+.element-container .results li:first-child:hover:before,
+.element-container .results li:first-child:hover:after {
+  display: none
+}
+
+.element-container .results li:last-child {
+  margin-bottom: -1px
+}
+
+.element-container .results a {
+  display: block;
+  position: relative;
+  margin: 0 -1px;
+  padding: 6px 40px 6px 10px;
+  font-weight: 500;
+  text-shadow: 0 1px #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.element-container .results a:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -9px;
+}
+
+.element-container .results a:hover {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  border-color: $brand-primary;
+  background-color: $brand-primary;
+}
+
+.ndl-alert {
+  color: $brand-warning;
+}
+
+#interactive.viewport {
+  width: 640px;
+  height: auto;
+}
+
+#interactive.viewport canvas,
+video {
+  float: left;
+  width: 640px;
+  height: auto;
+}
+
+#interactive.viewport canvas.drawingBuffer,
+video.drawingBuffer {
+  margin-left: -640px;
+}
+
+#result_strip {
+  margin: 10px 0;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  padding: 10px 0;
+}
+
+#result_strip&amp;gt;ul {
+  padding: 0;
+  margin: 5px;
+  list-style-type: none;
+  width: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#result_strip&amp;gt;ul&amp;gt;li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 160px;
+}
+
+#result_strip&amp;gt;ul&amp;gt;li .thumbnail {
+  padding: 5px;
+  margin: 4px;
+  border: 1px dashed #CCC;
+}
+
+#result_strip&amp;gt;ul&amp;gt;li .thumbnail img {
+  max-width: 140px;
+}
+
+#result_strip&amp;gt;ul&amp;gt;li .thumbnail .caption {
+  white-space: normal;
+}
+
+#result_strip&amp;gt;ul&amp;gt;li .thumbnail .caption h4 {
+  text-align: center;
+  word-wrap: break-word;
+  height: 40px;
+  margin: 0px;
+}
+
+#result_strip&amp;gt;ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 603px) {
+  #interactive.viewport {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+  }
+  #interactive.viewport canvas,
+  video {
+    margin-top: -50px;
+    width: 300px;
+    height: 400px;
+  }
+  #interactive.viewport canvas.drawingBuffer,
+  video.drawingBuffer {
+    margin-left: -300px;
+  }
+  #result_strip {
+    margin-top: 5px;
+    padding-top: 5px;
+  }
+  #result_strip ul.thumbnails&amp;gt;li {
+    width: 150px;
+  }
+  #result_strip ul.thumbnails&amp;gt;li .thumbnail .imgWrapper {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+  }
+  #result_strip ul.thumbnails&amp;gt;li .thumbnail .imgWrapper img {
+    margin-top: -25px;
+    width: 130px;
+    height: 180px;
+  }
+}
+
+.ndl-center {
+  margin: auto;
+  text-align: center;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance_vlist&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;File Input, there will be a new variant soon called MO (media object). The latest will be available when the new Safari version will be released and will allow live stream capabilities from iOs.&lt;/description&gt;&lt;docs/&gt;&lt;field_list&gt;table,display_field,field_list,sp_page&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;barcode-reader-fi&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Barcode Reader FI&lt;/name&gt;&lt;option_schema&gt;[{"name":"lookup_field","label":"Lookup Field","type":"field_name"},{"name":"secondary_fields","label":"Secondary fields","type":"field_list"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.flagthumbnails = true;
+  data.flagpreview = true;
+
+  if (input) {
+    data.table = input.table || options.table;
+    data.display_field = input.display_field || options.display_field;
+    data.lookup_field = input.lookup_field || options.lookup_field;
+    options.secondary_fields = options.secondary_fields || "";
+
+    data.barcode = input.barcode;
+    if (data.barcode)
+      data.barcode = data.barcode.trim();
+
+    data.products = [];
+
+    if (data.table &amp;&amp; data.display_field &amp;&amp; data.lookup_field) {
+      var ret = new GlideRecord(data.table);
+      ret.addQuery(data.lookup_field, 'CONTAINS', data.barcode);
+      ret.query();
+      var temp = {};
+      while (ret.next()) {
+        temp = {};
+        temp.sys_id = ret.getUniqueValue();
+        temp.label = ret.getDisplayValue(data.display_field);
+        temp.lookup_value = ret.getDisplayValue(data.lookup_field);
+        temp.secondary_fields = $sp.getFields(ret, options.secondary_fields);
+
+        data.products.push(temp);
+      }
+    }
+  }
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-06-30 08:02:40&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;8f2941efdb6f320086da7d5e0f9619ef&lt;/sys_id&gt;&lt;sys_mod_count&gt;178&lt;/sys_mod_count&gt;&lt;sys_name&gt;Barcode Reader FI&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8f2941efdb6f320086da7d5e0f9619ef&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-03 14:52:19&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+  &lt;symbol id="barcode"&gt;
+    &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+      enable-background="new 0 0 1000 1000" xml:space="preserve"&gt;
+      &lt;g&gt;
+        &lt;path d="M206,206h-65.3v588H206h65.3V206H206z M794,206h-65.3v588H794h65.3V206H794z M990,794V206h-65.3v588H990z M598,794V206h-65.3v588H598z M402,206h-65.3v588H402h65.3V206H402z M75.3,794V206H10v588H75.3z"
+        /&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/symbol&gt;
+&lt;/svg&gt;
+
+&lt;div class="container-fluid"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-12"&gt;
+      &lt;h5&gt;{{c.title}}&lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-12"&gt;
+      &lt;div class="input-group"&gt;
+        &lt;span class="input-group-addon" id="search-input"&gt;&lt;i class="glyphicon glyphicon-search"&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;input type="text" aria-describedby="search-input" class="form-control" placeholder="Type or Number Of The Machine" ng-model="c.barcode"
+          ng-change="c.searchUpdate(c.barcode)"&gt;
+      &lt;/div&gt;
+      &lt;div class="element-container"&gt;
+      &lt;ul id="results" class="results"&gt;
+        &lt;li ng-repeat="item in c.data.resultProducts"&gt;
+          &lt;a href="javascript:void(0)" ng-click="c.hideResult(item)"&gt;
+            {{item.label}}&lt;br/&gt;
+            &lt;span&gt;{{item.lookup_value}}&lt;/span&gt;&lt;br/&gt;
+            &lt;small ng-repeat="f in item.secondary_fields"&gt;
+            &lt;span ng-if="!$first"&gt; • &lt;/span&gt;
+            &lt;span ng-switch="f.type" title="{{::f.label}}"&gt;
+              &lt;span ng-switch-when="glide_date"&gt;&lt;sn-time-ago timestamp="::f.value" /&gt;&lt;/span&gt;
+              &lt;span ng-switch-when="glide_date_time"&gt;&lt;sn-time-ago timestamp="::f.value" /&gt;&lt;/span&gt;
+              &lt;span ng-switch-default=""&gt;{{f.display_value}}&lt;/span&gt;
+            &lt;/span&gt;
+          &lt;/small&gt;
+
+          &lt;/a&gt;
+
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-12 ndl-alert" ng-show="c.callbackBarcode.warningText.length&gt;0"&gt;
+      {{c.callbackBarcode.warningText}}
+    &lt;/div&gt;
+    &lt;div class="col-md-12 ndl-main-section ndl-center"&gt;
+      &lt;svg viewBox="0 0 33 33" width="200px" height="150px"&gt;
+        &lt;use xlink:href="#barcode"&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+      &lt;div&gt;
+        &lt;div class="form-group"&gt;
+          &lt;label for="file-upload" class="custom-file-upload"&gt;Scan Barcode&lt;/label&gt;
+          &lt;input class="btn btn-default ndl-center" id="file-upload" type="file" accept="image/*;capture=camera" /&gt;
+        &lt;/div&gt;
+        &lt;div ng-show="result"&gt;
+          &lt;div id="result_strip"&gt;
+            &lt;ul class="thumbnails"&gt;&lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="interactive" class="viewport" ng-show="result" ng-click="c.selectBarcode(result.codeResult.code)"&gt;&lt;/div&gt;
+        &lt;div id="debug" class="detection" ng-show="result"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-919902530</payload_hash>
+<remote_update_set display_value="pe-barcode-reader-fi.u-update-set.xml">a8348ae4db7bb2004e5cfa131f96190f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 14:52:41</sys_created_on>
+<sys_id>6c348ae4db7bb2004e5cfa131f96190f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d08f01ae80000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 14:52:41</sys_updated_on>
+<table/>
+<target_name>Barcode Reader FI</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>17144ae4897bb200d5f00fa55996911b</update_guid>
+<update_guid_history>17144ae4897bb200d5f00fa55996911b:-919902530,97d04ae4cebfb200d9166bf3b72c379a:1863859626,363ffd60e07bb2000edc15537931cabf:1198055016,eb5aada0d53bb2001ac7f016dfa079c5:1397309440,ca5aada0293bb200af04bae499bc274b:115289934,2ee9296c507fb200b385dd6fd57fc54a:1397309440,18f849ac5b3fb200fd0ad8eedad9b8d0:1714403518,20d845e402b7b2000520adaef6d8a546:583215338,77880d6445b7b2003db7c68be0ab51c0:-544802646,63647464f33fb200c80e4c16fff3a207:426634680,e264b024703fb200d23462d624fc4373:1488436550,c24430ec3537b2005a435566a7aaffd6:-465669152,4914fce0f93fb2008fbf406e8649417d:1244048182,d6e3f4ac3f37b20095b5364a6f97a26c:-525802755,7f53f4ac7d37b200cfc27a83006ff667:1531867466,43f2f0ac9737b2003a18e15b9f687107:688022725,42d2b424f03fb2001cafe90fd89379d0:144661356,b672b4244f3fb2009cf684e9d2b806cc:285966562,28f138a8bd37b200018da6e001a59fe4:-368637100,cde1b024c53fb200394f50340072396a:1141461784,d2417060a73fb2005aa0b44581bbc57d:818139764,557038648d37b20020d24cf318f53d03:381589880,be4034a02a3fb2003db2f80042644e07:-743430644,fd30b8a0403fb2002227fb6a6f735b7b:-104170602,c58e6c64ec37b2004015cec2ae1b9b47:-1014508536,617e6064c737b20086da709b8cef3569:-705220920,2e3ee020563fb200f7bbac467c1bcd58:1536048012,bc216b773deb72008b2d1e15abfde9c5:1824663848,2f11aff323e37200d5d5ba1b7a93794f:20554422,a611ef37f6eb72007ab22a6fb6e83982:1712018944,8399b66f02ab320038a7311b020d7565:-2128196093,5349b26f6fab320032cb68e105d213db:-318621603,740936ef35a37200eca48f77e19e927c:207781951,00983eebdfab32004b01455f337cb0c5:-524810407,13d7fe2f06a372001103b264b3e71053:-626025903,f0733a2f6fa37200bd82e9b400cf5206:638574271,9cc27e6baeab3200829636611705a945:-1107152858,d0b2366b5ba37200e2e60d515c4ac8be:494157126,0b81fa2b85ab3200511c753b44174382:-2046101858,5670366bfaa372006f796bc358ed7cc5:-799469555,6c40ba2b3cab32005fbe85c84b73c3eb:289599338,c57f66e72fab32007a9992df012634f2:424587195,216faa2b64ab320030ab990e2a47aee5:-1928529351,adee22e71aab32005f6971fe986389a6:290891974,327ee6673da372007ed3f3c76702cbcf:-1189526094,f64eaa6311a37200edb71e06084eda35:75989153,757d6627e9a37200f705eb71e0d7ce29:-917198668,0dec2ea370a37200f5fd6f48b30f525b:-116634660,b0cb62a7edab3200a6fcf44b8849d889:-1927206785,f67b62a715ab32007fc08ff771d90d84:-436816724,687b62ef286372005226a23053627fbe:1883727510,1f0aaaaf04637200122fc575a65ae020:565016517,7447ae2ff6637200f58700589f411cc7:1158905727,0b92ea2bd0637200200dc320cff63f7e:211091946,9692eaa340ab3200b1a4bfdbe6fbd061:2047904670,89e0e2e7046372006554e79d8dd3753a:-2123668548,2650e2630aab3200f7c49e4b898a161e:-540556949,ba40e2637cab3200332196b73d0c2d1a:1220750845,3c10a663f5ab32009815df1005367e12:1672167401,3700e2e7566372005ce8d035ae062135:573693412,ddcf96634aab3200fa89dc8894fe250c:2049934416,f7af9ea791637200eb79d6f8bff19e01:398741555,e19fd26345ab3200cfbb084d266a7b31:800823767,549f1ea73763720010e4c1dec088f6fc:926638884,244f92634eab320040831fb1801ab1ca:-654866247,e9bd9227ac6372007fad0fa0e25b4b7d:-1308200289,e70d1aef506b3200297ea738a4a6f3d3:732784124,d50d9aef8f6b3200f9257ac3f99c9848:1413302354,ef5cde27cf6372004ede040feefc681e:-157569530,455cde274e637200a3cc87fb40dc231b:-315522362,ca2c56272f63720047eed6243eefe9ef:-2119938908,6ceb9aefbe6b32008e2a9121d23bb642:-1893161476,555bd22703637200a962641e6ec07a59:-1862365710,1bea52efaf6b3200b959a3866958deb7:1083919081,5baa56a350637200922a231298498174:1737429398,7c9ad2a33f637200f6e50e694e0aff8b:63134236,e15ad6a3686372004b6efb3b2a7b635a:-1102771200,3a2ad6a3e06372006d1ffb2fc99c5656:-455064833,d3d7de23a26372006b8c8db56da7f773:-1798727816,d1871663a1637200e60ca026bd167617:-272014489,dca396af51237200c05b99ed596b00d1:1383350019,4e6356eb886b3200ed05fa131a8c5ec7:344727678,44439aebd36b3200fb87bea1aca950f4:1678712610,b13356ebe76b3200b9f6b0924633ccc4:1280658305,ba2312efdd237200a15a9f0aa9fb523b:-89861215,ef0312efb6237200fb40b057a5302279:-893864475,16c212ef17237200aeaa5e6af994f076:1347013588,ed925e6ff923720050b8b598b1151a55:-616825788,d652da2fb223720044d5d72031937649:487936824,c9c1966ff9237200c9e8dda9cf8b8a70:1471296962,31e056abb46b3200fcf6922eb001534d:515597858,17d05eabd2237200afbfe0cc99ebf5e4:1178490155,e1d0966f6023720010d4a73b0e61786c:107393846,0cc835a30a2372009dac7e63711900d8:1920229997,12a835ef6f2b320067a15a3ec43e66c0:-329137227,3f987123c6237200683028a5fade7475:418706269,ef78fd6fcf2b320089b7ce93a647ac31:1081523453,067835ef012b320023438d3cccf793bb:-1287546115,a558f1ef2a2b32009f076cb6b0531b9e:-553273311,020671afca2b3200a0ad6a3592cd32e2:-1875808837,6d94b123a6237200642b7d9885415204:336210571,b04475af97ef32005d8b93a506f51918:1359053597,e70475af1eef3200717e436e3b081014:-1530040151,6ec3b5af38ef3200b11464aa3ca3be2a:1890811603,fe52312f842b32009de49cc8aa2ba6e7:1036433836,1452b5afd3ef3200ac5dfaa23d9e4e24:1755626997,6022f12f262b32008b5894959d9c82c1:171285691,99a1316f3eef3200865894438d46b95a:965753190,2b513d2f36ef32006789562b753531b1:-2033613070,1380792fb4ef32008048bfa958e2cb4b:-1711576776,8150316f6cef3200f0904316e89ca354:325417214,2210f16f05ef3200e80b0f9512856746:-962866787,c010f1ebac2b320029775e09bdaf12c7:-1471673813,bc00f9abc02b3200cea35bdf0ed4bab9:-944366698,9b4b29abc3ef3200478e86d2b94919af:-847824228,b1da6d2b682b3200a60a5bbc58ab3635:-794909227,d2ca6de7982b32009c4decb0cfcdf8d7:-492063727,ef6a216bbcef3200c21b3011af70401d:-419543490,dfd9a52b022b32004ee917f199763ef9:403109359,76d9216b02ef320080b1c231aa05a81a:1193946632,c899ad2bb8ef3200d6321d7b8f340033:-50039686,9ca86de7002b3200ddc50eb99d2160cc:-857890540,fb48eda75bef32005b37f7528c0ea1d0:-2059695740,00072967012b3200464b1574a63135ac:345862306,4e35a1e76def320070bf1483a42e93f3:-990604568,47f4e1e7ffef3200078165d45243eadb:746431696,90e4a1e723ef3200bfd952b49d4f7cf0:145233163,92c4e527a9ef32002069ee67caa3853f:1141693274,6e74ed678c2b32006822f946d5fba6f6:-1641254690,47832967292b3200839615eac29c92a1:75381416,1673ad27e62b3200775fafe005808106:-1870927496,a392296793ef3200bd10c4375167ad49:-1953589518,d49229674fef320092b2dd132225d645:1315081704,f7722167b62b3200bbf57e02f6e399db:-151232344,766225678eef32001a81ad29fdbdd5a1:1347371779,ba42ade36e2b3200d38df03b9a275c77:1046624917,2f126d27282b3200dd63b05baca18cfd:-658563482,2bf06d2738ef32004f3451578add0347:-909401443,15802527ebef3200bbfb2942f50ae814:301049359,a20065e323ef320010ad60c4d3547e8f:-1913759943,69ff1da3c62b32001a54eb272bc82a43:-1037308282,b9cf152737ef320065be96e00ec15a0e:1200631092,1dbf99e3742b32004c34a2e71fc17bd9:-2020274283,205e55a3f62b32005ade4aab6d75a15d:1576648468,832e5dafd2af32002a370cd52ec6ac35:-1020955152,75ed55a3762b32005a59c8d0cd792b58:472912534,0bcd1da3512b320000f1b49f5ef79139:-305866555,0aad55e33eef320037e1b3e8b35d5787:390648256,b90c9963e72b32005375c6c193f73ed1:-1206972330,22ab9963c52b32005d65a67a72dddecd:808009920,799bd1afd6af32006b3f9a21a6a69869:-110736859,118ad1af8daf3200da9b2e270f514763:-166502714,e60ad1afa9af320020dae7a92b252c5f:-1361316667,5bc995239c2b3200afe1a6953193bff1:-2044560381,2e895d2f98af32004fa10630c60051de:-993135137,0b69992f2faf32006854879910f3f7c6:-961370364,de69992f2caf3200ea5c7fbaf1847dc2:1979768900,65495523d92b3200f5eb17748e94bb3b:2031399808,04f89523f82b320057358b930fd104ea:1850310626,0fb85523912b32007f440adfb3c01237:549831995,9ee791a714af320092288ae8ff28218e:2080874283,68e7d167fbaf32006c0a12aa9b328cbb:-35175512,7ba795afc3e7320064d596d564620f28:-904005641,58175da77faf320043dfc03201a18b0b:1954366028,86c659af16e73200be942cabc0f62773:2063068830,20b65da79eaf32003ed74f80a536d107:1592243542,9f5559afd0e7320016017e559262a66d:-1310728219,a53559677aaf3200320ca07e2cd38c50:140067301,51a45d6717af32002f45edbe48c68cec:-295271076,8294d96f9ae732000afd2332e425b6e8:1909051676,1b845d67f7af32001c011844e70005e8:-1999088550,7073d96f4ae732006371d8f2ac5b93e0:-495141580,5243196fade73200d2c98ddf13996a56:-776942329,25435de378af3200bb1fbb6c4fdef128:1743889844,faf25de383af32000f56d2dfa2ccfa24:-179387524,3be2196fe6e7320074bbbf1b3ea97351:-1379340888,263ac5ef7d6f32009fac917dd2414a49:1088946845,959905efce6f32004cea273ee710b028:-288355065</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

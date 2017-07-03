@@ -1,0 +1,82 @@
+$wlu-bg-color: #000 !default;
+>div {
+  margin-top: 20px;
+  background-color: $wlu-bg-color;
+  .user-avatar-pic {
+    display: block;
+    float: left;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    border: solid 3px #404757;
+  }
+  .user-greeting {
+    float: left;
+    margin-left: 7px;
+    margin-top: 5px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .subtitle {
+    font-size: 14px;
+    margin-top: 2;
+  }
+}
+
+.notification-icon {
+  position: absolute;
+  right: 15px;
+  border-left: solid 1px #3A3F4C;
+  padding-left: 17px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .number {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #c6503b;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .notification-label {
+    font-size: 14px;
+  }
+}
+
+.notification {
+  position: absolute;
+  left: 0;
+  top: 58px;
+  padding: 10px;
+  z-index: 5;
+  width: 100%;
+  .notification-wrapper {
+    background-color: $wlu-bg-color;
+    float: left;
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 3px;
+  }
+  .tip {
+    position: absolute;
+    right: 34px;
+    top: 0;
+  }
+  h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .icon {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

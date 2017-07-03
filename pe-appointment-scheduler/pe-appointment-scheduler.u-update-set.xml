@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-03 12:45:31">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-appointment-scheduler.u-update-set.xml</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8bc4a56cdbf7b2004e5cfa131f9619b0</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 12:45:31</sys_created_on>
+<sys_id>3117a160db3bb2004e5cfa131f96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 12:45:31</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_3ddfcd6cdbb7b2004e5cfa131f9619f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>NDL Appointment Scheduler Title</application><key>NDL Appointment Scheduler Afternoon</key><language>en</language><message>Adternoon</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-07-03 11:04:09</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3ddfcd6cdbb7b2004e5cfa131f9619f6</sys_id><sys_mod_count>2</sys_mod_count><sys_name>NDL Appointment Scheduler Afternoon</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_3ddfcd6cdbb7b2004e5cfa131f9619f6</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-07-03 12:43:06</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>-2122758758</payload_hash>
+<remote_update_set display_value="pe-appointment-scheduler.u-update-set.xml">3117a160db3bb2004e5cfa131f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 12:45:31</sys_created_on>
+<sys_id>3117a160db3bb2004e5cfa131f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d0879cc310000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 12:45:31</sys_updated_on>
+<table/>
+<target_name>NDL Appointment Scheduler Afternoon</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>12862d20ce3bb20016d6ce09f6795f90</update_guid>
+<update_guid_history>12862d20ce3bb20016d6ce09f6795f90:-2122758758,d5862d20663bb2008c0c0f0f0745ed8c:-1282973016,45ef01ac58b7b200e4bd3789cb63457b:-2122758758</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_30ea0168dbb7b2004e5cfa131f96195b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function AppointmentScheduler() {
+
+  var c = this;
+
+  c.morningTimes = ["9:00 AM - 12:00 PM"];
+  c.afternoonTimes = ["1:00 PM - 4:00 PM", "2:00 PM - 5:00 PM", "3:00 PM - 6:00 PM"];
+  c.eveningTimes = ["4:00 PM - 7:00 PM", "5:00 PM - 8:00 PM"];
+  c.lateTimes = ["6:00 PM - 9:00 PM"];
+
+  c.daysArray = [];
+  var dayWord = '';
+  var dayNumber = '';
+  var monthWord = '';
+
+  for (var i = 0; i &lt; 180; i++) {
+    dayWord = moment().add(i, "days").format("ddd");
+    dayNumber = moment().add(i, "days").format("D");
+    monthWord = moment().add(i, "days").format("MMM");
+    c.daysArray.push({
+      "dayWord": dayWord,
+      "dayNumber": dayNumber,
+      "monthWord": monthWord
+    });
+  }
+
+  c.select = function (index, number, word) {
+    c.selected = index;
+    c.selectedNumber = number;
+    c.selectedWord = word;
+    $('#timeSplash').addClass('hidden');
+    $('#timeSection').removeClass('hidden');
+  };
+
+  c.confirmMorning = function (index, time) {
+    c.selectedTime = time;
+    c.timeSelected = 'mo' + index;
+    $('div.confirm-btn').removeClass('invisible');
+  };
+
+  c.confirmAfternoon = function (index, time) {
+    c.selectedTime = time;
+    c.timeSelected = 'af' + index;
+    $('div.confirm-btn').removeClass('invisible');
+  };
+
+  c.confirmEvening = function (index, time) {
+    c.selectedTime = time;
+    c.timeSelected = 'ev' + index;
+    $('div.confirm-btn').removeClass('invisible');
+  };
+
+  c.confirmLate = function (index, time) {
+    c.selectedTime = time;
+    c.timeSelected = 'la' + index;
+    $('div.confirm-btn').removeClass('invisible');
+  };
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;h4 {
+  margin-top: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+a.icon-prev {
+  top: 118px;
+}
+
+a.icon-next {
+  top: -60px
+}
+
+div.day-selector {
+  color: #fff;
+  text-transform: uppercase;
+  overflow: auto;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: -1px;
+}
+
+div.day-selector a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+div.day-selector-background {
+  margin: 0 -15px;
+  background-color: $brand-primary;
+  border: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sel {
+  background-color: $gray-lighter;
+  color: $brand-primary !important;
+}
+
+.glyphicon.glyphicon-calendar {
+  font-size: 150px;
+}
+
+a.list-group-item {
+  border: none;
+}
+
+a.list-center-text {
+  text-align: center;
+}
+
+div.list-header-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+}
+
+div.confirm-btn {
+  padding-bottom: 20px;
+}
+
+a.active {
+  background-color: $brand-primary !important;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;appointment-scheduler&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Appointment Scheduler&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-03 10:45:34&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;30ea0168dbb7b2004e5cfa131f96195b&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;Appointment Scheduler&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_30ea0168dbb7b2004e5cfa131f96195b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-03 12:44:32&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="inner-page"&gt;
+
+  &lt;div class="navbar navbar-default day-selector-background"&gt;
+    &lt;div class="day-selector"&gt;
+      &lt;a href="javascript:void(0)" ng-repeat="i in c.daysArray" ng-click="c.select($index,i.dayNumber,i.dayWord)" ng-class="{'sel': $index == c.selected}"&gt;
+        &lt;h4&gt;{{i.dayWord}}&lt;br&gt;&lt;/h4&gt;
+        {{i.dayNumber}}
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div id="timeSplash" class="time-section time-splash-screen"&gt;
+    &lt;h3 class="text-center"&gt;${NDL Appointment Scheduler Title}&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;span class="glyphicon glyphicon-calendar"&gt;&lt;/span&gt;&lt;/h3&gt;
+  &lt;/div&gt;
+
+  &lt;div id="timeSection" class="time-section hidden"&gt;
+
+    &lt;div class="list-group"&gt;
+      &lt;div class="list-group-item list-center-text list-header-text"&gt;
+        ${NDL Appointment Scheduler Morning}
+      &lt;/div&gt;
+      &lt;a href="javascript:void(0)" ng-repeat="i in c.morningTimes" ng-click="c.confirmMorning($index,i)" class="list-group-item list-center-text inactive"
+        ng-class="{'active': 'mo' + $index == c.timeSelected}"&gt;
+                {{i}}
+            &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;hr&gt;
+
+    &lt;div class="list-group"&gt;
+      &lt;div class="list-group-item list-center-text list-header-text"&gt;
+        ${NDL Appointment Scheduler Afternoon}
+      &lt;/div&gt;
+      &lt;a href="javascript:void(0)" ng-repeat="i in c.afternoonTimes" ng-click="c.confirmAfternoon($index,i)" class="list-group-item list-center-text inactive"
+        ng-class="{'active': 'af' + $index == c.timeSelected}"&gt;
+                {{i}}
+            &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;hr&gt;
+
+    &lt;div class="list-group"&gt;
+      &lt;div class="list-group-item list-center-text list-header-text"&gt;
+        ${NDL Appointment Scheduler Evening}
+      &lt;/div&gt;
+      &lt;a href="javascript:void(0)" ng-repeat="i in c.eveningTimes" ng-click="c.confirmEvening($index,i)" class="list-group-item list-center-text inactive"
+        ng-class="{'active': 'ev' + $index == c.timeSelected}"&gt;
+                {{i}}
+            &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;hr&gt;
+
+    &lt;div class="list-group"&gt;
+      &lt;div class="list-group-item list-center-text list-header-text"&gt;
+        ${NDL Appointment Scheduler Late Evening}
+      &lt;/div&gt;
+      &lt;a href="javascript:void(0)" ng-repeat="i in c.lateTimes" ng-click="c.confirmLate($index,i)" class="list-group-item list-center-text inactive"
+        ng-class="{'active': 'la' + $index == c.timeSelected}"&gt;
+                {{i}}
+            &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>166864057</payload_hash>
+<remote_update_set display_value="pe-appointment-scheduler.u-update-set.xml">3117a160db3bb2004e5cfa131f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 12:45:31</sys_created_on>
+<sys_id>7517a160db3bb2004e5cfa131f96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d087b1c090000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 12:45:31</sys_updated_on>
+<table/>
+<target_name>Appointment Scheduler</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>97d62160d23bb2004203746ea75da199</update_guid>
+<update_guid_history>97d62160d23bb2004203746ea75da199:166864057,82d62160003bb200f1f71444f8027f94:11617313,82b219204df7b200dcbff19e328a499d:166864057,c4b291a0177fb200f4be211eb2a1ea13:-211680371,b4a291ec89b7b200adf34a58305d6e8b:-1517993715,1ff11960807fb20079830e3e0c680760:-374014067,c8c19dac39b7b2002cb2ef7872beb635:-1674241070,82a091ec9ab7b200a5eae2f490129282:-912060347,27801d2cf8b7b2006e1314da11968442:1401017825,58609d60357fb200138e87181665abb4:1924414562,b140d120457fb20004f4bcaddf824463:269868894,06bf8d6cc7b7b200bab67a65ec12290d:1310694414,1eee0d2cb2b7b2002426997eee8d0b3a:431356208,d4ee0560567fb20031dabcd51254de27:769943249,4cde8de8d0b7b200bf6a8170471acd26:-322186464,1c4e49a84ab7b200adbcad003fdfc6c2:-820151694,5e2c85a869b7b200b0376d7f6fa91a0a:-464933211,670c0d6817b7b2007891349f3c2fd8bd:-555911921,810c0decd83fb2008a2af00a067292f1:-244359795,25fb4928cab7b200234c6996ba94be81:-1618623547,9beb492835b7b2008ea4fe889e54187d:-1627347475,a7db8dec983fb200dddfb9c68b22154c:-236828785,f0ab0d2811b7b20036e791e50ba791db:-950229347</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_790091acdbb7b2004e5cfa131f961977</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>NDL Appointment Scheduler</application><key>NDL Appointment Scheduler Late Evening</key><language>en</language><message>Late Evening</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-07-03 11:05:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>790091acdbb7b2004e5cfa131f961977</sys_id><sys_mod_count>2</sys_mod_count><sys_name>NDL Appointment Scheduler Late Evening</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_790091acdbb7b2004e5cfa131f961977</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-07-03 12:42:48</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>-1304825804</payload_hash>
+<remote_update_set display_value="pe-appointment-scheduler.u-update-set.xml">3117a160db3bb2004e5cfa131f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 12:45:31</sys_created_on>
+<sys_id>7917a160db3bb2004e5cfa131f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d087987170000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 12:45:31</sys_updated_on>
+<table/>
+<target_name>NDL Appointment Scheduler Late Evening</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>06762d20483bb200e0d92edf00f15f58</update_guid>
+<update_guid_history>06762d20483bb200e0d92edf00f15f58:-1304825804,b476e520303bb200e83a90576e4f41c2:969241639,1a1091ac1eb7b200f7d2a47677545d7b:-1304825804</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_11cf8d6cdbb7b2004e5cfa131f9619e3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>NDL Appointment Scheduler</application><key>NDL Appointment Scheduler Morning</key><language>en</language><message>Morning</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-07-03 11:03:53</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>11cf8d6cdbb7b2004e5cfa131f9619e3</sys_id><sys_mod_count>2</sys_mod_count><sys_name>NDL Appointment Scheduler Morning</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_11cf8d6cdbb7b2004e5cfa131f9619e3</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-07-03 12:43:15</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>-1865097220</payload_hash>
+<remote_update_set display_value="pe-appointment-scheduler.u-update-set.xml">3117a160db3bb2004e5cfa131f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 12:45:31</sys_created_on>
+<sys_id>7d17a160db3bb2004e5cfa131f96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d0879eef00000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 12:45:31</sys_updated_on>
+<table/>
+<target_name>NDL Appointment Scheduler Morning</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>e896e920863bb200271cb1f08cf39ae1</update_guid>
+<update_guid_history>e896e920863bb200271cb1f08cf39ae1:-1865097220,5b862d20cf3bb2009398057c60666d93:2072379357,cddf8d6c21b7b2008ebc5ae396c047e6:-1865097220</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_4aef01acdbb7b2004e5cfa131f9619dc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>NDL Appointment Scheduler</application><key>NDL Appointment Scheduler Evening</key><language>en</language><message>Evening</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-07-03 11:04:42</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>4aef01acdbb7b2004e5cfa131f9619dc</sys_id><sys_mod_count>2</sys_mod_count><sys_name>NDL Appointment Scheduler Evening</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_4aef01acdbb7b2004e5cfa131f9619dc</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-07-03 12:42:57</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>150579768</payload_hash>
+<remote_update_set display_value="pe-appointment-scheduler.u-update-set.xml">3117a160db3bb2004e5cfa131f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 12:45:31</sys_created_on>
+<sys_id>b517a160db3bb2004e5cfa131f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d0879a9fc0000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 12:45:31</sys_updated_on>
+<table/>
+<target_name>NDL Appointment Scheduler Evening</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>d0862d20fb3bb200f6598ae3e003085d</update_guid>
+<update_guid_history>d0862d20fb3bb200f6598ae3e003085d:150579768,83762d20983bb2006ebbf8df602e437f:-2088863975,34005d6cccb7b2009f2f50bbf586978d:150579768</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_478fc92cdbb7b2004e5cfa131f961981</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>NDL Appointment Scheduler</application><key>NDL Appointment Scheduler Title</key><language>en</language><message>Choose a date above to see available times</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-07-03 11:03:08</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>478fc92cdbb7b2004e5cfa131f961981</sys_id><sys_mod_count>2</sys_mod_count><sys_name>NDL Appointment Scheduler Title</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_478fc92cdbb7b2004e5cfa131f961981</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-07-03 12:43:28</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>232022382</payload_hash>
+<remote_update_set display_value="pe-appointment-scheduler.u-update-set.xml">3117a160db3bb2004e5cfa131f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio.petito</sys_created_by>
+<sys_created_on>2017-07-03 12:45:31</sys_created_on>
+<sys_id>f117a160db3bb2004e5cfa131f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d087a22120000001</sys_recorded_at>
+<sys_updated_by>fabio.petito</sys_updated_by>
+<sys_updated_on>2017-07-03 12:45:31</sys_updated_on>
+<table/>
+<target_name>NDL Appointment Scheduler Title</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>bf962d20993bb200d1b19a0f72e4e187</update_guid>
+<update_guid_history>bf962d20993bb200d1b19a0f72e4e187:232022382,a296e920f53bb200a483d682a95a5be6:-1411035721,4aafcde8f2b7b20062712db8ad767a53:232022382</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
