@@ -11,7 +11,7 @@ This widget can be used to create a simple people card with name and profile pic
 > None
 ---
 ## Installation
-Download and install update set **[pe-technician-card.u-update-set.xml](pe-technician-card.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-pe-welcome-user.u-update-set.xml](pe-pe-welcome-user.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 ---
