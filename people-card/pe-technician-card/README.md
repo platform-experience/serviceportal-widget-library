@@ -2,7 +2,7 @@
 
 ## Description
 
-This widget can be used to create a simple people card with name, username, and eventually location, representing a technical intervantion.
+This widget can be used to create a simple people card with name, username, and eventually location, representing a technical intervention.
 
 ## Screenshots
 ![alt text](../../images/pe-technician-card.png "Technician Card")
