@@ -11,7 +11,7 @@ This widget can be used to represent the delivery updates in a confortable and B
 > None
 ---
 ## Installation
-Download and install update set **[pe-technician-card.u-update-set.xml](pe-technician-card.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-timeline-delivery-info.u-update-set.xml](pe-timeline-delivery-info.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 ---
