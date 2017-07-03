@@ -16,7 +16,8 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
 ---
 ## Configuration
-> None
+Language variants can be created through the section System UI -> UI Messages, and displayed in the HTML body with the syntax:<br/>
+* ${<i>key value specified in the Message record</i>}.
 ---
 ## Platform Dependencies
 > None
