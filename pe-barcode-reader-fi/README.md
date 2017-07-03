@@ -10,7 +10,8 @@ The image can be provided straigh from camera or camera roll/file system (mobile
 ![alt text](../images/pe-barcode-reader-fi-02.png "Barcode Reader - Initial UI") <br/>
 ![alt text](../images/pe-barcode-reader-fi-03.png "Barcode Reader - After code extraction from image") <br/>
 <br/>
-With manual lookup
+<br/>
+<i>With manual lookup:</i>
 ![alt text](../images/pe-barcode-reader-fi-04.png "Barcode Reader - Manual lookup") <br/>
 
 ## Additional Information/Notes
