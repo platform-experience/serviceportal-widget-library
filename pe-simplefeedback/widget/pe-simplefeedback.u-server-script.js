@@ -51,7 +51,7 @@
     //Thank You Message
     data.wdtOptions.txtTYMsg = options.txtTYMsg || serverOptions.txtTYMsg;
 
-    if (input) {
+    if (input && Object.keys(input).length > 0) {
         data.serverInput = input;
         var grFeedback = new GlideRecord(input.wdtOptions.dataTable);
 
