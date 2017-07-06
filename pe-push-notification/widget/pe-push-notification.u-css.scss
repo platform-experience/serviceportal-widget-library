@@ -1,0 +1,197 @@
+.row-custom {
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin-left: -8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  color: #DCDEDE;
+}
+
+.custom-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.top-bar {
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.0);
+  margin-top: 2px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.oval-white-1 {
+  width: 6.5px;
+  height: 6.5px;
+  background-color: #DCDEDE;
+  margin-top: 7.5px;
+  margin-left: 6.5px;
+  border-radius: 3px;
+}
+
+.oval-white {
+  width: 6.5px;
+  height: 6.5px;
+  background-color: #DCDEDE;
+  margin-top: 7.5px;
+  margin-left: 1.5px;
+  border-radius: 3px;
+}
+
+.oval-transp {
+  width: 6.5px;
+  height: 6.5px;
+  background-color: rgba(0, 0, 0, 0.0);
+  ;
+  margin-top: 7.5px;
+  margin-left: 1.5px;
+  border-radius: 3px;
+  border: 1px solid #DCDEDE;
+}
+
+.network {
+  background-color: rgba(0, 0, 0, 0.0);
+  margin-top: 0.5px;
+  margin-left: 5px;
+  color: #DCDEDE;
+}
+
+.lock {
+  position: absolute;
+  left: calc(50% - 3px);
+  vertical-align: middle;
+  margin: auto;
+}
+
+.icon-wifi {
+  margin-left: 5px;
+}
+
+.icons-size {
+  height: 10px;
+}
+
+.top-bar-right {
+  position: absolute;
+  right: 7.5px;
+  display: flex;
+}
+
+.icon-battery {
+  margin-left: 6px;
+  margin-top: -1px;
+}
+
+.home-container {
+  margin-top: 65px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.home-time {
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+.home-date {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.notifications-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.notification-container {
+  height: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.notification-header {
+  height: 38px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.53);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  display: inline-flex;
+  position: relative;
+}
+
+.notification-body {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  -webkit-backdrop-filter: blur(5.3px);
+  backdrop-filter: blur(5.3px);
+}
+
+.app-logo {
+  margin-left: 9px;
+  margin-top: 9px;
+}
+
+.app-logo-img {
+  height: 21px;
+  width: 21px;
+  border-radius: 3px;
+}
+
+.notification-title {
+  margin-left: 9px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+  letter-spacing: -0.1px;
+  color: #4a4a4a;
+}
+
+.notification-when {
+  position: absolute;
+  right: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  color: #4a4a4a;
+  top: 9px;
+}
+
+.notification-body {
+  padding-left: 14px;
+  text-align: left;
+  padding-top: 9px;
+  padding-bottom: 13px;
+  padding-right: 16px;
+}
+
+.notification-body-title {
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.notification-body-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.2px;
+  color: #000000;
+}
