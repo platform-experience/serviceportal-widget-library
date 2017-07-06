@@ -12,7 +12,7 @@
     data.currentUser = {
         loggedIn: session.isLoggedIn(),
         sys_id: gs.getUserID(),
-        name: curUser.getFullName(),
+        name: curUser.getDisplayName(),
         email: curUser.getEmail()
     };
 
