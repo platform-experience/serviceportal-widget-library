@@ -3,10 +3,11 @@ function PushNotificationsController($window, $scope) {
   var c = this;
   var d1 = new Date();
   var d = new Date();
-	
+
   c.show = false;
   if ($scope.$root.portal)
     c.show = true;
+
   if (!c.data.notification.date) {
     d1 = new Date();
     d = new Date();
@@ -15,8 +16,8 @@ function PushNotificationsController($window, $scope) {
     d.setUTCDate(d1.getDate());
     c.data.notification.date = d.toLocaleDateString($window.navigator.language, {
       weekday: 'long',
-      month: 'long',
-      year: '2-digit'
+      day: 'numeric',
+      month: 'long'
     });
   }
   if (!c.data.notification.time) {
@@ -29,9 +30,14 @@ function PushNotificationsController($window, $scope) {
       minute: '2-digit'
     });
   }
-  console.log('c.data.background_image = ' + c.data.notification.background_image);
+
   if (c.data.notification.background_image) {
     if (c.data.notification.background_image.length > 0)
       document.getElementById('main-container').style.backgroundImage = "url(" + c.data.notification.background_image + ")";
   }
+
+  c.goToPage = function () {
+    $window.location.href = c.data.notification.page;
+  };
+
 }

@@ -2,6 +2,7 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
   data.notification = {};
+  data.notification.page = input.page || options.page;
   data.notification.time = input.home_time || options.home_time;
   data.notification.date = input.home_date || options.home_date;
   data.notification.title = input.notification_title || options.notification_title;
