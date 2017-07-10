@@ -10,6 +10,8 @@ Features:
 - Supports any record which has a “one to many” relationship. E.g. one Problem record can be linked to many Incident records. In this scenario, Problem would be the Master record, and Incident would be the Child record.
 - UI Policy, UI Scripts, and Form Layouts are supported as per the out of box form widget.
 
+**NOTE:** this widget only works with Jakarta and later releases.
+
 ## Screenshots
 <kbd><img src="../images/pe-progressive-form.gif" /></kbd>
 
@@ -31,7 +33,8 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 ---
 Widget Option Schema parameters:
 
-- Master table name - The table name for the parent record- Child table name - The table name for the child records
+- Master table name - The table name for the parent record
+- Child table name - The table name for the child records
 - Master reference - The field name on the child table which points to the parent.
 - View name - The view to render the form in
 - “Delete” action name - The action name of the UI Action which will be triggered on deletion of a child record
