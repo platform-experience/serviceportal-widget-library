@@ -1,0 +1,32 @@
+<div ng-if="c.data.mandatoryErrors === 0">
+    <div class="pepf-header">
+        <span ng-if="c.data.forms.master.display_value === ''">NEW</span> {{c.data.forms.master.label}}
+        <span ng-if="c.data.forms.master.display_value != ''"> - {{c.data.forms.master.display_value}}</span>
+    </div>
+    <div class="pepf-body">
+        <sp-model pe-concertina-form
+                  pef-master="true"
+                  form-model="form"
+                  template-url="pec-form"
+                  mandatory="true" ng-repeat="form in c.forms.master"></sp-model>
+        <div pe-concertina pec-title="{{::c.forms.children.plural}}" pec-ns="main">
+            <div ng-repeat="form in c.forms.children.forms">
+                <div pe-concertina
+                     pec-ns="child"
+                     pec-expanded="false"
+                     pec-template-url="pec-child"
+                     pec-title="{{::form.display_value || form.label}}"
+                     pec-show-delete="{{false}}">
+                    <sp-model pe-concertina-form form-model="form" mandatory="true"></sp-model>
+                </div>
+            </div>
+            <div ng-if="c.forms.children.forms.length === 0">
+                <div class="alert alert-info">There are no {{::c.forms.children.plural.toLowerCase()}} related to this record.</div>
+            </div>
+            <div class="pepf-actions">
+                <button class="pepf-minor" ng-click="c.addChild()">Create {{::c.forms.children.singular}}</button>
+                <button ng-click="c.save()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

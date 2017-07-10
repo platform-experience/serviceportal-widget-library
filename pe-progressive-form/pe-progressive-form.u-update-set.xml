@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-10 04:13:02">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>(PE) Progressive Form</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date>2017-07-10 04:12:48</release_date>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>a801d792db333200fd02711ebf96190f</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>7ee4f326dbb73200fd02711ebf9619f9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_6772d792db333200fd02711ebf961918</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;pec-parent&lt;/id&gt;&lt;sp_widget display_value="Progressive Form"&gt;2a315b92db333200fd02711ebf961963&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:04:15&lt;/sys_created_on&gt;&lt;sys_id&gt;6772d792db333200fd02711ebf961918&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pec-parent&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_6772d792db333200fd02711ebf961918&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 07:04:15&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="pec-section pec-parent" ng-class="{'pec-inactive': !allowToggle()}"&gt;
+    &lt;div class="pec-head" ng-click="toggle()"&gt;
+        &lt;div class="pec-num"&gt;{{getSectionNumber()}}&lt;/div&gt;
+        &lt;h2&gt;{{::title}}&lt;/h2&gt;
+        &lt;div class="pec-edit" ng-style="{'visibility': showEdit() ? 'visible' : 'hidden'}"&gt;Edit&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="pec-wrap"&gt;
+        &lt;div class="pec-content"&gt;
+            &lt;div ng-transclude&gt;&lt;/div&gt;
+            &lt;div class="pepf-actions" ng-if="::showNext"&gt;
+                &lt;button class="pec-minor" ng-click="next()"&gt;Next&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1603802309</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>32e4f326dbb73200fd02711ebf9619fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d2629bb700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>pec-parent</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>d1829fd217333200233d3ed13ad4e168</update_guid>
+<update_guid_history>d1829fd217333200233d3ed13ad4e168:-1603802309</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_angular_provider_a9a21316db333200fd02711ebf96193c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_angular_provider"&gt;&lt;sp_angular_provider action="INSERT_OR_UPDATE"&gt;&lt;name&gt;peConcertinaSection&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function peConcertinaSectionDirective ($timeout) {
+
+	var link = function (scope) {
+
+		scope.sections = [];
+
+		var currentSection = -1;
+
+		$timeout(function () {
+
+			scope.containers.forEach(function (currentValue) {
+
+				if (currentSection === -1) {
+					currentSection++;
+				} else if (currentValue.captionDisplay !== '' &amp;&amp; currentValue.caption !== '') {
+					currentSection++;
+				}
+
+				if (typeof scope.sections[currentSection] === 'undefined') {
+					scope.sections[currentSection] = [];
+				}
+
+				scope.sections[currentSection].push(currentValue);
+			});
+
+		}, 0);
+
+	};
+
+	return {
+		restrict: 'E',
+		link: link,
+		require: '^spModel'
+	};
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sp_angular_provider&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:05:07&lt;/sys_created_on&gt;&lt;sys_id&gt;a9a21316db333200fd02711ebf96193c&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;peConcertinaSection&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_angular_provider_a9a21316db333200fd02711ebf96193c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 13:07:51&lt;/sys_updated_on&gt;&lt;type&gt;directive&lt;/type&gt;&lt;/sp_angular_provider&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-58834126</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>36e4f326dbb73200fd02711ebf9619fc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d27769fc90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peConcertinaSection</target_name>
+<type>Widget Angular Provider</type>
+<update_domain>global</update_domain>
+<update_guid>23b5e46623b33200f68193af79a99898</update_guid>
+<update_guid_history>23b5e46623b33200f68193af79a99898:-58834126,9395e46668b33200a9528a81878cc995:412234011,d8952c26f9b33200e5790e1d15dec688:1894980513,4d152c2688b33200944cb054a69cc585:-58834126,82c3e8ae62733200a9643b4366e9b82d:-2042457029,8072eca211b332005a883946153c6ef9:-371010438,9ab3d716e7333200b443da96e1572293:1886182410,d15313165e333200ac43f2c60868c407:-26980074,fdb29fd2f33332009af68342d197cbe5:745756638</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_4784d356db333200fd02711ebf961922</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PRB827724-workaround">e8849356db333200fd02711ebf9619b6</sp_dependency><sp_widget display_value="Progressive Form">2a315b92db333200fd02711ebf961963</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 07:13:07</sys_created_on><sys_id>4784d356db333200fd02711ebf961922</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PRB827724-workaround.Progressive Form</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_4784d356db333200fd02711ebf961922</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 07:13:07</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>1535933559</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>3ae4f326dbb73200fd02711ebf9619fb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d2631da5c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>PRB827724-workaround.Progressive Form</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>4f84d356c0333200c6d9a07f6db6fd23</update_guid>
+<update_guid_history>4f84d356c0333200c6d9a07f6db6fd23:1535933559</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_e192ecaedb733200fd02711ebf96194e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="peConcertinaManager">1fe2dfd2db333200fd02711ebf96196c</sp_angular_provider><sp_widget display_value="Progressive Form">2a315b92db333200fd02711ebf961963</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 12:54:05</sys_created_on><sys_id>e192ecaedb733200fd02711ebf96194e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>peConcertinaManager.Progressive Form</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_e192ecaedb733200fd02711ebf96194e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 12:54:05</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>1045046956</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>3ee4f326dbb73200fd02711ebf9619fa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d276a02360000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peConcertinaManager.Progressive Form</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>2192ecaef47332001930d944e0c3784f</update_guid>
+<update_guid_history>2192ecaef47332001930d944e0c3784f:1045046956</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_e732dbd2db333200fd02711ebf96193e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.PeProgressiveFormHelper&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;PeProgressiveFormHelper&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var PeProgressiveFormHelper = Class.create();
+PeProgressiveFormHelper.prototype = {
+
+	/**
+	 *
+	 * @param $sp
+	 */
+	initialize: function($sp) {
+		this.$sp = $sp;
+		this.view = 'service_portal';
+	},
+
+	/**
+	 *
+	 * @param tableName
+	 */
+	setMaster: function (tableName) {
+		this.master = tableName;
+	},
+
+	/**
+	 *
+	 * @param tableName
+	 * @param reference
+	 */
+	setChild: function (tableName, reference) {
+		this.child = tableName;
+		this.reference = reference;
+	},
+
+	/**
+	 *
+	 * @param viewName
+	 */
+	setView: function (viewName) {
+		this.view = viewName;
+	},
+
+	/**
+	 *
+	 * @param id
+	 * @returns {{master: *, children: {singular: *, plural: *, forms: Array}}}
+	 */
+	get: function (id) {
+
+		var children = [];
+
+		var childGr = new GlideRecord(this.child);
+		childGr.addQuery(this.reference, id);
+		childGr.orderBy('sys_created_on');
+		childGr.query();
+
+		while (childGr.next()) {
+			children.push(this.$sp.getForm(this.child, childGr.getUniqueValue(), null, this.view));
+		}
+
+		return {
+			master: this.$sp.getForm(this.master, id, null, this.view),
+			children: {
+				singular: childGr.getClassDisplayValue(),
+				plural: childGr.getPlural(),
+				forms: children
+			}
+		};
+	},
+
+	type: 'PeProgressiveFormHelper'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:03:17&lt;/sys_created_on&gt;&lt;sys_id&gt;e732dbd2db333200fd02711ebf96193e&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;PeProgressiveFormHelper&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_e732dbd2db333200fd02711ebf96193e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 07:17:18&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-515001869</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>3ee4f326dbb73200fd02711ebf9619fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d2635ae1e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>PeProgressiveFormHelper</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>1c85d7569b333200bb16f1ea05a024fb</update_guid>
+<update_guid_history>1c85d7569b333200bb16f1ea05a024fb:-515001869,65751f56eb333200260140a1b95a3d45:-2004799053,e1c3d716c7333200c238c93f8b7d0098:720899475,47421fd2e033320088372174c55af502:-381200461</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_angular_provider_8bf2dfd2db333200fd02711ebf9619f6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_angular_provider"&gt;&lt;sp_angular_provider action="INSERT_OR_UPDATE"&gt;&lt;name&gt;peConcertina&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function peConcertinaDirective ($timeout, $window, peConcertinaManager, $document) {
+
+	var controller = ['$scope', function ($scope) {
+
+		$scope.toggle = function () {
+			peConcertinaManager.toggle($scope.$id, $scope.namespace);
+		};
+
+		$scope.next = function () {
+			peConcertinaManager.next($scope.$id, $scope.namespace);
+		};
+
+	}];
+
+	var link = function (scope, elem, attrs) {
+
+		scope.showNext = attrs.pecShowNext;
+		scope.namespace = attrs.pecNs;
+		scope.title = attrs.pecTitle;
+
+		var wrapperElem,
+			contentElem,
+			contentHeight;
+
+		$timeout(function () {
+
+			scope.getSectionNumber = function () {
+				return peConcertinaManager.getSectionNumber(scope.$id, scope.namespace);
+			};
+
+			scope.showEdit = function () {
+				return (peConcertinaManager.isVisited(scope.$id, scope.namespace) &amp;&amp;
+				!peConcertinaManager.isExpanded(scope.$id, scope.namespace));
+			};
+
+			scope.allowToggle = function () {
+				return peConcertinaManager.isVisited(scope.$id, scope.namespace);
+			};
+
+			scope.toggleDelete = function () {
+				scope.$broadcast('pec.toggleDelete');
+				scope.toDelete = !scope.toDelete;
+			};
+
+			wrapperElem = elem.find('.pec-wrap').first();
+			contentElem = elem.find('.pec-content').first();
+
+			peConcertinaManager.register(scope.$id, attrs.pecNs, $document.find('[pe-concertina]'), (attrs.pecExpanded === 'true'));
+
+			setSize();
+
+			/**
+			 * Watch for the content size to change
+			 */
+			scope.$watch(function () {
+				return contentElem.outerHeight();
+			}, setSize);
+
+
+			/**
+			 * Watch for the window to be resized
+			 */
+			angular.element($window).resize(setSize);
+
+			/**
+			 * Watch for changes to whether the panel is expanded or not
+			 */
+			scope.$watch(function (scope) {
+				return peConcertinaManager.isExpanded(scope.$id, attrs.pecNs)
+			}, setSize, true);
+
+
+			/**
+			 * Update the height of the wrapper to correspond to whether the panel is expanded or not
+			 */
+			function setSize() {
+
+				contentHeight = contentElem.outerHeight();
+
+				if (peConcertinaManager.isExpanded(scope.$id, scope.namespace)) {
+
+					wrapperElem.css('transition', '');
+					wrapperElem.css('max-height', contentHeight + 'px');
+
+				} else {
+					wrapperElem.css('transition', 'max-height 0.5s ease-in');
+					wrapperElem.css('max-height', 0);
+				}
+			}
+		}, 0);
+
+	};
+
+	return {
+		controller: controller,
+		transclude: true,
+		templateUrl: function(elem, attrs) { return attrs.pecTemplateUrl || 'pec-parent'; },
+		link: link,
+		scope: {}
+	};
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sp_angular_provider&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:06:21&lt;/sys_created_on&gt;&lt;sys_id&gt;8bf2dfd2db333200fd02711ebf9619f6&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;peConcertina&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_angular_provider_8bf2dfd2db333200fd02711ebf9619f6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 07:19:35&lt;/sys_updated_on&gt;&lt;type&gt;directive&lt;/type&gt;&lt;/sp_angular_provider&gt;&lt;/record_update&gt;</payload>
+<payload_hash>732095110</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>72e4f326dbb73200fd02711ebf9619fc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d2637c4520000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peConcertina</target_name>
+<type>Widget Angular Provider</type>
+<update_domain>global</update_domain>
+<update_guid>3506d716ef3332001818d090495c26cb</update_guid>
+<update_guid_history>3506d716ef3332001818d090495c26cb:732095110,94f5d7166c3332001c412658c2b3e2c8:793568958,3193d7166433320071f4169286b0e96d:-1638863765,88031316003332001bab3def2d13a002:793568958</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_ed92ecaedb733200fd02711ebf96194a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="peConcertina">8bf2dfd2db333200fd02711ebf9619f6</sp_angular_provider><sp_widget display_value="Progressive Form">2a315b92db333200fd02711ebf961963</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 12:54:05</sys_created_on><sys_id>ed92ecaedb733200fd02711ebf96194a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>peConcertina.Progressive Form</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_ed92ecaedb733200fd02711ebf96194a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 12:54:05</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>1252349327</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>76e4f326dbb73200fd02711ebf9619fb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d276a01fb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peConcertina.Progressive Form</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>2192ecae0973320095b5aaa0d082254c</update_guid>
+<update_guid_history>2192ecae0973320095b5aaa0d082254c:1252349327</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_a592a0e2dbb33200fd02711ebf961969</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="peFormManager">83b2dfd2db333200fd02711ebf9619fd</sp_angular_provider><sp_widget display_value="Progressive Form">2a315b92db333200fd02711ebf961963</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 12:54:05</sys_created_on><sys_id>a592a0e2dbb33200fd02711ebf961969</sys_id><sys_mod_count>0</sys_mod_count><sys_name>peFormManager.Progressive Form</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_a592a0e2dbb33200fd02711ebf961969</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 12:54:05</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>1046635398</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>7ae4f326dbb73200fd02711ebf9619fa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d276a026d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peFormManager.Progressive Form</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>e192a0e2b5b33200f06e276eb742556a</update_guid>
+<update_guid_history>e192a0e2b5b33200f06e276eb742556a:1046635398</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_2a315b92db333200fd02711ebf961963</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function peProgressiveForm (peConcertinaManager, peFormManager, $scope, $location, i18n) {	var c = this;	if (c.data.mandatoryErrors === 0) {		c.data.messages.forEach(function (message) {			i18n.loadMessage(message.name, message.value);		});		c.forms = {			master: [c.data.forms.master],			children: c.data.forms.children		};		peFormManager.setActionName('delete', c.options.delete_action_name);		peFormManager.setActionName('insert', c.options.insert_action_name);		peFormManager.setActionName('update', c.options.update_action_name);		peFormManager.setReference('problem_id');		if (c.data.sysId !== '-1') {			peConcertinaManager.unlock('main');		}		peConcertinaManager.unlock('child');		/**		 * Add a new child form		 */		c.addChild = function () {			c.server.get({action: 'get_child_form', view: c.forms.master.view}).then(function(r) {				c.forms.children.forms.push(r.data.form);			});		};		/**		 * Save all forms on the page		 */		c.save = function () {			peConcertinaManager.closeAll('main');			peFormManager.save().then(function (sysId) {				if (c.options.redirect_to === '') {					$location.search('sys_id', sysId);					c.data.sysId = sysId;					c.server.update().then(function () {						peFormManager.reset();						c.forms.children = [];						c.forms.master = [];						c.forms.master = [c.data.forms.master];						c.forms.children = c.data.forms.children;					});				} else {					var search = $location.search();					search.id = c.options.redirect_to;					search.pf_table = c.forms.master[0].table;					search.pf_id = sysId;					search.sys_id = undefined;					$location.search(search).replace();				}			});		};	}}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$button-background: #757575 !default;
+$button-color: #fff !default;
+$button-hover-background: #3a3f51 !default;
+$button-hover-color: #fff !default;
+
+.pepf-header {
+  font-size: 20px;
+  margin: 40px 0 20px 0;
+}
+
+.pepf-body {
+  padding-bottom: 40px;
+}
+
+.pec-content {
+  border-radius: 10px;
+  background-color: #fafafa;
+  padding: 40px 20px 20px 20px;
+}
+
+.pec-wrap {
+  max-height: 0px;
+  overflow-y: hidden;
+}
+
+.pepf-actions {
+  padding: 20px;
+  text-align: center;
+  margin: 5px 0;
+
+
+  button {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: $button-background;
+    color: $button-color;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 5px 0;
+
+    &amp;amp;:hover {
+      background-color: $button-hover-background;
+      color: $button-hover-color;
+    }
+  }
+
+  .pepf-minor, .pec-minor {
+    background-color: white;
+    color: black;
+    border: 1px solid #757575;
+  }
+
+  .pepf-minor:hover, .pec-minor:hover {
+    background-color: $button-hover-background;
+    color: $button-hover-color;
+  }
+}
+
+.pec-section {
+  position: relative;
+}
+
+.pec-child {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  h3 {
+    margin: 0;
+    border-radius: 7px 7px 0 0;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 16px;
+  }
+
+  .pec-content {
+    padding: 10px;
+  }
+}
+
+.pec-parent {
+
+  position: relative;
+
+  padding-top: 35px;
+  padding-left: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &amp;amp; &amp;gt; .pec-head {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 7px 20px 7px 7px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 10;
+
+    .pec-num {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 16px;
+      text-align: center;
+      background-color: $button-background;
+      color: $button-color;
+      float: left;
+      margin-right: 10px;
+    }
+    h2 {
+      font-size: 16px;
+      line-height: 32px;
+      float: left;
+      margin: 0;
+      min-width: 150px;
+    }
+  }
+}
+
+
+pe-concertina-section legend {
+  display: none;
+}
+
+.pec-edit {
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: $button-background;
+  color: $button-color;
+  float: left;
+  padding: 0 15px;
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 15px;
+}
+
+.pec-head:hover .pec-edit {
+  background-color: $button-hover-background;
+  color: $button-hover-color;
+}
+
+.pec-inactive {
+  opacity: 0.5;
+
+  .pec-head {
+    cursor: default;
+  }
+
+  .pec-edit {
+    visibility: hidden;
+  }
+}
+
+.pec-delete {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 25px;
+  line-height: 38px;
+
+  &amp;amp;:hover{
+    color: rgb(206,28,32);
+  }
+}
+
+.pec-to-delete {
+  color: rgb(206,28,32);
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-progressive-form&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Progressive Form&lt;/name&gt;&lt;option_schema&gt;[{"displayValue":"Table","name":"master","label":"Master table name","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"displayValue":"Table","name":"child","label":"Child table name","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"The reference field on the child table to point to the master table (e.g. \"parent\", \"problem\" etc.)","name":"reference","label":"Master reference","type":"string"},{"hint":"The \"action name\" of the UI Action you want to trigger when a record is deleted.","name":"delete_action_name","default_value":"sysverb_delete","label":"\"Delete\" Action Name","type":"string"},{"hint":"The \"action name\" of the UI Action you want to trigger when a record is inserted.","name":"insert_action_name","default_value":"sysverb_insert","label":"\"Insert\" Action Name","type":"string"},{"hint":"The \"action name\" of the UI Action you want to trigger when a record is updated.","name":"update_action_name","default_value":"sysverb_update","label":"\"Update\" Action Name","type":"string"},{"hint":"The page ID you want to be redirected to after submission. Default will just reload the form, staying on the current record.","name":"redirect_to","label":"Redirect to","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function($sp) {	var widgetInstance = $sp.getValue("sys_id");	var view = options.view || 'service_portal';	/**	 * Ensure we've been supplied with all the necessary options for the widget to work	 */	data.mandatoryErrors = 0;	if (!options.master)		showMandatoryError("master");	if (!options.child)		showMandatoryError("child");	if (!options.reference)		showMandatoryError("reference");	if (data.mandatoryErrors &gt; 0)		return false;	function showMandatoryError (fieldName) {		gs.addErrorMessage(gs.getMessage('Mandatory field "{0}" not set for instance "{1}".', [fieldName, widgetInstance]));		data.mandatoryErrors++;	}	if (input) {		data.sysId = input.sysId;	} else {		data.sysId = $sp.getParameter("sys_id") || '-1';	}	data.messages = [];	data.messages.push({		name: 'Please complete all mandatory fields before submitting',		value: gs.getMessage('Please complete all mandatory fields before submitting')	});	/**	 * Get the actual table names (the reference fields in the options will be the sysId of a 'sys_db_object' record)	 */	var master = new GlideRecord('sys_db_object');	master.get(options.master);	var child  = new GlideRecord('sys_db_object');	child.get(options.child);	/**	 * Maybe we're just requesting a single child form?	 */	if (input &amp;&amp; input.action === 'get_child_form') {		input.view = input.view || view;		data.form = $sp.getForm(child.getValue('name'), '-1', null, input.view);		return;	}	/**	 * Get the progressive form model from the script include	 */	var pfh = new PeProgressiveFormHelper($sp);	pfh.setMaster(master.getValue('name'));	pfh.setView(view);	pfh.setChild(child.getValue('name'), options.reference);	data.forms = pfh.get(data.sysId);})($sp);]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 06:58:36&lt;/sys_created_on&gt;&lt;sys_id&gt;2a315b92db333200fd02711ebf961963&lt;/sys_id&gt;&lt;sys_mod_count&gt;51&lt;/sys_mod_count&gt;&lt;sys_name&gt;Progressive Form&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_2a315b92db333200fd02711ebf961963&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-10 01:05:21&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="c.data.mandatoryErrors === 0"&gt;    &lt;div class="pepf-header"&gt;        &lt;span ng-if="c.data.forms.master.display_value === ''"&gt;NEW&lt;/span&gt; {{c.data.forms.master.label}}        &lt;span ng-if="c.data.forms.master.display_value != ''"&gt; - {{c.data.forms.master.display_value}}&lt;/span&gt;    &lt;/div&gt;    &lt;div class="pepf-body"&gt;        &lt;sp-model pe-concertina-form                  pef-master="true"                  form-model="form"                  template-url="pec-form"                  mandatory="true" ng-repeat="form in c.forms.master"&gt;&lt;/sp-model&gt;        &lt;div pe-concertina pec-title="{{::c.forms.children.plural}}" pec-ns="main"&gt;            &lt;div ng-repeat="form in c.forms.children.forms"&gt;                &lt;div pe-concertina                     pec-ns="child"                     pec-expanded="false"                     pec-template-url="pec-child"                     pec-title="{{::form.display_value || form.label}}"                     pec-show-delete="{{false}}"&gt;                    &lt;sp-model pe-concertina-form form-model="form" mandatory="true"&gt;&lt;/sp-model&gt;                &lt;/div&gt;            &lt;/div&gt;            &lt;div ng-if="c.forms.children.forms.length === 0"&gt;                &lt;div class="alert alert-info"&gt;There are no {{::c.forms.children.plural.toLowerCase()}} related to this record.&lt;/div&gt;            &lt;/div&gt;            &lt;div class="pepf-actions"&gt;                &lt;button class="pepf-minor" ng-click="c.addChild()"&gt;Create {{::c.forms.children.singular}}&lt;/button&gt;                &lt;button ng-click="c.save()"&gt;Submit&lt;/button&gt;            &lt;/div&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-522102016</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>7ae4f326dbb73200fd02711ebf9619fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d2a07839f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>Progressive Form</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>35f943a25fb73200c957082ea71a0cbe</update_guid>
+<update_guid_history>35f943a25fb73200c957082ea71a0cbe:-522102016,20f907e2b3b73200700fb20446d9952e:-696689464,928843a2bdb73200ecdc73e7734537ba:-522102016,af6807e2f5b732003dcfc68c94144329:-570622738,a348cf22d1b73200cdf2fcac59eaec03:-1450769198,032843a2cfb73200c67eb55d2b1065b6:1953614851,1a084362e1b73200f7a00ef733446191:1524125275,17d743620cb7320071a69c617494328e:-1964003524,4aa74762abb732001e07538c4ad6636c:1553307790,64674762c5b73200b8fc5a16022df269:-530990474,b7374362c6b73200a0cf51f96c3e4888:-1711968108,ac178f22d8b73200be87ae82812697ff:-1610445369,f4e68baa4e7732009c8dc63078f2d80f:-1167009617,8fc60322bdb7320014f7836953bcba11:390855144,5996872298b7320027d204948f976d2c:-2055387448,666687225fb732002f2d591685e5fb29:-934571158,2c268faae677320070ed032485d376f8:-1451861199,6fe50faa747732006570f02303091c7e:932785292,aed5032261b732005c7560cd24c7080c:-2052036328,48950faa4b77320060896a8b1a69d57b:-470315108,0b558faa0b7732003530a76e9815d6f5:1708624714,2d5503221ab732006a48ac1e91fcb408:1578325334,ea17766a127732000da7b1b004ef2322:354841567,46073eaa02773200b05971a6d3dce878:2100413753,59f632aa24773200f0b0dd9cba98a09a:-296717415,46c632aa1f773200ee34ff0018a4b897:1539121384,2f767e6aac773200ada5b41208d335f6:1921354602,3e667ea67b773200e85f361dfdcc51a5:1608880786,ab467e6a6e7732007168d349a43f3cf2:1838664754,b9167ea6d9773200d7779d65999b1da1:1608880786,69f57ea63a773200731ccac3fb4c3d4c:9130688,a1c576e6357732005a921bf471e6e58a:-296717415,d98532e6b77732001137fb823f11d98f:-758487667,10b47a2a5877320001ce1c1bcc74e19c:1132885080,f08272a6b87732005f3835a55335c452:-1595280837,570b206ab1b332001bbc5c3699177678:767215907,580bac2a28b33200fd9368548116ec0a:-1892167775,4ab6ec266ab332005022317ad5d4d67c:-407257025,2a46e86680b332009cb0dc84a49b6d78:1191457108,7134e8e2dfb332008a5b125645e9df17:-934245084,a324e8e2c9b33200355385bd3bb6990c:986287576,e4b55f5682333200b56234bd94f220f8:848284899,20f4d756553332008d7dc2272739df75:1249123498,3ae4d756f13332002620f4b80a43662a:2018002479,8ce41756f4333200d79be46642577f92:1249123498,7de3d716b13332009ad01fd9d3687bd2:-1286060263,ff129bd232333200100e995340653d73:-1323454375,0212d7d21333320040423c9a3104c423:534478321,18121bd2c433320046784bcafd13aeb7:1832908293,a902d7d24633320021d3f3462b9c0e30:-262486830,ea315b92ff333200de20feef0573a064:-556572730</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_c194d356db333200fd02711ebf961980</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PRB827724-workaround</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 07:13:31</sys_created_on><sys_id>c194d356db333200fd02711ebf961980</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PRB827724-workaround</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PRB827724-workaround">d294d356db333200fd02711ebf9619e7</sys_ui_script><sys_update_name>sp_js_include_c194d356db333200fd02711ebf961980</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 07:13:31</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>-246362166</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>7ee4f326dbb73200fd02711ebf9619fc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d263238b30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>PRB827724-workaround</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>49a4dfd2473332006586224994011798</update_guid>
+<update_guid_history>49a4dfd2473332006586224994011798:-246362166</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_81a41756db333200fd02711ebf961958</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PRB827724-workaround">e8849356db333200fd02711ebf9619b6</sp_dependency><sp_js_include display_value="PRB827724-workaround">c194d356db333200fd02711ebf961980</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 07:13:31</sys_created_on><sys_id>81a41756db333200fd02711ebf961958</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PRB827724-workaround.PRB827724-workaround</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_81a41756db333200fd02711ebf961958</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 07:13:31</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>-1827479294</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>b2e4f326dbb73200fd02711ebf9619fa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d263238dd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>PRB827724-workaround.PRB827724-workaround</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>85a41756b333320044c17979e2874d59</update_guid>
+<update_guid_history>85a41756b333320044c17979e2874d59:-1827479294</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_e992ecaedb733200fd02711ebf96194f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="peConcertinaSection">a9a21316db333200fd02711ebf96193c</sp_angular_provider><sp_widget display_value="Progressive Form">2a315b92db333200fd02711ebf961963</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 12:54:05</sys_created_on><sys_id>e992ecaedb733200fd02711ebf96194f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>peConcertinaSection.Progressive Form</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_e992ecaedb733200fd02711ebf96194f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 12:54:05</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>687561837</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>b2e4f326dbb73200fd02711ebf9619fb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d276a02510000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peConcertinaSection.Progressive Form</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>e992a0e226b33200f6d16b233172ee68</update_guid>
+<update_guid_history>e992a0e226b33200f6d16b233172ee68:687561837</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_ed625fd2db333200fd02711ebf9619d2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;pec-child&lt;/id&gt;&lt;sp_widget display_value="Progressive Form"&gt;2a315b92db333200fd02711ebf961963&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:04:01&lt;/sys_created_on&gt;&lt;sys_id&gt;ed625fd2db333200fd02711ebf9619d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pec-child&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_ed625fd2db333200fd02711ebf9619d2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 07:04:01&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="pec-section pec-child"&gt;
+    &lt;h3 ng-click="toggle()"&gt;{{::title}}&lt;/h3&gt;
+    &lt;div class="pec-wrap"&gt;
+        &lt;div class="pec-content"&gt;
+            &lt;div class="pec-delete"&gt;
+                &lt;i class="fa fa-trash"
+                   ng-click="toggleDelete()"
+                   ng-class="{'pec-to-delete': toDelete}" aria-hidden="true"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div ng-transclude&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1772913831</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>b6e4f326dbb73200fd02711ebf9619fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d2629845e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>pec-child</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>f5725fd2aa333200ed85010329e0b76c</update_guid>
+<update_guid_history>f5725fd2aa333200ed85010329e0b76c:1772913831</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_e8849356db333200fd02711ebf9619b6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>PRB827724-workaround</name><page_load>true</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 07:13:07</sys_created_on><sys_id>e8849356db333200fd02711ebf9619b6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PRB827724-workaround</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_e8849356db333200fd02711ebf9619b6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 07:13:07</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>-1428195854</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>bae4f326dbb73200fd02711ebf9619fc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d2631da350000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>PRB827724-workaround</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>4b84d35648333200a0f018f5d80e2921</update_guid>
+<update_guid_history>4b84d35648333200a0f018f5d80e2921:-1428195854</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_angular_provider_83b2dfd2db333200fd02711ebf9619fd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_angular_provider"&gt;&lt;sp_angular_provider action="INSERT_OR_UPDATE"&gt;&lt;name&gt;peFormManager&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function peFormManagerService ($q, spUtil, i18n) {
+
+	var actions = {
+		delete: 'sysverb_delete',
+		insert: 'sysverb_insert',
+		update: 'sysverb_update'
+	};
+
+	var master = {},
+		reference,
+		children = [];
+
+	/**
+	 * Set the action name for the method of action (delete/insert/update)
+	 * @param type
+	 * @param actionName
+	 */
+	this.setActionName = function (type, actionName) {
+		if (typeof actions[type] !== 'undefined') {
+			actions[type] = actionName;
+		}
+	};
+
+	/**
+	 * Register the master form
+	 * @param gFormInstance
+	 */
+	this.registerMaster = function (gFormInstance) {
+		master.gForm = gFormInstance;
+		master.saved = false;
+		master.sysId = gFormInstance.getUniqueValue();
+	};
+
+	/**
+	 * Register a child form
+	 * @param id
+	 * @param gFormInstance
+	 */
+	this.registerChild = function (id, gFormInstance) {
+		formInit(gFormInstance);
+		children.push({
+			gForm: gFormInstance,
+			id: id,
+			saved: false,
+			delete: false,
+			sysId: gFormInstance.getUniqueValue()
+		});
+	};
+
+	/**
+	 * Toggle a child form for deletion
+	 * @param id
+	 */
+	this.toggleDelete = function (id) {
+		children.forEach(function(currentValue, index) {
+			if (currentValue.id === id) {
+				children[index].delete = !children[index].delete;
+			}
+		});
+	};
+
+	/**
+	 * Set the reference field on the child which will be used to point to the parent
+	 * @param ref
+	 */
+	this.setReference = function (ref) {
+		reference = ref;
+	};
+
+	/**
+	 * Remove all child forms
+	 */
+	this.reset = function () {
+		master = {};
+		children = [];
+	};
+
+	/**
+	 *
+	 * @param gFormInstance
+	 */
+	function formInit (gFormInstance) {
+		gFormInstance.setVisible(reference, false);
+	}
+
+	/**
+	 * Save all forms (parent first, then children)
+	 * @returns {function}
+	 */
+	this.save = function () {
+
+		return $q(function(success, failure) {
+
+			/**
+			 * Check to make sure all the mandatory fields are completed.
+			 *
+			 * We need to do this because if say there are 5 forms on the page, and 2 of them save,
+			 * it could leave us in a bad situation, especially if some of the inserted records were
+			 * new records - in that case we would try to save the same new record twice, leading to
+			 * a failed save due to a duplicate unique key.
+			 */
+
+			var incomplete = [];
+
+			incomplete = incomplete.concat(checkMandatory(master.gForm));
+
+			children.forEach(function (currentValue, index, array) {
+				if (!currentValue.delete) {
+					incomplete = incomplete.concat(checkMandatory(currentValue.gForm));
+				}
+			});
+
+			if (incomplete.length &gt; 0) {
+				spUtil.addErrorMessage(i18n.getMessage("Please complete all mandatory fields before submitting"));
+				failure();
+			} else {
+
+				/**
+				 * Sometimes the call to the then() function can cause a javascript error. When this happens, it's
+				 * because the action name does not exist in the system. Ensure the table name you're trying to
+				 * save to has a UI Action with that action name associated with it.
+				 */
+
+				try {
+
+					master.gForm.submit(getActionName(master.gForm.isNewRecord())).then(function (response) {
+
+						master.sysId = (response.isInsert) ? response.sys_id : master.gForm.getUniqueValue();
+
+						if (children.length &gt; 0) {
+
+							var count = 1;
+
+							children.forEach(function (child) {
+
+								if (!child.delete) {
+									child.gForm.setValue(reference, master.sysId);
+
+									try {
+										child.gForm.submit(getActionName(child.gForm.isNewRecord())).then(function (response) {
+											if (count === children.length) {
+												success(master.sysId);
+											}
+											count++;
+										});
+									} catch (e) {
+										// A child form did not save (!!??!!)
+										failure();
+									}
+
+								} else {
+
+									if (!child.gForm.isNewRecord()) {
+
+										try {
+											child.gForm.submit(actions.delete).then(function (response) {
+												if (count === children.length) {
+													success(master.sysId);
+												}
+												count++;
+											});
+										} catch (e) {
+											// A child form did not save (!!??!!)
+											failure();
+										}
+									} else {
+										if (count === children.length) {
+											success(master.sysId);
+										}
+										count++;
+									}
+								}
+							});
+						} else {
+							success(master.sysId);
+						}
+					})
+
+				} catch (e) {
+					// The master form did not save (!!??!!)
+					failure();
+				}
+			}
+		});
+
+
+		/**
+		 * Make sure all mandatory fields on the gForm supplied are completed
+		 * @param gFormInstance
+		 * @returns {Array}         an array containing names of incomplete fields
+		 */
+		function checkMandatory(gFormInstance) {
+
+			var incomplete = [];
+			var fieldNames = gFormInstance.getFieldNames();
+
+			fieldNames.forEach(function (fieldName) {
+				if (gFormInstance.isMandatory(fieldName)) {
+					if (!hasValue(fieldName, gFormInstance)) {
+						incomplete.push(fieldName);
+					}
+				}
+
+			});
+			return incomplete;
+		}
+
+		/**
+		 * Copied from /scripts/sn/common/clientScript/glideFormFieldFactory.js
+		 * @param fieldName
+		 * @param gFormInstance
+		 * @returns {*}
+		 */
+		function hasValue(fieldName, gFormInstance) {
+
+			var field = gFormInstance.getField(fieldName);
+			var value = gFormInstance.getValue(fieldName);
+
+			switch(field.type) {
+				case 'boolean_confirm':
+					return value === 'true';
+				case 'boolean':
+					return true;
+				case 'currency':
+					var currencyValues = value.split(';');
+					return currencyValues[1] &amp;&amp; currencyValues[1].length;
+			}
+
+			if (value === null) {
+				return false;
+			}
+
+			if (typeof value === 'undefined') {
+				return false;
+			}
+			var trimmed = String(value).trim();
+			return trimmed.length &gt; 0;
+		}
+
+		/**
+		 *
+		 * @param isNewRecord
+		 * @returns {string}
+		 */
+		function getActionName(isNewRecord) {
+			return isNewRecord ? actions.insert : actions.update;
+		}
+
+	};
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sp_angular_provider&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:05:35&lt;/sys_created_on&gt;&lt;sys_id&gt;83b2dfd2db333200fd02711ebf9619fd&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;peFormManager&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_angular_provider_83b2dfd2db333200fd02711ebf9619fd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 23:41:22&lt;/sys_updated_on&gt;&lt;type&gt;service&lt;/type&gt;&lt;/sp_angular_provider&gt;&lt;/record_update&gt;</payload>
+<payload_hash>967679250</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>bee4f326dbb73200fd02711ebf9619fb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d29ba9fe00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peFormManager</target_name>
+<type>Widget Angular Provider</type>
+<update_domain>global</update_domain>
+<update_guid>ebb67e6aa87732009d6eab04aa3926fa</update_guid>
+<update_guid_history>ebb67e6aa87732009d6eab04aa3926fa:967679250,2aa6766a667732001541e65031ed271f:937030597,918632aa9a773200ee604c18cce64a94:-1223065723,7b26766a257732008d985b747a51921c:-393098175,395532e62d773200ba5f7af12692588c:2037271366,439176e643773200b5e827dd2be61286:937030597,36b032e6d7773200c7afaa9956be2884:1576777335,edb07ea637773200008b02ed5b742245:-1604071753,88407ea6db773200f4b12b32ee59fb9c:1162293045,fa307ea6ce7732006e132c6b8de94599:-1220283123,9e20b6a66a773200c955f99fd13db004:-1524410329,e62aa4a682b33200f094c8ca25cbf3c0:2132832184,66d8e866a7b33200d20518d48731247f:1013413401,5158a4a658b3320029beddeec70e35b2:90123683,6917a4a688b33200b72f2fcf9fb43bbc:2132832184,3b07ec2617b33200c72708d436117180:696456231,abe6e4666cb3320071b437ebe69cbc9d:420664146,baa3d716e533320009dfa3a9b06b16cf:496505694,1ee253164e333200c49a71beff28d2fc:1822191522,b0d29fd24c333200b1badc2fc4b58e6d:58591624</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_a68217d2db333200fd02711ebf961969</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;pec-form&lt;/id&gt;&lt;sp_widget display_value="Progressive Form"&gt;2a315b92db333200fd02711ebf961963&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:04:26&lt;/sys_created_on&gt;&lt;sys_id&gt;a68217d2db333200fd02711ebf961969&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;pec-form&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_a68217d2db333200fd02711ebf961969&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 13:04:31&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+    &lt;div ng-if="formModel._sections == null || formModel._sections.length == 0"
+         ng-init="execItemScripts()"&gt;&lt;/div&gt;
+    &lt;pe-concertina-section&gt;
+        &lt;div pe-concertina
+             pec-ns="main"
+             pec-title="{{::containers[0].captionDisplay}}"
+             pec-expanded="{{($index == 0)}}"
+             pec-show-next="true"
+             ng-repeat="containers in sections"&gt;
+            &lt;sp-variable-layout&gt;&lt;/sp-variable-layout&gt;
+        &lt;/div&gt;
+    &lt;/pe-concertina-section&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-397485376</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>f2e4f326dbb73200fd02711ebf9619fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d277392780000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>pec-form</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>3af4ec2657b33200c0c90cc092c46b76</update_guid>
+<update_guid_history>3af4ec2657b33200c0c90cc092c46b76:-397485376,8af4e8e2abb332003ecf8bce3121483d:-1265853739,60d42c266fb3320068d92619f68f2781:-1087811829,d0865f5629333200af453e415d76e1fd:-1774813372,d2929fd22c333200d47c95d5fe20fae2:516757696,7b825fd24c3332001ca55fa43095c1d7:-15331176</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_angular_provider_cad21316db333200fd02711ebf96198f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_angular_provider"&gt;&lt;sp_angular_provider action="INSERT_OR_UPDATE"&gt;&lt;name&gt;peConcertinaForm&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function peConcertinaFormDirective ($timeout, peFormManager) {
+
+	var link = function (scope, elem, attrs) {
+
+		$timeout(function () {
+
+			var spModelScope = elem.isolateScope();
+			var g_form = spModelScope.getGlideForm();
+
+			(attrs.pefMaster === 'true') ? peFormManager.registerMaster(g_form) : peFormManager.registerChild(scope.$id, g_form);
+
+			scope.$on('pec.toggleDelete', function () {
+				peFormManager.toggleDelete(scope.$id);
+			});
+
+		}, 0);
+
+	};
+
+	return {
+		link: link,
+		require: 'spModel'
+	};
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sp_angular_provider&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:05:46&lt;/sys_created_on&gt;&lt;sys_id&gt;cad21316db333200fd02711ebf96198f&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;peConcertinaForm&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_angular_provider_cad21316db333200fd02711ebf96198f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 13:11:17&lt;/sys_updated_on&gt;&lt;type&gt;directive&lt;/type&gt;&lt;/sp_angular_provider&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1231063615</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>f6e4f326dbb73200fd02711ebf9619fc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d2779c1a40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peConcertinaForm</target_name>
+<type>Widget Angular Provider</type>
+<update_domain>global</update_domain>
+<update_guid>a586ec2694b332008d3dc9a983c30479</update_guid>
+<update_guid_history>a586ec2694b332008d3dc9a983c30479:-1231063615,e486e8660cb332003d7430343da8587b:-965908107,6c85e8e2d4b33200b1951b8d2d76f131:-455525818,2164e8e233b332005f5eb08ee31bf62e:-1231063615,31026c2236b3320028c85d77d699ca80:-229663490,3da3d71618333200244a040a7ecbe672:170051371,2bd2dfd2e033320084958db1c2d458f2:-1909920486</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_angular_provider_1fe2dfd2db333200fd02711ebf96196c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_angular_provider"&gt;&lt;sp_angular_provider action="INSERT_OR_UPDATE"&gt;&lt;name&gt;peConcertinaManager&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function peConcertinaManagerService () {
+
+	var sections = [],
+		elements = [],
+		unlocked = [];
+
+	/**
+	 *
+	 * @param namespace
+	 */
+	this.unlock = function (namespace) {
+		unlocked[namespace] = true;
+	};
+
+	/**
+	 * Register a new "Concertina" panel
+	 * @param id            The angular scope ID of the panel
+	 * @param namespace     A namespace so you can have multiple concertinas on the page
+	 * @param elems         All the concertina panels currently on the page (so we can number the concertinas)
+	 * @param expanded      Whether this panel is expanded initially
+	 */
+	this.register = function (id, namespace, elems, expanded) {
+
+		(typeof sections[namespace] === 'undefined') ? sections[namespace] = [] : '';
+		(typeof elements[namespace] === 'undefined') ? elements[namespace] = [] : '';
+
+		elements[namespace] = elems;
+
+		sections[namespace].push({
+			id: id,
+			visited: expanded || unlocked[namespace],
+			expanded: expanded
+		});
+	};
+
+	/**
+	 * Close all concertina panels
+	 * @param namespace
+	 */
+	this.closeAll = function (namespace) {
+
+		sections[namespace].forEach(function (currentValue, index) {
+			sections[namespace][index].expanded = false;
+		});
+
+	};
+
+
+	/**
+	 * Toggle a concertina panel between expanded/contracted states
+	 * @param id
+	 * @param namespace
+	 */
+	this.toggle = function (id, namespace) {
+
+		var i = findIndex(id, namespace);
+
+		if (sections[namespace][i].visited === true || unlocked[namespace] === true) {
+			sections[namespace].forEach(function (currentValue, index) {
+				sections[namespace][index].expanded = index === i ? !sections[namespace][index].expanded : false;
+			});
+		}
+	};
+
+
+	/**
+	 * Expand the next concertina panel
+	 * @param id
+	 * @param namespace
+	 */
+	this.next = function (id, namespace) {
+
+		var isCurrent = false,
+			nextItem;
+
+		elements[namespace].each(function (index, element) {
+
+			var elemId = angular.element(element).isolateScope().$id;
+
+			if (isCurrent === true) {
+				nextItem = elemId;
+				return false;
+			}
+
+			if (elemId === id) {
+				isCurrent = true;
+			}
+
+		});
+
+		var curIndex = findIndex(id, namespace);
+		var nextIndex = findIndex(nextItem, namespace);
+
+		sections[namespace][curIndex].expanded = false;
+		sections[namespace][nextIndex].expanded = true;
+		sections[namespace][nextIndex].visited = true;
+
+	};
+
+
+	/**
+	 * Get the section number as it appears in the DOM
+	 * @param id
+	 * @param namespace
+	 * @returns {number}
+	 */
+	this.getSectionNumber = function (id, namespace) {
+		var count = 0;
+
+		elements[namespace].each(function (index, element) {
+
+			count++;
+
+			if (typeof angular.element(element).isolateScope() !== 'undefined') {
+
+				var elemId = angular.element(element).isolateScope().$id;
+
+				if (elemId === id) {
+					return false;
+				}
+
+			}
+
+		});
+
+		return count;
+	};
+
+	/**
+	 *
+	 * @param id
+	 * @param namespace
+	 * @returns {boolean}
+	 */
+	this.isExpanded = function (id, namespace) {
+		var index = findIndex(id, namespace);
+		return sections[namespace][index].expanded;
+	};
+
+	/**
+	 *
+	 * @param id
+	 * @param namespace
+	 * @returns {boolean}
+	 */
+	this.isVisited = function (id, namespace) {
+		var index = findIndex(id, namespace);
+		return sections[namespace][index].visited;
+	};
+
+	/**
+	 *
+	 * @param id
+	 * @param namespace
+	 * @returns {number}
+	 */
+	function findIndex(id, namespace) {
+		return sections[namespace].findIndex(function (element) {
+			return element.id === id;
+		})
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sp_angular_provider&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:06:12&lt;/sys_created_on&gt;&lt;sys_id&gt;1fe2dfd2db333200fd02711ebf96196c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;peConcertinaManager&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_angular_provider_1fe2dfd2db333200fd02711ebf96196c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 07:09:07&lt;/sys_updated_on&gt;&lt;type&gt;service&lt;/type&gt;&lt;/sp_angular_provider&gt;&lt;/record_update&gt;</payload>
+<payload_hash>448623649</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>fae4f326dbb73200fd02711ebf9619fb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d262e313c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peConcertinaManager</target_name>
+<type>Widget Angular Provider</type>
+<update_domain>global</update_domain>
+<update_guid>aca3d716dc333200daed31ae93c07c6f</update_guid>
+<update_guid_history>aca3d716dc333200daed31ae93c07c6f:448623649,fdf293167e3332006874c39fc77fb63d:1354498402</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_e992ecaedb733200fd02711ebf96194c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="peConcertinaForm">cad21316db333200fd02711ebf96198f</sp_angular_provider><sp_widget display_value="Progressive Form">2a315b92db333200fd02711ebf961963</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-09 12:54:05</sys_created_on><sys_id>e992ecaedb733200fd02711ebf96194c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>peConcertinaForm.Progressive Form</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_e992ecaedb733200fd02711ebf96194c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-09 12:54:05</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>-658515108</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>fee4f326dbb73200fd02711ebf9619fa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d276a021d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>peConcertinaForm.Progressive Form</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>2992ecae7673320045d1e9152e2cac4d</update_guid>
+<update_guid_history>2992ecae7673320045d1e9152e2cac4d:-658515108</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_d294d356db333200fd02711ebf9619e7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PRB827724-workaround&lt;/name&gt;&lt;script&gt;&lt;![CDATA[try {
+angular.module('ng_spd').config(function(lazyLoaderProvider, $provide, $compileProvider, $controllerProvider){
+lazyLoaderProvider.set({
+register: $controllerProvider.register,
+directive: $compileProvider.directive,
+factory: $provide.factory,
+value: $provide.value,
+service: $provide.service
+});
+});
+}catch(e){}]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-09 07:13:29&lt;/sys_created_on&gt;&lt;sys_id&gt;d294d356db333200fd02711ebf9619e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PRB827724-workaround&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_d294d356db333200fd02711ebf9619e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-09 07:13:29&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1612632906</payload_hash>
+<remote_update_set display_value="(PE) Progressive Form">7ee4f326dbb73200fd02711ebf9619f9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-07-10 04:13:02</sys_created_on>
+<sys_id>fee4f326dbb73200fd02711ebf9619fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d263230fc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-07-10 04:13:02</sys_updated_on>
+<table/>
+<target_name>PRB827724-workaround</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>a8a45b16f53332001c90c121b10372a1</update_guid>
+<update_guid_history>a8a45b16f53332001c90c121b10372a1:-1612632906</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

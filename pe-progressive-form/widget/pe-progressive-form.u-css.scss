@@ -1,0 +1,175 @@
+$button-background: #757575 !default;
+$button-color: #fff !default;
+$button-hover-background: #3a3f51 !default;
+$button-hover-color: #fff !default;
+
+.pepf-header {
+  font-size: 20px;
+  margin: 40px 0 20px 0;
+}
+
+.pepf-body {
+  padding-bottom: 40px;
+}
+
+.pec-content {
+  border-radius: 10px;
+  background-color: #fafafa;
+  padding: 40px 20px 20px 20px;
+}
+
+.pec-wrap {
+  max-height: 0px;
+  overflow-y: hidden;
+}
+
+.pepf-actions {
+  padding: 20px;
+  text-align: center;
+  margin: 5px 0;
+
+
+  button {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: $button-background;
+    color: $button-color;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 5px 0;
+
+    &:hover {
+      background-color: $button-hover-background;
+      color: $button-hover-color;
+    }
+  }
+
+  .pepf-minor, .pec-minor {
+    background-color: white;
+    color: black;
+    border: 1px solid #757575;
+  }
+
+  .pepf-minor:hover, .pec-minor:hover {
+    background-color: $button-hover-background;
+    color: $button-hover-color;
+  }
+}
+
+.pec-section {
+  position: relative;
+}
+
+.pec-child {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  h3 {
+    margin: 0;
+    border-radius: 7px 7px 0 0;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 16px;
+  }
+
+  .pec-content {
+    padding: 10px;
+  }
+}
+
+.pec-parent {
+
+  position: relative;
+
+  padding-top: 35px;
+  padding-left: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  & > .pec-head {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 7px 20px 7px 7px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 10;
+
+    .pec-num {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 16px;
+      text-align: center;
+      background-color: $button-background;
+      color: $button-color;
+      float: left;
+      margin-right: 10px;
+    }
+    h2 {
+      font-size: 16px;
+      line-height: 32px;
+      float: left;
+      margin: 0;
+      min-width: 150px;
+    }
+  }
+}
+
+
+pe-concertina-section legend {
+  display: none;
+}
+
+.pec-edit {
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: $button-background;
+  color: $button-color;
+  float: left;
+  padding: 0 15px;
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 15px;
+}
+
+.pec-head:hover .pec-edit {
+  background-color: $button-hover-background;
+  color: $button-hover-color;
+}
+
+.pec-inactive {
+  opacity: 0.5;
+
+  .pec-head {
+    cursor: default;
+  }
+
+  .pec-edit {
+    visibility: hidden;
+  }
+}
+
+.pec-delete {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 25px;
+  line-height: 38px;
+
+  &:hover{
+    color: rgb(206,28,32);
+  }
+}
+
+.pec-to-delete {
+  color: rgb(206,28,32);
+}
