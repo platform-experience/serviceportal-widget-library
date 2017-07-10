@@ -11,9 +11,7 @@ Features:
 - UI Policy, UI Scripts, and Form Layouts are supported as per the out of box form widget.
 
 ## Screenshots
-<kbd><img src="../images/pe-progressive-form.png" /></kbd>
-<kbd><img src="../images/pe-progressive-form-2.png" /></kbd>
-<kbd><img src="../images/pe-progressive-form-3.png" /></kbd>
+<kbd><img src="../images/pe-progressive-form.gif" /></kbd>
 
 ## Additional Information/Notes 
 - This widget creates numbered ”Concertina” panels for each form section, plus an additional final panel for the child (related) records. The final panel also contains the submit button.
