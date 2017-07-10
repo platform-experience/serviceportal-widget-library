@@ -17,7 +17,7 @@ Features:
 
 ## Additional Information/Notes 
 - This widget creates numbered ”Concertina” panels for each form section, plus an additional final panel for the child (related) records. The final panel also contains the submit button.
-- As with the out of box "Form" widget, use the `sys_id` URL parameter to specify the record to open.
+- As with the out of box "Form" widget, use the `sys_id` URL parameter to specify the record to open. Not supplying this parameter will result in a new master record being created upon submission of the form.
 - Ensure the tables your editing have corresponding server-side UI Actions with the appropriate action names.
 
 ---
