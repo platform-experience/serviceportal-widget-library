@@ -4,10 +4,24 @@ function PushNotificationsController($window, $scope) {
   var d1 = new Date();
   var d = new Date();
 
-  c.show = false;
-  if ($scope.$root.portal)
-    c.show = true;
 
+
+
+  var isMobile = {
+    Android: function () {
+      return navigator.userAgent.match(/Android/i);
+    },
+    iOS: function () {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    any: function () {
+      return (isMobile.Android() || isMobile.iOS());
+    }
+  };
+
+  c.show = false;
+  if ($scope.$root.portal && (isMobile.iOS() || isMobile.Android()))
+    c.show = true;
   if (!c.data.notification.date) {
     d1 = new Date();
     d = new Date();
@@ -30,7 +44,7 @@ function PushNotificationsController($window, $scope) {
       minute: '2-digit'
     });
   }
-
+  console.log('c.data.background_image = ' + c.data.notification.background_image);
   if (c.data.notification.background_image) {
     if (c.data.notification.background_image.length > 0)
       document.getElementById('main-container').style.backgroundImage = "url(" + c.data.notification.background_image + ")";
