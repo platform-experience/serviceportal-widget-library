@@ -1,5 +1,7 @@
-function ConfigurableOverlayController($scope) { /* widget controller */
+function ConfigurableOverlayController() {
   var c = this;
-  //c.overlay = true;
-  c.overlay = true;
+
+  c.$onInit = function() {
+    c.overlay = true;
+  };
 }

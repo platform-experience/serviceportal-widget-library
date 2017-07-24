@@ -1,7 +1,4 @@
-(function () {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
+(function() {
   data.sampleSet = {};
 
   var ret = new GlideRecord('sc_cat_item');
@@ -13,5 +10,4 @@
     data.sampleSet.picture = ret.getDisplayValue('picture');
     data.sampleSet.state = 'Transfer Service';
   }
-
 })();
