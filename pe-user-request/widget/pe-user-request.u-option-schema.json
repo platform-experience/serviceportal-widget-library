@@ -1,17 +1,21 @@
 [{
   "name": "header",
   "label": "Header",
-  "type": "string"
+  "type": "string",
+  "default_value": "Request requires approval"
 }, {
   "name": "show_only_pic",
   "label": "Show Only Picture",
-  "type": "boolean"
+  "type": "boolean",
+  "default_value": "false"
 }, {
   "name": "show_job_title",
   "label": "Show Job Title",
-  "type": "boolean"
+  "type": "boolean",
+  "default_value": "true"
 }, {
   "name": "show_call_chat",
   "label": "Show Call & Chat",
-  "type": "boolean"
+  "type": "boolean",
+  "default_value": "false"
 }]
