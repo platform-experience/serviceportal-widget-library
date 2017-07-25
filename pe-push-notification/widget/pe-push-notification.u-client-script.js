@@ -1,8 +1,6 @@
 function PushNotificationsController($window, $scope) {
   /* widget controller */
   var c = this;
-  var d1 = new Date();
-  var d = new Date();
 
   var isMobile = {
     Android: function () {
@@ -21,29 +19,13 @@ function PushNotificationsController($window, $scope) {
     c.show = true;
 
   if (c.show) {
+    c.current_date = new Date().toISOString();
 
-    if (!c.data.notification.date) {
-      d1 = new Date();
-      d = new Date();
-      d.setUTCFullYear(d1.getFullYear());
-      d.setUTCMonth(d1.getMonth());
-      d.setUTCDate(d1.getDate());
-      c.data.notification.date = d.toLocaleDateString($window.navigator.language, {
-        weekday: 'long',
-        day: 'numeric',
-        month: 'long'
-      });
-    }
+    if (!c.data.notification.date)
+      c.data.notification.date = c.current_date;
 
     if (!c.data.notification.time) {
-      d1 = new Date();
-      d = new Date();
-      d.setUTCHours(d1.getHours());
-      d.setUTCMinutes(d1.getMinutes());
-      c.data.notification.time = d.toLocaleTimeString($window.navigator.language, {
-        hour: '2-digit',
-        minute: '2-digit'
-      });
+      c.data.notification.time = c.current_date;
     }
 
     if (c.data.notification.background_image) {

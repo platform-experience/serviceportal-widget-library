@@ -22,8 +22,8 @@
       </div>
     </div>
     <div class="home-container">
-      <div class="home-time">{{data.notification.time}}</div>
-      <div class="home-date">{{data.notification.date}}</div>
+      <div class="home-time">{{data.notification.time | date:'hh:mm'}}</div>
+      <div class="home-date">{{data.notification.date | date:'EEEE d MMMM'}}</div>
     </div>
     <div class="notifications-container">
       <div class="notification-container">
