@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id='svg-feedback' width="38" height="38" viewBox="0 0 38 38" fill="none" fill-rule="evenodd"  stroke-linejoin="round" transform="translate(1 1)">
+    <circle cx="6.75" cy="29.223" r="2.25"/>
+    <path d="M24 .723c-4.393 0-7.719 2.466-9.735 6.112a8.417 8.417 0 0 0-4.947-1.612C4.586 5.223.75 9.141.75 13.973c0 4.831 3.835 8.749 8.568 8.749.104 0 .204-.012.308-.015 1.546 2.274 4.119 3.765 7.036 3.765 2.07 0 3.969-.75 5.451-1.998.771.162 1.567.249 2.384.249 6.49 0 10.753-5.373 10.753-12s-4.76-12-11.25-12z"/>
+    <circle cx="10.5" cy="14.973" r="1"/>
+    <circle cx="18" cy="14.973" r="1"/>
+    <circle cx="25.5" cy="14.973" r="1"/>
+    <circle cx="1.5" cy="34.473" r="1"/>
+  </symbol>
+  <symbol id='svg-close' width="20" height="20"  version="1.1" xml:space="preserve">
+    <path d="M19.670111740043737,0.34607220229486296 c-0.34508967995700446,-0.3460722128258089 -0.8914816732222592,-0.3460722128258089 -1.2078138798495113,0 L10.007600701247654,8.824841416527155 L1.5529035423010784,0.34607220229486296 c-0.34508967995700446,-0.3460722128258089 -0.8914816732222592,-0.3460722128258089 -1.2078138798495113,0 c-0.34508967995700446,0.3460722128258089 -0.34508967995700446,0.8940198831333392 0,1.2112527448903279 L8.79978682139814,10.036094161417484 L0.34508966245156697,18.514863375649785 c-0.34508967995700446,0.3460722128258089 -0.34508967995700446,0.8940198831333392 0,1.2112527448903279 c0.17254483997850176,0.17303610641290437 0.4026046266165037,0.2595541596193563 0.6039069399247559,0.2595541596193563 s0.4313620999462558,-0.08651805320645223 0.6039069399247559,-0.2595541596193563 L10.007600701247654,11.247346906307813 l8.454697158946574,8.478769214232294 c0.17254483997850176,0.17303610641290437 0.4026046266165037,0.2595541596193563 0.6039069399247559,0.2595541596193563 s0.4313620999462558,-0.08651805320645223 0.6039069399247559,-0.2595541596193563 c0.34508967995700446,-0.3460722128258089 0.34508967995700446,-0.8940198831333392 0,-1.2112527448903279 L11.215414581097166,10.036094161417484 l8.454697158946574,-8.478769214232294 C20.015201420000743,1.211252734359382 20.015201420000743,0.6921444151206726 19.670111740043737,0.34607220229486296 z"/>
+  </symbol>
+</svg>
+
+<div ng-show="{{::c.data.options.showFormButton}}" class="hover-bottom" ng-style="fbDIVStyle">
+    <button data-toggle="modal" data-target="#feedbackModal" role="button" class='hover-button' ng-style="fbButtonStyle">
+    <svg class='icon-feedback'><use xlink:href='#svg-feedback'></use></svg>
+  </button>
+    <div class='hover-label' ng-style="fbLabelStyle">Feedback</div>
+</div>
+
+<button ng-show="{{::c.data.options.showFormButton}}" id="feedbackButton" class="btn btn-primary" ng-style="fbButtonStyle" data-toggle="modal" data-target="#feedbackModal" role="button"><span>Feedback</span></button>
+
+<div class="hug-right" ng-show="{{::c.data.options.showFormButton}}" ng-style="fbDIVStyle">
+    <div class='hug-label' data-toggle="modal" data-target="#feedbackModal" role="button" ng-style="fbLabelStyle">FEEDBACK</div>
+</div>
+
+
+<div id="feedbackModal" class="modal fade" role="dialog" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content" ng-hide='feedbackSubmitted'>
+            <form ng-model="feedback" role="form" aria-invalid="false">
+                <!-- Header -->
+                <div ng-if="!feedbackSubmitted || !autoHide" class="modal-header">
+                    <button ng-disabled="feedbackSubmitting" type="button" class="close" data-dismiss="modal" role="button"><svg class='icon-close'><use xlink:href='#svg-close'></use></svg></button>
+                    <div class='fb-title'><i class="fa {{::c.data.options.hdrIcon}}" ng-if='c.data.options.hdrIcon' aria-hidden="true"></i>{{::c.data.options.hdrTitle}}</div>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <div class='body-inputs' ng-if="!feedbackSubmitted">
+                        <!-- Who -->
+                        <div ng-show="{{::c.data.options.showWho}}">
+                            <div class='left-input'>
+                                <label for='feedbackWho'>Name</label>
+                                <input name="feedbackWho" id="feedbackWho" ng-model='feedback.who' class="form-control" placeholder="John" role="textbox" aria-invalid="false" />
+                            </div>
+                            <div class='left-input'>
+                                <label for='feedbackEmail'>Email</label>
+                                <input name="feedbackEmail" id="feedbackEmail" ng-model='feedback.email' ng-change="resetError()" class="form-control" placeholder="john@email.com" role="textbox" aria-invalid="false" />
+                            </div>
+                        </div>
+                        <div class='fb-spacer'>
+                            <!-- Text entry -->
+                            <label for="feedbackTextInput">Comments/Questions</label>
+                            <textarea name="feedbackTextInput" id="feedbackTextInput" ng-model="feedback.text" class="form-control" placeholder="Type feedback here" role="textbox" aria-invalid="false"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div ng-if="!feedbackSubmitted" class="modal-footer">
+                    <button type="button" class="fb-cancel" ng-disabled="feedbackSubmitting" data-dismiss="modal" role="button">Cancel</button>
+                    <button type="button" class="fb-submit" role="button" ng-disabled="feedback.text.length == 0 || feedback.who.length == 0 || feedback.email.length == 0 || feedbackSubmitting" ng-click="submitFeedback()">Submit Feedback</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- Feedback Submitted / Error -->
+        <div ng-if="feedbackSubmitted || feedbackError">
+            <div ng-if="feedbackSubmitted">
+                <div class="alert alert-success" role="alert">
+                    {{::c.data.options.txtTYMsg}}
+                </div>
+            </div>
+            <div ng-if="feedbackError">
+                <div class="alert alert-danger" role="alert">
+                    Error: {{::ErrMsg}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
