@@ -1,47 +1,58 @@
-## Incident Message
+# Incident Message
 
 ## Description
 
-This widget can be used to quickly craft an incident message or alert with configurable options.
+This widget can be used to quickly craft an incident or problem message with configuration.
 
 ## Screenshots
 ![](../images/pe-incident-message.png)
 
-## Additional Information/Notes 
-> None
+## Additional Information/Notes
+
+A sample problem record is created and displayed by default. To display another problem, set the problem number option.
+
 ---
+
 ## Installation
----
+
 Download and install update set **[pe-incident-message.u-update-set.xml](pe-incident-message.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+
 ---
+
 ## Configuration
----
+
 Widget Option Schema parameters:
 
-**"Title"** This is for changing the title in the panel header.<br/>
-**"Message Time"** This is for displaying the incident message time.<br/>
-**"Message Header"** This is for displaying the message header in the panel body.<br/>
-**"Message Body"** This is for displaying the message body in the panel body.<br/>
+**"Problem Number"** This is the problem number which is used to display problem data. If one is not provided, the default sample problem data will be displayed.<br/>
 
 ---
+
 ## Platform Dependencies
----
-> None
----
-## Sample Data and Data Structures
----
-Sample data is provided as JSON objects in the Server Script.
+
+### SN System Tables
+* problem
+* sys_ui_message
 
 ---
+
+## Sample Data and Data Structures
+
+> See 'Configuration' above
+
+---
+
 ## API Dependencies
----
+
 <i>Dependencies are included and configured as part of the provided Update Set.</i>
-> None
+* PE Incident Module
+* PE Incident Service
+
 ---
+
 ## CSS/SASS Variables
----
+
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
 `$pe-status-color-danger: #6b0022 !default;`<br/>

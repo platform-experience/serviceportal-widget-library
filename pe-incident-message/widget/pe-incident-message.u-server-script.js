@@ -1,7 +1,31 @@
 (function() {
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.title = options.title || serverOptions.title || 'Torrentjack Ransomware';
-  options.messageTime = options.message_time || serverOptions.message_time || '38m ago';
-  options.messageHeader = options.message_header || serverOptions.message_header || 'SIR0001932 - TorrentJack Ransomware';
-  options.messageBody = options.message_body || serverOptions.message_body || 'Palo Alto Wildefire detected 1631 emails tied to a phishing attack.';
+  options.problemNumber = options.problem_number || serverOptions.problem_number;
+
+  var grMessages = new GlideRecord('sys_ui_message');
+  grMessages.addQuery('key', 'STARTSWITH', 'Problem Msg');
+  grMessages.query();
+
+  var messages = [];
+  while (grMessages.next()) {
+    messages.push(grMessages.message.toString());
+  }
+
+  var grProblem = new GlideRecord('problem');
+  grProblem.addQuery('number', options.problem_number);
+  grProblem.query();
+
+  if (!grProblem.next() && grProblem.number !== options.problem_number) {
+    grProblem.initialize();
+    grProblem.number = options.problemNumber;
+    grProblem.priority = 1;
+    grProblem.short_description = messages[1];
+    grProblem.description = messages[0];
+    grProblem.insert();
+  }
+
+  data.problemNumber = grProblem.number.toString();
+  data.problemTime = grProblem.opened_at.toString();
+  data.messageHeader = grProblem.short_description.toString();
+  data.messageBody = grProblem.description.toString();
 })();

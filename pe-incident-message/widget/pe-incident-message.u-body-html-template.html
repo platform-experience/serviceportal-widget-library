@@ -1,12 +1,14 @@
 <div class="row incident-message">
   <div class="col-xs-12">
     <div class="panel panel-default">
-      <div class="panel-heading panel-header-high-risk">{{::options.title}}
-        <span class="badge">{{::options.messageTime}}</span>
+      <div class="panel-heading panel-header-high-risk">{{::c.data.messageHeader}}
+        <span class="badge">
+          <span ng-if="c.timeAgo.hours > 0">{{c.timeAgo.hours}}h</span> {{c.timeAgo.minutes}}m ago
+        </span>
       </div>
       <div class="panel-body panel-body-high-risk">
-        <p><i class="status-circle-small-left"></i>{{options.messageHeader}}</p>
-        <p class="status-message">{{options.messageBody}}</p>
+        <p><i class="status-circle-small-left"></i>{{::c.data.problemNumber}} - {{::c.data.messageHeader}}</p>
+        <p class="status-message">{{::c.data.messageBody}}</p>
       </div>
     </div>
   </div>
