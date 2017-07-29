@@ -2,9 +2,11 @@
   <div class="col-xs-12">
     <div class="panel panel-default">
       <div class="panel-heading panel-header-high-risk">{{::c.data.messageHeader}}
-        <span class="badge">
-          <span ng-if="c.timeAgo.hours > 0">{{c.timeAgo.hours}}h</span> {{c.timeAgo.minutes}}m ago
-        </span>
+        <section class="badge">
+          <span ng-if="c.timeAgo.hours >= 24">{{c.timeAgo.days}}d</span>
+          <span ng-if="c.timeAgo.hours > 0 && c.timeAgo.hours < 24">{{c.timeAgo.hours}}h</span>
+          <span ng-if="c.timeAgo.hours < 24">{{c.timeAgo.minutes}}m</span> ago
+        </section>
       </div>
       <div class="panel-body panel-body-high-risk">
         <p><i class="status-circle-small-left"></i>{{::c.data.problemNumber}} - {{::c.data.messageHeader}}</p>
