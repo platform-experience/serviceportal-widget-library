@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-07-31 13:30:36">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-maps-ngmap</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d23b1d251350c3001c6a7f176144b025</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2017-07-31 13:30:36</sys_created_on>
+<sys_id>8fedb1651390c3001c6a7f176144b091</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2017-07-31 13:30:36</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_f354d6a7136432007e94fc5ed144b0d3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;js-map-label&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/*
+
+
+	 Copyright 2011 Google Inc.
+
+	 Licensed under the Apache License, Version 2.0 (the "License");
+	 you may not use this file except in compliance with the License.
+	 You may obtain a copy of the License at
+
+	 http://www.apache.org/licenses/LICENSE-2.0
+
+	 Unless required by applicable law or agreed to in writing, software
+	 distributed under the License is distributed on an "AS IS" BASIS,
+	 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 See the License for the specific language governing permissions and
+	 limitations under the License.
+	*/
+	var d = "prototype";
+
+	function e(a) {
+		this.set("fontFamily", "sans-serif");
+		this.set("fontSize", 12);
+		this.set("fontColor", "#000000");
+		this.set("strokeWeight", 4);
+		this.set("strokeColor", "#ffffff");
+		this.set("align", "center");
+		this.set("zIndex", 1E3);
+		this.setValues(a)
+	}
+	e.prototype = new google.maps.OverlayView;
+	window.MapLabel = e;
+	e[d].changed = function(a) {
+		switch (a) {
+			case "fontFamily":
+			case "fontSize":
+			case "fontColor":
+			case "strokeWeight":
+			case "strokeColor":
+			case "align":
+			case "text":
+				return h(this);
+			case "maxZoom":
+			case "minZoom":
+			case "position":
+				return this.draw()
+		}
+	};
+
+	function h(a) {
+		var b = a.a;
+		if (b) {
+			var f = b.style;
+			f.zIndex = a.get("zIndex");
+			var c = b.getContext("2d");
+			c.clearRect(0, 0, b.width, b.height);
+			c.strokeStyle = a.get("strokeColor");
+			c.fillStyle = a.get("fontColor");
+			c.font = a.get("fontSize") + "px " + a.get("fontFamily");
+			var b = Number(a.get("strokeWeight")),
+				g = a.get("text");
+			if (g) {
+				if (b) c.lineWidth = b, c.strokeText(g, b, b);
+				c.fillText(g, b, b);
+				a: {
+					c = c.measureText(g).width + b;
+					switch (a.get("align")) {
+						case "left":
+							a = 0;
+							break a;
+						case "right":
+							a = -c;
+							break a
+					}
+					a = c / -2
+				}
+				f.marginLeft = a + "px";
+				f.marginTop =
+					"-0.4em"
+			}
+		}
+	}
+	e[d].onAdd = function() {
+		var a = this.a = document.createElement("canvas");
+		a.style.position = "absolute";
+		var b = a.getContext("2d");
+		b.lineJoin = "round";
+		b.textBaseline = "top";
+		h(this);
+		(b = this.getPanes()) &amp;&amp; b.mapPane.appendChild(a)
+	};
+	e[d].onAdd = e[d].onAdd;
+	e[d].draw = function() {
+		var a = this.getProjection();
+		if (a &amp;&amp; this.a) {
+			var b = this.get("position");
+			if (b) {
+				b = a.fromLatLngToDivPixel(b);
+				a = this.a.style;
+				a.top = b.y + "px";
+				a.left = b.x + "px";
+				var b = this.get("minZoom"),
+					f = this.get("maxZoom");
+				if (b === void 0 &amp;&amp; f === void 0) b = "";
+				else {
+					var c = this.getMap();
+					c ? (c = c.getZoom(), b = c &lt; b || c &gt; f ? "hidden" : "") : b = ""
+				}
+				a.visibility = b
+			}
+		}
+	};
+	e[d].draw = e[d].draw;
+	e[d].onRemove = function() {
+		var a = this.a;
+		a &amp;&amp; a.parentNode &amp;&amp; a.parentNode.removeChild(a)
+	};
+	e[d].onRemove = e[d].onRemove;
+})()]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-01 10:21:36&lt;/sys_created_on&gt;&lt;sys_id&gt;f354d6a7136432007e94fc5ed144b0d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;js-map-label&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_f354d6a7136432007e94fc5ed144b0d3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-31 11:05:29&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>452891938</payload_hash>
+<remote_update_set display_value="pe-maps-ngmap">8fedb1651390c3001c6a7f176144b091</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2017-07-31 13:30:36</sys_created_on>
+<sys_id>03edb1651390c3001c6a7f176144b093</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d98527ec50000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2017-07-31 13:30:36</sys_updated_on>
+<table/>
+<target_name>js-map-label</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>a1bc55654550c300f15648e1fa936cf9</update_guid>
+<update_guid_history>a1bc55654550c300f15648e1fa936cf9:452891938,24bc19655e50c30020c79fdc73ec3a21:-1707122184,bff98654849c43000a9634c537995708:-194847398</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_2a9392a7136432007e94fc5ed144b036</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>https://maps.googleapis.com/maps/api/js?key=AIzaSyAkL42Jsu4-nhpely1KJulcL73JfhJLK68</display_name><source>url</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio.petito_SHARE</sys_created_by><sys_created_on>2017-02-01 10:19:41</sys_created_on><sys_id>2a9392a7136432007e94fc5ed144b036</sys_id><sys_mod_count>2</sys_mod_count><sys_name>https://maps.googleapis.com/maps/api/js?key=AIzaSyAkL42Jsu4-nhpely1KJulcL73JfhJLK68</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script/><sys_update_name>sp_js_include_2a9392a7136432007e94fc5ed144b036</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2017-07-31 11:06:21</sys_updated_on><url>https://maps.googleapis.com/maps/api/js?key=AIzaSyAkL42Jsu4-nhpely1KJulcL73JfhJLK68</url></sp_js_include></record_update>]]></payload>
+<payload_hash>2093890300</payload_hash>
+<remote_update_set display_value="pe-maps-ngmap">8fedb1651390c3001c6a7f176144b091</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2017-07-31 13:30:36</sys_created_on>
+<sys_id>07edb1651390c3001c6a7f176144b092</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d98534b500000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2017-07-31 13:30:36</sys_updated_on>
+<table/>
+<target_name>https://maps.googleapis.com/maps/api/js?key=AIzaSyAkL42Jsu4-nhpely1KJulcL73JfhJLK68</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>5eec9965ed50c300afd2103f9778de6c</update_guid>
+<update_guid_history>5eec9965ed50c300afd2103f9778de6c:2093890300,d0ec1965d350c300f74143c66069594c:221318950,27f946546d9c43002649f8490deb64ff:-415308</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_d96312a7136432007e94fc5ed144b09c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>ngMap</module><name>Google Maps Extension</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>fabio.petito_SHARE</sys_created_by><sys_created_on>2017-02-01 10:17:31</sys_created_on><sys_id>d96312a7136432007e94fc5ed144b09c</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Google Maps Extension</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_d96312a7136432007e94fc5ed144b09c</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2017-07-31 11:02:36</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>532312150</payload_hash>
+<remote_update_set display_value="pe-maps-ngmap">8fedb1651390c3001c6a7f176144b091</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2017-07-31 13:30:36</sys_created_on>
+<sys_id>43edb1651390c3001c6a7f176144b092</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d984fdc4a0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2017-07-31 13:30:36</sys_updated_on>
+<table/>
+<target_name>Google Maps Extension</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>d30c9165b350c3004de1254d5aa28a18</update_guid>
+<update_guid_history>d30c9165b350c3004de1254d5aa28a18:532312150,a50c91651b50c30017c54cafaacdb467:-1023623010,2ff94654df9c4300f173e1ba6e48c7fd:-857645746</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_7054ce68db148300aa80d49fdf9619b6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function NdlNgMapController(NgMap, $scope, $timeout) {
+  /* widget controller */
+  var c = this;
+
+  c.cleanForm = function () {
+    c.data.place_origin = '';
+    c.data.place_destination = '';
+    c.data.map_zoom = 14;
+    c.data.transit_mode = c.data.transit_mode_all[0];
+  };
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.margin-top {
+  margin-top: 10px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-maps-ngmap&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Maps NgMap&lt;/name&gt;&lt;option_schema&gt;[{"name":"place_origin","label":"Origin","type":"string"},{"name":"place_destination","label":"Destination","type":"string"},{"name":"map_zoom","default_value":"14","label":"Map Zoom","type":"integer"},{"name":"transit_mode","default_value":"Walking","label":"Transit Mode","type":"choice","choices":[{"label":"Walking","value":"Walking"},{"label":"Bicycling","value":"Bicycling"},{"label":"Driving","value":"Driving"},{"label":"Transit","value":"Transit"}]}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  data.place_origin = input.place_origin || options.place_origin;
+  data.place_destination = input.place_destination || options.place_destination;
+  data.map_zoom = input.map_zoom || options.map_zoom;
+
+  data.transit_mode_all = [
+		'Walking',
+		'Bicycling',
+		'Driving',
+		'Transit',
+		''];
+
+  data.transit_mode = data.transit_mode_all[0];
+  
+	
+	if (!data.place_origin)
+    data.place_origin = '';
+
+  if (!data.place_destination)
+    data.place_destination = '';
+
+  if (!data.map_zoom)
+    data.map_zoom = 14;
+
+
+  data.form_visibility = true;
+  if( data.place_origin.length&gt;0 )
+    data.form_visibility = false;
+
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-28 11:24:55&lt;/sys_created_on&gt;&lt;sys_id&gt;7054ce68db148300aa80d49fdf9619b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;126&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Maps NgMap&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_7054ce68db148300aa80d49fdf9619b6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-31 13:30:24&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row margin-top" ng-if="data.form_visibility"&gt;
+  &lt;div class="col-md-4"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="text" class="form-control" placeholder="Origin" ng-model="data.place_origin"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-md-4"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="text" class="form-control" placeholder="Destination" ng-model="data.place_destination"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-md-2"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;select class="form-control" ng-options="item as item for item in data.transit_mode_all track by item" ng-model="data.transit_mode"&gt;&lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-md-1"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;input type="text" class="form-control" placeholder="Zoom level" ng-model="data.map_zoom"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="col-md-1"&gt;
+    &lt;a class="btn btn-primary" href="javascript:void(0)" role="button" ng-click="c.cleanForm()"&gt;Reset&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="row margin-top" ng-if="data.place_origin.length&gt;0 &amp;&amp; data.place_destination.length&gt;0"&gt;
+  &lt;ng-map&gt;
+    &lt;directions draggable="true" zoom="{{data.map_zoom}}" panel="directions-panel" travel-mode="{{data.transit_mode.toUpperCase()}}" origin="{{data.place_origin}}"
+      destination="{{data.place_destination}}"&gt;
+    &lt;/directions&gt;
+  &lt;/ng-map&gt;
+  &lt;div id="directions-panel" clas="row"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row margin-top" ng-if="data.place_origin.length&gt;0 &amp;&amp; data.place_destination.length==0"&gt;
+  &lt;ng-map zoom="{{data.map_zoom}}" center="{{data.place_origin}}" /&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1871337825</payload_hash>
+<remote_update_set display_value="pe-maps-ngmap">8fedb1651390c3001c6a7f176144b091</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2017-07-31 13:30:36</sys_created_on>
+<sys_id>4fedb1651390c3001c6a7f176144b092</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d98d72c9b0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2017-07-31 13:30:36</sys_updated_on>
+<table/>
+<target_name>PE Maps NgMap</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>d8edfd253a90c3008fd47c386e84181c</update_guid>
+<update_guid_history>d8edfd253a90c3008fd47c386e84181c:-1871337825,a5e8292d9e50c3008e01f7f8046fe812:1859497753,e9c8ade91650c300f5965f4c7e0e9a9d:447926540,2c282de98050c3002ef1347f951d5316:2117649294,7967ade94550c300279052ae1a675141:1399809860,0107a5a97350c300de490ab1b84794a1:-2129823081,39c66569e850c30019823e1b3bacabe9:-603621980,bf0625a96850c300ccb4e8fe16b6f1b5:590018634,3ff5e1698750c300d5636412ab2014c9:-739944044,d5b3e169f750c300fc05612ebf1e4dc2:-587148499,ee63e1697350c300caa4b2fd4a63bded:633973380,a4026929de50c300fe04f28d9274d0b3:-1421669246,43f169291450c300b2c665feeb7e4de4:1294070110,ad00a1213b5cc3002c8cb72020441325:-1421669246,c00065a59150c30041bf65599d2ce769:-1995247804,0a8f9d65be50c300b143be1262731e39:1548046473,d06f95ad341cc300641471886ff38510:1309830459,5e9e15ed1a1cc3002af165895586c215:788996351,509b9d258750c300eeef1e6be4c21ff4:-1870022069,5d5a99a11b50c3001c28aeb38b2dfa6c:-1440855917,ba0a99a1fd50c300a0a00623c1df9969:2098797386,b18619e9b41cc300cdba4f9a27288189:-1563745220,914695e9e51cc300dd920b75353264c9:-2023263064,df3695e92e1cc30026963b9755dbd1c5:1137587888,a236152d491cc3005b43d811d4653de2:-1514605600,fdc45121b750c30068b2816d7efd7151:-1598048672,849499ed8b10c3000e68fd9dc4cb6b89:430782559,4d6415211850c30047bebfecb1420eda:744117703,d73419e93f1cc3002fa72010edede88d:-107656278,0953556d1910c30085cc08bcb08f51dc:-466833784,0d3399ed1710c30015267f48ba3d6f83:1919342509,d2c29da9c41cc300d208ea2662d157fa:-1537727783,3abd456dbf10c300bd7f8e82ba3256d4:1474449305,468dc9e5bd1cc300d9b4cb7696aa712c:-1985713080,1a3dc9e5261cc30071c63a120ee2a541:-436803815,d53d89a98810c300de1091fbad0597ba:335669177,c7ec0129331cc300b4fbcfbb73e73de6:1601727929,15bc89a90310c300109af385e24df4b7:-1905313853,dc8b0129031cc300490dbbbceede4fdd:1552821451,123bc5a5a71cc30027f46288518c6ac9:-350437980,97a809692010c3006e03dbca8d2e877d:1399966153,b718c5a96810c300443fe3bad453a7f7:-1007102983,03f68d65b51cc300a8c427b5579a1ceb:199786255,bbb305e50a10c30080f9aed7bd06d631:1884764195,7e834d25c51cc300fccfde2d33ccc779:1925467491,f16305e5e810c3005cf09686750a5a09:1435512530,d63305e55510c3002ce5ecc5bd9fe62e:1925467491,33e201e53410c300598da739e6ee81d7:1198213299,c59201e5d810c300445a7d66514432d3:-364034740,640f6c69bdd8c300ebee876e45b961e1:547778783,7ce1cb64d39483005d98a2cb12ddaa11:-1883165809,b6d187243c984300781494b140e1eb50:-606977393,7ba1c36432948300234e7fc018241181:-1625281016,fb214324b6984300e8e5c580f091f5ca:591559924,bd218b24519483003e6f0af740e9dd52:1159352632,99c04fe0f994830010246ccce7c06008:2131039320,5b90c3645c9483006eaa0b3cbbbeb37d:1869412242,99ef3224ed94830041f98a02a6f05022:399902206,10efb6a001984300a0da74c71066fadb:-1315856898,aace72e0fd9483001478988f06c6f077:275622020,7e4b722051984300c47dc799f1cccdfb:223929784,193bfa601d984300c3c58094e0e11de5:-1620277500,203b72e0f1948300649ee3e8d7662971:-336624274,ccfab6a01f94830000a5bff441f21b3b:-1647592555,db5a7e6054948300221a1381c53dab4a:-956774226,f6697eeca9584300d1094e8358722082:-812245814,b5f8b2601e9483003f2c6f254756a445:449121099,a9b8fa20ae984300e3378ccefcbeb353:-1912186994,9896b66c33584300d9efc18a9620d4c1:23859714,4776b6ac93584300ea2069e4e165ce2f:-942592526,c7f2f2ac53584300726c8e1f28561b10:1003134416,6e92be2c0b5843001d8fcbd1a965d74b:-185526932,3072b66c3e584300455fbe20718c86ba:630923636,8352f2ac805483008b1d540986e81834:-178239498,2d22b66cdf58430046cc18bd19db2cde:-1983663786,43f1fa6c4254830055918ed885060ac2:1226952454,d1c1f2accd5483009a1bbdb5d7f4312e:1079347464,5141fa2c4454830030daad50d1600cef:1570112776,0540f26c69548300a472b0b337c984cb:-405953974,2f10fa6c985483001decf78e0b19c1bb:-1745279002,a1007a2c71548300b6ac49e5c7ef575b:-847529964,a8efa22c0a5843000959e30d6c39d13f:-1306358971,697fa22c41584300815339581f1efc3b:1574960999,a46f2ee8eb584300ea3c1574a8719e74:165907315,924fae2cca58430002a2c605abc5d843:-929388632,2b1fa62c2554830087530c47e83e9621:-817913023,2cce6a2c55584300c6a7b0e26009c3d8:-653529686,d65e622ce95843001af6bdb6243266aa:564049666,bd1e6a2c5154830053abd4e6affc3753:577730844,999d6a2c945483006f60afc629d48050:-1729526883,1f7d622cb2584300d496f0dd774e6aa4:154576236,3a5d622c28584300e3511e4760b9d4a1:-56045815,115deae813548300a145b35346505364:954197232,0d4daee87e5483009e175d4ad933328f:843997616,2a9c2ee82e5843001f7dcf0d62e4896e:305860779,da8caee8a2548300ace24b45a0e1488b:107396638,387c2ea8f3548300000190a69c58aac7:-1119271153,4efa26a807548300884c4faa243f35a0:855704937,cd2a2e68c3548300beebab0dd471f369:504478057,4f0aaaa80a548300460225cecffee500:-1688426076,2c0a2ea820548300f1b329b5c749bcc1:1875839652,8f68a268fe54830076e4791541e28104:1681999354,26386668dc584300f6b4cad8e6911371:1321633490,b218aae418548300f71ecb6a0cabecb4:324788659,2ca76668ad54830067cc901b5be8e64f:901124317,1e6666682e5843007c4584219dba336a:-2087037989,d9f5a228655843007bc82d418d3177d6:-494216352,ecf56228d858430008dcd584927b184a:738394830,9d356228a05843004956d1edc754fa46:-178293826,5425aae4355483003df44ae738eb5596:-516986995,7563a228325843003f3621cdc0a56dce:-11145404,ed0062a4f7584300af29e059c2850911:1078976791,d9ff52a470584300e6e625e6b5873a0e:-412948771,824f1e64a15483001667912b0caca188:-1122250224,a42fd66488584300884b6cce4559af51:20185382,df3e922416548300d37cfc0abc25eaf5:-1569475012,f42e1e6496548300806c102e56ec3b7f:100323764,fd6dd664d0584300102f26b864eba74a:1163242786,095dd2643754830017ef127b9ef1de86:-1060432320,f7fcd264a9548300c4781419f29c8582:1163242786,cdac9264a054830076c4f579b33193d2:-1763769250,1c9c1aa0075843001d405ea447ea63b9:-134911094,c80c5a24fa548300ef39672d4c3c13f4:923059464,e5eb5a24ee5483008bfb8d17fc8cb1f1:-1280891110,56d2da202954830003d6faa11a802086:-859390927,f8648ea89c14830039054754adc74911:834529690</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_d2a49aa7136432007e94fc5ed144b093</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>ngMap</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio.petito_SHARE</sys_created_by><sys_created_on>2017-02-01 10:23:51</sys_created_on><sys_id>d2a49aa7136432007e94fc5ed144b093</sys_id><sys_mod_count>2</sys_mod_count><sys_name>ngMap</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="ng-map">a9b4daa7136432007e94fc5ed144b017</sys_ui_script><sys_update_name>sp_js_include_d2a49aa7136432007e94fc5ed144b093</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2017-07-31 11:02:58</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>-50894893</payload_hash>
+<remote_update_set display_value="pe-maps-ngmap">8fedb1651390c3001c6a7f176144b091</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2017-07-31 13:30:36</sys_created_on>
+<sys_id>8bedb1651390c3001c6a7f176144b092</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d98502f9a0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2017-07-31 13:30:36</sys_updated_on>
+<table/>
+<target_name>ngMap</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>602cd1659350c300759055145cbabfc5</update_guid>
+<update_guid_history>602cd1659350c300759055145cbabfc5:-50894893,6f1cd165c050c30044999061b5ac0fc1:1260662615,23f98654b69c43008b81e0fb7e19dc02:-1322184437</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_425416a7136432007e94fc5ed144b068</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>js-map-label</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio.petito_SHARE</sys_created_by><sys_created_on>2017-02-01 10:21:45</sys_created_on><sys_id>425416a7136432007e94fc5ed144b068</sys_id><sys_mod_count>2</sys_mod_count><sys_name>js-map-label</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="js-map-label">f354d6a7136432007e94fc5ed144b0d3</sys_ui_script><sys_update_name>sp_js_include_425416a7136432007e94fc5ed144b068</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2017-07-31 11:05:13</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>-610867794</payload_hash>
+<remote_update_set display_value="pe-maps-ngmap">8fedb1651390c3001c6a7f176144b091</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2017-07-31 13:30:36</sys_created_on>
+<sys_id>c7edb1651390c3001c6a7f176144b092</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15d985240ac0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2017-07-31 13:30:36</sys_updated_on>
+<table/>
+<target_name>js-map-label</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>adac5565f950c300e05998a5c4683e32</update_guid>
+<update_guid_history>adac5565f950c300e05998a5c4683e32:-610867794,d8ac55652b50c300c93dbbff7d396d2f:-1700624578,abf98654149c43001177119f32770000:1162996198</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
