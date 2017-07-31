@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-04-14 16:51:41">
+<unload unload_date="2017-07-31 17:30:58">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -12,17 +12,20 @@
 <inserted/>
 <name>PE  Help Cards</name>
 <origin_sys_id/>
+<parent display_value=""/>
 <release_date/>
-<remote_sys_id>6c4f52e2db8e320062e479daae96192c</remote_sys_id>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>1d451728db9ff200f0e8de01ce9619b4</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>3330e636db82720062e479daae9619d0</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-07-31 17:30:58</sys_created_on>
+<sys_id>9cf4726ddbd00300a0785404ce961973</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-07-31 17:30:58</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -35,100 +38,72 @@
 <name>sp_widget_cf865a72db82720062e479daae9619c3</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function HelpCardsController() {
   var c = this;
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.scroll-wrapper {&amp;#13;
-  width: 100%;&amp;#13;
-  overflow-x: auto;&amp;#13;
-  white-space: nowrap;&amp;#13;
-  -webkit-overflow-scrolling: touch;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.cards {&amp;#13;
-  margin-top: 15px;&amp;#13;
-  h3 {&amp;#13;
-    font-size: 16px;&amp;#13;
-    font-weight: 600;&amp;#13;
-    color: #485563;&amp;#13;
-  }&amp;#13;
-}&amp;#13;
-&amp;#13;
-.modernizeit-no-bg-color-square {&amp;#13;
-  .scroll-wrapper {&amp;#13;
-    padding-bottom: 15px;&amp;#13;
-    display: flex;&amp;#13;
-  }&amp;#13;
-  .item {&amp;#13;
-    position: relative;&amp;#13;
-    width: 118px;&amp;#13;
-    flex-shrink: 0;&amp;#13;
-    vertical-align: top;&amp;#13;
-    margin-left: 8px;&amp;#13;
-    text-align: center;&amp;#13;
-    padding: 15px 5px 5px 5px;&amp;#13;
-    background-color: #5a889f;&amp;#13;
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);&amp;#13;
-    white-space: normal;&amp;#13;
-    .sub-title {&amp;#13;
-      display: none;&amp;#13;
-    }&amp;#13;
-    &amp;amp;.out {&amp;#13;
-      background-color: #c0351d;&amp;#13;
-      .outage-alert {&amp;#13;
-        display: block;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-    .icon img {&amp;#13;
-      height: 37px;&amp;#13;
-    }&amp;#13;
-    .content {&amp;#13;
-      margin-top: 15px;&amp;#13;
-      color: #FFF;&amp;#13;
-    }&amp;#13;
-    .outage-alert {&amp;#13;
-      display: none;&amp;#13;
-      position: absolute;&amp;#13;
-      top: 7px;&amp;#13;
-      svg {&amp;#13;
-        width: 22px;&amp;#13;
-        height: 22px;&amp;#13;
-        fill: white;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  .item:first-child {&amp;#13;
-    margin-left: 0;&amp;#13;
-  }&amp;#13;
-}&amp;#13;
-&amp;#13;
-.modernizeit-no-bg-color-square {&amp;#13;
-  .item {&amp;#13;
-    background-color: #4a7064;&amp;#13;
-    box-shadow: none;&amp;#13;
-    margin: 0;&amp;#13;
-    border-right: solid 1px #37544b;&amp;#13;
-    width: 90px;&amp;#13;
-  }&amp;#13;
-  .item:last-child {&amp;#13;
-    border: none;&amp;#13;
-  }&amp;#13;
-}&amp;#13;
-&amp;#13;
-.modernizeit-no-bg-color-square {&amp;#13;
-  .item {&amp;#13;
-    background-color: transparent;&amp;#13;
-    border-color: #C9CFCD;&amp;#13;
-    .content {&amp;#13;
-      color: #5a5d61;&amp;#13;
-      .sub-name {&amp;#13;
-        display: none;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-help-cards&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Help Cards&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","label":"title","type":"string"},{"name":"category","label":"category","type":"string"},{"hint":"","name":"items","label":"items","type":"string","choices":""}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.cards {
+  margin-top: 15px;
+  h3 {
+    color: #485563;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.modernizeit-no-bg-color-square {
+  .scroll-wrapper {
+    display: flex;
+    padding-bottom: 15px;
+  }
+  .item {
+    background-color: transparent;
+    border-right: solid 1px #ccc;
+    box-shadow: none;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 15px 5px 5px 5px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 90px;
+    img {
+      height: 37px;
+    }
+    &amp;amp;:first-child {
+      margin-left: 0;
+    }
+    &amp;amp;:last-child {
+      border: none;
+    }
+    .content {
+      color: #5a5d61;
+      margin-top: 15px;
+    }
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-help-cards&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Help Cards&lt;/name&gt;&lt;option_schema&gt;[{&amp;#13;
+  "name": "title",&amp;#13;
+  "default_value": "How can we help?",&amp;#13;
+  "label": "Title",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "name": "category",&amp;#13;
+  "default_value": "PE How Can We Help",&amp;#13;
+  "label": "Category",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "name": "items",&amp;#13;
+  "default_value": "sc_cat_item.name, sc_cat_item.icon",&amp;#13;
+  "label": "Items",&amp;#13;
+  "type": "string"&amp;#13;
+}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.title = options.title || serverOptions.title || 'How can we help?';
-  options.category = options.category || serverOptions.category || 'PE How Can We Help';
-  options.items = options.items || serverOptions.items || 'sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description';
-  options.highlight = options.highlight || serverOptions.highlight || 'Office 2016';
+  options.title = options.title || serverOptions.title;
+  options.category = options.category || serverOptions.category;
+  options.items = options.items || serverOptions.items;
   var categoriesGR = GlideRecord('sc_cat_item_category');
   var encodedQuery = 'sc_category.title=' + options.category;
   categoriesGR.addEncodedQuery(encodedQuery);
@@ -141,14 +116,14 @@
     items.push(obj);
   }
   data.items = items;
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-14 16:09:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cf865a72db82720062e479daae9619c3&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Help Cards&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cf865a72db82720062e479daae9619c3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-14 16:37:32&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-14 16:09:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;cf865a72db82720062e479daae9619c3&lt;/sys_id&gt;&lt;sys_mod_count&gt;49&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Help Cards&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cf865a72db82720062e479daae9619c3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-31 17:28:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row"&gt;
   &lt;div class="col-xs-12 cards modernizeit-no-bg-color-square"&gt;
     &lt;h3&gt;{{::options.title}}&lt;/h3&gt;
     &lt;div class="content-wrapper"&gt;
       &lt;div class="scroll-wrapper"&gt;
         &lt;div ng-repeat="item in ::data.items track by $index" class="item"&gt;
           &lt;div class="icon"&gt;
-            &lt;img src="{{::item['sc_cat_item.icon'].display_value || 'placeholder1.jpg'}}" alt=""&gt;
+            &lt;img src="{{::item['sc_cat_item.icon'].display_value}}"&gt;
           &lt;/div&gt;
           &lt;div class="content"&gt;
             &lt;div class="name"&gt;{{::item['sc_cat_item.name'].value}}&lt;/div&gt;
@@ -159,392 +134,22 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
+<payload_hash>815828128</payload_hash>
+<remote_update_set display_value="PE  Help Cards">9cf4726ddbd00300a0785404ce961973</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>0040e636db82720062e479daae9619d1</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-07-31 17:30:58</sys_created_on>
+<sys_id>90f4726ddbd00300a0785404ce961974</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
+<sys_recorded_at>15d99b152950000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-07-31 17:30:58</sys_updated_on>
 <table/>
 <target_name>PE Help Cards</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_2c322226db8e320062e479daae96195a</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category display_value="PE How Can We Help">8c8f1ee2db8e320062e479daae9619c9</category><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><entitlement_script/><group/><icon/><ignore_price>false</ignore_price><image/><list_price>0</list_price><location/><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Privacy Filter</name><no_cart>false</no_cart><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_search>false</no_search><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("./com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=2c322226db8e320062e479daae96195a&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><roles/><sc_catalogs>742ce428d7211100f2d224837e61036d</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description/><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:22:04</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>2c322226db8e320062e479daae96195a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Privacy Filter</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_2c322226db8e320062e479daae96195a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:22:04</sys_updated_on><template/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=2c322226db8e320062e479daae96195a"/><fx_price action="delete_multiple" query="id=2c322226db8e320062e479daae96195a"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>2c322226db8e320062e479daae96195a</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:22:04</sys_created_on><sys_id>fd422a26db8e320062e479daae9619b6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:22:04</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>2c322226db8e320062e479daae96195a</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:22:04</sys_created_on><sys_id>f1422a26db8e320062e479daae9619b7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:22:04</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/png</content_type><encryption_context/><file_name>icon</file_name><image_height/><image_width/><size_bytes>2785</size_bytes><size_compressed>2696</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:23:38</sys_created_on><sys_id>24a26a26db8e320062e479daae961976</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:23:38</sys_updated_on><table_name>ZZ_YYsc_cat_item</table_name><table_sys_id>2c322226db8e320062e479daae96195a</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="icon" sys_id="24a26a26db8e320062e479daae961976">24a26a26db8e320062e479daae961976</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:23:38</sys_created_on><sys_id>64a26a26db8e320062e479daae961976</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3584</length><position>1</position><sys_attachment display_value="icon" sys_id="24a26a26db8e320062e479daae961976">24a26a26db8e320062e479daae961976</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:23:38</sys_created_on><sys_id>e4a26a26db8e320062e479daae961976</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>0440e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>Privacy Filter</target_name>
-<type>Catalog Item</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_catalog_3d422a26db8e320062e479daae9619b7</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Privacy Filter">2c322226db8e320062e479daae96195a</sc_cat_item><sc_catalog display_value="Technical Catalog">742ce428d7211100f2d224837e61036d</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:22:04</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3d422a26db8e320062e479daae9619b7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Technical Catalog.Privacy Filter</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_catalog_3d422a26db8e320062e479daae9619b7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:22:04</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>0840e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>Technical Catalog.Privacy Filter</target_name>
-<type>Catalog Items Catalog</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_category_33502226db8e320062e479daae961926</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Office 365">60302ee2db8e320062e479daae9619e5</sc_cat_item><sc_category display_value="PE How Can We Help">8c8f1ee2db8e320062e479daae9619c9</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:13:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>33502226db8e320062e479daae961926</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE How Can We Help.Office 365</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_category_33502226db8e320062e479daae961926</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:13:44</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>0c40e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>PE How Can We Help.Office 365</target_name>
-<type>Catalog Item Category</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_attachment_doc_357929d2db4a320062e479daae961961</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_attachment_doc"><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="e17929d2db4a320062e479daae961961">e17929d2db4a320062e479daae961961</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 23:35:22</sys_created_on><sys_id>357929d2db4a320062e479daae961961</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>4040e636db82720062e479daae9619d1</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>357929d2db4a320062e479daae961961</target_name>
-<type>Attachment Document</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_60302ee2db8e320062e479daae9619e5</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category display_value="PE How Can We Help">8c8f1ee2db8e320062e479daae9619c9</category><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><entitlement_script/><group/><icon/><ignore_price>false</ignore_price><image/><list_price>0</list_price><location/><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Office 365</name><no_cart>false</no_cart><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_search>false</no_search><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("./com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=60302ee2db8e320062e479daae9619e5&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><roles/><sc_catalogs>742ce428d7211100f2d224837e61036d</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description/><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:13:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>60302ee2db8e320062e479daae9619e5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Office 365</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_60302ee2db8e320062e479daae9619e5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:13:44</sys_updated_on><template/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=60302ee2db8e320062e479daae9619e5"/><fx_price action="delete_multiple" query="id=60302ee2db8e320062e479daae9619e5"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>60302ee2db8e320062e479daae9619e5</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:13:44</sys_created_on><sys_id>ab502226db8e320062e479daae961924</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:13:44</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>60302ee2db8e320062e479daae9619e5</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:13:44</sys_created_on><sys_id>af502226db8e320062e479daae961924</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:13:44</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/png</content_type><encryption_context/><file_name>icon</file_name><image_height/><image_width/><size_bytes>1793</size_bytes><size_compressed>1698</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:21:25</sys_created_on><sys_id>90222226db8e320062e479daae961958</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:21:25</sys_updated_on><table_name>ZZ_YYsc_cat_item</table_name><table_sys_id>60302ee2db8e320062e479daae9619e5</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="icon" sys_id="90222226db8e320062e479daae961958">90222226db8e320062e479daae961958</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:21:25</sys_created_on><sys_id>d0222226db8e320062e479daae961958</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2252</length><position>1</position><sys_attachment display_value="icon" sys_id="90222226db8e320062e479daae961958">90222226db8e320062e479daae961958</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:21:25</sys_created_on><sys_id>54222226db8e320062e479daae961958</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>4440e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>Office 365</target_name>
-<type>Catalog Item</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_catalog_84c2ea26db8e320062e479daae961925</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="MIFI">8ab2aa26db8e320062e479daae9619d1</sc_cat_item><sc_catalog display_value="Technical Catalog">742ce428d7211100f2d224837e61036d</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>84c2ea26db8e320062e479daae961925</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Technical Catalog.MIFI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_catalog_84c2ea26db8e320062e479daae961925</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:09</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>4840e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>Technical Catalog.MIFI</target_name>
-<type>Catalog Items Catalog</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_category_75422a26db8e320062e479daae9619b8</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Privacy Filter">2c322226db8e320062e479daae96195a</sc_cat_item><sc_category display_value="PE How Can We Help">8c8f1ee2db8e320062e479daae9619c9</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:22:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>75422a26db8e320062e479daae9619b8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE How Can We Help.Privacy Filter</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_category_75422a26db8e320062e479daae9619b8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:22:05</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>4c40e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>PE How Can We Help.Privacy Filter</target_name>
-<type>Catalog Item Category</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>db_image_ab2929d2db4a320062e479daae96195e</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category/><format>JPEG</format><height>114</height><image/><name>placeholder1.jpg</name><size_bytes>2317</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 23:34:30</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ab2929d2db4a320062e479daae96195e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>placeholder1.jpg</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>db_image_ab2929d2db4a320062e479daae96195e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 23:35:22</sys_updated_on><thumbnail/><width>140</width></db_image><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/jpeg</content_type><encryption_context/><file_name>image</file_name><image_height/><image_width/><size_bytes>2317</size_bytes><size_compressed>2082</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 23:35:22</sys_created_on><sys_id>e17929d2db4a320062e479daae961961</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 23:35:22</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>ab2929d2db4a320062e479daae96195e</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="e17929d2db4a320062e479daae961961">e17929d2db4a320062e479daae961961</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 23:35:22</sys_created_on><sys_id>357929d2db4a320062e479daae961961</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2764</length><position>1</position><sys_attachment display_value="image" sys_id="e17929d2db4a320062e479daae961961">e17929d2db4a320062e479daae961961</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 23:35:22</sys_created_on><sys_id>b57929d2db4a320062e479daae961961</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>8040e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>placeholder1.jpg</target_name>
-<type>Images</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_attachment_doc_b57929d2db4a320062e479daae961961</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_attachment_doc"><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2764</length><position>1</position><sys_attachment display_value="image" sys_id="e17929d2db4a320062e479daae961961">e17929d2db4a320062e479daae961961</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 23:35:22</sys_created_on><sys_id>b57929d2db4a320062e479daae961961</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>8040e636db82720062e479daae9619d1</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>b57929d2db4a320062e479daae961961</target_name>
-<type>Attachment Document</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_8ab2aa26db8e320062e479daae9619d1</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category display_value="PE How Can We Help">8c8f1ee2db8e320062e479daae9619c9</category><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><entitlement_script/><group/><icon/><ignore_price>false</ignore_price><image/><list_price>0</list_price><location/><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>MIFI</name><no_cart>false</no_cart><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_search>false</no_search><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("./com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=8ab2aa26db8e320062e479daae9619d1&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><roles/><sc_catalogs>742ce428d7211100f2d224837e61036d</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description/><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:08</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>8ab2aa26db8e320062e479daae9619d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MIFI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_8ab2aa26db8e320062e479daae9619d1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:08</sys_updated_on><template/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=8ab2aa26db8e320062e479daae9619d1"/><fx_price action="delete_multiple" query="id=8ab2aa26db8e320062e479daae9619d1"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>8ab2aa26db8e320062e479daae9619d1</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:08</sys_created_on><sys_id>48c2ea26db8e320062e479daae961924</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:08</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>8ab2aa26db8e320062e479daae9619d1</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:08</sys_created_on><sys_id>4cc2ea26db8e320062e479daae961924</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:08</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/png</content_type><encryption_context/><file_name>icon</file_name><image_height/><image_width/><size_bytes>1873</size_bytes><size_compressed>1786</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:16</sys_created_on><sys_id>82c2ea26db8e320062e479daae9619b0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:16</sys_updated_on><table_name>ZZ_YYsc_cat_item</table_name><table_sys_id>8ab2aa26db8e320062e479daae9619d1</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="icon" sys_id="82c2ea26db8e320062e479daae9619b0">82c2ea26db8e320062e479daae9619b0</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:16</sys_created_on><sys_id>c2c2ea26db8e320062e479daae9619b0</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2368</length><position>1</position><sys_attachment display_value="icon" sys_id="82c2ea26db8e320062e479daae9619b0">82c2ea26db8e320062e479daae9619b0</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:16</sys_created_on><sys_id>46c2ea26db8e320062e479daae9619b0</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>8440e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>MIFI</target_name>
-<type>Catalog Item</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_catalog_bae2aa26db8e320062e479daae9619d8</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report a Problem">a8e2ea26db8e320062e479daae9619b2</sc_cat_item><sc_catalog display_value="Technical Catalog">742ce428d7211100f2d224837e61036d</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:53</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bae2aa26db8e320062e479daae9619d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Technical Catalog.Report a Problem</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_catalog_bae2aa26db8e320062e479daae9619d8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:53</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>8840e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>Technical Catalog.Report a Problem</target_name>
-<type>Catalog Items Catalog</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_category_ccc2ea26db8e320062e479daae961925</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="MIFI">8ab2aa26db8e320062e479daae9619d1</sc_cat_item><sc_category display_value="PE How Can We Help">8c8f1ee2db8e320062e479daae9619c9</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:09</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>ccc2ea26db8e320062e479daae961925</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE How Can We Help.MIFI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_category_ccc2ea26db8e320062e479daae961925</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:09</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>8c40e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>PE How Can We Help.MIFI</target_name>
-<type>Catalog Item Category</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_category_8c8f1ee2db8e320062e479daae9619c9</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category"><sc_category action="INSERT_OR_UPDATE"><active>true</active><description/><entitlement_script/><header_icon/><homepage_image/><homepage_renderer display_value="">Default</homepage_renderer><icon/><image/><location/><mobile_hide_description>false</mobile_hide_description><mobile_picture/><mobile_subcategory_render_type>list</mobile_subcategory_render_type><module/><order>0</order><parent/><roles/><sc_catalog display_value="Technical Catalog">742ce428d7211100f2d224837e61036d</sc_catalog><show_in_cms>false</show_in_cms><sys_class_name>sc_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:11:41</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>8c8f1ee2db8e320062e479daae9619c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE How Can We Help</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_category_8c8f1ee2db8e320062e479daae9619c9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:11:41</sys_updated_on><title>PE How Can We Help</title></sc_category><sys_translated_text action="delete_multiple" query="documentkey=8c8f1ee2db8e320062e479daae9619c9"/></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>c040e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>PE How Can We Help</target_name>
-<type>Category</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_attachment_e17929d2db4a320062e479daae961961</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_attachment"><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/jpeg</content_type><encryption_context/><file_name>image</file_name><image_height/><image_width/><size_bytes>2317</size_bytes><size_compressed>2082</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 23:35:22</sys_created_on><sys_id>e17929d2db4a320062e479daae961961</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 23:35:22</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>ab2929d2db4a320062e479daae96195e</table_sys_id></sys_attachment></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>c040e636db82720062e479daae9619d1</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table>ZZ_YYdb_image</table>
-<target_name>image</target_name>
-<type>Attachment</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_a8e2ea26db8e320062e479daae9619b2</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category display_value="PE How Can We Help">8c8f1ee2db8e320062e479daae9619c9</category><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><entitlement_script/><group/><icon/><ignore_price>false</ignore_price><image/><list_price>0</list_price><location/><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Report a Problem</name><no_cart>false</no_cart><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_search>false</no_search><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("./com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=a8e2ea26db8e320062e479daae9619b2&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><roles/><sc_catalogs>742ce428d7211100f2d224837e61036d</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description/><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:52</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>a8e2ea26db8e320062e479daae9619b2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Report a Problem</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_a8e2ea26db8e320062e479daae9619b2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:52</sys_updated_on><template/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=a8e2ea26db8e320062e479daae9619b2"/><fx_price action="delete_multiple" query="id=a8e2ea26db8e320062e479daae9619b2"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>a8e2ea26db8e320062e479daae9619b2</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:52</sys_created_on><sys_id>7ee2aa26db8e320062e479daae9619d7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:52</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>a8e2ea26db8e320062e479daae9619b2</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:53</sys_created_on><sys_id>72e2aa26db8e320062e479daae9619d8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:53</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/png</content_type><encryption_context/><file_name>icon</file_name><image_height/><image_width/><size_bytes>2361</size_bytes><size_compressed>2267</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:25:10</sys_created_on><sys_id>4bf2aa26db8e320062e479daae9619da</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:25:10</sys_updated_on><table_name>ZZ_YYsc_cat_item</table_name><table_sys_id>a8e2ea26db8e320062e479daae9619b2</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="icon" sys_id="4bf2aa26db8e320062e479daae9619da">4bf2aa26db8e320062e479daae9619da</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:25:10</sys_created_on><sys_id>8bf2aa26db8e320062e479daae9619da</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3012</length><position>1</position><sys_attachment display_value="icon" sys_id="4bf2aa26db8e320062e479daae9619da">4bf2aa26db8e320062e479daae9619da</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:25:10</sys_created_on><sys_id>0ff2aa26db8e320062e479daae9619da</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>c440e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>Report a Problem</target_name>
-<type>Catalog Item</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_catalog_f7502226db8e320062e479daae961925</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Office 365">60302ee2db8e320062e479daae9619e5</sc_cat_item><sc_catalog display_value="Technical Catalog">742ce428d7211100f2d224837e61036d</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:13:44</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>f7502226db8e320062e479daae961925</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Technical Catalog.Office 365</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_catalog_f7502226db8e320062e479daae961925</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:13:44</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>c840e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>Technical Catalog.Office 365</target_name>
-<type>Catalog Items Catalog</type>
-<update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sc_cat_item_category_f2e2aa26db8e320062e479daae9619d9</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report a Problem">a8e2ea26db8e320062e479daae9619b2</sc_cat_item><sc_category display_value="PE How Can We Help">8c8f1ee2db8e320062e479daae9619c9</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 22:24:53</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>f2e2aa26db8e320062e479daae9619d9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE How Can We Help.Report a Problem</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_category_f2e2aa26db8e320062e479daae9619d9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 22:24:53</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
-<remote_update_set display_value="PE  Help Cards">3330e636db82720062e479daae9619d0</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-04-14 16:51:41</sys_created_on>
-<sys_id>cc40e636db82720062e479daae9619d0</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-04-14 16:51:41</sys_updated_on>
-<table/>
-<target_name>PE How Can We Help.Report a Problem</target_name>
-<type>Catalog Item Category</type>
-<update_domain>global</update_domain>
+<update_guid>be64ba2d22d003007dc3c7c99b5d7d6d</update_guid>
+<update_guid_history>be64ba2d22d003007dc3c7c99b5d7d6d:815828128,ec24762d2fd003002c9c49e698ab0c0e:304201792,65e3f22dccd00300db4ec48f61463df6:691024286,c4d2f2e9c3d003009a77968b8ca7dc7c:-898401824,09b232e9dad00300cb00ba159a10f0f0:-676168660,0e9232e973d00300d9d56667e55a2471:1805771084,9b8232e9ccd00300ea0c877a69d36818:-945038609,5c82bea975d003005df8f8b6299cdf4e:924806452,5d627ea982d003007dae4b614b9e1627:-1439600916,36523ea951d0030004d11e4c3a5b2161:-689811156,8d527ea9aad00300c9e71b13c03edc1e:441388684,55423ea963d0030049b8507725df2058:-689811156,9b227aa912d0030026f2f0f20770bd0f:-397356028,df127aa946d0030080d713e1c63d9541:-689811156,e2023aa934d0030015aff1e8177fde0d:-292174836,f1f136a973d00300a6c31be36985f891:-689811156,83d1b6a9b5d00300332ca3d756bf76b9:905837996,9bc136a9afd0030002ed99c3fdc8b88a:355414220,cca136a94cd00300b549c0f96da3a300:-1392950081,3591b2a959d003008621786fc6930238:-1258795073,ec7132a953d00300e241681dcabdf36b:-526254306,cc51fe6974d0030013fe41aaec9fda01:-684957438,c031b6693fd00300b86b4e996d1bd05c:918391597,72403669a4d00300612108391def9acf:449846338,08303669f7d00300182fd9bbd1bafdc8:-754038178,c600f26971d003002c296cdbf3d21424:449846338,36ff226952d0030019afdc07fe61de3f:-1095409064,e6df2269bbd00300b02b5e5ef478fc22:-1565907235,3dcf6e299fd003003be5b8842c05c187:838663997,989f2a2946d00300b92ff3107bbb2895:-1878055370,436f2a2982d003009074d3f841462a9f:384821307,f21f2a2945d00300c0cb31c577d81f8b:128031204,360fe629bed003007293f2131418ac6e:-684347872,35eea22983d0030089c36213c457f8f7:-1836616640,0f7e22296bd00300f984b28812f4730e:-1201443417,a34e2ae569d003000ed759488477d042:-825977050,4b8de6e524d0030069a55c0befb9eb3c:-878010095,897d62e529d00300ffd18e92ffa7a294:1487636879,329c6ea5a2d00300aa4f781616d317f9:133254105,-1653454099:-1653454099</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>

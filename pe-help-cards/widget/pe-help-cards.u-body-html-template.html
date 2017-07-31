@@ -5,7 +5,7 @@
       <div class="scroll-wrapper">
         <div ng-repeat="item in ::data.items track by $index" class="item">
           <div class="icon">
-            <img src="{{::item['sc_cat_item.icon'].display_value || 'placeholder1.jpg'}}" alt="">
+            <img src="{{::item['sc_cat_item.icon'].display_value}}">
           </div>
           <div class="content">
             <div class="name">{{::item['sc_cat_item.name'].value}}</div>
