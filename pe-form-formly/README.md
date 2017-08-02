@@ -157,7 +157,6 @@ Widget Option Schema parameters:<br/>
       }
     ]
 
-<br/>
 ---
 ## API Dependencies
 ---
