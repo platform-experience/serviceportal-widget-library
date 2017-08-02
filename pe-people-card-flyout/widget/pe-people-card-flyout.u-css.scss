@@ -66,6 +66,7 @@ $pe-status-color-normal: #29bd00 !default;
     .panel-vips {
       .panel-heading {
         background-color: #394b6b !important;
+        border-radius: 0;
         padding-bottom: 15px;
       }
       .star-ribbon {
@@ -92,6 +93,16 @@ $pe-status-color-normal: #29bd00 !default;
       }
     }
   }
+  .panel-vips.ng-hide-add,
+  .panel-vips.ng-hide-remove {
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    display: block !important;
+    opacity: 1;
+  }
+  .panel-vips.ng-hide {
+    opacity: 0;
+  }
   .header-left-icon {
     margin: 0 0 7px 11%;
     span {
@@ -103,6 +114,12 @@ $pe-status-color-normal: #29bd00 !default;
   .close-circle {
     height: 23px;
     margin-top: -3px;
+    .add-circle,
+    .close-circle {
+      height: 23px;
+      margin-top: -3px;
+      width: 23px;
+    }
     width: 23px;
   }
   .star-ribbon {
