@@ -1,18 +1,38 @@
-{
-  "place_origin": {
-    "value": "",
-    "displayValue": ""
-  },
-  "place_destination": {
-    "value": "",
-    "displayValue": ""
-  },
-  "map_zoom": {
-    "value": null,
-    "displayValue": ""
-  },
-  "transit_mode": {
-    "value": "",
-    "displayValue": ""
-  }
-}
+[{
+  "name": "place_origin",
+  "label": "Origin",
+  "type": "string"
+}, {
+  "name": "place_destination",
+  "label": "Destination",
+  "type": "string"
+}, {
+  "name": "map_zoom",
+  "default_value": "14",
+  "label": "Map Zoom",
+  "type": "integer"
+}, {
+  "name": "transit_mode",
+  "default_value": "Walking",
+  "label": "Transit Mode",
+  "type": "choice",
+  "choices": [{
+    "label": "Walking",
+    "value": "Walking"
+  }, {
+    "label": "Bicycling",
+    "value": "Bicycling"
+  }, {
+    "label": "Driving",
+    "value": "Driving"
+  }, {
+    "label": "Transit",
+    "value": "Transit"
+  }]
+}, {
+  "hint": "This parameter is used to override the visibility behaviour of the header",
+  "name": "header_visibility",
+  "default_value": "true",
+  "label": "Header Visibility",
+  "type": "boolean"
+}]

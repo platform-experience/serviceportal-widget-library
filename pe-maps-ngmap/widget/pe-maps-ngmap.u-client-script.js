@@ -1,5 +1,5 @@
 function NdlNgMapController(NgMap, $scope, $timeout) {
-  /* widget controller */
+
   var c = this;
 
   c.cleanForm = function () {

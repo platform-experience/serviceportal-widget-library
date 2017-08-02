@@ -1,4 +1,4 @@
-<div class="row margin-top" ng-if="data.form_visibility">
+<div class="row margin-top" ng-if="data.form_visibility && data.header_visibility">
   <div class="col-md-4">
     <div class="form-group">
       <input type="text" class="form-control" placeholder="Origin" ng-model="data.place_origin">
@@ -30,15 +30,20 @@
 </div>
 
 <div class="row margin-top" ng-if="data.place_origin.length>0 && data.place_destination.length>0">
+
   <ng-map>
-    <directions draggable="true" zoom="{{data.map_zoom}}" panel="directions-panel" travel-mode="{{data.transit_mode.toUpperCase()}}" origin="{{data.place_origin}}"
-      destination="{{data.place_destination}}">
+    <directions draggable="true" zoom="{{data.map_zoom}}" panel="directions-panel" travel-mode="{{data.transit_mode.toUpperCase()}}"
+      origin="{{data.place_origin}}" destination="{{data.place_destination}}">
     </directions>
   </ng-map>
+
   <div id="directions-panel" clas="row">
   </div>
+
 </div>
 
 <div class="row margin-top" ng-if="data.place_origin.length>0 && data.place_destination.length==0">
-  <ng-map zoom="{{data.map_zoom}}" center="{{data.place_origin}}" />
+  <ng-map zoom="{{data.map_zoom}}" center="{{data.place_origin}}">
+    <marker position="{{data.place_origin}}" title="{{data.place_origin}}"></marker>
+  </ng-map>
 </div>
