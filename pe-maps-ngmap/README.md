@@ -6,11 +6,7 @@ This widget shows us how to use Google Maps through the library Ng-Map
 
 ## Screenshots
 ![](../images/pe-maps-ngmap.gif)
-
-![](../images/pe-maps-ngmap-1.png)
-
-![](../images/pe-maps-ngmap-2.png)
-
+<br/>
 ## Additional Information/Notes
 > None
 ---
@@ -22,7 +18,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 ---
 ## Configuration
 ---
-Widget Option Schema parameters:
+Widget Option Schema parameters:<br/>
 
 **"Origin"** Origin or location to search on Google Maps.<br/>
 
@@ -30,7 +26,11 @@ Widget Option Schema parameters:
 
 **"Zoom"** Zoom level. `Default: 14`<br/>
 
-**"Transit mode"** Transit mode (Walking, Bicycling, Driving, Transit) if Google Maps provides the itinerary. `Default: Walking`<br/>
+**"Transit mode"** Transit mode (Walking, Bicycling, Driving, Transit) if Google Maps provides the itinerary.
+`Default: Walking`<br/>
+
+**"Header Visibility"** This parameter is used to override the visibility behaviour of the header.
+ `Default: True`<br/>
 
 ---
 ## Platform Dependencies
