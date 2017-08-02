@@ -6,12 +6,12 @@ This widget can be used to read a bar code in different formats or to manually e
 The image can be provided straigh from camera or camera roll/file system (mobile and desktop).
 
 ## Screenshots
-![alt text](../images/pe-barcode-reader-fi-01.png "Barcode Reader - Options") <br/>
-![alt text](../images/pe-barcode-reader-fi-02.png "Barcode Reader - Initial UI") <br/>
-![alt text](../images/pe-barcode-reader-fi-03.png "Barcode Reader - After code extraction from image") <br/>
+![alt text](../images/pe-barcode-reader-fi-01.png "Barcode Reader - Options") <br/><br/>
+![alt text](../images/pe-barcode-reader-fi-02.png "Barcode Reader - Initial UI") <br/><br/>
+![alt text](../images/pe-barcode-reader-fi-03.png "Barcode Reader - After code extraction from image") <br/><br/>
 <br/>
 <br/>
-<i>With manual lookup:</i>
+<i>With manual lookup:</i><br/><br/>
 ![alt text](../images/pe-barcode-reader-fi-04.png "Barcode Reader - Manual lookup") <br/>
 
 ## Additional Information/Notes
