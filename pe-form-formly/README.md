@@ -156,14 +156,11 @@ Widget Option Schema parameters:<br/>
         }
       }
     ]
-
 ---
 ## API Dependencies
----
 <i>Dependencies are included and configured as part of the provided Update Set.</i>
 > None
 ---
 ## CSS/SASS Variables
----
+The widget is using colors from Bootstrap SASS variables, and a minimal styles configuration to make it easy to customize and extend.
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
-> None
