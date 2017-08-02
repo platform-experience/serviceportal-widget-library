@@ -28,8 +28,6 @@ Widget Option Schema parameters:<br/>
 > None
 ---
 ## Sample Data and Data Structures
----
-<br/>
 
     [
       {
