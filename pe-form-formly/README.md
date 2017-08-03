@@ -3,6 +3,7 @@
 ## Description
 
 This widget shows an alternative approach to build a form, adapting it to the type of content it has in input. It is based on Formly as main dependency.<br/>
+The submit button will send all the input data in JSON format.<br/>
 
 ## Screenshots
 ![](../images/pe-form-formly-01.png)
