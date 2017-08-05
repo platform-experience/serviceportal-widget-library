@@ -1,8 +1,8 @@
 (function() {
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.title = options.title || serverOptions.title || 'Tell us what is causing the issue';
-  options.category = options.category || serverOptions.category || 'PE Report Issue';
-  options.items = options.items || serverOptions.items || 'sc_cat_item.name, sc_cat_item.icon';
+  options.title = options.title || serverOptions.title;
+  options.category = options.category || serverOptions.category;
+  options.items = options.items || serverOptions.items;
   var categoriesGR = GlideRecord('sc_cat_item_category');
   var encodedQuery = 'sc_category.title=' + options.category;
   categoriesGR.addEncodedQuery(encodedQuery);
