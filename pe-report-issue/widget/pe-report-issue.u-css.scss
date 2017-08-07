@@ -1,9 +1,9 @@
 .pe-report-issue {
   p {
-    margin-top: 10px;
+    color: #1b485e;
     font-size: 18px;
     font-weight: 600;
-    color: #1b485e;
+    margin-top: 10px;
     text-align: center;
   }
   .grid {
@@ -14,15 +14,15 @@
       text-align: center;
       width: 33%;
       .icon {
-        height: 40px;
-        display: flex;
-        justify-content: center;
         align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: center;
       }
       .name {
-        margin-top: 15px;
-        font-size: 18px;
         color: #5a5d61;
+        font-size: 18px;
+        margin-top: 15px;
       }
     }
   }
