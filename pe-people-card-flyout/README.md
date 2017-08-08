@@ -27,12 +27,11 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 Widget Option Schema parameters:
 
+**"Department"** This is the sys_id of the department.<br/>
 **"Title"** This is for changing the title in the panel header.<br/>
 **"Number 1"** This is for displaying the first integer in the panel body.<br/>
-**"Number 2"** This is for displaying the second integer in the panel body.<br/>
 **"Number 3"** This is for displaying the third integer in the panel body.<br/>
 **"Sub Text 1"** This is for displaying the first sub-text copy.<br/>
-**"Sub Text 2"** This is for displaying the second sub-text copy.<br/>
 **"Sub Text 3"** This is for displaying the third sub-text copy.<br/>
 
 ---

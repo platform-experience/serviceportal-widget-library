@@ -1,25 +1,37 @@
 (function() {
-  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.title = options.title || serverOptions.title;
-  options.number1 = options.number_1 || serverOptions.number_1;
-  options.number2 = options.number_2 || serverOptions.number_2;
-  options.number3 = options.number_3 || serverOptions.number_3;
-  options.subText1 = options.sub_text_1 || serverOptions.sub_text_1;
-  options.subText2 = options.sub_text_2 || serverOptions.sub_text_2;
-  options.subText3 = options.sub_text_3 || serverOptions.sub_text_3;
 
-  var userGr = GlideRecord('sys_user');
-  userGr.addQuery('department', '48197fb4dbe5b20062e479daae96191f');
-  userGr.orderBy('sys_created_on');
-  userGr.query();
-  data.users = [];
-  while (userGr.next()) {
-    obj = {};
-    $sp.getRecordElements(obj, userGr, 'sys_id, first_name, last_name, title, photo');
-    data.users.push(obj);
+  (function activate() {
+    getDepartmentPeople();
+    setServerOptions();
+  })();
+
+  function setServerOptions() {
+    var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+    options.department = options.department || serverOptions.department;
+    options.title = options.title || serverOptions.title;
+    options.number1 = options.number1 || serverOptions.number1;
+    options.number3 = options.number3 || serverOptions.number3;
+    options.subText1 = options.subText1 || serverOptions.subText1;
+    options.subText3 = options.subText3 || serverOptions.subText3;
   }
-  data.users[0].time_ago = '18m';
-  data.users[1].time_ago = '6m';
-  data.users[2].time_ago = '41m';
-  data.users[3].time_ago = '15m';
+
+  function getRandomNumberRange(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  function getDepartmentPeople() {
+    var userGr = GlideRecord('sys_user');
+    userGr.addQuery('department', options.department);
+    userGr.orderBy('sys_created_on');
+    userGr.query();
+    data.users = [];
+    while (userGr.next()) {
+      obj = {};
+      obj.timeAgo = getRandomNumberRange(1, 59);
+      $sp.getRecordElements(obj, userGr, 'department, first_name, last_name, title, photo');
+      data.users.push(obj);
+    }
+  }
 })();
