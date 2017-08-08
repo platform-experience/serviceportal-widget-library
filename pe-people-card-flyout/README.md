@@ -65,5 +65,3 @@ _CSS/SASS variables are given default values that can be overridden with theming
 `$pe-text-color: #fff !default;`<br/>
 `$pe-sub-text-color: #68acd8 !default;`<br/>
 `$pe-status-color-normal: #29bd00 !default;`<br/>
-
-test
