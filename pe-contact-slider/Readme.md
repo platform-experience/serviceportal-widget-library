@@ -7,7 +7,7 @@ This widget can be used to quickly generate a contact slider.
 ## Screenshots
 ![](../images/pe-contact-slider.png)
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
@@ -38,3 +38,5 @@ Widget Option Schema parameters:
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 > None
+
+> Pull request test
