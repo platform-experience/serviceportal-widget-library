@@ -7,8 +7,8 @@ Displays a simple approval card with three buttons - **Accept**, **Reject**, **V
 ## Screenshots
 ![alt text](../../images/approval.png "Approval Card Widget")
 
-## Additional Information/Notes 
-This widget makes use of [pe-people-info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info) widget to display user's avatar, name and title. 
+## Additional Information/Notes
+This widget makes use of [pe-people-info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info) widget to display user's avatar, name and title.
 > Widget is included with the update set.
 
 Widget is injected dynamically in Client Script controller.
@@ -55,3 +55,5 @@ _CSS/SASS variables are given default values that can be overridden with theming
 `$pe-brand-warning: #f0ad4e !default;`<br/>
 `$pe-brand-danger: #d9534f !default;`<br/>
 `$pe-brand-info: #5bc0de !default;`<br/>
+
+test
