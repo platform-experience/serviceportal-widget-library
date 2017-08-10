@@ -7,7 +7,7 @@ This can be used to quickly craft a user request widget.
 ## Screenshots
 ![](../images/pe-user-request-1.gif)
 
-## Additional Information/Notes 
+## Additional Information/Notes
 
 This widget makes use of [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info) to display the user avatar, name and title.
 > Widget is included with the update set.
@@ -48,3 +48,5 @@ Widget Option Schema parameters:
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 > None
+
+> Testing
