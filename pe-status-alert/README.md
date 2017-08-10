@@ -66,3 +66,5 @@ _CSS/SASS variables are given default values that can be overridden with theming
 `$status-alert-gradient: linear-gradient(#fe8a30, #ff6f00) !default;`<br/>
 `$status-recovered-color: #34ba3d !default`<br/>
 `$status-recovered-gradient: linear-gradient(#6ce474, #34ba3d) !default;`<br/>
+
+Testing more indeed
