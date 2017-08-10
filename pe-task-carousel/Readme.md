@@ -7,7 +7,7 @@ This widget can be used to quickly generate a carousel with table slides and are
 ## Screenshots
 ![](../images/pe-task-carousel.png)
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
@@ -41,3 +41,5 @@ _CSS/SASS variables are given default values that can be overridden with theming
 
 `$pe-dark-theme: #1c2432 !default;`<br/>
 `$pe-light-theme: #283347 !default;`<br/>
+
+Another test
