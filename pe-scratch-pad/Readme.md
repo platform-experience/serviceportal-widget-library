@@ -7,7 +7,7 @@ This widget can be used to create a simple signature pad/scratch pad.
 ## Screenshots
 ![alt text](../images/scratch_pad.png "Scratch Pad")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
@@ -38,3 +38,5 @@ Widget Option Schema parameters:
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 > None
+
+> Test
