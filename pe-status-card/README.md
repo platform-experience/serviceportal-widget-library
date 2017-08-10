@@ -9,7 +9,7 @@ This widget can be used to quickly craft a status card with configurable options
 
 ![](../images/pe-status-card-2.png)
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
@@ -59,3 +59,5 @@ _CSS/SASS variables are given default values that can be overridden with theming
 `$pe-status-color-normal: #6ee520 !default;`<br/>
 `$pe-status-color-warning: #ffce00 !default;`<br/>
 `$pe-anchor-color: #68acd8 !default;`<br/>
+
+Testing yet again
