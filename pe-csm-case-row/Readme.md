@@ -1,4 +1,4 @@
-## PE CSM Case Row
+# PE CSM Case Row
 
 ## Description
 
@@ -7,7 +7,7 @@ This widget can be used to create a simple case card, with details like case num
 ## Screenshots
 ![alt text](../images/pe-csm-case-row.png "PE CSM case row")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 This widget makes use of [pe-people-info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info) widget to display user avatar, name and title, this widget is already part of the update set.
 
 People Info widget is injected dynamically in client controller.
@@ -15,9 +15,10 @@ People Info widget is injected dynamically in client controller.
 ---
 ## Installation
 ---
-Download and install update set **[pe-csm-case-row.u-update-set.xml](pe-csm-case-row.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-csm-case-row.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-csm-case-row/pe-csm-case-row.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

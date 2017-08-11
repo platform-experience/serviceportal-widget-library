@@ -1,4 +1,4 @@
-## Feedback Card
+# Feedback Card
 
 ## Description
 
@@ -13,14 +13,15 @@ This widget can be used to create a simple emoji rating/feedback card.
 ### Step 3
 ![alt text](../images/pe-feedback-card-screenshot-03.png "Timeline Widget- Step 3")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
 ---
-Download and install update set **[pe-feedback-card.u-update-set.xml](pe-feedback-card.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-feedback-card.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-feedback-card/pe-feedback-card.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

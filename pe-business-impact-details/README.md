@@ -1,4 +1,4 @@
-## Business Impact Details
+# Business Impact Details
 
 ## Description
 
@@ -7,13 +7,13 @@ Query the most recent anonaly alert from the *em_alert_anomaly* table to provide
 ## Screenshots
 ![alt text](../images/pe-business-impact-1b.png "expanded")
 
-## Additional Information/Notes 
-This widget is included as part of the update set **[pe-business-impact.u-update-set.xml](../pe-business-impact/pe-business-impact.u-update-set.xml)** <br/><br/>
+## Additional Information/Notes
+This widget is included as part of the update set **[pe-business-impact.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-business-impact/pe-business-impact.u-update-set.xml)** <br/><br/>
 
 ---
 ## Installation
 ---
-> See README for **[pe-business-impact](../pe-business-impact/README.md)** 
+> See README for **[pe-business-impact](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-business-impact/README.md)**
 ---
 ## Configuration
 ---
@@ -26,7 +26,7 @@ Widget Option Schema parameters:
 ## Platform Dependencies
 ---
 ### SN Plugin Support
-> See README for **[pe-business-impact](../pe-business-impact/README.md)**
+> See README for **[pe-business-impact](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-business-impact/README.md)**
 ---
 ## CSS/SASS Variables
 ---

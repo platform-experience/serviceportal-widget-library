@@ -1,4 +1,4 @@
-## FOEXP Debit Details
+# FOEXP Debit Details
 
 ## Description
 
@@ -7,16 +7,17 @@ This widget allows a user to submit and modify their debit details.
 ## Screenshots
 ![FOEXP Debit Details](../images/pe-foexp-debit-details.gif "FOEXP Debit Details")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 
 Update set installs the table 'User Debit Details' (u_user_debit_details) with sample data.
 
 ---
 ## Installation
 ---
-Download and install update set **[pe-foexp-debit-details.u-update-set.xml](pe-foexp-debit-details.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-foexp-debit-details.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-foexp-debit-details/pe-foexp-debit-details-update-set.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

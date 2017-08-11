@@ -1,4 +1,4 @@
-## Business Unit Details (ITBM Experience)
+# Business Unit Details (ITBM Experience)
 
 ## Description
 
@@ -19,14 +19,15 @@ This widget provides the ability to cascade multiple panels of information and r
 ![](../images/pe-itbm-business-unit-details-3.png)
 </td></tr></table>
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
 ---
-Download and install update set **[pe-itbm-business-unit-details.u-update-set.xml](pe-itbm-business-unit-details.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-itbm-business-unit-details.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-itbm-business-unit-details/pe-itbm-business-unit-details.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---
@@ -39,8 +40,8 @@ Widget Option Schema parameters:
 ---
 ## Sample Data and Data Structures
 ---
-There are two types of sample data sets provided and included in the Server Script file.  
-<br/>First, the data set that is used to build the multiple panels. 
+There are two types of sample data sets provided and included in the Server Script file.
+<br/>First, the data set that is used to build the multiple panels.
 <br/>And, the data set - chartOptions - used to build the two donut charts (ROI and RISK SCORE).
 <br/>Both are included as part of the Server Script file.
 

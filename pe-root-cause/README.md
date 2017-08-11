@@ -1,4 +1,4 @@
-## Root Cause and Root Cause Details
+# Root Cause and Root Cause Details
 
 ## Description
 
@@ -15,7 +15,7 @@ The detailed data is shown when the plus (+) graphic in the top right is selecte
 ### Resolved View
 ![alt text](../images/pe-root-cause-2a.png "resolved")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 The update set installs two (2) widgets - PE Root Cause and PE Root Cause Details.
 Though the PE Root Cause widget uses the PE Root Cause Details widget to display additional information about the alert anomaly, the details widget does not rely on the first widget in order to function.  The PE Root Cause Details can be used separately when configured with an anomaly alert record's sys_id.
 
@@ -23,9 +23,9 @@ Though the PE Root Cause widget uses the PE Root Cause Details widget to display
 ## Installation
 ---
 Ensure the that the **Performance Analytics - Content Pack - Event Management** plugin is Activated per the SN Plugin support section below.<br/><br/>
-Download and install update set **[pe-root-cause.u-update-set.xml](pe-root-cause.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-root-cause.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-root-cause/pe-root-cause.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration

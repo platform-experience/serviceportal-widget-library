@@ -1,4 +1,4 @@
-## End User Survey Widget
+# End User Survey
 
 ## Description
 
@@ -7,16 +7,17 @@ This can be used to display a list of a survey question's choices.
 ## Screenshots
 ![](../images/pe-enduser-survey.png)
 
-## Additional Information/Notes 
+## Additional Information/Notes
 
 Uses the ServiceNow® [Assessments](https://docs.servicenow.com/bundle/istanbul-servicenow-platform/page/administer/assessments/reference/r_Assessments.html?cshalt=yes ) application for data.
 
 ---
 ## Installation
 ---
-Download and install update set **[pe-enduser-survey.u-update-set.xml](pe-enduser-survey.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-enduser-survey.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-enduser-survey/pe-enduser-survey.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---
@@ -28,7 +29,7 @@ Widget Option Schema parameters:
 ## Platform Dependencies
 ---
 ### SN Plugin Support
-Widget support is provided by the ServiceNow® [Assessments](https://docs.servicenow.com/bundle/istanbul-servicenow-platform/page/administer/assessments/reference/r_Assessments.html?cshalt=yes ) application.  
+Widget support is provided by the ServiceNow® [Assessments](https://docs.servicenow.com/bundle/istanbul-servicenow-platform/page/administer/assessments/reference/r_Assessments.html?cshalt=yes ) application.
 The Assessments plugin is enabled by default.
 
 ### SN System Tables

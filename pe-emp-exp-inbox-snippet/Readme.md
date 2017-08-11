@@ -9,7 +9,7 @@ This widget can be used to quicly show a list of tabs, managin selection and wit
 ## Screenshots
 ![alt text](../images/pe-inbox-01.png "Inbox")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
@@ -19,7 +19,7 @@ This widget can be used to quicly show a list of tabs, managin selection and wit
 
 Download and install update set **[.u-update-set.xml](.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)   (<i>Select appropriate instance version</i>)
 ---
 ## Configuration
 ---

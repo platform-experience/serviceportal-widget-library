@@ -1,4 +1,4 @@
-## Status Card Snippet
+# Status Card Snippet
 
 ## Description
 
@@ -7,10 +7,10 @@ This snippet can be used to have a valid starting point for displaying a status 
 ## Screenshots
 ![alt text](../images/pe-status-card-snippet.png "Status Card Snippet")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 
 This widget makes use of the following additional widgets:
-* [pe-donut-chart widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-donut-chart) to display a donut chart representing the progress status. 
+* [pe-donut-chart widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/pe-donut-chart) to display a donut chart representing the progress status.
 
 * [pe-people-info widget](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info) to display user avatar, name and title.
 
@@ -21,9 +21,10 @@ Donut Chart and People Info widget are injected dynamically in client controller
 ---
 ## Installation
 ---
-Download and install update set **[pe-status-card-snippet.u-update-set.xml](pe-status-card-snippet.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-status-card-snippet.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-status-card-snippet/pe-status-card-snippet.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

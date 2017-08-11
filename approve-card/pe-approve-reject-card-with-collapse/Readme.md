@@ -1,4 +1,4 @@
-## Approve Reject Inbox
+# Approve Reject Inbox
 
 ## Description
 
@@ -7,14 +7,15 @@ This widget can be used to create a simple expandable inbox containing cards.
 ## Screenshots
 ![alt text](../../images/pe-approve-reject-inbox.png "Approve Reject Inbox")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
 ---
-Download and install update set **[pe-approve-reject-card-with-collapse.u-update-set.xml](pe-approve-reject-card-with-collapse.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-approve-reject-card-with-collapse.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/approve-card/pe-approve-reject-card-with-collapse/pe-approve-reject-card-with-collapse.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

@@ -1,4 +1,4 @@
-## Circle of Destiny
+# Circle of Destiny
 
 ## Description
 
@@ -19,13 +19,13 @@ The outer circles can have the following decorations added to them:
 ## Screenshots
 ![Circle of Destiny Widget](../images/pe-circle-of-destiny.png "Circle of Destiny Widget")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 
 If embedding the widget programatically, input needs to be supplied in a JSON format.<br/>
 
 Example:
 ```
-{	
+{
 	label: 'test',
 	icon: 'fa fa-users',
 	url: 'https://www.gmail.com',
@@ -59,9 +59,9 @@ Using the above JSON would result in the below circle of destiny:
 ## Installation
 ---
 
-Download and install update set **[pe-circle-of-destiny-update-set.u-update-set.xml](pe-circle-of-destiny-update-set.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-circle-of-destiny-update-set.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-circle-of-destiny/pe-circle-of-destiny-update-set.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration

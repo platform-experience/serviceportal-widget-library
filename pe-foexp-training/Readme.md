@@ -1,4 +1,4 @@
-## Training widget (Financial Onboarding Experience)
+# Training widget (Financial Onboarding Experience)
 
 ## Description
 
@@ -7,7 +7,7 @@ This widget can be used to show training courses allocated to the current user f
 ## Screenshots
 ![Training widget](../images/pe-foexp-training.png "Training widget")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 
 You can either use the "Category" option to select a category to always show in this widget, or pass the `category` parameter in via the URL to set which category the widget should show.
 
@@ -16,9 +16,10 @@ This widget makes use of 4 new custom tables that are installed as part of the U
 ---
 ## Installation
 ---
-Download and install update set **[pe-foexp-training.u-update-set.xml](pe-foexp-training.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-foexp-training.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-foexp-training/pe-foexp-training.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---
@@ -27,7 +28,7 @@ This widget uses 4 new custom tables. All are accessible under the new "Training
 #### _Categories_
 This is a group of training courses which are all displayed in the widget together.
 
-These are stored in the `u_pe_training_category` table. 
+These are stored in the `u_pe_training_category` table.
 
 #### _Courses_
 These are stored in the `u_pe_training_course` table.
@@ -35,7 +36,7 @@ These are stored in the `u_pe_training_course` table.
 #### _Prerequisites_
 This allows you to link courses together and says that, for example, "Training Course A" must be completed before "Training Course B" is started.
 
-These are stored in the `u_pe_training_prerequisites` table. 
+These are stored in the `u_pe_training_prerequisites` table.
 
 #### _Assignments_
 The current user must be assigned a course for it to show up in the widget.
@@ -43,7 +44,7 @@ The current user must be assigned a course for it to show up in the widget.
 These are stored in the `u_pe_training_assignments_list` table.
 
 <p/><br/>
-Widget Option Schema parameters: 
+Widget Option Schema parameters:
 
 **Category**
 

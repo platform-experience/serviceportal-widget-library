@@ -1,4 +1,4 @@
-## PE CSM Cost Breakdown
+# PE CSM Cost Breakdown
 
 ## Description
 
@@ -7,14 +7,15 @@ This widget can be used to create a simple card with heading and two rows of dat
 ## Screenshots
 ![alt text](../images/pe-csm-cost-breakdown.png "Pe csm Cost breakdown")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
 ---
-Download and install update set **[pe-csm-cost-breakdown.u-update-set.xml](pe-csm-cost-breakdown.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-csm-cost-breakdown.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-csm-cost-breakdown/pe-csm-cost-breakdown.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

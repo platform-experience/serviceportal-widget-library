@@ -1,9 +1,8 @@
-## Status Alert
+# Status Alert
 
 ## Description
 
 Displays status information about the most recent alert record from the *em_alert_anomaly* table.
-
 
 ## Screenshots
 ### Alert/Warning View
@@ -15,9 +14,9 @@ Displays status information about the most recent alert record from the *em_aler
 ## Installation
 ---
 Ensure the that the **Performance Analytics - Content Pack - Event Management** plugin is Activated per the SN Plugin support section below.<br/><br/>
-Download and install update set **[pe-status-alert.u-update-set.xml](pe-status-alert.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-status-alert.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-status-alert/pe-status-alert.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration

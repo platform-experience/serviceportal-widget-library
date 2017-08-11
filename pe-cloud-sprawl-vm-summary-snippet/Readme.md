@@ -1,4 +1,4 @@
-## Summary Data Snippet
+# Summary Data Snippet
 
 ## Description
 
@@ -7,7 +7,7 @@ This snippet can be used to quickly obtain a card containing sub sections with d
 ## Screenshots
 ![](../images/pe-summary-data-snippet.png)
 
-## Additional Information/Notes 
+## Additional Information/Notes
 This widget makes use of [pe-donut-chart-wizard](https://github.com/platform-experience/serviceportal-widget-library/tree/master/Charts/pe-donut-chart-wizard) and is included in the update set.
 
 Donut Chart Wizards widget is injected dynamically in client controller.
@@ -15,9 +15,10 @@ Donut Chart Wizards widget is injected dynamically in client controller.
 ---
 ## Installation
 ---
-Download and install update set **[pe-cloud-sprawl-vm-summary-snippet.u-update-set.xml](pe-cloud-sprawl-vm-summary-snippet.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-cloud-sprawl-vm-summary-snippet.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-cloud-sprawl-vm-summary-snippet/pe-cloud-sprawl-vm-summary-snippet.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

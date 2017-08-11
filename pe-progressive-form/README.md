@@ -1,4 +1,4 @@
-## Progressive Form
+# Progressive Form
 
 ## Description
 
@@ -15,7 +15,7 @@ Features:
 ## Screenshots
 <kbd><img src="../images/pe-progressive-form.gif" /></kbd>
 
-## Additional Information/Notes 
+## Additional Information/Notes
 - This widget creates numbered ”Concertina” panels for each form section, plus an additional final panel for the child (related) records. The final panel also contains the submit button.
 - As with the out of box "Form" widget, use the `sys_id` URL parameter to specify the record to open. Not supplying this parameter will result in a new master record being created upon submission of the form.
 - Ensure the tables your editing have corresponding server-side UI Actions with the appropriate action names.
@@ -23,10 +23,10 @@ Features:
 ---
 ## Installation
 ---
-Download and install update set **[pe-progressive-form.u-update-set.xml](pe-progressive-form.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-progressive-form.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-progressive-form/pe-progressive-form.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration

@@ -1,4 +1,4 @@
-## PE CSM Case Details
+# PE CSM Case Details
 
 ## Description
 
@@ -7,7 +7,7 @@ This widget can be used to create `??`.
 ## Screenshots
 ![alt text](../images/pe-csm-case-details.png "PE CSM Case Details")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 When a case sysid is provided in the Widget Schema options, the widget will fetch details from the record and the associated SLA for display.
 
 ---
@@ -15,9 +15,10 @@ When a case sysid is provided in the Widget Schema options, the widget will fetc
 ---
 Ensure the that the Customer Service Management (and Demo Data, if necessary) application is Activated as referenced by the Platform Dependencies.<br/>
 
-Download and installation of update set **[pe-csm-case-details.u-update-set.xml](pe-csm-case-details.u-update-set.xml)** includes this widget.<br/><br/>
+Download and installation of update set **[pe-csm-case-details.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-csm-case-details/pe-csm-case-details.u-update-set.xml)** includes this widget.<br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---
@@ -38,7 +39,7 @@ Widget support is provided by the ServiceNow® [Customer Service Management](htt
 
 **sn_customerservice_case**
 
-**task_sla** 
+**task_sla**
 
 ---
 ## Sample Data and Data Structures
