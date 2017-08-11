@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-28 22:49:54">
+<unload unload_date="2017-08-11 19:43:21">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,22 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>pe-cloud-sprawl-card-utilization-snippet</name>
+<name>PE Cloud Sprawl Card Utilization Snippet</name>
 <origin_sys_id/>
+<parent display_value=""/>
 <release_date/>
-<remote_sys_id>cafe00a913353200d15e3d7ed144b0f0</remote_sys_id>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>5d1fe6a4db9bf200f0e8de01ce961984</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-28 22:49:53</sys_created_on>
-<sys_id>c53f80a913353200d15e3d7ed144b08e</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-08-11 19:43:20</sys_created_on>
+<sys_id>aebcbb09dbecc700a0785404ce9619f7</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-28 22:49:53</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-08-11 19:43:20</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,12 +36,12 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_5302771d13f13200d15e3d7ed144b065</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function CardUtilizationSnippet($scope) {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function CardUtilizationController() {
   var c = this;
-  $scope.getinitials = function (user) {
+  c.getInitials = getInitials;
 
-    var initials = "";
+  function getInitials(user) {
+    var initials = '';
     if (user &amp;&amp; !user.photo) {
       if (!user.first_name || !user.last_name) {
         initials = angular.uppercase(user.name.charAt(0));
@@ -46,18 +49,15 @@
         initials = angular.uppercase(user.first_name.charAt(0));
         initials = initials + angular.uppercase(user.last_name.charAt(0));
       }
-
     }
     return initials;
-  };
+  }
 
   c.company = {
     name: "AWS",
     icon: "#icon-aws",
-
     util_percent: "82%",
     underutil_percent: "10%",
-
     vm_list: [{
       vmnumber: "VM1",
       vm_number: "MARKETING",
@@ -70,9 +70,7 @@
         photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
         title: "Application Manager",
         phone: "8581234567"
-
       }
-
     }, {
       vmnumber: "VM2",
       vm_number: "MARKETING",
@@ -85,9 +83,7 @@
         photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
         title: "Application Manager",
         phone: "8581234567"
-
       }
-
     }, {
       vmnumber: "VM3",
       vm_number: "MARKETING",
@@ -100,13 +96,9 @@
         photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
         title: "Application Manager",
         phone: "8581234567"
-
       }
-
-    }],
-
+    }]
   };
-
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.each-row {
   display: flex;
   padding: 10px 10px;
@@ -282,11 +274,7 @@
       align-items: center;
     }
   }
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-cloud-sprawl-card-utilization-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Sprawl Card Utilization Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
-  /* e.g., how to extract current logged user info sample */
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-cloud-sprawl-card-utilization-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Sprawl Card Utilization Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   data.user_sys_id = gs.getUserID();
   var userGR = new GlideRecord('sys_user');
   if (userGR.get(data.user_sys_id)) {
@@ -295,12 +283,10 @@
     data.user_full_name = userGR.getDisplayValue('name');
     data.user_job_title = userGR.getDisplayValue('title');
     data.user_photo = userGR.getDisplayValue('photo');
-    data.user_phone = userGR.phone.toString().replace(/[- )(]/g, '');
+    data.user_phone = userGR.phone.toString().replace(/[\- )(]/g, '');
     data.user_initials = data.user_first_name.charAt(0) + data.user_last_name.charAt(0);
   }
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-28 20:49:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5302771d13f13200d15e3d7ed144b065&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Sprawl Card Utilization Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_5302771d13f13200d15e3d7ed144b065&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-28 21:10:28&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
-
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-28 20:49:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;5302771d13f13200d15e3d7ed144b065&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Sprawl Card Utilization Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_5302771d13f13200d15e3d7ed144b065&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-11 19:42:18&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
   &lt;symbol id="icon-azure" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
     &lt;g id="Page-1"&gt;
       &lt;g id="1.0-Home-Dashboard---All-Providers" transform="translate(-259.000000, -91.000000)"&gt;
@@ -349,7 +335,6 @@
     &lt;/g&gt;
   &lt;/symbol&gt;
 &lt;/svg&gt;
-
 &lt;div class="each-row" ng-repeat="each in c.company.vm_list"&gt;
   &lt;div class="first-box"&gt;
     &lt;p class="big-text"&gt;{{each.vmnumber}}&lt;/p&gt;
@@ -361,7 +346,6 @@
       &lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="{'width': each.progress}"&gt;
         &lt;span class="sr-only"&gt;60% Complete&lt;/span&gt;
       &lt;/div&gt;
-
     &lt;/div&gt;
     &lt;p class="percent-complete"&gt;{{each.progress}}&lt;/p&gt;
   &lt;/div&gt;
@@ -369,30 +353,31 @@
     &lt;div class="media  people-card-media"&gt;
       &lt;div class="media-left "&gt;
         &lt;div class="person-photo "&gt;
-
           &lt;img ng-if="each.user.photo" class="media-object list__photo img-circle ng-scope" ng-src="{{data.user_photo}}"&gt;
           &lt;div ng-if="!each.user.photo " class="badge initials-badge" data-original-title="" title=""&gt;
-            &lt;span class="" ng-bind="getinitials(each.user)"&gt;&lt;/span&gt;
+            &lt;span class="" ng-bind="c.getInitials(each.user)"&gt;&lt;/span&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-
-
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-cloud-sprawl-card-utilization-snippet">c53f80a913353200d15e3d7ed144b08e</remote_update_set>
+<payload_hash>-1309911101</payload_hash>
+<remote_update_set display_value="PE Cloud Sprawl Card Utilization Snippet">aebcbb09dbecc700a0785404ce9619f7</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-28 22:49:54</sys_created_on>
-<sys_id>013f80a913353200d15e3d7ed144b08f</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2017-08-11 19:43:20</sys_created_on>
+<sys_id>a2bcbb09dbecc700a0785404ce9619f8</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-28 22:49:54</sys_updated_on>
+<sys_recorded_at>15dd2d19d400000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2017-08-11 19:43:20</sys_updated_on>
 <table/>
 <target_name>PE Cloud Sprawl Card Utilization Snippet</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
+<update_guid>6b7c3bc548ecc7003775ded4b1a18c0d</update_guid>
+<update_guid_history>6b7c3bc548ecc7003775ded4b1a18c0d:-1309911101,40eb7fc54decc700bf1802bb8e449fa8:1409125290,9b4bf7c5e0ecc700ae0c552cf514c3ed:732180715,-124847525:-124847525</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
