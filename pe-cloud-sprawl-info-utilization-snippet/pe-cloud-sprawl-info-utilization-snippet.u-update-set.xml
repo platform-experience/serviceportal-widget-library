@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-28 23:09:55">
+<unload unload_date="2017-08-12 03:37:31">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -10,19 +10,22 @@
 <deleted/>
 <description/>
 <inserted/>
-<name>pe-cloud-sprawl-info-utilization-snippet</name>
+<name>PE Cloud Sprawl Info Utilization Snippet</name>
 <origin_sys_id/>
+<parent display_value=""/>
 <release_date/>
-<remote_sys_id>e7a258e913353200d15e3d7ed144b02f</remote_sys_id>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>360821d5dba44700db45bff0ef9619e7</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-28 23:09:54</sys_created_on>
-<sys_id>52c35ce913353200d15e3d7ed144b078</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-08-12 03:37:31</sys_created_on>
+<sys_id>e0496159dba44700db45bff0ef961958</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-28 23:09:54</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-08-12 03:37:31</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,17 +36,14 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_2ab9571d13f532007e94fc5ed144b08a</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function InfoUtilizationSnippet() {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function InfoUtilizationController() {
   var c = this;
 
   c.company = {
     name: "AWS",
     icon: "#icon-aws",
-
     util_percent: "82%",
     underutil_percent: "10%",
-
     vm_list: [{
       vmnumber: "VM1",
       vm_number: "MARKETING",
@@ -56,9 +56,7 @@
         photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
         title: "Application Manager",
         phone: "8581234567"
-
       }
-
     }, {
       vmnumber: "VM2",
       vm_number: "MARKETING",
@@ -71,9 +69,7 @@
         photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
         title: "Application Manager",
         phone: "8581234567"
-
       }
-
     }, {
       vmnumber: "VM3",
       vm_number: "MARKETING",
@@ -86,14 +82,9 @@
         photo: "fae1fa1013d07e00f7f5bcc32244b091.iix",
         title: "Application Manager",
         phone: "8581234567"
-
       }
-
-    }],
-
+    }]
   };
-
-
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.heading {
   font-size: 18px;
   color: #626262;
@@ -278,11 +269,11 @@ p {
 
 .vmwwidth {
   width: 80px !important;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-cloud-sprawl-info-utilization-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Sprawl Info Utilization Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-cloud-sprawl-info-utilization-snippet&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Sprawl Info Utilization Snippet&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
 
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-28 18:57:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;2ab9571d13f532007e94fc5ed144b08a&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Sprawl Info Utilization Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_2ab9571d13f532007e94fc5ed144b08a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-28 19:48:07&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-28 18:57:49&lt;/sys_created_on&gt;&lt;sys_id&gt;2ab9571d13f532007e94fc5ed144b08a&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Sprawl Info Utilization Snippet&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_2ab9571d13f532007e94fc5ed144b08a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-12 03:35:48&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;"&gt;
 
   &lt;symbol id="icon-azure" stroke="none" stroke-width="1" fill-rule="evenodd"&gt;
     &lt;g id="Page-1"&gt;
@@ -370,18 +361,22 @@ p {
     &lt;i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': company.open, 'glyphicon-chevron-up': !company.open}"&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="pe-cloud-sprawl-info-utilization-snippet">52c35ce913353200d15e3d7ed144b078</remote_update_set>
+<payload_hash>1433933295</payload_hash>
+<remote_update_set display_value="PE Cloud Sprawl Info Utilization Snippet">e0496159dba44700db45bff0ef961958</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-28 23:09:54</sys_created_on>
-<sys_id>16c35ce913353200d15e3d7ed144b078</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-08-12 03:37:31</sys_created_on>
+<sys_id>e4496159dba44700db45bff0ef961958</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-28 23:09:54</sys_updated_on>
+<sys_recorded_at>15dd4831da00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-08-12 03:37:31</sys_updated_on>
 <table/>
 <target_name>PE Cloud Sprawl Info Utilization Snippet</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
+<update_guid>57d86d19c4a447008f092398b43d0767</update_guid>
+<update_guid_history>57d86d19c4a447008f092398b43d0767:1433933295,070821d5c7a44700881298ce7eee64ed:1839603919</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
