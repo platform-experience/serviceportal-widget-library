@@ -33,23 +33,24 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_8d2b96c513127200ba3a7b1a6144b0ed</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
-	/* widget controller */
-	var c = this;
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function RootCauseController() {
+  var c = this;
+  c.alert = c.data.alert;
+  c.drawerWidget = c.data.drawerWidget;
 
-	c.alert = c.data.alert;
-	c.drawerWidget = c.data.drawerWidget;
-
-	c.stats = [
-		{ name: c.alert.ci.name, icon: '#server' },
-		{ name: c.alert.type, icon: '#computer-ram' },
-		{ name: 'Cause', icon: "#calendar", detail: c.alert.incident.cause.number || "unknown" }
-	];
-
-	/*
-	console.log("/---- Root Cause ----/");
-	console.log(c);
-	*/
+  c.stats = [{
+    name: c.alert.ci.name,
+    icon: '#server'
+  },
+  {
+    name: c.alert.type,
+    icon: '#computer-ram'
+  },
+  {
+    name: 'Cause',
+    icon: '#calendar',
+    detail: c.alert.incident.cause.number || 'unknown'
+  }];
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
 $orange: #ff6f00;
 $medium-green: #34ba3d;
@@ -171,7 +172,7 @@ $status-recovered-color: $medium-green !default;
 	padding: 8px 12px;
 	&amp;amp;:first-child {
 		padding-top: 13px;
-	} 
+	}
 }
 .drawer-list-item {
 	margin-bottom: 10px;
@@ -278,9 +279,9 @@ $status-recovered-color: $medium-green !default;
 				&lt;i class="{{options.titleIconClasses}}" aria-hidden="true"&gt;&lt;/i&gt;
 			&lt;/span&gt;
 			&lt;span&gt;Root Cause Identified&lt;/span&gt;
-			&lt;div class="panel-expander-wrapper" 
+			&lt;div class="panel-expander-wrapper"
 				ng-if="c.alert.incident &amp;&amp; (c.alert.incident.problem.sys_id || c.alert.incident.cause.sys_id)"
-				ng-click="c.expanded = !c.expanded" data-toggle="collapse" data-target="#root-cause-drawer" 
+				ng-click="c.expanded = !c.expanded" data-toggle="collapse" data-target="#root-cause-drawer"
 				aria-expanded="false" aria-controls="root-cause-drawer"&gt;
 				&lt;svg class="panel-expander"&gt;
 					&lt;use xlink:href="#plus"&gt;&lt;/use&gt;
@@ -446,16 +447,9 @@ $status-recovered-color: $medium-green !default;
 <category>customer</category>
 <comments/>
 <name>sp_widget_3ba4a20a13de7200ba3a7b1a6144b09f</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function RootCauseDetailsController() {
   var c = this;
-
   c.incident = c.data.incident;
-  
-	/*
-	console.log("/---- RC Details ----/");
-	console.log(c);
-	*/
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$list-header-bg-color: #e8e8e8 !default;
 $state-default-color: #557f90 !default;
 $state-positive: #3abe43 !default;
@@ -556,7 +550,7 @@ $state-negative: #ff402c !default;
     alertGR.next();
     alert = buildAlert( alertGR );
   }
-	
+
 	data.alert = alert;
 
 	if(alert.incident){

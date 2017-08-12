@@ -1,4 +1,3 @@
-function() {
-	/* widget controller */
-	var c = this;
+function EndUserSurveyController() {
+  var c = this;
 }

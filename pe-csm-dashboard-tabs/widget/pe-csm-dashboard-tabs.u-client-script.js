@@ -1,5 +1,4 @@
-function() {
-    /* widget controller */
-    var c = this;
-    c.state = 1;
+function DashboardTabsController() {
+  var c = this;
+  c.state = 1;
 }

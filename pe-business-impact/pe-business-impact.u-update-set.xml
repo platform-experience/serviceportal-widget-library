@@ -87,7 +87,7 @@ $status-recovered-color: $medium-green !default;
 	padding: 8px 12px;
 	&amp;amp;:first-child {
 		padding-top: 13px;
-	} 
+	}
 }
 .drawer-list-item {
 	margin-bottom: 10px;
@@ -176,7 +176,7 @@ $status-recovered-color: $medium-green !default;
 		summaryStats.revenue += fakeRev;
 		summaryStats.users += fakeUsers;
 
-		
+
 		arr.push({
       sys_id: rec.sys_id.toString(),
       name: rec.name.toString(),
@@ -185,19 +185,19 @@ $status-recovered-color: $medium-green !default;
       users: fakeUsers.toString() + 'K',
       revenue: fakeRev.toString() +'M'
     });
-		
+
     var ciGR = new GlideRecord('cmdb_rel_ci');
     ciGR.addQuery('type.sys_id', REL_ID );
     ciGR.addQuery('child.sys_id', rec.sys_id.toString() );
     ciGR.query();
-		
+
     while ( ciGR.next() ) {
       var parentGR = new GlideRecord('cmdb_ci_service');
 			data.userGroups.push(ciGR.parent.toDisplayValue());
       parentGR.get( ciGR.parent.toString() );
       var dependentsArray = getDependentCIs(parentGR, []);
       dependentsArray.forEach(function(ci){
-        arr.push(ci); 
+        arr.push(ci);
 			});
     }
     return arr;
@@ -219,11 +219,11 @@ $status-recovered-color: $medium-green !default;
       cis: CIs
     };
   };
-	
+
   var alertGR, alert;
 	//Passed in from the Business Impact widget
 	if(options.alert){
-		data.alert = options.alert;		
+		data.alert = options.alert;
 	}else{
 		if (options.alert_sysid) {
 			alertGR = new GlideRecord('em_alert_anomaly');
@@ -242,7 +242,7 @@ $status-recovered-color: $medium-green !default;
 		alert.summaryStats.revenue = alert.summaryStats.revenue.toFixed(1);
 		data.alert = alert;
 	}
-  
+
 })();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 06:18:47&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;fa62d4c5139e3200ba3a7b1a6144b0d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;83&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Business Impact Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fa62d4c5139e3200ba3a7b1a6144b0d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-09 14:28:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row text-center drawer-list-header"&gt;
 	&lt;div class="col-xs-4 text-left"&gt;
 		Lines of Business
@@ -359,17 +359,22 @@ $status-recovered-color: $medium-green !default;
 <category>customer</category>
 <comments/>
 <name>sp_widget_93c9cca813963200ba3a7b1a6144b0bd</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($scope) {
-	/* widget controller */
-	var c = this;
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function BusinessImpactController() {
+  var c = this;
+  c.alert = c.data.alert;
 
-	c.alert = c.data.alert;
-
-	c.stats = [
-		{ name: 'Services', value: c.alert.cis.length },
-		{ name: '$ Per Hour', value: c.alert.summaryStats.revenue + 'M'},
-		{ name: 'Users', value: c.alert.summaryStats.users + 'K'}
-	];
+  c.stats = [{
+    name: 'Services',
+    value: c.alert.cis.length
+  },
+  {
+    name: '$ Per Hour',
+    value: c.alert.summaryStats.revenue + 'M'
+  },
+  {
+    name: 'Users',
+    value: c.alert.summaryStats.users + 'K'
+  }];
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$slate: #485563;
 $orange: #ff6f00;
 $medium-green: #34ba3d;
@@ -476,7 +481,7 @@ $status-recovered-color: $medium-green !default;
 	padding: 8px 12px;
 	&amp;amp;:first-child {
 		padding-top: 13px;
-	} 
+	}
 }
 .drawer-list-item {
 	margin-bottom: 10px;
@@ -532,7 +537,7 @@ $status-recovered-color: $medium-green !default;
 		summaryStats.revenue += fakeRev;
 		summaryStats.users += fakeUsers;
 
-		
+
 		arr.push({
       sys_id: rec.sys_id.toString(),
       name: rec.name.toString(),
@@ -541,19 +546,19 @@ $status-recovered-color: $medium-green !default;
       users: fakeUsers.toString() + 'K',
       revenue: fakeRev.toString() +'M'
     });
-		
+
     var ciGR = new GlideRecord('cmdb_rel_ci');
     ciGR.addQuery('type.sys_id', REL_ID );
     ciGR.addQuery('child.sys_id', rec.sys_id.toString() );
     ciGR.query();
-		
+
     while ( ciGR.next() ) {
       var parentGR = new GlideRecord('cmdb_ci_service');
 			data.userGroups.push(ciGR.parent.toDisplayValue());
       parentGR.get( ciGR.parent.toString() );
       var dependentsArray = getDependentCIs(parentGR, []);
       dependentsArray.forEach(function(ci){
-        arr.push(ci); 
+        arr.push(ci);
 			});
     }
     return arr;

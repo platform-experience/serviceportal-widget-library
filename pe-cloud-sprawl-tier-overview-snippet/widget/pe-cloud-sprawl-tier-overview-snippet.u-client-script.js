@@ -1,4 +1,3 @@
-function() {
-  /* widget controller */
+function TierOverviewController() {
   var c = this;
 }

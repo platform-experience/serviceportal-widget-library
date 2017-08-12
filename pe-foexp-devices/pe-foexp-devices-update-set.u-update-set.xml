@@ -165,61 +165,63 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_566f11f64fd2b20022f40ccf0310c775</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function(spUtil, $scope, $window, $sce) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function DevicesController(spUtil, $scope, $window, $sce) {
   var c = this;
-	
-	c.type = '';
-	c.item = '';
-	c.itemWidget = '';
-	c.view = 'pe-foexp-devices-main.html';
-	
-	c.setView = function (view) {
-		switch (view) {
-			case 'main':
-				c.view = 'pe-foexp-devices-main.html';
-				break;
-			case 'select':
-				c.view = 'pe-foexp-devices-select.html';
-				break;
-			case 'checkout':
-				c.view = 'pe-foexp-devices-checkout.html';
-				break;
-			default:
-				c.view = 'pe-foexp-devices-main.html';
-		}
-	}
-	
-	c.setType = function (type) {
-		c.type = type;
-		c.setView('select');
-		c.server.get({action: 'getItems', type: type}).then(function (response) {
-			c.data.items = response.data.items;
-		});
-	}
-	
-	c.goBack = function () {
-		if (c.view == 'pe-foexp-devices-checkout.html') {
-			c.setType(c.type);
-		} else {
-			c.setView();
-		}
-	}
-	
-	c.setItem = function (item) {
-		c.item = item;
-		
-		spUtil.get("widget-sc-cat-item", {
-			sys_id: item.sys_id
-		})
-		.then(function (response) {
-			c.itemWidget = response;
-			c.setView('checkout');
-		});
-	}
-	
-	$scope.$on('$sp.sc_cat_item.submitted', function () {
-		$window.location.reload();
-	});
+  c.type = '';
+  c.item = '';
+  c.itemWidget = '';
+  c.view = 'pe-foexp-devices-main.html';
+
+  c.setView = function (view) {
+    switch (view) {
+    case 'main':
+      c.view = 'pe-foexp-devices-main.html';
+      break;
+    case 'select':
+      c.view = 'pe-foexp-devices-select.html';
+      break;
+    case 'checkout':
+      c.view = 'pe-foexp-devices-checkout.html';
+      break;
+    default:
+      c.view = 'pe-foexp-devices-main.html';
+    }
+  };
+
+  c.setType = function (type) {
+    c.type = type;
+    c.setView('select');
+    c.server.get({
+      action: 'getItems',
+      type: type
+    }).then(function (response) {
+      c.data.items = response.data.items;
+    });
+  };
+
+  c.goBack = function () {
+    if (c.view == 'pe-foexp-devices-checkout.html') {
+      c.setType(c.type);
+    } else {
+      c.setView();
+    }
+  };
+
+  c.setItem = function (item) {
+    c.item = item;
+
+    spUtil.get('widget-sc-cat-item', {
+      sys_id: item.sys_id
+    })
+      .then(function (response) {
+        c.itemWidget = response;
+        c.setView('checkout');
+      });
+  };
+
+  $scope.$on('$sp.sc_cat_item.submitted', function () {
+    $window.location.reload();
+  });
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$primary-color: #117fc1 !default;
 $icon-color: white !default;
 
@@ -234,35 +236,35 @@ $icon-color: white !default;
     margin-top: 0;
     margin-bottom: 10px;
     list-style: none;
-    
+
     &amp;gt; li {
       position: relative;
       padding: 20px 25px;
   	}
   }
-  
+
   .foexp-dev-head {
     color: #34495e;
     font-size: 18px;
     margin: 20px 20px 0 20px;
   }
-  
+
   .foexp-dev-title {
     color: #34495e;
     font-size: 25px;
   }
-  
+
   .foexp-dev-img {
     background-size:contain;
 		background-repeat: no-repeat;
-    
+
     img {
       visibility: hidden;
       max-width: 50px;
       max-height: 50px;
     }
   }
-  
+
   .foexp-dev-desc {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -383,7 +385,7 @@ $icon-color: white !default;
 
     display: flex;
     justify-content: center;
-    
+
     i {
       line-height: 120px;
     }
@@ -419,16 +421,16 @@ $icon-color: white !default;
 	var laptopsSysId = 'd258b953c611227a0146101fb1be7c31';
 	var phonesSysId = 'd68eb4d637b1300054b6a3549dbe5db2';
 	var tabletsSysId = 'b06546f23731300054b6a3549dbe5dd8';
-	
+
 	var obj = {};
 	var regex = /(&lt;([^&gt;]+)&gt;)/ig
-	
-	
-	
+
+
+
 	if (input.action == 'getItems') {
-		
+
 		var gr = new GlideRecord('sc_cat_item');
-		
+
 		if (input.type == 'laptops') {
 			gr.addQuery('category', laptopsSysId);
 		} else if (input.type == 'phones') {
@@ -438,54 +440,54 @@ $icon-color: white !default;
 		} else {
 			return;
 		}
-		
+
 		gr.query();
-		
+
 		var items = [];
 		while (gr.next()) {
 			obj = {};
 			obj.sys_id = gr.sys_id.toString();
 			obj.title = gr.getDisplayValue();
 			obj.description = gr.description.toString().replace(regex,'');
-			
+
 			obj.picture = gr.picture.getDisplayValue();
 			items.push(obj)
 		}
 
 		data.items = items;
-		
+
 		return;
 	}
-	
+
 	var laptops, phones, tablets = 0;
-	
+
 	var count = new GlideAggregate('sc_req_item');
 	count.addQuery('cat_item.category', laptopsSysId);
 	count.addQuery('requested_for', gs.getUserID());
 	count.addAggregate('COUNT');
 	count.query();
-	
+
 	if (count.next())
 		laptops = count.getAggregate('COUNT');
-	
+
 	count = new GlideAggregate('sc_req_item');
 	count.addQuery('cat_item.category', phonesSysId);
 	count.addQuery('requested_for', gs.getUserID());
 	count.addAggregate('COUNT');
 	count.query();
-	
+
 	if (count.next())
 		phones = count.getAggregate('COUNT');
-	
+
 	count = new GlideAggregate('sc_req_item');
 	count.addQuery('cat_item.category', tabletsSysId);
 	count.addQuery('requested_for', gs.getUserID());
 	count.addAggregate('COUNT');
 	count.query();
-	
+
 	if (count.next())
 		tablets = count.getAggregate('COUNT');
-	
+
 	data.complete = {};
 	data.complete.laptops = laptops &gt; 0 ? true : false;
 	data.complete.phones = phones &gt; 0 ? true : false;

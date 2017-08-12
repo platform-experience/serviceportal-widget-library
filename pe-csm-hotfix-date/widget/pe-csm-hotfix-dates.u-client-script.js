@@ -1,4 +1,3 @@
-function() {
-  /* widget controller */
+function HotfixDatesController() {
   var c = this;
 }

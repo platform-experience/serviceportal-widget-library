@@ -734,20 +734,26 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <category>customer</category>
 <comments/>
 <name>sp_widget_f1e85fbd4f1e320022f40ccf0310c7b5</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TrainingController() {
   var c = this;
-	
-	c.enroll = function (item) {
-		c.server.get({action: 'enroll', sys_id: item.course}).then(function (result) {
-			item.enrolled = result.data.enrolled;
-		});
-	}
-	
-	c.remove = function (item) {
-		c.server.get({action: 'remove', sys_id: item.course}).then(function () {
-			item.enrolled = null;
-		});
-	}
+
+  c.enroll = function (item) {
+    c.server.get({
+      action: 'enroll',
+      sys_id: item.course
+    }).then(function (result) {
+      item.enrolled = result.data.enrolled;
+    });
+  };
+
+  c.remove = function (item) {
+    c.server.get({
+      action: 'remove',
+      sys_id: item.course
+    }).then(function () {
+      item.enrolled = null;
+    });
+  };
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$page-bg: #f5f5f5 !default;
 $primary-color: #117fc1 !default;
 $primary-color-darker: #0065d3 !default;
@@ -991,11 +997,11 @@ $alternate-color: #34495e !default;
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-training&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Training&lt;/name&gt;&lt;option_schema&gt;[{"displayValue":"Training Category","hint":"The training category to show in this widget (leave blank to use 'category' parameter passed in via URL)","name":"category","label":"Category","type":"reference","value":"u_pe_training_category","ed":{"reference":"u_pe_training_category"}}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function($sp) {
 	var obj;
   var gr;
-	
+
 	var category = options.category || $sp.getParameter('category');
-	
+
 	if (input.action == 'remove') {
-		
+
 		gr = new GlideRecord('u_pe_training_assignments');
 		if (gr.get(input.sys_id)) {
 			gr.u_enrolled = "";
@@ -1003,7 +1009,7 @@ $alternate-color: #34495e !default;
 		}
 		return;
 	}
-	
+
 	if (input.action == 'enroll') {
 		gr = new GlideRecord('u_pe_training_assignments');
 		if (gr.get(input.sys_id)) {
@@ -1014,7 +1020,7 @@ $alternate-color: #34495e !default;
 		}
 		return;
 	}
-	
+
 	data.item = {};
 	gr = new GlideRecord('u_pe_training_category');
 	if (gr.get(category)) {
@@ -1022,7 +1028,7 @@ $alternate-color: #34495e !default;
 	} else {
 		return;
 	}
-	
+
 	gr = new GlideRecord('u_pe_training_assignments');
 	gr.addQuery('u_course.u_category', category);
 	gr.addQuery('u_user', gs.getUserID());
@@ -1035,7 +1041,7 @@ $alternate-color: #34495e !default;
 	var training_completed = {};
 	while (gr.next()) {
 		obj = {};
-		
+
 		obj.name = gr.u_course.u_name.toString();
 		obj.course = gr.sys_id.toString();
 		obj.sys_id = gr.u_training.sys_id.toString();
@@ -1055,8 +1061,8 @@ $alternate-color: #34495e !default;
 			training_list.push(gr.u_course.sys_id.toString());
 		}
 	}
-	
-	
+
+
 	gr = new GlideRecord('u_pe_training_prerequisites');
 	gr.addQuery('u_course', 'IN', training_list);
 	gr.query();
@@ -1073,7 +1079,7 @@ $alternate-color: #34495e !default;
 		}
 	}
 
-	
+
 })($sp);]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-24 04:41:00&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;f1e85fbd4f1e320022f40ccf0310c7b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;75&lt;/sys_mod_count&gt;&lt;sys_name&gt;Training&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_f1e85fbd4f1e320022f40ccf0310c7b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-24 23:11:34&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="c.data.items"&gt;
     &lt;div class="subheader"&gt;
         &lt;div class="title"&gt;
