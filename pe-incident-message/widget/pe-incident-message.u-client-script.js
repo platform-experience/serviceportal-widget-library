@@ -15,5 +15,5 @@ function IncidentMessageController($interval, timeService) {
     $interval(function() {
       getTimes();
     }, 60000);
-
+  }
 }
