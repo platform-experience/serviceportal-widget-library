@@ -1,4 +1,4 @@
-function IncidentMessageController($interval, timeService) {
+function($interval, timeService) {
   var c = this;
 
   c.$onInit = function() {
