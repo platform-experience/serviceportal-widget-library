@@ -2,7 +2,7 @@
 
 ## Description
 
-This widget shows how it is simple to represent data using external libraries, easy to include within the ServiceNow platform. This widget is using the highest rated framework for building charts, that is NVD3.
+This widget shows how it is simple to represent data using external libraries, easy to include within the ServiceNow platform. This widget is using NVD3, the highest rated framework for building charts.
 
 ## Screenshots
 ![](../images/pe-charts-nvd3.png)
