@@ -143,8 +143,7 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_dc73d1acdbde32002e5df2b6ae96199e</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function() {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function EndUserSurveyController() {
   var c = this;
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.report-issue {
   h1 {
@@ -222,7 +221,7 @@
 	options.question_id = options.question_id || serverOptions.question_id;
 	data.title = "No Question Specified";
 	data.issues = [];
-	
+
 	var asmtGR = new GlideRecord("asmt_metric");
 	if(asmtGR.get(options.question_id)){
 		data.title = asmtGR.name.toString();

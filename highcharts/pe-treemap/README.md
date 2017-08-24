@@ -1,4 +1,4 @@
-## Treemap Chart
+# Treemap Chart
 
 ## Description
 
@@ -8,13 +8,13 @@ This is used to create a simple Treemap
 ![](../../images/pe-treemap-chart.png)
 ![alt text](../../images/pe-treemap-chart-modified.png "Modified Version Using Advanced")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
-Download and install update set **[pe-treemap.u-update-set.xml](pe-treemap.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-treemap.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/highcharts/pe-treemap/pe-treemap.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration

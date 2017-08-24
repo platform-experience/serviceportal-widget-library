@@ -1,4 +1,4 @@
-## Timeline
+# Timeline
 
 ## Description
 
@@ -16,13 +16,13 @@ This widget can be used to quickly obtain an initial implementation of a timelin
 ### Show Icons set to False and Show Colors set to True
 ![alt text](../../images/pe-timeline-screenshot-05.png "Timeline Widget - With the option Show Colors set to True")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
-Download and install update set **[pe-timeline.u-update-set.xml](pe-timeline.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-timeline.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/timeline/pe-timeline/pe-timeline.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration

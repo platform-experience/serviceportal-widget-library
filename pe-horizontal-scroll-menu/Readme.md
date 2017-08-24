@@ -1,4 +1,4 @@
-## Tabs Selector
+# Tabs Selector
 
 ## Description
 
@@ -12,14 +12,15 @@ This widget can be used to quicly show a list of tabs, managin selection and wit
 ### Horizontal scrolling
 ![alt text](../images/pe-tabs-selector-03.png "Tabs Selector - Horizontal scrolling")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
 ---
-Download and install update set **[pe-horizontal-scroll-menu.u-update-set.xml](pe-horizontal-scroll-menu.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-horizontal-scroll-menu.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-horizontal-scroll-menu/pe-horizontal-scroll-menu.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

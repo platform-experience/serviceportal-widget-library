@@ -33,29 +33,26 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_3d1c0392131d7e007e94fc5ed144b011</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope, $timeout) {
-    /* widget controller */
-    var c = this;
-    $rootScope.$broadcast('changeBackState', '');
-    c.selectedProvider = "all";
-    c.changeDataForAll = function () {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ScrollMenuController($rootScope, $timeout) {
+  var c = this;
 
-    };
+  $rootScope.$broadcast('changeBackState', '');
 
-    c.changeDataForSelection = function (input) {
+  c.selectedProvider = 'all';
+  c.changeDataForAll = function () {};
 
-    };
+  c.changeDataForSelection = function (input) {};
 
-    c.switchIt = function (option) {
-        if (option == 'all') {
-            c.selectedProvider = "all";
-            c.changeDataForAll();
-        }
-        if (option != "all") {
-            c.selectedProvider = option;
-            c.changeDataForSelection(option);
-        }
-    };
+  c.switchIt = function (option) {
+    if (option == 'all') {
+      c.selectedProvider = 'all';
+      c.changeDataForAll();
+    }
+    if (option != 'all') {
+      c.selectedProvider = option;
+      c.changeDataForSelection(option);
+    }
+  };
 }
 ]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-tabs-selector-bg-color: #373737 !default;&amp;#13;
 $pe-tabs-selector-bg-active-color: #4d4d4d !default;&amp;#13;

@@ -1,4 +1,4 @@
-## PE CSM Case Status
+# PE CSM Case Status
 
 ## Description
 
@@ -9,16 +9,17 @@ Driven by **sn_customerservice_case** and **task_sla** tables, when a case sysid
 ## Screenshots
 ![alt text](../images/pe-csm-case-status.png "PE CSM Case status")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 See Platform Dependencies
 
 ---
 ## Installation
 ---
-Ensure the that the Customer Service Management (and Demo Data, if necessary) application is Activated as referenced above.  
-Download and installation of update set **[pe-csm-case-row.u-update-set.xml](pe-csm-case-row.u-update-set.xml)** includes this widget.
+Ensure the that the Customer Service Management (and Demo Data, if necessary) application is Activated as referenced above.
+Download and installation of update set **[pe-csm-case-row.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-csm-case-status/pe-csm-case-status.u-update-set.xml)** includes this widget.
 <br/>After installation, the widget can be accessed via the Service Portal > Widgets section for use and customization.
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

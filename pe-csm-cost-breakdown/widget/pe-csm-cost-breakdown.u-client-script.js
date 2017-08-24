@@ -1,4 +1,3 @@
-function() {
-  /* widget controller */
+function CostBreakdownController() {
   var c = this;
 }

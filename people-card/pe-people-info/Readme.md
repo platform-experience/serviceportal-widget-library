@@ -1,4 +1,4 @@
-## People Info
+# People Info
 
 ## Description
 
@@ -12,13 +12,14 @@ This widget can be used to create a simple people card with user avatar, name, t
 ![alt text](../../images/pe-people-info-05.png "People Info - With option Show Text Below Picture set to True")
 ![alt text](../../images/pe-people-info-avatar-border.png "People Info - With option to Add border color around avatar")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
-Download and install update set **[pe-people-info.u-update-set.xml](pe-people-info.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-people-info.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/people-card/pe-people-info/pe-people-info.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 Widget Option Schema parameters:

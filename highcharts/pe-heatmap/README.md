@@ -1,4 +1,4 @@
-## Heatmap Chart
+# Heatmap Chart
 
 ## Description
 
@@ -7,13 +7,13 @@ This is used to create a simple Heatmap
 ## Screenshots
 ![](../../images/pe-heatmap-chart.png)
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
-Download and install update set **[pe-heatmap.u-update-set.xml](pe-heatmap.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-heatmap.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/highcharts/pe-heatmap/demo-data/update-set/pe-highchart-widget%20data-generator-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration

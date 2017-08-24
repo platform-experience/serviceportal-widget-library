@@ -1,6 +1,4 @@
-# NEEDS TO BE REVIEWED FURTHER
-
-## Completion Task
+# Completion Task
 
 ## Description
 
@@ -9,8 +7,8 @@ This widget shows an individual task, the status of the task, and an optional me
 ## Screenshots
 ![Completion Task Widget](../images/pe-completion-task-1.png "Completion Task widget")
 
-## Additional Information/Notes 
-The widget uses it's own custom widget instance table, `u_sp_instance_completion_task`. 
+## Additional Information/Notes
+The widget uses it's own custom widget instance table, `u_sp_instance_completion_task`.
 > `Is this included??`
 
 <br/>Whether a task is completed is controlled by the evaluation of the "Validation script" (true/false). The message shown is also controlled by the return value of a script, in this case the "Warning message script". All widget options are configurable via the regular instance options editor. See screen recording below:
@@ -19,9 +17,10 @@ The widget uses it's own custom widget instance table, `u_sp_instance_completion
 ---
 ## Installation
 ---
-Download and install update set **[pe-completion-task.u-update-set.xml](pe-completion-task.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-completion-task.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-completion-task/pe-completion-task.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

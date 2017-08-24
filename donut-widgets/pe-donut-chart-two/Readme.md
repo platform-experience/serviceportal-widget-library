@@ -1,4 +1,4 @@
-## Donut Chart Wizard
+# Donut Chart Wizard
 
 ## Description
 
@@ -8,13 +8,13 @@ This widget can be used to represent data in a simple Donut Chart.
 
 ![alt text](../../images/pe-donut-chart-wizard.png "Donut Chart Wizard")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
-Download and install update set **[pe-donut-chart-two.u-update-set.xml](pe-donut-chart-two.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-donut-chart-two.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/donut-widgets/pe-donut-chart-two/pe-donut-chart-two.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration

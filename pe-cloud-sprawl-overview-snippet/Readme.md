@@ -1,4 +1,4 @@
-## Cloud Sprawl Overview Snippet
+# Cloud Sprawl Overview Snippet
 
 ## Description
 
@@ -7,14 +7,15 @@ This snippet can be used to quickly obtain a card containing quick reference dat
 ## Screenshots
 ![alt text](../images/pe-cloud-sprawl-overview-snippet.png "Tabs Selector - No tab selection")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 > None
 ---
 ## Installation
 ---
-Download and install update set **[pe-cloud-sprawl-overview-snippet.u-update-set.xml](pe-cloud-sprawl-overview-snippet.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-cloud-sprawl-overview-snippet.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-cloud-sprawl-overview-snippet/pe-cloud-sprawl-overview-snippet.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

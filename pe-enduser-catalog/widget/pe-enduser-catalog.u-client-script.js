@@ -1,4 +1,3 @@
-function() {
-	/* widget controller */
-	var c = this;
+function EndUserCatalogController() {
+  var c = this;
 }

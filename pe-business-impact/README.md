@@ -1,4 +1,4 @@
-## Business Impact
+# Business Impact
 
 ## Description
 
@@ -13,7 +13,7 @@ When the plus (+) graphic in the top right is selected/clicked, details about th
 ### Resolved View
 ![alt text](../images/pe-business-impact-2a.png "resolved")
 
-## Additional Information/Notes 
+## Additional Information/Notes
 The update set installs two (2) widgets - PE Business Impact and PE Business Impact Details.
 Though the PE Business Impact widget uses the PE Business Impact Details widget to display additional information about the alert anomaly, the details widget does not rely on the first widget in order to function, however; the data collected is passed to the details widget.  The PE Business Impact Details can be used separately when configured with an anomaly alert record's sys_id.
 
@@ -21,9 +21,9 @@ Though the PE Business Impact widget uses the PE Business Impact Details widget 
 ## Installation
 ---
 Ensure the that the **Performance Analytics - Content Pack - Event Management** plugin is Activated per the SN Plugin support section below.<br/><br/>
-Download and install update set **[pe-business-impact.u-update-set.xml](pe-business-impact.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-business-impact.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-business-impact/pe-business-impact.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 ## Configuration
@@ -51,7 +51,7 @@ Performance Analytics content pack for Event Management core out-of-the-box KPIs
 ---
 ## Sample Data and Data Structures
 ---
-With the Performance Analytics - Content Pack - Event Management installed. The System table *em_alert_anomoly* is created.  
+With the Performance Analytics - Content Pack - Event Management installed. The System table *em_alert_anomoly* is created.
 
 > This update set will install a sample record into the table.`
 

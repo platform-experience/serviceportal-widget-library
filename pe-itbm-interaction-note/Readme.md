@@ -1,4 +1,4 @@
-## Interaction Note Form (ITBM Experience)
+# Interaction Note Form (ITBM Experience)
 
 ## Description
 
@@ -15,17 +15,17 @@ The widget provides and interactive form for capturing notes or reminder for pos
 ![](../images/pe-itbm-interaction-note-confirm.png)
 </td></tr></table>
 
-## Additional Information/Notes 
+## Additional Information/Notes
 This widget is reliant upon a System User Group in order to display the 'SPOKEN WITH' section of the widget.
 The System User Group can be set in the Widget Options Schema or hard coded in the Server Script.
-
 
 ---
 ## Installation
 ---
-Download and install update set **[pe-itbm-interaction-note.u-update-set.xml](pe-itbm-interaction-note.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-itbm-interaction-note.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-itbm-interaction-note/pe-itbm-interaction-note.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

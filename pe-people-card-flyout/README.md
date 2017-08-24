@@ -17,9 +17,9 @@ This can be used to quickly craft a people card flyout widget with options.
 
 ## Installation
 
-Download and install update set **[pe-people-card-flyout.u-update-set.xml](pe-people-card-flyout.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-people-card-flyout.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-people-card-flyout/pe-people-card-flyout.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
 
@@ -27,12 +27,11 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 Widget Option Schema parameters:
 
+**"Department"** This is the sys_id of the department.<br/>
 **"Title"** This is for changing the title in the panel header.<br/>
 **"Number 1"** This is for displaying the first integer in the panel body.<br/>
-**"Number 2"** This is for displaying the second integer in the panel body.<br/>
 **"Number 3"** This is for displaying the third integer in the panel body.<br/>
 **"Sub Text 1"** This is for displaying the first sub-text copy.<br/>
-**"Sub Text 2"** This is for displaying the second sub-text copy.<br/>
 **"Sub Text 3"** This is for displaying the third sub-text copy.<br/>
 
 ---

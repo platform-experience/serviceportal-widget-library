@@ -1,4 +1,3 @@
-function() {
-  /* widget controller */
+function CircleOfDestinyController() {
   var c = this;
 }

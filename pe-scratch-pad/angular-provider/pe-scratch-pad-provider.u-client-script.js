@@ -1,4 +1,4 @@
-function($interval, $timeout, $window, $rootScope) {
+function ScratchPadProvider($interval, $timeout, $window, $rootScope) {
   var signaturePad, element, EMPTY_IMAGE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjgAAADcCAQAAADXNhPAAAACIklEQVR42u3UIQEAAAzDsM+/6UsYG0okFDQHMBIJAMMBDAfAcADDATAcwHAAwwEwHMBwAAwHMBzAcAAMBzAcAMMBDAcwHADDAQwHwHAAwwEMB8BwAMMBMBzAcADDATAcwHAADAcwHADDAQwHMBwAwwEMB8BwAMMBDAfAcADDATAcwHAAwwEwHMBwAAwHMBzAcAAMBzAcAMMBDAcwHADDAQwHwHAAwwEwHMBwAMMBMBzAcAAMBzAcwHAADAcwHADDAQwHMBwAwwEMB8BwAMMBDAfAcADDATAcwHAAwwEwHMBwAAwHMBzAcCQADAcwHADDAQwHwHAAwwEMB8BwAMMBMBzAcADDATAcwHAADAcwHMBwAAwHMBwAwwEMBzAcAMMBDAfAcADDAQwHwHAAwwEwHMBwAAwHMBzAcAAMBzAcAMMBDAcwHADDAQwHwHAAwwEMB8BwAMMBMBzAcADDATAcwHAADAcwHMBwAAwHMBwAwwEMB8BwAMMBDAfAcADDATAcwHAAwwEwHMBwAAwHMBzAcAAMBzAcAMMBDAcwHADDAQwHwHAAwwEMB8BwAMMBMBzAcADDkQAwHMBwAAwHMBwAwwEMBzAcAMMBDAfAcADDAQwHwHAAwwEwHMBwAMMBMBzAcAAMBzAcwHAADAcwHADDAQwHMBwAwwEMB8BwAMMBMBzAcADDATAcwHAADAcwHMBwAAwHMBwAwwEMBzAcAMMBDAegeayZAN3dLgwnAAAAAElFTkSuQmCC';
   return {
     restrict: 'EA',
@@ -10,12 +10,12 @@ function($interval, $timeout, $window, $rootScope) {
       dataurl: '=?',
       height: '@',
       width: '@',
-      notifyDrawing: '&onDrawing',
+      notifyDrawing: '&onDrawing'
     },
     controller: [
       '$scope',
-      function($scope) {
-        $scope.accept = function() {
+      function ($scope) {
+        $scope.accept = function () {
 
           return {
             isEmpty: $scope.dataurl === EMPTY_IMAGE,
@@ -23,29 +23,29 @@ function($interval, $timeout, $window, $rootScope) {
           };
         };
 
-        $scope.onMouseup = function() {
+        $scope.onMouseup = function () {
           $scope.updateModel();
           $scope.notifyDrawing({
             drawing: false
           });
         };
 
-        $scope.updateModel = function() {
+        $scope.updateModel = function () {
           /*
            defer handling mouseup event until $scope.signaturePad handles
            first the same event
            */
-          $timeout().then(function() {
+          $timeout().then(function () {
             $scope.dataurl = $scope.signaturePad.isEmpty() ? EMPTY_IMAGE : $scope.signaturePad.toDataURL();
           });
         };
 
-        $scope.clear = function() {
+        $scope.clear = function () {
           $scope.signaturePad.clear();
           $scope.dataurl = EMPTY_IMAGE;
         };
 
-        $scope.$watch("dataurl", function(dataUrl) {
+        $scope.$watch("dataurl", function (dataUrl) {
           if (!dataUrl || $scope.signaturePad.toDataURL() === dataUrl) {
             return;
           }
@@ -54,7 +54,7 @@ function($interval, $timeout, $window, $rootScope) {
         });
       }
     ],
-    link: function(scope, element, attrs, rootScope) {
+    link: function (scope, element, attrs, rootScope) {
       var canvas = element.find('canvas')[0];
       var parent = canvas.parentElement;
       var scale = 0;
@@ -68,20 +68,20 @@ function($interval, $timeout, $window, $rootScope) {
 
       scope.signaturePad = new SignaturePad(canvas);
 
-      scope.setDataUrl = function(dataUrl) {
+      scope.setDataUrl = function (dataUrl) {
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         ctx.scale(1, 1);
 
         scope.signaturePad.clear();
         scope.signaturePad.fromDataURL(dataUrl);
 
-        $timeout().then(function() {
+        $timeout().then(function () {
           ctx.setTransform(1, 0, 0, 1, 0, 0);
           ctx.scale(1 / scale, 1 / scale);
         });
       };
 
-      var calculateScale = function() {
+      var calculateScale = function () {
         var scaleWidth = Math.min(parent.clientWidth / width, 1);
         var scaleHeight = Math.min(parent.clientHeight / height, 1);
 
@@ -102,13 +102,13 @@ function($interval, $timeout, $window, $rootScope) {
       };
 
       var resizeIH = $interval(calculateScale, 200);
-      scope.$on('$destroy', function() {
+      scope.$on('$destroy', function () {
         $interval.cancel(resizeIH);
         resizeIH = null;
       });
 
       angular.element($window).bind('resize', calculateScale);
-      scope.$on('$destroy', function() {
+      scope.$on('$destroy', function () {
         angular.element($window).unbind('resize', calculateScale);
       });
 
@@ -118,7 +118,7 @@ function($interval, $timeout, $window, $rootScope) {
       element.on('touchend', onTouchend);
 
       function onTouchstart() {
-        scope.$apply(function() {
+        scope.$apply(function () {
           // notify that drawing has started
           scope.notifyDrawing({
             drawing: true
@@ -127,7 +127,7 @@ function($interval, $timeout, $window, $rootScope) {
       }
 
       function onTouchend() {
-        scope.$apply(function() {
+        scope.$apply(function () {
           // updateModel
           scope.updateModel();
 

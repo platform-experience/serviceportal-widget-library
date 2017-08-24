@@ -1,4 +1,4 @@
-## Timeline Delivery Info
+# Timeline Delivery Info
 
 ## Description
 
@@ -11,9 +11,10 @@ This widget can be used to represent the delivery updates in a confortable and B
 > None
 ---
 ## Installation
-Download and install update set **[pe-timeline-delivery-info.u-update-set.xml](pe-timeline-delivery-info.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-timeline-delivery-info.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/timeline/pe-timeline-delivery-info/pe-timeline-delivery-info.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 Language variants can be created through the section System UI -> UI Messages, and displayed adding in the HTML body a statement with the syntax:<br/>

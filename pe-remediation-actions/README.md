@@ -1,4 +1,4 @@
-## Remediation Actions
+# Remediation Actions
 
 ## Description
 
@@ -7,7 +7,7 @@ This widget displays choices for remediation actions.
 ## Screenshots
 ![](../images/pe-remediation-actions.png)
 
-## Additional Information/Notes 
+## Additional Information/Notes
 
 Provide a sysid of an anomaly alert to the **alert** Widget Option schema. The widget will not display if the alert is closed.
 
@@ -15,9 +15,10 @@ Provide a sysid of an anomaly alert to the **alert** Widget Option schema. The w
 ## Installation
 ---
 Ensure the that the **Performance Analytics - Content Pack - Event Management** plugin is Activated per the SN Plugin support section below.<br/><br/>
-Download and install update set **[pe-remediation-actions.u-update-set.xml](pe-remediation-actions.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-remediation-actions.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-remediation-actions/pe-remediation-actions.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/search?q=Load+a+customization+from+a+single+XML+file)   (<i>Select appropriate instance version</i>)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+
 ---
 ## Configuration
 ---

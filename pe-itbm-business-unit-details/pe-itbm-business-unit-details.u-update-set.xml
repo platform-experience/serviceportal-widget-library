@@ -35,7 +35,7 @@
 <name>sys_ui_script_5752058bdbd53200f687dfea5e9619f8</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Highcharts 5_0_5&lt;/name&gt;&lt;script&gt;&lt;![CDATA[/*
  Highcharts JS v5.0.5 (2016-11-29)
- 
+
  (c) 2009-2016 Torstein Honsi
 
  License: www.highcharts.com/license
@@ -8432,60 +8432,61 @@
 <comments/>
 <name>sp_widget_74cfed01135a3e006749bccf3244b04d</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function BusinessUnitDetailsController($timeout) {
-  /* widget controller */
   var bud = this;
-	bud.showPrjIdx = -1;
-	bud.showPrjRvwIdx = -1;
-	
-	bud.showPrj = function(idx){
-		bud.showPrjRvwIdx = -1;
-		if(bud.showPrjIdx === idx){
-			bud.showPrjIdx = -1;
-		}else{
-			bud.showPrjIdx = idx;
-		}
+  bud.showPrjIdx = -1;
+  bud.showPrjRvwIdx = -1;
+
+  bud.showPrj = function(idx) {
+    bud.showPrjRvwIdx = -1;
+    if (bud.showPrjIdx === idx) {
+      bud.showPrjIdx = -1;
+    } else {
+      bud.showPrjIdx = idx;
+    }
   };
-	
-	bud.showPrjRvw = function(idx){
-		bud.showPrjIdx = -1;
-		if(bud.showPrjRvwIdx === idx){
-			bud.showPrjRvwIdx = -1;
-		}else{
-			goTo(idx);
-			bud.showPrjRvwIdx = idx;
-		}
-	}
-	function goTo(idx){
-		var goAnchor = $('#pnlReview'+idx);
-	  $('html, body').stop().animate({ scrollTop: goAnchor.offset().top}, 800);
 
+  bud.showPrjRvw = function(idx) {
+    bud.showPrjIdx = -1;
+    if (bud.showPrjRvwIdx === idx) {
+      bud.showPrjRvwIdx = -1;
+    } else {
+      goTo(idx);
+      bud.showPrjRvwIdx = idx;
+    }
+  };
+
+  function goTo(idx) {
+    var goAnchor = $('#pnlReview' + idx);
+    $('html, body').stop().animate({ scrollTop: goAnchor.offset().top }, 800);
   }
-	$timeout(function(){
-		var elROI = document.querySelectorAll("div.roi");
-		var elRisk = document.querySelectorAll("div.risk");
-		$.each(elROI, function(i,el){
-			buildGraph(el.id,'ROI','#70BE5A',parseInt(el.dataset.value));
-		});
-		$.each(elRisk, function(i,el){
-			buildGraph(el.id,'RISK SCORE','#e89033',parseInt(el.dataset.value));
-		});
+  $timeout(function() {
+    var elROI = document.querySelectorAll("div.roi");
+    var elRisk = document.querySelectorAll("div.risk");
+    $.each(elROI, function(i, el) {
+      buildGraph(el.id, 'ROI', '#70BE5A', parseInt(el.dataset.value));
+    });
+    $.each(elRisk, function(i, el) {
+      buildGraph(el.id, 'RISK SCORE', '#e89033', parseInt(el.dataset.value));
+    });
   });
-	
-	function buildGraph(cntr,title,color,val){
-		var charts = [];
-		var chtVal = 50;
-		var gap = (100-chtVal);
 
-		var plotOpts = bud.data.chartOptions;
-		
-		plotOpts.subtitle.text = title;
-		plotOpts.title.text = (val+'%');
-		plotOpts.series = [{data: [['',val],['',(100-val)]]}];
-		plotOpts.colors = [color, '#F0F0F0'];
-		var x = new Highcharts.Chart(cntr,plotOpts, function(chartObj){
-			chartObj.title.update({ text: (val+'%') });
-		});
+  function buildGraph(cntr, title, color, val) {
+    var charts = [];
+    var chtVal = 50;
+    var gap = (100 - chtVal);
 
+    var plotOpts = bud.data.chartOptions;
+
+    plotOpts.subtitle.text = title;
+    plotOpts.title.text = (val + '%');
+    plotOpts.series = [{ data: [
+      ['', val],
+      ['', (100 - val)]
+    ] }];
+    plotOpts.colors = [color, '#F0F0F0'];
+    var x = new Highcharts.Chart(cntr, plotOpts, function(chartObj) {
+      chartObj.title.update({ text: (val + '%') });
+    });
   }
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;bud&lt;/controller_as&gt;&lt;css&gt;@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -8588,7 +8589,7 @@ $bud-green: #70BE5A !default;
   font-size: 14px;
   font-weight: bold;
   line-height: 14px;
-  color: $bud-font-softcolor;  
+  color: $bud-font-softcolor;
 }
 .bud-hidden-projects {
   display: none;
@@ -8646,7 +8647,7 @@ $bud-green: #70BE5A !default;
   font-weight: normal;
   text-align: center;
   line-height: 44px;
-  color: $bud-font-color;  
+  color: $bud-font-color;
 }
 .bud-prj-pipeline-cost{
   padding-top: 20px;
@@ -8679,7 +8680,7 @@ $bud-green: #70BE5A !default;
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-itbm-business-unit-details&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE ITBM Business Unit Details&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
- 
+
 	data.details = [{
 		title: "Human Capital Management", value: "$500,000", label: "POTENTIAL SAVE",
 		pipeline : {
@@ -8757,7 +8758,7 @@ $bud-green: #70BE5A !default;
 									{	title: "SLA BREACHED", value: "1%", status: 3	}]
 			}]
 		}];
-	
+
 	data.chartOptions = {
 		chart: { type: 'pie', reflow: false, spacing: [0,0,0,0], marginTop : -10, height : 90, width : 90, spacingBottom : 12 },
 		plotOptions: { pie: { borderWidth: 0, innerSize: '70%', dataLabels: { enabled: false } } },
@@ -8772,7 +8773,7 @@ $bud-green: #70BE5A !default;
 		tooltip: { enabled: false  },
 		series: []
 	}
-	
+
 })();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-21 13:07:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;74cfed01135a3e006749bccf3244b04d&lt;/sys_id&gt;&lt;sys_mod_count&gt;85&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE ITBM Business Unit Details&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_74cfed01135a3e006749bccf3244b04d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-04-26 18:27:25&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class='container bud-details' ng-repeat='item in bud.data.details track by $index'&gt;
   &lt;div class='row bud-details-top'&gt;
     &lt;div class='col'&gt;
