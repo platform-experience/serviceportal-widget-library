@@ -2,7 +2,7 @@
 
 ## Description
 
-This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
+This widget can be used to represent data in a simple Donut Chart.
 
 ## Screenshots
 
