@@ -2,7 +2,7 @@
 
 ## Description
 
-This widget can be used to quicly show a list of tabs, managin selection and with horizontal scrolling.
+This widget can be used to represent data in a simple Donut Chart.
 
 ## Screenshots
 
@@ -14,6 +14,7 @@ This widget can be used to quicly show a list of tabs, managin selection and wit
 ## Installation
 Download and install update set **[pe-donut-chart.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/donut-widgets/pe-donut-chart/pe-donut-chart.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
 ---
