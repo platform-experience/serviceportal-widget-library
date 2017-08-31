@@ -13,8 +13,15 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 ---
 ## Configuration
-Language variants can be created through the section System UI -> UI Messages, and displayed adding in the HTML body a statement with the syntax:<br/>
-* ${<i>key value specified in the Message record</i>}.
+Widget Option Schema parameters:
+
+**"tracking_id"** Google analytics tracking id. `Default: f6d234ecdb9e32002e5df2b6ae9619b8`
+
+**"cookie_domain"** Used to initialized GA. `Default: The result of the following JavaScript expression:
+document.location.hostname`
+
+**"debug"** if True, data won't be sent to google and it will be displayed on console. `Default: False`
+
 ---
 ## Platform Dependencies
 > None
@@ -27,5 +34,5 @@ Language variants can be created through the section System UI -> UI Messages, a
 > None
 ---
 ## CSS/SASS Variables
-The widget is using colors from Bootstrap SASS variables, and a minimal styles configuration to make it easy to customize and extend.
-_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None
+
