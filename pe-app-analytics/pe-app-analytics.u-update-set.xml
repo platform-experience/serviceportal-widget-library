@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-08-31 01:49:03">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>App Analytics</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>848efad373300300a5a580844ff6a777</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-08-31 01:49:03</sys_created_on>
+<sys_id>a8a683d773300300a5a580844ff6a7b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-08-31 01:49:03</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_4a9e3ed373300300a5a580844ff6a733</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function AppAnalyticsController($scope) {
+	/* widget controller */
+	var c = this;
+	var url = "https://www.google-analytics.com/analytics.js";
+	var gaObj = {
+		trackingId: c.options.gacode,
+		cookieDomain: 'auto'
+	};
+
+	if (c.options.debug) {
+		url = "https://www.google-analytics.com/analytics_debug.js";
+	}
+	
+	
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', url, 'ga');
+
+	
+	
+	if (c.options.debug) {
+		ga('set', 'sendHitTask', null);
+		window.ga_debug = {trace: true};
+	}
+
+	if ($scope.user) {
+		gaObj.userId= $scope.user.user_name;
+	}
+	ga('create', gaObj);
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;widget-app-analytics&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;App Analytics&lt;/name&gt;&lt;option_schema&gt;[{"name":"trackingid","label":"Tracking ID","type":"string"},{"name":"cookiedomain","label":"Cookie Domain","type":"string"},{"name":"debug","default_value":"false","label":"Debug","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-08-31 01:14:15&lt;/sys_created_on&gt;&lt;sys_id&gt;4a9e3ed373300300a5a580844ff6a733&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;App Analytics&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4a9e3ed373300300a5a580844ff6a733&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-31 01:47:59&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>340093534</payload_hash>
+<remote_update_set display_value="App Analytics">a8a683d773300300a5a580844ff6a7b7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-08-31 01:49:03</sys_created_on>
+<sys_id>eca683d773300300a5a580844ff6a7b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15e35f938d20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-08-31 01:49:03</sys_updated_on>
+<table/>
+<target_name>App Analytics</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>09664797753003009dfe3b7950a69fe6</update_guid>
+<update_guid_history>09664797753003009dfe3b7950a69fe6:340093534,88248b97d3300300137adb8b3ef7f8b9:1008705249,5ff38b97bf300300625fadb56f2410b3:-1417092072,0db38797d4300300dcf8ef1c40ccd257:-1629940219,8e4207976a30030034caf9ddfbd92b6b:845879894,d4328397573003007feaf009596fb7f4:-1716997503,4e22479770300300b8e364990a1ac300:-2118115830,b431c317ac300300aafe7e4c5fd194c5:-258697391,a0ee7ed3cd3003003fe3fbddaecd3a4c:-1376808242,a9ce7ed39c3003004e31ebd18454861f:-1744498357,c7ae3ad3373003002aeadd043ae64698:-913615663</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
