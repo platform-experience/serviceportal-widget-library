@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/platform-experience/serviceportal-widget-library.svg?branch=master)](https://travis-ci.org/platform-experience/serviceportal-widget-library)
+
 # Service Portal: Widget Library
 
 This a guide to be followed for widgetizing. Each section below is something we need to consider while widgetizing.
