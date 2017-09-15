@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A collection of Service Portal custom widgets",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,13 @@
   "license": "ISC",
   "homepage": "https://github.com/platform-experience/serviceportal-widget-library#readme",
   "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-mocks": "^1.6.6",
     "editorconfig": "^0.13.2",
-    "eslint": "^4.4.1"
+    "eslint": "^4.4.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0"
   }
 }
