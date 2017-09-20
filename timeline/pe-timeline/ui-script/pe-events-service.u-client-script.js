@@ -8,12 +8,14 @@
     return service;
 
     function getInitialEvents() {
-      var events = [{
+      var events = [
+        {
           description: 'Automated Event Correlation',
           leftDescription: '14:22',
           icon: 'fa fa-bolt fa-lg',
           color: '#dbcb33',
-          stats: [{
+          stats: [
+            {
               name: 'Events',
               value: 20
             },
@@ -28,7 +30,8 @@
           leftDescription: '14:22',
           icon: 'fa fa-bolt fa-lg',
           color: '#d86431',
-          stats: [{
+          stats: [
+            {
               name: 'In Total',
               value: 2
             },
@@ -44,7 +47,8 @@
           leftDescription: '14:23',
           icon: 'fa fa-bolt fa-lg',
           color: '#903f5c',
-          stats: [{
+          stats: [
+            {
               value: '1.2M',
               icon: 'fa fa-usd fa-lg'
             },
@@ -63,7 +67,5 @@
     }
   }
 
-  angular
-    .module('pe-timeline')
-    .service('eventsService', eventsService);
+  angular.module('pe-timeline').service('eventsService', eventsService);
 })();
