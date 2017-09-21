@@ -1,5 +1,5 @@
 (function() {
-  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+  var serverOptions = input.options ? input.options : input.parameters ? input.parameters : {};
   options.problemNumber = options.problem_number || serverOptions.problem_number;
 
   var grMessages = new GlideRecord('sys_ui_message');
@@ -28,4 +28,5 @@
   data.problemTime = grProblem.opened_at.toString();
   data.messageHeader = grProblem.short_description.toString();
   data.messageBody = grProblem.description.toString();
+  data.today = new GlideDateTime().toString();
 })();

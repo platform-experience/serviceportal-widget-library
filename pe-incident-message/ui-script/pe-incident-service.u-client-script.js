@@ -7,18 +7,15 @@
     };
     return service;
 
-    function getTimeAgo(openedTime) {
+    function getTimeAgo(openedTime, serverDate) {
       var timeAgo = {};
       if (openedTime) {
+        var today = new Date(serverDate);
         var problemTime = new Date(openedTime);
-        var currentTime = new Date();
-        var timeDiff = currentTime - problemTime;
-        var minDiff = timeDiff / 60000;
-        var hourDiff = timeDiff / 3600000;
-        var dayDiff = timeDiff / 86400000;
-        timeAgo.minutes = Math.floor(minDiff - 60 * Math.floor(hourDiff));
-        timeAgo.hours = Math.floor(Math.abs(hourDiff + 4));
-        timeAgo.days = Math.floor(Math.abs(dayDiff) + 1);
+        var secondDiff = today - problemTime;
+        timeAgo.days = Math.floor(secondDiff / 86400000);
+        timeAgo.hours = Math.floor((secondDiff % 86400000) / 3600000);
+        timeAgo.minutes = Math.round(((secondDiff % 86400000) % 3600000) / 60000);
       }
       return timeAgo;
     }

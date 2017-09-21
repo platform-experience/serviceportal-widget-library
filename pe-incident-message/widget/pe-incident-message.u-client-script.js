@@ -7,7 +7,7 @@ function IncidentMessageController($interval, timeService) {
   };
 
   function getTimes() {
-    c.timeAgo = timeService.getTimeAgo(c.data.problemTime);
+    c.timeAgo = timeService.getTimeAgo(c.data.problemTime, c.data.today);
     return c.timeAgo;
   }
 
