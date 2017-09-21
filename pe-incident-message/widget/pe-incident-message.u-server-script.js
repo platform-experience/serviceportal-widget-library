@@ -28,4 +28,5 @@
   data.problemTime = grProblem.opened_at.toString();
   data.messageHeader = grProblem.short_description.toString();
   data.messageBody = grProblem.description.toString();
+  data.today = new GlideDateTime().toString();
 })();

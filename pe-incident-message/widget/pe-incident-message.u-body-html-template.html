@@ -3,9 +3,9 @@
     <div class="panel panel-default">
       <div class="panel-heading panel-header-high-risk">{{::c.data.messageHeader}}
         <section class="badge">
-          <span ng-if="c.timeAgo.hours >= 24">{{c.timeAgo.days}}d</span>
-          <span ng-if="c.timeAgo.hours > 0 && c.timeAgo.hours < 24">{{c.timeAgo.hours}}h</span>
-          <span ng-if="c.timeAgo.hours < 24">{{c.timeAgo.minutes}}m</span> ago
+          <span ng-if="c.timeAgo.days > 0">{{c.timeAgo.days}}d</span>
+          <span ng-if="c.timeAgo.hours > 0 && !c.timeAgo.days">{{c.timeAgo.hours}}h</span>
+          <span ng-if="!c.timeAgo.hours && !c.timeAgo.days">{{c.timeAgo.minutes}}m</span> ago
         </section>
       </div>
       <div class="panel-body panel-body-high-risk">
