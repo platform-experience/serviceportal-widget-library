@@ -1,5 +1,5 @@
 (function() {
-  var serverOptions = input.options ? input.options : input.parameters ? input.parameters : {};
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
   options.problemNumber = options.problem_number || serverOptions.problem_number;
 
   var grMessages = new GlideRecord('sys_ui_message');
