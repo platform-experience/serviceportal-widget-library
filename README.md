@@ -2,89 +2,197 @@
 
 # Service Portal: Widget Library
 
-This a guide to be followed for widgetizing. Each section below is something we need to consider while widgetizing.
+This a guide to be followed for *widgetizing*. Each section below is something we need to consider while crafting widgets.
+
+## Table of Contents
+
+  1. [Widget Name](#widget-name)
+  1. [Widget Id](#widget-id)
+  1. [Update Set](#update-set)
+  1. [Sass Variables](#sass-variables)
+  1. [Includes](#includes)
+  1. [Folder and File Naming Conventions](#folder-and-file-naming-conventions)
+  1. [Folder Structure](#folder-structure)
+  1. [Style Guide](#style-guide)
+  1. [Internationalization](#internationalization)
 
 ## Widget Name
 
-All widget names should start with the prefix **PE**, this will make searching for widgets easy.
+All widget names should start with the prefix **PE**. This will make searching for widgets easy and provide a unique namespace for our custom widgets.
 
-## Widget ID Naming
+**[Back to top](#table-of-contents)**
 
-Widgets and Page IDs need to be unique in an instance, we need to take care while naming IDs to avoid collisions when Widget or Page is being loaded into instance or while committing an Update Set, or when an Upgrade or Plugin is applied. Thus we need to keep these points in mind.
+## Widget Id
 
-1. Every Widget must have an ID
-1. IDs should be hyphenated alphanumeric strings (i.e. no spaces, no special characters)
-1. The ID of all Widgets developed/created for widget library should start with prefix **pe-**
+Widget and page ids need to be unique in an instance. We need to be careful when naming the id to avoid collisions when: widget or page is being loaded into an instance, while committing an update set or when an upgrade or plugin is applied.
 
-Ex: **pe-approval-card**
+Thus we need to keep these points in mind.
+
+1. Every widget must have an id
+1. Ids should be hyphenated alphanumeric strings (i.e. no spaces, no special characters)
+1. Widget ids should start with the prefix **pe-**
+
+Example: pe-approval-card
+
+**[Back to top](#table-of-contents)**
 
 ## Update Set
 
-**Please make sure you capture widget related updates correctly.** update set should start with prefix **pe-** and end with **update-set**. For example ***pe-approval-card-update-set.u-update-set.xml**. Make sure you don't capture widget instance related records/ grid related records like row, column etc. Keep the update set clean and capture on widget related stuff.
+Please make sure you capture widget related updates correctly. Update sets should start with prefix **pe-** and end with **update-set**. For example, **pe-approval-card-update-set.u-update-set.xml**. Make sure you don't capture widget instance related records or grid related records like: row, column etc. Keep the update set clean and capture only widget related items.
 
-## SASS Variables
+**[Back to top](#table-of-contents)**
 
-All SASS variables created for this project will start with prefix **$pe-**. You can add the variables at the Theme level as well as at the widget level.
-While adding the variable at widget level make sure you use **!default** keyword. This will let us override these variables at the theme level. This will make the widget self-contained. We can easily drag and drop them on to any page.
+## Sass Variables
 
-For example at Theme level:
+All Sass variables created for this project will start with prefix **$pe-**. You can add the variables at the theme level as well as the widget level.
+While adding the variable at the widget level, make sure you use the **!default** keyword. This will let us override these variables at the theme level and make the widget self-contained. We can easily drag and drop them on to any page.
 
-`$pe-brand-success: #5cb85c;`
+For example, at theme level:
 
-For example at Widget level:
+```scss
+$pe-brand-success: #5cb85c;
+```
 
-`$pe-brand-success: #5cb85c !default;`
+And at the widget level:
 
-## Includes (JS, CSS, etc.)
+```scss
+$pe-brand-success: #5cb85c !default;
+```
 
-Even the includes with standard FWs should be renamed with prefix **pe-**. This to avoid duplication errors during the import of the update set in existing instances.
+**[Back to top](#table-of-contents)**
 
-For instance:
+## Includes
 
-`highcharts-ng`
+Even the includes with standard FWs should be renamed with the prefix **pe-**. This will help to avoid duplication errors during the update set import on existing instances.
 
-should be renamed to:
+For instance `highcharts-ng` should be renamed to `pe-highcharts-ng`.
 
-`pe-highcharts-ng`
+**[Back to top](#table-of-contents)**
 
-## Folder and File Naming Convention
+## Folder and File Naming Conventions
 
-1. Create a folder with widget name for ex: **pe-people-card**
+### Widgets
 
-2. Create another folder called **widget** inside the above folder.
+Widget record fields should go inside the **widget** folder. Fields must be named as follows.
 
-3. Widget record fields should go inside **widget** folder. Fields must be named as follows
-    * HTML->               `<widget-name>.u-body-html-template.html`
-    * Client Controller->  `<widget-name>.u-client-script.js`
-    * Server Script->      `<widget-name>.u-server-script.js`
-    * CSS->                `<widget-name>.u-css.scss`
+```
+* HTML               =>  <widget-name>.u-body-html-template.html
+* Client Controller  =>  <widget-name>.u-client-script.js
+* Server Script      =>  <widget-name>.u-server-script.js
+* CSS                =>  <widget-name>.u-css.scss
+* Option Schema      =>  <widget-name>.u-option-schema.json
+```
 
-4. UI Scripts should go inside a folder called **ui-script** , all ui scripts should be named as follows
-    * `<widget-name>-<purpose>.u-client-script.js` .. some purspose examples can be **service**, **factory**, **module**
+### UI Scripts
 
-    > If its a js library file, which users dont need to edit for ex: "highcart-ng", emit this **u-client-script** part in name. This will make sure we dont pull the huge library files from SNOW.
+UI scripts should go inside a folder called **ui-script**, all UI Scripts should be named as follows.
 
-5. Style Sheets should go inside a folder called **style-sheet** , all stylesheets should be named as follows.
-    * `<widget-name>-<purpose>.u-css.scss`
+```
+<widget-name>-<purpose>.u-client-script.js
+```
 
-    > If its a css library file, which users dont need to edit for ex: "animates.css", emit this **u-css** part in name. This will make sure we dont pull the huge library files from SNOW.
+Some examples of purpose would be: service, factory, module.
 
-6. Angular Providers should go inside a folder called **angular-provider** , all providers should be named as follows
-    * `<widget-name>-<purpose>.u-client-script.js`
+>If it's a JS library file, which users don't need to edit for example: "highcart-ng", emit this **u-client-script** part in the name. This will make sure we don't pull huge library files from ServiceNow.
 
-7. Angular Templates should go inside a folder called **angular-template** , all ui scripts should be named as follows
-    * `<widget-name>-<template-id>.u-body-html-template.html`
+### Style Sheets
 
-8. Script Includes should go inside a folder called **script-include** , all these scripts should be named as follows
-    * `<widget-name>-<purpose>.u-client-script.js`
+Style sheets should go inside a folder called **style-sheet**, all style sheets should be named as follows.
 
-9. Update Sets must be named as follows
-    * `<widget_name>.u-update-set.xml`
+```
+<widget-name>-<purpose>.u-css.scss
+```
+
+>If it's a CSS library file, which users don't need to edit for example: animate.css, emit this **u-css** part in the name. This will make sure we don't pull huge library files from ServiceNow.
+
+### Angular Providers
+
+Angular providers should go inside a folder called **angular-provider**, all providers should be named as follows.
+
+```
+<widget-name>-<purpose>.u-client-script.js
+```
+
+### Angular Templates
+
+Angular templates should go inside a folder called **angular-template**, all UI Scripts should be named as follows.
+
+```
+<widget-name>-<template-id>.u-body-html-template.html
+```
+
+### Script Includes
+
+Script includes should go inside a folder called **script-include**, all these scripts should be named as follows.
+
+```
+<widget-name>-<purpose>.u-client-script.js
+```
+
+### Update Sets
+
+Update sets must be named as follows.
+
+```
+<widget_name>.u-update-set.xml
+```
+
+### Unit Tests
+
+Unit tests should go inside a test folder and be named as follows.
+
+```
+<widget-name>.<type>.spec.js
+```
+
+**[Back to top](#table-of-contents)**
+
+## Folder Structure
+
+```
+pe-timeline
+│
+├──angular-provider
+│  └──pe-timeline.provider.u-client-script.js
+│
+├──angular-template
+│  └──pe-timeline.svg.u-body-html-template.html
+│
+├──script-include
+│  └──pe-timeline.helper.u-server-script.js
+│
+├──style-sheet
+│  └──pe-timeline-animate.css
+│
+├──test
+│  └──pe-timeline.client.spec.js
+│  └──pe-timeline.service.spec.js
+│
+├──ui-script
+│  └──pe-events.service.u-client-script.js
+│  └──pe-events.module.u-client-script.js
+│
+├──widget
+│  └──pe-timeline.u-body-html-template.html
+│  └──pe-timeline.u-client-script.js
+│  └──pe-timeline.u-css.scss
+│  └──pe-timeline.u-option-schema.json
+│  └──pe-timeline.u-server-script.js
+│
+├──pe-timeline.u-update-set.xml
+└──README.md
+```
+
+**[Back to top](#table-of-contents)**
 
 ## Style Guide
 
-All contributors to the widget library should strive to follow the [Service Portal: Angular Style Guide](https://github.com/platform-experience/serviceportal-best-practice) and adhere to the EditorConfig rules.
+All contributors to the widget library should strive to follow the [Service Portal: Angular Style Guide](https://github.com/platform-experience/serviceportal-best-practice) and adhere to the [EditorConfig](.editorconfig) and [ESLint](.eslintrc) rules.
+
+**[Back to top](#table-of-contents)**
 
 ## Internationalization
 
-All Widgets should support [Internationalization](https://docs.servicenow.com/bundle/istanbul-servicenow-platform/page/build/service-portal/concept/c_WidgetLocalization.html), so that they can be translated into other languages for non-English speaking markets.
+All widgets should support [Internationalization](https://docs.servicenow.com/bundle/istanbul-servicenow-platform/page/build/service-portal/concept/c_WidgetLocalization.html), so that they can be translated into other languages for non-English speaking markets.
+
+**[Back to top](#table-of-contents)**
