@@ -1,16 +1,32 @@
-[{
-  "name": "title",
-  "default_value": "Tell us what is causing the issue",
-  "label": "Title",
-  "type": "string"
-}, {
-  "name": "category",
-  "default_value": "PE Report Issue",
-  "label": "Category",
-  "type": "string"
-}, {
-  "name": "items",
-  "default_value": "sc_cat_item.name, sc_cat_item.icon",
-  "label": "Items",
-  "type": "string"
-}]
+[
+  {
+    "name": "title",
+    "default_value": "Tell us what is causing the issue",
+    "label": "Title",
+    "type": "string"
+  },
+  {
+    "name": "category",
+    "default_value": "PE Report Issue",
+    "label": "Category",
+    "type": "string"
+  },
+  {
+    "name": "fields",
+    "default_value": "sc_cat_item.name, sc_cat_item.icon",
+    "label": "Fields",
+    "type": "string"
+  },
+  {
+    "name": "items",
+    "default_value": "Concur, Webex, CRM App, Outlook, iPhone 6S, Macbook Pro",
+    "label": "Items",
+    "type": "string"
+  },
+  {
+    "name": "display_all_items",
+    "default_value": false,
+    "label": "Display all catalog items?",
+    "type": "boolean"
+  }
+]

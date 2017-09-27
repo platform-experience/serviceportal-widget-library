@@ -24,9 +24,11 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 Widget Option Schema parameters:
 
-**"Title"** Card Title.  `Default: Tell us what is causing the issue`<br/>
-**"Category"** This is for defining a category  `Default: PE Report Issue`<br/>
-**"Items"** This is for defining the item or items to display from the category using a comma separated list. For example: sc_cat_item.icon, sc_cat_item.name.  `Default: sc_cat_item.name, sc_cat_item.icon`<br/>
+**"Title"** Used to set the title option. `Default: Tell us what is causing the issue`<br/>
+**"Category"** This is for setting the category option `Default: PE Report Issue`<br/>
+**"Fields"** This is for defining the field item or items to display for the catalog item, using a comma separated list. For example: sc_cat_item.icon, sc_cat_item.name. `Default: sc_cat_item.name, sc_cat_item.icon`<br/>
+**"Items"** This is for defining catalog items for display. If the "Display all catalog items?" option is set to true, it will override this option. An example: Concur, Webex, CRM App. `Default: Concur, Webex, CRM App, Outlook, iPhone 6S, Macbook Pro`<br/>
+**"Display all catalog items?"** This option will return all catalog items for a category, if checked (true). If unchecked (false), will only return the defined option Items. `Default: false`<br/>
 
 ---
 
