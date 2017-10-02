@@ -42,6 +42,4 @@ function TimelineController(eventsService) {
       c.shownInitialEvents = 0;
     }
   }
-
-
-// testing
+}
