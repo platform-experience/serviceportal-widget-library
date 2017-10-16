@@ -8,7 +8,7 @@ There is no need to locally save any pictures, because the reading is managed th
 ## Screenshots
 ![alt text](../images/pe-barcode-reader-live-01.png "Barcode Reader - After scanning code") <br/><br/>
 ![alt text](../images/pe-barcode-reader-live-02.png "Barcode Reader - After scanning code") <br/><br/>
-![alt text](../images/pe-barcode-reader-live-03.mov "Barcode Reader - Demo video") <br/><br/>
+![alt text](../images/pe-barcode-reader-live-03.gif "Barcode Reader - Demo video") <br/><br/>
 <br/>
 <br/>
 
