@@ -1,24 +1,22 @@
-# Barcode Reader FI
+# Barcode Reader Live (livestream)
 
 ## Description
 
 This widget can be used to read a bar code in different formats or to manually enter it, providing a backend lookup just specifying table name and lookup column in the options.
-The image can be provided straigh from camera or camera roll/file system (mobile and desktop).
+There is no need to locally save any pictures, because the reading is managed through live streaming (on mobile and desktop).
 
 ## Screenshots
-![alt text](../images/pe-barcode-reader-fi-01.png "Barcode Reader - Options") <br/><br/>
-![alt text](../images/pe-barcode-reader-fi-02.png "Barcode Reader - Initial UI") <br/><br/>
-![alt text](../images/pe-barcode-reader-fi-03.png "Barcode Reader - After code extraction from image") <br/><br/>
+![alt text](../images/pe-barcode-reader-live-01.png "Barcode Reader - After scanning code") <br/><br/>
+![alt text](../images/pe-barcode-reader-live-02.png "Barcode Reader - After scanning code") <br/><br/>
+![alt text](../images/pe-barcode-reader-live-03.mov "Barcode Reader - Demo video") <br/><br/>
 <br/>
 <br/>
-<i>With manual lookup:</i><br/><br/>
-![alt text](../images/pe-barcode-reader-fi-04.png "Barcode Reader - Manual lookup") <br/>
 
 ## Additional Information/Notes
 > None
 ---
 ## Installation
-Download and install update set **[pe-barcode-reader-fi.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-barcode-reader-fi/pe-barcode-reader-fi.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-barcode-reader-fi.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-barcode-reader-live/pe-barcode-reader-live.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
 
@@ -33,6 +31,10 @@ Widget Option Schema parameters:
 **"Display field"**  the column name with the value to display on UI<br/>
 **"Lookup field"**  the column name containing the barcode<br/>
 **"Additional fields"**  additional columns to display on UI<br/>
+**"Barcode standard"**  additional columns to display on UI<br/>
+**"Title"**  title at the top<br/>
+**"Placeholder"**  text showed in the manual lookup field<br/>
+**"Action label"**  button to start scanning the code<br/>
 
 ---
 ## Platform Dependencies
