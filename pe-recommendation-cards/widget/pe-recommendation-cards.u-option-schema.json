@@ -1,21 +1,44 @@
-[{
-  "name": "title",
-  "label": "Title",
-  "type": "string",
-  "default_value": "Recommended for You"
-}, {
-  "name": "category",
-  "label": "Category",
-  "type": "string",
-  "default_value": "PE My Devices"
-}, {
-  "name": "items",
-  "label": "Items",
-  "type": "string",
-  "default_value": "sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description"
-}, {
-  "name": "highlight",
-  "label": "Highlight",
-  "type": "string",
-  "default_value": "Office 2016"
-}]
+[
+  {
+    "name": "title",
+    "label": "Title",
+    "type": "string",
+    "default_value": "Recommended for You"
+  },
+  {
+    "name": "category",
+    "label": "Category",
+    "type": "string",
+    "default_value": "PE My Devices"
+  },
+  {
+    "name": "fields",
+    "label": "Fields",
+    "type": "string",
+    "default_value": "sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description"
+  },
+  {
+    "name": "items",
+    "default_value": "GL Reporting, empasiegel1, Office 2016",
+    "label": "Items",
+    "type": "string"
+  },
+  {
+    "name": "highlight",
+    "label": "Highlight",
+    "type": "string",
+    "default_value": "Office 2016"
+  },
+  {
+    "name": "showTitle",
+    "default_value": "true",
+    "label": "Show Title",
+    "type": "boolean"
+  },
+  {
+    "name": "display_all_items",
+    "default_value": false,
+    "label": "Show All Catalog Items",
+    "type": "boolean"
+  }
+]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-07-25 13:12:13">
+<unload unload_date="2017-10-17 21:58:28">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -16,16 +16,16 @@
 <release_date/>
 <remote_base_update_set display_value=""/>
 <remote_parent_id/>
-<remote_sys_id>f4751b28db9ff200f0e8de01ce9619ee</remote_sys_id>
+<remote_sys_id>f631017edbb54300db45bff0ef961926</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-07-25 13:12:13</sys_created_on>
-<sys_id>eb20c723db4c0700a0785404ce961914</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>8f2e117edbf54300db45bff0ef96193f</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-07-25 13:12:13</sys_updated_on>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -35,145 +35,277 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
+<name>sc_cat_item_category_c18d993edbf54300db45bff0ef961992</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="empasiegel1">445ac99adb0a320062e479daae961996</sc_cat_item><sc_category display_value="PE My Devices">f52d193edbf54300db45bff0ef9619f6</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-17 21:55:36</sys_created_on><sys_id>c18d993edbf54300db45bff0ef961992</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE My Devices.empasiegel1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_category_c18d993edbf54300db45bff0ef961992</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 21:55:36</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+<payload_hash>-1433011013</payload_hash>
+<remote_update_set display_value="PE Recommendation Cards">8f2e117edbf54300db45bff0ef96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>032e117edbf54300db45bff0ef961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15f2c55b9f70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
+<table/>
+<target_name>PE My Devices.empasiegel1</target_name>
+<type>Catalog Item Category</type>
+<update_domain>global</update_domain>
+<update_guid>c98d1d3e60f54300358979375533054e</update_guid>
+<update_guid_history>c98d1d3e60f54300358979375533054e:-1433011013</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sc_cat_item_445ac99adb0a320062e479daae961996</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category display_value="PE My Devices">f52d193edbf54300db45bff0ef9619f6</category><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><entitlement_script/><group/><icon/><ignore_price>true</ignore_price><image/><list_price>0</list_price><location/><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>empasiegel1</name><no_cart>false</no_cart><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_search>false</no_search><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=445ac99adb0a320062e479daae961996&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><roles/><sc_catalogs>742ce428d7211100f2d224837e61036d</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description>Extend Lease</short_description><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:20:07</sys_created_on><sys_id>445ac99adb0a320062e479daae961996</sys_id><sys_mod_count>6</sys_mod_count><sys_name>empasiegel1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_445ac99adb0a320062e479daae961996</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 21:55:36</sys_updated_on><template/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=445ac99adb0a320062e479daae961996"/><fx_price action="delete_multiple" query="id=445ac99adb0a320062e479daae961996"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>445ac99adb0a320062e479daae961996</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:20:07</sys_created_on><sys_id>608a4d9adb0a320062e479daae961957</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 21:20:07</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>445ac99adb0a320062e479daae961996</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:20:07</sys_created_on><sys_id>648a4d9adb0a320062e479daae961957</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 21:20:07</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/svg+xml</content_type><file_name>icon</file_name><image_height/><image_width/><size_bytes>1866</size_bytes><size_compressed>792</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:35:04</sys_created_on><sys_id>c967bce6db0e320062e479daae9619a9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 14:35:04</sys_updated_on><table_name>ZZ_YYsc_cat_item</table_name><table_sys_id>445ac99adb0a320062e479daae961996</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="icon" sys_id="c967bce6db0e320062e479daae9619a9">c967bce6db0e320062e479daae9619a9</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:35:04</sys_created_on><sys_id>0d67bce6db0e320062e479daae9619a9</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>nVVNc5swEL3nV6jqJZ0BoS8EZIwzU88kp16a9gcQIxsmGHmA2M6/70pgI3eaTlp8sPS0em/37Rov7k+7Bh1019emzTEjFCPdrk1Zt9sc//zxEKYY9UPRlkVjWp3j1uD75c2iP2zRsS6HKsc8258wqnS9rQbYxXZ3qPXxqznlmCKKeIZ4jH0RhhHItn2Oq2HY30XR8XgkR0FMt404pTQC+ink7tTU7cufAlmWZZE7xcsbBM/iUxiiR93qrhhMd4eeXvSwrpAUhKFbkVHGv6AQeUTPptK7upjKJWuzi/rxThhOlEM9NHq5bsxriTq96XRfEQEftojGozGs1P16uep0MegSfBmqSZwsInd0jtr0S4vA14hsUV3m+Olt92ya3hrdmRdncqvPu3CyGTzb1E1zPrTrsHttIFofdGvKcnLB4/2uoaSdbktdYjR0RdtvTLfLsVs2kOttyJQk1D0BCrNp+WXO5PODezxuj/+xM6/7UIYrs38L+TsSjNOLAr0IXPN5nM7q8Mrqd4jlnDn7G7Ej35vmDUZFj35XxR4s3Ju6HWAGIcFUckZjgRgnSrA4SWFkPTQmgMhEJIglRI2wh2Jo6lngPf0CZgKkv2UEbjiKwKNdQQU8liCdBkyQOJUulVTY0IBxK+bSkondrWwaggMJs1vrsGKWaLzsll4BnhL2DLBZQ1r/4dhcBOKcnJceyjIyZit9S2f0Xxzz65hpV17RnEF50rqBPGM4DI/LhvnueejKs9gPnlvhiJXT8/s2l/FxNy/VSMKEGBupiOJqqgY6JGjMlbAwhZeVHTyeElc5VwGTEJyCk+oKBW8Saa8BxQwnRGa2gsS+ecEQAQE8kCRhyvYitV2DX75lAxSKmqbQWk1hAkmWnluWkIzKgCLQtzLWFerGlY6pw04RESfOnQCmj8XOJmSrsJlksWOK0UoQnoz6AAvFxlGh5/EAR8BYmrjlFQx9EqlVh8m/wmOSqcTlCcJx5nSsfwkbSaA2+DWMTilwygV8qGmLaPvbK88HLhu3WNi/q+UvD9z0e0oHAAA=</data><length>1044</length><position>1</position><sys_attachment display_value="icon" sys_id="c967bce6db0e320062e479daae9619a9">c967bce6db0e320062e479daae9619a9</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:35:04</sys_created_on><sys_id>8d67bce6db0e320062e479daae9619a9</sys_id></sys_attachment_doc></record_update>]]></payload>
+<payload_hash>-1060784199</payload_hash>
+<remote_update_set display_value="PE Recommendation Cards">8f2e117edbf54300db45bff0ef96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>072e117edbf54300db45bff0ef961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15f2c55b9da0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
+<table/>
+<target_name>empasiegel1</target_name>
+<type>Catalog Item</type>
+<update_domain>global</update_domain>
+<update_guid>498d1d3e80f54300165a4fc222af344d</update_guid>
+<update_guid_history>498d1d3e80f54300165a4fc222af344d:-1060784199,16bc153edff54300b0a8a66fcc4ebcc6:-12873058,16bc153edff54300b0a8a66fcc4ebcc6:-12873058,6eacd13e83f5430023a4d28f01e2d9ff:-1513316228,5bcb1dfa06f543002e0de988385503a1:-12873058,55ead1fa68f54300cbeaa3334d2daf78:0,8247157a4cf5430069abb9633e3ff2a8:-260021757,f5a6dd3afaf54300a123a2a14a50a3b7:1877299942,79a6dd3a78f543004eeb5d1d379279b5:1877299942,0731017e01b543002cd3b326006af36d:0</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sc_category_f52d193edbf54300db45bff0ef9619f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category"><sc_category action="INSERT_OR_UPDATE"><active>true</active><description/><entitlement_script/><header_icon/><homepage_image/><homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer><icon/><image/><location/><mobile_hide_description>false</mobile_hide_description><mobile_picture/><mobile_subcategory_render_type>list</mobile_subcategory_render_type><module/><order>0</order><parent/><roles/><sc_catalog display_value="Technical Catalog">742ce428d7211100f2d224837e61036d</sc_catalog><show_in_cms>false</show_in_cms><sys_class_name>sc_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-17 21:54:07</sys_created_on><sys_id>f52d193edbf54300db45bff0ef9619f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE My Devices</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_category_f52d193edbf54300db45bff0ef9619f6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 21:54:07</sys_updated_on><title>PE My Devices</title></sc_category><sys_translated_text action="delete_multiple" query="documentkey=f52d193edbf54300db45bff0ef9619f6"/></record_update>]]></payload>
+<payload_hash>-1217867525</payload_hash>
+<remote_update_set display_value="PE Recommendation Cards">8f2e117edbf54300db45bff0ef96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>432e117edbf54300db45bff0ef961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15f2c545c6e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
+<table/>
+<target_name>PE My Devices</target_name>
+<type>Category</type>
+<update_domain>global</update_domain>
+<update_guid>572d193e7df543009a022d413657da63</update_guid>
+<update_guid_history>572d193e7df543009a022d413657da63:-1217867525</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sc_cat_item_category_858d1d3edbf54300db45bff0ef96194f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="GL Reporting">b3894d9adb0a320062e479daae961951</sc_cat_item><sc_category display_value="PE My Devices">f52d193edbf54300db45bff0ef9619f6</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-17 21:55:36</sys_created_on><sys_id>858d1d3edbf54300db45bff0ef96194f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE My Devices.GL Reporting</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_category_858d1d3edbf54300db45bff0ef96194f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 21:55:36</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+<payload_hash>1912330174</payload_hash>
+<remote_update_set display_value="PE Recommendation Cards">8f2e117edbf54300db45bff0ef96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>4f2e117edbf54300db45bff0ef961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15f2c55baae0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
+<table/>
+<target_name>PE My Devices.GL Reporting</target_name>
+<type>Catalog Item Category</type>
+<update_domain>global</update_domain>
+<update_guid>418d1d3e7ef543006f11f67ca68fd558</update_guid>
+<update_guid_history>418d1d3e7ef543006f11f67ca68fd558:1912330174</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
 <name>sp_widget_e09f1c9edbc6320062e479daae961984</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function RecommendationCardController() {
   var c = this;
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.scroll-wrapper {&amp;#13;
-  width: 100%;&amp;#13;
-  overflow-x: auto;&amp;#13;
-  white-space: nowrap;&amp;#13;
-  -webkit-overflow-scrolling: touch;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.cards {&amp;#13;
-  margin-top: 15px;&amp;#13;
-  h3 {&amp;#13;
-    font-size: 16px;&amp;#13;
-    font-weight: 600;&amp;#13;
-    color: #485563;&amp;#13;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cards {
+  margin-top: 15px;
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #485563;
+  }
+}
+
+.modernizeit-color-square-small-gap {
+  .scroll-wrapper {
+    padding-bottom: 15px;
+    display: flex;
+  }
+  .item {
+    position: relative;
+    width: 118px;
+    flex-shrink: 0;
+    vertical-align: top;
+    margin-left: 8px;
+    text-align: center;
+    padding: 15px 5px 5px 5px;
+    background-color: #5a889f;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
+    white-space: normal;
+    .sub-title {
+      display: none;
+    }
+    &amp;amp;.out {
+      background-color: #c0351d;
+      .outage-alert {
+        display: block;
+      }
+    }
+    .icon img {
+      height: 37px;
+    }
+    .content {
+      margin-top: 15px;
+      color: #FFF;
+    }
+    .outage-alert {
+      display: none;
+      position: absolute;
+      top: 7px;
+      svg {
+        width: 22px;
+        height: 22px;
+        fill: white;
+      }
+    }
+  }
+  .item:first-child {
+    margin-left: 0;
+  }
+}
+
+.modernizeit-color-square-small-gap {
+  .item {
+    background-color: #323b4a;
+    height: 118px;
+    margin-left: 2px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.35);
+    width: auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    &amp;amp;.out {
+      .outage-alert {
+        display: none;
+      }
+    }
+    .name {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .sub-title {
+      display: block;
+      font-size: 14px;
+    }
+    .icon img {
+      height: auto;
+    }
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-recommendation-cards&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Recommendation Cards&lt;/name&gt;&lt;option_schema&gt;[&amp;#13;
+  {&amp;#13;
+    "name": "title",&amp;#13;
+    "label": "Title",&amp;#13;
+    "type": "string",&amp;#13;
+    "default_value": "Recommended for You"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "category",&amp;#13;
+    "label": "Category",&amp;#13;
+    "type": "string",&amp;#13;
+    "default_value": "PE My Devices"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "fields",&amp;#13;
+    "label": "Fields",&amp;#13;
+    "type": "string",&amp;#13;
+    "default_value": "sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "items",&amp;#13;
+    "default_value": "GL Reporting, empasiegel1, Office 2016",&amp;#13;
+    "label": "Items",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "highlight",&amp;#13;
+    "label": "Highlight",&amp;#13;
+    "type": "string",&amp;#13;
+    "default_value": "Office 2016"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "showTitle",&amp;#13;
+    "default_value": "true",&amp;#13;
+    "label": "Show Title",&amp;#13;
+    "type": "boolean"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "display_all_items",&amp;#13;
+    "default_value": false,&amp;#13;
+    "label": "Show All Catalog Items",&amp;#13;
+    "type": "boolean"&amp;#13;
   }&amp;#13;
-}&amp;#13;
-&amp;#13;
-.modernizeit-color-square-small-gap {&amp;#13;
-  .scroll-wrapper {&amp;#13;
-    padding-bottom: 15px;&amp;#13;
-    display: flex;&amp;#13;
-  }&amp;#13;
-  .item {&amp;#13;
-    position: relative;&amp;#13;
-    width: 118px;&amp;#13;
-    flex-shrink: 0;&amp;#13;
-    vertical-align: top;&amp;#13;
-    margin-left: 8px;&amp;#13;
-    text-align: center;&amp;#13;
-    padding: 15px 5px 5px 5px;&amp;#13;
-    background-color: #5a889f;&amp;#13;
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);&amp;#13;
-    white-space: normal;&amp;#13;
-    .sub-title {&amp;#13;
-      display: none;&amp;#13;
-    }&amp;#13;
-    &amp;amp;.out {&amp;#13;
-      background-color: #c0351d;&amp;#13;
-      .outage-alert {&amp;#13;
-        display: block;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-    .icon img {&amp;#13;
-      height: 37px;&amp;#13;
-    }&amp;#13;
-    .content {&amp;#13;
-      margin-top: 15px;&amp;#13;
-      color: #FFF;&amp;#13;
-    }&amp;#13;
-    .outage-alert {&amp;#13;
-      display: none;&amp;#13;
-      position: absolute;&amp;#13;
-      top: 7px;&amp;#13;
-      svg {&amp;#13;
-        width: 22px;&amp;#13;
-        height: 22px;&amp;#13;
-        fill: white;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-  .item:first-child {&amp;#13;
-    margin-left: 0;&amp;#13;
-  }&amp;#13;
-}&amp;#13;
-&amp;#13;
-.modernizeit-color-square-small-gap {&amp;#13;
-  .item {&amp;#13;
-    background-color: #323b4a;&amp;#13;
-    height: 118px;&amp;#13;
-    margin-left: 2px;&amp;#13;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.35);&amp;#13;
-    width: auto;&amp;#13;
-    flex-grow: 1;&amp;#13;
-    flex-basis: 0;&amp;#13;
-    &amp;amp;.out {&amp;#13;
-      .outage-alert {&amp;#13;
-        display: none;&amp;#13;
-      }&amp;#13;
-    }&amp;#13;
-    .name {&amp;#13;
-      font-size: 16px;&amp;#13;
-      font-weight: 600;&amp;#13;
-    }&amp;#13;
-    .sub-title {&amp;#13;
-      display: block;&amp;#13;
-      font-size: 14px;&amp;#13;
-    }&amp;#13;
-    .icon img {&amp;#13;
-      height: auto;&amp;#13;
-    }&amp;#13;
-  }&amp;#13;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-recommendation-cards&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Recommendation Cards&lt;/name&gt;&lt;option_schema&gt;[{&amp;#13;
-  "name": "title",&amp;#13;
-  "label": "Title",&amp;#13;
-  "type": "string",&amp;#13;
-  "default_value": "Recommended for You"&amp;#13;
-}, {&amp;#13;
-  "name": "category",&amp;#13;
-  "label": "Category",&amp;#13;
-  "type": "string",&amp;#13;
-  "default_value": "PE My Devices"&amp;#13;
-}, {&amp;#13;
-  "name": "items",&amp;#13;
-  "label": "Items",&amp;#13;
-  "type": "string",&amp;#13;
-  "default_value": "sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description"&amp;#13;
-}, {&amp;#13;
-  "name": "highlight",&amp;#13;
-  "label": "Highlight",&amp;#13;
-  "type": "string",&amp;#13;
-  "default_value": "Office 2016"&amp;#13;
-}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+]&amp;#13;
+&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
   options.title = options.title || serverOptions.title;
   options.category = options.category || serverOptions.category;
+  options.fields = options.fields || serverOptions.fields;
   options.items = options.items || serverOptions.items;
+  options.display_all_items = options.display_all_items || serverOptions.display_all_items;
   options.highlight = options.highlight || serverOptions.highlight;
-  var categoriesGR = GlideRecord('sc_cat_item_category');
-  var encodedQuery = 'sc_category.title=' + options.category;
+  var categoriesGR = new GlideRecord('sc_cat_item_category');
+  var allItems = 'sc_category.title=' + options.category;
+  var selectedItems = 'sc_category.title=' + options.category + '^sc_cat_item.nameIN' + options.items;
+  var encodedQuery = options.display_all_items == 'true' ? allItems : selectedItems;
   categoriesGR.addEncodedQuery(encodedQuery);
   categoriesGR.query();
   var items = [];
   var obj;
   while (categoriesGR.next()) {
     obj = {};
-    $sp.getRecordElements(obj, categoriesGR, options.items);
+    $sp.getRecordElements(obj, categoriesGR, options.fields);
     items.push(obj);
   }
   data.items = items;
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-12 18:12:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;e09f1c9edbc6320062e479daae961984&lt;/sys_id&gt;&lt;sys_mod_count&gt;74&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Recommendation Cards&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_e09f1c9edbc6320062e479daae961984&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-07-25 12:55:33&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-04-12 18:12:48&lt;/sys_created_on&gt;&lt;sys_id&gt;e09f1c9edbc6320062e479daae961984&lt;/sys_id&gt;&lt;sys_mod_count&gt;82&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Recommendation Cards&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_e09f1c9edbc6320062e479daae961984&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-10-17 21:07:40&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row"&gt;
   &lt;div class="col-xs-12 cards modernizeit-color-square-small-gap"&gt;
-    &lt;h3&gt;{{::options.title}}&lt;/h3&gt;
+    &lt;h3 ng-if="options.showTitle == 'true'"&gt;{{::options.title}}&lt;/h3&gt;
     &lt;div class="content-wrapper"&gt;
       &lt;div class="scroll-wrapper"&gt;
         &lt;div ng-repeat="item in ::data.items track by $index" class="item" ng-class="options.highlight.indexOf(item['sc_cat_item.name'].value) &gt; -1 ? 'out' : ''"&gt;
           &lt;div class="icon"&gt;
-            &lt;img src="{{::item['sc_cat_item.icon'].display_value || 'placeholder1.jpg'}}" alt=""&gt;
+            &lt;img src="{{::item['sc_cat_item.icon'].display_value}}"&gt;
           &lt;/div&gt;
           &lt;div class="content"&gt;
             &lt;div class="name"&gt;{{::item['sc_cat_item.name'].value}}&lt;/div&gt;
@@ -184,22 +316,100 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-1496348331</payload_hash>
-<remote_update_set display_value="PE Recommendation Cards">eb20c723db4c0700a0785404ce961914</remote_update_set>
+<payload_hash>-2013239380</payload_hash>
+<remote_update_set display_value="PE Recommendation Cards">8f2e117edbf54300db45bff0ef96193f</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-07-25 13:12:13</sys_created_on>
-<sys_id>2320c723db4c0700a0785404ce961915</sys_id>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>872e117edbf54300db45bff0ef961941</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>15d79d11a690000001</sys_recorded_at>
-<sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-07-25 13:12:13</sys_updated_on>
+<sys_recorded_at>15f2c29d82c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
 <table/>
 <target_name>PE Recommendation Cards</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
-<update_guid>8f5cbe6f470c0700f46c2a163a9e1b54</update_guid>
-<update_guid_history>8f5cbe6f470c0700f46c2a163a9e1b54:-1496348331,27ab36eb5b0c0700c4baa2a8d0548779:384910741,-346280963:-346280963</update_guid_history>
+<update_guid>cb8299b6d4f54300f6e0c5d9efbbc75f</update_guid>
+<update_guid_history>cb8299b6d4f54300f6e0c5d9efbbc75f:-2013239380,25b19d769bf543000fd4db587ac94bce:-516450496,56719d76fbf543000906300fae5c8c70:-166219830,e8215976b2f54300111aa4183340762b:2062986013,e7801576f3f5430020c33ce6ac81bdfa:1085356194,189d4db24af5430029edba5788414fc7:1007883444,50dc49b21cf543008fda06a01cce6118:-1718558565,622ac172c7f543001d9d6a752545853b:-1954872867,85e84932e9f54300fde29b34d48d392a:1377091928,f8b8857e05b543007fd336e8415afec7:1861381204,5f3a30baa6b54300b624b359d74d1f68:-2093468911,5f3a30baa6b54300b624b359d74d1f68:-2093468911,8f5cbe6f470c0700f46c2a163a9e1b54:-1496348331,27ab36eb5b0c0700c4baa2a8d0548779:384910741,-346280963:-346280963</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sc_cat_item_category_0d8d1d3edbf54300db45bff0ef961958</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Office 2016">eeba81dadb0a320062e479daae961981</sc_cat_item><sc_category display_value="PE My Devices">f52d193edbf54300db45bff0ef9619f6</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-17 21:55:36</sys_created_on><sys_id>0d8d1d3edbf54300db45bff0ef961958</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE My Devices.Office 2016</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_category_0d8d1d3edbf54300db45bff0ef961958</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 21:55:36</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+<payload_hash>-144612510</payload_hash>
+<remote_update_set display_value="PE Recommendation Cards">8f2e117edbf54300db45bff0ef96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>8b2e117edbf54300db45bff0ef961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15f2c55bd9f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
+<table/>
+<target_name>PE My Devices.Office 2016</target_name>
+<type>Catalog Item Category</type>
+<update_domain>global</update_domain>
+<update_guid>d58d1d3ee1f543004cfc796af9fdd261</update_guid>
+<update_guid_history>d58d1d3ee1f543004cfc796af9fdd261:-144612510</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sc_cat_item_eeba81dadb0a320062e479daae961981</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category display_value="PE My Devices">f52d193edbf54300db45bff0ef9619f6</category><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><entitlement_script/><group/><icon/><ignore_price>true</ignore_price><image/><list_price>0</list_price><location/><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Office 2016</name><no_cart>false</no_cart><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_search>false</no_search><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=eeba81dadb0a320062e479daae961981&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><roles/><sc_catalogs>742ce428d7211100f2d224837e61036d</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description>Install Locally</short_description><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:22:27</sys_created_on><sys_id>eeba81dadb0a320062e479daae961981</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Office 2016</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_eeba81dadb0a320062e479daae961981</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 21:55:36</sys_updated_on><template/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=eeba81dadb0a320062e479daae961981"/><fx_price action="delete_multiple" query="id=eeba81dadb0a320062e479daae961981"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>eeba81dadb0a320062e479daae961981</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:22:27</sys_created_on><sys_id>6a0b41dadb0a320062e479daae961985</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 21:22:27</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>eeba81dadb0a320062e479daae961981</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:22:27</sys_created_on><sys_id>6e0b41dadb0a320062e479daae961985</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 21:22:27</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/svg+xml</content_type><file_name>icon</file_name><image_height/><image_width/><size_bytes>1106</size_bytes><size_compressed>560</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:33:27</sys_created_on><sys_id>d9073ce6db0e320062e479daae9619b1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 14:33:27</sys_updated_on><table_name>ZZ_YYsc_cat_item</table_name><table_sys_id>eeba81dadb0a320062e479daae961981</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="icon" sys_id="d9073ce6db0e320062e479daae9619b1">d9073ce6db0e320062e479daae9619b1</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:33:27</sys_created_on><sys_id>1d073ce6db0e320062e479daae9619b1</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>fVNdT9swFH3nV3jeC0izc/1RJ0ZNkYYETxPS2J5RaNzEIrWjxLTl389JUwgbzIqUe4+Pz70+tpdXh22DdqbrrXc5ZhQwMm7tS+uqHP/+dUMyjPpQuLJovDM5dh5frc6W/a5Ce1uGOscc2gNGtbFVHWImh2xnzf67P+QYECAeP4nnRRhGsazrc1yH0F4myX6/p3tBfVclHACSKD9RLg+NdU8fEZnWOhln8eoMxbH8Qgi6Nc50RfDdJbp/MmFdIykoQ+dCA+MXiKCZ0KOvzdYW03bp2m+T/riGkEky2NCY1Q+77nzvN+HhbrOxa/PAgYmHxld+mRwZR3Zp+vXqujNFMGW0J9RTD3SZjFMn1qZfDUj8HZEK2TLH9y/bR9/0g9+dfxq9duaUkcntaN3GNs1pcohJ99xEttkZ58tyMmOm+9PEnW2NK02JUegK1298t83xGDax13PCM01hHN8QYTDFF6daX2/GMZOeyd92/rklklz79oXITypwCa8F3uTf6800Pzf8E3351j/7n/5Yo/XNS+Xd0fS6aKOPrbcuxPsIlGUKsmzBNGKaioUQqU7RHJZUg1YKpESMU60Eg1SPjFTpTGVyWKhBacEQpxJ0xgQXc5DRbCEYX6i5ABdUS8WllujfJniavavGgWY6MhSfo5JCqhZMwBAqAYwtQCBFgUMmpeBzlKVDa/GxSRzv4uTIB+eRVH8d+hx4TcZgOTzb1R9Zp7rCUgQAAA==</data><length>736</length><position>1</position><sys_attachment display_value="icon" sys_id="d9073ce6db0e320062e479daae9619b1">d9073ce6db0e320062e479daae9619b1</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:33:27</sys_created_on><sys_id>9d073ce6db0e320062e479daae9619b1</sys_id></sys_attachment_doc></record_update>]]></payload>
+<payload_hash>2104339672</payload_hash>
+<remote_update_set display_value="PE Recommendation Cards">8f2e117edbf54300db45bff0ef96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>c32e117edbf54300db45bff0ef961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15f2c55bd860000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
+<table/>
+<target_name>Office 2016</target_name>
+<type>Catalog Item</type>
+<update_domain>global</update_domain>
+<update_guid>558d1d3e90f543001922d7e8cdc27260</update_guid>
+<update_guid_history>558d1d3e90f543001922d7e8cdc27260:2104339672,d9fc953e54f543006802d5364b4fd29c:-147432707,d9fc953e54f543006802d5364b4fd29c:-147432707,e0bc153ef1f54300b664f7dd70b0c92a:466910299,a7cb1dfa80f54300b601a9de828443b4:-147432707,51ead1fa62f543008bedf5839381e17c:0,6657d57aaef54300ca7615a33ba3a40d:-792978014,aba6117a79f543009725cbcb774b7e0d:1620393285,2fa6117ad8f54300099919183cdada0b:1620393285,1b31017ea5b54300eec86f58bfab467d:0</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sc_cat_item_b3894d9adb0a320062e479daae961951</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><active>true</active><availability>on_desktop</availability><billable>false</billable><category display_value="PE My Devices">f52d193edbf54300db45bff0ef9619f6</category><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><entitlement_script/><group/><icon/><ignore_price>true</ignore_price><image/><list_price>0</list_price><location/><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>GL Reporting</name><no_cart>false</no_cart><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_search>false</no_search><omit_price>false</omit_price><order>0</order><ordered_item_link/><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=b3894d9adb0a320062e479daae961951&amp;sysparm_preview=true", "summary");</preview><price>0</price><recurring_frequency/><recurring_price>0</recurring_price><roles/><sc_catalogs>742ce428d7211100f2d224837e61036d</sc_catalogs><sc_ic_item_staging/><sc_ic_version/><short_description>Elevate Privileges</short_description><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:19:07</sys_created_on><sys_id>b3894d9adb0a320062e479daae961951</sys_id><sys_mod_count>4</sys_mod_count><sys_name>GL Reporting</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sc_cat_item_b3894d9adb0a320062e479daae961951</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 21:55:36</sys_updated_on><template/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=b3894d9adb0a320062e479daae961951"/><fx_price action="delete_multiple" query="id=b3894d9adb0a320062e479daae961951"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>b3894d9adb0a320062e479daae961951</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:19:07</sys_created_on><sys_id>8e4a0d9adb0a320062e479daae961977</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 21:19:07</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>recurring_price</field><id>b3894d9adb0a320062e479daae961951</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-12 21:19:08</sys_created_on><sys_id>824a0d9adb0a320062e479daae961978</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-12 21:19:08</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>image/svg+xml</content_type><file_name>icon</file_name><image_height/><image_width/><size_bytes>1838</size_bytes><size_compressed>765</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:35:55</sys_created_on><sys_id>9997fce6db0e320062e479daae9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-04-13 14:35:55</sys_updated_on><table_name>ZZ_YYsc_cat_item</table_name><table_sys_id>b3894d9adb0a320062e479daae961951</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="icon" sys_id="9997fce6db0e320062e479daae9619a8">9997fce6db0e320062e479daae9619a8</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:35:55</sys_created_on><sys_id>d997fce6db0e320062e479daae9619a8</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>nVVNU9swFLzzK1T1AjOxrC/bEhOHmWYGLu2ltD/AYJF4cKSMbQj8+z5JTuJSCi3mwNPqaXffypj5xdOmRY+m6xtnS8wIxcjYW1c3dlXinz8uE4VRP1S2rlpnTYmtwxeLk3n/uEK7ph7WJZZs+4TR2jSr9VBiLv3qsTG7L+6pxBRRJBniEk9FGEYga/sSr4dhe56mu92O7ARx3SrllNIU6MeW86e2sfevNTKtdRp28eIEwTP/lCToyljTVYPrztH1vRlu10gKwtCp0JTxM5SgCdGNW5tNU43jklu3Sft4JklGyqEZWrO4qew9sm4wPaqGDRHww+Zp3It9telvF8vOVIOpIZhhPaqTeRq29l13/cIj8CsiK9TUJb5+3ty4tvdJd+4+pGzNfpWMOUNod03b7jd9nXQPLXSbR2NdXY8xTHi/G5hpY2xtaoyGrrL9nes2JQ5lC15PE6EIDc8MJYyO9dnRyefL8Ey4J/xXnXvYJjJZuu1zIl70TPp8fknILznk9xdDEz8TO38yB/ZtBUED/zcmiFQ5V1kxYxnhTEuucvSVcZJTVjApZiwnXPMMahwjX1dbg+EyPMe79JrkSvnDs4IUjIYS6BVRVM4UKRT32uwj1IJQxrzdGZRZJEJLcM6LIjqXRBYcASI1PYxIJXp96KXvjzQBFtI7Q1AqJcMI0JDxPKI5ybkXzgXscA2nCyIyEYU5KcIJgQBl0tvUHqUsC1JwmslsROFoBksdl4xopRAoaZFHUUZ4FvL3VvJinIQSkQcNOJ4TCWlqmDY/qCqqfL7BrUeOidOILOFuCq0CG8C6iHNweHdYkAPCjOuIQi+PDV5ZshDwf1yaa59Xzk760dY1doDvmIC74PG1kCQWXk95SV/7S6Uk4r6ewP7NHMc7Hg1OotwbZuDjZ95xo8hRU5G9MQ5/gLHjN1dHeK/vFT5igB6k4OL3UpIeJn0dnXr5l3rCovcTT7nfnmKerl581abAYRGKuf+XtPgFcK3Nyy4HAAA=</data><length>1008</length><position>1</position><sys_attachment display_value="icon" sys_id="9997fce6db0e320062e479daae9619a8">9997fce6db0e320062e479daae9619a8</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-13 14:35:55</sys_created_on><sys_id>5d97fce6db0e320062e479daae9619a8</sys_id></sys_attachment_doc></record_update>]]></payload>
+<payload_hash>-531336449</payload_hash>
+<remote_update_set display_value="PE Recommendation Cards">8f2e117edbf54300db45bff0ef96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-17 21:58:28</sys_created_on>
+<sys_id>c72e117edbf54300db45bff0ef961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15f2c55ba8f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-10-17 21:58:28</sys_updated_on>
+<table/>
+<target_name>GL Reporting</target_name>
+<type>Catalog Item</type>
+<update_domain>global</update_domain>
+<update_guid>cd8d1d3e09f543007b2e15d514176756</update_guid>
+<update_guid_history>cd8d1d3e09f543007b2e15d514176756:-531336449,13cb1dfa40f543003a7a27122cb2fcab:714811236,13cb1dfa40f543003a7a27122cb2fcab:714811236,d1ead1fa41f54300848620919683dd7a:0,9c57957a03f54300b2dfa4aa7f17c45e:840208457,3f96dd3a5ff54300eb6c61b251e4454c:-1667325012,fb96dd3a0bf54300cea3fe1a8c26424a:-1667325012,c331017ef3b54300815440caf6e97a71:0</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>

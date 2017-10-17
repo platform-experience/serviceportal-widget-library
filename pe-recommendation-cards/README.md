@@ -25,10 +25,13 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 Widget Option Schema parameters:
 
-**"Title"** Widget Title.  `Default: Recommended for You`<br/>
-**"Category"** This is for defining a category  `Default: PE My Devices`<br/>
-**"Items"** This is for defining the item or items to display from the category using a comma separated list. For example: sc_cat_item.icon, sc_cat_item.name, etc.  `Default: sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description`<br/>
-**"Highlight"** This is for highlighting items, which adds a background color to the item or items using a comma separated list. For example: Office 2016, GL Reporting, etc.   `Default: Office 2016`<br/>
+**"Title"** Widget Title. `Default: Recommended for You`<br/>
+**"Category"** This is for defining a category `Default: PE My Devices`<br/>
+**"Fields"** This is for defining the field items to display for the catalog item, using a comma separated list. For example: sc_cat_item.icon, sc_cat_item.name, etc. `Default: sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description`<br/>
+**"Items"** This is for defining the catalog items for display. If the "Show All Catalog Items" option is set to true, it will override this option. `Default: GL Reporting, empasiegel1, Office 2016`<br/>
+**"Highlight"** This is for highlighting items, which adds a background color to the item or items using a comma separated list. For example: Office 2016, GL Reporting, etc. `Default: Office 2016`<br/>
+**"Show Title"** This option will show the title if checked (true); if unchecked (false), will hide the title. `Default: true`<br/>
+**"Show All Catalog Items"** This option will return all catalog items for a category, if checked (true). If unchecked (false), will only return the defined option Items. `Default: false`<br/>
 
 ---
 
