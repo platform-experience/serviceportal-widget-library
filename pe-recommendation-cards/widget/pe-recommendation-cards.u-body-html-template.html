@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-xs-12 cards modernizeit-color-square-small-gap">
-    <h3>{{::options.title}}</h3>
+    <h3 ng-if="options.showTitle == 'true'">{{::options.title}}</h3>
     <div class="content-wrapper">
       <div class="scroll-wrapper">
         <div ng-repeat="item in ::data.items track by $index" class="item" ng-class="options.highlight.indexOf(item['sc_cat_item.name'].value) > -1 ? 'out' : ''">
           <div class="icon">
-            <img src="{{::item['sc_cat_item.icon'].display_value || 'placeholder1.jpg'}}" alt="">
+            <img src="{{::item['sc_cat_item.icon'].display_value}}">
           </div>
           <div class="content">
             <div class="name">{{::item['sc_cat_item.name'].value}}</div>
