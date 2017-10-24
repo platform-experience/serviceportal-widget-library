@@ -40,6 +40,3 @@ function TimelineController(eventsService) {
     c.shownInitialEvents = c.data.initial_elements;
     if (c.shownInitialEvents === undefined) {
       c.shownInitialEvents = 0;
-    }
-  }
-}
