@@ -13,7 +13,7 @@ Features:
 **NOTE:** this widget only works with Jakarta and later releases.
 
 ## Screenshots
-<kbd><img src="../images/pe-progressive-form.gif" /></kbd>
+![Progressive Form](../images/pe-progressive-form.gif)
 
 ## Additional Information/Notes
 - This widget creates numbered ”Concertina” panels for each form section, plus an additional final panel for the child (related) records. The final panel also contains the submit button.
