@@ -1,16 +1,38 @@
-[{
-  "name": "title",
-  "default_value": "Support Options",
-  "label": "Title",
-  "type": "string"
-}, {
-  "name": "category",
-  "default_value": "PE Support Options",
-  "label": "Category",
-  "type": "string"
-}, {
-  "name": "items",
-  "default_value": "sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description",
-  "label": "Items",
-  "type": "string"
-}]
+[
+  {
+    "name": "title",
+    "default_value": "Support Options",
+    "label": "Title",
+    "type": "string"
+  },
+  {
+    "name": "category",
+    "default_value": "PE Support Options",
+    "label": "Category",
+    "type": "string"
+  },
+  {
+    "name": "fields",
+    "default_value": "sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description",
+    "label": "Fields",
+    "type": "string"
+  },
+  {
+    "name": "items",
+    "default_value": "Live Chat with Customer Support, Call Customer Support, How to reset your Okta cookie, Run Health Check",
+    "label": "Items",
+    "type": "string"
+  },
+  {
+    "name": "showTitle",
+    "default_value": "true",
+    "label": "Show Title",
+    "type": "boolean"
+  },
+  {
+    "name": "display_all_items",
+    "default_value": false,
+    "label": "Show All Catalog Items",
+    "type": "boolean"
+  }
+]
