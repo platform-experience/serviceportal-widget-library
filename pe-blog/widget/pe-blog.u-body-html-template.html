@@ -1,0 +1,35 @@
+<div class="blog-container row">
+  <div class="blog-post col-xs-12 {{options.theme | lowercase}}-theme" ng-repeat="item in ::c.data.items track by $index">
+    <article>
+      <div class="rating" ng-if="options.rating === true">
+        <uib-rating ng-model="::item.rating.display_value" max="5" readonly="true"></uib-rating>
+      </div>
+      <a href="?id=kb_article&sys_id={{::item.sys_id.value}}">
+        <h1 class="short-description">{{::item.short_description.display_value}}</h1>
+      </a>
+      <div class="blog-info">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <date class="date">{{::item.published.value | date: c.dateFormat}}</date>
+        by
+        <a ng-if="item.author" class="author" ng-href="?id=user_profile&sys_id={{::item.author.value}}">{{::item.author.display_value}}</a>
+        <span ng-if="!item.author.display_value">{{::c.defaultAuthor}}</span>
+      </div>
+      <div class="excerpt" ng-if="options.excerpt === true">
+        <div ng-show="togglePost" ng-bind-html="::item.text.value"></div>
+        <div ng-show="!togglePost" ng-bind-html="(item.text.value | limitTo: options.limit) + '...'"></div>
+      </div>
+    </article>
+    <div class="tags">
+      <span>
+        <a href="?id=kb_category&kb_category={{::item.kb_category.value}}">
+          <i class="fa fa-tag" aria-hidden="true"></i> {{::item.kb_category.display_value}}
+        </a>
+      </span>
+      <span ng-if="data.isAdmin" class="edit-entry">
+        <a href="nav_to.do?uri=kb_knowledge.do?sys_id={{::item.sys_id.value}}">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
+        </a>
+      </span>
+    </div>
+  </div>
+</div>

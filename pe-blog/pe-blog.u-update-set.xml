@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-11-17 01:07:36">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Blog</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>309bdfd0db2a8300db45bff0ef96196f</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>4229e0e4dbaa8300db45bff0ef961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_0fcb9b14db2a8300db45bff0ef9619cf</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function BlogController() {
+  var c = this;
+
+  c.$onInit = function() {
+    c.dateFormat = 'MMMM d, y';
+    c.defaultAuthor = 'Unknown';
+  };
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-light-theme-header: #222 !default;&amp;#13;
+$pe-dark-theme-header: #fff !default;&amp;#13;
+$pe-dracula-theme-header: #bd93f9 !default;&amp;#13;
+$pe-sub-header-color: #777 !default;&amp;#13;
+$pe-anchor-color: #03a9f4 !default;&amp;#13;
+$pe-font-size: 1.5rem !default;&amp;#13;
+&amp;#13;
+.blog-container {&amp;#13;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', 'Lato', 'Lucida Grande',&amp;#13;
+    'Lucida Sans Unicode', Tahoma, Sans-Serif;&amp;#13;
+  margin: 0 auto;&amp;#13;
+  max-width: 700px;&amp;#13;
+  .blog-post {&amp;#13;
+    display: block;&amp;#13;
+    margin-bottom: 4rem;&amp;#13;
+    padding: 0;&amp;#13;
+    &amp;amp;:last-child {&amp;#13;
+      border-bottom: none;&amp;#13;
+    }&amp;#13;
+    article {&amp;#13;
+      margin-bottom: 20px;&amp;#13;
+      padding: 0 20px;&amp;#13;
+      h1 {&amp;#13;
+        font-size: 3.5rem;&amp;#13;
+        font-weight: 700;&amp;#13;
+        text-transform: capitalize;&amp;#13;
+      }&amp;#13;
+      h2 {&amp;#13;
+        color: $pe-sub-header-color;&amp;#13;
+        font-size: $pe-font-size;&amp;#13;
+        font-weight: bold;&amp;#13;
+      }&amp;#13;
+      a {&amp;#13;
+        cursor: pointer;&amp;#13;
+      }&amp;#13;
+      .blog-info {&amp;#13;
+        margin: 20px 0;&amp;#13;
+      }&amp;#13;
+      .s1 {&amp;#13;
+        font-size: $pe-font-size;&amp;#13;
+      }&amp;#13;
+      .rating {&amp;#13;
+        float: right;&amp;#13;
+        margin-left: 5px;&amp;#13;
+      }&amp;#13;
+      .author {&amp;#13;
+        font-weight: bold;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .tags {&amp;#13;
+      margin-bottom: 0;&amp;#13;
+      padding: 0.4rem 2rem 0.5rem;&amp;#13;
+      i {&amp;#13;
+        margin-right: 0.1rem;&amp;#13;
+      }&amp;#13;
+      .edit-entry {&amp;#13;
+        float: right;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .dark-theme {&amp;#13;
+    a {&amp;#13;
+      color: $pe-anchor-color;&amp;#13;
+      &amp;amp;:hover {&amp;#13;
+        color: lighten($pe-anchor-color, 30%);&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    color: #e5e5e5;&amp;#13;
+    background-color: #3a3939;&amp;#13;
+    h1 {&amp;#13;
+      color: $pe-dark-theme-header;&amp;#13;
+      &amp;amp;:hover {&amp;#13;
+        color: $pe-anchor-color;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .blog-info {&amp;#13;
+      color: #888;&amp;#13;
+    }&amp;#13;
+    .rating {&amp;#13;
+      color: #888;&amp;#13;
+    }&amp;#13;
+    .tags {&amp;#13;
+      background-color: #302f2f;&amp;#13;
+      color: #888;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .dracula-theme {&amp;#13;
+    a {&amp;#13;
+      color: #8be9fd;&amp;#13;
+      &amp;amp;:hover {&amp;#13;
+        color: #fff;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    color: #f8f8f2;&amp;#13;
+    background-color: #282a36;&amp;#13;
+    h1 {&amp;#13;
+      color: $pe-dracula-theme-header;&amp;#13;
+      &amp;amp;:hover {&amp;#13;
+        color: #6272a4;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .blog-info {&amp;#13;
+      color: #6272a4;&amp;#13;
+    }&amp;#13;
+    .rating {&amp;#13;
+      color: #6272a4;&amp;#13;
+    }&amp;#13;
+    .tags {&amp;#13;
+      background-color: #44475a;&amp;#13;
+      color: #bd93f9;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .light-theme {&amp;#13;
+    a {&amp;#13;
+      color: $pe-anchor-color;&amp;#13;
+      &amp;amp;:hover {&amp;#13;
+        color: #222;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    color: #222;&amp;#13;
+    background-color: #f9f9f9;&amp;#13;
+    h1 {&amp;#13;
+      color: $pe-light-theme-header;&amp;#13;
+      &amp;amp;:hover {&amp;#13;
+        color: $pe-anchor-color;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .blog-info {&amp;#13;
+      color: #888;&amp;#13;
+    }&amp;#13;
+    .rating {&amp;#13;
+      color: #888;&amp;#13;
+    }&amp;#13;
+    .tags {&amp;#13;
+      background-color: #e9e9e9;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;u_sp_blog_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;u_category,u_max_entries,u_excerpt_character_limit,u_theme,u_edit_role,u_excerpt,u_ratings&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-blog&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Blog&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  activate();
+
+  function activate() {
+    getOptions();
+    getKnowledgeItems();
+    hasAdminRole();
+  }
+
+  function hasAdminRole() {
+    var userRoles = gs.getUser().getUserRoles().toString();
+    var userArray = userRoles.split(',');
+    var hasRole = [];
+    userArray.forEach(function(value, key) {
+      var canEdit = options.roles.includes(value) === true ? true : false;
+      hasRole.push(canEdit);
+    });
+    data.isAdmin = hasRole.join().includes(true) ? true : false;
+    return data.isAdmin;
+  }
+
+  function getOptions() {
+    var serverOptions = input.options ? input.options : input.parameters ? input.parameters : {};
+    options.category = options.u_category_dv || serverOptions.u_category_dv;
+    options.count = options.u_max_entries || serverOptions.u_max_entries;
+    options.limit = options.u_excerpt_character_limit || serverOptions.u_excerpt_character_limit;
+    options.excerpt = options.u_excerpt || serverOptions.u_excerpt;
+    options.rating = options.u_ratings || serverOptions.u_ratings;
+    options.theme = options.u_theme || serverOptions.u_theme;
+    options.roles = options.u_edit_role_dv || serverOptions.u_edit_role_dv;
+  }
+
+  function getKnowledgeItems() {
+    var grKnowledge = new GlideRecord('kb_knowledge');
+    var encodedQuery = 'kb_category.label=' + options.category;
+    var fields = 'author, kb_category, number, published, rating, short_description, sys_id, text';
+    grKnowledge.addEncodedQuery(encodedQuery);
+    grKnowledge.orderBy('published');
+    grKnowledge.setLimit(options.count);
+    grKnowledge.query();
+    var items = [];
+    var obj;
+    while (grKnowledge.next()) {
+      obj = {};
+      $sp.getRecordElements(obj, grKnowledge, fields);
+      items.push(obj);
+    }
+    data.items = items;
+    return data.items;
+  }
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:34:03&lt;/sys_created_on&gt;&lt;sys_id&gt;0fcb9b14db2a8300db45bff0ef9619cf&lt;/sys_id&gt;&lt;sys_mod_count&gt;28&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Blog&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0fcb9b14db2a8300db45bff0ef9619cf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 23:49:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="blog-container row"&gt;
+  &lt;div class="blog-post col-xs-12 {{options.theme | lowercase}}-theme" ng-repeat="item in ::c.data.items track by $index"&gt;
+    &lt;article&gt;
+      &lt;div class="rating" ng-if="options.rating === true"&gt;
+        &lt;uib-rating ng-model="::item.rating.display_value" max="5" readonly="true"&gt;&lt;/uib-rating&gt;
+      &lt;/div&gt;
+      &lt;a href="?id=kb_article&amp;sys_id={{::item.sys_id.value}}"&gt;
+        &lt;h1 class="short-description"&gt;{{::item.short_description.display_value}}&lt;/h1&gt;
+      &lt;/a&gt;
+      &lt;div class="blog-info"&gt;
+        &lt;i class="fa fa-clock-o" aria-hidden="true"&gt;&lt;/i&gt;
+        &lt;date class="date"&gt;{{::item.published.value | date: c.dateFormat}}&lt;/date&gt;
+        by
+        &lt;a ng-if="item.author" class="author" ng-href="?id=user_profile&amp;sys_id={{::item.author.value}}"&gt;{{::item.author.display_value}}&lt;/a&gt;
+        &lt;span ng-if="!item.author.display_value"&gt;{{::c.defaultAuthor}}&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="excerpt" ng-if="options.excerpt === true"&gt;
+        &lt;div ng-show="togglePost" ng-bind-html="::item.text.value"&gt;&lt;/div&gt;
+        &lt;div ng-show="!togglePost" ng-bind-html="(item.text.value | limitTo: options.limit) + '...'"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;div class="tags"&gt;
+      &lt;span&gt;
+        &lt;a href="?id=kb_category&amp;kb_category={{::item.kb_category.value}}"&gt;
+          &lt;i class="fa fa-tag" aria-hidden="true"&gt;&lt;/i&gt; {{::item.kb_category.display_value}}
+        &lt;/a&gt;
+      &lt;/span&gt;
+      &lt;span ng-if="data.isAdmin" class="edit-entry"&gt;
+        &lt;a href="nav_to.do?uri=kb_knowledge.do?sys_id={{::item.sys_id.value}}"&gt;
+          &lt;i class="fa fa-pencil-square-o" aria-hidden="true"&gt;&lt;/i&gt; Edit
+        &lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2027862149</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>0629e0e4dbaa8300db45bff0ef961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc73d2e400000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table/>
+<target_name>PE Blog</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>20675464b7aa8300ac3d4fc048cb1d0e</update_guid>
+<update_guid_history>20675464b7aa8300ac3d4fc048cb1d0e:2027862149,a7e9c4ec526a83006ee3407a66600186:-960177376,e4878c6c206a83001794638124cebc01:-794414126,a656c46c206a8300a18a80ff90b1068d:1583316906,54e4482c106a8300daed38f2d62664a7:-714321255,578e7758606a830040850a3dae57b56c:-583050906,8ffc3f187c6a83009d6a0a0388983668:551528531,4bdcbb18a66a8300eaf8512374065ed2:678364987,e9acbb186f6a830022b4b471630ab743:-1979329960,837cf718326a83004c059d693565ccdf:-809825163,1a5cf718d56a8300fd589147e9a32565:1089599967,ffc0b3d0696a8300e55d8943b5ff5716:-795552450,aa907f904f6a830019050df868335499:2063255152,ea207f90f06a8300ea7646179c57aa95:437560929,c9103f90886a8300d553ad0bfcc134d5:930238315,64ffab90626a83000c70a3230c63307d:1269000791,51efeb904d6a8300d2f524adab7da347:-1056444827,64df6b90376a8300be08020d6373e3a6:-1462211369,5bbf2b90d06a830086d0a96745271a4e:398943957,b69fe7903e6a8300ecf9486411b6e17f:136824533,0e6fa790f56a8300447a2c0ac5828208:-400140630,460de7dc122a83001e49711aab89da4d:1167373991,de7ca79c782a83008855852fe329779a:439199607,cf07671c3f2a8300d05a24014b8ea6ad:1167373991,ac86abd8ba2a8300993d6c00b1462282:935937689,a1d5abd8d02a8300253a1970c05e6379:1985832616,b2d36b982d2a8300d123f47edaf2177c:-1808364027,0b23e7585a2a830094673a84b928f6e8:-1384283784,58dc9f14ed2a8300a86a82ffe2ef236c:826012</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_blog_instance_u_category</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_category" table="u_sp_blog_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;KB category&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;Email&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_category&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;u_sp_blog_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="kb_category"&gt;kb_category&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:48:15&lt;/sys_created_on&gt;&lt;sys_id&gt;0b4fd3d4db2a8300db45bff0ef9619c2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;KB category&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_blog_instance_u_category&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 19:48:38&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1108534750</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>1229e0e4dbaa8300db45bff0ef961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc66043120000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.KB category</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>fd206bd4812a830092120d2934adb8c8</update_guid>
+<update_guid_history>fd206bd4812a830092120d2934adb8c8:1108534750,54106bd48b2a83003ac2d3c669db8c42:175560177</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_17dd5394db2a8300db45bff0ef9619c1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_sp_blog_instance</description><name>u_sp_blog_instance</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>17dd5394db2a8300db45bff0ef9619c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_17dd5394db2a8300db45bff0ef9619c1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>739052088</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>1229e0e4dbaa8300db45bff0ef961998</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571c360000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>u_sp_blog_instance</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>dfdd53946e2a8300c985cc4d8416e3c2</update_guid>
+<update_guid_history>dfdd53946e2a8300c985cc4d8416e3c2:739052088</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_blog_instance_u_ratings_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_ratings" label="Display ratings" language="en" table="u_sp_blog_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>u_ratings</element><help/><hint/><label>Display ratings</label><language>en</language><name>u_sp_blog_instance</name><plural>Display ratings</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:43:50</sys_created_on><sys_id>630fdb94db2a8300db45bff0ef9619e6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Display ratings</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_blog_instance_u_ratings_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:43:50</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1051460582</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>1629e0e4dbaa8300db45bff0ef961997</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc65bdf3d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Display ratings</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>eb0f13d4252a8300f9d47db36f873e10</update_guid>
+<update_guid_history>eb0f13d4252a8300f9d47db36f873e10:1051460582</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_blog_instance_u_edit_role_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_edit_role" label="Edit role" language="en" table="u_sp_blog_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>u_edit_role</element><help/><hint/><label>Edit role</label><language>en</language><name>u_sp_blog_instance</name><plural>Edit roles</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:49:41</sys_created_on><sys_id>99606fd4db2a8300db45bff0ef961906</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Edit role</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_blog_instance_u_edit_role_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:49:41</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1505776159</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>1a29e0e4dbaa8300db45bff0ef961996</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6613c060000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Edit role</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>99606fd4e52a83001bd598f0285df85a</update_guid>
+<update_guid_history>99606fd4e52a83001bd598f0285df85a:-1505776159</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_e3dd5394db2a8300db45bff0ef9619dd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_sp_blog_instance</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:39</sys_created_on><sys_id>e3dd5394db2a8300db45bff0ef9619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_e3dd5394db2a8300db45bff0ef9619dd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:39</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>-418432538</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>1a29e0e4dbaa8300db45bff0ef961999</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571e570000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table/>
+<target_name>u_sp_blog_instance</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>efdd5394dd2a83008c078119bd001ddd</update_guid>
+<update_guid_history>efdd5394dd2a83008c078119bd001ddd:-418432538</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_blog_instance_u_max_entries</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_max_entries" table="u_sp_blog_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Max entries&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;5&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_max_entries&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_sp_blog_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:50:58&lt;/sys_created_on&gt;&lt;sys_id&gt;fe80efd4db2a8300db45bff0ef9619b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Max entries&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_blog_instance_u_max_entries&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 19:50:58&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1823439590</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>1e29e0e4dbaa8300db45bff0ef961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc66268a50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Max entries</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>90b02318a42a830013e3fba0c1578dd9</update_guid>
+<update_guid_history>90b02318a42a830013e3fba0c1578dd9:-1823439590</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_23dd5394db2a8300db45bff0ef9619ce</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>23dd5394db2a8300db45bff0ef9619ce</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance.u_sp_blog_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_sp_blog_instance">2bdd5394db2a8300db45bff0ef9619cb</sys_security_acl><sys_update_name>sys_security_acl_role_23dd5394db2a8300db45bff0ef9619ce</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><sys_user_role display_value="u_sp_blog_instance_user" name="u_sp_blog_instance_user">0f3d1b54db2a8300db45bff0ef96197c</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>966721731</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>1e29e0e4dbaa8300db45bff0ef961998</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571cfd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>u_sp_blog_instance.u_sp_blog_instance_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>6fdd53947e2a83003a5ecf1577d462cf</update_guid>
+<update_guid_history>6fdd53947e2a83003a5ecf1577d462cf:966721731</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_blog_instance_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_sp_blog_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;update_synch=true&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_sp_blog_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:38:38&lt;/sys_created_on&gt;&lt;sys_id&gt;2bdd5394db2a8300db45bff0ef9619d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_sp_blog_instance&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_blog_instance_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 19:38:38&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>468689028</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>4e29e0e4dbaa8300db45bff0ef961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571e7b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e3dd5394562a83003e8352fab1e2ffdf</update_guid>
+<update_guid_history>e3dd5394562a83003e8352fab1e2ffdf:468689028,ae8d5f545d2a8300a3ca240eaf22ce60:-2142270408,273d5b54782a83004395b232822be6dd:468689028</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_blog_instance_u_max_entries_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_max_entries" label="Max entries" language="en" table="u_sp_blog_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>u_max_entries</element><help/><hint/><label>Max entries</label><language>en</language><name>u_sp_blog_instance</name><plural>Max entries</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:50:58</sys_created_on><sys_id>c8b0efd4db2a8300db45bff0ef9619f1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Max entries</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_blog_instance_u_max_entries_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:50:58</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1804859996</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>5229e0e4dbaa8300db45bff0ef961997</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc66268c40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Max entries</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>54b023183d2a8300c58f762c00fd47da</update_guid>
+<update_guid_history>54b023183d2a8300c58f762c00fd47da:-1804859996</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_blog_instance_u_category_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_category" label="KB category" language="en" table="u_sp_blog_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>u_category</element><help/><hint/><label>KB category</label><language>en</language><name>u_sp_blog_instance</name><plural>KB categories</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:48:15</sys_created_on><sys_id>d0106bd4db2a8300db45bff0ef96193a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>KB category</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_blog_instance_u_category_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:48:15</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-702410258</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>5629e0e4dbaa8300db45bff0ef961996</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc65feb290000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.KB category</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>18106bd48c2a8300adf117eda1a5b143</update_guid>
+<update_guid_history>18106bd48c2a8300adf117eda1a5b143:-702410258</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_a6046f98db2a8300db45bff0ef96196a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="a6046f98db2a8300db45bff0ef96196a" sys_domain="global" table="u_sp_blog_instance" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_category</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 22:49:42</sys_created_on><sys_id>0a99c0ecdb6a8300db45bff0ef96195f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_blog_instance" sys_domain="global" view="Default view">a6046f98db2a8300db45bff0ef96196a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 22:49:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_max_entries</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 22:49:42</sys_created_on><sys_id>8a99c0ecdb6a8300db45bff0ef96195f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_blog_instance" sys_domain="global" view="Default view">a6046f98db2a8300db45bff0ef96196a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 22:49:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_excerpt_character_limit</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 22:49:42</sys_created_on><sys_id>0e99c0ecdb6a8300db45bff0ef96195f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_blog_instance" sys_domain="global" view="Default view">a6046f98db2a8300db45bff0ef96196a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 22:49:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_edit_role</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 22:49:42</sys_created_on><sys_id>8e99c0ecdb6a8300db45bff0ef96195f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_blog_instance" sys_domain="global" view="Default view">a6046f98db2a8300db45bff0ef96196a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 22:49:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_theme</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 22:49:42</sys_created_on><sys_id>0299c0ecdb6a8300db45bff0ef961960</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_blog_instance" sys_domain="global" view="Default view">a6046f98db2a8300db45bff0ef96196a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 22:49:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_excerpt</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 22:49:42</sys_created_on><sys_id>8299c0ecdb6a8300db45bff0ef961960</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_blog_instance" sys_domain="global" view="Default view">a6046f98db2a8300db45bff0ef96196a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 22:49:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_ratings</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 22:49:42</sys_created_on><sys_id>0699c0ecdb6a8300db45bff0ef961960</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_sp_blog_instance" sys_domain="global" view="Default view">a6046f98db2a8300db45bff0ef96196a</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 22:49:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_sp_blog_instance</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 20:05:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a6046f98db2a8300db45bff0ef96196a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_a6046f98db2a8300db45bff0ef96196a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 20:05:37</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1307532773</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>5629e0e4dbaa8300db45bff0ef961999</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc70607ad0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>ce99c0ecaa6a8300b493b2e77711d161</update_guid>
+<update_guid_history>ce99c0ecaa6a8300b493b2e77711d161:1307532773,6b654c2cbd6a8300e1d162a603ee9bc8:-365782836,c693002c346a83009a80cf25b35ecba7:322612955,23130ce86f6a83003f98f7bb53f4944e:547903995,eb1384e8296a8300345f2cb2762642ef:2029234865</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_blog_instance_u_excerpt_character_limit</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_excerpt_character_limit" table="u_sp_blog_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Excerpt character limit&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;300&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_excerpt_character_limit&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_sp_blog_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:52:07&lt;/sys_created_on&gt;&lt;sys_id&gt;44c0a318db2a8300db45bff0ef961948&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Excerpt character limit&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_blog_instance_u_excerpt_character_limit&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 19:52:07&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-850796996</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>5a29e0e4dbaa8300db45bff0ef961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc66373d40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Excerpt character limit</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>b0f0e318cf2a8300d11e5d268fc279e6</update_guid>
+<update_guid_history>b0f0e318cf2a8300d11e5d268fc279e6:-850796996</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_1fdd5394db2a8300db45bff0ef9619c3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>1fdd5394db2a8300db45bff0ef9619c3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance.u_sp_blog_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_sp_blog_instance">17dd5394db2a8300db45bff0ef9619c1</sys_security_acl><sys_update_name>sys_security_acl_role_1fdd5394db2a8300db45bff0ef9619c3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><sys_user_role display_value="u_sp_blog_instance_user" name="u_sp_blog_instance_user">0f3d1b54db2a8300db45bff0ef96197c</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1829359240</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>5a29e0e4dbaa8300db45bff0ef961998</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571c590000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>u_sp_blog_instance.u_sp_blog_instance_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>5bdd5394242a83003e7871e3ad4c60c5</update_guid>
+<update_guid_history>5bdd5394242a83003e7871e3ad4c60c5:1829359240</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_17dd1394db2a8300db45bff0ef961953</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_sp_blog_instance</description><name>u_sp_blog_instance</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>17dd1394db2a8300db45bff0ef961953</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_17dd1394db2a8300db45bff0ef961953</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-942632852</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>5e29e0e4dbaa8300db45bff0ef961997</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571bea0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>u_sp_blog_instance</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>53dd1394012a830010511ac64adb4d55</update_guid>
+<update_guid_history>53dd1394012a830010511ac64adb4d55:-942632852</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_6f8d9f54db2a8300db45bff0ef961936</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>SP Blog Instance</label><live_feed_enabled>false</live_feed_enabled><name>u_sp_blog_instance</name><number_ref/><provider_class/><read_access>true</read_access><super_class display_value="Instance" name="sp_instance">ab38d131db900300db45bff0ef9619bc</super_class><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>6f8d9f54db2a8300db45bff0ef961936</sys_id><sys_mod_count>1</sys_mod_count><sys_name>SP Blog Instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_6f8d9f54db2a8300db45bff0ef961936</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:41:58</sys_updated_on><update_access>false</update_access><user_role display_value="u_sp_blog_instance_user" name="u_sp_blog_instance_user">0f3d1b54db2a8300db45bff0ef96197c</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>1514236540</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>8a29e0e4dbaa8300db45bff0ef961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc65a2b5c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>10ae9b94b62a8300da30e3dba30889b3</update_guid>
+<update_guid_history>10ae9b94b62a8300da30e3dba30889b3:1514236540,abdd5394a52a830090ba9ca88dbfcae1:1514236540</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_blog_instance_u_theme</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_theme" table="u_sp_blog_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice&gt;1&lt;/choice&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Theme&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;Light&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_theme&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Choice"&gt;choice&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_sp_blog_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:53:38&lt;/sys_created_on&gt;&lt;sys_id&gt;7bf06718db2a8300db45bff0ef961939&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Theme&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_blog_instance_u_theme&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 19:53:38&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1817388459</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>9229e0e4dbaa8300db45bff0ef961996</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc664d79c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Theme</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>cb41e718e92a8300fbbf97a418c7e118</update_guid>
+<update_guid_history>cb41e718e92a8300fbbf97a418c7e118:-1817388459</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_afdd5394db2a8300db45bff0ef9619c8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>afdd5394db2a8300db45bff0ef9619c8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance.u_sp_blog_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_sp_blog_instance">a7dd5394db2a8300db45bff0ef9619c6</sys_security_acl><sys_update_name>sys_security_acl_role_afdd5394db2a8300db45bff0ef9619c8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><sys_user_role display_value="u_sp_blog_instance_user" name="u_sp_blog_instance_user">0f3d1b54db2a8300db45bff0ef96197c</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-873503459</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>9229e0e4dbaa8300db45bff0ef961999</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571ca70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>u_sp_blog_instance.u_sp_blog_instance_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>ebdd5394362a83003d47ca9dd6a639ca</update_guid>
+<update_guid_history>ebdd5394362a83003d47ca9dd6a639ca:-873503459</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_blog_instance_u_excerpt</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_excerpt" table="u_sp_blog_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Display excerpt&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_excerpt&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_sp_blog_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:43:06&lt;/sys_created_on&gt;&lt;sys_id&gt;25be1f94db2a8300db45bff0ef961983&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Display excerpt&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_blog_instance_u_excerpt&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 19:43:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>10225695</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>9629e0e4dbaa8300db45bff0ef961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc65b33be0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Display excerpt</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>f8ee5f942c2a8300f115b721ab5e01f0</update_guid>
+<update_guid_history>f8ee5f942c2a8300f115b721ab5e01f0:10225695</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a7dd5394db2a8300db45bff0ef9619c6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_sp_blog_instance</description><name>u_sp_blog_instance</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>a7dd5394db2a8300db45bff0ef9619c6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_a7dd5394db2a8300db45bff0ef9619c6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1334458756</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>9629e0e4dbaa8300db45bff0ef961998</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571c7e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>u_sp_blog_instance</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>63dd5394d12a8300facffc8e7b9c63c8</update_guid>
+<update_guid_history>63dd5394d12a8300facffc8e7b9c63c8:-1334458756</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_blog_instance__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="SP Blog Instance" language="en" table="u_sp_blog_instance"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>SP Blog Instance</label><language>en</language><name>u_sp_blog_instance</name><plural>SP Blog Instances</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>ebdd5394db2a8300db45bff0ef9619d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SP Blog Instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_blog_instance__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1357217385</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>9a29e0e4dbaa8300db45bff0ef961997</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571e970000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>a7dd5394c02a83003b88001a39c7b6e0</update_guid>
+<update_guid_history>a7dd5394c02a83003b88001a39c7b6e0:1357217385,428d5f54112a8300acb511dd4663f61a:1036276057,e73d5b54092a8300f813517a2ca73cde:1357217385</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_blog_instance_u_excerpt_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_excerpt" label="Display excerpt" language="en" table="u_sp_blog_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>u_excerpt</element><help/><hint/><label>Display excerpt</label><language>en</language><name>u_sp_blog_instance</name><plural>Display excerpts</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:43:06</sys_created_on><sys_id>f4ee5f94db2a8300db45bff0ef9619e8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Display excerpt</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_blog_instance_u_excerpt_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:43:06</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1864631207</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>9e29e0e4dbaa8300db45bff0ef961996</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc65b33da0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Display excerpt</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>74ee5f94d82a8300aa7a6c3772d13efe</update_guid>
+<update_guid_history>74ee5f94d82a8300aa7a6c3772d13efe:1864631207</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_u_sp_blog_instance_u_theme</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="u_theme" table="u_sp_blog_instance" version="3"><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_theme</element><hint/><inactive>false</inactive><label>Dark</label><language>en</language><name>u_sp_blog_instance</name><sequence/><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:53:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fb41e718db2a8300db45bff0ef96191b</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:53:56</sys_updated_on><value>Dark</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_theme</element><hint/><inactive>false</inactive><label>Dracula</label><language>en</language><name>u_sp_blog_instance</name><sequence/><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:54:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>32512b18db2a8300db45bff0ef961915</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:54:16</sys_updated_on><value>Dracula</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_theme</element><hint/><inactive>false</inactive><label>Light</label><language>en</language><name>u_sp_blog_instance</name><sequence/><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:54:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2d61e718db2a8300db45bff0ef9619b3</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:54:27</sys_updated_on><value>Light</value></sys_choice><sys_choice_set action="INSERT_OR_UPDATE"><element>u_theme</element><name>u_sp_blog_instance</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:53:53</sys_created_on><sys_id>32512718db2a8300db45bff0ef961981</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_theme</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_u_sp_blog_instance_u_theme</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:53:53</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+<payload_hash>229735144</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>c629e0e4dbaa8300db45bff0ef961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc66595a90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Theme</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>cf712b18a02a8300ede9bb1e93c036fb</update_guid>
+<update_guid_history>cf712b18a02a8300ede9bb1e93c036fb:229735144,65712b18882a8300825d73dd6ded4336:-1543146177,6871e7185e2a8300d0c8ba44df5417bc:-714340622,ab612b18d62a8300e2e69bb3222a49f5:1352893732,6a61e7184b2a8300884f01ea60b999b7:935579992,59612b184d2a830061c7cba2a6e48e0c:-1312772231,a3512b18cb2a83002ba763314fb6b130:-1815985420,72512718752a83009ebf0a3252a4d482:2070606547</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_blog_instance_u_edit_role</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_edit_role" table="u_sp_blog_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Edit role&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;admin&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_edit_role&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;u_sp_blog_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sys_user_role"&gt;sys_user_role&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:49:41&lt;/sys_created_on&gt;&lt;sys_id&gt;39402fd4db2a8300db45bff0ef96197e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Edit role&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_blog_instance_u_edit_role&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 19:49:59&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>951300219</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>d229e0e4dbaa8300db45bff0ef961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc66180e60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Edit role</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>b170afd4412a8300f49697037c390f3e</update_guid>
+<update_guid_history>b170afd4412a8300f49697037c390f3e:951300219,d5606fd4412a83002997447f4abf5959:141326139</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_2bdd5394db2a8300db45bff0ef9619cb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_sp_blog_instance</description><name>u_sp_blog_instance</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>2bdd5394db2a8300db45bff0ef9619cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_2bdd5394db2a8300db45bff0ef9619cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-723180722</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>d229e0e4dbaa8300db45bff0ef961998</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571cd30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>u_sp_blog_instance</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e3dd5394fc2a8300e54c8a5bc19b02cd</update_guid>
+<update_guid_history>e3dd5394fc2a8300e54c8a5bc19b02cd:-723180722</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_blog_instance_u_theme_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_theme" label="Theme" language="en" table="u_sp_blog_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>u_theme</element><help/><hint/><label>Theme</label><language>en</language><name>u_sp_blog_instance</name><plural>Themes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:53:38</sys_created_on><sys_id>8341e718db2a8300db45bff0ef961911</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Theme</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_blog_instance_u_theme_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:53:38</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>989387083</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>d629e0e4dbaa8300db45bff0ef961997</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc664d7b50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Theme</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>8f41e718fe2a8300b68726954ea9dc19</update_guid>
+<update_guid_history>8f41e718fe2a8300b68726954ea9dc19:989387083</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_sp_blog_instance_u_excerpt_character_limit_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_excerpt_character_limit" label="Excerpt character limit" language="en" table="u_sp_blog_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>u_excerpt_character_limit</element><help/><hint/><label>Excerpt character limit</label><language>en</language><name>u_sp_blog_instance</name><plural>Excerpt character limits</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:52:07</sys_created_on><sys_id>78f0e318db2a8300db45bff0ef9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Excerpt character limit</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_sp_blog_instance_u_excerpt_character_limit_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:52:07</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>2009200535</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>da29e0e4dbaa8300db45bff0ef961996</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc66373f70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Excerpt character limit</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>74f0e318622a8300510e013f380ac8e7</update_guid>
+<update_guid_history>74f0e318622a8300510e013f380ac8e7:2009200535</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_sp_blog_instance_u_ratings</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_ratings" table="u_sp_blog_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Display ratings&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_ratings&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_sp_blog_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-11-16 19:43:50&lt;/sys_created_on&gt;&lt;sys_id&gt;c1fedf94db2a8300db45bff0ef96191d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Display ratings&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_sp_blog_instance_u_ratings&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-11-16 19:44:04&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-385625515</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>de29e0e4dbaa8300db45bff0ef961995</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc65c16530000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>SP Blog Instance.Display ratings</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>431f53d42e2a8300a37b4dd26acdfa52</update_guid>
+<update_guid_history>431f53d42e2a8300a37b4dd26acdfa52:-385625515,2b0f13d4272a83003d457fa095140d0f:508867792</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_9fdd1394db2a8300db45bff0ef961955</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-16 19:38:38</sys_created_on><sys_id>9fdd1394db2a8300db45bff0ef961955</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_sp_blog_instance.u_sp_blog_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_sp_blog_instance">17dd1394db2a8300db45bff0ef961953</sys_security_acl><sys_update_name>sys_security_acl_role_9fdd1394db2a8300db45bff0ef961955</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-11-16 19:38:38</sys_updated_on><sys_user_role display_value="u_sp_blog_instance_user" name="u_sp_blog_instance_user">0f3d1b54db2a8300db45bff0ef96197c</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>784266876</payload_hash>
+<remote_update_set display_value="PE Blog">4229e0e4dbaa8300db45bff0ef961994</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-17 01:07:36</sys_created_on>
+<sys_id>de29e0e4dbaa8300db45bff0ef961998</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>15fc6571c150000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-17 01:07:36</sys_updated_on>
+<table>u_sp_blog_instance</table>
+<target_name>u_sp_blog_instance.u_sp_blog_instance_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>d7dd5394eb2a830064381c2e073348c0</update_guid>
+<update_guid_history>d7dd5394eb2a830064381c2e073348c0:784266876</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

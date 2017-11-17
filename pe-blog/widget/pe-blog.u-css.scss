@@ -1,0 +1,135 @@
+$pe-light-theme-header: #222 !default;
+$pe-dark-theme-header: #fff !default;
+$pe-dracula-theme-header: #bd93f9 !default;
+$pe-sub-header-color: #777 !default;
+$pe-anchor-color: #03a9f4 !default;
+$pe-font-size: 1.5rem !default;
+
+.blog-container {
+  font-family: 'Whitney SSm A', 'Whitney SSm B', 'Lato', 'Lucida Grande',
+    'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  margin: 0 auto;
+  max-width: 700px;
+  .blog-post {
+    display: block;
+    margin-bottom: 4rem;
+    padding: 0;
+    &:last-child {
+      border-bottom: none;
+    }
+    article {
+      margin-bottom: 20px;
+      padding: 0 20px;
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      h2 {
+        color: $pe-sub-header-color;
+        font-size: $pe-font-size;
+        font-weight: bold;
+      }
+      a {
+        cursor: pointer;
+      }
+      .blog-info {
+        margin: 20px 0;
+      }
+      .s1 {
+        font-size: $pe-font-size;
+      }
+      .rating {
+        float: right;
+        margin-left: 5px;
+      }
+      .author {
+        font-weight: bold;
+      }
+    }
+    .tags {
+      margin-bottom: 0;
+      padding: 0.4rem 2rem 0.5rem;
+      i {
+        margin-right: 0.1rem;
+      }
+      .edit-entry {
+        float: right;
+      }
+    }
+  }
+  .dark-theme {
+    a {
+      color: $pe-anchor-color;
+      &:hover {
+        color: lighten($pe-anchor-color, 30%);
+      }
+    }
+    color: #e5e5e5;
+    background-color: #3a3939;
+    h1 {
+      color: $pe-dark-theme-header;
+      &:hover {
+        color: $pe-anchor-color;
+      }
+    }
+    .blog-info {
+      color: #888;
+    }
+    .rating {
+      color: #888;
+    }
+    .tags {
+      background-color: #302f2f;
+      color: #888;
+    }
+  }
+  .dracula-theme {
+    a {
+      color: #8be9fd;
+      &:hover {
+        color: #fff;
+      }
+    }
+    color: #f8f8f2;
+    background-color: #282a36;
+    h1 {
+      color: $pe-dracula-theme-header;
+      &:hover {
+        color: #6272a4;
+      }
+    }
+    .blog-info {
+      color: #6272a4;
+    }
+    .rating {
+      color: #6272a4;
+    }
+    .tags {
+      background-color: #44475a;
+      color: #bd93f9;
+    }
+  }
+  .light-theme {
+    a {
+      color: $pe-anchor-color;
+      &:hover {
+        color: #222;
+      }
+    }
+    color: #717171;
+    background-color: #f9f9f9;
+    h1 {
+      color: $pe-light-theme-header;
+      &:hover {
+        color: $pe-anchor-color;
+      }
+    }
+    .blog-info {
+      color: #888;
+    }
+    .tags {
+      background-color: #e9e9e9;
+    }
+  }
+}
