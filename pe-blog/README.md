@@ -4,38 +4,40 @@
 
 A simple blog widget crafted from Knowledge Base articles with configurable options.
 
-## Screenshot
+## Screenshots
 
 ### Dark Theme
 ![](../images/pe-blog-dark-theme.png)
 
-## Additional Information/Notes
+### Light Theme
+![](../images/pe-blog-light-theme.png)
 
-This widget comes with three themes; see 'Configuration' below.
-* Dark
-* Dracula
-* Light
+## Additional Information/Notes
+> None
 
 ---
+
 ## Installation
 
 Download and install update set **[pe-blog.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-blog/pe-blog.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 
 ## Configuration
 
-Widget Option Schema parameters:
+### Widget Option Schema
 
-**"KB category"** Used to set the blog category. `Default: Email`<br/>
-**"Max entries"** This is for setting the maximum number of blog entries. `Default: 5`<br/>
-**"Excerpt character limit"** This is for defining the blog excerpt character limit. `Default: 300`<br/>
-**"Theme"** This is for setting the blog theme. There are three options: Dark, Dracula and Light. `Default: Light`<br/>
-**"Edit role"** This option is for selecting the role that will be able to view the edit button. `Default: admin`<br/>
-**"Display excerpt"** Used to show or hide the excerpt. `Default: checked`<br/>
-**"Display ratings"** Used to show or hide the ratings. `Default: checked`<br/>
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `KB category`  | Sets the blog category. | Email |
+| `Max entries`  | Sets the maximum number of blog entries. | 5
+| `Excerpt character limit` | Defines the blog excerpt character limit. | 300
+| `Theme` | Sets the blog theme. Three options: Dark, Dracula and Light. | Light
+| `Edit role` | Selects the role that will be able to view the edit button. | admin
+| `Display excerpt` | Used to show or hide the excerpt. | Checked
+| `Display ratings` | Used to show or hide the ratings. | Checked
 
 ---
 
