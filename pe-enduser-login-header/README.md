@@ -4,7 +4,7 @@
 
 This can be used to quickly craft a login header widget.
 
-## Screenshots
+## Screenshot
 ![](../images/pe-end-user-login-header-1.png)
 
 ## Additional Information/Notes
@@ -14,7 +14,7 @@ This can be used to quickly craft a login header widget.
 ---
 Download and install update set **[pe-enduser-login-header.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-enduser-login-header/pe-enduser-login-header.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration

@@ -2,7 +2,7 @@
 
 ## Description
 
-Query the most recent anonaly alert from the *em_alert_anomaly* table to provide Business Services Impact Details.
+Query the most recent anomaly alert from the *em_alert_anomaly* table to provide Business Services Impact Details.
 
 ## Screenshots
 ![alt text](../images/pe-business-impact-1b.png "expanded")
@@ -32,11 +32,13 @@ Widget Option Schema parameters:
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$slate: #485563;`<br/>
-`$orange: #ff6f00;`<br/>
-`$medium-green: #34ba3d;`<br/>
-`$icon-circle-color: #7e848b !default;`<br/>
-`$text-color: $slate !default;`<br/>
-`$divider-color: #7E848B !default;`<br/>
-`$status-alert-color: $orange !default;`<br/>
-`$status-recovered-color: $medium-green !default;`<br/>
+```scss
+$slate: #485563;
+$orange: #ff6f00;
+$medium-green: #34ba3d;
+$icon-circle-color: #7e848b !default;
+$text-color: $slate !default;
+$divider-color: #7E848B !default;
+$status-alert-color: $orange !default;
+$status-recovered-color: $medium-green !default;
+```

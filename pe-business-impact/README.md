@@ -2,7 +2,7 @@
 
 ## Description
 
-Query the most recent anonaly alert from the *em_alert_anomaly* table to provide Business Services impact information and associated Business Services details.
+Query the most recent anomaly alert from the *em_alert_anomaly* table to provide Business Services impact information and associated Business Services details.
 When the plus (+) graphic in the top right is selected/clicked, details about the Business Impact is displayed through use of the `pe-business-impact-details` widget (_included_).
 
 ## Screenshots
@@ -23,7 +23,7 @@ Though the PE Business Impact widget uses the PE Business Impact Details widget 
 Ensure the that the **Performance Analytics - Content Pack - Event Management** plugin is Activated per the SN Plugin support section below.<br/><br/>
 Download and install update set **[pe-business-impact.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-business-impact/pe-business-impact.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
@@ -72,11 +72,13 @@ Revenue and User impact information is provided as 'demo only' data, and would n
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$slate: #485563;`<br/>
-`$orange: #ff6f00;`<br/>
-`$medium-green: #34ba3d;`<br/>
-`$icon-circle-color: #7e848b !default;`<br/>
-`$text-color: $slate !default;`<br/>
-`$divider-color: #7E848B !default;`<br/>
-`$status-alert-color: $orange !default;`<br/>
-`$status-recovered-color: $medium-green !default;`<br/>
+```scss
+$slate: #485563;
+$orange: #ff6f00;
+$medium-green: #34ba3d;
+$icon-circle-color: #7e848b !default;
+$text-color: $slate !default;
+$divider-color: #7E848B !default;
+$status-alert-color: $orange !default;
+$status-recovered-color: $medium-green !default;
+```

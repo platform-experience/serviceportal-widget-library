@@ -1,9 +1,8 @@
 # Barcode Reader FI
 
 ## Description
-
 This widget can be used to read a bar code in different formats or to manually enter it, providing a backend lookup just specifying table name and lookup column in the options.
-The image can be provided straigh from camera or camera roll/file system (mobile and desktop).
+The image can be provided straight from camera or camera roll/file system (mobile and desktop).
 
 ## Screenshots
 ![alt text](../images/pe-barcode-reader-fi-01.png "Barcode Reader - Options") <br/><br/>
@@ -20,14 +19,17 @@ The image can be provided straigh from camera or camera roll/file system (mobile
 ## Installation
 Download and install update set **[pe-barcode-reader-fi.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-barcode-reader-fi/pe-barcode-reader-fi.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
-Language variants can be created through the section System UI -> UI Messages, and displayed adding in the HTML body a statement with the syntax:<br/>
-* ${<i>key value specified in the Message record</i>}.
+Language variants can be created through the section System UI -> UI Messages and displayed adding in the HTML body a statement with the syntax:
 
-Widget Option Schema parameters:
+```html
+${<i>key value specified in the Message record</i>}
+```
+
+### Widget Option Schema
 
 **"Table"**  the table containing the products/items to search for<br/>
 **"Display field"**  the column name with the value to display on UI<br/>

@@ -13,12 +13,15 @@ This widget provides a minimal countdown implementation, easy and quick to exten
 ## Installation
 Download and install update set **[pe-countdown.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-countdown/pe-countdown.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
-Language variants can be created through the section System UI -> UI Messages, and displayed adding in the HTML body a statement with the syntax:<br/>
-* ${<i>key value specified in the Message record</i>}.
+Language variants can be created through the section System UI -> UI Messages and displayed adding in the HTML body a statement with the syntax:
+
+```html
+${<i>key value specified in the Message record</i>}
+```
 ---
 ## Platform Dependencies
 > None

@@ -4,21 +4,21 @@
 
 This widget can be used to show training courses allocated to the current user for a particular category of training courses. The user can enroll in, and un-enroll from those courses. Furthermore, they can see what courses they have completed in the category and which are remaining.
 
-## Screenshots
+## Screenshot
 ![Training widget](../images/pe-foexp-training.png "Training widget")
 
 ## Additional Information/Notes
 
 You can either use the "Category" option to select a category to always show in this widget, or pass the `category` parameter in via the URL to set which category the widget should show.
 
-This widget makes use of 4 new custom tables that are installed as part of the Update Set. You will need to populate data into these tables for the widget to work. See the customsation section for more information about this.
+This widget makes use of 4 new custom tables that are installed as part of the Update Set. You will need to populate data into these tables for the widget to work. See the configuration section for more information about this.
 
 ---
 ## Installation
 ---
 Download and install update set **[pe-foexp-training.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-foexp-training/pe-foexp-training.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
@@ -66,8 +66,10 @@ Widget Option Schema parameters:
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$page-bg: #f5f5f5 !default;`<br/>
-`$primary-color: #117fc1 !default;`<br/>
-`$primary-color-darker: #0065d3 !default;`<br/>
-`$secondary-color: #2980b9 !default;`<br/>
-`$border-color: #1aa5be !default;`<br/>
+```scss
+$page-bg: #f5f5f5 !default;
+$primary-color: #117fc1 !default;
+$primary-color-darker: #0065d3 !default;
+$secondary-color: #2980b9 !default;
+$border-color: #1aa5be !default;
+```
