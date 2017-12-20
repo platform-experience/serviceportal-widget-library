@@ -16,7 +16,7 @@ Update set installs the table '401k Enrollments' (u_401k_enrollments) with sampl
 ---
 Download and install update set **[pe-foexp-401k-update-set.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-foexp-401k/pe-foexp-401k-update-set.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
@@ -42,5 +42,7 @@ Sample data is provided by the update set installed table '401k Enrollments' (u_
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`button-bg: #ffffff !default;`<br/>
-`$button: #1aa5be !default;`<br/>
+```scss
+$button-bg: #ffffff !default;
+$button: #1aa5be !default;
+```

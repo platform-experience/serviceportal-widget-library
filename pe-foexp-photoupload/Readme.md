@@ -4,7 +4,7 @@
 
 This widget allows a user to upload a new photo.
 
-## Screenshots
+## Screenshot
 ![FOEXP Photo Upload](../images/pe-foexp-photoupload.gif "FOEXP Photo Upload")
 
 ## Additional Information/Notes
@@ -14,7 +14,7 @@ This widget allows a user to upload a new photo.
 ---
 Download and install update set **[pe-foexp-photoupload-update-set.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-foexp-photoupload/pe-foexp-photoupload-update-set.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration

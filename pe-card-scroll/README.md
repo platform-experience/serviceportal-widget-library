@@ -2,11 +2,13 @@
 
 ## Description
 
-Displays status information about the most recent alert record from the *em_alert_anomaly* table.
+This widget can be used to quickly craft a card that scrolls on toggle to display hidden content.
 
 ## Screenshots
+
 ### Collapsed View
 ![](../images/pe-card-scroll-1.png)
+
 ### Expanded View
 ![](../images/pe-card-scroll-2.png)
 
@@ -17,7 +19,7 @@ Displays status information about the most recent alert record from the *em_aler
 ---
 Download and install update set **[pe-card-scroll.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-card-scroll/pe-card-scroll.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
@@ -42,7 +44,9 @@ Widget Option Schema parameters:
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$pe-theme-color: #1c2432 !default;`<br/>
-`$pe-header-color: #fff !default;`<br/>
-`$pe-anchor-color: #68acd8 !default;`<br/>
-`$pe-status-color-normal: #6ee520 !default;`<br/>
+```scss
+$pe-theme-color: #1c2432 !default;
+$pe-header-color: #fff !default;
+$pe-anchor-color: #68acd8 !default;
+$pe-status-color-normal: #6ee520 !default;
+```

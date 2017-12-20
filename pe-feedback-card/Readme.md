@@ -20,16 +20,18 @@ This widget can be used to create a simple emoji rating/feedback card.
 ---
 Download and install update set **[pe-feedback-card.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-feedback-card/pe-feedback-card.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
----
-Widget Option Schema parameters:
 
-**"Step 1 message"**  `Default: We would like you to take a survey to see how we are doing.`<br/>
-**"Step 2 message"**  `Default: How would you rate your overall experience using this?`<br/>
-**"Step 3 message"**  `Default: People like you rate this service at:`<br/>
+### Widget Option Schema
+
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `Step 1 message` | Message for step 1 | We would like you to take a survey to see how we are doing. |
+| `Step 2 message` | Message for step 2 | How would you rate your overall experience using this? |
+| `Step 3 message` | Message for step 3 | People like you rate this service at: |
 
 ---
 ## Platform Dependencies
@@ -49,6 +51,8 @@ Widget Option Schema parameters:
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$pe-brand-primary: #337ab7 !default;`<br/>
-`$pe-brand-text-color: #fff !default;`<br/>
-`$pe-brand-text-size-normal: 15px !default;`<br/>
+```scss
+$pe-brand-primary: #337ab7 !default;
+$pe-brand-text-color: #fff !default;
+$pe-brand-text-size-normal: 15px !default;
+```

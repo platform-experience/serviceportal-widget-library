@@ -31,13 +31,13 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 | Option | Description | Default Value |
 | :--- | :--- | :--- |
-| `KB category`  | Sets the blog category. | Email |
-| `Max entries`  | Sets the maximum number of blog entries. | 5
-| `Excerpt character limit` | Defines the blog excerpt character limit. | 300
-| `Theme` | Sets the blog theme. Three options: Dark, Dracula and Light. | Light
-| `Edit role` | Selects the role that will be able to view the edit button. | admin
-| `Display excerpt` | Used to show or hide the excerpt. | Checked
-| `Display ratings` | Used to show or hide the ratings. | Checked
+| `KB category` | Sets the blog category. | Email |
+| `Max entries` | Sets the maximum number of blog entries. | 5 |
+| `Excerpt character limit` | Defines the blog excerpt character limit. | 300 |
+| `Theme` | Sets the blog theme. Three options: Dark, Dracula and Light. | Light |
+| `Edit role` | Selects the role that will be able to view the edit button. | admin |
+| `Display excerpt` | Used to show or hide the excerpt. | Checked |
+| `Display ratings` | Used to show or hide the ratings. | Checked |
 
 ---
 
@@ -55,7 +55,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ---
 
-## Dependencies
+## API Dependencies
 
 <i>Dependencies are included and configured as part of the provided update set.</i>
 > None

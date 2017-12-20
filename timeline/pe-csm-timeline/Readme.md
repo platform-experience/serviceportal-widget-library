@@ -2,28 +2,31 @@
 
 ## Description
 
-This widget can be used to create a timeline with user avatar, name, title etc.
+This widget can be used to create a timeline with user avatar, name, title, etc.
 
-## Screenshots
+## Screenshot
 ![alt text](../../images/pe-csm-timeline.png "PE CSM Timeline")
 
 ## Additional Information/Notes
-This widget makes use of [pe-people-info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/People%20Card/pe-people-info) widget to display user avatar, name and title, this widget is already part of the update set.
+This widget makes use of [pe-people-info](https://github.com/platform-experience/serviceportal-widget-library/tree/master/people-card/pe-people-info) widget to display user avatar, name and title, this widget is already part of the update set.
 
 ---
 ## Installation
 Download and install update set **[pe-csm-timeline.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/timeline/pe-csm-timeline/pe-csm-timeline.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
-Widget Option Schema parameters:
 
-**User SysID** - `Default: 9ec35b8713453a007e94fc5ed144b09a`<br/>
-**Show Only Picture** - `Default: false`<br/>
-**Show Job Title** -  `Default: true`<br/>
-**Show Call and Chat** -  `Default: false`<br/>
+### Widget Option Schema
+
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `User SysID` | Set SysID | 9ec35b8713453a007e94fc5ed144b09a |
+| `Show Only Picture` | Display picture only | false |
+| `Show Job Title` | Display the job title | true |
+| `Show Call and Chat` | Show the call and chat | false |
 
 ---
 ## Platform Dependencies

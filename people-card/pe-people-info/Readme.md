@@ -18,18 +18,21 @@ This widget can be used to create a simple people card with user avatar, name, t
 ## Installation
 Download and install update set **[pe-people-info.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/people-card/pe-people-info/pe-people-info.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
-Widget Option Schema parameters:
 
-**"User Sys ID"** This is to pass the user sys id you want to display. We pull all the user details associated with this sys_id.  `Default: 9ec35b8713453a007e94fc5ed144b09a` (demo user included as part of the update set)
-**"Show Only Picture"** this is a boolean variable, when checked we only display the user avatar and nothing else.   `Default: false`<br/>
-**"Show Job Title"** this is a boolean variable, when checked we show the user job tile below his name.  `Default: true`<br/>
-**"Show Call and Chat"** this is a boolean variable, when checked we show chat and call icons.  `Default: true`<br/>
-**"Show Text Below Picture"** this is a boolean variable, when checked we show the name below the picture.  `Default: false`<br/>
-**"Add border color around avatar"** this takes a hex code for color, and adds it as border to img.
+### Widget Option Schema
+
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `User Sys ID` | This is to pass the user sys_id you want to display. We pull all the user details associated with this sys_id. | 9ec35b8713453a007e94fc5ed144b09a |
+| `Show Only Picture` | This is a boolean variable, when checked we only display the user avatar and nothing else. | false |
+| `Show Job Title` | This is a boolean variable, when checked we show the user job tile below his name. | true |
+| `Show Call and Chat` | This is a boolean variable, when checked we show chat and call icons. | true |
+| `Show Text Below Picture` | This is a boolean variable, when checked we show the name below the picture. | false |
+| `Add border color around avatar` | This takes a hex code for color and adds it as a border to the image. |  |
 
 ---
 ## Platform Dependencies
@@ -45,4 +48,6 @@ Widget Option Schema parameters:
 ## CSS/SASS Variables
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$pe-brand-primary:#337ab7 !default;`
+```scss
+$pe-brand-primary: #337ab7 !default;
+```
