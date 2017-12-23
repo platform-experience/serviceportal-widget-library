@@ -1,0 +1,47 @@
+$peil-color: white !default;
+$peil-border-radius: 4px;
+$peil-gradient: linear-gradient(0deg, rgba(0,0,0,0.71) 0%, rgba(0,0,0,0) 50%) !default;
+$peil-gradient-hover: linear-gradient(0deg, rgba(0,0,0,2) 0%,rgba(0,0,0,0.3) 25%, rgba(0,0,0,0) 80%) !default;
+$peil-shadow: 0 0 6px 0 rgba(0, 0, 0, .06);
+$peil-height: 120px !default;
+$peil-max-width: auto !default;
+
+.pe-image-link {
+  padding-bottom: 10px;
+}
+
+.peil-elem {
+  height: $peil-height;
+  background-color: grey;
+  border-radius: $peil-border-radius;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: $peil-shadow;
+  cursor: pointer;
+  max-width: $peil-max-width;
+  margin: 0px auto;
+}
+
+.peil-label {
+  color: $peil-color;
+  font-size: 25px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.peil-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: $peil-gradient;
+}
+
+.peil-elem:hover .peil-shadow {
+  background: $peil-gradient-hover;
+}

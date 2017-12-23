@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2017-12-21 06:02:47">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>(PE) Image Link Widget</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d63cb7df4fc7cf00a1af5a701310c76e</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>dylan.lindgren</sys_created_by>
+<sys_created_on>2017-12-21 06:02:47</sys_created_on>
+<sys_id>3dc2b0ef4f4bcf00a1af5a701310c729</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dylan.lindgren</sys_updated_by>
+<sys_updated_on>2017-12-21 06:02:47</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_e59cfbdf4fc7cf00a1af5a701310c705</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function peImageLinkCtrl($location, $window) {
+	
+  var c = this;
+	
+	c.go = function () {
+		
+		if (c.options.type === 'url') {
+			window.location.href = c.data.href;
+		} else {
+			$location.url(c.data.href);
+		}
+	}
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$peil-color: white !default;
+$peil-border-radius: 4px;
+$peil-gradient: linear-gradient(0deg, rgba(0,0,0,0.71) 0%, rgba(0,0,0,0) 50%) !default;
+$peil-gradient-hover: linear-gradient(0deg, rgba(0,0,0,2) 0%,rgba(0,0,0,0.3) 25%, rgba(0,0,0,0) 80%) !default;
+$peil-shadow: 0 0 6px 0 rgba(0, 0, 0, .06);
+$peil-height: 120px !default;
+$peil-max-width: auto !default;
+
+.pe-image-link {
+  padding-bottom: 10px;
+}
+
+.peil-elem {
+  height: $peil-height;
+  background-color: grey;
+  border-radius: $peil-border-radius;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: $peil-shadow;
+  cursor: pointer;
+  max-width: $peil-max-width;
+  margin: 0px auto;
+}
+
+.peil-label {
+  color: $peil-color;
+  font-size: 25px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.peil-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: $peil-gradient;
+}
+
+.peil-elem:hover .peil-shadow {
+  background: $peil-gradient-hover;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance_link&lt;/data_table&gt;&lt;demo_data&gt;{"options": &amp;#13;
+	{&amp;#13;
+		"title": "Link title",&amp;#13;
+		"image_url": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&amp;amp;fit=crop&amp;amp;w=750&amp;amp;q=80",&amp;#13;
+		"image_pos": "center bottom"&amp;#13;
+	}&amp;#13;
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;type,sp_page,url,sc_category,sc_cat_item,kb_article,kb_category,kb_topic,order&lt;/field_list&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-image-link&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function peImageLinkLink(scope, elem, attr) {
+	
+	scope.style = {
+		'background-image': 'url(' + scope.options.image_url + ')',
+		'background-position': scope.options.image_pos || 'center'
+	};
+	
+}]]&gt;&lt;/link&gt;&lt;name&gt;PE Image Link&lt;/name&gt;&lt;option_schema&gt;[{"hint":"The URL of the image to use as the background of the box","name":"image_url","section":"Presentation","default_value":"https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&amp;amp;fit=crop&amp;amp;w=750&amp;amp;q=80","label":"Image URL","type":"string"},{"hint":"Position of the image in the box. See https://developer.mozilla.org/en-US/docs/Web/CSS/background-position","name":"image_pos","section":"Presentation","default_value":"center","label":"Image Position","type":"string"},{"hint":"The text for the link","name":"title","section":"Presentation","default_value":"Link title","label":"Title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	
+	var gr = $sp.getInstanceRecord();
+	data.href = $sp.getMenuHREF(gr);
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dylan.lindgren&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-12-21 02:06:16&lt;/sys_created_on&gt;&lt;sys_id&gt;e59cfbdf4fc7cf00a1af5a701310c705&lt;/sys_id&gt;&lt;sys_mod_count&gt;103&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Image Link&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_e59cfbdf4fc7cf00a1af5a701310c705&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dylan.lindgren&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-12-21 05:55:49&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="pe-image-link"&gt;
+  &lt;div class="peil-elem" ng-style="::style" ng-click="c.go()"&gt;
+    &lt;div class="peil-shadow"&gt;
+      &lt;div class="peil-label"&gt;
+        {{::c.options.title}}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-994959835</payload_hash>
+<remote_update_set display_value="(PE) Image Link Widget">3dc2b0ef4f4bcf00a1af5a701310c729</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dylan.lindgren</sys_created_by>
+<sys_created_on>2017-12-21 06:02:47</sys_created_on>
+<sys_id>fdc2b0ef4f4bcf00a1af5a701310c729</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16077a45fd00000001</sys_recorded_at>
+<sys_updated_by>dylan.lindgren</sys_updated_by>
+<sys_updated_on>2017-12-21 06:02:47</sys_updated_on>
+<table/>
+<target_name>PE Image Link</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>ef21b4afca4bcf004e717855a106d8c1</update_guid>
+<update_guid_history>ef21b4afca4bcf004e717855a106d8c1:-994959835,4721b4afa24bcf00023d6f0e89105306:-1272953650,a6d0fc6f644bcf0021d07a16fbf3e05d:-994959835,77a0b0afca4bcf003e11e7aaa7a3e1ca:-397880768,c2a0fc6fff4bcf00b2563131ac277ace:818726821,17ceec2fd94bcf0055ad3f354dbd0267:65635163,87596c6bbc4bcf0013a88e5188b9254e:1294793537,b039a86b884bcf0080a55115eaf08a79:-1222176748,1219a46be14bcf00ac09a3a6e549fb7e:-1152859148,5f88a06be94bcf007ce42b272183a01e:-1693785531,a167e42bb04bcf00115dafeebd2c954d:-1570018463,6947642bb74bcf009c56d25ced5b84a0:1153705849,c947642b2f4bcf00cea5af57b3b9c4c1:-1601708510,e4e6202bab4bcf00e975a44a7679aeb0:1153705849,ebb62ce73b4bcf00ec770f96018d611c:304624500,2a962ce7a24bcf00dd6da4c5e595ed7f:1759848315,53862ce75d4bcf0092c82c43d7201046:-726766795,f65668e7b44bcf00422d818da847a1e5:-2038427647,00f5a4e7184bcf008de411ed3428d045:733971606,8ae5e0e79e4bcf00ce8367758b37408f:1436982793,80e564e77f4bcf003e53d944a31d3431:452925507,8fb4e8a7354bcf00b3af711dc8424445:2111969986,f87bd0a3844bcf00464a00c5c6a7dffe:-1553577747,474b50a3cd4bcf00cc6817d073c282ad:-32917953,fb3bdc63f14bcf0021a31aa72dcb4d2c:-23140746,68ba1863b84bcf00ee3855d8faa5e008:-117795861,746a1863fb4bcf00bb5c55edde006700:-1972187024,062a5463764bcf0099a1eba6c8081280:1565491406,f4b89023704bcf00b8ae60d46657e434:1320131149,373894ef680bcf000532bef1f1921d36:-1272637105,2a5714ef6a0bcf00c4e77141956b283d:1916329596,8c5790efe70bcf00b5a2ff3613509d7d:-1639595557,ad2790ef480bcf00169d19cb352bc563:50493947,45e6d8eb040bcf000757d5479d885161:1456181321,4ba6186fb50bcf006460279883702db5:-1334478622,027700e7ea0bcf007bf830dbf7163c27:694870599,5df64ca7ab0bcf008926f8d77e26ba12:1214983258,02e60ca7c60bcf003a5a15121c13d020:2113830680,55e60ca71f0bcf00fe667a4ee02e3b1a:-501558266,8cd688a7670bcf0034d8b9c542887db7:-398171329,efc648a73d0bcf00ec4cc7dfa48957f0:-243841436,14c6c4a7bf0bcf000ce5fa627d7529f4:-398171329,8eb648a7b00bcf00e202a067ffe0846f:-1520562178,81b604a73e0bcf0064a6996e260ba04f:512069435,8ba6c4a7600bcf000ecfb6bd1b8846fb:-386777987,bf96c4a7a10bcf0094bfad790311f8eb:-1188157803,7f8684a7080bcf00f73627c704a57d93:906308503,937604a7e10bcf0020daed437c878083:237352237,f2e500a7580bcf005f7fab8d5d7da70d:-455379702,82e5cc67cf0bcf00e9fdf7e54bb83c92:-1948562682,cde58c67290bcf009392cf2d0ebf4a6a:-455379702,3cc50c67680bcf004da4e0eae2e97f6b:-1125274547,194548673e0bcf00925102e50152495f:498852677,32254867ee0bcf006f1d911ba388ae4d:-1098125106,121508675e0bcf00ba91eb6036b886c4:-751837716,2c150867120bcf00d58e807cdae0323e:1948181298,47058c27ef0bcf005d04fd223eacbd11:-90190933,4fd38c27690bcf0043409b1dcf5b0409:1569724320,6a230827920bcf0004c643698458c422:1940351335,b613c4279e0bcf00a8bc57027364f534:773682226,7513c427760bcf001aaa437a15e0d372:-1595214238,8813c427610bcf0018c250fbee66cc6c:1556033433,92030027ff0bcf00d39ae44d848510a6:-1012882370,99030027290bcf00a9c32ae683d693e3:-1599642280,28034027a10bcf0027094ddf3669fe18:293760512,d732cce3f10bcf00ba397c9a13395df8:-625723895,70124ce3540bcf0014f6f1427389544b:-1535660736,aff14ce3de0bcf0064fe39f417d98ff1:623955550,cde10ce3fe0bcf005d21c9fd42eea876:1958727870,f8e148e3850bcf0010279b084c726a5e:1951028873,8f8148e3050bcf00ab4969a30e07390a:-104908304,5e8108e3f40bcf0029e05e86bc6f86b6:108934809,d18108e3430bcf00b397a7b1e9186e99:-1963649062,3d4184e3010bcf00c9e8a85dd8c1282d:-44681074,df2104e3a30bcf004faf9dfb9ddb3413:-1679577181,8a1104e3290bcf00a0443b6ffce89b0b:501113042,fb0140e3970bcf000bc531012a795aec:1746125930,71900ca3ce0bcf009c1700d862b0c22e:-1414721594,5d900ca3570bcf00ecb34c53aa533524:-121542029,d280c8a3530bcf0026b2ab163824e150:-1414721594,f24008a3c80bcf00bcc94eb5b984915d:-177487247,d30008a3b10bcf00163f8a4223c32c36:696561035,ffff3b93210bcf008b63bec537055392:-1649288335,aeff3b93770bcf007ac488fef57e922d:705774318,2bef77939f0bcf003cc9eccf18e4e6ad:689456080,2caf7793b40bcf00fd4b1ec904ad90a7:726875508,459f3793e50bcf00206aaa1463255836:-627150390,6a8f3793d90bcf00973bcbb5b0ef97a3:726875508,e58ff393750bcf00e4f91458f01dac5a:1501212298,a37f3793440bcf000a412c21f6099c15:-627150390,727f3793d10bcf007d2b7d811853320f:726875508,b17ff393520bcf002865ca07b6f657f3:2050586933,bc7fff53170bcf00624bdf14420ef546:-1286547425,096f33937e0bcf001561334603aaed22:30652061,a6cefb53190bcf009e7386c1c93eff3e:-976416557,ebbebf53630bcf000afdc077c9685d50:-95943563,235ef7538f0bcf00e655166c9030cec8:154927701,733e7753470bcf0096fc47549b6913d8:2107966712,d72e3b53200bcf008caaf87635648b52:323366227,731e3b530c0bcf007ab72520e58f024c:1748557338,c81ef753590bcf00cdab09e4bf06adc1:-948896024,ef1d3bdfe8c7cf00b5a9277100b03acc:-1251658047,711d3bdfb4c7cf0086a69cc8fc1bc2c8:1809712708,cdacbfdff2c7cf007b96ae3ee32f850f:90138560</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
