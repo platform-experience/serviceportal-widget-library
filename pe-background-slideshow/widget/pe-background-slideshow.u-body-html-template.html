@@ -1,0 +1,13 @@
+<div class="slideshow-wrapper">
+  <div ng-bg-slideshow="c.slides" interval="c.interval"></div>
+
+  <div class="inner-content">
+    <div ng-if="c.widgetToInclude">
+      <sp-widget widget="c.widgetToInclude"></sp-widget>
+    </div>
+
+    <div ng-if="c.options.embed_template">
+      <ng-include src="c.options.embed_template"></ng-include>
+    </div>
+  </div>
+</div>
