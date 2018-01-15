@@ -1,0 +1,57 @@
+#myCarousel {
+  display: flex;
+  .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    text-shadow: none;
+  }
+  .carousel-caption h4 a {
+    font-size: 1.75em;
+    color: $text-muted;
+  }
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    margin-bottom: 0;
+    .list-group-item {
+      border-radius: 0px;
+      cursor: pointer;
+      flex-grow: 1;
+      &.active {
+        background-color: $brand-primary;
+      }
+    }
+  }
+  .carousel-inner {
+    .item {
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #myCarousel {
+    .carousel-controls {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #myCarousel {
+    .carousel-inner {
+      min-height: 370px;
+    }
+    .carousel-caption p,
+    .list-group {
+      display: none;
+    }
+  }
+}
