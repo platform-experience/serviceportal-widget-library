@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-01-13 04:31:46">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-cta-count</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>58f29af273230300e9d580844ff6a7ec</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>248afef673230300e9d580844ff6a7b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_m2m_widget_condition_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="DELETE" element="" table="m2m_widget_condition"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;update_synch=true&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;m2m_widget_condition&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 02:10:20&lt;/sys_created_on&gt;&lt;sys_id&gt;7c2a167273230300e9d580844ff6a7fd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;m2m_widget_condition&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_m2m_widget_condition_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 02:10:20&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>927842433</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>208a323a73230300e9d580844ff6a7e5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a98690000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>0bb6263606230300370396c2af74badb</update_guid>
+<update_guid_history>0bb6263606230300370396c2af74badb:927842433,f42a5672e0230300296af049bae8290b:1273523149</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_widget_with_image_sp_instance__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Widget with image sp instance" language="en" table="widget_with_image_sp_instance"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Widget with image sp instance</label><language>en</language><name>widget_with_image_sp_instance</name><plural>Widget with image sp instances</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>f049127273230300e9d580844ff6a7ea</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Widget with image sp instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_widget_with_image_sp_instance__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-429804829</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>208a323a73230300e9d580844ff6a7e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b3d10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b0491272a3230300397e145d2e1c76f3</update_guid>
+<update_guid_history>b0491272a3230300397e145d2e1c76f3:-429804829</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_f42a167273230300e9d580844ff6a7df</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>f42a167273230300e9d580844ff6a7df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition.m2m_widget_condition_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">bc2a167273230300e9d580844ff6a7dc</sys_security_acl><sys_update_name>sys_security_acl_role_f42a167273230300e9d580844ff6a7df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on><sys_user_role display_value="m2m_widget_condition_user" name="m2m_widget_condition_user">3c2a9e3273230300e9d580844ff6a7e9</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>859907241</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>208a323a73230300e9d580844ff6a7eb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a943f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>bc2a167273230300e9d580844ff6a7dc</table>
+<target_name>m2m_widget_condition.m2m_widget_condition_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>7ab62636f8230300d8907eaab4a4c989</update_guid>
+<update_guid_history>7ab62636f8230300d8907eaab4a4c989:859907241,742a1672bd23030040f1e4871b466ee1:1887159756</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_widget_with_image_sp_instance_conditions_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="conditions" label="Conditions" language="en" table="widget_with_image_sp_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>conditions</element><help/><hint/><label>Conditions</label><language>en</language><name>widget_with_image_sp_instance</name><plural>Conditions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:04:13</sys_created_on><sys_id>d676623673230300e9d580844ff6a7ea</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Conditions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_widget_with_image_sp_instance_conditions_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:04:13</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1597494810</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>248a323a73230300e9d580844ff6a7e7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed798b550000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance.Conditions</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>92766236882303000d1793c88b578ef7</update_guid>
+<update_guid_history>92766236882303000d1793c88b578ef7:1597494810</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_742a167273230300e9d580844ff6a7fb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>742a167273230300e9d580844ff6a7fb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition.m2m_widget_condition_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">7c2a167273230300e9d580844ff6a7f8</sys_security_acl><sys_update_name>sys_security_acl_role_742a167273230300e9d580844ff6a7fb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on><sys_user_role display_value="m2m_widget_condition_user" name="m2m_widget_condition_user">3c2a9e3273230300e9d580844ff6a7e9</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1662611399</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>248a323a73230300e9d580844ff6a7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a94a70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>7c2a167273230300e9d580844ff6a7f8</table>
+<target_name>m2m_widget_condition.m2m_widget_condition_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>7eb62636e4230300d52ea87c4c2aaf90</update_guid>
+<update_guid_history>7eb62636e4230300d52ea87c4c2aaf90:1662611399,b02a167242230300c9bda34e2f78c4fd:-1605103382</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_m2m_widget_condition_conditions_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="conditions" label="Conditions" language="en" table="m2m_widget_condition"><sys_documentation action="DELETE"><element>conditions</element><help/><hint/><label>Conditions</label><language>en</language><name>m2m_widget_condition</name><plural>Conditions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:11:04</sys_created_on><sys_id>7b4a967273230300e9d580844ff6a730</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Conditions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_m2m_widget_condition_conditions_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:11:04</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-101269794</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>288a323a73230300e9d580844ff6a7e6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a96e80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition.conditions</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>cfb62636b4230300c1321122b7679ab9</update_guid>
+<update_guid_history>cfb62636b4230300c1321122b7679ab9:-101269794,374a9672a02303000c1d7a9b21200443:1299162926</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_f82a167273230300e9d580844ff6a7f3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on m2m_widget_condition</description><name>m2m_widget_condition</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>f82a167273230300e9d580844ff6a7f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_f82a167273230300e9d580844ff6a7f3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-730148435</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>288a323a73230300e9d580844ff6a7e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a958f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>feb62636cb23030000fdf99f65e95fad</update_guid>
+<update_guid_history>feb62636cb23030000fdf99f65e95fad:-730148435,b42a167239230300b1be523e9ced00f5:-1688351431</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_f449127273230300e9d580844ff6a7ef</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>widget_with_image_sp_instance</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>f449127273230300e9d580844ff6a7ef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_f449127273230300e9d580844ff6a7ef</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>-282938246</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>288a323a73230300e9d580844ff6a7ec</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b3890000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table/>
+<target_name>widget_with_image_sp_instance</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>384912729e2303008386ef84bdd3b3f0</update_guid>
+<update_guid_history>384912729e2303008386ef84bdd3b3f0:-282938246</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_7223daf273230300e9d580844ff6a7c7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function CTACountCtrl() {
+  /* widget controller */
+  var c = this;
+  c.$onInit = function () {
+      c.customStyle = {
+          "background-image": 'url(' + c.options.image + ')'
+      }
+  };
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.personal-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  height: 180px;
+  padding: 0 40px;
+  background-size: cover;
+}
+&lt;/css&gt;&lt;data_table&gt;widget_with_image_sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,image,icon,table,conditions&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-cta-count&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe cta count&lt;/name&gt;&lt;option_schema&gt;[{"name":"link","label":"Link","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	
+	data.count = 0;
+
+	if (options.table &amp;&amp; options.conditions) {
+		var gr = new GlideRecordSecure(options.table);
+		gr.addEncodedQuery(options.conditions);
+		gr.query();
+		data.count = gr.getRowCount();
+	}
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 01:39:53&lt;/sys_created_on&gt;&lt;sys_id&gt;7223daf273230300e9d580844ff6a7c7&lt;/sys_id&gt;&lt;sys_mod_count&gt;19&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe cta count&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_7223daf273230300e9d580844ff6a7c7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 04:27:36&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a ng-href="{{ c.options.link }}"&gt;
+  &lt;div ng-style="c.customStyle" class="personal-items-wrapper"&gt;
+      &lt;img ng-src="{{c.options.icon}}" alt=""&gt;
+      &lt;h3&gt;{{::c.options.title}} ({{c.data.count}})&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/a&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2009026905</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>288afef673230300e9d580844ff6a7b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160edc5e03f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table/>
+<target_name>pe cta count</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>ef893ef6052303008e7eca8c11eb7e96</update_guid>
+<update_guid_history>ef893ef6052303008e7eca8c11eb7e96:2009026905,c5893ef622230300997f67746608cddd:-1715836881,1379baf638230300b170f0c6ab3dc4c2:-676508829,08e8baf6352303008aacd003240cc030:-566635017,f1c87af601230300c61949bb52d73257:1229078206,52e72e36782303004ac395d9a228f82e:1487319111,dd97e63608230300bdbc75f0b748dd9a:641781761,36576a3608230300d247e0605e7bd009:-903438295,b5572a36eb230300111704a0b22277ef:114882217,8a17e636962303008065a2a0fabdf6b2:315982438,b9f5eef23d230300a13897ddad05bf83:-534604335,9de5aef2e02303000de5d0f6bfda0dd0:-307060071,38b52ef24d2303006f38e0a7e98a66f4:-34077276,8d852ef256230300bd13ad683bc61582:-221645039,d655eaf20f230300162ed5d374a26406:-1079632673,6745a6f240230300ae5b708c00927ae6:686553019,970bda72302303004772cf5373974c45:-396589362,8d63daf20223030064db50462163d7cc:664980045,b3535ef2042303003c58cacf05121512:-500973083,3623daf22f230300b290636c098da3c8:2014916302</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_widget_with_image_sp_instance_icon</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="icon" table="widget_with_image_sp_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Icon&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;icon&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;user_image&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;widget_with_image_sp_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 02:09:40&lt;/sys_created_on&gt;&lt;sys_id&gt;31c9527273230300e9d580844ff6a7a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Icon&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_widget_with_image_sp_instance_icon&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 02:09:40&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>791912127</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>2c8a323a73230300e9d580844ff6a7e5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed479c590000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance.Icon</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>93f9d272712303007a639679eb9cdee1</update_guid>
+<update_guid_history>93f9d272712303007a639679eb9cdee1:791912127,5bf9d2723b230300e3abc273bca9a1d2:791912127</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a049127273230300e9d580844ff6a7d3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on widget_with_image_sp_instance</description><name>widget_with_image_sp_instance</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>a049127273230300e9d580844ff6a7d3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_a049127273230300e9d580844ff6a7d3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>363376619</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>2c8a323a73230300e9d580844ff6a7e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b0e70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>widget_with_image_sp_instance</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>6c4912722423030021789f600e93c1d4</update_guid>
+<update_guid_history>6c4912722423030021789f600e93c1d4:363376619</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_165ad67273230300e9d580844ff6a727</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="165ad67273230300e9d580844ff6a727" sys_domain="global" table="widget_with_image_sp_instance" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>title</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>fbd6a63673230300e9d580844ff6a76f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>7fd6a63673230300e9d580844ff6a76f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>image</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>ffd6a63673230300e9d580844ff6a76f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>icon</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>73d6a63673230300e9d580844ff6a770</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>f3d6a63673230300e9d580844ff6a770</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_scope</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>77d6a63673230300e9d580844ff6a770</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>roles</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>f7d6a63673230300e9d580844ff6a770</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>7bd6a63673230300e9d580844ff6a770</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>table</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>fbd6a63673230300e9d580844ff6a770</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>conditions</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:05:58</sys_created_on><sys_id>7fd6a63673230300e9d580844ff6a770</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="widget_with_image_sp_instance" sys_domain="global" view="Default view">165ad67273230300e9d580844ff6a727</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:05:58</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>widget_with_image_sp_instance</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:11:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>165ad67273230300e9d580844ff6a727</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_165ad67273230300e9d580844ff6a727</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:11:15</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-1512847832</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>2c8a323a73230300e9d580844ff6a7eb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7b259c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>3fd6a6367b2303008d93adf01a44348b</update_guid>
+<update_guid_history>3fd6a6367b2303008d93adf01a44348b:-1512847832,ca766236ed230300d69dadb9050618e5:914495272,06762236232303002aa5c067067547b3:-1166573694,8eaa1a72f42303005252519c43e2bad1:-2089194961,429a1a72ae230300c9529bc297cbc80c:-1994391893,8a7ad672b1230300a7de7abd617333dd:-1486571346,027ad6729f230300802a396cc36fcc36:107334900</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_m2m_widget_condition__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="" label="M2M Widget Condition" language="en" table="m2m_widget_condition"><sys_documentation action="DELETE"><element/><help/><hint/><label>M2M Widget Condition</label><language>en</language><name>m2m_widget_condition</name><plural>M2M Widget Conditions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>702a567273230300e9d580844ff6a705</sys_id><sys_mod_count>0</sys_mod_count><sys_name>M2M Widget Condition</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_m2m_widget_condition__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-653535157</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>608a323a73230300e9d580844ff6a7e7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a93e00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>7eb626369c2303000e38f6a5e80a4883</update_guid>
+<update_guid_history>7eb626369c2303000e38f6a5e80a4883:-653535157,782a5672c823030000c846aee3c9c00c:1370298331</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_702a167273230300e9d580844ff6a7f1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>702a167273230300e9d580844ff6a7f1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition.m2m_widget_condition_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">b02a167273230300e9d580844ff6a7e2</sys_security_acl><sys_update_name>sys_security_acl_role_702a167273230300e9d580844ff6a7f1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on><sys_user_role display_value="m2m_widget_condition_user" name="m2m_widget_condition_user">3c2a9e3273230300e9d580844ff6a7e9</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>390658404</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>608a323a73230300e9d580844ff6a7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a95090000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>b02a167273230300e9d580844ff6a7e2</table>
+<target_name>m2m_widget_condition.m2m_widget_condition_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>beb62636cb23030017b64c4f2a6b5097</update_guid>
+<update_guid_history>beb62636cb23030017b64c4f2a6b5097:390658404,bc2a167293230300330045abaa10b2f2:1417910919</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>widget_with_image_sp_instance_71e6e63673230300e9d580844ff6a716</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="widget_with_image_sp_instance"><widget_with_image_sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><conditions/><css/><glyph/><icon/><id/><image/><order>1</order><roles/><short_description/><size>md</size><sp_column/><sp_widget/><sys_class_name>widget_with_image_sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:06:08</sys_created_on><sys_id>71e6e63673230300e9d580844ff6a716</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>widget_with_image_sp_instance_71e6e63673230300e9d580844ff6a716</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:06:08</sys_updated_on><table/><title/><url/><widget_parameters/></widget_with_image_sp_instance><sys_translated_text action="delete_multiple" query="documentkey=71e6e63673230300e9d580844ff6a716"/></record_update>]]></payload>
+<payload_hash>-1471975608</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>608a323a73230300e9d580844ff6a7ed</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7b4ca10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table/>
+<target_name/>
+<type>Widget with image sp instance</type>
+<update_domain>global</update_domain>
+<update_guid>5ae6a636ae2303007346c7ec23d2c990</update_guid>
+<update_guid_history>5ae6a636ae2303007346c7ec23d2c990:-1471975608</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_widget_with_image_sp_instance_table</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="table" table="widget_with_image_sp_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Table&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;80&lt;/max_length&gt;&lt;name&gt;widget_with_image_sp_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 03:04:13&lt;/sys_created_on&gt;&lt;sys_id&gt;ae56223673230300e9d580844ff6a7ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_widget_with_image_sp_instance_table&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 03:04:13&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>937193130</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>648a323a73230300e9d580844ff6a7e6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed798afe0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance.Table</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>1e766236172303008cdfbe0b9e2ce5f3</update_guid>
+<update_guid_history>1e766236172303008cdfbe0b9e2ce5f3:937193130,86762236a5230300b29cac9d658370b4:937193130</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_bc2a167273230300e9d580844ff6a7dc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on m2m_widget_condition</description><name>m2m_widget_condition</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:19</sys_created_on><sys_id>bc2a167273230300e9d580844ff6a7dc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_bc2a167273230300e9d580844ff6a7dc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:19</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1337674781</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>648a323a73230300e9d580844ff6a7e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a946c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>36b626369423030058e9272d3554508c</update_guid>
+<update_guid_history>36b626369423030058e9272d3554508c:1337674781,b82a167294230300a936b622fda699de:-372403031</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_f42a567273230300e9d580844ff6a709</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="DELETE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>m2m_widget_condition</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>f42a567273230300e9d580844ff6a709</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_f42a567273230300e9d580844ff6a709</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>1573209940</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>648a323a73230300e9d580844ff6a7ec</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a97d90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table/>
+<target_name>m2m_widget_condition</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>8bb62636a3230300d8185425b1f5fac6</update_guid>
+<update_guid_history>8bb62636a3230300d8185425b1f5fac6:1573209940,f02a5672e5230300d0a6e0dfa882490a:-332663200</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_widget_with_image_sp_instance_conditions</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="conditions" table="widget_with_image_sp_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Conditions&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;conditions&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Conditions"&gt;conditions&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;name&gt;widget_with_image_sp_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 03:04:13&lt;/sys_created_on&gt;&lt;sys_id&gt;6866623673230300e9d580844ff6a7a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Conditions&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_widget_with_image_sp_instance_conditions&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 03:04:13&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-247240522</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>688a323a73230300e9d580844ff6a7e5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed798b220000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance.Conditions</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>de76623616230300eec79554e765daf4</update_guid>
+<update_guid_history>de76623616230300eec79554e765daf4:-247240522,8e766236cd2303002cdb3c6646511ee6:-247240522</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_7c2a167273230300e9d580844ff6a7f8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on m2m_widget_condition</description><name>m2m_widget_condition</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>7c2a167273230300e9d580844ff6a7f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_7c2a167273230300e9d580844ff6a7f8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1777774207</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>688a323a73230300e9d580844ff6a7e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a94d00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>b6b626362223030045dde29e3497c193</update_guid>
+<update_guid_history>b6b626362223030045dde29e3497c193:1777774207,382a167291230300e1b6f709b8bec6fa:67696395</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_related_widget_with_image_sp_instance_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="widget_with_image_sp_instance" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Widget with image sp instance - Default view" name="widget_with_image_sp_instance" related_list="NULL" sys_domain="global" view="Default view">b9e6a63673230300e9d580844ff6a77e</list_id><order_by/><position>0</position><related_list/><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:06:06</sys_created_on><sys_id>31e6a63673230300e9d580844ff6a7ef</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:06:06</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Widget with image sp instance - Default view</calculated_name><filter/><name>widget_with_image_sp_instance</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:06:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b9e6a63673230300e9d580844ff6a77e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Widget with image sp instance - Default view</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_related_widget_with_image_sp_instance_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:06:06</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<payload_hash>456576984</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>688a323a73230300e9d580844ff6a7eb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7b44d20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_guid>b1e6a63658230300b685107a3853d5f0</update_guid>
+<update_guid_history>b1e6a63658230300b685107a3853d5f0:456576984,342b5e729a2303001e71106fab266f9f:1194131903</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_m2m_widget_condition_conditions</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="DELETE" element="conditions" table="m2m_widget_condition"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Conditions&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;conditions&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Conditions"&gt;conditions&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;name&gt;m2m_widget_condition&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 02:11:04&lt;/sys_created_on&gt;&lt;sys_id&gt;672a567273230300e9d580844ff6a79d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Conditions&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_m2m_widget_condition_conditions&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 02:11:04&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1356857686</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>6c8a323a73230300e9d580844ff6a7e4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a98dd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition.conditions</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>cbb6263657230300f8160d17f9f4a6e2</update_guid>
+<update_guid_history>cbb6263657230300f8160d17f9f4a6e2:1356857686,6b4a96725e230300762edc6cb9e1d129:1530041506</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_widget_with_image_sp_instance_table_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="table" label="Table" language="en" table="widget_with_image_sp_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>table</element><help/><hint/><label>Table</label><language>en</language><name>widget_with_image_sp_instance</name><plural>Tables</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:04:13</sys_created_on><sys_id>d276623673230300e9d580844ff6a7e9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Table</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_widget_with_image_sp_instance_table_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:04:13</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1354121379</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>6c8a323a73230300e9d580844ff6a7e7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed798b3a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance.Table</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>de766236fc230300ac3cd7e33dfabff5</update_guid>
+<update_guid_history>de766236fc230300ac3cd7e33dfabff5:-1354121379</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_f02a167273230300e9d580844ff6a7f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>f02a167273230300e9d580844ff6a7f6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition.m2m_widget_condition_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="">f82a167273230300e9d580844ff6a7f3</sys_security_acl><sys_update_name>sys_security_acl_role_f02a167273230300e9d580844ff6a7f6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on><sys_user_role display_value="m2m_widget_condition_user" name="m2m_widget_condition_user">3c2a9e3273230300e9d580844ff6a7e9</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1365919752</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>6c8a323a73230300e9d580844ff6a7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a95670000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>f82a167273230300e9d580844ff6a7f3</table>
+<target_name>m2m_widget_condition.m2m_widget_condition_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>b6b62636ae2303006bf5c9727375a2ab</update_guid>
+<update_guid_history>b6b62636ae2303006bf5c9727375a2ab:1365919752,302a1672b12303003e5b5ba2772c49f8:-1901795029</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_widget_with_image_sp_instance_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="widget_with_image_sp_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;update_synch=true&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;widget_with_image_sp_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 02:06:30&lt;/sys_created_on&gt;&lt;sys_id&gt;f449127273230300e9d580844ff6a7e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;widget_with_image_sp_instance&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_widget_with_image_sp_instance_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 02:06:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>601118215</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a08a323a73230300e9d580844ff6a7e6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b3b50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>fc491272012303004d9d7bc2d0b4fdf1</update_guid>
+<update_guid_history>fc491272012303004d9d7bc2d0b4fdf1:601118215</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_b02a167273230300e9d580844ff6a7e2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on m2m_widget_condition</description><name>m2m_widget_condition</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:20</sys_created_on><sys_id>b02a167273230300e9d580844ff6a7e2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_b02a167273230300e9d580844ff6a7e2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:20</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>363760105</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a08a323a73230300e9d580844ff6a7e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a95300000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>beb62636e0230300db3fae9cafd658a6</update_guid>
+<update_guid_history>beb62636e0230300db3fae9cafd658a6:363760105,7c2a167233230300cd0aa01f7fc6ece3:1542649973</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_e049127273230300e9d580844ff6a793</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>widget_with_image_sp_instance_user</name><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:29</sys_created_on><sys_id>e049127273230300e9d580844ff6a793</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_e049127273230300e9d580844ff6a793</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:29</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>-2099879717</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a08a323a73230300e9d580844ff6a7ec</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44af8d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table/>
+<target_name>widget_with_image_sp_instance_user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>ec491272d5230300b75df65a9fc17595</update_guid>
+<update_guid_history>ec491272d5230300b75df65a9fc17595:-2099879717</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_e50a167273230300e9d580844ff6a786</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="DELETE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>M2M Widget Condition</label><live_feed_enabled>false</live_feed_enabled><name>m2m_widget_condition</name><number_ref/><provider_class/><read_access>true</read_access><super_class display_value="Application File" name="sys_metadata">d6b12012dd110300440b2294e69e975f</super_class><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:19</sys_created_on><sys_id>e50a167273230300e9d580844ff6a786</sys_id><sys_mod_count>1</sys_mod_count><sys_name>M2M Widget Condition</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_e50a167273230300e9d580844ff6a786</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:11:05</sys_updated_on><update_access>false</update_access><user_role display_value="m2m_widget_condition_user" name="m2m_widget_condition_user">3c2a9e3273230300e9d580844ff6a7e9</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>-385186092</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a08afef673230300e9d580844ff6a7ba</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a9a760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>M2M Widget Condition</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>5fb62636072303004f109364985d4ff8</update_guid>
+<update_guid_history>5fb62636072303004f109364985d4ff8:-385186092,3c2a567207230300649dbc1ba385740d:1341294536</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_m2m_widget_condition_widget</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="DELETE" element="widget" table="m2m_widget_condition"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Widget&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;widget&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;name&gt;m2m_widget_condition&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sp_instance"&gt;sp_instance&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 02:11:04&lt;/sys_created_on&gt;&lt;sys_id&gt;593a567273230300e9d580844ff6a79f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Widget&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_m2m_widget_condition_widget&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 02:11:04&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>950311155</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a48a323a73230300e9d580844ff6a7e5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a9a300000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition.widget</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>9bb62636f92303003306f40df0392ff6</update_guid>
+<update_guid_history>9bb62636f92303003306f40df0392ff6:950311155,7b4a96725623030035850722fc7f192e:800740159</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_6449127273230300e9d580844ff6a79b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on widget_with_image_sp_instance</description><name>widget_with_image_sp_instance</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:29</sys_created_on><sys_id>6449127273230300e9d580844ff6a79b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_6449127273230300e9d580844ff6a79b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:29</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1032246473</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a48a323a73230300e9d580844ff6a7e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b06b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>widget_with_image_sp_instance</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>a449127265230300ccb272cbc378209d</update_guid>
+<update_guid_history>a449127265230300ccb272cbc378209d:-1032246473</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_m2m_widget_condition_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="m2m_widget_condition" version="2" view=""><sys_ui_list action="DELETE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>m2m_widget_condition</name><parent/><position/><relationship/><sum>false</sum><sys_class_name/><sys_created_by/><sys_created_on/><sys_domain>global</sys_domain><sys_domain_path/><sys_id>b82b9e7273230300e9d580844ff6a7ae</sys_id><sys_mod_count/><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name/><sys_updated_by/><sys_updated_on>2018-01-13 03:05:22</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+<payload_hash>1704300950</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a48a323a73230300e9d580844ff6a7eb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a978a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_guid>8bb62636aa230300072c8f7182e3c2c2</update_guid>
+<update_guid_history>8bb62636aa230300072c8f7182e3c2c2:1704300950,3c2b9e7230230300ba5785ce65e86db1:-162575364</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_widget_with_image_sp_instance_image_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="image" label="Image" language="en" table="widget_with_image_sp_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>image</element><help/><hint/><label>Image</label><language>en</language><name>widget_with_image_sp_instance</name><plural>Images</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:09:41</sys_created_on><sys_id>9ff9d27273230300e9d580844ff6a7d4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Image</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_widget_with_image_sp_instance_image_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:09:41</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>567818749</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a88a323a73230300e9d580844ff6a7e7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed479c6c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance.Image</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>53f9d272cf230300619a60f0ce2c47e2</update_guid>
+<update_guid_history>53f9d272cf230300619a60f0ce2c47e2:567818749</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_ac49127273230300e9d580844ff6a7df</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>ac49127273230300e9d580844ff6a7df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance.widget_with_image_sp_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="widget_with_image_sp_instance">a449127273230300e9d580844ff6a7dd</sys_security_acl><sys_update_name>sys_security_acl_role_ac49127273230300e9d580844ff6a7df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on><sys_user_role display_value="widget_with_image_sp_instance_user" name="widget_with_image_sp_instance_user">e049127273230300e9d580844ff6a793</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>321581955</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>a88a323a73230300e9d580844ff6a7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b1d50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>widget_with_image_sp_instance.widget_with_image_sp_instance_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>e8491272d4230300cd9be5328e27bce1</update_guid>
+<update_guid_history>e8491272d4230300cd9be5328e27bce1:321581955</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_m2m_widget_condition_widget_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="widget" label="Widget" language="en" table="m2m_widget_condition"><sys_documentation action="DELETE"><element>widget</element><help/><hint/><label>Widget</label><language>en</language><name>m2m_widget_condition</name><plural>Widgets</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:11:04</sys_created_on><sys_id>7f4a967273230300e9d580844ff6a731</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Widget</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_m2m_widget_condition_widget_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:11:04</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>693960453</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>ac8a323a73230300e9d580844ff6a7e6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a971e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition.widget</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>07b626368f23030061ffdbc12bdca6bd</update_guid>
+<update_guid_history>07b626368f23030061ffdbc12bdca6bd:693960453,f74a96722e23030041e50342b8396544:-700816203</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2c49127273230300e9d580844ff6a7da</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>2c49127273230300e9d580844ff6a7da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance.widget_with_image_sp_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="widget_with_image_sp_instance">2449127273230300e9d580844ff6a7d8</sys_security_acl><sys_update_name>sys_security_acl_role_2c49127273230300e9d580844ff6a7da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on><sys_user_role display_value="widget_with_image_sp_instance_user" name="widget_with_image_sp_instance_user">e049127273230300e9d580844ff6a793</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-973958554</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>ac8a323a73230300e9d580844ff6a7e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b17d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>widget_with_image_sp_instance.widget_with_image_sp_instance_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>684912726523030017b890ddf5871bdc</update_guid>
+<update_guid_history>684912726523030017b890ddf5871bdc:-973958554</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>widget_with_image_sp_instance_5aa7aa3673230300e9d580844ff6a713</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="widget_with_image_sp_instance"&gt;&lt;widget_with_image_sp_instance action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;conditions table="sc_cat_item"&gt;active=true^EQ&lt;item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;icon/&gt;&lt;id/&gt;&lt;image&gt;4d686e3673230300e9d580844ff6a7a2.iix?t=m&lt;/image&gt;&lt;order&gt;0&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;79b39ef273230300e9d580844ff6a736&lt;/sp_column&gt;&lt;sp_widget display_value="pe cta count"&gt;7223daf273230300e9d580844ff6a7c7&lt;/sp_widget&gt;&lt;sys_class_name&gt;widget_with_image_sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 03:09:24&lt;/sys_created_on&gt;&lt;sys_id&gt;5aa7aa3673230300e9d580844ff6a713&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Service Catalog&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;widget_with_image_sp_instance_5aa7aa3673230300e9d580844ff6a713&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 04:24:54&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item&lt;/table&gt;&lt;title&gt;Service Catalog&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link": {
+		"value": "/test",
+		"displayValue": "/test"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/widget_with_image_sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5aa7aa3673230300e9d580844ff6a713"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1490235380</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>ac8a323a73230300e9d580844ff6a7ec</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160edc975400000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>sc_cat_item</table>
+<target_name>Service Catalog</target_name>
+<type>Widget with image sp instance</type>
+<update_domain>global</update_domain>
+<update_guid>fc7a323a97230300492350f7340c28a9</update_guid>
+<update_guid_history>fc7a323a97230300492350f7340c28a9:-1490235380,40f8baf6a1230300adc990d7764f1448:193416832,e23672f6d3230300bcd7a48d63955551:-1151824127,9091be360223030013a9c8b9813a7535:820498221,42686e365023030079993c1c0a5e8ea9:1074438604,d6a76a36aa23030045ea5beb03d299fa:712185113,daa7aa3622230300d4491beb95eb9c14:270702234</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_m2m_widget_condition_table</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="DELETE" element="table" table="m2m_widget_condition"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Table&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;80&lt;/max_length&gt;&lt;name&gt;m2m_widget_condition&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 02:11:04&lt;/sys_created_on&gt;&lt;sys_id&gt;dd2a567273230300e9d580844ff6a70e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_m2m_widget_condition_table&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 02:11:04&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1378886430</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>e08a323a73230300e9d580844ff6a7e5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a99ab0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition.table</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>47b62636d523030073c4d7f4a82f9cef</update_guid>
+<update_guid_history>47b62636d523030073c4d7f4a82f9cef:1378886430,2b4a16725b2303001e0c77680931f6c8:1950541418</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_2449127273230300e9d580844ff6a7d8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on widget_with_image_sp_instance</description><name>widget_with_image_sp_instance</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>2449127273230300e9d580844ff6a7d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_2449127273230300e9d580844ff6a7d8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-908716505</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>e08a323a73230300e9d580844ff6a7e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b1500000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>widget_with_image_sp_instance</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>ec4912726a23030037ba4dcc4b1ffdd9</update_guid>
+<update_guid_history>ec4912726a23030037ba4dcc4b1ffdd9:-908716505</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_form_sections_1a5ad67273230300e9d580844ff6a722</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="1a5ad67273230300e9d580844ff6a722" sys_domain="global" table="widget_with_image_sp_instance" version="3"><sys_ui_form action="INSERT_OR_UPDATE"><name>widget_with_image_sp_instance</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:11:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>1a5ad67273230300e9d580844ff6a722</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_form_sections_1a5ad67273230300e9d580844ff6a722</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:11:15</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+<payload_hash>-1972888514</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>e08a323a73230300e9d580844ff6a7eb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed490ba50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance</target_name>
+<type>Form Sections</type>
+<update_domain>global</update_domain>
+<update_guid>5e5ad672cb230300190ef12e0990c823</update_guid>
+<update_guid_history>5e5ad672cb230300190ef12e0990c823:-1972888514</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_widget_with_image_sp_instance_icon_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="icon" label="Icon" language="en" table="widget_with_image_sp_instance"><sys_documentation action="INSERT_OR_UPDATE"><element>icon</element><help/><hint/><label>Icon</label><language>en</language><name>widget_with_image_sp_instance</name><plural>Icons</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:09:41</sys_created_on><sys_id>93f9d27273230300e9d580844ff6a7d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Icon</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_widget_with_image_sp_instance_icon_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:09:41</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1288654433</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>e48a323a73230300e9d580844ff6a7e7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed479c890000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance.Icon</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>17f9d272482303005158299de85b7ae3</update_guid>
+<update_guid_history>17f9d272482303005158299de85b7ae3:-1288654433</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_a849127273230300e9d580844ff6a7d5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>a849127273230300e9d580844ff6a7d5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance.widget_with_image_sp_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="widget_with_image_sp_instance">a049127273230300e9d580844ff6a7d3</sys_security_acl><sys_update_name>sys_security_acl_role_a849127273230300e9d580844ff6a7d5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on><sys_user_role display_value="widget_with_image_sp_instance_user" name="widget_with_image_sp_instance_user">e049127273230300e9d580844ff6a793</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>652763982</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>e48a323a73230300e9d580844ff6a7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b11b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>widget_with_image_sp_instance.widget_with_image_sp_instance_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>e4491272e4230300e6d2737244da4cd7</update_guid>
+<update_guid_history>e4491272e4230300e6d2737244da4cd7:652763982</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_m2m_widget_condition_table_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="table" label="Table" language="en" table="m2m_widget_condition"><sys_documentation action="DELETE"><element>table</element><help/><hint/><label>Table</label><language>en</language><name>m2m_widget_condition</name><plural>Tables</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:11:04</sys_created_on><sys_id>734a967273230300e9d580844ff6a733</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Table</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_m2m_widget_condition_table_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:11:04</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>338714637</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>e88a323a73230300e9d580844ff6a7e6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed7a96b30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>m2m_widget_condition</table>
+<target_name>m2m_widget_condition.table</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>8bb6263629230300148e73ed404c69b6</update_guid>
+<update_guid_history>8bb6263629230300148e73ed404c69b6:338714637,734a9672d32303005ed4f99e23ed0942:-441256387</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2049127273230300e9d580844ff6a7d0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>2049127273230300e9d580844ff6a7d0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance.widget_with_image_sp_instance_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="widget_with_image_sp_instance">6449127273230300e9d580844ff6a79b</sys_security_acl><sys_update_name>sys_security_acl_role_2049127273230300e9d580844ff6a7d0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on><sys_user_role display_value="widget_with_image_sp_instance_user" name="widget_with_image_sp_instance_user">e049127273230300e9d580844ff6a793</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1506250793</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>e88a323a73230300e9d580844ff6a7e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b0b10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>widget_with_image_sp_instance.widget_with_image_sp_instance_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>2449127235230300c445127b2741fdd2</update_guid>
+<update_guid_history>2449127235230300c445127b2741fdd2:-1506250793</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>widget_with_image_sp_instance_41d5aef273230300e9d580844ff6a77b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="widget_with_image_sp_instance"><widget_with_image_sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><icon/><id/><image>bf26eef273230300e9d580844ff6a7c3.iix?t=m</image><order>0</order><roles/><short_description/><size>md</size><sp_column display_value="1">79b39ef273230300e9d580844ff6a736</sp_column><sp_widget display_value="pe cta count">7223daf273230300e9d580844ff6a7c7</sp_widget><sys_class_name>widget_with_image_sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 03:01:25</sys_created_on><sys_id>41d5aef273230300e9d580844ff6a77b</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Service Catalogs</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>widget_with_image_sp_instance_41d5aef273230300e9d580844ff6a77b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 03:03:18</sys_updated_on><title>Service Catalogs</title><url/><widget_parameters/></widget_with_image_sp_instance><sys_translated_text action="delete_multiple" query="documentkey=41d5aef273230300e9d580844ff6a77b"/></record_update>]]></payload>
+<payload_hash>1095039733</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>e88a323a73230300e9d580844ff6a7ec</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed78b3380000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table/>
+<target_name>Service Catalogs</target_name>
+<type>Widget with image sp instance</type>
+<update_domain>global</update_domain>
+<update_guid>f8462236c023030053dce5c39a9fe995</update_guid>
+<update_guid_history>f8462236c023030053dce5c39a9fe995:1095039733,dc36eef2d323030085c81149e52e3ef5:747087890,ddd56ef213230300c7eb4005b8cfe4b2:-1507845557,09d5aef22a230300c0c713f1b08e197c:-2096780084</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_widget_with_image_sp_instance_image</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="image" table="widget_with_image_sp_instance"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Image&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;image&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;internal_type display_value=""&gt;user_image&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;widget_with_image_sp_instance&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-13 02:09:40&lt;/sys_created_on&gt;&lt;sys_id&gt;d549527273230300e9d580844ff6a704&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Image&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_widget_with_image_sp_instance_image&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-13 02:09:40&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>929511301</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>ec8a323a73230300e9d580844ff6a7e5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed479c360000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance.Image</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>9ff9d272812303000a62602f79d933df</update_guid>
+<update_guid_history>9ff9d272812303000a62602f79d933df:929511301,5ff9527259230300b483364a64d4bab6:929511301</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a449127273230300e9d580844ff6a7dd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on widget_with_image_sp_instance</description><name>widget_with_image_sp_instance</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:30</sys_created_on><sys_id>a449127273230300e9d580844ff6a7dd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>widget_with_image_sp_instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_a449127273230300e9d580844ff6a7dd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:06:30</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1677109483</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>ec8a323a73230300e9d580844ff6a7e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed44b1ac0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>widget_with_image_sp_instance</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>60491272062303009fd8f4df27efdbdf</update_guid>
+<update_guid_history>60491272062303009fd8f4df27efdbdf:-1677109483</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_3c2a9e3273230300e9d580844ff6a7e9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>m2m_widget_condition_user</name><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:10:19</sys_created_on><sys_id>3c2a9e3273230300e9d580844ff6a7e9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>m2m_widget_condition_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_user_role_3c2a9e3273230300e9d580844ff6a7e9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:10:19</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>374969781</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>ec8a323a73230300e9d580844ff6a7eb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed4832940000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table/>
+<target_name>m2m_widget_condition_user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>b42a1672ab230300510eb5c6dc4954d9</update_guid>
+<update_guid_history>b42a1672ab230300510eb5c6dc4954d9:374969781</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_c039de3273230300e9d580844ff6a79d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Widget with image sp instance</label><live_feed_enabled>false</live_feed_enabled><name>widget_with_image_sp_instance</name><number_ref/><provider_class/><read_access>true</read_access><super_class display_value="Instance" name="sp_instance">af452412dd910300440b2294e69e9730</super_class><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>admin</sys_created_by><sys_created_on>2018-01-13 02:06:29</sys_created_on><sys_id>c039de3273230300e9d580844ff6a79d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Widget with image sp instance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_c039de3273230300e9d580844ff6a79d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-01-13 02:09:41</sys_updated_on><update_access>false</update_access><user_role display_value="widget_with_image_sp_instance_user" name="widget_with_image_sp_instance_user">e049127273230300e9d580844ff6a793</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>2117508568</payload_hash>
+<remote_update_set display_value="pe-cta-count">248afef673230300e9d580844ff6a7b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-13 04:31:46</sys_created_on>
+<sys_id>ec8afef673230300e9d580844ff6a7b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160ed479ce70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-13 04:31:46</sys_updated_on>
+<table>widget_with_image_sp_instance</table>
+<target_name>Widget with image sp instance</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>13f9d2720623030056a53af6f31820e9</update_guid>
+<update_guid_history>13f9d2720623030056a53af6f31820e9:2117508568,74491272da2303000c9051392ea292f4:2117508568</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
