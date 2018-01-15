@@ -1,0 +1,74 @@
+[{
+  "name": "table",
+  "label": "Table",
+  "type": "string"
+}, {
+  "name": "featured_image",
+  "label": "Picture",
+  "type": "field_name"
+}, {
+  "name": "title_field",
+  "label": "Title Field",
+  "type": "field_name"
+}, {
+  "name": "description_field",
+  "label": "Description Field",
+  "type": "field_name"
+}, {
+  "name": "encoded_query",
+  "label": "Encoded Query",
+  "type": "string"
+}, {
+  "name": "limit_query",
+  "default_value": "5",
+  "label": "Limit",
+  "type": "integer"
+}, {
+  "displayValue": "Page",
+  "name": "add_news_link",
+  "label": "Add News Link",
+  "type": "reference",
+  "value": "sp_page",
+  "ed": {
+    "reference": "sp_page"
+  }
+}, {
+  "displayValue": "Page",
+  "name": "more_link",
+  "label": "More Link",
+  "type": "reference",
+  "value": "sp_page",
+  "ed": {
+    "reference": "sp_page"
+  }
+}, {
+  "name": "order_type",
+  "label": "Order Type",
+  "type": "choice",
+  "choices": [{
+    "label": "Descending",
+    "value": "Descending"
+  }, {
+    "label": "Ascending",
+    "value": "Ascending"
+  }]
+}, {
+  "name": "order_by",
+  "label": "Order By",
+  "type": "field_name"
+}, {
+  "hint": "This is the title for the Widget",
+  "name": "title",
+  "default_value": "News",
+  "label": "Title",
+  "type": "string"
+}, {
+  "displayValue": "Page",
+  "name": "detail_link",
+  "label": "Detail Link",
+  "type": "reference",
+  "value": "sp_page",
+  "ed": {
+    "reference": "sp_page"
+  }
+}]
