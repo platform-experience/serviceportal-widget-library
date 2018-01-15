@@ -1,0 +1,68 @@
+[{
+  "hint": "Table name",
+  "name": "table",
+  "default_value": "",
+  "label": "Table",
+  "type": "string"
+}, {
+  "hint": "Image displayed when selected",
+  "name": "featured_image",
+  "label": "Featured Image",
+  "type": "field_name"
+}, {
+  "name": "limit",
+  "default_value": "5",
+  "label": "Limit",
+  "type": "string"
+}, {
+  "hint": "",
+  "name": "encoded_query",
+  "label": "Encoded Query",
+  "type": "string"
+}, {
+  "name": "title_field",
+  "label": "Title Field",
+  "type": "field_name"
+}, {
+  "name": "description_field",
+  "label": "Description Field",
+  "type": "field_name"
+}, {
+  "displayValue": "Page",
+  "name": "link",
+  "label": "Link",
+  "type": "reference",
+  "value": "sp_page",
+  "ed": {
+    "reference": "sp_page"
+  }
+}, {
+  "hint": "",
+  "name": "order_type",
+  "default_value": "Ascending",
+  "label": "Order",
+  "type": "choice",
+  "choices": [{
+    "label": "Descending",
+    "value": "Descending"
+  }, {
+    "label": "Ascending",
+    "value": "Ascending"
+  }]
+}, {
+  "name": "order_by",
+  "default_value": "",
+  "label": "Order By",
+  "type": "field_name"
+}, {
+  "name": "autoplay",
+  "default_value": "",
+  "label": "Autoplay",
+  "type": "boolean"
+}, {
+  "hint": "Timer in milisecond",
+  "name": "slideshow_timer",
+  "default_value": "5000",
+  "label": "Slideshow Timer",
+  "type": "integer"
+}]
