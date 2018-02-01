@@ -1,0 +1,61 @@
+.pi-typeahead-container {
+	margin-bottom: 10px;
+  position: relative;
+}
+
+.pi-typeahead {
+  width: 100%;
+  padding: 6px 35px 6px 16px;
+}
+
+.pi-typeahead-icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 10px;
+  height: 20px;
+  float: right;
+  opacity: 0.6;
+}
+
+.tt-menu {
+  padding: 0px;
+  width: 100%;
+}
+
+.tt-dataset {
+  max-height: 200px;
+  overflow-y: scroll;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #66afe9;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.tt-suggestion {
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.tt-suggestion:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #66afe9;
+}
+
+.twitter-typeahead{
+  width: 100%;
+}
+
+.pi-search-dim {
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 100vmax rgba(255, 255, 255, 0.8);
+  /* pointer-events: none; */
+  z-index: 999;
+  transition-timing-function: ease-out, step-end;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
