@@ -1,0 +1,26 @@
+<div class="panel-default b">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{ ::options.title || "News" }}</h2>
+  </div>
+  <div class="panel-body items">
+
+    <div class="news-item" ng-repeat="item in c.data.items track by $index">
+      <div class="col-xs-12 col-sm-3 news_image">
+        <a href="?id={{c.data.detail_link}}&sys_id={{item.sys_id}}">
+          <img ng-src="{{item.featured_image}}" class="img-responsive" alt="">
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-9 news_content">
+        <a href="?id={{c.data.detail_link}}&sys_id={{item.sys_id}}">
+          <h4 class="news-title" ng-bind="item.title"></h4>
+        </a>
+        <p class="news-description" ng-bind="item.description">
+        </p>
+        <p class="readmore">
+          <a href="?id={{c.data.detail_link}}&sys_id={{item.sys_id}}">Read More</a>
+        </p>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
