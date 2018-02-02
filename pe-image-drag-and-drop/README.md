@@ -1,4 +1,4 @@
-# Barcode Reader Live (livestream)
+# Image Drag & Drop Upload Widget
 
 ## Description
 
