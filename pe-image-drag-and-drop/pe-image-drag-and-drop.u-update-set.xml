@@ -832,12 +832,11 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_a13ad35ddb8c570086da7d5e0f96191e</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ImageDragAndDropCtrl($scope) {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ImageDragAndDropController($scope) {
   var c = this;
   c.files = [];
 
-  //Set options for dropzone
+  // Set options for dropzone
   $scope.dzOptions = {
     url: '/alt_upload_url',
     paramName: 'photo',
@@ -847,7 +846,7 @@
     autoProcessQueue: true
   };
 
-  //Handle events for dropzone
+  // Handle events for dropzone
   $scope.dzCallbacks = {
     addedfile: function(file) {
       $scope.newFile = file;
@@ -893,7 +892,7 @@
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-image-drag-and-drop&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope){
 	//sometimes, dropzone is not loaded. This below to fix the problem:
 	//$(document).on('page:change', $(".dropzone").dropzone());
-	
+
 }]]&gt;&lt;/link&gt;&lt;name&gt;Image Drag And Drop&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Table containing the record with the image attachment","name":"table","section":"other","default_value":"u_image_drag_and_drop","label":"Table","type":"string"},{"hint":"The column which will contain the name of the uploaded image.","name":"field_name","section":"other","default_value":"u_name","label":"Name Field","type":"field_name"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
