@@ -1,9 +1,8 @@
-function ImageDragAndDropCtrl($scope) {
-  /* widget controller */
+function ImageDragAndDropController($scope) {
   var c = this;
   c.files = [];
 
-  //Set options for dropzone
+  // Set options for dropzone
   $scope.dzOptions = {
     url: '/alt_upload_url',
     paramName: 'photo',
@@ -13,7 +12,7 @@ function ImageDragAndDropCtrl($scope) {
     autoProcessQueue: true
   };
 
-  //Handle events for dropzone
+  // Handle events for dropzone
   $scope.dzCallbacks = {
     addedfile: function(file) {
       $scope.newFile = file;
