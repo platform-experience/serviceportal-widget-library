@@ -24,7 +24,7 @@ $pe-status-color-normal: #29bd00 !default;
       border-radius: 50%;
       content: '';
       height: 10px;
-      left: 80%;
+      left: 45px;
       position: absolute;
       top: 78%;
       width: 10px;
@@ -95,8 +95,8 @@ $pe-status-color-normal: #29bd00 !default;
   }
   .panel-vips.ng-hide-add,
   .panel-vips.ng-hide-remove {
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
     display: block !important;
     opacity: 1;
   }
@@ -106,8 +106,7 @@ $pe-status-color-normal: #29bd00 !default;
   .header-left-icon {
     margin: 0 0 7px 11%;
     span {
-      float: right;
-      margin-right: 40%;
+      margin-right: 17%;
     }
   }
   .add-circle,
