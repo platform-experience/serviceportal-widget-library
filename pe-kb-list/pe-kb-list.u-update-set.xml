@@ -92,7 +92,7 @@
 ]&amp;#13;
 &lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   var grKb = new GlideRecordSecure('kb_knowledge');
-  grKb.addQuery('kb_category.label', options.kb_category);
+  grKb.addQuery('kb_category', options.kb_category);
   grKb.orderBy('published');
   grKb.setLimit(options.limit || 5);
   grKb.query();
