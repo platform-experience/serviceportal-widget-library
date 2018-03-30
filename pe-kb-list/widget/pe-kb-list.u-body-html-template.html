@@ -1,0 +1,22 @@
+<div class="kb-list-wrapper">
+  <h2>{{::options.title}}</h2>
+  <div class="article-list" ng-repeat="article in c.data.articles track by $index">
+    <div class="article-wrapper">
+      <div class="collapsed article-heading" data-toggle="collapse" data-target="#collapse-{{$index}}" aria-expanded="false" aria-controls="collapse-{{$index}}"
+        ng-click="article.expanded = !article.expanded">
+        <div class="expand-icon pull-right" ng-show="!article.expanded">
+          <i class="fa fa-plus"></i>
+        </div>
+        <div class="expand-icon pull-right" ng-show="article.expanded">
+          <i class="fa fa-minus"></i>
+        </div>
+        {{::article.title}}
+      </div>
+      <div id="collapse-{{$index}}" class="collapse">
+        <div class="article-body">
+          <div ng-bind-html="::article.text"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+[
+  {
+    "label": "Title",
+    "name": "title",
+    "type": "string",
+    "default_value": "Windows Knowledge Base",
+    "section": "other"
+  },
+  {
+    "label": "KB category",
+    "name": "kb_category",
+    "type": "reference",
+    "default_value": "Windows",
+    "section": "other",
+    "ed": { "reference": "kb_category" }
+  },
+  {
+    "label": "Limit",
+    "name": "limit",
+    "type": "integer",
+    "default_value": "5",
+    "section": "other"
+  }
+]
