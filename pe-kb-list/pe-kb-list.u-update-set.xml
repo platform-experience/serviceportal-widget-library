@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-03-30 16:10:19">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE KB List</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d6a4891f13c5930084be36328144b082</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-30 16:10:19</sys_created_on>
+<sys_id>52337467138d930084be36328144b0f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-30 16:10:19</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_3cc44d1f13c5930084be36328144b097</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function KBListController($sce) {
+  var c = this;
+
+  c.$onInit = function() {
+    c.data.articles.forEach(function(article) {
+      article.text = $sce.trustAsHtml(article.text);
+    });
+  };
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.kb-list-wrapper {
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .article-wrapper {
+    border-top: 1px solid #ccc;
+    color: #4b82b0;
+    i {
+      font-size: 10px;
+    }
+  }
+  .article-list:last-of-type {
+    border-bottom: 1px solid #ccc;
+  }
+  .article-body {
+    padding: 0 2rem;
+  }
+  .article-heading {
+    padding: 2rem;
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-kb-list&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE KB List&lt;/name&gt;&lt;option_schema&gt;[&amp;#13;
+  {&amp;#13;
+    "label": "Title",&amp;#13;
+    "name": "title",&amp;#13;
+    "type": "string",&amp;#13;
+    "default_value": "Windows Knowledge Base",&amp;#13;
+    "section": "other"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "label": "KB category",&amp;#13;
+    "name": "kb_category",&amp;#13;
+    "type": "reference",&amp;#13;
+    "default_value": "Windows",&amp;#13;
+    "section": "other",&amp;#13;
+    "ed": { "reference": "kb_category" }&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "label": "Limit",&amp;#13;
+    "name": "limit",&amp;#13;
+    "type": "integer",&amp;#13;
+    "default_value": "5",&amp;#13;
+    "section": "other"&amp;#13;
+  }&amp;#13;
+]&amp;#13;
+&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var grKb = new GlideRecordSecure('kb_knowledge');
+  grKb.addQuery('kb_category.label', options.kb_category);
+  grKb.orderBy('published');
+  grKb.setLimit(options.limit || 5);
+  grKb.query();
+
+  var articles = [];
+  while (grKb.next()) {
+    articles.push({
+      title: grKb.short_description.toString(),
+      text: grKb.text.toString()
+    });
+  }
+  data.articles = articles;
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-03-29 22:49:41&lt;/sys_created_on&gt;&lt;sys_id&gt;3cc44d1f13c5930084be36328144b097&lt;/sys_id&gt;&lt;sys_mod_count&gt;103&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE KB List&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3cc44d1f13c5930084be36328144b097&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-03-30 01:28:17&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="kb-list-wrapper"&gt;
+  &lt;h2&gt;{{::options.title}}&lt;/h2&gt;
+  &lt;div class="article-list" ng-repeat="article in c.data.articles track by $index"&gt;
+    &lt;div class="article-wrapper"&gt;
+      &lt;div class="collapsed article-heading" data-toggle="collapse" data-target="#collapse-{{$index}}" aria-expanded="false" aria-controls="collapse-{{$index}}"
+        ng-click="article.expanded = !article.expanded"&gt;
+        &lt;div class="expand-icon pull-right" ng-show="!article.expanded"&gt;
+          &lt;i class="fa fa-plus"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class="expand-icon pull-right" ng-show="article.expanded"&gt;
+          &lt;i class="fa fa-minus"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        {{::article.title}}
+      &lt;/div&gt;
+      &lt;div id="collapse-{{$index}}" class="collapse"&gt;
+        &lt;div class="article-body"&gt;
+          &lt;div ng-bind-html="::article.text"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2106712816</payload_hash>
+<remote_update_set display_value="PE KB List">52337467138d930084be36328144b0f4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-30 16:10:19</sys_created_on>
+<sys_id>56337467138d930084be36328144b0f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1627485041e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-30 16:10:19</sys_updated_on>
+<table/>
+<target_name>PE KB List</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>f959a1dfee099300e00d5c15d7201c9b</update_guid>
+<update_guid_history>f959a1dfee099300e00d5c15d7201c9b:-2106712816,ff4961df8909930053391b490c78c4c9:-782867982,0a3961dfce099300d309abbe6925eac3:1419828030,d83961df70099300439b402d02193469:790466602,f82921df4b099300d0c693b10da37b9e:1419828030,d01921dffa0993004b1fed9223c8f48d:-949038145,9ff86d9fb909930081da2eaab944032a:977062976,c858699f9b0993000eb8cf4363dbdee1:-129720269,a957219f4c0993005280cad59c2b206d:1591811549,b227a95f99099300e20b6ab0879f9920:1581620253,5ec6695f31099300bd0f6133a0b2174d:-1111745872,4846215f4b0993005ec96a41c1aaef43:-1187331203,11f5e55f43099300a7b31eaa4a38fc16:1927668890,a4a4e51f260993009e019c4f51aedb54:-1118111899,d734691f3f0993005c548aa36a3d1e7d:1051084235,95732ddbbb099300747556799ff6f75a:-30359464,3562e1db31099300e7f81664c9ca47bb:1656399229,b041a1dbb3099300892eb3c929635a21:1699075807,9c312d9b07099300779879774207d557:-1716457292,2311a1db6a0993000ecd7cdcfff92112:-1849536161,600121db250993006e13ec071d8504aa:-2134988687,6820699b2e09930086da1986075a61f3:1699075807,fe1f519bb70993007fd183f7ea458880:-1839349012,c20fdd5b21099300ddab2e4363e6d400:1566918351,24de9d5b350993006bdb0c240a0c9b39:-1148237276,face9d5b00099300b8be8748afa690f9:-135715409,e0ce9d5b0f099300a3788db0aab3b1ba:765996925,d2be9d5b37099300bd905ad2eb617d30:-1811886442,379e1d5b4709930010cb3d2fc15513ff:-459135212,729ed95b2a09930095e4c54e7c4703fa:93940306,cb7e595b07099300cc06eb2fd2d4b5e2:-1899948216,5d3e595b93099300d55bb05076dd57bb:-393120780,5a1e555bea0993009df0515956f0eb20:-1005464146,c28d155bca099300229c618a2207c22b:143588458,c76d155b5b099300ecb75fef65874424:1413180472,df1d5d1b7e099300810875451f5ae78e:1720914018,298c5d1bd20993007db45155a1190e88:-285062752,f44cd91bad0993009ba14d7d26b49445:1882049019,fa3c591bce0993009c0e7da861b76ea7:142783642,603c191b1509930004a1d10a81a1ad11:2040521074,f41cd51b94099300bc5ce2c5c2aeeee1:142783642,03dbd51bdc0993008428027a9b39ffdb:-1611193082,03cbd9572b09930089dc592c2f198d3a:-1919442381,fa55d957b10993000b7ab8c3ef203f30:-2020435243,8545d5579e099300a94c8c78568a0e8b:-224119199,5e355957010993003ec8b725b7ade8e1:-114613880,d8251957c0099300235bb1818b731a05:431059989,cb051957d80993004317382e618dd257:1564758079,5505d557a709930063b1f7cd41aa5dd5:1252834460,0405d55706099300f5b25e0f5b5c0fff:647848780,eaf49557a709930090a44664082d4e83:-635291279,c5f4955742099300cbcde31abec45377:-2036857705,e9d49557330993000de8392caded4570:1215504738,aca451575d0993008ee0678cb1159efc:-628097263,ef44d9173909930047811fd64089b047:-2036857705,9e345157b7099300474dca64576378e9:-635291279,14835917a8099300007b6504995c5718:228078452,bd53d917f309930080753c3eeec10511:544473070,7603191767099300464065ff7f45c408:966166423,cce29517cb099300b101e94c1b8ff8d0:-1232758017,0ad21517b8099300917ad78f00e12e7f:-1509606369,e9c2951748099300d713c4b6834b1179:1595759615,d3b25517d90993009aa71d44cad7fad9:1207623548,3cb25517a90993009efecb69c406f9d2:1006594478,a18211176f09930025cda9c1c2179d77:1514775137,b852d117dd0993001add7633c4ffdd01:-1257954099,c8221117b709930045487fd9e7489470:-1336738291,ac0299d3cb099300bc7d8acdfb63f4d4:-1481753615,1af1ddd38a099300719e2ab6fa7c33fd:-548726500,12e1ddd34b0993007b2077173ded588f:1175710895,1ab19dd307099300b47a9f070696850c:354783508,d991d9d30e09930014c9eb54c44a177c:-1481753615,df6199d33a09930053dbb60c48615f89:1825692254,bc5115d3ac09930062b25129a71b4ec0:1813475596,a641d5d3bc09930011fa4120582fa335:1856524786,46d015d366099300795fc846738831b3:-1833579976,257015d3ca099300fc939e43c89c1daa:552461187,de405d938d09930052f7977bc54ca528:767824029,6c4fc9931e099300b43c5a27663a9d17:-522781607,610f85931b099300b3b39150c7bbd33b:-386116709,b28e4d53ce0993007cb9535faf54d12f:-1486755715,c32e81931b099300333c7b553335ff91:1649329692,0a1e41932a099300172c4d6efa1b90be:-1399869280,600e8d53c409930067b85801096df2b1:1315930723,839d09534d099300aaf32f46a86d50a0:-988650595,7b6d0d539e0993004c9e0f7aae4d4e1b:-2123783915,7b4dc953a7099300714e3613638e91e6:947703159,27dcc5531409930041f7edbbc82941ca:-1619459867,7dccc5531b099300e100c2181515c2c3:1563438599,97ac05538e099300f2e817459495a101:-947154751,5d3b091396099300f69821eb0ea53f0f:856466177,df1b0d138f0993007fb0bfb9367ae626:1886934038,890b0913b1099300f2fd81835b48e054:-2055708926,bafa89132a0993000c4be4cb653741d7:-2143875049,469a851372099300fd1e9496081d200e:-2055708926,c47a05138a0993005da3e46ab47e9bb0:-142475978,435a4513fb099300a559991ac02f6ffd:229138192,693a051322099300d2f172fd98cb951a:1858227665,80c949dfa1c59300daa9655b8a8736f8:-1544663346,6aa845dfdcc59300c3a7b189ea437c0e:-933856319,402881df80c5930092b75112edd52f61:-1001502594,f4b5c55fefc59300fcb5106d4f7ad0d3:-1858780217,c065cd1fc4c59300b34aaf70bfb61fcc:-1374251211,a205cd1fdec59300e769f0bf968cfcc5:-1153446020</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
