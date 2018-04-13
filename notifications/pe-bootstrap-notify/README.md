@@ -5,8 +5,8 @@
 This is a directive useful for being quickly able to use Bootstrap Notify from any widget (most of the times is placed in the header widget).
 
 ## Screenshots
-![alt text](../images/pe-bootstrap-notify-01.png "Notifications indicator count") <br/><br/>
-![alt text](../images/pe-bootstrap-notify-02.png "Notification with animation") <br/><br/>
+![alt text](../../images/pe-bootstrap-notify-01.png "Notifications indicator count") <br/><br/>
+![alt text](../../images/pe-bootstrap-notify-02.png "Notification with animation") <br/><br/>
 
 ## Additional Information/Notes
 The update set installs a sample widget which shows how to use the directive and how to broadcast the notifications.<br/><br/>
