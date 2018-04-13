@@ -4,14 +4,18 @@
 
 This is a directive useful for being quickly able to use Bootstrap Notify from any widget (most of the times is placed in the header widget).
 
+## Screenshots
+![alt text](../images/pe-bootstrap-notify-01.png "Notifications indicator count") <br/><br/>
+![alt text](../images/pe-bootstrap-notify-02.png "Notification with animation") <br/><br/>
+
 ## Additional Information/Notes
 The update set installs a sample widget which shows how to use the directive and how to broadcast the notifications.<br/><br/>
 
 The directive considers the following input parameters:
 
--) options, a json object (documented here: http://bootstrap-notify.remabledesigns.com/#documentation-options )
+-) options, a json object (documented here: (http://bootstrap-notify.remabledesigns.com/#documentation-options) )
 
--) settings, a json object (documented here: http://bootstrap-notify.remabledesigns.com/#documentation-settings )
+-) settings, a json object (documented here: (http://bootstrap-notify.remabledesigns.com/#documentation-settings) )
 
 -) [optional] demo, if true then you will see a sample notification triggered automatically after a certain time
 
@@ -37,7 +41,7 @@ the purpose of the parameter demo, set to true, is to quicky test your options a
 
 Please have a look at the demo implementation on page and widget called Bootstrap Notify Demo:
 
-/sp?id=boostrap_notify_demo
+(/sp?id=boostrap_notify_demo)
 
 ---
 ## Installation
