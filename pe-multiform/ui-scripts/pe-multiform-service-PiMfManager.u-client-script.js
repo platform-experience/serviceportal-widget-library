@@ -504,6 +504,8 @@ PiMf.service('PiMfManager', function PiMfManager(
       case 'currency':
         var currencyValues = value.split(';');
         return currencyValues[1] && currencyValues[1].length;
+      default:
+        break;
     }
 
     if (value === null) {
