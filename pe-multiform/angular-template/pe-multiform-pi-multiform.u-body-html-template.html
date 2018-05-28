@@ -1,0 +1,17 @@
+<div pi-multi-form>
+  
+  <fieldset class="pi-mf-section">
+    
+    <div ng-repeat="container in getSelectedContainer()" class="pi-mf-container">
+      
+      <div class="pi-mfc-body container-fluid">
+        <sp-variable-layout ng-init="containers=[container]"></sp-variable-layout>
+      </div>
+      
+    </div>
+    
+  </fieldset>
+  
+  <div ng-init="execItemScripts()"></div>
+  
+</div>
