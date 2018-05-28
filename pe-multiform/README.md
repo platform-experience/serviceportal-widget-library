@@ -1,37 +1,35 @@
-# **<img src="images/logo.png" width="30"> Multiform**
+# Multiform
 
 ## Description
 Multiform is an advanced Service Portal form widget that separates each section of the form onto sequential, numbered screens for improved user experience. It also offers a number of other benefits over the out-of-box form widget, such as:
 
-
-
 - **Screen-based form completion**
 
 	Each form section becomes its own screen:
-	
-	<img src="images/mf-screen-progression.png" width="400">
-	
-	
+
+	<img src="../images/mf-screen-progression.png" width="400">
+
+
 	Screens are able to be navigated through the buttons at the bottom of the form:
-	
-	<img src="images/mf-next.png" width="100">
-	
-	
+
+	<img src="../images/mf-next.png" width="100">
+
+
 	And using the indicators at the top-right:
-	
-	<img src="images/mf-navigation.png" width="150">
-	
+
+	<img src="../images/mf-navigation.png" width="150">
+
 
 - **Drag & drop file upload**
 
 	Both drag and drop and regular upload (via the  button) are supported.
-	
-	<img src="images/mf-drag-drop.png" width="250" style="border:1px solid rgb(129, 181, 161);">
+
+	<img src="../images/mf-drag-drop.png" width="250" style="border:1px solid rgb(129, 181, 161);">
 
 - **Support for all native form functionality**
-	
+
 	For example:
-	
+
 	- Client Scripts
 	- UI Policies
 	- Read-only fields
@@ -50,15 +48,15 @@ Multiform is an advanced Service Portal form widget that separates each section 
 	Child widgets can be embedded in the same places as child forms. An easy to use API can be called in your widgets to access fields on all forms and execute functions when the form changes.
 
 - **Easy to style**
-	
+
 	Simply declare a few SASS variables in your theme/page/portal to override certain styles, such as indicator color, bottom bar color, and rounded corners.
-	
+
 ## Screenshots
 
-<img src="images/mf-screenshot.png" width="100%">
+<img src="../images/mf-screenshot.png" width="100%">
 
-<img src="images/mf-feature-highlight.png" width="100%">	
-	
+<img src="../images/mf-feature-highlight.png" width="100%">
+
 ## Installaton
 1. Open Studio on your ServiceNow instance.
 2. Click the **Import From Source Control** button.
