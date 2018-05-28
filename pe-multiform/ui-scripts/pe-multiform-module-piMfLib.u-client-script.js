@@ -1,0 +1,1 @@
+var PiMf = angular.module('PiMfLib', []);
