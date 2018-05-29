@@ -7,24 +7,21 @@ Multiform is an advanced Service Portal form widget that separates each section 
 
 	Each form section becomes its own screen:
 
-	<img src="../images/mf-screen-progression.png" width="400">
-
+  ![](../images/mf-screen-progression.png)
 
 	Screens are able to be navigated through the buttons at the bottom of the form:
 
-	<img src="../images/mf-next.png" width="100">
-
+  ![](../images/mf-next.png)
 
 	And using the indicators at the top-right:
 
-	<img src="../images/mf-navigation.png" width="150">
-
+  ![](../images/mf-navigation.png)
 
 - **Drag & drop file upload**
 
 	Both drag and drop and regular upload (via the  button) are supported.
 
-	<img src="../images/mf-drag-drop.png" width="250" style="border:1px solid rgb(129, 181, 161);">
+  ![](../images/mf-drag-drop.png)
 
 - **Support for all native form functionality**
 
@@ -37,7 +34,6 @@ Multiform is an advanced Service Portal form widget that separates each section 
 	- Form layouts
 	- Reference fields
 	- Dictionary attributes
-
 
 - **Embedded “Child Forms” (related lists)**
 
@@ -53,9 +49,9 @@ Multiform is an advanced Service Portal form widget that separates each section 
 
 ## Screenshots
 
-<img src="../images/mf-screenshot.png" width="100%">
+![](../images/mf-screenshot.png)
 
-<img src="../images/mf-feature-highlight.png" width="100%">
+![](../images/mf-feature-highlight.png)
 
 ## Installaton
 1. Open Studio on your ServiceNow instance.
@@ -105,7 +101,6 @@ There are also some options unique to each type of child.
 
 #### Child Form
 
-
 | Field              | Description                                                                                                                                               | Mandatory | Default      |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | Table              | The table that the form will show                                                                                                                         | yes       |              |
@@ -118,7 +113,6 @@ There are also some options unique to each type of child.
 | CSS                | Additional CSS that will be loaded for this instance of the widget                                                                                        | no        |              |
 
 #### Child Widget
-
 
 | Field          | Description                                               | Mandatory | Default |
 |----------------|-----------------------------------------------------------|-----------|---------|

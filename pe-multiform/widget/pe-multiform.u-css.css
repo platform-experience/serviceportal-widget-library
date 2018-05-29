@@ -146,7 +146,7 @@ $pi-mf-attachment-add-color: $pi-mf-dark-green !default;
 }
 
 .pi-mfa-container {
-  
+
   background-color: $pi-mf-highlight-bg;
   border-radius: $pi-mf-border-radius;
   min-height: 30px;
@@ -156,7 +156,7 @@ $pi-mf-attachment-add-color: $pi-mf-dark-green !default;
   font-size: 13px;
   align-items: center;
   justify-content: flex-end;
-  
+
   ul {
     list-style: none;
     padding: 0;
@@ -165,7 +165,7 @@ $pi-mf-attachment-add-color: $pi-mf-dark-green !default;
     flex-wrap: wrap;
     justify-content: flex-end;
   }
-  
+
   li {
     background-color: $pi-mf-attachment-pill-bg;
     color: $pi-mf-attachment-pill-color;
@@ -177,17 +177,17 @@ $pi-mf-attachment-add-color: $pi-mf-dark-green !default;
     white-space: nowrap;
     max-width: 170px;
     margin: 3px 0 3px 5px;
-    
+
     a, a:hover, a:visited, a:focus {
       color: $pi-mf-attachment-pill-color;
     }
-    
+
   }
-  
+
   li:last-of-type {
     margin-right: 0;
   }
-  
+
   button {
     height: 23px;
     width: 23px;
@@ -202,51 +202,6 @@ $pi-mf-attachment-add-color: $pi-mf-dark-green !default;
     flex: 0 0 23px;
   }
 }
-
-
-/*
-.pi-mfc-attachments {
-  margin: 0 15px 0 auto;
-  font-size: 15px;
-  padding: 5px;
-  background-color: $pi-mf-highlight-bg;
-  border-radius: $pi-mf-border-radius;
-  height: 30px;
-  line-height: 20px;
-
-  .panel-button {
-    float: none;
-    margin-top: 0;
-  }
-
-  .pi-mf-attachment-manager {
-
-    display: inline-block;
-    font-size: 13px;
-
-    ul {
-      list-style:none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      display: inline-block;
-      margin: 0 5px;
-    }
-
-  }
-
-  .panel-button {
-    font-size: inherit;
-  }
-
-  button {
-    margin-left: 0;
-  }
-}
-
-*/
 
 .pi-mf-indicators {
   display: flex;
