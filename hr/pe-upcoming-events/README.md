@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![](../images/hr-catalog-list.png)
+![HR Upcoming Events](../images/hr-upcoming-events.png)
 
 ## Additional Information/Notes
 

@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![](../images/hr-catalog-list.png)
+![HR Select Device](../images/hr-select-device.png)
 
 ## Additional Information/Notes
 

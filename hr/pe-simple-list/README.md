@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![](../images/hr-catalog-list.png)
+![HR Simple List](../images/hr-simple-list.png)
 
 ## Additional Information/Notes
 

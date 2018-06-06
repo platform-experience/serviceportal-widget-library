@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![](../images/hr-catalog-list.png)
+![HR Video Carousel](../images/hr-video-carousel.png)
 
 ## Additional Information/Notes
 

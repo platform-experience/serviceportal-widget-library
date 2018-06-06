@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![](../images/hr-catalog-list.png)
+![HR Direct Deposit](../images/hr-direct-deposit.png)
 
 ## Additional Information/Notes
 

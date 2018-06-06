@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![](../images/hr-catalog-list.png)
+![HR Welcome Message](../images/hr-welcome-message.png)
 
 ## Additional Information/Notes
 

@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![](../images/hr-catalog-list.png)
+![HR Photo Credential](../images/hr-photo-credential.png)
 
 ## Additional Information/Notes
 
