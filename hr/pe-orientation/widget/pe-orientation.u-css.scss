@@ -1,0 +1,31 @@
+.announcement-item {
+  padding: 5px 15px 5px 15px;
+}
+
+div > div.announcement-item:not(:last-child) {
+  border-bottom: 1px solid $color-lighter;
+}
+
+a.a-list i {
+  margin-right: 0.2em;
+  margin-bottom: 1em;
+}
+
+.image-size img {
+  max-width: 100%;
+  height: auto;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.orientation-date-time {
+  .orientation-time {
+    margin-left: 10px;
+  }
+}
+
+.orientation-address {
+  margin-top: 10px;
+}
