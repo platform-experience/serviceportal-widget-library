@@ -104,17 +104,17 @@ Style sheets should go inside a folder called **style-sheet**, all style sheets 
 
 >If it's a CSS library file, which users don't need to edit for example: animate.css, emit this **u-css** part in the name. This will make sure we don't pull huge library files from ServiceNow.
 
-### Angular Providers
+### AngularJS Providers
 
-Angular providers should go inside a folder called **angular-provider**, all providers should be named as follows.
+AngularJS providers should go inside a folder called **angular-provider**, all providers should be named as follows.
 
 ```
 <widget-name>-<purpose>.u-client-script.js
 ```
 
-### Angular Templates
+### AngularJS Templates
 
-Angular templates should go inside a folder called **angular-template**, all templates should be named as follows.
+AngularJS templates should go inside a folder called **angular-template**, all templates should be named as follows.
 
 ```
 <widget-name>-<template-id>.u-body-html-template.html
@@ -186,7 +186,7 @@ pe-timeline
 
 ## Style Guide
 
-All contributors to the widget library should strive to follow the [Service Portal: Angular Style Guide](https://github.com/platform-experience/serviceportal-best-practice) and adhere to the [EditorConfig](.editorconfig) and [ESLint](.eslintrc) rules.
+All contributors to the widget library should strive to follow the [Service Portal: AngularJS Style Guide](https://github.com/platform-experience/serviceportal-best-practice) and adhere to the [EditorConfig](.editorconfig) and [ESLint](.eslintrc) rules.
 
 **[Back to top](#table-of-contents)**
 
