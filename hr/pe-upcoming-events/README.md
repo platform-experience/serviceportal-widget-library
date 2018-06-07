@@ -4,9 +4,15 @@
 
 
 
-## Screenshot
+## Screenshots
 
-![HR Upcoming Events](../../images/hr-upcoming-events.png)
+### Collapsed
+
+![HR Upcoming Events](../../images/hr-upcoming-events-collapsed.png)
+
+### Expanded
+
+![HR Upcoming Events](../../images/hr-upcoming-events-expanded.png)
 
 ## Additional Information/Notes
 
