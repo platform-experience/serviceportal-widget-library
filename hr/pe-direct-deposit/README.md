@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR Direct Deposit](../images/hr-direct-deposit.png)
+![HR Direct Deposit](../../images/hr-direct-deposit.png)
 
 ## Additional Information/Notes
 

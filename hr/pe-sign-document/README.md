@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR Sign Document](../images/hr-sign-document.png)
+![HR Sign Document](../../images/hr-sign-document.png)
 
 ## Additional Information/Notes
 

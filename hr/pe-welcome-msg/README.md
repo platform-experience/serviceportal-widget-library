@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR Welcome Message](../images/hr-welcome-message.png)
+![HR Welcome Message](../../images/hr-welcome-message.png)
 
 ## Additional Information/Notes
 

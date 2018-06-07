@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR Info](../images/hr-info.png)
+![HR Info](../../images/hr-info.png)
 
 ## Additional Information/Notes
 

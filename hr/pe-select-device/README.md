@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR Select Device](../images/hr-select-device.png)
+![HR Select Device](../../images/hr-select-device.png)
 
 ## Additional Information/Notes
 

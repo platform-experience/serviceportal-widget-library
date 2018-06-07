@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR Office Space](../images/hr-office-space.png)
+![HR Office Space](../../images/hr-office-space.png)
 
 ## Additional Information/Notes
 

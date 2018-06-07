@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR Photo Credential](../images/hr-photo-credential.png)
+![HR Photo Credential](../../images/hr-photo-credential.png)
 
 ## Additional Information/Notes
 

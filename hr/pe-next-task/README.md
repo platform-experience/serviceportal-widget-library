@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR Employee Next Task](../images/hr-employee-next-task.png)
+![HR Employee Next Task](../../images/hr-employee-next-task.png)
 
 ## Additional Information/Notes
 

@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![HR New Hire Orientation](../images/hr-new-hire-orientation.png)
+![HR New Hire Orientation](../../images/hr-new-hire-orientation.png)
 
 ## Additional Information/Notes
 
