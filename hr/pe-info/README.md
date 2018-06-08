@@ -2,7 +2,7 @@
 
 ## Description
 
-
+Quickly share company information and messages with this HR Service Portal widget.
 
 ## Screenshot
 
@@ -11,8 +11,6 @@
 ## Additional Information/Notes
 
 Uses ServiceNow® [Employee Service Center](https://docs.servicenow.com/bundle/kingston-hr-service-delivery/page/product/human-resources/concept/c_UseTheHRSMPortal.html) (HR Service Portal)
-
-## Configuration
 
 ## Platform Dependencies
 
