@@ -2,7 +2,7 @@
 
 ## Description
 
-
+As a task in the onboarding process, an employee selects their order for equipment with this HR Service Portal widget.
 
 ## Screenshot
 
@@ -12,13 +12,12 @@
 
 Uses ServiceNow® [Employee Service Center](https://docs.servicenow.com/bundle/kingston-hr-service-delivery/page/product/human-resources/concept/c_UseTheHRSMPortal.html) (HR Service Portal)
 
-## Configuration
-
 ## Platform Dependencies
 
 ### SN System Tables
 
-> None
+* sc_category
+* sc_cat_item
 
 ## Sample Data and Data Structures
 
