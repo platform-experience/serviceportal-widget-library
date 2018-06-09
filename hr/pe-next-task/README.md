@@ -2,7 +2,7 @@
 
 ## Description
 
-
+Display a message and start the onboarding process with this HR Service Portal widget.
 
 ## Screenshot
 
@@ -14,11 +14,22 @@ Uses ServiceNow® [Employee Service Center](https://docs.servicenow.com/bundle/k
 
 ## Configuration
 
+### Widget Option Schema
+
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `First Day Guide link` | Sets the button URL. |  |
+| `Maternity Guide link` | Sets the button URL. |  |
+| `Need Extension Link` | Sets the button URL. |  |
+| `Last Day Guide Link` | Sets the button URL. |  |
+
 ## Platform Dependencies
 
 ### SN System Tables
 
-> None
+* sn_hr_core_profile
+* sn_hr_core_case
+* sn_hr_core_task
 
 ## Sample Data and Data Structures
 
