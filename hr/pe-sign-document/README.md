@@ -2,9 +2,15 @@
 
 ## Description
 
+As a task in the onboarding process, an employee reads a non-disclosure agreement and signs a document with this HR Service Portal widget.
 
+## Screenshots
 
-## Screenshot
+### Read Non-Disclosure
+
+![HR Sign Document](../../images/hr-read-non-disclosure.png)
+
+### Sign Document
 
 ![HR Sign Document](../../images/hr-sign-document.png)
 
