@@ -12,8 +12,6 @@
 
 Uses ServiceNow® [Employee Service Center](https://docs.servicenow.com/bundle/kingston-hr-service-delivery/page/product/human-resources/concept/c_UseTheHRSMPortal.html) (HR Service Portal)
 
-## Configuration
-
 ## Platform Dependencies
 
 ### SN System Tables

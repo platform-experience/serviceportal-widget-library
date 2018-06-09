@@ -18,6 +18,14 @@ View upcoming events from company management with this HR Service Portal widget.
 
 Uses ServiceNow® [Employee Service Center](https://docs.servicenow.com/bundle/kingston-hr-service-delivery/page/product/human-resources/concept/c_UseTheHRSMPortal.html) (HR Service Portal)
 
+## Configuration
+
+### Widget Option Schema
+
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `HR widget instance name` | Sets the widget instance. |  |
+
 ## Platform Dependencies
 
 ### SN System Tables
