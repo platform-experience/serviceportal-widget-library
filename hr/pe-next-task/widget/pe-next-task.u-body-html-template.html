@@ -1,0 +1,16 @@
+<div class="add-padding" ng-show="c.showOnboarding">
+  <div class="esc-first-day" ng-if="c.data.showWidget">
+    <div class="date">
+      <p class="start-msg">{{c.data.dateMsg}}</p>
+      <p class="start-date">{{c.data.startMonth}} {{c.data.startDay}}</p>
+    </div>
+    <div class="msg">
+      {{data.message}}
+      <span ng-if="c.data.profileDetails.type == 'newHire' || c.data.profileDetails.onLeave.goingOnLeaveSoon && c.data.profileDetails.onLeave.reason == 'Maternity Leave' || c.data.profileDetails.onLeave.reason == 'Paternity Leave'"></span>
+      <span ng-if="c.data.profileDetails.type == 'termination' && !c.data.profileDetails.termination.terminated">&#128532;</span>
+    </div>
+    <div class="button">
+      <a class="btn btn-primary guide-btn" ng-href="{{c.data.btnLink}}">{{c.data.buttonText}}</a>
+    </div>
+  </div>
+</div>

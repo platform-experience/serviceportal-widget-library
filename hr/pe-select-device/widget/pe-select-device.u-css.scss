@@ -1,0 +1,42 @@
+.sc-category {
+  margin-top: 30px;
+}
+
+.sc-catalog-items {
+  //display: flex;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .sc-catalog-item {
+    //display: inline;
+    flex: 0 0 auto;
+
+    margin-right: 20px;
+    img {
+      opacity: 0.5;
+    }
+
+    &.selected {
+      img {
+        opacity: 1;
+      }
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .sc-catalog-item-photo {
+    text-align: center;
+    img {
+      height: 100px;
+      background-color: white;
+      padding: 2px;
+      border-radius: 8px;
+    }
+  }
+  .sc-catalog-item-name {
+    text-align: center;
+  }
+}
