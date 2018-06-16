@@ -1,0 +1,37 @@
+<div>
+  <div class="case-header">
+    <h1>{{ c.data.title }}</h1>
+    <p>{{ c.data.message }}</p>
+  </div>
+  <div class="case-states-filter">
+    <div class="state state-count-overdue state-active">
+      <div>
+        <span class="state-label">Overdue</span>
+        <span class="state-count ">({{ c.overdue.length }})</span>
+      </div>
+    </div>
+    <div class="state state-count-soon">
+      <div>
+        <span class="state-label">Due Soon</span>
+        <span class="state-count">({{ c.due_soon.length }})</span>
+      </div>
+    </div>
+    <div class="state state-count-all">
+      <div>
+        <span class="state-label">All</span>
+        <span class="state-count">({{ c.data.tasks.length }})</span>
+      </div>
+    </div>
+  </div>
+  <div class="case-list">
+    <div class="case-item" ng-repeat="task in c.data.tasks" ng-class="{'case-overdue': task.overdue, 'case-due-soon' : task.due_soon, 'done': task.state == '3'}"
+      ng-click="c.openTask(task)">
+      <div class="case-label">{{ task.short_description }}</div>
+      <div class="case-due" ng-show="task.due_date">
+        <div class="due-label">${DUE IN}</div>
+        <div class="due-value" ng-show="task.due_in >= 0">{{ task.due_in_dv }}</div>
+        <div class="due-value" ng-show="task.due_in < 0">${Past Due}</div>
+      </div>
+    </div>
+  </div>
+</div>

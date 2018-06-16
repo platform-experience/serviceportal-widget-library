@@ -1,12 +1,12 @@
-# HR New Hire Orientation
+# HR Case Detail
 
 ## Description
 
-This HR Service Portal widget displays new hire orientation information as part of the onboarding process.
+At the genesis of the onboarding process, an employee is presented a list of to-dos with this HR Service Portal widget.
 
 ## Screenshot
 
-![HR New Hire Orientation](../../images/hr-new-hire-orientation.png)
+![HR Case Detail](../../images/hr-case-detail.png)
 
 ## Additional Information/Notes
 
