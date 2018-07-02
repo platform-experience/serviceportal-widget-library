@@ -1,6 +1,4 @@
 (function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
   var userID = gs.getUserID();
 
   var grUser = new GlideRecord('sys_user');
@@ -46,10 +44,9 @@
         );
 
         // Get id for onBoarding Case
-
         var onboardingGr = new GlideRecord('sn_hr_core_case');
-        onboardingGr.addQuery('assignment_group', '29eb223b57410300eb7cde2edf94f93e'); // TODO Make this dybamic
-        onboardingGr.addQuery('hr_service', '64fa4c53534222003066a5f4a11c0875'); // TODO Make this dybamic
+        onboardingGr.addQuery('assignment_group', '29eb223b57410300eb7cde2edf94f93e'); // TODO Make this dynamic
+        onboardingGr.addQuery('hr_service', '64fa4c53534222003066a5f4a11c0875'); // TODO Make this dynamic
 
         onboardingGr.addQuery('subject_person', data.userSysID);
         onboardingGr.query();

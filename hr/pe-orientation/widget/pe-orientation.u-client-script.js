@@ -1,4 +1,4 @@
-function NewHireOrientationController($scope) {
+function NewHireOrientationController() {
   var c = this;
 
   c.$onInit = function() {

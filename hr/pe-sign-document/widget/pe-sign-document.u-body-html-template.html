@@ -1,6 +1,6 @@
 <div class="document-acknowledge-task" ng-class="::{'hidden-xs' : options.hide_xs}" ng-if="!data.task.finished && data.task.canSign && data.task.hr_task_type == 'sign_document'"
   ng-init="init(user.sys_id)">
-  <div id="documentFrame" class="panel panel-{{ ::options.color }} b">
+  <div id="documentFrame" class="panel panel-{{::options.color}} b">
     <div ng-show="data.isPdfTemplate == true">
       <div class="header">
         <!-- IE fixes - Hiding pop over window button -->

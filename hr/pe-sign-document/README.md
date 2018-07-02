@@ -26,7 +26,7 @@ Uses ServiceNow® [Employee Service Center](https://docs.servicenow.com/bundle/k
 
 ## Sample Data and Data Structures
 
-> See 'Configuration' above
+> None
 
 ## CSS/SASS Variables
 
