@@ -11,7 +11,6 @@ function TaskSubmitOrderGuideController($http, $q, $rootScope, $scope) {
   };
 
   function titleClicked() {
-    console.log('title clicked');
     $rootScope.wrapper.actionEnabled = true;
   }
 
@@ -56,7 +55,7 @@ function TaskSubmitOrderGuideController($http, $q, $rootScope, $scope) {
 
     $q.all(listOfPromises).then(function(value) {
       console.log('all Items added to cart! Place the other', value);
-      $http.post('/api/sn_sc/servicecatalog/cart/submit_order').then(function(response) {
+      $http.post('/api/sn_sc/servicecatalog/cart/submit_order').then(function() {
         $scope.$emit('next-task', { changeState: true });
       });
     });

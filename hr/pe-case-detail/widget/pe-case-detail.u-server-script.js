@@ -1,6 +1,4 @@
 (function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
   var sys_id = $sp.getParameter('sys_id');
   data.userSysID = gs.getUserID();
 
@@ -25,7 +23,7 @@
       data.panels = util.getFilterPanels(data.onTicketPage);
 
       var onboardingGr = new GlideRecord('sn_hr_core_task');
-      var parentQuery = onboardingGr.addQuery('parent', sys_id); // TODO Make this dybamic
+      var parentQuery = onboardingGr.addQuery('parent', sys_id); // TODO Make this dynamic
       parentQuery.addOrCondition('parent.parent', sys_id);
       parentQuery.addOrCondition('parent.parent.parent', sys_id);
       onboardingGr.addQuery('assigned_to', data.userSysID);

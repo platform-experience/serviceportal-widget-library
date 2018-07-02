@@ -7,7 +7,9 @@
   data.taskCount = 0;
 
   data.async = false; // synchronous by default
-  if (data.async && (!input || input.action != 'loadData')) {return;}
+  if (data.async && (!input || input.action != 'loadData')) {
+    return;
+  }
 
   var util = new sn_hr_sp.esc_ProfileChecker();
   data.profileDetails = util.getProfileDetails();
@@ -114,5 +116,7 @@
         }
       }
     }
-  } else {data.showWidget = false;}
+  } else {
+    data.showWidget = false;
+  }
 })();

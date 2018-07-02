@@ -6,7 +6,7 @@ function TaskCredentialController($http, $rootScope, $scope) {
   c.$onInit = function() {
     $rootScope.wrapper.actionEnabled = true;
     $rootScope.wrapper.actionLabel = 'Take Photo';
-    $rootScope.wrapper.action = c.triggerSelfieButton; //this comes from Link function
+    $rootScope.wrapper.action = c.triggerSelfieButton; // this comes from Link function
 
     if (c.data.task.state == '3') {
       $rootScope.wrapper.actionLabel = 'Next';

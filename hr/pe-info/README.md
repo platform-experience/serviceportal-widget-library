@@ -21,7 +21,7 @@ Quickly share company information and messages with this HR Service Portal widge
 
 ## Sample Data and Data Structures
 
-> See 'Configuration' above
+> None
 
 ## CSS/SASS Variables
 
