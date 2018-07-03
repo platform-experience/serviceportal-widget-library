@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-07-03 22:56:58">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Carousel Plus</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>1f88daf5db62df00abd4f9361d9619b6</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>415f53c6db0b5f00abd4f9361d9619b4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_carousel_plus_u_order</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_order" table="u_carousel_plus"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Order&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;100&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_order&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_carousel_plus&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:54:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;a8df4f4edbc75f00abd4f9361d96198e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Order&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_carousel_plus_u_order&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 21:54:13&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-322751479</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>015f53c6db0b5f00abd4f9361d9619b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16462238f7f0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Order</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e6f01b8e4dc75f001d3e8ecc5d31f8e1</update_guid>
+<update_guid_history>e6f01b8e4dc75f001d3e8ecc5d31f8e1:-322751479,0ef01b8e4fc75f004973879bce1e16b5:-322751479,601e8bca29c75f00a42be3882e465394:2040845245,ae8ea6e3a6be1b0019b1c2a9f2a3c6d4:-322751479</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_7b2fc74edbc75f00abd4f9361d9619f2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7b2fc74edbc75f00abd4f9361d9619f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus.u_carousel_plus_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_carousel_plus">632fc74edbc75f00abd4f9361d9619f0</sys_security_acl><sys_update_name>sys_security_acl_role_7b2fc74edbc75f00abd4f9361d9619f2</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:24</sys_updated_on><sys_user_role display_value="u_carousel_plus_user" name="u_carousel_plus_user">366d2a63dbbe1b00abd4f9361d96194f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1356285737</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>015f53c6db0b5f00abd4f9361d9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c63520000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>u_carousel_plus.u_carousel_plus_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>b72fc74e39c75f00f9fbdf6bd43b40f4</update_guid>
+<update_guid_history>b72fc74e39c75f00f9fbdf6bd43b40f4:1356285737</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_carousel_plus_u_background</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_background" table="u_carousel_plus"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Background&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_background&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value=""&gt;user_image&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_carousel_plus&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:54:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;2e5f4b4edbc75f00abd4f9361d9619fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Background&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_carousel_plus_u_background&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 21:54:13&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1559938922</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>055f53c6db0b5f00abd4f9361d9619b5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16462238f5f0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Background</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>a2f01b8eb1c75f0052961bfb0c91c1e0</update_guid>
+<update_guid_history>a2f01b8eb1c75f0052961bfb0c91c1e0:1559938922,42f01b8eecc75f00db48f47df15f4cb1:1559938922,001e8bca04c75f009047e2797f260458:1298711582,5a8ea2e312be1b006a39d72e601a13c3:1559938922</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_2b2f474edbc75f00abd4f9361d9619c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_carousel_plus</description><name>u_carousel_plus</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>2b2f474edbc75f00abd4f9361d9619c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_2b2f474edbc75f00abd4f9361d9619c7</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>65947941</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>055f53c6db0b5f00abd4f9361d9619b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c62e60000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>u_carousel_plus</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>672f474e94c75f008cbad0a3e3f43fc9</update_guid>
+<update_guid_history>672f474e94c75f008cbad0a3e3f43fc9:65947941</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_carousel_plus_u_url_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_url" label="URL" language="en" table="u_carousel_plus"><sys_documentation action="INSERT_OR_UPDATE"><element>u_url</element><help/><hint/><label>URL</label><language>en</language><name>u_carousel_plus</name><plural>URLs</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:54:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>56f01b8edbc75f00abd4f9361d9619cf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>URL</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_carousel_plus_u_url_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:54:14</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>707118789</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>095f53c6db0b5f00abd4f9361d9619b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164622390790000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.URL</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>aef01b8ea3c75f00f592379de41e5beb</update_guid>
+<update_guid_history>aef01b8ea3c75f00f592379de41e5beb:707118789,a20e4bca9dc75f00c50d886b039dcd84:1325831469,e17563f0e7c3db002ee4589d67f2209a:707118789</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_carousel_plus_u_caption_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_caption" label="Caption" language="en" table="u_carousel_plus"><sys_documentation action="INSERT_OR_UPDATE"><element>u_caption</element><help/><hint/><label>Caption</label><language>en</language><name>u_carousel_plus</name><plural>Captions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:54:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>56f01b8edbc75f00abd4f9361d9619d4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Caption</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_carousel_plus_u_caption_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:54:14</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1998479003</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>0d5f53c6db0b5f00abd4f9361d9619b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164622390ad0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Caption</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e6f01b8e7ec75f00f9a7d51944c774ee</update_guid>
+<update_guid_history>e6f01b8e7ec75f00f9a7d51944c774ee:-1998479003,260e4bca5fc75f002d15234ae2b72299:965313101,7787722b54be1b006f8aeade1c235b0a:-1998479003</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_fff25fcedbc75f00abd4f9361d96196e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="fff25fcedbc75f00abd4f9361d96196e" sys_domain="global" table="u_carousel_plus" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_group</element><position>0</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:31</sys_created_on><sys_id>78289f82db0b5f00abd4f9361d9619a7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_order</element><position>1</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:31</sys_created_on><sys_id>f8289f82db0b5f00abd4f9361d9619a7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_url</element><position>2</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:31</sys_created_on><sys_id>7c289f82db0b5f00abd4f9361d9619a7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_caption</element><position>3</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:32</sys_created_on><sys_id>fc289f82db0b5f00abd4f9361d9619a7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:32</sys_created_on><sys_id>70289f82db0b5f00abd4f9361d9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:32</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_youtube_id</element><position>5</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:32</sys_created_on><sys_id>f0289f82db0b5f00abd4f9361d9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_height</element><position>6</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:32</sys_created_on><sys_id>74289f82db0b5f00abd4f9361d9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>7</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:32</sys_created_on><sys_id>f4289f82db0b5f00abd4f9361d9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:32</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>8</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:32</sys_created_on><sys_id>78289f82db0b5f00abd4f9361d9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:32</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_background</element><position>9</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:32</sys_created_on><sys_id>f8289f82db0b5f00abd4f9361d9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>10</position><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:25:32</sys_created_on><sys_id>7c289f82db0b5f00abd4f9361d9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_carousel_plus" sys_domain="global" view="Default view">fff25fcedbc75f00abd4f9361d96196e</sys_ui_section><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:25:32</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_carousel_plus</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 22:03:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fff25fcedbc75f00abd4f9361d96196e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_fff25fcedbc75f00abd4f9361d96196e</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:03:05</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-1730311173</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>0d5f53c6db0b5f00abd4f9361d9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164624033af0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>f0289f821f0b5f00e1581fffe5a94fab</update_guid>
+<update_guid_history>f0289f821f0b5f00e1581fffe5a94fab:-1730311173,33f25fce86c75f00317a5e529ced9579:-1032745780,73f25fce68c75f0069334420a15ee371:-1860410650</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_carousel_plus_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_carousel_plus"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_carousel_plus&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:46:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;772fc74edbc75f00abd4f9361d9619ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_carousel_plus&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_carousel_plus_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 21:46:25&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2078118011</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>415f53c6db0b5f00abd4f9361d9619b5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c656f0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>332f0b4ed3c75f00e6130bddf54bc51d</update_guid>
+<update_guid_history>332f0b4ed3c75f00e6130bddf54bc51d:-2078118011,dbee074e7fc75f00e2a047bb8545fc02:-112014023,74de434eb2c75f00ce62d55c233db1c5:-2078118011,d70e4bcaddc75f002fed628ea5d225ea:-112014023,536d2ea30ebe1b00d7954bea94415fa7:-2078118011</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_12015b8edbc75f00abd4f9361d9619d2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.CarouselPlus&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;CarouselPlus&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CarouselPlus = Class.create();
+CarouselPlus.prototype = {
+  initialize: function() {},
+
+  getSlides: function(group) {
+    var grSlide = new GlideRecordSecure('u_carousel_plus');
+    grSlide.addActiveQuery();
+    grSlide.addQuery('u_group', group);
+    grSlide.query();
+    var slides = [];
+    while (grSlide.next()) {
+      slides.push({
+        background: grSlide.u_background.getDisplayValue(),
+        caption: grSlide.u_caption.toString(),
+        height: grSlide.u_height.toString(),
+        order: grSlide.u_order.toString(),
+        url: grSlide.u_url.toString(),
+        youTubeId: grSlide.u_youtube_id.toString()
+      });
+    }
+    return slides;
+  },
+
+  type: 'CarouselPlus'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:58:27&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;12015b8edbc75f00abd4f9361d9619d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;CarouselPlus&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_12015b8edbc75f00abd4f9361d9619d2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 22:21:55&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1696225162</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>415f53c6db0b5f00abd4f9361d9619b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164623ce6940000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table/>
+<target_name>CarouselPlus</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>ff47d382120b5f0000922d328f28a81b</update_guid>
+<update_guid_history>ff47d382120b5f0000922d328f28a81b:-1696225162,bb379382a60b5f008d9dd83253dce6fe:743896360,82c6db421c0b5f009d0c9ae5777519d6:-1696225162,74b65f42d20b5f00e0cf5b884ea0c4d0:1346622946,88f19f8ed1c75f00f09c206b6690fb36:-1696225162</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_carousel_plus_u_order_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_order" label="Order" language="en" table="u_carousel_plus"><sys_documentation action="INSERT_OR_UPDATE"><element>u_order</element><help/><hint/><label>Order</label><language>en</language><name>u_carousel_plus</name><plural>Orders</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:54:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>52f01b8edbc75f00abd4f9361d9619ce</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Order</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_carousel_plus_u_order_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:54:14</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>2132031717</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>455f53c6db0b5f00abd4f9361d9619b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1646223905f0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Order</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>2af01b8e1dc75f0058d2d60ae83753ea</update_guid>
+<update_guid_history>2af01b8e1dc75f0058d2d60ae83753ea:2132031717,6e0e4bcacfc75f00d61e11bf7a42578e:-576316467,b68ea6e33cbe1b00ef96cca7ee92f9e6:2132031717</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_carousel_plus_u_background_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_background" label="Background" language="en" table="u_carousel_plus"><sys_documentation action="INSERT_OR_UPDATE"><element>u_background</element><help/><hint/><label>Background</label><language>en</language><name>u_carousel_plus</name><plural>Backgrounds</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:54:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5af01b8edbc75f00abd4f9361d9619d5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Background</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_carousel_plus_u_background_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:54:14</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>564743421</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>495f53c6db0b5f00abd4f9361d9619b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1646223903e0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Background</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>a2f01b8eb5c75f0041484e9b9ea1bde9</update_guid>
+<update_guid_history>a2f01b8eb5c75f0041484e9b9ea1bde9:564743421,ea0e4bca20c75f0066f29c24d2d01587:-630925211,228ea6e35bbe1b0014d638bcb9d159e4:564743421</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_fb2fc74edbc75f00abd4f9361d9619f7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:25</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>fb2fc74edbc75f00abd4f9361d9619f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus.u_carousel_plus_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_carousel_plus">f32fc74edbc75f00abd4f9361d9619f5</sys_security_acl><sys_update_name>sys_security_acl_role_fb2fc74edbc75f00abd4f9361d9619f7</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:25</sys_updated_on><sys_user_role display_value="u_carousel_plus_user" name="u_carousel_plus_user">366d2a63dbbe1b00abd4f9361d96194f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1459794302</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>495f53c6db0b5f00abd4f9361d9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c63950000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>u_carousel_plus.u_carousel_plus_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>3b2fc74e61c75f00f345b52bd84392f9</update_guid>
+<update_guid_history>3b2fc74e61c75f00f345b52bd84392f9:1459794302</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_carousel_plus_u_height</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_height" table="u_carousel_plus"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Video Height&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_height&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_carousel_plus&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:54:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;5b705f4edbc75f00abd4f9361d961975&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Video Height&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_carousel_plus_u_height&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 22:28:37&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>519247397</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>4d5f53c6db0b5f00abd4f9361d9619b5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164624308ff0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Video Height</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>c6d857c20c0b5f00c4a05793d423c992</update_guid>
+<update_guid_history>c6d857c20c0b5f00c4a05793d423c992:519247397,52f01b8e9bc75f00e022fb6e284186c8:2005384175</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_f32fc74edbc75f00abd4f9361d9619f5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_carousel_plus</description><name>u_carousel_plus</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>f32fc74edbc75f00abd4f9361d9619f5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_f32fc74edbc75f00abd4f9361d9619f5</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1290175509</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>4d5f53c6db0b5f00abd4f9361d9619b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c63740000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>u_carousel_plus</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>bf2fc74e66c75f00ef1abc6ee28374f6</update_guid>
+<update_guid_history>bf2fc74e66c75f00ef1abc6ee28374f6:1290175509</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_carousel_plus_u_height_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_height" label="Video Height" language="en" table="u_carousel_plus"><sys_documentation action="INSERT_OR_UPDATE"><element>u_height</element><help/><hint/><label>Video Height</label><language>en</language><name>u_carousel_plus</name><plural>Video Heights</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:54:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>52f01b8edbc75f00abd4f9361d9619d3</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Video Height</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_carousel_plus_u_height_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 22:28:37</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1645956255</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>815f53c6db0b5f00abd4f9361d9619b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1646243091b0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Video Height</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>0ed857c2ad0b5f00e4bb20624b7fda93</update_guid>
+<update_guid_history>0ed857c2ad0b5f00e4bb20624b7fda93:-1645956255,2ef01b8ea9c75f005899958be00340ef:2057989003</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_carousel_plus_u_youtube_id</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_youtube_id" table="u_carousel_plus"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;YouTube Id&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_youtube_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_carousel_plus&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:54:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;2830938edbc75f00abd4f9361d961946&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;YouTube Id&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_carousel_plus_u_youtube_id&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 21:54:13&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>257762477</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>855f53c6db0b5f00abd4f9361d9619b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16462238fc10000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.YouTube Id</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>62f01b8e85c75f00f4d9dd0f8b836de4</update_guid>
+<update_guid_history>62f01b8e85c75f00f4d9dd0f8b836de4:257762477,12f01b8efac75f007c261253e4a457bf:257762477</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_a72fc74edbc75f00abd4f9361d9619ed</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>a72fc74edbc75f00abd4f9361d9619ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus.u_carousel_plus_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_carousel_plus">2b2f474edbc75f00abd4f9361d9619c7</sys_security_acl><sys_update_name>sys_security_acl_role_a72fc74edbc75f00abd4f9361d9619ed</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:24</sys_updated_on><sys_user_role display_value="u_carousel_plus_user" name="u_carousel_plus_user">366d2a63dbbe1b00abd4f9361d96194f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-747933995</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>855f53c6db0b5f00abd4f9361d9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c63090000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>u_carousel_plus.u_carousel_plus_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>272fc74eb7c75f0064857c408578f4ef</update_guid>
+<update_guid_history>272fc74eb7c75f0064857c408578f4ef:-747933995</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_carousel_plus_u_group</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_group" table="u_carousel_plus"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Group&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_group&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_carousel_plus&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:54:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;58b0938edbc75f00abd4f9361d96194a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Group&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_carousel_plus_u_group&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 21:54:14&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>93756477</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>895f53c6db0b5f00abd4f9361d9619b5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1646223902c0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Group</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>22f01b8e92c75f008ef46f3f7a0343e8</update_guid>
+<update_guid_history>22f01b8e92c75f008ef46f3f7a0343e8:93756477,5af01b8e10c75f00c9d7c852565a60cc:93756477,5c1e8bca3fc75f004b2407836557e96f:1756765681,73092284390f5b000414475a57dcb6e7:93756477,8ff82e44ad0f5b00ed890c65b38d330c:1351031025,d3c6aa04d10f5b001ee40eeaf7467363:93756477</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_772fc74edbc75f00abd4f9361d9619fa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_carousel_plus</description><name>u_carousel_plus</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:25</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>772fc74edbc75f00abd4f9361d9619fa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_772fc74edbc75f00abd4f9361d9619fa</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:25</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-409157885</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>895f53c6db0b5f00abd4f9361d9619b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c63b70000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>u_carousel_plus</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>332fc74ecac75f003c3e87066cb014fc</update_guid>
+<update_guid_history>332fc74ecac75f003c3e87066cb014fc:-409157885</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_680f874edbc75f00abd4f9361d96199b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Carousel Plus</label><live_feed_enabled>false</live_feed_enabled><name>u_carousel_plus</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>680f874edbc75f00abd4f9361d96199b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Carousel Plus</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_680f874edbc75f00abd4f9361d96199b</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:24</sys_updated_on><update_access>false</update_access><user_role display_value="u_carousel_plus_user" name="u_carousel_plus_user">366d2a63dbbe1b00abd4f9361d96194f</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>-821408927</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>8d5f53c6db0b5f00abd4f9361d9619b4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c65aa0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>3b2f0b4e3fc75f00ac8b7de9ab9dd11f</update_guid>
+<update_guid_history>3b2f0b4e3fc75f00ac8b7de9ab9dd11f:-821408927</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_carousel_plus__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Carousel Plus" language="en" table="u_carousel_plus"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Carousel Plus</label><language>en</language><name>u_carousel_plus</name><plural>Carousel Plus</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:25</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3f2f0b4edbc75f00abd4f9361d961905</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Carousel Plus</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_carousel_plus__en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:25</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-914104454</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>8d5f53c6db0b5f00abd4f9361d9619b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c658c0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>772f0b4e3cc75f00735e64216dc5a21e</update_guid>
+<update_guid_history>772f0b4e3cc75f00735e64216dc5a21e:-914104454,83eec34e4cc75f00798a0b240af1ecaf:-1806719030,f8de434ec0c75f0017be28f4272294c6:-914104454,b10e4bca61c75f00f0920a8bc0b4c941:-1806719030,176d2ea392be1b0038253ba0eedac5a8:-914104454</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_carousel_plus_u_url</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_url" table="u_carousel_plus"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;URL&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_url&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;255&lt;/max_length&gt;&lt;name&gt;u_carousel_plus&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:54:13&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;3dff8b4edbc75f00abd4f9361d961972&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;URL&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_carousel_plus_u_url&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 21:54:13&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-691444335</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>c15f53c6db0b5f00abd4f9361d9619b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16462238fa00000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.URL</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>2ef01b8e70c75f007a784f6b040843e2</update_guid>
+<update_guid_history>2ef01b8e70c75f007a784f6b040843e2:-691444335,c6f01b8e65c75f00c887b35b1847b2ba:-691444335,ec1e8bcaa8c75f007733e0e2b479db9f:-1655593379,3c95a3f0fec3db00babcfa2fd67099cf:-691444335,ad7563f0adc3db00f86e4ba6a5e8c098:651326988</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_7f2fc74edbc75f00abd4f9361d9619fc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:25</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>7f2fc74edbc75f00abd4f9361d9619fc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus.u_carousel_plus_user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="u_carousel_plus">772fc74edbc75f00abd4f9361d9619fa</sys_security_acl><sys_update_name>sys_security_acl_role_7f2fc74edbc75f00abd4f9361d9619fc</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:25</sys_updated_on><sys_user_role display_value="u_carousel_plus_user" name="u_carousel_plus_user">366d2a63dbbe1b00abd4f9361d96194f</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1240844861</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>c15f53c6db0b5f00abd4f9361d9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c63d90000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>u_carousel_plus.u_carousel_plus_user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>bb2fc74e96c75f00c287a2c776da36fe</update_guid>
+<update_guid_history>bb2fc74e96c75f00c287a2c776da36fe:1240844861</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_c7f193cedbc75f00abd4f9361d961953</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function CarouselPlusController($sce) {
+  var c = this;
+  c.secureUrl = secureUrl;
+  c.stopVideo = stopVideo;
+
+  function secureUrl(id) {
+    var videoUrl = $sce.trustAsResourceUrl('https://www.youtube.com/embed/' + id);
+    return videoUrl;
+  }
+
+  function stopVideo() {
+    var el = angular.element('.youtube');
+    c.data.slides.map(function(slide, index) {
+      if (el[index]) {
+        el[index].src = el[index].src;
+      }
+    });
+  }
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.carousel-plus {
+  .fa-stack-2x {
+    font-size: 3.5rem;
+  }
+
+  .carousel-control {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-slide {
+    margin: auto;
+    width: 100%;
+  }
+
+  .carousel-indicators {
+    height: 25px;
+    bottom: -0.5rem;
+    z-index: 0;
+    li {
+      height: 12px;
+      margin-left: 10px;
+      width: 12px;
+    }
+    .active {
+      margin: 1px 1px 1px 10px;
+    }
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-carousel-plus&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Carousel Plus&lt;/name&gt;&lt;option_schema&gt;[{"name":"group","section":"other","label":"Group","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var slides = new CarouselPlus();
+  data.slides = slides.getSlides(options.group);
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 22:00:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;c7f193cedbc75f00abd4f9361d961953&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Carousel Plus&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_c7f193cedbc75f00abd4f9361d961953&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 22:55:16&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="carousel-plus"&gt;
+  &lt;div id="cp" class="carousel slide" data-ride="carousel" data-interval="false"&gt;
+    &lt;div class="carousel-inner" role="listbox"&gt;
+      &lt;div class="item" ng-repeat="slide in data.slides | orderBy: 'order' track by $index" ng-class="{'active': $index === 0}"&gt;
+        &lt;div ng-if="!slide.youTubeId" class="container"&gt;
+          &lt;a ng-href="{{slide.url.length &gt; 0 ? slide.url : ''}}" target="_blank"&gt;
+            &lt;img ng-src="{{::slide.background}}" class="img-slide" role="presentation"&gt;
+            &lt;div ng-if="::slide.caption" class="carousel-caption"&gt;
+              &lt;p&gt;{{::slide.caption}}&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div ng-if="::slide.youTubeId" class="container" style="height: {{::slide.height}}"&gt;
+          &lt;iframe class="youtube" width="100%" height="{{::slide.height}}" ng-src="{{c.secureUrl(slide.youTubeId)}}" frameborder="0"
+            allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;a ng-if="data.slides.length &gt; 1" class="left carousel-control" data-target="#cp" role="button" data-slide="prev" ng-click="c.stopVideo()"&gt;
+        &lt;span class="glyphicon glyphicon-chevron-left" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a ng-if="data.slides.length &gt; 1" class="right carousel-control" data-target="#cp" role="button" data-slide="next" ng-click="c.stopVideo()"&gt;
+        &lt;span class="glyphicon glyphicon-chevron-right" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;ol ng-if="data.slides.length &gt; 1" class="carousel-indicators"&gt;
+        &lt;li data-target="#cp" data-slide-to="{{$index}}" ng-repeat="item in data.slides track by $index" ng-class="{'active': $index === 0}"
+          ng-click="c.stopVideo()"&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>131550396</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>c55f53c6db0b5f00abd4f9361d9619b4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164625b6d9e0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table/>
+<target_name>PE Carousel Plus</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>18fe1f86d40b5f0048e7178b97a9d33e</update_guid>
+<update_guid_history>18fe1f86d40b5f0048e7178b97a9d33e:131550396,7ace9f86810b5f00fa62b53886af4da3:2009296382,159ed786910b5f00b54d324f7e72133e:131550396,61add386a90b5f008181c4dbacd454c8:-456920023,121d5f46c30b5f00bc84eae564c0b3e3:295491177,e0ab5346c00b5f0005d3cf23bb8715e0:-143582911,ed4b9706c70b5f0082494babc04e48f4:2031260581,1bfa9b06060b5f00a66375a37968148d:44886370,fbca1b067c0b5f00a40e0224e9ceb6d9:-736285260,63bad706120b5f003b8233ec9a49b2f3:-162503628,ecbad7064b0b5f00ef496f533e72b5ea:-1341268812,bc0a5fc2690b5f002ae661a51f458727:-736285260,83791fc2110b5f00a3e756bd511e38c0:-340215613,11699bc2320b5f006d996568512c88a1:1909055235,eb175382040b5f00d3ec4a45eb2d6d8d:-340215613,ef071382860b5f009c86022aae159abf:1137374567,67469742c60b5f00fc4365304c366c19:-340215613,faf557421e0b5f009ed74dda0f4283ea:642508998,13151342550b5f0059c033c657f85e33:-1627934257,1c845b02b80b5f00aaa487e91054d0b3:-1071172817,2b541b02690b5f00f17c862aceb84a02:-109395028,9182d7ce8cc75f00f2b04593074eda8e:114586274,0c5217ce71c75f000f7b6437462df675:-773972210</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_carousel_plus_u_caption</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_caption" table="u_carousel_plus"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Caption&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_caption&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;255&lt;/max_length&gt;&lt;name&gt;u_carousel_plus&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 21:54:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;a8509f4edbc75f00abd4f9361d961908&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Caption&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_carousel_plus_u_caption&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-03 21:54:14&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-410936481</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>c55f53c6db0b5f00abd4f9361d9619b5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16462238fe80000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Caption</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>a6f01b8e95c75f0099ccd6b59c7feae5</update_guid>
+<update_guid_history>a6f01b8e95c75f0099ccd6b59c7feae5:-410936481,1af01b8e64c75f004ab13f7521324dc3:-410936481,cc1e8bca78c75f0054d7c291ea439c63:1558627371,a70922846a0f5b000819cc224a8d5ee0:-410936481,f787722b3dbe1b004c3b7758794fbe02:900130593</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_632fc74edbc75f00abd4f9361d9619f0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on u_carousel_plus</description><name>u_carousel_plus</name><operation display_value="read">read</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:24</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>632fc74edbc75f00abd4f9361d9619f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_632fc74edbc75f00abd4f9361d9619f0</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:24</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1737356839</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>c55f53c6db0b5f00abd4f9361d9619b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c63300000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>u_carousel_plus</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>2f2fc74ec8c75f0020aaa609588601f1</update_guid>
+<update_guid_history>2f2fc74ec8c75f0020aaa609588601f1:-1737356839</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_carousel_plus_u_youtube_id_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_youtube_id" label="YouTube Id" language="en" table="u_carousel_plus"><sys_documentation action="INSERT_OR_UPDATE"><element>u_youtube_id</element><help/><hint/><label>YouTube Id</label><language>en</language><name>u_carousel_plus</name><plural>YouTube Ids</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:54:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5af01b8edbc75f00abd4f9361d9619d0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>YouTube Id</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_carousel_plus_u_youtube_id_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:54:14</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-103410551</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>c95f53c6db0b5f00abd4f9361d9619b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1646223908d0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.YouTube Id</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>e2f01b8eafc75f00e6740248721a7ced</update_guid>
+<update_guid_history>e2f01b8eafc75f00e6740248721a7ced:-103410551</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_carousel_plus_u_group_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_group" label="Group" language="en" table="u_carousel_plus"><sys_documentation action="INSERT_OR_UPDATE"><element>u_group</element><help/><hint/><label>Group</label><language>en</language><name>u_carousel_plus</name><plural>Groups</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:54:14</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5ef01b8edbc75f00abd4f9361d9619d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Group</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_carousel_plus_u_group_en</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:54:14</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1245315333</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>cd5f53c6db0b5f00abd4f9361d9619b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164622390d60000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table>u_carousel_plus</table>
+<target_name>Carousel Plus.Group</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>22f01b8e0ac75f005dea80b7eb9434f1</update_guid>
+<update_guid_history>22f01b8e0ac75f005dea80b7eb9434f1:1245315333,ea0e4bca7ec75f003c7654bdcfa5de9e:345223533,93c6aa042f0f5b00810e6598d42f606b:1245315333</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_ff2f0b4edbc75f00abd4f9361d96191a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_carousel_plus</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-07-03 21:46:25</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>ff2f0b4edbc75f00abd4f9361d96191a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_carousel_plus</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_ff2f0b4edbc75f00abd4f9361d96191a</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-07-03 21:46:25</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>706422514</payload_hash>
+<remote_update_set display_value="PE Carousel Plus">415f53c6db0b5f00abd4f9361d9619b4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-07-03 22:56:57</sys_created_on>
+<sys_id>cd5f53c6db0b5f00abd4f9361d9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>164621c654f0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-07-03 22:56:57</sys_updated_on>
+<table/>
+<target_name>u_carousel_plus</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>fb2f0b4e2dc75f00f84c5173c1ec451b</update_guid>
+<update_guid_history>fb2f0b4e2dc75f00f84c5173c1ec451b:706422514</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
