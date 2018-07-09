@@ -1,6 +1,7 @@
 # Multiform
 
 ## Description
+
 Multiform is an advanced Service Portal form widget that separates each section of the form onto sequential, numbered screens for improved user experience. It also offers a number of other benefits over the out-of-box form widget, such as:
 
 - **Screen-based form completion**
@@ -53,7 +54,8 @@ Multiform is an advanced Service Portal form widget that separates each section 
 
 ![](../images/mf-feature-highlight.png)
 
-## Installaton
+## Installation
+
 1. Open Studio on your ServiceNow instance.
 2. Click the **Import From Source Control** button.
 3. As the value of the URL field use the following:
@@ -61,6 +63,7 @@ Multiform is an advanced Service Portal form widget that separates each section 
 4. Press the **Import** button
 
 ## Configuration
+
 The application includes a test page which can be accessed from the `/sp?id=x_mf_test` path on your instance. This will give you an example of some of the features and how one might configure them.
 
 Whenever you drag the Multiform widget onto a page using Service Portal Designer, an instance of the widget is created. You can configure it by holdling CTRL and right-clicking on, selecting "Instance Options", and following the instructions displayed to open the instance in the platform view.
@@ -68,6 +71,7 @@ Whenever you drag the Multiform widget onto a page using Service Portal Designer
 From the platform view, you have full control over the way your form is configured.
 
 ### Multiform Instance
+
 The Multiform Instance record is the core record, which controls how the actual main form operates and displays.
 
 | Field              | Description                                                                                                                                               | Mandatory | Default      |
@@ -82,6 +86,7 @@ The Multiform Instance record is the core record, which controls how the actual 
 | CSS                | Additional CSS that will be loaded for this instance of the widget                                                                                        | no        |              |
 
 ### Multiform Child
+
 There are two types of Multiform Children. Both extend from the Multiform Child table, and thus have some common options:
 
 | Field        | Description                                                                   | Mandatory | Default     |
@@ -120,6 +125,7 @@ There are also some options unique to each type of child.
 | Widget options | Options that will be supplied to the widget when it loads | no        |         |
 
 ## CSS/SASS Variables
+
 There are a number of SASS variables that can be declared in your portal's theme, CSS, or your page's CSS to override the default styling of the widget and make it fit in better with your portal.
 
 | Variable | Description |
@@ -149,20 +155,23 @@ This API can be used for widgets embedded as a "Multiform Child Widget" or any o
 
 To use it, add `PiMultiForm` to the "Widget Dependencies" related list of the widget you're building.
 
-Then, inject the `PiMfManager` depencency into your client script function as below:
+Then, inject the `PiMfManager` dependency into your client script function as below:
 
 ```
 function(PiMfManager) {
 ...
 ```
+
 ### Methods
 
 #### `addOnScreenChangeFunc(callback)`
+
 Add a function to be executed when the screen changes.
 
 Returns: undefined
 
 #### `addOnValueChangeFunc(callback)`
+
 Add a function to be executed when a value in a form changes.
 
 The function will be supplied with three arguments:
@@ -176,31 +185,37 @@ The function will be supplied with three arguments:
 Returns: undefined
 
 #### `nextScreen()`
+
 Move to the next screen
 
 Returns: undefined
 
 #### `prevScreen()`
+
 Move to the previous screen
 
 Returns: undefined
 
 #### `goToScreen()`
+
 Go to a specific screen
 
 Returns: undefined
 
 #### `getScreenCount()`
+
 Get the number of screens
 
 Returns: Integer
 
 #### `isFirst()`
+
 Check if we're on the first screen
 
 Returns: boolean
 
 #### `isLast()`
+
 Check if we're on the last screen
 
 Returns: boolean
