@@ -2,17 +2,17 @@
 
 ## Description
 
-An accordion-style list of Knowledge Base articles from a selected category. Choose an available KB category to display those articles, or define your own category.
+An accordion-style list of Knowledge Base articles from a selected category. Choose an available KB category to display those articles or define your own category.
 
 ## Screenshots
 
 ### Collapsed
 
-![](../images/pe-kb-list-collapsed.png)
+![KB List Collapsed](../images/pe-kb-list-collapsed.png)
 
 ### Expanded
 
-![](../images/pe-kb-list-expanded.png)
+![KB List Expanded](../images/pe-kb-list-expanded.png)
 
 ## Additional Information/Notes
 
@@ -20,9 +20,11 @@ An accordion-style list of Knowledge Base articles from a selected category. Cho
 
 ## Installation
 
-Download and install update set **[pe-kb-list.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-kb-list/pe-kb-list.u-update-set.xml)** <br/><br/>
-After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+Download and install update set **[pe-kb-list.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-kb-list/pe-kb-list.u-update-set.xml)**
+
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
+
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
@@ -46,7 +48,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## API Dependencies
 
-<i>Dependencies are included and configured as part of the provided Update Set.</i>
+*Dependencies are included and configured as part of the provided Update Set.*
 
 > None
 
