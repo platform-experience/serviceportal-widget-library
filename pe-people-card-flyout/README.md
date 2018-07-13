@@ -20,9 +20,11 @@ This can be used to quickly craft a people card flyout widget with options.
 
 ## Installation
 
-Download and install update set **[pe-people-card-flyout.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-people-card-flyout/pe-people-card-flyout.u-update-set.xml)** <br/><br/>
-After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+Download and install update set **[pe-people-card-flyout.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-people-card-flyout/pe-people-card-flyout.u-update-set.xml)**
+
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
+
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
@@ -30,7 +32,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 | Option | Description | Default Value |
 | :--- | :--- | :--- |
-| `Department` | This is the sys_id of the department. | 0886 |
+| `Department` | This is the department id. | 0886 |
 | `Title` | This is for changing the title in the panel header. | People at Risk |
 | `Number 1` | This is for displaying the first integer in the panel body. | 1631 |
 | `Number 3` | This is for displaying the third integer in the panel body. | 21 |
@@ -50,7 +52,8 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## API Dependencies
 
-<i>Dependencies are included and configured as part of the provided Update Set.</i>
+*Dependencies are included and configured as part of the provided Update Set.*
+
 > None
 
 ## CSS/SASS Variables

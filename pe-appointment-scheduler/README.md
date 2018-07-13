@@ -14,7 +14,7 @@ This widget can be used to provide to the user a stylish way to arrange an appoi
 ## Installation
 Download and install update set **[pe-appointment-scheduler.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-appointment-scheduler/pe-appointment-scheduler.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 ---
 ## Configuration
 Language variants can be created through the section System UI -> UI Messages and displayed adding in the HTML body a statement with the syntax:
