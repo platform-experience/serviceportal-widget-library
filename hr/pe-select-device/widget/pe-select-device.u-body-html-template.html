@@ -1,0 +1,13 @@
+<div class="sc-categories">
+  <div class="sc-category" ng-repeat="cat in c.data.categories">
+    <h4> Select a {{cat.title}}</h4>
+    <div class="sc-catalog-items">
+      <div class="sc-catalog-item" ng-repeat="item in c.data.categoryObj[cat.sys_id]" ng-click="c.selectItem(cat, item)" ng-class="{'selected' : cat.selectedItem == item.sys_id}">
+        <div class="sc-catalog-item-photo">
+          <img ng-src="{{item.picture}}" alt="">
+        </div>
+        <div class="sc-catalog-item-name">{{item.name}}</div>
+      </div>
+    </div>
+  </div>
+</div>

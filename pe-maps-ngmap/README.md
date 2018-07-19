@@ -6,7 +6,7 @@ This widget shows us how to use Google Maps through the library Ng-Map
 
 ## Screenshots
 ![](../images/pe-maps-ngmap.gif)
-<br/>
+
 ## Additional Information/Notes
 > None
 ---
@@ -14,24 +14,20 @@ This widget shows us how to use Google Maps through the library Ng-Map
 ---
 Download and install update set **[pe-maps-ngmap.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-maps-ngmap/pe-maps-ngmap.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
 ---
-Widget Option Schema parameters:<br/>
+### Widget Option Schema
 
-**"Origin"** Origin or location to search on Google Maps.<br/>
-
-**"Destination"** Destination if Google Maps provides the itinerary.<br/>
-
-**"Zoom"** Zoom level. `Default: 14`<br/>
-
-**"Transit mode"** Transit mode (Walking, Bicycling, Driving, Transit) if Google Maps provides the itinerary.
-`Default: Walking`<br/>
-
-**"Header Visibility"** This parameter is used to override the visibility behaviour of the header.
- `Default: True`<br/>
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `Origin` | Origin or location to search on Google Maps. |  |
+| `Destination` | Destination if Google Maps provides the itinerary. |  |
+| `Zoom` | Zoom level. | 14 |
+| `Transit mode` | Transit mode (Walking, Bicycling, Driving, Transit) if Google Maps provides the itinerary. | Walking |
+| `Header Visibility` | This parameter is used to override the visibility behaviour of the header. | True |
 
 ---
 ## Platform Dependencies

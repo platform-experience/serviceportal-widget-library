@@ -9,8 +9,6 @@ There is no need to locally save any pictures, because the reading is managed th
 ![alt text](../images/pe-barcode-reader-live-01.png "Barcode Reader - After scanning code") <br/><br/>
 ![alt text](../images/pe-barcode-reader-live-02.png "Barcode Reader - After scanning code") <br/><br/>
 ![alt text](../images/pe-barcode-reader-live-03.gif "Barcode Reader - Demo video") <br/><br/>
-<br/>
-<br/>
 
 ## Additional Information/Notes
 > None
@@ -18,12 +16,15 @@ There is no need to locally save any pictures, because the reading is managed th
 ## Installation
 Download and install update set **[pe-barcode-reader-live.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-barcode-reader-live/pe-barcode-reader-live.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
-Language variants can be created through the section System UI -> UI Messages, and displayed adding in the HTML body a statement with the syntax:<br/>
-* ${<i>key value specified in the Message record</i>}.
+Language variants can be created through the section System UI -> UI Messages and displayed adding in the HTML body a statement with the syntax:
+
+```html
+${<i>key value specified in the Message record</i>}
+```
 
 Widget Option Schema parameters:
 

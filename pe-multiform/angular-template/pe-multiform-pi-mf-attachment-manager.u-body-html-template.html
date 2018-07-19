@@ -1,0 +1,7 @@
+<ul>
+  <li class="attached-file" ng-repeat="attachment in attachments">
+    <a ng-href="{{getAttachmentURL(attachment)}}" target="_blank">
+      <span class="fa {{getIcon(attachment.content_type, attachment.ext)}}"></span>
+      {{attachment.file_name}}</a>
+  </li>
+</ul>

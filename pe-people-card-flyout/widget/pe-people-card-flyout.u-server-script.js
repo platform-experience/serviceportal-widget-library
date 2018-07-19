@@ -1,9 +1,10 @@
 (function() {
+  activate();
 
-  (function activate() {
+  function activate() {
     getDepartmentPeople();
     setServerOptions();
-  })();
+  }
 
   function setServerOptions() {
     var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
@@ -23,14 +24,15 @@
 
   function getDepartmentPeople() {
     var userGr = GlideRecord('sys_user');
-    userGr.addQuery('department', options.department);
+    userGr.addQuery('department.id', options.department);
     userGr.orderBy('sys_created_on');
     userGr.query();
     data.users = [];
+    var fields = 'department, first_name, last_name, title, photo';
     while (userGr.next()) {
       obj = {};
       obj.timeAgo = getRandomNumberRange(1, 59);
-      $sp.getRecordElements(obj, userGr, 'department, first_name, last_name, title, photo');
+      $sp.getRecordElements(obj, userGr, fields);
       data.users.push(obj);
     }
   }

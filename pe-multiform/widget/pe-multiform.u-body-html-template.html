@@ -1,0 +1,133 @@
+<div class="pi-multiform" pi-mf-drag-drop-upload>
+
+  <div class="pimf-drag-drop-overlay">
+    <div class="pimf-drag-drop-mask"></div>
+    <div>
+      <i class="fa fa-upload" aria-hidden="true"></i><br/>
+      Upload
+    </div>
+  </div>
+
+  <!-- Loading spinner -->
+  <div class="pimf-loading" ng-if="c.loading">
+    <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#000">
+      <g fill="none" fill-rule="evenodd" stroke-width="2">
+        <circle cx="22" cy="22" r="1">
+          <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="22" cy="22" r="1">
+          <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Form loading Errors -->
+  <div class="pimf-error alert alert-danger" ng-if="::c.data.errorMessages.length > 0">
+    <strong>${There were errors loading this page}</strong>
+    <ul>
+      <li ng-repeat="error in ::c.data.errorMessages">{{::error}}</li>
+    </ul>
+  </div>
+
+  <!-- Content -->
+  <div ng-if="c.data.errorMessages.length === 0" class="pimf-content" ng-show="!c.loading">
+
+    <div class="pi-mf-head">
+
+      <div class="pi-mf-title">
+        <h1>{{c.getCurrentScreenTitle()}}</h1>
+      </div>
+
+      <div class="pi-mf-attachments">
+        <div class="pi-mfa-container">
+          <div class="pi-mfa-label">Attachments</div>
+          <pi-mf-attachment-manager table="::c.data.form.table"
+                                    sys-id="::c.data.form._attachmentGUID"
+                                    omit-edit="false"></pi-mf-attachment-manager>
+          <button class="pi-mfa-add" pi-mf-button-upload>
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Indicators -->
+      <div class="pi-mf-indicators">
+        <div ng-repeat="i in makeArray(c.getScreenCount()) track by $index"
+             ng-class="{'pi-mfi-active': c.getCurrentScreen() === $index}"
+             ng-click="c.goToScreen($index)">{{$index + 1}}</div>
+      </div>
+
+    </div>
+
+    <div class="pi-mf-mainbody">
+
+      <!-- Top children -->
+      <div class="pi-mf-b-top">
+        <div ng-repeat="child in c.childrenToShow.top"
+             ng-style="{flex: child.flexGrow + ' ' + child.flexShrink + ' ' + child.flexBasis}"
+             ng-include="'pi-mf-child-item'">
+        </div>
+      </div>
+
+      <div class="pi-mf-flexrow">
+
+        <!-- Left children -->
+        <div ng-repeat="child in c.childrenToShow.left"
+             ng-style="{flex: child.flexGrow + ' ' + child.flexShrink + ' ' + child.flexBasis}"
+             ng-include="'pi-mf-child-item'">
+        </div>
+
+
+        <!-- Main Form -->
+        <div class="pi-mf-mainform container-fluid">
+          <sp-model form-model="::c.data.form"
+                    mandatory="true"
+                    template-url="pi-multiform"
+                    ng-if="::c.data.form"></sp-model>
+        </div>
+
+        <!-- Right children -->
+        <div ng-repeat="child in c.childrenToShow.right"
+             ng-style="{flex: child.flexGrow + ' ' + child.flexShrink + ' ' + child.flexBasis}"
+             ng-include="'pi-mf-child-item'">
+        </div>
+
+      </div>
+
+
+      <!-- Bottom children -->
+      <div class="pi-mf-b-bottom">
+        <div ng-repeat="child in c.childrenToShow.bottom"
+             ng-style="{flex: child.flexGrow + ' ' + child.flexShrink + ' ' + child.flexBasis}"
+             ng-include="'pi-mf-child-item'">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Actions -->
+    <div class="pi-mf-actions">
+
+      <!-- Left side (secondary) -->
+      <div class="pi-mfa-secondary">
+        <button ng-click="c.previous()" ng-if="!c.isFirst()">
+          <i class="fa fa-angle-left" aria-hidden="true"></i> ${Previous}
+        </button>
+      </div>
+
+      <!-- Right side (primary) -->
+      <div class="pi-mfa-primary">
+        <button ng-click="c.submit()" ng-if="c.isLast()">{{::c.getMasterPrimaryAction().name}}</button>
+        <button ng-click="c.next()" ng-if="!c.isLast()">
+          ${Next} <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<now-message key="Please complete all mandatory fields before submission" value="${Please complete all mandatory fields before submission}"></now-message>
+<now-message key="This field must be completed" value="This field must be completed"></now-message>

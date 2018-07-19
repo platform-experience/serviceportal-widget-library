@@ -1,0 +1,411 @@
+/** Color Declarations **/
+
+$pi-sn2018-green-main: rgb(129, 181, 161); // Acapulco
+$pi-sn2018-green-fade: rgb(176, 225, 206); // Cruise
+$pi-sn2018-green-bright: rgb(100, 221, 172); // Aquamarine
+$pi-mf-dark-green: rgb(36, 53, 56);
+
+/** Overrideable Variables **/
+
+$pi-mf-header-color: $pi-mf-dark-green !default;
+
+$pi-mf-actions-bg: $pi-sn2018-green-fade !default;
+$pi-mf-actions-button: $pi-mf-dark-green !default;
+$pi-mf-actions-button-color: white !default;
+
+$pi-mf-highlight-bg: #f4f4f4; !default;
+$pi-mf-inner-form-bg: #fcfcfc !default;
+$pi-mf-border-radius: 5px !default;
+
+$pi-mf-indicator-bg: $pi-sn2018-green-fade !default;
+$pi-mf-indicator-bg-active: $pi-mf-dark-green !default;
+
+$pi-mf-indicator-color: $pi-mf-dark-green !default;
+$pi-mf-indicator-color-active: white !default;
+
+$pi-mf-formgroup-border-color: #ccc !default;
+
+$pi-mf-attachment-pill-bg: $pi-sn2018-green-fade !default;
+$pi-mf-attachment-pill-color: $pi-mf-dark-green !default;
+
+$pi-mf-attachment-add-bg: white !default;
+$pi-mf-attachment-add-color: $pi-mf-dark-green !default;
+
+/** SCSS Styles **/
+
+// Drag-drop styles
+
+.pimf-drag-drop-overlay {
+  display: none;
+}
+
+.is-dragover .pimf-drag-drop-overlay {
+  display: flex;
+}
+
+.pimf-drag-drop-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.5) 80%);
+  border-radius: $pi-mf-border-radius;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: #ccc;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 10px dashed #ccc;
+}
+
+.pimf-drag-drop-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 21;
+  cursor: default;
+}
+
+
+// Child View Styles
+
+// Error styles
+
+.pimf-error {
+  margin-bottom: 0;
+}
+
+// Main styles
+.pi-multiform {
+  margin: 20px 0;
+  position: relative;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: $pi-mf-border-radius;
+}
+
+
+// Loading spinner
+.pimf-loading {
+  height: 100%;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  svg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+// Header elements
+.pi-mfc-head {
+  flex: 1 0 100%;
+  font-size: 30px;
+  padding-left: 10px;
+  display: flex;
+  margin: 10px 0;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
+  .pi-mfc-title {
+    flex: 1 0 auto;
+    margin-right: 10px;
+    color: $pi-mf-dark-green;
+  }
+}
+
+.pi-mf-head {
+  display: flex;
+  justify-content: right;
+  margin: 10px;
+
+  .pi-mf-title {
+    flex: 1 0 auto;
+    margin-right: 10px;
+    color: $pi-mf-dark-green;
+
+    h1 {
+      margin: 0;
+    }
+  }
+}
+
+
+.pi-mf-mandatory {
+  padding-right: 3px;
+}
+
+.pi-mfa-container {
+
+  background-color: $pi-mf-highlight-bg;
+  border-radius: $pi-mf-border-radius;
+  min-height: 30px;
+  margin-right: 10px;
+  padding: 0 4px 0 10px;
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  justify-content: flex-end;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  li {
+    background-color: $pi-mf-attachment-pill-bg;
+    color: $pi-mf-attachment-pill-color;
+    border-radius: $pi-mf-border-radius;
+    padding: 3px 5px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 170px;
+    margin: 3px 0 3px 5px;
+
+    a, a:hover, a:visited, a:focus {
+      color: $pi-mf-attachment-pill-color;
+    }
+
+  }
+
+  li:last-of-type {
+    margin-right: 0;
+  }
+
+  button {
+    height: 23px;
+    width: 23px;
+    text-align: center;
+    background-color: $pi-mf-attachment-add-bg;
+    border-radius: $pi-mf-border-radius;
+    color: $pi-mf-attachment-add-color;
+    font-size: 13px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 23px;
+  }
+}
+
+.pi-mf-indicators {
+  display: flex;
+  justify-content: flex-end;
+
+  div {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: $pi-mf-indicator-bg;
+    margin-left: 5px;
+    color: $pi-mf-indicator-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pi-mfi-active {
+    background-color: $pi-mf-indicator-bg-active;
+    color: $pi-mf-indicator-color-active;
+  }
+}
+
+
+// Footer elements
+
+.pi-mf-actions {
+  height: 60px;
+  background-color: $pi-mf-actions-bg;
+  border-radius: $pi-mf-border-radius;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: $pi-mf-actions-color;
+  flex: 1 0 auto;
+  justify-content: space-between;
+  margin: 10px;
+
+  .pi-mfa-secondary, .pi-mfa-primary {
+    height: 100%;
+
+    button {
+      height: 100%;
+      padding: 0 20px;
+      border: 0;
+      border-radius: $pi-mf-border-radius;
+      background-color: transparent;
+    }
+  }
+
+  .pi-mfa-secondary {
+    button {
+      border: 1px solid $pi-mf-actions-button;
+      color: $pi-mf-actions-button;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .pi-mfa-primary {
+
+
+    button {
+      background-color: $pi-mf-actions-button;
+      color: $pi-mf-actions-button-color;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+
+// Body styles
+
+.pi-mf-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pi-mf-container .pi-mf-container {
+  display: block;
+}
+
+
+.pi-mf-flexrow {
+  display: flex;
+  margin: 0 10px;
+}
+
+.pi-mf-b-top, .pi-mf-b-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+
+.pi-mf-mainform {
+  flex: 1 1 auto;
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.pi-mf-mainform.container-fluid {
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+.pi-mfc-body {
+  flex: 1 1 auto;
+  position: relative;
+
+  .h4 {
+    display: none;
+  }
+}
+
+
+
+// Inner form styles
+
+.pi-mff-body {
+  margin-top: 10px;
+}
+
+.pi-mff-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: $pi-mf-dark-green;
+}
+
+
+
+
+
+// Inner forms
+
+.pi-mf-forms {
+  border: 1px solid $pi-mf-formgroup-border-color;
+  border-radius: $pi-mf-border-radius;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+
+.pi-mff-header {
+  width: 100%;
+  border-radius: $pi-mf-border-radius $pi-mf-border-radius 0 0;
+  padding: 10px;
+  background-color: $pi-mf-highlight-bg;
+  font-weight: bold;
+
+  i {
+    float: right;
+  }
+}
+
+.pi-mff-attachments {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  display: none;
+}
+
+
+.pi-mff-actions {
+  padding: 4px;
+
+  button {
+    background-color: white;
+    border: 1px solid $pi-mf-formgroup-border-color;
+    border-radius: $pi-mf-border-radius;
+    padding: 5px 20px;
+  }
+}
+
+.pi-mff-container {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+
+// Inner form
+
+.pi-mf-form {
+  border: 1px solid $pi-mf-highlight-bg;
+  margin-bottom: 10px;
+  background-color: $pi-mf-inner-form-bg;
+  border-radius: $pi-mf-border-radius $pi-mf-border-radius 0 0;
+
+  legend.h4 {
+    display: none;
+  }
+}

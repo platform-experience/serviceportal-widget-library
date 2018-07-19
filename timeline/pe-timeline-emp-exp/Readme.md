@@ -4,7 +4,7 @@
 
 This widget can be used to implement a timeline widget. A variation of the pe-timeline, used in Consumerize the Employee Experience.
 
-## Screenshots
+## Screenshot
 ![alt text](../../images/pe-timeline-emp-exp.png "Timeline Widget")
 
 ## Additional Information/Notes
@@ -14,13 +14,16 @@ This widget can be used to implement a timeline widget. A variation of the pe-ti
 ---
 Download and install update set **[pe-timeline-emp-exp.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/timeline/pe-timeline-emp-exp/pe-timeline-emp-exp.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
-Widget Option Schema parameters:
 
-**"Show Left Descriptions"** This is for displaying text on the left for each element in the timeline. This is set to false by default
+### Widget Option Schema
+
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `Show Left Descriptions` | This is for displaying text on the left for each element in the timeline. | False |
 
 ---
 ## Platform Dependencies
@@ -63,4 +66,6 @@ var timelineData = {
 ## CSS/SASS Variables
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$pe-timeline-items-color: #ff6f00 !default;`
+```scss
+$pe-timeline-items-color: #ff6f00 !default;
+```

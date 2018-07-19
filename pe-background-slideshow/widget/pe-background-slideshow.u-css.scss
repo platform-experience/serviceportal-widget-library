@@ -1,0 +1,29 @@
+.slideshow-wrapper {
+  padding: 80px 0;
+  position: relative;
+  background-color: transparent; // replace the standard bootstrap background color
+  min-height: 100px;
+  .slideshow {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Layer the images so that the visible one is below all the others,
+       * but the previously active one fades out to reveal the visible one
+       * below */
+    transition: opacity 1s;
+    opacity: 0;
+    &.visible {
+      transition: none;
+      opacity: 1;
+      z-index: -1;
+    }
+  }
+  .inner-content {
+    position: relative;
+  }
+}

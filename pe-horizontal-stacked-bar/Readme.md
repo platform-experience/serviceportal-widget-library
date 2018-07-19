@@ -14,7 +14,7 @@ This widget can be used to create a horizontal stacked bar graph.
 ---
 Download and install update set **[pe-horizontal-stacked-bar.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-horizontal-stacked-bar/pe-horizontal-stacked-bar.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration

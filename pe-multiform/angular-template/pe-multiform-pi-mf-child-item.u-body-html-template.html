@@ -1,0 +1,56 @@
+<div ng-switch="child.type">
+  
+  
+	<!-- Child is a widget -->
+  <div ng-switch-when="ChildWidget">
+    <sp-widget widget="child.widget"></sp-widget>
+  </div>
+  
+  <!-- Child is a form -->
+  <div ng-switch-when="ChildForm" class="pi-mf-forms">
+    
+    <div class="pi-mff-title">{{::child.title}}</div>
+
+    <div class="pi-mff-description" ng-bind-html="::child.description"></div>
+    
+    <div class="pi-mff-requirements" ng-if="::child.minChildRecords || child.maxChildRecords">
+      <ul>
+        <li ng-if="::child.minChildRecords">A minimum of <strong>{{::child.minChildRecords}}</strong> record(s) are required</li>
+        <li ng-if="::child.maxChildRecords">A maximum of <strong>{{::child.maxChildRecords}}</strong> record(s) are allowed</li>
+      </ul>
+    </div>
+    
+    <!-- Give the child form model to the form manager -->
+    <div ng-repeat="formModel in child.formModels" class="pi-mf-form">
+
+      <div class="pi-mff-header" ng-click="toggle(child, $index)">
+        <span class="pi-mf-mandatory mandatory" style="font-weight: bold;"
+              ng-if="c.childHasMandatory(child.sysId, $index)"
+              ng-class="{'mandatory-filled': c.isChildCompleted(child.sysId, $index)}">*</span>{{::formModel.label}} {{$index + 1}}
+        <i class="fa" aria-hidden="true" ng-class="toggleIcon(isExpanded(child, $index))"></i>
+      </div>
+      
+      <!-- Capture  -->
+      <div ng-show="isExpanded(child, $index)"
+           class="pi-mff-container container-fluid"
+           pi-mf-capture
+           pi-mfc-child="{{::child.sysId}}"
+           pi-mfc-min="{{::child.minChildRecords}}"
+           pi-mfc-max="{{::child.maxChildRecords}}"
+           pi-mfc-child="{{::child.sysId}}"
+           pi-mfc-index="{{::$index}}">
+          <sp-model class="pi-mff-body"
+                    form-model="formModel"
+                    mandatory="true"></sp-model>
+      </div>
+      
+    </div>
+
+    <div class="pi-mff-actions">
+      <button ng-click="c.add(child)"
+              ng-if="c.canAdd(child)">New {{::child.label}}</button>
+    </div>
+
+  </div>
+
+</div>

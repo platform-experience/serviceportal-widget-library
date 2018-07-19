@@ -1,5 +1,5 @@
 <div class="pe-support-options">
-  <h2>{{::options.title}}</h2>
+  <h2 ng-if="options.showTitle == 'true'">{{::options.title}}</h2>
   <ul class="options">
     <li ng-repeat="item in ::data.items track by $index">
       <div class="icon">

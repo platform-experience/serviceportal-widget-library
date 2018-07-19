@@ -4,7 +4,7 @@
 
 This can be used to quickly craft a configurable widget with a list items fed from a catalog.
 
-## Screenshots
+## Screenshot
 ![](../images/pe-support-options-1.png)
 
 ## Additional Information/Notes
@@ -16,16 +16,21 @@ Uses ServiceNow® [Service Catalog](https://docs.servicenow.com/bundle/istanbul-
 ---
 Download and install update set **[pe-support-options.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-support-options/pe-support-options.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
 ---
-Widget Option Schema parameters:
+### Widget Option Schema
 
-**"Title"** This is for changing the title.  `Default: Support Options`<br/>
-**"Category"** This is for defining a category  `Default: PE Support Options`<br/>
-**"Items"** This is for defining the item or items to display from the category using a comma separated list. For example: sc_cat_item.icon, sc_cat_item.name, etc.  `Default: sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description`<br/>
+| Option | Description | Default Value |
+| :--- | :--- | :--- |
+| `Title` | Widget Title. | Support Options |
+| `Category` | Sets a category. | PE Support Options |
+| `Fields` | Sets the field items to display for the catalog item, using a comma separated list. | sc_cat_item.name, sc_cat_item.icon, sc_cat_item.short_description |
+| `Items` | Sets the catalog items for display. | Live Chat with Customer Support, Call Customer Support, How to reset your Okta cookie, Run Health Check |
+| `Show Title` | Shows the title if checked (true). | true |
+| `Show All Catalog Items` | Displays all catalog items for a category, if checked (true). | false |
 
 ---
 ## Platform Dependencies
@@ -44,6 +49,6 @@ Widget Option Schema parameters:
 > None
 ---
 ## CSS/SASS Variables
----
+
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 > None

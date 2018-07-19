@@ -14,7 +14,7 @@ This widget can be used to quickly generate a carousel with table slides and are
 ---
 Download and install update set **[pe-task-carousel.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-task-carousel/pe-task-carousel.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/istanbul-application-development/page/build/system-update-sets/task/t_LoadCustomizationsFromAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 ## Configuration
@@ -40,5 +40,7 @@ Sample data hard coded in the HTML template.
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-`$pe-dark-theme: #1c2432 !default;`<br/>
-`$pe-light-theme: #283347 !default;`<br/>
+```scss
+$pe-dark-theme: #1c2432 !default;
+$pe-light-theme: #283347 !default;
+```

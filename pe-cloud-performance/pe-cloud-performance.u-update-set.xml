@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-05-25 00:02:00">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Cloud Performance</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>caecbf05db9697008798ffa31d961957</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:01:59</sys_created_on>
+<sys_id>40aee551db1e97008798ffa31d9619f2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:01:59</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_f36f3385db9697008798ffa31d961958</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.CloudPerformance&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;CloudPerformance&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CloudPerformance = Class.create();
+CloudPerformance.prototype = {
+  initialize: function() {},
+
+  getData: function() {
+    var data = {
+      widgetHeading: 'cloud performance',
+      filter: 'all',
+      firstBox: {
+        number: '88%',
+        bottomText: 'avg uptime'
+      },
+      secondBox: {
+        number: '$1.2m',
+        bottomText: 'revenue at risk'
+      },
+      thirdBox: {
+        number: '17',
+        bottomText: 'critical incident'
+      }
+    };
+    return data;
+  },
+
+  type: 'CloudPerformance'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-05-24 16:06:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;f36f3385db9697008798ffa31d961958&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;CloudPerformance&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_f36f3385db9697008798ffa31d961958&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-24 16:10:10&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-200518912</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:02:00</sys_created_on>
+<sys_id>00aee551db1e97008798ffa31d9619f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16392ea2d140000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:02:00</sys_updated_on>
+<table/>
+<target_name>CloudPerformance</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>2ca2c4d570969700fbc0f6496c368652</update_guid>
+<update_guid_history>2ca2c4d570969700fbc0f6496c368652:-200518912,dfd1cc5554969700db58298c576dd0bf:1345164063</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_d4ad2151db1e97008798ffa31d96192e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>cloudPerformance</module><name>Cloud Performance</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-05-24 23:57:53</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d4ad2151db1e97008798ffa31d96192e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cloud Performance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_d4ad2151db1e97008798ffa31d96192e</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-05-24 23:57:53</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>-4395576</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:02:00</sys_created_on>
+<sys_id>04aee551db1e97008798ffa31d9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>163949660f50000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:02:00</sys_updated_on>
+<table/>
+<target_name>Cloud Performance</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>f3ad2151c21e97005c687bb5396dfde9</update_guid>
+<update_guid_history>f3ad2151c21e97005c687bb5396dfde9:-4395576</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_e10e2551db1e97008798ffa31d961937</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="Cloud Performance">d4ad2151db1e97008798ffa31d96192e</sp_dependency><sp_widget display_value="PE Cloud Performance">9de33f01db9697008798ffa31d961903</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-05-24 23:59:22</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e10e2551db1e97008798ffa31d961937</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cloud Performance.PE Cloud Performance</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_e10e2551db1e97008798ffa31d961937</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-05-24 23:59:22</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>-474647415</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:01:59</sys_created_on>
+<sys_id>40aee551db1e97008798ffa31d9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1639497bf2d0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:01:59</sys_updated_on>
+<table/>
+<target_name>Cloud Performance.PE Cloud Performance</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>6d0e2551211e9700987d54b11bd95038</update_guid>
+<update_guid_history>6d0e2551211e9700987d54b11bd95038:-474647415</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_9de33f01db9697008798ffa31d961903</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function CloudPerformanceController() {
+  var c = this;
+
+  c.$onInit = function() {
+    setOptions();
+  };
+
+  function setOptions() {
+    c.title = c.options.title &amp;&amp; c.options.title.length &gt; 0 ? c.options.title : c.data.cloudData.widgetHeading;
+  }
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.cloud-performance-wrapper {
+  .heading {
+    background: #fff;
+    p {
+      margin-bottom: 0px;
+      font-size: 14px;
+      color: #2e2e2e;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 10px 0px 5px;
+      border-bottom: 1px solid #e4e5e6;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  .vms {
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: #fff;
+    display: flex;
+    &amp;amp;:after {
+      content: '';
+      display: table;
+    }
+    .color-red {
+      color: #ff402c !important;
+    }
+    .arrow-up {
+      margin-right: 3px;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #70be5a;
+    }
+    .flex-it {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #70be5a;
+      p {
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+    .each-box {
+      width: 33.3%;
+      padding: 10px 10px 20px;
+      float: left;
+      text-align: center;
+      .bottom-part {
+        margin-left: -7px;
+        margin-right: -7px;
+      }
+      .top-text {
+        height: 34px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 8px;
+      }
+      .top-box {
+        height: 65px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      p {
+        margin-bottom: 0px;
+      }
+      .sub-title {
+        font-size: 12px;
+        color: #9f9f9f;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .top-title {
+        font-size: 12px;
+        color: #65666a;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .middle-big-text {
+        font-size: 38px;
+        color: #65666a;
+      }
+    }
+  }
+
+  .cloud-performance {
+    .each-box {
+      .top-box {
+        display: flex;
+        align-items: center;
+        .arrow-up-green {
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #4fca86;
+        }
+
+        .arrow-up-red {
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #ee525e;
+        }
+        .arrow-down-red {
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid #ee525e;
+        }
+        .middle-big-text {
+          font-weight: 400;
+          font-size: 32px;
+        }
+      }
+      .top-title {
+        font-size: 14px;
+      }
+    }
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title&lt;/field_list&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-cloud-performance&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Cloud Performance&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var cloudData = new CloudPerformance();
+  data.cloudData = cloudData.getData();
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-05-24 15:08:52&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;9de33f01db9697008798ffa31d961903&lt;/sys_id&gt;&lt;sys_mod_count&gt;54&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Cloud Performance&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_9de33f01db9697008798ffa31d961903&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-24 23:04:07&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;cloud-performance data="{{::c.data.cloudData}}" options="{{::c.title}}"&gt;&lt;/cloud-performance&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1953409242</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:02:00</sys_created_on>
+<sys_id>4caee551db1e97008798ffa31d9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1639465285b0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:02:00</sys_updated_on>
+<table/>
+<target_name>PE Cloud Performance</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>d0612915f6da97004ba5fcf7c553b53d</update_guid>
+<update_guid_history>d0612915f6da97004ba5fcf7c553b53d:-1953409242,0fae15dd9a9a97002dfc250aa98b51c6:-767412062,6d8ed19d9b9a97001d39c477be5ca228:1332282071,cd4cdd59209a9700f62d40083d047582:-1320077862,70741999dd5a9700dd2ad2323107a3e6:397327855,55545d59e75a97004718293defa5ec2d:-1449067782,97449199915a9700ecdc2f3848a0bedf:-39544774,f5e35d19ff5a970006d9dff22946d06a:-1202862881,d4d31919aa5a9700a64942856e8714f4:-428286902,7b63d5d5d35a97005e0678871661c8ee:-593271855,6382d955f85a97002bef926cd31f901f:292887965,eb811591225a9700e995fbfa3ceed5ac:-344773521,cf315951e65a9700cc8d1ad44a6a6461:-256193766,26001ddd5e1a970007126cdb4f517927:1417204200,fcbec19db31a9700f34ec55175de1524:1176245939,894ecd1d631a9700eb89aa18be6b2ad5:-737062280,380dcd99b31a970086cc49b8e56ff47e:1008685607,534c0999bd1a97003481ba1ed8ee3280:302081856,23b5c955871a970048236ec93c8d1b13:922053353,ad57f0dd88d6970046f13c3eb7300ef0:-1033719898,2c0770dd4dd697007b5ea6cc90cf391d:2043647739,63d2dc9dc8969700d4484a3a40f13ec4:-543945905,5ab25c9d76969700633dc22e3e915be2:-1616407972,57a25c9d4296970036c6a9453e436fd5:611457992,e1a21c9dbc9697002cf8311788277686:-651059415,8d82d89d8796970047e150b6e5453422:674091319,7e72d89d6c9697008503ebaaeef587fc:-1962017887,4d62d89dda9697004de9c3ae2e349b1b:872997608,aa52589d839697000c46821cc02cb3ff:356683356,5c81109d34969700f042fc2116b963ef:-2015502901,4461dc5dac9697003de790ad1836739d:1078762663,fa51109d51969700184fea93da0054d3:-156482052,cd511c5d4696970068964b868d63668d:1078762663,37211c5d6b96970062aff70c353d5481:-858972512,dd011c5df4969700055cf5de00c4ee1d:1208739904,ee90985d629697008edfaaaac27d814c:775999005,527280d5299697000885853421f5fb65:-1975737548,c932c0d5479697007d8a27bbdffde47b:949149672,4af140d5cf9697007ccd9763c2eccce2:1010886979,79cd3745e19697002b271f1a6ca5d7d8:-748461766,03bd37451996970065adf82f8de4bf77:-1024890413,48bd3745e1969700766ccd51263c355b:-752719636,7d6db3453896970038bdc33f20a66069:-1652654934,9589b7c18896970098287fbba5583c54:1275987071,b07977c1a8969700770b656a4647348e:-2002939746,9869ff81439697006482d837fb78c365:1275987071,a659ff81219697000991eb3b2e92525b:-2002939746,aac5bb41fc969700563ebe80b648f64d:1275987071,81a5f741069697009304b948aca0bacd:2103034773,7075f741de969700b064775a4ded5798:-715718144,c255f741d79697007ad13ee11e019091:279896044,5e45f34114969700e1d7aa8acfb53936:1924664389,13e4f34182969700cda9568b8e40b614:47745463,bec4f341d8969700d5fd966c2b9fe80c:-1532071769,aa943f01bf969700691b99af9af16339:-1923535042</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_ecd48155db1a97008798ffa31d9619f2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;cloud.module&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  angular.module('cloudPerformance', []);
+})();
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-05-24 20:59:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;ecd48155db1a97008798ffa31d9619f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;cloud.module&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_ecd48155db1a97008798ffa31d9619f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-24 20:59:43&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-217210131</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:02:00</sys_created_on>
+<sys_id>84aee551db1e97008798ffa31d9619f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16393f3460a0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:02:00</sys_updated_on>
+<table/>
+<target_name>cloud.module</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>4ae481551d1a9700d4a55df7d55ca8f7</update_guid>
+<update_guid_history>4ae481551d1a9700d4a55df7d55ca8f7:-217210131</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_c92bc119db1a97008798ffa31d961951</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>Cloud Performance Component</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-05-24 21:27:12</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c92bc119db1a97008798ffa31d961951</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cloud Performance Component</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="cloud.component">caa44155db1a97008798ffa31d961970</sys_ui_script><sys_update_name>sp_js_include_c92bc119db1a97008798ffa31d961951</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-05-24 21:27:12</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>2079792981</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:02:00</sys_created_on>
+<sys_id>88aee551db1e97008798ffa31d9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>163940c6c840000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:02:00</sys_updated_on>
+<table/>
+<target_name>Cloud Performance Component</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>e43b8119631a9700e8c0703fc6e685c8</update_guid>
+<update_guid_history>e43b8119631a9700e8c0703fc6e685c8:2079792981</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_8b3e6551db1e97008798ffa31d9619f7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="Cloud Performance">d4ad2151db1e97008798ffa31d96192e</sp_dependency><sp_js_include display_value="Cloud Performance Component">c92bc119db1a97008798ffa31d961951</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-05-25 00:00:17</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>8b3e6551db1e97008798ffa31d9619f7</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Cloud Performance.Cloud Performance Component</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_8b3e6551db1e97008798ffa31d9619f7</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-05-25 00:00:26</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>-1673683707</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:01:59</sys_created_on>
+<sys_id>8caee551db1e97008798ffa31d9619f2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1639498b68b0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:01:59</sys_updated_on>
+<table/>
+<target_name>Cloud Performance.Cloud Performance Component</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>814e6551981e9700619ffcd5e9bac7ea</update_guid>
+<update_guid_history>814e6551981e9700619ffcd5e9bac7ea:-1673683707,4f3e65517e1e970016e6d3c62aeea5f8:805509542</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_caa44155db1a97008798ffa31d961970</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;cloud.component&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  var cloudPerformance = {
+    bindings: {
+      data: '@',
+      options: '@'
+    },
+    controller: function() {
+      this.$onInit = function() {
+        this.getData();
+      };
+
+      this.getData = function() {
+        this.cloudData = JSON.parse(this.data);
+      };
+    },
+    template: [
+      '&lt;div class="cloud-performance-wrapper"&gt;',
+      '&lt;div class="heading"&gt;',
+      '&lt;p&gt;{{::$ctrl.options}}&lt;/p&gt;',
+      '&lt;/div&gt;',
+      '&lt;div class="vms cloud-performance"&gt;',
+      '&lt;div class="each-box unaccounted-box"&gt;',
+      '&lt;div class="top-box"&gt;',
+      '&lt;div class="arrow-up-green"&gt;&lt;/div&gt;',
+      '&lt;p class="middle-big-text"&gt;{{::$ctrl.cloudData.firstBox.number}}&lt;/p&gt;',
+      '&lt;/div&gt;',
+      '&lt;p class="top-title bottom-part"&gt;{{::$ctrl.cloudData.firstBox.bottomText}}&lt;/p&gt;',
+      '&lt;/div&gt;',
+      '&lt;div class="each-box middle-box"&gt;',
+      '&lt;div class="top-box"&gt;',
+      '&lt;div class="arrow-up-red"&gt;&lt;/div&gt;',
+      '&lt;p class="middle-big-text"&gt;{{::$ctrl.cloudData.secondBox.number}}&lt;/p&gt;',
+      '&lt;/div&gt;',
+      '&lt;p class="top-title"&gt;{{::$ctrl.cloudData.secondBox.bottomText}}&lt;/p&gt;',
+      '&lt;/div&gt;',
+      '&lt;div class="each-box"&gt;',
+      '&lt;div class="top-box"&gt;',
+      '&lt;div class="arrow-down-red"&gt;&lt;/div&gt;',
+      '&lt;p class="middle-big-text"&gt;{{::$ctrl.cloudData.thirdBox.number}}&lt;/p&gt;',
+      '&lt;/div&gt;',
+      '&lt;p class="top-title"&gt;{{::$ctrl.cloudData.thirdBox.bottomText}}&lt;/p&gt;',
+      '&lt;/div&gt;',
+      '&lt;/div&gt;',
+      '&lt;/div&gt;'
+    ].join('')
+  };
+
+  angular
+    .module('cloudPerformance')
+    .component('cloudPerformance', cloudPerformance);
+})();
+
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-05-24 20:59:12&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;caa44155db1a97008798ffa31d961970&lt;/sys_id&gt;&lt;sys_mod_count&gt;89&lt;/sys_mod_count&gt;&lt;sys_name&gt;cloud.component&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_caa44155db1a97008798ffa31d961970&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-24 23:24:55&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1702890887</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:02:00</sys_created_on>
+<sys_id>c0aee551db1e97008798ffa31d9619f4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1639478332a0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:02:00</sys_updated_on>
+<table/>
+<target_name>cloud.component</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>3826ed1946da9700c1af826899bbe9fb</update_guid>
+<update_guid_history>3826ed1946da9700c1af826899bbe9fb:1702890887,21e5691956da970016514c4549998dd5:1721947173,6665259516da97002bb1fe782123e440:1591139885,6cd1e555b1da97001700b4b40a60461e:-68069288,9b9121552fda97005538c436b11e0d30:-504381872,ae31211589da9700b6711462c742b809:-68069288,13b0e5d1e6da97008f36d4f2d7cd2c1d:-96962397,5390a5d11bda9700bc924a32c2aae1ff:1972766107,e370e99179da9700e2e250782beaf51b:-1221675065,b420a591b0da9700a77195dd36af92ec:-1060420769,4a002191f0da9700f910209715fd9015:-777946090,21ef15516fda970034ed732e88fb7d15:-1653645480,b2afdd11d4da9700feba13306ce73395:29974639,528fd911b6da9700cdfaa2f369d7186f:-619749849,f46fd1116eda9700631f3a3d4085a03b:-1625280593,e65fd11183da9700bb7cfa8e9423e737:50675477,d41f55dd419a9700b2f08ddd88cad0b6:-647032107,995ed19dcb9a970006db8d707e9e0372:-1056472021,430e995db49a9700b103aeb98db045f0:-883019998,5cad591d0f9a9700f03525fb1a9d82bc:1150484009,a84d9dd9d89a9700adac7ab4688e1b48:1073745946,9cdcd5d9479a97003b72633aeb3eca0b:622745507,8d9c1999f49a9700911ec102d7cac185:260861498,f35c9199cd9a9700d5a639adf4bb7f23:-921934926,2ddb1559119a970051000be58bda183e:907986746,4abb1159099a97004dd49f6577a551b1:-1206749278,507b19193c9a9700caf9c4c822717c65:213879135,186b9119789a9700429a776a89839281:1023540317,b02b55d5689a9700afcee6d9ad67e92e:-1124031409,101b15d5409a97005c63ba83b778ced3:1479942177,580b1995a89a97006986be30dc7bba10:144364849,d3ea1995929a970060570d03e5829903:-532381541,c1da1955da9a9700dc5845cea97cbde5:262417713,a4cad9552e9a9700698f30afddbdb6e1:1194468171,99aa9155489a970071faa4067c0f3ba9:-493565239,509a9d15bc9a97006d379671483ef5b3:-1400251622,808a19150f9a970092f2a824514954e1:1034682606,fc7add518d9a9700082a4f87d9665453:-596680829,8f5a51d1179a97007390468920875c54:-1567017394,15e91151499a970002492a9f9a72ede8:-165342909,aeb99d11c59a97000aa2a6f2aa41c397:-493565239,3c991911c29a9700b40cb9bb147907a6:228659445,8559dddd465a97001713daea841650e9:647302899,d12955dd9f5a970006b8b5844448cceb:845174211,e1e855dd0b5a9700d7fe72b0314dd0e7:-1655939384,9bc851dd155a9700c6d7a55fc406ecc5:1740263212,ff881d9d8a5a970054fa475a420605f6:1924320547,8858959d195a97009bea63bb579f6c6d:-1745737408,9418d19dc55a97004458234a3fdb8763:1870088625,adf7519d9c5a970042a0c4ffcec11c34:1626007909,fcd7595d5f5a9700227ef93ab2dd6876:349399220,d397d55d185a9700963dccb7cbcaa053:1493300563,2447d15dc55a97008b9e4fbec2251ffe:1373702999,0c37515dd45a970097c406de64a2d0e7:-1460343056,79079d1de35a97001068c57ac0b34e6c:631456266,46961d1d9d5a9700f0b3ada3d46e927d:350502311,ed76991dbd5a97001cc3282ab9396fa7:429783511,ed36591dc25a9700790bd851ad065497:1735919683,3d26191db55a97006becefe76970489f:-1080947309,4416951de45a970039e98f2ba6ec2ccd:592647970,d2e5951dce5a9700e2240a0f35f58b14:-2108913246,c2d5151d385a9700d665236012a8c696:1319778690,dab5d5d9b25a9700d0d535a89e376276:-285978387,6ab49d99595a97009f5ee54b6cbce127:838873676,f89419999b5a97005f5abb2a4f497fed:-1073015600,5614d959ed5a97007676d3ff6e9f6459:838873676,fff355598f5a9700c1eff989aa376c10:-1702820630,9343dd95655a970088681e6e5110a80d:1041284575,a5039d95565a9700de67f27a4d0f97f0:-819345650,d0e21195845a970013532d7d1a2b143c:1367074427,15c211959e5a9700eb7ea9b01be0c74d:-1509148041,92329155715a97008bc27d29ead300e7:-742000397,18221d15cb5a9700a4a30d9f36fdb910:1241120008,a2021dd1355a97005d5203df8a0b7f49:125898304,75f11dd1535a9700e68b2b5c94a18851:-1422148213,b4d119d1915a97007a11e57fd2c87b14:-742000397,2eb151d1125a970003e35447853098a0:238344678,c6a1d9511f5a97009d0b38da94e4a2f1:683622474,2151d9517d5a970097e90ff0cf88aceb:-914407560,a6e0d911cb5a9700fb7adb425fb9288a:930250319,ad805511965a9700e8fe935e42037a3c:-343392384,1e6f85ddf01a9700748734804766b56b:708190460,934f4d9dbe1a9700eb14e09aadf0c929:-1965084610,400fc19d961a970094df29ca3adaa218:934400211,3b8e8d5db41a97007912b6d770fb3770:192038110,866e815d371a97008bf944c23ff74e8d:-1282969250,ee3d01d9931a9700c9758cc13052b13f:1535453771,c0ec4d99531a9700f9b059f5ed9f32ad:-1297361563,6dbb4199e61a9700b8bced367e6a5601:878465088,5ac44155e41a970002e0857d86d64283:1033915776</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_0b3e6551db1e97008798ffa31d9619f9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="Cloud Performance">d4ad2151db1e97008798ffa31d96192e</sp_dependency><sp_js_include display_value="Cloud Performance Module">c50b8119db1a97008798ffa31d9619c0</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-05-25 00:00:17</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>0b3e6551db1e97008798ffa31d9619f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cloud Performance.Cloud Performance Module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_0b3e6551db1e97008798ffa31d9619f9</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-05-25 00:00:17</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>-424188074</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:01:59</sys_created_on>
+<sys_id>c4aee551db1e97008798ffa31d9619f2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>163949895ac0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:01:59</sys_updated_on>
+<table/>
+<target_name>Cloud Performance.Cloud Performance Module</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>873e65515b1e97003c3be571014d8ffa</update_guid>
+<update_guid_history>873e65515b1e97003c3be571014d8ffa:-424188074</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_c50b8119db1a97008798ffa31d9619c0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>Cloud Performance Module</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-05-24 21:26:55</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c50b8119db1a97008798ffa31d9619c0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cloud Performance Module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="cloud.module">ecd48155db1a97008798ffa31d9619f2</sys_ui_script><sys_update_name>sp_js_include_c50b8119db1a97008798ffa31d9619c0</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-05-24 21:26:55</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>503010688</payload_hash>
+<remote_update_set display_value="PE Cloud Performance">40aee551db1e97008798ffa31d9619f2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-05-25 00:02:00</sys_created_on>
+<sys_id>c4aee551db1e97008798ffa31d9619f3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>163940c2ae40000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-05-25 00:02:00</sys_updated_on>
+<table/>
+<target_name>Cloud Performance Module</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>142b01d5e41a970025037e51b44d84fa</update_guid>
+<update_guid_history>142b01d5e41a970025037e51b44d84fa:503010688</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

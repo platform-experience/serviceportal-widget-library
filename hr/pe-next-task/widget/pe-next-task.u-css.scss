@@ -1,0 +1,64 @@
+#start-date {
+  h2 {
+    color: $color-darkest;
+    margin-top: 0px;
+  }
+  p {
+    color: $color-darker;
+  }
+}
+
+.add-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.esc-first-day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  @media screen and (max-width: 414px) {
+    display: block;
+    width: 95%;
+    padding: 0px;
+    text-align: center;
+  }
+  .date {
+    min-width: 150px;
+    .start-msg {
+      font-size: 16px;
+      font-weight: 600;
+      color: $greyish-brown;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+    }
+    .start-date {
+      font-size: 32px;
+      font-weight: bold;
+      color: $greyish-brown;
+      margin: 0px;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+  }
+  .msg {
+    font-size: 20px;
+    font-weight: 300;
+    color: $greyish-brown;
+    padding: 10px;
+    @media screen and (max-width: 414px) {
+      padding-left: 0px;
+    }
+  }
+  .button {
+    .guide-btn {
+      font-size: 20x;
+      font-weight: 600;
+      padding: 10px 32px;
+    }
+  }
+}
