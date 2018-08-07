@@ -8,11 +8,11 @@ This can be used to quickly craft a people card flyout widget with options.
 
 ### Collapsed
 
-![](../images/pe-people-card-flyout-collapsed.png)
+![People Card Flyout Collapsed](../images/pe-people-card-flyout-collapsed.png)
 
 ### Expanded
 
-![](../images/pe-people-card-flyout-expanded.png)
+![People Card Flyout Expanded](../images/pe-people-card-flyout-expanded.png)
 
 ## Additional Information/Notes
 
@@ -32,12 +32,12 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 | Option | Description | Default Value |
 | :--- | :--- | :--- |
-| `Department` | This is the department id. | 0886 |
-| `Title` | This is for changing the title in the panel header. | People at Risk |
-| `Number 1` | This is for displaying the first integer in the panel body. | 1631 |
-| `Number 3` | This is for displaying the third integer in the panel body. | 21 |
-| `Sub Text 1` | This is for displaying the first sub-text copy. | Email Inboxes |
-| `Sub Text 3` |This is for displaying the third sub-text copy. | Open Rate |
+| `Department` | The department id. | 0886 |
+| `Title` | The title in the panel header. | People at Risk |
+| `Number 1` | Displays the first integer in the panel body. | 1631 |
+| `Number 3` | Displays the third integer in the panel body. | 21 |
+| `Sub Text 1` | Displays the first sub-text copy. | Email Inboxes |
+| `Sub Text 3` | Displays the third sub-text copy. | Open Rate |
 
 ## Platform Dependencies
 
