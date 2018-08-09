@@ -1,16 +1,16 @@
 <div class="encloser">
-  <div class="actual-card">
-    <div class="padd-it">
+  <div class="approval-card">
+    <div class="sub-wrapper">
       <div class="heading">
-        <p>{{::c.data.widget.title}}</p>
+        <p>{{::c.widget.title}}</p>
       </div>
       <div class="details">
         <div class="each-div">
-          <sp-widget widget="c.data.peopleInfoWidget"></sp-widget>
+          <sp-widget widget="c.peopleInfo"></sp-widget>
         </div>
         <div class="purpose each-div">
-          <i class="{{c.data.widget.icon}} purpose-icon" aria-hidden="true"></i>
-          <p>{{::c.data.widget.purpose}}</p>
+          <i class="{{::c.widget.icon}} purpose-icon" aria-hidden="true"></i>
+          <p>{{::c.widget.purpose}}</p>
         </div>
       </div>
     </div>
