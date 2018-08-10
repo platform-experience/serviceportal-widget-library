@@ -7,23 +7,24 @@ A simple blog widget crafted from Knowledge Base articles with configurable opti
 ## Screenshots
 
 ### Dark Theme
-![](../images/pe-blog-dark-theme.png)
+
+![Blog Dark Theme](../images/pe-blog-dark-theme.png)
 
 ### Light Theme
-![](../images/pe-blog-light-theme.png)
+
+![Blog Light Theme](../images/pe-blog-light-theme.png)
 
 ## Additional Information/Notes
-> None
 
----
+> None
 
 ## Installation
 
-Download and install update set **[pe-blog.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-blog/pe-blog.u-update-set.xml)** <br/><br/>
-After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+Download and install update set **[pe-blog.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-blog/pe-blog.u-update-set.xml)**
 
----
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
+
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
@@ -39,28 +40,22 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 | `Display excerpt` | Used to show or hide the excerpt. | Checked |
 | `Display ratings` | Used to show or hide the ratings. | Checked |
 
----
-
 ## Platform Dependencies
 
 ### Tables
+
 * kb_knowledge
 * u_sp_blog_instance
-
----
 
 ## Sample Data and Data Structures
 
 > See 'Configuration' above
 
----
-
 ## API Dependencies
 
-<i>Dependencies are included and configured as part of the provided update set.</i>
-> None
+*Dependencies are included and configured as part of the provided Update Set.*
 
----
+> None
 
 ## CSS/SASS Variables
 

@@ -5,23 +5,26 @@
 This can be used to quickly craft a people card flyout widget with options.
 
 ## Screenshots
+
 ### Collapsed
-![](../images/pe-people-card-flyout-collapsed.png)
+
+![People Card Flyout Collapsed](../images/pe-people-card-flyout-collapsed.png)
+
 ### Expanded
-![](../images/pe-people-card-flyout-expanded.png)
+
+![People Card Flyout Expanded](../images/pe-people-card-flyout-expanded.png)
 
 ## Additional Information/Notes
-> None
 
----
+> None
 
 ## Installation
 
-Download and install update set **[pe-people-card-flyout.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-people-card-flyout/pe-people-card-flyout.u-update-set.xml)** <br/><br/>
-After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+Download and install update set **[pe-people-card-flyout.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-people-card-flyout/pe-people-card-flyout.u-update-set.xml)**
 
----
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
+
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
@@ -29,34 +32,29 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 | Option | Description | Default Value |
 | :--- | :--- | :--- |
-| `Department` | This is the sys_id of the department. | 48197fb4dbe5b20062e479daae96191f |
-| `Title` | This is for changing the title in the panel header. | People at Risk |
-| `Number 1` | This is for displaying the first integer in the panel body. | 1631 |
-| `Number 3` | This is for displaying the third integer in the panel body. | 21 |
-| `Sub Text 1` | This is for displaying the first sub-text copy. | Email Inboxes |
-| `Sub Text 3` |This is for displaying the third sub-text copy. | Open Rate |
-
----
+| `Department` | The department id. | 0886 |
+| `Title` | The title in the panel header. | People at Risk |
+| `Number 1` | Displays the first integer in the panel body. | 1631 |
+| `Number 3` | Displays the third integer in the panel body. | 21 |
+| `Sub Text 1` | Displays the first sub-text copy. | Email Inboxes |
+| `Sub Text 3` | Displays the third sub-text copy. | Open Rate |
 
 ## Platform Dependencies
 
 ### SN System Tables
+
 * sys_user
 * department
 
----
-
 ## Sample Data and Data Structures
-> See 'Configuration' above
 
----
+> See 'Configuration' above
 
 ## API Dependencies
 
-<i>Dependencies are included and configured as part of the provided Update Set.</i>
-> None
+*Dependencies are included and configured as part of the provided Update Set.*
 
----
+> None
 
 ## CSS/SASS Variables
 

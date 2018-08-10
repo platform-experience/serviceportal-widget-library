@@ -17,7 +17,7 @@ A sample problem record is created and displayed by default. To display another 
 
 Download and install update set **[pe-incident-message.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-incident-message/pe-incident-message.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ---
 

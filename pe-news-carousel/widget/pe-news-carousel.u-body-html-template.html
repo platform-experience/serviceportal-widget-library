@@ -1,0 +1,39 @@
+<div class="outter-container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" ng-attr-data-interval="{{ options.autoplay != 'false' && options.slideshow_timer || '' }}">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item" style="background-image:url('{{item.featured_image}}');" ng-class="{'active': $index==0}" ng-repeat="item in c.data.items track by $index">
+
+        <div class="carousel-caption">
+          <h4>
+            <a href="?id={{c.data.link}}&sys_id={{item.sys_id}}" ng-bind="item.title"></a>
+          </h4>
+          <p ng-bind="item.description"></p>
+        </div>
+
+      </div>
+      <!-- End Item -->
+
+    </div>
+    <!-- End Carousel Inner -->
+
+    <ul class="list-group ">
+      <li data-target="#myCarousel" ng-click="c.selectItem($index)" data-slide-to="{{$index}}" class="list-group-item" ng-class="{'active':c.selectedItem == $index}"
+        ng-repeat="item in c.data.items track by $index">
+        <h4 ng-bind="item.title"></h4>
+      </li>
+    </ul>
+
+    <!-- Controls -->
+    <div class="carousel-controls">
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+  </div>
+  <!-- End Carousel -->
+</div>

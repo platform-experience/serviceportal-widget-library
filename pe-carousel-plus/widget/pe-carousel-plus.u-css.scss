@@ -1,0 +1,35 @@
+.carousel-plus {
+  .fa-stack-2x {
+    font-size: 3.5rem;
+  }
+
+  .carousel-control {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-slide {
+    margin: auto;
+    width: 100%;
+  }
+
+  .carousel-indicators {
+    height: 25px;
+    bottom: -0.5rem;
+    z-index: 0;
+    li {
+      height: 12px;
+      margin-left: 10px;
+      width: 12px;
+    }
+    .active {
+      margin: 1px 1px 1px 10px;
+    }
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

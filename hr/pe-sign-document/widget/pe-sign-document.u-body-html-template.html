@@ -1,0 +1,72 @@
+<div class="document-acknowledge-task" ng-class="::{'hidden-xs' : options.hide_xs}" ng-if="!data.task.finished && data.task.canSign && data.task.hr_task_type == 'sign_document'"
+  ng-init="init(user.sys_id)">
+  <div id="documentFrame" class="panel panel-{{::options.color}} b">
+    <div ng-show="data.isPdfTemplate == true">
+      <div class="header">
+        <!-- IE fixes - Hiding pop over window button -->
+        <i alt="${Show document in popup}" ng-show="!isIE()" class="ie-popover fa fa-expand hidden-xs" ng-click="c.showPop()">
+          <!-- IE fixes ends -->
+        </i>
+      </div>
+      <!-- Using IFrame because of IE issues -->
+      <div class="iframe-container">
+        <div id="sign-doc">
+          <h1>NON-DISCLOSURE AGREEMENT</h1>
+          <p>This Mutual Non-Disclosure Agreement is a sample provided for your information only and may not be relied upon
+            as legal advice. This agreement might not be appropriate for your requirements. The Company makes no warranty
+            about the suitability of this sample agreement and accepts no liability arising out of the use of this agreement.Please
+            consult your legal or business advisor for further information or advice.</p>
+          <p>MUTUAL NON-DISCLOSURE AGREEMENT RECITALS</p>
+          <p></p>
+          <p>Each undersigned party (the "Receiving Party") understands and acknowledges that the other party (the "Disclosing
+            Party") has disclosed or may disclose information relating to which to the extent previously, presently, or subsequently
+            disclosed to the Receiving Party is hereinafter referred to as "Proprietary Information" of the Disclosing Party.</p>
+          <p></p>
+          <p>OPERATIVE PROVISIONS</p>
+          <p></p>
+          <p>In consideration of the disclosure of Proprietary Information by the Disclosing Party, the Receiving Party hereby
+            agrees: (i) to hold the Proprietary Information in strict confidence and to take all reasonable precautions to
+            protect such Proprietary Information (including, without limitation, all precautions the Receiving Party employs
+            with respect to its own confidential materials), (ii) not to disclose any such Proprietary Information or any
+            information derived therefrom to any third person, (iii) not to make any use whatsoever at any time of such Proprietary
+            Information except to evaluate internally its relationship with the Disclosing Party, and (iv) not to copy or
+            reverse engineer any such Proprietary Information. The Receiving Party shall procure that its employees, agents
+            and sub- contractors to whom Proprietary Information is disclosed or who have access to Proprietary Information
+            sign a nondisclosure or similar agreement in content substantially similar to this Agreement.</p>
+          <p></p>
+          <p>This Agreement shall be governed by the laws of the jurisdiction in which the Disclosing Party is located (or if
+            the Disclosing Party is based in more than one country, the country in which its headquarters are located) (the
+            "Territory") and the parties agree to submit disputes arising out of or in connection with this Agreement to
+            the non- exclusive of the courts in the Territory.</p>
+        </div>
+      </div>
+    </div>
+    <div id='content_id' ng-bind-html="documentBody" ng-show="data.isPdfTemplate == false">
+    </div>
+    <div class="pop-footer" ng-show="c.signing">
+      <span ng-if="!c.isPopoverOpen">
+        <div class="typeItDesc">
+          <label aria-label="${Type your name here to acknowledge the document}" class="label block" for="name">${Type your name here}</label>
+          <input type="text" name="signed_name" id="signed_name" class="signed_name" maxlength="25" size="25" ng-model="c.signed_name"
+            ng-change="c.clearCanvas()" />
+          <canvas class="typedCanvas"></canvas>
+        </div>
+        <div class="sigPad">
+          <span class="animated">
+            <label aria-label="${Sign below}" class="label block" for="name">${or sign below}</label>
+            <div class="sig sigWrapper">
+              <canvas class="pad"></canvas>
+              <input type="hidden" name="output" class="output" />
+            </div>
+            <div class="disclaimer">
+              ${Drawing in the above box will constitute your eSignature and will have the same legal impact as signing a printed version
+              of this document}.
+            </div>
+            <button class="clearButton btn btn-default" href="#clear" ng-click="c.clearInput();">${Clear}</button>
+            <button class="clearButton btn btn-default" href="#clear" ng-click="c.cancel();">${Cancel}</button>
+          </span>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>

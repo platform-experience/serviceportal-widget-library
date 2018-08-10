@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-01-11 22:48:24">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>pe-news-carousel</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>2a81686a73230300025780844ff6a700</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-11 22:48:24</sys_created_on>
+<sys_id>0d52a0ea73230300025780844ff6a796</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-11 22:48:24</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_26b1acaa73230300025780844ff6a7e5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function NewsCarouselCtrl($timeout) {
+  /* widget controller */
+  var c = this;
+  c.selectItem = selectItem;
+
+  c.$onInit = function () {
+    c.selectedItem = 0;
+    $('#myCarousel').on('slide.bs.carousel', function (e) {
+      var next = $(e.relatedTarget);
+      var to = next.index();
+      $timeout(function () {
+        c.selectedItem = to;
+      }, 0)
+    });
+
+  };
+
+  function selectItem(index) {
+    $('#myCarousel').carousel(index)
+  }
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;#myCarousel {&amp;#13;
+  display: flex;&amp;#13;
+  .carousel-caption {&amp;#13;
+    left: 0;&amp;#13;
+    right: 0;&amp;#13;
+    bottom: 0;&amp;#13;
+    text-align: left;&amp;#13;
+    padding: 10px;&amp;#13;
+    background: rgba(0, 0, 0, 0.6);&amp;#13;
+    text-shadow: none;&amp;#13;
+  }&amp;#13;
+  .carousel-caption h4 a {&amp;#13;
+    font-size: 1.75em;&amp;#13;
+    color: $text-muted;&amp;#13;
+  }&amp;#13;
+  .list-group {&amp;#13;
+    display: flex;&amp;#13;
+    flex-direction: column;&amp;#13;
+    width: 315px;&amp;#13;
+    margin-bottom: 0;&amp;#13;
+    .list-group-item {&amp;#13;
+      border-radius: 0px;&amp;#13;
+      cursor: pointer;&amp;#13;
+      flex-grow: 1;&amp;#13;
+      &amp;amp;.active {&amp;#13;
+        background-color: $brand-primary;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .carousel-inner {&amp;#13;
+    .item {&amp;#13;
+      height: 100%;&amp;#13;
+      background-size: cover;&amp;#13;
+      background-position: center center;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+@media (min-width: 992px) {&amp;#13;
+  #myCarousel {&amp;#13;
+    .carousel-controls {&amp;#13;
+      display: none;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+@media (max-width: 991px) {&amp;#13;
+  #myCarousel {&amp;#13;
+    .carousel-inner {&amp;#13;
+      min-height: 370px;&amp;#13;
+    }&amp;#13;
+    .carousel-caption p,&amp;#13;
+    .list-group {&amp;#13;
+      display: none;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-news-carousel&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;pe news carousel&lt;/name&gt;&lt;option_schema&gt;[{&amp;#13;
+  "hint": "Table name",&amp;#13;
+  "name": "table",&amp;#13;
+  "default_value": "",&amp;#13;
+  "label": "Table",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "hint": "Image displayed when selected",&amp;#13;
+  "name": "featured_image",&amp;#13;
+  "label": "Featured Image",&amp;#13;
+  "type": "field_name"&amp;#13;
+}, {&amp;#13;
+  "name": "limit",&amp;#13;
+  "default_value": "5",&amp;#13;
+  "label": "Limit",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "hint": "",&amp;#13;
+  "name": "encoded_query",&amp;#13;
+  "label": "Encoded Query",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "name": "title_field",&amp;#13;
+  "label": "Title Field",&amp;#13;
+  "type": "field_name"&amp;#13;
+}, {&amp;#13;
+  "name": "description_field",&amp;#13;
+  "label": "Description Field",&amp;#13;
+  "type": "field_name"&amp;#13;
+}, {&amp;#13;
+  "displayValue": "Page",&amp;#13;
+  "name": "link",&amp;#13;
+  "label": "Link",&amp;#13;
+  "type": "reference",&amp;#13;
+  "value": "sp_page",&amp;#13;
+  "ed": {&amp;#13;
+    "reference": "sp_page"&amp;#13;
+  }&amp;#13;
+}, {&amp;#13;
+  "hint": "",&amp;#13;
+  "name": "order_type",&amp;#13;
+  "default_value": "Ascending",&amp;#13;
+  "label": "Order",&amp;#13;
+  "type": "choice",&amp;#13;
+  "choices": [{&amp;#13;
+    "label": "Descending",&amp;#13;
+    "value": "Descending"&amp;#13;
+  }, {&amp;#13;
+    "label": "Ascending",&amp;#13;
+    "value": "Ascending"&amp;#13;
+  }]&amp;#13;
+}, {&amp;#13;
+  "name": "order_by",&amp;#13;
+  "default_value": "",&amp;#13;
+  "label": "Order By",&amp;#13;
+  "type": "field_name"&amp;#13;
+}, {&amp;#13;
+  "name": "autoplay",&amp;#13;
+  "default_value": "",&amp;#13;
+  "label": "Autoplay",&amp;#13;
+  "type": "boolean"&amp;#13;
+}, {&amp;#13;
+  "hint": "Timer in milisecond",&amp;#13;
+  "name": "slideshow_timer",&amp;#13;
+  "default_value": "5000",&amp;#13;
+  "label": "Slideshow Timer",&amp;#13;
+  "type": "integer"&amp;#13;
+}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
+
+
+  options.table = options.table || serverOptions.table;
+  options.featured_image = options.featured_image || serverOptions.featured_image;
+  options.limit = options.limit || serverOptions.limit;
+  options.encoded_query = options.encoded_query || serverOptions.encoded_query;
+  options.title_field = options.title_field || serverOptions.title_field;
+  options.description_field = options.description_field || serverOptions.description_field;
+  options.link = options.link || serverOptions.link;
+  options.order_type = options.order_type || serverOptions.order_type || "asc";
+  options.order_by = options.order_by || serverOptions.order_by;
+  options.autoplay = options.autoplay || serverOptions.autoplay;
+  options.slideshow_timer = options.slideshow_timer || serverOptions.slideshow_timer || 5000;
+
+  if (!options.table || !options.encoded_query) {
+    data.error = " Please provide Table and EncodedQuery"; // TODO Translate
+    return
+  }
+
+  var newsGr = new GlideRecordSecure(options.table);
+  newsGr.addEncodedQuery(options.encoded_query);
+  newsGr.setLimit(options.limit);
+
+  if (options.link) {
+    var linkGr = new GlideRecord('sp_page');
+    if (linkGr.get(options.link)) {
+      data.link = linkGr.getValue('id');
+    }
+  }
+
+  if (options.order_by) {
+    if (options.order_type == 'Descending') {
+      newsGr.orderByDesc(options.order_by)
+    } else {
+      newsGr.orderBy(options.order_by)
+    }
+  }
+  newsGr.query();
+
+  var listOfFields = ['sys_id', options.featured_image, options.title_field, options.description_field];
+  var results = [];
+
+  var tempObj;
+  while (newsGr.next()) {
+    tempObj = {};
+    // $sp.getRecordDisplayValues(tempObj, newsGr, listOfFields.join(','));
+    tempObj.sys_id = newsGr.sys_id.toString();
+    tempObj.title = newsGr.getDisplayValue(options.title_field);
+    tempObj.description = newsGr.getDisplayValue(options.description_field);
+    tempObj.featured_image = newsGr.getDisplayValue(options.featured_image);
+    results.push(tempObj)
+  }
+  data.items = results;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-01-11 22:48:01&lt;/sys_created_on&gt;&lt;sys_id&gt;26b1acaa73230300025780844ff6a7e5&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe news carousel&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_26b1acaa73230300025780844ff6a7e5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-01-11 22:48:01&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="outter-container"&gt;
+  &lt;div id="myCarousel" class="carousel slide" data-ride="carousel" ng-attr-data-interval="{{ options.autoplay != 'false' &amp;&amp; options.slideshow_timer || '' }}"&gt;
+    &lt;!-- Wrapper for slides --&gt;
+    &lt;div class="carousel-inner"&gt;
+      &lt;div class="item" style="background-image:url('{{item.featured_image}}');" ng-class="{'active': $index==0}" ng-repeat="item in c.data.items track by $index"&gt;
+
+        &lt;div class="carousel-caption"&gt;
+          &lt;h4&gt;
+            &lt;a href="?id={{c.data.link}}&amp;sys_id={{item.sys_id}}" ng-bind="item.title"&gt;&lt;/a&gt;
+          &lt;/h4&gt;
+          &lt;p ng-bind="item.description"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+      &lt;!-- End Item --&gt;
+
+    &lt;/div&gt;
+    &lt;!-- End Carousel Inner --&gt;
+
+    &lt;ul class="list-group "&gt;
+      &lt;li data-target="#myCarousel" ng-click="c.selectItem($index)" data-slide-to="{{$index}}" class="list-group-item" ng-class="{'active':c.selectedItem == $index}"
+        ng-repeat="item in c.data.items track by $index"&gt;
+        &lt;h4 ng-bind="item.title"&gt;&lt;/h4&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- Controls --&gt;
+    &lt;div class="carousel-controls"&gt;
+      &lt;a class="left carousel-control" href="#myCarousel" data-slide="prev"&gt;
+        &lt;span class="glyphicon glyphicon-chevron-left"&gt;&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a class="right carousel-control" href="#myCarousel" data-slide="next"&gt;
+        &lt;span class="glyphicon glyphicon-chevron-right"&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;!-- End Carousel --&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1956516980</payload_hash>
+<remote_update_set display_value="pe-news-carousel">0d52a0ea73230300025780844ff6a796</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-01-11 22:48:24</sys_created_on>
+<sys_id>0152a0ea73230300025780844ff6a797</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>160e768a0700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-01-11 22:48:24</sys_updated_on>
+<table/>
+<target_name>pe news carousel</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>af326caa2b230300fa03b756e11ff054</update_guid>
+<update_guid_history>af326caa2b230300fa03b756e11ff054:-1956516980</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
