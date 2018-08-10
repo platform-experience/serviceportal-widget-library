@@ -1,0 +1,53 @@
+.case-header {
+  font-size: 16px;
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.case-states-filter {
+  display: flex;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  .state {
+    flex-grow: 1;
+
+    &.state-active {
+      > div {
+        border-bottom: 2px solid black;
+        float: left;
+        padding-bottom: 5px;
+      }
+    }
+
+    &.state-count-overdue {
+      .state-count {
+        color: #952e32;
+      }
+      > div {
+        border-color: #952e32;
+      }
+    }
+    &.state-count-soon {
+      .state-count {
+        color: #f56313;
+      }
+      > div {
+        border-color: #f56313;
+      }
+    }
+    &.state-count-all {
+      .state-count {
+        color: #228845;
+      }
+      > div {
+        border-color: #228845;
+      }
+    }
+  }
+}
+
+.case-list {
+  margin-top: 25px;
+}

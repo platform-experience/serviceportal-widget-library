@@ -1,0 +1,24 @@
+<div class="task-content">
+  <h4>${Set up or modify your direct deposit information.}</h4>
+  <div class="related-articles">
+    <h5>${Related Articles}</h5>
+    <ul>
+      <li>
+        <span>Payroll Policy</span>
+      </li>
+      <li>
+        <span>Direct Deposit Instructions</span>
+      </li>
+    </ul>
+  </div>
+  <div class="deposit-info">
+    <div class="form-group">
+      <label for="routingNumber">Routing Number</label>
+      <input class="form-control" id="routingNumber" ng-model="c.routingNumber" ng-change="c.changedBankingInfo()" type="tel" />
+    </div>
+    <div class="form-group">
+      <label for="accountNumber">Account Number</label>
+      <input class="form-control" id="accountNumber" ng-model="c.accountNumber" ng-change="c.changedBankingInfo()" type="tel" />
+    </div>
+  </div>
+</div>

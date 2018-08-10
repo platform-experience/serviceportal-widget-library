@@ -10,7 +10,7 @@ The behaviour of this widget is identical to that of the out of box "Icon Link" 
 ## Installation
 Download and install update set **[pe-image-link.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-image-link/pe-image-link.u-update-set.xml)**.
 
-For instructions on how to do this see the [ServiceNow Product Documentation]((https://docs.servicenow.com/bundle/jakarta-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)).
+For instructions on how to do this see the [ServiceNow Product Documentation]((https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)).
 
 After applying the update set the widget can then be accessed via the `Service Portal > Widgets` section for use and customization.
 

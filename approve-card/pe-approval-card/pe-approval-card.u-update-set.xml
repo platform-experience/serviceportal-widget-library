@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-06-01 19:02:49">
+<unload unload_date="2018-08-09 22:00:33">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -12,17 +12,20 @@
 <inserted/>
 <name>PE Approval Card</name>
 <origin_sys_id/>
+<parent display_value=""/>
 <release_date/>
-<remote_sys_id>581686dadb4f3200abd4f9361d961932</remote_sys_id>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>e1bdddc2db73db008798ffa31d961983</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>ec9a8e5edb4f3200abd4f9361d961972</sys_id>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>ff35b9cedb73db008798ffa31d9619a0</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -32,42 +35,24 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_user_9ec35b8713453a007e94fc5ed144b09a</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_user"><sys_user action="INSERT_OR_UPDATE"><accumulated_roles/><active>true</active><agent_status/><average_daily_fte/><building/><calendar_integration>1</calendar_integration><city/><company/><cost_center/><country/><date_format/><default_perspective/><department/><edu_status>faculty</edu_status><email>suzy@example.com</email><employee_number/><failed_attempts/><first_name>Suzy</first_name><gender/><geolocation_tracked>false</geolocation_tracked><home_phone/><internal_integration_user>false</internal_integration_user><introduction/><last_login/><last_login_device/><last_login_time/><last_name>Ham</last_name><last_password/><last_position_update/><latitude/><ldap_server/><location/><locked_out>false</locked_out><longitude/><manager/><middle_name/><mobile_phone/><name>Suzy Ham</name><notification>2</notification><on_schedule/><password_needs_reset>false</password_needs_reset><phone>(858) 876-6870</phone><photo/><preferred_language/><roles/><schedule/><source/><state/><street/><sys_class_name>sys_user</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:13:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9ec35b8713453a007e94fc5ed144b09a</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-24 22:14:04</sys_updated_on><time_format/><time_zone/><title>Developer</title><u_demo_persona>false</u_demo_persona><user_name>suzy.ham</user_name><user_password/><vip>false</vip><web_service_access_only>false</web_service_access_only><zip/></sys_user><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#843d29</average_image_color><compressed>true</compressed><content_type>image/jpeg</content_type><encryption_context/><file_name>photo</file_name><image_height>128</image_height><image_width>128</image_width><size_bytes>4896</size_bytes><size_compressed>4603</size_compressed><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>eb16d7c713453a007e94fc5ed144b055</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-24 22:22:45</sys_updated_on><table_name>ZZ_YYsys_user</table_name><table_sys_id>9ec35b8713453a007e94fc5ed144b09a</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>2f16d7c713453a007e94fc5ed144b055</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>1</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>af16d7c713453a007e94fc5ed144b055</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2392</length><position>2</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>2316d7c713453a007e94fc5ed144b056</sys_id></sys_attachment_doc></record_update>]]></payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
+<name>m2m_sp_widget_dependency_3372305013523e00de8cb5b12244b044</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="pe-people-info-launch-connect">c3f9578813dd7a007e94fc5ed144b0c7</sp_dependency><sp_widget display_value="PE People Info">11f38daa134db600d15e3d7ed144b0fa</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 00:43:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3372305013523e00de8cb5b12244b044</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-people-info-launch-connect.PE People Info</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_3372305013523e00de8cb5b12244b044</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 00:43:05</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>249a8e5edb4f3200abd4f9361d961974</sys_id>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>3735b9cedb73db008798ffa31d9619a1</sys_id>
 <sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520567de80000001</sys_recorded_at>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
 <table/>
-<target_name>Suzy Ham</target_name>
-<type>User</type>
+<target_name>pe-people-info-launch-connect.PE People Info</target_name>
+<type>Widget Dependency</type>
 <update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-people-info-launch-connect</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:14:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7a1a978813dd7a007e94fc5ed144b0fd</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-people-info-launch-connect-ui-script">9ff4d7c413dd7a007e94fc5ed144b0e7</sys_ui_script><sys_update_name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:57</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>289a8e5edb4f3200abd4f9361d961973</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
-<table/>
-<target_name>pe-people-info-launch-connect</target_name>
-<type>JS Include</type>
-<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history>d84b5982f873db002ded0a55aeda25ba:-958916594,-729565217:-729565217,163073311:163073311,-729565217:-729565217,163073311:163073311,-729565217:-729565217,163073311:163073311,-729565217:-729565217</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -103,18 +88,22 @@
     }
 }
 ]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 00:55:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;9ff4d7c413dd7a007e94fc5ed144b0e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-people-info-launch-connect-ui-script&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_9ff4d7c413dd7a007e94fc5ed144b0e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 19:10:59&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>609a8e5edb4f3200abd4f9361d961974</sys_id>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>3b35b9cedb73db008798ffa31d9619a2</sys_id>
 <sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520567dbf0000001</sys_recorded_at>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch-connect-ui-script</target_name>
 <type>UI Script</type>
 <update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -125,40 +114,22 @@
 <comments/>
 <name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>pe-people-info-launch-connect</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:13:54</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>c3f9578813dd7a007e94fc5ed144b0c7</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_c3f9578813dd7a007e94fc5ed144b0c7</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:41</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>649a8e5edb4f3200abd4f9361d961973</sys_id>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>3f35b9cedb73db008798ffa31d9619a1</sys_id>
 <sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520567ddb0000001</sys_recorded_at>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch-connect</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_widget_dependency_3372305013523e00de8cb5b12244b044</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="pe-people-info-launch-connect">c3f9578813dd7a007e94fc5ed144b0c7</sp_dependency><sp_widget display_value="PE People Info">11f38daa134db600d15e3d7ed144b0fa</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2017-04-19 00:43:05</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>3372305013523e00de8cb5b12244b044</sys_id><sys_mod_count>0</sys_mod_count><sys_name>pe-people-info-launch-connect.PE People Info</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_3372305013523e00de8cb5b12244b044</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2017-04-19 00:43:05</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>a09a8e5edb4f3200abd4f9361d961973</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
-<table/>
-<target_name>pe-people-info-launch-connect.PE People Info</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -212,18 +183,22 @@
     // implement resource here
 
 })(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/pe_people_info_launch_connect/launch&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/launch&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-28 00:57:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;2326170813dd7a007e94fc5ed144b0c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-people-info-launch&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_2326170813dd7a007e94fc5ed144b0c9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-02-28 23:32:45&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Launch connect chat"&gt;52f5930813dd7a007e94fc5ed144b0f9&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>a89a8e5edb4f3200abd4f9361d961974</sys_id>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>7335b9cedb73db008798ffa31d9619a3</sys_id>
 <sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520567df00000001</sys_recorded_at>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
 <table/>
 <target_name>pe-people-info-launch</target_name>
 <type>Scripted REST Resource</type>
 <update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -233,37 +208,22 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_de98a0ae130db600d15e3d7ed144b08f</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function ApprovalCardController(spUtil) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function ApprovalCardController(spUtil) {
   var c = this;
 
   c.$onInit = function() {
-    getUserInfo();
-    getWidgetOptions();
-    activateWidget();
+    getPeopleInfo();
   };
 
-  function activateWidget() {
-    spUtil.get('pe-people-info', {
-      userSysId: c.data.userInfo.user_sys_id,
-      showOnlyPicture: c.data.userInfo.show_job_title,
-      showJobTitle: c.data.userInfo.show_call_and_chat,
-      showCallAndChat: c.data.userInfo.show_only_picture
-    }).then(function(response) {
-      c.data.peopleInfoWidget = response;
+  function getPeopleInfo() {
+    spUtil.get('pe-people-info').then(function(result) {
+      c.peopleInfo = result.data ? result : null;
+      setWidgetOptions();
     });
   }
 
-  function getUserInfo() {
-    c.data.userInfo = {
-      userSysId: '9ec35b8713453a007e94fc5ed144b09a',
-      showOnlyPicture: false,
-      showJobTitle: true,
-      showCallAndChat: false
-    };
-  }
-
-  function getWidgetOptions() {
-    c.data.widget = {
+  function setWidgetOptions() {
+    c.widget = {
       title: c.options.title,
       purpose: c.options.purpose,
       icon: c.options.icon
@@ -275,12 +235,12 @@ $pe-brand-danger: #d9534f !default;
 $pe-brand-info: #5bc0de !default;
 
 .encloser {
-  .actual-card {
+  .approval-card {
     clear: both;
     background: #fff;
     margin-bottom: 10px;
     border: 1px solid #e6e8ea;
-    .padd-it {
+    .sub-wrapper {
       .heading {
         font-size: 18px;
         font-weight: bold;
@@ -348,22 +308,42 @@ $pe-brand-info: #5bc0de !default;
       }
     }
   }
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Approval card widget, another widget called "pe-people-info" is embedded inside this widget&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-approval-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Approval Card&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","default_value":"Destination Services","label":"Title","type":"string"},{"name":"purpose","default_value":"Relocation Package","label":"Purpose","type":"string"},{"name":"icon","default_value":"fa fa-bell fa-2x","label":"Icon","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Approval card widget, another widget called "pe-people-info" is embedded inside this widget&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-approval-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Approval Card&lt;/name&gt;&lt;option_schema&gt;[&amp;#13;
+  {&amp;#13;
+    "name": "title",&amp;#13;
+    "default_value": "Destination Services",&amp;#13;
+    "label": "Title",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "purpose",&amp;#13;
+    "default_value": "Relocation Package",&amp;#13;
+    "label": "Purpose",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "icon",&amp;#13;
+    "default_value": "fa fa-bell fa-2x",&amp;#13;
+    "label": "Icon",&amp;#13;
+    "type": "string"&amp;#13;
+  }&amp;#13;
+]&amp;#13;
+&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-22 20:34:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;de98a0ae130db600d15e3d7ed144b08f&lt;/sys_id&gt;&lt;sys_mod_count&gt;138&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Approval Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_de98a0ae130db600d15e3d7ed144b08f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-06-01 18:57:40&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="encloser"&gt;
-  &lt;div class="actual-card"&gt;
-    &lt;div class="padd-it"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-02-22 20:34:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;de98a0ae130db600d15e3d7ed144b08f&lt;/sys_id&gt;&lt;sys_mod_count&gt;192&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Approval Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_de98a0ae130db600d15e3d7ed144b08f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-09 21:57:03&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="encloser"&gt;
+  &lt;div class="approval-card"&gt;
+    &lt;div class="sub-wrapper"&gt;
       &lt;div class="heading"&gt;
-        &lt;p&gt;{{::c.data.widget.title}}&lt;/p&gt;
+        &lt;p&gt;{{::c.widget.title}}&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class="details"&gt;
         &lt;div class="each-div"&gt;
-          &lt;sp-widget widget="c.data.peopleInfoWidget"&gt;&lt;/sp-widget&gt;
+          &lt;sp-widget widget="c.peopleInfo"&gt;&lt;/sp-widget&gt;
         &lt;/div&gt;
         &lt;div class="purpose each-div"&gt;
-          &lt;i class="{{c.data.widget.icon}} purpose-icon" aria-hidden="true"&gt;&lt;/i&gt;
-          &lt;p&gt;{{::c.data.widget.purpose}}&lt;/p&gt;
+          &lt;i class="{{::c.widget.icon}} purpose-icon" aria-hidden="true"&gt;&lt;/i&gt;
+          &lt;p&gt;{{::c.widget.purpose}}&lt;/p&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -380,40 +360,22 @@ $pe-brand-info: #5bc0de !default;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
+<payload_hash>177987837</payload_hash>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>ac9a8e5edb4f3200abd4f9361d961973</sys_id>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>7735b9cedb73db008798ffa31d9619a2</sys_id>
 <sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520b16f8c0000001</sys_recorded_at>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
 <table/>
 <target_name>PE Approval Card</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ws_definition_52f5930813dd7a007e94fc5ed144b0f9</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/pe_people_info_launch_connect</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>Launch connect chat</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>pe_people_info_launch_connect</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 00:56:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>52f5930813dd7a007e94fc5ed144b0f9</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Launch connect chat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_52f5930813dd7a007e94fc5ed144b0f9</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:09:03</sys_updated_on></sys_ws_definition></record_update>]]></payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>e49a8e5edb4f3200abd4f9361d961974</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
-<table/>
-<target_name>Launch connect chat</target_name>
-<type>Scripted REST API</type>
-<update_domain>global</update_domain>
+<update_guid>a074b1cea373db00f496ec8c3b9bb7d5</update_guid>
+<update_guid_history>a074b1cea373db00f496ec8c3b9bb7d5:177987837,f9d2fd4e3573db00e175d512ab8e0517:1490295583,d1b2bd4e3f73db001d926700c16c8b4b:546211383,b0d17d4ef973db008c8677fb41582fcd:-896257804,e3b17d4e0073db007e3c7a7bf4915b36:-1202337970,fba1714e0773db00a23b2616065d5bf6:2137841216,dfe0b54efb73db001c66e3a35521c1b4:866988162,c6d0314ead73db003cd07174d9fec60f:2128500404,0950714e8873db00f5bc3f98bb8c21ee:-811938276,fd40714ed673db00156f558d3101924f:-1361771134,f030314e8d73db0017657f7e16672e01:-1935875660,ef10b90eb273db00b299826f3e59e777:-1751090979,b46f290ec173db00f2686bb75ba86927:-1888873347,bd4fa50e4e73db00567eae15ee9759e2:-1358750726,512f290e1f73db0037d63fdc24b1e01e:307202266,67fea50e7773db0086421840ee05a97c:-798919334,21fe250e7073db001ba9c0d92749a846:-1273680645,15ce250e3073db0008775c5db35c1a4f:-1412589615,75be610eba73db0009a192693598e2d8:1669850448,316e610e4173db000f9a6702616803d1:-943289039,cb0eadcaf873db0071a9ed51a66e02b1:2126794251,73cd2dca2f73db0029e8cc1d1de38faa:-1515386871,6f5c21cafc73db00efaaffed2be371e7:-370880183,9a1ce58a6a73db002aaa883a2e35a0a6:2000739401,b78b298a1c73db003669699aecde6e90:-2086801973,6f2be18ac573db00d34c1c7866eb0cac:1255165003,bf0be58ad973db00ee6e83a50bc90192:152739853,0d9ae18a0773db008ea32eabcdf8dc97:1888884825,758aa18aba73db0063659824012634ae:894892881,3f7a618a1473db009e6b31762fbf9c70:-588512183,f36a618aa473db00d0b018d64d76219c:894892881,725a618a7e73db00f950a83272787d66:1689022597,6a3a218ade73db00680306c42fa34e31:-1576806673,183aed4ae373db002481f482bfc46be3:818143254,352aad4a1473db00d6a6d53e897782cb:-942870305,e91a6d4ab873db001746b9e8909bc7df:-1576806673,b80a6d4a7e73db00d07d251788d127c1:-1838294529,4ef96d4a5773db00ff55b074b2502638:-120038698,c7e92d4ada73db00a3ba2cd96181e0c9:235704918,c9e9e94a2373db004a89138468a04eec:438032616,a2d9a54aec73db00df830e88d3a824cc:235704918,25c9e94a6073db004a99bc50e990e031:-54479123,1449a54a5973db002180145d169713a5:-785276954,ce29a54ae573db007fc6b3804270569b:156528333,3619254a5773db000809a12b7bf59465:976966964,4519254ab473db00cb7ace55492f1927:-421037515,00d82d0a5073db002a39deb497de1bb1:-785276954,87b82d0a5273db0030af8a89dacc8faa:215804103,c77161860f73db00daf27907270eb551:-1487556949,ca51ed46a673db009b5e47d4749f8de9:363232186,0321ad469173db00a54e0aaa17a8cd68:-2145370938,2e116d468f73db00bfb2c52a2791c94f:-48157142,90012d461e73db008b2280d84715d1ff:-2075680707,ccb06946db73db0060f5f56719772ac1:-750559556,e45b99823273db00fbc886b418634591:-2022945743,e45b99823273db00fbc886b418634591:-2022945743,3a3cbbcca530d30017fb1607c67a1643:512655549,966855913:966855913,335124573:335124573,1038822552:1038822552,485337621:485337621,-552691595:-552691595,485337621:485337621,520921292:520921292,-805390846:-805390846,185135692:185135692,1987564490:1987564490,-1155042690:-1155042690,883063540:883063540,585466984:585466984,883063540:883063540,1100945372:1100945372</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -560,18 +522,100 @@ $pe-brand-info: #5bc0de !default;
     &lt;h4 class="title"&gt;{{::data.user_full_name}}&lt;/h4&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Approval Card">ec9a8e5edb4f3200abd4f9361d961972</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>steven.gregory</sys_created_by>
-<sys_created_on>2017-06-01 19:02:49</sys_created_on>
-<sys_id>e89a8e5edb4f3200abd4f9361d961973</sys_id>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>b335b9cedb73db008798ffa31d9619a2</sys_id>
 <sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520567e0e0000001</sys_recorded_at>
 <sys_updated_by>steven.gregory</sys_updated_by>
-<sys_updated_on>2017-06-01 19:02:49</sys_updated_on>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
 <table/>
 <target_name>PE People Info</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history>284b9982c673db0026cdfce35c6de609:-916212066,524652155:524652155,877754492:877754492,27438064:27438064,1207162081:1207162081,1885990895:1885990895,1207162081:1207162081,-2028222733:-2028222733,-1189573633:-1189573633,524652155:524652155,1885990895:1885990895,524652155:524652155,-450629590:-450629590</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_52f5930813dd7a007e94fc5ed144b0f9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/pe_people_info_launch_connect</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl/><is_versioned>false</is_versioned><name>Launch connect chat</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>pe_people_info_launch_connect</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 00:56:36</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>52f5930813dd7a007e94fc5ed144b0f9</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Launch connect chat</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_52f5930813dd7a007e94fc5ed144b0f9</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:09:03</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>bf35b9cedb73db008798ffa31d9619a2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520567e040000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
+<table/>
+<target_name>Launch connect chat</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_9ec35b8713453a007e94fc5ed144b09a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_user"><sys_user action="INSERT_OR_UPDATE"><accumulated_roles/><active>true</active><agent_status/><average_daily_fte/><building/><calendar_integration>1</calendar_integration><city/><company/><cost_center/><country/><date_format/><default_perspective/><department/><edu_status>faculty</edu_status><email>suzy@example.com</email><employee_number/><failed_attempts/><first_name>Suzy</first_name><gender/><geolocation_tracked>false</geolocation_tracked><home_phone/><internal_integration_user>false</internal_integration_user><introduction/><last_login/><last_login_device/><last_login_time/><last_name>Ham</last_name><last_password/><last_position_update/><latitude/><ldap_server/><location/><locked_out>false</locked_out><longitude/><manager/><middle_name/><mobile_phone/><name>Suzy Ham</name><notification>2</notification><on_schedule/><password_needs_reset>false</password_needs_reset><phone>(858) 876-6870</phone><photo/><preferred_language/><roles/><schedule/><source/><state/><street/><sys_class_name>sys_user</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:13:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9ec35b8713453a007e94fc5ed144b09a</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-24 22:14:04</sys_updated_on><time_format/><time_zone/><title>Developer</title><u_demo_persona>false</u_demo_persona><user_name>suzy.ham</user_name><user_password/><vip>false</vip><web_service_access_only>false</web_service_access_only><zip/></sys_user><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#843d29</average_image_color><compressed>true</compressed><content_type>image/jpeg</content_type><encryption_context/><file_name>photo</file_name><image_height>128</image_height><image_width>128</image_width><size_bytes>4896</size_bytes><size_compressed>4603</size_compressed><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>eb16d7c713453a007e94fc5ed144b055</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2017-02-24 22:22:45</sys_updated_on><table_name>ZZ_YYsys_user</table_name><table_sys_id>9ec35b8713453a007e94fc5ed144b09a</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>2f16d7c713453a007e94fc5ed144b055</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>1</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>af16d7c713453a007e94fc5ed144b055</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2392</length><position>2</position><sys_attachment display_value="photo" sys_id="eb16d7c713453a007e94fc5ed144b055">eb16d7c713453a007e94fc5ed144b055</sys_attachment><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-24 22:22:45</sys_created_on><sys_id>2316d7c713453a007e94fc5ed144b056</sys_id></sys_attachment_doc></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>fb35b9cedb73db008798ffa31d9619a2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520567d9c0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
+<table/>
+<target_name>Suzy Ham</target_name>
+<type>User</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>pe-people-info-launch-connect</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2017-02-28 01:14:21</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>7a1a978813dd7a007e94fc5ed144b0fd</sys_id><sys_mod_count>3</sys_mod_count><sys_name>pe-people-info-launch-connect</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="pe-people-info-launch-connect-ui-script">9ff4d7c413dd7a007e94fc5ed144b0e7</sys_ui_script><sys_update_name>sp_js_include_7a1a978813dd7a007e94fc5ed144b0fd</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-02-28 19:47:57</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PE Approval Card">ff35b9cedb73db008798ffa31d9619a0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-09 22:00:33</sys_created_on>
+<sys_id>ff35b9cedb73db008798ffa31d9619a1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16520567db40000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-09 22:00:33</sys_updated_on>
+<table/>
+<target_name>pe-people-info-launch-connect</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>

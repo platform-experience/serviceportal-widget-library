@@ -46,7 +46,7 @@
           <span class="pull-right">Last Opened</span>
         </div>
         <div class="panel-body">
-          <div class="row" ng-repeat="user in ::c.data.users | orderBy: 'timeAgo'">
+          <div class="row" ng-repeat="user in ::c.data.users | orderBy: 'timeAgo' track by $index">
             <div class="col-xs-2">
               <div class="photo">
                 <img class="img-circle" ng-src="{{::user.photo.display_value}}">

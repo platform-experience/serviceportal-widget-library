@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-09 00:47:08">
+<unload unload_date="2018-08-09 00:10:32">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -12,17 +12,20 @@
 <inserted/>
 <name>PE Status Card</name>
 <origin_sys_id/>
+<parent display_value=""/>
 <release_date/>
-<remote_sys_id>2fa9adc3db193200b793f2b6ae9619bb</remote_sys_id>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>702c083ddbf79b008798ffa31d9619bb</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-09 00:47:08</sys_created_on>
-<sys_id>e33aadc3db193200b793f2b6ae9619a1</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-09 00:10:31</sys_created_on>
+<sys_id>35694d79db7b9b008798ffa31d96193e</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-09 00:47:08</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-09 00:10:31</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -33,7 +36,7 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_c4987f7edb95320062e479daae9619bc</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function StatusCardController() {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function StatusCardController() {
   var c = this;
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-anchor-color: #68acd8 !default;&amp;#13;
 $pe-status-color-danger: #ff0050 !default;&amp;#13;
@@ -94,56 +97,118 @@ $pe-status-color-warning: #ffce00 !default;&amp;#13;
       }&amp;#13;
     }&amp;#13;
   }&amp;#13;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-status-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Status Card&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","label":"Title","type":"string"},{"name":"status_number1","label":"Status Number 1","type":"integer"},{"name":"status_number2","label":"Status Number 2","type":"integer"},{"name":"status_number3","label":"Status Number 3","type":"integer"},{"name":"sub_text1","label":"Sub Text 1","type":"string"},{"name":"sub_text2","label":"Sub Text 2","type":"string"},{"name":"sub_text3","label":"Sub Text 3","type":"string"},{"name":"status_indicator2","label":"Status Indicator 2","type":"choice","choices":[{"label":"danger","value":"danger"},{"label":"normal","value":"normal"},{"label":"warning","value":"warning"}]},{"name":"status_indicator3","label":"Status Indicator 3","type":"choice","choices":[{"label":"danger","value":"danger"},{"label":"normal","value":"normal"},{"label":"warning","value":"warning"}]}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  var serverOptions = input.options ? input.options : (input.parameters ? input.parameters : {});
-  options.title = options.title || serverOptions.title || 'Business Critical Services';
-  options.statusIndicator2 = options.status_indicator2 || serverOptions.status_indicator2 || 'warning';
-  options.statusIndicator3 = options.status_indicator3 || serverOptions.status_indicator3 || 'normal';
-  options.statusNumber1 = options.status_number1 || serverOptions.status_number1 || 5;
-  options.statusNumber2 = options.status_number2 || serverOptions.status_number2 || 148;
-  options.statusNumber3 = options.status_number3 || serverOptions.status_number3 || 78;
-  options.subText1 = options.sub_text1 || serverOptions.sub_text1 || 'With Critical Incidents';
-  options.subText2 = options.sub_text2 || serverOptions.sub_text2 || 'Severe Vulnerabilities';
-  options.subText3 = options.sub_text3 || serverOptions.sub_text3 || 'Control Effectiveness';
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 16:30:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c4987f7edb95320062e479daae9619bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;63&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Status Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_c4987f7edb95320062e479daae9619bc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-09 00:29:39&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row status-card"&gt;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-status-card&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Status Card&lt;/name&gt;&lt;option_schema&gt;[{&amp;#13;
+  "name": "title",&amp;#13;
+  "default_value": "Business Critical Services",&amp;#13;
+  "label": "Title",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "name": "status_number1",&amp;#13;
+  "default_value": "5",&amp;#13;
+  "label": "Status Number 1",&amp;#13;
+  "type": "integer"&amp;#13;
+}, {&amp;#13;
+  "name": "status_number2",&amp;#13;
+  "default_value": "148",&amp;#13;
+  "label": "Status Number 2",&amp;#13;
+  "type": "integer"&amp;#13;
+}, {&amp;#13;
+  "name": "status_number3",&amp;#13;
+  "default_value": "78",&amp;#13;
+  "label": "Status Number 3",&amp;#13;
+  "type": "integer"&amp;#13;
+}, {&amp;#13;
+  "name": "sub_text1",&amp;#13;
+  "default_value": "With Critical Incidents",&amp;#13;
+  "label": "Sub Text 1",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "name": "sub_text2",&amp;#13;
+  "default_value": "Severe Vulnerabilities",&amp;#13;
+  "label": "Sub Text 2",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "name": "sub_text3",&amp;#13;
+  "default_value": "Control Effectiveness",&amp;#13;
+  "label": "Sub Text 3",&amp;#13;
+  "type": "string"&amp;#13;
+}, {&amp;#13;
+  "name": "status_indicator2",&amp;#13;
+  "default_value": "warning",&amp;#13;
+  "label": "Status Indicator 2",&amp;#13;
+  "type": "choice",&amp;#13;
+  "choices": [{&amp;#13;
+    "label": "danger",&amp;#13;
+    "value": "danger"&amp;#13;
+  }, {&amp;#13;
+    "label": "normal",&amp;#13;
+    "value": "normal"&amp;#13;
+  }, {&amp;#13;
+    "label": "warning",&amp;#13;
+    "value": "warning"&amp;#13;
+  }]&amp;#13;
+}, {&amp;#13;
+  "name": "status_indicator3",&amp;#13;
+  "default_value": "normal",&amp;#13;
+  "label": "Status Indicator 3",&amp;#13;
+  "type": "choice",&amp;#13;
+  "choices": [{&amp;#13;
+    "label": "danger",&amp;#13;
+    "value": "danger"&amp;#13;
+  }, {&amp;#13;
+    "label": "normal",&amp;#13;
+    "value": "normal"&amp;#13;
+  }, {&amp;#13;
+    "label": "warning",&amp;#13;
+    "value": "warning"&amp;#13;
+  }]&amp;#13;
+}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-08 16:30:42&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;c4987f7edb95320062e479daae9619bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;68&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Status Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_c4987f7edb95320062e479daae9619bc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-08 19:59:44&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="row status-card"&gt;
   &lt;div class="col-xs-12"&gt;
     &lt;div class="panel panel-default"&gt;
       &lt;div class="panel-heading"&gt;{{::options.title}}&lt;/div&gt;
       &lt;div class="panel-body"&gt;
         &lt;div class="row text-center"&gt;
           &lt;div class="col-xs-4"&gt;
-            &lt;h4&gt;{{::options.statusNumber1}}&lt;/h4&gt;
-            &lt;p class="sub-text"&gt;{{::options.subText1}}&lt;/p&gt;
+            &lt;h4&gt;{{::options.status_number1}}&lt;/h4&gt;
+            &lt;p class="sub-text"&gt;{{::options.sub_text1}}&lt;/p&gt;
           &lt;/div&gt;
           &lt;div class="col-xs-4"&gt;
-            &lt;div class="status-circle-{{::options.statusIndicator2}}"&gt;
-              &lt;h4&gt;{{::options.statusNumber2}}&lt;/h4&gt;
+            &lt;div class="status-circle-{{::options.status_indicator2}}"&gt;
+              &lt;h4&gt;{{::options.status_number2}}&lt;/h4&gt;
             &lt;/div&gt;
-            &lt;p class="sub-text"&gt;{{::options.subText2}}&lt;/p&gt;
+            &lt;p class="sub-text"&gt;{{::options.sub_text2}}&lt;/p&gt;
           &lt;/div&gt;
           &lt;div class="col-xs-4"&gt;
-            &lt;div class="status-circle-{{::options.statusIndicator3}}"&gt;
-              &lt;h4&gt;{{::options.statusNumber3}}%&lt;/h4&gt;
+            &lt;div class="status-circle-{{::options.status_indicator3}}"&gt;
+              &lt;h4&gt;{{::options.status_number3}}%&lt;/h4&gt;
             &lt;/div&gt;
-            &lt;p class="sub-text"&gt;{{::options.subText3}}&lt;/p&gt;
+            &lt;p class="sub-text"&gt;{{::options.sub_text3}}&lt;/p&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Status Card">e33aadc3db193200b793f2b6ae9619a1</remote_update_set>
+<payload_hash>-1309465186</payload_hash>
+<remote_update_set display_value="PE Status Card">35694d79db7b9b008798ffa31d96193e</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2017-03-09 00:47:08</sys_created_on>
-<sys_id>673aadc3db193200b793f2b6ae9619a1</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-09 00:10:31</sys_created_on>
+<sys_id>79694d79db7b9b008798ffa31d96193e</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2017-03-09 00:47:08</sys_updated_on>
+<sys_recorded_at>1651b1faa7b0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-09 00:10:31</sys_updated_on>
 <table/>
 <target_name>PE Status Card</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
+<update_guid>5400d0fdfbf79b001a101dde474109d2</update_guid>
+<update_guid_history>5400d0fdfbf79b001a101dde474109d2:-1309465186,acef44bd0af79b003dbf0c2f60c58252:-496887886,d32d487d2bf79b0053f80d99fccfb1d2:1104682017,561d847db3f79b001d36ee7a45439659:-630459129,30ac047d02f79b001e03aacbd03c322f:-476415683,-1715164354:-1715164354,1036181170:1036181170,-1715164354:-1715164354,-1917219260:-1917219260</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>

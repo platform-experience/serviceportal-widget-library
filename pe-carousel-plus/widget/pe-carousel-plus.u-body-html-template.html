@@ -1,0 +1,32 @@
+<div class="carousel-plus">
+  <div id="cp" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner" role="listbox">
+      <div class="item" ng-repeat="slide in data.slides | orderBy: 'order' track by $index" ng-class="{'active': $index === 0}">
+        <div ng-if="!slide.youTubeId" class="container">
+          <a ng-href="{{slide.url.length > 0 ? slide.url : ''}}" target="_blank">
+            <img ng-src="{{::slide.background}}" class="img-slide" role="presentation">
+            <div ng-if="::slide.caption" class="carousel-caption">
+              <p>{{::slide.caption}}</p>
+            </div>
+          </a>
+        </div>
+        <div ng-if="::slide.youTubeId" class="container" style="height: {{::slide.height}}">
+          <iframe class="youtube" width="100%" height="{{::slide.height}}" ng-src="{{c.secureUrl(slide.youTubeId)}}" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <a ng-if="data.slides.length > 1" class="left carousel-control" data-target="#cp" role="button" data-slide="prev" ng-click="c.stopVideo()">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a ng-if="data.slides.length > 1" class="right carousel-control" data-target="#cp" role="button" data-slide="next" ng-click="c.stopVideo()">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <ol ng-if="data.slides.length > 1" class="carousel-indicators">
+        <li data-target="#cp" data-slide-to="{{$index}}" ng-repeat="item in data.slides track by $index" ng-class="{'active': $index === 0}"
+          ng-click="c.stopVideo()"></li>
+      </ol>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div>
+  <h1>
+    Select your new desk from available cube locations.
+  </h1>
+  <div class="links-title">Related Articles</div>
+  <ul class="related-links">
+    <li>
+      <a href="$">Office Use Policy</a>
+    </li>
+    <li>
+      <a href="$">Office Sizes by Role</a>
+    </li>
+  </ul>
+  <div>
+    <p class="description">Use the map to choose an open cubicle. We are showing available locations near your team.
+    </p>
+    <div class="map">
+      <img src="/office-available.jpg" alt="" ng-show="!c.locationSelected" ng-click="c.selectLocation()">
+
+      <img src="/office-selected.jpg" alt="" ng-show="c.locationSelected">
+    </div>
+  </div>
+</div>
