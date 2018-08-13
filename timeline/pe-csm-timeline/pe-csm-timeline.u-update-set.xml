@@ -388,21 +388,18 @@ body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#
 <category>customer</category>
 <comments/>
 <name>sp_widget_3282a55c13923e00de8cb5b12244b0d0</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function peCSMTimlineCtrl(spUtil) {
-    /* widget controller */
-    var c = this;
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function TimelineController(spUtil) {
+  var c = this;
 
-    spUtil.get('pe-people-info', {
-        user_sys_id: c.data.user_info.user_sys_id,
-        show_job_title: c.data.user_info.show_job_title,
-        show_call_and_chat: c.data.user_info.show_call_and_chat,
-        show_only_picture: c.data.user_info.show_only_picture,
-        add_border_around_avatar: c.data.user_info.avatar_border
-    }).then(function(response) {
-        c.data.embedded_widget = response;
-    });
-
-
+  spUtil.get('pe-people-info', {
+    user_sys_id: c.data.user_info.user_sys_id,
+    show_job_title: c.data.user_info.show_job_title,
+    show_call_and_chat: c.data.user_info.show_call_and_chat,
+    show_only_picture: c.data.user_info.show_only_picture,
+    add_border_around_avatar: c.data.user_info.avatar_border
+  }).then(function(response) {
+    c.data.embedded_widget = response;
+  });
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.case-extended {&amp;#13;
   background-color: #fbfbfb;&amp;#13;
   border-bottom: solid 1px #e4e5e6;&amp;#13;
