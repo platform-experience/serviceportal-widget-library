@@ -1,1 +1,32 @@
-[{"name":"limit","section":"other","default_value":"5","label":"Limit","type":"integer"},{"name":"title","section":"other","label":"Title","type":"string"},{"name":"issues","section":"other","default_value":"Assigned to me","label":"Issues","type":"choice","choices":[{"label":"Assigned to me","value":"Assigned to me"},{"label":"Created by me","value":"Created by me"}]}]
+[
+  {
+    "name": "limit",
+    "section": "other",
+    "default_value": "5",
+    "label": "Limit",
+    "type": "integer"
+  },
+  {
+    "name": "title",
+    "section": "other",
+    "label": "Title",
+    "type": "string"
+  },
+  {
+    "name": "issues",
+    "section": "other",
+    "default_value": "Assigned to me",
+    "label": "Issues",
+    "type": "choice",
+    "choices": [
+      {
+        "label": "Assigned to me",
+        "value": "Assigned to me"
+      },
+      {
+        "label": "Created by me",
+        "value": "Created by me"
+      }
+    ]
+  }
+]
