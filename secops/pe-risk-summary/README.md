@@ -10,7 +10,7 @@ Get snapshot of risks from your personalized security dashboard with this Securi
 
 ## Additional Information/Notes
 
-Uses the ServiceNow® [Security Operations](https://docs.servicenow.com/bundle/kingston-security-management/page/product/planning-and-policy/concept/c_SecurityManagement.html) applications and plugins.
+> None
 
 ## Configuration
 
