@@ -2,7 +2,7 @@
 
 ## Description
 
-Coming soon...
+Display a list of top vulnerabilities from your dashboard with this Security Operations widget.
 
 ## Screenshot
 
@@ -11,14 +11,6 @@ Coming soon...
 ## Additional Information/Notes
 
 Uses the ServiceNow® [Security Operations](https://docs.servicenow.com/bundle/kingston-security-management/page/product/planning-and-policy/concept/c_SecurityManagement.html) applications and plugins.
-
-## Installation
-
-Download and install update set **[pe-top-vulnerabilities.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-top-vulnerabilities/pe-top-vulnerabilities.u-update-set.xml)**
-
-After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
-
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 

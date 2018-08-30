@@ -2,7 +2,7 @@
 
 ## Description
 
-Coming soon...
+Get snapshot of risks from your personalized security dashboard with this Security Operations widget.
 
 ## Screenshot
 
