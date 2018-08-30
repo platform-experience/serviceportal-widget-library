@@ -1,4 +1,4 @@
-function RiskSummaryController($scope, HighchartsConfigService) {
+function RiskSummaryController(HighchartsConfigService) {
   var c = this;
 
   c.chartConfig = {
