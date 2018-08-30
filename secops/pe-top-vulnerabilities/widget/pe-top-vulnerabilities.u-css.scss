@@ -1,0 +1,46 @@
+.page-header {
+  font-size: 22px;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+.page-header > h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > td {
+  border: none !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.table > thead > tr > th {
+  padding-bottom: 14px;
+}
+a,
+.table > tbody > tr > td {
+  color: $inactive-font-color;
+}
+.progress {
+  background: $background;
+}
+.progress-bar {
+  color: $background;
+}
+.low-risk {
+  background: linear-gradient(135deg, #b3da95 0%, #377a00 100%);
+}
+.medium-risk {
+  background: linear-gradient(90deg, #fdb12e 0%, #f97915 100%);
+}
+.high-risk {
+  background: linear-gradient(270deg, #ff2828 0%, #ff6666 100%);
+}
+.btn {
+  width: 100%;
+  height: 36px;
+  background: $card-background;
+}

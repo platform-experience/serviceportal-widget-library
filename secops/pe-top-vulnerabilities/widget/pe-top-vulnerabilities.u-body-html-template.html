@@ -1,1 +1,36 @@
-<div></div>
+<div class="card-body">
+  <div class="page-header">
+    <h1>Top 5 Vulnerabilities</h1>
+  </div>
+  {{c.data.risks}}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>CVSS</th>
+        <th>CVE</th>
+        <th>VIs at Risk</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="vuln in c.vulns" ng-click="c.gotoCVE(vuln.url)">
+        <td>
+          <div class="progress">
+            <div class="progress-bar" ng-class="c.getClass(vuln.cvss)" role="progressbar" aria-valuenow="{{c.getPercentage(secData.cvss)}}"
+              aria-valuemin="0" aria-valuemax="100" ng-style="{width:c.getPercentage(vuln.cvss) + '%'}">
+              {{vuln.cvss}}
+            </div>
+          </div>
+        </td>
+        <td>{{vuln.cve}}</td>
+        <td>{{vuln.risk}}</td>
+        <td>
+          <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-default" href="?id=secops_vulnerabilities">
+    See All Vulnerabilities
+  </a>
+</div>

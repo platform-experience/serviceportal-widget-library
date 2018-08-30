@@ -1,5 +1,7 @@
 (function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
+  data.values = {
+    low: options.low || 100,
+    medium: options.medium || 200,
+    high: options.high || 300
+  };
 })();

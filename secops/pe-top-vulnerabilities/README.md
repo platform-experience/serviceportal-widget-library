@@ -20,7 +20,8 @@ Uses the ServiceNow® [Security Operations](https://docs.servicenow.com/bundle/k
 
 ### SN System Tables
 
-> None
+* sn_vul_nvd_entry
+* sn_vul_vulnerable_item
 
 ## Sample Data and Data Structures
 
