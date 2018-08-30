@@ -1,1 +1,49 @@
-<div></div>
+<div class="card-body">
+  <ul class="nav nav-pills">
+    <li role="presentation" ng-class="c.active_pane == 1 ? 'active' : ''"><a href="#risk-summary" aria-controls="home" role="tab" data-toggle="tab">Risk Summary</a></li>
+    <li role="presentation" ng-class="c.active_pane == 2 ? 'active' : ''"><a href="#risk-details" aria-controls="home" role="tab" data-toggle="tab">Risk Details</a></li>
+  </ul>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane" ng-class="c.active_pane == 1 ? 'active' : ''" id="risk-summary">
+      <div class="row">
+        <div class="col-xs-7">
+          <sp-widget widget="c.data.chart"></sp-widget>
+        </div>
+        <div class="col-xs-5">
+          <div id="cve-count">
+            <div class="data">
+              {{::c.cves}}
+            </div>
+            <div class="data-label">
+              New CVEs
+            </div>
+          </div>
+          <div id="vuln-items">
+            <div class="data">
+              {{::c.data.vi.TOTAL}}
+            </div>
+            <div class="data-label">
+              Vulnerable Items
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" ng-class="c.active_pane == 2 ? 'active' : ''" id="risk-details">
+      <table class="table">
+        <tr ng-repeat="stat in c.data.vi.stats" ng-class="c.getClass($index)">
+          <td class="name">{{c.getTitle($index)}}</td>
+          <td ng-class="c.getRedClass($index,'LOCAL')">{{stat.LOCAL}}</td>
+          <td ng-class="c.getRedClass($index,'ADJACENT_NETWORK')">{{stat.ADJACENT_NETWORK}}</td>
+          <td ng-class="c.getRedClass($index,'NETWORK')">{{stat.NETWORK}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="name">Local</td>
+          <td class="name adjacent">Adjacent Network</td>
+          <td class="name">Network</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

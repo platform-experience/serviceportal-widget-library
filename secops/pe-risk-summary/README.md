@@ -10,15 +10,7 @@ Coming soon...
 
 ## Additional Information/Notes
 
-> None
-
-## Installation
-
-Download and install update set **[pe-risk-summary.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-risk-summary/pe-risk-summary.u-update-set.xml)**
-
-After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
-
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+Uses the ServiceNow® [Security Operations](https://docs.servicenow.com/bundle/kingston-security-management/page/product/planning-and-policy/concept/c_SecurityManagement.html) applications and plugins.
 
 ## Configuration
 

@@ -1,0 +1,70 @@
+.nav-pills {
+  border-bottom: 1px solid $background;
+}
+.nav-pills > li > a {
+  background: $card-background;
+  color: $inactive-font-color;
+  border-radius: 0px;
+  font-size: 22px;
+}
+.nav-pills > li.active > a {
+  color: $font-color;
+  background: $card-background;
+  border-bottom: 1px solid $font-color;
+}
+.data {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.data-label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  opacity: 0.75;
+  margin-bottom: 15px;
+}
+#risk-summary .row {
+  margin-top: 20.5px;
+  margin-bottom: -50px;
+}
+#risk-details {
+  margin-top: 12px;
+  margin-bottom: -40px;
+  padding-right: 25px;
+}
+.table tr {
+  height: 50px;
+}
+.table td {
+  vertical-align: middle;
+  text-align: center;
+  color: $card-background;
+  border: transparent;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 13px;
+}
+td.dark-red {
+  width: 90px;
+  background: #d94141;
+  border: 1px solid #d94141;
+}
+td.med-red {
+  width: 90px;
+  background: #e56363;
+  border: 1px solid #e56363;
+}
+td.light-red {
+  width: 90px;
+  background: #fba5a5;
+  border: 1px solid #fba5a5;
+}
+td.name {
+  background: transparent;
+  color: #c4c6d2;
+  padding-left: 13px;
+}
+td.adjacent {
+  padding: 0;
+}

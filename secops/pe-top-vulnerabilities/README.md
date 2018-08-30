@@ -10,7 +10,7 @@ Coming soon...
 
 ## Additional Information/Notes
 
-> None
+Uses the ServiceNow® [Security Operations](https://docs.servicenow.com/bundle/kingston-security-management/page/product/planning-and-policy/concept/c_SecurityManagement.html) applications and plugins.
 
 ## Installation
 

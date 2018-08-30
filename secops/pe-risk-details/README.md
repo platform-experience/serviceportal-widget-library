@@ -2,7 +2,7 @@
 
 ## Description
 
-Coming soon...
+Vulnerabilities are matched against the CMDB to display risks based on location and severity with this Security Operations widget.
 
 ## Screenshot
 
@@ -10,15 +10,7 @@ Coming soon...
 
 ## Additional Information/Notes
 
-> None
-
-## Installation
-
-Download and install update set **[pe-risk-details.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-risk-details/pe-risk-details.u-update-set.xml)**
-
-After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
-
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+Uses the ServiceNow® [Security Operations](https://docs.servicenow.com/bundle/kingston-security-management/page/product/planning-and-policy/concept/c_SecurityManagement.html) applications and plugins.
 
 ## Configuration
 
@@ -28,7 +20,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ### SN System Tables
 
-> None
+* sn_vul_vulnerable_item
 
 ## Sample Data and Data Structures
 
