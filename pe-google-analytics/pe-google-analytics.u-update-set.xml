@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-08-22 16:06:55">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>PE Google Analytics</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>0a23888edbcc63408798ffa31d96192b</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>02f06b0adb486f00abd4f9361d961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_4090e30adb486f00abd4f9361d9619e3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Google Analytics Service</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-08-22 16:05:21</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>4090e30adb486f00abd4f9361d9619e3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Google Analytics Service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Google Analytics Service">7a00afc6db486f00abd4f9361d9619ef</sys_ui_script><sys_update_name>sp_js_include_4090e30adb486f00abd4f9361d9619e3</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-08-22 16:05:21</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>-1852103473</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>02f06b0adb486f00abd4f9361d961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16562621b800000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics Service</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>d790270a70486f0045b23f07e82eb7d0</update_guid>
+<update_guid_history>d790270a70486f0045b23f07e82eb7d0:-1852103473</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_3a80e30adb486f00abd4f9361d9619df</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="PE Google Analytics Dependency">ae40a30adb486f00abd4f9361d96191d</sp_dependency><sp_js_include display_value="PE Google Analytics Module">5470e30adb486f00abd4f9361d9619ef</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-08-22 16:05:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>3a80e30adb486f00abd4f9361d9619df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Google Analytics Dependency.PE Google Analytics Module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_3a80e30adb486f00abd4f9361d9619df</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-08-22 16:05:03</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>-108693589</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>06f06b0adb486f00abd4f9361d961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656261d40c0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics Dependency.PE Google Analytics Module</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>7e80e30a41486f00a95247ed8747a4e0</update_guid>
+<update_guid_history>7e80e30a41486f00a95247ed8747a4e0:-108693589</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_adef5fc6db486f00abd4f9361d9619d1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Google Analytics Module&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  angular.module('googleAnalytics', []);
+})();
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-22 16:02:48&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;adef5fc6db486f00abd4f9361d9619d1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Google Analytics Module&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_adef5fc6db486f00abd4f9361d9619d1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-22 16:02:48&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-98695019</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>0ef06b0adb486f00abd4f9361d961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165625fc50f0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics Module</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>3d006fc66f486f0092346889d9dfb9d6</update_guid>
+<update_guid_history>3d006fc66f486f0092346889d9dfb9d6:-98695019</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_7a00afc6db486f00abd4f9361d9619ef</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;PE Google Analytics Service&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  'use strict';
+
+  function gaService() {
+    var service = {
+      getTrackingSnippet: getTrackingSnippet,
+      setDebugMode: setDebugMode
+    };
+    return service;
+
+    function getTrackingSnippet(isDebug) {
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', setDebugMode(isDebug), 'ga');
+    }
+
+    function setDebugMode(isDebug) {
+      var debugUrl = 'https://www.google-analytics.com/analytics_debug.js';
+      var url = 'https://www.google-analytics.com/analytics.js';
+      return isDebug === 'true' ? debugUrl : url;
+    }
+  }
+
+
+  angular
+    .module('googleAnalytics')
+    .service('gaService', gaService);
+})();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-22 16:03:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;7a00afc6db486f00abd4f9361d9619ef&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Google Analytics Service&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_7a00afc6db486f00abd4f9361d9619ef&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-22 16:03:25&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1702390042</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>4af06b0adb486f00abd4f9361d961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165626056ff0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics Service</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>3620afc6f4486f0041d10b25e81588c7</update_guid>
+<update_guid_history>3620afc6f4486f0041d10b25e81588c7:1702390042</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_ae40a30adb486f00abd4f9361d96191d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>googleAnalytics</module><name>PE Google Analytics Dependency</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-08-22 16:04:27</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>ae40a30adb486f00abd4f9361d96191d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Google Analytics Dependency</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_ae40a30adb486f00abd4f9361d96191d</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-08-22 16:04:27</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>-954632692</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>4ef06b0adb486f00abd4f9361d961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16562614a1d0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics Dependency</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>ce60a30aae486f00aa55e6056ebedc23</update_guid>
+<update_guid_history>ce60a30aae486f00aa55e6056ebedc23:-954632692</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_02dd8fbddb4c63408798ffa31d9619a6</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function GoogleAnalyticsController(gaService) {
+  var c = this;
+
+  c.$onInit = function() {
+    activateTracking();
+    capturePageView();
+  };
+
+  function activateTracking() {
+    gaService.getTrackingSnippet(c.options.debug);
+    ga('create', c.options.trackingId, 'auto');
+  }
+
+  function capturePageView() {
+    ga('send', 'pageview');
+  }
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-google-analytics&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Google Analytics&lt;/name&gt;&lt;option_schema&gt;[&amp;#13;
+  {&amp;#13;
+    "name": "trackingId",&amp;#13;
+    "label": "Tracking ID",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "debug",&amp;#13;
+    "default_value": "false",&amp;#13;
+    "label": "Debug",&amp;#13;
+    "type": "boolean"&amp;#13;
+  }&amp;#13;
+]&amp;#13;
+&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-21 20:05:59&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;02dd8fbddb4c63408798ffa31d9619a6&lt;/sys_id&gt;&lt;sys_mod_count&gt;95&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Google Analytics&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_02dd8fbddb4c63408798ffa31d9619a6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-22 15:54:23&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1129559129</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>86f06b0adb486f00abd4f9361d961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656258124a0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>6e1e1f86a3486f00b234d52daa02bb19</update_guid>
+<update_guid_history>6e1e1f86a3486f00b234d52daa02bb19:-1129559129,0112900ae7c06f009697a350f01c7abb:-382969367,c1a11cc6e0c06f0099019b9289e6d9f7:1901284807,09611cc619c06f0046b65c58929f99ed:1715673037,af60940af700a34095db3fa74b690570:1901284807,f3acc4465200a3401da7c37727170026:1400888771,10870042e100a340733c98e36b8df675:-394583439,e2c688029500a34048ac862b88d39cf3:1445566671,3a518c0eabcc63400f6cb9fc7cef832b:-540161850,ab7d3bf926cc63407740504c63f417cd:317993520,6f3d37f903cc6340c8cd15a8acb855f1:-1950218117,d9dcf3f967cc63405a6e197519a2aae6:314047730,98bc33f9fccc634065d9d0705fc880f6:897888246,953a3f792ecc63400f8c64e365809b53:1199442367,fcb9333919cc63408959ec062986bb7e:-43773452,8e87bf754bcc634033a05a9ea9993d4d:438440308,5a77fff5b9cc6340841a565f47db8d10:1360542523,b8d037f1cccc63409f6f3d9f662d31dc:-315990170,94c077f1abcc6340c738fe89cf4c322a:1463061836,aeb073f19ecc6340ada8179012ce7afc:564659649,54b0f3f1cccc6340422bcf6ab8ec84de:-166321191,80a0f3f1dfcc6340de3b237a865672b3:876826980,1090b3f14ccc634098589509f56233ef:1439179620,7e6033f1e1cc63405231d3b3e534b993:1860155774,c15033b178cc63400ad511a3d6a140d7:-530477698,1a4033f101cc63403bd3abfd6e41b98c:-1792506593,885eeb7111cc6340227680d070e4edbc:663485702,a03e23b1b1cc6340ace87124eb844bcd:298213296,b9fdeb716fcc634009baac4732db8e93:-2057473769,b9cd6771edcc63407ee51be0dda57737:1915615150,455da771b0cc6340dfdff4483a04c2f1:29151406,6f1da33189cc6340e8fb6dd6dd771821:646194581,591d6771f5cc634073938501aa056f19:1534242762,581d2771b0cc63401b669b2c9808cb96:-76361599,dc0d2771becc634079568ebdfcd95a8f:153209793,a1ece371f1cc63402727c23bc9623412:905772061,3acca331a7cc6340fdc6b84c16f4051a:1307919464,bfbc233133cc63405a015f39628f8785:-850102442,d0aceffd9c8c634038804e194f54afb6:-150321453,b99c23315dcc6340b17975288f66c801:-1828259667,4f8ceffd5a8c6340095c2de2f4746d91:-150321453,076c2ffdf28c6340f9509d3b063ce9c7:1584422757,674c2ffdd58c63404f8e1d178a0ba7c2:151172095,733cebfdf68c63400449045e440d1baa:-976886891,943cebfdee8c6340a0071dd80eb4c705:-652912264,0f1cabfda28c63403e3fdb421130cd25:-917294981,c20c2bfdd08c6340cc3287439ecc7d77:-1364433879,b0bb67fd118c634059b03fc76e112e29:1821170584,4f7ba3fdf08c6340beea9c41812d8987:-212066682,f41befbd2c8c6340e1f7e1aa29bb9d86:-212782274,d2ea23fd578c6340a89cc4433f123c84:-828770506,a89a2fbdec8c634013b7c88f70ef8359:-1302667497,208a6bbde68c63402051db181151fffe:834277893,143a6bbd5b8c63401df245e0227776f5:1772397232,d0f9e7bd068c634041b08bf0525ab805:1803912407,dfc967bd8a8c6340e346f86469285412:-518742580,9cb9e3bdbc8c63401acf9a08d7353054:1608018736,397963bdf78c63402da29d657ca5e89f:-518742580,5159e77dca8c6340fcad395fde129a3c:2133561349,6b39e77d928c63401f303eb5287d4487:1608018736,61d7237d708c6340f2af12846e0a97d9:-243941776,9b17af3d588c63407158352eb987a10a:-1511587131,76f66f3d768c6340dc190dc0ec0d1682:-902903683,9296eb3def8c6340bcf58e80da04de4a:-1338540338,da862f3dc08c63402f50d4f653d9d7a0:2100630758,f876eb3d028c6340e340ee1bba78f5ab:-1841047003,e556eb3daa8c6340b4f8b7da6419fe41:-902903683,cf366b3d3e8c6340b58751aa53c448c3:-1841047003,2906a73d088c6340051b3ee2ed2753a8:1187678671,70f5273dce8c6340989e6c5b9bce71c4:-1799474398,7bb5a73df08c6340b89bbb0c3cf1986f:2125821991,4a95a33de08c63407ec7e654f65f6af7:249342326,3d85633d5a8c63402d897e012fc55080:-1127644424,e735aff98c8c6340b2f55fccd76a25c8:1234549666,d315aff9508c6340a9a3d5e0d7e6d21e:-501066268,fbb4aff9188c6340b16fa998d43d7032:-1624664284,75b42ff9188c6340f1d2b8922f35d95f:-402402624,cb642bf9848c634003bbb7cddbafede8:-1624664284,9124e3f9f98c6340720ab83c89bbe8c4:1336143805,3b04e3f9278c634024e30dfcae9567ad:-366485339,20042bf9eb8c63409826437abcfdbae1:-1438078218,f3d3e3f9588c6340eee3fcd8ffd9f5a6:-351102711,9ec327f9be8c6340b698e51634272a42:-892479695,e57327f9a98c6340c3ec1e490ef27b39:1088534183,516363f9958c6340751dae3c0b0a80ba:1670142840,9bf26fb9f48c6340101735702568271d:-1902250618,a64b17f5068c634072664a4d75051aa6:670241456,d02b57f5cf8c6340eac6b320ad73eced:1453283696,1e6adf75778c6340bda23dbf9ce4d15c:-1079051133,9cd2d3f1da8c634039fccb69a94ad777:-1792622822,ea90d771778c63408729d01f27e253a4:1832212693,2960d371ba8c6340c7dc08032959c01a:-78991353,e2df43717e8c6340a8e71b2b3794bece:1965636075,af8fcf31df8c6340f3370fe3a438f053:1624995976,a13f8b311d8c63409b49171cfe919228:-613728354,d21e8ffd4e4c6340a6988b11c3fd35c2:-546865279</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_ca60a30adb486f00abd4f9361d961924</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="PE Google Analytics Dependency">ae40a30adb486f00abd4f9361d96191d</sp_dependency><sp_widget display_value="PE Google Analytics">02dd8fbddb4c63408798ffa31d9619a6</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-08-22 16:04:27</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>ca60a30adb486f00abd4f9361d961924</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Google Analytics Dependency.PE Google Analytics</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_ca60a30adb486f00abd4f9361d961924</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-08-22 16:04:27</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>-616076617</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>8af06b0adb486f00abd4f9361d961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16562614a5b0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics Dependency.PE Google Analytics</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>4660a30a71486f000b747f8668db9326</update_guid>
+<update_guid_history>4660a30a71486f000b747f8668db9326:-616076617</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_5470e30adb486f00abd4f9361d9619ef</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>PE Google Analytics Module</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-08-22 16:05:03</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5470e30adb486f00abd4f9361d9619ef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PE Google Analytics Module</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="PE Google Analytics Module">adef5fc6db486f00abd4f9361d9619d1</sys_ui_script><sys_update_name>sp_js_include_5470e30adb486f00abd4f9361d9619ef</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-08-22 16:05:03</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>1202503804</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>c2f06b0adb486f00abd4f9361d961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1656261d3d30000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics Module</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>3e80e30a91486f006d5ff2d3db086dde</update_guid>
+<update_guid_history>3e80e30a91486f006d5ff2d3db086dde:1202503804</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_9390270adb486f00abd4f9361d9619d1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="PE Google Analytics Dependency">ae40a30adb486f00abd4f9361d96191d</sp_dependency><sp_js_include display_value="PE Google Analytics Service">4090e30adb486f00abd4f9361d9619e3</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-08-22 16:05:21</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>9390270adb486f00abd4f9361d9619d1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>PE Google Analytics Dependency.PE Google Analytics Service</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_9390270adb486f00abd4f9361d9619d1</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-08-22 16:05:29</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>-690890930</payload_hash>
+<remote_update_set display_value="PE Google Analytics">02f06b0adb486f00abd4f9361d961944</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-08-22 16:06:55</sys_created_on>
+<sys_id>c6f06b0adb486f00abd4f9361d961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165626239b50000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-08-22 16:06:55</sys_updated_on>
+<table/>
+<target_name>PE Google Analytics Dependency.PE Google Analytics Service</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>01a0670a1e486f00ad9b9a37c8c77949</update_guid>
+<update_guid_history>01a0670a1e486f00ad9b9a37c8c77949:-690890930,d390270a7e486f0045c4c667df8d82d2:-563094353</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

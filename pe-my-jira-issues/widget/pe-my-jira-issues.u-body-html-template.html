@@ -1,0 +1,25 @@
+<div class="panel panel-{{::options.color}} b">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      {{c.options.title}}</h4>
+  </div>
+  <div class="panel-body">
+    <div ng-if="c.myIssues.length == 0" class="text-center no-issues">
+      <span>${You have no issues in JIRA}</span>
+    </div>
+    <div ng-repeat="issue in c.myIssues | limitTo : c.limit" class="each-issue">
+      <a href="https://sushruth.atlassian.net/browse/{{issue.key}}" target="_blank">
+        <img src="/jira.png" />
+        <div class="text">
+          <p class="summary">{{issue.fields.summary}}</p>
+          <p class="desc">{{issue.fields.description}}</p>
+        </div>
+      </a>
+    </div>
+    <div class="text-center">
+      <a ng-if="c.myIssues.length > c.limit" href="javascript:void(0)" ng-click="c.showMore()" class="show">Show More</a>
+      <a ng-if="c.myIssues.length == c.limit && c.myIssues.length != c.options.limit" href="javascript:void(0)" ng-click="c.showLess()"
+        class="show">Show Less</a>
+    </div>
+  </div>
+</div>
