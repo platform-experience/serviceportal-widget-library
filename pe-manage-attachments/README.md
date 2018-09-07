@@ -6,7 +6,7 @@ A simple way to allow the out of box email client to contain attachments.
 
 ## Screenshot
 
-TBD![Google Analytics](../images/pe-google-analytics.png)
+[Manage Attachments](../images/pe-manage-attachments.png)
 
 ## Additional Information/Notes
 
