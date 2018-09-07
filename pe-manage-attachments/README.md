@@ -6,7 +6,7 @@ A simple way to allow the out of box email client to contain attachments.
 
 ## Screenshot
 
-[Manage Attachments](../images/pe-manage-attachments.png)
+![Manage Attachments](../images/pe-manage-attachments.png)
 
 ## Additional Information/Notes
 
