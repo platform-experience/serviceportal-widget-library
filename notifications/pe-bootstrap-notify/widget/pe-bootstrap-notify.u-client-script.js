@@ -1,8 +1,8 @@
-function BootstrapNotifyDemoCtrl($rootScope) {
-  /* widget controller */
+function BootstrapNotifyController($rootScope) {
   var c = this;
-  c.start = function(){
-	  $rootScope.$broadcast('bn-notify-show');
-	  $rootScope.$broadcast('bn-notify-count',5);
+
+  c.start = function() {
+    $rootScope.$broadcast('bn-notify-show');
+    $rootScope.$broadcast('bn-notify-count', 5);
   };
 }

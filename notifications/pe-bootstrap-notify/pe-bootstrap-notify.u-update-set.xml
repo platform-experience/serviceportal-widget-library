@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2018-04-13 11:49:32">
+<unload unload_date="2018-09-07 13:55:30">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -16,16 +16,16 @@
 <release_date/>
 <remote_base_update_set display_value=""/>
 <remote_parent_id/>
-<remote_sys_id>61423fbbdb9dd300aa80d49fdf9619d6</remote_sys_id>
+<remote_sys_id>5b56d15bdb50e300abd4f9361d9619c1</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>6acdb773dbddd300aa80d49fdf9619ca</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>5d5c119fdb50e300abd4f9361d9619c9</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -35,24 +35,24 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_css_include_39873b7fdb9dd300aa80d49fdf961933</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>10</order><sp_css_include display_value="animate.min.css">f767f77fdb9dd300aa80d49fdf961900</sp_css_include><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:10</sys_created_on><sys_id>39873b7fdb9dd300aa80d49fdf961933</sys_id><sys_mod_count>1</sys_mod_count><sys_name>animate.min.css.bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_39873b7fdb9dd300aa80d49fdf961933</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:15</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
-<payload_hash>425523252</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
+<name>m2m_sp_dependency_js_include_d257777fdb9dd300aa80d49fdf961999</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sp_js_include display_value="bnNotify">8057377fdb9dd300aa80d49fdf961932</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:23</sys_created_on><sys_id>d257777fdb9dd300aa80d49fdf961999</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bn.core.bnNotify</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_d257777fdb9dd300aa80d49fdf961999</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:23</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>-1793676778</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>22cdb773dbddd300aa80d49fdf9619cb</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>115c959fdb50e300abd4f9361d9619de</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebdd9150000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_recorded_at>165b4391ba10000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <table/>
-<target_name>animate.min.css.bn.core</target_name>
-<type>Dependency CSS Includes</type>
+<target_name>bn.core.bnNotify</target_name>
+<type>Dependency JS Includes</type>
 <update_domain>global</update_domain>
-<update_guid>c787f77f699dd30040bbc82ae8230767</update_guid>
-<update_guid_history>c787f77f699dd30040bbc82ae8230767:425523252,7d873b7f629dd300e3edd63f01a45d34:489267280</update_guid_history>
+<update_guid>9257777f849dd300ff9f5ce5970bbe9a</update_guid>
+<update_guid_history>9257777f849dd300ff9f5ce5970bbe9a:-1793676778</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -61,24 +61,52 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_js_include_0a07b37fdb9dd300aa80d49fdf9619b3</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>bootstrap-notify.min.js</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:20:40</sys_created_on><sys_id>0a07b37fdb9dd300aa80d49fdf9619b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootstrap-notify.min.js</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="bootstrap-notify.min.js">3a17f37fdb9dd300aa80d49fdf96192f</sys_ui_script><sys_update_name>sp_js_include_0a07b37fdb9dd300aa80d49fdf9619b3</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:20:40</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<payload_hash>-936362625</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
+<name>sys_ui_script_5515333fdb9dd300aa80d49fdf961953</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;bn.core&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function(angular) {
+	angular.module('bn.core', []);
+})(angular);]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-13 11:13:02&lt;/sys_created_on&gt;&lt;sys_id&gt;5515333fdb9dd300aa80d49fdf961953&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;bn.core&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5515333fdb9dd300aa80d49fdf961953&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-13 11:13:02&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1519043951</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>22cdb773dbddd300aa80d49fdf9619ce</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>115c959fdb50e300abd4f9361d9619e1</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebc65280000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_recorded_at>165b4391b560000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <table/>
-<target_name>bootstrap-notify.min.js</target_name>
+<target_name>bn.core</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>0875733f839dd3008329296869038cb8</update_guid>
+<update_guid_history>0875733f839dd3008329296869038cb8:-1519043951</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_5447777fdb9dd300aa80d49fdf96191d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>bn.core</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:08</sys_created_on><sys_id>5447777fdb9dd300aa80d49fdf96191d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="bn.core">5515333fdb9dd300aa80d49fdf961953</sys_ui_script><sys_update_name>sp_js_include_5447777fdb9dd300aa80d49fdf96191d</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:08</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>-1902234598</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>155c959fdb50e300abd4f9361d9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391b890000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bn.core</target_name>
 <type>JS Include</type>
 <update_domain>global</update_domain>
-<update_guid>3727f37ff59dd30028e71fbf58b7cf34</update_guid>
-<update_guid_history>3727f37ff59dd30028e71fbf58b7cf34:-936362625</update_guid_history>
+<update_guid>7e47777fd39dd30054a49d3a01fe4d20</update_guid>
+<update_guid_history>7e47777fd39dd30054a49d3a01fe4d20:-1902234598</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -90,21 +118,47 @@
 <name>sp_css_include_a7873b7fdb9dd300aa80d49fdf961937</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>bnNotify</name><source>local</source><sp_css display_value="bnNotify">dd973b7fdb9dd300aa80d49fdf961971</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:42</sys_created_on><sys_id>a7873b7fdb9dd300aa80d49fdf961937</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bnNotify</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_a7873b7fdb9dd300aa80d49fdf961937</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:42</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
 <payload_hash>1598076989</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>26cdb773dbddd300aa80d49fdf9619cd</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>195c959fdb50e300abd4f9361d9619df</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebe432d0000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_recorded_at>165b4391bde0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <table/>
 <target_name>bnNotify</target_name>
 <type>CSS Include</type>
 <update_domain>global</update_domain>
 <update_guid>7da73b7f9a9dd300998e3f56c12d4046</update_guid>
 <update_guid_history>7da73b7f9a9dd300998e3f56c12d4046:1598076989</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_css_include_39a73b7fdb9dd300aa80d49fdf961947</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="bnNotify">a7873b7fdb9dd300aa80d49fdf961937</sp_css_include><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:42</sys_created_on><sys_id>39a73b7fdb9dd300aa80d49fdf961947</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bnNotify.bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_39a73b7fdb9dd300aa80d49fdf961947</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:42</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+<payload_hash>215075099</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>1d5c119fdb50e300abd4f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391be40000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bnNotify.bn.core</target_name>
+<type>Dependency CSS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>f5a73b7fac9dd300b6cac3ac72e40648</update_guid>
+<update_guid_history>f5a73b7fac9dd300b6cac3ac72e40648:215075099</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -126,21 +180,351 @@
 &#13;
 .animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes bounce{0%,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translateZ(0);transform:translateZ(0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}70%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}@keyframes bounce{0%,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translateZ(0);transform:translateZ(0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}70%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}.bounce{-webkit-animation-name:bounce;animation-name:bounce;-webkit-transform-origin:center bottom;transform-origin:center bottom}@-webkit-keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}.flash{-webkit-animation-name:flash;animation-name:flash}@-webkit-keyframes pulse{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes pulse{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.pulse{-webkit-animation-name:pulse;animation-name:pulse}@-webkit-keyframes rubberBand{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes rubberBand{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.rubberBand{-webkit-animation-name:rubberBand;animation-name:rubberBand}@-webkit-keyframes shake{0%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}@keyframes shake{0%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}.shake{-webkit-animation-name:shake;animation-name:shake}@-webkit-keyframes headShake{0%{-webkit-transform:translateX(0);transform:translateX(0)}6.5%{-webkit-transform:translateX(-6px) rotateY(-9deg);transform:translateX(-6px) rotateY(-9deg)}18.5%{-webkit-transform:translateX(5px) rotateY(7deg);transform:translateX(5px) rotateY(7deg)}31.5%{-webkit-transform:translateX(-3px) rotateY(-5deg);transform:translateX(-3px) rotateY(-5deg)}43.5%{-webkit-transform:translateX(2px) rotateY(3deg);transform:translateX(2px) rotateY(3deg)}50%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes headShake{0%{-webkit-transform:translateX(0);transform:translateX(0)}6.5%{-webkit-transform:translateX(-6px) rotateY(-9deg);transform:translateX(-6px) rotateY(-9deg)}18.5%{-webkit-transform:translateX(5px) rotateY(7deg);transform:translateX(5px) rotateY(7deg)}31.5%{-webkit-transform:translateX(-3px) rotateY(-5deg);transform:translateX(-3px) rotateY(-5deg)}43.5%{-webkit-transform:translateX(2px) rotateY(3deg);transform:translateX(2px) rotateY(3deg)}50%{-webkit-transform:translateX(0);transform:translateX(0)}}.headShake{-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-name:headShake;animation-name:headShake}@-webkit-keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}.swing{-webkit-transform-origin:top center;transform-origin:top center;-webkit-animation-name:swing;animation-name:swing}@-webkit-keyframes tada{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes tada{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.tada{-webkit-animation-name:tada;animation-name:tada}@-webkit-keyframes wobble{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}15%{-webkit-transform:translate3d(-25%,0,0) rotate(-5deg);transform:translate3d(-25%,0,0) rotate(-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate(3deg);transform:translate3d(20%,0,0) rotate(3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate(-3deg);transform:translate3d(-15%,0,0) rotate(-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate(2deg);transform:translate3d(10%,0,0) rotate(2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate(-1deg);transform:translate3d(-5%,0,0) rotate(-1deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes wobble{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}15%{-webkit-transform:translate3d(-25%,0,0) rotate(-5deg);transform:translate3d(-25%,0,0) rotate(-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate(3deg);transform:translate3d(20%,0,0) rotate(3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate(-3deg);transform:translate3d(-15%,0,0) rotate(-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate(2deg);transform:translate3d(10%,0,0) rotate(2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate(-1deg);transform:translate3d(-5%,0,0) rotate(-1deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.wobble{-webkit-animation-name:wobble;animation-name:wobble}@-webkit-keyframes jello{0%,11.1%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-.78125deg) skewY(-.78125deg);transform:skewX(-.78125deg) skewY(-.78125deg)}77.7%{-webkit-transform:skewX(.390625deg) skewY(.390625deg);transform:skewX(.390625deg) skewY(.390625deg)}88.8%{-webkit-transform:skewX(-.1953125deg) skewY(-.1953125deg);transform:skewX(-.1953125deg) skewY(-.1953125deg)}}@keyframes jello{0%,11.1%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-.78125deg) skewY(-.78125deg);transform:skewX(-.78125deg) skewY(-.78125deg)}77.7%{-webkit-transform:skewX(.390625deg) skewY(.390625deg);transform:skewX(.390625deg) skewY(.390625deg)}88.8%{-webkit-transform:skewX(-.1953125deg) skewY(-.1953125deg);transform:skewX(-.1953125deg) skewY(-.1953125deg)}}.jello{-webkit-animation-name:jello;animation-name:jello;-webkit-transform-origin:center;transform-origin:center}@-webkit-keyframes bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1;-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1;-webkit-transform:scaleX(1);transform:scaleX(1)}}.bounceIn{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-name:bounceIn;animation-name:bounceIn}@-webkit-keyframes bounceInDown{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,-3000px,0);transform:translate3d(0,-3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,25px,0);transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInDown{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,-3000px,0);transform:translate3d(0,-3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,25px,0);transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInDown{-webkit-animation-name:bounceInDown;animation-name:bounceInDown}@-webkit-keyframes bounceInLeft{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInLeft{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}@-webkit-keyframes bounceInRight{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInRight{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInRight{-webkit-animation-name:bounceInRight;animation-name:bounceInRight}@-webkit-keyframes bounceInUp{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,3000px,0);transform:translate3d(0,3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}75%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}90%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInUp{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,3000px,0);transform:translate3d(0,3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}75%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}90%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInUp{-webkit-animation-name:bounceInUp;animation-name:bounceInUp}@-webkit-keyframes bounceOut{20%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}to{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}}@keyframes bounceOut{20%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}to{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}}.bounceOut{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-name:bounceOut;animation-name:bounceOut}@-webkit-keyframes bounceOutDown{20%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}to{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}@keyframes bounceOutDown{20%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}to{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}.bounceOutDown{-webkit-animation-name:bounceOutDown;animation-name:bounceOutDown}@-webkit-keyframes bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px,0,0);transform:translate3d(20px,0,0)}to{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}@keyframes bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px,0,0);transform:translate3d(20px,0,0)}to{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}.bounceOutLeft{-webkit-animation-name:bounceOutLeft;animation-name:bounceOutLeft}@-webkit-keyframes bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px,0,0);transform:translate3d(-20px,0,0)}to{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}@keyframes bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px,0,0);transform:translate3d(-20px,0,0)}to{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}.bounceOutRight{-webkit-animation-name:bounceOutRight;animation-name:bounceOutRight}@-webkit-keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0)}to{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}@keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0)}to{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}.bounceOutUp{-webkit-animation-name:bounceOutUp;animation-name:bounceOutUp}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}@-webkit-keyframes fadeInDownBig{0%{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInDownBig{0%{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInDownBig{-webkit-animation-name:fadeInDownBig;animation-name:fadeInDownBig}@-webkit-keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}@-webkit-keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInLeftBig{-webkit-animation-name:fadeInLeftBig;animation-name:fadeInLeftBig}@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInRightBig{-webkit-animation-name:fadeInRightBig;animation-name:fadeInRightBig}@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInUpBig{-webkit-animation-name:fadeInUpBig;animation-name:fadeInUpBig}@-webkit-keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}.fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOutDown{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes fadeOutDown{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}.fadeOutDown{-webkit-animation-name:fadeOutDown;animation-name:fadeOutDown}@-webkit-keyframes fadeOutDownBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}@keyframes fadeOutDownBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}.fadeOutDownBig{-webkit-animation-name:fadeOutDownBig;animation-name:fadeOutDownBig}@-webkit-keyframes fadeOutLeft{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes fadeOutLeft{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}.fadeOutLeft{-webkit-animation-name:fadeOutLeft;animation-name:fadeOutLeft}@-webkit-keyframes fadeOutLeftBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}@keyframes fadeOutLeftBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}.fadeOutLeftBig{-webkit-animation-name:fadeOutLeftBig;animation-name:fadeOutLeftBig}@-webkit-keyframes fadeOutRight{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes fadeOutRight{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.fadeOutRight{-webkit-animation-name:fadeOutRight;animation-name:fadeOutRight}@-webkit-keyframes fadeOutRightBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}@keyframes fadeOutRightBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}.fadeOutRightBig{-webkit-animation-name:fadeOutRightBig;animation-name:fadeOutRightBig}@-webkit-keyframes fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}.fadeOutUp{-webkit-animation-name:fadeOutUp;animation-name:fadeOutUp}@-webkit-keyframes fadeOutUpBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}@keyframes fadeOutUpBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}.fadeOutUpBig{-webkit-animation-name:fadeOutUpBig;animation-name:fadeOutUpBig}@-webkit-keyframes flip{0%{-webkit-transform:perspective(400px) rotateY(-1turn);transform:perspective(400px) rotateY(-1turn);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(-190deg);transform:perspective(400px) translateZ(150px) rotateY(-190deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(-170deg);transform:perspective(400px) translateZ(150px) rotateY(-170deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) scale3d(.95,.95,.95);transform:perspective(400px) scale3d(.95,.95,.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(400px);transform:perspective(400px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}@keyframes flip{0%{-webkit-transform:perspective(400px) rotateY(-1turn);transform:perspective(400px) rotateY(-1turn);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(-190deg);transform:perspective(400px) translateZ(150px) rotateY(-190deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(-170deg);transform:perspective(400px) translateZ(150px) rotateY(-170deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) scale3d(.95,.95,.95);transform:perspective(400px) scale3d(.95,.95,.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(400px);transform:perspective(400px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}.animated.flip{-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:flip;animation-name:flip}@-webkit-keyframes flipInX{0%{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotateX(-20deg);transform:perspective(400px) rotateX(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotateX(10deg);transform:perspective(400px) rotateX(10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotateX(-5deg);transform:perspective(400px) rotateX(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes flipInX{0%{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotateX(-20deg);transform:perspective(400px) rotateX(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotateX(10deg);transform:perspective(400px) rotateX(10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotateX(-5deg);transform:perspective(400px) rotateX(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}.flipInX{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipInX;animation-name:flipInX}@-webkit-keyframes flipInY{0%{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotateY(-20deg);transform:perspective(400px) rotateY(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotateY(10deg);transform:perspective(400px) rotateY(10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotateY(-5deg);transform:perspective(400px) rotateY(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes flipInY{0%{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotateY(-20deg);transform:perspective(400px) rotateY(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotateY(10deg);transform:perspective(400px) rotateY(10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotateY(-5deg);transform:perspective(400px) rotateY(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}.flipInY{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipInY;animation-name:flipInY}@-webkit-keyframes flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateX(-20deg);transform:perspective(400px) rotateX(-20deg);opacity:1}to{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);opacity:0}}@keyframes flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateX(-20deg);transform:perspective(400px) rotateX(-20deg);opacity:1}to{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);opacity:0}}.flipOutX{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-name:flipOutX;animation-name:flipOutX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}@-webkit-keyframes flipOutY{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateY(-15deg);transform:perspective(400px) rotateY(-15deg);opacity:1}to{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);opacity:0}}@keyframes flipOutY{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateY(-15deg);transform:perspective(400px) rotateY(-15deg);opacity:1}to{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);opacity:0}}.flipOutY{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipOutY;animation-name:flipOutY}@-webkit-keyframes lightSpeedIn{0%{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}to{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes lightSpeedIn{0%{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}to{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.lightSpeedIn{-webkit-animation-name:lightSpeedIn;animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}@-webkit-keyframes lightSpeedOut{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0) skewX(30deg);transform:translate3d(100%,0,0) skewX(30deg);opacity:0}}@keyframes lightSpeedOut{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0) skewX(30deg);transform:translate3d(100%,0,0) skewX(30deg);opacity:0}}.lightSpeedOut{-webkit-animation-name:lightSpeedOut;animation-name:lightSpeedOut;-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}@-webkit-keyframes rotateIn{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateIn{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateIn{-webkit-animation-name:rotateIn;animation-name:rotateIn}@-webkit-keyframes rotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateInDownLeft{-webkit-animation-name:rotateInDownLeft;animation-name:rotateInDownLeft}@-webkit-keyframes rotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateInDownRight{-webkit-animation-name:rotateInDownRight;animation-name:rotateInDownRight}@-webkit-keyframes rotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateInUpLeft{-webkit-animation-name:rotateInUpLeft;animation-name:rotateInUpLeft}@-webkit-keyframes rotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateInUpRight{-webkit-animation-name:rotateInUpRight;animation-name:rotateInUpRight}@-webkit-keyframes rotateOut{0%{-webkit-transform-origin:center;transform-origin:center;opacity:1}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(200deg);transform:rotate(200deg);opacity:0}}@keyframes rotateOut{0%{-webkit-transform-origin:center;transform-origin:center;opacity:1}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(200deg);transform:rotate(200deg);opacity:0}}.rotateOut{-webkit-animation-name:rotateOut;animation-name:rotateOut}@-webkit-keyframes rotateOutDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}}@keyframes rotateOutDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}}.rotateOutDownLeft{-webkit-animation-name:rotateOutDownLeft;animation-name:rotateOutDownLeft}@-webkit-keyframes rotateOutDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}}@keyframes rotateOutDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}}.rotateOutDownRight{-webkit-animation-name:rotateOutDownRight;animation-name:rotateOutDownRight}@-webkit-keyframes rotateOutUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}}@keyframes rotateOutUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}}.rotateOutUpLeft{-webkit-animation-name:rotateOutUpLeft;animation-name:rotateOutUpLeft}@-webkit-keyframes rotateOutUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}}@keyframes rotateOutUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}}.rotateOutUpRight{-webkit-animation-name:rotateOutUpRight;animation-name:rotateOutUpRight}@-webkit-keyframes hinge{0%{-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate(80deg);transform:rotate(80deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%,80%{-webkit-transform:rotate(60deg);transform:rotate(60deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}to{-webkit-transform:translate3d(0,700px,0);transform:translate3d(0,700px,0);opacity:0}}@keyframes hinge{0%{-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate(80deg);transform:rotate(80deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%,80%{-webkit-transform:rotate(60deg);transform:rotate(60deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}to{-webkit-transform:translate3d(0,700px,0);transform:translate3d(0,700px,0);opacity:0}}.hinge{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-name:hinge;animation-name:hinge}@-webkit-keyframes jackInTheBox{0%{opacity:0;-webkit-transform:scale(.1) rotate(30deg);transform:scale(.1) rotate(30deg);-webkit-transform-origin:center bottom;transform-origin:center bottom}50%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}70%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes jackInTheBox{0%{opacity:0;-webkit-transform:scale(.1) rotate(30deg);transform:scale(.1) rotate(30deg);-webkit-transform-origin:center bottom;transform-origin:center bottom}50%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}70%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}.jackInTheBox{-webkit-animation-name:jackInTheBox;animation-name:jackInTheBox}@-webkit-keyframes rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate(-120deg);transform:translate3d(-100%,0,0) rotate(-120deg)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate(-120deg);transform:translate3d(-100%,0,0) rotate(-120deg)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.rollIn{-webkit-animation-name:rollIn;animation-name:rollIn}@-webkit-keyframes rollOut{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%,0,0) rotate(120deg);transform:translate3d(100%,0,0) rotate(120deg)}}@keyframes rollOut{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%,0,0) rotate(120deg);transform:translate3d(100%,0,0) rotate(120deg)}}.rollOut{-webkit-animation-name:rollOut;animation-name:rollOut}@-webkit-keyframes zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}.zoomIn{-webkit-animation-name:zoomIn;animation-name:zoomIn}@-webkit-keyframes zoomInDown{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomInDown{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomInDown{-webkit-animation-name:zoomInDown;animation-name:zoomInDown}@-webkit-keyframes zoomInLeft{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(10px,0,0);transform:scale3d(.475,.475,.475) translate3d(10px,0,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomInLeft{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(10px,0,0);transform:scale3d(.475,.475,.475) translate3d(10px,0,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomInLeft{-webkit-animation-name:zoomInLeft;animation-name:zoomInLeft}@-webkit-keyframes zoomInRight{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomInRight{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomInRight{-webkit-animation-name:zoomInRight;animation-name:zoomInRight}@-webkit-keyframes zoomInUp{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomInUp{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomInUp{-webkit-animation-name:zoomInUp;animation-name:zoomInUp}@-webkit-keyframes zoomOut{0%{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}to{opacity:0}}@keyframes zoomOut{0%{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}to{opacity:0}}.zoomOut{-webkit-animation-name:zoomOut;animation-name:zoomOut}@-webkit-keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}to{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}to{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomOutDown{-webkit-animation-name:zoomOutDown;animation-name:zoomOutDown}@-webkit-keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(42px,0,0);transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(-2000px,0,0);transform:scale(.1) translate3d(-2000px,0,0);-webkit-transform-origin:left center;transform-origin:left center}}@keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(42px,0,0);transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(-2000px,0,0);transform:scale(.1) translate3d(-2000px,0,0);-webkit-transform-origin:left center;transform-origin:left center}}.zoomOutLeft{-webkit-animation-name:zoomOutLeft;animation-name:zoomOutLeft}@-webkit-keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-42px,0,0);transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(2000px,0,0);transform:scale(.1) translate3d(2000px,0,0);-webkit-transform-origin:right center;transform-origin:right center}}@keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-42px,0,0);transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(2000px,0,0);transform:scale(.1) translate3d(2000px,0,0);-webkit-transform-origin:right center;transform-origin:right center}}.zoomOutRight{-webkit-animation-name:zoomOutRight;animation-name:zoomOutRight}@-webkit-keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}to{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}to{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomOutUp{-webkit-animation-name:zoomOutUp;animation-name:zoomOutUp}@-webkit-keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes slideInLeft{0%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInLeft{0%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft}@-webkit-keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}@-webkit-keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}@-webkit-keyframes slideOutDown{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes slideOutDown{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}.slideOutDown{-webkit-animation-name:slideOutDown;animation-name:slideOutDown}@-webkit-keyframes slideOutLeft{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes slideOutLeft{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}.slideOutLeft{-webkit-animation-name:slideOutLeft;animation-name:slideOutLeft}@-webkit-keyframes slideOutRight{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes slideOutRight{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.slideOutRight{-webkit-animation-name:slideOutRight;animation-name:slideOutRight}@-webkit-keyframes slideOutUp{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes slideOutUp{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}.slideOutUp{-webkit-animation-name:slideOutUp;animation-name:slideOutUp}</css><name>animate.min.css</name><sys_class_name>sp_css</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:59</sys_created_on><sys_id>5577f77fdb9dd300aa80d49fdf96195f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>animate.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_5577f77fdb9dd300aa80d49fdf96195f</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:59</sys_updated_on></sp_css></record_update>]]></payload>
 <payload_hash>2111059290</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>2acdb773dbddd300aa80d49fdf9619cc</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>1d5c959fdb50e300abd4f9361d9619de</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebd9ac20000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_recorded_at>165b4391bb20000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <table/>
 <target_name>animate.min.css</target_name>
 <type>Style Sheet</type>
 <update_domain>global</update_domain>
 <update_guid>1777b77fb89dd300f018733846377453</update_guid>
 <update_guid_history>1777b77fb89dd300f018733846377453:2111059290</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_0a07b37fdb9dd300aa80d49fdf9619b3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>bootstrap-notify.min.js</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:20:40</sys_created_on><sys_id>0a07b37fdb9dd300aa80d49fdf9619b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bootstrap-notify.min.js</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="bootstrap-notify.min.js">3a17f37fdb9dd300aa80d49fdf96192f</sys_ui_script><sys_update_name>sp_js_include_0a07b37fdb9dd300aa80d49fdf9619b3</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:20:40</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>-936362625</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>515c959fdb50e300abd4f9361d9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391b7c0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bootstrap-notify.min.js</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>3727f37ff59dd30028e71fbf58b7cf34</update_guid>
+<update_guid_history>3727f37ff59dd30028e71fbf58b7cf34:-936362625</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_8377b77fdb9dd300aa80d49fdf961951</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>animate.min.css</name><source>local</source><sp_css display_value="animate.min.css">5577f77fdb9dd300aa80d49fdf96195f</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:59</sys_created_on><sys_id>8377b77fdb9dd300aa80d49fdf961951</sys_id><sys_mod_count>0</sys_mod_count><sys_name>animate.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_8377b77fdb9dd300aa80d49fdf961951</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:59</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<payload_hash>1450193345</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>555c959fdb50e300abd4f9361d9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391ba70000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>animate.min.css</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_guid>0777b77f679dd300c0e51b8ad5a33c52</update_guid>
+<update_guid_history>0777b77f679dd300c0e51b8ad5a33c52:1450193345</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_css_include_39873b7fdb9dd300aa80d49fdf961933</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>10</order><sp_css_include display_value="animate.min.css">f767f77fdb9dd300aa80d49fdf961900</sp_css_include><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:10</sys_created_on><sys_id>39873b7fdb9dd300aa80d49fdf961933</sys_id><sys_mod_count>1</sys_mod_count><sys_name>animate.min.css.bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_39873b7fdb9dd300aa80d49fdf961933</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:15</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+<payload_hash>425523252</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>595c119fdb50e300abd4f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391bc90000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>animate.min.css.bn.core</target_name>
+<type>Dependency CSS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>c787f77f699dd30040bbc82ae8230767</update_guid>
+<update_guid_history>c787f77f699dd30040bbc82ae8230767:425523252,7d873b7f629dd300e3edd63f01a45d34:489267280</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_c218bf7fdb9dd300aa80d49fdf961954</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Bootstrap Notify - Container 1</name><order>1</order><sp_page display_value="bootstrap_notify_demo">cdc7fb7fdb9dd300aa80d49fdf96194f</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:24:38</sys_created_on><sys_id>c218bf7fdb9dd300aa80d49fdf961954</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Bootstrap Notify - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_c218bf7fdb9dd300aa80d49fdf961954</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:45:22</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>948405871</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>595c959fdb50e300abd4f9361d9619de</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391bfe0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>Bootstrap Notify - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>addc7f3301ddd30058a8f7f3d92e66a0</update_guid>
+<update_guid_history>addc7f3301ddd30058a8f7f3d92e66a0:948405871,c618bf7f8d9dd300b8def6b901213055:-1550985661</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_3a17f37fdb9dd300aa80d49fdf96192f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;bootstrap-notify.min.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[!function(t){"function"==typeof define&amp;&amp;define.amd?define(["jquery"],t):t("object"==typeof exports?require("jquery"):jQuery)}(function(t){function s(s){var e=!1;return t('[data-notify="container"]').each(function(i,n){var a=t(n),o=a.find('[data-notify="title"]').text().trim(),r=a.find('[data-notify="message"]').html().trim(),l=o===t("&lt;div&gt;"+s.settings.content.title+"&lt;/div&gt;").html().trim(),d=r===t("&lt;div&gt;"+s.settings.content.message+"&lt;/div&gt;").html().trim(),g=a.hasClass("alert-"+s.settings.type);return l&amp;&amp;d&amp;&amp;g&amp;&amp;(e=!0),!e}),e}function e(e,n,a){var o={content:{message:"object"==typeof n?n.message:n,title:n.title?n.title:"",icon:n.icon?n.icon:"",url:n.url?n.url:"#",target:n.target?n.target:"-"}};a=t.extend(!0,{},o,a),this.settings=t.extend(!0,{},i,a),this._defaults=i,"-"===this.settings.content.target&amp;&amp;(this.settings.content.target=this.settings.url_target),this.animations={start:"webkitAnimationStart oanimationstart MSAnimationStart animationstart",end:"webkitAnimationEnd oanimationend MSAnimationEnd animationend"},"number"==typeof this.settings.offset&amp;&amp;(this.settings.offset={x:this.settings.offset,y:this.settings.offset}),(this.settings.allow_duplicates||!this.settings.allow_duplicates&amp;&amp;!s(this))&amp;&amp;this.init()}var i={element:"body",position:null,type:"info",allow_dismiss:!0,allow_duplicates:!0,newest_on_top:!1,showProgressbar:!1,placement:{from:"top",align:"right"},offset:20,spacing:10,z_index:1031,delay:5e3,timer:1e3,url_target:"_blank",mouse_over:null,animate:{enter:"animated fadeInDown",exit:"animated fadeOutUp"},onShow:null,onShown:null,onClose:null,onClosed:null,icon_type:"class",template:'&lt;div data-notify="container" class="col-xs-11 col-sm-4 alert alert-{0}" role="alert"&gt;&lt;button type="button" aria-hidden="true" class="close" data-notify="dismiss"&gt;&amp;times;&lt;/button&gt;&lt;span data-notify="icon"&gt;&lt;/span&gt; &lt;span data-notify="title"&gt;{1}&lt;/span&gt; &lt;span data-notify="message"&gt;{2}&lt;/span&gt;&lt;div class="progress" data-notify="progressbar"&gt;&lt;div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href="{3}" target="{4}" data-notify="url"&gt;&lt;/a&gt;&lt;/div&gt;'};String.format=function(){for(var t=arguments[0],s=1;s&lt;arguments.length;s++)t=t.replace(RegExp("\\{"+(s-1)+"\\}","gm"),arguments[s]);return t},t.extend(e.prototype,{init:function(){var t=this;this.buildNotify(),this.settings.content.icon&amp;&amp;this.setIcon(),"#"!=this.settings.content.url&amp;&amp;this.styleURL(),this.styleDismiss(),this.placement(),this.bind(),this.notify={$ele:this.$ele,update:function(s,e){var i={};"string"==typeof s?i[s]=e:i=s;for(var n in i)switch(n){case"type":this.$ele.removeClass("alert-"+t.settings.type),this.$ele.find('[data-notify="progressbar"] &gt; .progress-bar').removeClass("progress-bar-"+t.settings.type),t.settings.type=i[n],this.$ele.addClass("alert-"+i[n]).find('[data-notify="progressbar"] &gt; .progress-bar').addClass("progress-bar-"+i[n]);break;case"icon":var a=this.$ele.find('[data-notify="icon"]');"class"===t.settings.icon_type.toLowerCase()?a.removeClass(t.settings.content.icon).addClass(i[n]):(a.is("img")||a.find("img"),a.attr("src",i[n]));break;case"progress":var o=t.settings.delay-t.settings.delay*(i[n]/100);this.$ele.data("notify-delay",o),this.$ele.find('[data-notify="progressbar"] &gt; div').attr("aria-valuenow",i[n]).css("width",i[n]+"%");break;case"url":this.$ele.find('[data-notify="url"]').attr("href",i[n]);break;case"target":this.$ele.find('[data-notify="url"]').attr("target",i[n]);break;default:this.$ele.find('[data-notify="'+n+'"]').html(i[n])}var r=this.$ele.outerHeight()+parseInt(t.settings.spacing)+parseInt(t.settings.offset.y);t.reposition(r)},close:function(){t.close()}}},buildNotify:function(){var s=this.settings.content;this.$ele=t(String.format(this.settings.template,this.settings.type,s.title,s.message,s.url,s.target)),this.$ele.attr("data-notify-position",this.settings.placement.from+"-"+this.settings.placement.align),this.settings.allow_dismiss||this.$ele.find('[data-notify="dismiss"]').css("display","none"),(this.settings.delay&lt;=0&amp;&amp;!this.settings.showProgressbar||!this.settings.showProgressbar)&amp;&amp;this.$ele.find('[data-notify="progressbar"]').remove()},setIcon:function(){"class"===this.settings.icon_type.toLowerCase()?this.$ele.find('[data-notify="icon"]').addClass(this.settings.content.icon):this.$ele.find('[data-notify="icon"]').is("img")?this.$ele.find('[data-notify="icon"]').attr("src",this.settings.content.icon):this.$ele.find('[data-notify="icon"]').append('&lt;img src="'+this.settings.content.icon+'" alt="Notify Icon" /&gt;')},styleDismiss:function(){this.$ele.find('[data-notify="dismiss"]').css({position:"absolute",right:"10px",top:"5px",zIndex:this.settings.z_index+2})},styleURL:function(){this.$ele.find('[data-notify="url"]').css({backgroundImage:"url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)",height:"100%",left:0,position:"absolute",top:0,width:"100%",zIndex:this.settings.z_index+1})},placement:function(){var s=this,e=this.settings.offset.y,i={display:"inline-block",margin:"0px auto",position:this.settings.position?this.settings.position:"body"===this.settings.element?"fixed":"absolute",transition:"all .5s ease-in-out",zIndex:this.settings.z_index},n=!1,a=this.settings;switch(t('[data-notify-position="'+this.settings.placement.from+"-"+this.settings.placement.align+'"]:not([data-closing="true"])').each(function(){e=Math.max(e,parseInt(t(this).css(a.placement.from))+parseInt(t(this).outerHeight())+parseInt(a.spacing))}),this.settings.newest_on_top===!0&amp;&amp;(e=this.settings.offset.y),i[this.settings.placement.from]=e+"px",this.settings.placement.align){case"left":case"right":i[this.settings.placement.align]=this.settings.offset.x+"px";break;case"center":i.left=0,i.right=0}this.$ele.css(i).addClass(this.settings.animate.enter),t.each(Array("webkit-","moz-","o-","ms-",""),function(t,e){s.$ele[0].style[e+"AnimationIterationCount"]=1}),t(this.settings.element).append(this.$ele),this.settings.newest_on_top===!0&amp;&amp;(e=parseInt(e)+parseInt(this.settings.spacing)+this.$ele.outerHeight(),this.reposition(e)),t.isFunction(s.settings.onShow)&amp;&amp;s.settings.onShow.call(this.$ele),this.$ele.one(this.animations.start,function(){n=!0}).one(this.animations.end,function(){s.$ele.removeClass(s.settings.animate.enter),t.isFunction(s.settings.onShown)&amp;&amp;s.settings.onShown.call(this)}),setTimeout(function(){n||t.isFunction(s.settings.onShown)&amp;&amp;s.settings.onShown.call(this)},600)},bind:function(){var s=this;if(this.$ele.find('[data-notify="dismiss"]').on("click",function(){s.close()}),this.$ele.mouseover(function(){t(this).data("data-hover","true")}).mouseout(function(){t(this).data("data-hover","false")}),this.$ele.data("data-hover","false"),this.settings.delay&gt;0){s.$ele.data("notify-delay",s.settings.delay);var e=setInterval(function(){var t=parseInt(s.$ele.data("notify-delay"))-s.settings.timer;if("false"===s.$ele.data("data-hover")&amp;&amp;"pause"===s.settings.mouse_over||"pause"!=s.settings.mouse_over){var i=(s.settings.delay-t)/s.settings.delay*100;s.$ele.data("notify-delay",t),s.$ele.find('[data-notify="progressbar"] &gt; div').attr("aria-valuenow",i).css("width",i+"%")}t&lt;=-s.settings.timer&amp;&amp;(clearInterval(e),s.close())},s.settings.timer)}},close:function(){var s=this,e=parseInt(this.$ele.css(this.settings.placement.from)),i=!1;this.$ele.attr("data-closing","true").addClass(this.settings.animate.exit),s.reposition(e),t.isFunction(s.settings.onClose)&amp;&amp;s.settings.onClose.call(this.$ele),this.$ele.one(this.animations.start,function(){i=!0}).one(this.animations.end,function(){t(this).remove(),t.isFunction(s.settings.onClosed)&amp;&amp;s.settings.onClosed.call(this)}),setTimeout(function(){i||(s.$ele.remove(),s.settings.onClosed&amp;&amp;s.settings.onClosed(s.$ele))},600)},reposition:function(s){var e=this,i='[data-notify-position="'+this.settings.placement.from+"-"+this.settings.placement.align+'"]:not([data-closing="true"])',n=this.$ele.nextAll(i);this.settings.newest_on_top===!0&amp;&amp;(n=this.$ele.prevAll(i)),n.each(function(){t(this).css(e.settings.placement.from,s),s=parseInt(s)+parseInt(e.settings.spacing)+t(this).outerHeight()})}}),t.notify=function(t,s){var i=new e(this,t,s);return i.notify},t.notifyDefaults=function(s){return i=t.extend(!0,{},i,s)},t.notifyClose=function(s){"warning"===s&amp;&amp;(s="danger"),"undefined"==typeof s||"all"===s?t("[data-notify]").find('[data-notify="dismiss"]').trigger("click"):"success"===s||"info"===s||"warning"===s||"danger"===s?t(".alert-"+s+"[data-notify]").find('[data-notify="dismiss"]').trigger("click"):s?t(s+"[data-notify]").find('[data-notify="dismiss"]').trigger("click"):t('[data-notify-position="'+s+'"]').find('[data-notify="dismiss"]').trigger("click")},t.notifyCloseExcept=function(s){"warning"===s&amp;&amp;(s="danger"),"success"===s||"info"===s||"warning"===s||"danger"===s?t("[data-notify]").not(".alert-"+s).find('[data-notify="dismiss"]').trigger("click"):t("[data-notify]").not(s).find('[data-notify="dismiss"]').trigger("click")}});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-13 11:20:37&lt;/sys_created_on&gt;&lt;sys_id&gt;3a17f37fdb9dd300aa80d49fdf96192f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;bootstrap-notify.min.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_3a17f37fdb9dd300aa80d49fdf96192f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-13 11:20:37&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-370893884</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>5d5c959fdb50e300abd4f9361d9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391b740000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bootstrap-notify.min.js</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>0b27b37f7b9dd300808a16d6fddb1441</update_guid>
+<update_guid_history>0b27b37f7b9dd300808a16d6fddb1441:-370893884</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>db_image_0962bfbbdb9dd300aa80d49fdf96192c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category/><format/><height/><image/><name>notifications.svg</name><size_bytes>2592</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:00:34</sys_created_on><sys_id>0962bfbbdb9dd300aa80d49fdf96192c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>notifications.svg</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>db_image_0962bfbbdb9dd300aa80d49fdf96192c</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:00:40</sys_updated_on><thumbnail/><width/></db_image><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><chunk_size_bytes>734003</chunk_size_bytes><compressed>true</compressed><content_type>image/svg+xml</content_type><file_name>image</file_name><image_height/><image_width/><size_bytes>2592</size_bytes><size_compressed>1071</size_compressed><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:00:40</sys_created_on><sys_id>7e927fbbdb9dd300aa80d49fdf96193d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:00:40</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>0962bfbbdb9dd300aa80d49fdf96192c</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="7e927fbbdb9dd300aa80d49fdf96193d">7e927fbbdb9dd300aa80d49fdf96193d</sys_attachment><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:00:40</sys_created_on><sys_id>76927fbbdb9dd300aa80d49fdf96193e</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>dZbLctpIFIb3fooezSapgqb7nL66jKtmWGQWZJVddsTIQBkQJYjxzNPP3+J2lCLqKlv61DrX/yA9PO3fF+q4mh+W44rc7qNSy3q1WB5wFcrV+6o+/t18jCujjCKnKIDV7X7VbMeV1bZSH5v1dj+ulofD7nE0Oh6P+si6aRcjMsaMYP685fFjvdq+3dtoc86j7m71/KBwPP0xHKov9bZuZ4emfVTf3urDy1K5rD55awx9VkMlzPxolvVmNdu+NPPVdqFfms1of3piODwbnNf7l+dJW88O9RzpHpZnm/pp1N267HrdPxeCfyeyUKv5uPr27+ZHs95Xan9om7d6XG2bbX25Gp6rh1K8rtbry81yPmx/rrG7fq+3zXx+Tk7Y/aeezet2SJU6tLPt/rVpN+OqO10j0E9DSk6b7hiooTXn888XR3/+5bC45wvO/6vbRvgS/r60zc/db5xJX8JV346syXK2q+/c7rbsZqgwNn21XgfvORANyOqUbI4xqgmwY8PZD4h1DDETZWVxmhOxcQPymthSUBYP2W7d2CTrxMkyU7zBpMn4HFJI0mTUOUEw1lnpfmo1BxezC64XldGRffAxmyy50UTxtArmxDH63Md4NIQUg1dTyW3Wjjwe4GJd8KRNxDJRwaDDc0Q8sEHngBUV6UiJyDIJOCGdPIaKkKPcmr3rVoHIP2XLv9DofGBWU0lLIpHIhWL3iqP2IXqUNCi0KIacSpWdJufIWGSdtcmnNWCcZso+WjUVmDSKn0p6pVNXbNEg4xK6VOTFlr1zeWBkhw2EwZoJxXBcbjl9DVejFzmySZIKV1OBu8DY4w8MJo2wKSV3ysIZpKTQr9D5pC7jxOxsklSUZyrxtZaTPk0RekydiQjZJOtki4zOBqjX4gmRpgS1xd5W1u5SsE4jjAgkvAlqKrDQ30TikoXJ5Wcb2skp2MxS2SWEaH3I/em4O7Pf1VeUmCCJ0NudNfvsDJfBE7OUtY8M074bcYOeerKl82hGyD4UCqV6F3szfoVFCcZxCBIiABOYTLQ9o3fCQrRIzlzUI8ZQ4gTHJjnIB496diZQKpQNMoJ6ZONutLTeUDalxzcKH3zOwkYdrIV+fI/e5lBSMYcCo/fGO4sEVRFHhJ4xh14jmuRDKQXrkJFQykXX3lqPA5ZZ27MqnbZko8uhj+V4Cmx1hlRSSqQsoXeEMQRkztFSJtkkQSfAJgSXbH+z0acSF4ry+IAiSdob3Bs+hczQXtFVdhSMhcNTggQlq0mANgPajZC7aqACKSt3KRx1lXPBYpekcp4lvs2zpOifwbAo1Nh4xnvF91QhfpylKjTeNOkirKssIPjbQENunoosBBUTLTA05h0RSotBv0n2N1gY+V7hC6a8f++8uUeLXz4LJLhedCdP5cvt+eF/WnLRfSAKAAA=</data><length>1416</length><position>1</position><sys_attachment display_value="image" sys_id="7e927fbbdb9dd300aa80d49fdf96193d">7e927fbbdb9dd300aa80d49fdf96193d</sys_attachment><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:00:40</sys_created_on><sys_id>f6927fbbdb9dd300aa80d49fdf96193e</sys_id></sys_attachment_doc></record_update>]]></payload>
+<payload_hash>2064917090</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>915c119fdb50e300abd4f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391b2d0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>notifications.svg</target_name>
+<type>Images</type>
+<update_domain>global</update_domain>
+<update_guid>cb92ffbb019dd30015bcc3107b069f7f</update_guid>
+<update_guid_history>cb92ffbb019dd30015bcc3107b069f7f:2064917090,cb92ffbb329dd300fd4a82b254bc297d:2064917090,1192bfbbfd9dd300246de19e27d52232:1331807600</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_3a47777fdb9dd300aa80d49fdf961921</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>50</order><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sp_js_include display_value="bn.core">5447777fdb9dd300aa80d49fdf96191d</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:08</sys_created_on><sys_id>3a47777fdb9dd300aa80d49fdf961921</sys_id><sys_mod_count>1</sys_mod_count><sys_name>bn.core.bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_3a47777fdb9dd300aa80d49fdf961921</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:12</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>1380995870</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>915c119fdb50e300abd4f9361d9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391b920000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bn.core.bn.core</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>f747777f1d9dd30086fd070feb100095</update_guid>
+<update_guid_history>f747777f1d9dd30086fd070feb100095:1380995870,f647777f409dd300198e9f06399b2f22:1387288490</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_59a73b7fdb9dd300aa80d49fdf961974</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>bnNotify</name><source>local</source><sp_css display_value="bnNotify">dd973b7fdb9dd300aa80d49fdf961971</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:40</sys_created_on><sys_id>59a73b7fdb9dd300aa80d49fdf961974</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bnNotify</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_59a73b7fdb9dd300aa80d49fdf961974</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:40</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<payload_hash>1598076989</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>915c959fdb50e300abd4f9361d9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391bd20000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bnNotify</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_guid>95a73b7f009dd300b5b8575e285fb575</update_guid>
+<update_guid_history>95a73b7f009dd300b5b8575e285fb575:1598076989</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_9b28bf7fdb9dd300aa80d49fdf961967</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">9b28bf7fdb9dd300aa80d49fdf961965</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:25:00</sys_created_on><sys_id>9b28bf7fdb9dd300aa80d49fdf961967</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_9b28bf7fdb9dd300aa80d49fdf961967</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:25:00</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>495971590</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>955c959fdb50e300abd4f9361d9619de</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391bf00000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>2f28bf7f849dd3004dc3edc8a7869d68</update_guid>
+<update_guid_history>2f28bf7f849dd3004dc3edc8a7869d68:495971590</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_85b6bf3fdb9dd300aa80d49fdf96195b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function BootstrapNotifyController($rootScope) {
+  var c = this;
+
+  c.start = function() {
+    $rootScope.$broadcast('bn-notify-show');
+    $rootScope.$broadcast('bn-notify-count', 5);
+  };
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-bootstrap-notify&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Bootstrap Notify&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-13 11:19:32&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;85b6bf3fdb9dd300aa80d49fdf96195b&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Bootstrap Notify&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_85b6bf3fdb9dd300aa80d49fdf96195b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-07 13:48:44&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="pull-right"&gt;
+    &lt;bn-notify demo=true&gt;&lt;/bn-notify&gt;
+  &lt;/div&gt;
+  &lt;a class="btn btn-default" ng-href="javascript:void(0)" ng-click="c.start()" role="button"&gt;Notify through broadcasting&lt;/a&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>781338595</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>995c959fdb50e300abd4f9361d9619e0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b44ac9880000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>PE Bootstrap Notify</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>9acad95fc950e300203ad92c34dc9b42</update_guid>
+<update_guid_history>9acad95fc950e300203ad92c34dc9b42:781338595,696799db6850e300f4e53a88725bfecb:-1526148675,76e659db6f50e30021bf61cd527e9fbf:963671216,7d3dff3326ddd300454a586bd20db39e:-878225532,35ac33334bddd3000d073974055be05f:1844901234,9be6f73f9b9dd300b72f089eabda8924:-602059370</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_21f6737fdb9dd300aa80d49fdf9619ab</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>bn.core</module><name>bn.core</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:19:49</sys_created_on><sys_id>21f6737fdb9dd300aa80d49fdf9619ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_21f6737fdb9dd300aa80d49fdf9619ab</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:19:49</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>-577846856</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>9d5c959fdb50e300abd4f9361d9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391b650000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bn.core</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>d7f6737f349dd3006c18cee3a5a2d1fb</update_guid>
+<update_guid_history>d7f6737f349dd3006c18cee3a5a2d1fb:-577846856</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_d3f6737fdb9dd300aa80d49fdf9619fc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sp_widget display_value="Bootstrap Notify Demo">85b6bf3fdb9dd300aa80d49fdf96195b</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:19:49</sys_created_on><sys_id>d3f6737fdb9dd300aa80d49fdf9619fc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bn.core.Bootstrap Notify Demo</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_d3f6737fdb9dd300aa80d49fdf9619fc</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:19:49</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>-643631753</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>d15c959fdb50e300abd4f9361d9619de</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391b6d0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bn.core.Bootstrap Notify Demo</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>5bf6737fb59dd300dff15ab4f8f9f3fd</update_guid>
+<update_guid_history>5bf6737fb59dd300dff15ab4f8f9f3fd:-643631753</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -172,7 +556,7 @@
         if (!$scope.broadcastCount) $scope.broadcastCount = 'bn-notify-count';
 		if (!$scope.count) $scope.count = 0;
         else $scope.count = parseInt($scope.count);
-		
+
 		if ($scope.demo) $scope.demo = ($scope.demo == 'true' || $scope.demo == true);
 
         if (!$scope.options)
@@ -204,7 +588,7 @@
         });
 
         if ($scope.demo &amp;&amp; $scope.demo==true){
-			
+
           setTimeout(function() {
 			  $scope.count = 1;
             $scope.showNotification();
@@ -226,15 +610,15 @@
   });
 })(angular);]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-13 11:14:54&lt;/sys_created_on&gt;&lt;sys_id&gt;5dd5f73fdb9dd300aa80d49fdf961917&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;bnNotify&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5dd5f73fdb9dd300aa80d49fdf961917&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-13 11:14:54&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-1603927414</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>2acdb773dbddd300aa80d49fdf9619cf</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>d15c959fdb50e300abd4f9361d9619e1</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162beb71f810000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_recorded_at>165b4391b5d0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <table/>
 <target_name>bnNotify</target_name>
 <type>UI Script</type>
@@ -249,332 +633,18 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_d257777fdb9dd300aa80d49fdf961999</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sp_js_include display_value="bnNotify">8057377fdb9dd300aa80d49fdf961932</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:23</sys_created_on><sys_id>d257777fdb9dd300aa80d49fdf961999</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bn.core.bnNotify</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_d257777fdb9dd300aa80d49fdf961999</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:23</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<payload_hash>-1793676778</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>2ecdb773dbddd300aa80d49fdf9619cb</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebd0d250000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bn.core.bnNotify</target_name>
-<type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_guid>9257777f849dd300ff9f5ce5970bbe9a</update_guid>
-<update_guid_history>9257777f849dd300ff9f5ce5970bbe9a:-1793676778</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_row_9b28bf7fdb9dd300aa80d49fdf961965</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Bootstrap Notify Demo - Container 1">c218bf7fdb9dd300aa80d49fdf961954</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:25:00</sys_created_on><sys_id>9b28bf7fdb9dd300aa80d49fdf961965</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_9b28bf7fdb9dd300aa80d49fdf961965</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:25:00</sys_updated_on></sp_row></record_update>]]></payload>
-<payload_hash>-2002752891</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>2ecdb773dbddd300aa80d49fdf9619ce</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bec05e920000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>1</target_name>
-<type>Row</type>
-<update_domain>global</update_domain>
-<update_guid>9f28bf7fbd9dd300dea0d97bc6298166</update_guid>
-<update_guid_history>9f28bf7fbd9dd300dea0d97bc6298166:-2002752891</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_css_include_8377b77fdb9dd300aa80d49fdf961951</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>animate.min.css</name><source>local</source><sp_css display_value="animate.min.css">5577f77fdb9dd300aa80d49fdf96195f</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:59</sys_created_on><sys_id>8377b77fdb9dd300aa80d49fdf961951</sys_id><sys_mod_count>0</sys_mod_count><sys_name>animate.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_8377b77fdb9dd300aa80d49fdf961951</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:59</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
-<payload_hash>1450193345</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>62cdb773dbddd300aa80d49fdf9619cd</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebd9a7e0000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>animate.min.css</target_name>
-<type>CSS Include</type>
-<update_domain>global</update_domain>
-<update_guid>0777b77f679dd300c0e51b8ad5a33c52</update_guid>
-<update_guid_history>0777b77f679dd300c0e51b8ad5a33c52:1450193345</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_container_c218bf7fdb9dd300aa80d49fdf961954</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Bootstrap Notify - Container 1</name><order>1</order><sp_page display_value="bootstrap_notify_demo">cdc7fb7fdb9dd300aa80d49fdf96194f</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:24:38</sys_created_on><sys_id>c218bf7fdb9dd300aa80d49fdf961954</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Bootstrap Notify - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_c218bf7fdb9dd300aa80d49fdf961954</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:45:22</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
-<payload_hash>948405871</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>66cdb773dbddd300aa80d49fdf9619cc</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bed301290000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>Bootstrap Notify - Container 1</target_name>
-<type>Container</type>
-<update_domain>global</update_domain>
-<update_guid>addc7f3301ddd30058a8f7f3d92e66a0</update_guid>
-<update_guid_history>addc7f3301ddd30058a8f7f3d92e66a0:948405871,c618bf7f8d9dd300b8def6b901213055:-1550985661</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_script_5515333fdb9dd300aa80d49fdf961953</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;bn.core&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function(angular) {
-	angular.module('bn.core', []);
-})(angular);]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-13 11:13:02&lt;/sys_created_on&gt;&lt;sys_id&gt;5515333fdb9dd300aa80d49fdf961953&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;bn.core&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_5515333fdb9dd300aa80d49fdf961953&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-13 11:13:02&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-1519043951</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>66cdb773dbddd300aa80d49fdf9619cf</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162beb569b90000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bn.core</target_name>
-<type>UI Script</type>
-<update_domain>global</update_domain>
-<update_guid>0875733f839dd3008329296869038cb8</update_guid>
-<update_guid_history>0875733f839dd3008329296869038cb8:-1519043951</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_dependency_js_include_3a47777fdb9dd300aa80d49fdf961921</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>50</order><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sp_js_include display_value="bn.core">5447777fdb9dd300aa80d49fdf96191d</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:08</sys_created_on><sys_id>3a47777fdb9dd300aa80d49fdf961921</sys_id><sys_mod_count>1</sys_mod_count><sys_name>bn.core.bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_3a47777fdb9dd300aa80d49fdf961921</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:12</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<payload_hash>1380995870</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>6acdb773dbddd300aa80d49fdf9619cb</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebce3740000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bn.core.bn.core</target_name>
-<type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_guid>f747777f1d9dd30086fd070feb100095</update_guid>
-<update_guid_history>f747777f1d9dd30086fd070feb100095:1380995870,f647777f409dd300198e9f06399b2f22:1387288490</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_page_cdc7fb7fdb9dd300aa80d49fdf96194f</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>bootstrap_notify</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:23:25</sys_created_on><sys_id>cdc7fb7fdb9dd300aa80d49fdf96194f</sys_id><sys_mod_count>2</sys_mod_count><sys_name>bootstrap_notify</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_cdc7fb7fdb9dd300aa80d49fdf96194f</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:45:22</sys_updated_on><title>Bootstrap Notify</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=cdc7fb7fdb9dd300aa80d49fdf96194f"/></record_update>]]></payload>
-<payload_hash>1256095159</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>6acdb773dbddd300aa80d49fdf9619ce</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bed301530000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bootstrap_notify</target_name>
-<type>Page</type>
-<update_domain>global</update_domain>
-<update_guid>25dc7f3332ddd3005efc69a1c17b31a3</update_guid>
-<update_guid_history>25dc7f3332ddd3005efc69a1c17b31a3:1256095159,a9087f7f339dd30066c755a579049833:-1003054616,44d7bb7f559dd30075dcd068a407741d:1256095159</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>db_image_0962bfbbdb9dd300aa80d49fdf96192c</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image"><db_image action="INSERT_OR_UPDATE"><active>true</active><category/><format/><height/><image/><name>notifications.svg</name><size_bytes>2592</size_bytes><sys_class_name>db_image</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:00:34</sys_created_on><sys_id>0962bfbbdb9dd300aa80d49fdf96192c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>notifications.svg</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>db_image_0962bfbbdb9dd300aa80d49fdf96192c</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:00:40</sys_updated_on><thumbnail/><width/></db_image><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><chunk_size_bytes>734003</chunk_size_bytes><compressed>true</compressed><content_type>image/svg+xml</content_type><file_name>image</file_name><image_height/><image_width/><size_bytes>2592</size_bytes><size_compressed>1071</size_compressed><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:00:40</sys_created_on><sys_id>7e927fbbdb9dd300aa80d49fdf96193d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:00:40</sys_updated_on><table_name>ZZ_YYdb_image</table_name><table_sys_id>0962bfbbdb9dd300aa80d49fdf96192c</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="image" sys_id="7e927fbbdb9dd300aa80d49fdf96193d">7e927fbbdb9dd300aa80d49fdf96193d</sys_attachment><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:00:40</sys_created_on><sys_id>76927fbbdb9dd300aa80d49fdf96193e</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>dZbLctpIFIb3fooezSapgqb7nL66jKtmWGQWZJVddsTIQBkQJYjxzNPP3+J2lCLqKlv61DrX/yA9PO3fF+q4mh+W44rc7qNSy3q1WB5wFcrV+6o+/t18jCujjCKnKIDV7X7VbMeV1bZSH5v1dj+ulofD7nE0Oh6P+si6aRcjMsaMYP685fFjvdq+3dtoc86j7m71/KBwPP0xHKov9bZuZ4emfVTf3urDy1K5rD55awx9VkMlzPxolvVmNdu+NPPVdqFfms1of3piODwbnNf7l+dJW88O9RzpHpZnm/pp1N267HrdPxeCfyeyUKv5uPr27+ZHs95Xan9om7d6XG2bbX25Gp6rh1K8rtbry81yPmx/rrG7fq+3zXx+Tk7Y/aeezet2SJU6tLPt/rVpN+OqO10j0E9DSk6b7hiooTXn888XR3/+5bC45wvO/6vbRvgS/r60zc/db5xJX8JV346syXK2q+/c7rbsZqgwNn21XgfvORANyOqUbI4xqgmwY8PZD4h1DDETZWVxmhOxcQPymthSUBYP2W7d2CTrxMkyU7zBpMn4HFJI0mTUOUEw1lnpfmo1BxezC64XldGRffAxmyy50UTxtArmxDH63Md4NIQUg1dTyW3Wjjwe4GJd8KRNxDJRwaDDc0Q8sEHngBUV6UiJyDIJOCGdPIaKkKPcmr3rVoHIP2XLv9DofGBWU0lLIpHIhWL3iqP2IXqUNCi0KIacSpWdJufIWGSdtcmnNWCcZso+WjUVmDSKn0p6pVNXbNEg4xK6VOTFlr1zeWBkhw2EwZoJxXBcbjl9DVejFzmySZIKV1OBu8DY4w8MJo2wKSV3ysIZpKTQr9D5pC7jxOxsklSUZyrxtZaTPk0RekydiQjZJOtki4zOBqjX4gmRpgS1xd5W1u5SsE4jjAgkvAlqKrDQ30TikoXJ5Wcb2skp2MxS2SWEaH3I/em4O7Pf1VeUmCCJ0NudNfvsDJfBE7OUtY8M074bcYOeerKl82hGyD4UCqV6F3szfoVFCcZxCBIiABOYTLQ9o3fCQrRIzlzUI8ZQ4gTHJjnIB496diZQKpQNMoJ6ZONutLTeUDalxzcKH3zOwkYdrIV+fI/e5lBSMYcCo/fGO4sEVRFHhJ4xh14jmuRDKQXrkJFQykXX3lqPA5ZZ27MqnbZko8uhj+V4Cmx1hlRSSqQsoXeEMQRkztFSJtkkQSfAJgSXbH+z0acSF4ry+IAiSdob3Bs+hczQXtFVdhSMhcNTggQlq0mANgPajZC7aqACKSt3KRx1lXPBYpekcp4lvs2zpOifwbAo1Nh4xnvF91QhfpylKjTeNOkirKssIPjbQENunoosBBUTLTA05h0RSotBv0n2N1gY+V7hC6a8f++8uUeLXz4LJLhedCdP5cvt+eF/WnLRfSAKAAA=</data><length>1416</length><position>1</position><sys_attachment display_value="image" sys_id="7e927fbbdb9dd300aa80d49fdf96193d">7e927fbbdb9dd300aa80d49fdf96193d</sys_attachment><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:00:40</sys_created_on><sys_id>f6927fbbdb9dd300aa80d49fdf96193e</sys_id></sys_attachment_doc></record_update>]]></payload>
-<payload_hash>2064917090</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>6ecdb773dbddd300aa80d49fdf9619ca</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162beaa17760000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>notifications.svg</target_name>
-<type>Images</type>
-<update_domain>global</update_domain>
-<update_guid>cb92ffbb019dd30015bcc3107b069f7f</update_guid>
-<update_guid_history>cb92ffbb019dd30015bcc3107b069f7f:2064917090,cb92ffbb329dd300fd4a82b254bc297d:2064917090,1192bfbbfd9dd300246de19e27d52232:1331807600</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_instance_cd387bbfdb9dd300aa80d49fdf9619de</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">9b28bf7fdb9dd300aa80d49fdf961967</sp_column><sp_widget display_value="Bootstrap Notify Demo">85b6bf3fdb9dd300aa80d49fdf96195b</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:25:07</sys_created_on><sys_id>cd387bbfdb9dd300aa80d49fdf9619de</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_cd387bbfdb9dd300aa80d49fdf9619de</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:25:07</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=cd387bbfdb9dd300aa80d49fdf9619de"/></record_update>]]></payload>
-<payload_hash>1772656895</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>6ecdb773dbddd300aa80d49fdf9619cd</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bec079050000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name/>
-<type>Instance</type>
-<update_domain>global</update_domain>
-<update_guid>49387bbf449dd30033d7ae045440f8e0</update_guid>
-<update_guid_history>49387bbf449dd30033d7ae045440f8e0:1772656895</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_column_9b28bf7fdb9dd300aa80d49fdf961967</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">9b28bf7fdb9dd300aa80d49fdf961965</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:25:00</sys_created_on><sys_id>9b28bf7fdb9dd300aa80d49fdf961967</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_9b28bf7fdb9dd300aa80d49fdf961967</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:25:00</sys_updated_on></sp_column></record_update>]]></payload>
-<payload_hash>495971590</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>a2cdb773dbddd300aa80d49fdf9619cc</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bec05ec30000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>1</target_name>
-<type>Column</type>
-<update_domain>global</update_domain>
-<update_guid>2f28bf7f849dd3004dc3edc8a7869d68</update_guid>
-<update_guid_history>2f28bf7f849dd3004dc3edc8a7869d68:495971590</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_script_3a17f37fdb9dd300aa80d49fdf96192f</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;bootstrap-notify.min.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[!function(t){"function"==typeof define&amp;&amp;define.amd?define(["jquery"],t):t("object"==typeof exports?require("jquery"):jQuery)}(function(t){function s(s){var e=!1;return t('[data-notify="container"]').each(function(i,n){var a=t(n),o=a.find('[data-notify="title"]').text().trim(),r=a.find('[data-notify="message"]').html().trim(),l=o===t("&lt;div&gt;"+s.settings.content.title+"&lt;/div&gt;").html().trim(),d=r===t("&lt;div&gt;"+s.settings.content.message+"&lt;/div&gt;").html().trim(),g=a.hasClass("alert-"+s.settings.type);return l&amp;&amp;d&amp;&amp;g&amp;&amp;(e=!0),!e}),e}function e(e,n,a){var o={content:{message:"object"==typeof n?n.message:n,title:n.title?n.title:"",icon:n.icon?n.icon:"",url:n.url?n.url:"#",target:n.target?n.target:"-"}};a=t.extend(!0,{},o,a),this.settings=t.extend(!0,{},i,a),this._defaults=i,"-"===this.settings.content.target&amp;&amp;(this.settings.content.target=this.settings.url_target),this.animations={start:"webkitAnimationStart oanimationstart MSAnimationStart animationstart",end:"webkitAnimationEnd oanimationend MSAnimationEnd animationend"},"number"==typeof this.settings.offset&amp;&amp;(this.settings.offset={x:this.settings.offset,y:this.settings.offset}),(this.settings.allow_duplicates||!this.settings.allow_duplicates&amp;&amp;!s(this))&amp;&amp;this.init()}var i={element:"body",position:null,type:"info",allow_dismiss:!0,allow_duplicates:!0,newest_on_top:!1,showProgressbar:!1,placement:{from:"top",align:"right"},offset:20,spacing:10,z_index:1031,delay:5e3,timer:1e3,url_target:"_blank",mouse_over:null,animate:{enter:"animated fadeInDown",exit:"animated fadeOutUp"},onShow:null,onShown:null,onClose:null,onClosed:null,icon_type:"class",template:'&lt;div data-notify="container" class="col-xs-11 col-sm-4 alert alert-{0}" role="alert"&gt;&lt;button type="button" aria-hidden="true" class="close" data-notify="dismiss"&gt;&amp;times;&lt;/button&gt;&lt;span data-notify="icon"&gt;&lt;/span&gt; &lt;span data-notify="title"&gt;{1}&lt;/span&gt; &lt;span data-notify="message"&gt;{2}&lt;/span&gt;&lt;div class="progress" data-notify="progressbar"&gt;&lt;div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href="{3}" target="{4}" data-notify="url"&gt;&lt;/a&gt;&lt;/div&gt;'};String.format=function(){for(var t=arguments[0],s=1;s&lt;arguments.length;s++)t=t.replace(RegExp("\\{"+(s-1)+"\\}","gm"),arguments[s]);return t},t.extend(e.prototype,{init:function(){var t=this;this.buildNotify(),this.settings.content.icon&amp;&amp;this.setIcon(),"#"!=this.settings.content.url&amp;&amp;this.styleURL(),this.styleDismiss(),this.placement(),this.bind(),this.notify={$ele:this.$ele,update:function(s,e){var i={};"string"==typeof s?i[s]=e:i=s;for(var n in i)switch(n){case"type":this.$ele.removeClass("alert-"+t.settings.type),this.$ele.find('[data-notify="progressbar"] &gt; .progress-bar').removeClass("progress-bar-"+t.settings.type),t.settings.type=i[n],this.$ele.addClass("alert-"+i[n]).find('[data-notify="progressbar"] &gt; .progress-bar').addClass("progress-bar-"+i[n]);break;case"icon":var a=this.$ele.find('[data-notify="icon"]');"class"===t.settings.icon_type.toLowerCase()?a.removeClass(t.settings.content.icon).addClass(i[n]):(a.is("img")||a.find("img"),a.attr("src",i[n]));break;case"progress":var o=t.settings.delay-t.settings.delay*(i[n]/100);this.$ele.data("notify-delay",o),this.$ele.find('[data-notify="progressbar"] &gt; div').attr("aria-valuenow",i[n]).css("width",i[n]+"%");break;case"url":this.$ele.find('[data-notify="url"]').attr("href",i[n]);break;case"target":this.$ele.find('[data-notify="url"]').attr("target",i[n]);break;default:this.$ele.find('[data-notify="'+n+'"]').html(i[n])}var r=this.$ele.outerHeight()+parseInt(t.settings.spacing)+parseInt(t.settings.offset.y);t.reposition(r)},close:function(){t.close()}}},buildNotify:function(){var s=this.settings.content;this.$ele=t(String.format(this.settings.template,this.settings.type,s.title,s.message,s.url,s.target)),this.$ele.attr("data-notify-position",this.settings.placement.from+"-"+this.settings.placement.align),this.settings.allow_dismiss||this.$ele.find('[data-notify="dismiss"]').css("display","none"),(this.settings.delay&lt;=0&amp;&amp;!this.settings.showProgressbar||!this.settings.showProgressbar)&amp;&amp;this.$ele.find('[data-notify="progressbar"]').remove()},setIcon:function(){"class"===this.settings.icon_type.toLowerCase()?this.$ele.find('[data-notify="icon"]').addClass(this.settings.content.icon):this.$ele.find('[data-notify="icon"]').is("img")?this.$ele.find('[data-notify="icon"]').attr("src",this.settings.content.icon):this.$ele.find('[data-notify="icon"]').append('&lt;img src="'+this.settings.content.icon+'" alt="Notify Icon" /&gt;')},styleDismiss:function(){this.$ele.find('[data-notify="dismiss"]').css({position:"absolute",right:"10px",top:"5px",zIndex:this.settings.z_index+2})},styleURL:function(){this.$ele.find('[data-notify="url"]').css({backgroundImage:"url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)",height:"100%",left:0,position:"absolute",top:0,width:"100%",zIndex:this.settings.z_index+1})},placement:function(){var s=this,e=this.settings.offset.y,i={display:"inline-block",margin:"0px auto",position:this.settings.position?this.settings.position:"body"===this.settings.element?"fixed":"absolute",transition:"all .5s ease-in-out",zIndex:this.settings.z_index},n=!1,a=this.settings;switch(t('[data-notify-position="'+this.settings.placement.from+"-"+this.settings.placement.align+'"]:not([data-closing="true"])').each(function(){e=Math.max(e,parseInt(t(this).css(a.placement.from))+parseInt(t(this).outerHeight())+parseInt(a.spacing))}),this.settings.newest_on_top===!0&amp;&amp;(e=this.settings.offset.y),i[this.settings.placement.from]=e+"px",this.settings.placement.align){case"left":case"right":i[this.settings.placement.align]=this.settings.offset.x+"px";break;case"center":i.left=0,i.right=0}this.$ele.css(i).addClass(this.settings.animate.enter),t.each(Array("webkit-","moz-","o-","ms-",""),function(t,e){s.$ele[0].style[e+"AnimationIterationCount"]=1}),t(this.settings.element).append(this.$ele),this.settings.newest_on_top===!0&amp;&amp;(e=parseInt(e)+parseInt(this.settings.spacing)+this.$ele.outerHeight(),this.reposition(e)),t.isFunction(s.settings.onShow)&amp;&amp;s.settings.onShow.call(this.$ele),this.$ele.one(this.animations.start,function(){n=!0}).one(this.animations.end,function(){s.$ele.removeClass(s.settings.animate.enter),t.isFunction(s.settings.onShown)&amp;&amp;s.settings.onShown.call(this)}),setTimeout(function(){n||t.isFunction(s.settings.onShown)&amp;&amp;s.settings.onShown.call(this)},600)},bind:function(){var s=this;if(this.$ele.find('[data-notify="dismiss"]').on("click",function(){s.close()}),this.$ele.mouseover(function(){t(this).data("data-hover","true")}).mouseout(function(){t(this).data("data-hover","false")}),this.$ele.data("data-hover","false"),this.settings.delay&gt;0){s.$ele.data("notify-delay",s.settings.delay);var e=setInterval(function(){var t=parseInt(s.$ele.data("notify-delay"))-s.settings.timer;if("false"===s.$ele.data("data-hover")&amp;&amp;"pause"===s.settings.mouse_over||"pause"!=s.settings.mouse_over){var i=(s.settings.delay-t)/s.settings.delay*100;s.$ele.data("notify-delay",t),s.$ele.find('[data-notify="progressbar"] &gt; div').attr("aria-valuenow",i).css("width",i+"%")}t&lt;=-s.settings.timer&amp;&amp;(clearInterval(e),s.close())},s.settings.timer)}},close:function(){var s=this,e=parseInt(this.$ele.css(this.settings.placement.from)),i=!1;this.$ele.attr("data-closing","true").addClass(this.settings.animate.exit),s.reposition(e),t.isFunction(s.settings.onClose)&amp;&amp;s.settings.onClose.call(this.$ele),this.$ele.one(this.animations.start,function(){i=!0}).one(this.animations.end,function(){t(this).remove(),t.isFunction(s.settings.onClosed)&amp;&amp;s.settings.onClosed.call(this)}),setTimeout(function(){i||(s.$ele.remove(),s.settings.onClosed&amp;&amp;s.settings.onClosed(s.$ele))},600)},reposition:function(s){var e=this,i='[data-notify-position="'+this.settings.placement.from+"-"+this.settings.placement.align+'"]:not([data-closing="true"])',n=this.$ele.nextAll(i);this.settings.newest_on_top===!0&amp;&amp;(n=this.$ele.prevAll(i)),n.each(function(){t(this).css(e.settings.placement.from,s),s=parseInt(s)+parseInt(e.settings.spacing)+t(this).outerHeight()})}}),t.notify=function(t,s){var i=new e(this,t,s);return i.notify},t.notifyDefaults=function(s){return i=t.extend(!0,{},i,s)},t.notifyClose=function(s){"warning"===s&amp;&amp;(s="danger"),"undefined"==typeof s||"all"===s?t("[data-notify]").find('[data-notify="dismiss"]').trigger("click"):"success"===s||"info"===s||"warning"===s||"danger"===s?t(".alert-"+s+"[data-notify]").find('[data-notify="dismiss"]').trigger("click"):s?t(s+"[data-notify]").find('[data-notify="dismiss"]').trigger("click"):t('[data-notify-position="'+s+'"]').find('[data-notify="dismiss"]').trigger("click")},t.notifyCloseExcept=function(s){"warning"===s&amp;&amp;(s="danger"),"success"===s||"info"===s||"warning"===s||"danger"===s?t("[data-notify]").not(".alert-"+s).find('[data-notify="dismiss"]').trigger("click"):t("[data-notify]").not(s).find('[data-notify="dismiss"]').trigger("click")}});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-13 11:20:37&lt;/sys_created_on&gt;&lt;sys_id&gt;3a17f37fdb9dd300aa80d49fdf96192f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;bootstrap-notify.min.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_3a17f37fdb9dd300aa80d49fdf96192f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-13 11:20:37&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-370893884</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>a2cdb773dbddd300aa80d49fdf9619cf</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebc59c80000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bootstrap-notify.min.js</target_name>
-<type>UI Script</type>
-<update_domain>global</update_domain>
-<update_guid>0b27b37f7b9dd300808a16d6fddb1441</update_guid>
-<update_guid_history>0b27b37f7b9dd300808a16d6fddb1441:-370893884</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_dependency_js_include_3327f37fdb9dd300aa80d49fdf961935</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>10</order><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sp_js_include display_value="bootstrap-notify.min.js">0a07b37fdb9dd300aa80d49fdf9619b3</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:20:40</sys_created_on><sys_id>3327f37fdb9dd300aa80d49fdf961935</sys_id><sys_mod_count>1</sys_mod_count><sys_name>bn.core.bootstrap-notify.min.js</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_3327f37fdb9dd300aa80d49fdf961935</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:20:55</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<payload_hash>759539425</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>a6cdb773dbddd300aa80d49fdf9619cb</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebca07b0000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bn.core.bootstrap-notify.min.js</target_name>
-<type>Dependency JS Includes</type>
-<update_domain>global</update_domain>
-<update_guid>ab37377fcf9dd300ef13e072ef3be9f2</update_guid>
-<update_guid_history>ab37377fcf9dd300ef13e072ef3be9f2:759539425,7727f37f799dd300489d3ff9dab44336:633628529</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
 <name>sp_js_include_8057377fdb9dd300aa80d49fdf961932</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>bnNotify</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:23</sys_created_on><sys_id>8057377fdb9dd300aa80d49fdf961932</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bnNotify</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="bnNotify">5dd5f73fdb9dd300aa80d49fdf961917</sys_ui_script><sys_update_name>sp_js_include_8057377fdb9dd300aa80d49fdf961932</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:23</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
 <payload_hash>942090831</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>a6cdb773dbddd300aa80d49fdf9619ce</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>d55c959fdb50e300abd4f9361d9619e0</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebd0d0b0000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_recorded_at>165b4391b9b0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <table/>
 <target_name>bnNotify</target_name>
 <type>JS Include</type>
@@ -589,128 +659,50 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_dependency_21f6737fdb9dd300aa80d49fdf9619ab</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>bn.core</module><name>bn.core</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:19:49</sys_created_on><sys_id>21f6737fdb9dd300aa80d49fdf9619ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_21f6737fdb9dd300aa80d49fdf9619ab</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:19:49</sys_updated_on></sp_dependency></record_update>]]></payload>
-<payload_hash>-577846856</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>aacdb773dbddd300aa80d49fdf9619cd</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebb9c800000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bn.core</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_guid>d7f6737f349dd3006c18cee3a5a2d1fb</update_guid>
-<update_guid_history>d7f6737f349dd3006c18cee3a5a2d1fb:-577846856</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_css_include_59a73b7fdb9dd300aa80d49fdf961974</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>bnNotify</name><source>local</source><sp_css display_value="bnNotify">dd973b7fdb9dd300aa80d49fdf961971</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:40</sys_created_on><sys_id>59a73b7fdb9dd300aa80d49fdf961974</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bnNotify</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_59a73b7fdb9dd300aa80d49fdf961974</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:40</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
-<payload_hash>1598076989</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>aecdb773dbddd300aa80d49fdf9619cc</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebe3b650000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bnNotify</target_name>
-<type>CSS Include</type>
-<update_domain>global</update_domain>
-<update_guid>95a73b7f009dd300b5b8575e285fb575</update_guid>
-<update_guid_history>95a73b7f009dd300b5b8575e285fb575:1598076989</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_dependency_css_include_39a73b7fdb9dd300aa80d49fdf961947</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="bnNotify">a7873b7fdb9dd300aa80d49fdf961937</sp_css_include><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:42</sys_created_on><sys_id>39a73b7fdb9dd300aa80d49fdf961947</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bnNotify.bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_39a73b7fdb9dd300aa80d49fdf961947</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:42</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
-<payload_hash>215075099</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>e2cdb773dbddd300aa80d49fdf9619cb</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebe434f0000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bnNotify.bn.core</target_name>
-<type>Dependency CSS Includes</type>
-<update_domain>global</update_domain>
-<update_guid>f5a73b7fac9dd300b6cac3ac72e40648</update_guid>
-<update_guid_history>f5a73b7fac9dd300b6cac3ac72e40648:215075099</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_js_include_5447777fdb9dd300aa80d49fdf96191d</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>bn.core</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:21:08</sys_created_on><sys_id>5447777fdb9dd300aa80d49fdf96191d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bn.core</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="bn.core">5515333fdb9dd300aa80d49fdf961953</sys_ui_script><sys_update_name>sp_js_include_5447777fdb9dd300aa80d49fdf96191d</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:21:08</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<payload_hash>-1902234598</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>e2cdb773dbddd300aa80d49fdf9619ce</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebcd3700000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bn.core</target_name>
-<type>JS Include</type>
-<update_domain>global</update_domain>
-<update_guid>7e47777fd39dd30054a49d3a01fe4d20</update_guid>
-<update_guid_history>7e47777fd39dd30054a49d3a01fe4d20:-1902234598</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
 <name>sp_css_include_f767f77fdb9dd300aa80d49fdf961900</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>animate.min.css</name><source>local</source><sp_css display_value="animate.min.css">5577f77fdb9dd300aa80d49fdf96195f</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:10</sys_created_on><sys_id>f767f77fdb9dd300aa80d49fdf961900</sys_id><sys_mod_count>0</sys_mod_count><sys_name>animate.min.css</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_f767f77fdb9dd300aa80d49fdf961900</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:10</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
 <payload_hash>1450193345</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>e6cdb773dbddd300aa80d49fdf9619cd</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>d95c959fdb50e300abd4f9361d9619df</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebdc6360000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_recorded_at>165b4391bbf0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <table/>
 <target_name>animate.min.css</target_name>
 <type>CSS Include</type>
 <update_domain>global</update_domain>
 <update_guid>7d873b7f1d9dd30011ca1658ba9fe032</update_guid>
 <update_guid_history>7d873b7f1d9dd30011ca1658ba9fe032:1450193345</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_3327f37fdb9dd300aa80d49fdf961935</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>10</order><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sp_js_include display_value="bootstrap-notify.min.js">0a07b37fdb9dd300aa80d49fdf9619b3</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:20:40</sys_created_on><sys_id>3327f37fdb9dd300aa80d49fdf961935</sys_id><sys_mod_count>1</sys_mod_count><sys_name>bn.core.bootstrap-notify.min.js</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_3327f37fdb9dd300aa80d49fdf961935</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:20:55</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>759539425</payload_hash>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>dd5c119fdb50e300abd4f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b4391b820000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
+<table/>
+<target_name>bn.core.bootstrap-notify.min.js</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>ab37377fcf9dd300ef13e072ef3be9f2</update_guid>
+<update_guid_history>ab37377fcf9dd300ef13e072ef3be9f2:759539425,7727f37f799dd300489d3ff9dab44336:633628529</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -745,89 +737,21 @@ position: relative;&#13;
   left: 15px;&#13;
 }</css><name>bnNotify</name><sys_class_name>sp_css</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:22:40</sys_created_on><sys_id>dd973b7fdb9dd300aa80d49fdf961971</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bnNotify</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_dd973b7fdb9dd300aa80d49fdf961971</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:22:40</sys_updated_on></sp_css></record_update>]]></payload>
 <payload_hash>1460890557</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
+<remote_update_set display_value="Bootstrap Notify">5d5c119fdb50e300abd4f9361d9619c9</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>eacdb773dbddd300aa80d49fdf9619cc</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-09-07 13:55:30</sys_created_on>
+<sys_id>dd5c959fdb50e300abd4f9361d9619de</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebe3b780000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
+<sys_recorded_at>165b4391bd90000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-09-07 13:55:30</sys_updated_on>
 <table/>
 <target_name>bnNotify</target_name>
 <type>Style Sheet</type>
 <update_domain>global</update_domain>
 <update_guid>55a73b7ffe9dd300a6ec566552d7a676</update_guid>
 <update_guid_history>55a73b7ffe9dd300a6ec566552d7a676:1460890557</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_widget_dependency_d3f6737fdb9dd300aa80d49fdf9619fc</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="bn.core">21f6737fdb9dd300aa80d49fdf9619ab</sp_dependency><sp_widget display_value="Bootstrap Notify Demo">85b6bf3fdb9dd300aa80d49fdf96195b</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2018-04-13 11:19:49</sys_created_on><sys_id>d3f6737fdb9dd300aa80d49fdf9619fc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bn.core.Bootstrap Notify Demo</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_d3f6737fdb9dd300aa80d49fdf9619fc</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2018-04-13 11:19:49</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<payload_hash>-643631753</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>eecdb773dbddd300aa80d49fdf9619cb</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bebb9cbc0000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>bn.core.Bootstrap Notify Demo</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_guid>5bf6737fb59dd300dff15ab4f8f9f3fd</update_guid>
-<update_guid_history>5bf6737fb59dd300dff15ab4f8f9f3fd:-643631753</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_widget_85b6bf3fdb9dd300aa80d49fdf96195b</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function BootstrapNotifyDemoCtrl($rootScope) {
-  /* widget controller */
-  var c = this;
-  c.start = function(){
-	  $rootScope.$broadcast('bn-notify-show');
-	  $rootScope.$broadcast('bn-notify-count',5);
-  };
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-bootstrap-notify&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Bootstrap Notify&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-04-13 11:19:32&lt;/sys_created_on&gt;&lt;sys_id&gt;85b6bf3fdb9dd300aa80d49fdf96195b&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Bootstrap Notify&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_85b6bf3fdb9dd300aa80d49fdf96195b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-13 11:47:01&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
-  &lt;div class="pull-right"&gt;
-  &lt;bn-notify demo=true&gt;&lt;/bn-notify&gt;
-  &lt;/div&gt;
-  &lt;a class="btn btn-default" ng-href="javascript:void(0)" ng-click="c.start()"role="button"&gt;Notify through broadcasting&lt;/a&gt;
-&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-878225532</payload_hash>
-<remote_update_set display_value="Bootstrap Notify">6acdb773dbddd300aa80d49fdf9619ca</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio</sys_created_by>
-<sys_created_on>2018-04-13 11:49:31</sys_created_on>
-<sys_id>eecdb773dbddd300aa80d49fdf9619ce</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>162bed483e30000001</sys_recorded_at>
-<sys_updated_by>fabio</sys_updated_by>
-<sys_updated_on>2018-04-13 11:49:31</sys_updated_on>
-<table/>
-<target_name>PE Bootstrap Notify</target_name>
-<type>Widget</type>
-<update_domain>global</update_domain>
-<update_guid>7d3dff3326ddd300454a586bd20db39e</update_guid>
-<update_guid_history>7d3dff3326ddd300454a586bd20db39e:-878225532,35ac33334bddd3000d073974055be05f:1844901234,9be6f73f9b9dd300b72f089eabda8924:-602059370</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
