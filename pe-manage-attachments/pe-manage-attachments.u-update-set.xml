@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-09-06 18:33:10">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-09-07 14:45:01">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
 <application_name>Email Client Attachments</application_name>
@@ -15,16 +15,16 @@
 <release_date/>
 <remote_base_update_set display_value=""/>
 <remote_parent_id/>
-<remote_sys_id>f4429d0b13142f009e5e7f176144b0f0</remote_sys_id>
+<remote_sys_id>30a7691b135c2f009e5e7f176144b02c</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>2a429d0b13142f009e5e7f176144b0f6</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>d2a7a91b135c2f009e5e7f176144b085</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -34,18 +34,206 @@
 <application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
 <category>customer</category>
 <comments/>
+<name>sp_instance_3cf1e1b41358e7009e5e7f176144b037</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">7cf1e1b41358e7009e5e7f176144b035</sp_column><sp_widget display_value="Manage Attachments">30f129741358e7009e5e7f176144b07d</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>3cf1e1b41358e7009e5e7f176144b037</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_instance_3cf1e1b41358e7009e5e7f176144b037</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=3cf1e1b41358e7009e5e7f176144b037"/></record_update>]]></payload>
+<payload_hash>1113447686</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>12a7a91b135c2f009e5e7f176144b086</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e38b30000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>34f1e1b46358e700df5bcbb1f0cc0439</update_guid>
+<update_guid_history>34f1e1b46358e700df5bcbb1f0cc0439:1113447686</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_c484bdc513902b009e5e7f176144b028</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>write</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-31 15:54:46</sys_created_on><sys_id>c484bdc513902b009e5e7f176144b028</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_c484bdc513902b009e5e7f176144b028</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-31 15:54:46</sys_updated_on><target_name>incident</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>1817777960</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>12a7a91b135c2f009e5e7f176144b089</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e39b10000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>incident</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>8084bdc53a902b00afb563dfacd16629</update_guid>
+<update_guid_history>8084bdc53a902b00afb563dfacd16629:1817777960</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_752055f81318e7009e5e7f176144b09b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:37:30</sys_created_on><sys_id>752055f81318e7009e5e7f176144b09b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_email_client_template</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_752055f81318e7009e5e7f176144b09b</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:37:30</sys_updated_on><target_name>sys_email_client_template</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>322007031</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>16a7a91b135c2f009e5e7f176144b088</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e38ea0000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>sys_email_client_template</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>312055f82a18e7006f160727b26e599c</update_guid>
+<update_guid_history>312055f82a18e7006f160727b26e599c:322007031</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_0113adb41358e7009e5e7f176144b0a4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 20:00:11</sys_created_on><sys_id>0113adb41358e7009e5e7f176144b0a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Glide API: user roles and groups</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_0113adb41358e7009e5e7f176144b0a4</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 20:00:11</sys_updated_on><target_name>Glide API: user roles and groups</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>706514369</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>1aa7a91b135c2f009e5e7f176144b087</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e38650000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>Glide API: user roles and groups</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>d913adb42a58e700832337694ac9f6a4</update_guid>
+<update_guid_history>d913adb42a58e700832337694ac9f6a4:706514369</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_bd4c78aa1344af00aeee32228144b053</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><enforce_license>log</enforce_license><js_level>helsinki_es5</js_level><licensable>true</licensable><license_category>none</license_category><license_model>none</license_model><logo/><menu/><name>Email Client Attachments</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_snc_ec_attach</scope><scoped_administration>false</scoped_administration><short_description/><source>x_snc_ec_attach</source><store_correlation_id/><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-23 17:24:20</sys_created_on><sys_id>bd4c78aa1344af00aeee32228144b053</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-23 17:24:20</sys_updated_on><template/><trackable>true</trackable><user_role/><vendor/><vendor_prefix/><version>1.0.0</version></sys_app></record_update>]]></payload>
+<payload_hash>-1754870119</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>1ea7a91b135c2f009e5e7f176144b086</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e38100000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>Email Client Attachments</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid>0a4c78aa3f44af0083a3356d0e6bc627</update_guid>
+<update_guid_history>0a4c78aa3f44af0083a3356d0e6bc627:269080413</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_929c0d381318e7009e5e7f176144b08c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;send_attachments&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2/&gt;&lt;comments/&gt;&lt;condition&gt;!current.isNewRecord()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Send Email With Attachments&lt;/name&gt;&lt;onclick&gt;sendInfoToProcessor()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function sendInfoToProcessor(){
+	var url = new GlideURL("x_snc_ec_attach_send_email.do");
+	url.addParam("record_id",g_form.getUniqueValue());
+	url.addParam("table_name","incident");
+	url.addParam("attachments","all");
+	popupOpenEmailClient(url.getURL());
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;darrin.achtman@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-30 18:27:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;929c0d381318e7009e5e7f176144b08c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Send Email With Attachments&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Email Client Attachments" source="x_snc_ec_attach"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Email Client Attachments"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_929c0d381318e7009e5e7f176144b08c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;darrin.achtman@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-31 16:25:07&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1603714886</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>1ea7a91b135c2f009e5e7f176144b089</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e39590000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table>incident</table>
+<target_name>Send Email With Attachments</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>e07bf10ddb902b006dd63e1a7d4ff822</update_guid>
+<update_guid_history>e07bf10ddb902b006dd63e1a7d4ff822:-1603714886,4ced8978ae18e700591c74b0ff76cb84:2013992379</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_637019f81318e7009e5e7f176144b07a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:38:58</sys_created_on><sys_id>637019f81318e7009e5e7f176144b07a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideSysAttachment.writeBase64</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_637019f81318e7009e5e7f176144b07a</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:38:58</sys_updated_on><target_name>GlideSysAttachment.writeBase64</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>1658103329</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>52a7a91b135c2f009e5e7f176144b088</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e38db0000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>GlideSysAttachment.writeBase64</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>ab7019f85818e7005e85ad25c50ac57b</update_guid>
+<update_guid_history>ab7019f85818e7005e85ad25c50ac57b:1658103329</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
 <name>sys_scope_privilege_0113adb41358e7009e5e7f176144b0a2</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 20:00:11</sys_created_on><sys_id>0113adb41358e7009e5e7f176144b0a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Glide API: string utilities</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_0113adb41358e7009e5e7f176144b0a2</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 20:00:11</sys_updated_on><target_name>Glide API: string utilities</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
 <payload_hash>1991257389</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>2242114b13142f009e5e7f176144b06e</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>56a7a91b135c2f009e5e7f176144b087</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9600000001</sys_recorded_at>
+<sys_recorded_at>165b47e38570000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>Glide API: string utilities</target_name>
 <type>Cross scope privilege</type>
@@ -188,8 +376,8 @@
 		}
 		return table;
 	}
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;darrin.achtman@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-30 19:55:14&lt;/sys_created_on&gt;&lt;sys_id&gt;30f129741358e7009e5e7f176144b07d&lt;/sys_id&gt;&lt;sys_mod_count&gt;52&lt;/sys_mod_count&gt;&lt;sys_name&gt;Manage Attachments&lt;/sys_name&gt;&lt;sys_package display_value="Email Client Attachments" source="x_snc_ec_attach"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Email Client Attachments"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_30f129741358e7009e5e7f176144b07d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;darrin.achtman@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-06 18:27:09&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="data.canRead" class="panel panel-{{options.color}} b"&gt;
-  &lt;div class="panel-heading padder-b-none"&gt;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;darrin.achtman@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-30 19:55:14&lt;/sys_created_on&gt;&lt;sys_id&gt;30f129741358e7009e5e7f176144b07d&lt;/sys_id&gt;&lt;sys_mod_count&gt;53&lt;/sys_mod_count&gt;&lt;sys_name&gt;Manage Attachments&lt;/sys_name&gt;&lt;sys_package display_value="Email Client Attachments" source="x_snc_ec_attach"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Email Client Attachments"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_30f129741358e7009e5e7f176144b07d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;darrin.achtman@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-07 14:44:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="data.canRead" class="panel"&gt;
+  &lt;div class="panel-heading"&gt;
     &lt;h2 class="h4 sp-attachments-header panel-title pull-left"&gt;
       ${Attachments}
     &lt;/h2&gt;
@@ -215,22 +403,22 @@
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<payload_hash>826821273</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<payload_hash>2005187707</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>2642114b13142f009e5e7f176144b06d</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>5aa7a91b135c2f009e5e7f176144b086</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9930000001</sys_recorded_at>
+<sys_recorded_at>165b47e38890000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>Manage Attachments</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
-<update_guid>e6e051c793142f0027d807df6f25fec8</update_guid>
-<update_guid_history>e6e051c793142f0027d807df6f25fec8:826821273,3ece41c79c142f00c493ebc206df6f7c:-1304992665,8a7cde8d56d02b004d6e14c1dcfe2787:-1929201525,4e3cde8d5cd02b0010255d27d0167e7f:-64922321,8978520d27d02b0007ed89ebe6368fed:716308335,b2e68a81f8d02b0019dbe34625bd61e0:98978806,d5c6c681abd02b00d8e206175007802f:828275912,13a686819ad02b00bb2a54fa6012272c:-1339991803,7186cacd3c902b00f6a987f67d3132b1:-1749513912,48ca35c95c902b0039b94802e108acff:-1568306487,a8ba35c908902b00cc9d74bbd578d0e9:-239382525,449af1c916902b009330ad81380267a7:384264452,896a71c99f902b00d05fcffe170567dc:-695606668,f85a71c9ea902b0023e0a9d44bafc02d:-1869455776,d839b5894e902b003bf6ccee2d6ff44f:376281263,4bf8f949c2902b00afd9864c1f849e61:-336508749,00e8f18922902b00d601cebf67998663:1874552581,72747dc5bd902b0036a83878d1217eae:1888288379,a254f9c5db902b0032a20bb9548d90f0:1560103578,5054f9c539902b0025ea6aadef916adf:-484843485,f334b9c56b902b00cf395d951ff192a0:1506336501,b43479c509902b000ef1f35b64fe8479:1725518263,1f2479c554902b005c50018671ff8662:488836750,8b1479c568902b00b6f227e6f8bd402b:-686002011,5be3f1c52c902b005a9e5b0569ed6bb4:-1166017517,39b3f1c530902b00fc8294dfeeaa64e6:-702059352,5d93f1c501902b00ec5f0c5d200444db:1483957420,6c83f1c5b5902b00ddcdbb435991d107:1677725935,aa6371c5c2902b00f34f36cf36bbd8d2:183044051,da4331c5f5902b00a98473c7eed42d6b:-614050215,eb327585b9902b00058addda974d9a14:-1502502534,ad027585ac902b005c7f9856104dd60c:1677426389,61617545c9902b00b8d4b4ed6ff0f97a:1850410062,57a039457d902b00646d6d3bff971fb4:-1051345198,19707545fc902b006dbb587479e7b748:1836418739,e730354563902b00212323797d4d0153:-1063246579,5a8f6905b8902b0000da21798473af44:-417047619,281f6905e9902b002307042aa2dd2001:1350642147,290fe505e4902b00100a59074f0464dd:1043276082,b5ae250563902b0096ab06b950a13558:987739425,a59ee10533902b003db7e2a8e0f98646:-1137385887,580eadc143902b009acb25739b560d37:-345556449,b4fde9c1a5902b0018b3901144189a01:-1854118817,6fe465f41558e700fc416eb47963d77d:-810964479,2bb365f42a58e700e0d26d8971f8545d:1481268980,af736db47458e7006d4dd67c482ed37c:-980205879,8013adb4f458e7006a807b82a465fb9d:-827608791,c1032db48c58e7003091d15092934ae7:642147657,27d2e9b45858e700ebed0e4f2569c278:-76889389,eb8269b46d58e7001d1a517588c98745:241535064,6562a5b4ce58e700da985863afcec5ad:1979478816,5a42a5b47458e7004028b6a8fb53f3b4:1735276532,b4f129744758e700a2fc61e920fcfc7e:-375549654</update_guid_history>
+<update_guid>6287a51b7c5c2f008d937c33743d0da4</update_guid>
+<update_guid_history>6287a51b7c5c2f008d937c33743d0da4:2005187707,e6e051c793142f0027d807df6f25fec8:826821273,3ece41c79c142f00c493ebc206df6f7c:-1304992665,8a7cde8d56d02b004d6e14c1dcfe2787:-1929201525,4e3cde8d5cd02b0010255d27d0167e7f:-64922321,8978520d27d02b0007ed89ebe6368fed:716308335,b2e68a81f8d02b0019dbe34625bd61e0:98978806,d5c6c681abd02b00d8e206175007802f:828275912,13a686819ad02b00bb2a54fa6012272c:-1339991803,7186cacd3c902b00f6a987f67d3132b1:-1749513912,48ca35c95c902b0039b94802e108acff:-1568306487,a8ba35c908902b00cc9d74bbd578d0e9:-239382525,449af1c916902b009330ad81380267a7:384264452,896a71c99f902b00d05fcffe170567dc:-695606668,f85a71c9ea902b0023e0a9d44bafc02d:-1869455776,d839b5894e902b003bf6ccee2d6ff44f:376281263,4bf8f949c2902b00afd9864c1f849e61:-336508749,00e8f18922902b00d601cebf67998663:1874552581,72747dc5bd902b0036a83878d1217eae:1888288379,a254f9c5db902b0032a20bb9548d90f0:1560103578,5054f9c539902b0025ea6aadef916adf:-484843485,f334b9c56b902b00cf395d951ff192a0:1506336501,b43479c509902b000ef1f35b64fe8479:1725518263,1f2479c554902b005c50018671ff8662:488836750,8b1479c568902b00b6f227e6f8bd402b:-686002011,5be3f1c52c902b005a9e5b0569ed6bb4:-1166017517,39b3f1c530902b00fc8294dfeeaa64e6:-702059352,5d93f1c501902b00ec5f0c5d200444db:1483957420,6c83f1c5b5902b00ddcdbb435991d107:1677725935,aa6371c5c2902b00f34f36cf36bbd8d2:183044051,da4331c5f5902b00a98473c7eed42d6b:-614050215,eb327585b9902b00058addda974d9a14:-1502502534,ad027585ac902b005c7f9856104dd60c:1677426389,61617545c9902b00b8d4b4ed6ff0f97a:1850410062,57a039457d902b00646d6d3bff971fb4:-1051345198,19707545fc902b006dbb587479e7b748:1836418739,e730354563902b00212323797d4d0153:-1063246579,5a8f6905b8902b0000da21798473af44:-417047619,281f6905e9902b002307042aa2dd2001:1350642147,290fe505e4902b00100a59074f0464dd:1043276082,b5ae250563902b0096ab06b950a13558:987739425,a59ee10533902b003db7e2a8e0f98646:-1137385887,580eadc143902b009acb25739b560d37:-345556449,b4fde9c1a5902b0018b3901144189a01:-1854118817,6fe465f41558e700fc416eb47963d77d:-810964479,2bb365f42a58e700e0d26d8971f8545d:1481268980,af736db47458e7006d4dd67c482ed37c:-980205879,8013adb4f458e7006a807b82a465fb9d:-827608791,c1032db48c58e7003091d15092934ae7:642147657,27d2e9b45858e700ebed0e4f2569c278:-76889389,eb8269b46d58e7001d1a517588c98745:241535064,6562a5b4ce58e700da985863afcec5ad:1979478816,5a42a5b47458e7004028b6a8fb53f3b4:1735276532,b4f129744758e700a2fc61e920fcfc7e:-375549654</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -370,15 +558,15 @@ function log(message){
 	gs.info(gdt.getNumericValue() + "\n" + message);
 }]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;darrin.achtman@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-23 17:29:14&lt;/sys_created_on&gt;&lt;sys_id&gt;4b5df0ea1344af00aeee32228144b0b1&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;AttachmentEmailScripts&lt;/sys_name&gt;&lt;sys_package display_value="Email Client Attachments" source="x_snc_ec_attach"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Email Client Attachments"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_4b5df0ea1344af00aeee32228144b0b1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;darrin.achtman@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-06 18:32:37&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-1745588916</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>2642114b13142f009e5e7f176144b070</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>5aa7a91b135c2f009e5e7f176144b089</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9d70000001</sys_recorded_at>
+<sys_recorded_at>165b47e38c20000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>AttachmentEmailScripts</target_name>
 <type>Script Include</type>
@@ -393,18 +581,44 @@ function log(message){
 <application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
 <category>customer</category>
 <comments/>
+<name>sp_container_bcf1e1b41358e7009e5e7f176144b031</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Manage Attachments - Test Page - Container 1</name><order>1</order><sp_page display_value="manage_attachments">f0f129741358e7009e5e7f176144b07f</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>bcf1e1b41358e7009e5e7f176144b031</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Manage Attachments - Test Page - Container 1</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_container_bcf1e1b41358e7009e5e7f176144b031</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-945003510</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>5ea7a91b135c2f009e5e7f176144b085</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e397a0000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>Manage Attachments - Test Page - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>b0f1e1b43958e70069d01092a7983633</update_guid>
+<update_guid_history>b0f1e1b43958e70069d01092a7983633:-945003510</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
 <name>sys_scope_privilege_bd2091f81318e7009e5e7f176144b06c</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:37:29</sys_created_on><sys_id>bd2091f81318e7009e5e7f176144b06c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideSysAttachment.getContentBase64</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_bd2091f81318e7009e5e7f176144b06c</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:37:29</sys_updated_on><target_name>GlideSysAttachment.getContentBase64</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
 <payload_hash>793856643</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>2a42114b13142f009e5e7f176144b06f</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>5ea7a91b135c2f009e5e7f176144b088</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba790000001</sys_recorded_at>
+<sys_recorded_at>165b47e39a20000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>GlideSysAttachment.getContentBase64</target_name>
 <type>Cross scope privilege</type>
@@ -419,50 +633,24 @@ function log(message){
 <application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
 <category>customer</category>
 <comments/>
-<name>sys_scope_privilege_637019f81318e7009e5e7f176144b07a</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:38:58</sys_created_on><sys_id>637019f81318e7009e5e7f176144b07a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideSysAttachment.writeBase64</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_637019f81318e7009e5e7f176144b07a</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:38:58</sys_updated_on><target_name>GlideSysAttachment.writeBase64</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
-<payload_hash>1658103329</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<name>sys_scope_privilege_00847dc513902b009e5e7f176144b0c3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-31 15:54:46</sys_created_on><sys_id>00847dc513902b009e5e7f176144b0c3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.update</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_00847dc513902b009e5e7f176144b0c3</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-31 15:54:46</sys_updated_on><target_name>GlideRecord.update</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-359498143</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>2e42114b13142f009e5e7f176144b06e</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>92a7a91b135c2f009e5e7f176144b087</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9fb0000001</sys_recorded_at>
+<sys_recorded_at>165b47e38460000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
-<target_name>GlideSysAttachment.writeBase64</target_name>
+<target_name>GlideRecord.update</target_name>
 <type>Cross scope privilege</type>
 <update_domain>global</update_domain>
-<update_guid>ab7019f85818e7005e85ad25c50ac57b</update_guid>
-<update_guid_history>ab7019f85818e7005e85ad25c50ac57b:1658103329</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_widget_dependency_1ee22db41358e7009e5e7f176144b0db</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="dialog-polyfill">2eaf31f30b301200b0b02c6317673a84</sp_dependency><sp_widget display_value="Manage Attachments">30f129741358e7009e5e7f176144b07d</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:59:27</sys_created_on><sys_id>1ee22db41358e7009e5e7f176144b0db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>dialog-polyfill.Manage Attachments</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>m2m_sp_widget_dependency_1ee22db41358e7009e5e7f176144b0db</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:59:27</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<payload_hash>-114788749</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>2e429d0b13142f009e5e7f176144b0f6</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b97f0000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>dialog-polyfill.Manage Attachments</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_guid>aae22db48558e700c0c91fe34fc530dd</update_guid>
-<update_guid_history>aae22db48558e700c0c91fe34fc530dd:-114788749</update_guid_history>
+<update_guid>8884bdc539902b00b5dec5cfcbb90927</update_guid>
+<update_guid_history>8884bdc539902b00b5dec5cfcbb90927:-359498143</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -474,15 +662,15 @@ function log(message){
 <name>sp_row_bcf1e1b41358e7009e5e7f176144b033</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Manage Attachments - Test Page - Container 1">bcf1e1b41358e7009e5e7f176144b031</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>bcf1e1b41358e7009e5e7f176144b033</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_row_bcf1e1b41358e7009e5e7f176144b033</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on></sp_row></record_update>]]></payload>
 <payload_hash>170882365</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>6242114b13142f009e5e7f176144b06d</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>96a7a91b135c2f009e5e7f176144b086</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba700000001</sys_recorded_at>
+<sys_recorded_at>165b47e39940000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>1</target_name>
 <type>Row</type>
@@ -500,15 +688,15 @@ function log(message){
 <name>sys_scope_privilege_f92055f81318e7009e5e7f176144b099</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:37:30</sys_created_on><sys_id>f92055f81318e7009e5e7f176144b099</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_email_account</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_f92055f81318e7009e5e7f176144b099</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:37:30</sys_updated_on><target_name>sys_email_account</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
 <payload_hash>-1298287947</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>6242114b13142f009e5e7f176144b070</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>96a7a91b135c2f009e5e7f176144b089</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028bab70000001</sys_recorded_at>
+<sys_recorded_at>165b47e39eb0000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>sys_email_account</target_name>
 <type>Cross scope privilege</type>
@@ -523,18 +711,44 @@ function log(message){
 <application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
 <category>customer</category>
 <comments/>
+<name>sp_column_7cf1e1b41358e7009e5e7f176144b035</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size/><size_lg/><size_sm/><size_xs/><sp_row display_value="1">bcf1e1b41358e7009e5e7f176144b033</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>7cf1e1b41358e7009e5e7f176144b035</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_column_7cf1e1b41358e7009e5e7f176144b035</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>336740618</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>9aa7a91b135c2f009e5e7f176144b085</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e38f90000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>30f1e1b44658e70081148cfa00559437</update_guid>
+<update_guid_history>30f1e1b44658e70081148cfa00559437:336740618</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
 <name>sys_scope_privilege_b52055f81318e7009e5e7f176144b09e</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>create</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:37:30</sys_created_on><sys_id>b52055f81318e7009e5e7f176144b09e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_email</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_b52055f81318e7009e5e7f176144b09e</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:37:30</sys_updated_on><target_name>sys_email</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
 <payload_hash>-1120113997</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>6642114b13142f009e5e7f176144b06f</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>9aa7a91b135c2f009e5e7f176144b088</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba590000001</sys_recorded_at>
+<sys_recorded_at>165b47e39650000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>sys_email</target_name>
 <type>Cross scope privilege</type>
@@ -552,15 +766,15 @@ function log(message){
 <name>sys_scope_privilege_5c5fc9b81318e7009e5e7f176144b07d</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:33:50</sys_created_on><sys_id>5c5fc9b81318e7009e5e7f176144b07d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_attachment</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_5c5fc9b81318e7009e5e7f176144b07d</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:33:50</sys_updated_on><target_name>sys_attachment</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
 <payload_hash>1458072209</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>6a42114b13142f009e5e7f176144b06e</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>9ea7a91b135c2f009e5e7f176144b087</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9e90000001</sys_recorded_at>
+<sys_recorded_at>165b47e38d10000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>sys_attachment</target_name>
 <type>Cross scope privilege</type>
@@ -575,24 +789,76 @@ function log(message){
 <application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
 <category>customer</category>
 <comments/>
-<name>sys_scope_privilege_00847dc513902b009e5e7f176144b0c3</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-31 15:54:46</sys_created_on><sys_id>00847dc513902b009e5e7f176144b0c3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.update</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_00847dc513902b009e5e7f176144b0c3</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-31 15:54:46</sys_updated_on><target_name>GlideRecord.update</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
-<payload_hash>-359498143</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<name>sp_page_f0f129741358e7009e5e7f176144b07f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>manage_attachments</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>f0f129741358e7009e5e7f176144b07f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>manage_attachments</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_page_f0f129741358e7009e5e7f176144b07f</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on><title>Manage Attachments - Test Page</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=f0f129741358e7009e5e7f176144b07f"/></record_update>]]></payload>
+<payload_hash>1043551201</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>6e42114b13142f009e5e7f176144b06d</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>d2a7a91b135c2f009e5e7f176144b086</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9510000001</sys_recorded_at>
+<sys_recorded_at>165b47e39d70000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
-<target_name>GlideRecord.update</target_name>
+<target_name>manage_attachments</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>b0f1e1b4e058e700b9bb78766dfb9c31</update_guid>
+<update_guid_history>b0f1e1b4e058e700b9bb78766dfb9c31:1043551201</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_dc5fc9b81318e7009e5e7f176144b07a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:33:50</sys_created_on><sys_id>dc5fc9b81318e7009e5e7f176144b07a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_dc5fc9b81318e7009e5e7f176144b07a</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:33:50</sys_updated_on><target_name>incident</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-1553905423</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>d2a7a91b135c2f009e5e7f176144b089</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e39c50000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>incident</target_name>
 <type>Cross scope privilege</type>
 <update_domain>global</update_domain>
-<update_guid>8884bdc539902b00b5dec5cfcbb90927</update_guid>
-<update_guid_history>8884bdc539902b00b5dec5cfcbb90927:-359498143</update_guid_history>
+<update_guid>5c5fc9b8ea18e700a6214b3858a8627c</update_guid>
+<update_guid_history>5c5fc9b8ea18e700a6214b3858a8627c:-1553905423</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_1ee22db41358e7009e5e7f176144b0db</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="dialog-polyfill">2eaf31f30b301200b0b02c6317673a84</sp_dependency><sp_widget display_value="Manage Attachments">30f129741358e7009e5e7f176144b07d</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:59:27</sys_created_on><sys_id>1ee22db41358e7009e5e7f176144b0db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>dialog-polyfill.Manage Attachments</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>m2m_sp_widget_dependency_1ee22db41358e7009e5e7f176144b0db</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:59:27</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>-114788749</payload_hash>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>darrin.achtman@snc</sys_created_by>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>d6a7a91b135c2f009e5e7f176144b085</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165b47e38780000001</sys_recorded_at>
+<sys_updated_by>darrin.achtman@snc</sys_updated_by>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
+<table/>
+<target_name>dialog-polyfill.Manage Attachments</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>aae22db48558e700c0c91fe34fc530dd</update_guid>
+<update_guid_history>aae22db48558e700c0c91fe34fc530dd:-114788749</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -604,15 +870,15 @@ function log(message){
 <name>sys_scope_privilege_7d2055f81318e7009e5e7f176144b09c</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:37:30</sys_created_on><sys_id>7d2055f81318e7009e5e7f176144b09c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.insert</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_7d2055f81318e7009e5e7f176144b09c</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:37:30</sys_updated_on><target_name>GlideRecord.insert</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
 <payload_hash>619867233</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>a242114b13142f009e5e7f176144b06f</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>d6a7a91b135c2f009e5e7f176144b088</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba2e0000001</sys_recorded_at>
+<sys_recorded_at>165b47e39060000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>GlideRecord.insert</target_name>
 <type>Cross scope privilege</type>
@@ -630,47 +896,21 @@ function log(message){
 <name>sys_scope_privilege_392091f81318e7009e5e7f176144b06f</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:37:30</sys_created_on><sys_id>392091f81318e7009e5e7f176144b06f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Glide API: properties</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_392091f81318e7009e5e7f176144b06f</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:37:30</sys_updated_on><target_name>Glide API: properties</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
 <payload_hash>509177661</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>a642114b13142f009e5e7f176144b06e</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>daa7a91b135c2f009e5e7f176144b087</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9a20000001</sys_recorded_at>
+<sys_recorded_at>165b47e38980000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>Glide API: properties</target_name>
 <type>Cross scope privilege</type>
 <update_domain>global</update_domain>
 <update_guid>f12091f89918e700bdf07d0ee359da70</update_guid>
 <update_guid_history>f12091f89918e700bdf07d0ee359da70:509177661</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sp_container_bcf1e1b41358e7009e5e7f176144b031</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Manage Attachments - Test Page - Container 1</name><order>1</order><sp_page display_value="manage_attachments">f0f129741358e7009e5e7f176144b07f</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>bcf1e1b41358e7009e5e7f176144b031</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Manage Attachments - Test Page - Container 1</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_container_bcf1e1b41358e7009e5e7f176144b031</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
-<payload_hash>-945003510</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>a6429d0b13142f009e5e7f176144b0f7</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba660000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>Manage Attachments - Test Page - Container 1</target_name>
-<type>Container</type>
-<update_domain>global</update_domain>
-<update_guid>b0f1e1b43958e70069d01092a7983633</update_guid>
-<update_guid_history>b0f1e1b43958e70069d01092a7983633:-945003510</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -691,261 +931,21 @@ function log(message){
 	g_processor.redirect(url);
 })(g_request, g_response, g_processor);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;darrin.achtman@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-30 18:21:49&lt;/sys_created_on&gt;&lt;sys_id&gt;80b8c9b41318e7009e5e7f176144b064&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;AttachmentEmail&lt;/sys_name&gt;&lt;sys_package display_value="Email Client Attachments" source="x_snc_ec_attach"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Email Client Attachments"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_80b8c9b41318e7009e5e7f176144b064&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;darrin.achtman@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-06 18:14:19&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-1214752599</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
+<remote_update_set display_value="Email Client Attachments">d2a7a91b135c2f009e5e7f176144b085</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>aa42114b13142f009e5e7f176144b06d</sys_id>
+<sys_created_on>2018-09-07 14:45:00</sys_created_on>
+<sys_id>dea7a91b135c2f009e5e7f176144b086</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba410000001</sys_recorded_at>
+<sys_recorded_at>165b47e393e0000001</sys_recorded_at>
 <sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
+<sys_updated_on>2018-09-07 14:45:00</sys_updated_on>
 <table/>
 <target_name>AttachmentEmail</target_name>
 <type>Processor</type>
 <update_domain>global</update_domain>
 <update_guid>aafd85874a142f009a87acff5a6bdce6</update_guid>
 <update_guid_history>aafd85874a142f009a87acff5a6bdce6:-1214752599,c03db54d6e902b0098eb0eba714506d3:-146028453,026f0db84918e700175dd7d8d65a8341:-1988826151,5b4fc9b88618e700b30bdc75bfce6078:1094051963,d05e81b83b18e700553a3301b20351c0:-1877901061,d49cc9b45b18e7002a6376ca9f7ac37f:1873077081</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sp_page_f0f129741358e7009e5e7f176144b07f</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>manage_attachments</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>f0f129741358e7009e5e7f176144b07f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>manage_attachments</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_page_f0f129741358e7009e5e7f176144b07f</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on><title>Manage Attachments - Test Page</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=f0f129741358e7009e5e7f176144b07f"/></record_update>]]></payload>
-<payload_hash>1043551201</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>ae42114b13142f009e5e7f176144b06c</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028baa30000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>manage_attachments</target_name>
-<type>Page</type>
-<update_domain>global</update_domain>
-<update_guid>b0f1e1b4e058e700b9bb78766dfb9c31</update_guid>
-<update_guid_history>b0f1e1b4e058e700b9bb78766dfb9c31:1043551201</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sys_scope_privilege_dc5fc9b81318e7009e5e7f176144b07a</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:33:50</sys_created_on><sys_id>dc5fc9b81318e7009e5e7f176144b07a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_dc5fc9b81318e7009e5e7f176144b07a</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:33:50</sys_updated_on><target_name>incident</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
-<payload_hash>-1553905423</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>ae42114b13142f009e5e7f176144b06f</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba920000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>incident</target_name>
-<type>Cross scope privilege</type>
-<update_domain>global</update_domain>
-<update_guid>5c5fc9b8ea18e700a6214b3858a8627c</update_guid>
-<update_guid_history>5c5fc9b8ea18e700a6214b3858a8627c:-1553905423</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sys_scope_privilege_0113adb41358e7009e5e7f176144b0a4</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 20:00:11</sys_created_on><sys_id>0113adb41358e7009e5e7f176144b0a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Glide API: user roles and groups</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_0113adb41358e7009e5e7f176144b0a4</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 20:00:11</sys_updated_on><target_name>Glide API: user roles and groups</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
-<payload_hash>706514369</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>e242114b13142f009e5e7f176144b06e</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9710000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>Glide API: user roles and groups</target_name>
-<type>Cross scope privilege</type>
-<update_domain>global</update_domain>
-<update_guid>d913adb42a58e700832337694ac9f6a4</update_guid>
-<update_guid_history>d913adb42a58e700832337694ac9f6a4:706514369</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sp_column_7cf1e1b41358e7009e5e7f176144b035</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size/><size_lg/><size_sm/><size_xs/><sp_row display_value="1">bcf1e1b41358e7009e5e7f176144b033</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>7cf1e1b41358e7009e5e7f176144b035</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_column_7cf1e1b41358e7009e5e7f176144b035</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on></sp_column></record_update>]]></payload>
-<payload_hash>336740618</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>e2429d0b13142f009e5e7f176144b0f7</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba1c0000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>1</target_name>
-<type>Column</type>
-<update_domain>global</update_domain>
-<update_guid>30f1e1b44658e70081148cfa00559437</update_guid>
-<update_guid_history>30f1e1b44658e70081148cfa00559437:336740618</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sys_app_bd4c78aa1344af00aeee32228144b053</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><enforce_license>log</enforce_license><js_level>helsinki_es5</js_level><licensable>true</licensable><license_category>none</license_category><license_model>none</license_model><logo/><menu/><name>Email Client Attachments</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_snc_ec_attach</scope><scoped_administration>false</scoped_administration><short_description/><source>x_snc_ec_attach</source><store_correlation_id/><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-23 17:24:20</sys_created_on><sys_id>bd4c78aa1344af00aeee32228144b053</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-23 17:24:20</sys_updated_on><template/><trackable>true</trackable><user_role/><vendor/><vendor_prefix/><version>1.0.0</version></sys_app></record_update>]]></payload>
-<payload_hash>-1754870119</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>e642114b13142f009e5e7f176144b06d</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b92f0000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>Email Client Attachments</target_name>
-<type>Custom Application</type>
-<update_domain>global</update_domain>
-<update_guid>0a4c78aa3f44af0083a3356d0e6bc627</update_guid>
-<update_guid_history>0a4c78aa3f44af0083a3356d0e6bc627:269080413</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sys_ui_action_929c0d381318e7009e5e7f176144b08c</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;send_attachments&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2/&gt;&lt;comments/&gt;&lt;condition&gt;!current.isNewRecord()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Send Email With Attachments&lt;/name&gt;&lt;onclick&gt;sendInfoToProcessor()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function sendInfoToProcessor(){
-	var url = new GlideURL("x_snc_ec_attach_send_email.do");
-	url.addParam("record_id",g_form.getUniqueValue());
-	url.addParam("table_name","incident");
-	url.addParam("attachments","all");
-	popupOpenEmailClient(url.getURL());
-}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;darrin.achtman@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-08-30 18:27:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;929c0d381318e7009e5e7f176144b08c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Send Email With Attachments&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Email Client Attachments" source="x_snc_ec_attach"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Email Client Attachments"&gt;bd4c78aa1344af00aeee32228144b053&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_929c0d381318e7009e5e7f176144b08c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;darrin.achtman@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-08-31 16:25:07&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-1603714886</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>e642114b13142f009e5e7f176144b070</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba4f0000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table>incident</table>
-<target_name>Send Email With Attachments</target_name>
-<type>UI Action</type>
-<update_domain>global</update_domain>
-<update_guid>e07bf10ddb902b006dd63e1a7d4ff822</update_guid>
-<update_guid_history>e07bf10ddb902b006dd63e1a7d4ff822:-1603714886,4ced8978ae18e700591c74b0ff76cb84:2013992379</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sp_instance_3cf1e1b41358e7009e5e7f176144b037</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">7cf1e1b41358e7009e5e7f176144b035</sp_column><sp_widget display_value="Manage Attachments">30f129741358e7009e5e7f176144b07d</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 19:55:15</sys_created_on><sys_id>3cf1e1b41358e7009e5e7f176144b037</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sp_instance_3cf1e1b41358e7009e5e7f176144b037</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 19:55:15</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=3cf1e1b41358e7009e5e7f176144b037"/></record_update>]]></payload>
-<payload_hash>1113447686</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>ea42114b13142f009e5e7f176144b06c</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028b9c20000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name/>
-<type>Instance</type>
-<update_domain>global</update_domain>
-<update_guid>34f1e1b46358e700df5bcbb1f0cc0439</update_guid>
-<update_guid_history>34f1e1b46358e700df5bcbb1f0cc0439:1113447686</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sys_scope_privilege_c484bdc513902b009e5e7f176144b028</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>write</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-31 15:54:46</sys_created_on><sys_id>c484bdc513902b009e5e7f176144b028</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_c484bdc513902b009e5e7f176144b028</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-31 15:54:46</sys_updated_on><target_name>incident</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
-<payload_hash>1817777960</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>ea42114b13142f009e5e7f176144b06f</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba810000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>incident</target_name>
-<type>Cross scope privilege</type>
-<update_domain>global</update_domain>
-<update_guid>8084bdc53a902b00afb563dfacd16629</update_guid>
-<update_guid_history>8084bdc53a902b00afb563dfacd16629:1817777960</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</application>
-<category>customer</category>
-<comments/>
-<name>sys_scope_privilege_752055f81318e7009e5e7f176144b09b</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>darrin.achtman@snc</sys_created_by><sys_created_on>2018-08-30 18:37:30</sys_created_on><sys_id>752055f81318e7009e5e7f176144b09b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_email_client_template</sys_name><sys_package display_value="Email Client Attachments" source="x_snc_ec_attach">bd4c78aa1344af00aeee32228144b053</sys_package><sys_policy/><sys_scope display_value="Email Client Attachments">bd4c78aa1344af00aeee32228144b053</sys_scope><sys_update_name>sys_scope_privilege_752055f81318e7009e5e7f176144b09b</sys_update_name><sys_updated_by>darrin.achtman@snc</sys_updated_by><sys_updated_on>2018-08-30 18:37:30</sys_updated_on><target_name>sys_email_client_template</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
-<payload_hash>322007031</payload_hash>
-<remote_update_set display_value="Email Client Attachments">2a429d0b13142f009e5e7f176144b0f6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>darrin.achtman@snc</sys_created_by>
-<sys_created_on>2018-09-06 18:33:09</sys_created_on>
-<sys_id>ee42114b13142f009e5e7f176144b06e</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>165b028ba090000001</sys_recorded_at>
-<sys_updated_by>darrin.achtman@snc</sys_updated_by>
-<sys_updated_on>2018-09-06 18:33:09</sys_updated_on>
-<table/>
-<target_name>sys_email_client_template</target_name>
-<type>Cross scope privilege</type>
-<update_domain>global</update_domain>
-<update_guid>312055f82a18e7006f160727b26e599c</update_guid>
-<update_guid_history>312055f82a18e7006f160727b26e599c:322007031</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
