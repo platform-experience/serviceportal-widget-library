@@ -1,0 +1,25 @@
+<div class="" ng-if="data.related_lists.length > 0">
+  <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" ng-class='{active:$first}' ng-repeat="list in data.related_lists">
+          <a data-target="#{{ list.table }}" aria-controls="{{ list.table }}" role="tab" ng-class='{active:$first}'
+             data-toggle="tab">
+              {{ list.label }}
+              <span class="label label-as-badge label-primary" ng-if="list.count">{{ list.count }}</span>
+          </a>
+      </li>
+  </ul>
+
+  <div class="tab-content">
+      <div role="tabpanel" class="tab-pane" id="{{ list.table }}" ng-class='{active:$first}'
+           ng-repeat="list in data.related_lists">
+
+          <div style="margin-top: -1px;">
+              <div class="alert alert-danger" ng-if="data.invalid_table">
+                  Table not defined '{{ data.table_label }}'
+              </div>
+              <sp-widget widget="list.widget"></sp-widget>
+          </div>
+
+      </div>
+  </div>
+</div>
