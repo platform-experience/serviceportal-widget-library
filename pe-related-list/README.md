@@ -1,7 +1,7 @@
-# Google Analytics
+# Related List
 
 ## Description
-
+This widget is meant to be used in conjunction with [Form with Inline Editing Related List](../pe-form-with-related-list/)
 
 
 ## Screenshot
@@ -10,11 +10,12 @@
 
 ## Additional Information/Notes
 
+> This widget was heavly inspired by [ServicePortal.io](https://serviceportal.io/downloads/related-list-widget/)
 
 
 ## Installation
 
-Download and install update set **[pe-google-analytics.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-google-analytics/pe-google-analytics.u-update-set.xml)**
+Download and install update set **[pe-related-list.xml](../raw/master/pe-related-list/pe-related-list.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
@@ -26,8 +27,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 | Option | Description | Default Value |
 | :--- | :--- | :--- |
-| `Tracking ID` | Sets the Google Analytics tracking ID. | |
-| `Debug` | Sets debug mode. | false |
+| `Inline Editing` | Enable inline editing for related list   | false |
 
 ## Platform Dependencies
 
@@ -39,12 +39,10 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 > See 'Configuration' above
 
-## Dependencies
+## Dependencies _(included)_
 
-* PE Google Analytics Module
-* PE Google Analytics Service
-
-> None
+* [Form with Inline Editing Related List ](../pe-form-with-related-list)
+* [Inline Editing Data Table](../pe-inline-editing-data-table)
 
 ## CSS/SASS Variables
 
