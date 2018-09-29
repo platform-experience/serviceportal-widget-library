@@ -1,20 +1,26 @@
 # Form with Inline Editing Related List
 
 ## Description
+This is a drop-in replacement of the out of the box Form widget. This widget works with conjunction with another 2 widets. Please reference them for a full understanding of its functionality.
 
+* Embeded Widget #1: [Related List](../pe-related-list)
+* Embeded Widget #2: [Inline Editing Data Table](../pe-inline-editing-data-table)
 
 
 ## Screenshot
 
-![Google Analytics](../images/pe-form-with-related-list.gif)
+![Form with Related List](../images/pe-form-with-related-list.gif)
 
 ## Additional Information/Notes
 
-
+For inline editing, make sure the field you want to edit is available in the form (sp view), otherwise you wont be able to edit it inline. 
 
 ## Installation
 
-Download and install update set **[pe-google-analytics.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-google-analytics/pe-google-analytics.u-update-set.xml)**
+Download and install update set **[pe-form-with-related-list.xml](../raw/master/pe-form-with-related-list/pe-form-with-related-list.xml)**
+
+
+
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
@@ -26,8 +32,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 | Option | Description | Default Value |
 | :--- | :--- | :--- |
-| `Tracking ID` | Sets the Google Analytics tracking ID. | |
-| `Debug` | Sets debug mode. | false |
+| `Inline Editing` | Enable inline editing for related list   | false |
 
 ## Platform Dependencies
 
@@ -39,12 +44,9 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 > See 'Configuration' above
 
-## Dependencies
-
-* PE Google Analytics Module
-* PE Google Analytics Service
-
-> None
+## Dependencies _(included)_
+* [Related List](../pe-related-list)
+* [Inline Editing Data Table](../pe-inline-editing-data-table)
 
 ## CSS/SASS Variables
 
