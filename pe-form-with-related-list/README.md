@@ -1,4 +1,4 @@
-# Google Analytics
+# Form with Inline Editing Related List
 
 ## Description
 
@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![Google Analytics](../images/pe-google-analytics.png)
+![Google Analytics](../images/pe-form-with-related-list.gif)
 
 ## Additional Information/Notes
 
