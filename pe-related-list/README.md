@@ -6,7 +6,7 @@
 
 ## Screenshot
 
-![Google Analytics](../images/pe-google-analytics.png)
+![Google Analytics](../images/pe-related-list.gif)
 
 ## Additional Information/Notes
 
