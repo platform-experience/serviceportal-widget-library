@@ -24,7 +24,7 @@ After installation, **Appointment List** can be accessed via the `Service Portal
 ### Widget Option Schema
 
 | Option | Description |
-| :--- | :--- | :--- |
+| :--- | :--- |
 | `Title` | Give the widget a Title that will appear above the widget. |
 | `Task Appointment Definition` | Set the Task Appointment record to use from step 1. |
 | `Show short description` | If you would like to collect Short Description when creating appointments, check the applicable box(s). |
