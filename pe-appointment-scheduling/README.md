@@ -67,7 +67,7 @@ After committing the update set, Navigate to Task Appointments\Task Appointments
 ### Widget Option Schema
 
 | Option | Description |
-| :--- | :--- | :--- |
+| :--- | :--- |
 | `Title` | Give the widget a Title that will appear above the widget. |
 | `Task Appointment Definition` | Set the Task Appointment record to use from step 1. |
 | `Layout Options` | Choose the layout of how you want to display the available appointments.   See a screenshot of the options above. |
