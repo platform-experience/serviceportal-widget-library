@@ -6,11 +6,11 @@ This widget is meant to be used in conjunction with [Form with Inline Editing Re
 
 ## Screenshot
 
-![Google Analytics](../images/pe-related-list.gif)
+![Related List](../images/pe-related-list.gif)
 
 ## Additional Information/Notes
 
-> This widget was heavly inspired by [ServicePortal.io](https://serviceportal.io/downloads/related-list-widget/)
+> This widget was heavily inspired by [ServicePortal.io](https://serviceportal.io/downloads/related-list-widget/)
 
 
 ## Installation
