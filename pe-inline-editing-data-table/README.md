@@ -1,12 +1,12 @@
-# Google Analytics
+# Inline Editing Data Table
 
 ## Description
 
-
+This is a drop-in replacement of the out of the box Data Table. This widget also works with conjunction with [Form with Related List](../pe-form-with-related-list/).
 
 ## Screenshot
 
-![Google Analytics](../images/pe-google-analytics.png)
+![Form with Related List](../images/pe-inline-editing-data-table.gif)
 
 ## Additional Information/Notes
 
@@ -14,7 +14,7 @@
 
 ## Installation
 
-Download and install update set **[pe-google-analytics.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-google-analytics/pe-google-analytics.u-update-set.xml)**
+Download and install update set **[pe-inline-editing-data-table.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-inline-editing-data-table/pe-inline-editing-data-table.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
@@ -26,8 +26,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 | Option | Description | Default Value |
 | :--- | :--- | :--- |
-| `Tracking ID` | Sets the Google Analytics tracking ID. | |
-| `Debug` | Sets debug mode. | false |
+| `Inline Editing` | Enable inline editing for related list   | true |
 
 ## Platform Dependencies
 
@@ -40,9 +39,6 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 > See 'Configuration' above
 
 ## Dependencies
-
-* PE Google Analytics Module
-* PE Google Analytics Service
 
 > None
 
