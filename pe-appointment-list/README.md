@@ -13,7 +13,7 @@ This widget is used to display the appointments scheduled through widget **[PE A
 
 ## Installation
 
-Download and install update set in **[PE Appointment Scheduling](https://github.com/platform-experience/serviceportal-widget-library/pe-appointment-scheduling)**
+Download and install update set in **[PE Appointment Scheduling](https://sc.service-now.com/snds?state=widget-detail&sys_id=612ff60adbbc6f403eb8f4bbaf96190a)**
 
 After installation, **Appointment List** can be accessed via the `Service Portal > Widgets` section for use and customization.
 
@@ -44,7 +44,7 @@ After installation, **Appointment List** can be accessed via the `Service Portal
 
 ## Dependencies
 
-* [PE Appointment List](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-appointment-list)
+* [PE Appointment Scheduling](https://sc.service-now.com/snds?state=widget-detail&sys_id=612ff60adbbc6f403eb8f4bbaf96190a)
 
 
 ## CSS/SASS Variables

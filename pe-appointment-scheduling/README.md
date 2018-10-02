@@ -43,9 +43,11 @@ This Task based solution that allows you to:
 
 ## Installation
 
-Download and install update set **[pe-appointment.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-appointment-scheduling/ppe-appointment.u-update-set.xml)**
+Download and install update set **[pe-appointment.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-appointment-scheduling/pe-appointment.u-update-set.xml)**
 
-After installation, 2 new widgets **Appointment Scheduling** and **[Appointment List](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-appointment-list)** can be accessed via the `Service Portal > Widgets` section for use and customization.
+
+
+After installation, 2 new widgets **Appointment Scheduling** and **[Appointment List](https://sc.service-now.com/snds?state=widget-detail&sys_id=012fb60adbbc6f403eb8f4bbaf9619f1)** can be accessed via the `Service Portal > Widgets` section for use and customization.
 
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
@@ -78,7 +80,7 @@ After committing the update set, Navigate to Task Appointments\Task Appointments
 | `Show location` | If you would like to collect Location info when creating appointments, check the applicable box(s). |
 
 
-**As mentioned earlier, [Appointment List](https://github.com/platform-experience/serviceportal-widget-library/pe-appointment-list) is part of the update set already. This shows the list of appointments, if you have any**
+**As mentioned earlier, [Appointment List](https://sc.service-now.com/snds?state=widget-detail&sys_id=012fb60adbbc6f403eb8f4bbaf9619f1) is part of the update set already. This shows the list of appointments, if you have any**
 
 ## Platform Dependencies
 
@@ -92,7 +94,7 @@ After committing the update set, Navigate to Task Appointments\Task Appointments
 
 ## Dependencies
 
-* [PE Appointment List](https://github.com/platform-experience/serviceportal-widget-library/pe-appointment-list)
+* [PE Appointment List](https://sc.service-now.com/snds?state=widget-detail&sys_id=012fb60adbbc6f403eb8f4bbaf9619f1)
 
 
 ## CSS/SASS Variables
