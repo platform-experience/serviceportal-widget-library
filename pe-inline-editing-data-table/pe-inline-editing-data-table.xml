@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-09-28 22:44:50">
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-10-03 15:01:25">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -15,16 +16,16 @@
 <release_date/>
 <remote_base_update_set display_value=""/>
 <remote_parent_id/>
-<remote_sys_id>b82d6e8273302300b10080844ff6a7fa</remote_sys_id>
+<remote_sys_id>a9b123a3db3c630093f6ff041d96191d</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-28 22:44:49</sys_created_on>
-<sys_id>bfded7ca73302300b10080844ff6a7a3</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-03 15:01:25</sys_created_on>
+<sys_id>dcc42f67db3c630093f6ff041d9619b5</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-28 22:44:49</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-03 15:01:25</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -34,924 +35,8 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_widget_22bf8f8673302300b10080844ff6a701</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function RelatedListCtrl($rootScope, $location) {
-    var c = this;
-    c.$onInit = function () {
-        console.log(c);
-        addListenerToListClick()
-    };
-
-    function addListenerToListClick() {
-        $rootScope.$on('data_table.click', function (event, obj) {
-            var link = $location.search();
-            link.sys_id = obj.sys_id;
-            link.table = obj.table;
-            $location.search(link);
-        })
-    }
-}
-]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;related-list&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Related List&lt;/name&gt;&lt;option_schema&gt;[]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
-    input = input || {};
-    var table = options.table || input.table;
-    var sys_id = options.sys_id || input.sys_id;
-    var query = options.query || input.query;
-    view = input.view || "sp";
-
-    if (!table || !sys_id)
-        return;
-
-    var f = $sp.getForm(table, sys_id, query);
-    data.related_lists = f._related_lists;
-
-    for (var i in data.related_lists) {
-        var list = data.related_lists[i];
-        var params = {
-            table: list.table,
-            filter: list.field + "=" + sys_id,
-            view: view,
-            inline_editing: options.inline_editing,
-            title: list.label
-        };
-        list.widget = $sp.getWidget('inline-editing-data-table', params);
-    }
-    
-})();
-]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-28 21:38:47&lt;/sys_created_on&gt;&lt;sys_id&gt;22bf8f8673302300b10080844ff6a701&lt;/sys_id&gt;&lt;sys_mod_count&gt;29&lt;/sys_mod_count&gt;&lt;sys_name&gt;Related List&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_22bf8f8673302300b10080844ff6a701&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-28 22:36:12&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="" ng-if="data.related_lists.length &gt; 0"&gt;
-    &lt;ul class="nav nav-tabs" role="tablist"&gt;
-        &lt;li role="presentation" ng-class='{active:$first}' ng-repeat="list in data.related_lists"&gt;
-            &lt;a data-target="#{{ list.table }}" aria-controls="{{ list.table }}" role="tab" ng-class='{active:$first}'
-               data-toggle="tab"&gt;
-                {{ list.label }}
-                &lt;span class="label label-as-badge label-primary" ng-if="list.count"&gt;{{ list.count }}&lt;/span&gt;
-            &lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;div class="tab-content"&gt;
-        &lt;div role="tabpanel" class="tab-pane" id="{{ list.table }}" ng-class='{active:$first}'
-             ng-repeat="list in data.related_lists"&gt;
-
-            &lt;div style="margin-top: -1px;"&gt;
-                &lt;div class="alert alert-danger" ng-if="data.invalid_table"&gt;
-                    Table not defined '{{ data.table_label }}'
-                &lt;/div&gt;
-                &lt;sp-widget widget="list.widget"&gt;&lt;/sp-widget&gt;
-            &lt;/div&gt;
-
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<payload_hash>1918238530</payload_hash>
-<remote_update_set display_value="Form with Related List">bfded7ca73302300b10080844ff6a7a3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-28 22:44:50</sys_created_on>
-<sys_id>37ded7ca73302300b10080844ff6a7a5</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16622533c750000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-28 22:44:50</sys_updated_on>
-<table/>
-<target_name>Related List</target_name>
-<type>Widget</type>
-<update_domain>global</update_domain>
-<update_guid>d5ec5f8ae7302300e8a8f9547b7f400a</update_guid>
-<update_guid_history>d5ec5f8ae7302300e8a8f9547b7f400a:1918238530,495cd78ae8302300cec5a7db2667e359:1574979684,030c5b8afb3023003d8acd14bc163d4c:-1434166628,4deb5b8ae13023008bb6218812b9b91a:999499380,6b5b178a8330230059885005f5145f28:-815869483,8746db0a74302300e6b227b00a2db1f5:-1829738115,5c365f0adc3023008b17c83cf867ece8:643735602,2126934a18302300aa182f4c5d158927:1992489081,1e065f0a183023007d009820c140e3e4:1011819581,ede5df0a1130230003c8e9499c1d64cb:-1294725195,20e51f0a153023005e17970528b1cc42:1829601706,d7d5df0a30302300f545b1d8510f33c6:1736285510,ced51f0a3a302300bd0c6aad8313243d:-1504562303,5e855f0ad2302300d3c8a1542d2c08dd:-629172170,8d651f0a8d3023002196de3bf75b8939:1968879235,4b359b0a18302300ac8f4c22ec8667d9:-325697397,39359b0acc302300c3a06b11753badd5:-139054087,d4359b0a3e30230045fc12178daf14d1:-1140227345,17f0d3c6f73023003ad9e85192192864:-139054087,f1f0d3c6203023002f0358bec411643e:688786251,7ac053c6b9302300475c65703e011c87:659330326,c4c053c6fc3023000bf0be94010ed115:108292688,1aa053c632302300dbfb03a999f36283:-603891374,55a053c66b302300f15e310f28484de5:1018396304,bd9053c627302300c8a9f9fa5524102a:851728887,d2805f86f9302300acea58add6dc5db2:1580052113,4b705f86dc302300ff7e3ff5ab262699:-377101000,54705f86663023006d6dee52d80b4ba7:1393546929,74505f86dc30230009ed0c81dc85a88d:-377101000,54cf8f867530230042898c3b1a85ba08:-1725671136</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_rel_widget_clone_e1925fc673302300b10080844ff6a701</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="Inline Editing Data Table">9d921fc673302300b10080844ff6a7fe</child><cloned>2018-09-28 21:51:09</cloned><last_validated>2018-09-28 21:51:09</last_validated><parent display_value="Data Table">5001b062d7101200b0b044580e6103eb</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, $location, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager) {
-	var c = this;
-	/*
-	 * options:
-	 * hide_footer (bool) = true to remove the data table footer contents
-	 * hide_header (bool) = true to remove the data table header contents
-	 * show_new (bool) = true to show the "New" record button
-	 * show_keywords (bool) = true to show the keyword search field
-	 * table (string) = the table name to query
-	 * filter (string) = the encoded query
-	 * o (string) = the order by column
-	 * d (string) = The order by direction: asc or desc
-	 * p (int) = the page to jump to
-	 * fields (string) = comma seperated list of fields that become the list columns
-	 * view (string) = the default view to load for columns, overrides fields
-	*/
-
-	$scope.exportTypes = [{label:'PDF', value: 'PDF'}, {label:'Excel', value:'EXCEL'}, {label:'CSV', value:'CSV'}];
-	var keys = ['table', 'filter', 'p', 'o', 'd'];
-
-	var eventNames = {
-		click: 'data_table.click',
-		setFilter: 'data_table.setFilter',
-		setKeywords: 'data_table.setKeywords'
-	};
-
-	$scope.go = function(table, item) {
-		spNavStateManager.onRecordChange(table).then(function() {
-		var parms = {};
-		parms.table = table;
-		parms.sys_id = item.sys_id;
-		parms.record = item;
-		$scope.ignoreLocationChange = true;
-		for (var x in c.data.list) {
-			c.data.list[x].selected = false;
-		}
-		item.selected = true;
-		$scope.$emit(eventNames.click, parms);
-		}, function() {
-			// do nothing in case of closing the modal by clicking on x
-		});	
-	};
-
-	$scope.newRecord = function(){
-		var parms = {
-			id: 'form',
-			table: $scope.data.table,
-			view: $scope.data.view,
-			sys_id: '-1'
-		};
-		if ($scope.data.filter != '')
-			parms.query = $scope.data.filter;
-
-		$location.search(parms);
-	};
-
-	function recoverStateFromUrl() {
-		$scope.data.fields = [];
-		var s = $location.search();
-		for (var x in keys) {
-			if (s[keys[x]]) {
-				$scope.data[keys[x]] = s[keys[x]];
-			}
-		}
-		$scope.server.update().then(function(data) {
-			if (s.sys_id) {
-				for (var x in data.list) {
-					if (data.list[x].sys_id == s.sys_id) {
-						$scope.go(s.table, data.list[x]);
-					}
-				}
-			}
-		});
-	}
-
-	if ($scope.options.fromUrl) {
-		var origSearch = $location.search();
-		$scope.$on('$locationChangeSuccess', function(e) {
-			var s = $location.search();
-			if (origSearch.id !== s.id)
-				return;
-
-			if ($scope.ignoreLocationChange){
-				$scope.ignoreLocationChange = false;
-				return;
-			}
-
-			// Helps to recover state when using the browser's back button
-			recoverStateFromUrl();
-		});
-	}
-
-
-	$scope.getNumber = function(num) {
-		return new Array(num);
-	}
-
-	$scope.mathMin = function(v1,v2) {
-		return Math.min(v1,v2);
-	}
-
-	function getData(updateUrl) {
-		var f = $scope.data;
-		spUtil.update($scope).then(function(data) {
-			f.view = data.view;
-			if ($scope.options.fromUrl &amp;&amp; updateUrl)
-				setPermalink(f.table, f.filter, f.o, f.d, f.p);
-
-			if ($scope.options.show_breadcrumbs &amp;&amp; data.filterBreadcrumbs)
-				$scope.$broadcast('widget-filter-breadcrumbs.setBreadcrumbs', data.filterBreadcrumbs.data, data.filter);
-
-			initRecordWatcher(f.table, f.filter);
-		});
-	}
-
-	function setPermalink(table, filter, orderBy, orderDirection, page){
-		$scope.ignoreLocationChange = true;
-		var search = $location.search();
-		angular.extend(search, {
-			spa: 1,
-			table: table,
-			filter: filter,
-			p: page,
-			o: orderBy,
-			d: orderDirection
-		});
-		$location.search(search);
-	}
-
-	var watcher;
-	function initRecordWatcher(table, filter){
-		if (watcher)
-			watcher.unsubscribe();
-
-		if (table &amp;&amp; filter) {
-			var watcherChannel = amb.getChannelRW(table, filter);
-			amb.connect();
-			watcher = watcherChannel.subscribe(function(message) {
-				if (!message.data)
-					return;
-				switch(message.data.action) {
-					case "change":
-						updateRowFromRW(message);
-						break;
-					case "exit":
-						// A record was removed
-					case "enter":
-						// A record was added
-					default:
-						spUtil.update($scope);
-						break;
-				}
-			});
-		}
-	}
-
-	function updateRowFromRW(message) {
-		if (message.data &amp;&amp; message.data.sys_id &amp;&amp; $scope.data.list) {
-			var row, field;
-			for(var i=0;i&lt;$scope.data.list.length; i++) {
-				row = $scope.data.list[i];
-				if (row.sys_id == message.data.sys_id) {
-					var fields = Object.getOwnPropertyNames(message.data.record);
-					for(var f in fields) {
-						field = fields[f];
-						if(typeof row[field] !== 'undefined') {
-						    row[field].display_value = message.data.record[field].display_value;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	$scope.$on('$destroy', function() {
-		if (watcher)
-			watcher.unsubscribe();
-	});
-
-	$scope.setPageNum = function(num) {
-		$scope.data.p = num;
-		getData(true);
-		$timeout(function() {
-			$scope.focusOnTableHeader();
-		});
-	}
-
-	$scope.setOrderBy = function(field) {
-		var d = "asc";
-		if ($scope.data.o == field) {
-			if ($scope.data.d == "asc")
-				d = "desc";
-			else
-				d = "asc";
-		}
-
-		if (d === "asc") {
-			spAriaUtil.sendLiveMessage($scope.data.msg.sortingByAsc);
-		} else if (d === "desc") {
-			spAriaUtil.sendLiveMessage($scope.data.msg.sortingByDesc);
-		}
-
-		$scope.data.o = field;
-		$scope.data.d = d;
-		$scope.setSearch(true);
-	}
-
-	$scope.setSearch = function(updateUrl) {
-		$scope.data.p = 1;
-		getData(updateUrl);
-	}
-
-	$scope.$on(eventNames.setFilter, function(e, newFilter){
-		$scope.data.filter = newFilter;
-		$scope.setSearch(false);
-	});
-
-	$scope.$on(eventNames.setKeywords, function(e, keywords){
-		$scope.data.keywords = keywords;
-		$scope.setSearch(false);
-	});
-
-	$scope.$on('widget-filter-breadcrumbs.queryModified', function(e, newFilter){
-		$scope.data.filter = newFilter;
-		$scope.setSearch(true);
-	});
-
-	$scope.rowsWerePruned = function() {
-		if (!$scope.data.list)
-			return;
-
-		$scope.rowsPruned = $scope.mathMin($scope.data.window_end,$scope.data.row_count) - $scope.data.window_start - $scope.data.list.length;
-		return $scope.rowsPruned &gt; 0;
-	}
-
-	$scope.showFilter = function() {
-		return !$scope.data.list.length &amp;&amp; !$scope.data.num_pages &amp;&amp; !$scope.data.invalid_table &amp;&amp; !$scope.loadingData;
-	}
-
-	c.appendQuery = function(query){
-		if ($scope.data.filter.length &gt; 1)
-			$scope.data.filter += '^';
-		$scope.data.filter += query;
-			$scope.setSearch();
-
-	}
-
-	// Makes Widget Async
-	$scope.data = $scope.options;
-	$scope.loadingData = true;
-	$scope.server.update().then(function() {
-		if ($scope.data.newButtonUnsupported)
-			console.log("Service Portal: New button not supported for sys_attachment list");
-		$scope.loadingData = false;
-		initRecordWatcher($scope.data.table, $scope.data.filter);
-	});
-
-	function parseQuery(table, queryString){
-		return $http.post('/api/now/sp/parsequery/' + table, queryString).then(function(response){
-				return response.data.result;
-		});
-	}
-
-	c.createQueryTerm = function(table, field, sys_id, operator){
-		return $http.get('/api/now/sp/getInOutQueryTerm', {
-			params: {
-				table: table,
-				sys_id: sys_id,
-				field: field,
-				operator: operator
-			}
-		}).then(function(response){
-			if (response &amp;&amp; response.data &amp;&amp; response.data.result)
-				return response.data.result.parts;
-		});
-	}
-
-	c.showMatching = function(field, newTerm) {
-		var queryString = $scope.data.filter;
-		var eq = "";
-		parseQuery($scope.data.table, queryString).then(function(oldTerms) {
-			for(var i=0; i&lt;oldTerms.length; i++){
-				var term = oldTerms[i];
-				if (isSameField(newTerm, term))
-					continue;
-
-				if (eq.length)
-					eq += '^';
-
-				eq += getEncodedTerm(term);
-			}
-			if (eq.length)
-					eq += '^';
-			eq += getEncodedTerm(newTerm);
-
-			$scope.data.filter = eq;
-			$scope.setSearch();
-		});
-	};
-
-	c.filterOut = function(field, newTerm) {
-		var eq = $scope.data.filter;
-		if (eq.length)
-					eq += '^';
-
-		eq += getEncodedTerm(newTerm);
-		$scope.data.filter = eq;
-		$scope.setSearch();
-	};
-
-	function isSameField(t1, t2) {
-		if ('left' in t1 &amp;&amp; 'left' in t2)
-			return t1.left.query_term_field === t2.left.query_term_field;
-		else if ('left' in t1)
-			return t1.left.query_term_field === t2.query_term_field;
-		else if ('left' in t2)
-			return t1.query_term_field === t2.left.query_term_field;
-		return t1.query_term_field === t2.query_term_field;
-	}
-
-	function getEncodedTerm(term) {
-		var eq;
-		if (term.left) {
-			eq = getEncodedTerm(term.left);
-			eq += '^OR';
-			eq += getEncodedTerm(term.right);
-		} else {
-			eq = term.query_term_field;
-			eq += term.operator;
-			eq += term.value;
-		}
-		return eq;
-	}
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.panel-heading {
-  padding-left: 8px;
-}
-
-thead {
-  border-bottom: 1px solid #ddd;
-}
-
-table {
-  margin-bottom: 0;
-}
-
-.table &amp;gt; thead &amp;gt; tr &amp;gt; th {
-  border: 1px solid #ddd;
-  cursor: pointer;
-  vertical-align: middle;
-
-  &amp;amp;:nth-child(2) {
-    border-left: none;
-  }
-
-
-
-  &amp;amp;:last-child {
-    border-right: none;
-  }
-}
-
-th i {
-  display: inline-block;
-  margin-left: 5px;
-  color: #A0A0A0;
-}
-
-th .disabled{
-  color:#ddd;
-}
-
-.th-title {
-  display: inline-block;
-  color: $primary;
-}
-
-.panel-body {
-  overflow: auto;
-  padding: 0px;
-}
-
-
-.selected {
-  color: #fff;
-  background-color: #909090;
-  border-color: 1px solid #fff;
-}
-
-tbody tr:last-child {
-  border-bottom: none;
-}
-
-.pruned-msg {
-  padding-bottom: 10px;
-  padding-left: 4px;
-  text-align: center;
-}
-
-.pruned-msg-filter-pad {
-  padding-top:8px;
-}
-
-.filter-breadcrumbs {
-  border-bottom: 1px solid #ddd;
-  padding-top: 3px;
-}
-
-.dropdown-toggle {
-  background: none;
-  padding: 0 0 4px 0;
-}
-
-.sp-list-cell {
-  white-space: pre-wrap;
-}
-
-.dropdown {
-  .glyphicon-menu-hamburger:focus {
- 		outline: thin dotted;
-		outline: 5px auto -webkit-focus-ring-color;
-		outline-offset: -2px; 
-	}
-}&lt;/css&gt;&lt;data_table&gt;sp_instance_table&lt;/data_table&gt;&lt;demo_data&gt;{"data":
-	{
-		"table": "incident",
-		"view": "default",
-		"o": "opened_at",
-		"d": "desc",
-		"filter": "activeEQtrue",
-		"p": 1,
-		"fields": "number,short_description"
-	}
-}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;table,filter,field_list,maximum_entries,order,order_by,order_direction,title,color,glyph,sp_page&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;widget-data-table&lt;/id&gt;&lt;internal&gt;true&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope, element, attrs, ctrl){
-	var $ul, $contextMenu;
-
-	scope.focusOnTableHeader = function() {
-		element.find(".data-table-title").attr("tabindex", "-1").focus();
-	}
-
-	element.on('contextmenu', function(e){
-		if (e.ctrlKey)
-			return; // ctrlKey is for the debug menu, not this menu
-
-		var rowScope = angular.element(e.target).scope();
-		var field, item, fieldVal;
-
-		// Context Menu for tbody
-		if (angular.isDefined(rowScope.field) &amp;&amp; angular.isDefined(rowScope.item)){
-			e.preventDefault();
-			field = rowScope.field;
-			item = rowScope.item;
-			fieldVal = item[field].value;
-
-			var items = [
-				['${Show Matching}', function(){
-					ctrl.createQueryTerm(scope.data.table, field, item.sys_id, '=').then(function(term){
-						ctrl.showMatching(field, term);
-					});
-				}],
-				['${Filter Out}', function(){
-					ctrl.createQueryTerm(scope.data.table, field, item.sys_id, '!=').then(function(term){
-						ctrl.filterOut(field, term);
-					});
-				}]
-			];
-
-			renderContextMenu(items);
-			setContextMenuPosition(e);
-		}
-	});
-
-	function renderContextMenu(items){
-		var scrollHeight = $('body').get(0).scrollHeight;
-		$contextMenu = angular.element('&lt;div&gt;', {'class': 'dropdown clearfix context-dropdown open'});
-
-		$contextMenu.on('click', function (e) {
-			if ($(e.target).hasClass('dropdown')) {
-				_clearContextMenus(event);
-			}
-		});
-		$contextMenu.on('contextmenu', function (event) {
-			event.preventDefault();
-			_clearContextMenus(event);
-		});
-
-		$contextMenu.css({
-			position: 'absolute',
-			top: 0,
-			height: scrollHeight,
-			left: 0,
-			right: 0,
-			zIndex: 9999
-		});
-
-		$('body').append($contextMenu);
-
-		$ul = angular.element('&lt;ul&gt;', {
-			'class': 'dropdown-menu',
-			'role': 'menu'
-		});
-		renderItems();
-		$contextMenu.append($ul);
-
-		function renderItems(){
-			angular.forEach(items, function (item) {
-				var $li = angular.element('&lt;li&gt;');
-
-				if (item === null) {
-					$li.addClass('divider');
-				} else {
-					var $a = angular.element('&lt;a&gt;');
-					$a.attr({tabindex: '-1', href:'#'});
-					$a.text(item[0]);
-					$li.append($a);
-					$li.on('click', function (e) {
-						e.preventDefault();
-						scope.$apply(function () {
-							_clearContextMenus(e);
-							item[1].call(item, item);
-						});
-					});
-				}
-
-				$ul.append($li);
-			});
-		}
-	}
-
-	function _clearContextMenus(event){
-		if (!event){
-			return;
-		}
-
-		angular.element(event.currentTarget).removeClass('context');
-
-		var els = angular.element(".context-dropdown");
-		angular.forEach(els, function(el){
-			angular.element(el).remove();
-		});
-	}
-
-	var contextMenuItemHeight = 0;
-	function setContextMenuPosition(event){
-		if (contextMenuItemHeight === 0)
-			contextMenuItemHeight = $ul.children(0).height();
-
-		// Why not just call .width() and .height() on the container? Because those calculations cause browsers to reflow
-		// that can cause IE10 to take 200ms to render a context menu.
-		var cmWidth = 150;
-		var cmHeight = contextMenuItemHeight * $ul.children().length;
-		var startX = event.pageX + cmWidth &gt;= window.innerWidth ? event.pageX - cmWidth : event.pageX;
-		var startY = event.pageY + cmHeight &gt;= window.innerHeight ? event.pageY - cmHeight : event.pageY;
-
-		$ul.css({
-			display: 'block',
-			position: 'absolute',
-			left: startX,
-			top: startY,
-			'min-width': cmWidth
-		});
-	}
-}]]&gt;&lt;/link&gt;&lt;name&gt;Data Table&lt;/name&gt;&lt;option_schema&gt;[{"hint":"If enabled, show the list filter in the breadcrumbs of the data table","name":"enable_filter","default_value":"false","section":"Behavior","label":"Enable Filter","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
-	if (!input) // asynch load list
-		return;
-
-	data.msg = {};
-	data.msg.sortingByAsc = gs.getMessage("Sorting by ascending");
-	data.msg.sortingByDesc = gs.getMessage("Sorting by descending");
-
-	/*
-	 * data.table = the table
-	 * data.p = the current page starting at 1
-	 * data.o = the order by column
-	 * data.d = the order by direction
-	 * data.keywords = the keyword search term
-	 * data.list = the table data as an array
-	 * data.invalid_table = true if table is invalid or if data was not succesfully fetched
-	 * data.table_label = the table's display name. e.g. Incident
-	 * data.table_plural = the table's plural display name. e.g. Incidents
-	 * data.fields = a comma delimited list of field names to show in the data table
-	 * data.column_labels = a map of field name -&gt; display name
-	 * data.window_size = the number of rows to show
-	 * data.filter = the encoded query
-	 */
-	// copy to data[name] from input[name] || option[name]
-	optCopy(['table', 'p', 'o', 'd', 'filter', 'filterACLs', 'fields', 'keywords', 'view']);
-	optCopy(['relationship_id', 'apply_to', 'apply_to_sys_id', 'window_size']);
-	if (!data.table) {
-		data.invalid_table = true;
-		data.table_label = "";
-		return;
-	}
-
-	if (!data.fields) {
-		if (data.view)
-			data.fields = $sp.getListColumns(data.table, data.view);
-		else
-			data.fields = $sp.getListColumns(data.table);
-	}
-
-	data.title = input.headerTitle;
-	data.view = data.view || 'mobile';
-	data.table = data.table || $sp.getValue('table');
-	data.filter = data.filter || $sp.getValue('filter');
-	data.keywords = data.keywords || $sp.getValue('keywords');
-	data.p = data.p || $sp.getValue('p') || 1;
-	data.p = parseInt(data.p);
-	data.o = data.o || $sp.getValue('o') || $sp.getValue('order_by');
-	data.d = data.d || $sp.getValue('d') || $sp.getValue('order_direction');
-	data.page_index = data.p - 1;
-	data.show_new = data.show_new || options.show_new;
-	var windowSize = data.window_size || $sp.getValue('maximum_entries') || 20;
-	windowSize = parseInt(windowSize);
-	if (isNaN(windowSize) || windowSize &lt; 1)
-		windowSize = 20;
-	data.window_size = windowSize;
-
-	var gr;
-	if (gs.getProperty("glide.security.ui.filter") == "true" || GlideTableDescriptor.get(data.table).getED().hasAttribute("glide.security.ui.filter")) {
-		gr = new FilteredGlideRecord(data.table);
-		gr.applyRowSecurity();
-	} else
-		gr = new GlideRecordSecure(data.table);
-	if (!gr.isValid()) {
-		data.invalid_table = true;
-		data.table_label = data.table;
-		return;
-	}
-
-  data.canCreate = gr.canCreate();
-	data.newButtonUnsupported = data.table == "sys_attachment";
-	data.table_label = gr.getLabel();
-	data.table_plural = gr.getPlural();
-	if (data.filter) {
-		if (data.filterACLs)
-			gr = $sp.addQueryString(gr, data.filter);
-		else
-			gr.addEncodedQuery(data.filter);
-	}
-
-	if (data.keywords){
-		gr.addQuery('123TEXTQUERY321', data.keywords);
-		data.keywords = null;
-	}
-
-	data.filter = gr.getEncodedQuery();
-
-	if (data.relationship_id) {
-		var rel = GlideRelationship.get(data.relationship_id);
-		var target = new GlideRecord(data.table);
-		var applyTo = new GlideRecord(data.apply_to);
-		applyTo.get("sys_id", data.apply_to_sys_id);
-		rel.queryWith(applyTo, target); // put the relationship query into target
-		gr.addEncodedQuery(target.getEncodedQuery()); // get the query the relationship made for us
-	}
-
-	if (data.o){
-		if (data.d == "asc")
-			gr.orderBy(data.o);
-		else
-			gr.orderByDesc(data.o);
-	}
-
-	data.window_start = data.page_index * data.window_size;
-	data.window_end = (data.page_index + 1) * data.window_size;
-	gr.chooseWindow(data.window_start, data.window_end);
-	gr._query();
-
-	data.row_count = gr.getRowCount();
-	data.num_pages = Math.ceil(data.row_count / data.window_size);
-	data.column_labels = {};
-	data.fields_array = data.fields.split(',');
-
-	// use GlideRecord to get field labels vs. GlideRecordSecure
-	var grForLabels = new GlideRecord(data.table);
-	for (var i in data.fields_array) {
-		var field = data.fields_array[i];
-		var ge = grForLabels.getElement(field);
-		if (ge == null)
-			continue;
-
-		data.column_labels[field] = ge.getLabel();
-	}
-
-	data.list = [];
-	while (gr._next()) {
-		var record = {};
-		$sp.getRecordElements(record, gr, data.fields);
-		if (gr instanceof FilteredGlideRecord) {
-			// FilteredGlideRecord doesn't do field-level
-			// security, so take care of that here
-			for (var f in data.fields_array) {
-				var fld = data.fields_array[f];
-				if (!gr.isValidField(fld))
-					continue;
-
-				if (!gr[fld].canRead()) {
-					record[fld].value = null;
-					record[fld].display_value = null;
-				}
-			}
-		}
-		record.sys_id = gr.getValue('sys_id');
-		data.list.push(record);
-	}
-
-	data.enable_filter = (input.enable_filter == true || input.enable_filter == "true" ||
-		options.enable_filter == true || options.enable_filter == "true");
-	var breadcrumbWidgetParams = {
-		table: data.table,
-		query: data.filter,
-		enable_filter: data.enable_filter
-	};
-	data.filterBreadcrumbs = $sp.getWidget('widget-filter-breadcrumbs', breadcrumbWidgetParams);
-
-	// copy to data from input or options
-	function optCopy(names) {
-		names.forEach(function(name) {
-			data[name] = input[name] || options[name];
-		})
-	}
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-12-15 21:55:00&lt;/sys_created_on&gt;&lt;sys_id&gt;5001b062d7101200b0b044580e6103eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;901&lt;/sys_mod_count&gt;&lt;sys_name&gt;Data Table&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;33c50723d9e02300aadbb5e9839d2b7c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_5001b062d7101200b0b044580e6103eb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-21 05:10:10&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[  &lt;div class="panel panel-{{options.color}} b"&gt;
-    &lt;div class="panel-heading form-inline" ng-hide="options.hide_header"&gt;
-      &lt;span class="dropdown m-r-xs"&gt;
-        &lt;button aria-label="${Table menu}" class="btn dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="optionsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
-        &lt;ul class="dropdown-menu" aria-labelledby="optionsMenu"&gt;
-          &lt;li ng-repeat="t in ::exportTypes"&gt;
-            &lt;a ng-href="/{{data.table}}_list.do?{{::t.value}}&amp;sysparm_query={{data.filter}}&amp;sysparm_view={{data.view}}&amp;sysparm_fields={{data.fields}}" target="_new"&gt;${Export as} {{::t.label}}&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/span&gt;
-      &lt;span class="panel-title"&gt;&lt;i ng-if="options.glyph" class="fa fa-{{options.glyph}} m-r"&gt;&lt;/i&gt;{{data.title || data.table_plural}}&lt;/span&gt;
-      &lt;button name="new" role="link" class="btn btn-primary btn-sm m-l-xs" ng-click="newRecord()" ng-if="options.show_new &amp;&amp; data.canCreate &amp;&amp; !data.newButtonUnsupported" aria-label="${Create new record}"&gt;${New}&lt;/button&gt;
-      &lt;div class="pull-right" ng-if="options.show_keywords"&gt;
-		&lt;form ng-submit="setSearch(true)"&gt;
-        &lt;div class="input-group"&gt;
-          &lt;input type="text" name="datatable-search" ng-model="data.keywords" ng-model-options="{debounce:250}" class="form-control" placeholder="${Keyword Search}"&gt;
-          &lt;span class="input-group-btn"&gt;
-            &lt;button name="search" class="btn btn-default" type="submit" aria-label="${Search}"&gt;&lt;span class="glyphicon glyphicon-search"&gt;&lt;/span&gt;&lt;/button&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-        &lt;/form&gt;
-      &lt;/div&gt;
-      &lt;div class="clearfix"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;!-- body --&gt;
-    &lt;div class="panel-body"&gt;
-      &lt;h2 class="sr-only data-table-title"&gt;{{data.title || data.table_plural}} ${table} - ${page} {{data.p}}&lt;/h2&gt;
-      &lt;div ng-if="options.show_breadcrumbs &amp;&amp; (data.filter || data.enable_filter)" class="filter-breadcrumbs"&gt;
-	    		&lt;sp-widget widget="data.filterBreadcrumbs"&gt;&lt;/sp-widget&gt;
-      &lt;/div&gt;
-      &lt;div class="alert alert-info" ng-if="!data.list.length &amp;&amp; !data.num_pages &amp;&amp; !data.invalid_table &amp;&amp; !loadingData"&gt;
-        ${No records in {{data.table_label}} &lt;span ng-if="data.filter"&gt;using that filter&lt;/span&gt;}
-      &lt;/div&gt;
-      &lt;div class="alert alert-info" ng-if="loadingData"&gt;
-          &lt;fa name="spinner" spin="true"&gt;&lt;/fa&gt; ${Loading data}...
-       &lt;/div&gt;
-      &lt;table class="table table-striped table-responsive" ng-if="data.list.length"&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th class="sr-only"&gt;&lt;/th&gt;
-            &lt;th ng-repeat="field in data.fields_array track by $index" class="text-nowrap" ng-click="setOrderBy(field)" tabindex="0"&gt;
-              &lt;div class="th-title" aria-label="${Sort by } {{data.column_labels[field]}}"&gt;{{data.column_labels[field]}}&lt;/div&gt;
-              &lt;i class="fa" ng-if="field == data.o" ng-class="{'asc': 'fa-chevron-up', 'desc': 'fa-chevron-down'}[data.d]" aria-label="${Sorted by } {{data.column_labels[field]}} {{data.d == 'asc' ?  '${Ascending}': '${Descending}' }}"&gt;&lt;/i&gt;
-            &lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr ng-repeat="item in data.list track by item.sys_id"&gt;
-            &lt;td class="sr-only" tabindex="0" role="link" ng-click="go(data.table, item)" aria-label="${Open record}"&gt;&lt;/td&gt;
-            &lt;td role="text" aria-label="{{item[field].display_value}}" class="pointer sp-list-cell" ng-class="{selected: item.selected}" ng-click="go(data.table, item)" ng-repeat="field in ::data.fields_array" data-field="{{::field}}" data-th="{{::data.column_labels[field]}}"&gt;{{::item[field].display_value}}&lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-      &lt;div ng-class="{'pruned-msg-filter-pad': (!options.show_breadcrumbs || !data.filter) &amp;&amp; !data.list.length}" class="pruned-msg" ng-if="rowsWerePruned()"&gt;
-        &lt;span ng-if="rowsPruned == 1"&gt;${{{rowsPruned}} row removed by security constraints}&lt;/span&gt;
-        &lt;span ng-if="rowsPruned &gt; 1"&gt;${{{rowsPruned}} rows removed by security constraints}&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;!-- footer --&gt;
-    &lt;div class="panel-footer" ng-hide="options.hide_footer" ng-if="data.row_count"&gt;
-      &lt;div class="btn-toolbar m-r pull-left"&gt;
-        &lt;div class="btn-group"&gt;
-          &lt;a ng-disabled="data.p == 1" href="javascript:void(0)" ng-click="setPageNum(data.p - 1)" class="btn btn-default"  aria-label="${Previous page}"&gt;&lt;i class="fa fa-chevron-left"&gt;&lt;/i&gt;&lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div ng-if="data.num_pages &gt; 1 &amp;&amp; data.num_pages &lt; 20" class="btn-group"&gt;
-          &lt;a ng-repeat="i in getNumber(data.num_pages) track by $index" ng-click="setPageNum($index + 1)" href="javascript:void(0)" ng-class="{active: ($index + 1) == data.p}" type="button" class="btn btn-default" aria-label="${Page} {{$index + 1}}"&gt;{{$index + 1}}&lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class="btn-group"&gt;
-          &lt;a ng-disabled="data.p == data.num_pages" href="javascript:void(0)" ng-click="setPageNum(data.p + 1)" class="btn btn-default" aria-label="${Next page}"&gt;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class="m-t-xs panel-title"&gt;${Rows {{data.window_start + 1}} - {{ mathMin(data.window_end,data.row_count) }} of {{data.row_count}}}&lt;/div&gt;
-
-      &lt;span class="clearfix"&gt;&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-28 21:51:09</sys_created_on><sys_id>e1925fc673302300b10080844ff6a701</sys_id><sys_mod_count>0</sys_mod_count><sys_name>9d921fc673302300b10080844ff6a7fe</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rel_widget_clone_e1925fc673302300b10080844ff6a701</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 21:51:09</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
-<payload_hash>-1924711192</payload_hash>
-<remote_update_set display_value="Form with Related List">bfded7ca73302300b10080844ff6a7a3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-28 22:44:50</sys_created_on>
-<sys_id>73ded7ca73302300b10080844ff6a7a5</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>1662229fd790000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-28 22:44:50</sys_updated_on>
-<table/>
-<target_name>9d921fc673302300b10080844ff6a7fe</target_name>
-<type>Widget Clone</type>
-<update_domain>global</update_domain>
-<update_guid>a9929fc6aa30230014e27b49da436c45</update_guid>
-<update_guid_history>a9929fc6aa30230014e27b49da436c45:-1924711192</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
 <name>sp_widget_9d921fc673302300b10080844ff6a7fe</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function InlineEditingDataTable($scope, $location, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function InlineEditingTableController($scope, $location, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager) {
 	var c = this;
     c.makeEditable = makeEditable;
 	/*
@@ -1413,7 +498,7 @@ tbody tr:last-child {
 		"p": 1,
 		"fields": "number,short_description"
 	}
-}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;table,filter,field_list,maximum_entries,order,order_by,order_direction,title,color,glyph,sp_page&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;inline-editing-data-table&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope, element, attrs, ctrl){
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;table,filter,field_list,maximum_entries,order,order_by,order_direction,title,color,glyph,sp_page&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;inline-editing-data-table&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function InlineEditingTableLink(scope, element, attrs, ctrl) {
 	var $ul, $contextMenu;
 
 	scope.focusOnTableHeader = function() {
@@ -1710,7 +795,7 @@ tbody tr:last-child {
 	}
 
 })();
-]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-28 21:51:09&lt;/sys_created_on&gt;&lt;sys_id&gt;9d921fc673302300b10080844ff6a7fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Inline Editing Data Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_9d921fc673302300b10080844ff6a7fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-28 22:43:27&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-{{ options.color }} b"&gt;
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-28 21:51:09&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;9d921fc673302300b10080844ff6a7fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Inline Editing Data Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_9d921fc673302300b10080844ff6a7fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-03 14:57:58&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-{{ options.color }} b"&gt;
     &lt;div class="panel-heading form-inline" ng-hide="options.hide_header"&gt;
       &lt;span class="dropdown m-r-xs"&gt;
         &lt;button aria-label="${Table menu}" class="btn dropdown-toggle glyphicon glyphicon-menu-hamburger"
@@ -1832,629 +917,22 @@ tbody tr:last-child {
     &lt;/div&gt;
 &lt;/div&gt;
 ]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-607442908</payload_hash>
-<remote_update_set display_value="Form with Related List">bfded7ca73302300b10080844ff6a7a3</remote_update_set>
+<payload_hash>1150168563</payload_hash>
+<remote_update_set display_value="Form with Related List">dcc42f67db3c630093f6ff041d9619b5</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-28 22:44:50</sys_created_on>
-<sys_id>bbded7ca73302300b10080844ff6a7a5</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-03 15:01:25</sys_created_on>
+<sys_id>14c42f67db3c630093f6ff041d9619b7</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>1662259e02d0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-28 22:44:50</sys_updated_on>
+<sys_recorded_at>1663a6f828a0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-03 15:01:25</sys_updated_on>
 <table/>
 <target_name>Inline Editing Data Table</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
-<update_guid>a38ed3ca8e3023004ccd7692649b4729</update_guid>
-<update_guid_history>a38ed3ca8e3023004ccd7692649b4729:-607442908,d74e57ca283023001c1360493abfcc91:741162471,083e13ca33302300ae443824a232d44d:358687954,072e17ca2a30230028a02d2227c8a298:-994551467,600e13caef302300a56ef0e34d60385a:1262462197,aaedd3ca5a302300fb29fc9b527ca323:472867142,b1bd5f8aa3302300358a8ac94d5f66f9:-2026598042,406d13ca293023002e0e61e00e6c9153:1470021565,8e5d1f8a2e3023008b38c837c558e4fe:2046523062,332ddf8ab3302300e78c568c404d1e18:520003131,af2ddf8a31302300842a482b5ad13e13:-758126918,1c2ddf8a333023006b775a166cd8100f:89474473,4d0d1f8a7a302300998946849b1317f4:-1739677125,91925fc666302300146eb1f695778100:-80977270</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_rel_widget_clone_c25c838673302300b10080844ff6a7f0</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="Form with Related List">825c838673302300b10080844ff6a7eb</child><cloned>2018-09-28 21:23:53</cloned><last_validated>2018-09-28 21:23:53</last_validated><parent display_value="Form">fd1f4ec347730200ba13a5554ee490c0</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sp_platform&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager) {
-  $scope.submitting = false;
-  $scope.mandatory = [];
-  $scope.errorMessages = [];
-  $scope.data.show_sql = false;
-  $scope.saveButtonSuffix = spUtil.getAccelerator('s');
-	$scope.isPageReady = false;
-  $scope.adminMenu = {
-    encodedPageUrl: encodeURIComponent($location.url()),
-    getClientScriptCount: function() {
-      var count = 0;
-      if ($scope.data.f.client_script) {
-        count += $scope.data.f.client_script.onChange.length;
-        count += $scope.data.f.client_script.onLoad.length;
-        count += $scope.data.f.client_script.onSubmit.length;
-      }
-      return count;
-    }
-  };
-
-  $rootScope.$on('$sp.html.editor.progress', function(e, conf) {
-      $scope.submitting = conf.state;
-  });
-
-  $scope.getUIActions = function(type) {
-    if ($scope.data.disableUIActions)
-      return [];
-    if (type) {
-      return $scope.data.f._ui_actions.filter(function(action) {
-        //We handle the primary action button separately.
-        return !action.primary &amp;&amp; action['is_' + type];
-      });
-    } else {
-      return $scope.data.f._ui_actions;
-    }
-  }
-
-  $scope.getPrimaryAction = function() {
-    var primaryActions = $scope.data.f._ui_actions.filter(function(action) {
-      return action.primary;
-    });		
-    return (primaryActions.length) ? primaryActions[0] : null;
-  }
-
-  $scope.getUIActionContextMenu = function(event) {
-    var menu = [];
-    if (event.ctrlKey)
-      return menu;
-
-    var contextActions = $scope.getUIActions('context');
-    contextActions.forEach(function(action) {
-      menu.push([action.name, function() {
-        $scope.triggerUIAction(action);
-      }]);
-    });
-
-    if (contextActions.length &gt; 0)
-      menu.push(null);
-    menu.push([$scope.data.exportPDFMsg, function() {
-      exportPDF("");
-    }]);
-    menu.push([$scope.data.exportPDFLandMsg, function() {
-      exportPDF('true');
-    }]);
-
-    return menu;
-  }
-
-  function exportPDF(landscape) {
-    $window.open("/" + $scope.data.f.table + ".do?PDF&amp;landscape=" + landscape + "&amp;sys_id=" + $scope.data.sys_id + "&amp;sysparm_view=" + $scope.data.f.view);
-  }
-
-  //trigger the primary UI Action on save (if there is one)
-  var deregister = $scope.$on('$sp.save', function() {
-    var primaryAction = $scope.getPrimaryAction();
-    if (primaryAction)
-      $scope.triggerUIAction(primaryAction);
-  });
-  $scope.$on('$destroy', function() {
-    deregister()
-  });
-
-  $scope.triggerUIAction = function(action) {
-		if ($scope.data.disableUIActions &amp;&amp; !action.primary) {
-      return;
-    }
-
-		$rootScope.$broadcast('sp.form.ui_action.triggered');
-
-    var activeElement = document.activeElement;
-    if (activeElement) {
-      activeElement.blur();
-    }
-
-    $scope.$evalAsync(function() {
-      if (g_form) {
-        $scope.submitting = true;
-        if (!g_form.submit(action.action_name || action.sys_id)) {
-          $scope.submitting = false;
-					$rootScope.$broadcast('sp.form.submit.failed', action);
-				}
-      }
-    });
-  }
-
-  $scope.$on("spModel.uiActionComplete", function(evt, response) {
-    $scope.submitting = false;
-    var sysID = (response.isInsert) ? response.sys_id : $scope.data.sys_id;
-    loadForm($scope.data.table, sysID).then(constructResponseHandler(response));
-  });
-
-  function constructResponseHandler(response) {
-    return function() {
-	  $rootScope.$broadcast("sp.form.submitted", {sys_id: (response.isInsert) ? response.sys_id : $scope.data.sys_id});
-      var message;
-      var eventName = "sp.form.record.updated";
-      if (response.isInsert) {
-        message = $scope.data.recordAddedMsg;
-        var search = $location.search();
-        search.sys_id = response.sys_id;
-        search.spa = 1;
-        $location.search(search).replace();
-      } else
-        message = $scope.data.updatedMsg;
-
-      $scope.data.hideRelatedLists = hideRelatedLists();
-      $scope.$emit(eventName, $scope.data.f._fields);
-      $rootScope.$broadcast(eventName, $scope.data.f._fields);
-      $scope.status = message;
-      spUtil.addTrivialMessage(message);
-      $timeout(clearStatus, 2000);
-    }
-  }
-
-  var ctrl = this;
-  // switch forms
-  var unregister = $scope.$on('$sp.list.click', onListClick);
-  $scope.$on("$destroy", function() {
-    unregister();
-  })
-	
-	function _save() {
-		var primaryAction = $scope.getPrimaryAction();
-    if (primaryAction)
-      $scope.triggerUIAction(primaryAction);
-	}
-	
-	function onListClick(evt, arg) {
-		loadForm(arg.table, arg.sys_id);
-	}
-
-  function loadForm(table, sys_id) {
-    var f = {};
-    $scope.data.table = f.table = table;
-    $scope.data.sys_id = f.sys_id = sys_id;
-    f.view = $scope.data.view;
-    return $scope.server.update().then(setupAttachmentHandler);
-  }
-
-  function openRelatedList(e, queryString) {
-    // todo: Open this in a modal
-    $location.search(queryString);
-    e.preventDefault();
-  }
-
-  $scope.$on('spModel.fields.rendered', function() {
-    if (ctrl.panels)
-      ctrl.panels.removeClass('shift-out').addClass('shift-in');
-  });
-	
-	var g_form;
-	function initForm(gFormInstance) {
-		if (gFormInstance.getTableName() == $scope.data.f.table){
-			g_form = gFormInstance;
-			spNavStateManager.register($scope.data.table, _save, g_form);
-			$scope.isPageReady = true;
-			$timeout(function() {
-				$rootScope.$emit('spModel.gForm.rendered', g_form);
-			}, 175);
-		}
-	}
-	
-  $scope.$on('spModel.gForm.initialized', function(e, gFormInstance) {
-		initForm(gFormInstance);
-  });
-	
-	$scope.$on('spModel.gForm.env.created', function(e, gFormInstance) {
-		initForm(gFormInstance);
-  });
-	
-	// update the comments or worknotes based on activity stream
-	$scope.$on("activity_stream_is_changed", function(event, data) {
-		if (g_form &amp;&amp; g_form.hasField(data.fieldName)) {
-			g_form.setValue(data.fieldName, data.input);
-			if (data.fieldToClear != "" &amp;&amp; g_form.hasField(data.fieldToClear))
-				g_form.setValue(data.fieldToClear, "");
-		}
-	})
-
-  // Show or hide related lists
-  $scope.$watch('data.f._related_lists', function() {
-    $scope.data.hideRelatedLists = hideRelatedLists();
-  }, true);
-
-  function hideRelatedLists() {
-    if (!$scope.data.f._related_lists)
-      return true;
-
-    if ($scope.options.hideRelatedLists == true)
-      return true;
-
-    if ($scope.data.sys_id == '-1')
-      return true;
-
-    // If all related lists are visible=false then hide
-    if ($scope.data.f._related_lists.length &gt; 0) {
-      for (var i in $scope.data.f._related_lists) {
-        var list = $scope.data.f._related_lists[i];
-        if (list.visible) {
-          return false;
-        }
-      }
-    }
-    return true;
-  }
-
-  function clearStatus() {
-    $scope.status = "";
-  }
-
-  function setupAttachmentHandler() {
-    $scope.attachmentHandler = new nowAttachmentHandler(appendDone, appendError);
-
-		$scope.$evalAsync(function() {
-			$scope.attachmentHandler.setParams($scope.data.table, $scope.data.f._attachmentGUID, 1024 * 1024 * $scope.data.maxAttachmentSize);
-		});
-
-    $scope.$on('dialog.upload_too_large.show', function(e) {
-      $log.error($scope.data.largeAttachmentMsg);
-      spUtil.addErrorMessage($scope.data.largeAttachmentMsg);
-    });
-  }
-  setupAttachmentHandler();
-
-  function appendDone() {
-    // don't know here whether upload succeeded, so can't show msg either way
-    $scope.$broadcast("sp.attachments.update", $scope.data.f._attachmentGUID);
-    spAriaUtil.sendLiveMessage($scope.data.attachmentSuccessMsg);
-  }
-
-  function appendError(error) {
-    $scope.errorMessages.push(error);
-    spUtil.addErrorMessage(error.msg + error.fileName);
-  }
-
-  if ($scope.data.f.title) {
-	  $scope.$emit('sp.widget-modal.set-aria-label', $scope.data.f.title);
-  }
-}]]&gt;&lt;/client_script&gt;&lt;controller_as/&gt;&lt;css&gt;.btn-form-menu {
-	vertical-align: inherit;
-  padding: inherit;
-  background: none;
-}
-
-.panel-title {
-  word-wrap: break-word;
-}
-
-.panel-heading {
-  .dropdown-menu {
-    a {
-      white-space: normal;
-    }
-  }
-}
-
-.comment {
-	font-weight: bold;
-	margin-top: 2px;
-	margin-bottom: 2px;
-}
-.mce-panel, .mce-btn {
-	background-image: none;
-	background-color: #f0f3f4;
-}
-
-.action-btn {
-  margin-right: 5px;
-}
-
-.timeline-container {
-   max-height: 50vh;
-   height: 100%;
-   overflow-y: auto;
-}
-
-.panel .panel {
-    height: auto !important;
-}
-
-.attachment-button {
-  .glyphicon-paperclip {
-    font-size: 18px;
-  }
-}
-
-.dropdown {
-  .glyphicon-menu-hamburger:focus {
- 		outline: thin dotted;
-		outline: 5px auto -webkit-focus-ring-color;
-		outline-offset: -2px; 
-	}
-}
-
-.empty-state-wrapper {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 10vh 20px 20px;
-
-  .empty-state {
-    border: 1px solid #e7e9eb;
-    border-radius: 10px;
-    max-width: 700px;
-    padding: 30px 40px 20px;
-    position: relative;
-
-    .empty-state-badge {
-      top: -36px;
-      left: 50%;
-      position: absolute;
-      height: 72px;
-      width: 72px;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      border-radius: 100%;
-      color: #ffffff;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 40px;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      margin-left: -36px;
-      text-align: center;
-    }
-
-    .empty-state-header {
-      font-size: 30px;
-      text-align: center;
-      color: #343d47;
-    }
-
-    .empty-state-content {
-      ul {
-        list-style: disc outside;
-        margin: 0 0 10px 0;
-        padding: 0 0 0 30px;
-      }
-    }
-  }
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;widget-form&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Form&lt;/name&gt;&lt;option_schema&gt;[{"name":"disableUIActions","section":"Behavior","label":"Disable UI Actions on Form","type":"boolean"},{"name":"showFormView","section":"Behavior","label":"Display current form view","type":"boolean"},{"name":"omitHeaderOptions","section":"Behavior","label":"Omit header options icon","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[// form functionality - URL parameter driven
-(function($sp, input, data, options, gs) {
-  /* "use strict"; -linter issues */
-  // populate the 'data' variable
-	data.attachmentUploadSuccessMsg = gs.getMessage("Attachment upload was successful");
-	data.recordAddedMsg = gs.getMessage("Record Added");
-	data.updatedMsg = gs.getMessage("updated_uppercase");
-	data.exportPDFMsg = gs.getMessage("Export to PDF");
-	data.exportPDFLandMsg = gs.getMessage("Export to PDF (landscape)");
-	data.addAttachmentMsg = gs.getMessage("Add an attachment");
-	data.maxAttachmentSize = parseInt(gs.getProperty("com.glide.attachment.max_size", 1024));
-	if (isNaN(data.maxAttachmentSize))
-		data.maxAttachmentSize = 24;
-	data.largeAttachmentMsg = gs.getMessage("Attached files must be smaller than {0} - please try again", "" + data.maxAttachmentSize + "MB");
-	data.attachmentSuccessMsg = gs.getMessage("Attachment successfully uploaded");
-	
-	data.isAdmin = gs.hasRightsTo('sp/configure.all/execute', null);
-	data.emptyStateTemplate = options.empty_state_template;
-	data.disableUIActions = options.disableUIActions === "true";
-	data.hideRelatedLists = options.hideRelatedLists || false;
-
-	if (input) {
-		data.table = input.table;
-		data.sys_id = input.sys_id;
-		data.view = input.view;
-		var result = {};
-		if (input._fields) {
-			result = $sp.saveRecord(input.table, input.sys_id, input._fields);
-			data.sys_id = result.sys_id;
-		}
-
-		if (input.sys_id == '-1')
-			data.isNewRecord = true;
-	} else {
-		data.table = options.table || $sp.getParameter("t") || $sp.getParameter("table") || $sp.getParameter("sl_table");
-		data.sys_id = options.sys_id || $sp.getParameter("sys_id") || $sp.getParameter("sl_sys_id");
-		data.view = options.view || $sp.getParameter("view") || $sp.getParameter("v"); // no default
-	}
-
-	data.query = $sp.getParameter("query") || options.query || "";
-	data.f = {};
-	if (!data.table)
-		return;
-	
-	// Form widget is not a supported way to view an attachment
-	if (data.table == "sys_attachment") {
-		data.tableUnsupported = true;
-		return;
-	}
-
-	if (!GlideTableDescriptor.isValid(data.table))
-		return;
-
-	if (!data.sys_id)
-		return;
-
-	var rec = $sp.getRecord(data.table, data.sys_id);
-	data.isValid = rec.isValid() || data.sys_id == "-1";
-	if (!data.isValid)
-		return;
-
-	data.table = rec.getRecordClassName();
-	data.tableHierarchy = GlideDBObjectManager.getTables(data.table).toArray().join();
-	data.canWrite = rec.canWrite();
-	var hasRecordAccess = data.sys_id == "-1" ? rec.canCreate() : data.canWrite;
-	data.canAttach = hasRecordAccess &amp;&amp; gs.hasRole(gs.getProperty('glide.attachment.role')) &amp;&amp; !GlideTableDescriptor.get(data.table).getED().getBooleanAttribute("no_attachment");
-	data.f = $sp.getForm(data.table, data.sys_id, data.query, data.view);
-
-	// Activity formatter is hardcoded to set specific options
-	for (var f in data.f._formatters) {
-		var fm = data.f._formatters[f];
-		if (fm.formatter == "activity.xml") {
-			fm.hardcoded = true;
-			fm.widgetInstance = $sp.getWidget('widget-ticket-conversation',
-																{table: data.table,
-																 sys_id: data.sys_id,
-																 includeExtended: true,
-																 title: "${Activity}",
-																 use_dynamic_placeholder: true,
-																 btnLabel: "${Post}"});
-		} else if(fm.formatter == "com_glideapp_servicecatalog_veditor" || fm.formatter == "com_glideapp_questionset_default_question_editor") {
-			var qsConfig = $sp.getValue('quick_start_config');
-			if (qsConfig)
-				qsConfig = JSON.parse(qsConfig)[0];
-			fm.widgetInstance = $sp.getWidget(fm.widget, {table: data.table,
-														sys_id: data.sys_id,
-														readonly_variable_editor: qsConfig ? qsConfig.readonly_variable_editor : 'false'});
-		} else
-			fm.widgetInstance = $sp.getWidget(fm.widget, data);
-	}
-})($sp, input, data, options, gs);]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-11-22 21:32:20&lt;/sys_created_on&gt;&lt;sys_id&gt;fd1f4ec347730200ba13a5554ee490c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;970&lt;/sys_mod_count&gt;&lt;sys_name&gt;Form&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;33c50723d9e02300aadbb5e9839d2b7c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fd1f4ec347730200ba13a5554ee490c0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-06-06 20:12:11&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="::!data.isValid &amp;&amp; !data.emptyStateTemplate" class="panel panel-default"&gt;
-  &lt;div class="panel-body wrapper-lg text-center"&gt;
-    &lt;span ng-if="!data.tableUnsupported"&gt;${Record not found}&lt;/span&gt;
-    &lt;span ng-if="data.tableUnsupported"&gt;${Form view not supported for requested table}&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div ng-if="!data.isValid &amp;&amp; data.emptyStateTemplate" class="panel-shift"&gt;
-  &lt;div class="empty-state-wrapper panel panel-default" ng-include="data.emptyStateTemplate"&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div ng-if="data.isValid" class="panel-shift"&gt;
-  &lt;div class="" ng-if="!data.f._view.length &amp;&amp; data.hideRelatedLists &amp;&amp; data.emptyStateTemplate"&gt;
-    &lt;div class="empty-state-wrapper panel panel-default" ng-include="data.emptyStateTemplate"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="" ng-if="!data.f._view.length &amp;&amp; data.hideRelatedLists &amp;&amp; !data.emptyStateTemplate"&gt;
-    &lt;div class="panel panel-default"&gt;
-      &lt;div class="panel-heading"&gt;&lt;span class="panel-title"&gt;{{data.f.title}}&lt;/span&gt; &lt;span ng-if="::options.showFormView == 'true' &amp;&amp; data.f.view != ''"&gt;[{{data.f.view_title}} view]&lt;/span&gt;&lt;/div&gt;
-      &lt;div class="panel-body wrapper-lg text-center"&gt;
-        ${No elements to display}
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div ng-show="isPageReady" class="panel panel-default" ng-if="::data.f._view.length || !data.hideRelatedLists" &gt;
-    &lt;div class="panel-heading" ng-if="data.f.title.length" sp-context-menu="getUIActionContextMenu(event)"&gt;
-      	&lt;span class="dropdown m-r-xs" ng-if="(data.isAdmin || getUIActions('context').length &gt; 0) &amp;&amp; options.omitHeaderOptions != 'true'"&gt;
-            &lt;button aria-label="${Form menu}" class="btn btn-form-menu dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="adminMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
-            &lt;ul class="dropdown-menu" aria-labelledby="adminMenu"&gt;
-              &lt;li ng-if="::data.isAdmin"&gt;&lt;a ng-href="/{{::data.f.table}}.do?sys_id={{data.f.sys_id}}&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Open in platform}&lt;/a&gt;&lt;/li&gt;
-              &lt;li ng-if="::data.isAdmin" class="dropdown-header"&gt;${Configure}&lt;/li&gt;
-              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&amp;sysparm_list={{data.f._sections[0].id}}&amp;sysparm_form=section&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Form Layout}&lt;/a&gt;&lt;/li&gt;
-              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&amp;sysparm_list={{data.f.table}}&amp;sysparm_form=related_list&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Related Lists}&lt;/a&gt;&lt;/li&gt;
-              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="?id=lf&amp;table=sys_ui_policy&amp;filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id:'lf', table: 'sys_ui_policy', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})"&gt;${UI Policies} &lt;span class="badge pull-right" ng-if="f.policy.length"&gt;{{f.policy.length}}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="?id=lf&amp;table=sys_script_client&amp;filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id: 'lf', table: 'sys_script_client', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})"&gt;${Client Scripts} &lt;span class="badge pull-right" ng-if="adminMenu.getClientScriptCount()"&gt;{{adminMenu.getClientScriptCount()}}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-              &lt;li ng-if="getUIActions('context').length &gt; 0 &amp;&amp;  data.isAdmin" role="separator" class="divider"&gt;&lt;/li&gt;
-              &lt;li ng-repeat="action in getUIActions('context')"&gt;&lt;a href="" ng-click="triggerUIAction(action)"&gt;{{action.name}}&lt;/a&gt;&lt;/li&gt;
-              &lt;li ng-if="::data.isAdmin || getUIActions('context').length &gt; 0" role="separator" class="divider"&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a target="_new" href="/{{data.f.table}}.do?PDF&amp;sys_id={{data.sys_id}}&amp;sysparm_view={{data.f.view}}"&gt;${Export to PDF}&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a target="_new" href="/{{data.f.table}}.do?PDF&amp;landscape=true&amp;sys_id={{data.sys_id}}&amp;sysparm_view={{data.f.view}}"&gt;${Export to PDF (landscape)}&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/span&gt;
-      &lt;span class="panel-title" aria-label="{{data.f.title}}"&gt;{{data.f.title}}&lt;/span&gt; &lt;span ng-if="::options.showFormView == 'true' &amp;&amp; data.f.view != ''"&gt;[{{data.f.view_title}} view]&lt;/span&gt;
-      &lt;div ng-if="::attachmentHandler &amp;&amp; data.canAttach" title="{{::data.addAttachmentMsg}}" class="pull-right attachment-button"&gt;
-      	&lt;sp-attachment-button&gt;&lt;/sp-attachment-button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="panel-body"&gt;
-      &lt;!-- performance debug --&gt;
-      &lt;div ng-if="data.show_sql"&gt;
-        &lt;div class="comment"&gt;
-          &lt;span ng-if="data.f._perf.sql_count"&gt;${SQL Statements {{data.f._perf.sql_count}}}, &lt;/span&gt;
-          &lt;span&gt;${Time {{data.f._perf.time}}}&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div ng-repeat="s in data.f._perf.sql" class="{{s.type}}"&gt;
-          {{s.statement}}
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;!-- attachments --&gt;
-      &lt;sp-attachment-manager table="::data.table" sys-id="data.f._attachmentGUID" omit-edit="::!data.canAttach"&gt;&lt;/sp-attachment-manager&gt;
-      &lt;!-- form --&gt;
-      &lt;div&gt;
-        &lt;sp-model form_model="data.f" mandatory="mandatory"&gt;&lt;/sp-model&gt;
-      &lt;/div&gt;
-      &lt;!-- UI Action Links --&gt;
-      &lt;div ng-if="getUIActions('link').length &gt; 0"&gt;
-        &lt;label style="margin: 0;"&gt;${Related Links}&lt;/label&gt;
-        &lt;div ng-repeat="action in getUIActions('link')"&gt;
-          &lt;a href ng-click="triggerUIAction(action)" gsft_id="{{::action.sys_id}}"&gt;{{::action.name}}&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;!-- related lists --&gt;
-      &lt;div ng-if="!data.hideRelatedLists"&gt;
-        &lt;label style="margin: 0"&gt;${Related Lists}&lt;/label&gt;
-        &lt;div style="margin-bottom: 7px; padding-bottom: 7px; border-bottom: 1px solid #f5f5f5;"&gt;
-          &lt;span ng-repeat="rl in data.f._related_lists" ng-if="rl.visible"&gt;
-            &lt;a ng-if="rl.type != 'REL'" ng-href="?id=lf&amp;table={{::rl.table}}&amp;filter={{rl.field}}%3D{{data.f.sys_id}}&amp;view={{data.f.view}}" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', filter: '{{rl.field}}%3D{{data.f.sys_id}}'})"&gt;{{rl.plural}}
-              &lt;span class="label label-as-badge label-primary" ng-if="rl.count"&gt;{{::rl.count}}&lt;/span&gt;
-            &lt;/a&gt;
-            &lt;a ng-if="::rl.type == 'REL'" href="?id=lf&amp;table={{::rl.table}}&amp;relationship_id={{rl.relationship_id}}&amp;apply_to={{rl.apply_to}}&amp;apply_to_sys_id={{rl.apply_to_sys_id}}&amp;view={{::data.f.view}}" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', apply_to: '{{rl.apply_to}}', apply_to_sys_id: '{{rl.apply_to_sys_id}}', relationship_id: '{{rl.relationship_id}}'})"&gt;{{rl.label}}
-              &lt;span class="label label-as-badge label-primary" ng-if="rl.count"&gt;{{rl.count}}&lt;/span&gt;
-            &lt;/a&gt;
-            &lt;span ng-if="!$last" style="padding-left: .5em; padding-right: .5em;" aria-hidden="true"&gt; | &lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class="panel-footer"&gt;
-      &lt;button ng-click="triggerUIAction(action)" ng-disabled="submitting" ng-repeat="action in getUIActions('button')" class="btn btn-default action-btn" gsft_id="{{::action.sys_id}}"&gt;{{action.name}}&lt;/button&gt;
-      &lt;span&gt;{{status}}&lt;/span&gt;
-      &lt;button ng-if="getPrimaryAction()" type="submit" ng-click="triggerUIAction(getPrimaryAction())" ng-disabled="submitting" class="btn btn-primary action-btn pull-right" gsft_id="{{::getPrimaryAction().sys_id ? getPrimaryAction().sys_id : ''}}"&gt;${Save} &lt;span ng-if="saveButtonSuffix"&gt;(${{{saveButtonSuffix}}})&lt;/span&gt;&lt;/button&gt;
-      &lt;div style="clear: both;"&gt;&lt;/div&gt;
-      &lt;div ng-if="mandatory.length" class="alert alert-info" style="margin-top: .5em" aria-live="polite" aria-atomic="true"&gt;
-        &lt;span ng-if="mandatory.length &gt; 0"&gt;${Required information} &lt;/span&gt;
-        &lt;span ng-repeat="f in mandatory" class="label label-danger" style="margin-right: .5em; display: inline-block;" ng-bind="f.label"&gt;&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-28 21:23:53</sys_created_on><sys_id>c25c838673302300b10080844ff6a7f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>825c838673302300b10080844ff6a7eb</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rel_widget_clone_c25c838673302300b10080844ff6a7f0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 21:23:53</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
-<payload_hash>2117590783</payload_hash>
-<remote_update_set display_value="Form with Related List">bfded7ca73302300b10080844ff6a7a3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-28 22:44:50</sys_created_on>
-<sys_id>bfded7ca73302300b10080844ff6a7a4</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>166221109360000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-28 22:44:50</sys_updated_on>
-<table/>
-<target_name>825c838673302300b10080844ff6a7eb</target_name>
-<type>Widget Clone</type>
-<update_domain>global</update_domain>
-<update_guid>0a5c83867a302300cfc8750f8acf1af1</update_guid>
-<update_guid_history>0a5c83867a302300cfc8750f8acf1af1:2117590783</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_ng_pro_sp_widget_8a5c838673302300b10080844ff6a7ed</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider><sp_widget display_value="Form with Related List">825c838673302300b10080844ff6a7eb</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-28 21:23:53</sys_created_on><sys_id>8a5c838673302300b10080844ff6a7ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>spAttachmentManager.Form with Related List</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_8a5c838673302300b10080844ff6a7ed</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 21:23:53</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
-<payload_hash>-1563089311</payload_hash>
-<remote_update_set display_value="Form with Related List">bfded7ca73302300b10080844ff6a7a3</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-28 22:44:49</sys_created_on>
-<sys_id>f3ded7ca73302300b10080844ff6a7a4</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>166221108ed0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-28 22:44:49</sys_updated_on>
-<table/>
-<target_name>spAttachmentManager.Form with Related List</target_name>
-<type>Angular Providers</type>
-<update_domain>global</update_domain>
-<update_guid>825c8386f33023008cb90936ab46c6ef</update_guid>
-<update_guid_history>825c8386f33023008cb90936ab46c6ef:-1563089311</update_guid_history>
+<update_guid>fdf3a3672a3c63007881b11283efc1b6</update_guid>
+<update_guid_history>fdf3a3672a3c63007881b11283efc1b6:1150168563,f3a3a3672a3c630063efe2564ae659a7:859894509,a38ed3ca8e3023004ccd7692649b4729:-607442908,d74e57ca283023001c1360493abfcc91:741162471,083e13ca33302300ae443824a232d44d:358687954,072e17ca2a30230028a02d2227c8a298:-994551467,600e13caef302300a56ef0e34d60385a:1262462197,aaedd3ca5a302300fb29fc9b527ca323:472867142,b1bd5f8aa3302300358a8ac94d5f66f9:-2026598042,406d13ca293023002e0e61e00e6c9153:1470021565,8e5d1f8a2e3023008b38c837c558e4fe:2046523062,332ddf8ab3302300e78c568c404d1e18:520003131,af2ddf8a31302300842a482b5ad13e13:-758126918,1c2ddf8a333023006b775a166cd8100f:89474473,4d0d1f8a7a302300998946849b1317f4:-1739677125,91925fc666302300146eb1f695778100:-80977270</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -2464,7 +942,7 @@ tbody tr:last-child {
 <category>customer</category>
 <comments/>
 <name>sp_widget_825c838673302300b10080844ff6a7eb</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function FormRelatedListController($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager) {
   console.log(this.data);
   $scope.submitting = false;
   $scope.mandatory = [];
@@ -2932,7 +1410,7 @@ tbody tr:last-child {
         inline_editing: options.inline_editing == "true"
     });
 })($sp, input, data, options, gs);
-]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-28 21:23:53&lt;/sys_created_on&gt;&lt;sys_id&gt;825c838673302300b10080844ff6a7eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Form with Related List&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_825c838673302300b10080844ff6a7eb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-28 22:32:03&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="::!data.isValid &amp;&amp; !data.emptyStateTemplate" class="panel panel-default"&gt;
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-28 21:23:53&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;825c838673302300b10080844ff6a7eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Form with Related List&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_825c838673302300b10080844ff6a7eb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-03 14:55:37&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="::!data.isValid &amp;&amp; !data.emptyStateTemplate" class="panel panel-default"&gt;
   &lt;div class="panel-body wrapper-lg text-center"&gt;
     &lt;span ng-if="!data.tableUnsupported"&gt;${Record not found}&lt;/span&gt;
     &lt;span ng-if="data.tableUnsupported"&gt;${Form view not supported for requested table}&lt;/span&gt;
@@ -3026,22 +1504,141 @@ tbody tr:last-child {
   &lt;/div&gt;
 &lt;/div&gt;
 ]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-805508080</payload_hash>
-<remote_update_set display_value="Form with Related List">bfded7ca73302300b10080844ff6a7a3</remote_update_set>
+<payload_hash>332057009</payload_hash>
+<remote_update_set display_value="Form with Related List">dcc42f67db3c630093f6ff041d9619b5</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-28 22:44:50</sys_created_on>
-<sys_id>f7ded7ca73302300b10080844ff6a7a5</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-03 15:01:25</sys_created_on>
+<sys_id>50c42f67db3c630093f6ff041d9619b7</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>166224f6ee50000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-28 22:44:50</sys_updated_on>
+<sys_recorded_at>1663a6d5da70000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-03 15:01:25</sys_updated_on>
 <table/>
 <target_name>Form with Related List</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
-<update_guid>2cfb5b8a85302300865c1d40e9a48482</update_guid>
-<update_guid_history>2cfb5b8a85302300865c1d40e9a48482:-805508080,688b934ab13023007e6733dddd13fc2c:3249325,e6f4970ac5302300f7d595aceaa93fe6:1668097863,cef4d3c69f302300c5349eaff5f7ff6e:2012765743,5cf4d3c6063023009b3aca47b506326a:234061796,74e4970a6c302300521df3327571e2e2:2113036772,8f24d3c6ac302300e025bd81dbc62b49:-1859860010,e024170af630230030c1b32919fd3291:-1252732520,6304170a883023009cccd46f63480f8d:339253367,a6a3dbc67430230092e06e8aa92ab041:-1491919818,35a3dbc65e30230024bb9aaef55fcf3d:2015869719,ca5c8386a4302300e7d1774934408eec:-1679651923</update_guid_history>
+<update_guid>6763a3675d3c63000bfdeb7012564a63</update_guid>
+<update_guid_history>6763a3675d3c63000bfdeb7012564a63:332057009,2cfb5b8a85302300865c1d40e9a48482:-805508080,688b934ab13023007e6733dddd13fc2c:3249325,e6f4970ac5302300f7d595aceaa93fe6:1668097863,cef4d3c69f302300c5349eaff5f7ff6e:2012765743,5cf4d3c6063023009b3aca47b506326a:234061796,74e4970a6c302300521df3327571e2e2:2113036772,8f24d3c6ac302300e025bd81dbc62b49:-1859860010,e024170af630230030c1b32919fd3291:-1252732520,6304170a883023009cccd46f63480f8d:339253367,a6a3dbc67430230092e06e8aa92ab041:-1491919818,35a3dbc65e30230024bb9aaef55fcf3d:2015869719,ca5c8386a4302300e7d1774934408eec:-1679651923</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_22bf8f8673302300b10080844ff6a701</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function RelatedListController($rootScope, $location) {
+    var c = this;
+    c.$onInit = function () {
+        console.log(c);
+        addListenerToListClick()
+    };
+
+    function addListenerToListClick() {
+        $rootScope.$on('data_table.click', function (event, obj) {
+            var link = $location.search();
+            link.sys_id = obj.sys_id;
+            link.table = obj.table;
+            $location.search(link);
+        })
+    }
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;related-list&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Related List&lt;/name&gt;&lt;option_schema&gt;[]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+    input = input || {};
+    var table = options.table || input.table;
+    var sys_id = options.sys_id || input.sys_id;
+    var query = options.query || input.query;
+    view = input.view || "sp";
+
+    if (!table || !sys_id)
+        return;
+
+    var f = $sp.getForm(table, sys_id, query);
+    data.related_lists = f._related_lists;
+
+    for (var i in data.related_lists) {
+        var list = data.related_lists[i];
+        var params = {
+            table: list.table,
+            filter: list.field + "=" + sys_id,
+            view: view,
+            inline_editing: options.inline_editing,
+            title: list.label
+        };
+        list.widget = $sp.getWidget('inline-editing-data-table', params);
+    }
+    
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-28 21:38:47&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;22bf8f8673302300b10080844ff6a701&lt;/sys_id&gt;&lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;&lt;sys_name&gt;Related List&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_22bf8f8673302300b10080844ff6a701&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-03 14:59:43&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="" ng-if="data.related_lists.length &gt; 0"&gt;
+    &lt;ul class="nav nav-tabs" role="tablist"&gt;
+        &lt;li role="presentation" ng-class='{active:$first}' ng-repeat="list in data.related_lists"&gt;
+            &lt;a data-target="#{{ list.table }}" aria-controls="{{ list.table }}" role="tab" ng-class='{active:$first}'
+               data-toggle="tab"&gt;
+                {{ list.label }}
+                &lt;span class="label label-as-badge label-primary" ng-if="list.count"&gt;{{ list.count }}&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class="tab-content"&gt;
+        &lt;div role="tabpanel" class="tab-pane" id="{{ list.table }}" ng-class='{active:$first}'
+             ng-repeat="list in data.related_lists"&gt;
+
+            &lt;div style="margin-top: -1px;"&gt;
+                &lt;div class="alert alert-danger" ng-if="data.invalid_table"&gt;
+                    Table not defined '{{ data.table_label }}'
+                &lt;/div&gt;
+                &lt;sp-widget widget="list.widget"&gt;&lt;/sp-widget&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1707718045</payload_hash>
+<remote_update_set display_value="Form with Related List">dcc42f67db3c630093f6ff041d9619b5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-03 15:01:25</sys_created_on>
+<sys_id>9cc42f67db3c630093f6ff041d9619b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1663a711e380000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-03 15:01:25</sys_updated_on>
+<table/>
+<target_name>Related List</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>67542767133c6300e16334c4dcb991a9</update_guid>
+<update_guid_history>67542767133c6300e16334c4dcb991a9:-1707718045,d5ec5f8ae7302300e8a8f9547b7f400a:1918238530,495cd78ae8302300cec5a7db2667e359:1574979684,030c5b8afb3023003d8acd14bc163d4c:-1434166628,4deb5b8ae13023008bb6218812b9b91a:999499380,6b5b178a8330230059885005f5145f28:-815869483,8746db0a74302300e6b227b00a2db1f5:-1829738115,5c365f0adc3023008b17c83cf867ece8:643735602,2126934a18302300aa182f4c5d158927:1992489081,1e065f0a183023007d009820c140e3e4:1011819581,ede5df0a1130230003c8e9499c1d64cb:-1294725195,20e51f0a153023005e17970528b1cc42:1829601706,d7d5df0a30302300f545b1d8510f33c6:1736285510,ced51f0a3a302300bd0c6aad8313243d:-1504562303,5e855f0ad2302300d3c8a1542d2c08dd:-629172170,8d651f0a8d3023002196de3bf75b8939:1968879235,4b359b0a18302300ac8f4c22ec8667d9:-325697397,39359b0acc302300c3a06b11753badd5:-139054087,d4359b0a3e30230045fc12178daf14d1:-1140227345,17f0d3c6f73023003ad9e85192192864:-139054087,f1f0d3c6203023002f0358bec411643e:688786251,7ac053c6b9302300475c65703e011c87:659330326,c4c053c6fc3023000bf0be94010ed115:108292688,1aa053c632302300dbfb03a999f36283:-603891374,55a053c66b302300f15e310f28484de5:1018396304,bd9053c627302300c8a9f9fa5524102a:851728887,d2805f86f9302300acea58add6dc5db2:1580052113,4b705f86dc302300ff7e3ff5ab262699:-377101000,54705f86663023006d6dee52d80b4ba7:1393546929,74505f86dc30230009ed0c81dc85a88d:-377101000,54cf8f867530230042898c3b1a85ba08:-1725671136</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_8a5c838673302300b10080844ff6a7ed</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider><sp_widget display_value="Form with Related List">825c838673302300b10080844ff6a7eb</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-28 21:23:53</sys_created_on><sys_id>8a5c838673302300b10080844ff6a7ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>spAttachmentManager.Form with Related List</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_8a5c838673302300b10080844ff6a7ed</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 21:23:53</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>-1563089311</payload_hash>
+<remote_update_set display_value="Form with Related List">dcc42f67db3c630093f6ff041d9619b5</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-03 15:01:25</sys_created_on>
+<sys_id>d0c42f67db3c630093f6ff041d9619b6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1663a6680400000000</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-03 15:01:25</sys_updated_on>
+<table/>
+<target_name>spAttachmentManager.Form with Related List</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>825c8386f33023008cb90936ab46c6ef</update_guid>
+<update_guid_history>825c8386f33023008cb90936ab46c6ef:-1563089311</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -3070,15 +1667,15 @@ tbody tr:last-child {
 	}
 }]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d332dbc673302300b10080844ff6a774"/&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-989373787</payload_hash>
-<remote_update_set display_value="Form with Related List">bfded7ca73302300b10080844ff6a7a3</remote_update_set>
+<remote_update_set display_value="Form with Related List">dcc42f67db3c630093f6ff041d9619b5</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-28 22:44:50</sys_created_on>
-<sys_id>fbded7ca73302300b10080844ff6a7a4</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-03 15:01:25</sys_created_on>
+<sys_id>d8c42f67db3c630093f6ff041d9619b6</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16622596ccf0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-28 22:44:50</sys_updated_on>
+<sys_recorded_at>1663a6680400000000</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-03 15:01:25</sys_updated_on>
 <table/>
 <target_name/>
 <type>Instance</type>

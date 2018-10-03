@@ -1,4 +1,4 @@
-function RelatedListCtrl($rootScope, $location) {
+function RelatedListController($rootScope, $location) {
   var c = this;
   c.$onInit = function () {
       console.log(c);
