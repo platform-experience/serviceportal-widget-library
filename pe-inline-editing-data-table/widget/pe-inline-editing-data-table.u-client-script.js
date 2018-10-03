@@ -1,4 +1,4 @@
-function InlineEditingDataTable($scope, $location, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager) {
+function InlineEditingTableController($scope, $location, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager) {
 	var c = this;
     c.makeEditable = makeEditable;
 	/*

@@ -1,4 +1,4 @@
-function(scope, element, attrs, ctrl){
+function InlineEditingTableLink(scope, element, attrs, ctrl) {
 	var $ul, $contextMenu;
 
 	scope.focusOnTableHeader = function() {

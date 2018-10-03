@@ -1,4 +1,4 @@
-function($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager) {
+function FormRelatedListController($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager) {
   console.log(this.data);
   $scope.submitting = false;
   $scope.mandatory = [];

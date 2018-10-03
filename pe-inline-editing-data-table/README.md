@@ -14,7 +14,7 @@ This is a drop-in replacement of the out of the box Data Table. This widget also
 
 ## Installation
 
-Download and install update set **[pe-inline-editing-data-table.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-inline-editing-data-table/pe-inline-editing-data-table.u-update-set.xml)**
+Download and install update set **[pe-inline-editing-data-table.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-inline-editing-data-table/pe-inline-editing-data-table.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
