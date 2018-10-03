@@ -6,21 +6,17 @@ This is a drop-in replacement of the out of the box Form widget. This widget wor
 * Embeded Widget #1: [Related List](../pe-related-list)
 * Embeded Widget #2: [Inline Editing Data Table](../pe-inline-editing-data-table)
 
-
 ## Screenshot
 
 ![Form with Related List](../images/pe-form-with-related-list.gif)
 
 ## Additional Information/Notes
 
-For inline editing, make sure the field you want to edit is available in the form (sp view), otherwise you wont be able to edit it inline. 
+For inline editing, make sure the field you want to edit is available in the form (sp view), otherwise you wont be able to edit it inline.
 
 ## Installation
 
-Download and install update set **[pe-form-with-related-list.xml](../raw/master/pe-form-with-related-list/pe-form-with-related-list.xml)**
-
-
-
+Download and install update set **[pe-form-with-related-list.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-form-with-related-list/pe-form-with-related-list.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
