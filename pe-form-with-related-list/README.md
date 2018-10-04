@@ -3,8 +3,8 @@
 ## Description
 This is a drop-in replacement of the out of the box Form widget. This widget works with conjunction with another 2 widets. Please reference them for a full understanding of its functionality.
 
-* Embeded Widget #1: [Related List](../pe-related-list)
-* Embeded Widget #2: [Inline Editing Data Table](../pe-inline-editing-data-table)
+* Embeded Widget #1: [Related List](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-related-list)
+* Embeded Widget #2: [Inline Editing Data Table](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-inline-editing-data-table)
 
 ## Screenshot
 
