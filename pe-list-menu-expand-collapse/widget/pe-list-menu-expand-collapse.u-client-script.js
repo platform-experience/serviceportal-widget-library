@@ -1,4 +1,4 @@
-function($scope,$window,$location) {
+function ListMenuExpandCollapse($scope,$window,$location) {
   /* widget controller */
   var c = this;
 	
