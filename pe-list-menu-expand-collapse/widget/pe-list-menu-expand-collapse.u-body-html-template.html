@@ -1,0 +1,16 @@
+<div class='lmec-toc hidden-xs hidden-sm'>
+  <div class='lmec-header' style='background-color:{{::c.data.options.bgcolor_header}}'>
+    <h3 class='lmec-title'>
+      <span class='lmec-title-text active'>{{::c.data.options.title}}</span>
+      <div class="lmec-action">
+        <a class="link-toggle active" title="Hide"><i class="fa fa-expand" aria-hidden="true"></i></a>
+        <a class="link-toggle" title="Show"><i class="fa fa-list" aria-hidden="true"></i></a>
+      </div>
+    </h3>
+  </div>
+  <div class='lmec-body active' style='background-color:{{::c.data.options.bgcolor_menu}}'>
+		<ul class='lmec-ul'>
+      <li ng-repeat='menu in c.data.menu.items' ng-click='c.go(menu)'><i class='fa fa-{{menu.glyph}}' ng-if='menu.glyph!=""' style='padding-right: 10px;'></i>{{menu.label}}</li>
+    </ul>
+  </div>
+</div>
