@@ -1,4 +1,4 @@
-function ($log, $scope, $element, $document, spModal, $q, $timeout, $window) {
+function($log, $scope, $element, $document, spModal, $q, $timeout, $window) {
 	'use strict';
 
 	/* widget controller */
