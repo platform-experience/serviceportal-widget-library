@@ -1,0 +1,68 @@
+$color-text: #fff !default;
+$color-li: #000 !default;
+
+.lmec-toc{
+  margin-bottom: 20px;
+  color: $color-text;
+  background: transparent;
+  .lmec-header{
+    margin-bottom: 3px;
+    position: relative;
+    .lmec-title{
+      font-weight: 400;
+      font-size: 24px;
+      text-align: left;
+      margin: 0;
+      padding: 17px 20px 14px;
+      .lmec-action{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        .link-toggle{
+          color: $color-text;
+          font-size: 18px;
+          display: none;
+        }
+        .active{
+          display: block;
+        }
+      }
+      .lmec-title-text{
+        display:none;
+      }
+      .active{
+        display: block;
+      }
+    }
+  }
+  .shrink{
+    width: 60px;
+    height: 60px;
+  }
+  .lmec-body{
+    display: none;
+    color: $color-li;
+    .lmec-ul{
+      font-weight: 400;
+      font-size: 18px;
+      text-align: left;
+      list-style: none;
+      padding-left: 0;
+      li{
+        border-bottom: 1px solid #b4b4b4;
+        padding: 10px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .active{
+    display: block;
+  }
+}
+
+.fa{
+  cursor: pointer;
+}
