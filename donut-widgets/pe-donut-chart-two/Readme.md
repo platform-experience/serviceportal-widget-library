@@ -2,11 +2,11 @@
 
 ## Description
 
-This widget can be used to represent data in a simple Donut Chart.
+This widget can be used to represent data in a simple donut chart.
 
 ## Screenshot
 
-![alt text](../../images/pe-donut-chart-wizard-01.png "Donut Chart Wizard")
+![Donut Chart Wizard](../../images/pe-donut-chart-wizard-01.png)
 
 ## Additional Information/Notes
 
