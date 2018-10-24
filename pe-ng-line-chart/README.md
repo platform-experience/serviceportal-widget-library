@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple widget for getting started tracking with Google Analytics.
+A simple and responsive line chart widget built using Angular Chart.
 
 ## Screenshot
 
@@ -10,7 +10,7 @@ A simple widget for getting started tracking with Google Analytics.
 
 ## Additional Information/Notes
 
-Can be used as a boilerplate for getting your Google Analytics implementation started; simply add your page & event tracking or customize as needed. Use right out-of-box for basic reporting needs.
+Use out-of-box for a two series line chart with random data or customize as needed.
 
 ## Installation
 
@@ -30,13 +30,10 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 > None
 
-## Sample Data and Data Structures
-
-> See 'Configuration' above
-
 ## Dependencies
 
-> None
+* [Chart.js](http://www.chartjs.org/)
+* [Angular Chart](http://jtblin.github.io/angular-chart.js/)
 
 ## CSS/SASS Variables
 
