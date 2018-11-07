@@ -1,0 +1,207 @@
+$pe-rest-typeahead-hover-color: white !default;
+$pe-rest-typeahead-hover-bg: #82b2a0 !default;
+$pe-rest-typeahead-menu-bg: white !default;
+$pe-rest-typeahead-border-color: #82b2a0 !default;
+$pe-rest-typeahead-border-radius: 0px !default;
+$pe-rest-typeahead-border: 0.5px !default;
+$pe-rest-typeahead-max-width: 400px !default;
+$pe-rest-typeahead-dim-opacity: 0.8 !default;
+
+/* default using SASS */
+.pe-rest-typeahead-search,
+.pe-rest-typeahead-search-default {
+  .tt-suggestion:hover {
+    background-color: $pe-rest-typeahead-hover-bg;
+  }
+
+  .tt-dataset {
+    border: $pe-rest-typeahead-border solid $pe-rest-typeahead-border-color;
+  }
+
+  .form-control {
+    border: $pe-rest-typeahead-border solid $pe-rest-typeahead-border-color;
+    border-radius: $pe-rest-typeahead-border-radius;
+  }
+
+  .form-control:focus {
+    outline: 0;
+    border-color: $pe-rest-typeahead-border-color;
+    box-shadow: none;
+  }
+
+  .pe-rest-typeahead-icon {
+    color: $pe-rest-typeahead-border-color;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $pe-rest-typeahead-border-color;
+    opacity: 0.5;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $pe-rest-typeahead-border-color;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $pe-rest-typeahead-border-color;
+  }
+
+}
+
+/* primary color */
+.pe-rest-typeahead-search-primary {
+  .tt-suggestion:hover {
+    background-color: $brand-primary;
+  }
+
+  .tt-dataset {
+    border: $pe-rest-typeahead-border solid $brand-primary;
+  }
+
+  .form-control {
+    border: $pe-rest-typeahead-border solid $brand-primary;
+    border-radius: $pe-rest-typeahead-border-radius;
+  }
+
+  .form-control:focus {
+    border-color: $brand-primary;
+  }
+
+  .pe-rest-typeahead-icon {
+    color: $brand-primary;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $brand-primary;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $brand-primary;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $brand-primary;
+  }
+
+}
+
+/* info color */
+.pe-rest-typeahead-search-info {
+  .tt-suggestion:hover {
+    background-color: $brand-info;
+  }
+
+  .tt-dataset {
+    border: $pe-rest-typeahead-border solid $brand-info;
+  }
+
+  .form-control {
+    border: $pe-rest-typeahead-border solid $brand-info;
+    border-radius: $pe-rest-typeahead-border-radius;
+  }
+
+  .form-control:focus {
+    border-color: $brand-info;
+  }
+
+  .pe-rest-typeahead-icon {
+    color: $brand-info;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $brand-info;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $brand-info;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $brand-info;
+  }
+}
+
+.pe-rest-typeahead-search__container {
+  position: relative;
+  max-width: $pe-rest-typeahead-max-width;
+  margin: auto;
+}
+
+.pe-rest-typeahead {
+  padding-left: 35px !important;
+  padding-right: 25px !important;
+  width: 100%;
+  max-width: $pe-rest-typeahead-max-width;
+}
+
+.pe-rest-typeahead,
+.tt-suggestion {
+  padding: $padding-base-vertical 35px $padding-base-vertical 16px;
+}
+
+.pe-rest-typeahead-icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  font-size: 18px;
+  left: 10px;
+}
+
+.fa-light-icon {
+  -webkit-text-stroke: 1px white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pe-rest-typeahead-icon-close {
+  left: unset;
+  right: 10px;
+  -webkit-text-stroke: 2px white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tt-menu {
+  padding: 0px;
+  width: 100%;
+}
+
+.tt-dataset {
+  max-height: 200px;
+  overflow-y: scroll;
+  width: 100%;
+  background-color: $pe-rest-typeahead-menu-bg;
+  border-radius: $pe-rest-typeahead-border-radius;
+  margin-top: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.tt-suggestion:hover {
+  cursor: pointer;
+  color: $pe-rest-typeahead-hover-color;
+}
+
+.twitter-typeahead {
+  width: 100%;
+  max-width: $pe-rest-typeahead-max-width
+}
+
+.pe-rest-typeahead-search__dim {
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, $pe-rest-typeahead-dim-opacity);
+  box-shadow: 0 0 0 100vmax rgba(255, 255, 255, $pe-rest-typeahead-dim-opacity);
+  z-index: 9999;
+  transition-timing-function: ease-out, step-end;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
