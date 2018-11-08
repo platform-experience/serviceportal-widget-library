@@ -7,9 +7,10 @@ function Link(scope) {
 
   scope.$watch(scope.c.idName, function (newValues, oldValues, scope) {
     scope.typeaheadElement = $(
-      '#' + scope.c.idName + '.typeahead.form-control.pe-rest-typeahead'
+      '#' + scope.c.idName + '.typeahead.form-control.pe-rest-typeahead-search__input'
     );
     scope.typeaheadContainer = scope.typeaheadElement.parent();
+
     scope.typeaheadElement.typeahead({
       minLength: 1,
       delay: 200,
@@ -52,7 +53,6 @@ function Link(scope) {
         scope.typeaheadElement.typeahead('val', '');
       scope.c.typing = false;
     });
-
 
   });
 }

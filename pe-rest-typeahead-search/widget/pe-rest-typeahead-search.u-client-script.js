@@ -17,9 +17,11 @@ function PeRestTypeaheadController($rootScope, $scope) {
 
     c.selected = false;
     c.typing = false;
+    console.log($scope);
   };
 
   c.selectRecord = function (obj) {
+    console.log('selected -> ', obj);
     $rootScope.$broadcast('pe-typeahead-selection', obj);
   };
 
