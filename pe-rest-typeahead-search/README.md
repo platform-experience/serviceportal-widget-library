@@ -3,17 +3,15 @@
 ## Description
 
 The Typeahead Search widget provides suggestions for users as they type in the search field. Main features are:
-<br/><br/>
-* Providing suggestions through the autocomplete search library [Twitter Typeahead v1.2.0](https://github.com/corejavascript/typeahead.js)
-
-<br/><br/>
-* Obtain data through REST. It can connect to Table APIs defined in the current or different instance. If a different instance is used, it is necessary defining the options about REST in the Data section and a [CORS rule](https://docs.servicenow.com/bundle/london-application-development/page/integrate/inbound-rest/concept/c_CORSSupport.html) in the target instance.
-
-<br/><br/>
-* Broadcasing on record selection (event name: "pe-typeahead-selection"). Sample code to receive the selected record (json object):
 <br/>
-```
+* Providing suggestions through the autocomplete search library [Twitter Typeahead v1.2.0](https://github.com/corejavascript/typeahead.js)
+* Obtain data through REST. It can connect to Table APIs defined in the current or different instance. If a different instance is used, it is necessary defining the options about REST in the Data section and a [CORS rule](https://docs.servicenow.com/bundle/london-application-development/page/integrate/inbound-rest/concept/c_CORSSupport.html) in the target instance.
+* Broadcasing on record selection (event name: "pe-typeahead-selection"). Sample code to receive the selected record (json object):
+
+```javascript
+
 $rootScope.$on('pe-typeahead-selection', function(event, obj){});
+
 ```
 
 ## Screenshots
@@ -68,16 +66,16 @@ Sample data is in the default options.
 ## API Dependencies
 ---
 <i>Dependencies are included and configured as part of the provided Update Set.</i>
-> typeahead.js v1.2.0
+* typeahead.js v1.2.0
 ---
 ## CSS/SASS Variables
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
-> $pe-rest-typeahead-hover-color
-> $pe-rest-typeahead-hover-bg
-> $pe-rest-typeahead-menu-bg
-> $pe-rest-typeahead-border-color
-> $pe-rest-typeahead-border-radius
-> $pe-rest-typeahead-border
-> $pe-rest-typeahead-max-width
-> $pe-rest-typeahead-dim-opacity
+* $pe-rest-typeahead-hover-color
+* $pe-rest-typeahead-hover-bg
+* $pe-rest-typeahead-menu-bg
+* $pe-rest-typeahead-border-color
+* $pe-rest-typeahead-border-radius
+* $pe-rest-typeahead-border
+* $pe-rest-typeahead-max-width
+* $pe-rest-typeahead-dim-opacity
