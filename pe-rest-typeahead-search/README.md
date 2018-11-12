@@ -5,8 +5,8 @@
 The Typeahead Search widget provides suggestions for users as they type in the search field. Main features are:
 <br/>
 * Providing suggestions through the autocomplete search library [Twitter Typeahead v1.2.0](https://github.com/corejavascript/typeahead.js)
-* Obtain data through REST. It can connect to Table APIs defined in the current or different instance. If a different instance is used, it is necessary defining the options about REST in the Data section and a [CORS rule](https://docs.servicenow.com/bundle/london-application-development/page/integrate/inbound-rest/concept/c_CORSSupport.html) in the target instance.
-* Broadcasing on record selection (event name: "pe-typeahead-selection"). Sample code to receive the selected record (json object):
+* Obtaining data through REST. It can be connected also to a Table API defined in a different ServiceNow instance if the relative option _REST Instance_ is used, and a [CORS rule](https://docs.servicenow.com/bundle/london-application-development/page/integrate/inbound-rest/concept/c_CORSSupport.html) defined in the target instance.
+* Broadcasing on record selection (event name: "pe-typeahead-selection"). Sample code for receiving the selected record (json object) in any widget used in the Portal application:
 
 ```javascript
 
