@@ -10,7 +10,11 @@ The Typeahead Search widget provides suggestions for users as they type in the s
 
 ```javascript
 
-$rootScope.$on('pe-typeahead-selection', function(event, obj){});
+$rootScope.$on('pe-typeahead-selection', function(event, obj){
+
+  /* code */
+
+});
 
 ```
 
@@ -39,19 +43,20 @@ Presentation:
 * Bootstrap Size: this will define the padding around the Search text field (md, lg, etc.).
 * Placeholder: the text hint in the empty input field.
 * Overlay Effect: if enabled, it will apply a CSS effect (class pe-rest-typeahead-search__dim) to help the user in focusing more on the results.
-<br/>
+<br/><br/>
+
 Data:
 <br/>
 * Table: table containing the records to query.
-* Filter: additional filter. _Optional._
+* Filter: additional filter. _Optional_
 * Display Field: the column/attribute to show in the result list.
 * Query Field: the column/attribute used by Twitter Typeahead to provide the suggestions.
-* Order By: the result sorting. _Optional._
-* Order Direction: the result sorting direction. _Optional._
+* Order By: the result sorting. _Optional_
+* Order Direction: the result sorting direction. _Optional_
 * Limit Result: the maximum number of records to obtain and display.
-* REST Instance: if the REST Table API is in a different instance. _Optional._
-* REST Username: if REST Instance is used, provide the credentials. _Optional._
-* REST Password: if REST Instance is used, provide the credentials. _Optional._
+* REST Instance: if the REST Table API is in a different instance. _Optional_
+* REST Username: if REST Instance is used, provide the credentials. _Optional_
+* REST Password: if REST Instance is used, provide the credentials. _Optional_
 
 ---
 ## Platform Dependencies
