@@ -1,0 +1,16 @@
+<div class="banner-class row">
+        <section class="content-section video-section">
+            <div class="pattern-overlay">
+                <a id="bgndVideo" class="player" data-property="{{videoJson}}">bg</a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 text-center center-this">
+                          <h2 class="text-center text-4x m-b-lg sp-tagline-color ng-binding" ng-bind="options.title"></h2>
+                          <div ng-if="options.short_description" class="text-center h4 m-b-lg sp-tagline-color ng-binding ng-scope" ng-bind="options.short_description"></div>
+                          <sp-widget widget="data.typeAheadSearch" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
