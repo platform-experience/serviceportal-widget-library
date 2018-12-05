@@ -1,4 +1,4 @@
-# PE Homepage Search with video
+# Homepage Search with video
 
 ## Description
 
@@ -64,5 +64,6 @@ After committing the update set, Navigate to Homepage Search with video\Homepage
 ## Dependencies
 
 ## CSS/SASS Variables
-
+_CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+> None
 
