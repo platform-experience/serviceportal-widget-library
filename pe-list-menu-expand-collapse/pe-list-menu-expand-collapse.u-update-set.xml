@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-10-16 15:40:55">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>List Menu Expand Collapse</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>247cda334f41a7008272ece24210c72f</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2018-10-16 15:40:54</sys_created_on>
+<sys_id>557aa23f4f41a7008272ece24210c717</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2018-10-16 15:40:54</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_1b7af52d4f41ab4005be4d6e0210c72e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ListMenuExpandCollapse($scope,$window,$location) {
+  /* widget controller */
+  var c = this;
+	
+	c.go = function(menu){
+		switch(menu.type){
+			case 'sc':
+			case 'kb':
+			case 'page':
+				$location.url(menu.href);	
+				break;
+			case 'url':
+				$window.open(menu.url,menu.url_target);
+				break;
+/*				
+			case 'sc_category':
+				break;
+			case 'sc_cat_item':
+				break;
+			case 'kb_topic':
+				break;
+			case 'kb_article':
+				break;
+			case 'kb_category':
+				break;
+			case 'filtered':
+				break;
+			case 'scripted':
+				break;
+*/				
+			default:
+				console.log(menu);
+		}
+
+	};
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$color-text: #fff !default;
+$color-li: #000 !default;
+
+.lmec-toc{
+  margin-bottom: 20px;
+  color: $color-text;
+  background: transparent;
+  .lmec-header{
+    margin-bottom: 3px;
+    position: relative;
+    .lmec-title{
+      font-weight: 400;
+      font-size: 24px;
+      text-align: left;
+      margin: 0;
+      padding: 17px 20px 14px;
+      .lmec-action{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        .link-toggle{
+          color: $color-text;
+          font-size: 18px;
+          display: none;
+        }
+        .active{
+          display: block;
+        }
+      }
+      .lmec-title-text{
+        display:none;
+      }
+      .active{
+        display: block;
+      }
+    }
+  }
+  .shrink{
+    width: 60px;
+    height: 60px;
+  }
+  .lmec-body{
+    display: none;
+    color: $color-li;
+    .lmec-ul{
+      font-weight: 400;
+      font-size: 18px;
+      text-align: left;
+      list-style: none;
+      padding-left: 0;
+      li{
+        border-bottom: 1px solid #b4b4b4;
+        padding: 10px;
+        padding-left: 20px;
+      }
+    }
+  }
+  .active{
+    display: block;
+  }
+}
+
+.fa{
+  cursor: pointer;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;list-menu-expand-collapse&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope,el,attrs,ctrl){
+	var $timeout = $injector.get("$timeout");
+	
+	$timeout(function(){
+
+		var colEl = angular.element(el.find('.lmec-toc').parent().parent().parent());
+
+		scope.lmecEl = {
+			toggles : el.find('.link-toggle'),
+			header : angular.element(el.find('.lmec-header')),
+			title : angular.element(el.find('.lmec-title-text')),
+			body : angular.element(el.find('.lmec-body')),
+			toc : el.find('.lmec-toc'),
+			col : colEl,
+			colClass : colEl.prop('classList')[0]
+		};
+
+		scope.lmecEl.toggles.bind('click', function($event){
+
+			angular.forEach(scope.lmecEl.toggles, function(value,key){
+				angular.element(value).toggleClass('active');
+			});
+
+			scope.lmecEl.title.toggleClass('active');
+			scope.lmecEl.body.toggleClass('active');
+			scope.lmecEl.header.toggleClass('shrink');
+
+			scope.lmecEl.col.toggleClass(scope.lmecEl.colClass).toggleClass('col-md-1');
+
+		});
+	});
+
+}]]&gt;&lt;/link&gt;&lt;name&gt;List Menu Expand Collapse&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","section":"Data","default_value":"Contents","label":"Title","type":"string"},{"hint":"","name":"bgcolor_header","section":"Presentation","default_value":"#65666a","label":"Header Background Color","type":"string"},{"name":"bgcolor_menu","section":"Presentation","default_value":"#f5f5f5","label":"Menu Background Color","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.options = options;
+	var menu_id = $sp.getValue("sp_rectangle_menu");
+	
+	
+	function sortByKey(array, key) {
+		return array.sort(function(a, b) {
+			var x = a[key]; var y = b[key];
+			return ((x &lt; y) ? -1 : ((x &gt; y) ? 1 : 0));
+		});
+	}
+	
+	
+	data.menu = {
+		sys_id: menu_id,
+		items : sortByKey($sp.getMenuItems(menu_id),'order'),
+		widget : $sp.getWidgetFromInstance(menu_id)
+	};
+	
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-09 12:31:05&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;1b7af52d4f41ab4005be4d6e0210c72e&lt;/sys_id&gt;&lt;sys_mod_count&gt;145&lt;/sys_mod_count&gt;&lt;sys_name&gt;List Menu Expand Collapse&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_1b7af52d4f41ab4005be4d6e0210c72e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-16 15:39:20&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class='lmec-toc hidden-xs hidden-sm'&gt;
+  &lt;div class='lmec-header' style='background-color:{{::c.data.options.bgcolor_header}}'&gt;
+    &lt;h3 class='lmec-title'&gt;
+      &lt;span class='lmec-title-text active'&gt;{{::c.data.options.title}}&lt;/span&gt;
+      &lt;div class="lmec-action"&gt;
+        &lt;a class="link-toggle active" title="Hide"&gt;&lt;i class="fa fa-expand" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a class="link-toggle" title="Show"&gt;&lt;i class="fa fa-list" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class='lmec-body active' style='background-color:{{::c.data.options.bgcolor_menu}}'&gt;
+		&lt;ul class='lmec-ul'&gt;
+      &lt;li ng-repeat='menu in c.data.menu.items' ng-click='c.go(menu)'&gt;&lt;i class='fa fa-{{menu.glyph}}' ng-if='menu.glyph!=""' style='padding-right: 10px;'&gt;&lt;/i&gt;{{menu.label}}&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>5614398</payload_hash>
+<remote_update_set display_value="List Menu Expand Collapse">557aa23f4f41a7008272ece24210c717</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2018-10-16 15:40:54</sys_created_on>
+<sys_id>d97aa23f4f41a7008272ece24210c717</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1667d88102d0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2018-10-16 15:40:54</sys_updated_on>
+<table/>
+<target_name>List Menu Expand Collapse</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>2a1ae27b8a41a700d88b0fdd5f573ca3</update_guid>
+<update_guid_history>2a1ae27b8a41a700d88b0fdd5f573ca3:5614398,84ec9e33db41a7000647f4f07f9d95b6:-1929199378,3327d4bdc44dab403ab2c4d09122e92a:1569709725,c117d0bd684dab4057cee241c3782a97:-291415798,66c6d47dc94dab402ec142c478998a9a:1383375892,58a65c7d8f4dab406417ee642aa3bc02:-2007425534,2676587d6a4dab403f5e809b27b52d51:1113945011,6b36583dca4dab407e380342f4380b36:-1848407567,c4a5503d814dab40a638f680fa7de610:-2046292062,3a95183d1a4dab40e783245dc5ced1e6:1031644090,0d75143d684dab402aff5dbdabbbc1e0:-1494155231,75355cf9684dab40b854b16111a4e95c:-870963241,43c490f9b54dab407a76e922f67f32ee:-361737527,8e549cb96a4dab40ed73614983297fa2:1068340864,20345cb9a74dab4027e4382f1b6daebb:49813329,1514d8b9664dab402314bbc3df8d3850:2037917740,04f310b96e4dab40d2f816a5e21a8302:-2027445007,25c35c792a4dab40ac7f0779baf0c04d:1713686156,3e82d8f54b4dab40d289657b987f4cc5:1012109464,ce0290f5cc4dab40fd763c9ca33f85a6:-194915822,83d1d0f5244dab40b1f5a35aa5427e47:-511018065,b2a1d4f53c4dab40daf52763832787e8:-1998422216,3fc0d4b10a4dab405d4ee9cc7a42b23b:1472743035,dd8090b18c4dab40da2c46fde010ba78:1333950687,9f4090b18f4dab40956d38ad928bfd1e:101836727,103f84714a4dab403f27bbaddda7cb1f:1360825771,d52fcc31334dab40ad849266a813a13e:1658092213,ab9ec831aa4dab4031b69eb1c888153f:1130887391,955e0831944dab40631b830ad8ab47cf:790204781,9d3d4cfdef0dab4057da74131653a032:811577054,0eec84bdd30dab40280ad0b0b1d29d2c:1746095128,612c40f9120dab40050088745f415f3d:-1659016090,294b00f9720dab400ded54e355869bac:937948908,695a8079d20dab4019a152b3e39d12b7:-1545979754,99e904b5920dab400db357cfcf951316:235611249,a3698035190dab406097154c87bc0dcd:1752637545,be1900f1d30dab40d128f6f4ecd084ae:-1876909735,62d808f1360dab404a5334fe75074357:1408232557,4b5880f1b30dab406e9e7063727d74c3:-176340788,384880f1080dab40bcfcc4bd07530ebb:1907614512,963800f1400dab4011410363aaf53d7a:-176340788,3a1800f1a20dab400a1691b52a261173:-1846002226,fce7c8b1240dab403f4e731cbba8debf:1496650853,d4d708b1850dab40213effc809152b52:-1193379875,0f8744b1e40dab40e1d4543e3c5046c9:-475390992,5d670c31fd0dab405fda97598ca37c71:-1264609844,045704b1240dab40d1c61f445d09a881:1618231952,58f68471d30dab405c9086b340472925:-786541557,49564471980dab400416478d3acdcd73:-120536952,6eb5ccbd9dc9ab405628730587912522:-1535031127,901ceaa553c5ab404f4d06a133139d51:-1878331651,93ebeaa574c5ab40dafeb2c414cb543e:315952777,d1eb6aa56bc5ab40ea084e8762866152:-1422883706,83cb6aa56bc5ab40c3742d1bc728a812:1301760012,c3e96e695f85ab405b389cadf0a6f680:416239022,e3a92a69b485ab4022cc843544bde404:-747578201,00896269f885ab40e832065fdbffd78f:602578800,2019ea29d685ab4014e581b4781c771c:-747578201,e409ea290085ab40e6367e05771f088f:-1046175001,6ed8ea299785ab400fc8dea49c602006:-747578201,7bc8aa292685ab40aee3534432463f8b:-1558994305,c4b8e2295585ab40f0e81cd6163343d0:378883041,e28822e5f585ab400a530171975e6afb:-271744592,c63822e57385ab403b0699e343e95cf3:2045736628,562766e13485ab407ba45392f511faa9:-2134837501,ef76ae610285ab401bc52b7e9618d764:-516500977,9226e2215385ab40b488e112bb1ffa6d:1680603512,f316aeedd545ab40f616f1828e465e08:1643954057,1425a66d8d45ab405552375c00c14531:-379089624,46a4a66d4745ab4052a39848a85bf429:-1325712293,9ec3662d8945ab40ec28248afebe0096:1296557562,79626ee14245ab40c971c925999012d6:-157664571,b232a6e13645ab4057e7ac0bbe9eff60:-119586756,b0a122e10145ab40930f90259ed61619:-1075269124,e571aea17d45ab40e7dce31fec18a625:-45489784,7c41aaa1d745ab40d58f106ec0c7ff0f:-877470848,4d216aa18d45ab4038976dca6aac97fa:474462865,bb9026a11545ab40a11a1d7ef98a03c7:2123490598,0f70a6615f45ab4069e4bfac5edf22da:-1632808085,39502261ec45ab4058e624f8f198297e:-1485548183,c7cfd661d045ab40d5c125b1fa374f9e:-1157936394,54bf1e218745ab401744073d88a2b839:-1990882056,ae4f5e216145ab40b71b933b419e25b5:1670036313,d71fda216445ab4096b988a4a1ef3db4:-2078319167,a2fe16217245ab40c8af46d7d4b310bb:514210625,6dde16210f45ab40062c7789cdc0f583:1576642945,0dae92216845ab406c8120b5071e2917:-1325318277,fe5e1eedcb05ab408fc883955e111baf:1057438945,70ed12edf005ab4023a3c28da9549c52:-583537157,885d16adaf05ab40e1d5b58e13cc44dd:-93355058,cb4d1ead2d05ab4042e57a59bee08179:-1187055193,abbc96adb305ab4013a543688d2faa02:662727021,b2ac16adbe05ab409635b51b209993cd:2040534401,8a8c926d6205ab4034f4495ebea2c0b3:1161199982,97db966d1805ab40d23b25930739c391:-843776209,22bb166d2905ab40c43b0f4dfb0a0ce3:-1801669800,10ab126def05ab40ca227c604d50d99a:-642345221,e17bda2de605ab405eabd3b14245e94d:249218298,5f3b9ae94805ab407342e1f7b6fb06d9:792212413,411b9ae99205ab4095c5fa31f7ebecd3:651048829,39fa96e91505ab40df8f0c0b98b7c6e5:-1681051964,92ca5aa92c05ab40b5c4444765b69c8e:159883316,618a92e94a05ab408a9fe96f7650d7f3:1458950327,d9785ae51705ab40272174af243d3534:485091492,03081ae5f905ab4000b8af121b0b6bd3:1879426371,cdd71ae53405ab409ac0d9a2c24e45c9:-187441289,dd4712e5dc05ab40dd68ace33a69c872:319097478,b23712e5b205ab40a38c06f844c6213d:-2044059278,9927d6a57f05ab40223373e0c68987d9:152044040,6296d6a57105ab4086d21be2cfdd53c9:-215676000,7766d2a59405ab401e692d6332480b77:1812360897,7666d2a58b05ab401714c9a4377a3205:2128800818,4b069665ec05ab406c0644e3e7969ba6:-1118067193,ddf5da65ee05ab404f470d991a09d94d:250749431,f6851265a005ab40313e86e611d4864b:-1860992072,e845d6259905ab40893b19186bb8a4ee:-522238513,4a051a256205ab4002eee6fe29de4238:-1627381515,64845aa11705ab40bf6231a2c4da33c7:-974820135,940496a1d205ab40668ecac1b9674213:1685636661,1d3f0229a2c1ab4017d968c6f36e0c72:1632808377,f81f022923c1ab406efece368f250b6b:-405414790,bbe9cee1fec1ab4097a3baadb0e596fd:-346271302,37a94225b8c1ab40f0bdebe1e90ed2cc:-773788833,aa898ee133c1ab40c0e498f77eb45f78:-178787488,9b374e6101c1ab406a5f23b38f095e3d:-2051185957,4cd60e61c0c1ab40b9e262c24d674795:1294622458,8086026117c1ab409a69c49640afcde8:560182915,0f06ce2197c1ab4041b88cc2a996f218:1952840849,66e50e2178c1ab409123db245f61d7d8:1279974618,7da5462152c1ab4025d0127e117c1d0e:932249449,33850a2159c1ab40778f864e566e4ee9:669235241,ab6582ed4281ab4076b982560db270f7:1979053270,ab4506eda381ab4025096f65c922e0ff:-664818697,bc150aad7681ab40dc3ccdf729e852c7:2098237908,c2644aad4581ab407d135b6d3caf8eee:1229875240,be2442e9b381ab406b122dc16c4873b6:61814631,0b6082a98081ab4077bca2ac50db9cb6:1788748819,864082696b81ab401c0ce70ab8543e49:1751318585,ca208629ce81ab405778c0f692fd3ad1:1788748819,dd0fb9a5e381ab4077d33aae4efa42a1:-2045473635,b8bef5653a81ab409651cf7d8b802a87:1520411322,be0e7da1c981ab407abc67fec2f76938:-1476752408,879dfd613081ab40bbe71c76c18c27cc:1790729374,c0dcf5ed4741ab403860a3bf006e9cb9:1951814395,304cfd6dae41ab4031e1e3e1bdd0d7ce:-135811965,3ceb7d2d6a41ab404045934134bfc8ff:1423914193</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

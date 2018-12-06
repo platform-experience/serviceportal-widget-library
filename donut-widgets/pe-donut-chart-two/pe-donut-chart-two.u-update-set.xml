@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2017-03-15 02:12:16">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-10-18 18:42:17">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -12,17 +11,20 @@
 <inserted/>
 <name>PE Donut Chart Wizard</name>
 <origin_sys_id/>
+<parent display_value=""/>
 <release_date/>
-<remote_sys_id>5db1644513693600d15e3d7ed144b005</remote_sys_id>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>5e0e7ce8dbd9634057a7f03d0f961979</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 02:12:15</sys_created_on>
-<sys_id>4147b04113a93600d15e3d7ed144b0e6</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>792765e0db5d634057a7f03d0f961924</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 02:12:15</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -34,18 +36,22 @@
 <comments/>
 <name>sp_js_include_cc585c0113693600d15e3d7ed144b07d</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>donutDirective</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-14 23:57:06</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>cc585c0113693600d15e3d7ed144b07d</sys_id><sys_mod_count>3</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="donutDirective">25689c0113693600d15e3d7ed144b0d6</sys_ui_script><sys_update_name>sp_js_include_cc585c0113693600d15e3d7ed144b07d</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:40:30</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<remote_update_set display_value="PE Donut Chart Wizard">4147b04113a93600d15e3d7ed144b0e6</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 02:12:15</sys_created_on>
-<sys_id>0147b04113a93600d15e3d7ed144b0e7</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>392765e0db5d634057a7f03d0f961926</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 02:12:15</sys_updated_on>
+<sys_recorded_at>16687d7cc660000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
 <table/>
 <target_name>donutDirective</target_name>
 <type>JS Include</type>
 <update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -127,18 +133,22 @@
     display: table-cell;&#13;
     vertical-align: middle;&#13;
 }</css><name>donutDirective</name><sys_class_name>sp_css</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>362c548113693600d15e3d7ed144b0c1</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_362c548113693600d15e3d7ed144b0c1</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:00</sys_updated_on></sp_css></record_update>]]></payload>
-<remote_update_set display_value="PE Donut Chart Wizard">4147b04113a93600d15e3d7ed144b0e6</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 02:12:15</sys_created_on>
-<sys_id>0547b04113a93600d15e3d7ed144b0e6</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>3d2765e0db5d634057a7f03d0f961925</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 02:12:15</sys_updated_on>
+<sys_recorded_at>16687d7cc890000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
 <table/>
 <target_name>donutDirective</target_name>
 <type>Style Sheet</type>
 <update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -149,18 +159,126 @@
 <comments/>
 <name>sp_dependency_4438d80113693600d15e3d7ed144b0c6</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>donutDirective</module><name>donutDirective</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-14 23:56:34</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>4438d80113693600d15e3d7ed144b0c6</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_4438d80113693600d15e3d7ed144b0c6</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:20</sys_updated_on></sp_dependency></record_update>]]></payload>
-<remote_update_set display_value="PE Donut Chart Wizard">4147b04113a93600d15e3d7ed144b0e6</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 02:12:15</sys_created_on>
-<sys_id>4d47b04113a93600d15e3d7ed144b0e6</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>752765e0db5d634057a7f03d0f961926</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 02:12:15</sys_updated_on>
+<sys_recorded_at>16687d7cc900000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
 <table/>
 <target_name>donutDirective</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_647041ecdbd9634057a7f03d0f9619d5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="donutDirective">4438d80113693600d15e3d7ed144b0c6</sp_dependency><sp_widget display_value="PE Donut Chart Wizard">0bc1804513293600d15e3d7ed144b0f2</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-10-18 15:53:10</sys_created_on><sys_id>647041ecdbd9634057a7f03d0f9619d5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.PE Donut Chart Wizard</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_647041ecdbd9634057a7f03d0f9619d5</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-10-18 15:53:10</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>1134371333</payload_hash>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>792765e0db5d634057a7f03d0f961925</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16687e172010000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
+<table/>
+<target_name>donutDirective.PE Donut Chart Wizard</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>247041ec77d963406113873c6467d3d7</update_guid>
+<update_guid_history>247041ec77d963406113873c6467d3d7:1134371333</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_bf3c14c113693600d15e3d7ed144b09b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>donutDirective</name><source>local</source><sp_css display_value="donutDirective">362c548113693600d15e3d7ed144b0c1</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bf3c14c113693600d15e3d7ed144b09b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_bf3c14c113693600d15e3d7ed144b09b</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:00</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>b12765e0db5d634057a7f03d0f961926</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16687d7cca00000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_4da0c1ecdbd9634057a7f03d0f9619af</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="donutDirective">4438d80113693600d15e3d7ed144b0c6</sp_dependency><sp_js_include display_value="donutDirective">cc585c0113693600d15e3d7ed144b07d</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-10-18 15:54:01</sys_created_on><sys_id>4da0c1ecdbd9634057a7f03d0f9619af</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_4da0c1ecdbd9634057a7f03d0f9619af</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-10-18 15:54:01</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>615500467</payload_hash>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>b52765e0db5d634057a7f03d0f961925</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16687e238940000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
+<table/>
+<target_name>donutDirective.donutDirective</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>c5a0c1ec3ad96340ae67d0f557ab0eb1</update_guid>
+<update_guid_history>c5a0c1ec3ad96340ae67d0f557ab0eb1:615500467</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_css_include_e5038920db1d634057a7f03d0f961995</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="donutDirective">774c54c113693600d15e3d7ed144b0da</sp_css_include><sp_dependency display_value="donutDirective">4438d80113693600d15e3d7ed144b0c6</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2018-10-18 16:04:26</sys_created_on><sys_id>e5038920db1d634057a7f03d0f961995</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_css_include_e5038920db1d634057a7f03d0f961995</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2018-10-18 16:04:26</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+<payload_hash>-1572421745</payload_hash>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>bd2765e0db5d634057a7f03d0f961924</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16687ebbffa0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
+<table/>
+<target_name>donutDirective.donutDirective</target_name>
+<type>Dependency CSS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>610389208c1d634086f9569150ab8c97</update_guid>
+<update_guid_history>610389208c1d634086f9569150ab8c97:-1572421745</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -336,40 +454,22 @@
     });
 })();
 ]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-14 23:57:37&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;25689c0113693600d15e3d7ed144b0d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;donutDirective&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_25689c0113693600d15e3d7ed144b0d6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 00:38:49&lt;/sys_updated_on&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Donut Chart Wizard">4147b04113a93600d15e3d7ed144b0e6</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 02:12:15</sys_created_on>
-<sys_id>8547b04113a93600d15e3d7ed144b0e7</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>bd2765e0db5d634057a7f03d0f961926</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 02:12:15</sys_updated_on>
+<sys_recorded_at>16687d7cc970000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
 <table/>
 <target_name>donutDirective</target_name>
 <type>UI Script</type>
 <update_domain>global</update_domain>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_css_include_bf3c14c113693600d15e3d7ed144b09b</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>donutDirective</name><source>local</source><sp_css display_value="donutDirective">362c548113693600d15e3d7ed144b0c1</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:12</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>bf3c14c113693600d15e3d7ed144b09b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_bf3c14c113693600d15e3d7ed144b09b</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:00</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
-<remote_update_set display_value="PE Donut Chart Wizard">4147b04113a93600d15e3d7ed144b0e6</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 02:12:15</sys_created_on>
-<sys_id>8947b04113a93600d15e3d7ed144b0e6</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 02:12:15</sys_updated_on>
-<table/>
-<target_name>donutDirective</target_name>
-<type>CSS Include</type>
-<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -379,26 +479,52 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_0bc1804513293600d15e3d7ed144b0f2</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;client_script&gt;&lt;![CDATA[function DonutChartWizard() {
-  /* widget controller */
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category/&gt;&lt;client_script&gt;&lt;![CDATA[function DonutChartController() {
   var c = this;
-/*  c.data.donutData = {
-    'label': '1/5',
-    'current': 1,
-    'total': 5
-  };*/
-
-/*  c.change = function(current, total){
-    c.data.donutData.current = current;
-    c.data.donutData.total = total;
-    c.data.donutData.label = current + '/' + total;
-  };*/
-
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.div-center {
-    text-align: center;
-}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-donut-chart-wizard&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Donut Chart Wizard&lt;/name&gt;&lt;option_schema&gt;[{"name":"chart_data","default_value":"{    \"label\":\"1/5\",    \"current\":1,    \"total\":5 }","label":"Chart Data","type":"json","mandatory":true},{"name":"primary_color","default_value":"#4286f4","label":"Color","type":"string"},{"name":"background_color","default_value":"#c2d1e8","label":"Background Color","type":"string"},{"name":"chart_width","default_value":"80","label":"Width","type":"string"},{"name":"font_size","default_value":"24px","label":"Font Size","type":"string"},{"name":"font_weight","default_value":"800","label":"Font Weight","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.div-center {
+  text-align: center;
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-donut-chart-wizard&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PE Donut Chart Wizard&lt;/name&gt;&lt;option_schema&gt;[&amp;#13;
+  {&amp;#13;
+    "name": "chart_data",&amp;#13;
+    "default_value": "{\"label\":\"1/5\", \"current\":1, \"total\":5}",&amp;#13;
+    "label": "Chart Data",&amp;#13;
+    "type": "json",&amp;#13;
+    "mandatory": true&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "primary_color",&amp;#13;
+    "default_value": "#4286f4",&amp;#13;
+    "label": "Color",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "background_color",&amp;#13;
+    "default_value": "#c2d1e8",&amp;#13;
+    "label": "Background Color",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "chart_width",&amp;#13;
+    "default_value": "80",&amp;#13;
+    "label": "Width",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "font_size",&amp;#13;
+    "default_value": "24px",&amp;#13;
+    "label": "Font Size",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "font_weight",&amp;#13;
+    "default_value": "800",&amp;#13;
+    "label": "Font Weight",&amp;#13;
+    "type": "string"&amp;#13;
+  }&amp;#13;
+]&amp;#13;
+&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   data.primary_color = input.primary_color || options.primary_color;
   data.background_color = input.background_color || options.background_color;
   data.chart_width = input.chart_width || options.chart_width;
@@ -406,38 +532,32 @@
   data.font_weight = input.font_weight || options.font_weight;
   data.chart_data = input.chart_data || options.chart_data;
   data.chart_data = JSON.parse(data.chart_data);
-
-
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-14 22:19:08&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;0bc1804513293600d15e3d7ed144b0f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;84&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Donut Chart Wizard&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0bc1804513293600d15e3d7ed144b0f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio.petito&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-03-15 02:11:06&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="container-fluid"&gt;
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-03-14 22:19:08&lt;/sys_created_on&gt;&lt;sys_id&gt;0bc1804513293600d15e3d7ed144b0f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;88&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Donut Chart Wizard&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0bc1804513293600d15e3d7ed144b0f2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-18 18:32:22&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="container-fluid"&gt;
   &lt;div class="row div-center"&gt;
-  &lt;donut-directive data-count="data.chart_data.current"
-  data-displayvalue="{{data.chart_data.label}}"
-  data-total="data.chart_data.total"
-    data-show-value="true"
-    data-show-value-as-count="true"
-    data-width="data.chart_width"
-    data-font-size="{{data.font_size}}"
-    data-font-weight="data.font_weight"
-    data-color-fill="{{data.primary_color}}"
-    data-color-bg="{{data.background_color}}"
-    href="donutTemplate"&gt;
-  &lt;/donut-directive&gt;
+    &lt;donut-directive data-count="data.chart_data.current" data-displayvalue="{{data.chart_data.label}}" data-total="data.chart_data.total"
+      data-show-value="true" data-show-value-as-count="true" data-width="data.chart_width" data-font-size="{{data.font_size}}"
+      data-font-weight="data.font_weight" data-color-fill="{{data.primary_color}}" data-color-bg="{{data.background_color}}"
+      href="donutTemplate"&gt;
+    &lt;/donut-directive&gt;
   &lt;/div&gt;
-  &lt;!--&lt;div class="row div-center"&gt;&lt;button class="btn btn-primary" ng-click="c.change(3,5)"&gt;Change Value&lt;/button&gt;&lt;/div&gt;--&gt;
-
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<remote_update_set display_value="PE Donut Chart Wizard">4147b04113a93600d15e3d7ed144b0e6</remote_update_set>
+<payload_hash>-245158491</payload_hash>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 02:12:15</sys_created_on>
-<sys_id>c147b04113a93600d15e3d7ed144b0e7</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>f92765e0db5d634057a7f03d0f961926</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 02:12:15</sys_updated_on>
+<sys_recorded_at>166887330030000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
 <table/>
 <target_name>PE Donut Chart Wizard</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
+<update_guid>a4e461a0155d6340f51d70f5162fabe4</update_guid>
+<update_guid_history>a4e461a0155d6340f51d70f5162fabe4:-245158491,c9632160775d6340caf124bb4c918fba:-935319097,e2336d202f5d6340f38d9470ef820183:395738932,cce2e920de5d634058858877b949e0d0:734859588,160efce8edd96340c11469bde3faa47d:-1798790657</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -448,18 +568,22 @@
 <comments/>
 <name>sp_css_include_774c54c113693600d15e3d7ed144b0da</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>donutDirective</name><source>local</source><sp_css display_value="donutDirective">362c548113693600d15e3d7ed144b0c1</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>fabio.petito</sys_created_by><sys_created_on>2017-03-15 00:14:48</sys_created_on><sys_customer_update>true</sys_customer_update><sys_id>774c54c113693600d15e3d7ed144b0da</sys_id><sys_mod_count>4</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_css_include_774c54c113693600d15e3d7ed144b0da</sys_update_name><sys_updated_by>fabio.petito</sys_updated_by><sys_updated_on>2017-03-15 00:39:52</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
-<remote_update_set display_value="PE Donut Chart Wizard">4147b04113a93600d15e3d7ed144b0e6</remote_update_set>
+<payload_hash/>
+<remote_update_set display_value="PE Donut Chart Wizard">792765e0db5d634057a7f03d0f961924</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>fabio.petito</sys_created_by>
-<sys_created_on>2017-03-15 02:12:15</sys_created_on>
-<sys_id>c547b04113a93600d15e3d7ed144b0e6</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2018-10-18 18:42:17</sys_created_on>
+<sys_id>fd2765e0db5d634057a7f03d0f961925</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>fabio.petito</sys_updated_by>
-<sys_updated_on>2017-03-15 02:12:15</sys_updated_on>
+<sys_recorded_at>16687d7ccae0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2018-10-18 18:42:17</sys_updated_on>
 <table/>
 <target_name>donutDirective</target_name>
 <type>CSS Include</type>
 <update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
