@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A collection of Service Portal custom widgets",
   "scripts": {
+    "build": "./scripts/build.sh",
     "lint": "eslint .",
     "test": "karma start karma.conf.js"
   },
@@ -20,6 +21,7 @@
     "jasmine-core": "^3.1.0",
     "karma": "^2.0.2",
     "karma-firefox-launcher": "^1.1.0",
-    "karma-jasmine": "^1.1.2"
+    "karma-jasmine": "^1.1.2",
+    "yarn": "^1.12.3"
   }
 }
