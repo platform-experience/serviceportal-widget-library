@@ -1,4 +1,4 @@
 (function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+  var gr = $sp.getInstanceRecord();
+  data.href = $sp.getMenuHREF(gr);
 })();
