@@ -6,8 +6,6 @@ This can be used to quickly craft a travel card widget.
 
 ## Screenshot
 
-### Collapsed View
-
 ![Travel Card](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-travel-card/images/pe-travel-card.png)
 
 ## Additional Information/Notes
