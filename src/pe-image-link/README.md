@@ -6,7 +6,7 @@ The behavior of this widget is identical to that of the out of box "Icon Link" w
 
 ## Screenshot
 
-![Image Link](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-image-link/images/pe-image-link.png)
+![Image Link](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-image-link/images/pe-image-link.jpg)
 
 ## Additional Information/Notes
 
