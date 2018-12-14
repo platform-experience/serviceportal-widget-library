@@ -2,28 +2,32 @@
 
 ## Description
 
-The behaviour of this widget is identical to that of the out of box "Icon Link" widget, only that it shows an image, custom text, and has a hover effect.
+The behavior of this widget is identical to that of the out of box "Icon Link" widget, only that it shows an image, custom text, and has a hover effect.
 
-## Screenshots
-![](../images/pe-image-link.jpg)
+## Screenshot
+
+![Image Link](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-image-link/images/pe-image-link.jpg)
+
+## Additional Information/Notes
+
+> None
 
 ## Installation
-Download and install update set **[pe-image-link.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-image-link/pe-image-link.u-update-set.xml)**.
 
-For instructions on how to do this see the [ServiceNow Product Documentation]((https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)).
+Download and install update set **[pe-image-link.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-image-link/pe-image-link.u-update-set.xml)**
 
-After applying the update set the widget can then be accessed via the `Service Portal > Widgets` section for use and customization.
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
-- **Type:** The type of link, e.g. "KB Article". Will reveal another option to select the relevant record (e.g. an actual KB Article to link to)
-- **Page:** The page that the user should be taken to after clicking the link
-- **Image URL:** The URL of the image to use as the background of the box.
-- **Image Position:** The position of the background image. See MDN documentation on [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) for values.
-- **Title:** The text to show in the box.
-- **Order:** The order the boxes will be shown in, if there are multiple widgets in the same container.
-
+* **Type:** The type of link, e.g. "KB Article". Will reveal another option to select the relevant record (e.g. an actual KB Article to link to)
+* **Page:** The page that the user should be taken to after clicking the link
+* **Image URL:** The URL of the image to use as the background of the box.
+* **Image Position:** The position of the background image. See MDN documentation on [background-position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) for values.
+* **Title:** The text to show in the box.
+* **Order:** The order the boxes will be shown in, if there are multiple widgets in the same container.
 
 ## CSS/SASS Variables
 

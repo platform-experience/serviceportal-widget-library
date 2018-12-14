@@ -36,19 +36,19 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_e59cfbdf4fc7cf00a1af5a701310c705</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function peImageLinkCtrl($location, $window) {
-	
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ImageLinkController($location) {
+
   var c = this;
-	
+
 	c.go = function () {
-		
+
 		if (c.options.type === 'url') {
 			window.location.href = c.data.href;
 		} else {
 			$location.url(c.data.href);
 		}
 	}
-	
+
 }]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$peil-color: white !default;
 $peil-border-radius: 4px;
 $peil-gradient: linear-gradient(0deg, rgba(0,0,0,0.71) 0%, rgba(0,0,0,0) 50%) !default;
@@ -102,17 +102,17 @@ $peil-max-width: auto !default;
 		"image_pos": "center bottom"&amp;#13;
 	}&amp;#13;
 }&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;type,sp_page,url,sc_category,sc_cat_item,kb_article,kb_category,kb_topic,order&lt;/field_list&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-image-link&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function peImageLinkLink(scope, elem, attr) {
-	
+
 	scope.style = {
 		'background-image': 'url(' + scope.options.image_url + ')',
 		'background-position': scope.options.image_pos || 'center'
 	};
-	
+
 }]]&gt;&lt;/link&gt;&lt;name&gt;PE Image Link&lt;/name&gt;&lt;option_schema&gt;[{"hint":"The URL of the image to use as the background of the box","name":"image_url","section":"Presentation","default_value":"https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&amp;amp;fit=crop&amp;amp;w=750&amp;amp;q=80","label":"Image URL","type":"string"},{"hint":"Position of the image in the box. See https://developer.mozilla.org/en-US/docs/Web/CSS/background-position","name":"image_pos","section":"Presentation","default_value":"center","label":"Image Position","type":"string"},{"hint":"The text for the link","name":"title","section":"Presentation","default_value":"Link title","label":"Title","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
-	
+
 	var gr = $sp.getInstanceRecord();
 	data.href = $sp.getMenuHREF(gr);
-	
+
 })();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;dylan.lindgren&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-12-21 02:06:16&lt;/sys_created_on&gt;&lt;sys_id&gt;e59cfbdf4fc7cf00a1af5a701310c705&lt;/sys_id&gt;&lt;sys_mod_count&gt;103&lt;/sys_mod_count&gt;&lt;sys_name&gt;PE Image Link&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_e59cfbdf4fc7cf00a1af5a701310c705&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;dylan.lindgren&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-12-21 05:55:49&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="pe-image-link"&gt;
   &lt;div class="peil-elem" ng-style="::style" ng-click="c.go()"&gt;
     &lt;div class="peil-shadow"&gt;

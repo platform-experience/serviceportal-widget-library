@@ -1,8 +1,13 @@
 $peil-color: white !default;
 $peil-border-radius: 4px;
-$peil-gradient: linear-gradient(0deg, rgba(0,0,0,0.71) 0%, rgba(0,0,0,0) 50%) !default;
-$peil-gradient-hover: linear-gradient(0deg, rgba(0,0,0,2) 0%,rgba(0,0,0,0.3) 25%, rgba(0,0,0,0) 80%) !default;
-$peil-shadow: 0 0 6px 0 rgba(0, 0, 0, .06);
+$peil-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0) 50%) !default;
+$peil-gradient-hover: linear-gradient(
+  0deg,
+  rgba(0, 0, 0, 2) 0%,
+  rgba(0, 0, 0, 0.3) 25%,
+  rgba(0, 0, 0, 0) 80%
+) !default;
+$peil-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06);
 $peil-height: 120px !default;
 $peil-max-width: auto !default;
 
