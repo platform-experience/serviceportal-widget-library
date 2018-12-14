@@ -7,41 +7,41 @@ This widget can be used to quickly craft a card that scrolls on toggle to displa
 ## Screenshots
 
 ### Collapsed View
-![](../images/pe-card-scroll-1.png)
+
+![Card Scroll Collapsed](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-card-scroll/images/pe-card-scroll-1.png)
 
 ### Expanded View
-![](../images/pe-card-scroll-2.png)
+
+![Card Scroll Expanded](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-card-scroll/images/pe-card-scroll-2.png)
 
 ## Additional Information/Notes
+
 > None
----
+
 ## Installation
----
-Download and install update set **[pe-card-scroll.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-card-scroll/pe-card-scroll.u-update-set.xml)** <br/><br/>
-After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
+
+Download and install update set **[pe-card-scroll.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-card-scroll/pe-card-scroll.u-update-set.xml)**
+
+After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
+
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
----
 ## Configuration
----
-Widget Option Schema parameters:
+
 > None
----
+
 ## Platform Dependencies
----
+
+### SN System Tables
+
 > None
----
-## Sample Data and Data Structures
----
+
+### UI Dependencies
+
 > None
----
-## API Dependencies
----
-<i>Dependencies are included and configured as part of the provided Update Set.</i>
-> None
----
+
 ## CSS/SASS Variables
----
+
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
 ```scss
