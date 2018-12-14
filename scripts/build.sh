@@ -17,7 +17,9 @@ branch_checkout() {
 
 create_base_dir() {
   echo -e "${BLUE}${SCAFFOLD_MSG}${RESET}"
+  make_core_dir ${SRC_DIR}
   make_core_dir ${PREFIX}${WIDGET}
+  mkdir ${IMAGE_DIR}
   curl ${CONFIG_GIST} > config.json
   curl ${README_GIST} > README.md
   touch ${PREFIX}${WIDGET}.${UPDATE_SET}
@@ -103,8 +105,8 @@ main() {
 
 make_commit() {
   echo -e "${BLUE}${COMMIT_STATUS_MSG}${RESET}"
-  cd ../../
-  git add ${PREFIX}${WIDGET}
+  cd ../../../
+  git add ${SRC_DIR}/${PREFIX}${WIDGET}
   git commit -a -m "${COMMIT_MSG}"
   echo -e "${GREEN}${DONE_MSG}${RESET}"
 }
@@ -187,6 +189,7 @@ sub_base_content() {
     replace_content "${NAME_TEMP}" "${widget_name%?}" config.json
   fi
   replace_content "${CONTRIB_TEMP}" "$(fetch_github_user)" config.json
+  replace_content "${DIR_TEMP}" "${PREFIX}${WIDGET}" config.json
   replace_content "${DIR_TEMP}" "${PREFIX}${WIDGET}" README.md
 }
 
