@@ -18,7 +18,7 @@ SERVER=u-server-script.js
 UPDATE_SET=u-update-set.xml
 
 # gists
-CONFIG_GIST=https://gist.githubusercontent.com/stevengregory/5bff23e9b0bd01f08145bcd79e27bd28/raw/242119b722e2a4c8e1237b5721fd4e53bce79506/config.json
+CONFIG_GIST=https://gist.githubusercontent.com/stevengregory/c691ab285e64c6b4a3daff16427b9e01/raw/8aa4e1e1cc398fe55b3e4520cfd42a1f612bc4e4/config.json
 CONTROLLER_GIST=https://gist.githubusercontent.com/stevengregory/c83797d682d3eb9c5cf83bd0dcba589a/raw/bee21fc6ba75de5ea0a3e8cda49cf1e20343e2ae/controller.js
 README_GIST=https://gist.githubusercontent.com/stevengregory/5be4a3a25a8218f8720fa20bc65f5b6e/raw/976b8e5835b37f26b32cb53c3cef8b2c09b56241/README.md
 SERVER_GIST=https://gist.githubusercontent.com/stevengregory/1fc0b7ca85144786182c74d7b7013e3c/raw/b7b743c1e8d1abc5e8996adb6bf9628ee2819d11/server.js
