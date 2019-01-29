@@ -17,9 +17,9 @@ module.exports = function(config) {
     files: [
       'node_modules/angular/angular.min.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'pe-incident-message/ui-script/pe-incident-module.u-client-script.js',
-      'pe-incident-message/ui-script/pe-incident-service.u-client-script.js',
-      'pe-incident-message/widget/pe-incident-message.u-client-script.js',
+      'src/pe-problem-message/ui-script/pe-problem.module.u-client-script.js',
+      'src/pe-problem-message/ui-script/pe-problem.service.u-client-script.js',
+      'src/pe-problem-message/widget/pe-problem-message.u-client-script.js',
       'timeline/pe-timeline/ui-script/pe-timeline-module.u-client-script.js',
       'timeline/pe-timeline/ui-script/pe-events-service.u-client-script.js',
       'timeline/pe-timeline/widget/pe-timeline.u-client-script.js',

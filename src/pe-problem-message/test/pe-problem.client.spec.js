@@ -2,11 +2,11 @@ describe('Incident message controller', function() {
   beforeEach(module('pe-incident-message'));
 
   it('should have a named function', function() {
-    expect(IncidentMessageController).toBeDefined();
+    expect(ProblemMessageController).toBeDefined();
   });
 
   it('has two arguments', function() {
-    var argLength = IncidentMessageController.length;
+    var argLength = ProblemMessageController.length;
     expect(argLength).toEqual(2);
   });
 });
