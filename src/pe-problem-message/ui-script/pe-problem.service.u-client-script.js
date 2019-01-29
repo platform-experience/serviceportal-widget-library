@@ -22,6 +22,6 @@
   }
 
   angular
-    .module('pe-incident-message')
+    .module('pe-problem-message')
     .service('timeService', timeService);
 })();

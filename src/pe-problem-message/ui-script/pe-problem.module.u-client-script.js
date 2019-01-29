@@ -1,5 +1,5 @@
 (function() {
   'use strict';
 
-  angular.module('pe-incident-message', []);
+  angular.module('pe-problem-message', []);
 })();
