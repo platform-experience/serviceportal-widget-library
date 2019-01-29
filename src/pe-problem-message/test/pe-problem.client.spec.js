@@ -1,5 +1,5 @@
 describe('Incident message controller', function() {
-  beforeEach(module('pe-incident-message'));
+  beforeEach(module('pe-problem-message'));
 
   it('should have a named function', function() {
     expect(ProblemMessageController).toBeDefined();

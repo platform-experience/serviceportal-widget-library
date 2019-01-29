@@ -1,5 +1,5 @@
 describe('Time ago service', function() {
-  beforeEach(module('pe-incident-message'));
+  beforeEach(module('pe-problem-message'));
 
   beforeEach(
     inject(function(_timeService_) {
