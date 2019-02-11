@@ -11,11 +11,9 @@ The widget is an adaptation of the Link Button (Out of the Box) widget that prov
 ![Configured Bootstrap Success](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-big-link-to/images/success.png)
 ### Missing Link Configuration
 ![Missing Link Configuration](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-big-link-to/images/missingconfig.png)
-### Instance Options (1)
+### Instance Options
 ![Instance Options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-big-link-to/images/options1.png)
-### Instance Options (2)
 ![Instance Options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-big-link-to/images/options2.png)
-### Instance Options (3)
 ![Instance Options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-big-link-to/images/options3.png)
 
 
