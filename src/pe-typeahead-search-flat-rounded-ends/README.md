@@ -12,7 +12,7 @@ Search widget ...
 ### Search Results
 ![Configured](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-typeahead-search-flat-rounded-ends/images/resultslist.png)
 ### Search Results - Highlight
-![Configured](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-typeahead-search-flat-rounded-ends/images/resultlist_hightlight.png)
+![Configured](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-typeahead-search-flat-rounded-ends/images/resultlist_highlight.png)
 
 ## Additional Information/Notes
 
