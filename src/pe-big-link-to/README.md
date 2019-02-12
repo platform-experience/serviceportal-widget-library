@@ -43,13 +43,7 @@ Widget Option Schema parameters:
 **Bootstrap Panel's Contextual Alternatives** - Bootstrap Context Alternative choices (primary, success, info, etc.) to quickly color the button's background <br/>
 
 ### Behavior
-**Order** - `Not Used` <br/>
-**Target HREF** - specifies where to open the link <br/>
-* _blank - Opens the link in a new window or tab
-* _self - Opens the link in the same window/tab as it was clicked (this is default)
-* _parent - Opens the link in the parent frame
-* _top - Opens the link in the full body of the window
-* _framename_ - Opens the link in a named frame
+**Target HREF** - specifies the URL location the user will go to when clicked<br/>
 
 ---
 ## API Dependencies
