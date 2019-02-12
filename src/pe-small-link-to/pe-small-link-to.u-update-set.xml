@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-12 14:17:56">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Small - Link To</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8a181ebd4f636f0005be4d6e0210c7db</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-12 14:17:56</sys_created_on>
+<sys_id>92ac034a4f63af0005be4d6e0210c7ff</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-12 14:17:56</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_686172494feee7408272ece24210c7fa</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  var c = this;
+  
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$brand-default: #f2f2f2 !default;
+
+.sassvars {
+  --button-bg-color: $brand-default;
+  --button-min-height: 225px;
+  --button-border-radius: unset;
+  --title-color: $text-color;
+  --annotation-color: $text-color;
+  --image-height: 6rem;
+  --image-width: 6rem;
+  --image-margin: 20px;
+  --glyph-color: rgba(0,0,0,0.6);
+  
+  --bs-context-default: $brand-default;
+  --bs-context-primary: $brand-primary;
+  --bs-context-success: $brand-success;
+  --bs-context-warning: $brand-warning;
+  --bs-context-danger: $brand-danger;
+  --bs-context-info: $brand-info;
+}
+
+.panel{
+  border: unset !important;
+  background-color: transparent !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+}
+
+
+.smalllinkto {
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  
+  color: var(--title-color);
+  background-color: var(--button-bg-color);
+  min-height: var(--button-min-height);
+  border-radius: var(--button-border-radius);
+  
+  a {
+    display: content;
+  }
+  
+  .content-column {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .icon {
+      margin-bottom: 10px;
+      max-width: auto;
+      max-height: 70px;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      text-align: center;
+      img{
+        max-width: auto;
+        max-height: 70px;
+      }
+    }
+    
+    i{
+      font-size: 70px;
+      color: var(--glyph-color);
+    }
+    
+    h3 {
+      font-weight: bold;
+      font-size: 32px;
+      margin: 0 0 10px 0;
+      color: var(--title-color);
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      color: var(--annotation-color)
+    }
+    @media (max-width: 767px) {
+      i{
+        font-size: 64px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+}
+
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance_link&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,type,sp_page,url&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;smbox-linkto&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link($scope,$el,$attrs,$ctrl){
+	
+	
+/* DO NOT edit below this line */
+	var sass = document.getElementById($attrs.id).querySelector('.sassvars');
+	var sassv = window.getComputedStyle(sass);
+	
+	if($scope.options.context &amp;&amp; $scope.options.context.length &gt; 0){
+		sass.style.setProperty('--button-bg-color', sassv.getPropertyValue('--bs-context-'+$scope.options.context) );
+	}
+	if($scope.options.button_bg_color &amp;&amp; $scope.options.button_bg_color.length &gt; 0){
+		sass.style.setProperty('--button-bg-color', $scope.options.button_bg_color);
+	}
+	if($scope.options.button_min_height &amp;&amp; $scope.options.button_min_height.length &gt; 0){
+		sass.style.setProperty('--button-min-height', $scope.options.button_min_height);
+	}
+	if($scope.options.title_color &amp;&amp; $scope.options.title_color.length &gt; 0){
+		sass.style.setProperty('--title-color', $scope.options.title_color);
+	}
+	if($scope.options.annotation_color &amp;&amp; $scope.options.annotation_color.length &gt; 0){
+		sass.style.setProperty('--annotation-color', $scope.options.annotation_color);
+	}
+	if($scope.options.border_radius &amp;&amp; $scope.options.border_radius.length &gt; 0){
+		sass.style.setProperty('--button-border-radius', $scope.options.border_radius);
+	}
+	if($scope.options.glyph_color &amp;&amp; $scope.options.glyph_color.length &gt; 0){
+		sass.style.setProperty('--glyph-color', $scope.options.glyph_color );
+	}
+	
+	
+}
+]]&gt;&lt;/link&gt;&lt;name&gt;Small Box - Link To&lt;/name&gt;&lt;option_schema&gt;[{"name":"image_thumbnail","section":"Data","label":"Image Thumbnail","type":"string"},{"name":"image_as_glyph","section":"Presentation","label":"Image as Glyph","type":"glyphicon"},{"hint":"","name":"glyph_color","section":"Presentation","default_value":"","label":"Glyph Color","type":"string"},{"name":"annotation","section":"Presentation","label":"Annotation","type":"string"},{"name":"href","section":"Behavior","label":"Target HREF","type":"string"},{"name":"button_bg_color","section":"Presentation","default_value":"","label":"Button Background Color","type":"string"},{"name":"button_min_height","section":"Presentation","label":"Button Minimum Height","type":"string"},{"name":"title_color","section":"Presentation","default_value":"","label":"Title Color","type":"string"},{"name":"annotation_color","section":"Presentation","label":"Annotation Color","type":"string"},{"name":"border_radius","section":"Presentation","default_value":"4px","label":"Border Radius","type":"string"},{"hint":"Easily make a panel more meaningful to a particular context by adding any of the contextual state classes.","name":"context","section":"Presentation","default_value":"default","label":"Bootstrap Panel's Contextual alternatives - changes the background to Bootstrap defined context colors","type":"choice","choices":[{"label":"default","value":"default"},{"label":"primary","value":"primary"},{"label":"success","value":"success"},{"label":"info","value":"info"},{"label":"warning","value":"warning"},{"label":"danger","value":"danger"}]}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	var gr = $sp.getInstanceRecord();
+	
+	/* Data Variables */
+	data.missingConfig = false;
+
+	try{
+		data.href = options.href || $sp.getMenuHREF(gr);
+		
+		data.target = options.target || "";
+		
+		if(data.href==""){
+			data.missingConfig = true;
+		}
+		
+	}catch(e){
+		data.missingConfig = true;
+		return;
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-12-21 16:42:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;686172494feee7408272ece24210c7fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;48&lt;/sys_mod_count&gt;&lt;sys_name&gt;Small Box - Link To&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Widgets" source="com.snc.spenh.widgets"&gt;608a82c24f1d6f008272ece24210c773&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_686172494feee7408272ece24210c7fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-12 14:10:20&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class='sassvars panel'&gt;
+  &lt;div class="panel-body smalllinkto"&gt;
+    &lt;a ng-href="{{data.href}}" ng-if='!data.missingConfig'&gt;
+      &lt;div class="content-column"&gt;
+        &lt;div class='icon' ng-if='options.image_thumbnail'&gt;
+          &lt;img src='{{options.image_thumbnail}}'/&gt;
+        &lt;/div&gt;
+        &lt;div class='icon' ng-if='!options.image_thumbnail &amp;&amp; options.image_as_glyph'&gt;
+          &lt;i class="fa fa-{{options.image_as_glyph}}"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;h3&gt;{{::c.options.title}}&lt;/h3&gt;
+        &lt;p&gt;{{::c.options.annotation}}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;div ng-if='data.missingConfig'&gt;
+      &lt;h3&gt;Missing Link Configuration&lt;/h3&gt;
+      &lt;p&gt;Use Instance Options (Ctrl+Right Click) to configure the widget&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-950104654</payload_hash>
+<remote_update_set display_value="Small - Link To">92ac034a4f63af0005be4d6e0210c7ff</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-12 14:17:56</sys_created_on>
+<sys_id>d6ac034a4f63af0005be4d6e0210c7ff</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168e20b574f0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-12 14:17:56</sys_updated_on>
+<table/>
+<target_name>Small Box - Link To</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>03ea8f869e63af00dc7f958d5e238327</update_guid>
+<update_guid_history>03ea8f869e63af00dc7f958d5e238327:-950104654,667a8786be63af0041e48d064d332bb8:-1994119195,b66a07860663af00f5d009e729e2acb1:2138707690,536703061b63af00cea48f2bb77966a2:-1994119195,dffedf7dfc676f00a80f9b7fd446ef11:1390348629,f9ee9f7dcb676f007635d55aeb5439dc:-451470429,e0de5f7dc4676f00865c6141bbdef037:-2088276047,1bbedb7d71676f003d5404246c27cbd7:-233509135,92395f39d0676f00e6730f86b393b1f4:-593872539,e6e85f394e676f0027994ba834efa6b8:-1841569563,c3002c1418afe7002c00163ad823d493:2284888,9850baefcb1b67007b6a9acb2d315079:458423254,0810f6efb31b6700d634723c9bd71a94:-664004987,4adfe6ef261b670031b3c2d8f2ec0833:-663751464,62483ea5d932a78068a672b5632ff89e:1817966526,3128b6a5ca32a7800b143da04c3e0ef4:632531215,8967fe654032a78059f1ae003cf97803:-422921825,3575bee1ef32a7809d838ec6a84680e1:1516420328,03cf9b01532ae740c170164506e4f822:-1119161988,df9f5b01ee2ae7405066580cf053f050:-1124879282,b0e7c7c585a6e74016267e5b76643eed:201174930,01a7cf8508a6e740af0cbf1eff184b9e:-1177861436,c2c6c3855ba6e7408e957a962280d92b:-586539888,c78607854ca6e74083c6e88be295198c:-1413229318,8b6683858da6e7400c821a17c08947e7:-2005822989,77464385b7a6e740010fdfb757b0a3bd:-1260600947,3c0443c1d8a6e740fafbd30d2e25cb60:-351492181,e0328f8142a6e74096ea026307bf9b12:-876326681,6402cf41cea6e740ae760272dace5d7c:1191487528,5af1438105a6e74077a6421c53864253:2120450602,d8a08741eda6e740869fab1a5520735c:-1808783189,b990474191a6e7405a1adbd3e5aeff93:-993303999,c480474146a6e7402329af479f8a80c3:-68842479,276047415da6e7400b5a03d8d1aec181:1186954851,9b40c3413ba6e740219f272d0e3e09aa:2114857107,a8400b0161a6e740eb6c62fc7dbd931d:1424754995,7e30c701e8a6e74053e321b2d076dfe1:-688566120,fc6ff6013ea6e7400d04d991f2b3e7da:1466840532,51befe8dec66e740a578c7f337188689:896648588,555d72cda466e740f3fd5e351c93b528:-1926689779,0becb68d1b66e7405a7ede0c27be229c:2115227091,f3b47e0d25eee74091131ecb81a3043a:2030022788,06947a0dcbeee74083f3b92040b24385:-1341093418,85443a0d8feee7401fdbcb293a5c9c5c:-69877106,b3637ac95ceee74085e1930cfedf2ea0:1227759291,a8e2ba89efeee740019f4fa7650f87d2:2116610726,2d623a89cbeee740635ae9b10cb8b577:-1646795323,6781f2497aeee740bf92cae22c9df11a:339394329,ac61724964eee740a08e3a9ded2179fb:-1747026768</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
