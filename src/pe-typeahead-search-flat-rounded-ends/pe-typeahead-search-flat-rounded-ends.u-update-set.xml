@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-12 19:01:56">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Typeahead Search - Flat with Rounded Ends</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>549134d04fefe70005be4d6e0210c77b</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-12 19:01:56</sys_created_on>
+<sys_id>62ad00564f67af0005be4d6e0210c780</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-12 19:01:56</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_fe0c9b4d4fe6e74005be4d6e0210c780</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($http, $filter, $location,spAriaUtil, $window, $scope, spAriaFocusManager) {
+	var c = this;
+
+	c.options.glyph = c.options.glyph || 'search';
+	c.options.title = c.options.title || c.data.searchMsg;
+	c.options.color = c.options.color || "default";
+	c.searchTerm = c.data.q;
+
+	c.onSelect = function($item, $model, $label) {
+		c.searchTerm = ""; // prevents unexpected result if user quickly clicks search button after selecting
+		if ($item.target)
+			window.open($item.url, $item.target);
+		else {
+			var newUrl = $location.url($item.url);
+			spAriaFocusManager.navigateToLink(newUrl.url());
+		}
+	};
+	c.clearResults = function() {
+		c.searchTerm = '';
+		$scope.focusInput();
+	};
+	c.getResults = function(query) {
+		c.searchResults = false;
+		var payload = {
+			"query": query,
+			"portal": c.data.portalID,
+			"source": c.data.searchSources,
+			"include_facets": false,
+			"isTypeahead": true
+		};
+		if (c.options.limit || c.options.limit == 0)
+			payload.count = c.options.limit;
+
+		return $http.post("/api/now/sp/search", payload).then(function(response) {
+			var result = response.data.result;
+			spAriaUtil.sendLiveMessage(result.results.length + " " +
+																 c.data.resultMsg + " " +
+																 c.data.navigationMsg +
+																 getNavigationKeys());
+			return result.results.map(function(item) {
+				var config = c.data.searchSourceConfiguration[item.__search_source_id__];
+				if (config.type == "ADVANCED") {
+					item.templateID = config.template;
+				} else {
+					item.glyph = config.glyph;
+					if (!item.url &amp;&amp; config.linkToPage) {
+						item.url = "?id=" + config.linkToPage;
+						if (item.sys_id)
+							item.url += "&amp;sys_id=" + item.sys_id;
+						if (item.table)
+							item.url += "&amp;table=" + item.table;
+					}
+				}
+				if(item){
+					c.searchResults = true;
+				}
+				return item;
+			});
+		});
+	};
+
+	c.searchType = c.data.searchType;
+	$scope.$on('$locationChangeSuccess', onLocationChangeSuccess);
+
+	function onLocationChangeSuccess(event, newUrl, oldUrl) {
+		if(searchSourceChanged(newUrl, oldUrl)) {
+			var newUrlParams = newUrl.match(/t=.+/);
+			if(!newUrlParams) {
+				c.searchType = null;
+			} else {
+				c.searchType = newUrlParams[0].split("&amp;")[0].substring(2);
+			}
+		}
+  }
+
+	function searchSourceChanged(newUrl, oldUrl) {
+		var newUrlParams = newUrl.match(/t=.+/),
+		oldUrlParams = oldUrl.match(/t=.+/);
+
+		if(!newUrlParams &amp;&amp; !oldUrlParams) {
+			return false;
+		}
+
+		if((!newUrlParams &amp;&amp; oldUrlParams) || (newUrlParams &amp;&amp; !oldUrlParams)) {
+			return true;
+		}
+
+		return newUrlParams[0].split("&amp;")[0] !== oldUrlParams[0].split("&amp;")[0];
+	}
+
+	c.submitSearch = function() {
+		var shouldReloadPage = c.data.refreshPageOnSearch &amp;&amp; $location.search().id === 'search';
+		
+		if (c.searchTerm) {
+			var newUrl = $location.search({
+				id: 'search',
+				spa: '1',
+				t: c.searchType,
+				q: c.searchTerm
+			});
+
+			if (shouldReloadPage)
+				$scope.$emit("sp.page.reload");
+			
+			spAriaFocusManager.navigateToLink(newUrl.url());
+		}
+	};
+
+	function getNavigationKeys() {
+		if($window.navigator.userAgent.indexOf("Mac OS X") &gt; -1)
+			return '⌘';
+		return 'Control';
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$search-bg: #F2F2F2 !default;
+$search-placeholder-color: #323232 !default;
+$search-height: 56px !default;
+ul.dropdown-menu {
+  width: 100%;
+  max-width: calc( 100% - calc( $search-height * 2 ) );
+  border-radius: 0px 0px 4px 4px;
+  margin:0px;
+  margin-left: $search-height;
+  overflow-y: auto;
+  max-height: 200px;
+  position: absolute;
+  z-index: 170;
+}
+
+ul.dropdown-menu a.ta-item {
+  line-height: 20px;
+  padding: 8px 10px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+ul.dropdown-menu i.ta-icon, i.ta-img {
+    width: 35px;
+    height: 30px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    float:left;
+    margin-right: 8px;
+}
+
+.search {
+  position: relative;
+  height: $search-height;
+  margin: 30px 0;
+  font-size: 18px;
+  z-index: 150;
+}
+
+.search-container {
+  height: 100%;
+  width: 100%;
+  border-radius: calc($search-height / 2);
+  background-color: $search-bg;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 155;
+
+  form {
+    width: 100%;
+    height: 100%;
+  }
+
+  input {
+    padding-left: 80px;
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+
+    &amp;amp;::placeholder {
+      color: $search-placeholder-color;
+      opacity: 1;
+    }
+  }
+
+  img {
+    position: absolute;
+    margin-left: 32px;
+  }
+
+ .fa-times-circle {
+    padding: 0 25px;
+    font-size: 25px;
+    color: #777;
+  }
+
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;typeahead-search-flatrounded&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function ($scope,$el,$attrs,$ctrl) {
+	
+	var lazyLoader = $injector.get("lazyLoader");
+	lazyLoader.putTemplates($scope.data.typeaheadTemplates);
+
+	$scope.focusInput = focusInput;
+	
+	function focusInput () {
+		$el.find('input[name="q"]').focus();
+	}
+	
+}]]&gt;&lt;/link&gt;&lt;name&gt;Typeahead Search - Flat and Rounded&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Number of typeahead search results returned (default 15)","name":"limit","section":"Behavior","label":"Limit","type":"integer"},{"displayValue":"Search Source","hint":"If provided, limit the scope of the typeahead search to the given search sources","name":"contextual_search_sources","display_value_list":[],"section":"Behavior","label":"Contextual Search Sources","type":"glide_list","value":"sp_search_source","ed":{"reference":"sp_search_source"}}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	if (options.title) {
+		options.title = gs.getMessage(options.title);
+	}
+
+	if (options.refresh_page_on_search_submission == undefined)
+		data.refreshPageOnSearch = true;
+	else
+		data.refreshPageOnSearch = options.refresh_page_on_search_submission;
+
+	data.resultMsg = gs.getMessage("Search results");
+	data.navigationMsg = gs.getMessage("To navigate, use up and down arrow keys while holding ");
+	data.portalID = $sp.getPortalRecord().getUniqueValue();
+	data.searchMsg = gs.getMessage("Search");
+	data.q = $sp.getParameter('q');
+
+	var searchSources;
+	data.searchType = null;
+	data.searchSources = [];
+	if ($sp.getParameter("id") == "search" &amp;&amp; $sp.getParameter("t")) {
+		data.searchType = $sp.getParameter("t");
+		searchSources = $sp.getSearchSources(data.portalID);
+	} else {
+		var contextualSearchSourceIDs = options.contextual_search_sources || null;
+		searchSources = $sp.getSearchSources(data.portalID, contextualSearchSourceIDs);
+		if (searchSources.length == 1) {
+			data.searchType = searchSources[0].id;
+		}
+	}
+
+	data.typeaheadTemplates = {};
+	data.searchSourceConfiguration = {};
+	searchSources.forEach(function(source) {
+		if (source.isTypeaheadEnabled) {
+			data.searchSources.push(source.id);
+		}
+		var sourceTemplateConfiguration = {};
+		if (source.isAdvancedTypeaheadConfig) {
+			sourceTemplateConfiguration.type = "ADVANCED";
+			sourceTemplateConfiguration.template = "sp-typeahead-" + source.id + ".html";
+			data.typeaheadTemplates["sp-typeahead-" + source.id + ".html"] = $sp.translateTemplate(source.typeaheadTemplate);
+		} else {
+			sourceTemplateConfiguration.type = "SIMPLE";
+			sourceTemplateConfiguration.glyph = source.typeaheadGlyph;
+			sourceTemplateConfiguration.linkToPage = source.typeaheadPage;
+			if (!sourceTemplateConfiguration.linkToPage)
+				console.log("Warning: No typeahead page or URL provided for search source " + source.name);
+		}
+		data.searchSourceConfiguration[source.id] = sourceTemplateConfiguration;
+	});
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-12-21 19:48:26&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;fe0c9b4d4fe6e74005be4d6e0210c780&lt;/sys_id&gt;&lt;sys_mod_count&gt;54&lt;/sys_mod_count&gt;&lt;sys_name&gt;Typeahead Search - Flat and Rounded&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Widgets" source="com.snc.spenh.widgets"&gt;608a82c24f1d6f008272ece24210c773&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fe0c9b4d4fe6e74005be4d6e0210c780&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-12 19:01:09&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="search"&gt;
+  &lt;div class="search-container"&gt;
+    &lt;img src="/icon-search.svg" /&gt;
+    &lt;form ng-submit="c.submitSearch()"&gt;
+      &lt;input type="hidden" name="id" value="search"/&gt;
+      &lt;input type="hidden" name="t" value="{{c.searchType}}"/&gt;
+      &lt;input name="q" type="text" placeholder="{{::c.options.title}}" ng-model="c.searchTerm"
+           autocomplete="off"
+           uib-typeahead="item as item.primary for item in c.getResults($viewValue)"
+           typeahead-wait-ms="250"
+           typeahead-focus-first="false"
+           typeahead-on-select="c.onSelect($item, $model, $label)"
+           typeahead-template-url="sp-typeahead-flat.html"
+           typeahead-popup-template-url="sp-typeahead-flat-popup.html"
+           role="textbox"
+           tabindex="0" autocomplete="off"
+           aria-label="{{::c.options.title}}" tabindex="0" aria-haspopup="true"&gt;
+      &lt;!-- ng-change="c.getResults()" --&gt;
+    &lt;/form&gt;
+    &lt;i class="fa fa-times-circle" ng-if="c.searchResults" ng-click="c.clearResults()"&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1911505624</payload_hash>
+<remote_update_set display_value="Typeahead Search - Flat with Rounded Ends">62ad00564f67af0005be4d6e0210c780</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-12 19:01:56</sys_created_on>
+<sys_id>22ad00564f67af0005be4d6e0210c781</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168e31596560000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-12 19:01:56</sys_updated_on>
+<table/>
+<target_name>Typeahead Search - Flat and Rounded</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>8b7d0c167667af00c9db944efa40ff62</update_guid>
+<update_guid_history>8b7d0c167667af00c9db944efa40ff62:-1911505624,ba4d8cd2e467af00c0b6397c22ac6e9e:769953616,84f6849eb227af0058f00fcf0bcc374e:-1525231644,4f87bf4e45e3af00d5461aacfe1571bc:769953616,1a55bb0e26e3af0037310efdb0c2f269:-537286599,1c05bb0ef2e3af00dde87c84454ea056:-1110149275,b4a4b3ca27e3af001f9435001cbe1333:1448675163,8f34fb8ae0e3af0067263da483d22f02:440256910,6a427f0aece3af0062f95f48857dbe8e:1385120762,38223f0a4de3af00867638d131ee2ffd:-1161848335,1ce1bfc6c5e3af00c414628b534a0232:-2022704701,6260bf8600e3af00127685fdc77f7f58:-709389509,ea30fb8623e3af00e020fe5dae2600c0:1539940668,327f5c503dafe7008b397b629fca6a79:-1220621129,ccce5810a1afe7002944877b3322fc82:1089976668,4a7e149cd86fe70052d0cb62d0bc0057:-1358109358,a33e90d8c66fe7006d10863c09b42011:276092695,75fd1c58926fe7008f564ef980b0d80e:1230200105,4f557c088763e700a47f5d3c22afe44e:-135737311,26b984fad3d7a300a378f5d13fdfae7e:262578949,a5b98cba07d7a30059849cf4456ff438:-1568870367,4249c8baaed7a30035e25364b5afa0a2:-923704461,4578447a37d7a30004bf0d0e12bafe9d:-1902061990,3a18083a40d7a3000e738c69d4d8ee12:15793900,d8c7c03a95d7a300614f5725c6f26111:227823549,d9a7c03a7fd7a300a1e1b3318f29b60a:-1193299057,f9770cf633d7a30077711871ce5ee774:-179824707,205744f691d7a3003cd284c8dc08c346:-767769400,a50700f6b7d7a300ae4d823986fe2881:-957368256,53b608763fd7a3005e534b971927b476:1511795119,aa66c4f200d7a300dc6c97d803c69886:-1632575661,1a2608b2afd7a300175a92073a586356:165578541,fb95487223d7a3003fa3b745c9f34f8b:1058957414,b404c832ced7a30067bc64694b11c38e:-1717157663,cde2407e0797a30046cae8c23e8e3da7:1553199901,01a2407e9597a300bed3c55547b2a8a1:1023860573,2272403e1597a30014dc3c3e8d279a13:-2070850515,b6d1c8fa5997a30040b510140e1e50fe:787351291,74c14cbadb97a300f85602185bcf965c:-1918132861,4e5140bad897a300e19b63b108b0149f:1831294434,4f10003a9897a300e626a403069d1535:-903227905,959fb7a6d797a3004abfa6b279f254f5:68330298,e82f3f263397a300aeb14c04b49080f3:2107518687,ffbefbe25997a30041d8031fcae8ab45:1851502626,214eb3a23197a300b98831fba8ad9443:-563457004,d01eb7a26697a300e1541af5981f1a4b:1190425745,389d37a2ce97a300bff67bec21815d63:1604357167,7c2db3a23297a300f1ea9c8dc58e1e2c:182444399,beab3fee7057a3000b6b7fb9c6476dd7:672541144,ec1b3fae4457a300e0362a1d1b3651dc:1902062594,b5cabbae4d57a300a2d7d1a840da70a5:-1191805009,9eba77aeeb57a300981e51a99f1e1ee0:-1905071172,c4aa77aeb557a300e84891697ade5a48:-1713101264,213cdb4da1e6e740d1223d2ac03b9540:942687770,720c9b4d27e6e740039acece3c090682:-510775812</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_e0e348324fd7a30005be4d6e0210c7fe</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;sp-typeahead-flat-popup.html&lt;/id&gt;&lt;sp_widget display_value="Typeahead Search - Flat and Rounded"&gt;fe0c9b4d4fe6e74005be4d6e0210c780&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-01 21:20:43&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;e0e348324fd7a30005be4d6e0210c7fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;sp-typeahead-flat-popup.html&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_e0e348324fd7a30005be4d6e0210c7fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-01 21:20:43&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;ul class="dropdown-menu" ng-show="isOpen() &amp;&amp; !moveInProgress" ng-style="{top: position().top+'px', left: position().left+'px'}" role="listbox" aria-hidden="{{!isOpen()}}"&gt;
+    &lt;li role='option' aria-hidden='true' style='display: none'&gt;&lt;/li&gt;    
+  	&lt;li ng-repeat="match in matches track by $index" ng-class="{active: isActive($index) }" 
+        ng-mouseenter="selectActive($index)" 
+        ng-click="selectMatch($index, $event)" 
+        role="option" id="{{::match.id}}"&gt;
+        &lt;div uib-typeahead-match index="$index" match="match" query="query" template-url="templateUrl"&gt;&lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1246220140</payload_hash>
+<remote_update_set display_value="Typeahead Search - Flat with Rounded Ends">62ad00564f67af0005be4d6e0210c780</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-12 19:01:56</sys_created_on>
+<sys_id>6ead00564f67af0005be4d6e0210c780</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3aa5a230000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-12 19:01:56</sys_updated_on>
+<table/>
+<target_name>sp-typeahead-flat-popup.html</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>13a2381446efe7006a9dafe86346c894</update_guid>
+<update_guid_history>13a2381446efe7006a9dafe86346c894:1246220140,84f34432eed7a300311374f82df244ee:1246220140</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_c8c3c4324fd7a30005be4d6e0210c764</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;sp-typeahead-flat.html&lt;/id&gt;&lt;sp_widget display_value="Typeahead Search - Flat and Rounded"&gt;fe0c9b4d4fe6e74005be4d6e0210c780&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-01 21:20:09&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;c8c3c4324fd7a30005be4d6e0210c764&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;sp-typeahead-flat.html&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_c8c3c4324fd7a30005be4d6e0210c764&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-01 21:20:09&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a class="ta-item" ng-href="{{match.model.target != '_blank' ? match.model.url : ''}}" target="{{match.model.target}}"&gt;
+  &lt;div ng-if="!match.model.templateID"&gt;
+    &lt;i class="ta-icon fa fa-{{match.model.glyph}}" ng-if="match.model.glyph"&gt;&lt;/i&gt;
+    &lt;span ng-bind-html="match.label | uibTypeaheadHighlight:query"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div ng-if="match.model.templateID" ng-include="match.model.templateID"&gt;&lt;/div&gt;
+&lt;/a&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1094105298</payload_hash>
+<remote_update_set display_value="Typeahead Search - Flat with Rounded Ends">62ad00564f67af0005be4d6e0210c780</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-12 19:01:56</sys_created_on>
+<sys_id>a6ad00564f67af0005be4d6e0210c780</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3aa7c050000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-12 19:01:56</sys_updated_on>
+<table/>
+<target_name>sp-typeahead-flat.html</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>d9b2781416efe700bde39f8283864da8</update_guid>
+<update_guid_history>d9b2781416efe700bde39f8283864da8:-1094105298,fbc3443201d7a300da9b48c4a2be92cf:-1094105298</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
