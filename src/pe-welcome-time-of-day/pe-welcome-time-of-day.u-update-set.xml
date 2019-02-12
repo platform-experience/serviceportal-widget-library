@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-06 19:21:35">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Welcome Widget - Time of Day Welcome</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>96b1f4d04fefe70005be4d6e0210c7d5</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-06 19:21:35</sys_created_on>
+<sys_id>7398d15c4f632b0005be4d6e0210c73c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-06 19:21:35</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_c61b5f644f29e3008272ece24210c7e7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope,$window) {
+  /* widget controller */
+
+	$scope.profile = {
+		userID: $scope.user.sys_id,
+		name: $scope.user.name,
+		initials: $window.NOW.user_initials
+	};
+
+	var today = new Date();
+	var curHr = today.getHours();
+
+	if (curHr &lt; 12) {
+		$scope.timeOfDay =  'morning';
+	} else if (curHr &lt; 18) {
+		$scope.timeOfDay = 'afternoon';
+	} else {
+		$scope.timeOfDay = 'evening';
+	}
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.sassvars {&amp;#13;
+  --greeting-color: $text-color;&amp;#13;
+  --message-color: $text-color;&amp;#13;
+  --greeting-font-size: 5em;&amp;#13;
+}&amp;#13;
+.panel{&amp;#13;
+  margin-top: 22px;&amp;#13;
+}&amp;#13;
+.panel-transparent{&amp;#13;
+  border: 0px solid transparent;&amp;#13;
+  background-color: transparent;&amp;#13;
+  box-shadow: none !important;&amp;#13;
+  color: var(--greeting-color);&amp;#13;
+  padding: 0 !important;&amp;#13;
+  .panel-body{&amp;#13;
+    padding: 0 !important;&amp;#13;
+  }&amp;#13;
+  @media screen and (max-width: 30em){&amp;#13;
+    max-width: 100%;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+.greeting{&amp;#13;
+  font-size: var(--greeting-font-size);&amp;#13;
+  line-height: 1.1em;&amp;#13;
+  font-weight: 600;&amp;#13;
+  letter-spacing: -1.14px;&amp;#13;
+  margin-left: -5px;&amp;#13;
+  @media screen and (max-width: 30em){&amp;#13;
+    font-size: 2em;&amp;#13;
+    line-height: 1.2em;&amp;#13;
+    margin-left: -2px;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+.message{&amp;#13;
+  font-size: 1.5em;&amp;#13;
+  font-weight: 600;&amp;#13;
+  color: var(--message-color);&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;This is a simple greeting widget that uses a transparent background so it can be used on any page.  Font color will take on the branded text color or can be set via the Instance Options.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;welcome-sif&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link($scope,$el,$attrs,$ctrl){
+	
+	
+/* DO NOT edit below this line */
+	var sass = document.getElementById($attrs.id).querySelector('.sassvars');
+	var sassv = window.getComputedStyle(sass);
+	
+	if($scope.options.greeting_color &amp;&amp; $scope.options.greeting_color.length &gt; 0){
+		sass.style.setProperty('--greeting-color', $scope.options.greeting_color);
+	}
+	if($scope.options.message_color &amp;&amp; $scope.options.message_color.length &gt; 0){
+		sass.style.setProperty('--message-color', $scope.options.message_color);
+	}
+	if($scope.options.greeting_font_size &amp;&amp; $scope.options.greeting_font_size.length &gt; 0){
+		sass.style.setProperty('--greeting-font-size', $scope.options.greeting_font_size);
+	}
+}]]&gt;&lt;/link&gt;&lt;name&gt;Welcome Widget&lt;/name&gt;&lt;option_schema&gt;[{"hint":"","name":"welcomemsg","section":"Data","default_value":"Welcome to the Self Service Portal","label":"Welcome Message","type":"string"},{"name":"greeting_color","section":"Presentation","default_value":"","label":"Greeting Color","type":"string"},{"name":"message_color","section":"Presentation","label":"Message Color","type":"string"},{"name":"timeofday","section":"Behavior","default_value":"false","label":"Greet with Time of Day","type":"boolean"},{"name":"greeting_font_size","section":"Presentation","label":"Greeting Font Size","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	options.timeofday = (options.timeofday=='true');
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-31 13:24:49&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;c61b5f644f29e3008272ece24210c7e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;62&lt;/sys_mod_count&gt;&lt;sys_name&gt;Welcome Widget&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Widgets" source="com.snc.spenh.widgets"&gt;608a82c24f1d6f008272ece24210c773&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_c61b5f644f29e3008272ece24210c7e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-05 19:32:19&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="sassvars panel panel-transparent"&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;div class='greeting' ng-if='options.timeofday'&gt;Good {{timeOfDay}}, {{user.first_name}}&lt;/div&gt;
+    &lt;div class='greeting' ng-if='!options.timeofday'&gt;Hi, {{user.first_name}}&lt;/div&gt;
+    &lt;div class='message'&gt;{{options.welcomemsg}}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1638077159</payload_hash>
+<remote_update_set display_value="Welcome Widget - Time of Day Welcome">7398d15c4f632b0005be4d6e0210c73c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-06 19:21:35</sys_created_on>
+<sys_id>3798555c4f632b0005be4d6e0210c7aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3ab66330000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-06 19:21:35</sys_updated_on>
+<table/>
+<target_name>Welcome Widget</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>40f23c14e0efe700efed0cfec82f1aa7</update_guid>
+<update_guid_history>40f23c14e0efe700efed0cfec82f1aa7:1638077159,1f719c003defa700dd6aa195a7c77531:1638077159,f4636c2546c7ab00b36dbebb0f7ca8fe:-1625693058,8f522025e2c7ab002518626561d3e40c:89187084,a6bf1c6110c7ab00680c697bb3f9d2e7:-781810704,908f1c61bcc7ab00195819fd59583796:-1965185541,525c94edd587ab00cd0c097a59f48e13:-1635643617,583c54ed7087ab006485aa134496eb54:-591090853,1e8b9f0d62e6e74063e96ac76739a964:1152237200,147b134d82e6e740f978eaba2cc04caf:54009901,91da1b8985e6e7407e41dacd8c4b2d61:-1933515707,92ca1b89f8e6e740906fc397ff1fcbfe:869748613,05ca978932e6e74075540d6dc4939df9:784745182,d9ba9789fae6e74068976154e3cc6e71:-1236133843,069a5789fae6e74094f412e5269d3c49:869748613,d67ad389a4e6e740c07f5138bbfaf81a:549242888,4d4a5f49f0e6e740e6140d7bf4eb2b84:-1782515421,fc3a138931e6e740a0136835c6960526:-46623254,d42a1f4978e6e740b916fdb09fdea5b2:-1770103222,e21a1709abe6e74064fe29e793a3efe2:1870827246,2df9d309e1e6e74003446d5ee7becfae:-182631602,cae9930903e6e740b86be0b7dc38213b:1376955381,0bb91fc541e6e740c7992d6965c97905:-724722162,0f6993c581e6e740e525ca0c413f71f1:-1130682866,f5c893c5c8e6e740282ddcb4b625229f:442021423,58881f85fae6e74043ae28441af96eba:1828345742,8168d7851fe6e7403299a112ff38b458:-1765189867,e308d785a3e6e7401b41521bdc08d547:678185926,d5e79f45aee6e7408d67fbd2c6d6d94e:734071710,b9371f4547e6e74043821f695ed78a86:419542939,5ee6d74590e6e740bd33cf420b32c6a7:2053967899,f2b69345f0e6e740e0e62b50726577f9:-426306922,d0a69f053fe6e740c2187ba7a2cac49c:765268230,beb0d70143e6e740bca0459aa067b0bc:273330830,b67f8ed7a8ca670056efeeeaad118d9f:-1839129722,e96f0ed719ca67005d87928f21f67cbb:1171576202,c62f0ad76eca6700dd9eaf04138061a5:377040323,590f2ba48e69e300cd9c643140369cc4:-717642943,dadea7a40c69e3005355ac5efb5aab08:769746429,81ce6764aa69e300f65fb9994ec7df0d:1988569414,76ca2fa0eb69e3002bed06c7081e7eed:-1194237214,28aaefa09d69e300ad528ad3508db8bb:2012946394,166a2fa06869e300aba39ebd2df18091:-1107839788,2e4a2ba0bc69e300d19887a7ca7a198f:-155502459,bc2a2ba00469e300b9bd13d80dad3488:1311955026,5ff767209e69e30010af791879eef1a8:755185739,e7876720fa69e3007971a8bb442c8e9b:-1639077561,6f77e7ace329e30033420e7e9f27ce6a:-182469602,1d05a7acdf29e300cfd354b1b4eb9650:1175038176,fdf427ac6829e300c9479dfcc5cb8195:1371125375,59e4a3acc329e3004abdbbb00189fb8b:-464704600,e9c4a3ac4c29e300a9d24bc23613fd84:-1842515798,4284ab6c5529e30040f1782de5bc8516:882129501,ed042b6c0529e300c28657ad2fccfe42:-2043447488,6fd3e76c4f29e30077b8a9853f17ce2d:-1313308941,b6c36f2c0129e300f3eecc7c4e238e81:-249784749,07a3276ca229e3009ffc75c37d18b8f9:-1693413312,c823a32c1c29e300b4d8bac28472de4c:-434945973,9130eb681f29e300496f8141db0bce88:-1297789107,8bdfdb687529e300a65f40efd361b162:181419277,dd4ed7281b29e300bad144c3e100bd8e:-1577318558,89cd57e4e129e300bd3ccf3df7dea8c0:663779274,c22b9f64cc29e300bd66b3a842388a0b:-2025647146</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
