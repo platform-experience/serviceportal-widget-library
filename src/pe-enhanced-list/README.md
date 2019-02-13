@@ -75,10 +75,11 @@ Widget Option Schema parameters:
 ---
 ## CSS/SASS Variables
 
-$heading-color: #717171 !default;
-$table-background: #ffffff !default;
-$title-color: $text-color !default;
-$wide-header-text-color: #4a4a4a !default;
-$wide-header-text-size: 16px !default;
-$details-color: $text-muted !default;
-$table-bg-hover: rgba(0,0,0,0.05);
+$heading-color: #717171 !default;<br/>
+$table-background: #ffffff !default;<br/>
+$title-color: $text-color !default;<br/>
+$wide-header-text-color: #4a4a4a !default;<br/>
+$wide-header-text-size: 16px !default;<br/>
+$details-color: $text-muted !default;<br/>
+$table-bg-hover: rgba(0,0,0,0.05);<br/>
+<br/>
