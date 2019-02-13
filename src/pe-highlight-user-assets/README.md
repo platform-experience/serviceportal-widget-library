@@ -10,7 +10,7 @@ The widget is configurable to display data from any table as either large button
 ### Configured - As Panel Buttons
 ![As Panel Buttons](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-highlight-user-assets/images/panelbuttons.png)
 ### Missing Configuration
-![Missing Configuration](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-highlight-user-assets/images/missingconfiguration.png.png)
+![Missing Configuration](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-highlight-user-assets/images/missingconfiguration.png)
 ### Instance Options
 ![Instance Options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-highlight-user-assets/images/options1.png)
 ![Instance Options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-highlight-user-assets/images/options2.png)
