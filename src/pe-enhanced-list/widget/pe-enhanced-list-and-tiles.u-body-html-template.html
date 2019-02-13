@@ -1,0 +1,169 @@
+<div class='panel panel-warning' ng-if='::c.data.missingConfig'>
+  <div class='panel-heading'>
+    Missing Configuration
+  </div>
+  <div class='panel-body bg-warning'>
+    <div ng-if='::!c.table.isValid'>
+      Please configure a table in the Instance Options (Ctrl+RightClick)
+    </div>
+  </div>
+  <!-- your widget template -->
+</div>
+<div class='panel panel-{{options.context}}' ng-if='::c.data.missingConfig==false'>
+  <div class='panel-heading' ng-if='::options.show_panel_header'>
+    <div class='panel-title'>
+      {{options.panel_header_text}}
+      <div class="panel-menu" ng-if='c.table.list_page'>
+        <span ng-click='headerMenu()'>View All</span>
+      </div>
+    </div>
+  </div>
+  <div class='panel-body bg-{{options.context}}' ng-if="c.table.dataSet.length <= 0" >
+    No Data Available
+  </div>
+  <div class='panel-body panel-nopadding' ng-if="c.table.dataSet.length > 0" >
+    <!-- XS - 420px width or less -->    
+    <div class='d-hide' ng-class="{'d-show' : ifWidth('xs')}">
+      <div class='data-item data-item-sm' ng-repeat="item in c.table.dataSet.slice(((c.currentPage-1)*c.itemsPerPage), ((c.currentPage)*c.itemsPerPage)) track by item.sys_id.value">
+        <div class='col-xs-11 col-sm-11'>
+          <div class='data-img' ng-if='c.table.image && item[c.table.image].displayValue'>
+            <img src='{{item[c.table.image].displayValue}}' ng-if='!options.list_page'/>
+            <a href ng-click='goItem(item)' style='cursor:pointer;' ng-if='options.list_page'>
+              <img src='{{item[c.table.image].displayValue}}'/>
+            </a>
+          </div>
+          <div class="data-title">
+            <div>
+              <a href ng-click='goItem(item)' style='cursor:pointer;' ng-if='options.list_page'>
+                {{item[c.table.fieldSplit[1]].displayValue}}
+              </a>  
+              <span ng-if='!options.list_page'>
+                {{item[c.table.fieldSplit[1]].displayValue}}
+              </span>
+            </div>
+            <div class='data-details'>
+              <span ng-repeat="field in c.table.fieldSplit track by $index" ng-if='$index>1 && field!=c.table.image'>
+                <span ng-switch="item[field].type" title="{{::item[field].label}}">
+                  <span ng-switch-when="glide_date_time">
+                    <span ng-if="c.table.dateformat==='4'" title="{{::item[field].label}}">
+                      <sn-time-ago timestamp="::item[field].value" />
+                    </span>
+										<span ng-if="c.table.dateformat!=='4'">{{::getFormat(item[field].value,c.table.dateformat)}}</span>
+                  </span>
+                  
+                  <span ng-switch-when="glide_date">
+                    <span ng-if='c.table.dateformat==4' title="{{::item[field].label}}">
+                      <sn-time-ago timestamp="::item[field].value" />
+                    </span>
+                    <span ng-if='c.table.dateformat!=4'>{{::getFormat(item[field].value,c.table.dateformat)}}</span>
+                  </span>
+                  
+                  <span ng-switch-default="">{{::item[field].displayValue}}</span>
+                </span>
+                <span ng-if='!$last'>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class='col-xs-1 col-sm-1' ng-if='c.table.showActions'>
+          <div class="data-menu btn-group">
+            <button class="btn btn-menu toggle-dropdown" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li ng-click='itemMenu(item,"view")'  ng-if='c.table.detail_page'>View this Item</li>
+              <li ng-if='options.sc_cat_item' ng-repeat='menuItem in c.table.itemMenu' ng-click='itemMenu(item.sys_id.value,"sc",menuItem.sys_id)'>{{menuItem.title}}</li>
+            </ul>
+          </div>  
+        </div>
+      </div>
+    </div> 
+    <!-- 421px width or greater -->    
+    <div class='table-responsive d-hide' ng-class="{'d-show' : !ifWidth('xs')}">
+      <table class='table table-hover'>
+        <thead>
+          <tr class='data-header-wide'>
+            <th class='col-xs-1' ng-if='options.image_field'>
+              &nbsp;
+            </th>
+            <th>
+              {{c.table.dataSet[0][c.table.fieldSplit[1]].label}}
+            </th>
+            <th ng-repeat='field in c.table.fieldSplit track by $index' ng-if='$index > 1'>
+              {{c.table.dataSet[0][field].label}}
+            </th>
+            <th style='width:30px;text-align:center;' ng-if='c.table.showActions'>
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class='data-item data-item-wide' ng-class="{ 'data-item-noborder' : $last }" ng-repeat="item in c.table.dataSet.slice(((c.currentPage-1)*c.itemsPerPage), ((c.currentPage)*c.itemsPerPage)) track by item.sys_id.value">
+            <td style='text-align:center' ng-if='options.image_field'>
+              <span class='data-img' ng-if='c.table.image && item[c.table.image].displayValue'>
+                <img src='{{item[c.table.image].displayValue}}' ng-if='!options.detail_page'/>
+                <a href ng-click='goItem(item)' style='cursor:pointer;' ng-if='options.detail_page'>
+                  <img src='{{item[c.table.image].displayValue}}'/>
+                </a>
+              </span>
+            </td>
+            <td>
+              <span class="data-title">
+                <a href ng-click='goItem(item)' style='cursor:pointer;' ng-if='options.detail_page'>
+                  {{item[c.table.fieldSplit[1]].displayValue}}
+                </a>
+                <span ng-if='!options.detail_page'>
+                  {{item[c.table.fieldSplit[1]].displayValue}}
+                </span>
+              </span>
+            </td>
+            <td ng-repeat='field in c.table.fieldSplit track by $index' ng-if='$index > 1'>
+              <span class='data-details'>
+                <span ng-switch="item[field].type" title="{{::item[field].label}}">
+                  <span ng-switch-when="glide_date_time">
+                    <span ng-if="c.table.dateformat==='4'" title="{{::item[field].label}}">
+                      <sn-time-ago timestamp="::item[field].value" />
+                    </span>
+										<span ng-if="c.table.dateformat!=='4'">{{::getFormat(item[field].value,c.table.dateformat)}}</span>
+                  </span>
+                  
+                  <span ng-switch-when="glide_date">
+                    <span ng-if="c.table.dateformat==='4'" title="{{::item[field].label}}">
+                      <sn-time-ago timestamp="::item[field].value" />
+                    </span>
+                    <span ng-if="c.table.dateformat!=='4'">{{::getFormat(item[field].value,c.table.dateformat)}}</span>
+                  </span>
+                  
+                  <span ng-switch-default="">{{::item[field].displayValue}}</span>
+                </span>
+              </span>
+            </td>
+            <td class="data-menu data-menu-wide" ng-if='c.table.showActions'>
+              <div class="btn-group">
+                <button class="btn btn-menu toggle-dropdown" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li ng-click='itemMenu(item,"view")' ng-if='options.detail_page'>View this Item</li>
+                  <li ng-if='options.sc_cat_item' ng-repeat='menuItem in c.table.itemMenu' ng-click='itemMenu(item.sys_id.value,"sc",menuItem.sys_id)'>{{menuItem.title}}</li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class='panel-footer' ng-class="{ 'pagenav-footer' : (options.list_pagination != 0) }" ng-if='::options.show_panel_footer'>
+    <div class='pull-right' ng-if='(options.list_pagination != 0)'>
+      <div ng-click='setPageNext(-1)' class='pagenav-padding pull-left'>
+        <i class="fa fa-step-backward" aria-hidden="true"></i>
+      </div>
+      <div class='pagenav-padding pagenav-select pull-left'>
+        <select ng-change="setPage()" ng-model='c.selectedItem' ng-options="page for page in c.table.pages track by page"></select>
+      </div>
+      <div ng-click='setPageNext(1)' class='pagenav-padding pull-right'>
+        <i class="fa fa-step-forward" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

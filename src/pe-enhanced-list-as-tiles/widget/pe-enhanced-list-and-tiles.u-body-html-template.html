@@ -1,0 +1,33 @@
+<div class="fvpbtn-container">
+  <div class="fvp fade" 
+       ng-class="{'open': $fvp.isWindowVisible}">
+    <div class="fvp-outer-wrapper">
+      <div class="fvp-wrapper loaded">
+        <div class="fvp-container">
+          <iframe id='fvpFrame' class="fvp-frame"
+                  scrolling="no"
+                  horizontalscrolling="no"
+                  verticalscrolling="no"
+                  frameborder="none" 
+                  ng-src="{{$fvp.source}}">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button aria-label="${$fvp.options.aria_button_label}" 
+          class="fvp-button"
+          ng-style="{'background-color': options.button_color}"
+          ng-attr-tabindex="0"
+          ng-class="{'state-open': $fvp.isWindowVisible, 'state-unread': $fvp.hasUnreadMessages}" 
+          ng-click="$fvp.toggleWindow()"
+          ng-attr-tabindex="0">
+    <div class="hover-overlay"></div>
+    <span aria-hidden="true"
+          ng-class="$fvp.isWindowVisible ? 'fvp-icon icon-close icon-cross' : 'fvp-icon fa-icon'"
+          ng-hide='$fvp.alt_icon'><i class='fa {{$fvp.options.fa_icon}}' aria-hidden='true' ng-hide='$fvp.isWindowVisible'></i></span>
+    <span aria-hidden="true"
+          ng-class="$fvp.isWindowVisible ? 'fvp-icon icon-close icon-cross' : 'fvp-icon icon-open {{$fvp.options.retina_icon}}'"
+          ng-hide='!$fvp.alt_icon'></span>
+  </button>  
+</div>
