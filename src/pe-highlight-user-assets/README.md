@@ -18,7 +18,6 @@ The widget is configurable to display data from any table as either large button
 ## Additional Information/Notes
 > None
 
-
 ---
 ## Installation
 Download and install update set **[pe-highlight-user-assets.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-highlight-user-assets/pe-highlight-user-assets.u-update-set.xml)** <br/><br/>
