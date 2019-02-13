@@ -1,0 +1,175 @@
+$link-font-color: $brand-warning !default;
+
+.sassvars {
+  --title-color: $text-color;
+  --annotation-color: $text-color;
+
+  --bs-context-default: $brand-default;
+  --bs-context-primary: $brand-primary;
+  --bs-context-success: $brand-success;
+  --bs-context-warning: $brand-warning;
+  --bs-context-danger: $brand-danger;
+  --bs-context-info: $brand-info;
+}
+.panel-{
+  background-color: transparent !important;
+}
+.panel{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: unset !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+}
+.panel-body{
+  margin: 25px 0 25px 0;
+}
+.panel-warning{
+  max-width: 50%;
+  margin:0 auto;
+  background-color: unset !important;
+  .panel-body{
+    margin: 0 !important;
+    padding: 15px !important;
+    color: #B33A3A;
+  }
+}
+.item-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: -0.51px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.item-link {
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  a{
+    color: $link-font-color;
+    font-size: 21px;
+    font-weight: normal;
+    height: 27px;
+    letter-spacing: -0.3px;
+  }
+}
+
+.item-devices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  max-height: 265px;
+  .panel{
+    max-width: 315px;
+    height: 180px;
+    //padding: 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .item-panel{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 15px;
+      img{
+        max-height: 92px;
+        height: 100%;
+        width: auto;
+        float: left;
+        display: inline-flex;
+      }
+      .item-text{
+        min-width: 155px;
+        max-width: calc( 33% - 112px );
+        width: 100%;
+        display: inline-flex;
+        margin-left: 15px;
+        text-align: left;
+        .device-name {
+          font-size: 21px;
+          span {
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/* Child directive styles */
+.device-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    min-height: 150px;
+    max-height: 175px;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.device-name {
+  font-size: 21px;
+
+  span {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 32px;
+  }
+
+}
+
+.device-subcaption {
+  color: $text-muted;
+  font-size: 16px;
+  min-height: 25px;
+}
+
+device-card {
+  flex: 1 0;
+
+  a {
+    display: contents;
+  }
+
+  img {
+    max-width: 310px;
+    max-height: 240px;
+  }
+}

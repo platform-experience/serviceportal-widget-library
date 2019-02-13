@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-11 15:11:53">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Highlight User Assets</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>b7c1f8d04fefe70005be4d6e0210c726</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-11 15:11:52</sys_created_on>
+<sys_id>fe6f82394f636f0005be4d6e0210c746</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-11 15:11:52</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_a1e0b6234f5b670005be4d6e0210c725</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope,$location) {
+	/* widget controller */
+	var c = this;
+	
+	$scope.goPanel = function(item){
+		var href = '?id='+ $scope.data.instance_table.detail_page +'&amp;table='+ $scope.data.instance_table.name +'&amp;sys_id=' + item.sys_id.value;
+		$location.url(href);
+	}
+
+	//Change the expiry date format
+	$scope.data.instance_table.dataSet.forEach(function(item) {
+		if (item.expires !== '') {
+			item.expires = moment(item.expires).format('MMM D YYYY');
+		}
+	});
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$link-font-color: $brand-warning !default;
+
+.sassvars {
+  --title-color: $text-color;
+  --annotation-color: $text-color;
+
+  --bs-context-default: $brand-default;
+  --bs-context-primary: $brand-primary;
+  --bs-context-success: $brand-success;
+  --bs-context-warning: $brand-warning;
+  --bs-context-danger: $brand-danger;
+  --bs-context-info: $brand-info;
+}
+.panel-{
+  background-color: transparent !important;
+}
+.panel{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: unset !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+}
+.panel-body{
+  margin: 25px 0 25px 0;
+}
+.panel-warning{
+  max-width: 50%;
+  margin:0 auto;
+  background-color: unset !important;
+  .panel-body{
+    margin: 0 !important;
+    padding: 15px !important;
+    color: #B33A3A;
+  }
+}
+.item-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: -0.51px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.item-link {
+  display: flex;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  a{
+    color: $link-font-color;
+    font-size: 21px;
+    font-weight: normal;
+    height: 27px;
+    letter-spacing: -0.3px;
+  }
+}
+
+.item-devices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  max-height: 265px;
+  .panel{
+    max-width: 315px;
+    height: 180px;
+    //padding: 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .item-panel{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 15px;
+      img{
+        max-height: 92px;
+        height: 100%;
+        width: auto;
+        float: left;
+        display: inline-flex;
+      }
+      .item-text{
+        min-width: 155px;
+        max-width: calc( 33% - 112px );
+        width: 100%;
+        display: inline-flex;
+        margin-left: 15px;
+        text-align: left;
+        .device-name {
+          font-size: 21px;
+          span {
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            white-space: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/* Child directive styles */
+.device-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    min-height: 150px;
+    max-height: 175px;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.device-name {
+  font-size: 21px;
+
+  span {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 32px;
+  }
+
+}
+
+.device-subcaption {
+  color: $text-muted;
+  font-size: 16px;
+  min-height: 25px;
+}
+
+device-card {
+  flex: 1 0;
+
+  a {
+    display: contents;
+  }
+
+  img {
+    max-width: 310px;
+    max-height: 240px;
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;highlight-assets&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link($scope,$el,$attrs,$ctrl){
+	
+/* DO NOT edit below this line */
+	var sass = document.getElementById($attrs.id).querySelector('.sassvars');
+	var sassv = window.getComputedStyle(sass);
+	
+	if($scope.options.title_color &amp;&amp; $scope.options.title_color.length &gt; 0){
+		sass.style.setProperty('--title-color', $scope.options.title_color);
+	}
+	if($scope.options.annotation_color &amp;&amp; $scope.options.annotation_color.length &gt; 0){
+		sass.style.setProperty('--annotation-color', $scope.options.annotation_color);
+	}
+	
+}
+]]&gt;&lt;/link&gt;&lt;name&gt;Highlight Assets&lt;/name&gt;&lt;option_schema&gt;[{"displayValue":"Table","hint":"Name of table to retrieve data from - e.g. task","name":"table","section":"Data","label":"Table used to query data","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"Field name to use for the image caption","name":"name_field","section":"Data","default_value":"short_description","label":"Field name in table to use for the image caption","type":"string"},{"hint":"Additional text for sub-caption - e.g. Expiration Date","name":"subcaption_field","section":"Data","label":"Field name in table to use for the image sub-caption","type":"string"},{"hint":"Field name in table for storing an image on the record","name":"image_field","section":"Data","default_value":"","label":"Field name in table  to use for the image","type":"string"},{"hint":"Limit query results to current user. Expects field named - assigned_to","name":"limit_to_user","section":"Data","default_value":"true","label":"Limit to User - Limit query results to current user. Expects field named - assigned_to","type":"boolean"},{"hint":"Additional query parameters to help reduce data set","name":"encoded_query","section":"Data","label":"Additional Data Filter - using Encoded Query format, e.g.  active=true^start_date=today","type":"string"},{"hint":"Service Portal target page to view data in a larger list","name":"list_page","section":"Data","label":"List Page Target - Target Page for View All panel header link","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"hint":"Service Portal target page to view or edit an individual item","name":"detail_page","section":"Data","label":"Detail Page Target - Detail page target for item menu 'View Details' link","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"hint":"View to use when target detail page is a form","name":"view","section":"Data","default_value":"default","label":"View name used by Detail Page Target - leave empty to use default view","type":"reference","value":"sys_ui_view","ed":{"reference":"sys_ui_view"}},{"hint":"Easily make a panel more meaningful to a particular context by adding any of the contextual state classes.","name":"context","section":"Presentation","default_value":"","label":"Bootstrap Panel's Contextual alternatives - changes the header and border to Bootstrap defined context colors","type":"choice","choices":[{"label":"default","value":"default"},{"label":"primary","value":"primary"},{"label":"success","value":"success"},{"label":"info","value":"info"},{"label":"warning","value":"warning"},{"label":"danger","value":"danger"}]},{"name":"panel_button","section":"Presentation","default_value":"false","label":"Show as items as clickable panel button","type":"boolean"},{"name":"panel_button_context","section":"Presentation","default_value":"default","label":"Clickable Panel Button context - Bootstrap Panel's Contextual alternatives - changes the background to Bootstrap defined context colors","type":"choice","choices":[{"label":"default","value":"default"},{"label":"primary","value":"primary"},{"label":"success","value":"success"},{"label":"info","value":"info"},{"label":"warning","value":"warning"},{"label":"danger","value":"danger"}]}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+	// Get current user for quick filtering of data to user only
+	var currentUser = gs.getUser(); 
+
+	data.title = options.title;
+	options.limit_to_user = (options.limit_to_user=='true');
+	data.panel_button = (options.panel_button=='true');
+	
+	/* 'q' - URL parameter for adding a filter to the dataset dynamically */
+	options.encoded_query = options.encoded_query || $sp.getParameter('q');
+
+	/* Data Variables */
+	data.missingConfig = false;
+
+	data.portal_record = $sp.getPortalRecord();
+	
+	data.instance_table = {
+		readable: true,
+		count: 0,
+		dataSet : [],
+		detail_page: undefined,
+		detail_view: undefined,
+		image: options.image_field,
+		isValid : false,
+		itemMenu: [],
+		label : undefined,
+		list_page: undefined,
+		pages: [],
+		showActions: false,
+		sys_id: options.table
+	};
+
+	try{
+		var grTableMeta = new GlideRecord('sys_db_object');
+		if(data.instance_table.table){
+			grTableMeta.addQuery('name',data.instance_table.table);	
+		}else{
+			grTableMeta.addQuery('sys_id',data.instance_table.sys_id);	
+		}
+		
+		grTableMeta.query();
+		
+		if(grTableMeta.next()){
+			data.instance_table.sys_id = grTableMeta.getUniqueValue();
+			data.instance_table.name = grTableMeta.getDisplayValue('name');
+			data.instance_table.label = grTableMeta.getDisplayValue('label');
+		}else{
+			data.missingConfig = true;
+			return;
+		}
+		
+		// If provided, get the sys_id of the List Page from the Option (Instance) Schema
+		if (options.list_page) {
+			var list_page = GlideRecordSecure('sp_page');
+			if (list_page.get(options.list_page))
+				data.instance_table.list_page = list_page.getDisplayValue('id');
+		}
+
+		// If provided, get the sys_id of the Detail Page from the Option (Instance) Schema
+		if (options.detail_page) {
+			var detail_page = GlideRecordSecure('sp_page');
+			if (detail_page.get(options.detail_page)){
+				data.instance_table.detail_page = detail_page.getDisplayValue('id');
+				data.instance_table.showActions = true;
+			}
+		}
+
+		// If provided, get the name of the View from the Option (Instance) Schema
+		if (options.view) {
+			var view_name = GlideRecordSecure('sys_ui_view');
+			if (view_name.get(options.view))
+				data.instance_table.detail_view = view_name.getDisplayValue('name');
+		}
+		
+		/* Table to use */
+		//grValid - Used for table and field validation only
+		var grValid = new GlideRecord(data.instance_table.name);
+		var grTable = new GlideRecordSecure(data.instance_table.name); // does ACL checking for us
+		data.instance_table.readable = grTable.canRead();
+		
+		if(data.instance_table.readable){
+			//Validate if table exists
+			data.instance_table.isValid = grValid.isValid();
+			if(!data.instance_table.isValid){
+				throw('Missing Table Configuration');
+			}
+
+			// If select, limit the results to the current user based on the Option (Instance) Schema
+			if(options.limit_to_user){
+				grTable.addQuery('assigned_to',currentUser.getID());
+			}
+
+			// If provided, append the additional filter criteria to the GlideRecord from the Option (Instance) Schema
+			if(options.encoded_query){
+				grTable.addEncodedQuery(options.encoded_query);
+			}
+
+			// LETS GO!
+			grTable.query();
+			while(grTable.next()){
+				//Lets build our data set
+				var record = {};
+				record.sys_id = { displayValue: grTable.getUniqueValue(), value: grTable.getUniqueValue() };
+
+
+				if(options.name_field){
+					record.name = { displayValue: grTable.getDisplayValue(options.name_field), value: grTable.getValue(options.name_field) };	
+				}
+				if(options.image_field){
+					record.image = { displayValue: grTable.getDisplayValue(options.image_field), value: grTable.getValue(options.image_field) };	
+				}
+				if(options.subcaption){
+					record.subcaption = { displayValue: grTable.getDisplayValue(options.subcaption_field), value: grTable.getValue(options.subcaption_field) };	
+				}
+
+				data.instance_table.dataSet.push(record);
+			}
+
+			data.instance_table.count = grTable.getRowCount();
+			
+			if(data.instance_table.count&lt;=0){
+				data.instance_table.readable = false;
+			}
+		}
+
+	}catch(e){
+		/*
+			If for any reason something above errors, then lets at least show a message in the Panel's Body that there 
+			is a problem.  And, post a message to the browser with what the problem is.
+		*/
+		data.missingConfig = true;
+		data.err_msg = e;
+		gs.addErrorMessage('Portal: ' + data.portal_record.getDisplayValue('url_suffix') + " Message: " + e );
+		return;
+	}
+
+	/* Function to Get our Field info */
+	function getField(gr, name) {
+		var f = {};
+		f.field = name;
+		f.displayValue = gr.getDisplayValue(name);
+		f.value = gr.getValue(name);
+		
+		var ge = gr.getElement(name);
+		if (ge == null)
+			return f;
+
+		f.type = ge.getED().getInternalType();
+		f.label = ge.getLabel();
+		return f;
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-04 17:51:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;a1e0b6234f5b670005be4d6e0210c725&lt;/sys_id&gt;&lt;sys_mod_count&gt;123&lt;/sys_mod_count&gt;&lt;sys_name&gt;Highlight Assets&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Widgets" source="com.snc.spenh.widgets"&gt;608a82c24f1d6f008272ece24210c773&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a1e0b6234f5b670005be4d6e0210c725&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-11 13:15:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="sassvars panel panel-{{options.context}}"&gt;
+  &lt;div class="panel-body" ng-if='data.instance_table.readable'&gt;
+    &lt;div class="item-header"&gt;
+      &lt;span id="header-title"&gt;{{::data.title}}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="item-link" ng-if='::data.instance_table.list_page'&gt;
+      &lt;a ng-href="?id={{data.instance_table.list_page}}&amp;t={{data.instance_table.name}}"&gt;View all &gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="item-devices" ng-if='::(data.missingConfig==false &amp;&amp; !data.panel_button)'&gt;
+      &lt;a ng-repeat="item in data.instance_table.dataSet" href ng-click='goPanel(item)'&gt;
+        &lt;div class="device-container"&gt;
+          &lt;img ng-if="item.image.displayValue!=''" src="{{item.image.displayValue}}"/&gt;
+          &lt;img ng-if="item.image.displayValue==''" src="not-found.png"/&gt;
+          &lt;div class="device-name"&gt;&lt;span&gt;{{item.name.displayValue}}&lt;/span&gt;&lt;/div&gt;
+          &lt;div ng-if="item.subcaption" class="device-subcaption"&gt;&lt;span ng-if="item.subcaption"&gt;{{item.subcaption.displayValue}}&lt;/span&gt;&lt;/div&gt;  
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="item-devices" ng-if='::(data.missingConfig==false &amp;&amp; data.panel_button)'&gt;
+      &lt;div class='panel panel-{{options.panel_button_context}}' ng-repeat="item in data.instance_table.dataSet" ng-click='goPanel(item)'&gt;
+        &lt;div class='panel-body item-panel'&gt;
+          &lt;img ng-if="item.image.displayValue!=''" src="{{item.image.displayValue}}"/&gt;
+          &lt;img ng-if="item.image.displayValue==''" src="not-found.png"/&gt;
+          &lt;div class='item-text'&gt;
+            &lt;div class="device-name"&gt;&lt;span&gt;{{item.name.displayValue}}&lt;/span&gt;&lt;/div&gt;
+            &lt;div ng-if="item.subcaption" class="device-subcaption"&gt;&lt;span ng-if="item.subcaption"&gt;{{item.subcaption.displayValue}}&lt;/span&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='panel panel-warning' ng-if='::data.missingConfig'&gt;
+      &lt;div class='panel-heading'&gt;
+        Missing Configuration
+      &lt;/div&gt;
+      &lt;div class='panel-body bg-warning'&gt;
+        &lt;div ng-if='::!c.table.isValid'&gt;
+          Please configure a table in the Instance Options (Ctrl+RightClick)
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1814641538</payload_hash>
+<remote_update_set display_value="Highlight User Assets">fe6f82394f636f0005be4d6e0210c746</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-11 15:11:52</sys_created_on>
+<sys_id>366f82394f636f0005be4d6e0210c747</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168dcef1aa40000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-11 15:11:52</sys_updated_on>
+<table/>
+<target_name>Highlight Assets</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>53d386fd20236f008fe611f8e344f770</update_guid>
+<update_guid_history>53d386fd20236f008fe611f8e344f770:-1814641538,30b4bdb9a0ef2f00a5e9810846681b00:-1814641538,cf347939e0ef2f00177004cc1929d622:941761302,cbf335398bef2f00ed40a2345b301ba3:-1537644746,92d33539c5ef2f0053cbcfae11eb4317:84479095,3ac3f5f573ef2f00c07f46998660eeb5:-1630160999,2ca3fdf522ef2f0041b2a1c99f6c6ddd:-585381768,4b3339b57eef2f000b21d3878b57e2a8:1093137797,f0d1bd75a3ef2f00182576a32dc9f00a:1525733061,8ca17d3547ef2f00dd917a1b2fa656d3:-1992154457,e891797529ef2f006ee1d368c0987af5:1138035857,8801757536ef2f00e052bec2c41e47b8:767021111,c34e21f1e7ef2f005a8cd40159f6b225:-422116270,ae7255d40a632b0052c4a59f1f59c07c:1413128361,172291d4b3632b00211182e78afe5c86:704574177,052e49507e632b004a69b999d608ce67:820049742,4b0e055012632b0022cab181383511dd:1375025016,54ed815075632b004cf845a4770f5b70:1535232323,2edaabfff91fa70084c9e5d27ad2f925:-2007522178,295a63ff961fa700f787c6e0fb47c34e:-688901619,202a6fbf691fa70077d1374c9914fa87:-139632819,2ae9e3bf7a1fa70012e36875b1078990:1575826570,dd69ef7fd81fa700fe1681314e4a2c33:1809124750,3639eb7f6e1fa70077a03d0f62e20ade:1226141613,96096b7f501fa70056b030eacd544d36:-1783962219,6788a37fb31fa700904e24d8b1e1ab96:-1296734429,2588eb3fe51fa700860417f60e6f6cb9:-1491638391,5337a33b211fa700a71ec0d61570ab52:-1653606852,4e07233b6f1fa700c23f976b4c973f2c:1679664734,bd7627f7981fa700482280f0fb70952d:1238442562,33f5ef77441fa700b92ea9f6dd9027df:-1564347586,4985af77ae1fa7002bdacc3442696ca3:-1881093152,fa942bb3c11fa70036ae5ae3247c2638:1328221931,d92463333a1fa700808d6dcccdd94d07:-2056404605,d7732fff30dba7006617260ed0123407:-678575696,252367ff1edba700c8eebd13354d403b:-1915107658,f2ef6c33e753a7004d348bfca1bf89a6:2031952502,accc20fbff13a70035d9b0ed50a5e40c:-267227122,3caca8bb6a13a7008e181998d9bf20df:-1855845577,e76c28bb4213a7006efd76f29d77bbf0:52146043,145c28bb1013a700e4fd75d656208faa:-280971276,163ca0bb3813a7009918d3053b225d2e:936058594,b83ce4bb5e13a700c82759e50f5b9a01:1021260855,0e3ba03b3f13a7007eedabefb37e5ec8:1198640375,680ba03bb313a700d2fa6c3a43ee7365:-557124700,bfdaa03be113a7009653e01800a8dfc1:1653081178,9adaa03bb513a7006134c255c420635e:991362946,40aaecf7f013a700bf752c8cb2b3d152:2003344747,4b7ae8f72513a700913d92ebea1401d4:1415383277,725ae8f7ff13a7008eece8245f922db8:-1802578393,efe920b79d13a70087d9a9ce9b96beca:1414840080,aca9a0b7e013a70002d56b3d6aaf7068:-1194220767,588920b78513a7004b8a5b69944429c0:-1713024028,b839a4b33113a700905f2e9336d45f7a:-593196677,c519a4b37a13a700bc122c8dc4639bdd:289694744,25a8a4b3bb13a700657a30f93b8f894e:-1039486036,262824733913a700b9129f812e5ced2b:-484803097,424760737013a7001e8195bd1ae268eb:721721056,e7176073e013a7006230936b66df514f:1361212692,37076cff95df6700bb2b2b0332721d46:1607769858,a8c6e433d013a700232f09ffcfd007ec:-446109696,9876a033ad13a700870e36aaf6fb169c:-1154898229,bc166cff52df6700da742d6256e124e6:-1731292989,75b5e8bf70df67001cfee6f91269419a:-1763421267,6e85a8ff7fdf67005d48b6b7fdc4c5dd:1982250504,de54e8bf15df67006a35cc9ce950448f:-314408939,05f364bfcbdf6700bb40443736b9415d:1771272264,39d364bf4cdf6700a84cd501734a7102:-925093046,d9e1287b97df670049208d7460348ccb:1720909826,2861e0f712df67002d49ce9f588f01d9:-635926004,7911e4b708df6700ed0f361799d08e56:-1220451895,3e0124b73fdf67001280a6099c1b0d55:-1054502063,9ce06077d3df6700782765948a286ae0:1131799222,32c0607795df67007d63d6bbf49e01da:1778525496,3020683701df6700a7f2024c49b9c629:-1277543040,9000a43703df670097bf3f64dedd57a4:1464124989,3fef94374ddf67009be2c45b3dd0e494:913899904,accf50376bdf6700b41c02a590efab5a:-1170607550,338f5cf303df67008ed52664112516d1:1231206398,f2fe90f33ddf670026942ead92000a7e:-2028692926,183e9473e1df670034ba74ce8c387202:917322087,17bcd473a6df6700b79fb9d360bf8783:254447711,7a9c903f6c9f67003486873206474f07:-1330500991,4f4a18ff8d9f6700c763e3f6b4e6869b:1577690721,22533befec1f6700439057725a686335:1836683541,0443f3ef1f1f670061bd019c04aa9942:146328785,fe13b7ef1c1f67008b67329be2b12e17:1168336400,1b03f3efd01f67002fb8061ab0a048a3:-1410573148,92e27bafec1f67003e8e5f15587f2997:1168336400,46a27faf191f67003ce6b6ae8714c62f:-1704192157,3c627baf8a1f67006780b25677804a3e:-818349770,5c223baf081f6700f1dd1e080308c9e1:-1806258469,0801fb2fea1f670084dd6b7cb3bfdc40:-1684836044,e712d3e398db6700dbfd7274825fba8a:-1273409367,c7f1dfa37ddb670067040f493561b3b9:792812027,d6a113a35edb6700b529610ebe96cda2:-1133503915,a78483e3039b670077a15dd8af364a21:761270897,fbb387a3c79b670003a588322193ef89:801004886,4f62cf23259b67000daf705d2a1a7fb2:1012559302,d852cf23c99b670018ffef4fb6e8803a:1968519788,cc220f236a9b67004681353573be0cb4:-1074376483,68f10f23499b6700cd419d7367d5e5aa:375596478,76d1cb233a9b6700c92955162e948c39:1688571659,93d00fefcc5b670044c22ef32653caa7:-327744828,b43007ef395b670079ae8afd8616581e:-1822958621,f40003ef675b670076ba547332c55537:248483207,b2ff32ef175b67005febbff8c76d0184:580282268,91bfbeaf6e5b6700f34fdc1b41ab9316:1854027034,4a9fbeaf8d5b6700d9a167acbb5bf904:-2053756352,a03ff6af7c5b67000548a6f831d758cb:-861749941,f21ffe6f575b6700bcf1436da6c93d9f:118807941,bbed7aeb585b6700f727db63d39088ec:844876540,a8dc36eb3a5b67002f54f105214a26b1:-1871666660,d6bcf2abb65b6700d257a39f37f780d9:-1204936196,8f9c3e6b855b67004def8c1136c9d390:-396413433,5e8cfe6bf75b670020f5a8b52fc09aec:-889116754,5f5cfe6b5f5b6700ff17477bf0e2dbe5:1434131431,031c366b965b6700a99294761cd75a51:965285186,6bcab62b055b6700bc57a106879039a0:2113165276,7faab6a72f5b6700300d664992309232:331108328,8c12ba63665b670049118b80903ddc61:1272900319,aaa13263455b6700be7f38de7687614e:703664865,5641fa23135b67005cf727b0489a7df6:-893796715,e5e0b623c35b67005821375a7e48a326:1011905584</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

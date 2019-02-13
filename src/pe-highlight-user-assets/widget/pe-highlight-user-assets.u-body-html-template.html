@@ -1,0 +1,42 @@
+<div class="sassvars panel panel-{{options.context}}">
+  <div class="panel-body" ng-if='data.instance_table.readable'>
+    <div class="item-header">
+      <span id="header-title">{{::data.title}}</span>
+    </div>
+    <div class="item-link" ng-if='::data.instance_table.list_page'>
+      <a ng-href="?id={{data.instance_table.list_page}}&t={{data.instance_table.name}}">View all ></a>
+    </div>
+    <div class="item-devices" ng-if='::(data.missingConfig==false && !data.panel_button)'>
+      <a ng-repeat="item in data.instance_table.dataSet" href ng-click='goPanel(item)'>
+        <div class="device-container">
+          <img ng-if="item.image.displayValue!=''" src="{{item.image.displayValue}}"/>
+          <img ng-if="item.image.displayValue==''" src="not-found.png"/>
+          <div class="device-name"><span>{{item.name.displayValue}}</span></div>
+          <div ng-if="item.subcaption" class="device-subcaption"><span ng-if="item.subcaption">{{item.subcaption.displayValue}}</span></div>  
+        </div>
+      </a>
+    </div>
+    <div class="item-devices" ng-if='::(data.missingConfig==false && data.panel_button)'>
+      <div class='panel panel-{{options.panel_button_context}}' ng-repeat="item in data.instance_table.dataSet" ng-click='goPanel(item)'>
+        <div class='panel-body item-panel'>
+          <img ng-if="item.image.displayValue!=''" src="{{item.image.displayValue}}"/>
+          <img ng-if="item.image.displayValue==''" src="not-found.png"/>
+          <div class='item-text'>
+            <div class="device-name"><span>{{item.name.displayValue}}</span></div>
+            <div ng-if="item.subcaption" class="device-subcaption"><span ng-if="item.subcaption">{{item.subcaption.displayValue}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='panel panel-warning' ng-if='::data.missingConfig'>
+      <div class='panel-heading'>
+        Missing Configuration
+      </div>
+      <div class='panel-body bg-warning'>
+        <div ng-if='::!c.table.isValid'>
+          Please configure a table in the Instance Options (Ctrl+RightClick)
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
