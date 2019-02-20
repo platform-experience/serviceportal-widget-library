@@ -1,0 +1,1852 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-20 14:48:44">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Navigation Left - Collapsible</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d0a9d07d4f9be74005be4d6e0210c7c3</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>5b60ecb44f7f27408272ece24210c7e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_d5b6fd714f0beb0005be4d6e0210c7f2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>leftNavSlider</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-17 16:52:49</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d5b6fd714f0beb0005be4d6e0210c7f2</sys_id><sys_mod_count>1</sys_mod_count><sys_name>leftNavSlider</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="leftNavSlider">ebc671b14f0beb0005be4d6e0210c78b</sys_ui_script><sys_update_name>sp_js_include_d5b6fd714f0beb0005be4d6e0210c7f2</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-17 16:53:41</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>-1050555971</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>1360ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b642890000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>leftNavSlider</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>f5a5b4d424efe700809db80c20d77951</update_guid>
+<update_guid_history>f5a5b4d424efe700809db80c20d77951:-1050555971,daf6f1b1880beb00863b8d8246379883:-1050555971,a9c6bd71000beb008ec528c72120d9ee:1695410161</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_d363eaaa4fdf630005be4d6e0210c783</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;visibleItemsSecondaryNavTemplate&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-01 14:19:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;d363eaaa4fdf630005be4d6e0210c783&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;visibleItemsSecondaryNavTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_d363eaaa4fdf630005be4d6e0210c783&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-01 14:56:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a ng-href='{{::item.href}}' target='{{::item.url_target}}' ng-if="item.items.length == 0 &amp;&amp; !item.scriptedItems" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
+  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href ng-if="item.items.length &gt; 0" class="dropdown-toggle sp-menu-has-items" data-toggle="dropdown" 
+   aria-controls="menu-apply" aria-haspopup="true"
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
+  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul ng-if="item.items.length &gt; 0" class="dropdown-menu" role="group" id="menu-apply"&gt;
+  &lt;li ng-repeat="item in item.items" ng-include="'visibleItemsSecondaryNavTemplate'" /&gt;
+&lt;/ul&gt;
+&lt;a href ng-if="item.scriptedItems.count &gt; 0" aria-haspopup="true"
+   data-toggle="dropdown" aria-label="{{::item.label}} : {{item.scriptedItems.count}}"
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.hint}} : {{item.scriptedItems.count}}" role="menuitem" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
+  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt;
+  &lt;span ng-if="::!item.scriptedItems.omitBadge" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{item.scriptedItems.count}}&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul ng-if="item.scriptedItems.count &gt; 0" class="dropdown-menu" role="menu" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" &gt;
+  &lt;li role="presentation" ng-repeat="mi in item.scriptedItems.items"
+      class="ng-scope dropdown-menu-line"&gt;
+    &lt;a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="menuItemClicked(mi)"&gt;
+      &lt;span ng-if='mi.number'&gt;{{::mi.number | characters:60}}&lt;/span&gt;
+      &lt;span ng-if='mi.title'&gt;{{::mi.title | characters:60}}&lt;/span&gt;
+      &lt;span ng-if='!mi.title'&gt;{{::mi.short_description | characters:60}}&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>628721928</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>1f60ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5bb140000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>visibleItemsSecondaryNavTemplate</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>d985f0d49eefe700c745760fb113b725</update_guid>
+<update_guid_history>d985f0d49eefe700c745760fb113b725:628721928,830c2e623913a3003f6a6c5b94ebfacb:628721928,6ca86eae4bdf63009ccd3422fe08f9a0:385709587,bc936eaa2fdf630053df3416384701a5:-1482104758,3483eaaa98df6300ab9175324d9ad388:1112297610</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_c4694f734f9ba70005be4d6e0210c701</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;loginleftNavTemplate&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-05 14:17:39&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;c4694f734f9ba70005be4d6e0210c701&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;loginleftNavTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_c4694f734f9ba70005be4d6e0210c701&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-05 14:17:39&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="login_widget"&gt;
+  &lt;sp-widget widget="data.loginWidget"&gt;&lt;/sp-widget&gt;
+  &lt;style&gt;
+    .modal-content { border: 0px solid transparent; }
+  &lt;/style&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>775703149</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>5b60ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5baec0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>loginleftNavTemplate</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>d585f0d47defe70083ca39700f508b23</update_guid>
+<update_guid_history>d585f0d47defe70083ca39700f508b23:775703149,39798f734c9ba7004965cfa1ff801a84:775703149</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_header_footer_3af9be6a4f3e630005be4d6e0210c7a4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_header_footer"&gt;&lt;sp_header_footer action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope, $scope, $window, $location, $interval, $timeout, $uibModal, cabrillo, spUtil, spAriaUtil) {
+/* widget controller */
+	
+	try{
+		 $injector.get('spGtd');
+	}catch(e){
+		console.log('Prior to London Guided Tours did not exist.')
+	}
+	var c = this;
+
+	//~~ Controller Functions
+	function isXSScreenSize() {
+		return $window.matchMedia('(max-width: 767px)').matches;
+	}
+
+	function renderPage(){
+			//window.dispatchEvent(new Event('onload'));
+			var html = document.getElementsByTagName("html");
+			var htmlClass = $(html)[0].className.split(" ")[0];
+			if($scope.htmlClass!=htmlClass){
+				var x = 0;
+				var wait = $interval(function(){
+					if(!$scope.loadingIndicator){
+						$scope.navExpanded = $scope.expanded();
+						$scope.$emit('renderPage');
+						$scope.showXSAvatar = isXSScreenSize();
+						$scope.showAvatar = !isXSScreenSize();
+						$interval.cancel(wait);
+						wait = undefined;
+					}
+				},250,10);
+			}
+	}
+	$scope.xsScreenSize = isXSScreenSize();
+
+	//~~ Scope Variables
+	$scope.loadingIndicator = $rootScope.loadingIndicator;
+	$scope.showXSAvatar = isXSScreenSize();
+	$scope.showAvatar = !isXSScreenSize();
+
+	$scope.options.nav_secondary = ($scope.data.secondaryMenu!=undefined);
+
+	$scope.cartItemCount = 0;
+	$scope.wishlistItemCount = 0;
+	$scope.itemAddedTooltipOpen = false;
+	$scope.accessibilityEnabled = spAriaUtil.g_accessibility === "true";
+
+	$scope.avatarProfile = {
+		userID: $scope.user.sys_id,
+		name: $scope.user.name,
+		initials: $window.NOW.user_initials
+	};
+	if ($window.NOW.user_avatar) {
+		$scope.avatarProfile.userImage = $window.NOW.user_avatar;
+	}
+
+	if (cabrillo.isNative()){
+		$scope.isViewNative = true;
+	}
+
+	//~~ Scope Functions
+	$scope.goMobile = function(home_page){
+		$location.url('?id='+home_page);
+		$('.collapse').collapse('hide');
+	}
+
+	$scope.menuItemClicked = function(menuitem,href){
+
+		if(href){
+			$location.url(menuitem);
+		}else{
+			if(menuitem.__table &amp;&amp; menuitem.sys_id){
+				$location.url('?id=form&amp;table='+menuitem.__table+'&amp;sys_id='+menuitem.sys_id)
+			}	
+			if(menuitem.url){
+				if(menuitem.url.startsWith('?id=')){
+					$location.url(menuitem.url);
+				}else{
+					if(menuitem.url_target.length==0){
+						window.open(menuitem.url,'_self');
+					}else{
+						window.open(menuitem.url,menuitem.url_target);
+					}
+				}
+			}else{
+				if(menuitem.href){
+					$location.url(menuitem.href);
+				}
+			}
+		}
+		
+		if($scope.xsScreenSize){
+			$('.collapse').collapse('hide');
+		}
+
+	}
+	
+	$scope.checkActive = function(href){
+		if(!href || href === '?id='){
+			return false;
+		}else{
+			return (parseInt($location.url().indexOf(href))&gt;0);
+		}
+	};
+	
+	$scope.dynamicOpenPopUp = function() {
+		if ($scope.data.useChatWidgetForCSM) {
+			$scope.toggleChat();
+		} else {
+			$scope.openPopUp();
+		}
+	};
+	
+	//Show VA Chat
+	var MOBILE_DEVICE_SCREEN_WIDTH = 767;
+	$scope.mobileDevice = $scope.data.isMobile || ($(window).width() &lt; MOBILE_DEVICE_SCREEN_WIDTH);
+	$scope.showChat = $scope.mobileDevice;
+	$scope.toggleChat = function () {
+		$scope.showChat = !$scope.showChat;
+		$('a#va_chat').toggleClass('inactive-chat active-chat');
+		if($scope.showChat &amp;&amp; $('div.conversation-region.open').length&lt;=0){
+			$scope.$$postDigest(function(){
+				$('div.conversation-button-container button.help-button').trigger('click');
+			});
+		}
+	};
+	$scope.openPopUp = function() {
+		var url = "$chat_support.do?queueID=" + $scope.data.connect_support_queue_id;
+		var popup = window.open(url, "popup", "width=900, height=600");
+	};
+	
+	$scope.openLogin = function () {
+		$scope.modalInstance = $uibModal.open({
+			templateUrl: 'loginleftNavTemplate',
+			scope: $scope
+		});
+	};
+
+	$scope.isHomepage = function() {
+		if (!$scope.page.id){
+			return true;
+		}
+		if ($scope.page.id == $scope.portal.homepage_dv){
+			return true;
+		}
+		return false;
+	};
+	
+	$scope.toggleCart = function() {
+		$timeout.cancel(cancelTooltipPromise);
+		$scope.itemAddedTooltipOpen = false;
+		$timeout(function() {
+			$("#cart-dropdown").dropdown("toggle");
+		});
+	};
+	
+	//~~ Scope ON Events
+	$scope.$on('$locationChangeSuccess', function(event){
+		renderPage();
+	});
+	
+	$scope.$on('sp_loading_indicator', function(e, value) {
+		$scope.loadingIndicator = value;
+	});
+
+	$rootScope.$on('sp.avatar_changed', function() {
+		$scope.userID = "";
+		$timeout(function(){
+			$scope.userID = $scope.user.sys_id;
+		});
+	});
+
+	$scope.$on("$sp.service_catalog.cart.count", function($evt, count) {
+		$scope.cartItemCount = count;
+	});
+	
+	$scope.$on("$sp.service_catalog.wishlist.count", function($evt, count) {
+		$scope.wishlistItemCount = count;
+	});
+	
+	var cancelTooltipPromise;
+	$scope.$on("$sp.service_catalog.cart.add_item", function() {
+		$timeout.cancel(cancelTooltipPromise);
+		$scope.itemAddedTooltipOpen = true;
+		cancelTooltipPromise = $timeout(function() {
+			$scope.itemAddedTooltipOpen = false;
+		}, 3000);
+	});
+	
+	$scope.$on('sp-menu-update-tours', function(event, tours) {
+		$scope.data.showTours = $scope.data.showTours &amp;&amp; !spUtil.isMobile();
+		if ($scope.data.showTours === false) return;
+		var guidedToursLabel = 'Guided Tours';
+		$scope.data.guidedTours = {
+			label: guidedToursLabel,
+			collection: []
+		};
+		if (tours.length &gt; 0) {
+			$scope.data.guidedTours.collection = tours.map(function(t) {
+				return {
+					title:  t.name,
+					id: t.id,
+					clicked: function() {
+						spGtd.launch(t.id);
+					}
+				};
+			});
+		}
+	});
+
+	// PRB1108244: visibleItems array is used to improve keyboard nav
+	// in menu, refresh it as needed
+	if($scope.data.menu.data){
+		$scope.$watch('data.menu.data.menu.items', function() {
+			$scope.visibleItems = [];
+			if ($scope.data.menu.data.menu.items) {
+				for (var i in $scope.data.menu.data.menu.items) {
+					var item = $scope.data.menu.data.menu.items[i];
+					if (item.items || (item.scriptedItems &amp;&amp; item.scriptedItems.count != 0)){
+						$scope.visibleItems.push(item);
+					}
+				}
+			}
+		}, true);
+		// Get list of record watchers
+		var record_watchers = [];
+		if ($scope.data.menu.data.menu.items) {
+			for(var i in $scope.data.menu.data.menu.items) {
+				var item = $scope.data.menu.data.menu.items[i];
+				if (item.type == 'scripted') {
+					if (item.scriptedItems.record_watchers)
+						record_watchers = record_watchers.concat(item.scriptedItems.record_watchers);
+				}
+				if (item.type == 'filtered') {
+					record_watchers.push({'table':item.table,'filter':item.filter});
+				}
+			}
+		}
+	}
+	
+	// Init record watchers
+	for (var y in record_watchers){
+		var watcher = record_watchers[y];
+		spUtil.recordWatch($scope, watcher.table, watcher.filter);
+	}
+	$rootScope.$broadcast('sp-header-loaded');
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;//SN Branding Editor&amp;#13;
+$nav-header-bg-color: $navbar-inverse-bg !default;&amp;#13;
+&amp;#13;
+//Bootstrap Variables&amp;#13;
+$nav-pills-border-radius: $border-radius-base !default;&amp;#13;
+$nav-pills-active-link-hover-bg : $component-active-bg !default;&amp;#13;
+$nav-pills-active-link-hover-color: $component-active-color !default;&amp;#13;
+&amp;#13;
+// Widget Unique Variables Defaults&amp;#13;
+$nav-width: 235px !default;&amp;#13;
+$nav-width-collapsed: 80px !default;&amp;#13;
+$nav-header-height: 60px !default;&amp;#13;
+$nav-mobile-logo-maxwidth: 150px !default;&amp;#13;
+&amp;#13;
+$nav-pills-link-color: $navbar-inverse-link-color !default;&amp;#13;
+$nav-pills-link-bg: transparent !default;&amp;#13;
+$nav-pills-font-size: 16px !default;&amp;#13;
+$nav-pills-line-height: 20px !default;&amp;#13;
+$nav-pills-padding: 15px !default;&amp;#13;
+$nav-pills-icon-default: fa-square !default;&amp;#13;
+&amp;#13;
+$nav-secondary-height: $nav-header-height !default;&amp;#13;
+$nav-secondary-bg: transparent !default;&amp;#13;
+$nav-secondary-bottom-padding: 0px !default;&amp;#13;
+$nav-secondary-font-size: 16px !default;&amp;#13;
+$nav-secondary-line-height: 18px !default;&amp;#13;
+$nav-secondary-color: $text-muted !default;&amp;#13;
+$nav-secondary-active-link-hover-color: $text-color !default;&amp;#13;
+&amp;#13;
+$nav-stacked-gap: 6px !default;&amp;#13;
+&amp;#13;
+.navsass{&amp;#13;
+  --nav-pills-icon-default: $nav-pills-icon-default;&amp;#13;
+  --nav-width: $nav-width;&amp;#13;
+  --nav-width-collapsed: $nav-width-collapsed;&amp;#13;
+  --nav-mobile-logo-maxwidth: $nav-mobile-logo-maxwidth;&amp;#13;
+  --nav-padding: 0px 15px;&amp;#13;
+  --nav-padding-top-bottom: 0px;&amp;#13;
+  --nav-padding-left-right: 15px;&amp;#13;
+  --nav-header-height: $nav-header-height;&amp;#13;
+  --nav-secondary-height: $nav-secondary-height;&amp;#13;
+  --nav-secondary-padding: 10px 15px;&amp;#13;
+  --page-scrollWidth: 0px;&amp;#13;
+  --page-margin-top: $nav-secondary-bottom-padding;&amp;#13;
+}&amp;#13;
+.primary{&amp;#13;
+  z-index: 5000;&amp;#13;
+}&amp;#13;
+.secondary{&amp;#13;
+  z-index: 4999;&amp;#13;
+  .header{&amp;#13;
+    position: static;&amp;#13;
+    top: 0;&amp;#13;
+    margin: 0;&amp;#13;
+		min-width: calc( 100vw - #{var(--page-scrollWidth)} - (calc( #{var(--nav-width)} + calc( #{var(--nav-padding-left-right)} * 2 ) )));&amp;#13;
+		left: calc( #{var(--nav-width)} - 1px + calc( #{var(--nav-padding-left-right)} * 2 ) );&amp;#13;
+		height: var(--nav-secondary-height);&amp;#13;
+		min-height: var(--nav-secondary-height);&amp;#13;
+		padding: var(--nav-secondary-padding);&amp;#13;
+		background-color: $nav-secondary-bg;&amp;#13;
+		.nav &amp;gt; li,&amp;#13;
+		.links{&amp;#13;
+      display: inline-block;&amp;#13;
+      position: relative;&amp;#13;
+		  a{&amp;#13;
+    		font-size: $nav-secondary-font-size;&amp;#13;
+    		line-height: $nav-secondary-line-height;&amp;#13;
+    		color: $nav-secondary-color;&amp;#13;
+    		background-color: transparent;&amp;#13;
+  		}&amp;#13;
+  		a:hover {&amp;#13;
+    		color: $nav-secondary-active-link-hover-color;&amp;#13;
+    		background-color: transparent;&amp;#13;
+  		}&amp;#13;
+		}&amp;#13;
+	}&amp;#13;
+}&amp;#13;
+&amp;#13;
+.fa{&amp;#13;
+  font-size: $nav-pills-font-size;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+//Mobile&amp;#13;
+@media (max-width: 767px) {&amp;#13;
+  .navsass{&amp;#13;
+    .header-loader {&amp;#13;
+      float: left;&amp;#13;
+      width: 24px;&amp;#13;
+      position: relative;&amp;#13;
+      top: 24px;&amp;#13;
+    }&amp;#13;
+    .navbar{&amp;#13;
+      margin-bottom: unset;&amp;#13;
+    }&amp;#13;
+    .navbar-header{&amp;#13;
+      height: var(--nav-header-height);&amp;#13;
+      background-color: $nav-header-bg-color;&amp;#13;
+    }&amp;#13;
+    .mobile-nav-scroll{&amp;#13;
+      //height: calc( 100vh + 200px );&amp;#13;
+      overflow: hidden;&amp;#13;
+    }&amp;#13;
+    .scrollable-dropdown{&amp;#13;
+      height: 100vh;&amp;#13;
+      overflow-y: scroll;&amp;#13;
+      -webkit-overflow-scrolling: touch;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .navbar-toggle{&amp;#13;
+      height: 60px;&amp;#13;
+      margin: 0;&amp;#13;
+      margin-right: 10px;&amp;#13;
+    }&amp;#13;
+    .navbar-pills{&amp;#13;
+      margin:0;&amp;#13;
+      margin-top: 30px;&amp;#13;
+    }&amp;#13;
+    .navbar-brand{&amp;#13;
+    }&amp;#13;
+    .navbar-brand-logo{&amp;#13;
+      display: flex;&amp;#13;
+      height: var(--nav-header-height);&amp;#13;
+			&amp;#13;
+      -webkit-box-pack: justify;&amp;#13;
+      -moz-box-pack: justify;&amp;#13;
+      -ms-flex-pack: justify;&amp;#13;
+      -webkit-box-align: center;&amp;#13;
+      -webkit-align-items: center;&amp;#13;
+      -moz-box-align: center;&amp;#13;
+      -ms-flex-align: center;&amp;#13;
+      align-items: center;&amp;#13;
+      img {&amp;#13;
+        display: flex;&amp;#13;
+        max-width: var(--nav-mobile-logo-maxwidth);&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; a,&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; div{&amp;#13;
+      font-size: $nav-pills-font-size;&amp;#13;
+      padding: $nav-pills-padding;&amp;#13;
+      line-height: $nav-pills-line-height;&amp;#13;
+      color: $nav-pills-link-color;&amp;#13;
+      border-radius: $nav-pills-border-radius;&amp;#13;
+      background-color: $nav-pills-link-bg;&amp;#13;
+      text-align: center;&amp;#13;
+    }&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; a,&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; div{&amp;#13;
+      text-align: left;&amp;#13;
+    }&amp;#13;
+    .linktext{&amp;#13;
+      margin-left: 8px;&amp;#13;
+    }&amp;#13;
+    .submenu{&amp;#13;
+      margin-left: 8px;&amp;#13;
+      display: none;&amp;#13;
+      li{&amp;#13;
+        margin-left: 8px;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .submenushow{&amp;#13;
+      display: inherit;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+//Desktop&amp;#13;
+@media (min-width: 768px) {&amp;#13;
+  .navsass{&amp;#13;
+    .header-loader-secondary {&amp;#13;
+      float: left;&amp;#13;
+      width: 24px;&amp;#13;
+      position: relative;&amp;#13;
+      top: 24px;&amp;#13;
+    }&amp;#13;
+    .header-loader {&amp;#13;
+      display: flex;&amp;#13;
+      -webkit-box-pack: justify;&amp;#13;
+      -moz-box-pack: justify;&amp;#13;
+      -ms-flex-pack: justify;&amp;#13;
+      -webkit-box-align: center;&amp;#13;
+      -webkit-align-items: center;&amp;#13;
+      -moz-box-align: center;&amp;#13;
+      -ms-flex-align: center;&amp;#13;
+      align-items: center;&amp;#13;
+      justify-content: center;&amp;#13;
+      position: relative;&amp;#13;
+      top: 6px;&amp;#13;
+      height: 8px;&amp;#13;
+&amp;#13;
+    }&amp;#13;
+    .nav-scroll{&amp;#13;
+      //overflow-y: scroll;&amp;#13;
+    }&amp;#13;
+    .navhide-toggle{&amp;#13;
+      height: 50px;&amp;#13;
+      width: 100%;&amp;#13;
+      border-top: 1px solid rgba(255,255,255,0.3);&amp;#13;
+      color: white;&amp;#13;
+      display: flex;&amp;#13;
+      align-items: center;&amp;#13;
+      justify-content: center;&amp;#13;
+    }&amp;#13;
+    .navhide-toggle-expanded{&amp;#13;
+      justify-content: flex-end;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .fa-float-right{&amp;#13;
+      float: right;&amp;#13;
+    }&amp;#13;
+    .linktext{&amp;#13;
+      margin-left: 8px;&amp;#13;
+    }&amp;#13;
+    .navbar-header,&amp;#13;
+    .navbar-nav,&amp;#13;
+    .navbar-right,&amp;#13;
+    .navbar-nav &amp;gt; li{&amp;#13;
+      float: initial !important;&amp;#13;
+    }&amp;#13;
+    .collapse{}&amp;#13;
+    .navbar-collapse{&amp;#13;
+      margin: 0 auto;&amp;#13;
+      padding: 0;&amp;#13;
+      padding-left: 20px;&amp;#13;
+      padding-right: 20px;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .navbar {&amp;#13;
+      position: absolute;&amp;#13;
+      min-height: 100vh;&amp;#13;
+      margin-bottom: unset;&amp;#13;
+      padding-left: var(--nav-padding-left-right);&amp;#13;
+      padding-right: var(--nav-padding-left-right);&amp;#13;
+      border: unset;&amp;#13;
+      transition: 250ms opacity ease-in-out;&amp;#13;
+      -webkit-transition: 250ms opacity ease-in-out;&amp;#13;
+      border: 0;&amp;#13;
+      border-radius: initial;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .navbar-fade {&amp;#13;
+      opacity: 0.4;&amp;#13;
+    }&amp;#13;
+    .navbar-header{&amp;#13;
+      width: var(--nav-width-collapsed);&amp;#13;
+      height: var(--nav-header-height);&amp;#13;
+      background-color: $nav-header-bg-color;&amp;#13;
+      transition: width 125ms ease-in-out;&amp;#13;
+      display: flex;&amp;#13;
+      -webkit-box-pack: justify;&amp;#13;
+      -moz-box-pack: justify;&amp;#13;
+      -ms-flex-pack: justify;&amp;#13;
+      -webkit-box-align: center;&amp;#13;
+      -webkit-align-items: center;&amp;#13;
+      -moz-box-align: center;&amp;#13;
+      -ms-flex-align: center;&amp;#13;
+      align-items: center;&amp;#13;
+&amp;#13;
+    }&amp;#13;
+    .navbar-expanded{&amp;#13;
+      width: var(--nav-width);&amp;#13;
+    }&amp;#13;
+    .navbar-pills{&amp;#13;
+      margin:0;&amp;#13;
+      margin-top: 15px;&amp;#13;
+    }&amp;#13;
+    .navbar-pills-collapsed{&amp;#13;
+      margin-top: 0px;&amp;#13;
+    }&amp;#13;
+    .navbar-brand{&amp;#13;
+      padding: unset;&amp;#13;
+      float: unset;&amp;#13;
+      line-height: unset;&amp;#13;
+      display: flex;&amp;#13;
+      -webkit-box-pack: justify;&amp;#13;
+      -moz-box-pack: justify;&amp;#13;
+      -ms-flex-pack: justify;&amp;#13;
+      -webkit-box-align: center;&amp;#13;
+      -webkit-align-items: center;&amp;#13;
+      -moz-box-align: center;&amp;#13;
+      -ms-flex-align: center;&amp;#13;
+      align-items: center;&amp;#13;
+      height: var(--nav-header-height);&amp;#13;
+    }&amp;#13;
+    .navbar-brand-logo{&amp;#13;
+      display: flex;&amp;#13;
+      margin: 0 auto;&amp;#13;
+    }&amp;#13;
+    .navbar-brand-logo img {&amp;#13;
+      max-width: 100%;&amp;#13;
+      max-height: 40px;&amp;#13;
+      display: flex;&amp;#13;
+    }&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; a,&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; div{&amp;#13;
+      font-size: $nav-pills-font-size;&amp;#13;
+      padding: $nav-pills-padding;&amp;#13;
+      line-height: $nav-pills-line-height;&amp;#13;
+      color: $nav-pills-link-color;&amp;#13;
+      border-radius: $nav-pills-border-radius;&amp;#13;
+      background-color: $nav-pills-link-bg;&amp;#13;
+      text-align: center;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; a:hover,&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; div:hover {&amp;#13;
+      color: $nav-pills-active-link-hover-color;&amp;#13;
+      background-color: $nav-pills-active-link-hover-bg;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .nav-pills &amp;gt; li.active &amp;gt; a,&amp;#13;
+    .nav-pills &amp;gt; li.active &amp;gt; a:hover,&amp;#13;
+    .nav-pills &amp;gt; li.active &amp;gt; a:focus,&amp;#13;
+    .nav-pills &amp;gt; li.active &amp;gt; div,&amp;#13;
+    .nav-pills &amp;gt; li.active &amp;gt; div:hover,&amp;#13;
+    .nav-pills &amp;gt; li.active &amp;gt; div:focus {&amp;#13;
+      color: $nav-pills-active-link-hover-color;&amp;#13;
+      background-color: $nav-pills-active-link-hover-bg;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; a.anchor-expanded,&amp;#13;
+    .nav-pills &amp;gt; li &amp;gt; div.anchor-expanded{&amp;#13;
+      text-align: left;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    .nav-stacked &amp;gt; li {&amp;#13;
+      float: none;&amp;#13;
+    }&amp;#13;
+    .nav-stacked &amp;gt; li  + li {&amp;#13;
+      margin-top: $nav-stacked-gap;&amp;#13;
+&amp;#13;
+    }&amp;#13;
+    .submenu{&amp;#13;
+      margin-left: 8px;&amp;#13;
+      display: none;&amp;#13;
+      li{&amp;#13;
+        margin-left: 8px;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .submenushow{&amp;#13;
+      display: inherit;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+.nav-pills &amp;gt; li &amp;gt; a.avatarlink {&amp;#13;
+  text-align: left;&amp;#13;
+  .avatar-small-medium {&amp;#13;
+    height: 3rem;&amp;#13;
+    width: 3rem;&amp;#13;
+    float: left;&amp;#13;
+    margin-left: -8px;&amp;#13;
+    margin-top: -6px;&amp;#13;
+    margin-right: 6px;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.cart-dropdown, .wishlist-menu, .gtd-dropdown-container .empty-dropdown {&amp;#13;
+  width: 350px;&amp;#13;
+  padding: 0;&amp;#13;
+  z-index: 1000;&amp;#13;
+  border-top-left-radius: 4px !important;&amp;#13;
+  border-top-right-radius: 4px !important;&amp;#13;
+&amp;#13;
+  ul {&amp;#13;
+    max-height: 300px;&amp;#13;
+    overflow: auto;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .subtotal {&amp;#13;
+    display: block;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .item-image {&amp;#13;
+    padding: 0;&amp;#13;
+    margin: 0;&amp;#13;
+    text-align: center;&amp;#13;
+    max-width:100%;&amp;#13;
+    height:auto;&amp;#13;
+  }&amp;#13;
+  label, p {&amp;#13;
+    padding: 0;&amp;#13;
+    margin: 0;&amp;#13;
+  }&amp;#13;
+  .media {&amp;#13;
+    padding: 0;&amp;#13;
+    margin: 0;&amp;#13;
+  }&amp;#13;
+  .media-left &amp;gt; a {&amp;#13;
+    display: block;&amp;#13;
+    width: 48px;&amp;#13;
+    max-width: 48px;&amp;#13;
+  }&amp;#13;
+  .media-body {&amp;#13;
+    label {&amp;#13;
+      font-weight: bold;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  li.media {&amp;#13;
+    border-top: 1px solid #cccccc;&amp;#13;
+    padding: 1rem;&amp;#13;
+  }&amp;#13;
+  .panel {&amp;#13;
+    margin: 0;&amp;#13;
+  }&amp;#13;
+  .panel .panel-body {&amp;#13;
+    padding: 0;&amp;#13;
+  }&amp;#13;
+  .btn-clear {&amp;#13;
+    color: #333;&amp;#13;
+    background-color: #fff;&amp;#13;
+  }&amp;#13;
+  p.quantity-price {&amp;#13;
+    padding-top: 0.5rem;&amp;#13;
+    span {&amp;#13;
+      color: $text-muted;&amp;#13;
+      padding-right: 0.5rem;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .align-right {&amp;#13;
+    text-align: right;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+&amp;#13;
+.item-added-tooltip, wishlist-item-added-tooltip {&amp;#13;
+  width: 184px;&amp;#13;
+  font-size: 14px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.gtd-dropdown-container {&amp;#13;
+  .empty-tour-content{&amp;#13;
+    text-align: center;&amp;#13;
+    margin:40px 20px;&amp;#13;
+  }&amp;#13;
+  .dropdown-menu li {&amp;#13;
+    a {&amp;#13;
+      cursor: pointer;&amp;#13;
+    }&amp;#13;
+    min-width: 20em;&amp;#13;
+  }&amp;#13;
+  .label-as-badge{&amp;#13;
+    width: 12px;&amp;#13;
+    height: 12px;&amp;#13;
+    display: inline-block;&amp;#13;
+    padding: 0px;&amp;#13;
+    padding-top: 2px;&amp;#13;
+  }&amp;#13;
+  .badge-container {&amp;#13;
+    display: inline-block;&amp;#13;
+    width: 12px;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance_menu&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;navigation-left-collapsible&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function ($scope,$el,$attrs,$ctrl) {
+	
+	/*
+	Need to reposition #uiNotificationContainer so it is in the main page space
+	*/
+	
+	var $window = $injector.get('$window');
+	var leftNavSideBar = $injector.get('leftNavSideBar');
+	
+	var $interval = $injector.get('$interval');
+	var $location = $injector.get('$location');
+	
+	var body, section, header, main, nav, footer;
+	
+	function updatePage(data){
+		
+		var sass = document.querySelector('.navsass');
+
+		var sassv = window.getComputedStyle(sass);
+		$scope.options.nav_width = sassv.getPropertyValue('--nav-width').trim();
+		$scope.options.nav_height = sassv.getPropertyValue('--nav-header-height').trim();
+		$scope.options.nav_width_collapsed = sassv.getPropertyValue('--nav-width-collapsed').trim();
+		$scope.options.nav_gutter = sassv.getPropertyValue('--nav-padding-left-right').trim();
+		$scope.options.page_top = sassv.getPropertyValue('--page-margin-top').trim();
+		$scope.options.nav_secondary_height = sassv.getPropertyValue('--nav-secondary-height').trim();
+
+		body = document.getElementsByTagName("body");
+		section = document.getElementsByTagName("section");
+		header = document.getElementsByTagName("header");
+		main = document.getElementsByTagName("main");
+		nav = document.getElementsByTagName("nav");
+		footer = document.getElementsByTagName("footer");
+		uinotif = document.getElementById("uiNotificationContainer");
+
+		$scope.navpilldefaulticon = sassv.getPropertyValue('--nav-pills-icon-default').trim();
+		
+		var wait = $interval(function(){
+
+			if(header!=undefined &amp;&amp; footer!=undefined){
+				var containers,breadcrumbs,headercontainers;
+				var expanded = $scope.expanded();
+				try{
+
+					$(header).css('z-index','100');
+					$(main).css('z-index','0');
+
+					var w = $(main).width();
+
+					if( w &gt; 767){				
+						
+						var marginLeft = 'calc(' + $scope.options.nav_width_collapsed + ' + calc(' + $scope.options.nav_gutter + ' * 2) )';
+						var marginLeftContainers = 'calc( 100% - calc(' + $scope.options.nav_width_collapsed + ' / 2) )';
+						
+						if(expanded){
+							marginLeft = 'calc(' + $scope.options.nav_width + ' + calc(' + $scope.options.nav_gutter + ' * 2) )';
+							marginLeftContainers = 'calc( 100% - calc(' + $scope.options.nav_width + ' / 2) )';
+						}
+
+						$(section).css('overflow','auto');
+						
+						$(main).css('overflow','unset').css('margin-left', marginLeft );
+						
+						$(uinotif).css('margin-left', marginLeft);
+						
+						$(footer).css('margin-left', marginLeft);
+						
+						if($scope.options.nav_secondary){
+							$(nav).css('margin-top', 'calc( -1 * calc(' + $scope.options.nav_secondary_height + '))');
+							$(body).css('overflow','hidden');
+						}else{
+							$(main).css('margin-top', $scope.options.page_top);
+						}
+						
+						containers = $(main).find(".container");
+						for (var x=0;x&lt;containers.length;x++){
+							$(containers[x]).css('width',marginLeftContainers);
+						}
+
+						if(data &amp;&amp; data.bc){
+							data.bc.css('margin-left', marginLeft );
+						}else{
+							breadcrumbs = $(header).find(".breadcrumbs-container");
+							if(breadcrumbs){
+								for (var z=0;z&lt;breadcrumbs.length;z++){
+									$(breadcrumbs[z]).css('margin-left', marginLeft );
+								}
+							}
+						}
+						
+						headercontainers = $(header).find(".container");
+						if(headercontainers){
+							for (var y=0;y&lt;headercontainers.length;y++){
+									$(headercontainers[y]).css('width', marginLeftContainers);
+							}
+						}
+					}else{
+						//Mobile
+						$(header).css('height',$scope.options.nav_height);
+						
+						/*
+						if( w &gt; 767){
+
+							var width = 'calc('+$scope.options.nav_width+' / 2 )';
+							sass.style.setProperty('--nav-width', width);	
+
+							$(section).css('overflow','hidden');
+							$(main).css('overflow-x','auto').css('margin-left', 'calc(' + width + ' + calc(' + $scope.options.nav_gutter + ' * 2) )' );
+
+							if($scope.options.nav_secondary){
+								$(nav).css('margin-top', 'calc( -1 * calc(' + $scope.options.nav_secondary_height + '))');
+								$(body).css('overflow','hidden');
+							}
+							var containers = $(main).find(".container");
+							for (var x=0;x&lt;containers.length;x++){
+								$(containers[x]).css('width','calc( 100% - calc(' + $scope.options.nav_width + ' / 2) )');
+							}
+							var breadcrumbs = $(header).find(".breadcrumbs-container");
+							if(breadcrumbs){
+								$(breadcrumbs).css('margin-left', 'calc(' + $scope.options.nav_width + ' + calc(' + $scope.options.nav_gutter + ' * 2) )' );
+							}
+							var headercontainers = $(header).find(".container");
+							for (var y=0;y&lt;headercontainers.length;y++){
+								$(headercontainers[y]).css('width','calc( 100% - calc(' + $scope.options.nav_width + ' / 2) )');
+							}
+
+							$(footer).css('margin-left',  'calc(' + width + ' + calc(' + $scope.options.nav_gutter + ' * 2) )');
+
+						}else{
+							
+						}
+						*/
+					}
+
+					window.dispatchEvent(new Event('resize'));
+				}catch(e){
+					console.log(e);
+				}
+
+				$interval.cancel(wait);
+				wait = undefined;
+				
+			}
+		});
+	}
+	
+	function setHeaderByScroll(){
+		var sass = document.querySelector('.navsass');
+
+		var footer = document.getElementsByTagName("footer");	
+		var main = document.getElementsByTagName("main");
+		var body = document.getElementsByTagName("body");
+
+		var mainHeight = parseInt($(main).innerHeight())+parseInt($scope.options.nav_secondary_height)+parseInt($(footer).innerHeight());
+		var bodyHeight = parseInt($(body).innerHeight());
+		var scrollBarWidth = getScrollbarWidth() + 'px';
+		if(mainHeight &gt; bodyHeight){
+			sass.style.setProperty('--page-scrollWidth', scrollBarWidth);	
+		}else{
+			sass.style.setProperty('--page-scrollWidth', '0px');
+		}
+	}
+
+	function getScrollbarWidth() {
+		var outer = document.createElement("div");
+		outer.style.visibility = "hidden";
+		outer.style.width = "100px";
+		document.body.appendChild(outer);
+
+		var widthNoScroll = outer.offsetWidth;
+		// force scrollbars
+		outer.style.overflow = "scroll";
+
+		// add innerdiv
+		var inner = document.createElement("div");
+		inner.style.width = "100%";
+		outer.appendChild(inner);        
+
+		var widthWithScroll = inner.offsetWidth;
+
+		// remove divs
+		outer.parentNode.removeChild(outer);
+
+		return widthNoScroll - widthWithScroll;
+	}
+	
+	$scope.width = $window.innerWidth;
+	$scope.expanded = leftNavSideBar.isExpanded;
+	
+	$scope.toggle = function () {
+		leftNavSideBar.toggleExpanded();
+
+		updatePage();
+	}
+
+	$scope.toggleSubMenu = function(e,id){
+		var submenus = document.getElementsByClassName("submenu");
+//		angular.element(submenus).removeClass('submenushow');
+//console.log(submenus)
+		var el = angular.element("#"+id);
+		el.toggleClass('submenushow');
+//		el.parent().toggleClass('submenushow')
+//console.log(el.parent())		
+		
+//Need to figure out why this is not working on mobile
+//Remove --  ng-class="{ submenushow : xsScreenSize }"
+//- from visibileItemsLeftNavTemplate once fixed
+		
+		e.stopPropagation();
+    e.preventDefault();
+	};
+
+	angular.element($window).bind('resize', function(){
+		$scope.width = $window.innerWidth;
+		setHeaderByScroll();
+		$scope.navExpanded = $scope.expanded();
+		if($scope.xsScreenSize){
+			$scope.navExpanded = true;
+		}
+	});
+
+	$(document).keyup(function(event) {
+		if (event.which == 9) { //tab key handler + arrow keys
+			if ($(event.target).parents(".dropdown-menu").length == 0) { //if we are NOT inside a dropdown...
+				//close the dropdowns
+				$(".dropdown").removeClass("open");
+				$("[data-toggle='dropdown']").attr("aria-expanded", "false");
+			}
+		}
+	});
+
+	$scope.$on('renderPage',function(action,data){
+		updatePage(data);
+	});
+
+	$($el).on('click.a','click.nav','.navbar-collapse.in',function(e) {
+
+		var target = $(e.target);
+		
+		if (target.is('a')||target.is('span')) {
+			if (target.hasClass('sp-menu-has-items'))
+				return; // menu item has a submenu, so just toggle it
+			
+			// collapse mobile nav if clicked an anchor
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+
+		if (target.parent().hasClass("toggle-dropdown")) {
+			// collapse mobile nav if parent has toggle-dropdown class
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+
+		// if neither target nor parent is an anchor, do nothing
+		if (!target.parent().is('a'))
+			return;
+
+		// collapse mobile nav if target is part of a submenu
+		if (target.parents("ul.dropdown-menu").length &gt; 0)
+			$(this).removeClass('in').addClass('collapse');
+	});
+	
+	updatePage();
+	
+//console.log('~~~ Link Function ~~~')	
+//console.log($scope)
+}]]&gt;&lt;/link&gt;&lt;name&gt;Navigation Left - Collapsible&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	
+	/** TBD **/
+	/**
+		Need to review HR header and add support for the HR menu items
+	**/
+	
+	data.login_page = $sp.getValue('login_page');
+
+	/*Location Functions*/	
+	function getMenu(id){
+		var menu = {};
+		if(id){
+			menu = $sp.getWidgetFromInstance(id);
+
+			if(menu.data.menu){
+				menu.isWidget = true;
+			}else{
+				menu.isWidget = false;
+				menu.data = {
+					menu: {
+						items: $sp.getMenuItems(id)
+					}
+				};
+			}
+			menu.data.replace = true;
+			// Hide login if menu already has link to login
+			data.hasLogin = false;
+			if (menu.data.menu.items) {
+				for(var i in menu.data.menu.items) {
+					var item = menu.data.menu.items[i];
+					if (item.type == 'page' &amp;&amp; item.sp_page == data.login_page)
+						data.hasLogin = true;
+				}
+			}
+		}
+
+		return menu;
+	}
+
+	/* Variables Local and Client */
+	var session = gs.getSession();
+
+	//Get Quick Start Config for the Portal
+	var qsConfig = $sp.getValue("quick_start_config");
+	var qsConfigJson = qsConfig ? JSON.parse(qsConfig)[0] : {};
+	data.qsConfig = qsConfigJson;
+
+	if(!data.qsConfig.chatIcon){
+		data.qsConfig.chatIcon = 'fa-commenting';
+	}
+
+	//Get Menu for Left Nav Panel
+	data.menu = {
+		items : []
+	};
+	var menu = $sp.getValue("sp_rectangle_menu");
+	if(menu){
+		data.menu = getMenu(menu);
+	}
+
+	//Portal Configuration for a Menu when there is not one identified by the Portal 'Main menu'
+	if(!data.menu &amp;&amp; (data.qsConfig.auto_menu == true || data.qsConfig.auto_menu == 'true' || data.qsConfig.auto_menu == 1 || data.qsConfig.auto_menu == '1')){
+		data.menu = {
+			items : []
+		};
+		if($sp.getValue("kb_knowledge_page")){
+			data.menu.items.push({
+				glyph: 'book',
+				label: 'Knowledge Base',
+				href: '?id=' + $sp.getDisplayValue("kb_knowledge_page"),
+				sys_id: $sp.getValue("kb_knowledge_page"),
+				url_target: '_self',
+				items : []
+			});
+		}
+		if($sp.getValue("sc_catalog_page")){
+			data.menu.items.push({
+				glyph: 'th-large',
+				label: 'Service Catalog',
+				href: '?id=' + $sp.getDisplayValue("sc_catalog_page"),
+				sys_id: $sp.getValue("sc_catalog_page"),
+				url_target: '_self',
+				items : []
+			});
+		}
+	}
+
+	//Get Menu for Top Nav Panel
+	var secondaryMenuInstance = qsConfigJson.secondaryMenu ? qsConfigJson.secondaryMenu.sys_id : undefined;
+	if(secondaryMenuInstance){
+		data.secondaryMenu = getMenu(secondaryMenuInstance);
+	}
+
+
+	data.images = {};
+
+	//data.isLoggedIn = session.isLoggedIn();
+	data.isLoggedIn = GlideSession.get().isLoggedIn();
+	// Show tours only if gtd's sp sys property is set
+	data.showTours = (gs.getProperty('com.snc.guided_tours.sp.enable') === 'true') &amp;&amp; data.isLoggedIn;
+
+
+	var catalogArr = ($sp.getCatalogs().value + "").split(",");
+	catalogArr.forEach(function(catalog) {
+		if(data.menu.data &amp;&amp; !data.menu.data.showWishlist){
+			data.menu.data.showWishlist = new sn_sc.Catalog(catalog).isWishlistEnabled();
+		}
+	});
+
+	if (data.isLoggedIn) {
+		if(data.menu.data){
+			if (data.menu.data.showWishlist){
+				data.menu.data.wishlistWidget = $sp.getWidget("sc_wishlist_cart", {wishlistTemplate: "small_wishlist.html", auto_update_wishlist:options.auto_update_wishlist});
+			}
+			if (gs.getProperty("glide.sc.portal.use_cart_v2_header", "false") === "true"){
+				data.menu.data.cartWidget = $sp.getWidget("sc-shopping-cart-v2", {cartTemplate: "small_shopping_cart_v2.html", auto_update_cart:options.auto_update_cart});
+			}else{
+				data.menu.data.cartWidget = $sp.getWidget("sc-shopping-cart", {cartTemplate: "small_shopping_cart.html", auto_update_cart:options.auto_update_cart});
+			}
+		}
+	}
+
+	// Defines the support queue ID that will be linked to by the Live Chat link in header
+	data.connect_support_queue_id = $sp.getValue('sp_chat_queue');
+	data.profileBtnMsg = gs.getMessage("User options");
+
+	data.loginWidget = $sp.getWidgetFromInstance('login-modal');
+
+	/** CSM Chat Support **/
+	
+	
+	if(data.qsConfig.isCSM &amp;&amp; ((data.qsConfig.isCSM === true)||(data.qsConfig.isCSM==='true'))){
+		data.queueType = "connect";
+		var liveAgent = new GlideRecord("sys_cs_live_agent_setup");
+
+		liveAgent.query();
+		if (liveAgent.next()) {
+			data.queueType = liveAgent.getValue("csm_fulfiller");
+		}
+		data.isVAActive = GlidePluginManager.isActive('com.glide.cs.chatbot');
+
+		// changes data.live_agent_only to true to allow only live agent
+		data.live_agent_only = false;
+		if (!data.live_agent_only) {
+			data.live_agent_only = !data.isVAActive;
+		}
+
+		data.useChatWidgetForCSM = false;
+
+		var chatW = new GlideRecord("sp_widget");
+		chatW.addQuery("id", "sn-va-sp-widget");
+		chatW.query();
+		if (chatW.next()){
+			var contactUrl = "";
+			var accountUrl = "";
+
+			data.useChatWidgetForCSM = true;
+			var cc = new GlideRecord('customer_contact');
+			cc.addQuery("sys_id", gs.getUserID());
+			cc.query();
+			if (cc.next()) {
+				contactUrl = "&amp;sysparm_liveagent_interaction_contact=" + cc.getUniqueValue();
+				accountUrl = "&amp;sysparm_liveagent_interaction_account=" + cc.getValue("account");
+			}
+			var liveAgentUrl = data.live_agent_only ? "&amp;sysparm_live_agent_only=true":"";
+			var csmQueue;
+			if (data.queueType == 'connect') {
+				csmQueue = data.connect_support_queue_id;
+			} else {
+				csmQueue = data.interaction_queue_id;
+			}
+			var va_parms = "sysparm_liveagent_application=csm&amp;sysparm_liveagent_queue="+csmQueue+contactUrl+accountUrl+liveAgentUrl;
+
+			data.va_chat = $sp.getWidget('sn-va-sp-widget',{
+				va_url_params:va_parms
+			});
+		}
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_header_footer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-07 19:26:12&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sys_id&gt;&lt;sys_mod_count&gt;728&lt;/sys_mod_count&gt;&lt;sys_name&gt;Navigation Left - Collapsible&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Headers" source="com.snc.spenh.headers"&gt;7dba5ce94f99eb008272ece24210c714&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_header_footer_3af9be6a4f3e630005be4d6e0210c7a4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-20 14:45:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class='navsass hidden-xs secondary' ng-if='data.secondaryMenu'&gt;
+  &lt;div class='header'&gt;
+    &lt;ul ng-if="::(!user.logged_in &amp;&amp; page.id != portal.login_page_dv &amp;&amp; !data.hasLogin)" class="nav pull-right" role="presentation"&gt;
+      &lt;li role="presentation"&gt;&lt;a href ng-click="openLogin()"&gt;${Login}&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul ng-if="::user.logged_in" class='nav pull-right' role="menubar"&gt;
+      
+      &lt;li ng-if="::data.connect_support_queue_id"&gt;
+        &lt;a href ng-click="dynamicOpenPopUp()" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'" name='${Live Chat}' title="${Live Chat}" role="menuitem" &gt;
+          &lt;i class='fa {{data.qsConfig.chatIcon}}'/&gt;
+          &lt;span&gt;${Live Chat}&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;div ng-if="!data.isMobile" ng-show="showChat"&gt;
+          &lt;sp-widget widget="::data.va_chat"&gt;&lt;/sp-widget&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;!-- chat, avatar, and logout --&gt;
+      &lt;li ng-if="showAvatar" class="hidden-xs dropdown" role="presentation"&gt;
+        &lt;a href class="toggle-dropdown" data-toggle="dropdown" aria-expanded="false"
+           uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+           title="{{::data.profileBtnMsg}}" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true"&gt;
+          &lt;span class="navbar-avatar" aria-hidden="true"&gt;&lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;&lt;/span&gt;
+          &lt;span class="visible-lg-inline"&gt;{{::user.name}}&lt;/span&gt;
+        &lt;/a&gt;
+        &lt;ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}"&gt;
+          &lt;li role="presentation"&gt;&lt;a tabindex="-1" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}" role="menuitem"&gt;${Profile}&lt;/a&gt;&lt;/li&gt;
+          &lt;li ng-if="::!isViewNative" role="presentation"&gt;&lt;a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem"&gt;${Logout}&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li ng-if="showXSAvatar" class="visible-xs-block" role="presentation"&gt;&lt;a role="menuitem" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}"&gt;
+        &lt;span class="navbar-avatar"&gt;&lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;&lt;/span&gt;{{::user.name}}&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li ng-if="::!isViewNative" class="visible-xs-block" role="presentation"&gt;
+        &lt;a role="menuitem" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'" name='Logout' title="Logout" href="{{::portal.logoutUrl}}"&gt;${Logout}&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class='nav pull-right' role='menubar'&gt;
+      &lt;li ng-repeat="item in data.secondaryMenu.data.menu.items" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsSecondaryNavTemplate'" role="presentation"&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class='navsass hidden-xs primary'&gt;
+  &lt;nav class="navbar navbar-inverse" role="navigation"&gt;
+    &lt;div class="navbar-header" ng-class="{'navbar-expanded': navExpanded}"&gt;
+      &lt;a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"&gt;&lt;span&gt;{{::portal.title}}&lt;/span&gt;&lt;/a&gt;
+      &lt;a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" href="?id={{::portal.homepage_dv}}" aria-label="${Go to homepage}"&gt;
+        &lt;img ng-if='(navExpanded)' ng-src="{{::portal.logo}}" title="{{::portal.title}}" role="presentation" alt="${Portal Logo}" /&gt;
+        &lt;img ng-if='(!navExpanded) &amp;&amp; portal.icon.length&gt;0'ng-src="{{::portal.icon}}" title="{{::portal.title}}" role="presentation" alt="${Portal Logo}" /&gt;
+        &lt;img ng-if='(!navExpanded) &amp;&amp; (portal.icon.length==0)' ng-src="{{::portal.logo}}" title="{{::portal.title}}" role="presentation" alt="${Portal Logo}" /&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="header-loader"&gt;
+      &lt;div class="sp-loading-indicator la-sm" ng-show="loadingIndicator"&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='navbar-pills' ng-class="{ 'navbar-pills-collapsed' : !navExpanded }"&gt;
+      &lt;!-- Begin Login --&gt;
+      &lt;ul ng-if="::user.logged_in" class='nav navbar-nav nav-pills nav-stacked' role="menubar" ng-if='!data.secondaryMenu'&gt;
+        &lt;li ng-if="( navExpanded )" class="dropdown" role="presentation"&gt;
+          &lt;a href class="avatarlink toggle-dropdown" data-toggle="dropdown" aria-expanded="false" title="{{::data.profileBtnMsg}}" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true"&gt;
+            &lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;{{::user.name}}
+            &lt;!--&lt;span class="navbar-avatar" aria-hidden="true"&gt;&lt;/span&gt;&lt;span class="visible-lg-inline"&gt;&lt;/span&gt;--&gt;
+          &lt;/a&gt;
+          &lt;ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}"&gt;
+            &lt;li role="presentation"&gt;&lt;a tabindex="-1" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}" role="menuitem"&gt;${Profile}&lt;/a&gt;&lt;/li&gt;
+            &lt;li ng-if="::!isViewNative" role="presentation"&gt;&lt;a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem"&gt;${Logout}&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li ng-if="( !navExpanded )" role="presentation"&gt;&lt;a role="menuitem" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}"&gt;
+          &lt;span ng-class="{'navbar-avatar': navExpanded}"&gt;&lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;!-- End Login --&gt;      
+      &lt;!-- Check if there are any menu items --&gt;
+      &lt;div class='nav-scroll' ng-if="::data.menu.data.menu.items.length &gt; 0"&gt;
+        &lt;ul class='nav navbar-nav nav-pills nav-stacked'&gt;
+          &lt;li ng-repeat="item in visibleItems" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" role="presentation"&gt;&lt;/li&gt;
+          &lt;!-- Wishlist menu --&gt;
+          &lt;li ng-if="data.menu.options.enable_wishlist &amp;&amp; data.isLoggedIn &amp;&amp; data.menu.data.showWishlist" ng-show="!accessibilityEnabled" class="dropdown" ng-class='{ active : checkActive(item.href) }' role="presentation"&gt;
+            &lt;a role="menuitem" href="javascript:void(0)"
+               data-toggle="dropdown"
+               id="wishlist-menu"
+               title="${Your Wish List currently has} {{wishlistItemCount}} ${items}"
+               aria-label="${Wish List}"
+               ng-class="{'anchor-expanded': navExpanded}"&gt;
+              &lt;i class='fa fa-list' /&gt;
+              &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Wish List}'" aria-hidden="true"&gt;&lt;/span&gt;
+              &lt;span ng-if="wishlistItemCount &gt; 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{wishlistItemCount}}&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;div class="dropdown-menu wishlist-menu"&gt;
+              &lt;sp-widget widget="data.menu.data.wishlistWidget"&gt;&lt;/sp-widget&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li ng-if="data.menu.options.enable_wishlist &amp;&amp; data.isLoggedIn &amp;&amp; data.menu.data.showWishlist" class="dropdown" ng-class="{active : checkActive(item.href), 'visible-xs': !accessibilityEnabled}" role="presentation"&gt;
+            &lt;a href="?id=sc_wishlist"
+               title="${Wish List}"
+               class="toggle-dropdown"
+               role="menuitem"
+               aria-label="${Your Wish List currently has} {{wishlistItemCount}} ${items}"
+               ng-class="{'anchor-expanded': navExpanded}"&gt;
+              &lt;i class='fa fa-list' /&gt;
+              &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Wish List}'" aria-hidden="true"&gt;&lt;/span&gt;
+              &lt;span ng-if="wishlistItemCount &gt; 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{wishlistItemCount}}&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;!-- Shopping cart stuff --&gt;
+          &lt;li ng-if="data.menu.options.enable_cart &amp;&amp; data.isLoggedIn" ng-class="{ active : checkActive(item.href)}" class="dropdown" role="presentation"&gt;
+            &lt;a href
+               data-toggle="dropdown"
+               id="cart-dropdown"
+               uib-tooltip-template="'item-added-tooltip-leftnav.html'"
+               tooltip-placement="bottom"
+               tooltip-trigger="'none'"
+               tooltip-is-open="$parent.itemAddedTooltipOpen"
+               title="${Your shopping cart currently has} {{cartItemCount}} ${items}"
+               aria-label="${Shopping cart}"
+               role="menuitem"
+               ng-class="{'anchor-expanded': navExpanded}"&gt;
+              &lt;i class="fa fa-shopping-cart" aria-hidden="true"&gt;&lt;/i&gt;
+              &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Cart}'" aria-hidden="true"&gt;&lt;/span&gt;
+              &lt;span ng-if="cartItemCount &gt; 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{cartItemCount}}&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;div class="dropdown-menu cart-dropdown"&gt;
+              &lt;sp-widget widget="data.menu.data.cartWidget"&gt;&lt;/sp-widget&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li ng-if="data.menu.options.enable_cart &amp;&amp; data.isLoggedIn" class="dropdown" ng-class="{ active : checkActive(item.href), 'visible-xs': !accessibilityEnabled}"  role="presentation"&gt;
+            &lt;a ng-href="?id=sc_cart"
+               ng-click="collapse()"
+               title="${Cart}"
+               class="toggle-dropdown"
+               role="menuitem"
+               aria-label="${Your shopping cart currently has} {{cartItemCount}} ${items}"&gt;
+              &lt;i class="fa fa-shopping-cart" aria-hidden="true"&gt;&lt;/i&gt;
+              &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Cart}'" aria-hidden="true"&gt;&lt;/span&gt;
+              &lt;span ng-if="cartItemCount &gt; 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{cartItemCount}}&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li ng-if="data.isLoggedIn &amp;&amp; data.guidedTours &amp;&amp; data.guidedTours.collection.length &gt; 0" ng-class="{ active : checkActive(item.href)}" class="dropdown" role="presentation"&gt;
+            &lt;a href
+               data-toggle="dropdown"
+               id="tour-dropdown"
+               tooltip-placement="bottom"
+               tooltip-trigger="'none'"
+               title="${This page currently has {{data.guidedTours.collection.length}} tours}"
+               aria-label="{{data.guidedTours.label}}"
+               role="menuitem"
+               ng-class="{'anchor-expanded': navExpanded}" &gt;
+              &lt;i class="fa fa-map-signs" aria-hidden="true"&gt;&lt;/i&gt;
+              &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Tours}'" aria-hidden="true"&gt;&lt;/span&gt;
+              &lt;span class='badge-container' ng-if="(navExpanded &amp;&amp; data.guidedTours.collection.length &gt; 0)"&gt;
+                &lt;span aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;
+                  {{data.guidedTours.collection.length}}
+                &lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+            &lt;div ng-if="data.guidedTours.collection.length &lt; 1" class="dropdown-menu empty-dropdown"&gt;
+              &lt;div class="panel ng-scope"&gt;
+                &lt;div class="panel-body" aria-hidden="false"&gt;
+                  &lt;div class="empty-tour-content"&gt;
+                    &lt;div class="h4"&gt;${You have no tours on this page}&lt;/div&gt;
+                    &lt;p&gt;${Tours appear when your administrator creates them on specific pages}&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;ul ng-if="data.guidedTours.collection.length &gt; 0" class="dropdown-menu"
+                role="menu" aria-label="${Tours}"&gt;
+              &lt;li role="presentation" ng-repeat="mi in data.guidedTours.collection"
+                  class="ng-scope dropdown-menu-line"&gt;
+                &lt;a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="mi.clicked()"&gt;
+                  {{::mi.title | characters:60}}
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;  
+          &lt;li ng-if='(!data.secondaryMenu &amp;&amp; data.connect_support_queue_id)' ng-class="{ active : checkActive(item.href)}" role="presentation"&gt;
+            &lt;a href ng-click="openPopUp()"  uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+               name='${Live Chat}' title="${Live Chat}" role="menuitem" ng-class="{'anchor-expanded': navExpanded}" &gt;
+              &lt;i class='fa {{data.qsConfig.chatIcon}}'/&gt;
+              &lt;span class='linktext' ng-if='(navExpanded)'&gt;${Live Chat}&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li ng-if="(!data.secondaryMenu &amp;&amp; !user.logged_in &amp;&amp; page.id != portal.login_page_dv &amp;&amp; !data.hasLogin)" role="presentation"&gt;
+            &lt;a role="menuitem" href uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'" name='Login' title="Login" ng-click="openLogin()"&gt;
+            &lt;i class="fa fa-sign-in" aria-hidden="true"/&gt;&lt;span class='linktext' ng-if='(navExpanded)'&gt;${Login}&lt;/span&gt;&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li ng-if="(!data.secondaryMenu &amp;&amp; user.logged_in &amp;&amp; !navExpanded)" role="presentation"&gt;
+            &lt;a role="menuitem" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'" 
+               name='Logout' title="Logout" href="{{::portal.logoutUrl}}"&gt;
+            &lt;i class="fa fa-sign-out" aria-hidden="true"/&gt;&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class="navhide-toggle" ng-click="toggle()" ng-class="{'navhide-toggle-expanded': navExpanded}"&gt;
+        &lt;i class="fa" ng-class="{'fa-caret-square-o-left': navExpanded, 'fa-caret-square-o-right': !navExpanded}"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;
+&lt;div class='navsass visible-xs primary'&gt;
+  &lt;nav class="navbar navbar-inverse" role="navigation"&gt;
+    &lt;div class="navbar-header"&gt;
+      &lt;a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"&gt;&lt;span&gt;{{::portal.title}}&lt;/span&gt;&lt;/a&gt;
+      &lt;a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" href ng-click="goMobile(portal.homepage_dv)" aria-label="${Go to homepage}"&gt;
+        &lt;img ng-src="{{::portal.logo}}" title="{{::portal.title}}" role="presentation" alt="${Portal Logo}" /&gt;
+      &lt;/a&gt;
+      &lt;div class="header-loader"&gt;
+        &lt;div class="sp-loading-indicator la-sm" ng-show="loadingIndicator"&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+          &lt;div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sp-nav-bar"&gt;
+        &lt;span class="sr-only"&gt;${Toggle navigation}&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    
+    &lt;div sp-navbar-toggle="" class="collapse navbar-collapse navbar-right scrollable-dropdown" id="sp-nav-bar"&gt;
+      &lt;div class='mobile-nav-scroll'&gt;
+        &lt;ul class="nav navbar-nav" ng-if="::(!user.logged_in &amp;&amp; page.id != portal.login_page_dv &amp;&amp; !data.hasLogin)" role="menubar"&gt;
+          &lt;li role="presentation"&gt;&lt;a href ng-click="openLogin()"&gt;${Login}&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class='nav navbar-nav nav-pills nav-stacked' ng-if="::user.logged_in" role="menubar"&gt;
+          &lt;li role="presentation"&gt;
+            &lt;a class="avatarlink toggle-dropdown" role="menuitem" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}"&gt;
+              &lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;{{::user.name}}&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class='nav navbar-nav nav-pills nav-stacked' ng-if="data.menu.data.menu.items.length &gt; 0" role="menubar"&gt;
+          &lt;li ng-repeat="item in visibleItems" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" role="presentation"&gt;&lt;/li&gt;
+          &lt;li ng-repeat="item in data.secondaryMenu.data.menu.items" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" role="presentation"&gt;&lt;/li&gt;
+          
+          &lt;!-- Wishlist menu --&gt;
+          &lt;li ng-if="data.menu.options.enable_wishlist &amp;&amp; data.isLoggedIn &amp;&amp; data.menu.data.showWishlist" class="dropdown" ng-class="{active : checkActive(item.href), 'visible-xs': !accessibilityEnabled}" role="presentation"&gt;
+            &lt;a href ng-click="menuItemClicked('?id=sc_wishlist',true)"
+               title="${Wish List}"
+               class="toggle-dropdown"
+               role="menuitem"
+               aria-label="${Your Wish List currently has} {{wishlistItemCount}} ${items}"
+               ng-class="{'anchor-expanded': navExpanded}"&gt;
+              &lt;i class='fa fa-list' /&gt;
+              &lt;span class='linktext' ng-bind-html="'${Wish List}'" aria-hidden="true"&gt;&lt;/span&gt;
+              &lt;span ng-if="wishlistItemCount &gt; 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{wishlistItemCount}}&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;!-- Shopping cart stuff --&gt;
+          &lt;li ng-if="data.menu.options.enable_cart &amp;&amp; data.isLoggedIn" class="dropdown" ng-class="{ active : checkActive(item.href), 'visible-xs': !accessibilityEnabled}"  role="presentation"&gt;
+            &lt;a href ng-click="menuItemClicked('?id=sc_cart',true)"
+               title="${Cart}"
+               class="toggle-dropdown"
+               role="menuitem"
+               aria-label="${Your shopping cart currently has} {{cartItemCount}} ${items}"&gt;
+              &lt;i class="fa fa-shopping-cart" aria-hidden="true"&gt;&lt;/i&gt;
+              &lt;span class='linktext' ng-bind-html="'${Cart}'" aria-hidden="true"&gt;&lt;/span&gt;
+              &lt;span ng-if="cartItemCount &gt; 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{cartItemCount}}&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;!--No Tours as they are not visible on Mobile Devices--&gt;
+          &lt;li ng-if='!data.secondaryMenu &amp;&amp; data.connect_support_queue_id' ng-class="{ active : checkActive(item.href)}" role="presentation"&gt;
+            &lt;a href ng-click="openPopUp()"  uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+               name='${Live Chat}' title="${Live Chat}" role="menuitem" ng-class="{'anchor-expanded': navExpanded}" &gt;
+              &lt;i class='fa fa-commenting'/&gt;
+              &lt;span class='linktext'&gt;${Live Chat}&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li ng-if="data.isLoggedIn" style='margin-bottom:90px;' role="presentation"&gt;&lt;a role="menuitem" href ng-click="menuItemClicked(portal.logoutUrl,true)"&gt;
+            &lt;i class="fa fa-sign-out" aria-hidden="true"/&gt;&lt;span class='linktext'&gt;${Logout}&lt;/span&gt;&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;
+
+
+]]&gt;&lt;/template&gt;&lt;/sp_header_footer&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-36628006</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>5f60ecb44f7f27408272ece24210c7e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1690b5e97780000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>Navigation Left - Collapsible</target_name>
+<type>Header | Footer</type>
+<update_domain>global</update_domain>
+<update_guid>87bf54b4057f27402f05d127d8af5cf9</update_guid>
+<update_guid_history>87bf54b4057f27402f05d127d8af5cf9:-36628006,83bf54b4627f274044e9338485ed4ef8:-36628006,55af14b4077f27400c63d1a2f35b95aa:1152500473,c0e3ccdab227af00706219be40fbd4b2:-2088567253,e17f7db975236f00cc347f94153bb6ff:-1783147468,37468fd41de72b00a5b72b5a17d62bec:-879306544,06d54fd459e72b0042e6f95f5a6da00c:-1754265105,fe2e29889c27e700e25aa0d3253b8e40:-2068754051,f82d21485927e700b0da400e96507a81:-1225576460,840d61485c27e700b623d3365d835a09:-1677949065,15eca9082b27e70002aeff1dbb509e0f:8306007,adbc6d087e27e700a174cd02be5282f6:-1686834157,05aca908b427e700cdaa2ea2e1984fd6:1010944627,c47ce5084427e700ca86171c83489cce:1601680913,644c2508a027e700001d7dc5f742935d:-321709487,f32c2dc44f27e700748ff6f796e089cb:-2101652522,311ca1088327e70026a9a39303a9a7bd:81018062,8b8b65c4b427e700bbf5dc08fa57ce73:756324372,b02ba1c42b27e700472a22b00830137a:-57337876,0feaa1c46127e7003c1f2c274a95a96c:-1721581155,51ca2d84fe27e7002592ce302793bf91:1487765256,879a6d848227e7005c0801f4816c9b82:-2102272900,5f8a69842e27e7000f4e26d06ddeef44:604617295,045a69841927e7005ccf11ec7e58012f:-1027997914,804ae5848e27e700c3274f87b4b4bbec:-963777656,05a96d442827e700a07bfb2869db67cf:260114082,a78969442d27e70044fdb60ae59428df:323890337,f569a1443027e70094b729c58c26afd9:881490366,072921447f27e700db1b363e84334951:2049794787,22f8a5041a27e700948979661cc2fa84:1031400597,776821041427e700fe0765ed85d8c561:494187036,e458a5c06f27e7007f827bf820415c14:-1348475008,5918e1809b27e700e4d2fe210a79f9f7:-22311456,14e7e5406a27e7002eb9a36a217876a3:-967106158,2e77e5405c27e7001be9ab6e03bc3955:-1186596111,fc1cfc8c7c63e700b017350a533c2c17:-89723026,8bdbfc8cd163e7002249387a09062977:-1214938688,edcbbc8c5f63e70035e538b83116fcc3:2005066230,d8bab84c4a63e7009c141b5fe7870bc7:1969763241,24a63c48fb63e700693a81006313dee6:-1816586072,d2595ff35edba7004e0b26f781822dc9:-541361958,8ea813f341dba7003e91609a21f7ebb6:-1490329922,c3c49fbff79ba700a054b68ccd276233:-1783603586,c4a49fbfc59ba7006c50b4becdfa054a:-1382261257,94b3d37f0d9ba7004d222be4333fc5f4:-1226451859,c263d37f059ba700af5320f22351c8ed:367932991,f903df3f439ba7007a8a3806123d299a:327578712,0d42933f1c9ba7008d0a1a4c0893d6e7:1756316163,6122933fea9ba700686190efe85d3b6e:1215573107,acd1933f329ba7006e56c5dcb2bfac65:48144576,49a1dffbff9ba70064bf4770e3e89c02:783052318,d2719ffb499ba7001f79ce62f6fe586b:-375943724,844c4fb7f59ba7009184d191f2f0b1d0:1584683500,4acb47b7929ba7003f506497504364ce:-1135115767,e76b8b775e9ba70008d6d56d5af207a7:-847420149,f0b903b3d29ba700b06e8a250dc5047c:-897370513,e1e887736f9ba7000bb227a78d6f2305:1268674630,138883735f9ba700eb44965641ef7263:1115396828,ec5647bf125ba700c822b63d34ab79e4:730648481,99640bfbf35ba7007911eb447fccc339:845905125,0d348fbba15ba70073dafac744bd0db1:-1033810882,dbc303fb3e5ba7009235951ccb81a9de:-186342074,a229cbebe79b6700ebe3826af4d82062:991054943,2ebf9aa3731b670050fbfeaecd09ea34:-1494964424,c1fe1223be1b6700b6377651463d73c4:-677653347,e6de9eaf08d767000dfff8e408f8c4f3:-461710069,e9addeaf4ed767006e502db7636107c7:973187125,d99d9eaf05d767001fb113593188d565:1784110103,fd8d9e6fd2d7670040292dd9c959360d:1840587085,34ab522f73d76700e6c23c3a0153da39:1561022863,e81b126be2d767008f3895fa916023c6:-1028232657,e39a5e2b4ad76700b2a7822b28cb4a87:274907590,748ad62b3ed7670045bac8185b59514f:884560931,446a1ea751d76700b902c79e9631af5a:1050186836,ed4a562b56d76700b5e586211dab9a07:31215435,5a1a522bd6d76700e65c083c12f7bd4d:2046115477,8028daa785d76700fe8c47fabb3f4d39:-1377286009,9a08d6a74ad76700241a1b3055b38d02:2075271185,eb87d2a79bd767000e371fc9ff608a31:-547458287,647752a7f1d76700c33a156542922af9:1233342951,f737da27f8d767002e4dda81f03b3b19:-1950960495,9ce616e3a2d767008d6b463762ba3d70:1988931555,3cd61ea3a7d76700e9bf759759ae7de7:-139262544,2c665aa34cd76700e965a897f9627aec:643334152,83261a6335d76700aacf66ef4e8f82e2:-1474999768,0e5592ef3a976700bbe4c36b5c183d1f:856423989,4f05daaf5b97670007842121791e8f92:-1157327884,7ce496af7e976700cee506035866797b:-5040012,0800daabe6976700c91aed6d3849cca4:1372566522,f4efc2ab489767005c252bb589759727:-767027235,7dbf02ab7f9767004048de02b8ef8a64:1885303486,6f7f02ab8597670062291a09d0b4be2b:733499102,ab8d462b2097670019c0b26ec0c25be4:1834321001,bd3d022be297670087b86568fa8deb1b:687613550,731d4ea79d976700e6066ef155e91045:2138197321,f418ce238197670020ff46994aea7f1f:1834321001,c7d78e2391976700e19f521c308eeeb8:-1052437421,5ac7c2230f9767002fc49d39271a0341:1841238290,01f6caef39576700b3313c054b2dbb7c:-1213006349,638582efb257670024f1d5eacd20adae:2133585027,9a15c6af5757670015ef8156aa072960:-37312098,8ab446af9f576700b6e510b70ef946a3:399720204,00a446af0b576700b50d68c3ad149c99:-1509688588,437442af5b576700526b17414a9e3ca4:182166732,0e54ce6f245767003e32ed105871e248:1086531883,9b83826f73576700fbba321b636f7277:1733069899,f0734a2f66576700202af4f29d17a605:1831578560,2433062f9357670036ea7d26e5335b69:-1064354651,0bc28aabed576700c40b0f0c34a30fa4:959622742,af8f396b2d576700d4e5f62d0bee03a5:-1284743037,ed2ff92b32576700db9520c7b8657fd6:-1551366612,7dbeb52b7b576700c26dafb383681e80:-376232625,254e75e7aa576700dd7e3d9ec25c3d8c:-1114564413,798d3da744576700b83a0b239b4796ca:-2137389537,2f5cf1a715576700138395f08cbd3e2d:1613271312,415c75a7a857670037e605984e7e27b2:1316183691,47eb756754576700cd76c2710173ead3:-665311504,417b71670c576700ba534544815ba224:-1867661922,82da3d273557670052af58609dcddc2c:1375132674,29aa3527d2576700485fd751cc71250b:-1709077812,485a31273957670086f7537427caad4a:2098212093,a7b9b9e39c576700b217661bced3e6c1:-1805675723,8399b9e3c9576700e1db4319374f31a6:-2027292480,0469f1e39e57670072aff8b08ab7cecf:-1805675723,ec09bda3c6576700b921c1073f6da8ee:536457845,5ac8f5a337576700d91d1ec555fda2b5:1563625991,1fb8b9a399576700cfd95a4d7a27badb:1775726907,ad58b5a33b5767003be0b01bc5d3f354:-1715315499,e128fd6373576700ce9cd9182771e246:426248073,36c7b163ff576700d5760807d604e64d:686142473,2617b163fe5767009bf0462a77a6dd42:1565653888,b1073163dd5767008efb543bc8d189ed:986358836,daf63163e6576700ba44a2bff1402c77:1145992835,4cd6bd23bf5767003fe6098cc905000e:-205045511,e9c6bd232d5767002c18e4a39940bc07:-888127684,acb6f923055767000b1fe36871fa33d0:-418995208,a7a63d23c9576700364ee9f7f807ecd3:-1372198815,bd763923515767007dc729a436042440:-835437646,0c363523d45767002bb07de76ea1c8a7:597291489,4f16b9ef06176700f3b9d53375093258:216638459,bcf531231e576700dd6195494c351af8:233774464,b094f5afd1176700445ae2b0e8ee0455:578474259,4564f1afad176700f200fb3446b96874:1034312620,de143d6fca176700fa956d803c578277:1234004111,22c3796f7d1767009123e859425a43aa:-704454138,9c93f9ebea17670004b421a5ebaf6917:-1802186169,c871f9abf0176700a0700480cc24e05e:-327293072,ba9d429bb05b270084ad2c874592cec1:-1911966638,a99d8e5b515b2700614d8fd4a5cefd04:1892117860,fd7d029bc75b27000de19625a9253409:-2055365395,125d0e5bbd5b27007852d7ca3108bda4:-329230731,f21d065b0d5b270087e8bf7476573bf5:1367433269,ffbc025bba5b2700b35ec905b6bb5061:198381516,196cca1bc25b2700003c29f897c8f554:-1003700744,e54cc61b2d5b270037361ee411c9906e:860680495,1efa8a97335b2700cdbd4050d404574e:-232708449,426a0a97325b270080119b74bdd13e21:1809935233,fd3a0297675b2700c0645a58ba3839b3:590027198,1dc90297f05b27008a73d64b4c20d5ab:-1195272204,2429c657a25b270060483b39fbefd130:463011158,1d09c257645b2700a2fdfdcf115d7125:-1265571272,bae84617025b2700ab89de552c63d8b9:1199325813,9f884a173b5b2700c2acfc2b89cb026b:-540720561,c0884a176a5b27007e34290043b5ca74:621226054,75480a17a25b2700667b5bef11dffbac:2023568129,08f70ed3ce5b270089108b495c5d480d:1459233388,0f27c6d3405b270021c0af79ba443547:1910857687,b81782d3305b2700bd2d708f9af60ad0:-1014827721,f1c68e935e5b2700ea826250a6066181:-727973360,62a68e93915b27005a34f7db106c3d7a:-409890807,50364693ac5b2700c0ce2cd43b599d1d:2007855538,84a48253045b2700cd9705533d0ff236:-409890807,40644a13465b2700b6f5503cc741e666:-1523741315,65f2c2df071b27005b83a402b27ac0c4:-1999365159,02c242df141b2700049767a6d76d8b6b:-103750375,cc42ca9f7d1b2700b51e56e49187324a:-922074004,b9e14e5f671b27009af5c7fbf45c6011:-688946285,5df0c65f341b27005d24eab2302d653a:1028481209,bce0425f551b270064df4cb409a61499:602205273,aa20c61fc61b2700dcb3853a048e3e8a:1028481209,a6cf311f4b1b2700bb2bb3561a0eff60:231206754,ab9ffddb9b1b27000e524037aa836527:1313169922,6e8f35db061b2700e500066d732f02fe:-93270483,0f5fb9db9d1b2700aaedb0d8964337ff:-1304504717,503f35db6d1b2700fa66fe0a857c1984:-530713263,dc1f35db9f1b270034e4586164d3de7c:-799918702,2c0ff1dbb31b2700fc0ec4d96cd5d445:-530713263,8cfe31db5e1b27005994690af0ac157d:2117896242,5cdefd9b4d1b2700f3a267d498bdfd4e:1602239083,d8cefd9bb51b27003a39ea59c2028147:-1313960019,4b8e719b601b27002be0fcafcbf88f42:-1743941513,bc3ef19b811b27008000816124af2a70:1569862744,1bfd7d5b591b270078e79f128419bbad:-495896732,61ddf51b2f1b27000d0a5677086b8b92:1954767172,824d351b9f1b2700386aa7f7b0a94c8c:1559399632,681df11ba41b270071094a8be5a5db49:-1029957161,47fcb11b871b2700f9c35e410fbc6ebc:-443200201,b79c7dd7af1b270045cddb0f677c8b94:-1029957161,9e5b79d3c01b2700bf406e05c9f32a3a:-1569278760,954b39d34b1b27006c5994f7d62f2a59:-687274450,35393d53341b27005a157f76c273da0e:342832331,ae1f6593b7d72700a8a39a68cf107d81:-1573796893,b916615702972700c0de3092777fcf6f:-1835546516,0185a517b29727007b74dfe79100dfe5:1244783134,eff2251fae572700ce6bb38625e9117f:-56160728,d1e22ddb885727006b0ab4b00b8debe3:-795138180,73a22ddb3c572700b71a35094bda4ca2:-1296433905,7f82ed9bfa5727002a2883e40ac09940:1696152508,acd1ad9b8157270035ea4b87a8a7bcef:-126191512,9581a99b575727003477833460020084:1486291222,2071699b9b572700249fc2fbc2a6f54b:-2103106707,b151a55bf6572700840ab11c69622262:-1064744140,2021a55ba75727005a198891babd145b:1451349051,63f0255bf3572700e3a2a039db6a0d67:-1908814621,7ee06d1b3d572700315120e1ce020479:1325637284,42c0ed1b3f57270027e9bb4e4f12b793:-1070121754,17906d1b925727002f7c1a5922831d6d:-812408442,a0806d1b29572700a936a678af5f4f66:-1070121754,a650251bb55727004bb4bfc91c5489d8:-1459390900,de7f9d57285727001109e1ba1b7fff89:908811062,056f1d576f572700baf7b39b4554ce1e:-196048746,642fd557fb5727007f2c5486868ed706:1195230261,36ee9557465727006023d5d7fdd2f19c:-346765104,28ae991775572700ab0a82607989379e:-1059636495,684ed11796572700f7d682c7b5f6047d:-1459390900,14ad19d3d257270007bf5bd90af89b1e:1052857718,06fc51d3fb572700afc95245ddf5f866:235559898,06db55931c572700eafec7b8cd12a1d4:-1389193982,560bd5532e5727002f57819357d99feb:1455834390,e0ea1153b2572700e6b0f091c257b6b5:-237603990,5cdad9132c572700804874f38ce7de20:459361659,eeaa99137f572700f7961019865180e4:1188671505,138ad513db572700a6d9e7ec631b34b2:1939450227,8a5a5ddf511727004f70a705b9dbf924:132416243,cda991df931727007ebde47cda1548a6:630010548,0439d1dfc3172700f64299df9e3f446b:-2111743116,ae0991dfb3172700e1c784261aac0f2e:-1860251565,f698dd5fe51727009db12cc36a1734bb:2119954286,66875d5f57172700bdc94161fb6c967b:-388199767,6853199bc71727006448970d8a9a3861:-981980342,99239d5b73172700c7e37afc2a4c3c88:-674932264,53a29d5b85172700d1a280b257562a25:-1303602348,7b52595b7817270000241baf576b858e:-2137434940,fa32555b8a17270050fc91e9693e71da:-171758939,bf22155b2a172700b6451d1eac0b3cab:-1836549379,2702555b821727009a32a37ad80e7baf:-297315334,2fe15d1bbe172700a1c9fdf26b08ea8d:1171644165,b2b1d91bc017270038865171f255bc45:-1071260568,f781d91bf1172700dcacc4722c55342d:-581778306,b951d51bcf172700a32214af8485b4d5:-591385831,6531d11b85172700ec474995bf92723a:2046809834,050159d7aa1727007ea7c1cbb22460e8:-365944734,58b0d9d741172700491d206bd652f2c1:1216531068,2e8019d7c617270071e6b88ee06a1d81:-1573853228,9d6019d7f517270020920d1239677574:1640952396,dc5019d7141727003823dcc113c1eb6d:-1431093503,162091d7161727000e16b87512a2baa9:-1105411287,b1ef81d78417270063a1eb8ff32ac983:-1513869191,278f89972217270013be1901163d5c78:523938506,1c5f0d5784172700b340115a9b51aa18:455184653,57ee459758172700d49de8351757e788:-798207715,2ede059703172700923a132f7c9c3bcb:-302516866,2ece4197391727001d9cb5e9cb5bbcf1:-1903414569,934e09171d17270053f5454717bcf8d9:397275670,b2cccddff2d32700e77c61e78813e892:-108802178,f74c09df79d327006163062fc763e087:1788510249,61bb09df20d32700775cb6e753e52736:759595891,709b85df09d32700d3bd33d93422dd6c:-1002903846,825b099f6ed327002cdc2dbb245a21d5:1853179171,6dda019f6dd327004a8e472455e0634d:-1223337693,2249c55f82d327003e7ff87efe1829ac:373274119,a939855f83d3270009aa9ae6c864b67e:1593770472,000885d70bd32700b3ea81fa647739b3:-902342747,ee56c197cad32700839a6a7e138e49a6:1674294519,5d9bbbb609d3e30054c9e92ae00cdd05:853343678,d4da7bb648d3e300c29a6b29c72446e4:1006994887,e5ca6b22f157a3000f23aa6f1a579005:63445415,89c963aa1217a3006e4a646ab08996d9:-287109678,b75923aa8617a300c887978cc3772913:-2090325640,5a4923aac017a3008ce280d72aa8300b:818615554,09296b6a0e17a3002b7e21d37ac094c8:1233843970,08e7a3a6fa17a3004c751ba4c6ae94b2:-2090325640,df96a7a2f717a300a34b9c3c2144c9c4:1606867176,fba4a3ae02d3a3005ea0494a0a39bf40:1346028474,84732f2ed9d3a300224b2d97e59a307f:-1921816644,8e532feaaad3a30077136ac4fafbd21e:-133196564,ab7f9f2ae1d3a300a168ab4bc4e4b728:1644105720,b2fe17e6c2d3a300053dec181dec3db1:-1934061258,98cd17e6cbd3a3006f16f316062e59c7:1826907787,ca4ddfa62ed3a30085411abc9140001c:462065046,1aacdba6d2d3a30006243009bb57aefb:866306358,718cdba605d3a300fd0aa640577d25ed:892604993,507c53a638d3a3006758f9d27dc32738:710015905,7f9b53a602d3a300e63b98dceff00f20:1373245631,275b176637d3a3002c3bb0500c96f962:-832992939,be9a936648d3a300023df1ab0276bb21:1818970506,528a9366b4d3a300064d273aacccaac2:941318752,a56a136607d3a300535df163edbf8350:-480168995,c03a1f265ed3a3006d2374f9410d40a3:985649194,eb0a5fe232d3a300f3ba07bc1fdee75a:-1572232488,31f9dfe2a1d3a3008785b055f81303a0:1746916497,ebe857e2b2d3a300375f26b35d5f57d0:-1242037121,975857e24cd3a300f376b4b0a4e957be:202926376,50671ba214d3a3007830c0939921340a:-363598176,485793a26dd3a300591c855e8e494b22:-661670262,a12717a221d3a300ea70c93864e3865d:2063965708,ea8653ae1493a30043fdb484d8c41abd:-1839175193,7c769f6ea693a3006bb052556ce1a89e:-1180063999,b2f41b2e4293a300ba0abb947708081b:-370673924,fe449fea0593a300c9fb5b77f3ab16c8:-1397876814,bfb3132e7c93a30011e5dd2f2d58c592:-24760302,5ea29baa3d93a30086f573d8ec8fc015:-1410207326,9a9293ea5893a3002c42bb5a83e0a566:1375530300,b68293ea3c93a300a7e24d88a6906807:-1281848866,9ce11baaca93a30062f9ff2d57a00b1b:190686934,f9a157aad593a300425f4a5152153cfb:-1451251779,f48113aa1893a300b236d8e942153ab5:1090523541,0dc0176ac993a300389d4da5298115b4:-455707116,8570d36a8693a300992494b1798dac4d:-1191333642,5e309fe60093a30059468f0af8b7845e:1771002284,70ed47e6a793a3002a3e201de0cfe80f:2132614368,615d0fa6b293a300d415de1c96fb8ec2:-68741248,843dcba69b93a30036369055e655951a:1166634880,281c47666d93a300a32ec15bd63e34f5:1870671648,9c9b4fe2cc93a300299e64529bb19245:-795787655,ad5b4766d993a300d3784987927f977d:1600998974,645987e2e493a300519714f2fd2c0936:839441418,b4c88fa2a993a300f8e0713fe7e60588:-1345602202,8e984b62da93a30013f39ade45546599:-1147676144,83380b62ca93a300aa75abe026a7b74f:2007181601,39f74362a193a3006131e6003888a598:-1218406837,1cc70feed353a3002f70388e8513daff:1060128484,63378b220e93a3000912d14627fbe876:-1370465886,e9368bee4e53a300f8f390a12ed82869:1432438544,7cc583eee253a300e611c29a376f80ec:-541487983,d77543ee2c53a300d98faf8a6d721cd5:-1007204704,6c04cb2e8b53a300824f30ea55fa863e:128200713,0bd3476e7853a300cf578a26f3872b34:951222028,10e436621a53a3003f7d7dfa188b03c3:-1973556917,6d84b2622853a3005149e843b5deef7f:673873506,3db17a2e5713a300226033a3e704ecf4:867708599,f581faaa0813a300ecdbbd9a013e7d5e:1616249828,fe60322ad513a3005d4615e0b72c5cfc:-1497925832,eb407ee69e13a300e74bb20d5a021c2e:77853669,9c207ee68613a300ae376a0933857626:-1613136006,25ae6626ed13a300cc5c3c57fe4b7e8c:-1425373346,73ece6a24f13a3000c30e664d4baa317:-1628628283,309ae2625513a300b26e956c8d05ccfa:1184326924,788a22620413a300199b8967271c0f4a:-1433032942,ba3a22628a13a300efc9d9021d3dd938:540567356,4ac92aee76df6300c5f435dbcf8c7f4a:-355170772,1a79e2eec9df6300bc12ef7d2a9d5a47:-625801348,4219e2ee41df6300132bab7dee1fb238:199549202,2cc82a6ec9df6300fb094857a67f3c7b:482835472,e4a8626e42df630081524422d9373289:1871923764,32b7a25adbd36300627855ba6798e25c:-1087064729,3767ae1a65d36300db21d2a5f240a38d:1132983491,5e57ea1a15d36300699e1adba24e3c16:1663513587,27d6621a23d36300fe25bce7a065a5de:-2037315255,bd242e56d1d36300ce19bc81cf26a7e2:-2128421139,73f3e656b8d3630032d118735c37e3e1:-226886137,8623e216b6d36300edd3e75cf39dff42:-272552387,2b82aad291d36300a5cfa2f34410a0b6:589453173,39126e92f5d363007c26623eb516dc01:-3043209,6ae12e92e8d3630035af6baa545ba7df:867963045,1b61a292c3d363001d7b4a90503f4845:732692133,7141e6929bd36300f93e2ca0d2b0e8e2:-689955486,26d06e52b5d36300ed53b74466636210:1083752848,c6a06a5209d36300327402d6f0ee94a7:-322215643,8180225242d3630056ac4c9b8584b801:-742230077,f8cf9612e2d3630047dda8c7fa1e3b88:350282870,aaaf961244d36300551f92d6ddbda481:-701706051,068f521220d36300116377281ff3ddfe:-1183050657,86fed6dee593630038334421b6c35196:689196291,4a2e9a9e9a9363001eb219226a2b29b7:1873332864,9dbdda5eba9363006c1c7082c0328a7b:-607028412,c7fc165e0793630097f7c4a67f14b22f:1169266080,78ac1a5aed936300e894b13ea3e4fa7e:1982265490,a348165ae8936300c4ed2f532c8f5f83:-245548071,0048d65a9693630096424a0a566847ec:-1789939623,9ae7125acf936300f68845c7e1cac6e1:304164200,ae9756d639936300062418591c4772a5:-1892742647,bf96da966193630018a04825b6b855bc:-1244614429,cd0612967d936300b920de0c124fa622:-1723300419,17551a562093630018de6f7ac82ef94f:1790619980,3d351a564b936300a0822761e4771672:-525279267,57e45656e09363007403a0459b69e911:829678784,a6a49e169d936300675d66adce526b65:1377694616,4b545616f2936300913707c5c965eb44:-1114106099,82e356164293630061d989f6ce243423:-621397114,ee6112929b936300a814cf6947520d8c:-968130892,c6401252a19363002321e51ed6f9b421:-1209715131,384e46dec55363008865ef9502b5a46b:999926536,b8784a9a55536300d4cbccdbc36d24bf:50171567,81580e1a91536300208ba8b433d74510:-103986136,06480e1a2f536300cd8e796bd74d261c:-23144144,0216ca1a8053630032316322d9848505:284296622,a8f5861a87536300baf5b3b476fea67f:-845865096,93e44ad60853630001a235a09de5cac7:1619167932,13feed56bd1363001634ed8eaf61318a:1599617004,baae69569e13630086c1a821da5f2351:-219643553,6d6ea51669136300a37b8dbedeb4d62d:-1566442732,c6dda59288136300bc8c4e6966fcb0b1:-244544374,d1cdad52151363004e7b370c2d27efa6:-2013310313,2d5de952ce136300d58e092092e88eb7:-1236841158,54bc2912421363009bce2124f86cabc3:424564739,9a0c21ded5df230046261f47c89b1299:918834649,167aed9e4ddf23003c781e48ec87bbc0:-1797618502,eaf9e55eb7df2300ecee0a9642299195:211387696,70e9ad1e1bdf23002023f32571d69995:1698687588,0939e9daa2df23009f10e61222c661a8:2122379358,ef65695a43df2300f65948d633e1db01:-1880129934,e625295a69df2300c506ef83180d1a60:106238527,3fd4a15abddf2300339fbe08090495b7:1864752287,bb47591ecb9f2300a8024f001ac4cbb0:322000114,7596511ea69f2300eb964eb16f769d65:-205483542,3246951e449f2300736a4b44b91a2be4:-1771195357,0f06151ed99f2300ed0cc758601dcf6b:609772316,706519da1e9f23002578c94bbe0933d3:1816477818,da0519da9f9f230039416a2dc58ba9b7:-1764476992,7074159ae29f230021161a1191eaf90f:1775352976,dc645d5aa19f2300d8eefe0e63b9e0e2:1798573809,9b34959ac99f230056aec1640c453985:1174500337,29e3159af79f230024c0a7c7a060dc04:-1068579582,6da35d5a059f2300409a901a17ebeed9:1888316251,f253dd1a0a9f230038e1fa97df1fb4e1:486490156,89f2115aff9f2300c8f0332d6a2d7303:1932909766,1361d9d6d59f2300a020b1c3049e2bf0:-594443300,d2519596e49f2300314e4cb0ccb91d00:523873394,fd80d596e79f2300cb351eba0307d45b:-1063968034,afffc596e89f230006d464c7c2775954:-1238434504,daef4596da9f2300109d02396e83b1ee:-1871524997,05df0596d59f2300f649caee3ebaa49c:-1238434504,ab0fc556339f2300f19766235137665a:1434080216,05de8d16c39f23008453eb9a5812f0d0:1420411291,5f90ff8a3e1b23000435e2671dc49822:-1771320810,5e10fb8ac51b23001811cfbf65993853:-161082585,373f6f4a6f1b2300c651aba65084e833:-342763354,535e674a211b230043876c50828955f2:1690023423,cc2ea34ad01b2300be43e623fceab858:1221298883,94fdab0aaf1b2300d20a85cfe50e1503:-346803457,7eadeb0a2b1b2300febf94cdf888ae98:285698810,cb6da70aa61b2300f349e5b8dc618ab7:240873174,6b4da70adc1b2300c11f623ea501eb45:-386069617,214da30a971b2300b29271a1d77f150e:-1669669692,49dcefc67c1b230025c57f7dc53ff3d5:-1663931648,90bcafc6cd1b230083da4478ff090a56:-2005956547,9e7cebc6a91b23009518c130018ba390:-635781063,565c6bc6a61b2300c3fe3554eabbe7ba:494703677,cd4c27c6231b23009c568a45297cde40:-1174553529,9fdb6b866e1b23004d1c6a5692a93908:974947369,21bba746bb1b23008a18cf976be424ba:513588393,0f4b6b86761b23009256f4d362b4d20f:-1565536766,b69a2746db1b23007f3b73b11f59406f:-1447281227,ba6a6746951b230024fb7f052eb87041:1323990486,9e5923c23f1b2300b6f6c3eb957caf7c:2099637767,7f1823c2ec1b2300b019adfac7e39e3a:252303405,f0f7eb82a11b2300e7cdba7003d8e296:773153495,8957af02ff1b2300c498eceea4eef612:947121637,09d667023f1b230010737d390c47d3d6:-434290131,6ba5678eb8d7230095c54d438c3b8504:997735619,8475638e4ad72300c84b1116baaae0a4:1427416330,7745638ec6d72300cb166dbbaef67040:572790074,3025ab4e90d72300da5af7513c6de1e9:-406327496,f4b4e34ee1d723000a5e716f229b5e4c:572790074,9d14230e9bd72300c39d27981933d4f5:-1425463974,c7e0e34683d72300058fe19b71324fe3:572790074,9a2067063bd72300e083af471df98107:-384742014,c7ff9fc2fbd72300fb671dbaaff713e1:-1512149035,897f1b8246d72300238589e0edeba587:-983716998,9c0f1bc214d723001023ed8b0ba06f87:-1972403749,18ee17c28ed72300a1bdac42b3dea7b2:1249692844,78bedf828fd72300407e381c25b5e9a8:-2085037322,07ae9b82d2d7230082b74f5688ec4462:-919540982,d50e9f0223d723006b108d4789ec2fd2:1405667989,eb1b170e7e9723000eab65b73ad53afb:1950608199,f0ea570eeb972300e1687454fedbc676:-682194576,094adf4aab972300e955b8e14abdc2c3:506958413,4a3a1f4a339723002871428f6200514e:-878175724,812a1f4a9b972300c261650ff9911f8b:506958413,1ef9db4a919723003164c6d95449d1f1:-1235957957,5a195f0a0197230029ce61422838a5a1:-302572567,a3d8db0a0a972300d36042932aa7630c:-425214564,41c6538669972300ebca3ea655f810f8:-1636959347,fce553868697230088bb4d9e75c4e8ef:-2045459484,ceb55f46e09723003f7f0b11b8cd87aa:-1687310556,c7e4d306a69723005ce46bf1e50b109b:-2014816797,68941f067b972300e61006fd59fda0b2:2084269959,4704d30631972300d0d2d61b9690a892:-2129434265,09f393c2bb972300af40741f603c9ba3:674007181,035393c23a97230057ed346643dd959b:-1157270094,75f7ca0a1a532300c644831901407ca8:-1420695238,7e474a86ce5323002a7b8076a929371c:1499405166,7f07c206745323000cc28434f8df6093:-194839887,2c428a020e9f2b40ffdaf6ba698da656:1842343572,f670ce8e9f5f2b4089d50cc5d04792e7:-280267206,159ffd46b25f2b405d748940c788c888:754414067,a6ee35420d5f2b40ab22fe3208781de4:-279428806,a4d97502e95f2b40e7c1baa6c6cc5154:-1604738243,dd69bdce0c1f2b409beb466d30a5ac79:529052344,4488754ed41f2b407626dfd447dbfdc6:-1285889211</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_4e65214e4fdb2b4005be4d6e0210c7fb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;item-added-tooltip-leftnav.html&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-30 20:31:41&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4e65214e4fdb2b4005be4d6e0210c7fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;item-added-tooltip-leftnav.html&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_4e65214e4fdb2b4005be4d6e0210c7fb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-30 20:31:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-click="toggleCart()" class="item-added-tooltip"&gt;${Item has been added to your cart.}&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1325562667</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>9760ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5bac40000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>item-added-tooltip-leftnav.html</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>1585f0d47eefe700926523d117fa7b22</update_guid>
+<update_guid_history>1585f0d47eefe700926523d117fa7b22:1325562667,2285614e9fdb2b40f617daaa8e581e16:1325562667</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_4e5639714f0beb0005be4d6e0210c7a5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>leftNavSlider</module><name>leftNavSlider</name><page_load>true</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-17 16:52:18</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>4e5639714f0beb0005be4d6e0210c7a5</sys_id><sys_mod_count>2</sys_mod_count><sys_name>leftNavSlider</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_4e5639714f0beb0005be4d6e0210c7a5</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-18 13:12:37</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>-1474286943</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>9b60ecb44f7f27408272ece24210c7e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b625cc0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>leftNavSlider</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>c8a534d4a7efe7001bd971ed0fc5e705</update_guid>
+<update_guid_history>c8a534d4a7efe7001bd971ed0fc5e705:-1474286943,39fd028238872f006166a39c3c5a34f9:-1474286943,f0eb020e9a472f00cbc12affce7789be:-408014554,c6a6b971c40beb00f0cf32c29f82a13c:-1474286943</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_32a4a50e4fdb2b4005be4d6e0210c7b5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;visibleItemsLeftNavTemplate&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-30 20:28:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;32a4a50e4fdb2b4005be4d6e0210c7b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;75&lt;/sys_mod_count&gt;&lt;sys_name&gt;visibleItemsLeftNavTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_32a4a50e4fdb2b4005be4d6e0210c7b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-04 16:02:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a href ng-click="menuItemClicked(item)" ng-if="item.items.length == 0 &amp;&amp; !item.scriptedItems" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" 
+   ng-class="{'anchor-expanded': navExpanded}" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0 &amp;&amp; item.glyph!="empty"'/&gt;
+  &lt;i class='fa {{navpilldefaulticon}}' ng-if='item.glyph.length&lt;=0 || item.glyph=="empty"'/&gt;
+  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href ng-if="item.items.length &gt; 0" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" ng-click='toggleSubMenu($event,item.sys_id)'
+   class="sp-menu-has-items" ng-class="{'anchor-expanded': navExpanded}" role="menuitem"&gt;
+  &lt;i class='fa fa-caret-down'/&gt;
+  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul id="{{::item.sys_id}}" class='nav navbar-nav nav-pills nav-stacked submenu' ng-class="{ submenushow : xsScreenSize }" ng-if="item.items.length &gt; 0"&gt;
+  &lt;li ng-repeat="item in item.items" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" /&gt;
+&lt;/ul&gt;
+&lt;a href id="scripted-dropdown" ng-if="item.scriptedItems.count &gt; 0" aria-haspopup="true" 
+   data-toggle="dropdown" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.hint}} : {{item.scriptedItems.count}}" role="menuitem"
+   ng-class="{'anchor-expanded': navExpanded}" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0 &amp;&amp; item.glyph!="empty"'/&gt;
+  &lt;i class='fa {{navpilldefaulticon}}' ng-if='item.glyph.length&lt;=0 || item.glyph=="empty"'/&gt;
+  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
+  &lt;span ng-if="!item.scriptedItems.omitBadge &amp;&amp; navExpanded" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{item.scriptedItems.count}}&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul ng-if="item.scriptedItems.count &gt; 0" class="dropdown-menu" role="menu" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" &gt;
+  &lt;li role="presentation" ng-repeat="mi in item.scriptedItems.items"
+      class="ng-scope dropdown-menu-line"&gt;
+    &lt;a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="menuItemClicked(mi)"&gt;
+      &lt;span ng-if='mi.number'&gt;{{::mi.number | characters:60}}&lt;/span&gt;
+      &lt;span ng-if='mi.title'&gt;{{::mi.title | characters:60}}&lt;/span&gt;
+      &lt;span ng-if='!mi.title'&gt;{{::mi.short_description | characters:60}}&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1472227975</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>d360ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5bb000000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>visibleItemsLeftNavTemplate</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>5985f0d491efe7007a646842815f8924</update_guid>
+<update_guid_history>5985f0d491efe7007a646842815f8924:-1472227975,7bd796a71dd767008053d8c9e27ed1c5:-1472227975,1bf41aafd097670035b23e5752c651ce:-318233768,f0e496af759767008187247f1481027e:112877464,5d344e6fe0576700beb0be75d3d92c10:-1199285788,5a334a2f4f576700b33db74013c8784e:-1880454673,5d03062fb1576700a2fb25a16c04935e:1296821,0c95b9ef0417670077ec151646c9034f:210342047,d075fdafb817670088dd9e1fdd76d69a:1112020757,48f4f9afbc176700583c5a08d3679bf4:210342047,66c3796faa176700711132858f408fac:2001372040,1c93f52fce176700c4f4058ad8952b7d:-521273674,2172bdab731767004425702545c33307:578427341,4871f9aba517670037f7f67feb236961:-1750840184,52fa8a97085b270058ec13c1d4c9ce51:-159247275,6628c6170a5b2700a720ba6af805c1cb:-1596851014,db474ad39a5b270058035e7ecd738d1c:-2073086336,31468a93b55b2700fadff4dfe4470811:-2109163138,26068e53155b2700ed4c76ecb3e91f6c:-4042178,a995ca53b65b2700a944f5afd73623f1:1408736982,29758e533c5b2700114b4f993dc48132:1549701499,9d3582535a5b2700e3cccff6524bca91:-1123018928,b0244a13a25b2700bc08ebf8b64fca5f:1408736982,0af30a139d5b27000ebcb65281ff30bc:96283927,8a5342dff61b27004883914d2306f272:190387492,d05342dfeb1b27001415b25f4d200b7a:-1675136312,fde14e5f7c1b2700dcf0e0b9e61fb713:1824923724,dd80821f2e1b2700b197d5f9e233defe:310486026,fb9c7dd7d01b2700283575f46954a696:1824923724,de1af993191b2700df57c6d17c5e6fc5:1297869930,aad971938b1b2700718ac241f97311b2:-465782395,8f997593b41b270053fd4ad62b2b951f:-295462998,8df87d9f97d727009fd3b9c209b9ad85:-515232087,2fe27997f2d72700630f2d7b0774fc15:-2088650128,6d52b55724d727006e2372880d67c936:-1238080025,5661f91777d727004cced9ea872741e2:590937663,82f03dd370d72700eaf12fd8b1804118:-1958689587,bf20f9d38dd7270019a1403bdc192dfb:-239612628,aeffe5d308d72700ab418ab850b5c8bd:1998049936,bfcfe1d3bbd727004d96813366609086:281445266,348fed937ad72700c36fc998fd5afd7e:-1787450672,066f29939fd727004b671f07a13e82bd:-821253906,a5de619367d727007968f3efe9a582e9:840553960,55ae655363d7270035685d5ec8a30704:-234195250,c3fd2553b0d72700b54edc8ba8bcc781:840553960,8bace113f5d72700708cb931bd2196d7:-1834215061,e6dba1dff3972700b22731898312b1c2:2046544777,f52a615f08972700a305044539d17ca9:-260905845,a8c96d1f9e972700cae947ec31a77a5f:2046544777,ba18655b3797270082c88adb89f50315:-2085774542,95893b36bbd3e300a839962b34ee16ff:-1110536887,1369f73630d3e3008622f24a85927fa4:-2085774542,9859b736cbd3e300d725547439e5f70c:-2014466913,9ab8bff236d3e300b5e33cc5ae6fd8f1:-2085774542,ab4eaee2f413a300dc30e00a7f5825be:-1110536887,4bcd6ee27513a30075e9fc39f83384c4:-2085774542,a3bd6ee2c713a300ad7f8cf19830305a:-1604140278,3b7ce6a20b13a300d8978658b53cd33e:1529088167,c62b2e626d13a30055306df44be51dc3:587548695,4497eb82551b23002f9b23f500d03e8e:1815188202,12b22f8603d723003ff60a68f9418249:-101687080,2b822b860ed72300a27db190e39d8da9:838918088,7d32e38683d72300b3a5f1d390a1af0f:-1637865201,b65b9f8ed997230007431f71dc9cc79e:-1395028454,c4359746479723008e720ec2b7072f45:-633768532,9544398a431f2b40a0cc93a5b393a631:1425158285,19733d4a721f2b4056afa5a36da28987:2060038239,9852310aa31f2b400543cae2b9109616:1123930255,ee6079c6e11f2b4013a6c973c035c41b:257431535,ef0f6586bf1f2b403a1706af42ac492d:-1879945353,67fc6d06211f2b40324d5bad3e802530:623531811,cd2ce1060a1f2b4036fa5dce53ec4485:1297701899,4d1c2106e41f2b403884e875b96a3e69:1114070553,63eba5c2791f2b406702d1301778b6ec:1895585322,cbf6a58e96db2b40de92521815903fc0:1723626979,a316ad4ea8db2b403ea277e733de245d:1895585322,44d4650e8ddb2b409126fc336a4fd6bf:1723626979</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_e33b52424f0b2f0005be4d6e0210c77b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="leftNavSlider">4e5639714f0beb0005be4d6e0210c7a5</sp_dependency><sp_widget display_value="Navigation Left - Collapsible">3af9be6a4f3e630005be4d6e0210c7a4</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-18 14:10:38</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e33b52424f0b2f0005be4d6e0210c77b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>leftNavSlider.Navigation Left - Simple</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_e33b52424f0b2f0005be4d6e0210c77b</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-18 14:10:38</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>405274925</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>d760ecb44f7f27408272ece24210c7e9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5e61e0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>leftNavSlider.Navigation Left - Simple</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>4895b0d452efe7003fcba2a5010e28dc</update_guid>
+<update_guid_history>4895b0d452efe7003fcba2a5010e28dc:405274925,6bbb97ced3972300d84d125b49ebc01e:405274925,a33b5242c10b2f001972f45680c29f7d:-1072351951</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_541cdd024fdb2b4005be4d6e0210c7a9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="angular-truncate">09e1f1416712220023c82e08f585ef1e</sp_dependency><sp_widget display_value="Navigation Left - Collapsible">3af9be6a4f3e630005be4d6e0210c7a4</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-30 19:50:19</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>541cdd024fdb2b4005be4d6e0210c7a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-truncate.Navigation Left - Collapsible</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_541cdd024fdb2b4005be4d6e0210c7a9</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-30 19:50:19</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>1412787479</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>df60ecb44f7f27408272ece24210c7e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5e5fa0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>angular-truncate.Navigation Left - Collapsible</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>4495b0d4acefe700808bd943578b34db</update_guid>
+<update_guid_history>4495b0d4acefe700808bd943578b34db:1412787479,141cdd02fedb2b402b86fae353b596ab:1412787479</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_ebc671b14f0beb0005be4d6e0210c78b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description&gt;Left Nav Slider Service and Directive&lt;/description&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;leftNavSlider&lt;/name&gt;&lt;script&gt;&lt;![CDATA[angular.module('leftNavSlider', [])
+	.directive('main', function (leftNavSideBar) {
+	
+	return {
+		
+		link: function (scope, elem, array) {
+			
+			if (leftNavSideBar.isExpanded()) {
+				elem.addClass('leftnav-expanded');
+			}
+			
+			//leftNavSideBar
+			
+			scope.$on('leftnavSideBarToggled', function (e, expanded) {
+				if (expanded) {
+					elem.addClass('leftnav-expanded');
+					return;
+				}
+				
+				elem.removeClass('leftnav-expanded');
+				return;
+			});
+		}
+		
+	};
+	
+	
+
+})
+	.service('leftNavSideBar', function ($rootScope, $window) {
+	
+	var lsVal = $window.localStorage.getItem('leftnav-expanded');
+
+	var expanded = lsVal === null ? true : lsVal == 'true';
+	var visible = true;
+	
+	function isExpanded () {
+		return expanded;
+	}
+	
+	function isVisible () {
+		return visible;
+	}
+	
+	function toggleExpanded () {
+		expanded = !expanded;
+		$window.localStorage.setItem('leftnav-expanded', expanded);
+
+		$rootScope.$broadcast('leftnavSideBarToggled', isExpanded());
+		return expanded;
+	}
+
+	return {
+		isExpanded: isExpanded,
+		isVisible: isVisible,
+		toggleExpanded: toggleExpanded
+	};
+
+});]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-17 16:53:30&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;ebc671b14f0beb0005be4d6e0210c78b&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;leftNavSlider&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_ebc671b14f0beb0005be4d6e0210c78b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-06 15:42:52&lt;/sys_updated_on&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>149519947</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-20 14:48:44</sys_created_on>
+<sys_id>df60ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b65d3a0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<table/>
+<target_name>leftNavSlider</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>d7a5b4d45befe700324c79111c769465</update_guid>
+<update_guid_history>d7a5b4d45befe700324c79111c769465:149519947,449660d82cafe700063c3d590421a461:149519947,f020251b03572700f30fbb802e787bd1:1094370239,ec395e4a21c72f00cc609b390c3f6686:-1872442589,1d68d28678c72f00b6437ea182d211cd:-1627364505,f58d4a027f872f00d702cf56007453c7:674391110,8d5d8602ca872f0015b056a7c36b11aa:1698420953,356f7d39480beb008bfe7da732fbe846:674391110,6be6fd71d20beb00354893ecff355dd5:467942793</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

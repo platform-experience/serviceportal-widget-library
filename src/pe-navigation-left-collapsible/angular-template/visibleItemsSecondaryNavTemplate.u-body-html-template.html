@@ -1,0 +1,34 @@
+<a ng-href='{{::item.href}}' target='{{::item.url_target}}' ng-if="item.items.length == 0 && !item.scriptedItems" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" >
+  <i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length>0'/>
+  <span ng-bind-html="::item.label"></span>
+</a>
+<a href ng-if="item.items.length > 0" class="dropdown-toggle sp-menu-has-items" data-toggle="dropdown" 
+   aria-controls="menu-apply" aria-haspopup="true"
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" >
+  <i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length>0'/>
+  <span ng-bind-html="::item.label"></span> <span class="caret"></span>
+</a>
+<ul ng-if="item.items.length > 0" class="dropdown-menu" role="group" id="menu-apply">
+  <li ng-repeat="item in item.items" ng-include="'visibleItemsSecondaryNavTemplate'" />
+</ul>
+<a href ng-if="item.scriptedItems.count > 0" aria-haspopup="true"
+   data-toggle="dropdown" aria-label="{{::item.label}} : {{item.scriptedItems.count}}"
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.hint}} : {{item.scriptedItems.count}}" role="menuitem" >
+  <i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length>0'/>
+  <span ng-bind-html="::item.label"></span>
+  <span ng-if="::!item.scriptedItems.omitBadge" class="label label-as-badge label-primary sp-navbar-badge-count">{{item.scriptedItems.count}}</span>
+</a>
+<ul ng-if="item.scriptedItems.count > 0" class="dropdown-menu" role="menu" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" >
+  <li role="presentation" ng-repeat="mi in item.scriptedItems.items"
+      class="ng-scope dropdown-menu-line">
+    <a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="menuItemClicked(mi)">
+      <span ng-if='mi.number'>{{::mi.number | characters:60}}</span>
+      <span ng-if='mi.title'>{{::mi.title | characters:60}}</span>
+      <span ng-if='!mi.title'>{{::mi.short_description | characters:60}}</span>
+    </a>
+  </li>
+</ul>
