@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-20 14:48:44">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-22 13:14:09">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -20,11 +20,11 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>5b60ecb44f7f27408272ece24210c7e8</sys_id>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>adfd16914f3763008272ece24210c734</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -34,83 +34,24 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_js_include_d5b6fd714f0beb0005be4d6e0210c7f2</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>leftNavSlider</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-17 16:52:49</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d5b6fd714f0beb0005be4d6e0210c7f2</sys_id><sys_mod_count>1</sys_mod_count><sys_name>leftNavSlider</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="leftNavSlider">ebc671b14f0beb0005be4d6e0210c78b</sys_ui_script><sys_update_name>sp_js_include_d5b6fd714f0beb0005be4d6e0210c7f2</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-17 16:53:41</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
-<payload_hash>-1050555971</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<name>m2m_sp_dependency_js_include_c07d5e514f3763008272ece24210c788</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="leftNavSlider">4e5639714f0beb0005be4d6e0210c7a5</sp_dependency><sp_js_include display_value="leftNavSlider">d5b6fd714f0beb0005be4d6e0210c7f2</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-02-22 13:11:51</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>c07d5e514f3763008272ece24210c788</sys_id><sys_mod_count>0</sys_mod_count><sys_name>leftNavSlider.leftNavSlider</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_c07d5e514f3763008272ece24210c788</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-02-22 13:11:51</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>-586283200</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>1360ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>25fd16914f3763008272ece24210c735</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>168c3b642890000001</sys_recorded_at>
+<sys_recorded_at>169155564fc0000001</sys_recorded_at>
 <sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
 <table/>
-<target_name>leftNavSlider</target_name>
-<type>JS Include</type>
+<target_name>leftNavSlider.leftNavSlider</target_name>
+<type>Dependency JS Includes</type>
 <update_domain>global</update_domain>
-<update_guid>f5a5b4d424efe700809db80c20d77951</update_guid>
-<update_guid_history>f5a5b4d424efe700809db80c20d77951:-1050555971,daf6f1b1880beb00863b8d8246379883:-1050555971,a9c6bd71000beb008ec528c72120d9ee:1695410161</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_ng_template_d363eaaa4fdf630005be4d6e0210c783</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;visibleItemsSecondaryNavTemplate&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-01 14:19:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;d363eaaa4fdf630005be4d6e0210c783&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;visibleItemsSecondaryNavTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_d363eaaa4fdf630005be4d6e0210c783&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-01 14:56:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a ng-href='{{::item.href}}' target='{{::item.url_target}}' ng-if="item.items.length == 0 &amp;&amp; !item.scriptedItems" 
-   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
-   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" &gt;
-  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
-  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt;
-&lt;/a&gt;
-&lt;a href ng-if="item.items.length &gt; 0" class="dropdown-toggle sp-menu-has-items" data-toggle="dropdown" 
-   aria-controls="menu-apply" aria-haspopup="true"
-   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
-   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" &gt;
-  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
-  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;
-&lt;/a&gt;
-&lt;ul ng-if="item.items.length &gt; 0" class="dropdown-menu" role="group" id="menu-apply"&gt;
-  &lt;li ng-repeat="item in item.items" ng-include="'visibleItemsSecondaryNavTemplate'" /&gt;
-&lt;/ul&gt;
-&lt;a href ng-if="item.scriptedItems.count &gt; 0" aria-haspopup="true"
-   data-toggle="dropdown" aria-label="{{::item.label}} : {{item.scriptedItems.count}}"
-   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
-   name='{{::item.label}}' title="{{::item.hint}} : {{item.scriptedItems.count}}" role="menuitem" &gt;
-  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
-  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt;
-  &lt;span ng-if="::!item.scriptedItems.omitBadge" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{item.scriptedItems.count}}&lt;/span&gt;
-&lt;/a&gt;
-&lt;ul ng-if="item.scriptedItems.count &gt; 0" class="dropdown-menu" role="menu" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" &gt;
-  &lt;li role="presentation" ng-repeat="mi in item.scriptedItems.items"
-      class="ng-scope dropdown-menu-line"&gt;
-    &lt;a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="menuItemClicked(mi)"&gt;
-      &lt;span ng-if='mi.number'&gt;{{::mi.number | characters:60}}&lt;/span&gt;
-      &lt;span ng-if='mi.title'&gt;{{::mi.title | characters:60}}&lt;/span&gt;
-      &lt;span ng-if='!mi.title'&gt;{{::mi.short_description | characters:60}}&lt;/span&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
-<payload_hash>628721928</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>1f60ecb44f7f27408272ece24210c7ea</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>168c3b5bb140000001</sys_recorded_at>
-<sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
-<table/>
-<target_name>visibleItemsSecondaryNavTemplate</target_name>
-<type>Angular ng-template</type>
-<update_domain>global</update_domain>
-<update_guid>d985f0d49eefe700c745760fb113b725</update_guid>
-<update_guid_history>d985f0d49eefe700c745760fb113b725:628721928,830c2e623913a3003f6a6c5b94ebfacb:628721928,6ca86eae4bdf63009ccd3422fe08f9a0:385709587,bc936eaa2fdf630053df3416384701a5:-1482104758,3483eaaa98df6300ab9175324d9ad388:1112297610</update_guid_history>
+<update_guid>c87d5e5154376300681e4ec6eeeea289</update_guid>
+<update_guid_history>c87d5e5154376300681e4ec6eeeea289:-586283200</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -127,15 +68,15 @@
   &lt;/style&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
 <payload_hash>775703149</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>5b60ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>25fd16914f3763008272ece24210c737</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>168c3b5baec0000001</sys_recorded_at>
 <sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
 <table/>
 <target_name>loginleftNavTemplate</target_name>
 <type>Angular ng-template</type>
@@ -1581,15 +1522,15 @@ $nav-stacked-gap: 6px !default;&amp;#13;
 
 ]]&gt;&lt;/template&gt;&lt;/sp_header_footer&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-36628006</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>5f60ecb44f7f27408272ece24210c7e9</sys_id>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>29fd16914f3763008272ece24210c736</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>1690b5e97780000001</sys_recorded_at>
 <sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
 <table/>
 <target_name>Navigation Left - Collapsible</target_name>
 <type>Header | Footer</type>
@@ -1604,18 +1545,44 @@ $nav-stacked-gap: 6px !default;&amp;#13;
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
+<name>m2m_sp_dependency_js_include_e5c6bd714f0beb0005be4d6e0210c7ef</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency/><sp_js_include display_value="leftNavSlider">d5b6fd714f0beb0005be4d6e0210c7f2</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-17 16:52:49</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e5c6bd714f0beb0005be4d6e0210c7ef</sys_id><sys_mod_count>3</sys_mod_count><sys_name>.leftNavSlider</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_e5c6bd714f0beb0005be4d6e0210c7ef</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-02-22 13:11:35</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>1417316983</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>2dfd16914f3763008272ece24210c735</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1691555259b0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
+<table/>
+<target_name>.leftNavSlider</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>c06dda51ca376300cac82102499ca52c</update_guid>
+<update_guid_history>c06dda51ca376300cac82102499ca52c:1417316983,8a5d5a5105376300335730ef87399b6b:-586283200,744d5a5144376300eb9ea9eeb3f6e1ed:252130279,edc6bd71690beb00a85915432bb8c8f0:-586283200</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
 <name>sp_ng_template_4e65214e4fdb2b4005be4d6e0210c7fb</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;item-added-tooltip-leftnav.html&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-30 20:31:41&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4e65214e4fdb2b4005be4d6e0210c7fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;item-added-tooltip-leftnav.html&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_4e65214e4fdb2b4005be4d6e0210c7fb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-30 20:31:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-click="toggleCart()" class="item-added-tooltip"&gt;${Item has been added to your cart.}&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
 <payload_hash>1325562667</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>9760ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>61fd16914f3763008272ece24210c737</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>168c3b5bac40000001</sys_recorded_at>
 <sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
 <table/>
 <target_name>item-added-tooltip-leftnav.html</target_name>
 <type>Angular ng-template</type>
@@ -1631,85 +1598,23 @@ $nav-stacked-gap: 6px !default;&amp;#13;
 <category>customer</category>
 <comments/>
 <name>sp_dependency_4e5639714f0beb0005be4d6e0210c7a5</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>leftNavSlider</module><name>leftNavSlider</name><page_load>true</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-17 16:52:18</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>4e5639714f0beb0005be4d6e0210c7a5</sys_id><sys_mod_count>2</sys_mod_count><sys_name>leftNavSlider</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_4e5639714f0beb0005be4d6e0210c7a5</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-18 13:12:37</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>leftNavSlider</module><name>leftNavSlider</name><page_load>true</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-17 16:52:18</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>4e5639714f0beb0005be4d6e0210c7a5</sys_id><sys_mod_count>4</sys_mod_count><sys_name>leftNavSlider</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_4e5639714f0beb0005be4d6e0210c7a5</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-02-22 13:10:15</sys_updated_on></sp_dependency></record_update>]]></payload>
 <payload_hash>-1474286943</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>9b60ecb44f7f27408272ece24210c7e9</sys_id>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>65fd16914f3763008272ece24210c736</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>168c3b625cc0000001</sys_recorded_at>
+<sys_recorded_at>1691555834c0000001</sys_recorded_at>
 <sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
 <table/>
 <target_name>leftNavSlider</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
-<update_guid>c8a534d4a7efe7001bd971ed0fc5e705</update_guid>
-<update_guid_history>c8a534d4a7efe7001bd971ed0fc5e705:-1474286943,39fd028238872f006166a39c3c5a34f9:-1474286943,f0eb020e9a472f00cbc12affce7789be:-408014554,c6a6b971c40beb00f0cf32c29f82a13c:-1474286943</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_ng_template_32a4a50e4fdb2b4005be4d6e0210c7b5</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;visibleItemsLeftNavTemplate&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-30 20:28:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;32a4a50e4fdb2b4005be4d6e0210c7b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;75&lt;/sys_mod_count&gt;&lt;sys_name&gt;visibleItemsLeftNavTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_32a4a50e4fdb2b4005be4d6e0210c7b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-04 16:02:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a href ng-click="menuItemClicked(item)" ng-if="item.items.length == 0 &amp;&amp; !item.scriptedItems" 
-   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
-   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" 
-   ng-class="{'anchor-expanded': navExpanded}" &gt;
-  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0 &amp;&amp; item.glyph!="empty"'/&gt;
-  &lt;i class='fa {{navpilldefaulticon}}' ng-if='item.glyph.length&lt;=0 || item.glyph=="empty"'/&gt;
-  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
-&lt;/a&gt;
-&lt;a href ng-if="item.items.length &gt; 0" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
-   name='{{::item.label}}' title="{{::item.label}}" ng-click='toggleSubMenu($event,item.sys_id)'
-   class="sp-menu-has-items" ng-class="{'anchor-expanded': navExpanded}" role="menuitem"&gt;
-  &lt;i class='fa fa-caret-down'/&gt;
-  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
-&lt;/a&gt;
-&lt;ul id="{{::item.sys_id}}" class='nav navbar-nav nav-pills nav-stacked submenu' ng-class="{ submenushow : xsScreenSize }" ng-if="item.items.length &gt; 0"&gt;
-  &lt;li ng-repeat="item in item.items" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" /&gt;
-&lt;/ul&gt;
-&lt;a href id="scripted-dropdown" ng-if="item.scriptedItems.count &gt; 0" aria-haspopup="true" 
-   data-toggle="dropdown" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" 
-   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
-   name='{{::item.label}}' title="{{::item.hint}} : {{item.scriptedItems.count}}" role="menuitem"
-   ng-class="{'anchor-expanded': navExpanded}" &gt;
-  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0 &amp;&amp; item.glyph!="empty"'/&gt;
-  &lt;i class='fa {{navpilldefaulticon}}' ng-if='item.glyph.length&lt;=0 || item.glyph=="empty"'/&gt;
-  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
-  &lt;span ng-if="!item.scriptedItems.omitBadge &amp;&amp; navExpanded" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{item.scriptedItems.count}}&lt;/span&gt;
-&lt;/a&gt;
-&lt;ul ng-if="item.scriptedItems.count &gt; 0" class="dropdown-menu" role="menu" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" &gt;
-  &lt;li role="presentation" ng-repeat="mi in item.scriptedItems.items"
-      class="ng-scope dropdown-menu-line"&gt;
-    &lt;a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="menuItemClicked(mi)"&gt;
-      &lt;span ng-if='mi.number'&gt;{{::mi.number | characters:60}}&lt;/span&gt;
-      &lt;span ng-if='mi.title'&gt;{{::mi.title | characters:60}}&lt;/span&gt;
-      &lt;span ng-if='!mi.title'&gt;{{::mi.short_description | characters:60}}&lt;/span&gt;
-    &lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-1472227975</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>d360ecb44f7f27408272ece24210c7ea</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>168c3b5bb000000001</sys_recorded_at>
-<sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
-<table/>
-<target_name>visibleItemsLeftNavTemplate</target_name>
-<type>Angular ng-template</type>
-<update_domain>global</update_domain>
-<update_guid>5985f0d491efe7007a646842815f8924</update_guid>
-<update_guid_history>5985f0d491efe7007a646842815f8924:-1472227975,7bd796a71dd767008053d8c9e27ed1c5:-1472227975,1bf41aafd097670035b23e5752c651ce:-318233768,f0e496af759767008187247f1481027e:112877464,5d344e6fe0576700beb0be75d3d92c10:-1199285788,5a334a2f4f576700b33db74013c8784e:-1880454673,5d03062fb1576700a2fb25a16c04935e:1296821,0c95b9ef0417670077ec151646c9034f:210342047,d075fdafb817670088dd9e1fdd76d69a:1112020757,48f4f9afbc176700583c5a08d3679bf4:210342047,66c3796faa176700711132858f408fac:2001372040,1c93f52fce176700c4f4058ad8952b7d:-521273674,2172bdab731767004425702545c33307:578427341,4871f9aba517670037f7f67feb236961:-1750840184,52fa8a97085b270058ec13c1d4c9ce51:-159247275,6628c6170a5b2700a720ba6af805c1cb:-1596851014,db474ad39a5b270058035e7ecd738d1c:-2073086336,31468a93b55b2700fadff4dfe4470811:-2109163138,26068e53155b2700ed4c76ecb3e91f6c:-4042178,a995ca53b65b2700a944f5afd73623f1:1408736982,29758e533c5b2700114b4f993dc48132:1549701499,9d3582535a5b2700e3cccff6524bca91:-1123018928,b0244a13a25b2700bc08ebf8b64fca5f:1408736982,0af30a139d5b27000ebcb65281ff30bc:96283927,8a5342dff61b27004883914d2306f272:190387492,d05342dfeb1b27001415b25f4d200b7a:-1675136312,fde14e5f7c1b2700dcf0e0b9e61fb713:1824923724,dd80821f2e1b2700b197d5f9e233defe:310486026,fb9c7dd7d01b2700283575f46954a696:1824923724,de1af993191b2700df57c6d17c5e6fc5:1297869930,aad971938b1b2700718ac241f97311b2:-465782395,8f997593b41b270053fd4ad62b2b951f:-295462998,8df87d9f97d727009fd3b9c209b9ad85:-515232087,2fe27997f2d72700630f2d7b0774fc15:-2088650128,6d52b55724d727006e2372880d67c936:-1238080025,5661f91777d727004cced9ea872741e2:590937663,82f03dd370d72700eaf12fd8b1804118:-1958689587,bf20f9d38dd7270019a1403bdc192dfb:-239612628,aeffe5d308d72700ab418ab850b5c8bd:1998049936,bfcfe1d3bbd727004d96813366609086:281445266,348fed937ad72700c36fc998fd5afd7e:-1787450672,066f29939fd727004b671f07a13e82bd:-821253906,a5de619367d727007968f3efe9a582e9:840553960,55ae655363d7270035685d5ec8a30704:-234195250,c3fd2553b0d72700b54edc8ba8bcc781:840553960,8bace113f5d72700708cb931bd2196d7:-1834215061,e6dba1dff3972700b22731898312b1c2:2046544777,f52a615f08972700a305044539d17ca9:-260905845,a8c96d1f9e972700cae947ec31a77a5f:2046544777,ba18655b3797270082c88adb89f50315:-2085774542,95893b36bbd3e300a839962b34ee16ff:-1110536887,1369f73630d3e3008622f24a85927fa4:-2085774542,9859b736cbd3e300d725547439e5f70c:-2014466913,9ab8bff236d3e300b5e33cc5ae6fd8f1:-2085774542,ab4eaee2f413a300dc30e00a7f5825be:-1110536887,4bcd6ee27513a30075e9fc39f83384c4:-2085774542,a3bd6ee2c713a300ad7f8cf19830305a:-1604140278,3b7ce6a20b13a300d8978658b53cd33e:1529088167,c62b2e626d13a30055306df44be51dc3:587548695,4497eb82551b23002f9b23f500d03e8e:1815188202,12b22f8603d723003ff60a68f9418249:-101687080,2b822b860ed72300a27db190e39d8da9:838918088,7d32e38683d72300b3a5f1d390a1af0f:-1637865201,b65b9f8ed997230007431f71dc9cc79e:-1395028454,c4359746479723008e720ec2b7072f45:-633768532,9544398a431f2b40a0cc93a5b393a631:1425158285,19733d4a721f2b4056afa5a36da28987:2060038239,9852310aa31f2b400543cae2b9109616:1123930255,ee6079c6e11f2b4013a6c973c035c41b:257431535,ef0f6586bf1f2b403a1706af42ac492d:-1879945353,67fc6d06211f2b40324d5bad3e802530:623531811,cd2ce1060a1f2b4036fa5dce53ec4485:1297701899,4d1c2106e41f2b403884e875b96a3e69:1114070553,63eba5c2791f2b406702d1301778b6ec:1895585322,cbf6a58e96db2b40de92521815903fc0:1723626979,a316ad4ea8db2b403ea277e733de245d:1895585322,44d4650e8ddb2b409126fc336a4fd6bf:1723626979</update_guid_history>
+<update_guid>f57d1e51153763007c98dc0044bd31ff</update_guid>
+<update_guid_history>f57d1e51153763007c98dc0044bd31ff:-1474286943,a41d9651a337630065d2f858afa1d121:-1474286943,9c0d1651a03763007a91c4817855ea64:399101268,39fd028238872f006166a39c3c5a34f9:-1474286943,f0eb020e9a472f00cbc12affce7789be:-408014554,c6a6b971c40beb00f0cf32c29f82a13c:-1474286943</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -1721,47 +1626,21 @@ $nav-stacked-gap: 6px !default;&amp;#13;
 <name>m2m_sp_widget_dependency_e33b52424f0b2f0005be4d6e0210c77b</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="leftNavSlider">4e5639714f0beb0005be4d6e0210c7a5</sp_dependency><sp_widget display_value="Navigation Left - Collapsible">3af9be6a4f3e630005be4d6e0210c7a4</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-18 14:10:38</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e33b52424f0b2f0005be4d6e0210c77b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>leftNavSlider.Navigation Left - Simple</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_e33b52424f0b2f0005be4d6e0210c77b</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-18 14:10:38</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
 <payload_hash>405274925</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>d760ecb44f7f27408272ece24210c7e9</sys_id>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>a1fd16914f3763008272ece24210c736</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>168c3b5e61e0000001</sys_recorded_at>
 <sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
 <table/>
 <target_name>leftNavSlider.Navigation Left - Simple</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_guid>4895b0d452efe7003fcba2a5010e28dc</update_guid>
 <update_guid_history>4895b0d452efe7003fcba2a5010e28dc:405274925,6bbb97ced3972300d84d125b49ebc01e:405274925,a33b5242c10b2f001972f45680c29f7d:-1072351951</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>m2m_sp_widget_dependency_541cdd024fdb2b4005be4d6e0210c7a9</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="angular-truncate">09e1f1416712220023c82e08f585ef1e</sp_dependency><sp_widget display_value="Navigation Left - Collapsible">3af9be6a4f3e630005be4d6e0210c7a4</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-30 19:50:19</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>541cdd024fdb2b4005be4d6e0210c7a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-truncate.Navigation Left - Collapsible</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_541cdd024fdb2b4005be4d6e0210c7a9</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-30 19:50:19</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
-<payload_hash>1412787479</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>df60ecb44f7f27408272ece24210c7e8</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>168c3b5e5fa0000001</sys_recorded_at>
-<sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
-<table/>
-<target_name>angular-truncate.Navigation Left - Collapsible</target_name>
-<type>Widget Dependency</type>
-<update_domain>global</update_domain>
-<update_guid>4495b0d4acefe700808bd943578b34db</update_guid>
-<update_guid_history>4495b0d4acefe700808bd943578b34db:1412787479,141cdd02fedb2b402b86fae353b596ab:1412787479</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -1831,21 +1710,194 @@ $nav-stacked-gap: 6px !default;&amp;#13;
 
 });]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-17 16:53:30&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;ebc671b14f0beb0005be4d6e0210c78b&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;leftNavSlider&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_ebc671b14f0beb0005be4d6e0210c78b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-06 15:42:52&lt;/sys_updated_on&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
 <payload_hash>149519947</payload_hash>
-<remote_update_set display_value="Navigation Left - Collapsible">5b60ecb44f7f27408272ece24210c7e8</remote_update_set>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>chris.stoll</sys_created_by>
-<sys_created_on>2019-02-20 14:48:44</sys_created_on>
-<sys_id>df60ecb44f7f27408272ece24210c7ea</sys_id>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>a9fd16914f3763008272ece24210c737</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>168c3b65d3a0000001</sys_recorded_at>
 <sys_updated_by>chris.stoll</sys_updated_by>
-<sys_updated_on>2019-02-20 14:48:44</sys_updated_on>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
 <table/>
 <target_name>leftNavSlider</target_name>
 <type>UI Script</type>
 <update_domain>global</update_domain>
 <update_guid>d7a5b4d45befe700324c79111c769465</update_guid>
 <update_guid_history>d7a5b4d45befe700324c79111c769465:149519947,449660d82cafe700063c3d590421a461:149519947,f020251b03572700f30fbb802e787bd1:1094370239,ec395e4a21c72f00cc609b390c3f6686:-1872442589,1d68d28678c72f00b6437ea182d211cd:-1627364505,f58d4a027f872f00d702cf56007453c7:674391110,8d5d8602ca872f0015b056a7c36b11aa:1698420953,356f7d39480beb008bfe7da732fbe846:674391110,6be6fd71d20beb00354893ecff355dd5:467942793</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_32a4a50e4fdb2b4005be4d6e0210c7b5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;visibleItemsLeftNavTemplate&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-30 20:28:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;32a4a50e4fdb2b4005be4d6e0210c7b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;75&lt;/sys_mod_count&gt;&lt;sys_name&gt;visibleItemsLeftNavTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_32a4a50e4fdb2b4005be4d6e0210c7b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-04 16:02:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a href ng-click="menuItemClicked(item)" ng-if="item.items.length == 0 &amp;&amp; !item.scriptedItems" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" 
+   ng-class="{'anchor-expanded': navExpanded}" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0 &amp;&amp; item.glyph!="empty"'/&gt;
+  &lt;i class='fa {{navpilldefaulticon}}' ng-if='item.glyph.length&lt;=0 || item.glyph=="empty"'/&gt;
+  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href ng-if="item.items.length &gt; 0" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" ng-click='toggleSubMenu($event,item.sys_id)'
+   class="sp-menu-has-items" ng-class="{'anchor-expanded': navExpanded}" role="menuitem"&gt;
+  &lt;i class='fa fa-caret-down'/&gt;
+  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul id="{{::item.sys_id}}" class='nav navbar-nav nav-pills nav-stacked submenu' ng-class="{ submenushow : xsScreenSize }" ng-if="item.items.length &gt; 0"&gt;
+  &lt;li ng-repeat="item in item.items" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" /&gt;
+&lt;/ul&gt;
+&lt;a href id="scripted-dropdown" ng-if="item.scriptedItems.count &gt; 0" aria-haspopup="true" 
+   data-toggle="dropdown" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.hint}} : {{item.scriptedItems.count}}" role="menuitem"
+   ng-class="{'anchor-expanded': navExpanded}" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0 &amp;&amp; item.glyph!="empty"'/&gt;
+  &lt;i class='fa {{navpilldefaulticon}}' ng-if='item.glyph.length&lt;=0 || item.glyph=="empty"'/&gt;
+  &lt;span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"&gt;&lt;/span&gt;
+  &lt;span ng-if="!item.scriptedItems.omitBadge &amp;&amp; navExpanded" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{item.scriptedItems.count}}&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul ng-if="item.scriptedItems.count &gt; 0" class="dropdown-menu" role="menu" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" &gt;
+  &lt;li role="presentation" ng-repeat="mi in item.scriptedItems.items"
+      class="ng-scope dropdown-menu-line"&gt;
+    &lt;a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="menuItemClicked(mi)"&gt;
+      &lt;span ng-if='mi.number'&gt;{{::mi.number | characters:60}}&lt;/span&gt;
+      &lt;span ng-if='mi.title'&gt;{{::mi.title | characters:60}}&lt;/span&gt;
+      &lt;span ng-if='!mi.title'&gt;{{::mi.short_description | characters:60}}&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1472227975</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>adfd16914f3763008272ece24210c736</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5bb000000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
+<table/>
+<target_name>visibleItemsLeftNavTemplate</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>5985f0d491efe7007a646842815f8924</update_guid>
+<update_guid_history>5985f0d491efe7007a646842815f8924:-1472227975,7bd796a71dd767008053d8c9e27ed1c5:-1472227975,1bf41aafd097670035b23e5752c651ce:-318233768,f0e496af759767008187247f1481027e:112877464,5d344e6fe0576700beb0be75d3d92c10:-1199285788,5a334a2f4f576700b33db74013c8784e:-1880454673,5d03062fb1576700a2fb25a16c04935e:1296821,0c95b9ef0417670077ec151646c9034f:210342047,d075fdafb817670088dd9e1fdd76d69a:1112020757,48f4f9afbc176700583c5a08d3679bf4:210342047,66c3796faa176700711132858f408fac:2001372040,1c93f52fce176700c4f4058ad8952b7d:-521273674,2172bdab731767004425702545c33307:578427341,4871f9aba517670037f7f67feb236961:-1750840184,52fa8a97085b270058ec13c1d4c9ce51:-159247275,6628c6170a5b2700a720ba6af805c1cb:-1596851014,db474ad39a5b270058035e7ecd738d1c:-2073086336,31468a93b55b2700fadff4dfe4470811:-2109163138,26068e53155b2700ed4c76ecb3e91f6c:-4042178,a995ca53b65b2700a944f5afd73623f1:1408736982,29758e533c5b2700114b4f993dc48132:1549701499,9d3582535a5b2700e3cccff6524bca91:-1123018928,b0244a13a25b2700bc08ebf8b64fca5f:1408736982,0af30a139d5b27000ebcb65281ff30bc:96283927,8a5342dff61b27004883914d2306f272:190387492,d05342dfeb1b27001415b25f4d200b7a:-1675136312,fde14e5f7c1b2700dcf0e0b9e61fb713:1824923724,dd80821f2e1b2700b197d5f9e233defe:310486026,fb9c7dd7d01b2700283575f46954a696:1824923724,de1af993191b2700df57c6d17c5e6fc5:1297869930,aad971938b1b2700718ac241f97311b2:-465782395,8f997593b41b270053fd4ad62b2b951f:-295462998,8df87d9f97d727009fd3b9c209b9ad85:-515232087,2fe27997f2d72700630f2d7b0774fc15:-2088650128,6d52b55724d727006e2372880d67c936:-1238080025,5661f91777d727004cced9ea872741e2:590937663,82f03dd370d72700eaf12fd8b1804118:-1958689587,bf20f9d38dd7270019a1403bdc192dfb:-239612628,aeffe5d308d72700ab418ab850b5c8bd:1998049936,bfcfe1d3bbd727004d96813366609086:281445266,348fed937ad72700c36fc998fd5afd7e:-1787450672,066f29939fd727004b671f07a13e82bd:-821253906,a5de619367d727007968f3efe9a582e9:840553960,55ae655363d7270035685d5ec8a30704:-234195250,c3fd2553b0d72700b54edc8ba8bcc781:840553960,8bace113f5d72700708cb931bd2196d7:-1834215061,e6dba1dff3972700b22731898312b1c2:2046544777,f52a615f08972700a305044539d17ca9:-260905845,a8c96d1f9e972700cae947ec31a77a5f:2046544777,ba18655b3797270082c88adb89f50315:-2085774542,95893b36bbd3e300a839962b34ee16ff:-1110536887,1369f73630d3e3008622f24a85927fa4:-2085774542,9859b736cbd3e300d725547439e5f70c:-2014466913,9ab8bff236d3e300b5e33cc5ae6fd8f1:-2085774542,ab4eaee2f413a300dc30e00a7f5825be:-1110536887,4bcd6ee27513a30075e9fc39f83384c4:-2085774542,a3bd6ee2c713a300ad7f8cf19830305a:-1604140278,3b7ce6a20b13a300d8978658b53cd33e:1529088167,c62b2e626d13a30055306df44be51dc3:587548695,4497eb82551b23002f9b23f500d03e8e:1815188202,12b22f8603d723003ff60a68f9418249:-101687080,2b822b860ed72300a27db190e39d8da9:838918088,7d32e38683d72300b3a5f1d390a1af0f:-1637865201,b65b9f8ed997230007431f71dc9cc79e:-1395028454,c4359746479723008e720ec2b7072f45:-633768532,9544398a431f2b40a0cc93a5b393a631:1425158285,19733d4a721f2b4056afa5a36da28987:2060038239,9852310aa31f2b400543cae2b9109616:1123930255,ee6079c6e11f2b4013a6c973c035c41b:257431535,ef0f6586bf1f2b403a1706af42ac492d:-1879945353,67fc6d06211f2b40324d5bad3e802530:623531811,cd2ce1060a1f2b4036fa5dce53ec4485:1297701899,4d1c2106e41f2b403884e875b96a3e69:1114070553,63eba5c2791f2b406702d1301778b6ec:1895585322,cbf6a58e96db2b40de92521815903fc0:1723626979,a316ad4ea8db2b403ea277e733de245d:1895585322,44d4650e8ddb2b409126fc336a4fd6bf:1723626979</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_d363eaaa4fdf630005be4d6e0210c783</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;visibleItemsSecondaryNavTemplate&lt;/id&gt;&lt;sp_widget display_value="Navigation Left - Collapsible"&gt;3af9be6a4f3e630005be4d6e0210c7a4&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-01 14:19:25&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;d363eaaa4fdf630005be4d6e0210c783&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;visibleItemsSecondaryNavTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_d363eaaa4fdf630005be4d6e0210c783&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-01 14:56:42&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a ng-href='{{::item.href}}' target='{{::item.url_target}}' ng-if="item.items.length == 0 &amp;&amp; !item.scriptedItems" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
+  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href ng-if="item.items.length &gt; 0" class="dropdown-toggle sp-menu-has-items" data-toggle="dropdown" 
+   aria-controls="menu-apply" aria-haspopup="true"
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
+  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt; &lt;span class="caret"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul ng-if="item.items.length &gt; 0" class="dropdown-menu" role="group" id="menu-apply"&gt;
+  &lt;li ng-repeat="item in item.items" ng-include="'visibleItemsSecondaryNavTemplate'" /&gt;
+&lt;/ul&gt;
+&lt;a href ng-if="item.scriptedItems.count &gt; 0" aria-haspopup="true"
+   data-toggle="dropdown" aria-label="{{::item.label}} : {{item.scriptedItems.count}}"
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.hint}} : {{item.scriptedItems.count}}" role="menuitem" &gt;
+  &lt;i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length&gt;0'/&gt;
+  &lt;span ng-bind-html="::item.label"&gt;&lt;/span&gt;
+  &lt;span ng-if="::!item.scriptedItems.omitBadge" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{item.scriptedItems.count}}&lt;/span&gt;
+&lt;/a&gt;
+&lt;ul ng-if="item.scriptedItems.count &gt; 0" class="dropdown-menu" role="menu" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" &gt;
+  &lt;li role="presentation" ng-repeat="mi in item.scriptedItems.items"
+      class="ng-scope dropdown-menu-line"&gt;
+    &lt;a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="menuItemClicked(mi)"&gt;
+      &lt;span ng-if='mi.number'&gt;{{::mi.number | characters:60}}&lt;/span&gt;
+      &lt;span ng-if='mi.title'&gt;{{::mi.title | characters:60}}&lt;/span&gt;
+      &lt;span ng-if='!mi.title'&gt;{{::mi.short_description | characters:60}}&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>628721928</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>e5fd16914f3763008272ece24210c737</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5bb140000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
+<table/>
+<target_name>visibleItemsSecondaryNavTemplate</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>d985f0d49eefe700c745760fb113b725</update_guid>
+<update_guid_history>d985f0d49eefe700c745760fb113b725:628721928,830c2e623913a3003f6a6c5b94ebfacb:628721928,6ca86eae4bdf63009ccd3422fe08f9a0:385709587,bc936eaa2fdf630053df3416384701a5:-1482104758,3483eaaa98df6300ab9175324d9ad388:1112297610</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_d5b6fd714f0beb0005be4d6e0210c7f2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>leftNavSlider</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-17 16:52:49</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d5b6fd714f0beb0005be4d6e0210c7f2</sys_id><sys_mod_count>1</sys_mod_count><sys_name>leftNavSlider</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="leftNavSlider">ebc671b14f0beb0005be4d6e0210c78b</sys_ui_script><sys_update_name>sp_js_include_d5b6fd714f0beb0005be4d6e0210c7f2</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-17 16:53:41</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>-1050555971</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>e9fd16914f3763008272ece24210c736</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b642890000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
+<table/>
+<target_name>leftNavSlider</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>f5a5b4d424efe700809db80c20d77951</update_guid>
+<update_guid_history>f5a5b4d424efe700809db80c20d77951:-1050555971,daf6f1b1880beb00863b8d8246379883:-1050555971,a9c6bd71000beb008ec528c72120d9ee:1695410161</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_541cdd024fdb2b4005be4d6e0210c7a9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="angular-truncate">09e1f1416712220023c82e08f585ef1e</sp_dependency><sp_widget display_value="Navigation Left - Collapsible">3af9be6a4f3e630005be4d6e0210c7a4</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>chris.stoll</sys_created_by><sys_created_on>2019-01-30 19:50:19</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>541cdd024fdb2b4005be4d6e0210c7a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-truncate.Navigation Left - Collapsible</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_541cdd024fdb2b4005be4d6e0210c7a9</sys_update_name><sys_updated_by>chris.stoll</sys_updated_by><sys_updated_on>2019-01-30 19:50:19</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>1412787479</payload_hash>
+<remote_update_set display_value="Navigation Left - Collapsible">adfd16914f3763008272ece24210c734</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-22 13:14:09</sys_created_on>
+<sys_id>edfd16914f3763008272ece24210c735</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c3b5e5fa0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-22 13:14:09</sys_updated_on>
+<table/>
+<target_name>angular-truncate.Navigation Left - Collapsible</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>4495b0d4acefe700808bd943578b34db</update_guid>
+<update_guid_history>4495b0d4acefe700808bd943578b34db:1412787479,141cdd02fedb2b402b86fae353b596ab:1412787479</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
