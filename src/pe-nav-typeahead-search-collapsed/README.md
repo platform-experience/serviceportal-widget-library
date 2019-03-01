@@ -5,9 +5,9 @@
 The Typeahead Search widget is intended to be used within the Header widget for a portal. However, it is not coded for exclusively within a Header.  The widget can be used anywhere you would like to have a Typeahead Search that collapses into just the Search icon when not being used.
 
 ## Screenshots
-### Configured - Default
+### Expanded
 ![Expanded](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-nav-typeahead-search-collapsed/images/default.png)
-### Instance Options
+### Collapsed
 ![Collapsed](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-nav-typeahead-search-collapsed/images/collapsed.png)
 
 ## Additional Information/Notes
