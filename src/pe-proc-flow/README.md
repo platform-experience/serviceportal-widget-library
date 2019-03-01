@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> Renders a "Process Flow" in a Service Portal Widget
 
 ## Screenshot
 

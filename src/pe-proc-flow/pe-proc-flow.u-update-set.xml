@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-01 18:58:34">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<application_name>SP - Process Flow</application_name>
+<application_scope>x_pisn_sp_procflow</application_scope>
+<application_version>0.2.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Renders a "Process Flow" in a Service Portal Widget</description>
+<inserted/>
+<name>SP - Process Flow</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>41ef636fdb3b6300d033df8b4b96192c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>feef636fdb3b6300d033df8b4b961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_357a9484db6f9f405c025a6adc9619a2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-22 00:00:24</sys_created_on><sys_id>357a9484db6f9f405c025a6adc9619a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_357a9484db6f9f405c025a6adc9619a2</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-22 00:00:24</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-925152026</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>32ef636fdb3b6300d033df8b4b961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3c180000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_20bd784bdbdb1f405c025a6adc961989</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-19 00:00:24</sys_created_on><sys_id>20bd784bdbdb1f405c025a6adc961989</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_20bd784bdbdb1f405c025a6adc961989</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-19 00:00:24</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-925152026</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>36ef636fdb3b6300d033df8b4b961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bff0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_f57a9484db6f9f405c025a6adc9619a0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-22 00:00:24</sys_created_on><sys_id>f57a9484db6f9f405c025a6adc9619a0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_f57a9484db6f9f405c025a6adc9619a0</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-22 00:00:24</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>781817542</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>36ef636fdb3b6300d033df8b4b961947</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3c1e0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_bd7a9484db6f9f405c025a6adc96199f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-22 00:00:24</sys_created_on><sys_id>bd7a9484db6f9f405c025a6adc96199f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_bd7a9484db6f9f405c025a6adc96199f</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-22 00:00:24</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>1332312183</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>3aef636fdb3b6300d033df8b4b961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3c250000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_98240609dbd71b405c025a6adc961904</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-13 00:00:16</sys_created_on><sys_id>98240609dbd71b405c025a6adc961904</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_98240609dbd71b405c025a6adc961904</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-13 00:00:16</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>781817542</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>3eef636fdb3b6300d033df8b4b961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bd00000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_ac2251abdb5c934085895845dc9619fe</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><can_edit_in_studio>false</can_edit_in_studio><enforce_license>log</enforce_license><js_level>helsinki_es5</js_level><licensable>true</licensable><license_category>none</license_category><license_model>none</license_model><logo/><menu/><name>SP - Process Flow</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking/><scope>x_pisn_sp_procflow</scope><scoped_administration>false</scoped_administration><short_description>Renders a "Process Flow" in a Service Portal Widget</short_description><source>x_pisn_sp_procflow</source><store_correlation_id>REPOAPP0000001188</store_correlation_id><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>chris.hann</sys_created_by><sys_created_on>2018-02-21 11:38:18</sys_created_on><sys_id>ac2251abdb5c934085895845dc9619fe</sys_id><sys_mod_count>31</sys_mod_count><sys_updated_by>chris.hann</sys_updated_by><sys_updated_on>2018-07-30 06:46:23</sys_updated_on><template/><trackable>true</trackable><user_role/><vendor/><vendor_prefix/><version>0.2.0</version></sys_app></record_update>]]></payload>
+<payload_hash>183791168</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>72ef636fdb3b6300d033df8b4b961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3b7f0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table/>
+<target_name>SP - Process Flow</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_f1478edfdb975f405c025a6adc961954</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-20 00:00:21</sys_created_on><sys_id>f1478edfdb975f405c025a6adc961954</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_f1478edfdb975f405c025a6adc961954</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-20 00:00:21</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>781817542</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>72ef636fdb3b6300d033df8b4b961947</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3c120000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_b7259dabdbd493405c025a6adc96197c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_pisn_sp_procflow.ProcessFlow&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;ProcessFlow&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var ProcessFlow = Class.create();
+ProcessFlow.prototype = {
+    initialize: function(taskGR) {
+		this.taskGR = taskGR;
+    },
+
+	loadStagesForTask: function(taskGR) {
+		taskGR = taskGR || this.taskGR;
+		var stages = [];
+
+		var processFlowGR = this.getProcessFlowGR(taskGR);
+
+		var foundCurrent = false;
+
+		while (processFlowGR.next()) {
+			var stageData = {
+				sys_id: processFlowGR.getUniqueValue(),
+				value: processFlowGR.name.toString(),
+				label: processFlowGR.label.getDisplayValue(),
+				description: processFlowGR.description.getDisplayValue()
+			};
+
+			var isCurrent = GlideFilter.checkRecord(taskGR, processFlowGR.condition.toString());
+
+			if (isCurrent) {
+				stageData.state = 'current';
+				foundCurrent = true;
+			} else if (foundCurrent) {
+				stageData.state = 'future';
+			} else {
+				stageData.state = 'past';
+			}
+
+			stages.push(stageData);
+		}
+
+		// If we never saw a "current" stage, all stages will be marked as "past", in this case, go and flip them all to "future"
+		var numberOfPastStages = stages.filter(function(stage) { return stage.state == 'past'; }).length;
+		var areAllInPast = stages.length == numberOfPastStages;
+
+		if (areAllInPast) {
+			stages = stages.map(function(stage) {
+				stage.state = 'future';
+				return stage;
+			});
+		}
+
+		return stages;
+	},
+
+	getProcessFlowGR: function(taskGR) {
+		var processFlowGR = new GlideRecord('sys_process_flow');
+		processFlowGR.addQuery('table', taskGR.getRecordClassName());
+		processFlowGR.addQuery('active', true);
+		processFlowGR.orderBy('order');
+		processFlowGR.query();
+
+		return processFlowGR;
+	},
+
+	toObject: function() {
+		return {
+			table: this.taskGR.getRecordClassName(),
+			sys_id: this.taskGR.getUniqueValue(),
+			stages: this.loadStagesForTask()
+		};
+	},
+
+    type: 'ProcessFlow'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.hann&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-02-21 13:58:18&lt;/sys_created_on&gt;&lt;sys_id&gt;b7259dabdbd493405c025a6adc96197c&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;ProcessFlow&lt;/sys_name&gt;&lt;sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SP - Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b7259dabdbd493405c025a6adc96197c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.hann&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-02-22 11:17:14&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-276817097</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>72efa36fdb3b6300d033df8b4b9619a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3ba10000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table/>
+<target_name>ProcessFlow</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_3c62d1abdb5c934085895845dc96191b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function PIProcessFlowCtrl(spUtil, $scope) {
+  /* widget controller */
+  var c = this;
+
+	c.hasIcon = function(stage) {
+		return c.options.show_icons &amp;&amp; c.getIcon(stage);
+	};
+
+	c.getIcon = function(stage) {
+		if (stage.state == 'past') {
+			return 'fa-check';
+		}
+
+		return;
+	};
+
+	c.showProcessFlow = function() {
+		return c.data.process_flow &amp;&amp; c.data.process_flow.stages.length &gt; 0;
+	};
+
+	spUtil.recordWatch($scope, c.data.table, 'sys_id=' + c.data.sys_id, function() {
+		spUtil.update($scope);
+	});
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;// Default Colors&amp;#13;
+$x-pisn-sp-procflow-color: $text-default !default;&amp;#13;
+$x-pisn-sp-procflow-bg: darken($body-bg, 5%) !default;&amp;#13;
+&amp;#13;
+// "Current Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-current-bg: $brand-primary !default;&amp;#13;
+$x-pisn-sp-procflow-current-color:  lighten($x-pisn-sp-procflow-current-bg, 45%) !default;&amp;#13;
+&amp;#13;
+// "Past Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-past-color: lighten($x-pisn-sp-procflow-current-bg, 45%) !default;&amp;#13;
+$x-pisn-sp-procflow-past-bg: lighten($x-pisn-sp-procflow-current-bg, 30%) !default;&amp;#13;
+&amp;#13;
+// "Future Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-future-color: lighten($x-pisn-sp-procflow-color, 10%) !default;&amp;#13;
+$x-pisn-sp-procflow-future-bg: $x-pisn-sp-procflow-bg !default;&amp;#13;
+&amp;#13;
+// Color of border between Flow Stages&amp;#13;
+$x-pisn-sp-procflow-border-color: $body-bg !default;&amp;#13;
+&amp;#13;
+$x-pisn-sp-procflow-tranistion-time: 0.5s !default;&amp;#13;
+&amp;#13;
+// Sizing&amp;#13;
+$x-pisn-sp-procflow-border-radius: $border-radius-base !default;&amp;#13;
+$x-pisn-sp-procflow-height: $line-height-computed * 2 !default;&amp;#13;
+$x-pisn-sp-procflow-font-size: $font-size-small !default;&amp;#13;
+$x-pisn-sp-procflow-chevron-height: $x-pisn-sp-procflow-height / 2 !default;&amp;#13;
+$x-pisn-sp-procflow-chevron-width: 16px !default;&amp;#13;
+&amp;#13;
+@media (max-width: 768px) {&amp;#13;
+  .x-pisn-sp-procflow-flow-hide {&amp;#13;
+  	display: none;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow__container {&amp;#13;
+  display: flex;&amp;#13;
+  align-items: stretch;&amp;#13;
+  width: 100%;&amp;#13;
+  border-radius: 4px;&amp;#13;
+  height: $x-pisn-sp-procflow-height;&amp;#13;
+  font-size: $x-pisn-sp-procflow-font-size;&amp;#13;
+  overflow: hidden;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage {&amp;#13;
+  position: relative;&amp;#13;
+  display: flex;&amp;#13;
+  flex: 1 1;&amp;#13;
+  background: $x-pisn-sp-procflow-bg;&amp;#13;
+  color: $x-pisn-sp-procflow-color;&amp;#13;
+  justify-content: center;&amp;#13;
+  align-items: center;&amp;#13;
+  padding-left: 1ex;&amp;#13;
+  padding-right: 1ex;&amp;#13;
+  &amp;#13;
+  transition: background-color $x-pisn-sp-procflow-tranistion-time, color $x-pisn-sp-procflow-tranistion-time;&amp;#13;
+  &amp;#13;
+  &amp;amp;::before {&amp;#13;
+    position: absolute;&amp;#13;
+  	display: block;&amp;#13;
+  	border: $x-pisn-sp-procflow-chevron-height solid $x-pisn-sp-procflow-bg;&amp;#13;
+  	border-left: $x-pisn-sp-procflow-chevron-width solid $x-pisn-sp-procflow-border-color;&amp;#13;
+  	border-right: 0;&amp;#13;
+  	top: -2px;&amp;#13;
+    bottom: -2px;&amp;#13;
+  	z-index: 9;&amp;#13;
+  	content: '';&amp;#13;
+    left: -($x-pisn-sp-procflow-chevron-width / 2);&amp;#13;
+    &amp;#13;
+    transition: border-color $x-pisn-sp-procflow-tranistion-time;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  &amp;amp;::after {&amp;#13;
+    position: absolute;&amp;#13;
+  	display: block;&amp;#13;
+  	border: $x-pisn-sp-procflow-chevron-height solid transparent;&amp;#13;
+  	border-left: $x-pisn-sp-procflow-chevron-width solid $x-pisn-sp-procflow-bg;&amp;#13;
+  	border-right: 0;&amp;#13;
+  	top: -2px;&amp;#13;
+    bottom: -2px;&amp;#13;
+  	z-index: 10;&amp;#13;
+  	content: '';&amp;#13;
+    right: -($x-pisn-sp-procflow-chevron-width / 2) + 1px;&amp;#13;
+    &amp;#13;
+    transition: border-color $x-pisn-sp-procflow-tranistion-time;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage:first-of-type {&amp;#13;
+  border-top-left-radius: $x-pisn-sp-procflow-border-radius;&amp;#13;
+  border-bottom-left-radius: $x-pisn-sp-procflow-border-radius;&amp;#13;
+&amp;#13;
+  &amp;amp;::before {&amp;#13;
+    display: none;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage:last-of-type {&amp;#13;
+  border-top-right-radius: $x-pisn-sp-procflow-border-radius;&amp;#13;
+  border-bottom-right-radius: $x-pisn-sp-procflow-border-radius;&amp;#13;
+&amp;#13;
+  &amp;amp;::after {&amp;#13;
+    display: none;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage--current {&amp;#13;
+  color: $x-pisn-sp-procflow-current-color;&amp;#13;
+  background-color: $x-pisn-sp-procflow-current-bg;&amp;#13;
+  &amp;#13;
+  &amp;amp;:after {&amp;#13;
+    border-left-color: $x-pisn-sp-procflow-current-bg;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  &amp;amp;:before {&amp;#13;
+    border-color: $x-pisn-sp-procflow-current-bg;&amp;#13;
+    border-left-color: $x-pisn-sp-procflow-border-color;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage--past {&amp;#13;
+  color: $x-pisn-sp-procflow-past-color;&amp;#13;
+  background-color: $x-pisn-sp-procflow-past-bg;&amp;#13;
+  &amp;#13;
+  &amp;amp;:before {&amp;#13;
+    border-color: $x-pisn-sp-procflow-past-bg;&amp;#13;
+    border-left-color: $x-pisn-sp-procflow-border-color;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  &amp;amp;:after {&amp;#13;
+    border-left-color: $x-pisn-sp-procflow-past-bg;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage--future {&amp;#13;
+  color: $x-pisn-sp-procflow-future-color;&amp;#13;
+  background-color: $x-pisn-sp-procflow-future-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__label {&amp;#13;
+  margin-left: $x-pisn-sp-procflow-chevron-width;&amp;#13;
+  margin-right: $x-pisn-sp-procflow-chevron-width;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage--has-icon {&amp;#13;
+  .x-pisn-sp-procflow-flow__label {&amp;#13;
+    padding-right: $x-pisn-sp-procflow-font-size;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__icon  {&amp;#13;
+  position: absolute;&amp;#13;
+  right: $x-pisn-sp-procflow-font-size;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+&amp;#13;
+&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"options": {
+		"table": "idea",
+		"sys_id": "fe6703ebdb14d3405c025a6adc9619de",
+		"show_icons": true
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;x-pisn-sp-procflow-chevrons&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PI - Process Flow&lt;/name&gt;&lt;option_schema&gt;[{"name":"table","section":"other","default_value":"","label":"Table","type":"string"},{"hint":"Sys ID of the Task record","name":"sys_id","section":"other","default_value":"","label":"Sys ID","type":"string"},{"name":"show_icons","section":"other","default_value":"true","label":"Show icons","type":"boolean"},{"name":"only_desktop","section":"other","default_value":"false","label":"Only Desktop","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	input = input || {};
+    data.table = input.table || options.table || $sp.getParameter('table');
+	data.sys_id = input.sys_id || options.sys_id || $sp.getParameter('sys_id');
+	data.is_valid = false;
+
+	options.only_desktop = options.only_desktop == true || options.only_desktop == 'true';
+
+	if (!data.table)
+		return;
+
+	var taskGR = new GlideRecord(data.table);
+	if (!taskGR.get(data.sys_id))
+		return;
+
+	data.is_valid = true;
+	data.process_flow = new ProcessFlow(taskGR).toObject();
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.hann&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-02-21 11:39:23&lt;/sys_created_on&gt;&lt;sys_id&gt;3c62d1abdb5c934085895845dc96191b&lt;/sys_id&gt;&lt;sys_mod_count&gt;329&lt;/sys_mod_count&gt;&lt;sys_name&gt;PI - Process Flow&lt;/sys_name&gt;&lt;sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP - Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3c62d1abdb5c934085895845dc96191b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.hann&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-30 06:44:37&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="x-pisn-sp-procflow-flow" ng-class="{'x-pisn-sp-procflow-flow-hide': c.options.only_desktop}"&gt;
+  &lt;ol class="x-pisn-sp-procflow__container list-unstyled" ng-if="c.showProcessFlow()"&gt;
+    &lt;li class="x-pisn-sp-procflow-flow__stage x-pisn-sp-procflow-flow__stage--{{stage.state}}" ng-repeat="stage in data.process_flow.stages track by stage.sys_id" ng-class="{ 'x-pisn-sp-procflow-flow__stage--has-icon': c.hasIcon(stage) }"&gt;
+      &lt;span class="x-pisn-sp-procflow-flow__label"&gt;{{::stage.label}}&lt;/span&gt;
+      &lt;span class="x-pisn-sp-procflow-flow__icon fa {{::c.getIcon(stage)}}" ng-if="c.hasIcon(stage)"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1181073275</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>76ef636fdb3b6300d033df8b4b961943</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3c350000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table/>
+<target_name>PI - Process Flow</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_b9478edfdb975f405c025a6adc961953</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-20 00:00:21</sys_created_on><sys_id>b9478edfdb975f405c025a6adc961953</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_b9478edfdb975f405c025a6adc961953</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-20 00:00:21</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>1332312183</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>76ef636fdb3b6300d033df8b4b961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3c060000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_6cbd784bdbdb1f405c025a6adc961986</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-19 00:00:24</sys_created_on><sys_id>6cbd784bdbdb1f405c025a6adc961986</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_6cbd784bdbdb1f405c025a6adc961986</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-19 00:00:24</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>1332312183</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>7aef636fdb3b6300d033df8b4b961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bed0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_31478edfdb975f405c025a6adc961956</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-20 00:00:21</sys_created_on><sys_id>31478edfdb975f405c025a6adc961956</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_31478edfdb975f405c025a6adc961956</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-20 00:00:21</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-925152026</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>7eef636fdb3b6300d033df8b4b961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3c0c0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_b67aeedadb17db405c025a6adc9619a8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-17 00:00:14</sys_created_on><sys_id>b67aeedadb17db405c025a6adc9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_b67aeedadb17db405c025a6adc9619a8</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-17 00:00:14</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>1332312183</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>b2ef636fdb3b6300d033df8b4b961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bd70000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_50240609dbd71b405c025a6adc961904</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-13 00:00:16</sys_created_on><sys_id>50240609dbd71b405c025a6adc961904</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_50240609dbd71b405c025a6adc961904</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-13 00:00:16</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>1332312183</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>b6ef636fdb3b6300d033df8b4b961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bca0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_2cf0fb14db9f97405c025a6adc961908</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-11 00:00:15</sys_created_on><sys_id>2cf0fb14db9f97405c025a6adc961908</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_2cf0fb14db9f97405c025a6adc961908</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-11 00:00:15</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>1332312183</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>baef636fdb3b6300d033df8b4b961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3baf0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_bb6b8a4edb439b0085895845dc961917</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function PIProcessFlowCtrl(spUtil, $scope) {
+  /* widget controller */
+  var c = this;
+
+
+	c.showProcessFlow = function() {
+		return c.data.process_flow &amp;&amp; c.data.process_flow.stages.length &gt; 0;
+	};
+
+	spUtil.recordWatch($scope, c.data.table, 'sys_id=' + c.data.sys_id, function() {
+		spUtil.update($scope);
+	});
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;// Default Colors&amp;#13;
+$x-pisn-sp-procflow-lite-color: $text-color !default;&amp;#13;
+$x-pisn-sp-procflow-lite-bg: $brand-primary !default;&amp;#13;
+// "Current Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-current-color: lighten(&amp;#13;
+   $x-pisn-sp-procflow-lite-bg,&amp;#13;
+   95%&amp;#13;
+) !default;&amp;#13;
+// "Past Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-past-color: lighten(&amp;#13;
+   $x-pisn-sp-procflow-lite-bg,&amp;#13;
+   45%&amp;#13;
+) !default;&amp;#13;
+// "Future Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-future-color: lighten(&amp;#13;
+   $x-pisn-sp-procflow-lite-bg,&amp;#13;
+   45%&amp;#13;
+) !default;&amp;#13;
+// Color of separator between Flow Stages&amp;#13;
+$x-pisn-sp-procflow-lite-separator-color: $body-bg !default;&amp;#13;
+// Sizing&amp;#13;
+$x-pisn-sp-procflow-lite-height: $line-height-computed * 2 !default;&amp;#13;
+$x-pisn-sp-procflow-lite-font-size: $font-size-small !default;&amp;#13;
+$x-pisn-sp-procflow-lite-border-radius: 15px;&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite-flow__breadcrumb {&amp;#13;
+   color: $x-pisn-sp-procflow-lite-separator-color;&amp;#13;
+   margin-right: 8px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__container {&amp;#13;
+   display: flex;&amp;#13;
+   align-items: stretch;&amp;#13;
+   justify-content: center;&amp;#13;
+   width: 100%;&amp;#13;
+   border-radius: $x-pisn-sp-procflow-lite-border-radius;&amp;#13;
+   height: $x-pisn-sp-procflow-lite-height;&amp;#13;
+   font-size: $x-pisn-sp-procflow-lite-font-size;&amp;#13;
+   letter-spacing: -0.2px;&amp;#13;
+   overflow: hidden;&amp;#13;
+   background-color: $x-pisn-sp-procflow-lite-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite-flow__stage {&amp;#13;
+   position: relative;&amp;#13;
+   display: flex;&amp;#13;
+   background-color: $x-pisn-sp-procflow-lite-bg;&amp;#13;
+   color: $x-pisn-sp-procflow-lite-color;&amp;#13;
+   justify-content: center;&amp;#13;
+   align-items: center;&amp;#13;
+   padding-left: 1ex;&amp;#13;
+   padding-right: 1ex;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite-flow__stage:first-of-type {&amp;#13;
+   border-top-left-radius: $x-pisn-sp-procflow-lite-border-radius;&amp;#13;
+   border-bottom-left-radius: $x-pisn-sp-procflow-lite-border-radius;&amp;#13;
+   padding-left: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite-flow__stage:last-of-type {&amp;#13;
+   border-top-right-radius: $x-pisn-sp-procflow-lite-border-radius;&amp;#13;
+   border-bottom-right-radius: $x-pisn-sp-procflow-lite-border-radius;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite-flow__stage--current {&amp;#13;
+   color: $x-pisn-sp-procflow-lite-current-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite-flow__stage--past {&amp;#13;
+   color: $x-pisn-sp-procflow-lite-past-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite-flow__stage--future {&amp;#13;
+   color: $x-pisn-sp-procflow-lite-future-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite-flow__arrow-down {&amp;#13;
+    position: absolute;&amp;#13;
+    bottom: 0px;&amp;#13;
+    left: 0px;&amp;#13;
+    z-index: 2;&amp;#13;
+    width: 0;&amp;#13;
+    height: 0;&amp;#13;
+    border-left: 7px solid transparent;&amp;#13;
+    border-right: 7px solid transparent;&amp;#13;
+    border-top: 6px solid $x-pisn-sp-procflow-lite-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"options": {
+		"table": "idea",
+		"sys_id": "fe6703ebdb14d3405c025a6adc9619de",
+		"show_icons": true
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;x-pisn-sp-procflow-lite&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;PI - Process Flow Lite&lt;/name&gt;&lt;option_schema&gt;[{"name":"table","section":"other","default_value":"","label":"Table","type":"string"},{"hint":"Sys ID of the Task record","name":"sys_id","section":"other","default_value":"","label":"Sys ID","type":"string"},{"name":"show_icons","section":"other","default_value":"true","label":"Show icons","type":"boolean"},{"name":"show_arrow","section":"other","default_value":"false","label":"Show Arrow","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	input = input || {};
+  data.table = input.table || options.table || $sp.getParameter('table');
+	data.sys_id = input.sys_id || options.sys_id || $sp.getParameter('sys_id');
+	data.show_arrow = input.show_arrow || options.show_arrow || false;
+	data.show_arrow = data.show_arrow == 'true' || data.show_arrow == true;
+
+	data.is_valid = false;
+
+	options.only_desktop = options.only_desktop == true || options.only_desktop == 'true';
+
+	if (!data.table)
+		return;
+
+	var taskGR = new GlideRecord(data.table);
+	if (!taskGR.get(data.sys_id))
+		return;
+
+	data.is_valid = true;
+	data.process_flow = new ProcessFlow(taskGR).toObject();
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 16:50:24&lt;/sys_created_on&gt;&lt;sys_id&gt;bb6b8a4edb439b0085895845dc961917&lt;/sys_id&gt;&lt;sys_mod_count&gt;38&lt;/sys_mod_count&gt;&lt;sys_name&gt;PI - Process Flow Lite&lt;/sys_name&gt;&lt;sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP - Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_bb6b8a4edb439b0085895845dc961917&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.hann&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-07-30 06:45:15&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="x-pisn-sp-procflow-lite-flow"&gt;
+   &lt;ol class="x-pisn-sp-procflow-lite__container list-unstyled" ng-if="c.showProcessFlow()"&gt;
+      &lt;li class="x-pisn-sp-procflow-lite-flow__stage x-pisn-sp-procflow-lite-flow__stage--{{stage.state}} text-center" ng-repeat="stage in data.process_flow.stages track by stage.sys_id"&gt;
+         &lt;i ng-if="$index&gt;0" class="fa fa-angle-right x-pisn-sp-procflow-lite-flow__breadcrumb" aria-hidden="true"&gt;&lt;/i&gt;
+         &lt;span class="x-pisn-sp-procflow-lite-flow__label"&gt;{{::stage.label}}&lt;/span&gt;
+      &lt;/li&gt;
+   &lt;/ol&gt;
+&lt;/div&gt;
+&lt;span ng-show="data.show_arrow" class="x-pisn-sp-procflow-lite-flow__arrow-down"&gt;&lt;/span&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-278991785</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>beef636fdb3b6300d033df8b4b961943</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3c460000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table/>
+<target_name>PI - Process Flow Lite</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_e0bd784bdbdb1f405c025a6adc961987</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-19 00:00:24</sys_created_on><sys_id>e0bd784bdbdb1f405c025a6adc961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_e0bd784bdbdb1f405c025a6adc961987</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-19 00:00:24</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>781817542</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>beef636fdb3b6300d033df8b4b961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bf40000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_3882b1abdb1893405c025a6adc96194d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>chris.hann</sys_created_by><sys_created_on>2018-02-21 13:59:45</sys_created_on><sys_id>3882b1abdb1893405c025a6adc96194d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_process_flow</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_scope_privilege_3882b1abdb1893405c025a6adc96194d</sys_update_name><sys_updated_by>chris.hann</sys_updated_by><sys_updated_on>2018-02-21 13:59:45</sys_updated_on><target_name>sys_process_flow</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>1678815943</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>beefa36fdb3b6300d033df8b4b9619a3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3b980000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table/>
+<target_name>sys_process_flow</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_3e7aeedadb17db405c025a6adc9619aa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-17 00:00:14</sys_created_on><sys_id>3e7aeedadb17db405c025a6adc9619aa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_3e7aeedadb17db405c025a6adc9619aa</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-17 00:00:14</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-925152026</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>f2ef636fdb3b6300d033df8b4b961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3be60000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_24f0fb14db9f97405c025a6adc961909</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-11 00:00:15</sys_created_on><sys_id>24f0fb14db9f97405c025a6adc961909</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_24f0fb14db9f97405c025a6adc961909</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-11 00:00:15</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>781817542</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>f6ef636fdb3b6300d033df8b4b961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3ba90000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_d4240609dbd71b405c025a6adc961906</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-13 00:00:16</sys_created_on><sys_id>d4240609dbd71b405c025a6adc961906</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_d4240609dbd71b405c025a6adc961906</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-13 00:00:16</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-925152026</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>faef636fdb3b6300d033df8b4b961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bbe0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_fe7aeedadb17db405c025a6adc9619a8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-17 00:00:14</sys_created_on><sys_id>fe7aeedadb17db405c025a6adc9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_fe7aeedadb17db405c025a6adc9619a8</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-17 00:00:14</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>781817542</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>faefa36fdb3b6300d033df8b4b9619a3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bdf0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_a0f0fb14db9f97405c025a6adc96190b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-11 00:00:16</sys_created_on><sys_id>a0f0fb14db9f97405c025a6adc96190b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_a0f0fb14db9f97405c025a6adc96190b</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-11 00:00:16</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-925152026</payload_hash>
+<remote_update_set display_value="SP - Process Flow">feef636fdb3b6300d033df8b4b961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-01 18:58:34</sys_created_on>
+<sys_id>feef636fdb3b6300d033df8b4b961945</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1693a9f3bb70000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-01 18:58:34</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
