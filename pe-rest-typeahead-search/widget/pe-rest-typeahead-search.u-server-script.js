@@ -1,5 +1,6 @@
 (function () {
   data.uri = gs.getProperty('glide.servlet.uri');
+<<<<<<< HEAD
 
   options.overlay = options.overlay == 'true' || options.overlay == true;
   options.order_by = options.order_by || options.display_field;
@@ -12,4 +13,10 @@
   while (gr.next())
     data.widget_sys_id = gr.getUniqueValue();
 
+=======
+  options.overlay = options.overlay == 'true' || options.overlay == true;
+  options.order_by = options.order_by || options.display_field;
+  data.currentUUsername = gs.getUserName();
+  data.currentUPassword = gs.getUser().getValue('user_password');
+>>>>>>> c732b1814badc579887360f16d56556618af2c70
 })();

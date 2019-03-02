@@ -1,9 +1,16 @@
 <div class="pe-rest-typeahead-search pe-rest-typeahead-search-{{::c.options.color}} wrapper wrapper-{{::c.options.size}}">
   <div class="pe-rest-typeahead-search__container">
+<<<<<<< HEAD
     <input id="{{c.idName}}" class="typeahead form-control pe-rest-typeahead-search__input" type="text" placeholder="{{::c.options.placeholder}}"
       autocomplete="off" spellcheck="false" dir="auto">
     <i class="fa fa-search fa-light-icon pe-rest-typeahead-icon" aria-hidden="true"></i>
     <i class="fa fa-times fa-light-icon pe-rest-typeahead-icon pe-rest-typeahead-icon-close" ng-class="{'pe-rest-typeahead-icon-close-show animate fadeIn': c.typing}"
+=======
+    <input class="typeahead form-control pe-rest-typeahead-search__input {{c.className}}" type="text" placeholder="{{::c.options.placeholder}}"
+      autocomplete="off" spellcheck="false" dir="auto">
+    <i class="fa fa-search fa-light-icon pe-rest-typeahead-icon" aria-hidden="true"></i>
+    <i class="fa fa-times fa-light-icon pe-rest-typeahead-icon pe-rest-typeahead-icon-close" ng-class="{'pe-rest-typeahead-icon-close-show animate fadeIn': c.typing || c.selected}"
+>>>>>>> c732b1814badc579887360f16d56556618af2c70
       ng-click="cleanTypeahead()" aria-hidden="true"></i>
   </div>
 </div>

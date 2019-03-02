@@ -2,7 +2,25 @@
 
 ## Description
 
+<<<<<<< HEAD
 Typeahead Search lets the user searching with suggestions, through REST, and finally to select and send a record through the event "pe-typeahead-selection".
+=======
+The Typeahead Search widget provides suggestions for users as they type in the search field. Main features are:
+<br/>
+* Providing suggestions through the autocomplete search library [Twitter Typeahead v1.2.0](https://github.com/corejavascript/typeahead.js)
+* Obtaining data through REST. It can be connected also to a Table API defined in a different ServiceNow instance if the relative option _REST Instance_ is used, and a [CORS rule](https://docs.servicenow.com/bundle/london-application-development/page/integrate/inbound-rest/concept/c_CORSSupport.html) defined in the target instance.
+* Broadcasting on record selection (event name: "pe-typeahead-selection"). Sample code for receiving the selected record (json object) in any widgets used in the Portal application:
+
+```javascript
+
+$rootScope.$on('pe-typeahead-selection', function(event, obj){
+
+  /* code */
+
+});
+
+```
+>>>>>>> c732b1814badc579887360f16d56556618af2c70
 
 ## Screenshots
 ![](../images/pe-rest-typeahead-search-01.png)
@@ -22,11 +40,35 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 ## Configuration
 ---
 Widget Option Schema parameters:
+<<<<<<< HEAD
 > Table name
 > Query Field/Column
 > Display Field/Column
 > Sorting
 > Bootstrap configuration (colors and wrapper/padding)
+=======
+<br/><br/>
+Presentation:
+<br/>
+* Bootstrap Color: select Default to use custom SASS variables in the Theme (complete list at the top of the widget CSS section).
+* Bootstrap Size: this will define the padding around the Search text field (md, lg, etc.).
+* Placeholder: the text hint in the empty input field.
+* Overlay Effect: if enabled, it will apply a CSS effect (class pe-rest-typeahead-search__dim) to help the user in focusing more on the results.
+<br/><br/>
+
+Data:
+<br/>
+* Table: table containing the records to query.
+* Filter: additional filter. _Optional_
+* Display Field: the column/attribute to show in the result list.
+* Query Field: the column/attribute used by Twitter Typeahead to provide the suggestions.
+* Order By: the result sorting. _Optional_
+* Order Direction: the result sorting direction. _Optional_
+* Limit Result: the maximum number of records to obtain and display.
+* REST Instance: if the REST Table API is in a different instance. _Optional_
+* REST Username: if REST Instance is used, provide the credentials. _Optional_
+* REST Password: if REST Instance is used, provide the credentials. _Optional_
+>>>>>>> c732b1814badc579887360f16d56556618af2c70
 
 ---
 ## Platform Dependencies
@@ -41,11 +83,16 @@ Sample data is in the default options.
 ## API Dependencies
 ---
 <i>Dependencies are included and configured as part of the provided Update Set.</i>
+<<<<<<< HEAD
 > typeahead.js v1.2.0
+=======
+* typeahead.js v1.2.0
+>>>>>>> c732b1814badc579887360f16d56556618af2c70
 ---
 ## CSS/SASS Variables
 ---
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
+<<<<<<< HEAD
 > $pe-rest-typeahead-hover-color
 > $pe-rest-typeahead-hover-bg
 > $pe-rest-typeahead-menu-bg
@@ -54,3 +101,13 @@ _CSS/SASS variables are given default values that can be overridden with theming
 > $pe-rest-typeahead-border
 > $pe-rest-typeahead-max-width
 > $pe-rest-typeahead-dim-opacity
+=======
+* $pe-rest-typeahead-hover-color
+* $pe-rest-typeahead-hover-bg
+* $pe-rest-typeahead-menu-bg
+* $pe-rest-typeahead-border-color
+* $pe-rest-typeahead-border-radius
+* $pe-rest-typeahead-border
+* $pe-rest-typeahead-max-width
+* $pe-rest-typeahead-dim-opacity
+>>>>>>> c732b1814badc579887360f16d56556618af2c70
