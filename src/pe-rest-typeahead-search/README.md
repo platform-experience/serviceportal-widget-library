@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+Typeahead Search lets the user searching with suggestions, through REST, and finally to select and send a record through the event "pe-typeahead-selection".
 
 ## Screenshot
 
