@@ -107,7 +107,7 @@ make_commit() {
   echo -e "${BLUE}${COMMIT_STATUS_MSG}${RESET}"
   cd ../../../
   git add ${SRC_DIR}/${PREFIX}${WIDGET}
-  git commit -a -m "${COMMIT_MSG}"
+  git commit -a -m "${COMMIT_MSG} ${widget_name_lower}"
   echo -e "${GREEN}${DONE_MSG}${RESET}"
 }
 
@@ -117,6 +117,10 @@ make_core_dir() {
   else
     mkdir $1 && cd $1
   fi
+}
+
+make_lowercase() {
+  echo $(tr '[:lower:]' '[:lower:]' <<< ${i:0:1})${i:1}"$(make_space $1)"
 }
 
 make_space() {
@@ -168,7 +172,8 @@ set_widget_name() {
   local widget_dir=()
   for i in "${inputs[@]}"; do
     widget_dir+=$(echo -${i} | tr '[:upper:]' '[:lower:]')
-    widget_name+=$(make_uppercase ${i})
+    widget_name_upper+=$(make_uppercase ${i})
+    widget_name_lower+=$(make_lowercase ${i})
   done
   WIDGET=$(format_data ${widget_dir[@]})
 }
@@ -177,7 +182,7 @@ sub_base_content() {
   echo -e "${BLUE}${UPDATE_MSG}${RESET}"
   if [[ ${name_has_dashes} ]]; then
     local dash_readme=()
-    rm=${widget_name}
+    rm=${widget_name_upper}
     IFS='-' read -ra content <<< "$rm"
     for i in "${content[@]}"; do
       dash_readme+=$(make_uppercase ${i})
@@ -185,8 +190,8 @@ sub_base_content() {
     replace_content "${NAME_TEMP}" "${dash_readme%??}" README.md
     replace_content "${NAME_TEMP}" "${dash_readme%??}" config.json
   else
-    replace_content "${NAME_TEMP}" "${widget_name%?}" README.md
-    replace_content "${NAME_TEMP}" "${widget_name%?}" config.json
+    replace_content "${NAME_TEMP}" "${widget_name_upper%?}" README.md
+    replace_content "${NAME_TEMP}" "${widget_name_upper%?}" config.json
   fi
   replace_content "${CONTRIB_TEMP}" "$(fetch_github_user)" config.json
   replace_content "${DIR_TEMP}" "${PREFIX}${WIDGET}" config.json
