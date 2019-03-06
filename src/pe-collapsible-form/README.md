@@ -4,7 +4,7 @@
 
 A direct alternative to Service Portal's Form widget, that adds Bootstrap collapse to each form section. Instead of requiring management of a completely reindexed form model by replacing input directives, this widget simply substitutes part of the Angular template HTML. Stylable indicators are added next to each section title.
 
-## Screenshot
+## Screenshots
 
 ![Collapsible Form](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-collapsible-form/images/pe-collapsible-form.png)
 
