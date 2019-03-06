@@ -118,6 +118,14 @@ AngularJS templates should go inside a folder called **angular-template**, all t
 <widget-name>-<template-id>.u-body-html-template.html
 ```
 
+### Config JSON
+
+The solution config file must be named as follows.
+
+```
+config.json
+```
+
 ### Script Includes
 
 Script includes should go inside a folder called **script-include**, all these scripts should be named as follows.
@@ -155,6 +163,9 @@ pe-timeline
 ├──angular-template
 │  └──pe-timeline.svg.u-body-html-template.html
 │
+├──images
+│  └──pe-timeline.png
+│
 ├──script-include
 │  └──pe-timeline.helper.u-server-script.js
 │
@@ -176,6 +187,7 @@ pe-timeline
 │  └──pe-timeline.u-option-schema.json
 │  └──pe-timeline.u-server-script.js
 │
+├──config.json
 ├──pe-timeline.u-update-set.xml
 └──README.md
 ```
@@ -184,7 +196,7 @@ pe-timeline
 
 ## Style Guide
 
-All contributors to the widget library should strive to follow the [Service Portal: AngularJS Style Guide](https://github.com/platform-experience/serviceportal-best-practice) and adhere to the [EditorConfig](.editorconfig) and [ESLint](.eslintrc) rules.
+All contributors to the widget library should strive to follow the [Service Portal: AngularJS Style Guide](https://github.com/platform-experience/serviceportal-best-practice) and adhere to the [EditorConfig](../.editorconfig) and [ESLint](../.eslintrc.yml) rules.
 
 **[Back to top](#table-of-contents)**
 
