@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-06 18:47:29">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Collapsible Form London 1.1</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8f1dd55913c87300d0f170a76144b087</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>055d995913c87300d0f170a76144b098</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_8c9cbe2fdbff2f003a50de01ce961997</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">049c7a2fdbff2f003a50de01ce96194a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>jacob</sys_created_by><sys_created_on>2019-03-01 15:14:11</sys_created_on><sys_id>8c9cbe2fdbff2f003a50de01ce961997</sys_id><sys_mod_count>4</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_8c9cbe2fdbff2f003a50de01ce961997</sys_update_name><sys_updated_by>jacob</sys_updated_by><sys_updated_on>2019-03-04 15:11:10</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1168499086</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>015d995913c87300d0f170a76144b099</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169494238bc0000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>91a8126cf8843b00e4b1d735c1f1e53d</update_guid>
+<update_guid_history>91a8126cf8843b00e4b1d735c1f1e53d:1168499086,50a8126c0d843b004fba787dccf8c183:-587585032,89181a2c29843b00dfb174ed89a8e944:1168499086,dc181a2c3c843b008fd478fdf736c291:-587585032,009cbe2f06ff2f00ac6c0e225137fa99:1168499086</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_portal_81b75d3147032100ba13a5554ee4902b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_portal"&gt;&lt;sp_portal action="INSERT_OR_UPDATE"&gt;&lt;css_variables&gt;$grid-gutter-width: 15px !default;&lt;/css_variables&gt;&lt;default&gt;true&lt;/default&gt;&lt;homepage display_value="index"&gt;46cc384147532100ba13a5554ee49009&lt;/homepage&gt;&lt;icon/&gt;&lt;kb_knowledge_base display_value="IT"&gt;a7e8a78bff0221009b20ffffffffff17&lt;/kb_knowledge_base&gt;&lt;kb_knowledge_page display_value="kb_view2"&gt;26c2e030d7201200a9addd173e24d437&lt;/kb_knowledge_page&gt;&lt;login_page display_value="landing"&gt;36c61807cb31120000f8d856634c9ca9&lt;/login_page&gt;&lt;logo&gt;152d6aa8dbc43b00d7f8f88eaf9619f1&lt;/logo&gt;&lt;notfound_page display_value="404"&gt;3c2c9063cb11020000f8d856634c9c1f&lt;/notfound_page&gt;&lt;quick_start_config&gt;&lt;![CDATA[[{
+  "tagline": {
+    "table" : "sp_instance",
+    "sys_id" : "34fe3d96cb20020000f8d856634c9cf4",
+    "field" : "title"
+  },
+  "hero_background": {
+    "table" : "sp_container",
+    "sys_id" : "be98a8d2cb20020000f8d856634c9c63",
+    "field" : "background_image"
+  },
+  "readonly_variable_editor": "false"
+}]]]&gt;&lt;/quick_start_config&gt;&lt;sc_catalog display_value="Service Catalog"&gt;e0d08b13c3330100c8b837659bba8fb4&lt;/sc_catalog&gt;&lt;sc_catalog_page/&gt;&lt;sc_category_page/&gt;&lt;sp_chat_queue/&gt;&lt;sp_rectangle_menu display_value="SP Header Menu"&gt;d150fd31cb10020000f8d856634c9ce6&lt;/sp_rectangle_menu&gt;&lt;sqanda_knowledge_base/&gt;&lt;sys_class_name&gt;sp_portal&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fredex&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2014-09-09 21:08:15&lt;/sys_created_on&gt;&lt;sys_id&gt;81b75d3147032100ba13a5554ee4902b&lt;/sys_id&gt;&lt;sys_mod_count&gt;183&lt;/sys_mod_count&gt;&lt;sys_name&gt;Service Portal &lt;/sys_name&gt;&lt;sys_package display_value="Service Portal for Enterprise Service Management" source="com.glide.service-portal.esm"&gt;9e8c060245c32300aadb28ef70de71a3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_portal_81b75d3147032100ba13a5554ee4902b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-04 16:40:45&lt;/sys_updated_on&gt;&lt;theme display_value="Stock"&gt;79315153cb33310000f8d856634c9c4b&lt;/theme&gt;&lt;title&gt;Service Portal &lt;/title&gt;&lt;url_suffix&gt;sp&lt;/url_suffix&gt;&lt;/sp_portal&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=81b75d3147032100ba13a5554ee4902b"/&gt;&lt;sys_attachment action="INSERT_OR_UPDATE"&gt;&lt;average_image_color&gt;#0&lt;/average_image_color&gt;&lt;chunk_size_bytes&gt;734003&lt;/chunk_size_bytes&gt;&lt;compressed&gt;true&lt;/compressed&gt;&lt;content_type&gt;image/png&lt;/content_type&gt;&lt;encryption_context/&gt;&lt;file_name&gt;logo&lt;/file_name&gt;&lt;image_height&gt;312&lt;/image_height&gt;&lt;image_width&gt;815&lt;/image_width&gt;&lt;size_bytes&gt;9633&lt;/size_bytes&gt;&lt;size_compressed&gt;7876&lt;/size_compressed&gt;&lt;state/&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-04 16:40:45&lt;/sys_created_on&gt;&lt;sys_id&gt;152d6aa8dbc43b00d7f8f88eaf9619f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-04 16:40:45&lt;/sys_updated_on&gt;&lt;table_name&gt;ZZ_YYsp_portal&lt;/table_name&gt;&lt;table_sys_id&gt;81b75d3147032100ba13a5554ee4902b&lt;/table_sys_id&gt;&lt;/sys_attachment&gt;&lt;sys_attachment_doc action="INSERT_OR_UPDATE"&gt;&lt;data&gt;H4sIAAAAAAAAAA==&lt;/data&gt;&lt;length&gt;16&lt;/length&gt;&lt;position&gt;0&lt;/position&gt;&lt;sys_attachment display_value="logo" sys_id="152d6aa8dbc43b00d7f8f88eaf9619f1"&gt;152d6aa8dbc43b00d7f8f88eaf9619f1&lt;/sys_attachment&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-04 16:40:45&lt;/sys_created_on&gt;&lt;sys_id&gt;552d6aa8dbc43b00d7f8f88eaf9619f1&lt;/sys_id&gt;&lt;/sys_attachment_doc&gt;&lt;sys_attachment_doc action="INSERT_OR_UPDATE"&gt;&lt;data&gt;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&lt;/data&gt;&lt;length&gt;10488&lt;/length&gt;&lt;position&gt;1&lt;/position&gt;&lt;sys_attachment display_value="logo" sys_id="152d6aa8dbc43b00d7f8f88eaf9619f1"&gt;152d6aa8dbc43b00d7f8f88eaf9619f1&lt;/sys_attachment&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-04 16:40:45&lt;/sys_created_on&gt;&lt;sys_id&gt;d52d6aa8dbc43b00d7f8f88eaf9619f1&lt;/sys_id&gt;&lt;/sys_attachment_doc&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1861562003</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>0d5d995913c87300d0f170a76144b099</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16949943e1b0000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>Service Portal </target_name>
+<type>Service Portal</type>
+<update_domain>global</update_domain>
+<update_guid>e92d6ea812c43b000ee309483188f0ab</update_guid>
+<update_guid_history>e92d6ea812c43b000ee309483188f0ab:1861562003,612d6aa85fc43b005aa78cb82da256f4:-994579788</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_ce751ea8db843b00d7f8f88eaf961935</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;sp_platform&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager) {
+  $scope.submitting = false;
+  $scope.mandatory = [];
+  $scope.errorMessages = [];
+  $scope.data.show_sql = false;
+  $scope.saveButtonSuffix = spUtil.getAccelerator('s');
+  $scope.isPageReady = false;
+  $scope.adminMenu = {
+    encodedPageUrl: encodeURIComponent($location.url()),
+    getClientScriptCount: function() {
+      var count = 0;
+      if ($scope.data.f.client_script) {
+        count += $scope.data.f.client_script.onChange.length;
+        count += $scope.data.f.client_script.onLoad.length;
+        count += $scope.data.f.client_script.onSubmit.length;
+      }
+      return count;
+    }
+  };
+  
+  $scope.data.f._sections[0].showCollapsibleForm = true;
+
+  $rootScope.$on('$sp.html.editor.progress', function(e, conf) {
+      $scope.submitting = conf.state;
+  });
+
+  $scope.getUIActions = function(type) {
+    if ($scope.data.disableUIActions)
+      return [];
+    if (type) {
+      return $scope.data.f._ui_actions.filter(function(action) {
+        //We handle the primary action button separately.
+        return !action.primary &amp;&amp; action['is_' + type];
+      });
+    } else {
+      return $scope.data.f._ui_actions;
+    }
+  }
+
+  $scope.getPrimaryAction = function() {
+    var primaryActions = $scope.data.f._ui_actions.filter(function(action) {
+      return action.primary;
+    });   
+    return (primaryActions.length) ? primaryActions[0] : null;
+  }
+
+  $scope.getUIActionContextMenu = function(event) {
+    var menu = [];
+    if (event.ctrlKey)
+      return menu;
+
+    var contextActions = $scope.getUIActions('context');
+    contextActions.forEach(function(action) {
+      menu.push([action.name, function() {
+        $scope.triggerUIAction(action);
+      }]);
+    });
+
+    if (contextActions.length &gt; 0)
+      menu.push(null);
+    menu.push([$scope.data.exportPDFMsg, function() {
+      exportPDF("");
+    }]);
+    menu.push([$scope.data.exportPDFLandMsg, function() {
+      exportPDF('true');
+    }]);
+
+    return menu;
+  }
+
+  function exportPDF(landscape) {
+    $window.open("/" + $scope.data.f.table + ".do?PDF&amp;landscape=" + landscape + "&amp;sys_id=" + $scope.data.sys_id + "&amp;sysparm_view=" + $scope.data.f.view);
+  }
+
+  //trigger the primary UI Action on save (if there is one)
+  var deregister = $scope.$on('$sp.save', function() {
+    var primaryAction = $scope.getPrimaryAction();
+    if (primaryAction)
+      $scope.triggerUIAction(primaryAction);
+  });
+  $scope.$on('$destroy', function() {
+    deregister()
+  });
+
+  $scope.triggerUIAction = function(action) {
+    if ($scope.data.disableUIActions &amp;&amp; !action.primary) {
+      return;
+    }
+
+    var activeElement = document.activeElement;
+    if (activeElement) {
+      activeElement.blur();
+    }
+
+    $scope.$evalAsync(function() {
+      if (g_form) {
+        $scope.submitting = true;
+        if (!g_form.submit(action.action_name || action.sys_id))
+          $scope.submitting = false;
+      }
+    });
+  }
+
+  $scope.$on("spModel.uiActionComplete", function(evt, response) {
+    $scope.submitting = false;
+    var sysID = (response.isInsert) ? response.sys_id : $scope.data.sys_id;
+    loadForm($scope.data.table, sysID).then(constructResponseHandler(response));
+  });
+
+  function constructResponseHandler(response) {
+    return function() {
+    $rootScope.$broadcast("sp.form.submitted", {sys_id: (response.isInsert) ? response.sys_id : $scope.data.sys_id});
+      var message;
+      var eventName = "sp.form.record.updated";
+      if (response.isInsert) {
+        message = $scope.data.recordAddedMsg;
+        var search = $location.search();
+        search.sys_id = response.sys_id;
+        search.spa = 1;
+        $location.search(search).replace();
+      } else
+        message = $scope.data.updatedMsg;
+
+      $scope.data.hideRelatedLists = hideRelatedLists();
+      $scope.$emit(eventName, $scope.data.f._fields);
+      $rootScope.$broadcast(eventName, $scope.data.f._fields);
+      $scope.status = message;
+      spUtil.addTrivialMessage(message);
+      $timeout(clearStatus, 2000);
+    }
+  }
+
+  var ctrl = this;
+  // switch forms
+  var unregister = $scope.$on('$sp.list.click', onListClick);
+  $scope.$on("$destroy", function() {
+    unregister();
+  })
+  
+  function _save() {
+    var primaryAction = $scope.getPrimaryAction();
+    if (primaryAction)
+      $scope.triggerUIAction(primaryAction);
+  }
+  
+  function onListClick(evt, arg) {
+    loadForm(arg.table, arg.sys_id);
+  }
+
+  function loadForm(table, sys_id) {
+    var f = {};
+    $scope.data.table = f.table = table;
+    $scope.data.sys_id = f.sys_id = sys_id;
+    f.view = $scope.data.view;
+    return $scope.server.update().then(setupAttachmentHandler);
+  }
+
+  function openRelatedList(e, queryString) {
+    // todo: Open this in a modal
+    $location.search(queryString);
+    e.preventDefault();
+  }
+
+  $scope.$on('spModel.fields.rendered', function() {
+    if (ctrl.panels)
+      ctrl.panels.removeClass('shift-out').addClass('shift-in');
+  });
+  
+  var g_form;
+  function initForm(gFormInstance) {
+    if (gFormInstance.getTableName() == $scope.data.f.table){
+      g_form = gFormInstance;
+      spNavStateManager.register($scope.data.table, _save, g_form);
+      $scope.isPageReady = true;
+      $timeout(function() {
+        $rootScope.$emit('spModel.gForm.rendered', g_form);
+      }, 175);
+    }
+  }
+  
+  $scope.$on('spModel.gForm.initialized', function(e, gFormInstance) {
+    initForm(gFormInstance);
+  });
+  
+  $scope.$on('spModel.gForm.env.created', function(e, gFormInstance) {
+    initForm(gFormInstance);
+  });
+  
+  // update the comments or worknotes based on activity stream
+  $scope.$on("activity_stream_is_changed", function(event, data) {
+    if (g_form &amp;&amp; g_form.hasField(data.fieldName)) {
+      g_form.setValue(data.fieldName, data.input);
+      if (data.fieldToClear != "" &amp;&amp; g_form.hasField(data.fieldToClear))
+        g_form.setValue(data.fieldToClear, "");
+    }
+  })
+
+  // Show or hide related lists
+  $scope.$watch('data.f._related_lists', function() {
+    $scope.data.hideRelatedLists = hideRelatedLists();
+  }, true);
+
+  function hideRelatedLists() {
+    if (!$scope.data.f._related_lists)
+      return true;
+
+    if ($scope.options.hideRelatedLists == true)
+      return true;
+
+    if ($scope.data.sys_id == '-1')
+      return true;
+
+    // If all related lists are visible=false then hide
+    if ($scope.data.f._related_lists.length &gt; 0) {
+      for (var i in $scope.data.f._related_lists) {
+        var list = $scope.data.f._related_lists[i];
+        if (list.visible) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  function clearStatus() {
+    $scope.status = "";
+  }
+
+  function setupAttachmentHandler() {
+    $scope.attachmentHandler = new nowAttachmentHandler(appendDone, appendError);
+
+    $scope.$evalAsync(function() {
+      $scope.attachmentHandler.setParams($scope.data.table, $scope.data.f._attachmentGUID, 1024 * 1024 * $scope.data.maxAttachmentSize);
+    });
+
+    $scope.$on('dialog.upload_too_large.show', function(e) {
+      $log.error($scope.data.largeAttachmentMsg);
+      spUtil.addErrorMessage($scope.data.largeAttachmentMsg);
+    });
+  }
+  setupAttachmentHandler();
+
+  function appendDone() {
+    // don't know here whether upload succeeded, so can't show msg either way
+    $scope.$broadcast("sp.attachments.update", $scope.data.f._attachmentGUID);
+    spAriaUtil.sendLiveMessage($scope.data.attachmentSuccessMsg);
+  }
+
+  function appendError(error) {
+    $scope.errorMessages.push(error);
+    spUtil.addErrorMessage(error.msg + error.fileName);
+  }
+
+  if ($scope.data.f.title) {
+    $scope.$emit('sp.widget-modal.set-aria-label', $scope.data.f.title);
+  }
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.btn-form-menu {
+  vertical-align: inherit;
+  padding: inherit;
+  background: none;
+}
+
+.panel-title {
+  word-wrap: break-word;
+}
+
+.panel-heading {
+  .dropdown-menu {
+    a {
+      white-space: normal;
+    }
+  }
+}
+
+.comment {
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.mce-panel, .mce-btn {
+  background-image: none;
+  background-color: #f0f3f4;
+}
+
+.action-btn {
+  margin-right: 5px;
+}
+
+.timeline-container {
+   max-height: 50vh;
+   height: 100%;
+   overflow-y: auto;
+}
+
+.panel .panel {
+    height: auto !important;
+}
+
+.attachment-button {
+  .glyphicon-paperclip {
+    font-size: 18px;
+  }
+}
+
+.dropdown {
+  .glyphicon-menu-hamburger:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; 
+  }
+}
+
+.empty-state-wrapper {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 20px 20px;
+
+  .empty-state {
+    border: 1px solid #e7e9eb;
+    border-radius: 10px;
+    max-width: 700px;
+    padding: 30px 40px 20px;
+    position: relative;
+
+    .empty-state-badge {
+      top: -36px;
+      left: 50%;
+      position: absolute;
+      height: 72px;
+      width: 72px;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 100%;
+      color: #ffffff;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 40px;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-left: -36px;
+      text-align: center;
+    }
+
+    .empty-state-header {
+      font-size: 30px;
+      text-align: center;
+      color: #343d47;
+    }
+
+    .empty-state-content {
+      ul {
+        list-style: disc outside;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 30px;
+      }
+    }
+  }
+}
+
+
+// COLLAPSE ELEMENTS
+
+// size and shape of tile/circle
+$collapse-indicator-size: 30px !default;
+$collapse-indicator-border-radius: $border-radius-base !default; // 50% for circles
+
+// replace context, or define other colors
+$collapse-indicator-bg: $panel-default-heading-bg !default;
+$collapse-indicator-border: $btn-default-border !default;
+$collapse-indicator-color: $btn-default-color !default;
+
+// these, and icon element, could/should be replaced with widget options.
+// better behavior might be 'accordion' where each section stands alone,
+// and ideally could be made aware of individual section validation/completion,
+// but we're limited without completely replacing form directive
+
+$collapse-additional-gutter: 5px !default; // added between indicators and form, along with Bootstrap gutter
+
+$computed-h4-btn-height: ($headings-line-height * $font-size-h4) + ($padding-base-vertical * 2) + 2px;
+
+.section-heading {
+  margin-left: $collapse-indicator-size/2;
+  border-left: 1px solid $collapse-indicator-border;
+}
+.section-heading button {
+  color: inherit;
+  position: relative;
+  top: -($computed-h4-btn-height/2);
+  margin-left: -($collapse-indicator-size/2 + $padding-base-horizontal + 1px);
+}
+.section-heading:first-of-type {
+  margin-top: $computed-h4-btn-height/2;
+}
+.section-heading:last-of-type {
+  border-left: 1px solid transparent;
+}
+.section-heading &amp;gt; button &amp;gt; legend {
+  margin: 0;
+}
+.section-heading &amp;gt; button &amp;gt; legend &amp;gt; .collapse-indicator {
+  font-size: $collapse-indicator-size/2;
+  border: 1px solid $collapse-indicator-border;
+  width: $collapse-indicator-size;
+  height: $collapse-indicator-size;
+  line-height: $collapse-indicator-size - 2px;
+  border-radius: $collapse-indicator-border-radius;
+  margin-right: ($grid-gutter-width/2) + $collapse-additional-gutter;
+  background-color: $collapse-indicator-bg;
+  color: $collapse-indicator-color;
+  vertical-align: middle;
+}
+.section-heading &amp;gt; button:hover &amp;gt; legend &amp;gt; .collapse-indicator {
+  background-color: darken($collapse-indicator-bg, 10%);
+  border-color: darken($collapse-indicator-border, 12%);
+}
+.section-form, .nav-continue {
+  margin-left: $collapse-indicator-size/2;
+  border-left: 1px solid $collapse-indicator-border;
+  padding-left: ($collapse-indicator-size/2) + $collapse-additional-gutter;
+}
+.section-heading:last-of-type ~ .section-form {
+  border-left: 1px solid transparent;
+}
+.nav-continue {
+  padding-left: ($collapse-indicator-size/2) + $collapse-additional-gutter + ($grid-gutter-width/2);
+  padding-bottom: $computed-h4-btn-height/2 + $form-group-margin-bottom;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;widget-form-collapsible-london&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Collapsible Form London&lt;/name&gt;&lt;option_schema&gt;[{"name":"disableUIActions","section":"Behavior","label":"Disable UI Actions on Form","type":"boolean"},{"name":"showFormView","section":"Behavior","label":"Display current form view","type":"boolean"},{"name":"omitHeaderOptions","section":"Behavior","label":"Omit header options icon","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[// form functionality - URL parameter driven
+(function($sp, input, data, options, gs) {
+  /* "use strict"; -linter issues */
+  // populate the 'data' variable
+  data.attachmentUploadSuccessMsg = gs.getMessage("Attachment upload was successful");
+  data.recordAddedMsg = gs.getMessage("Record Added");
+  data.updatedMsg = gs.getMessage("updated_uppercase");
+  data.exportPDFMsg = gs.getMessage("Export to PDF");
+  data.exportPDFLandMsg = gs.getMessage("Export to PDF (landscape)");
+  data.addAttachmentMsg = gs.getMessage("Add an attachment");
+  data.maxAttachmentSize = parseInt(gs.getProperty("com.glide.attachment.max_size", 1024));
+  if (isNaN(data.maxAttachmentSize))
+    data.maxAttachmentSize = 24;
+  data.largeAttachmentMsg = gs.getMessage("Attached files must be smaller than {0} - please try again", "" + data.maxAttachmentSize + "MB");
+  data.attachmentSuccessMsg = gs.getMessage("Attachment successfully uploaded");
+  
+  data.isAdmin = gs.hasRightsTo('sp/configure.all/execute', null);
+  data.emptyStateTemplate = options.empty_state_template;
+  data.disableUIActions = options.disableUIActions === "true";
+  data.hideRelatedLists = options.hideRelatedLists || false;
+
+  if (input) {
+    data.table = input.table;
+    data.sys_id = input.sys_id;
+    data.view = input.view;
+    var result = {};
+    if (input._fields) {
+      result = $sp.saveRecord(input.table, input.sys_id, input._fields);
+      data.sys_id = result.sys_id;
+    }
+
+    if (input.sys_id == '-1')
+      data.isNewRecord = true;
+  } else {
+    data.table = options.table || $sp.getParameter("t") || $sp.getParameter("table") || $sp.getParameter("sl_table");
+    data.sys_id = options.sys_id || $sp.getParameter("sys_id") || $sp.getParameter("sl_sys_id");
+    data.view = options.view || $sp.getParameter("view") || $sp.getParameter("v"); // no default
+  }
+
+  data.query = $sp.getParameter("query") || options.query || "";
+  data.f = {};
+  if (!data.table)
+    return;
+  
+  // Form widget is not a supported way to view an attachment
+  if (data.table == "sys_attachment") {
+    data.tableUnsupported = true;
+    return;
+  }
+
+  if (!GlideTableDescriptor.isValid(data.table))
+    return;
+
+  if (!data.sys_id)
+    return;
+
+  var rec = $sp.getRecord(data.table, data.sys_id);
+  data.isValid = rec.isValid() || data.sys_id == "-1";
+  if (!data.isValid)
+    return;
+
+  data.table = rec.getRecordClassName();
+  data.tableHierarchy = GlideDBObjectManager.getTables(data.table).toArray().join();
+  data.canWrite = rec.canWrite();
+  var hasRecordAccess = data.sys_id == "-1" ? rec.canCreate() : data.canWrite;
+  data.canAttach = hasRecordAccess &amp;&amp; gs.hasRole(gs.getProperty('glide.attachment.role')) &amp;&amp; !GlideTableDescriptor.get(data.table).getED().getBooleanAttribute("no_attachment");
+  data.f = $sp.getForm(data.table, data.sys_id, data.query, data.view);
+
+  // Activity formatter is hardcoded to set specific options
+  for (var f in data.f._formatters) {
+    var fm = data.f._formatters[f];
+    if (fm.formatter == "activity.xml") {
+      fm.hardcoded = true;
+      fm.widgetInstance = $sp.getWidget('widget-ticket-conversation',
+                                {table: data.table,
+                                 sys_id: data.sys_id,
+                                 includeExtended: true,
+                                 title: "${Activity}",
+                                 use_dynamic_placeholder: true,
+                                 btnLabel: "${Post}"});
+    } else if(fm.formatter == "com_glideapp_servicecatalog_veditor" || fm.formatter == "com_glideapp_questionset_default_question_editor") {
+      var qsConfig = $sp.getValue('quick_start_config');
+      if (qsConfig)
+        qsConfig = JSON.parse(qsConfig)[0];
+      fm.widgetInstance = $sp.getWidget(fm.widget, {table: data.table,
+                            sys_id: data.sys_id,
+                            readonly_variable_editor: qsConfig ? qsConfig.readonly_variable_editor : 'false'});
+    } else
+      fm.widgetInstance = $sp.getWidget(fm.widget, data);
+  }
+})($sp, input, data, options, gs);]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-04 14:57:18&lt;/sys_created_on&gt;&lt;sys_id&gt;ce751ea8db843b00d7f8f88eaf961935&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;Collapsible Form London&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ce751ea8db843b00d7f8f88eaf961935&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-06 18:41:06&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="::!data.isValid &amp;&amp; !data.emptyStateTemplate" class="panel panel-default"&gt;
+  &lt;div class="panel-body wrapper-lg text-center"&gt;
+    &lt;span ng-if="!data.tableUnsupported"&gt;${Record not found}&lt;/span&gt;
+    &lt;span ng-if="data.tableUnsupported"&gt;${Form view not supported for requested table}&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div ng-if="!data.isValid &amp;&amp; data.emptyStateTemplate" class="panel-shift"&gt;
+  &lt;div class="empty-state-wrapper panel panel-default" ng-include="data.emptyStateTemplate"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div ng-if="data.isValid" class="panel-shift"&gt;
+  &lt;div class="" ng-if="!data.f._view.length &amp;&amp; data.hideRelatedLists &amp;&amp; data.emptyStateTemplate"&gt;
+    &lt;div class="empty-state-wrapper panel panel-default" ng-include="data.emptyStateTemplate"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="" ng-if="!data.f._view.length &amp;&amp; data.hideRelatedLists &amp;&amp; !data.emptyStateTemplate"&gt;
+    &lt;div class="panel panel-default"&gt;
+      &lt;div class="panel-heading"&gt;&lt;span class="panel-title"&gt;{{data.f.title}}&lt;/span&gt; &lt;span ng-if="::options.showFormView == 'true' &amp;&amp; data.f.view != ''"&gt;[{{data.f.view_title}} view]&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="panel-body wrapper-lg text-center"&gt;
+        ${No elements to display}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div ng-show="isPageReady" class="panel panel-default" ng-if="::data.f._view.length || !data.hideRelatedLists" &gt;
+    &lt;div class="panel-heading" ng-if="data.f.title.length" sp-context-menu="getUIActionContextMenu(event)"&gt;
+        &lt;span class="dropdown m-r-xs" ng-if="(data.isAdmin || getUIActions('context').length &gt; 0) &amp;&amp; options.omitHeaderOptions != 'true'"&gt;
+            &lt;button aria-label="${Form menu}" class="btn btn-form-menu dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="adminMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
+            &lt;ul class="dropdown-menu" aria-labelledby="adminMenu"&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a ng-href="/{{::data.f.table}}.do?sys_id={{data.f.sys_id}}&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Open in platform}&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin" class="dropdown-header"&gt;${Configure}&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&amp;sysparm_list={{data.f._sections[0].id}}&amp;sysparm_form=section&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Form Layout}&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&amp;sysparm_list={{data.f.table}}&amp;sysparm_form=related_list&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Related Lists}&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="?id=lf&amp;table=sys_ui_policy&amp;filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id:'lf', table: 'sys_ui_policy', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})"&gt;${UI Policies} &lt;span class="badge pull-right" ng-if="f.policy.length"&gt;{{f.policy.length}}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="?id=lf&amp;table=sys_script_client&amp;filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id: 'lf', table: 'sys_script_client', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})"&gt;${Client Scripts} &lt;span class="badge pull-right" ng-if="adminMenu.getClientScriptCount()"&gt;{{adminMenu.getClientScriptCount()}}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="getUIActions('context').length &gt; 0 &amp;&amp;  data.isAdmin" role="separator" class="divider"&gt;&lt;/li&gt;
+              &lt;li ng-repeat="action in getUIActions('context')"&gt;&lt;a href="" ng-click="triggerUIAction(action)"&gt;{{action.name}}&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin || getUIActions('context').length &gt; 0" role="separator" class="divider"&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a target="_new" href="/{{data.f.table}}.do?PDF&amp;sys_id={{data.sys_id}}&amp;sysparm_view={{data.f.view}}"&gt;${Export to PDF}&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a target="_new" href="/{{data.f.table}}.do?PDF&amp;landscape=true&amp;sys_id={{data.sys_id}}&amp;sysparm_view={{data.f.view}}"&gt;${Export to PDF (landscape)}&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/span&gt;
+      &lt;span class="panel-title" aria-label="{{data.f.title}}"&gt;{{data.f.title}}&lt;/span&gt; &lt;span ng-if="::options.showFormView == 'true' &amp;&amp; data.f.view != ''"&gt;[{{data.f.view_title}} view]&lt;/span&gt;
+      &lt;div ng-if="::attachmentHandler &amp;&amp; data.canAttach" title="{{::data.addAttachmentMsg}}" class="pull-right attachment-button"&gt;
+        &lt;sp-attachment-button&gt;&lt;/sp-attachment-button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+      &lt;!-- performance debug --&gt;
+      &lt;div ng-if="data.show_sql"&gt;
+        &lt;div class="comment"&gt;
+          &lt;span ng-if="data.f._perf.sql_count"&gt;${SQL Statements {{data.f._perf.sql_count}}}, &lt;/span&gt;
+          &lt;span&gt;${Time {{data.f._perf.time}}}&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div ng-repeat="s in data.f._perf.sql" class="{{s.type}}"&gt;
+          {{s.statement}}
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- attachments --&gt;
+      &lt;sp-attachment-manager table="::data.table" sys-id="data.f._attachmentGUID" omit-edit="::!data.canAttach"&gt;&lt;/sp-attachment-manager&gt;
+      &lt;!-- form --&gt;
+      &lt;div&gt;
+        &lt;sp-model form_model="data.f" mandatory="mandatory"&gt;&lt;/sp-model&gt;
+      &lt;/div&gt;
+      &lt;!-- UI Action Links --&gt;
+      &lt;div ng-if="getUIActions('link').length &gt; 0"&gt;
+        &lt;label style="margin: 0;"&gt;${Related Links}&lt;/label&gt;
+        &lt;div ng-repeat="action in getUIActions('link')"&gt;
+          &lt;a href ng-click="triggerUIAction(action)" gsft_id="{{::action.sys_id}}"&gt;{{::action.name}}&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- related lists --&gt;
+      &lt;div ng-if="!data.hideRelatedLists"&gt;
+        &lt;label style="margin: 0"&gt;${Related Lists}&lt;/label&gt;
+        &lt;div style="margin-bottom: 7px; padding-bottom: 7px; border-bottom: 1px solid #f5f5f5;"&gt;
+          &lt;span ng-repeat="rl in data.f._related_lists" ng-if="rl.visible"&gt;
+            &lt;a ng-if="rl.type != 'REL'" ng-href="?id=lf&amp;table={{::rl.table}}&amp;filter={{rl.field}}%3D{{data.f.sys_id}}&amp;view={{data.f.view}}" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', filter: '{{rl.field}}%3D{{data.f.sys_id}}'})"&gt;{{rl.plural}}
+              &lt;span class="label label-as-badge label-primary" ng-if="rl.count"&gt;{{::rl.count}}&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a ng-if="::rl.type == 'REL'" href="?id=lf&amp;table={{::rl.table}}&amp;relationship_id={{rl.relationship_id}}&amp;apply_to={{rl.apply_to}}&amp;apply_to_sys_id={{rl.apply_to_sys_id}}&amp;view={{::data.f.view}}" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', apply_to: '{{rl.apply_to}}', apply_to_sys_id: '{{rl.apply_to_sys_id}}', relationship_id: '{{rl.relationship_id}}'})"&gt;{{rl.label}}
+              &lt;span class="label label-as-badge label-primary" ng-if="rl.count"&gt;{{rl.count}}&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;span ng-if="!$last" style="padding-left: .5em; padding-right: .5em;" aria-hidden="true"&gt; | &lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="panel-footer"&gt;
+      &lt;button ng-click="triggerUIAction(action)" ng-disabled="submitting" ng-repeat="action in getUIActions('button')" class="btn btn-default action-btn" gsft_id="{{::action.sys_id}}"&gt;{{action.name}}&lt;/button&gt;
+      &lt;span&gt;{{status}}&lt;/span&gt;
+      &lt;button ng-if="getPrimaryAction()" type="submit" ng-click="triggerUIAction(getPrimaryAction())" ng-disabled="submitting" class="btn btn-primary action-btn pull-right" gsft_id="{{::getPrimaryAction().sys_id ? getPrimaryAction().sys_id : ''}}"&gt;${Save} &lt;span ng-if="saveButtonSuffix"&gt;(${{{saveButtonSuffix}}})&lt;/span&gt;&lt;/button&gt;
+      &lt;div style="clear: both;"&gt;&lt;/div&gt;
+      &lt;div ng-if="mandatory.length" class="alert alert-info" style="margin-top: .5em" aria-live="polite" aria-atomic="true"&gt;
+        &lt;span ng-if="mandatory.length &gt; 0"&gt;${Required information} &lt;/span&gt;
+        &lt;span ng-repeat="f in mandatory" class="label label-danger" style="margin-right: .5em; display: inline-block;" ng-bind="f.label"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type="text/ng-template" id="empty-state-list-form.html"&gt;
+&lt;div class="empty-state"&gt;
+  &lt;div class="empty-state-content"&gt;
+    &lt;div class="empty-state-badge fa fa-list-ul" style="background-color: #31708f;"&gt;&lt;/div&gt;
+    &lt;h3 class="empty-state-header"&gt;${List and Form}&lt;/h3&gt;
+    &lt;p&gt;${Select a record from the list to view its details in this pane.}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/script&gt;
+&lt;script type="text/ng-template" id="empty-state-page-editor.html"&gt;
+&lt;div class="empty-state"&gt;
+  &lt;div class="empty-state-content"&gt;
+    &lt;div class="empty-state-badge fa fa-file" style="background-color: #5cb85c;"&gt;&lt;/div&gt;
+    &lt;h3 class="empty-state-header"&gt;${Page Editor}&lt;/h3&gt;
+    &lt;p&gt;${Select a page above to view a map of the hierarchical structure of any page.}&lt;/p&gt;
+    &lt;p&gt;${From the map, you can select an element to expose it in a form below the page map.}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/script&gt;
+&lt;script type="text/ng-template" id="empty-state-portal-edit.html"&gt;
+&lt;div class="empty-state"&gt;
+  &lt;div class="empty-state-content"&gt;
+    &lt;div class="empty-state-badge fa fa-sitemap" style="background-color: #f0ad4e;"&gt;&lt;/div&gt;
+    &lt;h3 class="empty-state-header"&gt;${Portal Editor}&lt;/h3&gt;
+    &lt;p&gt;${Select a portal above to view a map of the structure of any portal.}&lt;/p&gt;
+    &lt;p&gt;${From the map, you can select an element to expose it in a form below the portal map.}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/script&gt;
+
+&lt;script type="text/ng-template" id="sp_variable_layout.xml"&gt;
+&lt;style&gt;
+.nav-continue, .nav-continue.collapse { display: none; }
+/* show 'continue' nav when previous section is expanded */
+.collapse.in + .nav-continue { display: block; }
+&lt;/style&gt;
+
+&lt;!-- COLLAPSIBLE BY SECTION --&gt;
+
+&lt;div ng-if="containers[0].showCollapsibleForm"&gt;
+
+&lt;nav ng-repeat-start="container in containers" ng-if="container.id" class="nav-continue"&gt;
+  &lt;button ng-class="['btn btn-default', 'collapse', 'collapse-' + container.id, { 'in': !($first || (container._parent == containers[0].id) ) }]"
+          type="button" data-toggle="collapse" data-target=".collapse-{{container.id}}" 
+          aria-target="collapse-{{container.id}}" aria-expanded="{{($first || (container._parent == containers[0].id) )}}"&gt;
+    Continue
+  &lt;/button&gt;
+&lt;/nav&gt;
+
+&lt;div ng-if="container.id" id="collapse-{{container.id}}" class="section-heading"&gt;
+  &lt;button ng-class="['btn btn-link', {'collapsed': !($first || (container._parent == containers[0].id) ) }]"
+    type="button" data-toggle="collapse" data-target=".collapse-{{container.id}}" aria-expanded="{{($first || (container._parent == containers[0].id) )}}" aria-target="collapse-{{container.id}}"&gt;
+      &lt;legend class="h4" id="heading-{{container.id}}"&gt;&lt;i class="fa fa-align-left collapse-indicator" aria-hidden="true"&gt;&lt;/i&gt;{{container.captionDisplay || container.caption || 'Form Section'}}&lt;/legend&gt;
+  &lt;/button&gt;
+  &lt;sp-help-tag field="::formModel._fields[container.name]"&gt;&lt;/sp-help-tag&gt;
+&lt;/div&gt;
+
+&lt;span ng-if="!container.id" ng-init="containers[$index]._parent = containers[$index-1]._parent || containers[$index-1].id"&gt;&lt;/span&gt;
+
+&lt;fieldset ng-repeat-end ng-show="paintForm(container)" aria-labelledby="heading-{{container.id || container._parent}}"
+          ng-class="['section-form', 'row', 'collapse-' + (container.id || container._parent), 'collapse', 'section-' + $index, {'in': ($first || (container._parent == containers[0].id))}]"&gt;
+  &lt;div ng-repeat="column in container.columns" class="col-md-{{::12 / container.columns.length }}"&gt;
+    &lt;div ng-switch="::f.type" ng-repeat="f in ::column.fields" id="{{::getVarID(f)}}" ng-class="::{'form-inline': isInlineForm === true }"&gt;
+      &lt;div ng-switch-when="label" ng-if="formModel._fields[f.name]" ng-show="formModel._fields[f.name].isVisible()"&gt;
+        &lt;label ng-bind="f.label"&gt;&lt;/label&gt;
+        &lt;sp-help-tag field="::formModel._fields[f.name]"&gt;&lt;/sp-help-tag&gt;
+        &lt;hr class="sp_label_hr"&gt;&lt;/hr&gt;
+      &lt;/div&gt;
+      &lt;sp-form-field ng-switch-when="field" ng-if="formModel._fields[f.name]" form-model="formModel" field="formModel._fields[f.name]" glide-form="getGlideForm()" ng-show="formModel._fields[f.name].isVisible()" default-value-setter="setDefaultValue(fieldName,fieldInternalValue,fieldDisplayValue)"&gt;&lt;/sp-form-field&gt;
+      &lt;sp-variable-layout ng-switch-when="container" ng-init="containers=[f]"&gt;&lt;/sp-variable-layout&gt;
+      &lt;sp-checkbox-group ng-switch-when="checkbox_container" name="f.name" form-model="formModel" containers="f.containers" glide-form="getGlideForm()" class="checkbox-container"&gt;&lt;/sp-checkbox-group&gt;
+      &lt;sp-widget ng-switch-when="formatter" ng-if="formModel._formatters[f.id].widgetInstance" widget="formModel._formatters[f.id].widgetInstance" page="{g_form: getGlideForm()}"&gt;&lt;/sp-widget&gt;
+      &lt;hr ng-switch-when="break" ng-show="formModel._fields[f.name].isVisible()"&gt;&lt;/hr&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+
+&lt;/div&gt;
+
+&lt;fieldset ng-if="!containers[0].showCollapsibleForm" ng-repeat="container in containers" ng-show="paintForm(container)"&gt;&lt;div ng-if="(container.caption || container.captionDisplay)"&gt;&lt;legend class="h4"&gt;{{container.captionDisplay || container.caption}}&lt;/legend&gt;&lt;p ng-if="::formModel._fields[container.name].help_text" title="{{::formModel._fields[container.name].help_tag}}" class="help-block" ng-bind="::formModel._fields[container.name].help_text"&gt;&lt;/p&gt;&lt;span ng-if="::formModel._fields[container.name].instructions" ng-bind-html="::formModel._fields[container.name].instructions"&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div ng-repeat="column in container.columns" class="col-md-{{::12 / container.columns.length }}"&gt;&lt;div ng-switch="::f.type" ng-repeat="f in ::column.fields" id="{{::getVarID(f)}}" ng-class="::{'form-inline': isInlineForm === true }"&gt;&lt;div ng-switch-when="label" ng-if="formModel._fields[f.name]" ng-show="formModel._fields[f.name].isVisible()"&gt;&lt;label ng-bind="f.label"&gt;&lt;/label&gt;&lt;p ng-if="formModel._fields[f.name].help_text" title="{{formModel._fields[f.name].help_tag}}" class="help-block" ng-bind="formModel._fields[f.name].help_text"&gt;&lt;/p&gt;&lt;span ng-if="formModel._fields[f.name].instructions" ng-bind-html="::trustedHTML(formModel._fields[f.name].instructions)"&gt;&lt;/span&gt;&lt;hr class="sp_label_hr"&gt;&lt;/hr&gt;&lt;/div&gt;&lt;sp-form-field ng-switch-when="field" ng-if="formModel._fields[f.name]" form-model="formModel" field="formModel._fields[f.name]" glide-form="getGlideForm()" ng-show="formModel._fields[f.name].isVisible()" default-value-setter="setDefaultValue(fieldName,fieldInternalValue,fieldDisplayValue)"&gt;&lt;/sp-form-field&gt;&lt;sp-variable-layout ng-switch-when="container" ng-init="containers=[f]"&gt;&lt;/sp-variable-layout&gt;&lt;sp-checkbox-group ng-switch-when="checkbox_container" name="f.name" form-model="formModel" containers="f.containers" glide-form="getGlideForm()" class="checkbox-container"&gt;&lt;/sp-checkbox-group&gt;&lt;sp-widget ng-switch-when="formatter" ng-if="formModel._formatters[f.id].widgetInstance" widget="formModel._formatters[f.id].widgetInstance" page="{g_form: getGlideForm()}"&gt;&lt;/sp-widget&gt;&lt;hr ng-switch-when="break" ng-show="formModel._fields[f.name].isVisible()"&gt;&lt;/hr&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/fieldset&gt;
+
+&lt;/script&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>925202222</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>455d995913c87300d0f170a76144b09a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169544f25630000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>Collapsible Form London</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>33db99d502c87300153686f13bd747be</update_guid>
+<update_guid_history>33db99d502c87300153686f13bd747be:925202222,b24a55d5cbc87300e7a4b4da99f62895:1646070192,10c9eae4cfc43b00993fe4005d82fa6f:600144965,fc5926e42ac43b00563c042966abc9c1:-1461749828,ecc76e64e2c43b001d3d341334ff04fa:-817286397,0637a2a4e5c43b00e1a7591edb846bfd:858572056,13a66e641ec43b003d26bfad074b31e6:1480697577,f9152624eec43b009bc6c3a5281d3d50:1511874069,ad9426246fc43b005af80295a34dce07:2012960731,fce322e04dc43b00c2c52339972aac8b:449120980,6f63aee076c43b00659b86298d14fef2:2012960731,b4e122e08fc43b00c867a2cc317d2507:-1468032476,95312aa04ec43b00419cd166f07f2eee:-174866274,15ee5260fec43b00ce4995f1e2ee5386:-1871822732,75e9de6c5a843b000711a0a633199e29:-1403470276,66d7562cc0843b0081a9ade5a0ed8c7f:-1407376938,10e6d2e856843b00e821e85b0e3f6267:-1646439338,31b55ea83f843b0041d6172758202ebd:1158550939,0a755ea8a1843b000d01a23fa0cf6da0:1259316831</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_c6755ea8db843b00d7f8f88eaf9619a1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="spAttachmentManager">06e836f0d722120023c84f80de6103a1</sp_angular_provider><sp_widget display_value="Copy of Form">ce751ea8db843b00d7f8f88eaf961935</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>jacob</sys_created_by><sys_created_on>2019-03-04 14:57:18</sys_created_on><sys_id>c6755ea8db843b00d7f8f88eaf9619a1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>spAttachmentManager.Copy of Form</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_c6755ea8db843b00d7f8f88eaf9619a1</sys_update_name><sys_updated_by>jacob</sys_updated_by><sys_updated_on>2019-03-04 14:57:18</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>1024909556</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>495d995913c87300d0f170a76144b098</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169493587610000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>spAttachmentManager.Copy of Form</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>8e755ea83c843b0002e589ead21781a2</update_guid>
+<update_guid_history>8e755ea83c843b0002e589ead21781a2:1024909556</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_889c7a2fdbff2f003a50de01ce961945</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>standard</category><css/><draft>false</draft><dynamic_title_structure/><id>form_collapsible</id><internal>false</internal><public>false</public><roles/><short_description>Record Form</short_description><sys_class_name>sp_page</sys_class_name><sys_created_by>jacob</sys_created_by><sys_created_on>2019-03-01 15:14:11</sys_created_on><sys_id>889c7a2fdbff2f003a50de01ce961945</sys_id><sys_mod_count>6</sys_mod_count><sys_name>form_collapsible</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_889c7a2fdbff2f003a50de01ce961945</sys_update_name><sys_updated_by>jacob</sys_updated_by><sys_updated_on>2019-03-04 16:39:18</sys_updated_on><title>Form</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=889c7a2fdbff2f003a50de01ce961945"/></record_update>]]></payload>
+<payload_hash>-1352310314</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>495d995913c87300d0f170a76144b099</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694992e9910000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>form_collapsible</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>d8dce6a81ac43b00684948f9638d6465</update_guid>
+<update_guid_history>d8dce6a81ac43b00684948f9638d6465:-1352310314,72ac26a831c43b00c2c1f5353fd06e1c:265270707,dc581e2c8c843b0027891cd142b5ab73:-1352310314,fe48da2c0b843b00225fe0e3121d2759:-201592694,7ed4fe805144f700c063df57f924940c:-1352310314,f1bc326f87ff2f00c24289e4a9f36759:-1967749472,849c7a2f45ff2f00ed619cbf77b48947:-1980606924</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_049c7a2fdbff2f003a50de01ce96194a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Form - Container 1">c09c7a2fdbff2f003a50de01ce961948</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>jacob</sys_created_by><sys_created_on>2019-03-01 15:14:11</sys_created_on><sys_id>049c7a2fdbff2f003a50de01ce96194a</sys_id><sys_mod_count>4</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_049c7a2fdbff2f003a50de01ce96194a</sys_update_name><sys_updated_by>jacob</sys_updated_by><sys_updated_on>2019-03-04 15:11:01</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1250350912</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>815d995913c87300d0f170a76144b09a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694942157a0000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>8f98126cf4843b000873a56a514f9914</update_guid>
+<update_guid_history>8f98126cf4843b000873a56a514f9914:-1250350912,4a985e2cdd843b0013bdce572d057dc8:-728404534,f4285a2c6f843b00824a380b1ceb30bb:-1250350912,fb185a2cc8843b0020b2329dd32d85dc:-728404534,409cbe2f52ff2f007a35c9d1dd14e797:-1046296066</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_cc9cbe2fdbff2f003a50de01ce961999</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">8c9cbe2fdbff2f003a50de01ce961997</sp_column><sp_widget display_value="Collapsible Form London">ce751ea8db843b00d7f8f88eaf961935</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>jacob</sys_created_by><sys_created_on>2019-03-01 15:14:11</sys_created_on><sys_id>cc9cbe2fdbff2f003a50de01ce961999</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Form</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_cc9cbe2fdbff2f003a50de01ce961999</sys_update_name><sys_updated_by>jacob</sys_updated_by><sys_updated_on>2019-03-04 16:37:44</sys_updated_on><title>Form</title><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=cc9cbe2fdbff2f003a50de01ce961999"/></record_update>]]></payload>
+<payload_hash>113733962</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>855d995913c87300d0f170a76144b099</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16949917a400000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>Form</target_name>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>dd7ca2a815c43b005e3becc5aede5917</update_guid>
+<update_guid_history>dd7ca2a815c43b005e3becc5aede5917:113733962,955ceae45ec43b0001e51289023223b7:-1676838731,14b8526c73843b0071ade8f3622b6031:113733962,6ba8126ce0843b000c35f75f2c6ebe43:1647163169,3ba7922c5e843b00b7426b41180424d8:-1330053722,b5ccfe2f43ff2f00e0e070ae39869604:1531482632,c49cbe2fa4ff2f008ea48ed6b3a94b9b:1810535582</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_c09c7a2fdbff2f003a50de01ce961948</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name>form-parent</class_name><container_class_name>form-container</container_class_name><name>Form - Container 1</name><order>1</order><sp_page display_value="form_collapsible">889c7a2fdbff2f003a50de01ce961945</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>jacob</sys_created_by><sys_created_on>2019-03-01 15:14:11</sys_created_on><sys_id>c09c7a2fdbff2f003a50de01ce961948</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Form - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_c09c7a2fdbff2f003a50de01ce961948</sys_update_name><sys_updated_by>jacob</sys_updated_by><sys_updated_on>2019-03-04 15:10:31</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>1661586076</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>c15d995913c87300d0f170a76144b099</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16949419f070000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>Form - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>6f789e2c48843b0094ed5cbf876b7288</update_guid>
+<update_guid_history>6f789e2c48843b0094ed5cbf876b7288:1661586076,ee789e2caf843b004640cd1f0727f984:1661683270,ad38da2c46843b00c8af565492ee6b52:1661586076,8038da2c26843b00562e02afe7e20a44:1661683270,7ed4fe807e44f7009e07d42d2a2b6b08:1661586076,b5bc326f53ff2f00f3663dca1992a756:-145189107,849c7a2fa5ff2f002d1f62ebe6941d49:-764515291</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rel_widget_clone_ce755ea8db843b00d7f8f88eaf9619a3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="Copy of Form">ce751ea8db843b00d7f8f88eaf961935</child><cloned>2019-03-04 14:57:18</cloned><last_validated>2019-03-04 14:57:18</last_validated><parent display_value="Form">fd1f4ec347730200ba13a5554ee490c0</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sp_platform&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager) {
+  $scope.submitting = false;
+  $scope.mandatory = [];
+  $scope.errorMessages = [];
+  $scope.data.show_sql = false;
+  $scope.saveButtonSuffix = spUtil.getAccelerator('s');
+  $scope.isPageReady = false;
+  $scope.adminMenu = {
+    encodedPageUrl: encodeURIComponent($location.url()),
+    getClientScriptCount: function() {
+      var count = 0;
+      if ($scope.data.f.client_script) {
+        count += $scope.data.f.client_script.onChange.length;
+        count += $scope.data.f.client_script.onLoad.length;
+        count += $scope.data.f.client_script.onSubmit.length;
+      }
+      return count;
+    }
+  };
+
+  $rootScope.$on('$sp.html.editor.progress', function(e, conf) {
+      $scope.submitting = conf.state;
+  });
+
+  $scope.getUIActions = function(type) {
+    if ($scope.data.disableUIActions)
+      return [];
+    if (type) {
+      return $scope.data.f._ui_actions.filter(function(action) {
+        //We handle the primary action button separately.
+        return !action.primary &amp;&amp; action['is_' + type];
+      });
+    } else {
+      return $scope.data.f._ui_actions;
+    }
+  }
+
+  $scope.getPrimaryAction = function() {
+    var primaryActions = $scope.data.f._ui_actions.filter(function(action) {
+      return action.primary;
+    });   
+    return (primaryActions.length) ? primaryActions[0] : null;
+  }
+
+  $scope.getUIActionContextMenu = function(event) {
+    var menu = [];
+    if (event.ctrlKey)
+      return menu;
+
+    var contextActions = $scope.getUIActions('context');
+    contextActions.forEach(function(action) {
+      menu.push([action.name, function() {
+        $scope.triggerUIAction(action);
+      }]);
+    });
+
+    if (contextActions.length &gt; 0)
+      menu.push(null);
+    menu.push([$scope.data.exportPDFMsg, function() {
+      exportPDF("");
+    }]);
+    menu.push([$scope.data.exportPDFLandMsg, function() {
+      exportPDF('true');
+    }]);
+
+    return menu;
+  }
+
+  function exportPDF(landscape) {
+    $window.open("/" + $scope.data.f.table + ".do?PDF&amp;landscape=" + landscape + "&amp;sys_id=" + $scope.data.sys_id + "&amp;sysparm_view=" + $scope.data.f.view);
+  }
+
+  //trigger the primary UI Action on save (if there is one)
+  var deregister = $scope.$on('$sp.save', function() {
+    var primaryAction = $scope.getPrimaryAction();
+    if (primaryAction)
+      $scope.triggerUIAction(primaryAction);
+  });
+  $scope.$on('$destroy', function() {
+    deregister()
+  });
+
+  $scope.triggerUIAction = function(action) {
+    if ($scope.data.disableUIActions &amp;&amp; !action.primary) {
+      return;
+    }
+
+    var activeElement = document.activeElement;
+    if (activeElement) {
+      activeElement.blur();
+    }
+
+    $scope.$evalAsync(function() {
+      if (g_form) {
+        $scope.submitting = true;
+        if (!g_form.submit(action.action_name || action.sys_id))
+          $scope.submitting = false;
+      }
+    });
+  }
+
+  $scope.$on("spModel.uiActionComplete", function(evt, response) {
+    $scope.submitting = false;
+    var sysID = (response.isInsert) ? response.sys_id : $scope.data.sys_id;
+    loadForm($scope.data.table, sysID).then(constructResponseHandler(response));
+  });
+
+  function constructResponseHandler(response) {
+    return function() {
+    $rootScope.$broadcast("sp.form.submitted", {sys_id: (response.isInsert) ? response.sys_id : $scope.data.sys_id});
+      var message;
+      var eventName = "sp.form.record.updated";
+      if (response.isInsert) {
+        message = $scope.data.recordAddedMsg;
+        var search = $location.search();
+        search.sys_id = response.sys_id;
+        search.spa = 1;
+        $location.search(search).replace();
+      } else
+        message = $scope.data.updatedMsg;
+
+      $scope.data.hideRelatedLists = hideRelatedLists();
+      $scope.$emit(eventName, $scope.data.f._fields);
+      $rootScope.$broadcast(eventName, $scope.data.f._fields);
+      $scope.status = message;
+      spUtil.addTrivialMessage(message);
+      $timeout(clearStatus, 2000);
+    }
+  }
+
+  var ctrl = this;
+  // switch forms
+  var unregister = $scope.$on('$sp.list.click', onListClick);
+  $scope.$on("$destroy", function() {
+    unregister();
+  })
+  
+  function _save() {
+    var primaryAction = $scope.getPrimaryAction();
+    if (primaryAction)
+      $scope.triggerUIAction(primaryAction);
+  }
+  
+  function onListClick(evt, arg) {
+    loadForm(arg.table, arg.sys_id);
+  }
+
+  function loadForm(table, sys_id) {
+    var f = {};
+    $scope.data.table = f.table = table;
+    $scope.data.sys_id = f.sys_id = sys_id;
+    f.view = $scope.data.view;
+    return $scope.server.update().then(setupAttachmentHandler);
+  }
+
+  function openRelatedList(e, queryString) {
+    // todo: Open this in a modal
+    $location.search(queryString);
+    e.preventDefault();
+  }
+
+  $scope.$on('spModel.fields.rendered', function() {
+    if (ctrl.panels)
+      ctrl.panels.removeClass('shift-out').addClass('shift-in');
+  });
+  
+  var g_form;
+  function initForm(gFormInstance) {
+    if (gFormInstance.getTableName() == $scope.data.f.table){
+      g_form = gFormInstance;
+      spNavStateManager.register($scope.data.table, _save, g_form);
+      $scope.isPageReady = true;
+      $timeout(function() {
+        $rootScope.$emit('spModel.gForm.rendered', g_form);
+      }, 175);
+    }
+  }
+  
+  $scope.$on('spModel.gForm.initialized', function(e, gFormInstance) {
+    initForm(gFormInstance);
+  });
+  
+  $scope.$on('spModel.gForm.env.created', function(e, gFormInstance) {
+    initForm(gFormInstance);
+  });
+  
+  // update the comments or worknotes based on activity stream
+  $scope.$on("activity_stream_is_changed", function(event, data) {
+    if (g_form &amp;&amp; g_form.hasField(data.fieldName)) {
+      g_form.setValue(data.fieldName, data.input);
+      if (data.fieldToClear != "" &amp;&amp; g_form.hasField(data.fieldToClear))
+        g_form.setValue(data.fieldToClear, "");
+    }
+  })
+
+  // Show or hide related lists
+  $scope.$watch('data.f._related_lists', function() {
+    $scope.data.hideRelatedLists = hideRelatedLists();
+  }, true);
+
+  function hideRelatedLists() {
+    if (!$scope.data.f._related_lists)
+      return true;
+
+    if ($scope.options.hideRelatedLists == true)
+      return true;
+
+    if ($scope.data.sys_id == '-1')
+      return true;
+
+    // If all related lists are visible=false then hide
+    if ($scope.data.f._related_lists.length &gt; 0) {
+      for (var i in $scope.data.f._related_lists) {
+        var list = $scope.data.f._related_lists[i];
+        if (list.visible) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  function clearStatus() {
+    $scope.status = "";
+  }
+
+  function setupAttachmentHandler() {
+    $scope.attachmentHandler = new nowAttachmentHandler(appendDone, appendError);
+
+    $scope.$evalAsync(function() {
+      $scope.attachmentHandler.setParams($scope.data.table, $scope.data.f._attachmentGUID, 1024 * 1024 * $scope.data.maxAttachmentSize);
+    });
+
+    $scope.$on('dialog.upload_too_large.show', function(e) {
+      $log.error($scope.data.largeAttachmentMsg);
+      spUtil.addErrorMessage($scope.data.largeAttachmentMsg);
+    });
+  }
+  setupAttachmentHandler();
+
+  function appendDone() {
+    // don't know here whether upload succeeded, so can't show msg either way
+    $scope.$broadcast("sp.attachments.update", $scope.data.f._attachmentGUID);
+    spAriaUtil.sendLiveMessage($scope.data.attachmentSuccessMsg);
+  }
+
+  function appendError(error) {
+    $scope.errorMessages.push(error);
+    spUtil.addErrorMessage(error.msg + error.fileName);
+  }
+
+  if ($scope.data.f.title) {
+    $scope.$emit('sp.widget-modal.set-aria-label', $scope.data.f.title);
+  }
+}]]&gt;&lt;/client_script&gt;&lt;controller_as/&gt;&lt;css&gt;.btn-form-menu {
+  vertical-align: inherit;
+  padding: inherit;
+  background: none;
+}
+
+.panel-title {
+  word-wrap: break-word;
+}
+
+.panel-heading {
+  .dropdown-menu {
+    a {
+      white-space: normal;
+    }
+  }
+}
+
+.comment {
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.mce-panel, .mce-btn {
+  background-image: none;
+  background-color: #f0f3f4;
+}
+
+.action-btn {
+  margin-right: 5px;
+}
+
+.timeline-container {
+   max-height: 50vh;
+   height: 100%;
+   overflow-y: auto;
+}
+
+.panel .panel {
+    height: auto !important;
+}
+
+.attachment-button {
+  .glyphicon-paperclip {
+    font-size: 18px;
+  }
+}
+
+.dropdown {
+  .glyphicon-menu-hamburger:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; 
+  }
+}
+
+.empty-state-wrapper {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 20px 20px;
+
+  .empty-state {
+    border: 1px solid #e7e9eb;
+    border-radius: 10px;
+    max-width: 700px;
+    padding: 30px 40px 20px;
+    position: relative;
+
+    .empty-state-badge {
+      top: -36px;
+      left: 50%;
+      position: absolute;
+      height: 72px;
+      width: 72px;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 100%;
+      color: #ffffff;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 40px;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-left: -36px;
+      text-align: center;
+    }
+
+    .empty-state-header {
+      font-size: 30px;
+      text-align: center;
+      color: #343d47;
+    }
+
+    .empty-state-content {
+      ul {
+        list-style: disc outside;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 30px;
+      }
+    }
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;widget-form&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Form&lt;/name&gt;&lt;option_schema&gt;[{"name":"disableUIActions","section":"Behavior","label":"Disable UI Actions on Form","type":"boolean"},{"name":"showFormView","section":"Behavior","label":"Display current form view","type":"boolean"},{"name":"omitHeaderOptions","section":"Behavior","label":"Omit header options icon","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[// form functionality - URL parameter driven
+(function($sp, input, data, options, gs) {
+  /* "use strict"; -linter issues */
+  // populate the 'data' variable
+  data.attachmentUploadSuccessMsg = gs.getMessage("Attachment upload was successful");
+  data.recordAddedMsg = gs.getMessage("Record Added");
+  data.updatedMsg = gs.getMessage("updated_uppercase");
+  data.exportPDFMsg = gs.getMessage("Export to PDF");
+  data.exportPDFLandMsg = gs.getMessage("Export to PDF (landscape)");
+  data.addAttachmentMsg = gs.getMessage("Add an attachment");
+  data.maxAttachmentSize = parseInt(gs.getProperty("com.glide.attachment.max_size", 1024));
+  if (isNaN(data.maxAttachmentSize))
+    data.maxAttachmentSize = 24;
+  data.largeAttachmentMsg = gs.getMessage("Attached files must be smaller than {0} - please try again", "" + data.maxAttachmentSize + "MB");
+  data.attachmentSuccessMsg = gs.getMessage("Attachment successfully uploaded");
+  
+  data.isAdmin = gs.hasRightsTo('sp/configure.all/execute', null);
+  data.emptyStateTemplate = options.empty_state_template;
+  data.disableUIActions = options.disableUIActions === "true";
+  data.hideRelatedLists = options.hideRelatedLists || false;
+
+  if (input) {
+    data.table = input.table;
+    data.sys_id = input.sys_id;
+    data.view = input.view;
+    var result = {};
+    if (input._fields) {
+      result = $sp.saveRecord(input.table, input.sys_id, input._fields);
+      data.sys_id = result.sys_id;
+    }
+
+    if (input.sys_id == '-1')
+      data.isNewRecord = true;
+  } else {
+    data.table = options.table || $sp.getParameter("t") || $sp.getParameter("table") || $sp.getParameter("sl_table");
+    data.sys_id = options.sys_id || $sp.getParameter("sys_id") || $sp.getParameter("sl_sys_id");
+    data.view = options.view || $sp.getParameter("view") || $sp.getParameter("v"); // no default
+  }
+
+  data.query = $sp.getParameter("query") || options.query || "";
+  data.f = {};
+  if (!data.table)
+    return;
+  
+  // Form widget is not a supported way to view an attachment
+  if (data.table == "sys_attachment") {
+    data.tableUnsupported = true;
+    return;
+  }
+
+  if (!GlideTableDescriptor.isValid(data.table))
+    return;
+
+  if (!data.sys_id)
+    return;
+
+  var rec = $sp.getRecord(data.table, data.sys_id);
+  data.isValid = rec.isValid() || data.sys_id == "-1";
+  if (!data.isValid)
+    return;
+
+  data.table = rec.getRecordClassName();
+  data.tableHierarchy = GlideDBObjectManager.getTables(data.table).toArray().join();
+  data.canWrite = rec.canWrite();
+  var hasRecordAccess = data.sys_id == "-1" ? rec.canCreate() : data.canWrite;
+  data.canAttach = hasRecordAccess &amp;&amp; gs.hasRole(gs.getProperty('glide.attachment.role')) &amp;&amp; !GlideTableDescriptor.get(data.table).getED().getBooleanAttribute("no_attachment");
+  data.f = $sp.getForm(data.table, data.sys_id, data.query, data.view);
+
+  // Activity formatter is hardcoded to set specific options
+  for (var f in data.f._formatters) {
+    var fm = data.f._formatters[f];
+    if (fm.formatter == "activity.xml") {
+      fm.hardcoded = true;
+      fm.widgetInstance = $sp.getWidget('widget-ticket-conversation',
+                                {table: data.table,
+                                 sys_id: data.sys_id,
+                                 includeExtended: true,
+                                 title: "${Activity}",
+                                 use_dynamic_placeholder: true,
+                                 btnLabel: "${Post}"});
+    } else if(fm.formatter == "com_glideapp_servicecatalog_veditor" || fm.formatter == "com_glideapp_questionset_default_question_editor") {
+      var qsConfig = $sp.getValue('quick_start_config');
+      if (qsConfig)
+        qsConfig = JSON.parse(qsConfig)[0];
+      fm.widgetInstance = $sp.getWidget(fm.widget, {table: data.table,
+                            sys_id: data.sys_id,
+                            readonly_variable_editor: qsConfig ? qsConfig.readonly_variable_editor : 'false'});
+    } else
+      fm.widgetInstance = $sp.getWidget(fm.widget, data);
+  }
+})($sp, input, data, options, gs);]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-11-22 21:32:20&lt;/sys_created_on&gt;&lt;sys_id&gt;fd1f4ec347730200ba13a5554ee490c0&lt;/sys_id&gt;&lt;sys_mod_count&gt;971&lt;/sys_mod_count&gt;&lt;sys_name&gt;Form&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;568c060245c32300aadb28ef70de71a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fd1f4ec347730200ba13a5554ee490c0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-12-20 18:17:45&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="::!data.isValid &amp;&amp; !data.emptyStateTemplate" class="panel panel-default"&gt;
+  &lt;div class="panel-body wrapper-lg text-center"&gt;
+    &lt;span ng-if="!data.tableUnsupported"&gt;${Record not found}&lt;/span&gt;
+    &lt;span ng-if="data.tableUnsupported"&gt;${Form view not supported for requested table}&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div ng-if="!data.isValid &amp;&amp; data.emptyStateTemplate" class="panel-shift"&gt;
+  &lt;div class="empty-state-wrapper panel panel-default" ng-include="data.emptyStateTemplate"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div ng-if="data.isValid" class="panel-shift"&gt;
+  &lt;div class="" ng-if="!data.f._view.length &amp;&amp; data.hideRelatedLists &amp;&amp; data.emptyStateTemplate"&gt;
+    &lt;div class="empty-state-wrapper panel panel-default" ng-include="data.emptyStateTemplate"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="" ng-if="!data.f._view.length &amp;&amp; data.hideRelatedLists &amp;&amp; !data.emptyStateTemplate"&gt;
+    &lt;div class="panel panel-default"&gt;
+      &lt;div class="panel-heading"&gt;&lt;span class="panel-title"&gt;{{data.f.title}}&lt;/span&gt; &lt;span ng-if="::options.showFormView == 'true' &amp;&amp; data.f.view != ''"&gt;[{{data.f.view_title}} view]&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="panel-body wrapper-lg text-center"&gt;
+        ${No elements to display}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div ng-show="isPageReady" class="panel panel-default" ng-if="::data.f._view.length || !data.hideRelatedLists" &gt;
+    &lt;div class="panel-heading" ng-if="data.f.title.length" sp-context-menu="getUIActionContextMenu(event)"&gt;
+        &lt;span class="dropdown m-r-xs" ng-if="(data.isAdmin || getUIActions('context').length &gt; 0) &amp;&amp; options.omitHeaderOptions != 'true'"&gt;
+            &lt;button aria-label="${Form menu}" class="btn btn-form-menu dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="adminMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
+            &lt;ul class="dropdown-menu" aria-labelledby="adminMenu"&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a ng-href="/{{::data.f.table}}.do?sys_id={{data.f.sys_id}}&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Open in platform}&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin" class="dropdown-header"&gt;${Configure}&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&amp;sysparm_list={{data.f._sections[0].id}}&amp;sysparm_form=section&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Form Layout}&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&amp;sysparm_list={{data.f.table}}&amp;sysparm_form=related_list&amp;sysparm_view={{data.f.view}}" target="_blank"&gt;${Related Lists}&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="?id=lf&amp;table=sys_ui_policy&amp;filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id:'lf', table: 'sys_ui_policy', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})"&gt;${UI Policies} &lt;span class="badge pull-right" ng-if="f.policy.length"&gt;{{f.policy.length}}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin"&gt;&lt;a href="?id=lf&amp;table=sys_script_client&amp;filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id: 'lf', table: 'sys_script_client', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})"&gt;${Client Scripts} &lt;span class="badge pull-right" ng-if="adminMenu.getClientScriptCount()"&gt;{{adminMenu.getClientScriptCount()}}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="getUIActions('context').length &gt; 0 &amp;&amp;  data.isAdmin" role="separator" class="divider"&gt;&lt;/li&gt;
+              &lt;li ng-repeat="action in getUIActions('context')"&gt;&lt;a href="" ng-click="triggerUIAction(action)"&gt;{{action.name}}&lt;/a&gt;&lt;/li&gt;
+              &lt;li ng-if="::data.isAdmin || getUIActions('context').length &gt; 0" role="separator" class="divider"&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a target="_new" href="/{{data.f.table}}.do?PDF&amp;sys_id={{data.sys_id}}&amp;sysparm_view={{data.f.view}}"&gt;${Export to PDF}&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a target="_new" href="/{{data.f.table}}.do?PDF&amp;landscape=true&amp;sys_id={{data.sys_id}}&amp;sysparm_view={{data.f.view}}"&gt;${Export to PDF (landscape)}&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/span&gt;
+      &lt;span class="panel-title" aria-label="{{data.f.title}}"&gt;{{data.f.title}}&lt;/span&gt; &lt;span ng-if="::options.showFormView == 'true' &amp;&amp; data.f.view != ''"&gt;[{{data.f.view_title}} view]&lt;/span&gt;
+      &lt;div ng-if="::attachmentHandler &amp;&amp; data.canAttach" title="{{::data.addAttachmentMsg}}" class="pull-right attachment-button"&gt;
+        &lt;sp-attachment-button&gt;&lt;/sp-attachment-button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+      &lt;!-- performance debug --&gt;
+      &lt;div ng-if="data.show_sql"&gt;
+        &lt;div class="comment"&gt;
+          &lt;span ng-if="data.f._perf.sql_count"&gt;${SQL Statements {{data.f._perf.sql_count}}}, &lt;/span&gt;
+          &lt;span&gt;${Time {{data.f._perf.time}}}&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div ng-repeat="s in data.f._perf.sql" class="{{s.type}}"&gt;
+          {{s.statement}}
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- attachments --&gt;
+      &lt;sp-attachment-manager table="::data.table" sys-id="data.f._attachmentGUID" omit-edit="::!data.canAttach"&gt;&lt;/sp-attachment-manager&gt;
+      &lt;!-- form --&gt;
+      &lt;div&gt;
+        &lt;sp-model form_model="data.f" mandatory="mandatory"&gt;&lt;/sp-model&gt;
+      &lt;/div&gt;
+      &lt;!-- UI Action Links --&gt;
+      &lt;div ng-if="getUIActions('link').length &gt; 0"&gt;
+        &lt;label style="margin: 0;"&gt;${Related Links}&lt;/label&gt;
+        &lt;div ng-repeat="action in getUIActions('link')"&gt;
+          &lt;a href ng-click="triggerUIAction(action)" gsft_id="{{::action.sys_id}}"&gt;{{::action.name}}&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- related lists --&gt;
+      &lt;div ng-if="!data.hideRelatedLists"&gt;
+        &lt;label style="margin: 0"&gt;${Related Lists}&lt;/label&gt;
+        &lt;div style="margin-bottom: 7px; padding-bottom: 7px; border-bottom: 1px solid #f5f5f5;"&gt;
+          &lt;span ng-repeat="rl in data.f._related_lists" ng-if="rl.visible"&gt;
+            &lt;a ng-if="rl.type != 'REL'" ng-href="?id=lf&amp;table={{::rl.table}}&amp;filter={{rl.field}}%3D{{data.f.sys_id}}&amp;view={{data.f.view}}" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', filter: '{{rl.field}}%3D{{data.f.sys_id}}'})"&gt;{{rl.plural}}
+              &lt;span class="label label-as-badge label-primary" ng-if="rl.count"&gt;{{::rl.count}}&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a ng-if="::rl.type == 'REL'" href="?id=lf&amp;table={{::rl.table}}&amp;relationship_id={{rl.relationship_id}}&amp;apply_to={{rl.apply_to}}&amp;apply_to_sys_id={{rl.apply_to_sys_id}}&amp;view={{::data.f.view}}" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', apply_to: '{{rl.apply_to}}', apply_to_sys_id: '{{rl.apply_to_sys_id}}', relationship_id: '{{rl.relationship_id}}'})"&gt;{{rl.label}}
+              &lt;span class="label label-as-badge label-primary" ng-if="rl.count"&gt;{{rl.count}}&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;span ng-if="!$last" style="padding-left: .5em; padding-right: .5em;" aria-hidden="true"&gt; | &lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="panel-footer"&gt;
+      &lt;button ng-click="triggerUIAction(action)" ng-disabled="submitting" ng-repeat="action in getUIActions('button')" class="btn btn-default action-btn" gsft_id="{{::action.sys_id}}"&gt;{{action.name}}&lt;/button&gt;
+      &lt;span&gt;{{status}}&lt;/span&gt;
+      &lt;button ng-if="getPrimaryAction()" type="submit" ng-click="triggerUIAction(getPrimaryAction())" ng-disabled="submitting" class="btn btn-primary action-btn pull-right" gsft_id="{{::getPrimaryAction().sys_id ? getPrimaryAction().sys_id : ''}}"&gt;${Save} &lt;span ng-if="saveButtonSuffix"&gt;(${{{saveButtonSuffix}}})&lt;/span&gt;&lt;/button&gt;
+      &lt;div style="clear: both;"&gt;&lt;/div&gt;
+      &lt;div ng-if="mandatory.length" class="alert alert-info" style="margin-top: .5em" aria-live="polite" aria-atomic="true"&gt;
+        &lt;span ng-if="mandatory.length &gt; 0"&gt;${Required information} &lt;/span&gt;
+        &lt;span ng-repeat="f in mandatory" class="label label-danger" style="margin-right: .5em; display: inline-block;" ng-bind="f.label"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>jacob</sys_created_by><sys_created_on>2019-03-04 14:57:18</sys_created_on><sys_id>ce755ea8db843b00d7f8f88eaf9619a3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ce751ea8db843b00d7f8f88eaf961935</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rel_widget_clone_ce755ea8db843b00d7f8f88eaf9619a3</sys_update_name><sys_updated_by>jacob</sys_updated_by><sys_updated_on>2019-03-04 14:57:18</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
+<payload_hash>-826056833</payload_hash>
+<remote_update_set display_value="Collapsible Form London 1.1">055d995913c87300d0f170a76144b098</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-06 18:47:28</sys_created_on>
+<sys_id>cd5d995913c87300d0f170a76144b099</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169493587bf0000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-06 18:47:28</sys_updated_on>
+<table/>
+<target_name>ce751ea8db843b00d7f8f88eaf961935</target_name>
+<type>Widget Clone</type>
+<update_domain>global</update_domain>
+<update_guid>06755ea8ad843b00fdf25cc9b0b08ea5</update_guid>
+<update_guid_history>06755ea8ad843b00fdf25cc9b0b08ea5:-826056833</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

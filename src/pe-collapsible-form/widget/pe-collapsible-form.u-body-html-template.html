@@ -1,3 +1,184 @@
-<div>
-  <!-- your widget template -->
+<div ng-if="::!data.isValid && !data.emptyStateTemplate" class="panel panel-default">
+  <div class="panel-body wrapper-lg text-center">
+    <span ng-if="!data.tableUnsupported">${Record not found}</span>
+    <span ng-if="data.tableUnsupported">${Form view not supported for requested table}</span>
+  </div>
 </div>
+
+<div ng-if="!data.isValid && data.emptyStateTemplate" class="panel-shift">
+  <div class="empty-state-wrapper panel panel-default" ng-include="data.emptyStateTemplate"></div>
+</div>
+
+<div ng-if="data.isValid" class="panel-shift">
+  <div class="" ng-if="!data.f._view.length && data.hideRelatedLists && data.emptyStateTemplate">
+    <div class="empty-state-wrapper panel panel-default" ng-include="data.emptyStateTemplate"></div>
+  </div>
+
+  <div class="" ng-if="!data.f._view.length && data.hideRelatedLists && !data.emptyStateTemplate">
+    <div class="panel panel-default">
+      <div class="panel-heading"><span class="panel-title">{{data.f.title}}</span> <span ng-if="::options.showFormView == 'true' && data.f.view != ''">[{{data.f.view_title}} view]</span></div>
+      <div class="panel-body wrapper-lg text-center">
+        ${No elements to display}
+      </div>
+    </div>
+  </div>
+
+  <div ng-show="isPageReady" class="panel panel-default" ng-if="::data.f._view.length || !data.hideRelatedLists" >
+    <div class="panel-heading" ng-if="data.f.title.length" sp-context-menu="getUIActionContextMenu(event)">
+        <span class="dropdown m-r-xs" ng-if="(data.isAdmin || getUIActions('context').length > 0) && options.omitHeaderOptions != 'true'">
+            <button aria-label="${Form menu}" class="btn btn-form-menu dropdown-toggle glyphicon glyphicon-menu-hamburger" style="line-height: 1.4em" id="adminMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <ul class="dropdown-menu" aria-labelledby="adminMenu">
+              <li ng-if="::data.isAdmin"><a ng-href="/{{::data.f.table}}.do?sys_id={{data.f.sys_id}}&sysparm_view={{data.f.view}}" target="_blank">${Open in platform}</a></li>
+              <li ng-if="::data.isAdmin" class="dropdown-header">${Configure}</li>
+              <li ng-if="::data.isAdmin"><a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&sysparm_list={{data.f._sections[0].id}}&sysparm_form=section&sysparm_view={{data.f.view}}" target="_blank">${Form Layout}</a></li>
+              <li ng-if="::data.isAdmin"><a href="/slushbucket.do?sysparm_referring_url={{adminMenu.encodedPageUrl}}&sysparm_list={{data.f.table}}&sysparm_form=related_list&sysparm_view={{data.f.view}}" target="_blank">${Related Lists}</a></li>
+              <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_ui_policy&filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id:'lf', table: 'sys_ui_policy', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${UI Policies} <span class="badge pull-right" ng-if="f.policy.length">{{f.policy.length}}</span></a></li>
+              <li ng-if="::data.isAdmin"><a href="?id=lf&table=sys_script_client&filter=table%3D{{data.f.table}}%5EORtableIN{{data.tableHierarchy}}%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10" ng-click="openRelatedList($event, {id: 'lf', table: 'sys_script_client', filter: 'table%3D{{data.f.table}}%5EORtableIN{{data.f.table}},sys_metadata%5Eactive%3Dtrue%5Eui_type%3D1%5EORui_type%3D10'})">${Client Scripts} <span class="badge pull-right" ng-if="adminMenu.getClientScriptCount()">{{adminMenu.getClientScriptCount()}}</span></a></li>
+              <li ng-if="getUIActions('context').length > 0 &&  data.isAdmin" role="separator" class="divider"></li>
+              <li ng-repeat="action in getUIActions('context')"><a href="" ng-click="triggerUIAction(action)">{{action.name}}</a></li>
+              <li ng-if="::data.isAdmin || getUIActions('context').length > 0" role="separator" class="divider"></li>
+              <li><a target="_new" href="/{{data.f.table}}.do?PDF&sys_id={{data.sys_id}}&sysparm_view={{data.f.view}}">${Export to PDF}</a></li>
+              <li><a target="_new" href="/{{data.f.table}}.do?PDF&landscape=true&sys_id={{data.sys_id}}&sysparm_view={{data.f.view}}">${Export to PDF (landscape)}</a></li>
+            </ul>
+        </span>
+      <span class="panel-title" aria-label="{{data.f.title}}">{{data.f.title}}</span> <span ng-if="::options.showFormView == 'true' && data.f.view != ''">[{{data.f.view_title}} view]</span>
+      <div ng-if="::attachmentHandler && data.canAttach" title="{{::data.addAttachmentMsg}}" class="pull-right attachment-button">
+        <sp-attachment-button></sp-attachment-button>
+      </div>
+    </div>
+    <div class="panel-body">
+      <!-- performance debug -->
+      <div ng-if="data.show_sql">
+        <div class="comment">
+          <span ng-if="data.f._perf.sql_count">${SQL Statements {{data.f._perf.sql_count}}}, </span>
+          <span>${Time {{data.f._perf.time}}}</span>
+        </div>
+        <div ng-repeat="s in data.f._perf.sql" class="{{s.type}}">
+          {{s.statement}}
+        </div>
+      </div>
+      <!-- attachments -->
+      <sp-attachment-manager table="::data.table" sys-id="data.f._attachmentGUID" omit-edit="::!data.canAttach"></sp-attachment-manager>
+      <!-- form -->
+      <div>
+        <sp-model form_model="data.f" mandatory="mandatory"></sp-model>
+      </div>
+      <!-- UI Action Links -->
+      <div ng-if="getUIActions('link').length > 0">
+        <label style="margin: 0;">${Related Links}</label>
+        <div ng-repeat="action in getUIActions('link')">
+          <a href ng-click="triggerUIAction(action)" gsft_id="{{::action.sys_id}}">{{::action.name}}</a>
+        </div>
+      </div>
+      <!-- related lists -->
+      <div ng-if="!data.hideRelatedLists">
+        <label style="margin: 0">${Related Lists}</label>
+        <div style="margin-bottom: 7px; padding-bottom: 7px; border-bottom: 1px solid #f5f5f5;">
+          <span ng-repeat="rl in data.f._related_lists" ng-if="rl.visible">
+            <a ng-if="rl.type != 'REL'" ng-href="?id=lf&table={{::rl.table}}&filter={{rl.field}}%3D{{data.f.sys_id}}&view={{data.f.view}}" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', filter: '{{rl.field}}%3D{{data.f.sys_id}}'})">{{rl.plural}}
+              <span class="label label-as-badge label-primary" ng-if="rl.count">{{::rl.count}}</span>
+            </a>
+            <a ng-if="::rl.type == 'REL'" href="?id=lf&table={{::rl.table}}&relationship_id={{rl.relationship_id}}&apply_to={{rl.apply_to}}&apply_to_sys_id={{rl.apply_to_sys_id}}&view={{::data.f.view}}" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', apply_to: '{{rl.apply_to}}', apply_to_sys_id: '{{rl.apply_to_sys_id}}', relationship_id: '{{rl.relationship_id}}'})">{{rl.label}}
+              <span class="label label-as-badge label-primary" ng-if="rl.count">{{rl.count}}</span>
+            </a>
+            <span ng-if="!$last" style="padding-left: .5em; padding-right: .5em;" aria-hidden="true"> | </span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-footer">
+      <button ng-click="triggerUIAction(action)" ng-disabled="submitting" ng-repeat="action in getUIActions('button')" class="btn btn-default action-btn" gsft_id="{{::action.sys_id}}">{{action.name}}</button>
+      <span>{{status}}</span>
+      <button ng-if="getPrimaryAction()" type="submit" ng-click="triggerUIAction(getPrimaryAction())" ng-disabled="submitting" class="btn btn-primary action-btn pull-right" gsft_id="{{::getPrimaryAction().sys_id ? getPrimaryAction().sys_id : ''}}">${Save} <span ng-if="saveButtonSuffix">(${{{saveButtonSuffix}}})</span></button>
+      <div style="clear: both;"></div>
+      <div ng-if="mandatory.length" class="alert alert-info" style="margin-top: .5em" aria-live="polite" aria-atomic="true">
+        <span ng-if="mandatory.length > 0">${Required information} </span>
+        <span ng-repeat="f in mandatory" class="label label-danger" style="margin-right: .5em; display: inline-block;" ng-bind="f.label"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/ng-template" id="empty-state-list-form.html">
+<div class="empty-state">
+  <div class="empty-state-content">
+    <div class="empty-state-badge fa fa-list-ul" style="background-color: #31708f;"></div>
+    <h3 class="empty-state-header">${List and Form}</h3>
+    <p>${Select a record from the list to view its details in this pane.}</p>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="empty-state-page-editor.html">
+<div class="empty-state">
+  <div class="empty-state-content">
+    <div class="empty-state-badge fa fa-file" style="background-color: #5cb85c;"></div>
+    <h3 class="empty-state-header">${Page Editor}</h3>
+    <p>${Select a page above to view a map of the hierarchical structure of any page.}</p>
+    <p>${From the map, you can select an element to expose it in a form below the page map.}</p>
+  </div>
+</div>
+</script>
+<script type="text/ng-template" id="empty-state-portal-edit.html">
+<div class="empty-state">
+  <div class="empty-state-content">
+    <div class="empty-state-badge fa fa-sitemap" style="background-color: #f0ad4e;"></div>
+    <h3 class="empty-state-header">${Portal Editor}</h3>
+    <p>${Select a portal above to view a map of the structure of any portal.}</p>
+    <p>${From the map, you can select an element to expose it in a form below the portal map.}</p>
+  </div>
+</div>
+</script>
+
+<script type="text/ng-template" id="sp_variable_layout.xml">
+<style>
+.nav-continue, .nav-continue.collapse { display: none; }
+/* show 'continue' nav when previous section is expanded */
+.collapse.in + .nav-continue { display: block; }
+</style>
+
+<!-- COLLAPSIBLE BY SECTION -->
+
+<div ng-if="containers[0].showCollapsibleForm">
+
+<nav ng-repeat-start="container in containers" ng-if="container.id" class="nav-continue">
+  <button ng-class="['btn btn-default', 'collapse', 'collapse-' + container.id, { 'in': !($first || (container._parent == containers[0].id) ) }]"
+          type="button" data-toggle="collapse" data-target=".collapse-{{container.id}}" 
+          aria-target="collapse-{{container.id}}" aria-expanded="{{($first || (container._parent == containers[0].id) )}}">
+    Continue
+  </button>
+</nav>
+
+<div ng-if="container.id" id="collapse-{{container.id}}" class="section-heading">
+  <button ng-class="['btn btn-link', {'collapsed': !($first || (container._parent == containers[0].id) ) }]"
+    type="button" data-toggle="collapse" data-target=".collapse-{{container.id}}" aria-expanded="{{($first || (container._parent == containers[0].id) )}}" aria-target="collapse-{{container.id}}">
+      <legend class="h4" id="heading-{{container.id}}"><i class="fa fa-align-left collapse-indicator" aria-hidden="true"></i>{{container.captionDisplay || container.caption || 'Form Section'}}</legend>
+  </button>
+  <sp-help-tag field="::formModel._fields[container.name]"></sp-help-tag>
+</div>
+
+<span ng-if="!container.id" ng-init="containers[$index]._parent = containers[$index-1]._parent || containers[$index-1].id"></span>
+
+<fieldset ng-repeat-end ng-show="paintForm(container)" aria-labelledby="heading-{{container.id || container._parent}}"
+          ng-class="['section-form', 'row', 'collapse-' + (container.id || container._parent), 'collapse', 'section-' + $index, {'in': ($first || (container._parent == containers[0].id))}]">
+  <div ng-repeat="column in container.columns" class="col-md-{{::12 / container.columns.length }}">
+    <div ng-switch="::f.type" ng-repeat="f in ::column.fields" id="{{::getVarID(f)}}" ng-class="::{'form-inline': isInlineForm === true }">
+      <div ng-switch-when="label" ng-if="formModel._fields[f.name]" ng-show="formModel._fields[f.name].isVisible()">
+        <label ng-bind="f.label"></label>
+        <sp-help-tag field="::formModel._fields[f.name]"></sp-help-tag>
+        <hr class="sp_label_hr"></hr>
+      </div>
+      <sp-form-field ng-switch-when="field" ng-if="formModel._fields[f.name]" form-model="formModel" field="formModel._fields[f.name]" glide-form="getGlideForm()" ng-show="formModel._fields[f.name].isVisible()" default-value-setter="setDefaultValue(fieldName,fieldInternalValue,fieldDisplayValue)"></sp-form-field>
+      <sp-variable-layout ng-switch-when="container" ng-init="containers=[f]"></sp-variable-layout>
+      <sp-checkbox-group ng-switch-when="checkbox_container" name="f.name" form-model="formModel" containers="f.containers" glide-form="getGlideForm()" class="checkbox-container"></sp-checkbox-group>
+      <sp-widget ng-switch-when="formatter" ng-if="formModel._formatters[f.id].widgetInstance" widget="formModel._formatters[f.id].widgetInstance" page="{g_form: getGlideForm()}"></sp-widget>
+      <hr ng-switch-when="break" ng-show="formModel._fields[f.name].isVisible()"></hr>
+    </div>
+  </div>
+</fieldset>
+
+</div>
+
+<fieldset ng-if="!containers[0].showCollapsibleForm" ng-repeat="container in containers" ng-show="paintForm(container)"><div ng-if="(container.caption || container.captionDisplay)"><legend class="h4">{{container.captionDisplay || container.caption}}</legend><p ng-if="::formModel._fields[container.name].help_text" title="{{::formModel._fields[container.name].help_tag}}" class="help-block" ng-bind="::formModel._fields[container.name].help_text"></p><span ng-if="::formModel._fields[container.name].instructions" ng-bind-html="::formModel._fields[container.name].instructions"></span></div><div class="row"><div ng-repeat="column in container.columns" class="col-md-{{::12 / container.columns.length }}"><div ng-switch="::f.type" ng-repeat="f in ::column.fields" id="{{::getVarID(f)}}" ng-class="::{'form-inline': isInlineForm === true }"><div ng-switch-when="label" ng-if="formModel._fields[f.name]" ng-show="formModel._fields[f.name].isVisible()"><label ng-bind="f.label"></label><p ng-if="formModel._fields[f.name].help_text" title="{{formModel._fields[f.name].help_tag}}" class="help-block" ng-bind="formModel._fields[f.name].help_text"></p><span ng-if="formModel._fields[f.name].instructions" ng-bind-html="::trustedHTML(formModel._fields[f.name].instructions)"></span><hr class="sp_label_hr"></hr></div><sp-form-field ng-switch-when="field" ng-if="formModel._fields[f.name]" form-model="formModel" field="formModel._fields[f.name]" glide-form="getGlideForm()" ng-show="formModel._fields[f.name].isVisible()" default-value-setter="setDefaultValue(fieldName,fieldInternalValue,fieldDisplayValue)"></sp-form-field><sp-variable-layout ng-switch-when="container" ng-init="containers=[f]"></sp-variable-layout><sp-checkbox-group ng-switch-when="checkbox_container" name="f.name" form-model="formModel" containers="f.containers" glide-form="getGlideForm()" class="checkbox-container"></sp-checkbox-group><sp-widget ng-switch-when="formatter" ng-if="formModel._formatters[f.id].widgetInstance" widget="formModel._formatters[f.id].widgetInstance" page="{g_form: getGlideForm()}"></sp-widget><hr ng-switch-when="break" ng-show="formModel._fields[f.name].isVisible()"></hr></div></div></div></fieldset>
+
+</script>
