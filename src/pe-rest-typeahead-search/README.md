@@ -4,13 +4,29 @@
 
 Typeahead Search lets the user searching with suggestions, through REST, and finally to select and send a record through the event "pe-typeahead-selection".
 
-## Screenshot
+## Screenshots
 
-![Rest Typeahead Search](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-rest-typeahead-search/images/pe-rest-typeahead-search.png)
+![Rest Typeahead Search](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-rest-typeahead-search/images/pe-rest-typeahead-search-01.png)
+
+![Rest Typeahead Search](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-rest-typeahead-search/images/pe-rest-typeahead-search-02.png)
 
 ## Additional Information/Notes
 
-> None
+The Typeahead Search widget provides suggestions for users as they type in the search field.
+
+Main features are:
+
+* Providing suggestions through the autocomplete search library [Twitter Typeahead v1.2.0](https://github.com/corejavascript/typeahead.js)
+
+* Obtaining data through REST. It can be connected also to a Table API defined in a different ServiceNow instance if the relative option _REST Instance_ is used, and a [CORS rule](https://docs.servicenow.com/bundle/london-application-development/page/integrate/inbound-rest/concept/c_CORSSupport.html) defined in the target instance.
+
+* Broadcasting on record selection (event name: "pe-typeahead-selection"). Sample code for receiving the selected record (json object) in any widgets used in the Portal application:
+
+```javascript
+$rootScope.$on('pe-typeahead-selection', function(event, obj) {
+  /* code */
+});
+```
 
 ## Installation
 
@@ -32,10 +48,19 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ### UI Dependencies
 
-> None
+> typeahead.js v1.2.0
 
 ## CSS/SASS Variables
 
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-> None
+```scss
+$pe-rest-typeahead-hover-color
+$pe-rest-typeahead-hover-bg
+$pe-rest-typeahead-menu-bg
+$pe-rest-typeahead-border-color
+$pe-rest-typeahead-border-radius
+$pe-rest-typeahead-border
+$pe-rest-typeahead-max-width
+$pe-rest-typeahead-dim-opacity
+```
