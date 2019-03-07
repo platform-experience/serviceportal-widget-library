@@ -14,7 +14,7 @@ Typeahead Search lets the user searching with suggestions, through REST, and fin
 
 The Typeahead Search widget provides suggestions for users as they type in the search field.
 
-Main features are:
+### Main features
 
 * Providing suggestions through the autocomplete search library [Twitter Typeahead v1.2.0](https://github.com/corejavascript/typeahead.js)
 
@@ -28,6 +28,16 @@ $rootScope.$on('pe-typeahead-selection', function(event, obj) {
 });
 ```
 
+### Presentation
+
+* Bootstrap Color: select Default to use custom SASS variables in the Theme (complete list at the top of the widget CSS section).
+
+* Bootstrap Size: this will define the padding around the Search text field (md, lg, etc.).
+
+* Placeholder: the text hint in the empty input field.
+
+* Overlay Effect: if enabled, it will apply a CSS effect (class pe-rest-typeahead-search__dim) to help the user in focusing more on the results.
+
 ## Installation
 
 Download and install update set **[pe-rest-typeahead-search.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-rest-typeahead-search/pe-rest-typeahead-search.u-update-set.xml)**
@@ -38,15 +48,24 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+### Widget Option Schema
+
+| Option | Description | Required Field |
+| :--- | :--- | :--- |
+| `Table` | Table containing the records to query. | true |
+| `Filter` | Additional filter. |  |
+| `Display Field` | The column/attribute to show in the result list. | true |
+| `Query Field` | The column/attribute used by Twitter Typeahead to provide the suggestions. | true |
+| `Order By` | The result sorting. |  |
+| `Order Direction` | The result sorting direction. |  |
+| `Limit Result` | The maximum number of records to obtain and display. | true |
+| `REST Instance` | If the REST Table API is in a different instance. |  |
+| `REST Username` | If REST instance is used, provide the credentials. |  |
+| `REST Password` | If REST instance is used, provide the credentials. |  |
 
 ## Platform Dependencies
 
-### SN System Tables
-
-> None
-
-### UI Dependencies
+### API Dependencies
 
 > typeahead.js v1.2.0
 
