@@ -1,0 +1,192 @@
+$x-pisn-sp-typeahead-font-size: $font-size-large !default;
+$x-pisn-sp-typeahead-text-color: $text-color !default;
+$x-pisn-sp-typeahead-input-height: $input-height-large !default;
+$x-pisn-sp-typeahead-bg: white !default;
+$x-pisn-sp-typeahead-placeholder-color: lighten($x-pisn-sp-typeahead-text-color, 30%) !default;
+$x-pisn-sp-typeahead-max-width: 400px !default;
+$x-pisn-sp-typeahead-dim-opacity: 0.8 !default;
+$x-pisn-sp-typeahead-border-color: $input-border !default;
+$x-pisn-sp-typeahead-border-radius: $border-radius-base !default;
+$x-pisn-sp-typeahead-border: 0.5px !default;
+$x-pisn-sp-typeahead-hover-color: white !default;
+$x-pisn-sp-typeahead-hover-bg: #82b2a0 !default;
+
+.x-pisn-sp-typeahead-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x-pisn-sp-typeahead-search__container {
+  position: relative;
+  width: 100%;
+  max-width: $x-pisn-sp-typeahead-max-width;
+}
+
+.x-pisn-sp-typeahead-search__input {
+  padding: $padding-base-vertical 25px $padding-base-vertical 35px;
+  box-shadow: none;
+  background: unset !important;
+  background-color: $x-pisn-sp-typeahead-bg !important;
+}
+
+/* default using SASS */
+.x-pisn-sp-typeahead-search,
+.x-pisn-sp-typeahead-search-default {
+  .tt-suggestion:hover {
+    background-color: $x-pisn-sp-typeahead-hover-bg;
+  }
+
+  .tt-dataset {
+    border: $x-pisn-sp-typeahead-border solid $x-pisn-sp-typeahead-border-color;
+  }
+
+  .form-control {
+    border: $x-pisn-sp-typeahead-border solid $x-pisn-sp-typeahead-border-color;
+    border-radius: $x-pisn-sp-typeahead-border-radius;
+    font-size: $x-pisn-sp-typeahead-font-size;
+    height: $x-pisn-sp-typeahead-input-height;
+  }
+
+  .form-control:focus {
+    outline: 0;
+    border-color: $x-pisn-sp-typeahead-border-color;
+    box-shadow: none;
+  }
+
+  .x-pisn-sp-typeahead-icon {
+    color: $x-pisn-sp-typeahead-border-color;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $x-pisn-sp-typeahead-placeholder-color;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $x-pisn-sp-typeahead-placeholder-color;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $x-pisn-sp-typeahead-placeholder-color;
+  }
+
+}
+
+/* primary color */
+.x-pisn-sp-typeahead-search-primary {
+  .tt-suggestion:hover {
+    background-color: $brand-primary;
+  }
+
+  .tt-dataset {
+    border: $x-pisn-sp-typeahead-border solid $brand-primary;
+  }
+
+  .form-control {
+    border: $x-pisn-sp-typeahead-border solid $brand-primary;
+  }
+
+  .form-control:focus {
+    border-color: $brand-primary;
+  }
+
+  .x-pisn-sp-typeahead-icon {
+    color: $brand-primary;
+  }
+
+}
+
+/* info color */
+.x-pisn-sp-typeahead-search-info {
+  .tt-suggestion:hover {
+    background-color: $brand-info;
+  }
+
+  .tt-dataset {
+    border: $x-pisn-sp-typeahead-border solid $brand-info;
+  }
+
+  .form-control {
+    border: $x-pisn-sp-typeahead-border solid $brand-info;
+  }
+
+  .form-control:focus {
+    border-color: $brand-info;
+  }
+
+  .x-pisn-sp-typeahead-icon {
+    color: $brand-info;
+  }
+
+}
+
+.tt-suggestion {
+  padding: $padding-base-vertical $padding-base-horizontal;
+}
+
+.x-pisn-sp-typeahead-icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  font-size: 18px;
+  left: 10px;
+}
+
+.fa-light-icon {
+  -webkit-text-stroke: 1px $x-pisn-sp-typeahead-bg;
+  -webkit-font-smoothing: antialiased;
+}
+
+.x-pisn-sp-typeahead-icon-close {
+  left: unset;
+  right: 10px;
+  -webkit-text-stroke: 2px $x-pisn-sp-typeahead-bg;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+.x-pisn-sp-typeahead-icon-close-hide {
+  display: none;
+}
+
+.x-pisn-sp-typeahead-icon-close-show {
+  display: block;
+}
+
+.tt-menu {
+  padding: 0px;
+  width: 100%;
+}
+
+.tt-dataset {
+  max-height: 194px;
+  overflow-y: scroll;
+  width: 100%;
+  background-color: $x-pisn-sp-typeahead-bg;
+  border-radius: $x-pisn-sp-typeahead-border-radius;
+  margin-top: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.tt-suggestion:hover {
+  cursor: pointer;
+  color: $x-pisn-sp-typeahead-hover-color;
+}
+
+.twitter-typeahead {
+  width: 100%;
+}
+
+.x-pisn-sp-typeahead-search__dim {
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, $x-pisn-sp-typeahead-dim-opacity);
+  box-shadow: 0 0 0 100vmax rgba(255, 255, 255, $x-pisn-sp-typeahead-dim-opacity);
+  z-index: 9999;
+  transition-timing-function: ease-out, step-end;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
