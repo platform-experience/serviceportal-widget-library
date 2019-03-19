@@ -2,15 +2,25 @@
 
 ## Description
 
-> None
+A set of widgets and page based on order guide (og). The widgets show an overview of a given og: a description and its contents, including a featured item (the first listed in the og).
 
-## Screenshot
+The user is given the choice of two actions: 'Add to Cart' immediately adds all items to the cart, and 'Customize Bundle' proceeds through the standard order guide procedure.
 
 ![Order Overview](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-order-overview/images/pe-order-overview.png)
 
+Page `sc_og_overview` contains widget `sc-og-overview-page`, in which is embedded `sc-og-overview`. Given a `sys_id` in its url parameters, the page will show the full expanded overview for that og.
+
+With no sys_id provided the page will show all ogs in the service catalog, with content details collapsed (expandable upon selection). In list view the page is given an assignable title (defaults to 'Bundled Orders'). If the page is given id parameters for `catalog` or `category`, the list becomes filtered and labeling changes accordingly.
+
+![Order Overview](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-order-overview/images/pe-order-overview-list.png)
+
+The independently configurable `sc-og-overview` can also be placed on other pages, and assigned a specific order guide, with basic user filters to determine which users it should be displayed for.
+
+![Order Overview](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-order-overview/images/pe-order-overview-in-portal.png)
+
 ## Additional Information/Notes
 
-> None
+Widget includes minimal styles, applied to Bootstrap standards, so can be easily influenced by theme. Screenshots show portal/page with Bootswatch theme 'United'.
 
 ## Installation
 
@@ -22,7 +32,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+See above.
 
 ## Platform Dependencies
 
