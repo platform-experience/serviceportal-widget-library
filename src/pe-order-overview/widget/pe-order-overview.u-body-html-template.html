@@ -1,0 +1,56 @@
+<div ng-if="data.isRecommended" class="panel panel-default">
+  <div class="row">
+    <div ng-if="::data.sc_cat_item.picture" class="image-box col-md-6 col-md-push-6">
+      <img class="img-responsive catalog-item-image guide-image" ng-src="{{::data.sc_cat_item.picture}}?t=medium" />
+    </div>
+    <div class="details-box details-box-primary" ng-class='data.sc_cat_item.picture ? "col-md-6 col-md-pull-6" : "col-md-12"'>
+      <h2 class="m-n">{{data.sc_cat_item.name}}</h2>
+      <h4 ng-if="::data.sc_cat_item.short_description">{{::data.sc_cat_item.short_description}}</h4>
+      <div class="detail-pair">
+        <div class="icon">
+          <sn-avatar class="avatar-small-medium" primary="::user.sys_id" show-presence="false" />
+        </div>
+        <div>
+          {{::data.msgs.recommendedForMsg}}
+          <!-- <small class="block">based on your start date</small> -->
+        </div>
+      </div>
+      <div class="button-set">
+        <button type="button" class="btn btn-default" ng-click="triggerAddToCart(false)"><i class="fa fa-shopping-cart m-r-sm"></i> Add to Cart</button>
+        <button type="button" class="btn btn-primary" ng-click="triggerAddToCart(true)">Customize Bundle</button>  
+      </div>
+    </div>
+  </div>
+  <div ng-if="includedItems.length">
+    <h4 ng-show="!data.allowCollapse" class="incl-items-header">
+      {{::data.msgs.includedMsg}}
+    </h4>
+    <h5 ng-show="data.allowCollapse" ng-click="data.collapseItemList = !data.collapseItemList" class="incl-items-header">
+      <i class="fa m-r-xs" ng-class="collapseItemList ? 'fa-plus-square-o' : 'fa-minus-square-o'"></i>
+      {{::data.msgs.includedMsg}}
+    </h5>
+    <div uib-collapse="data.collapseItemList">
+      <div class="row">
+        <div ng-if="::includedItems[0].picture" class="image-box col-md-6 col-md-push-6">
+          <img class="img-responsive catalog-item-image guide-item-image" ng-src="{{::includedItems[0].picture}}" />
+        </div>
+        <div class="details-box" ng-class='includedItems[0].picture ? "col-md-6 col-md-pull-6" : "col-md-12"'>
+          <h5 class="text-uppercase">{{::data.msgs.featuredMsg}}</h5>
+          <h3>{{::includedItems[0].name}}</h3>
+          <p ng-bind-html="::includedItems[0].description"></p>
+        </div>
+      </div>
+      <div class="details-box">
+        <h4>{{::data.msgs.inTheBoxMsg}}</h4>
+        <div class="item-grid well">
+          <div ng-repeat="item in includedItems" class="item-wrapper" ng-if="!$first">
+            <img ng-if="::item.picture" class="img-responsive catalog-item-image guide-item-image" ng-src="{{::item.picture}}" />
+            <img ng-if="!item.picture && item.icon" class="img-responsive catalog-item-image guide-item-image" ng-src="{{::item.icon}}" />
+            <i ng-if="!item.picture && !item.icon" class="fa fa-box fa-4x"></i>
+            <h5 class="text-center">{{::item.name}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
