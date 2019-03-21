@@ -2,7 +2,7 @@
 
 ## Description
 
-> This is a simple widget to get stock quote using stock symbol. This has a simple integration to [https://www.alphavantage.co/](https://www.alphavantage.co/) where we get the stock quote from.
+> This is a simple widget to get stock quote using a stock symbol. This has a simple integration to [https://www.alphavantage.co/](https://www.alphavantage.co/) where we get the stock quote from.
 
 ## Screenshot
 
@@ -26,7 +26,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 * A demo API key is included as part of the update set. It is advised to use your own key.
 
  ![Sys Property](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-stock-ticker/images/api_key.png)
- 
+
 * Widget Option to get default stock quote when the widget is first loaded.
 
  ![Widget Option](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-stock-ticker/images/widget_option.png)
