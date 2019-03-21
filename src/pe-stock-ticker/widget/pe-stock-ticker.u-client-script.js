@@ -1,4 +1,4 @@
-function StocckTickerController($http) {
+function StockTickerController($http) {
   var c = this;
 
   c.$onInit = function () {
