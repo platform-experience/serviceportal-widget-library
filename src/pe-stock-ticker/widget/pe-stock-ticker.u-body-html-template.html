@@ -1,0 +1,18 @@
+<div class="pi-stock">
+  <form class="form-inline text-center" ng-submit="c.update()">
+      <div class="form-group mx-sm-3 mb-2">
+
+        <input ng-model="c.data.symbol" ng-model-options="{debounce: 750}" placeholder="{{::data.typeSymbolMsg}}" class="form-control" id="symbol" placeholder="Stock symbol">
+      </div>
+      <button class="btn btn-primary" ng-click="c.update()">Go!</button>
+    </form>
+
+  <div class="stock-price-div">
+      <span class="text_center" ng-if="c.loading">${Requesting stock price}</span>
+      <span class="text_center" ng-if="c.data.wrongSymbol">Symbol not found</span>
+      <p class="text_center" ng-if="c.latestQuote.close" class="stock-price"><span class="symbol">{{c.currentSymbol}} :</span>
+          <span ng-class="{'green':c.latestQuote.close >= c.latestQuote.open, 'red': c.latestQuote.open > c.latestQuote.close }">{{c.latestQuote.close | currency:"$"}}</span>
+      </p>
+
+  </div>
+</div>
