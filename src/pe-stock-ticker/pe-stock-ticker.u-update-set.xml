@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-12-13 21:22:52">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Sush - Stock price</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>1f2cf922db5263405bc2295748961912</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2018-12-13 21:22:52</sys_created_on>
+<sys_id>c8f4eee6dbd263405bc2295748961942</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2018-12-13 21:22:52</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_398686aadb5263405bc229574896193e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>symbol</name><rest_message_function display_value="Default GET">30f406e6db5263405bc2295748961907</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2018-12-13 19:10:06</sys_created_on><sys_id>398686aadb5263405bc229574896193e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>symbol</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_398686aadb5263405bc229574896193e</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2018-12-13 19:21:07</sys_updated_on><type>string</type><value>NOW</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>890931233</payload_hash>
+<remote_update_set display_value="Sush - Stock price">c8f4eee6dbd263405bc2295748961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2018-12-13 21:22:52</sys_created_on>
+<sys_id>14f4eee6dbd263405bc2295748961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>167a903f3340000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2018-12-13 21:22:52</sys_updated_on>
+<table/>
+<target_name>symbol</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>b0198eaa03526340d326daec1f4c8760</update_guid>
+<update_guid_history>b0198eaa03526340d326daec1f4c8760:890931233,1f86c2aa3852634097c6d94f694eb8a4:-1378649110</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_e8228a66db5263405bc229574896197d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>This is a demo apikey. Create your own here https://www.alphavantage.co/</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>alphavantage.api.key</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2018-12-13 18:51:40</sys_created_on><sys_id>e8228a66db5263405bc229574896197d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>alphavantage.api.key</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_e8228a66db5263405bc229574896197d</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2018-12-13 18:52:20</sys_updated_on><type>string</type><value>AS2BWPL781TW45XK</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=e8228a66db5263405bc229574896197d"/></record_update>]]></payload>
+<payload_hash>-680647437</payload_hash>
+<remote_update_set display_value="Sush - Stock price">c8f4eee6dbd263405bc2295748961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2018-12-13 21:22:52</sys_created_on>
+<sys_id>18f4eee6dbd263405bc2295748961943</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>167a8e99f810000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2018-12-13 21:22:52</sys_updated_on>
+<table/>
+<target_name>alphavantage.api.key</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>eb7282a6c1526340cedf52106a3fc6fe</update_guid>
+<update_guid_history>eb7282a6c1526340cedf52106a3fc6fe:-680647437,71524e66ae5263407e77b280fec3d337:-544748690</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_0d8cb922db5263405bc22957489619d7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;sample&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function siStockCtrl($http) {
+  var c = this;
+
+  c.$onInit = function () {
+    c.loading = false;
+    c.update = update;
+    c.data.price = false;
+    c.latestQuote = "";
+    c.currentSymbol = "";
+    initiate();
+  };
+
+  function initiate() {
+    c.loading = true;
+    c.data.wrongSymbol = "";
+    if (c.data.responseBody) {
+      if (c.data.wrongSymbol) {
+        c.loading = false;
+        c.data.wrongSymbol = c.data.wrongSymbol;
+      } else {
+        processData(c.data.responseBody);
+        c.loading = false;
+      }
+    }
+  }
+
+  function update() {
+    c.loading = true;
+    c.latestQuote = "";
+    c.data.wrongSymbol = "";
+    c.server.get({
+      symbol: c.data.symbol
+    }).then(function (r) {
+      if (r.data.wrongSymbol) {
+        c.loading = false;
+        c.data.wrongSymbol = r.data.wrongSymbol;
+      } else {
+        processData(r.data.responseBody);
+        c.loading = false;
+      }
+
+    });
+  }
+
+  function processData(responseData) {
+    c.data.responseData = responseData;
+    if (c.data.responseData.hasOwnProperty('Time Series (1min)')) {
+      var latestDate = Object.keys(c.data.responseData['Time Series (1min)']).sort().reverse()[0];
+      if (c.data.responseData['Time Series (1min)'][latestDate].hasOwnProperty('1. open') &amp;&amp;
+        c.data.responseData['Time Series (1min)'][latestDate].hasOwnProperty('2. high') &amp;&amp;
+        c.data.responseData['Time Series (1min)'][latestDate].hasOwnProperty('3. low') &amp;&amp;
+        c.data.responseData['Time Series (1min)'][latestDate].hasOwnProperty('4. close') &amp;&amp;
+        c.data.responseData['Time Series (1min)'][latestDate].hasOwnProperty('5. volume')
+      ) {
+        c.latestQuote = {
+          'symbol': c.data.symbol,
+          'open': c.data.responseData['Time Series (1min)'][latestDate]['1. open'],
+          'high': c.data.responseData['Time Series (1min)'][latestDate]['2. high'],
+          'low': c.data.responseData['Time Series (1min)'][latestDate]['3. low'],
+          'close': c.data.responseData['Time Series (1min)'][latestDate]['4. close'],
+          'volume': c.data.responseData['Time Series (1min)'][latestDate]['5. volume']
+        }
+      }
+    }
+    c.currentSymbol = c.data.responseData['Meta Data']['2. Symbol'].toUpperCase();
+  }
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.pi-stock{
+  max-width: 500px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+
+}
+.symbol{
+  color:$brand-primary;
+}
+.stock-price-div{
+  font-weight: 300;
+  font-size: 21px;
+  text-align: center;
+  padding-top: 10px;
+}
+.stock-price{
+  font-weight: 600;
+}
+.label{
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+.green{
+  color: #17ed17;
+}
+.red{
+  color: #d9534f;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;stock_price&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Stock price&lt;/name&gt;&lt;option_schema&gt;[{"name":"default_symbol","section":"other","label":"Default Symbol","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[data.typeSymbolMsg = gs.getMessage("Type stock symbol");
+data.apikey = gs.getProperty('alphavantage.api.key');
+data.wrongSymbol = "";
+$sp.log(options.default_symbol);
+if (input &amp;&amp; input.symbol) {
+  data.wrongSymbol = "";
+  getQuote(input.symbol);
+}else if(options.default_symbol){
+  getQuote(options.default_symbol);
+}
+
+function getQuote(symbol) {
+  try {
+    var r = new sn_ws.RESTMessageV2('Alphavantage', 'Default GET');
+    r.setStringParameterNoEscape('symbol', symbol);
+    r.setStringParameterNoEscape('apikey', data.apikey);
+
+    //override authentication profile
+    //authentication type ='basic'/ 'oauth2'
+    //r.setAuthentication(authentication type, profile name);
+
+    //set a MID server name if one wants to run the message on MID
+    //r.setMIDServer('MY_MID_SERVER');
+
+    //if the message is configured to communicate through ECC queue, either
+    //by setting a MID server or calling executeAsync, one needs to set skip_sensor
+    //to true. Otherwise, one may get an intermittent error that the response body is null
+    //r.setEccParameter('skip_sensor', true);
+
+    var response = r.execute();
+    $sp.log(response);
+    data.responseBody = JSON.parse(response.getBody());
+    var httpStatus = response.getStatusCode();
+    if (data.responseBody['Error Message']) {
+      $sp.log("wrong symbol");
+      data.wrongSymbol = "Symbol not found"
+    }
+    $sp.log(httpStatus);
+    $sp.log(data.responseBody);
+  } catch (ex) {
+    var message = ex.message;
+  }
+
+
+
+
+
+
+}]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-12-13 18:26:32&lt;/sys_created_on&gt;&lt;sys_id&gt;0d8cb922db5263405bc22957489619d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;60&lt;/sys_mod_count&gt;&lt;sys_name&gt;Stock price&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_0d8cb922db5263405bc22957489619d7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-12-13 21:18:24&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[    &lt;div class="pi-stock"&gt;
+      &lt;form class="form-inline text-center" ng-submit="c.update()"&gt;
+          &lt;div class="form-group mx-sm-3 mb-2"&gt;
+
+            &lt;input ng-model="c.data.symbol" ng-model-options="{debounce: 750}" placeholder="{{::data.typeSymbolMsg}}" class="form-control" id="symbol" placeholder="Stock symbol"&gt;
+          &lt;/div&gt;
+          &lt;button class="btn btn-primary" ng-click="c.update()"&gt;Go!&lt;/button&gt;
+        &lt;/form&gt;
+
+      &lt;div class="stock-price-div"&gt;
+          &lt;span class="text_center" ng-if="c.loading"&gt;${Requesting stock price}&lt;/span&gt;
+          &lt;span class="text_center" ng-if="c.data.wrongSymbol"&gt;Symbol not found&lt;/span&gt;
+          &lt;p class="text_center" ng-if="c.latestQuote.close" class="stock-price"&gt;&lt;span class="symbol"&gt;{{c.currentSymbol}} :&lt;/span&gt;
+              &lt;span ng-class="{'green':c.latestQuote.close &gt;= c.latestQuote.open, 'red': c.latestQuote.open &gt; c.latestQuote.close }"&gt;{{c.latestQuote.close | currency:"$"}}&lt;/span&gt;
+          &lt;/p&gt;
+
+      &lt;/div&gt;
+  &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>711678960</payload_hash>
+<remote_update_set display_value="Sush - Stock price">c8f4eee6dbd263405bc2295748961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2018-12-13 21:22:52</sys_created_on>
+<sys_id>50f4eee6dbd263405bc2295748961943</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>167a96f54130000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2018-12-13 21:22:52</sys_updated_on>
+<table/>
+<target_name>Stock price</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>fee32ee226d26340008ae06e8107208d</update_guid>
+<update_guid_history>fee32ee226d26340008ae06e8107208d:711678960,5e02e2aa761e2340759eb78f7da3f653:1479714564,d8e1a2e2a3d263404559426e3783221d:-1988218536,08cf92e2a4d26340cd6c0ce117517b21:-75656890,5aaf922a7f1e2340ff396bdfcc7da5d6:206643643,576f166284d26340a2fc31b1340010ea:1086755119,e25f922a211e2340baa46db2d4eed3d1:-1181963566,663f9ee6d11e23406e6b731abd84ce73:-1613739550,b3de9ea63e1e23407413202b0fac9564:327419834,a4de1ea6771e2340f959072f6414d3ed:-41404246,3dae92e6e61e234066653d88574ffa5e:771287611,d69e92e6611e2340dbf94b4b7abbb55a:-1220038006,0d8e52a262d263409c3fde421b290386:615426616,78dd9e26e81e234041200e88d8690ca0:1030587224,debd56626dd26340606ce99329c0d277:-388473724,a7ad1ea6e31e2340daeeb21c1193b9e5:1244629380,647b52664d1e2340e956f49a94ba934d:-1354572463,ed4bd2ae2692634009429ce816e362fb:680459793,b9ea9ae2d31e2340bc4af42dab0edb2a:1608947398,a2ba52e2291e234056b035d86f05a66c:-691225896,609a9226e11e2340fea5dd0776f6104f:74471842,186a1e6ef5926340508e0355fc323183:-1474027476,6b5a1a2e25926340024b882b71f938b3:267203206,1d4a92ae30926340de1b58aec2d5d842:2117180897,930a1ee22e1e2340cf07b1f3f1acb4c6:282545819,310a1e6e7992634058f1574ef3c5857e:1915440299,a9d91ee20d1e2340e8db235b2a7f4bc0:1745411583,12c992ea639263405ca181a9bf40d8fb:-1653149786,ae791aa2b81e234098578bfdd160d121:-427759887,8dd89aa2ff1e23405ea5c7f8826e7605:203570231,78981a2eb5926340dabca2f9bde913a8:-778415200,ce68deaa9e92634044be1c548f691fd9:67038152,e728da62141e234052235be4fd52c650:-2030978880,35181aa2e31e2340e350f9f805f6041a:1095932731,863792ea40926340cfe177fcf40e7ff0:-1249856300,1d07da62671e23400e021081d9bcc447:136192580,86f6d2aa5e92634043ea61251ceb8085:-563255003,c7d65a62a61e2340314846dbb71c308b:1360480311,8c36daae35da2340f7f928787f0a2cc0:1944839723,be16d2aae1926340f1fd15491fae0a7f:1053865387,b6859a6ab0926340957126aea03d9ab8:-1434411339,9c759a6a48926340680927109d884ab2:-235788350,d6255ea6689263408418e8f256a3c203:1796786017,56b35a6613926340669a99b8c5e893eb:1390163624,4ea3162e23da2340cfbcfb61e7069e03:311941041,59a3526e05da2340648053a4803e3d90:-1893833954,7c83dee636926340caeb0e6d98ada41b:1072966943,e66bcea6a9da2340d0a1fe76798ef1e7:-1164808170,529aceeed0526340a091f29a430ea717:1504754982,7f5a0eea945263402840e85e2e558869:1845290662,65e90aa63dda23402e68604466834b00:141812706,08d90a665eda23402fa2527c485f049e:-1775908748,cc4886e214da2340d9f3307294ddb796:-951217100,6a284eea0852634030916601beb776ef:-402606880,15974ae64352634096be2a9ea6f568da:-496433984,8b420e2619526340b75c7d59b008d42a:112002754,8afe392edd9a234068e6efdf62cba6d9:1546351707,bdeef9a2cd526340292edff02817cde7:535934602,45deb1aa5d9a2340c396eb8f4500bda6:-743386553,28de3922f05263404feaafe8020d9cf2:142397413,d19cf922ce5263401d22ec17c10ed223:-383971047</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_2576c2aadb5263405bc22957489619fb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>apikey</name><rest_message_function display_value="Default GET">30f406e6db5263405bc2295748961907</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2018-12-13 19:09:54</sys_created_on><sys_id>2576c2aadb5263405bc22957489619fb</sys_id><sys_mod_count>1</sys_mod_count><sys_name>apikey</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_2576c2aadb5263405bc22957489619fb</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2018-12-13 19:11:59</sys_updated_on><type>string</type><value>AS2BWPL781TW45XK</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>1804048125</payload_hash>
+<remote_update_set display_value="Sush - Stock price">c8f4eee6dbd263405bc2295748961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2018-12-13 21:22:52</sys_created_on>
+<sys_id>50f4eee6dbd263405bc2295748961944</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>167a8fb97540000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2018-12-13 21:22:52</sys_updated_on>
+<table/>
+<target_name>apikey</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>cff64eaa695263409ed8564d82c2e239</update_guid>
+<update_guid_history>cff64eaa695263409ed8564d82c2e239:1804048125,a486c2aafa526340f131f22055cad99e:558457226</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_30f406e6db5263405bc2295748961907</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Alphavantage [ Default GET ]</qualified_name><rest_endpoint>https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&amp;symbol=${symbol}&amp;interval=1min&amp;apikey=${apikey}</rest_endpoint><rest_message display_value="Alphavantage">eec48ae6db5263405bc22957489619d8</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2018-12-13 19:03:06</sys_created_on><sys_id>30f406e6db5263405bc2295748961907</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_30f406e6db5263405bc2295748961907</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2018-12-13 19:11:43</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>995174992</payload_hash>
+<remote_update_set display_value="Sush - Stock price">c8f4eee6dbd263405bc2295748961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2018-12-13 21:22:52</sys_created_on>
+<sys_id>9cf4eee6dbd263405bc2295748961943</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>167a8fb578a0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2018-12-13 21:22:52</sys_updated_on>
+<table/>
+<target_name>Default GET</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>43e60eaa4e52634003e60ec931e06cc9</update_guid>
+<update_guid_history>43e60eaa4e52634003e60ec931e06cc9:995174992,78f48a2a8b526340253491c32430d248:1288251842</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_eec48ae6db5263405bc22957489619d8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description>Integration to get stock price</description><name>Alphavantage</name><oauth2_profile/><protocol_name/><rest_endpoint>https://www.alphavantage.co</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2018-12-13 19:03:06</sys_created_on><sys_id>eec48ae6db5263405bc22957489619d8</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Alphavantage</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_eec48ae6db5263405bc22957489619d8</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2018-12-13 19:09:00</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+<payload_hash>154568271</payload_hash>
+<remote_update_set display_value="Sush - Stock price">c8f4eee6dbd263405bc2295748961942</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2018-12-13 21:22:52</sys_created_on>
+<sys_id>d8f4eee6dbd263405bc2295748961943</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>167a8f8da2e0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2018-12-13 21:22:52</sys_updated_on>
+<table/>
+<target_name>Alphavantage</target_name>
+<type>REST Message</type>
+<update_domain>global</update_domain>
+<update_guid>9346ce6a3c52634014f78e21eeb72732</update_guid>
+<update_guid_history>9346ce6a3c52634014f78e21eeb72732:154568271,0105ca2a6d526340065da05f7ca79675:658812321,b8f48a2ad7526340904bcf5fec723a49:-1143756658</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

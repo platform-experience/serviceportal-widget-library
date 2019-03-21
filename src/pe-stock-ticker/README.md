@@ -1,12 +1,12 @@
-# Stocck Ticker
+# Stock Ticker
 
 ## Description
 
-> None
+> This is a simple widget to get stock quote using stock symbol. This has a simple integration to [https://www.alphavantage.co/](https://www.alphavantage.co/) where we get the stock quote from.
 
 ## Screenshot
 
-![Stocck Ticker](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-stocck-ticker/images/pe-stocck-ticker.png)
+![Stock Ticker](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-stock-ticker/images/working.png)
 
 ## Additional Information/Notes
 
@@ -14,7 +14,7 @@
 
 ## Installation
 
-Download and install update set **[pe-stocck-ticker.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-stocck-ticker/pe-stocck-ticker.u-update-set.xml)**
+Download and install update set **[pe-stock-ticker.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-stock-ticker/pe-stock-ticker.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
@@ -22,7 +22,14 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+* Sign up for free api key [here](https://www.alphavantage.co/support/#api-key)
+* A demo API key is included as part of the update set. It is advised to use your own key.
+
+ ![Sys Property](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-stock-ticker/images/api_key.png)
+ 
+* Widget Option to get default stock quote when the widget is first loaded.
+
+ ![Widget Option](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-stock-ticker/images/widget_option.png)
 
 ## Platform Dependencies
 
