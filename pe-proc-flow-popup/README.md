@@ -8,9 +8,9 @@ You can read more about state flows on [Docs](https://docs.servicenow.com/bundle
 
 ## Screenshot
 
-![Proc Flow Popup](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-proc-flow-popup/images/pe-proc-flow-popup-01.png)
+![Proc Flow Popup](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/pe-proc-flow-popup/images/pe-proc-flow-popup-01.png)
 
-![Proc Flow Popup](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-proc-flow-popup/images/pe-proc-flow-popup-02.png)
+![Proc Flow Popup](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/pe-proc-flow-popup/images/pe-proc-flow-popup-02.png)
 
 
 ## Additional Information/Notes
@@ -19,7 +19,7 @@ It uses the SpUtil Watch functionality to represent the state flows in real time
 
 ## Installation
 
-Download and install update set **[pe-proc-flow-popup.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-proc-flow-popup/pe-proc-flow-popup.u-update-set.xml)**
+Download and install update set **[pe-proc-flow-popup.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-proc-flow-popup/pe-proc-flow-popup.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 

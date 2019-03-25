@@ -6,7 +6,7 @@ The Proc Flow Lite widget shows the current state (state flow) of a worflow in r
 
 ## Screenshot
 
-![Proc Flow Lite](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-proc-flow-lite/images/pe-proc-flow-lite.png)
+![Proc Flow Lite](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/pe-proc-flow-lite/images/pe-proc-flow-lite.png)
 
 ## Additional Information/Notes
 
@@ -14,7 +14,7 @@ It uses the SpUtil Watch functionality to represent the state flows in real time
 
 ## Installation
 
-Download and install update set **[pe-proc-flow-lite.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-proc-flow-lite/pe-proc-flow-lite.u-update-set.xml)**
+Download and install update set **[pe-proc-flow-lite.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-proc-flow-lite/pe-proc-flow-lite.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 

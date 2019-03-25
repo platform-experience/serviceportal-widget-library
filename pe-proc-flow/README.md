@@ -6,7 +6,7 @@ The Proc Flow widget shows the current state (state flow) of a worflow in real t
 
 ## Screenshot
 
-![Proc Flow](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-proc-flow/images/pe-proc-flow.png)
+![Proc Flow](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/pe-proc-flow/images/pe-proc-flow.png)
 
 ## Additional Information/Notes
 
@@ -14,7 +14,7 @@ It uses the SpUtil Watch functionality to represent the state flows in real time
 
 ## Installation
 
-Download and install update set **[pe-proc-flow.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-proc-flow/pe-proc-flow.u-update-set.xml)**
+Download and install update set **[pe-proc-flow.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-proc-flow/pe-proc-flow.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
