@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+An addition to the Faceted Search widget, **Faceted Search with Direct Reports** displays a tab for the user and any of his or her direct reports. Each tab maintains any selected facet and source criteria, and shows search results as the selected user would see them.
 
 ## Screenshot
 
@@ -10,7 +10,7 @@
 
 ## Additional Information/Notes
 
-> None
+A "direct report" is any user with the current user assigned as "manager".
 
 ## Installation
 
