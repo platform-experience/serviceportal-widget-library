@@ -2,9 +2,7 @@
 
 ## Description
 
-The Proc Flow Popup widget shows the current state (state flow) of a worflow in real time through a popup which is embedding the Proc Flow Lite widget available in the library.
-
-You can read more about state flows on [Docs](https://docs.servicenow.com/bundle/madrid-servicenow-platform/page/administer/state-flows/concept/c_StateFlows.html)
+The Proc Flow widget allows you to render the equivalent of a Process Flow Formatter on a Service Portal Page, helping the user to understand what stage a task is currently at in its end-to-end lifecycle.
 
 ## Screenshot
 
@@ -15,7 +13,7 @@ You can read more about state flows on [Docs](https://docs.servicenow.com/bundle
 
 ## Additional Information/Notes
 
-It uses the SpUtil Watch functionality to represent the state flows in real time.
+It uses the SpUtil Watch functionality to update the current state in real time.
 
 ## Installation
 
@@ -36,6 +34,8 @@ The widget requires in input (through URL parameter or input object if embedded)
 ## Platform Dependencies
 
 The record needs to have state flows defined. If not provided out of the box for that table, then the user can easily add or customise them from the State Flows functionality within the platform.
+
+You can read more about state flows on [Docs](https://docs.servicenow.com/bundle/madrid-servicenow-platform/page/administer/state-flows/concept/c_StateFlows.html)
 
 ### SN System Tables
 
