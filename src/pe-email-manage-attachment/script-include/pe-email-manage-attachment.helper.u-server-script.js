@@ -87,21 +87,25 @@ AttachmentEmailUtil.prototype = {
 	type: 'AttachmentEmailUtil'
 };
 
+
 //Private
 function getAttachmentBase64 (attachmentGR){
 	var gsa = new GlideSysAttachment();
 	var binData = gsa.getBytes(attachmentGR);
 	return GlideStringUtil.base64Encode(binData);
 }
+
 function writeAttachmentBase64 (emailRecord, attachment, sa64){
 	var gsa = new GlideSysAttachment();
-	gsa.write(emailRecord,attachment.file_name.toString(),attachment.content_type.toString(),sa64);
+	gsa.write(emailRecord,attachment.file_name.toString(),attachment.content_type.toString(), GlideStringUtil.base64DecodeAsBytes(sa64));
 }
+
 function getRecord (recordID, tableName){
 	var recordGR = new GlideRecord(tableName);
 	recordGR.get(recordID);
 	return recordGR;
 }
+
 function getReplyTo(){
 	var replyTo = gs.getProperty("glide.email.username") + " <" + gs.getProperty("glide.cs.email.case_queue_address") + ">"; 
 	var emailAccountsGR = new GlideRecord("sys_email_account");
@@ -127,11 +131,13 @@ function copyAttachments(emailRecord, attachments){
 		copyAttachment(emailRecord,attachments[i]);
 	}
 }
+
 function copyAttachment(emailRecord, attachment){
 	var sa64 = attachment.base64 || getAttachmentBase64(getRecord(attachment.sys_id.toString(),"sys_attachment"));
 	log(sa64);
 	writeAttachmentBase64(emailRecord, attachment, sa64);
 }
+
 function log(message){
 	var gdt = new GlideDateTime();
 	gs.info(gdt.getNumericValue() + "\n" + message);

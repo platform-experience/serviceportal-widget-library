@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> A simple widget to allow the management of attachments of a record and being able to email them from ServicePortal. The Update Set also contains a UI action that will copy all the attachments from a record and put them to an email attachment.
 
 ## Screenshot
 
