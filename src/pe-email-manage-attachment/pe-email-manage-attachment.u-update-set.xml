@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-26 18:42:40">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-26 21:05:40">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -20,38 +20,38 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>b90c14fb1354f30068b5721a6144b0f2</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>a0ccf07f1394f30068b5721a6144b00a</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
 </sys_remote_update_set>
 <sys_update_xml action="INSERT_OR_UPDATE">
-<action>DELETE</action>
+<action>INSERT_OR_UPDATE</action>
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_instance_80aafbe71314f30068b5721a6144b033</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>6</order><roles/><short_description/><size>md</size><sp_column display_value="2">a77f3d50d7000200a9ad1e173e24d488</sp_column><sp_widget display_value="Ticket Attachments">9ee37281d7033100a9ad1e173e24d457</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-26 16:16:44</sys_created_on><sys_id>80aafbe71314f30068b5721a6144b033</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_80aafbe71314f30068b5721a6144b033</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-26 16:29:57</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=80aafbe71314f30068b5721a6144b033"/></record_update>]]></payload>
-<payload_hash>1780751991</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
+<name>sys_properties_856303e90a0a0bc50164129959388444</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Email sending enabled</description><ignore_cache>false</ignore_cache><is_private>true</is_private><name>glide.email.smtp.active</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2009-05-28 04:04:20</sys_created_on><sys_id>856303e90a0a0bc50164129959388444</sys_id><sys_mod_count>16</sys_mod_count><sys_name>glide.email.smtp.active</sys_name><sys_package display_value="System (apps/system2)" source="apps/system2">4ad7a23264232300aadba650cb85d4b2</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_856303e90a0a0bc50164129959388444</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-26 20:51:14</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=856303e90a0a0bc50164129959388444"/></record_update>]]></payload>
+<payload_hash>-38161757</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>310c14fb1354f30068b5721a6144b0f4</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>20ccf07f1394f30068b5721a6144b00d</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>169bad64fd70000001</sys_recorded_at>
+<sys_recorded_at>169bbc579ed0000001</sys_recorded_at>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
 <table/>
-<target_name/>
-<type>Instance</type>
+<target_name>glide.email.smtp.active</target_name>
+<type>System Property</type>
 <update_domain>global</update_domain>
-<update_guid>a2adbb6bb214f3006176f4351952ea25</update_guid>
-<update_guid_history>a2adbb6bb214f3006176f4351952ea25:1780751991,6dadfb6be914f300df43bc080ddb30e5:-963160701,c4aafbe76014f300bb89104020429334:-1322575038</update_guid_history>
+<update_guid>9979b0fb5394f3008c1efb7d5683a9d7</update_guid>
+<update_guid_history>9979b0fb5394f3008c1efb7d5683a9d7:-38161757,f7ba43028a10330070743732e32fd320:534706892,dbba4302861033002eac758240ab0403:-38161757</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -215,15 +215,15 @@
   &lt;/ul&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
 <payload_hash>780762147</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>3d0c14fb1354f30068b5721a6144b0f4</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>24ccf07f1394f30068b5721a6144b00c</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>169bb012e1d0000001</sys_recorded_at>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
 <table/>
 <target_name>Manage Attachments</target_name>
 <type>Widget</type>
@@ -234,34 +234,28 @@
 <view/>
 </sys_update_xml>
 <sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
+<action>DELETE</action>
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_ui_action_6c02ad2e135c330068b5721a6144b0cb</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;send_attachments&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2/&gt;&lt;comments/&gt;&lt;condition&gt;!current.isNewRecord()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Send Email With Attachments&lt;/name&gt;&lt;onclick&gt;sendInfoToProcessor()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function sendInfoToProcessor(){
-	var url = new GlideURL("send_email_attachment.do");
-	url.addParam("record_id",g_form.getUniqueValue());
-	url.addParam("table_name","incident");
-	url.addParam("attachments","all");
-	popupOpenEmailClient(url.getURL());
-}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;joe.wilmoth&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-23 02:36:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6c02ad2e135c330068b5721a6144b0cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Send Email With Attachments&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_6c02ad2e135c330068b5721a6144b0cb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;joe.wilmoth&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-26 16:43:48&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
-<payload_hash>1062206167</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
+<name>sp_instance_80aafbe71314f30068b5721a6144b033</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>6</order><roles/><short_description/><size>md</size><sp_column display_value="2">a77f3d50d7000200a9ad1e173e24d488</sp_column><sp_widget display_value="Ticket Attachments">9ee37281d7033100a9ad1e173e24d457</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-26 16:16:44</sys_created_on><sys_id>80aafbe71314f30068b5721a6144b033</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_80aafbe71314f30068b5721a6144b033</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-26 16:29:57</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=80aafbe71314f30068b5721a6144b033"/></record_update>]]></payload>
+<payload_hash>1780751991</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>750c14fb1354f30068b5721a6144b0f5</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>28ccf07f1394f30068b5721a6144b00b</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>169bae2ee1e0000001</sys_recorded_at>
+<sys_recorded_at>169bad64fd70000001</sys_recorded_at>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
-<table>incident</table>
-<target_name>Send Email With Attachments</target_name>
-<type>UI Action</type>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
 <update_domain>global</update_domain>
-<update_guid>e4d088fb0314f300ab43832d5cd1dbf8</update_guid>
-<update_guid_history>e4d088fb0314f300ab43832d5cd1dbf8:1062206167,8532656e9c5c330009ec644bc61a1498:-1916162339,a402ad2e485c3300c83285b610a260cd:1127990804</update_guid_history>
+<update_guid>a2adbb6bb214f3006176f4351952ea25</update_guid>
+<update_guid_history>a2adbb6bb214f3006176f4351952ea25:1780751991,6dadfb6be914f300df43bc080ddb30e5:-963160701,c4aafbe76014f300bb89104020429334:-1322575038</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -273,15 +267,15 @@
 <name>sp_row_a5b2e96e135c330068b5721a6144b071</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Copy of Manage Attachments - Test Page (1) - Container 1">e5b2e96e135c330068b5721a6144b06f</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:39:05</sys_created_on><sys_id>a5b2e96e135c330068b5721a6144b071</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_a5b2e96e135c330068b5721a6144b071</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:39:05</sys_updated_on></sp_row></record_update>]]></payload>
 <payload_hash>-171151672</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>790c14fb1354f30068b5721a6144b0f4</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>60ccf07f1394f30068b5721a6144b00c</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>169a86a80fb0000001</sys_recorded_at>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
 <table/>
 <target_name>1</target_name>
 <type>Row</type>
@@ -299,21 +293,157 @@
 <name>sp_instance_31b26d6e135c330068b5721a6144b0e3</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">e1b2e96e135c330068b5721a6144b073</sp_column><sp_widget display_value="Manage Attachments">4462a56e135c330068b5721a6144b0e2</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:39:06</sys_created_on><sys_id>31b26d6e135c330068b5721a6144b0e3</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_31b26d6e135c330068b5721a6144b0e3</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:41:17</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=31b26d6e135c330068b5721a6144b0e3"/></record_update>]]></payload>
 <payload_hash>-1818541261</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>7d0c14fb1354f30068b5721a6144b0f3</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>64ccf07f1394f30068b5721a6144b00b</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>169a86c84970000001</sys_recorded_at>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
 <table/>
 <target_name/>
 <type>Instance</type>
 <update_domain>global</update_domain>
 <update_guid>b53361ae335c33004bcfcea83d7bb3c1</update_guid>
 <update_guid_history>b53361ae335c33004bcfcea83d7bb3c1:-1818541261,b5b26d6eb75c33002cbcf26e03f444e4:-134049160</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_529f697d0a0a0b340065009d1473b094</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Email receiving enabled</description><ignore_cache>false</ignore_cache><is_private>true</is_private><name>glide.email.read.active</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2009-08-25 17:34:22</sys_created_on><sys_id>529f697d0a0a0b340065009d1473b094</sys_id><sys_mod_count>5</sys_mod_count><sys_name>glide.email.read.active</sys_name><sys_package display_value="System (apps/system2)" source="apps/system2">4ad7a23264232300aadba650cb85d4b2</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_529f697d0a0a0b340065009d1473b094</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-26 20:51:15</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=529f697d0a0a0b340065009d1473b094"/></record_update>]]></payload>
+<payload_hash>1244237661</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>joe.wilmoth</sys_created_by>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>6cccf07f1394f30068b5721a6144b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169bbc57b260000001</sys_recorded_at>
+<sys_updated_by>joe.wilmoth</sys_updated_by>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
+<table/>
+<target_name>glide.email.read.active</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>dd79b0fb4d94f30030a276acd72c9ce0</update_guid>
+<update_guid_history>dd79b0fb4d94f30030a276acd72c9ce0:1244237661,0dca4302771033008a258825dd1fbd30:1634383186,37ba430263103300c2bf65a90717e225:1244237661</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_e5b2e96e135c330068b5721a6144b06f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Manage Email Attachments - Test Page - Container 1</name><order>1</order><sp_page display_value="copy_of_manage_attachments_1">e1b2e96e135c330068b5721a6144b06d</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:39:05</sys_created_on><sys_id>e5b2e96e135c330068b5721a6144b06f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Manage Email Attachments - Test Page - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_e5b2e96e135c330068b5721a6144b06f</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:40:04</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>787886793</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>joe.wilmoth</sys_created_by>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>a0ccf07f1394f30068b5721a6144b00b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a86b684b0000001</sys_recorded_at>
+<sys_updated_by>joe.wilmoth</sys_updated_by>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
+<table/>
+<target_name>Manage Email Attachments - Test Page - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>4cf2ed6e735c33005bb03583c29ed6fb</update_guid>
+<update_guid_history>4cf2ed6e735c33005bb03583c29ed6fb:787886793,29b2e96efe5c330023569172e9b6cb70:1479175749</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_6c02ad2e135c330068b5721a6144b0cb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;send_attachments&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2/&gt;&lt;comments/&gt;&lt;condition&gt;!current.isNewRecord()&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Send Email With Attachments&lt;/name&gt;&lt;onclick&gt;sendInfoToProcessor()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function sendInfoToProcessor(){
+	var url = new GlideURL("send_email_attachment.do");
+	url.addParam("record_id",g_form.getUniqueValue());
+	url.addParam("table_name","incident");
+	url.addParam("attachments","all");
+	popupOpenEmailClient(url.getURL());
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;joe.wilmoth&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-23 02:36:01&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6c02ad2e135c330068b5721a6144b0cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Send Email With Attachments&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_6c02ad2e135c330068b5721a6144b0cb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;joe.wilmoth&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-26 16:43:48&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1062206167</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>joe.wilmoth</sys_created_by>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>a4ccf07f1394f30068b5721a6144b00d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169bae2ee1e0000001</sys_recorded_at>
+<sys_updated_by>joe.wilmoth</sys_updated_by>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
+<table>incident</table>
+<target_name>Send Email With Attachments</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>e4d088fb0314f300ab43832d5cd1dbf8</update_guid>
+<update_guid_history>e4d088fb0314f300ab43832d5cd1dbf8:1062206167,8532656e9c5c330009ec644bc61a1498:-1916162339,a402ad2e485c3300c83285b610a260cd:1127990804</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_0c0e36a8c61122760094b0caafe5f56e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Trusted domains when creating new users from incoming email (Ignore email from untrusted domains unless from an existing user; use * for all domains)</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.user.trusted_domain</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2005-05-24 00:15:55</sys_created_on><sys_id>0c0e36a8c61122760094b0caafe5f56e</sys_id><sys_mod_count>11</sys_mod_count><sys_name>glide.user.trusted_domain</sys_name><sys_package display_value="Email Automatic User Creation" source="com.glide.email_createuser">dc6ceeba64e32300aadba650cb85d41e</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_0c0e36a8c61122760094b0caafe5f56e</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-26 20:51:24</sys_updated_on><type>string</type><value>*</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=0c0e36a8c61122760094b0caafe5f56e"/></record_update>]]></payload>
+<payload_hash>-978831323</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>joe.wilmoth</sys_created_by>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>a8ccf07f1394f30068b5721a6144b00c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169bbc5a2f90000001</sys_recorded_at>
+<sys_updated_by>joe.wilmoth</sys_updated_by>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
+<table/>
+<target_name>glide.user.trusted_domain</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>b379f0fb8694f300a75aeb54262744f0</update_guid>
+<update_guid_history>b379f0fb8694f300a75aeb54262744f0:-978831323,7379f0fb1b94f3002ab886b6d16bade7:2003764573</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_e1b2e96e135c330068b5721a6144b06d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>manage_email_attachments</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:39:05</sys_created_on><sys_id>e1b2e96e135c330068b5721a6144b06d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>manage_email_attachments</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_e1b2e96e135c330068b5721a6144b06d</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:40:04</sys_updated_on><title>Manage Email Attachments - Test Page</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=e1b2e96e135c330068b5721a6144b06d"/></record_update>]]></payload>
+<payload_hash>-401713929</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>joe.wilmoth</sys_created_by>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>acccf07f1394f30068b5721a6144b00b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a86b6abf0000001</sys_recorded_at>
+<sys_updated_by>joe.wilmoth</sys_updated_by>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
+<table/>
+<target_name>manage_email_attachments</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>14f2ed6e465c3300d33abbac73b382fe</update_guid>
+<update_guid_history>14f2ed6e465c3300d33abbac73b382fe:-401713929,a9b2e96ea25c3300d216c56488ccfc6e:1760412601</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -412,21 +542,25 @@ AttachmentEmailUtil.prototype = {
 	type: 'AttachmentEmailUtil'
 };
 
+
 //Private
 function getAttachmentBase64 (attachmentGR){
 	var gsa = new GlideSysAttachment();
 	var binData = gsa.getBytes(attachmentGR);
 	return GlideStringUtil.base64Encode(binData);
 }
+
 function writeAttachmentBase64 (emailRecord, attachment, sa64){
 	var gsa = new GlideSysAttachment();
-	gsa.write(emailRecord,attachment.file_name.toString(),attachment.content_type.toString(),sa64);
+	gsa.write(emailRecord,attachment.file_name.toString(),attachment.content_type.toString(), GlideStringUtil.base64DecodeAsBytes(sa64));
 }
+
 function getRecord (recordID, tableName){
 	var recordGR = new GlideRecord(tableName);
 	recordGR.get(recordID);
 	return recordGR;
 }
+
 function getReplyTo(){
 	var replyTo = gs.getProperty("glide.email.username") + " &lt;" + gs.getProperty("glide.cs.email.case_queue_address") + "&gt;"; 
 	var emailAccountsGR = new GlideRecord("sys_email_account");
@@ -452,135 +586,33 @@ function copyAttachments(emailRecord, attachments){
 		copyAttachment(emailRecord,attachments[i]);
 	}
 }
+
 function copyAttachment(emailRecord, attachment){
 	var sa64 = attachment.base64 || getAttachmentBase64(getRecord(attachment.sys_id.toString(),"sys_attachment"));
 	log(sa64);
 	writeAttachmentBase64(emailRecord, attachment, sa64);
 }
+
 function log(message){
 	var gdt = new GlideDateTime();
 	gs.info(gdt.getNumericValue() + "\n" + message);
-}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;joe.wilmoth&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-23 02:31:39&lt;/sys_created_on&gt;&lt;sys_id&gt;b1e0a52e135c330068b5721a6144b03e&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;AttachmentEmailUtil&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b1e0a52e135c330068b5721a6144b03e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;joe.wilmoth&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-26 18:19:44&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-895252365</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;joe.wilmoth&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-23 02:31:39&lt;/sys_created_on&gt;&lt;sys_id&gt;b1e0a52e135c330068b5721a6144b03e&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;AttachmentEmailUtil&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b1e0a52e135c330068b5721a6144b03e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;joe.wilmoth&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-26 21:00:22&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1205786186</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>b10c14fb1354f30068b5721a6144b0f5</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>e0ccf07f1394f30068b5721a6144b00d</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>169bb3ac3460000001</sys_recorded_at>
+<sys_recorded_at>169bbcdd67b0000001</sys_recorded_at>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
 <table/>
 <target_name>AttachmentEmailUtil</target_name>
 <type>Script Include</type>
 <update_domain>global</update_domain>
-<update_guid>3dc6903b9b54f300dd095d0916eb0ac7</update_guid>
-<update_guid_history>3dc6903b9b54f300dd095d0916eb0ac7:-895252365,5d76903b3e54f300c6bf6cf63cf0ccbd:-795725593,cbb558f7f354f300a0c9ffce0245b85b:-2078936040,ef6558f7a554f3008a100b8d4bee9752:-993114248,e91314b7e154f3008561e951aacb44ad:1051920279,bcb25c771454f300464ea19f90d95d77:755637925,a8421c778454f300c82779e9464cafcd:722549770,41805c371b54f300bb37870571e2d010:1493149754,c6bf80370f54f300d25eb8317aad1f64:-1140261350,bd3f0037a854f300e0c453a2130967ad:1838331205,f7bc88b39c54f300403400f05adf87c2:-374519381,df1bc8738054f3007800ac13c5fc2976:-929068827,eb2a80732254f300c2661554f4a38084:1359802980,d0560cbf1114f3006569d4415bed7c68:669123101,79f5c8bfeb14f300f9247dce38aee820:1359802980,7aa508bf2c14f300107cc5da6cfdb710:-1118060021,589500bf7914f30058bc502f24cc37ff:2069010002,2c0500bfa214f300f95d6931d90bce4c:1682961290,cb928c3f4a14f30038a8294f0bbc677f:-80341925,e071c03f7f14f300c7720aba4da508a5:-1211312756,9e314cfb1014f300fe749d1efe21c1b2:-80341925,e56f3fabed14f3003e7bce0ccdb91737:-640758253,2001252e0e5c33001f2b946f1f88ab07:-1004796257</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_page_e1b2e96e135c330068b5721a6144b06d</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>manage_email_attachments</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:39:05</sys_created_on><sys_id>e1b2e96e135c330068b5721a6144b06d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>manage_email_attachments</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_e1b2e96e135c330068b5721a6144b06d</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:40:04</sys_updated_on><title>Manage Email Attachments - Test Page</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=e1b2e96e135c330068b5721a6144b06d"/></record_update>]]></payload>
-<payload_hash>-401713929</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>b50c14fb1354f30068b5721a6144b0f4</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>169a86b6abf0000001</sys_recorded_at>
-<sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
-<table/>
-<target_name>manage_email_attachments</target_name>
-<type>Page</type>
-<update_domain>global</update_domain>
-<update_guid>14f2ed6e465c3300d33abbac73b382fe</update_guid>
-<update_guid_history>14f2ed6e465c3300d33abbac73b382fe:-401713929,a9b2e96ea25c3300d216c56488ccfc6e:1760412601</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_container_e5b2e96e135c330068b5721a6144b06f</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Manage Email Attachments - Test Page - Container 1</name><order>1</order><sp_page display_value="copy_of_manage_attachments_1">e1b2e96e135c330068b5721a6144b06d</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:39:05</sys_created_on><sys_id>e5b2e96e135c330068b5721a6144b06f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Manage Email Attachments - Test Page - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_e5b2e96e135c330068b5721a6144b06f</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:40:04</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
-<payload_hash>787886793</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>b90c14fb1354f30068b5721a6144b0f3</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>169a86b684b0000001</sys_recorded_at>
-<sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
-<table/>
-<target_name>Manage Email Attachments - Test Page - Container 1</target_name>
-<type>Container</type>
-<update_domain>global</update_domain>
-<update_guid>4cf2ed6e735c33005bb03583c29ed6fb</update_guid>
-<update_guid_history>4cf2ed6e735c33005bb03583c29ed6fb:787886793,29b2e96efe5c330023569172e9b6cb70:1479175749</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>DELETE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_instance_a9adfb6b1314f30068b5721a6144b0e1</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>5</order><roles/><short_description/><size>md</size><sp_column display_value="2">a77f3d50d7000200a9ad1e173e24d488</sp_column><sp_widget display_value="Manage Attachments">30f129741358e7009e5e7f176144b07d</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-26 16:29:57</sys_created_on><sys_id>a9adfb6b1314f30068b5721a6144b0e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_a9adfb6b1314f30068b5721a6144b0e1</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-26 16:29:57</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=a9adfb6b1314f30068b5721a6144b0e1"/></record_update>]]></payload>
-<payload_hash>-453197284</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>f10c14fb1354f30068b5721a6144b0f4</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>169bb4ae6420000001</sys_recorded_at>
-<sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
-<table/>
-<target_name/>
-<type>Instance</type>
-<update_domain>global</update_domain>
-<update_guid>80da18bbad54f30073f35076841df16b</update_guid>
-<update_guid_history>80da18bbad54f30073f35076841df16b:-453197284,21adfb6b2f14f300f0b0f0a300f5d1e3:1097857320</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sp_column_e1b2e96e135c330068b5721a6144b073</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size/><size_lg/><size_sm/><size_xs/><sp_row display_value="1">a5b2e96e135c330068b5721a6144b071</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:39:06</sys_created_on><sys_id>e1b2e96e135c330068b5721a6144b073</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_e1b2e96e135c330068b5721a6144b073</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:39:06</sys_updated_on></sp_column></record_update>]]></payload>
-<payload_hash>1472617807</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>f50c14fb1354f30068b5721a6144b0f3</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>169a86a81400000001</sys_recorded_at>
-<sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
-<table/>
-<target_name>1</target_name>
-<type>Column</type>
-<update_domain>global</update_domain>
-<update_guid>f1b2e96e6d5c3300cec998cc6ac31f74</update_guid>
-<update_guid_history>f1b2e96e6d5c3300cec998cc6ac31f74:1472617807</update_guid_history>
+<update_guid>c38b383f0194f30035fb58490cc8f19a</update_guid>
+<update_guid_history>c38b383f0194f30035fb58490cc8f19a:1205786186,6aca703faa94f300a5e4aced28910943:-1038742236,3dc6903b9b54f300dd095d0916eb0ac7:-895252365,5d76903b3e54f300c6bf6cf63cf0ccbd:-795725593,cbb558f7f354f300a0c9ffce0245b85b:-2078936040,ef6558f7a554f3008a100b8d4bee9752:-993114248,e91314b7e154f3008561e951aacb44ad:1051920279,bcb25c771454f300464ea19f90d95d77:755637925,a8421c778454f300c82779e9464cafcd:722549770,41805c371b54f300bb37870571e2d010:1493149754,c6bf80370f54f300d25eb8317aad1f64:-1140261350,bd3f0037a854f300e0c453a2130967ad:1838331205,f7bc88b39c54f300403400f05adf87c2:-374519381,df1bc8738054f3007800ac13c5fc2976:-929068827,eb2a80732254f300c2661554f4a38084:1359802980,d0560cbf1114f3006569d4415bed7c68:669123101,79f5c8bfeb14f300f9247dce38aee820:1359802980,7aa508bf2c14f300107cc5da6cfdb710:-1118060021,589500bf7914f30058bc502f24cc37ff:2069010002,2c0500bfa214f300f95d6931d90bce4c:1682961290,cb928c3f4a14f30038a8294f0bbc677f:-80341925,e071c03f7f14f300c7720aba4da508a5:-1211312756,9e314cfb1014f300fe749d1efe21c1b2:-80341925,e56f3fabed14f3003e7bce0ccdb91737:-640758253,2001252e0e5c33001f2b946f1f88ab07:-1004796257</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -592,15 +624,15 @@ function log(message){
 <name>m2m_sp_widget_dependency_0062696e135c330068b5721a6144b0f4</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="dialog-polyfill">2eaf31f30b301200b0b02c6317673a84</sp_dependency><sp_widget display_value="Copy of Manage Attachments">4462a56e135c330068b5721a6144b0e2</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:37:37</sys_created_on><sys_id>0062696e135c330068b5721a6144b0f4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>dialog-polyfill.Copy of Manage Attachments</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_0062696e135c330068b5721a6144b0f4</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:37:37</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
 <payload_hash>1768844488</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>fd0c14fb1354f30068b5721a6144b0f2</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>e4ccf07f1394f30068b5721a6144b00a</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>169a869295c0000001</sys_recorded_at>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
 <table/>
 <target_name>dialog-polyfill.Copy of Manage Attachments</target_name>
 <type>Widget Dependency</type>
@@ -627,21 +659,73 @@ function log(message){
 	g_processor.redirect(url);
 })(g_request, g_response, g_processor);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_processor&lt;/sys_class_name&gt;&lt;sys_created_by&gt;joe.wilmoth&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-23 02:30:00&lt;/sys_created_on&gt;&lt;sys_id&gt;c870612e135c330068b5721a6144b06e&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;AttachmentEmail&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_processor_c870612e135c330068b5721a6144b06e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;joe.wilmoth&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-26 18:24:08&lt;/sys_updated_on&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sys_processor&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-1735200066</payload_hash>
-<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">b90c14fb1354f30068b5721a6144b0f2</remote_update_set>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>joe.wilmoth</sys_created_by>
-<sys_created_on>2019-03-26 18:42:40</sys_created_on>
-<sys_id>fd0c14fb1354f30068b5721a6144b0f4</sys_id>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>e4ccf07f1394f30068b5721a6144b00c</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>169bb3eccae0000001</sys_recorded_at>
 <sys_updated_by>joe.wilmoth</sys_updated_by>
-<sys_updated_on>2019-03-26 18:42:40</sys_updated_on>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
 <table/>
 <target_name>AttachmentEmail</target_name>
 <type>Processor</type>
 <update_domain>global</update_domain>
 <update_guid>5ec79c3bb354f3006daa1cf93a113576</update_guid>
 <update_guid_history>5ec79c3bb354f3006daa1cf93a113576:-1735200066,ea47583b6f54f300a73762a64927d149:-1756831381,ce8318b79254f3007af2543db227d6f2:-1735200066,e75354b72254f300f0d27c937b3bfb46:-1756831381,99309437c954f30010ad739bbd141200:-1735200066,6adf8437b154f300cd5c58e1b2cadff0:-1756831381,74aa84734154f300a95264613b2a66fc:-1198172759,86e844330054f300048e43abf01e6b07:1379423236,bca80433c554f300c619a1dc1e682fb7:-1596202129,edc640ffce14f30054f610e792e8273e:-27335024,947044fbed14f300a0d0f1afcf5a6000:1832157190,4e7f7fab8b14f30051628aaf91f6ed50:670233484,6b3f77ab1114f300859ab22c1323efff:827225478,c76df76bd814f3002492a23130d4b779:54201165,7181e92ebe5c330036a8d94dd542b63a:827225478,d071e92e605c33002cc74b8377a68632:-1990914432,d0a0612ea75c3300456129a00f619975:1773107124</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_a9adfb6b1314f30068b5721a6144b0e1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>5</order><roles/><short_description/><size>md</size><sp_column display_value="2">a77f3d50d7000200a9ad1e173e24d488</sp_column><sp_widget display_value="Manage Attachments">30f129741358e7009e5e7f176144b07d</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-26 16:29:57</sys_created_on><sys_id>a9adfb6b1314f30068b5721a6144b0e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_a9adfb6b1314f30068b5721a6144b0e1</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-26 16:29:57</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=a9adfb6b1314f30068b5721a6144b0e1"/></record_update>]]></payload>
+<payload_hash>-453197284</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>joe.wilmoth</sys_created_by>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>e8ccf07f1394f30068b5721a6144b00b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169bb4ae6420000001</sys_recorded_at>
+<sys_updated_by>joe.wilmoth</sys_updated_by>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>80da18bbad54f30073f35076841df16b</update_guid>
+<update_guid_history>80da18bbad54f30073f35076841df16b:-453197284,21adfb6b2f14f300f0b0f0a300f5d1e3:1097857320</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_e1b2e96e135c330068b5721a6144b073</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size/><size_lg/><size_sm/><size_xs/><sp_row display_value="1">a5b2e96e135c330068b5721a6144b071</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>joe.wilmoth</sys_created_by><sys_created_on>2019-03-23 02:39:06</sys_created_on><sys_id>e1b2e96e135c330068b5721a6144b073</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_e1b2e96e135c330068b5721a6144b073</sys_update_name><sys_updated_by>joe.wilmoth</sys_updated_by><sys_updated_on>2019-03-23 02:39:06</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1472617807</payload_hash>
+<remote_update_set display_value="Email Attachments and Attachment Management Widget v1">a0ccf07f1394f30068b5721a6144b00a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>joe.wilmoth</sys_created_by>
+<sys_created_on>2019-03-26 21:05:40</sys_created_on>
+<sys_id>ecccf07f1394f30068b5721a6144b00a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a86a81400000001</sys_recorded_at>
+<sys_updated_by>joe.wilmoth</sys_updated_by>
+<sys_updated_on>2019-03-26 21:05:40</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>f1b2e96e6d5c3300cec998cc6ac31f74</update_guid>
+<update_guid_history>f1b2e96e6d5c3300cec998cc6ac31f74:1472617807</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
