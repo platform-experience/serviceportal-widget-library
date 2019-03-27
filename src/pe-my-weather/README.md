@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> Enhanced weather widget that follows you. Gets your current location using browser when given access. If not, falls back to the user location in sys_user table.
 
 ## Screenshot
 
@@ -10,7 +10,15 @@
 
 ## Additional Information/Notes
 
-> None
+- This has a simple integration to [https://openweathermap.org/](https://openweathermap.org/).  
+- When the widget loads, your browser will ask your permission to access current location. 
+
+
+
+![browser_location](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-my-weather/images/browser_location.png)
+
+- Once you grant access, widget will show weather info using your browser location.
+- If you choose not to grant access, the widget will use location in sys_user table to fetch the weather
 
 ## Installation
 
@@ -22,7 +30,11 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+- I have included a demo API key for use as part of the update set. It is advised to sign up and get your own API key from here [https://openweathermap.org/api'](https://openweathermap.org/api)
+- Once you have your own API key, you can switch out the demo key by changing the System property called **openweathermap.apikey**
+
+
+![openweathermap.apikey](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-my-weather/images/sys_property.png)
 
 ## Platform Dependencies
 

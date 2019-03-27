@@ -1,3 +1,8 @@
-<div>
-  <!-- your widget template -->
-</div>
+<div class="my-weather">
+    <p class="city">Current Weather in {{c.weather.channel.name}}</p>
+    <p class="weather-deets">
+      <span class="icon"><img src="{{c.weather.IconUrl}}"/></span>
+      <span class="temp">{{c.weather.main.temp}}F, </span>
+      <span class="max-min">Today's Max:<span class="max temp">{{c.weather.main.temp_max}}F</span> and Min:<span class="min temp">{{c.weather.main.temp_min}}F</span>  </span>
+    </p>
+  </div>
