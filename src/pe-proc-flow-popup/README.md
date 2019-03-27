@@ -2,14 +2,13 @@
 
 ## Description
 
-The Proc Flow widget allows you to render the equivalent of a Process Flow Formatter on a Service Portal Page, helping the user to understand what stage a task is currently at in its end-to-end lifecycle.
+The Proc Flow widget allows you to render the equivalent of a Process Flow Formatter on a Service Portal Page, helping the user to understand what stage a task is currently at in its end-to-end life cycle.
 
 ## Screenshot
 
-![Proc Flow Popup](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/pe-proc-flow-popup/images/pe-proc-flow-popup-01.png)
+![Proc Flow Popup](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-proc-flow-popup/images/pe-proc-flow-popup-01.png)
 
-![Proc Flow Popup](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/pe-proc-flow-popup/images/pe-proc-flow-popup-02.png)
-
+![Proc Flow Popup](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-proc-flow-popup/images/pe-proc-flow-popup-02.png)
 
 ## Additional Information/Notes
 
@@ -17,19 +16,19 @@ It uses the SpUtil Watch functionality to update the current state in real time.
 
 ## Installation
 
-Download and install update set **[pe-proc-flow-popup.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-proc-flow-popup/pe-proc-flow-popup.u-update-set.xml)**
+Download and install update set **[pe-proc-flow-popup.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-proc-flow-popup/pe-proc-flow-popup.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+- SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
 The widget requires in input (through URL parameter or input object if embedded) the following parameters:
 
-* table: table containing the record
+- table: table containing the record
 
-* sys_id: sys_id of the the record
+- sys_id: sys_id of the the record
 
 ## Platform Dependencies
 

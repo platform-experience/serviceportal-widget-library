@@ -2,11 +2,11 @@
 
 ## Description
 
-The Proc Flow Lite widget allows you to render the equivalent of a Process Flow Formatter on a Service Portal Page, helping the user to understand what stage a task is currently at in its end-to-end lifecycle.
+The Proc Flow Lite widget allows you to render the equivalent of a Process Flow Formatter on a Service Portal Page, helping the user to understand what stage a task is currently at in its end-to-end life cycle.
 
 ## Screenshot
 
-![Proc Flow Lite](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/pe-proc-flow-lite/images/pe-proc-flow-lite.png)
+![Proc Flow Lite](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-proc-flow-lite/images/pe-proc-flow-lite.png)
 
 ## Additional Information/Notes
 
@@ -14,19 +14,18 @@ It uses the SpUtil Watch functionality to update the state in real time.
 
 ## Installation
 
-Download and install update set **[pe-proc-flow-lite.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-proc-flow-lite/pe-proc-flow-lite.u-update-set.xml)**
+Download and install update set **[pe-proc-flow-lite.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-proc-flow-lite/pe-proc-flow-lite.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+- SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
 The widget requires in input (through URL parameter or input object if embedded) the following parameters:
 
-* table: table containing the record
-
-* sys_id: sys_id of the the record
+- table: table containing the record
+- sys_id: sys_id of the the record
 
 ## Platform Dependencies
 

@@ -6,7 +6,7 @@ The Proc Flow widget allows you to render the equivalent of a Process Flow Forma
 
 ## Screenshot
 
-![Proc Flow](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/pe-proc-flow/images/pe-proc-flow.png)
+![Proc Flow](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-proc-flow/images/pe-proc-flow.png)
 
 ## Additional Information/Notes
 
@@ -14,19 +14,18 @@ It uses the SpUtil Watch functionality to update the state in real time.
 
 ## Installation
 
-Download and install update set **[pe-proc-flow.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-proc-flow/pe-proc-flow.u-update-set.xml)**
+Download and install update set **[pe-proc-flow.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-proc-flow/pe-proc-flow.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+- SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
 The widget requires in input (through URL parameter or input object if embedded) the following parameters:
 
-* table: table containing the record
-
-* sys_id: sys_id of the the record
+- table: table containing the record
+- sys_id: sys_id of the the record
 
 ## Platform Dependencies
 
@@ -49,7 +48,7 @@ $x-pisn-sp-procflow-bg: darken($body-bg, 5%) !default;
 
 // "Current Stage" Colors
 $x-pisn-sp-procflow-current-bg: $brand-primary !default;
-$x-pisn-sp-procflow-current-color:  lighten($x-pisn-sp-procflow-current-bg, 45%) !default;
+$x-pisn-sp-procflow-current-color: lighten($x-pisn-sp-procflow-current-bg, 45%) !default;
 
 // "Past Stage" Colors
 $x-pisn-sp-procflow-past-color: lighten($x-pisn-sp-procflow-current-bg, 45%) !default;
