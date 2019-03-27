@@ -1,0 +1,12 @@
+<span class="x-pisn-sp-procflow-popup-starter" ng-click="c.show = !c.show;"
+  ng-class="{'x-pisn-sp-procflow-popup-starter--inverse-bg': c.show}">
+  <i class="fa fa-ellipsis-h light" aria-hidden="true" ng-show="!c.show"></i>
+  <i class="fa fa-times fa-times-inverse light-inverse-1" aria-hidden="true"
+    ng-class="{'x-pisn-sp-procflow__show': c.show, 'x-pisn-sp-procflow__hide': !c.show}"></i>
+  <i class="fa fa-sort-desc fa-2x" aria-hidden="true"
+    ng-class="{'x-pisn-sp-procflow__show': c.show, 'x-pisn-sp-procflow__hide': !c.show}"></i>
+</span>
+<div class="x-pisn-sp-procflow-popup-container"
+  ng-class="{'x-pisn-sp-procflow__show': c.show, 'x-pisn-sp-procflow__hide': !c.show}">
+  <sp-widget widget="c.data.embedded_widget"></sp-widget>
+</div>

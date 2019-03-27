@@ -1,0 +1,10 @@
+<div class="x-pisn-sp-procflow-flow m-b" ng-class="{'x-pisn-sp-procflow-flow-hide': c.options.only_desktop}">
+  <ol class="x-pisn-sp-procflow__container list-unstyled" ng-if="c.showProcessFlow()">
+    <li class="x-pisn-sp-procflow-flow__stage x-pisn-sp-procflow-flow__stage--{{stage.state}}"
+      ng-repeat="stage in data.process_flow.stages track by stage.sys_id"
+      ng-class="{ 'x-pisn-sp-procflow-flow__stage--has-icon': c.hasIcon(stage) }">
+      <span class="x-pisn-sp-procflow-flow__label">{{::stage.label}}</span>
+      <span class="x-pisn-sp-procflow-flow__icon fa {{::c.getIcon(stage)}}" ng-if="c.hasIcon(stage)"></span>
+    </li>
+  </ol>
+</div>

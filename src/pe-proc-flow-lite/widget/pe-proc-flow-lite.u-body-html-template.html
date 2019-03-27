@@ -1,0 +1,9 @@
+<div class="x-pisn-sp-procflow-lite">
+  <ol class="x-pisn-sp-procflow-lite__container list-unstyled" ng-if="c.showProcessFlow()">
+    <li class="x-pisn-sp-procflow-lite__stage x-pisn-sp-procflow-lite__stage--{{stage.state}} text-center"
+      ng-repeat="stage in data.process_flow.stages track by stage.sys_id">
+      <i ng-if="$index>0" class="fa fa-angle-right x-pisn-sp-procflow-lite__breadcrumb" aria-hidden="true"></i>
+      <span class="x-pisn-sp-procflow-lite__label">{{::stage.label}}</span>
+    </li>
+  </ol>
+</div>

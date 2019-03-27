@@ -1,0 +1,155 @@
+// Default Colors
+$x-pisn-sp-procflow-color: $text-default !default;
+$x-pisn-sp-procflow-bg: darken($body-bg, 5%) !default;
+
+// "Current Stage" Colors
+$x-pisn-sp-procflow-current-bg: $brand-primary !default;
+$x-pisn-sp-procflow-current-color: lighten($x-pisn-sp-procflow-current-bg, 45%) !default;
+
+// "Past Stage" Colors
+$x-pisn-sp-procflow-past-color: lighten($x-pisn-sp-procflow-current-bg, 45%) !default;
+$x-pisn-sp-procflow-past-bg: lighten($x-pisn-sp-procflow-current-bg, 20%) !default;
+
+// "Future Stage" Colors
+$x-pisn-sp-procflow-future-color: lighten($x-pisn-sp-procflow-color, 10%) !default;
+$x-pisn-sp-procflow-future-bg: $x-pisn-sp-procflow-bg !default;
+
+// Color of border between Flow Stages
+$x-pisn-sp-procflow-border-color: $body-bg !default;
+
+$x-pisn-sp-procflow-tranistion-time: 0.5s !default;
+
+// Sizing
+$x-pisn-sp-procflow-border-radius: $border-radius-base !default;
+$x-pisn-sp-procflow-height: 44px !default;
+$x-pisn-sp-procflow-font-size: $font-size-small !default;
+$x-pisn-sp-procflow-chevron-height: $x-pisn-sp-procflow-height / 2 !default;
+$x-pisn-sp-procflow-chevron-width: 16px !default;
+
+@media (max-width: 768px) {
+  .x-pisn-sp-procflow-flow-hide {
+    display: none;
+  }
+}
+
+.x-pisn-sp-procflow__container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  border-radius: $border-radius-base;
+  font-size: $x-pisn-sp-procflow-font-size;
+  overflow: hidden;
+  overflow-x: auto;
+  margin-bottom: 0px;
+}
+
+.x-pisn-sp-procflow-flow__stage {
+  position: relative;
+  display: flex;
+  flex: 1 1;
+  background: $x-pisn-sp-procflow-bg;
+  color: $x-pisn-sp-procflow-color;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  height: $x-pisn-sp-procflow-height;
+  transition: background-color $x-pisn-sp-procflow-tranistion-time, color $x-pisn-sp-procflow-tranistion-time;
+
+  &::before {
+    position: absolute;
+    display: block;
+    border: $x-pisn-sp-procflow-chevron-height solid $x-pisn-sp-procflow-bg;
+    border-left: $x-pisn-sp-procflow-chevron-width solid $x-pisn-sp-procflow-border-color;
+    border-right: 0;
+    top: -2px;
+    bottom: -2px;
+    z-index: 9;
+    content: '';
+    left: -($x-pisn-sp-procflow-chevron-width / 2);
+
+    transition: border-color $x-pisn-sp-procflow-tranistion-time;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    border: $x-pisn-sp-procflow-chevron-height solid transparent;
+    border-left: $x-pisn-sp-procflow-chevron-width solid $x-pisn-sp-procflow-bg;
+    border-right: 0;
+    top: -2px;
+    bottom: -2px;
+    z-index: 10;
+    content: '';
+    right: -($x-pisn-sp-procflow-chevron-width / 2) + 1px;
+
+    transition: border-color $x-pisn-sp-procflow-tranistion-time;
+  }
+}
+
+.x-pisn-sp-procflow-flow__stage:first-of-type {
+  border-top-left-radius: $x-pisn-sp-procflow-border-radius;
+  border-bottom-left-radius: $x-pisn-sp-procflow-border-radius;
+
+  &::before {
+    display: none;
+  }
+}
+
+.x-pisn-sp-procflow-flow__stage:last-of-type {
+  border-top-right-radius: $x-pisn-sp-procflow-border-radius;
+  border-bottom-right-radius: $x-pisn-sp-procflow-border-radius;
+
+  &::after {
+    display: none;
+  }
+}
+
+.x-pisn-sp-procflow-flow__stage--current {
+  color: $x-pisn-sp-procflow-current-color;
+  background-color: $x-pisn-sp-procflow-current-bg;
+
+  &:after {
+    border-left-color: $x-pisn-sp-procflow-current-bg;
+  }
+
+  &:before {
+    border-color: $x-pisn-sp-procflow-current-bg;
+    border-left-color: $x-pisn-sp-procflow-border-color;
+  }
+}
+
+.x-pisn-sp-procflow-flow__stage--past {
+  color: $x-pisn-sp-procflow-past-color;
+  background-color: $x-pisn-sp-procflow-past-bg;
+
+  &:before {
+    border-color: $x-pisn-sp-procflow-past-bg;
+    border-left-color: $x-pisn-sp-procflow-border-color;
+  }
+
+  &:after {
+    border-left-color: $x-pisn-sp-procflow-past-bg;
+  }
+}
+
+.x-pisn-sp-procflow-flow__stage--future {
+  color: $x-pisn-sp-procflow-future-color;
+  background-color: $x-pisn-sp-procflow-future-bg;
+}
+
+.x-pisn-sp-procflow-flow__label {
+  margin-left: calc($x-pisn-sp-procflow-chevron-width - 5px);
+  margin-right: $x-pisn-sp-procflow-chevron-width;
+}
+
+.x-pisn-sp-procflow-flow__stage--has-icon {
+  .x-pisn-sp-procflow-flow__label {
+    padding-right: $x-pisn-sp-procflow-font-size;
+  }
+}
+
+.x-pisn-sp-procflow-flow__icon {
+  position: absolute;
+  right: $x-pisn-sp-procflow-font-size;
+}

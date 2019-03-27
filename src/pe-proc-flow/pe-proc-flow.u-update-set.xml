@@ -1,0 +1,1962 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-24 17:22:54">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<application_name>SP Process Flow</application_name>
+<application_scope>x_pisn_sp_procflow</application_scope>
+<application_version>0.4.1</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Renders a "Process Flow" in a Service Portal Widget</description>
+<inserted/>
+<name>SP Process Flow</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>fd86b94fdbdcff00d033df8b4b9619c9</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f596358fdbdcff00d033df8b4b9619c2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_f2106906db503f00d033df8b4b961981</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">35efd506db503f00d033df8b4b9619db</sp_column><sp_widget display_value="Process Flow Host Sample">a93f9dc2db503f00d033df8b4b961916</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-21 13:10:44</sys_created_on><sys_id>f2106906db503f00d033df8b4b961981</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_instance_f2106906db503f00d033df8b4b961981</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-21 13:10:44</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=f2106906db503f00d033df8b4b961981"/></record_update>]]></payload>
+<payload_hash>1802789791</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3196358fdbdcff00d033df8b4b9619c6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8a30000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_31478edfdb975f405c025a6adc961956</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-20 00:00:21</sys_created_on><sys_id>31478edfdb975f405c025a6adc961956</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_31478edfdb975f405c025a6adc961956</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-20 00:00:21</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1306271079</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3196358fdbdcff00d033df8b4b9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7bb0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_b7259dabdbd493405c025a6adc96197c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_pisn_sp_procflow.ProcessFlow&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;ProcessFlow&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var ProcessFlow = Class.create();
+ProcessFlow.prototype = {
+    initialize: function(taskGR) {
+		this.taskGR = taskGR;
+    },
+	
+	loadStagesForTask: function(taskGR) {
+		taskGR = taskGR || this.taskGR;
+		var stages = [];
+		
+		var processFlowGR = this.getProcessFlowGR(taskGR);
+		
+		var foundCurrent = false;
+		
+		while (processFlowGR.next()) {
+			var stageData = {
+				sys_id: processFlowGR.getUniqueValue(),
+				value: processFlowGR.name.toString(),
+				label: processFlowGR.label.getDisplayValue(),
+				description: processFlowGR.description.getDisplayValue()
+			};
+			
+			var isCurrent = GlideFilter.checkRecord(taskGR, processFlowGR.condition.toString());
+			
+			if (isCurrent) {
+				stageData.state = 'current';
+				foundCurrent = true;
+			} else if (foundCurrent) {
+				stageData.state = 'future';
+			} else {
+				stageData.state = 'past';
+			}
+			
+			stages.push(stageData);
+		}
+		
+		// If we never saw a "current" stage, all stages will be marked as "past", in this case, go and flip them all to "future"
+		var numberOfPastStages = stages.filter(function(stage) { return stage.state == 'past'; }).length;
+		var areAllInPast = stages.length == numberOfPastStages;
+		
+		if (areAllInPast) {
+			stages = stages.map(function(stage) {
+				stage.state = 'future';
+				return stage;
+			});
+		}
+		
+		return stages;
+	},
+	
+	getProcessFlowGR: function(taskGR) {
+		var processFlowGR = new GlideRecord('sys_process_flow');
+		processFlowGR.addQuery('table', taskGR.getRecordClassName());
+		processFlowGR.addQuery('active', true);
+		processFlowGR.orderBy('order');
+		processFlowGR.query();
+		
+		return processFlowGR;
+	},
+	
+	toObject: function() {
+		return {
+			table: this.taskGR.getRecordClassName(),
+			sys_id: this.taskGR.getUniqueValue(),
+			stages: this.loadStagesForTask()
+		};
+	},
+
+    type: 'ProcessFlow'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.hann&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-02-21 13:58:18&lt;/sys_created_on&gt;&lt;sys_id&gt;b7259dabdbd493405c025a6adc96197c&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;ProcessFlow&lt;/sys_name&gt;&lt;sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SP Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b7259dabdbd493405c025a6adc96197c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.hann&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-02-22 11:17:14&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-20769302</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3196358fdbdcff00d033df8b4b9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7530000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>ProcessFlow</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_4210e506db503f00d033df8b4b9619e4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">f5efd506db503f00d033df8b4b9619d9</sp_column><sp_widget display_value="Process Flow Host Sample">a93f9dc2db503f00d033df8b4b961916</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-21 13:10:42</sys_created_on><sys_id>4210e506db503f00d033df8b4b9619e4</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_instance_4210e506db503f00d033df8b4b9619e4</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-21 13:10:42</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=4210e506db503f00d033df8b4b9619e4"/></record_update>]]></payload>
+<payload_hash>-350537540</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3596358fdbdcff00d033df8b4b9619c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8940000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_ac2251abdb5c934085895845dc9619fe</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><can_edit_in_studio>false</can_edit_in_studio><enforce_license>log</enforce_license><js_level>helsinki_es5</js_level><licensable>true</licensable><license_category>none</license_category><license_model>none</license_model><logo/><menu/><name>SP Process Flow</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking/><scope>x_pisn_sp_procflow</scope><scoped_administration>false</scoped_administration><short_description>Renders a "Process Flow" in a Service Portal Widget</short_description><source>x_pisn_sp_procflow</source><store_correlation_id>REPOAPP0000001284</store_correlation_id><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>chris.hann</sys_created_by><sys_created_on>2018-02-21 11:38:18</sys_created_on><sys_id>ac2251abdb5c934085895845dc9619fe</sys_id><sys_mod_count>40</sys_mod_count><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-24 17:21:01</sys_updated_on><template/><trackable>true</trackable><user_role/><vendor/><vendor_prefix/><version>0.4.1</version></sys_app></record_update>]]></payload>
+<payload_hash>-348340691</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3596358fdbdcff00d033df8b4b9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7360000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>SP Process Flow</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_f1478edfdb975f405c025a6adc961954</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-20 00:00:21</sys_created_on><sys_id>f1478edfdb975f405c025a6adc961954</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_f1478edfdb975f405c025a6adc961954</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-20 00:00:21</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1100059213</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3596358fdbdcff00d033df8b4b9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7c80000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_f5efd506db503f00d033df8b4b9619d9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name>m-t-xl</class_name><order>1</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">f5efd506db503f00d033df8b4b9619d7</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-21 13:09:51</sys_created_on><sys_id>f5efd506db503f00d033df8b4b9619d9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_column_f5efd506db503f00d033df8b4b9619d9</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-21 13:13:57</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-1061047320</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3996358fdbdcff00d033df8b4b9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8b80000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_4e74afaddb98bb00d033df8b4b961922</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function PIProcessFlowPopupController(spUtil, $scope) {
+  var c = this;
+
+  c.$onInit = function () {
+    c.show = false;
+  };
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;// Default Colors&amp;#13;
+$x-pisn-sp-procflow-lite-color: $text-color !default;&amp;#13;
+$x-pisn-sp-procflow-lite-bg: $brand-primary !default;&amp;#13;
+// "Current Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-current-color: lighten($x-pisn-sp-procflow-lite-bg, 95%) !default;&amp;#13;
+// "Past Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-past-color: lighten($x-pisn-sp-procflow-lite-bg, 45%) !default;&amp;#13;
+// "Future Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-future-color: lighten($x-pisn-sp-procflow-lite-bg, 20%) !default;&amp;#13;
+// Color of separator between Flow Stages&amp;#13;
+$x-pisn-sp-procflow-lite-separator-color: $body-bg !default;&amp;#13;
+// Sizing&amp;#13;
+$x-pisn-sp-procflow-lite-height: $line-height-computed * 2 !default;&amp;#13;
+$x-pisn-sp-procflow-lite-font-size: $font-size-small !default;&amp;#13;
+$x-pisn-sp-procflow-lite-border-radius: 15px;&amp;#13;
+&amp;#13;
+//starter&amp;#13;
+$x-pisn-sp-procflow-lite-starter: $brand-primary !default;&amp;#13;
+$x-pisn-sp-procflow-lite-starter-size: 20px !default;&amp;#13;
+$x-pisn-sp-procflow-lite-starter-bg: $body-bg !default;&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup-starter {&amp;#13;
+  border: 1px solid $x-pisn-sp-procflow-lite-starter;&amp;#13;
+  height: $x-pisn-sp-procflow-lite-starter-size;&amp;#13;
+  border-radius: 50%;&amp;#13;
+  -moz-border-radius:50%;&amp;#13;
+  -webkit-border-radius: 50%;&amp;#13;
+  width: $x-pisn-sp-procflow-lite-starter-size;&amp;#13;
+  display: flex;&amp;#13;
+  align-items: center;&amp;#13;
+  justify-content: center;&amp;#13;
+  position: relative;&amp;#13;
+  .fa { color: $x-pisn-sp-procflow-lite-starter;}&amp;#13;
+  .fa-sort-desc {&amp;#13;
+    position: absolute;&amp;#13;
+    bottom: 17px;&amp;#13;
+  }&amp;#13;
+  .fa-times-inverse {&amp;#13;
+    color: $x-pisn-sp-procflow-lite-starter-bg;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup-starter--inverse-bg {&amp;#13;
+  background-color: $x-pisn-sp-procflow-lite-starter;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.light {&amp;#13;
+  -webkit-text-stroke: 0.5px $x-pisn-sp-procflow-lite-starter-bg;&amp;#13;
+  -webkit-font-smoothing: antialiased;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.light-inverse-1 {&amp;#13;
+  -webkit-text-stroke: 1px $x-pisn-sp-procflow-lite-starter;&amp;#13;
+  -webkit-font-smoothing: antialiased;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup-container {&amp;#13;
+  position: absolute;&amp;#13;
+  bottom: 17px;&amp;#13;
+  left: 0%;&amp;#13;
+  right: 0%;&amp;#13;
+  z-index: 1;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* Toggle this class - hide and show the popup */&amp;#13;
+.x-pisn-sp-procflow__show {&amp;#13;
+  visibility: visible;&amp;#13;
+  -webkit-animation: fadeIn 0.5s;&amp;#13;
+  animation: fadeIn 0.5s;&amp;#13;
+  display: block;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow__hide {&amp;#13;
+  visibility: hidden;&amp;#13;
+  display: none;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__container {&amp;#13;
+  display: flex !important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* Add animation (fade in the popup) */&amp;#13;
+@-webkit-keyframes fadeIn {&amp;#13;
+  from {opacity: 0;} &amp;#13;
+  to {opacity: 1;}&amp;#13;
+}&amp;#13;
+&amp;#13;
+@keyframes fadeIn {&amp;#13;
+  from {opacity: 0;}&amp;#13;
+  to {opacity:1 ;}&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"options": {
+		"table": "idea",
+		"sys_id": "fe6703ebdb14d3405c025a6adc9619de",
+		"show_icons": true
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;x-pisn-sp-procflow-popup&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Process Flow Popup&lt;/name&gt;&lt;option_schema&gt;[{"name":"table","section":"other","default_value":"","label":"Table","type":"string"},{"hint":"Sys ID of the Task record","name":"sys_id","section":"other","default_value":"","label":"Sys ID","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  input = input || {};
+  data.table = input.table || options.table || $sp.getParameter('table');
+  data.sys_id = input.sys_id || options.sys_id || $sp.getParameter('sys_id');
+  if (!data.table)
+    return;
+  data.embedded_widget = $sp.getWidget('x-pisn-sp-procflow-lite', {
+    table: data.table,
+    sys_id: data.sys_id
+  });
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-20 09:32:05&lt;/sys_created_on&gt;&lt;sys_id&gt;4e74afaddb98bb00d033df8b4b961922&lt;/sys_id&gt;&lt;sys_mod_count&gt;55&lt;/sys_mod_count&gt;&lt;sys_name&gt;Process Flow Popup&lt;/sys_name&gt;&lt;sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4e74afaddb98bb00d033df8b4b961922&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-24 16:47:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;span class="x-pisn-sp-procflow-popup-starter" ng-click="c.show = !c.show;" ng-class="{'x-pisn-sp-procflow-popup-starter--inverse-bg': c.show}"&gt;
+  &lt;i class="fa fa-ellipsis-h light" aria-hidden="true" ng-show="!c.show"&gt;&lt;/i&gt;
+  &lt;i class="fa fa-times fa-times-inverse light-inverse-1" aria-hidden="true" ng-class="{'x-pisn-sp-procflow__show': c.show, 'x-pisn-sp-procflow__hide': !c.show}"&gt;&lt;/i&gt;
+  &lt;i class="fa fa-sort-desc fa-2x" aria-hidden="true" ng-class="{'x-pisn-sp-procflow__show': c.show, 'x-pisn-sp-procflow__hide': !c.show}"&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;div class="x-pisn-sp-procflow-popup-container" ng-class="{'x-pisn-sp-procflow__show': c.show, 'x-pisn-sp-procflow__hide': !c.show}"&gt;
+  &lt;sp-widget widget="c.data.embedded_widget"&gt;&lt;/sp-widget&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-206519893</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3996358fdbdcff00d033df8b4b9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c9200000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>Process Flow Popup</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_b9478edfdb975f405c025a6adc961953</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-20 00:00:21</sys_created_on><sys_id>b9478edfdb975f405c025a6adc961953</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_b9478edfdb975f405c025a6adc961953</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-20 00:00:21</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-198006812</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3996358fdbdcff00d033df8b4b9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7c10000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_6527adb3db4cf300efd54a92ba96194b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">ed27adb3db4cf300efd54a92ba961947</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:55:11</sys_created_on><sys_id>6527adb3db4cf300efd54a92ba96194b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_column_6527adb3db4cf300efd54a92ba96194b</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-14 13:55:11</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>947498180</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3d96358fdbdcff00d033df8b4b9619c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c81d0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_ed27adb3db4cf300efd54a92ba961947</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>2</order><sp_column/><sp_container display_value="Process Flow Demo Page - Container 1">74e4a9bfdb0cf300efd54a92ba9619c4</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:55:11</sys_created_on><sys_id>ed27adb3db4cf300efd54a92ba961947</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_row_ed27adb3db4cf300efd54a92ba961947</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-14 13:55:11</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>753394651</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3d96358fdbdcff00d033df8b4b9619c6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8240000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_6cbd784bdbdb1f405c025a6adc961986</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-19 00:00:24</sys_created_on><sys_id>6cbd784bdbdb1f405c025a6adc961986</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_6cbd784bdbdb1f405c025a6adc961986</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-19 00:00:24</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-198006812</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>3d96358fdbdcff00d033df8b4b9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7a20000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_fcef1906db503f00d033df8b4b9619d9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Process Flow Demo Page - Container 2</name><order>2</order><sp_page display_value="x_pisn_sp_procflow_page">2a8465bfdb0cf300efd54a92ba96191c</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-21 13:09:48</sys_created_on><sys_id>fcef1906db503f00d033df8b4b9619d9</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Process Flow Demo Page - Container 2</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_container_fcef1906db503f00d033df8b4b9619d9</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-21 13:13:33</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>1750137340</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7196358fdbdcff00d033df8b4b9619c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8aa0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>Process Flow Demo Page - Container 2</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_df11e769db98bb00d033df8b4b961914</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="DELETE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function PIProcessFlowCtrl(spUtil, $scope) {
+  var c = this;
+
+	c.$onInit = function() {
+    };
+	
+	c.showProcessFlow = function() {
+		return c.data.process_flow &amp;&amp; c.data.process_flow.stages.length &gt; 0;
+	};
+	
+	if(c.data.table)
+	spUtil.recordWatch($scope, c.data.table, 'sys_id=' + c.data.sys_id, function() {
+		spUtil.update($scope);
+	});
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;// Default Colors&amp;#13;
+$x-pisn-sp-procflow-popup-color: $text-color !default;&amp;#13;
+$x-pisn-sp-procflow-popup-bg: $brand-primary !default;&amp;#13;
+// "Current Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-popup-current-color: lighten($x-pisn-sp-procflow-popup-bg, 95%) !default;&amp;#13;
+// "Past Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-popup-past-color: lighten($x-pisn-sp-procflow-popup-bg, 45%) !default;&amp;#13;
+// "Future Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-popup-future-color: lighten($x-pisn-sp-procflow-popup-bg, 20%) !default;&amp;#13;
+// Color of separator between Flow Stages&amp;#13;
+$x-pisn-sp-procflow-popup-separator-color: $body-bg !default;&amp;#13;
+// Sizing&amp;#13;
+$x-pisn-sp-procflow-popup-height: $line-height-computed * 2 !default;&amp;#13;
+$x-pisn-sp-procflow-popup-font-size: $font-size-small !default;&amp;#13;
+$x-pisn-sp-procflow-popup-border-radius: 15px;&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__breadcrumb {&amp;#13;
+  color: $x-pisn-sp-procflow-popup-separator-color;&amp;#13;
+  margin-right: 8px;&amp;#13;
+  position: relative;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__container {&amp;#13;
+  display: flex;&amp;#13;
+  align-items: stretch;&amp;#13;
+  justify-content: center;&amp;#13;
+  border-radius: $x-pisn-sp-procflow-popup-border-radius;&amp;#13;
+  font-size: $x-pisn-sp-procflow-popup-font-size;&amp;#13;
+  letter-spacing: -0.2px;&amp;#13;
+  overflow: hidden;&amp;#13;
+  background-color: $x-pisn-sp-procflow-popup-bg;&amp;#13;
+  z-index: 10;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__stage {&amp;#13;
+  position: relative;&amp;#13;
+  display: flex;&amp;#13;
+  background-color: $x-pisn-sp-procflow-popup-bg;&amp;#13;
+  color: $x-pisn-sp-procflow-popup-color;&amp;#13;
+  justify-content: center;&amp;#13;
+  align-items: center;&amp;#13;
+  padding-left: 1ex;&amp;#13;
+  padding-right: 1ex;&amp;#13;
+  height: $x-pisn-sp-procflow-popup-height;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__stage:first-of-type {&amp;#13;
+  border-top-left-radius: $x-pisn-sp-procflow-popup-border-radius;&amp;#13;
+  border-bottom-left-radius: $x-pisn-sp-procflow-popup-border-radius;&amp;#13;
+  padding-left: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__stage:last-of-type {&amp;#13;
+  border-top-right-radius: $x-pisn-sp-procflow-popup-border-radius;&amp;#13;
+  border-bottom-right-radius: $x-pisn-sp-procflow-popup-border-radius;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__stage--current {&amp;#13;
+  color: $x-pisn-sp-procflow-popup-current-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__stage--past {&amp;#13;
+  color: $x-pisn-sp-procflow-popup-past-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__stage--future {&amp;#13;
+  color: $x-pisn-sp-procflow-popup-future-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-popup__arrow-down {&amp;#13;
+    position: absolute;&amp;#13;
+    bottom: 0px;&amp;#13;
+    left: 0px;&amp;#13;
+    z-index: 2;&amp;#13;
+    width: 0;&amp;#13;
+    height: 0;&amp;#13;
+    border-left: 7px solid transparent;&amp;#13;
+    border-right: 7px solid transparent;&amp;#13;
+    border-top: 6px solid $x-pisn-sp-procflow-popup-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"options": {
+		"table": "idea",
+		"sys_id": "fe6703ebdb14d3405c025a6adc9619de",
+		"show_icons": true
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Copy of Process Flow Popup&lt;/name&gt;&lt;option_schema&gt;[{"name":"table","section":"other","default_value":"","label":"Table","type":"string"},{"hint":"Sys ID of the Task record","name":"sys_id","section":"other","default_value":"","label":"Sys ID","type":"string"},{"name":"show_icons","section":"other","default_value":"true","label":"Show icons","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	input = input || {};
+    data.table = input.table || options.table || $sp.getParameter('table');
+	data.sys_id = input.sys_id || options.sys_id || $sp.getParameter('sys_id');
+	data.show_arrow = input.show_arrow || options.show_arrow || false;
+	data.show_arrow = data.show_arrow == 'true' || data.show_arrow == true;
+	data.is_valid = false;
+	
+	if (!data.table)
+		return;
+	
+	var taskGR = new GlideRecord(data.table);
+	if (!taskGR.get(data.sys_id))
+		return;
+	
+	data.is_valid = true; 
+	data.process_flow = new ProcessFlow(taskGR).toObject();
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-20 09:17:25&lt;/sys_created_on&gt;&lt;sys_id&gt;df11e769db98bb00d033df8b4b961914&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of Process Flow Popup&lt;/sys_name&gt;&lt;sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_df11e769db98bb00d033df8b4b961914&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-20 09:17:25&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="x-pisn-sp-procflow-popup"&gt;
+  &lt;ol class="x-pisn-sp-procflow-popup__container list-unstyled" 
+      ng-if="c.showProcessFlow()"&gt;
+    &lt;li class="x-pisn-sp-procflow-popup__stage x-pisn-sp-procflow-popup__stage--{{stage.state}} text-center"
+      ng-repeat="stage in data.process_flow.stages track by stage.sys_id"&gt;
+      &lt;i ng-if="$index&gt;0" class="fa fa-angle-right x-pisn-sp-procflow-popup__breadcrumb" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;span class="x-pisn-sp-procflow-popup__label"&gt;{{::stage.label}}&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+&lt;span ng-show="data.show_arrow" class="x-pisn-sp-procflow-popup__arrow-down"&gt;&lt;/span&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1718156038</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7196358fdbdcff00d033df8b4b9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c87f0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>Copy of Process Flow Popup</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_e0bd784bdbdb1f405c025a6adc961987</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-19 00:00:24</sys_created_on><sys_id>e0bd784bdbdb1f405c025a6adc961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_e0bd784bdbdb1f405c025a6adc961987</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-19 00:00:24</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1100059213</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7196358fdbdcff00d033df8b4b9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7b30000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_e927adb3db4cf300efd54a92ba961949</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name>m-t-xl</class_name><order>1</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">ed27adb3db4cf300efd54a92ba961947</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:55:11</sys_created_on><sys_id>e927adb3db4cf300efd54a92ba961949</sys_id><sys_mod_count>2</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_column_e927adb3db4cf300efd54a92ba961949</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-18 12:17:37</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1048100167</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7596358fdbdcff00d033df8b4b9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8730000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_3c62d1abdb5c934085895845dc96191b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function PIProcessFlowController(spUtil, $scope) {
+  var c = this;
+
+  c.hasIcon = function (stage) {
+    return c.options.show_icons &amp;&amp; c.getIcon(stage);
+  };
+
+  c.getIcon = function (stage) {
+    if (stage.state == 'past') {
+      return 'fa-check';
+    }
+    return;
+  };
+
+  c.showProcessFlow = function () {
+    return c.data.process_flow &amp;&amp; c.data.process_flow.stages.length &gt; 0;
+  };
+
+  if (c.data.table)
+    spUtil.recordWatch($scope, c.data.table, 'sys_id=' + c.data.sys_id, function () {
+      spUtil.update($scope);
+    });
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;// Default Colors&amp;#13;
+$x-pisn-sp-procflow-color: $text-default !default;&amp;#13;
+$x-pisn-sp-procflow-bg: darken($body-bg, 5%) !default;&amp;#13;
+&amp;#13;
+// "Current Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-current-bg: $brand-primary !default;&amp;#13;
+$x-pisn-sp-procflow-current-color:  lighten($x-pisn-sp-procflow-current-bg, 45%) !default;&amp;#13;
+&amp;#13;
+// "Past Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-past-color: lighten($x-pisn-sp-procflow-current-bg, 45%) !default;&amp;#13;
+$x-pisn-sp-procflow-past-bg: lighten($x-pisn-sp-procflow-current-bg, 20%) !default;&amp;#13;
+&amp;#13;
+// "Future Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-future-color: lighten($x-pisn-sp-procflow-color, 10%) !default;&amp;#13;
+$x-pisn-sp-procflow-future-bg: $x-pisn-sp-procflow-bg !default;&amp;#13;
+&amp;#13;
+// Color of border between Flow Stages&amp;#13;
+$x-pisn-sp-procflow-border-color: $body-bg !default;&amp;#13;
+&amp;#13;
+$x-pisn-sp-procflow-tranistion-time: 0.5s !default;&amp;#13;
+&amp;#13;
+// Sizing&amp;#13;
+$x-pisn-sp-procflow-border-radius: $border-radius-base !default;&amp;#13;
+$x-pisn-sp-procflow-height: 44px !default;&amp;#13;
+$x-pisn-sp-procflow-font-size: $font-size-small !default;&amp;#13;
+$x-pisn-sp-procflow-chevron-height: $x-pisn-sp-procflow-height / 2 !default;&amp;#13;
+$x-pisn-sp-procflow-chevron-width: 16px !default;&amp;#13;
+&amp;#13;
+@media (max-width: 768px) {&amp;#13;
+  .x-pisn-sp-procflow-flow-hide {&amp;#13;
+  	display: none;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow__container {&amp;#13;
+  display: flex;&amp;#13;
+  align-items: stretch;&amp;#13;
+  width: 100%;&amp;#13;
+  border-radius: $border-radius-base;&amp;#13;
+  font-size: $x-pisn-sp-procflow-font-size;&amp;#13;
+  overflow: hidden;&amp;#13;
+  overflow-x: auto;&amp;#13;
+  margin-bottom: 0px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage {&amp;#13;
+  position: relative;&amp;#13;
+  display: flex;&amp;#13;
+  flex: 1 1;&amp;#13;
+  background: $x-pisn-sp-procflow-bg;&amp;#13;
+  color: $x-pisn-sp-procflow-color;&amp;#13;
+  justify-content: center;&amp;#13;
+  align-items: center;&amp;#13;
+  padding-left: 1ex;&amp;#13;
+  padding-right: 1ex;&amp;#13;
+  height: $x-pisn-sp-procflow-height;&amp;#13;
+  transition: background-color $x-pisn-sp-procflow-tranistion-time, color $x-pisn-sp-procflow-tranistion-time;&amp;#13;
+  &amp;#13;
+  &amp;amp;::before {&amp;#13;
+    position: absolute;&amp;#13;
+  	display: block;&amp;#13;
+  	border: $x-pisn-sp-procflow-chevron-height solid $x-pisn-sp-procflow-bg;&amp;#13;
+  	border-left: $x-pisn-sp-procflow-chevron-width solid $x-pisn-sp-procflow-border-color;&amp;#13;
+  	border-right: 0;&amp;#13;
+  	top: -2px;&amp;#13;
+    bottom: -2px;&amp;#13;
+  	z-index: 9;&amp;#13;
+  	content: '';&amp;#13;
+    left: -($x-pisn-sp-procflow-chevron-width / 2);&amp;#13;
+    &amp;#13;
+    transition: border-color $x-pisn-sp-procflow-tranistion-time;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  &amp;amp;::after {&amp;#13;
+    position: absolute;&amp;#13;
+  	display: block;&amp;#13;
+  	border: $x-pisn-sp-procflow-chevron-height solid transparent;&amp;#13;
+  	border-left: $x-pisn-sp-procflow-chevron-width solid $x-pisn-sp-procflow-bg;&amp;#13;
+  	border-right: 0;&amp;#13;
+  	top: -2px;&amp;#13;
+    bottom: -2px;&amp;#13;
+  	z-index: 10;&amp;#13;
+  	content: '';&amp;#13;
+    right: -($x-pisn-sp-procflow-chevron-width / 2) + 1px;&amp;#13;
+    &amp;#13;
+    transition: border-color $x-pisn-sp-procflow-tranistion-time;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage:first-of-type {&amp;#13;
+  border-top-left-radius: $x-pisn-sp-procflow-border-radius;&amp;#13;
+  border-bottom-left-radius: $x-pisn-sp-procflow-border-radius;&amp;#13;
+&amp;#13;
+  &amp;amp;::before {&amp;#13;
+    display: none;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage:last-of-type {&amp;#13;
+  border-top-right-radius: $x-pisn-sp-procflow-border-radius;&amp;#13;
+  border-bottom-right-radius: $x-pisn-sp-procflow-border-radius;&amp;#13;
+&amp;#13;
+  &amp;amp;::after {&amp;#13;
+    display: none;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage--current {&amp;#13;
+  color: $x-pisn-sp-procflow-current-color;&amp;#13;
+  background-color: $x-pisn-sp-procflow-current-bg;&amp;#13;
+  &amp;#13;
+  &amp;amp;:after {&amp;#13;
+    border-left-color: $x-pisn-sp-procflow-current-bg;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  &amp;amp;:before {&amp;#13;
+    border-color: $x-pisn-sp-procflow-current-bg;&amp;#13;
+    border-left-color: $x-pisn-sp-procflow-border-color;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage--past {&amp;#13;
+  color: $x-pisn-sp-procflow-past-color;&amp;#13;
+  background-color: $x-pisn-sp-procflow-past-bg;&amp;#13;
+  &amp;#13;
+  &amp;amp;:before {&amp;#13;
+    border-color: $x-pisn-sp-procflow-past-bg;&amp;#13;
+    border-left-color: $x-pisn-sp-procflow-border-color;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  &amp;amp;:after {&amp;#13;
+    border-left-color: $x-pisn-sp-procflow-past-bg;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage--future {&amp;#13;
+  color: $x-pisn-sp-procflow-future-color;&amp;#13;
+  background-color: $x-pisn-sp-procflow-future-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__label {&amp;#13;
+  margin-left: calc($x-pisn-sp-procflow-chevron-width - 5px);&amp;#13;
+  margin-right: $x-pisn-sp-procflow-chevron-width;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__stage--has-icon {&amp;#13;
+  .x-pisn-sp-procflow-flow__label {&amp;#13;
+    padding-right: $x-pisn-sp-procflow-font-size;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-flow__icon  {&amp;#13;
+  position: absolute;&amp;#13;
+  right: $x-pisn-sp-procflow-font-size;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+&amp;#13;
+&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"options": {
+		"table": "idea",
+		"sys_id": "fe6703ebdb14d3405c025a6adc9619de",
+		"show_icons": true
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;x-pisn-sp-procflow-chevrons&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Process Flow&lt;/name&gt;&lt;option_schema&gt;[{"name":"table","section":"other","default_value":"","label":"Table","type":"string"},{"hint":"Sys ID of the Task record","name":"sys_id","section":"other","default_value":"","label":"Sys ID","type":"string"},{"name":"show_icons","section":"other","default_value":"true","label":"Show icons","type":"boolean"},{"name":"only_desktop","section":"other","default_value":"false","label":"Only Desktop","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  input = input || {};
+  data.table = input.table || options.table || $sp.getParameter('table');
+  data.sys_id = input.sys_id || options.sys_id || $sp.getParameter('sys_id');
+  data.is_valid = false;
+
+  options.only_desktop = options.only_desktop == true || options.only_desktop == 'true';
+
+  if (!data.table)
+    return;
+
+  var taskGR = new GlideRecord(data.table);
+  if (!taskGR.get(data.sys_id))
+    return;
+
+  data.is_valid = true;
+  data.process_flow = new ProcessFlow(taskGR).toObject();
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.hann&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-02-21 11:39:23&lt;/sys_created_on&gt;&lt;sys_id&gt;3c62d1abdb5c934085895845dc96191b&lt;/sys_id&gt;&lt;sys_mod_count&gt;356&lt;/sys_mod_count&gt;&lt;sys_name&gt;Process Flow&lt;/sys_name&gt;&lt;sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_3c62d1abdb5c934085895845dc96191b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-22 15:54:54&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="x-pisn-sp-procflow-flow m-b" ng-class="{'x-pisn-sp-procflow-flow-hide': c.options.only_desktop}"&gt;
+  &lt;ol class="x-pisn-sp-procflow__container list-unstyled" ng-if="c.showProcessFlow()"&gt;
+    &lt;li class="x-pisn-sp-procflow-flow__stage x-pisn-sp-procflow-flow__stage--{{stage.state}}" ng-repeat="stage in data.process_flow.stages track by stage.sys_id"
+      ng-class="{ 'x-pisn-sp-procflow-flow__stage--has-icon': c.hasIcon(stage) }"&gt;
+      &lt;span class="x-pisn-sp-procflow-flow__label"&gt;{{::stage.label}}&lt;/span&gt;
+      &lt;span class="x-pisn-sp-procflow-flow__icon fa {{::c.getIcon(stage)}}" ng-if="c.hasIcon(stage)"&gt;&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-617579657</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7596358fdbdcff00d033df8b4b9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8fd0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>Process Flow</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_b67aeedadb17db405c025a6adc9619a8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-17 00:00:14</sys_created_on><sys_id>b67aeedadb17db405c025a6adc9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_b67aeedadb17db405c025a6adc9619a8</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-17 00:00:14</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-198006812</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7596358fdbdcff00d033df8b4b9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c78f0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_392467addb98bb00d033df8b4b961947</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="DELETE"><class_name/><order>2</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="">292467addb98bb00d033df8b4b961943</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-20 09:30:42</sys_created_on><sys_id>392467addb98bb00d033df8b4b961947</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_column_392467addb98bb00d033df8b4b961947</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-20 09:30:42</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>996925683</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7996358fdbdcff00d033df8b4b9619c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8dc0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_b6e42933db4cf300efd54a92ba96198d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="DELETE"><class_name/><order>3</order><sp_column/><sp_container display_value="Process Flow - Container 1">74e4a9bfdb0cf300efd54a92ba9619c4</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:45:26</sys_created_on><sys_id>b6e42933db4cf300efd54a92ba96198d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>3</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_row_b6e42933db4cf300efd54a92ba96198d</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-14 13:55:11</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1292666134</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7996358fdbdcff00d033df8b4b9619c6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c84d0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>3</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_50240609dbd71b405c025a6adc961904</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-13 00:00:16</sys_created_on><sys_id>50240609dbd71b405c025a6adc961904</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_50240609dbd71b405c025a6adc961904</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-13 00:00:16</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-198006812</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7996358fdbdcff00d033df8b4b9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7810000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_35e4e9bfdb0cf300efd54a92ba9619d1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">f1e4e9bfdb0cf300efd54a92ba9619cf</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:45:22</sys_created_on><sys_id>35e4e9bfdb0cf300efd54a92ba9619d1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_column_35e4e9bfdb0cf300efd54a92ba9619d1</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-14 13:45:22</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>2011195914</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7d96358fdbdcff00d033df8b4b9619c2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7eb0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_c8d5e321dbd8bb00d033df8b4b961995</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="DELETE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">792467addb98bb00d033df8b4b961945</sp_column><sp_widget display_value="Process Flow Popup">4e74afaddb98bb00d033df8b4b961922</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-20 09:37:57</sys_created_on><sys_id>c8d5e321dbd8bb00d033df8b4b961995</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_instance_c8d5e321dbd8bb00d033df8b4b961995</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-20 09:37:57</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=c8d5e321dbd8bb00d033df8b4b961995"/></record_update>]]></payload>
+<payload_hash>-731307197</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7d96358fdbdcff00d033df8b4b9619c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8c70000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_2cf0fb14db9f97405c025a6adc961908</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-11 00:00:15</sys_created_on><sys_id>2cf0fb14db9f97405c025a6adc961908</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_2cf0fb14db9f97405c025a6adc961908</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-11 00:00:15</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-198006812</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7d96358fdbdcff00d033df8b4b9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7660000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_3882b1abdb1893405c025a6adc96194d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>chris.hann</sys_created_by><sys_created_on>2018-02-21 13:59:45</sys_created_on><sys_id>3882b1abdb1893405c025a6adc96194d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_process_flow</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_scope_privilege_3882b1abdb1893405c025a6adc96194d</sys_update_name><sys_updated_by>chris.hann</sys_updated_by><sys_updated_on>2018-02-21 13:59:45</sys_updated_on><target_name>sys_process_flow</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-1138614547</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>7d96358fdbdcff00d033df8b4b9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c74a0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>sys_process_flow</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_792467addb98bb00d033df8b4b961945</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="DELETE"><class_name>m-t-xl</class_name><order>1</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="">292467addb98bb00d033df8b4b961943</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-20 09:30:42</sys_created_on><sys_id>792467addb98bb00d033df8b4b961945</sys_id><sys_mod_count>1</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_column_792467addb98bb00d033df8b4b961945</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-20 09:30:47</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-1145967502</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b196358fdbdcff00d033df8b4b9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8cf0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_f5efd506db503f00d033df8b4b9619d7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Process Flow Demo Page - Container 2">fcef1906db503f00d033df8b4b9619d9</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-21 13:09:51</sys_created_on><sys_id>f5efd506db503f00d033df8b4b9619d7</sys_id><sys_mod_count>2</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_row_f5efd506db503f00d033df8b4b9619d7</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-21 13:13:49</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>1121093619</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b196358fdbdcff00d033df8b4b9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8b20000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_a0f0fb14db9f97405c025a6adc96190b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-11 00:00:16</sys_created_on><sys_id>a0f0fb14db9f97405c025a6adc96190b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_a0f0fb14db9f97405c025a6adc96190b</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-11 00:00:16</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1306271079</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b196358fdbdcff00d033df8b4b9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c76e0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_35efd506db503f00d033df8b4b9619db</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name>m-t-xl</class_name><order>2</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">f5efd506db503f00d033df8b4b9619d7</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-21 13:09:51</sys_created_on><sys_id>35efd506db503f00d033df8b4b9619db</sys_id><sys_mod_count>1</sys_mod_count><sys_name>2</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_column_35efd506db503f00d033df8b4b9619db</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-21 13:14:04</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1704647718</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b596358fdbdcff00d033df8b4b9619c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8be0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_292467addb98bb00d033df8b4b961943</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="DELETE"><class_name/><order>1</order><sp_column/><sp_container display_value="">502467addb98bb00d033df8b4b9619f9</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-20 09:30:42</sys_created_on><sys_id>292467addb98bb00d033df8b4b961943</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_row_292467addb98bb00d033df8b4b961943</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-20 09:30:42</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1950317106</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b596358fdbdcff00d033df8b4b9619c6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8ef0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_3e7aeedadb17db405c025a6adc9619aa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-17 00:00:14</sys_created_on><sys_id>3e7aeedadb17db405c025a6adc9619aa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_3e7aeedadb17db405c025a6adc9619aa</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-17 00:00:14</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1306271079</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b596358fdbdcff00d033df8b4b9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7950000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_c1d6a5b3db4cf300efd54a92ba9619db</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">e927adb3db4cf300efd54a92ba961949</sp_column><sp_widget display_value="Process Flow Lite">bb6b8a4edb439b0085895845dc961917</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:53:47</sys_created_on><sys_id>c1d6a5b3db4cf300efd54a92ba9619db</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_instance_c1d6a5b3db4cf300efd54a92ba9619db</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-14 13:55:13</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=c1d6a5b3db4cf300efd54a92ba9619db"/></record_update>]]></payload>
+<payload_hash>-1104029838</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b996358fdbdcff00d033df8b4b9619c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8310000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_24f0fb14db9f97405c025a6adc961909</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-11 00:00:15</sys_created_on><sys_id>24f0fb14db9f97405c025a6adc961909</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_24f0fb14db9f97405c025a6adc961909</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-11 00:00:15</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1100059213</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b996358fdbdcff00d033df8b4b9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c75b0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_fe7aeedadb17db405c025a6adc9619a8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-17 00:00:14</sys_created_on><sys_id>fe7aeedadb17db405c025a6adc9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_fe7aeedadb17db405c025a6adc9619a8</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-17 00:00:14</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1100059213</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>b996358fdbdcff00d033df8b4b9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c79c0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_74e4a9bfdb0cf300efd54a92ba9619c4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Process Flow Demo Page - Container 1</name><order>1</order><sp_page display_value="x_pisn_sp_procflow_page">2a8465bfdb0cf300efd54a92ba96191c</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:45:18</sys_created_on><sys_id>74e4a9bfdb0cf300efd54a92ba9619c4</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Process Flow Demo Page - Container 1</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_container_74e4a9bfdb0cf300efd54a92ba9619c4</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-15 16:44:01</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>951051739</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>bd96358fdbdcff00d033df8b4b9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8650000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>Process Flow Demo Page - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_bb6b8a4edb439b0085895845dc961917</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function PIProcessFlowLiteController(spUtil, $scope) {
+  var c = this;
+
+  c.$onInit = function () {};
+
+  c.showProcessFlow = function () {
+    return c.data.process_flow &amp;&amp; c.data.process_flow.stages.length &gt; 0;
+  };
+
+  if (c.data.table)
+    spUtil.recordWatch($scope, c.data.table, 'sys_id=' + c.data.sys_id, function () {
+      spUtil.update($scope);
+    });
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;// Default Colors&amp;#13;
+$x-pisn-sp-procflow-lite-color: $text-color !default;&amp;#13;
+$x-pisn-sp-procflow-lite-bg: $brand-primary !default;&amp;#13;
+// "Current Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-current-color: lighten($x-pisn-sp-procflow-lite-bg, 95%) !default;&amp;#13;
+// "Past Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-past-color: lighten($x-pisn-sp-procflow-lite-bg, 45%) !default;&amp;#13;
+// "Future Stage" Colors&amp;#13;
+$x-pisn-sp-procflow-lite-future-color: lighten($x-pisn-sp-procflow-lite-bg, 20%) !default;&amp;#13;
+// Color of separator between Flow Stages&amp;#13;
+$x-pisn-sp-procflow-lite-separator-color: $body-bg !default;&amp;#13;
+// Sizing&amp;#13;
+$x-pisn-sp-procflow-lite-height: $line-height-computed * 2 !default;&amp;#13;
+$x-pisn-sp-procflow-lite-font-size: $font-size-small !default;&amp;#13;
+$x-pisn-sp-procflow-lite-border-radius: 15px;&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__breadcrumb {&amp;#13;
+  color: $x-pisn-sp-procflow-lite-separator-color;&amp;#13;
+  margin-right: 8px;&amp;#13;
+  position: relative;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__container {&amp;#13;
+  display: inline-flex;&amp;#13;
+  align-items: stretch;&amp;#13;
+  border-radius: $x-pisn-sp-procflow-lite-border-radius;&amp;#13;
+  font-size: $x-pisn-sp-procflow-lite-font-size;&amp;#13;
+  letter-spacing: -0.2px;&amp;#13;
+  background-color: $x-pisn-sp-procflow-lite-bg;&amp;#13;
+  z-index: 10;&amp;#13;
+  overflow: hidden;&amp;#13;
+  overflow-x: auto;&amp;#13;
+}&amp;#13;
+&amp;#13;
+::-webkit-scrollbar { &amp;#13;
+    display: none; &amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__stage {&amp;#13;
+  display: flex;&amp;#13;
+  background-color: $x-pisn-sp-procflow-lite-bg;&amp;#13;
+  color: $x-pisn-sp-procflow-lite-color;&amp;#13;
+  justify-content: center;&amp;#13;
+  align-items: center;&amp;#13;
+  padding-left: 1ex;&amp;#13;
+  padding-right: 1ex;&amp;#13;
+  height: $x-pisn-sp-procflow-lite-height;&amp;#13;
+  margin-top: 3px;&amp;#13;
+  margin-bottom: 3px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__stage:first-of-type {&amp;#13;
+  padding-left: 10px;&amp;#13;
+  margin-left: auto;&amp;#13;
+}&amp;#13;
+.x-pisn-sp-procflow-lite__stage:last-of-type {&amp;#13;
+  padding-right: 10px;&amp;#13;
+  margin-right: auto;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__stage--current {&amp;#13;
+  color: $x-pisn-sp-procflow-lite-current-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__stage--past {&amp;#13;
+  color: $x-pisn-sp-procflow-lite-past-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.x-pisn-sp-procflow-lite__stage--future {&amp;#13;
+  color: $x-pisn-sp-procflow-lite-future-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data&gt;{
+	"options": {
+		"table": "idea",
+		"sys_id": "fe6703ebdb14d3405c025a6adc9619de",
+		"show_icons": true
+	}
+}&lt;/demo_data&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;x-pisn-sp-procflow-lite&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Process Flow Lite&lt;/name&gt;&lt;option_schema&gt;[{"name":"table","section":"other","default_value":"","label":"Table","type":"string"},{"hint":"Sys ID of the Task record","name":"sys_id","section":"other","default_value":"","label":"Sys ID","type":"string"},{"name":"show_icons","section":"other","default_value":"true","label":"Show icons","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  input = input || {};
+  data.table = input.table || options.table || $sp.getParameter('table');
+  data.sys_id = input.sys_id || options.sys_id || $sp.getParameter('sys_id');
+  data.show_arrow = input.show_arrow || options.show_arrow || false;
+  data.show_arrow = data.show_arrow == 'true' || data.show_arrow == true;
+  data.is_valid = false;
+
+  if (!data.table)
+    return;
+
+  var taskGR = new GlideRecord(data.table);
+  if (!taskGR.get(data.sys_id))
+    return;
+
+  data.is_valid = true;
+  data.process_flow = new ProcessFlow(taskGR).toObject();
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio.petito&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-07-03 16:50:24&lt;/sys_created_on&gt;&lt;sys_id&gt;bb6b8a4edb439b0085895845dc961917&lt;/sys_id&gt;&lt;sys_mod_count&gt;114&lt;/sys_mod_count&gt;&lt;sys_name&gt;Process Flow Lite&lt;/sys_name&gt;&lt;sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_bb6b8a4edb439b0085895845dc961917&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-24 16:34:39&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="x-pisn-sp-procflow-lite"&gt;
+  &lt;ol class="x-pisn-sp-procflow-lite__container list-unstyled" 
+      ng-if="c.showProcessFlow()"&gt;
+    &lt;li class="x-pisn-sp-procflow-lite__stage x-pisn-sp-procflow-lite__stage--{{stage.state}} text-center"
+      ng-repeat="stage in data.process_flow.stages track by stage.sys_id"&gt;
+      &lt;i ng-if="$index&gt;0" class="fa fa-angle-right x-pisn-sp-procflow-lite__breadcrumb" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;span class="x-pisn-sp-procflow-lite__label"&gt;{{::stage.label}}&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1370446466</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>bd96358fdbdcff00d033df8b4b9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c9110000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>Process Flow Lite</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_d4240609dbd71b405c025a6adc961906</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-13 00:00:16</sys_created_on><sys_id>d4240609dbd71b405c025a6adc961906</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_d4240609dbd71b405c025a6adc961906</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-13 00:00:16</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1306271079</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>bd96358fdbdcff00d033df8b4b9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7880000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_2a8465bfdb0cf300efd54a92ba96191c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>x_pisn_sp_procflow_page</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:44:04</sys_created_on><sys_id>2a8465bfdb0cf300efd54a92ba96191c</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_pisn_sp_procflow_page</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_page_2a8465bfdb0cf300efd54a92ba96191c</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-15 16:44:01</sys_updated_on><title>Process Flow Demo Page</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=2a8465bfdb0cf300efd54a92ba96191c"/></record_update>]]></payload>
+<payload_hash>169315731</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f196358fdbdcff00d033df8b4b9619c6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8580000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>x_pisn_sp_procflow_page</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_357a9484db6f9f405c025a6adc9619a2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-22 00:00:24</sys_created_on><sys_id>357a9484db6f9f405c025a6adc9619a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_357a9484db6f9f405c025a6adc9619a2</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-22 00:00:24</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1306271079</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f196358fdbdcff00d033df8b4b9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7db0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_9605e9bfdb0cf300efd54a92ba9619ea</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">35e4e9bfdb0cf300efd54a92ba9619d1</sp_column><sp_widget display_value="Process Flow">3c62d1abdb5c934085895845dc96191b</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:45:57</sys_created_on><sys_id>9605e9bfdb0cf300efd54a92ba9619ea</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_instance_9605e9bfdb0cf300efd54a92ba9619ea</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-14 13:45:57</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=9605e9bfdb0cf300efd54a92ba9619ea"/></record_update>]]></payload>
+<payload_hash>-2009667409</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f596358fdbdcff00d033df8b4b9619c5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8160000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_20bd784bdbdb1f405c025a6adc961989</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxAllOrchTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxAllOrchTransactionLast12Month', 'In the last 12 months, The highest Orchestration transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration transactions executed in a give</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-19 00:00:24</sys_created_on><sys_id>20bd784bdbdb1f405c025a6adc961989</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxAllOrchTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_20bd784bdbdb1f405c025a6adc961989</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-19 00:00:24</sys_updated_on><tablename>MaxAllOrchTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1306271079</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f596358fdbdcff00d033df8b4b9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7a70000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxAllOrchTransactionLast12Month</table>
+<target_name>MaxAllOrchTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_f57a9484db6f9f405c025a6adc9619a0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-22 00:00:24</sys_created_on><sys_id>f57a9484db6f9f405c025a6adc9619a0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_f57a9484db6f9f405c025a6adc9619a0</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-22 00:00:24</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1100059213</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f596358fdbdcff00d033df8b4b9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7cf0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_502467addb98bb00d033df8b4b9619f9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="DELETE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Process Flow Demo Page - Container 3</name><order>3</order><sp_page display_value="x_pisn_sp_procflow_page">2a8465bfdb0cf300efd54a92ba96191c</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-20 09:30:36</sys_created_on><sys_id>502467addb98bb00d033df8b4b9619f9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Process Flow Demo Page - Container 3</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_container_502467addb98bb00d033df8b4b9619f9</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-21 13:09:48</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>1681384593</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f996358fdbdcff00d033df8b4b9619c4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8e70000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>Process Flow Demo Page - Container 3</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_a93f9dc2db503f00d033df8b4b961916</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.container1 {&amp;#13;
+  position: relative;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.container2 {&amp;#13;
+  display: inline-flex;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;x-pisn-sp-procflow-host-sample&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) { 
+
+ }]]&gt;&lt;/link&gt;&lt;name&gt;Process Flow Host Sample&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  input = input || {};
+  data.table = input.table || options.table || $sp.getParameter('table');
+  data.sys_id = input.sys_id || options.sys_id || $sp.getParameter('sys_id');
+  if (!data.table)
+    return;
+
+  data.embedded_widget = $sp.getWidget('x-pisn-sp-procflow-popup', {
+    table: data.table,
+    sys_id: data.sys_id
+  });
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-21 13:06:50&lt;/sys_created_on&gt;&lt;sys_id&gt;a93f9dc2db503f00d033df8b4b961916&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Process Flow Host Sample&lt;/sys_name&gt;&lt;sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Process Flow"&gt;ac2251abdb5c934085895845dc9619fe&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a93f9dc2db503f00d033df8b4b961916&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-21 13:09:33&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="x-pisn-sp-procflow-host-sample"&gt;
+  &lt;div class="container1"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, elit at euismod faucibus, quam metus maximus enim, at pharetra felis mauris pellentesque ipsum. Etiam vel nunc sit amet enim euismod accumsan eget id sem. Aliquam erat volutpat. Nunc suscipit feugiat ultrices. Suspendisse accumsan cursus ipsum. Nulla euismod, nibh et ultrices pulvinar, quam neque congue erat, sit amet dignissim dui metus non massa. Sed magna risus, luctus vitae facilisis a, pellentesque vel nibh. Vivamus vel sagittis nisl. Pellentesque suscipit ante dui, ut gravida sapien luctus porta. Aliquam scelerisque venenatis nulla, faucibus malesuada magna accumsan at. Nam ut augue condimentum, placerat purus sit amet, rutrum enim. Nulla placerat dictum ligula ac ultrices. Aenean sapien ipsum, ultrices et lobortis ac, feugiat vitae lectus. State: 
+      &lt;span class="container2"&gt;&lt;sp-widget widget="c.data.embedded_widget"&gt;&lt;/sp-widget&gt;&lt;/span&gt;
+    &lt;/p&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1113922650</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f996358fdbdcff00d033df8b4b9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c8890000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>Process Flow Host Sample</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_bd7a9484db6f9f405c025a6adc96199f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>MaxOrchCoreTransactionLast12Month</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('MaxOrchCoreTransactionLast12Month', 'In the last 12 months, The highest Orchestration Core only transactions executed in a given month');</script><short_description>In the last 12 months, The highest Orchestration Core only transactions executed</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-22 00:00:24</sys_created_on><sys_id>bd7a9484db6f9f405c025a6adc96199f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MaxOrchCoreTransactionLast12Month</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_bd7a9484db6f9f405c025a6adc96199f</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-22 00:00:24</sys_updated_on><tablename>MaxOrchCoreTransactionLast12Month</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-198006812</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>f996358fdbdcff00d033df8b4b9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7d60000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>MaxOrchCoreTransactionLast12Month</table>
+<target_name>MaxOrchCoreTransactionLast12Month</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_72e42933db4cf300efd54a92ba96198f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="DELETE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="3">b6e42933db4cf300efd54a92ba96198d</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:45:26</sys_created_on><sys_id>72e42933db4cf300efd54a92ba96198f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP - Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP - Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_column_72e42933db4cf300efd54a92ba96198f</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-14 13:45:26</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1700401138</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>fd96358fdbdcff00d033df8b4b9619c3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c83e0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_f1e4e9bfdb0cf300efd54a92ba9619cf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Process Flow Demo Page - Container 1">74e4a9bfdb0cf300efd54a92ba9619c4</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-03-14 13:45:22</sys_created_on><sys_id>f1e4e9bfdb0cf300efd54a92ba9619cf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sp_row_f1e4e9bfdb0cf300efd54a92ba9619cf</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-03-14 13:45:22</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-745067303</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>fd96358fdbdcff00d033df8b4b9619c6</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7f40000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</application>
+<category>customer</category>
+<comments/>
+<name>sys_gauge_counts_98240609dbd71b405c025a6adc961904</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_gauge_counts"><sys_gauge_counts action="INSERT_OR_UPDATE"><gauge_id display_value="Additional Metrics">53d6e3231f3121006d691b220e8b70e0</gauge_id><image/><name>OrchCoreTransactionLast30Days</name><omit_line>false</omit_line><order/><override_style/><query/><script>SNC.UsageAnalyticsScriptUtils.getCount('OrchCoreTransactionLast30Days', 'Orchestration Core transactions only executed in the last 30 days (Does not include today)');</script><short_description>Orchestration Core transactions only executed in the last 30 days (Does not incl</short_description><sys_class_name>sys_gauge_counts</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2018-07-13 00:00:16</sys_created_on><sys_id>98240609dbd71b405c025a6adc961904</sys_id><sys_mod_count>0</sys_mod_count><sys_name>OrchCoreTransactionLast30Days</sys_name><sys_package display_value="SP Process Flow" source="x_pisn_sp_procflow">ac2251abdb5c934085895845dc9619fe</sys_package><sys_policy/><sys_scope display_value="SP Process Flow">ac2251abdb5c934085895845dc9619fe</sys_scope><sys_update_name>sys_gauge_counts_98240609dbd71b405c025a6adc961904</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2018-07-13 00:00:16</sys_updated_on><tablename>OrchCoreTransactionLast30Days</tablename><use_script>true</use_script></sys_gauge_counts></record_update>]]></payload>
+<payload_hash>-1100059213</payload_hash>
+<remote_update_set display_value="SP Process Flow">f596358fdbdcff00d033df8b4b9619c2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-03-24 17:22:54</sys_created_on>
+<sys_id>fd96358fdbdcff00d033df8b4b9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169b0b9c7760000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-03-24 17:22:54</sys_updated_on>
+<table>OrchCoreTransactionLast30Days</table>
+<target_name>OrchCoreTransactionLast30Days</target_name>
+<type>Count Gauges</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
