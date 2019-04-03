@@ -2,11 +2,17 @@
 
 ## Description
 
-> None
+This can be used to quickly craft a people card flyout widget with options.
 
-## Screenshot
+## Screenshots
 
-![People Card Flyout](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-people-card-flyout/images/pe-people-card-flyout.png)
+### Collapsed
+
+![People Card Flyout Collapsed](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-people-card-flyout/images/pe-people-card-flyout-collapsed.png)
+
+### Expanded
+
+![People Card Flyout Expanded](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-people-card-flyout/images/pe-people-card-flyout-expanded.png)
 
 ## Additional Information/Notes
 
@@ -14,23 +20,39 @@
 
 ## Installation
 
-Download and install update set **[pe-people-card-flyout.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-people-card-flyout/pe-people-card-flyout.u-update-set.xml)**
+Download and install update set **[pe-people-card-flyout.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-people-card-flyout/pe-people-card-flyout.u-update-set.xml)**
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+- SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
-> None
+### Widget Option Schema
+
+| Option       | Description                                   | Default Value  |
+| :----------- | :-------------------------------------------- | :------------- |
+| `Department` | The department id.                            | 0886           |
+| `Title`      | The title in the panel header.                | People at Risk |
+| `Number 1`   | Displays the first integer in the panel body. | 1631           |
+| `Number 3`   | Displays the third integer in the panel body. | 21             |
+| `Sub Text 1` | Displays the first sub-text copy.             | Email Inboxes  |
+| `Sub Text 3` | Displays the third sub-text copy.             | Open Rate      |
 
 ## Platform Dependencies
 
 ### SN System Tables
 
-> None
+- sys_user
+- department
 
-### UI Dependencies
+## Sample Data and Data Structures
+
+> See 'Configuration' above
+
+## API Dependencies
+
+_Dependencies are included and configured as part of the provided Update Set._
 
 > None
 
@@ -38,4 +60,10 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-> None
+```scss
+$pe-theme-color: #283347 !default;
+$pe-theme-background-color: #1c2432 !default;
+$pe-text-color: #fff !default;
+$pe-sub-text-color: #68acd8 !default;
+$pe-status-color-normal: #29bd00 !default;
+```

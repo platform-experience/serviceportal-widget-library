@@ -1,4 +1,4 @@
 (function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+  var users = new PeopleCardService();
+  data.users = users.getUsers(options.department);
 })();
