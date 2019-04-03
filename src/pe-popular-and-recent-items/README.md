@@ -17,7 +17,7 @@ Display 'Service Catalog' Popular Items or User's Recent Items through a simple 
 
 ---
 ## Installation
-Download and install update set **[pe-popular-and-recent-items.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-popular-and-recent-items/pe-popular-and-recent-items.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-popular-and-recent-items.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-popular-and-recent-items/pe-popular-and-recent-items.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 

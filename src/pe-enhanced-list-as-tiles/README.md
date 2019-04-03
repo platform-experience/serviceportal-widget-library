@@ -31,7 +31,7 @@ Like the Enhanced List widget, this version maintains the same capabilities to:
 
 ---
 ## Installation
-Download and install update set **[pe-enhanced-list.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-enhanced-list/pe-enhanced-list.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-enhanced-list.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-enhanced-list/pe-enhanced-list.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 

@@ -46,7 +46,7 @@ data.typeahead = $sp.getWidget('typeahead-search-for-header',{"refresh_page_on_s
 
 ---
 ## Installation
-Download and install update set **[pe-nav-typeahead-search-collapsed.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-nav-typeahead-search-collapsed/pe-nav-typeahead-search-collapsed.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-nav-typeahead-search-collapsed.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-nav-typeahead-search-collapsed/pe-nav-typeahead-search-collapsed.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 

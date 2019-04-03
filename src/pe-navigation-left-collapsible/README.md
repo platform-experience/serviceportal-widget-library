@@ -58,7 +58,7 @@ Portal record's 'Quick start config':
 
 ---
 ## Installation
-Download and install update set **[pe-navigation-left-collapsible.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/pe-navigation-left-collapsible/pe-navigation-left-collapsible.u-update-set.xml)** <br/><br/>
+Download and install update set **[pe-navigation-left-collapsible.u-update-set.xml](https://github.com/platform-experience/serviceportal-widget-library/blob/master/src/pe-navigation-left-collapsible/pe-navigation-left-collapsible.u-update-set.xml)** <br/><br/>
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.<br/>
 * SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
