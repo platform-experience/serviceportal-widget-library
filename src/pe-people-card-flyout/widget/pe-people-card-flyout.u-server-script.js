@@ -1,4 +1,4 @@
 (function() {
-  var users = new PeopleCardFlyout();
+  var users = new PeopleCardService();
   data.users = users.getUsers(options.department);
 })();
