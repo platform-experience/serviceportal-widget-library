@@ -1,15 +1,15 @@
-var PeopleCardFlyout = Class.create();
-PeopleCardFlyout.prototype = {
+var PeopleCardService = Class.create();
+PeopleCardService.prototype = {
   initialize: function() {},
 
-  getNumberRange: function(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
+  getNumberRange: function(minimum, maximum) {
+    var min = Math.ceil(minimum);
+    var max = Math.floor(maximum);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   },
 
   getUsers: function(id) {
-    var userGr = GlideRecord('sys_user');
+    var userGr = new GlideRecord('sys_user');
     userGr.addQuery('department.id', id);
     userGr.orderBy('sys_created_on');
     userGr.query();
@@ -24,5 +24,5 @@ PeopleCardFlyout.prototype = {
     return users;
   },
 
-  type: 'PeopleCardFlyout'
+  type: 'PeopleCardService'
 };
