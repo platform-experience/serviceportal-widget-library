@@ -1,0 +1,136 @@
+.header {
+	padding: 10px;
+}
+
+a.question-tag {
+    color: #39739d;
+    background-color: #e1ecf4;
+    border: 1px solid #e1ecf4;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    border-radius: 0;
+    text-align: center;
+    line-height: 1;
+    padding: .4em .5em;
+}
+
+.loading-icon {
+    text-align: center;
+    padding: 30px;
+}
+
+.loading-icon div {
+  padding: 10px;
+}
+
+.pagination-section {
+	text-align: center;
+}
+
+.panel-title:focus {
+		outline: -webkit-focus-ring-color auto 5px;
+}
+
+.search-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pills {
+	display: flex;
+}
+
+.pills-label {
+	min-width: 80px;
+  margin-top: 5px;
+}
+
+h2 {
+	display: inline-block;
+}
+
+.btn-link {
+  padding: 0;
+}
+
+.flex {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex h2 {
+	word-break: break-word;
+}
+
+.search-result-xs {
+	margin: 0 -7px 0 -8px;
+}
+
+.search-overlay {
+    width: 100%;
+    height: 100%;
+  	min-height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border-left: 0;
+    border-right: 0;
+  	margin-top: -1rem;
+    background: #FFF;
+}
+
+.search-filter-menu {
+  z-index: 3 !important;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.search-overlay .header {
+  text-align: center;
+}
+
+.filter-icon {
+  color: #717171;
+}
+
+.disabled {
+  color: #ddd;
+}
+
+.results-heading {
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+
+.results-heading:focus {
+    outline: none;
+}
+
+.facet-pill-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-tabs {
+  margin: 0 5px;
+  border-bottom: none;
+  > li > a {
+    background-color: mix(#f0f3f4, #fff, 20%);
+    border: 1px solid $panel-default-border;
+  }
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: mix(#f0f3f4, #fff, 50%);
+  border: 1px solid $panel-default-border;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}

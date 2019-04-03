@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-27 19:14:55">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>My Weather</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>90d0c702db58330040dff7b51d9619d3</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-03-27 19:14:55</sys_created_on>
+<sys_id>f3fc2544db6c770040dff7b51d9619e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-03-27 19:14:55</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_e3d00b02db58330040dff7b51d961970</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function MyWeatherController() {
+	var c = this;
+	c.$onInit = function () {
+		c.getWeather = getWeather;
+		c.getWeather();
+	};
+	
+	function getWeather(){
+		if (navigator.geolocation) {
+			var location_timeout = setTimeout("geolocFail()", 10000);
+			
+			navigator.geolocation.getCurrentPosition(function(position) {
+				clearTimeout(location_timeout);
+				c.server.get({
+					browserLocation: true,
+					lat:position.coords.latitude,
+					lng:position.coords.longitude
+				}).then(function(r) {
+					c.weather = r.data;
+				});
+			}, function(error) {
+				clearTimeout(location_timeout);
+				geolocFail();
+			});
+		} else {
+			// Fallback for no geolocation
+			geolocFail();
+		}
+		
+	}
+	
+	function geolocFail(){
+		c.server.get({
+			browserLocation: false,
+		}).then(function(r) {
+			c.weather = r.data;
+		});
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.my-weather{&amp;#13;
+padding:10px;&amp;#13;
+  .city{&amp;#13;
+  	font-weight:bold;&amp;#13;
+    font-size:16px;&amp;#13;
+  }  &amp;#13;
+  .weather-deets{&amp;#13;
+    .temp{&amp;#13;
+    font-weight:bold;&amp;#13;
+    }&amp;#13;
+    .max-min{&amp;#13;
+    	margin-left:10px;&amp;#13;
+    }&amp;#13;
+    .max{&amp;#13;
+    	margin-left:5px;&amp;#13;
+      &amp;#13;
+    }&amp;#13;
+    .min{&amp;#13;
+    margin-left:5px;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;my_weather&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;My Weather&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	var apikey = gs.getProperty('openweathermap.apikey');
+	
+	
+	if(input){
+		if(input.browserLocation){
+			var ws = new GlideHTTPRequest
+			("https://api.openweathermap.org/data/2.5/weather?lat="+input.lat+"&amp;lon="+input.lng+"&amp;appid="+apikey+"&amp;units=imperial");
+			
+			var response = ws.get();
+			if (response) {
+				var responseBody = JSON.parse(response.getBody());
+				$sp.log(responseBody);
+				if (response != null) {
+					data.errorMessage = false;
+					data.channel = responseBody;
+					data.IconUrl = "https://openweathermap.org/img/w/" +
+					data.channel.weather[0].icon + ".png";
+					data.code = responseBody.sys.country;
+					data.main = responseBody.main;
+					
+				} else {
+					data.errorMessage = gs.getMessage("Can't find weather") + ": " + input.place;
+				}
+			} else {
+				data.errorMessage = gs.getMessage("An error occurred while making the requested connection");
+			}
+		}
+		if(!input.browserLocation){
+			var rec = new GlideRecord('sys_user');
+			rec.get(gs.getUserID());
+			if(rec.location){
+				data.location = rec.location.city.replaceAll(' ', '%20');
+			}
+			
+			$sp.log(data.location);
+			var ws = new GlideHTTPRequest
+			("https://api.openweathermap.org/data/2.5/weather?q="+data.location+"&amp;appid="+apikey+"&amp;units=imperial");
+			
+			var response = ws.get();
+			if (response) {
+				var responseBody = JSON.parse(response.getBody());
+				$sp.log(responseBody);
+				if (response != null) {
+					data.errorMessage = false;
+					data.channel = responseBody;
+					data.IconUrl = "https://openweathermap.org/img/w/" +
+					data.channel.weather[0].icon + ".png";
+					data.code = responseBody.sys.country;
+					data.main = responseBody.main;
+				} else {
+					data.errorMessage = gs.getMessage("Can't find weather") + ": " + input.place;
+				}
+			} else {
+				data.errorMessage = gs.getMessage("An error occurred while making the requested connection");
+			}
+			
+		}
+		
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-21 20:13:30&lt;/sys_created_on&gt;&lt;sys_id&gt;e3d00b02db58330040dff7b51d961970&lt;/sys_id&gt;&lt;sys_mod_count&gt;34&lt;/sys_mod_count&gt;&lt;sys_name&gt;My Weather&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_e3d00b02db58330040dff7b51d961970&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-27 19:13:28&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="my-weather"&gt;
+  &lt;p class="city"&gt;Current Weather in {{c.weather.channel.name}}&lt;/p&gt;
+  &lt;p class="weather-deets"&gt;
+    &lt;span class="icon"&gt;&lt;img src="{{c.weather.IconUrl}}"/&gt;&lt;/span&gt;
+    &lt;span class="temp"&gt;{{c.weather.main.temp}}F, &lt;/span&gt;
+    &lt;span class="max-min"&gt;Today's Max:&lt;span class="max temp"&gt;{{c.weather.main.temp_max}}F&lt;/span&gt; and Min:&lt;span class="min temp"&gt;{{c.weather.main.temp_min}}F&lt;/span&gt;  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>313620254</payload_hash>
+<remote_update_set display_value="My Weather">f3fc2544db6c770040dff7b51d9619e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-03-27 19:14:55</sys_created_on>
+<sys_id>3bfc2544db6c770040dff7b51d9619e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169c092500b0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-03-27 19:14:55</sys_updated_on>
+<table/>
+<target_name>My Weather</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>a6ac21440f6c7700f6865de2fd903b5b</update_guid>
+<update_guid_history>a6ac21440f6c7700f6865de2fd903b5b:313620254,bf1c69040d6c77001e2e1a890f93bb91:-240288301,3046e5007a6c770009534233bd780271:635112315,ade5a100256c7700a2de4d7585cea7ac:-1906912589,c9d561003e6c770006c2948f886f3ccd:1946620528,66c2e90c2d2c7700dd5345ba14fa21b9:365197694,8202e9c8122c7700fbd88ac40ac6d9ed:1403714975,15c1e588eb2c7700767b64043c0530a5:2003711663,61a12dc4b22c7700971c0855d734ea29:354183951,8dba1904f82c770077a90074f5947674:-1575599711,958a59c4c1e87700cabdc3d364755c05:230648493,42874d8463e87700cfdf08d0de688fe3:1099887000,47cd8176ec54b3002b761e08f84ea79f:675007767,fc9dcd36f554b30038ddfec9c9e60449:1101735353,0e5d45364354b300b51dae344879a9f5:-998163197,a3ec170e7e983300ea1a8f98cc65fcb1:-1043805639,c8cc130e0f98330076122e6c28a4c5f3:1066977513,e59ecb42f6983300843e561241dcdacd:-1850920963,e81bc30e44583300e4d1d98293719a6a:-2041144365,899acfca7a58330039ce0bce98ac9056:-1936268011,167a8bcab85833009add761f5f9b2da7:1400639783,a22a03caf6583300ba16dcb000730380:-756006697,e3c9cb8a2f5833000e23425acceefc86:999157725,c2498b4a2d583300d628009ade8eeb9e:177737411,db088b4a7e583300534b1cfbd60c4798:-1297560587,a787c34a1f583300e65988630698a6e6:-443721163,7ec5cf06b6583300a1cf66dc34c46546:549703305,45048f06e7583300391ba65f8427adab:-1717664391,b5728fc2c2583300079006fc0d11c383:1515442494,aa22c3c251583300d10c358e9eae80ae:2034731967,b4d14f82a25833002154da4bff248e0d:27383805,dd81c782935833004ac7dd49a638a3df:-824435166,0c11cb02dd58330064559833a6731855:1262022507,1c018b02eb583300194570003ae23b90:470788936,67d00b02df5833007230dfdfe0327571:-1878643254</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_701cc78edb58330040dff7b51d96191a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>openweathermap.apikey</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2019-03-21 21:02:46</sys_created_on><sys_id>701cc78edb58330040dff7b51d96191a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>openweathermap.apikey</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_701cc78edb58330040dff7b51d96191a</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2019-03-21 21:02:46</sys_updated_on><type>string</type><value>b550f506252e8d0992bf21fa0769686a</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=701cc78edb58330040dff7b51d96191a"/></record_update>]]></payload>
+<payload_hash>838045114</payload_hash>
+<remote_update_set display_value="My Weather">f3fc2544db6c770040dff7b51d9619e8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-03-27 19:14:55</sys_created_on>
+<sys_id>fffc2544db6c770040dff7b51d9619e8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169a210428a0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-03-27 19:14:55</sys_updated_on>
+<table/>
+<target_name>openweathermap.apikey</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>a92c0b8eb9583300e2f6ecab38ab151a</update_guid>
+<update_guid_history>a92c0b8eb9583300e2f6ecab38ab151a:838045114</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

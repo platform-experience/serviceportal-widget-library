@@ -1,0 +1,72 @@
+// Default Colors
+$x-pisn-sp-procflow-lite-color: $text-color !default;
+$x-pisn-sp-procflow-lite-bg: $brand-primary !default;
+// "Current Stage" Colors
+$x-pisn-sp-procflow-lite-current-color: lighten($x-pisn-sp-procflow-lite-bg, 95%) !default;
+// "Past Stage" Colors
+$x-pisn-sp-procflow-lite-past-color: lighten($x-pisn-sp-procflow-lite-bg, 45%) !default;
+// "Future Stage" Colors
+$x-pisn-sp-procflow-lite-future-color: lighten($x-pisn-sp-procflow-lite-bg, 20%) !default;
+// Color of separator between Flow Stages
+$x-pisn-sp-procflow-lite-separator-color: $body-bg !default;
+// Sizing
+$x-pisn-sp-procflow-lite-height: $line-height-computed * 2 !default;
+$x-pisn-sp-procflow-lite-font-size: $font-size-small !default;
+$x-pisn-sp-procflow-lite-border-radius: 15px;
+
+.x-pisn-sp-procflow-lite__breadcrumb {
+  color: $x-pisn-sp-procflow-lite-separator-color;
+  margin-right: 8px;
+  position: relative;
+}
+
+.x-pisn-sp-procflow-lite__container {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: $x-pisn-sp-procflow-lite-border-radius;
+  font-size: $x-pisn-sp-procflow-lite-font-size;
+  letter-spacing: -0.2px;
+  background-color: $x-pisn-sp-procflow-lite-bg;
+  z-index: 10;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.x-pisn-sp-procflow-lite__stage {
+  display: flex;
+  background-color: $x-pisn-sp-procflow-lite-bg;
+  color: $x-pisn-sp-procflow-lite-color;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  height: $x-pisn-sp-procflow-lite-height;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.x-pisn-sp-procflow-lite__stage:first-of-type {
+  padding-left: 10px;
+  margin-left: auto;
+}
+
+.x-pisn-sp-procflow-lite__stage:last-of-type {
+  padding-right: 10px;
+  margin-right: auto;
+}
+
+.x-pisn-sp-procflow-lite__stage--current {
+  color: $x-pisn-sp-procflow-lite-current-color;
+}
+
+.x-pisn-sp-procflow-lite__stage--past {
+  color: $x-pisn-sp-procflow-lite-past-color;
+}
+
+.x-pisn-sp-procflow-lite__stage--future {
+  color: $x-pisn-sp-procflow-lite-future-color;
+}

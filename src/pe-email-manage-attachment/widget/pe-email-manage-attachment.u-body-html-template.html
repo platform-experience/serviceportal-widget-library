@@ -1,0 +1,27 @@
+<div ng-if="data.canRead" class="panel">
+  <div class="panel-heading">
+    <h2 class="h4 sp-attachments-header panel-title pull-left">
+      ${Attachments}
+    </h2>
+    <button id="email_button" title="Send Email" class="panel-button btn-link" ng-click="openEmailPopup()">
+      <span class="glyphicon glyphicon-envelope"></span>
+    </button>
+    <sp-attachment-button ng-if="::(data.canWrite && data.canAttach)"></sp-attachment-button>
+  </div>
+  <div class="clearfix"></div>
+  <ul class="list-group">
+    <li ng-repeat="attachment in attachments | orderBy : 'file_name'" class="list-group-item">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="attachment.selected">
+          <a ng-href="/sys_atachment.do?sys_id={{atachment.sys_id}}">
+            {{attachment.file_name}}
+          </a>
+          <button id="remove_button" title="Remove Attachments" class="btn-link" ng-click="confirmDeleteAttachment(attachment)">
+            <span class="glyphicon glyphicon-remove"></span>
+          </button>
+        </label>
+      </div>
+    </li>
+  </ul>
+</div>

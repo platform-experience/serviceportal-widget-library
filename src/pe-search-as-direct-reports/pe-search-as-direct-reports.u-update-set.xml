@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-13 03:35:17">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Search as Direct Reports</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>03fe4a53db40f700d7f8f88eaf961962</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-13 03:35:17</sys_created_on>
+<sys_id>93afce53db40f700d7f8f88eaf96190f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-13 03:35:17</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_5e9de057db08b700d7f8f88eaf9619d7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, $sce, $location, spUtil, $element, $timeout, $rootScope, spFacetsClientService, spFacetManager, $window) {
+	var url = null;
+	spUtil.setSearchPage($scope.data.t);
+	$scope.isLoading = true;
+	$scope.isFilterMenuLoading = true;
+	$scope.showPagination = false;
+	$scope.showFilterMenu = false;
+	$scope.isFilterApplied = spFacetManager.isAnyFacetSelected();
+	$scope.showApply = false;
+	$scope.collpaseFacets = !$scope.data.t || $scope.data.t == "" ;
+	
+	$scope.currentViewAs = $scope.user.sys_id;
+	$scope.activeTab = {
+		label: 'My Results',
+		name: $scope.user.name,
+		user_id: $scope.user.sys_id
+	};
+	
+	$scope.tabs = [$scope.activeTab];
+	$scope.data.reports.forEach(function(report){
+		$scope.tabs.push({
+			label: report.name + ' Results',
+			name: report.name,
+			user_id: report.sys_id
+		})
+	});
+	
+	$scope.getBGImage = function(item) {
+		return {"background-image": "url('" + item.picture + "')"};
+	}
+
+	$scope.search = function(searchTerm) {
+		$location.search('q', searchTerm);
+	}
+
+	$scope.clearAll = function () {
+		spFacetManager.clearAllFacet();
+		$scope.isFilterApplied = false;
+	}
+
+	$scope.fetchMoreResults = function(query_start_location) {
+		fetch(query_start_location);
+	}
+	
+	$scope.viewAs = function(tab) {
+		$scope.currentViewAs = tab.user_id;
+		$scope.activeTab = tab;
+		fetch(0);
+	}
+
+	$scope.openFilterMenu = function() {
+		url = $location.url();
+		$scope.showApply = false;
+		$scope.showFilterMenu = true;
+	}
+
+	$scope.cancel = function () {
+		if(url) {
+			$location.url(url);
+		}
+    $scope.showFilterMenu = false;
+	}
+
+	$scope.apply = function () {
+		$scope.showFilterMenu = false;
+	}
+
+	fetch(0);
+
+	$scope.$on('$locationChangeSuccess', onLocationChangeSuccess);
+
+	$scope.highlight = function(haystack, needle) {
+		if (!haystack)
+			return "";
+
+		if (!needle)
+			return haystack;
+
+		return haystack.replace(new RegExp(needle.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "gi"), function(match) {
+			return '&lt;span class="highlight mark"&gt;' + match + '&lt;/span&gt;';
+		});
+	}
+
+	$scope.smallScreenSize = isSmallScreenSize();
+
+	function isSmallScreenSize() {
+		return $window.matchMedia('(max-width: 767px)').matches;
+	}
+
+	angular.element($window).on('resize', function () {
+		$scope.smallScreenSize = isSmallScreenSize();
+	});
+
+	function onLocationChangeSuccess(event, newUrl, oldUrl) {
+		if(!pageChanged(newUrl, oldUrl)) {
+			fetch();
+		}
+	}
+
+	function pageChanged(newUrl, oldUrl) {
+		var newUrlParams = newUrl.match(/id=.+/),
+		oldUrlParams = oldUrl.match(/id=.+/);
+
+		if(!newUrlParams &amp;&amp; !oldUrlParams) {
+			return false;
+		}
+
+		if((!newUrlParams &amp;&amp; oldUrlParams) || (newUrlParams &amp;&amp; !oldUrlParams)) {
+			return true;
+		}
+
+		return newUrlParams[0].split("&amp;")[0] !== oldUrlParams[0].split("&amp;")[0];
+	}
+
+	function fetch(query_start_location) {
+		$scope.isLoading = true;
+		$scope.isFilterMenuLoading = true;
+		$scope.showApply = true;
+		var urlParams = $location.search();
+
+		$scope.limit = urlParams.t &amp;&amp; urlParams.t !== "" ? $scope.data.limit_group : $scope.data.limit_all;
+		$scope.data.q = urlParams.q;
+		
+		var	params = {
+					query: urlParams.q,
+					query_start_location: query_start_location,
+					count: $scope.limit,
+					source: urlParams.t,
+					portal: $rootScope.portal_id,
+					include_facets: false
+				},
+				additionalQuery = getAdditionalQuery(urlParams);
+
+		if(!isAllSearchSource(urlParams)) {
+			$scope.collpaseFacets = false;
+			if($scope.data.searchSources[urlParams.t]) {
+				$scope.t_label = $scope.data.searchSources[urlParams.t].name;
+			}
+			$scope.showFilterIcon = true;
+		} else {
+			$scope.t_label = "${All}";
+			$scope.showFilterIcon = false;
+			$scope.collpaseFacets = true;
+		}
+
+		if ($scope.options.show_did_you_mean == "true")
+			params.include_suggestions = true;
+
+		if(urlParams.t &amp;&amp; urlParams.t !== "" &amp;&amp; additionalQuery !== "") {
+			params.additionalQuery = additionalQuery;
+		}
+		
+		$scope.server.get({
+			'action': 'impersonate',
+			'user_id': $scope.currentViewAs,
+			'self': $scope.currentViewAs == $scope.user.sys_id
+		}).then(function(r){
+		
+			spFacetsClientService.search(params).then(function(response) {
+				var searchResults = response.data.result.results.map(function(result) {
+					result.templateID = "sp-search-source-" + result.__search_source_id__ + ".html";
+					return result;
+				});
+				if(query_start_location &gt; 0) {
+					$scope.results = $scope.results.concat(searchResults);
+
+				} else {
+					$scope.results = searchResults;
+				}
+				$scope.isLoading = false;
+
+				if (response.data.result.pagination_supported) {
+					generatePagination(searchResults, query_start_location);
+				} else {
+					$scope.showPagination = false;
+				}
+
+				if (response.data.result.suggestions)
+					$scope.data.suggestions = response.data.result.suggestions;
+				
+				$scope.server.get({'action': 'unimpersonate', 'self': r.data.self });
+			});
+			
+		});
+
+		var paramsCopy = JSON.parse(JSON.stringify(params))
+		paramsCopy.include_facets = true;
+		paramsCopy.include_suggestions = false;
+
+		spFacetsClientService.search(paramsCopy).then(function(response) {
+			$scope.isFilterMenuLoading = false;
+			if (!response.data.result.pagination_supported) {
+				$scope.endPagination = getEndPagination(response.data.result.results, hasFacet(response.data.result.facets, params.source));
+			}
+		});
+
+		$scope.isFilterApplied = spFacetManager.isAnyFacetSelected();
+		setFocusSearchResult();
+	}
+
+	spFacetManager.subscribe("spFacets.refresh.data", "Pills", onFacetsData);
+
+	function isAllSearchSource(urlParams) {
+		return !urlParams.t || urlParams.t == "";
+	}
+
+	function setFocusSearchResult() {
+		$timeout(function() {
+			var element = $element.find(".results-heading")[0];
+			if(element) {
+				element = angular.element(element);
+				element.focus();
+			}
+		}, 500);
+	}
+
+	function setFocusNextItem(index) {
+		$timeout(function() {
+			var element = $element.find(".result-item")[index];
+			if(element) {
+				element = element.querySelector("a");
+				element = angular.element(element);
+				element.focus();
+			}
+		}, 500);
+	}
+
+	function generatePagination(results, previousIndex) {
+			var last = results[results.length-1];
+			$scope.showPagination = true;
+			$scope.showLoadMore= last &amp;&amp; !last.isLastResult;
+
+		if(last &amp;&amp; last.query_location != undefined) {
+				$scope.query_start_location = last.query_location + 1;
+			} else {
+				$scope.query_start_location = 0;
+			}
+
+		  if(previousIndex &gt; 0) {
+				setFocusNextItem(previousIndex);
+			}
+	}
+
+	function hasFacet(facets, searchSource) {
+		if(searchSource &amp;&amp; searchSource !== "") {
+			return facets  &amp;&amp; facets[searchSource] &amp;&amp; facets[searchSource].length &gt; 0
+		} else {
+			for(var key in facets) {
+				if(facets[key].length &gt; 0) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	function getEndPagination(results, hasFacet) {
+		if(results.length &gt;= $scope.limit) {
+			if(hasFacet) {
+				return "${Results are limited to }" + $scope.limit + "${ items per search. Try using filters or more specific keywords.}";
+			}
+			return "${Results are limited to }" + $scope.limit + "${ items per search. Try using more specific keywords.}";
+		}
+
+		return "${End of results}";
+	}
+
+	function getAdditionalQuery(params) {
+		var paramsCopy = _.clone(params);
+
+		delete paramsCopy.q;
+		delete paramsCopy.t;
+		delete paramsCopy.id;
+		delete paramsCopy.spa;
+
+		if (_.isEmpty(paramsCopy))
+			return "";
+
+		for(var key in paramsCopy) {
+			if(paramsCopy.hasOwnProperty(key))
+				paramsCopy[key] = processURLProperty(paramsCopy[key]);
+		}
+
+		return paramsCopy;
+	}
+
+	function propertyIsArray(prop) {
+		return prop.charAt(0) === '[' &amp;&amp; prop.charAt(prop.length - 1) === ']';
+	}
+
+	function processURLProperty(property) {
+		if (propertyIsArray(property)) {
+			var properties = property.substring(1, property.length - 1).split(",");
+			properties = properties.map(function(prop) {
+				return prop.split("%2C").join(",");
+			});
+			return properties;
+		} else {
+			return property;
+		}
+	}
+
+	function findItems(facet, key, valueArr) {
+		if (!Array.isArray(valueArr))
+			valueArr = [valueArr];
+
+		var items = facet.items.filter(function(item) {
+			return valueArr.some(function(value) {
+				return value === item.value;
+			})
+		});
+
+		if(items &amp;&amp; items.length &gt; 0) {
+			return items;
+		}
+
+		return null;
+	}
+
+	function findFacet(facets, key) {
+		var f = null;
+		if(facets &amp;&amp; facets.length &gt; 0) {
+			f = facets.filter(function(d) {
+					return d.id === key;
+			});
+		}
+
+		if(f &amp;&amp; f.length &gt; 0) {
+			return f[0];
+		}
+
+		return null;
+	}
+
+	function onFacetsData(params) {
+		var query = params.query,
+				facets = params.data[query.t],
+				pills = {};
+
+		var keys = Object.keys(query);
+		keys.forEach(function(k) {
+
+			var facet = findFacet(facets, k);
+			if(facet) {
+				var items = findItems(facet, k, processURLProperty(query[k]));
+				if(items) {
+					items.forEach(function(item) {
+						if(!pills[item.label]) {
+							pills[item.label] = {id: k, label: item.label, facet: facet, item: item};
+						} else {
+							//update previous pill
+							updatPreviousPill(pills, item.label);
+							//add current pill
+							var label = getLabel(facet, item);
+							pills[label] = {id: k, label: label, facet: facet, item: item};
+						}
+					});
+				}
+			}
+		});
+		$scope.data.pills = _.values(pills);
+	}
+
+	function getLabel(facet, item) {
+		return item.label + " (" + facet.label + ")";
+	}
+
+	function updatPreviousPill(pills, label) {
+		var previous = pills[label],
+				updatedLabel = getLabel(previous.facet, previous.item);
+		previous.label = updatedLabel;
+		pills[updatedLabel] = previous;
+		delete pills[label];
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.header {
+	padding: 10px;
+}
+
+a.question-tag {
+    color: #39739d;
+    background-color: #e1ecf4;
+    border: 1px solid #e1ecf4;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    border-radius: 0;
+    text-align: center;
+    line-height: 1;
+    padding: .4em .5em;
+}
+
+.loading-icon {
+    text-align: center;
+    padding: 30px;
+}
+
+.loading-icon div {
+  padding: 10px;
+}
+
+.pagination-section {
+	text-align: center;
+}
+
+.panel-title:focus {
+		outline: -webkit-focus-ring-color auto 5px;
+}
+
+.search-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pills {
+	display: flex;
+}
+
+.pills-label {
+	min-width: 80px;
+  margin-top: 5px;
+}
+
+h2 {
+	display: inline-block;
+}
+
+.btn-link {
+  padding: 0;
+}
+
+.flex {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex h2 {
+	word-break: break-word;
+}
+
+.search-result-xs {
+	margin: 0 -7px 0 -8px;
+}
+
+.search-overlay {
+    width: 100%;
+    height: 100%;
+  	min-height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border-left: 0;
+    border-right: 0;
+  	margin-top: -1rem;
+    background: #FFF;
+}
+
+.search-filter-menu {
+  z-index: 3 !important;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.search-overlay .header {
+  text-align: center;
+}
+
+.filter-icon {
+  color: #717171;
+}
+
+.disabled {
+  color: #ddd;
+}
+
+.results-heading {
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+
+.results-heading:focus {
+    outline: none;
+}
+
+.facet-pill-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-tabs {
+  margin: 0 5px;
+  border-bottom: none;
+  &amp;gt; li &amp;gt; a {
+    background-color: mix(#f0f3f4, #fff, 20%);
+    border: 1px solid $panel-default-border;
+  }
+}
+
+.nav &amp;gt; li &amp;gt; a:hover,
+.nav &amp;gt; li &amp;gt; a:focus {
+  background-color: mix(#f0f3f4, #fff, 50%);
+  border: 1px solid $panel-default-border;
+}
+
+.nav-tabs &amp;gt; li.active &amp;gt; a,
+.nav-tabs &amp;gt; li.active &amp;gt; a:hover,
+.nav-tabs &amp;gt; li.active &amp;gt; a:focus {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Includes tabs showing direct reports' search results with same parameters&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;faceted_search_with_direct_reports&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope, elem) {
+	var lazyLoader = $injector.get("lazyLoader");
+	lazyLoader.putTemplates(scope.data.resultTemplates);
+}]]&gt;&lt;/link&gt;&lt;name&gt;Faceted Search with Direct Reports&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Maximum number of search results when not specifying a search group (default 30)","name":"max_all","section":"Behavior","label":"Max results for All search","type":"integer"},{"hint":"Maximum number of search results when specifying a search group (default 15)","name":"max_group","section":"Behavior","label":"Max results for single search source","type":"integer"},{"name":"show_did_you_mean","default_value":"false","section":"Behavior","label":"Show Did You Mean","type":"boolean"},{"name":"facet_list_title","section":"Presentation","default_value":"FILTERS","label":"Facet List Title","type":"string"},{"name":"title","section":"Presentation","label":"Typeahead Search - Title","type":"string"},{"name":"color","section":"Presentation","label":"Typeahead Search - Color","type":"string"},{"name":"glyph","section":"Presentation","label":"Typeahead Search - Glyph","type":"string"},{"name":"size","section":"Presentation","label":"Typeahead Search - Size","type":"string"},{"hint":"Number of typeahead search results returned (default 15)","name":"limit","section":"Behavior","label":"Typeahead Search - Limit","type":"integer"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[if (input &amp;&amp; input.action == 'impersonate') {
+	if (!input.self) session.onlineImpersonate(input.user_id);
+	data.user_id = input.user_id;
+	data.self = input.self;
+}
+if (input &amp;&amp; input.action == 'unimpersonate') {
+	if (!input.self) session.onlineUnimpersonate();
+}
+
+data.canImpersonate = gs.hasRole('impersonator');
+data.reports = getReports(gs.getUserID());
+
+function getReports(userID) {
+	var gr = new GlideRecord('sys_user');
+	gr.addActiveQuery();
+	gr.addQuery('manager', userID);
+	gr.orderBy(gr.getDisplayName());
+	gr.query();
+	var reports = [];
+	while (gr.next()) {
+		reports.push({
+			name: gr.getDisplayValue(),
+			sys_id: gr.getUniqueValue()
+		});
+	}
+	return reports;
+}
+
+data.showPrices = $sp.showCatalogPrices();
+data.q = $sp.getParameter('q');
+data.t = $sp.getParameter('t');
+data.searchSources = {};
+data.resultTemplates = {};
+
+options.refresh_page_on_search_submission = false;
+
+data.typeaheadSearchWidget = $sp.getWidget('typeahead-search', options);
+data.breadcrumbsWidget = $sp.getWidget('breadcrumbs');
+data.limit_group = options.max_group || 15;
+data.limit_all = options.max_all || 30;
+
+var portalID = $sp.getPortalRecord().getUniqueValue();
+var searchSources = $sp.getSearchSources(portalID);
+var i = 0;
+searchSources.forEach(function(searchSource) {
+	data.resultTemplates["sp-search-source-" + searchSource.id + ".html"] = $sp.translateTemplate(searchSource.template);
+	data.searchSources[searchSource.id] = {
+		name: searchSource.name,
+		id: searchSource.id,
+		order: i++
+	};
+});
+
+if (data.t) {
+	data.t_label = data.searchSources[data.t].name;
+} else {
+	data.t_label = gs.getMessage("All");
+}
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jacob&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-12 20:26:46&lt;/sys_created_on&gt;&lt;sys_id&gt;5e9de057db08b700d7f8f88eaf9619d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;46&lt;/sys_mod_count&gt;&lt;sys_name&gt;Faceted Search with Direct Reports&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_5e9de057db08b700d7f8f88eaf9619d7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jacob&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-13 03:31:39&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="row header"&gt;
+    &lt;div class="hidden-xs col-md-8"&gt;
+      &lt;sp-widget widget="data.breadcrumbsWidget"&gt;&lt;/sp-widget&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4"&gt;
+      &lt;sp-widget widget="data.typeaheadSearchWidget"&gt;&lt;/sp-widget&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-sm-3 hidden-xs"&gt;
+      &lt;sp-search-nav search-sources="data.searchSources" q="data.q" t="data.t"&gt;&lt;/sp-search-nav&gt;
+      &lt;sp-facet-lists collapsed="collpaseFacets" list-title="options.facet_list_title" search-sources="data.searchSources" t="data.t"&gt;&lt;/sp-facet-lists&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-9"&gt;
+
+      &lt;uib-tabset active="active" ng-if="data.canImpersonate &amp;&amp; data.reports.length"&gt;
+        &lt;uib-tab ng-repeat="tab in tabs" heading="{{tab.label}}"
+                 ng-click="viewAs(tab)"&gt;&lt;/uib-tab&gt;
+      &lt;/uib-tabset&gt;
+      
+      &lt;div class="panel panel-default"&gt;
+        &lt;div ng-if="isLoading || results.length&gt;0" class="panel-heading flex"&gt;
+          &lt;h2 class="h4 panel-title results-heading" tabindex="0" 
+              aria-label="{{data.t_label}} ${ results for '{{data.q}}' for {{activeTab.name}}}"&gt;
+            {{t_label}} ${ results for '{{data.q}}' for {{activeTab.name}}}
+          &lt;/h2&gt;
+          &lt;button class="btn btn-link hidden visible-xs pull-right" aria-label="${Filter}" ng-class="{'filter-icon': !isFilterApplied}" ng-click="openFilterMenu()"&gt;&lt;fa name="filter" /&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div ng-if="data.pills &amp;&amp; data.pills.length&gt;0" class="panel-heading flex break-word hidden-xs facet-pill-container"&gt;
+          &lt;div class="h4 panel-title pills"&gt;
+            &lt;span class="pills-label"&gt;${Filtering by}&lt;/span&gt;
+            &lt;div&gt;
+              &lt;sp-facet-pill facet="pill" ng-repeat="pill in data.pills"&gt;&lt;/sp-facet-pill&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;button class="btn btn-link" ng-click="clearAll()" aria-label="${Clear all active facets}"&gt;${Clear All}&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div ng-show="isLoading" class="loading-icon"&gt;
+          &lt;i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:24px"&gt;&lt;/i&gt;
+          &lt;div class=""&gt;${Hold on, your results are loading}...&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div ng-show="!isLoading" class="panel-default"&gt;
+          &lt;div ng-if="results.length==0" class="panel-default"&gt;
+            &lt;div class="panel-heading"&gt;
+              &lt;h2 class="h4 panel-title"&gt;${No results}&lt;/h2&gt;
+              &lt;button ng-if="showFilterIcon" class="btn btn-link hidden visible-xs pull-right" ng-class="{'filter-icon': !isFilterApplied}" ng-click="openFilterMenu()"&gt;&lt;fa name="filter" /&gt;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body wrapper break-word"&gt;
+              &lt;p&gt;${Your search - &lt;b&gt;{{data.q}}&lt;/b&gt; - did not match any documents}&lt;/p&gt;
+              &lt;div ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;
+                ${Did you mean:}
+                &lt;ul&gt;
+                  &lt;li ng-repeat="term in ::data.suggestions track by $index"&gt;
+                    &lt;a ng-click="search(term)"&gt;{{::term}}&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;p ng-if="options.show_did_you_mean &amp;&amp; data.suggestions.length &gt; 0"&gt;${Other suggestions}:&lt;/p&gt;
+              &lt;p ng-if="!options.show_did_you_mean || data.suggestions.length == 0"&gt;${Suggestions}:&lt;/p&gt;
+              &lt;ul&gt;
+                &lt;li&gt;${Make sure all words are spelled correctly}&lt;/li&gt;
+                &lt;li&gt;${Try different, more general, or fewer keywords}&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div role="list" ng-if="results.length&gt;0" ng-class="{'search-result-xs': smallScreenSize}"&gt;
+            &lt;div role="listitem" ng-repeat="item in results" class="panel-body b-b result-item"&gt;
+              &lt;div ng-include="item.templateID"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div role="listitem" class="panel-body b-b"&gt;
+              &lt;div class="pagination-section"&gt;
+                &lt;span ng-if="showPagination &amp;&amp; showLoadMore"&gt;&lt;button type="button" class="btn btn-link" aria-label="${Load more results}" ng-click="fetchMoreResults(query_start_location)"&gt;${Load more results}&lt;/button&gt;&lt;/span&gt;
+                &lt;span ng-if="showPagination &amp;&amp; !showLoadMore" aria-label="${End of results}"&gt;${End of results}&lt;/span&gt;
+                &lt;span ng-if="!showPagination" aria-label="{{endPagination}}"&gt;{{endPagination}}&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="hidden search-overlay panel panel-default list-view" ng-class="{'visible-xs': showFilterMenu}"&gt;
+  &lt;div class="panel-heading header"&gt;
+    &lt;span&gt;
+      &lt;button class="btn btn-link clear pull-left" ng-click="cancel()" aria-label="${Cancel}"&gt;${Cancel}&lt;/button&gt;
+    &lt;/span&gt;
+    &lt;span style="visibility: hidden;"&gt;
+      ${results}
+    &lt;/span&gt;
+    &lt;span&gt;
+      &lt;button class="btn btn-link pull-right"  ng-class="{'disabled': !showApply}" ng-click="apply()" aria-label="${Done}"&gt;${Done}&lt;/button&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;sp-search-nav show-toggle="true" list-view="true" search-sources="data.searchSources" q="data.q" t="data.t"&gt;&lt;/sp-search-nav&gt;
+  &lt;sp-facet-lists collapsed="true" collapsed-searchsource="collpaseFacets" toggle-searchsource="true" list-title="options.facet_list_title" search-sources="data.searchSources" t="data.t"&gt;&lt;/sp-facet-lists&gt;
+&lt;/div&gt;
+&lt;div class="hidden search-overlay search-filter-menu" ng-class="{'visible-xs': showFilterMenu &amp;&amp; isFilterMenuLoading}"&gt;
+  &lt;div class="loading-icon"&gt;
+    &lt;i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:24px"&gt;&lt;/i&gt;
+    &lt;div class=""&gt;${Hold on, your filters are loading}...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>437629612</payload_hash>
+<remote_update_set display_value="Search as Direct Reports">93afce53db40f700d7f8f88eaf96190f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>jacob</sys_created_by>
+<sys_created_on>2019-03-13 03:35:17</sys_created_on>
+<sys_id>d7afce53db40f700d7f8f88eaf96190f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169751b08420000001</sys_recorded_at>
+<sys_updated_by>jacob</sys_updated_by>
+<sys_updated_on>2019-03-13 03:35:17</sys_updated_on>
+<table/>
+<target_name>Faceted Search with Direct Reports</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>46dec653ca40f70058bb2b02fdfd731b</update_guid>
+<update_guid_history>46dec653ca40f70058bb2b02fdfd731b:437629612,c18eca135e40f700ce82f785aefbb992:998325161,ec7e0edf4700f7006b9881c80dee27ff:437629612,f7bd825fac00f700fca297b26fd61f57:974567996,6dfb8edb0a00f700203518f3f2a32fde:1224082922,5c9a8edb6d00f700e82f48ff4c1d7ed2:561852588,3a8946d75f00f700ac9db8db69ccc84b:443401304,ca288257bb00f70083eaed8efddbf766:2027727742,3c37ced3f700f7000f038fa1d58fda8d:812709287,f4950edf32ccb7002c72fc1ae2682468:-535246452,5845065fb9ccb7003aee70377ad3d2f9:41098801,99f4ce1f76ccb700f4da31678d3f5865:371608047,94748adb39ccb7007c5fe628817ec8af:-284029583,df24ce5b5fccb70049c7533eeba73696:1500596404,c1df715fc84cb7002fd6be04589f04f8:661920810,8d3f7d97264cb7007c869623f2c51882:-1748975134,41fe75578b4cb70067c32f9022caa4e7:1984016066,2ddeb157c14cb7009ae9291a27405f5e:-806745030,091e75d3844cb700fc09a9f249584c66:-1748975134,58dd35d3464cb7008e0c90dbb3de4ee3:1455822098,1e8db9934a4cb700950df4d9401ed6f1:-1800028570,c06d7593144cb700947d1a8b3d978a72:757579668,e74d3193924cb7001e25fe2877d5cdd2:2019747996,9fdc3d53d04cb7003a8c8acb6e88e31d:1559730088,55acb153344cb700fb4628cc78959c9a:757485116,fcfb3113a74cb70011b18e92a4ce9de0:1096260534,b78bb5df410cb700a280678ccfcca170:-1238636176,fad6b9db550cb700cf382d4a147dbf89:739755112,328525db20c8b700d7941f5ae3f31ef1:-453128768,0559b45fc948b700d15fb2cbba329d5e:-1002982593,8fd8381fcd48b7001def9925a8e00a3a:-1177585010,1b76f85ba448b700df31b61b6ff96588:1407972776,0b26705b4648b70046fa3528d0df870d:-1337112343,0bb57cd7c448b700b7642564a6cb8f95:-2070722910,2825f8975148b700100ffc0d814eddcb:-441401392,c4a4b8172d48b7001efb439860b080c9:-1036596834,098474931a48b700b6057bf302f2e080:1294659422,426474933348b70032cc382f9506bc23:1602875579,3f6370135b48b700ad9cbce1685629ee:-685555152,7f133cdf9408b7005af84242d8a37243:1236616697,6d823c9f8208b700f4aa1f5addaecde8:1755777938,2562f89fa908b700332b4dd2a81f3ddc:31748298,4b32705f9208b700933dddf30b53ffc0:751827027,9112b85f2808b700bd058e6ee169232e:-2041113451,9771741fb608b700bf35600b1c8bf4dc:1866535716,ce1134db4e08b7000f29de0ca2c6314e:449957148,569de057d508b7005f5a3a4d62a7f3d9:1123642623</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
