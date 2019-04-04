@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-04-04 23:24:42">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Icon Link Watson Translator</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>6e66e212dbe0ff0093b79cb8db961939</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-04-04 23:24:42</sys_created_on>
+<sys_id>ece27faadbe0374057a7f03d0f96193f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-04-04 23:24:42</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_e47cea16dbe0ff0093b79cb8db961986</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user>steven.gregory</basic_auth_user><content>{&#13;
+  "text": "${text}", &#13;
+  "model_id": "${model_id}"&#13;
+}</content><function_name>Translate</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Watson Language Translator [ Translate ]</qualified_name><rest_endpoint>https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01</rest_endpoint><rest_message display_value="Watson Language Translator">4a3ca616dbe0ff0093b79cb8db961949</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-04-03 23:38:53</sys_created_on><sys_id>e47cea16dbe0ff0093b79cb8db961986</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Translate</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_e47cea16dbe0ff0093b79cb8db961986</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-04-03 23:40:34</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>-617488766</payload_hash>
+<remote_update_set display_value="Icon Link Watson Translator">ece27faadbe0374057a7f03d0f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-04-04 23:24:42</sys_created_on>
+<sys_id>2ce27faadbe0374057a7f03d0f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169e5935fbd0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-04-04 23:24:42</sys_updated_on>
+<table/>
+<target_name>Translate</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>efec2256c3e0ff008895a7fcb88e7e2e</update_guid>
+<update_guid_history>efec2256c3e0ff008895a7fcb88e7e2e:-617488766,3e8cea1649e0ff0024f528205543c1a0:-759325163</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_5668aa52dbe0ff0093b79cb8db961986</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.LanguageService&lt;/api_name&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;LanguageService&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var LanguageService = Class.create();
+LanguageService.prototype = {
+  initialize: function() {},
+  getModel: function(model) {
+    var language;
+    var languages = {
+      Arabic: function() {
+        language = 'ar';
+      },
+      Chinese: function() {
+        language = 'zh';
+      },
+      Czech: function() {
+        language = 'cs';
+      },
+      Danish: function() {
+        language = 'da';
+      },
+      Dutch: function() {
+        language = 'nl';
+      },
+      French: function() {
+        language = 'fr';
+      },
+      German: function() {
+        language = 'de';
+      },
+      Hindi: function() {
+        language = 'hi';
+      },
+      Italian: function() {
+        language = 'it';
+      },
+      Japanese: function() {
+        language = 'ja';
+      },
+      Korean: function() {
+        language = 'ko';
+      },
+      Polish: function() {
+        language = 'pl';
+      },
+      Portuguese: function() {
+        language = 'pt';
+      },
+      Russian: function() {
+        language = 'ru';
+      },
+      Spanish: function() {
+        language = 'es';
+      },
+      Swedish: function() {
+        language = 'sv';
+      },
+      Turkish: function() {
+        language = 'tr';
+      }
+    };
+    (languages[model] || languages['default'])();
+    return language;
+  },
+  translate: function(text, target) {
+    var model = 'en' + '-' + this.getModel(target);
+    try {
+      var r = new sn_ws.RESTMessageV2('Watson Language Translator', 'Translate');
+      r.setStringParameterNoEscape('text', text);
+      r.setStringParameterNoEscape('model_id', model);
+      var response = r.execute();
+      var responseBody = response.getBody();
+      var result = JSON.parse(responseBody);
+      return result.translations[0].translation;
+    } catch (ex) {
+      console.log(ex);
+    }
+  },
+
+  type: 'LanguageService'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-04-03 23:21:32&lt;/sys_created_on&gt;&lt;sys_id&gt;5668aa52dbe0ff0093b79cb8db961986&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;LanguageService&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_5668aa52dbe0ff0093b79cb8db961986&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-04-04 14:56:47&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1466545492</payload_hash>
+<remote_update_set display_value="Icon Link Watson Translator">ece27faadbe0374057a7f03d0f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-04-04 23:24:42</sys_created_on>
+<sys_id>64e27faadbe0374057a7f03d0f961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169e8da302b0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-04-04 23:24:42</sys_updated_on>
+<table/>
+<target_name>LanguageService</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>64ae752667e8ff0079ad3030e0e802e4</update_guid>
+<update_guid_history>64ae752667e8ff0079ad3030e0e802e4:1466545492,0dfb39a2cce8ff0093798c851936722c:436060290,892af562b8e8ff00654bfe39b92d2a7d:-1070336158,3b107ad65ae0ff00a4177f8374a1a8eb:351743184,edafe2d651e0ff003c56d6f6653ef7d2:-804216570,d04ee2963ce0ff0001c039784cc8034a:-2044953571,ac982e52f0e0ff00f68e4168124f7817:1162961873</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_224c2a16dbe0ff0093b79cb8db961915</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Watson Language Translator [ Default GET ]</qualified_name><rest_endpoint>steven.gregory</rest_endpoint><rest_message display_value="Watson Language Translator">4a3ca616dbe0ff0093b79cb8db961949</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-04-03 23:37:46</sys_created_on><sys_id>224c2a16dbe0ff0093b79cb8db961915</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_224c2a16dbe0ff0093b79cb8db961915</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-04-03 23:37:46</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>-1271600893</payload_hash>
+<remote_update_set display_value="Icon Link Watson Translator">ece27faadbe0374057a7f03d0f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-04-04 23:24:42</sys_created_on>
+<sys_id>68e27faadbe0374057a7f03d0f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169e590d0490000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-04-04 23:24:42</sys_updated_on>
+<table/>
+<target_name>Default GET</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>624c2a16cbe0ff0016d260f67de97816</update_guid>
+<update_guid_history>624c2a16cbe0ff0016d260f67de97816:-1271600893</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_fdbcae16dbe0ff0093b79cb8db9619a7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Content-Type</name><rest_message_function display_value="Translate">e47cea16dbe0ff0093b79cb8db961986</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-04-03 23:40:22</sys_created_on><sys_id>fdbcae16dbe0ff0093b79cb8db9619a7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content-Type</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_fdbcae16dbe0ff0093b79cb8db9619a7</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-04-03 23:40:22</sys_updated_on><value>application/json</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>-1815914203</payload_hash>
+<remote_update_set display_value="Icon Link Watson Translator">ece27faadbe0374057a7f03d0f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-04-04 23:24:42</sys_created_on>
+<sys_id>a0e27faadbe0374057a7f03d0f961941</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169e59331ca0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-04-04 23:24:42</sys_updated_on>
+<table/>
+<target_name>Content-Type</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>28ecee16d7e0ff007d329d451066bdf3</update_guid>
+<update_guid_history>28ecee16d7e0ff007d329d451066bdf3:-1815914203</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_4a3ca616dbe0ff0093b79cb8db961949</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description/><name>Watson Language Translator</name><oauth2_profile/><protocol_name/><rest_endpoint>https://gateway.watsonplatform.net/language-translator/api/v3/translate?version=2018-05-01</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-04-03 23:37:46</sys_created_on><sys_id>4a3ca616dbe0ff0093b79cb8db961949</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Watson Language Translator</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_4a3ca616dbe0ff0093b79cb8db961949</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-04-03 23:38:22</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+<payload_hash>1633507133</payload_hash>
+<remote_update_set display_value="Icon Link Watson Translator">ece27faadbe0374057a7f03d0f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-04-04 23:24:42</sys_created_on>
+<sys_id>a4e27faadbe0374057a7f03d0f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169e5915dac0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-04-04 23:24:42</sys_updated_on>
+<table/>
+<target_name>Watson Language Translator</target_name>
+<type>REST Message</type>
+<update_domain>global</update_domain>
+<update_guid>136c6a1646e0ff00ed2154b9acbc754a</update_guid>
+<update_guid_history>136c6a1646e0ff00ed2154b9acbc754a:1633507133,624c2a1678e0ff006da271e8b14fe617:838899573</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_4cc6a612dbe0ff0093b79cb8db96191c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ImageLinkTranslatorController() {
+  var c = this;
+
+  c.$onInit = function() {
+    c.title = c.data.title;
+    c.short_description = c.data.short_description;
+  };
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.iconlink a label,h2 {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+/* TOP ICON ---------- */
+
+a.top_icon {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+a.top_icon .fa {
+  display: block;
+  text-align: center;
+}
+
+/* CIRCLE ICON ---------- */
+
+a.circle_icon {
+  display: block;
+  padding: 20px 0px 20px 70px;
+  position: relative;
+}
+
+a.circle_icon .fa {
+  position:absolute;
+  left: 0px;
+  top: 10px;
+}
+
+/* COLOR BOX ---------- */
+
+a.color_box {
+  display: block;
+  position: relative;
+  padding: 20px 20px 20px 82px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+a.color_box .fa {
+  position:absolute;
+  left: 20px;
+  top: 20px;
+  width:42px;
+  text-align: center;
+}
+
+.icon-link-background-primary {
+  background-color: $brand-primary;
+}
+
+.icon-link-background-info {
+  background-color: $brand-info;
+}
+
+.icon-link-background-success {
+  background-color: $brand-success;
+}
+
+.icon-link-background-warning {
+  background-color: $brand-warning;
+}
+
+.icon-link-background-danger {
+  background-color: $brand-danger;
+}
+
+.icon-link-background-default {
+  background-color: $brand-primary;
+}
+
+.text-primary {
+  color: $brand-primary;
+
+  &amp;amp;:hover {
+    color: darken($brand-primary, 20%);
+  }
+}
+
+.text-info {
+  color: $brand-info;
+
+  &amp;amp;:hover {
+    color: darken($brand-info, 20%);
+  }
+}
+
+.text-success {
+  color: $brand-success;
+
+  &amp;amp;:hover {
+    color: darken($brand-success, 20%);
+  }
+}
+
+.text-warning {
+  color: $brand-warning;
+
+  &amp;amp;:hover {
+    color: darken($brand-warning, 20%);
+  }
+}
+
+.text-danger {
+  color: $brand-danger;
+
+  &amp;amp;:hover {
+    color: darken($brand-danger, 20%);
+  }
+}
+
+.text-default {
+  color: $brand-primary;
+
+  &amp;amp;:hover {
+    color: darken($brand-primary, 20%);
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance_link&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;type,url,sc_category,sc_cat_item,kb_topic,kb_article,kb_category,sp_page,title,short_description,color,class_name,glyph&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;icon-link-watson-translator&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Icon Link Watson Translator&lt;/name&gt;&lt;option_schema&gt;[{"name":"link_template","section":"Presentation","label":"Template","type":"choice","choices":[{"label":"Top Icon","value":"Top Icon"},{"label":"Circle Icon","value":"Circle Icon"},{"label":"Color Box","value":"Color Box"}]},{"name":"language","section":"other","default_value":"English","label":"Translate to","type":"choice","choices":[{"label":"Arabic","value":"Arabic"},{"label":"Chinese","value":"Chinese"},{"label":"Czech","value":"Czech"},{"label":"Danish","value":"Danish"},{"label":"Dutch","value":"Dutch"},{"label":"French","value":"French"},{"label":"German","value":"German"},{"label":"Hindi","value":"Hindi"},{"label":"Italian","value":"Italian"},{"label":"Japanese","value":"Japanese"},{"label":"Korean","value":"Korean"},{"label":"Polish","value":"Polish"},{"label":"Portuguese","value":"Portuguese"},{"label":"Russian","value":"Russian"},{"label":"Spanish","value":"Spanish"},{"label":"Swedish","value":"Swedish"},{"label":"Turkish","value":"Turkish"}]}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var watson = new LanguageService();
+	var source = 'English';
+  data.title =
+    options.language === source
+      ? options.title
+      : watson.translate(options.title, options.language);
+  data.short_description =
+    options.language === source
+      ? options.short_description
+      : watson.translate(options.short_description, options.language);
+
+  var gr = $sp.getInstanceRecord();
+  data.href = $sp.getMenuHREF(gr);
+  data.target = options.target || '';
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;steven.gregory&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-04-03 23:13:35&lt;/sys_created_on&gt;&lt;sys_id&gt;4cc6a612dbe0ff0093b79cb8db96191c&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Icon Link Watson Translator&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4cc6a612dbe0ff0093b79cb8db96191c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-04-04 23:24:18&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="iconlink"&gt;
+  &lt;!--// Top Icon --&gt;
+  &lt;a ng-if="::(options.link_template == 'Top Icon' || !options.link_template)" ng-href="{{::data.href}}" class="top_icon {{::options.class_name}}" target="{{::data.target}}"&gt;
+    &lt;div class="m-b fa fa-{{::options.glyph}} fa-4x {{::options.class_name}} text-{{::options.color}}"&gt;&lt;/div&gt;
+    &lt;h2&gt;{{::c.title}}&lt;/h2&gt;
+    &lt;span class="text-muted"&gt;{{::c.short_description}}&lt;/span&gt;
+  &lt;/a&gt;
+
+  &lt;!--// Circle Icon --&gt;
+  &lt;a ng-if="::(options.link_template == 'Circle Icon')" ng-href="{{::data.href}}" class="circle_icon {{::options.class_name}} text-{{::options.color}}" target="{{::data.target}}"&gt;
+    &lt;span class="fa fa-stack fa-2x"&gt;
+      &lt;i class="fa fa-circle fa-stack-2x"&gt;&lt;/i&gt;
+      &lt;i class="fa fa-{{::options.glyph}} fa-stack-1x fa-inverse"&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;h2&gt;{{::c.title}}&lt;/h2&gt;
+    &lt;span class="text-muted"&gt;{{::c.short_description}}&lt;/span&gt;
+  &lt;/a&gt;
+
+  &lt;!--// Color Box --&gt;
+  &lt;a ng-if="::(options.link_template == 'Color Box')" ng-href="{{::data.href}}" class="color_box {{::options.class_name}} icon-link-background-{{::options.color}} text-white" target="{{::data.target}}"&gt;
+    &lt;div class="fa fa-{{::options.glyph}} fa-3x {{::options.class_name}}"&gt;&lt;/div&gt;
+    &lt;h2&gt;{{::c.title}}&lt;/h2&gt;
+    &lt;span&gt;{{::c.short_description}}&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>584917433</payload_hash>
+<remote_update_set display_value="Icon Link Watson Translator">ece27faadbe0374057a7f03d0f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-04-04 23:24:42</sys_created_on>
+<sys_id>e0e27faadbe0374057a7f03d0f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169eaaad6930000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-04-04 23:24:42</sys_updated_on>
+<table/>
+<target_name>Icon Link Watson Translator</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>bac2fbaaa5e03740c63e01fd1f489bbe</update_guid>
+<update_guid_history>bac2fbaaa5e03740c63e01fd1f489bbe:584917433,fe60266a052cff00043af6051a5956e4:197924849,83a10aa6bde8ff0037a22dcb75145faf:2014492721,175186a6afe8ff000271cb1dcb60ff05:-658166214,4c704a6639e8ff00d0ae73e27fa58688:863510457,136efde2d0e8ff000125d31fe634ea3e:-2085455632,05dbf962cfe8ff001b71781b1edd8f59:-1682964407,c6ca7d6234e8ff007b09f69bee1df7d9:1234677854,037ab962dde8ff00f453c07ff827c7ef:-2051766418,9199bd22ade8ff00b6f8ed7c38dc9444:-1047129568,3329b92228e8ff00923931caf1a15200:-1085397435,ed0036d666e0ff000fa839df1e8073ee:590293369,5d9a22d218e0ff007d15e65045756a52:610716156,f30a6292b0e0ff00e8550738e651bb76:1732554341,6ba92e526ee0ff00c2bc11f7fa4dc21e:148234501,02482a5213e0ff00fd12e9ee2a645639:-1534209830,8cc6a6129ae0ff00fad2c97c1cfeb71d:1496463538</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_ccbcae16dbe0ff0093b79cb8db9619b9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Accept</name><rest_message_function display_value="Translate">e47cea16dbe0ff0093b79cb8db961986</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>steven.gregory</sys_created_by><sys_created_on>2019-04-03 23:40:22</sys_created_on><sys_id>ccbcae16dbe0ff0093b79cb8db9619b9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Accept</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_ccbcae16dbe0ff0093b79cb8db9619b9</sys_update_name><sys_updated_by>steven.gregory</sys_updated_by><sys_updated_on>2019-04-03 23:40:22</sys_updated_on><value>application/json</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>1779922481</payload_hash>
+<remote_update_set display_value="Icon Link Watson Translator">ece27faadbe0374057a7f03d0f96193f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-04-04 23:24:42</sys_created_on>
+<sys_id>ece27faadbe0374057a7f03d0f961940</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169e593319f0000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-04-04 23:24:42</sys_updated_on>
+<table/>
+<target_name>Accept</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>ececee169ce0ff0048b882a7ee4463f1</update_guid>
+<update_guid_history>ececee169ce0ff0048b882a7ee4463f1:1779922481</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
