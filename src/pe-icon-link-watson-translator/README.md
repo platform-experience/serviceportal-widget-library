@@ -2,11 +2,17 @@
 
 ## Description
 
-> None
+An extension to the Icon Link out-of-box widget that uses IBM Watson to perform language translation.
 
-## Screenshot
+## Screenshots
 
-![Icon Link Watson Translator](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-icon-link-watson-translator/images/pe-icon-link-watson-translator.png)
+### Source Language: English
+
+![Source Language: English](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-icon-link-watson-translator/images/source-language-english.png)
+
+### Target Language: Korean
+
+![Target Language: Korean](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-icon-link-watson-translator/images/target-language-korean.png)
 
 ## Additional Information/Notes
 
@@ -18,11 +24,11 @@ Download and install update set **[pe-icon-link-watson-translator.u-update-set.x
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+- SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
-> None
+See [Icon Link](https://docs.servicenow.com/bundle/madrid-servicenow-platform/page/build/service-portal/concept/icon-link-widget.html) widget for more information.
 
 ## Platform Dependencies
 
