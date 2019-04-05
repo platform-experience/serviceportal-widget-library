@@ -3,7 +3,7 @@
   var source = 'English';
   data.title =
     options.language === source ? options.title : watson.translate(options.title, options.language);
-  data.short_description =
+  data.shortDescription =
     options.language === source
       ? options.short_description
       : watson.translate(options.short_description, options.language);
