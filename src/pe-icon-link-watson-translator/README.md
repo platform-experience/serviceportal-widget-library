@@ -2,7 +2,7 @@
 
 ## Description
 
-An extension to the Icon Link out-of-box widget that uses IBM Watson to perform language translation.
+An extension of the [Icon Link](https://docs.servicenow.com/bundle/madrid-servicenow-platform/page/build/service-portal/concept/icon-link-widget.html) out-of-box widget that uses [IBM Watson](https://www.ibm.com/watson) to perform language translation.
 
 ## Screenshots
 
