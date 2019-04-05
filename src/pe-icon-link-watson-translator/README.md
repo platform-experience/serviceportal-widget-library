@@ -16,7 +16,7 @@ An extension of the [Icon Link](https://docs.servicenow.com/bundle/madrid-servic
 
 ## Additional Information/Notes
 
-This widget utilizes the IBM Watson [Language Translator](https://www.ibm.com/watson/services/language-translator/) service that uses deep learning to programmatically translate text from one language to another. This Watson service supports the ability to identify up to 62 languages. Simply choose the target language in the widget options to perform translations.
+This widget utilizes the IBM Watson [Language Translator](https://www.ibm.com/watson/services/language-translator/) service that uses deep learning to programmatically translate text from one language to another. Simply choose the target language in the widget options to perform translations.
 
 ## Installation
 
@@ -34,7 +34,7 @@ Sign up for an [IBM Cloud account](https://dataplatform.cloud.ibm.com/registrati
 
 ### Widget Option Schema
 
-See the [Icon Link](https://docs.servicenow.com/bundle/madrid-servicenow-platform/page/build/service-portal/concept/icon-link-widget.html) widget for more information on instance options. This extension provides a new field for language translation: `Translate to`.
+See the [Icon Link](https://docs.servicenow.com/bundle/madrid-servicenow-platform/page/build/service-portal/concept/icon-link-widget.html) widget for more information on instance options. This extension provides a new option for language translation: `Translate to`.
 
 ## Platform Dependencies
 
