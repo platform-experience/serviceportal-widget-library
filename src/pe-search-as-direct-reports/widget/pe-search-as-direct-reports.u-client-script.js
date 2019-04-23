@@ -1,5 +1,6 @@
-function ($scope, $sce, $location, spUtil, $element, $timeout, $rootScope, spFacetsClientService, spFacetManager, $window) {
+function ($scope, $sce, $location, spUtil, $element, $timeout, $rootScope, spFacetsClientService, spFacetManager, $window, spAriaUtil) {
 	var url = null;
+
 	spUtil.setSearchPage($scope.data.t);
 	$scope.isLoading = true;
 	$scope.isFilterMenuLoading = true;
@@ -9,22 +10,26 @@ function ($scope, $sce, $location, spUtil, $element, $timeout, $rootScope, spFac
 	$scope.showApply = false;
 	$scope.collpaseFacets = !$scope.data.t || $scope.data.t == "" ;
 	
-	$scope.currentViewAs = $scope.user.sys_id;
-	$scope.activeTab = {
-		label: 'My Results',
+	$scope.activeViewAs = {
+		label: $scope.user.name + ' (Me)',
 		name: $scope.user.name,
 		user_id: $scope.user.sys_id
 	};
 	
-	$scope.tabs = [$scope.activeTab];
-	$scope.data.reports.forEach(function(report){
-		$scope.tabs.push({
-			label: report.name + ' Results',
-			name: report.name,
-			user_id: report.sys_id
+	$scope.viewAsChoices = [$scope.activeViewAs];
+	$scope.data.viewAsResults.forEach(function(va){
+		$scope.viewAsChoices.push({
+			label: va.name,
+			name: va.name,
+			user_id: va.sys_id
 		})
 	});
 	
+	$scope.viewAs = function(viewAsSelected) {
+		$scope.activeViewAs = viewAsSelected;
+		fetch(0);
+	}
+
 	$scope.getBGImage = function(item) {
 		return {"background-image": "url('" + item.picture + "')"};
 	}
@@ -40,12 +45,6 @@ function ($scope, $sce, $location, spUtil, $element, $timeout, $rootScope, spFac
 
 	$scope.fetchMoreResults = function(query_start_location) {
 		fetch(query_start_location);
-	}
-	
-	$scope.viewAs = function(tab) {
-		$scope.currentViewAs = tab.user_id;
-		$scope.activeTab = tab;
-		fetch(0);
 	}
 
 	$scope.openFilterMenu = function() {
@@ -150,39 +149,52 @@ function ($scope, $sce, $location, spUtil, $element, $timeout, $rootScope, spFac
 			params.additionalQuery = additionalQuery;
 		}
 		
-		$scope.server.get({
-			'action': 'impersonate',
-			'user_id': $scope.currentViewAs,
-			'self': $scope.currentViewAs == $scope.user.sys_id
-		}).then(function(r){
+		var asSelf = $scope.activeViewAs.user_id == $scope.user.sys_id;
 		
-			spFacetsClientService.search(params).then(function(response) {
-				var searchResults = response.data.result.results.map(function(result) {
-					result.templateID = "sp-search-source-" + result.__search_source_id__ + ".html";
-					return result;
-				});
-				if(query_start_location > 0) {
-					$scope.results = $scope.results.concat(searchResults);
-
-				} else {
-					$scope.results = searchResults;
-				}
-				$scope.isLoading = false;
-
-				if (response.data.result.pagination_supported) {
-					generatePagination(searchResults, query_start_location);
-				} else {
-					$scope.showPagination = false;
-				}
-
-				if (response.data.result.suggestions)
-					$scope.data.suggestions = response.data.result.suggestions;
-				
-				$scope.server.get({'action': 'unimpersonate', 'self': r.data.self });
+		if (asSelf) {
+			fetchCall(params, 'self');
+		} else {
+			$scope.server.get({
+				'action': 'impersonate',
+				'user_id': $scope.activeViewAs.user_id
+			}).then(function(r){
+				fetchCall(params, r.data.user_id);
 			});
-			
-		});
+		}
+	}
+	
+	function fetchCall(params, viewAs) {
+		spFacetsClientService.search(params).then(function(response) {
+			var searchResults = response.data.result.results.map(function(result) {
+				result.templateID = "sp-search-source-" + result.__search_source_id__ + ".html";
+				if (viewAs !== 'self') {
+					result.viewAs = viewAs;
+					if (result.url)
+						result.url += '&view_as=' + result.viewAs;
+				}
+				return result;
+			});
+			if(params.query_start_location > 0) {
+				$scope.results = $scope.results.concat(searchResults);
 
+			} else {
+				$scope.results = searchResults;
+			}
+			$scope.isLoading = false;
+			
+			if (viewAs !== 'self')
+				$scope.server.get({action: 'unimpersonate'});
+
+			if (response.data.result.pagination_supported) {
+				generatePagination(searchResults, params.query_start_location);
+			} else {
+				$scope.showPagination = false;
+			}
+
+			if (response.data.result.suggestions)
+				$scope.data.suggestions = response.data.result.suggestions;
+		});
+		
 		var paramsCopy = JSON.parse(JSON.stringify(params))
 		paramsCopy.include_facets = true;
 		paramsCopy.include_suggestions = false;
@@ -211,7 +223,7 @@ function ($scope, $sce, $location, spUtil, $element, $timeout, $rootScope, spFac
 				element = angular.element(element);
 				element.focus();
 			}
-		}, 500);
+		}, 2500);
 	}
 
 	function setFocusNextItem(index) {

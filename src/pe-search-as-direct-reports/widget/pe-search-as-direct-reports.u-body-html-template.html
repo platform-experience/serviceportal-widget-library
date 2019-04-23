@@ -1,108 +1,112 @@
 <div>
-  <div class="row header">
-    <div class="hidden-xs col-md-8">
-      <sp-widget widget="data.breadcrumbsWidget"></sp-widget>
+  <div>
+      <div class="row header">
+      <div class="hidden-xs col-md-8">
+        <sp-widget widget="data.breadcrumbsWidget"></sp-widget>
+      </div>
+      <div class="col-md-4" ng-if="data.showTypeaheadSearch">
+        <sp-widget widget="data.typeaheadSearchWidget"></sp-widget>
+      </div>
     </div>
-    <div class="col-md-4">
-      <sp-widget widget="data.typeaheadSearchWidget"></sp-widget>
+    <div class="row">
+      <div class="col-sm-3 hidden-xs">
+        <sp-search-nav search-sources="data.searchSources" q="data.q" t="data.t"></sp-search-nav>
+        <sp-facet-lists collapsed="collpaseFacets" list-title="options.facet_list_title" search-sources="data.searchSources" t="data.t"></sp-facet-lists>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3 hidden-xs">
-      <sp-search-nav search-sources="data.searchSources" q="data.q" t="data.t"></sp-search-nav>
-      <sp-facet-lists collapsed="collpaseFacets" list-title="options.facet_list_title" search-sources="data.searchSources" t="data.t"></sp-facet-lists>
-    </div>
-    <div class="col-sm-9">
-
-      <uib-tabset active="active" ng-if="data.canImpersonate && data.reports.length">
-        <uib-tab ng-repeat="tab in tabs" heading="{{tab.label}}"
-                 ng-click="viewAs(tab)"></uib-tab>
-      </uib-tabset>
-      
-      <div class="panel panel-default">
-        <div ng-if="isLoading || results.length>0" class="panel-heading flex">
-          <h2 class="h4 panel-title results-heading" tabindex="0" 
-              aria-label="{{data.t_label}} ${ results for '{{data.q}}' for {{activeTab.name}}}">
-            {{t_label}} ${ results for '{{data.q}}' for {{activeTab.name}}}
-          </h2>
-          <button class="btn btn-link hidden visible-xs pull-right" aria-label="${Filter}" ng-class="{'filter-icon': !isFilterApplied}" ng-click="openFilterMenu()"><fa name="filter" /></button>
-        </div>
-        <div ng-if="data.pills && data.pills.length>0" class="panel-heading flex break-word hidden-xs facet-pill-container">
-          <div class="h4 panel-title pills">
-            <span class="pills-label">${Filtering by}</span>
-            <div>
-              <sp-facet-pill facet="pill" ng-repeat="pill in data.pills"></sp-facet-pill>
-            </div>
+      <div class="col-sm-9">
+        
+        <uib-tabset active="active" ng-if="data.canImpersonate && viewAsChoices.length > 1">
+          <uib-tab ng-repeat="tab in viewAsChoices" heading="{{tab.label}}"
+                   ng-click="viewAs(tab)"></uib-tab>
+        </uib-tabset>
+        
+        <div class="panel panel-default">
+          <div ng-if="isLoading || results.length>0" class="panel-heading flex">
+            <h2 class="h4 panel-title results-heading" tabindex="0">
+              <sn-avatar ng-if="data.canImpersonate && viewAsChoices.length > 1" 
+                         primary="activeViewAs.user_id" class="avatar-small m-r-sm"></sn-avatar>
+              {{t_label}} ${ results for '{{data.q}}'}
+            </h2>
+            <button class="btn btn-link hidden visible-xs pull-right" aria-label="${Filter}" ng-class="{'filter-icon': !isFilterApplied}" ng-click="openFilterMenu()"><fa name="filter" /></button>
           </div>
-          <div>
-            <button class="btn btn-link" ng-click="clearAll()" aria-label="${Clear all active facets}">${Clear All}</button>
-          </div>
-        </div>
-
-        <div ng-show="isLoading" class="loading-icon">
-          <i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:24px"></i>
-          <div class="">${Hold on, your results are loading}...</div>
-        </div>
-        <div ng-show="!isLoading" class="panel-default">
-          <div ng-if="results.length==0" class="panel-default">
-            <div class="panel-heading">
-              <h2 class="h4 panel-title">${No results}</h2>
-              <button ng-if="showFilterIcon" class="btn btn-link hidden visible-xs pull-right" ng-class="{'filter-icon': !isFilterApplied}" ng-click="openFilterMenu()"><fa name="filter" /></button>
+            <div ng-if="data.pills && data.pills.length>0" class="panel-heading flex break-word hidden-xs facet-pill-container">
+               <div class="h4 panel-title pills">
+                <span class="pills-label">${Filtering by}</span>
+                <div>
+                  <sp-facet-pill facet="pill" ng-repeat="pill in data.pills"></sp-facet-pill>
+                </div>
+              </div>
+              <div>
+                  <button class="btn btn-link" ng-click="clearAll()" aria-label="${Clear all active facets}">${Clear All}</button>
+              </div>
             </div>
-            <div class="panel-body wrapper break-word">
-              <p>${Your search - <b>{{data.q}}</b> - did not match any documents}</p>
-              <div ng-if="options.show_did_you_mean && data.suggestions.length > 0">
-                ${Did you mean:}
+
+          <div ng-show="isLoading" class="loading-icon">
+            <i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:24px"></i>
+            <div class="">${Hold on, your results are loading}...</div>
+          </div>
+          <div ng-show="!isLoading" class="panel-default">
+            <div ng-if="results.length==0" class="panel-default">
+              <div class="panel-heading">
+                <h2 class="h4 panel-title">${No results}</h2>
+                <button ng-if="showFilterIcon" class="btn btn-link hidden visible-xs pull-right" ng-class="{'filter-icon': !isFilterApplied}" ng-click="openFilterMenu()"><fa name="filter" /></button>
+              </div>
+              <div class="panel-body wrapper break-word">
+                <p>${Your search - <b>{{data.q}}</b> - did not match any documents}</p>
+                <div ng-if="options.show_did_you_mean && data.suggestions.length > 0">
+                  ${Did you mean}:
+                  <ul>
+                    <li ng-repeat="term in data.suggestions track by $index">
+                      <a href="javascript:void(0)" ng-click="search(term)">{{term}}</a>
+                    </li>
+                  </ul>
+                </div>
+                <p ng-if="options.show_did_you_mean && data.suggestions.length > 0">${Other suggestions}:</p>
+                <p ng-if="!options.show_did_you_mean || data.suggestions.length == 0">${Suggestions}:</p>
                 <ul>
-                  <li ng-repeat="term in ::data.suggestions track by $index">
-                    <a ng-click="search(term)">{{::term}}</a>
-                  </li>
+                  <li>${Make sure all words are spelled correctly}</li>
+                  <li>${Try different, more general, or fewer keywords}</li>
                 </ul>
               </div>
-              <p ng-if="options.show_did_you_mean && data.suggestions.length > 0">${Other suggestions}:</p>
-              <p ng-if="!options.show_did_you_mean || data.suggestions.length == 0">${Suggestions}:</p>
-              <ul>
-                <li>${Make sure all words are spelled correctly}</li>
-                <li>${Try different, more general, or fewer keywords}</li>
-              </ul>
             </div>
-          </div>
-          <div role="list" ng-if="results.length>0" ng-class="{'search-result-xs': smallScreenSize}">
-            <div role="listitem" ng-repeat="item in results" class="panel-body b-b result-item">
-              <div ng-include="item.templateID"></div>
-            </div>
-            <div role="listitem" class="panel-body b-b">
-              <div class="pagination-section">
-                <span ng-if="showPagination && showLoadMore"><button type="button" class="btn btn-link" aria-label="${Load more results}" ng-click="fetchMoreResults(query_start_location)">${Load more results}</button></span>
-                <span ng-if="showPagination && !showLoadMore" aria-label="${End of results}">${End of results}</span>
-                <span ng-if="!showPagination" aria-label="{{endPagination}}">{{endPagination}}</span>
+            <div ng-if="results.length>0" ng-class="{'search-result-xs': smallScreenSize}">
+              <div role="list">
+              <div role="listitem" ng-repeat="item in results" class="panel-body b-b result-item">
+                <div ng-include="item.templateID"></div>
+              </div>
+              </div>
+             <div role="contentinfo" class="panel-body b-b">
+                <div class="pagination-section">
+                  <span ng-if="showPagination && showLoadMore"><button type="button" class="btn btn-link" aria-label="${Load more results}" ng-click="fetchMoreResults(query_start_location)">${Load more results}</button></span>
+                  <span ng-if="showPagination && !showLoadMore" aria-label="${End of results}">${End of results}</span>
+                  <span ng-if="!showPagination" aria-label="{{endPagination}}">{{endPagination}}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
   </div>
-</div>
-<div class="hidden search-overlay panel panel-default list-view" ng-class="{'visible-xs': showFilterMenu}">
-  <div class="panel-heading header">
-    <span>
-      <button class="btn btn-link clear pull-left" ng-click="cancel()" aria-label="${Cancel}">${Cancel}</button>
-    </span>
-    <span style="visibility: hidden;">
-      ${results}
-    </span>
-    <span>
-      <button class="btn btn-link pull-right"  ng-class="{'disabled': !showApply}" ng-click="apply()" aria-label="${Done}">${Done}</button>
-    </span>
+  <div class="hidden search-overlay panel panel-default list-view" ng-class="{'visible-xs': showFilterMenu}">
+    <div class="panel-heading header">
+      <span>
+        <button class="btn btn-link clear pull-left" ng-click="cancel()" aria-label="${Cancel}">${Cancel}</button>
+      </span>
+      <span style="visibility: hidden;">
+        ${results}
+      </span>
+      <span>
+        <button class="btn btn-link pull-right"  ng-class="{'disabled': !showApply}" ng-click="apply()" aria-label="${Done}">${Done}</button>
+      </span>
+    </div>
+    <sp-search-nav show-toggle="true" list-view="true" search-sources="data.searchSources" q="data.q" t="data.t"></sp-search-nav>
+    <sp-facet-lists collapsed="true" collapsed-searchsource="collpaseFacets" toggle-searchsource="true" list-title="options.facet_list_title" search-sources="data.searchSources" t="data.t"></sp-facet-lists>
   </div>
-  <sp-search-nav show-toggle="true" list-view="true" search-sources="data.searchSources" q="data.q" t="data.t"></sp-search-nav>
-  <sp-facet-lists collapsed="true" collapsed-searchsource="collpaseFacets" toggle-searchsource="true" list-title="options.facet_list_title" search-sources="data.searchSources" t="data.t"></sp-facet-lists>
-</div>
-<div class="hidden search-overlay search-filter-menu" ng-class="{'visible-xs': showFilterMenu && isFilterMenuLoading}">
-  <div class="loading-icon">
-    <i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:24px"></i>
-    <div class="">${Hold on, your filters are loading}...</div>
+  <div class="hidden search-overlay search-filter-menu" ng-class="{'visible-xs': showFilterMenu && isFilterMenuLoading}">
+    <div class="loading-icon">
+      <i class="fa fa-spinner fa-spin fa-3x fa-fw" style="font-size:24px"></i>
+      <div class="">${Hold on, your filters are loading}...</div>
+    </div>
   </div>
 </div>

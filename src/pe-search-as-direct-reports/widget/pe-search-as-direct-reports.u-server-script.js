@@ -1,29 +1,28 @@
 if (input && input.action == 'impersonate') {
-	if (!input.self) session.onlineImpersonate(input.user_id);
+	session.onlineImpersonate(input.user_id);
 	data.user_id = input.user_id;
-	data.self = input.self;
 }
 if (input && input.action == 'unimpersonate') {
-	if (!input.self) session.onlineUnimpersonate();
+	session.onlineUnimpersonate();
 }
 
 data.canImpersonate = gs.hasRole('impersonator');
-data.reports = getReports(gs.getUserID());
+data.viewAsResults = getViewAsChoices(gs.getUserID());
 
-function getReports(userID) {
+function getViewAsChoices(userID) {
 	var gr = new GlideRecord('sys_user');
 	gr.addActiveQuery();
 	gr.addQuery('manager', userID);
 	gr.orderBy(gr.getDisplayName());
 	gr.query();
-	var reports = [];
+	var choices = [];
 	while (gr.next()) {
-		reports.push({
+		choices.push({
 			name: gr.getDisplayValue(),
 			sys_id: gr.getUniqueValue()
 		});
 	}
-	return reports;
+	return choices;
 }
 
 data.showPrices = $sp.showCatalogPrices();
@@ -38,6 +37,7 @@ data.typeaheadSearchWidget = $sp.getWidget('typeahead-search', options);
 data.breadcrumbsWidget = $sp.getWidget('breadcrumbs');
 data.limit_group = options.max_group || 15;
 data.limit_all = options.max_all || 30;
+data.showTypeaheadSearch = options.show_typeahead_search == "true";
 
 var portalID = $sp.getPortalRecord().getUniqueValue();
 var searchSources = $sp.getSearchSources(portalID);

@@ -1,22 +1,26 @@
 .header {
-	padding: 10px;
+  padding: 10px;
+}
+
+button.toggle-icon {
+  background-color: transparent;
 }
 
 a.question-tag {
-    color: #39739d;
-    background-color: #e1ecf4;
-    border: 1px solid #e1ecf4;
-    display: inline-block;
-    margin: 4px 4px 4px 0;
-    border-radius: 0;
-    text-align: center;
-    line-height: 1;
-    padding: .4em .5em;
+  color: #39739d;
+  background-color: #e1ecf4;
+  border: 1px solid #e1ecf4;
+  display: inline-block;
+  margin: 4px 4px 4px 0;
+  border-radius: 0;
+  text-align: center;
+  line-height: 1;
+  padding: .4em .5em;
 }
 
 .loading-icon {
-    text-align: center;
-    padding: 30px;
+  text-align: center;
+  padding: 30px;
 }
 
 .loading-icon div {
@@ -24,11 +28,11 @@ a.question-tag {
 }
 
 .pagination-section {
-	text-align: center;
+  text-align: center;
 }
 
 .panel-title:focus {
-		outline: -webkit-focus-ring-color auto 5px;
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 .search-header {
@@ -37,16 +41,16 @@ a.question-tag {
 }
 
 .pills {
-	display: flex;
+  display: flex;
 }
 
 .pills-label {
-	min-width: 80px;
+  min-width: 80px;
   margin-top: 5px;
 }
 
 h2 {
-	display: inline-block;
+  display: inline-block;
 }
 
 .btn-link {
@@ -54,31 +58,31 @@ h2 {
 }
 
 .flex {
-	display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .flex h2 {
-	word-break: break-word;
+  word-break: break-word;
 }
 
 .search-result-xs {
-	margin: 0 -7px 0 -8px;
+  margin: 0 -7px 0 -8px;
 }
 
 .search-overlay {
-    width: 100%;
-    height: 100%;
-  	min-height: 100vh;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    border-left: 0;
-    border-right: 0;
-  	margin-top: -1rem;
-    background: #FFF;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: -1rem;
+  background: #FFF;
 }
 
 .search-filter-menu {
@@ -105,12 +109,27 @@ h2 {
 }
 
 .results-heading:focus {
-    outline: none;
+  outline: none;
 }
 
 .facet-pill-container {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.sc {
+  i.ta-icon, i.ta-img {
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    float:left;
+    padding-right: 8px;
+  }
 }
 
 .nav-tabs {
@@ -133,4 +152,10 @@ h2 {
 .nav-tabs > li.active > a:focus {
   background-color: #fff;
   border-bottom: 1px solid #fff;
+}
+
+.view-as-avatar {
+  float: right;
+  width: 2rem;
+  height: 2rem;
 }
