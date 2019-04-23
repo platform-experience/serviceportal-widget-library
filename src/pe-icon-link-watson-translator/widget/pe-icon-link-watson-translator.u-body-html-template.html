@@ -1,0 +1,25 @@
+<div class="iconlink">
+  <!--// Top Icon -->
+  <a ng-if="::(options.link_template == 'Top Icon' || !options.link_template)" ng-href="{{::data.href}}" class="top_icon {{::options.class_name}}" target="{{::data.target}}">
+    <div class="m-b fa fa-{{::options.glyph}} fa-4x {{::options.class_name}} text-{{::options.color}}"></div>
+    <h2>{{::c.data.title}}</h2>
+    <span class="text-muted">{{::c.data.shortDescription}}</span>
+  </a>
+
+  <!--// Circle Icon -->
+  <a ng-if="::(options.link_template == 'Circle Icon')" ng-href="{{::data.href}}" class="circle_icon {{::options.class_name}} text-{{::options.color}}" target="{{::data.target}}">
+    <span class="fa fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-{{::options.glyph}} fa-stack-1x fa-inverse"></i>
+    </span>
+    <h2>{{::c.data.title}}</h2>
+    <span class="text-muted">{{::c.data.shortDescription}}</span>
+  </a>
+
+  <!--// Color Box -->
+  <a ng-if="::(options.link_template == 'Color Box')" ng-href="{{::data.href}}" class="color_box {{::options.class_name}} icon-link-background-{{::options.color}} text-white" target="{{::data.target}}">
+    <div class="fa fa-{{::options.glyph}} fa-3x {{::options.class_name}}"></div>
+    <h2>{{::c.data.title}}</h2>
+    <span>{{::c.data.shortDescription}}</span>
+  </a>
+</div>

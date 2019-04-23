@@ -2,7 +2,8 @@
 <div class="row people-card-flyout">
   <div class="col-xs-12">
     <div class="panel panel-default">
-      <div class="panel-heading" ng-click="c.toggleTrends()">{{::options.title}}
+      <div class="panel-heading" ng-click="c.toggleTrends()">
+        {{::options.title}}
         <i class="pull-right">
           <div ng-hide="c.isVisible === true">
             <svg class="add-circle">
@@ -49,7 +50,7 @@
           <div class="row" ng-repeat="user in ::c.data.users | orderBy: 'timeAgo' track by $index">
             <div class="col-xs-2">
               <div class="photo">
-                <img class="img-circle" ng-src="{{::user.photo.display_value}}">
+                <img class="img-circle" ng-src="{{::user.photo.display_value}}" />
               </div>
             </div>
             <div class="col-xs-7">

@@ -1,0 +1,106 @@
+// Default Colors
+$x-pisn-sp-procflow-lite-color: $text-color !default;
+$x-pisn-sp-procflow-lite-bg: $brand-primary !default;
+// "Current Stage" Colors
+$x-pisn-sp-procflow-lite-current-color: lighten($x-pisn-sp-procflow-lite-bg, 95%) !default;
+// "Past Stage" Colors
+$x-pisn-sp-procflow-lite-past-color: lighten($x-pisn-sp-procflow-lite-bg, 45%) !default;
+// "Future Stage" Colors
+$x-pisn-sp-procflow-lite-future-color: lighten($x-pisn-sp-procflow-lite-bg, 20%) !default;
+// Color of separator between Flow Stages
+$x-pisn-sp-procflow-lite-separator-color: $body-bg !default;
+// Sizing
+$x-pisn-sp-procflow-lite-height: $line-height-computed * 2 !default;
+$x-pisn-sp-procflow-lite-font-size: $font-size-small !default;
+$x-pisn-sp-procflow-lite-border-radius: 15px;
+
+//starter
+$x-pisn-sp-procflow-lite-starter: $brand-primary !default;
+$x-pisn-sp-procflow-lite-starter-size: 20px !default;
+$x-pisn-sp-procflow-lite-starter-bg: $body-bg !default;
+
+.x-pisn-sp-procflow-popup-starter {
+  border: 1px solid $x-pisn-sp-procflow-lite-starter;
+  height: $x-pisn-sp-procflow-lite-starter-size;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: $x-pisn-sp-procflow-lite-starter-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .fa {
+    color: $x-pisn-sp-procflow-lite-starter;
+  }
+
+  .fa-sort-desc {
+    position: absolute;
+    bottom: 17px;
+  }
+
+  .fa-times-inverse {
+    color: $x-pisn-sp-procflow-lite-starter-bg;
+  }
+}
+
+.x-pisn-sp-procflow-popup-starter--inverse-bg {
+  background-color: $x-pisn-sp-procflow-lite-starter;
+}
+
+.light {
+  -webkit-text-stroke: 0.5px $x-pisn-sp-procflow-lite-starter-bg;
+  -webkit-font-smoothing: antialiased;
+}
+
+.light-inverse-1 {
+  -webkit-text-stroke: 1px $x-pisn-sp-procflow-lite-starter;
+  -webkit-font-smoothing: antialiased;
+}
+
+.x-pisn-sp-procflow-popup-container {
+  position: absolute;
+  bottom: 17px;
+  left: 0%;
+  right: 0%;
+  z-index: 1;
+}
+
+/* Toggle this class - hide and show the popup */
+.x-pisn-sp-procflow__show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+  display: block;
+}
+
+.x-pisn-sp-procflow__hide {
+  visibility: hidden;
+  display: none;
+}
+
+.x-pisn-sp-procflow-lite__container {
+  display: flex !important;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

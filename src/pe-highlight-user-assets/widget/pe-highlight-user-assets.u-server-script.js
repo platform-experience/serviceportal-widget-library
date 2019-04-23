@@ -52,14 +52,14 @@
 		
 		// If provided, get the sys_id of the List Page from the Option (Instance) Schema
 		if (options.list_page) {
-			var list_page = GlideRecordSecure('sp_page');
+			var list_page = new GlideRecordSecure('sp_page');
 			if (list_page.get(options.list_page))
 				data.instance_table.list_page = list_page.getDisplayValue('id');
 		}
 
 		// If provided, get the sys_id of the Detail Page from the Option (Instance) Schema
 		if (options.detail_page) {
-			var detail_page = GlideRecordSecure('sp_page');
+			var detail_page = new GlideRecordSecure('sp_page');
 			if (detail_page.get(options.detail_page)){
 				data.instance_table.detail_page = detail_page.getDisplayValue('id');
 				data.instance_table.showActions = true;
@@ -68,7 +68,7 @@
 
 		// If provided, get the name of the View from the Option (Instance) Schema
 		if (options.view) {
-			var view_name = GlideRecordSecure('sys_ui_view');
+			var view_name = new GlideRecordSecure('sys_ui_view');
 			if (view_name.get(options.view))
 				data.instance_table.detail_view = view_name.getDisplayValue('name');
 		}
