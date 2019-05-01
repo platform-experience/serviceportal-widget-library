@@ -8,9 +8,13 @@ The widget works with standard catalog items as well as record producers. Upon o
 
 The widget is easily configurable with instance options and the colors can easily be change to meet any company palette with the use of SASS variables.
 
-## Screenshot
+## Screenshots
 
-![Multi Screen Catalog Item](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-multi-screen-catalog-item/images/pe-multi-screen-catalog-item.png)
+![Multi Screen Catalog Item](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-multi-screen-catalog-item/images/demo_low.gif)
+
+![Multi Screen Catalog Item](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-multi-screen-catalog-item/images/main-screen-blue.png)
+
+![Multi Screen Catalog Item](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-multi-screen-catalog-item/images/main-screen-red.png)
 
 ## Additional Information/Notes
 
@@ -26,7 +30,17 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+To use the Multi-Screen Catalog Item Widget for one of your catalog items:
+
+1. Add a high definition image to the Picture field of the catalog item you are using.
+
+1. Make sure that the catalog item has a filled-out Short Description and Description.
+
+1. Add Container Start and Container End variables around groups of variables. This will form the different screens of variables in the widget.
+
+1. Make sure that the Container Start variables all display a title. These will be the headings for each screen in the widget.
+
+1. Point the user to the catalog item using the multicat Service Portal page with the following url: https://your-instance.service-now.com/sp?id=multicat&sys_id=sys_id-of-your-cat-item
 
 ## Platform Dependencies
 
