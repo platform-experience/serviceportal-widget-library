@@ -1,3 +1,90 @@
-<div>
-  <!-- your widget template -->
+<div class="si-multicat-main" si-mc-drag-drop-upload>
+
+  <!-- Drag and drop overlay -->
+  <div class="si-mc-drag-drop-overlay">
+    <div class="si-mc-drag-drop-mask"></div>
+    <div>
+      <i class="fa fa-upload" aria-hidden="true"></i>
+      <br/> ${Upload}
+    </div>
+  </div>
+
+  <div class="si-mc-content">
+    <!-- Header -->
+    <div class="si-mc-head">
+
+      <div class="si-mc-attachments">
+        <div class="si-mc-label">${Attachments}</div>
+        <button si-mc-button-upload>
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        <si-mc-attachment-manager table="::c.data._attachmentTable" sys-id="::c.data._generatedItemGUID" omit-edit="false"></si-mc-attachment-manager>
+      </div>
+
+
+
+      <!-- Indicators -->
+      <div class="si-mc-indicators">
+        <div ng-repeat="i in c.getScreenCountAsArray() track by $index" ng-class="{'si-mc-active': c.getCurrentScreen() === $index}"
+          ng-click="c.goToScreen($index)">{{$index + 1}}</div>
+      </div>
+
+    </div>
+
+    <!-- Main body -->
+    <div class="si-mc-mainbody">
+
+      <!-- Intro screen -->
+      <div ng-include="'si-mc-intro-screen'" ng-if="c.getCurrentScreen() == 0"></div>
+
+      <!-- Form Screens -->
+      <div class="si-mc-form">
+        <!-- spCatItem directive manages price changes for the catalog item -->
+        <sp-cat-item item="::data.sc_cat_item" ></sp-cat-item>
+        <div class="si-mc-mainform container-fluid">
+          <sp-model form-model="::data.sc_cat_item" template-url="si-mc-form" mandatory="c.mandatory"></sp-model>
+        </div>
+      </div>
+
+      <!-- Order Now Screen -->
+      <div ng-if="c.isLastScreen() && !c.isRecordProducer()">
+        <div ng-include="'si-mc-order-now-screen'" onload="implementSelect2()" ></div>
+      </div>
+
+    </div>
+    <!-- Actions -->
+    <div class="si-mc-actions">
+      <div class="si-mc-action-bar">
+        <!-- Left side (secondary) -->
+        <div class="si-mc-secondary">
+          <button ng-click="c.previous()" ng-if="c.getCurrentScreen() > 0">
+            ${PREVIOUS}
+          </button>
+        </div>
+
+        <!-- Right side (primary) -->
+        <div class="si-mc-primary">
+          <div class="action-group">
+            <button ng-click="c.next()" ng-if="!c.isLastScreen()">
+              ${NEXT}
+            </button>
+            <button ng-click="c.triggerOnSubmit()" ng-if="c.isLastScreen() && c.isRecordProducer()">
+              ${SUBMIT}
+            </button>
+            <button ng-if="c.isLastScreen() && !c.isRecordProducer() && !c.isCartItem()" ng-click="c.triggerAddToCart()">
+              <i class="fa fa fa-shopping-cart"></i>
+              &ensp;${ADD TO CART}
+            </button>
+            <button ng-if="c.isLastScreen() && !c.isRecordProducer() && c.isCartItem()" ng-click="c.triggerUpdateCart()">
+              <i class="fa fa fa-shopping-cart"></i>
+              &ensp;${UPDATE CART}
+            </button>
+            <button ng-if="c.isLastScreen() && !c.isRecordProducer()" ng-click="c.confirmOrder()">
+              ${ORDER NOW}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
