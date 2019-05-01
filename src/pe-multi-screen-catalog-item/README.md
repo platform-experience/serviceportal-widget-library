@@ -28,6 +28,8 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
+### Usage
+
 To use the Multi-Screen Catalog Item Widget for one of your catalog items:
 
 1. Add a high definition image to the Picture field of the catalog item you are using.
@@ -40,15 +42,15 @@ To use the Multi-Screen Catalog Item Widget for one of your catalog items:
 
 1. Point the user to the catalog item using the multicat Service Portal page with the following url: https://your-instance.service-now.com/sp?id=multicat&sys_id=sys_id-of-your-cat-item
 
-## Platform Dependencies
+### Widget Option Schema
 
-### SN System Tables
-
-> None
-
-### UI Dependencies
-
-> None
+| Option | Default Value |
+| :--- | :--- |
+| `Show Add Cart Button` | true |
+| `Show Delivery Time` | true |
+| `Show Price` | true |
+| `Redirect Page on Order Now` | sc_request |
+| `Redirect Page on Submit` | ticket |
 
 ## CSS/SASS Variables
 
