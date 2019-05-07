@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+A simple donut chart used to easily visualize groupings of records at a glance.
 
 ## Screenshot
 
@@ -10,7 +10,7 @@
 
 ## Additional Information/Notes
 
-> None
+The colors displayed are the portal brand/theme colors.
 
 ## Installation
 
@@ -22,7 +22,17 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+### Usage
+
+The Group By Donut Widget requires a table and a field to group by.
+
+### Widget Option Schema
+
+| Option | Default Value |
+| :--- | :--- |
+| `Table` | sn_customerservice_case |
+| `Filter` | active=true |
+| `Field` | priority |
 
 ## Platform Dependencies
 
@@ -32,10 +42,13 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ### UI Dependencies
 
-> None
+* [Highcharts JS v5.0.14](https://www.highcharts.com)
+* [highcharts-ng](https://github.com/pablojim/highcharts-ng)
 
 ## CSS/SASS Variables
 
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-> None
+```scss
+$pe-chart-title: #777 !default;
+```
