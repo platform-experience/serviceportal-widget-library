@@ -2,11 +2,11 @@
 
 ## Description
 
-> None
+This is used to create a simple Gantt Chart.
 
 ## Screenshot
 
-![Gantt Chart](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-gantt-chart/images/pe-gantt-chart.png)
+![Gantt Chart](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/feature/src/pe-gantt-chart/images/pe-gantt-chart.png)
 
 ## Additional Information/Notes
 
@@ -22,7 +22,10 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+Widget Options Schema parameters:
+**"Type"** Glide List. `Default: Glide List`<br/>
+**"Table"** Table from which to aggregate the data. `Overrides the Script Include parameter`<br/>
+**"Advance"** A JSON block; used to set specific attributes of the chart. All attributes that are editable can be found here [Highcharts Documentation](http://api.highcharts.com/highcharts). <br/>
 
 ## Platform Dependencies
 
@@ -33,6 +36,13 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 ### UI Dependencies
 
 > None
+
+## API Dependencies
+<i>Dependencies are included and configured as part of the provided Update Set.</i>
+
+* dhtmlx Gantt Chart API (v 6.1 - Recommended)  w/Export and No Data plug-ins
+<br/>Latest version(s) available from [HighCharts.com](https://docs.dhtmlx.com/gantt/)
+
 
 ## CSS/SASS Variables
 
