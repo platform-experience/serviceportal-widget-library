@@ -6,8 +6,8 @@ This is used to create a simple Gantt Chart.
 
 ## Screenshot
 
-![](../../images/gantt-chart-options.png)
-![](../../images/pe-gantt-chart.png)
+![](../../../../images/gantt-chart-options.png)
+![](../../src/pe-gantt-chart/images/pe-gantt-chart.png)
 ![alt text](../../images/pe-gantt-chart.png "Modified Version Using Advanced")
 ![alt text](../../images/gantt-chart-options.png "Modified Version Using Advanced")
 
