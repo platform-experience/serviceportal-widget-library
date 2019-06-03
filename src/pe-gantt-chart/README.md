@@ -11,7 +11,7 @@ This is used to create a simple Gantt Chart.
 
 ## Additional Information/Notes
 
-> None
+> None 
 
 ## Installation
 
