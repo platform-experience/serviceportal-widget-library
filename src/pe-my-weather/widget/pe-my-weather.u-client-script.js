@@ -31,7 +31,7 @@ function MyWeatherController() {
 
 	function geolocFail(){
 		c.server.get({
-			browserLocation: false,
+			browserLocation: false
 		}).then(function(r) {
 			c.weather = r.data;
 		});
