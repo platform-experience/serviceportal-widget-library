@@ -2,7 +2,7 @@
 
 ## Description
 
-This widget provides the possibility to display a minimal modal dialog above everything, heade included.
+This widget provides the ability to display a minimal modal dialog above all page content, including the header.
 
 ## Screenshots
 ![alt text](../images/pe-custom-overlay.png "Custom Overlay")
@@ -17,7 +17,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ---
 ## Configuration
-Language variants can be created through the section System UI -> UI Messages and displayed adding in the HTML body a statement with the syntax:
+Language variants can be created through the section `System UI -> UI Messages` and displayed by adding a statement to the HTML body using syntax:
 
 ```html
 ${<i>key value specified in the Message record</i>}
