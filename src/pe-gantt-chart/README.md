@@ -4,14 +4,14 @@
 
 This is used to create a simple Gantt Chart.
 
-## Screenshot
-![](../../src/pe-gantt-chart/images/pe-gantt-chart.png)
-![](../../src/pe-gantt-chart/images/gantt-chart-options.png)
+## Screenshots
 
+![Gantt Chart](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-gantt-chart/images/pe-gantt-chart.png)
+![Gantt Chart Options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-gantt-chart/images/gantt-chart-options.png)
 
 ## Additional Information/Notes
 
-> None Claudia
+> None
 
 ## Installation
 
@@ -19,7 +19,7 @@ Download and install update set **[pe-gantt-chart.u-update-set.xml](https://gith
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+- SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
@@ -30,13 +30,12 @@ Widget Options Schema parameters:
 **"Type"** Glide List. `Default: glide_list`<br/>
 **"Table"** Project. `Default: pm_project`<br/>
 
-
 ## API Dependencies
-<i>Dependencies are included and configured as part of the provided Update Set.</i>
 
-* DHTMLX Gantt Chart API (v 6.1 - Recommended)  w/Export and No Data plug-ins
-<br/>Latest version(s) available from [DHTMLX Gantt](https://docs.dhtmlx.com/gantt/)
+_Dependencies are included and configured as part of the provided Update Set._
 
+- DHTMLX Gantt Chart API (v 6.1 - Recommended) w/Export and No Data plug-ins
+  <br/>Latest version(s) available from [DHTMLX Gantt](https://docs.dhtmlx.com/gantt/)
 
 ## CSS/SASS Variables
 
