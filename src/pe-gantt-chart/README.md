@@ -23,7 +23,11 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-Widget Options Schema parameters:
+Widget Options Schema:
+
+| Option       | Description                | Default Value  |
+| :----------- | :------------------------- | :------------- |
+| `Project`    | List of projects.          |                |
 
 **"Label"** Project List. `Default: Project List`<br/>
 **"Name"** Project List. `Default: project_list`<br/>
