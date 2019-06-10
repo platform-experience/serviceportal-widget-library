@@ -7,6 +7,7 @@ This is used to create a simple Gantt Chart.
 ## Screenshots
 
 ![Gantt Chart](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-gantt-chart/images/pe-gantt-chart.png)
+
 ![Gantt Chart Options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-gantt-chart/images/gantt-chart-options.png)
 
 ## Additional Information/Notes
