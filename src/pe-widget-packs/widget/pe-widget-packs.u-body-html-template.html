@@ -1,3 +1,29 @@
-<div>
+<div class="widget-container">
   <!-- your widget template -->
+  <div class="settings">
+    <div class="dropdown">
+      <button class="setting-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" ng-repeat="widget in c.data.widgetPack | orderBy:widget.order" ng-click="c.getWidgetAndAssign(widget)" href="javascript:void(0)">{{widget.name}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default b">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        {{c.options.title}}
+      </h4>
+    </div>
+    <div class="panel-body">
+      <p ng-if="!c.data.myWidget && !c.loading">Please use the cog wheel to select the widget you want to see here</p>
+      <div ng-if="c.data.myWidget">
+        <sp-widget ng-if="c.show" widget="c.data.myWidget"></sp-widget>
+      </div>
+      <div class="loader-icon" ng-if="c.loading"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+    </div>
+  </div>
+
 </div>
