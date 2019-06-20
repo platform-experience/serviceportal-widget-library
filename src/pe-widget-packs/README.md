@@ -26,32 +26,32 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 * In left nav search for **Widget Packs**. You can all the parts that make the Widget Packs app.
 
-	https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/left-search.png
+	![Left Search](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/left-search.png)
 	
 * Click on **Packs** module. Now lets create a new pack.
 
-	https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/packs.png
+	![Packs](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/packs.png)
 
 * Give your widget pack a name, description and save it.
 
-	https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/packs-new.png
+	![New Packs](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/packs-new.png)
 	
 *  Once you save the widget pack you should see a **Widgets and Packs** related list.
 
-   https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/add-widgets.png
+   ![Add Widget](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/add-widgets.png)
    
 * Click on new to add widgets to the pack. For example I am adding OOTB **Weather** and **Cool Clock** widgets to the pack.
 	
-	https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/weather-widget.png
+	![Widget Weather](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/weather-widget.png)
 	
-	https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/clock.png
+	![Widget Clock](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/clock.png)
 
 * If your widget has some options you can add the options JSON object as well. Like above.
 * Now Lets drag and drop the widget **Widget pack** widget onto the portal page.
 * Configure the options by clicking on the pencil icon. Give it a title and choose the widget pack. Save.
 
 
-	https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/options.png
+	![Widget options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/options.png)
 
 
 ## Platform Dependencies
