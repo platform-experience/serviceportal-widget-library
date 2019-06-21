@@ -2,7 +2,7 @@
 
 ## Description
 
-> Give portal users power to configure what widgets they see on page. With Widget Packs on the page users can clikc on the cog wheel icon to choose which widget they want to see on the page.
+Give portal users power to configure what widgets they see on the page. With Widget Packs on the page, users can click on the cog wheel icon to choose which widget they want to see on the page.
 
 ## Screenshot
 
@@ -27,7 +27,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 * In left nav search for **Widget Packs**. You can all the parts that make the Widget Packs app.
 
 	![Left Search](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/left-search.png)
-	
+
 * Click on **Packs** module. Now lets create a new pack.
 
 	![Packs](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/packs.png)
@@ -35,15 +35,15 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 * Give your widget pack a name, description and save it.
 
 	![New Packs](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/packs-new.png)
-	
+
 *  Once you save the widget pack you should see a **Widgets and Packs** related list.
 
    ![Add Widget](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/add-widgets.png)
-   
+
 * Click on new to add widgets to the pack. For example I am adding OOTB **Weather** and **Cool Clock** widgets to the pack.
-	
+
 	![Widget Weather](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/weather-widget.png)
-	
+
 	![Widget Clock](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/clock.png)
 
 * If your widget has some options you can add the options JSON object as well. Like above.
