@@ -1,0 +1,41 @@
+<section class="design-process-section">
+  <div class="panel panel-warning" ng-if='show_panel === 0'>
+    <div class="panel-heading">Widget Not Configured</div>
+    <div class="panel-body">Please use the widget's Instance Options (Ctrl-RightClick) to configure this widget.</div>
+  </div>
+  <div class="panel panel-warning" ng-if='show_panel === 1'>
+    <div class="panel-heading">Invalid 'Choice' Field</div>
+    <div class="panel-body">Field selected is not a 'choice' field and doesn't not meet the requirements for showing data.</div>
+  </div>
+  <div class="container" ng-if='show_panel === 2'>
+    <div class="row">
+      <div class="col-md-12"> 
+        <div class='caption'>{{::data.caption}}</div>
+      </div>
+    </div>
+    <div class="row" ng-if='data.record_state'>
+      <div class="col-md-12"> 
+        <ul class="nav nav-tabs process-model process-{{data.display_size}}" role="tablist" ng-if='wide_view'>
+          <li role="presentation"
+              class='i-{{data.display_size}}'
+              ng-class="{ active : (data.record_state == item.value) }" 
+              ng-repeat='item in data.process.labels'><i class="fa {{::item.icon}}" aria-hidden="true"></i><p>{{::item.display_value}}</p></li>
+        </ul>
+        <ul class="nav nav-tabs process-model process-{{data.display_size}}" role="tablist" ng-if='!wide_view'>
+          <li role="presentation"
+              class='i-{{data.display_size}}'
+              ng-class="{ active : (data.record_state == item.value) }"
+              ng-if='(data.record_state == item.value)'
+              ng-repeat='item in data.process.labels'><i class="fa {{::item.icon}}" aria-hidden="true"></i><p>{{::item.display_value}}</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" ng-if='!data.record_state'>
+      <div class="col-md-12">
+        <div class='caption'>
+          No Record Found.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
