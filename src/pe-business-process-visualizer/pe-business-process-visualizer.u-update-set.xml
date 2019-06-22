@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-21 15:27:38">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Business Process Visualizer</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>44dfe72a4f4eb70005be4d6e0210c7c5</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-06-21 15:27:38</sys_created_on>
+<sys_id>01b17f6b4fc6bb0005be4d6e0210c71a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-06-21 15:27:38</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_caf0fb6a4f4eb70005be4d6e0210c7da</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope,$window) {
+  /* widget controller */
+	var c = this;
+	function isXSScreenSize() {
+		return $window.matchMedia('(max-width: 767px)').matches;
+	}
+
+	$scope.wide_view = true;
+	$scope.show_panel = 0;
+	
+	if(isXSScreenSize()){
+		$scope.wide_view = c.data.mobile_scale;
+		c.data.display_size = 'small';
+	}
+	
+	if(c.data.table &amp;&amp; c.data.table.length&gt;0){
+		if(c.data.field &amp;&amp; c.data.field.length&gt;0){
+			if(c.data.process &amp;&amp; c.data.process.steps&gt;0){
+				$scope.show_panel = 2;
+			}else{
+				$scope.show_panel = 1;
+			}
+		}
+	}
+		
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.design-process-section .text-align-center {
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+.container{
+  margin: 20px auto 20px;
+  width: 100% !important;
+}
+.caption{
+  text-align: center;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+.process-model {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  display: grid;
+  grid-gap: 0px;
+  grid-auto-flow: column;
+  justify-items: center;
+  border: none;
+  z-index: 0;
+  text-align: center;
+  align-items: start;
+  justify-content: center;
+}
+.process-model li::after {
+  background: $text-color none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  right: -50%;
+  width: 100%;
+  z-index: -1;
+}
+.process-model li:last-child::after {
+  width: 0;
+}
+.process-model li {
+  text-align: center;
+  float: none;
+}
+.process-model li.active,
+.process-model li.visited {
+  color: $brand-success;
+}
+.process-model li p {
+  font-size: 14px;
+  width: 86%;
+  margin: 0 auto;
+  margin-top: 10px;
+  @media only screen and (max-width: 767px) {
+    color: transparent;
+  }
+}
+.process-model li.active p,
+.process-model li.visited p {
+  font-weight: 600;
+  @media only screen and (max-width: 767px) {
+    color: $brand-success;
+  }
+}
+.process-model li i {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background: #F5F5F5;
+  border: 2px solid $text-color;
+  border-radius: 50%;
+}
+.process-model li.i-large{
+  i{
+    height: 68px;
+    width: 68px;
+    font-size: 30px;
+    line-height: 65px;
+  }
+}
+.process-model li.i-medium{
+  i{
+    height: 51px;
+    width: 51px;
+    font-size: 21px;
+    line-height: 49px;
+  }
+}
+.process-model li.i-small{
+  i{
+    height: 34px;
+    width: 34px;
+    line-height: 32px;
+    font-size: 16px;
+  }
+  p{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.process-model li.i-large::after{
+  top: 33px;
+  height: 4px;
+}
+.process-model li.i-medium::after{
+  top: 24px;
+  height: 3.5px;
+}
+.process-model li.i-small::after{
+  top: 15.5px;
+  height: 3px;
+}
+
+.process-large{
+  grid-auto-columns: minmax(100px,auto);
+}
+.process-medium{
+  grid-auto-columns: minmax(75px,auto);
+}
+.process-small{
+  grid-auto-columns: minmax(50px,auto);
+}
+
+.process-model li.active i, .process-model li.visited i  {
+  background: #fff;
+  border-color: $brand-success;
+}
+
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance_table&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;table,display_field&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;bp-visualizer&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function ($scope,$el,$attrs,$ctrl) {
+
+}]]&gt;&lt;/link&gt;&lt;name&gt;Business Process Visualizer&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Caption for the Widget","name":"caption","section":"Presentation","label":"Caption","type":"string"},{"name":"default_icon","section":"Presentation","default_value":"check","label":"Default Icon","type":"glyphicon"},{"name":"icons","section":"Presentation","label":"Icons","type":"string"},{"name":"display_size","section":"Presentation","default_value":"large","label":"Display Size","type":"choice","choices":[{"label":"large","value":"large"},{"label":"medium","value":"medium"},{"label":"small","value":"small"}]},{"hint":"Show the full process scale on mobile devices","name":"mobile_show_scale","section":"Presentation","default_value":"false","label":"Mobile Show Scale","type":"boolean"},{"name":"invert_sequence","section":"Behavior","default_value":"false","label":"Invert Sequence","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.table = $sp.getParameter('t') || $sp.getParameter('table') || options.table;
+	data.extTable = undefined;
+	data.field = $sp.getParameter('f') || $sp.getParameter('field') || options.display_field;
+	data.lang = $sp.getParameter('l') || $sp.getParameter('language') || options.language || 'en';
+	data.caption = $sp.getParameter('caption') || options.caption;
+	data.sys_id = $sp.getParameter('sys_id');
+	data.mobile_scale = (options.mobile_show_scale=='true' || options.mobile_show_scale==true || options.mobile_show_scale=='1' || options.mobile_show_scale==1 )
+	data.record_state = false;
+	
+	data.display_size = options.display_size;
+	
+	if(options.icons){
+		data.icons =  options.icons.split(',');
+	}
+	
+	data.process = {
+		steps : 0,
+	  labels : []
+	}
+	if(options.default_icon=='empty'){
+		options.default_icon = 'check';
+	}
+	
+	if(!data.table || !data.field){
+		return;
+	}
+	if(data.sys_id){
+		var grRec = new GlideRecordSecure(data.table);
+		grRec.get(data.sys_id);
+		grRec.query();
+		if(grRec.next()){
+			data.record_state = grRec.getValue(data.field);
+		}
+	}
+
+	var grTable = new GlideRecord('sys_db_object');
+	grTable.addQuery('name','=',data.table);
+	grTable.query();
+	if(grTable.next()){
+		data.extTable = grTable.getDisplayValue('super_class');
+	}
+	
+	var grProcess = new GlideRecord('sys_choice');
+	grProcess.addQuery('name','=',data.table);
+	grProcess.addQuery('element','=',data.field);
+	grProcess.addQuery('language','=',data.lang);
+	if(options.invert_sequence =='true' ||
+		 options.invert_sequence =='t' ||
+		 options.invert_sequence == true ){
+	 grProcess.orderByDesc('sequence');
+	}else{
+		grProcess.orderBy('sequence');
+	}
+	grProcess.query();
+	
+	while(grProcess.next()){
+		var icon = "fa-"+options.default_icon;
+		if(data.icons &amp;&amp; data.icons[data.process.steps]){
+			icon = data.icons[data.process.steps];
+		}
+		
+		data.process.labels.push({ display_value : grProcess.getDisplayValue('label'),
+															value: grProcess.getDisplayValue('value'),
+															icon: icon
+														 });
+		data.process.steps = data.process.steps + 1;
+	}
+	
+	if(data.process.steps==0 &amp;&amp; data.extTable){
+		grProcess = new GlideRecord('sys_choice');
+		grProcess.addQuery('name','=',data.extTable);
+		grProcess.addQuery('element','=',data.field);
+		grProcess.addQuery('language','=',data.lang);
+		if(options.invert_sequence =='true' ||
+			 options.invert_sequence =='t' ||
+			 options.invert_sequence == true ){
+			grProcess.orderByDesc('sequence');
+		}else{
+			grProcess.orderBy('sequence');
+		}
+		grProcess.query();
+
+		while(grProcess.next()){
+			var icon = "fa-"+options.default_icon;
+			if(data.icons &amp;&amp; data.icons[data.process.steps]){
+				icon = data.icons[data.process.steps];
+			}
+
+			data.process.labels.push({ display_value : grProcess.getDisplayValue('label'),
+																value: grProcess.getDisplayValue('value'),
+																icon: icon
+															 });
+			data.process.steps = data.process.steps + 1;
+		}
+	}
+		
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-18 12:52:24&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;caf0fb6a4f4eb70005be4d6e0210c7da&lt;/sys_id&gt;&lt;sys_mod_count&gt;179&lt;/sys_mod_count&gt;&lt;sys_name&gt;Business Process Visualizer&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_caf0fb6a4f4eb70005be4d6e0210c7da&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-21 15:23:12&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;section class="design-process-section"&gt;
+  &lt;div class="panel panel-warning" ng-if='show_panel === 0'&gt;
+    &lt;div class="panel-heading"&gt;Widget Not Configured&lt;/div&gt;
+    &lt;div class="panel-body"&gt;Please use the widget's Instance Options (Ctrl-RightClick) to configure this widget.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel panel-warning" ng-if='show_panel === 1'&gt;
+    &lt;div class="panel-heading"&gt;Invalid 'Choice' Field&lt;/div&gt;
+    &lt;div class="panel-body"&gt;Field selected is not a 'choice' field and doesn't not meet the requirements for showing data.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="container" ng-if='show_panel === 2'&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-md-12"&gt; 
+        &lt;div class='caption'&gt;{{::data.caption}}&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row" ng-if='data.record_state'&gt;
+      &lt;div class="col-md-12"&gt; 
+        &lt;ul class="nav nav-tabs process-model process-{{data.display_size}}" role="tablist" ng-if='wide_view'&gt;
+          &lt;li role="presentation"
+              class='i-{{data.display_size}}'
+              ng-class="{ active : (data.record_state == item.value) }" 
+              ng-repeat='item in data.process.labels'&gt;&lt;i class="fa {{::item.icon}}" aria-hidden="true"&gt;&lt;/i&gt;&lt;p&gt;{{::item.display_value}}&lt;/p&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="nav nav-tabs process-model process-{{data.display_size}}" role="tablist" ng-if='!wide_view'&gt;
+          &lt;li role="presentation"
+              class='i-{{data.display_size}}'
+              ng-class="{ active : (data.record_state == item.value) }"
+              ng-if='(data.record_state == item.value)'
+              ng-repeat='item in data.process.labels'&gt;&lt;i class="fa {{::item.icon}}" aria-hidden="true"&gt;&lt;/i&gt;&lt;p&gt;{{::item.display_value}}&lt;/p&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row" ng-if='!data.record_state'&gt;
+      &lt;div class="col-md-12"&gt;
+        &lt;div class='caption'&gt;
+          No Record Found.
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1764935708</payload_hash>
+<remote_update_set display_value="Business Process Visualizer">01b17f6b4fc6bb0005be4d6e0210c71a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-06-21 15:27:38</sys_created_on>
+<sys_id>0db17f6b4fc6bb0005be4d6e0210c71a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b7aa26aa30000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-06-21 15:27:38</sys_updated_on>
+<table/>
+<target_name>Business Process Visualizer</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>14b0ff673ec6bb00dc9b7ade101f9e77</update_guid>
+<update_guid_history>14b0ff673ec6bb00dc9b7ade101f9e77:-1764935708,1350332365c6bb00921964b5cfc7ade9:-1368119190,80503f2770c6bb007dce5919311fa369:316216603,cd67eb6f7586bb005caa83bd729ce8fe:-165986546,2345331fd08a7b003aa5cb3fe5699a74:-457962767,c0b1fb97de8a7b00bc395564d02399fd:1293859315,4f9177971b8a7b0030c882f4f2e025ef:-1753817392,61517797b68a7b00112cdf98e472e959:2099922052,d21177979a8a7b00c37eab66229a0f54:-1984623125,b2d03397aa8a7b00d2ddc4c85fd03ae8:1741438165,5bc03397db8a7b009f4c1d4114da7a7c:-1077956993,c18033976a8a7b00c54a1dcf68d6ecd8:1051392074,eb703397d48a7b00601638c3412b8175:-1147218698,35307b57708a7b00c4a5c1b17f2977b7:1058911780,9b0f2f177b8a7b0024583da6c9111fbd:1105545075,390ceb13878a7b007b48c5e81263e5c2:-1425228259,38dbeb13e38a7b002108c1dbbec3f6ba:-1158899457,bfab6b13c98a7b00074c8fdf056abf72:-1395367916,743b6fdf804a7b00961ac5bff54ead53:-372981655,d7aa6fdfbb4a7b00f09362b711737ae3:-1528281225,699a2fdf614a7b00802ef8c8d756f0b4:1489032481,c059675f564a7b0046d80240095660f6:-1009057741,93f86b1f984a7b00c8c6ca687cad550a:-664638136,4eb6631fe54a7b00aab072615303f454:724746250,bf96631fcc4a7b006016ccb796a46736:2080911360,8b0627dbd84a7b002173f3bd5b810773:1831438658,2c17e54f0f863b0073976453ea595e82:-468370852,ab36ad8b9a863b00c5eca96dd5dadeed:1222808391,82a3e14b50863b00ef6817f0fcdf2ad2:-1508340580,e5a221c701863b001a733900e5bb9318:-64987220,60922d87ab863b00416932023d37802c:-120996390,6d12e5476f863b00ceb24b859029c28a:196475525,ccfcd5cf21463b006e618ad877d46790:237062786,f3bcd18fe2463b00bff556145db277da:-780637360,6d3cdd4b9b463b00ad713b14a23019b0:1894004590,fd2cdd4bf0463b0076c62da5630962a9:1666513967,bb3b51cb79463b0078e0e8689c3f1ad1:2046099520,8c2bdd4b30463b007629a1b4c4b0cdd2:2054950539,58ea994b76463b004f0f0f0c098646f6:-1354430623,278a954b7a463b00f82fcdaa1423b596:136111598,562a914bc4463b0050c5ff0aa449a440:1429290075,ebd9d90b90463b009edd6976f9e1da6a:12292267,68e85587b9463b007dd65b3f52637b33:-722415298,aeb8914719463b009fcd7ab4db88b6be:-78810514,d75815c31c463b009d9ed3484c87cb7b:-1781813447,9727dd43db463b00f3b9718db2aaab6b:1062024024,9907994314463b0050df7a392372895d:932086414,ead69943dd463b00977626b097653556:1948408294,b1265d0377463b001f98673e2a4ff438:-549844527,1ef55503f5463b00d6cf91229e3fded8:-1974254277,81e5d1036d463b00e5fa113315d1c493:1503912441,27c5d10344463b00a4115ce625a9b68c:1942292310,4da51dcf7b063b0063a196b59bb1e8d1:2132688013,e5551dcf66063b00e00bf228b9b3110f:1648601570,01059d4fb5063b00c25a15e018d1d2d9:2106568997,35c41d4fb3063b005a6c0ec8b25c0615:1971436833,b5a41d4f51063b009a0e982105554c0b:1451687242,4a04514f93063b00647158ed7b7a091f:140021756,1c331dcbf6063b00d7dfbf0ea576b0cb:435876684,afe21dcbd0063b000d0076ddd90285c4:1333771404,20d215cb55063b003e5de18a2f1a3922:1036946831,447255cbbd063b00b27c3fedf610eb93:-1655210673,ed42558ba8063b00ef8e7de3e6a75717:-1152074969,43f1158b27063b003faafbc10dd493e5:-1939963296,53e1558b32063b00b7ea4d75d4c47711:-168928132,d4b1d18b57063b00d782d6410a40aaf6:1035648224,fd91d18bf9063b006bbeb541cbd1da91:-1055567458,1b715d0b21063b004d0aace417ccdd0b:-2098035492,f951514bc6063b00139cd6bf1b08b5ad:477385472,c541d5c7dd063b006e5333c68efd3dcd:-1942327591,f7f0590baf063b00bad195af43057a1a:-1866742895,63709d476f063b009e3eb738c47921a2:-1007275887,29305d8700063b00e720f8df80e77d09:2080933485,7bdf8d471a063b003834e222ceed57af:242320906,84af45873f063b00505e0456c06c69a5:352180115,5e6f4d472a063b0041f176ed84583b0a:-71238957,5a4f4947d3063b005dee24bb70cf3e71:615060045,943f4507c6063b00eeb8a81db9a432f3:-85814800,4dfe850721063b005c309480d4aa1e00:1469871761,fa9e8107f8063b00c69335f5de494a2b:-1592969015,9fbd41c3c6063b0010f97ce5d775407a:541030765,2e8d8d835a063b00662f1434cbbbf829:-1197307218,46ec45433e063b00535d7271067b5681:-1986491893,093c4103f6063b00371c1f566773cc3e:-16834611,1be8054f46c23b00ea89f9cdc21e0e77:1600409642,c8e8094f68c23b00da973590904f2f37:-789573483,a7b8814ff8c23b00c459c4c37c404c05:1500889118,86880d0f5bc23b008572faf21723c600:318622622,3318050fd0c23b008ccc388d40d0df23:-1596611617,34d749cbb2c23b0005c03466df99092b:-1558074425,18c749cb89c23b00ee785230519e7f24:-361871313,014705cbe5c23b009d06de1a8e9cac6b:1177974115,af658587c0c23b00c285dd34948f0eab:1587717492,ac61898780c23b0006f07dcdd36e1c79:1399325477,1a21818712c23b006c083314d064ad62:1339890609,67e0494793c23b00b6c13c986c11bb32:711407126,5530414730c23b00558681dddad46ede:1612801057,3120c14704c23b00757a710d7f10fb58:-378829394,ac100147cac23b0062580c67c30fe752:1008529981,edff3c0763c23b0040bd9478fea4c7ec:1594821696,f0cf3c077dc23b002faa7af4c988cce6:741996411,e1af740766c23b00e40ec8b40822d692:925233543,a75f30075ac23b00eb654212c1216190:-14355963,f52fbc8343c23b007cd7a07a12eaec6a:1438491484,4a0ff8c353c23b003d0c79fa98e10375:-2085521265,ebdebc8396c23b008957d872abd65b63:376377010,672ef843d1c23b0042c214857746ab6a:1298145810,5b1eb443ecc23b003b7cdbab80cc6158:934148556,d2bd78439cc23b00fa0bc3e100802c70:-2107919002,9b6d744384c23b00bafac8de03bc154d:-738052250,e45d304352c23b009a24293f6a7fca88:537419294,26bcfccf2c823b00691ee11783784cad:1873095711,ff4cb40345c23b00e9c98df300eb23ba:1913534731,082bf0cb95823b008b48975ded7f2500:-909855402,640b340f08823b005eadd1c35e6bb90b:-74429906,e599f0cbab823b00cd7b8a92efa9cf08:415085519,03193c8b33823b00cded42822e5a9854:1001903126,79c8704b0b823b002b8de693dbd2ccb0:-2004743968,d088fcc7a4823b008e8cc5d996d84c31:-1617846196,94787c8718823b00c276bdd853a6f218:97878430,dde77c873b823b00a140b25bddbe2394:-1199485203,383859f271c6f700d7f16c7f691603e2:-572611808,7df791f2d2c6f70058ea04ccf0fbef67:-1357031974,998711f2bfc6f700c3276b9245a93e1a:-343747051,a67795b2e6c6f70006765e55a4d4b3fd:1730646128,c52795febc86f700ba4faea9b0deb39f:2133959398,93e6593205c6f700cede4948186c239d:961054930,40665d3222c6f700f5b6565f26c9f9d2:725429573,fc555932cbc6f700389d9247a5968993:-1990625816,df055532c1c6f700b93dc3edd2fc9403:-2126980120,b1f4153254c6f700de38c79eb980250b:986023432,3cf3d1beb286f70034ee7f7de1161d13:1660381118,f5525dba7286f700597f3e33ae952872:477468155,d9225dba1786f700e9340267e4be196a:-624713791,d0d155ba8486f700312fbb129151b2ce:-1023242949,9d915d7a9d86f7007e212e865389830f:-696421221,3041517ae586f700dc8d32314b8a12f4:-1250748577,ecb0957a5886f700b9d22e520b6df302:-789680809,df30513a8586f700c1754ecad352a89f:691711339,c27f45f6c786f700fda21ec435ad2401:565913234,932f09f60d86f700bf17e565fdc3669a:-1190967268,741f05f6cd86f700fb93d517c3c13df7:2114111258,0ece8db64986f700b95f8f9e35f8d468:805107115,e81e01b62086f700e49bf882e551e9e8:-1185005777,19cd8976de86f700d0b4fbc656d12f17:-1054586512,3cbd81769886f700e41f495401113528:1181587039,dc6d8176b186f7005d1ddc0ba87b0421:-1446448910,c024cd3eaf46f70023266f70a3a39826:49046865,5a04093e2946f700b1355ea3f8b233ce:342109826,34f309fa4046f7001ea75048fa34fc65:-1808244702,cac209fa4546f7004d87095fe05c672b:-1635703369,bda201fa1d46f700736a2c20aa1b2c04:1491117192,d0724dba4146f700c4bf06ea2b6eb4a6:-1392849100,c142057a6f46f70046f48c228896aae2:2015682817,9e4e7476b846f700afa442c02729e45d:108645693,161ef0360c46f700adbbcf618ad69cb1:1956819534,8eedf0369b46f700d96624b7c2085346:-2076220652,65ecb0b21646f700b0d21715030392f8:1354249298,ed9cb872e846f700cf9f2d917da3532d:72094275,66bbf07e2506f700d2e99330ef63f9e2:306614191,84f9707e3306f700910e066117bd43a0:-1376329153,1998f4fa6c06f700e145e038886dfcf0:-743859478,6a88b0ba1706f7007b3ff2b05aa57195:957373795,1658b07aab06f70014ca5c1c32f2b467:1080853339,25e674b6ec06f700e2e98f556420d721:-1813455140,fcd2b83e8dc2f7000587b5d833793a7b:239212252,41e13c3a72c2f700b2887aaf657f6dae:633155201,55713876e4c2f700b50b23730bdc8e8e:-1264135709,a31f28fed382f70090fe7f9da6064c13:772237970,1e0f28fea982f700324295807bbcc980:-2100310534,58be64fe8182f70022b5a851f50dcba0:-1295838951,69de907a6c42f700919508981a242059:548224710,89de147a2442f700d562a61cccf47259:1146235521,5d8e58f62542f7006fa6efaa4dc5f0e5:-1558510986,8d55d8be77ceb7008ec5580822f8d7aa:642379165,654598be95ceb70047b00ff2f84d7f8b:2110826280,19e4d4be8aceb700e6eed1b70e79cf64:72490409,69d454bea3ceb7001ce120a52875ecef:1939070116,c9f13baacb4eb700066c1f7aa815306e:2064366681,0e6173aae84eb70019ac951f3bcac65f:170575640</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_table_9122bfaa4f4eb70005be4d6e0210c781</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;state&lt;/display_field&gt;&lt;field_list/&gt;&lt;filter/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;5&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;23123faa4f4eb70005be4d6e0210c7d1&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Business Process Visualizer"&gt;caf0fb6a4f4eb70005be4d6e0210c7da&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-18 12:55:45&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;9122bfaa4f4eb70005be4d6e0210c781&lt;/sys_id&gt;&lt;sys_mod_count&gt;51&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_9122bfaa4f4eb70005be4d6e0210c781&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-21 15:25:11&lt;/sys_updated_on&gt;&lt;table&gt;change_request&lt;/table&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"icons": {
+		"value": "",
+		"displayValue": ""
+	},
+	"default_icon": {
+		"value": "check",
+		"displayValue": ""
+	},
+	"invert_sequence": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"caption": {
+		"value": "Ticket State",
+		"displayValue": "Ticket State"
+	},
+	"mobile_show_scale": {
+		"value": "false",
+		"displayValue": "false"
+	},
+	"display_size": {
+		"value": "",
+		"displayValue": "-- None --"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=9122bfaa4f4eb70005be4d6e0210c781"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>982810802</payload_hash>
+<remote_update_set display_value="Business Process Visualizer">01b17f6b4fc6bb0005be4d6e0210c71a</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-06-21 15:27:38</sys_created_on>
+<sys_id>45b17f6b4fc6bb0005be4d6e0210c71a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b7aa43bcd0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-06-21 15:27:38</sys_updated_on>
+<table>change_request</table>
+<target_name/>
+<type>Instance with Table</type>
+<update_domain>global</update_domain>
+<update_guid>1521b7a728c6bb005e4ff28df4ebb941</update_guid>
+<update_guid_history>1521b7a728c6bb005e4ff28df4ebb941:982810802,85907f27cfc6bb00e2edf700d216c75a:144959332,2ca6efab0786bb0086e3d1977d2ce8d7:982810802,0256ebabd486bb006b8e12dcd69feec5:271253554,8f85335f0e8a7b008c3439671c8ec72f:1702155128,c6127bd7db8a7b0081f370757f7f6238:1855720104,912c6f53998a7b00ccca243252d76108:1466663380,2e87218f19863b00c3f5c4649f78780e:384059718,fe576d4fad863b00124ce8621b0cfe0b:-1907203208,c327ed8ba9863b00671e8d29ea1e4c12:798577130,b7d3a98b22863b006a5da868da22f856:1290370419,9863e14b57863b0094a1da9cd0d608cb:798577130,31d26d0b29863b004e5d8dbe691d612a:1290370419,00c2ed873a863b0092c9010638788aea:1436830745,3d52e5470e863b0093107b5a305f4091:-951591794,7032a9874d863b000d40a9d3127ed295:1004001595,a21dd5cf12463b0098edbc8128c724b8:-256199356,cd0d59cf4c463b00c2f307b3c204ec94:798577130,83dc95cf18463b00443738bc19a068d5:1004001595,039cd18f0d463b00a2ed61f92ec11131:1327056017,f95c910f95463b00e36fe1ccb9a8e1d7:-256199356,940b5d4b35463b002dc3985fa2f9a872:1004001595,92ba994b5c463b00ad829c4d64434f62:1327056017,a75a554b36463b001cf0bea5204339ad:538548242,824a9d0b5e463b00bb9f62c3539a567e:-256199356,0e89590bd3463b000cf4f090e74b490e:1004001595,a869550b79463b00aa6c3dfd794c626e:798577130,6af8918737463b00634ef20d76aff7f0:2087258667,40a89dc33e463b002da6e48febc00a9a:369545163,f4b759835a463b001f8e5d3f2edf9e13:1015518319,378719838c463b000697147d43606734:-1608671131,e754d54f81063b00b7fec59d4b76f9b8:2063471795,8383990f1a063b005f07e61fa42dbc8c:-1608671131,2a63d10f82063b001f270e334024b57c:2063471795,4a2d098314063b00e87388a01cff8d9f:-1041926776,d8fc8143b8063b00005c555b76410eb3:-1554901011,2b8db44311c23b00ce69c461c397ff75:-2021831869,2d0d3043f5c23b0024d343fe3497bb82:1671915269,addc7c03fdc23b00f117e0b7d86a2588:-1249311917,37a9b0cbd1823b003bb106295b48bafc:389468259,9a497c8bf4823b00142061edd2c4fbca:1785148001,60c3d1be2586f70086b0368c8adecb0d:-550453398,7ba351bea886f700ef49b431b354447e:2041301403,8a6359bae386f7000bf41774df7987cf:-1146718670,f5f259fac586f7009052d1f4603d0d75:-550453398,a370517a2d86f700395b772734791400:1225621888,80437c3eecc2f700f6cc14ad0d41e269:369545163,d0c17c766fc2f700193e2f220546999a:-910859485,c6a13c76fbc2f70048481eb13a43abf8:-2089887608</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

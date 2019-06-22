@@ -1,0 +1,130 @@
+.design-process-section .text-align-center {
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+.container{
+  margin: 20px auto 20px;
+  width: 100% !important;
+}
+.caption{
+  text-align: center;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+.process-model {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  display: grid;
+  grid-gap: 0px;
+  grid-auto-flow: column;
+  justify-items: center;
+  border: none;
+  z-index: 0;
+  text-align: center;
+  align-items: start;
+  justify-content: center;
+}
+.process-model li::after {
+  background: $text-color none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  right: -50%;
+  width: 100%;
+  z-index: -1;
+}
+.process-model li:last-child::after {
+  width: 0;
+}
+.process-model li {
+  text-align: center;
+  float: none;
+}
+.process-model li.active,
+.process-model li.visited {
+  color: $brand-success;
+}
+.process-model li p {
+  font-size: 14px;
+  width: 86%;
+  margin: 0 auto;
+  margin-top: 10px;
+  @media only screen and (max-width: 767px) {
+    color: transparent;
+  }
+}
+.process-model li.active p,
+.process-model li.visited p {
+  font-weight: 600;
+  @media only screen and (max-width: 767px) {
+    color: $brand-success;
+  }
+}
+.process-model li i {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background: #F5F5F5;
+  border: 2px solid $text-color;
+  border-radius: 50%;
+}
+.process-model li.i-large{
+  i{
+    height: 68px;
+    width: 68px;
+    font-size: 30px;
+    line-height: 65px;
+  }
+}
+.process-model li.i-medium{
+  i{
+    height: 51px;
+    width: 51px;
+    font-size: 21px;
+    line-height: 49px;
+  }
+}
+.process-model li.i-small{
+  i{
+    height: 34px;
+    width: 34px;
+    line-height: 32px;
+    font-size: 16px;
+  }
+  p{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.process-model li.i-large::after{
+  top: 33px;
+  height: 4px;
+}
+.process-model li.i-medium::after{
+  top: 24px;
+  height: 3.5px;
+}
+.process-model li.i-small::after{
+  top: 15.5px;
+  height: 3px;
+}
+
+.process-large{
+  grid-auto-columns: minmax(100px,auto);
+}
+.process-medium{
+  grid-auto-columns: minmax(75px,auto);
+}
+.process-small{
+  grid-auto-columns: minmax(50px,auto);
+}
+
+.process-model li.active i, .process-model li.visited i  {
+  background: #fff;
+  border-color: $brand-success;
+}
