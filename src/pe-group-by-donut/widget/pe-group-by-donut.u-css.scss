@@ -1,0 +1,56 @@
+$pe-chart-title: #777 !default;
+
+highchart {
+  width: 100%;
+  height: 300px;
+  display: block;
+
+  .highcharts-title {
+    fill: $pe-chart-title;
+  }
+
+  .highcharts-point.highcharts-color-0,
+  .highcharts-halo.highcharts-color-0 {
+    fill: $brand-danger;
+  }
+  .highcharts-data-label-connector.highcharts-color-0,
+  .highcharts-tooltip.highcharts-color-0 > .highcharts-tooltip-box {
+    stroke: $brand-danger;
+  }
+  
+  .highcharts-point.highcharts-color-1,
+  .highcharts-halo.highcharts-color-1 {
+    fill: $brand-warning;
+  }
+  .highcharts-data-label-connector.highcharts-color-1,
+  .highcharts-tooltip.highcharts-color-1 > .highcharts-tooltip-box {
+    stroke: $brand-warning;
+  }
+
+  .highcharts-point.highcharts-color-2,
+  .highcharts-halo.highcharts-color-2 {
+    fill: $brand-primary;
+  }
+  .highcharts-data-label-connector.highcharts-color-2,
+  .highcharts-tooltip.highcharts-color-2 > .highcharts-tooltip-box {
+    stroke: $brand-primary;
+  }
+  
+  .highcharts-point.highcharts-color-3,
+  .highcharts-halo.highcharts-color-3 {
+    fill: $brand-info;
+  }
+  .highcharts-data-label-connector.highcharts-color-3,
+  .highcharts-tooltip.highcharts-color-3 > .highcharts-tooltip-box {
+    stroke: $brand-info;
+  }
+  
+  .highcharts-point.highcharts-color-4,
+  .highcharts-halo.highcharts-color-4 {
+    fill: $brand-success;
+  }
+  .highcharts-data-label-connector.highcharts-color-4,
+  .highcharts-tooltip.highcharts-color-4 > .highcharts-tooltip-box {
+    stroke: $brand-success;
+  }
+}
