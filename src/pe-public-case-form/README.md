@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> Public Case Form that creates a case and customer record from a public page. Customer information is populated from the "Personal Details" section while a case is produced using the "Reason" and "Details section. This is a use case where companies can interact with their customers through the platform without the customers having to interact with ServiceNow.
 
 ## Screenshot
 
