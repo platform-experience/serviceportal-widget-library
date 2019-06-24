@@ -1,3 +1,23 @@
-<div>
-  <!-- your widget template -->
+<div class="panel panel-default csm-widget">
+  <div class="panel-heading">
+     <h4 class="panel-title">${My Upcoming Events}</h4>
+  </div>
+  <div class="panel-body" ng-repeat="item in c.data.listItems" >
+     <ul class="list-unstyled">
+       <div class="col-md-2 col-xs-2 col-sm-2">
+         <div class="event-date">
+           <p class="event-month">{{item.month}}</p>
+          <p class="event-day">{{item.day}}</p>
+         </div>
+       </div>
+       <div class="col-md-10 col-xs-10 col-sm-10">
+         <div class="event-info module">
+           <p class="event-title">
+             <a class="color-black wrap-para block-display"
+             data-ng-href="/csm?id=community_event&sys_id={{::item.sys_id}}">{{item.title}}</a>
+           </p>
+         </div>
+       </div>
+     </ul>
+  </div>
 </div>

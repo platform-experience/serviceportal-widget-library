@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> Displays only the upcoming community events that the logged in persona is RSVP'd too. 
 
 ## Screenshot
 

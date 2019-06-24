@@ -1,0 +1,65 @@
+.event-date{
+	display: inline-block;
+	margin-right: 7px;
+	height:50px;
+	width: 30px;
+
+	p{
+		margin-bottom: 2px;
+	}
+	.event-month{
+		height: 16px;	
+		margin-bottom: 0px;
+        width: 40.04px;	
+        color: $text-color;	
+        font-size: 14px;	
+        font-weight: 500;	
+        line-height: 16px;	
+        text-align: center;
+      	
+	}
+
+	.event-day{
+		height: 28px;	
+        width: 40px;	
+        color: $text-muted;	
+        font-size: 24px;	
+        line-height: 28px;	
+        text-align: center;
+	}
+}
+
+.event-info{
+	display: inline-block;
+	width:85%;
+	vertical-align: top;
+	p{
+      margin-bottom: 0px;
+    }
+    .event-title{	
+        color: $text-color;	
+        font-size: 14px;	
+        font-weight: 500;	
+				margin-top: 0px;
+      	font-size: 14px;
+      
+    }
+    .event-attendance{
+        color: $text-muted;	
+        font-size: 14px;	
+        line-height: 15px;
+        padding-top: 6px;
+    }
+}
+
+.wrap-para {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.color-black {
+  color: $text-color;
+}
+.block-display{
+  display: block;
+}
