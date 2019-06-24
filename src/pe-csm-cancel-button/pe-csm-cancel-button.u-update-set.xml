@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-05-03 21:41:52">
+<sp_widget action="INSERT_OR_UPDATE">
+<category>custom</category>
+<client_script><![CDATA[function($scope, spUtil) {
+  var c = this;
+	
+	spUtil.recordWatch($scope, $scope.data.table, "sys_id=" +  $scope.data.sys_id);
+	
+	c.uiAction = function(action){
+		c.data.action = action;
+		c.server.update().then(function() {
+			c.data.action = undefined;
+		})
+	}
+}]]></client_script>
+<controller_as>c</controller_as>
+<css/>
+<data_table>sp_instance</data_table>
+<demo_data/>
+<description/>
+<docs display_value=""/>
+<field_list/>
+<has_preview>true</has_preview>
+<id>csm_cncl_btn</id>
+<internal>false</internal>
+<link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+<name>CSM Cancel Button</name>
+<option_schema/>
+<public>false</public>
+<roles>snc_internal,snc_external</roles>
+<script><![CDATA[(function() {
+  
+	
+	data.table = input.table || $sp.getParameter("table");
+	data.sys_id = input.sys_id || $sp.getParameter("sys_id");
+	
+	gr = new GlideRecord(data.table);
+	if (!gr.isValid())
+		return;
+	
+	if(!gr.get(data.sys_id))
+		return;
+	
+	//show button unless state is closed, canceled, resolved
+	data.state = gr.getValue('state');
+	data.showCancel = (data.state != '7' && data.state != '6' && data.state != '3') ? true: false;
+
+	if (input && input.action) {
+		var action = input.action;
+		
+		if(data.table ==  'sn_customerservice_case') {
+			if(action == 'cancel') {
+				gr.setValue('state', 7); //set state to cancelled
+				gr.setValue('resolution_code', 9); //set resolution code to void/canceled
+				gr.update();
+				gs.addErrorMessage('Case has been CANCELED');
+			}
+		}
+	}
+
+})();]]></script>
+<servicenow>false</servicenow>
+<sys_class_name>sp_widget</sys_class_name>
+<sys_created_by>allisa.liberto</sys_created_by>
+<sys_created_on>2019-04-25 16:34:58</sys_created_on>
+<sys_id>eb7e1699dbc177005c2f5890cf961967</sys_id>
+<sys_mod_count>23</sys_mod_count>
+<sys_name>CSM Cancel Button</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sp_widget_eb7e1699dbc177005c2f5890cf961967</sys_update_name>
+<sys_updated_by>allisa.liberto</sys_updated_by>
+<sys_updated_on>2019-05-03 21:41:34</sys_updated_on>
+<template><![CDATA[<div class="panel panel-default" ng-if="c.data.showCancel">
+ <div class="panel-body">
+ <button type="button" class="btn btn-primary btn-block" ng-click="c.uiAction('cancel')">Cancel</button>
+ </div>
+</div>]]></template>
+</sp_widget>
+</unload>

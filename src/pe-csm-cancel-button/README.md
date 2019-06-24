@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> A button that can be added to the csm_ticket page for users to cancel their cases if needed. When clicked, the button will disappear and create an alert on the pge. The case state will then be changed to cancelled.
 
 ## Screenshot
 
