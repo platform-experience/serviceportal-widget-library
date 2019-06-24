@@ -1,3 +1,9 @@
-<div>
-  <!-- your widget template -->
-</div>
+<section class="information-links-widget">
+  <sp-panel rect="rect" ng-if="c.data.impersonationUsers.length">
+    <div ng-repeat="user in c.data.impersonationUsers">
+      <a href="javascript:void(0)" ng-click="c.impersonate(user.user_id)" class="a-list">
+        {{::user.name}}
+      </a>
+    </div>
+  </sp-panel>
+</section>

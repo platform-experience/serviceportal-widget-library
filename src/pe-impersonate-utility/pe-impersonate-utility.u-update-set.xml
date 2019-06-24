@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-21 00:21:06">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>SP - Impersonation Util </name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8b1264e7db06730094407f6bbf961903</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>bd3264e7db06730094407f6bbf96198f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_3c22949e4f5d6740d1676bd18110c758</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Impersonation Set">3822949e4f5d6740d1676bd18110c749</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Impersonation sets</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_impersonation_set</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:00:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3c22949e4f5d6740d1676bd18110c758</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Impersonation sets</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_3c22949e4f5d6740d1676bd18110c758</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:00:12</sys_updated_on><timeline_page/><title>Impersonation sets</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>1159020163</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>313264e7db06730094407f6bbf961991</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772623dc0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation sets</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>3422949ed15d674011769c43f09ec25a</update_guid>
+<update_guid_history>3422949ed15d674011769c43f09ec25a:1159020163</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_related_u_impersonation_set_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="u_impersonation_set" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Impersonation set - Default view" name="u_impersonation_set" related_list="NULL" sys_domain="global" view="Default view">36f49c524f9d6740d1676bd18110c7b4</list_id><order_by/><position>0</position><related_list>u_m2m_users_impersonation_sets.u_impersonation_set</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:12:38</sys_created_on><sys_id>76f49c524f9d6740d1676bd18110c7b5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:12:38</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Impersonation set - Default view</calculated_name><filter/><name>u_impersonation_set</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:12:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>36f49c524f9d6740d1676bd18110c7b4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Impersonation set - Default view</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_related_u_impersonation_set_null</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:12:38</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<payload_hash>1418060126</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>313264e7db06730094407f6bbf961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772624640000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_guid>fef49c524f9d67407448babd81b8b5b6</update_guid>
+<update_guid_history>fef49c524f9d67407448babd81b8b5b6:1418060126</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_impersonation_set_u_description_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_description" label="Description" language="en" table="u_impersonation_set"><sys_documentation action="INSERT_OR_UPDATE"><element>u_description</element><help/><hint/><label>Description</label><language>en</language><name>u_impersonation_set</name><plural>Descriptions</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:00:13</sys_created_on><sys_id>b822949e4f5d6740d1676bd18110c771</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Description</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_impersonation_set_u_description_en</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:00:13</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1246543645</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>353264e7db06730094407f6bbf961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b7726240b0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set.Description</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>3c22949e285d6740affdfe6cc0ccb5a8</update_guid>
+<update_guid_history>3c22949e285d6740affdfe6cc0ccb5a8:1246543645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_m2m_users_impersonation_sets_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_m2m_users_impersonation_sets"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>u_m2m_users_impersonation_sets</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:03:34</sys_created_on><sys_id>46e258de4f5d6740d1676bd18110c770</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_m2m_users_impersonation_sets</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_m2m_users_impersonation_sets_null</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:03:34</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>2125475339</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>393264e7db06730094407f6bbf961992</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772624280000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_m2m_users_impersonation_sets</table>
+<target_name>M2m Users Impersonation Sets</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>c2e258de475d6740067850800dacc17e</update_guid>
+<update_guid_history>c2e258de475d6740067850800dacc17e:2125475339</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_impersonation_set_null</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="" table="u_impersonation_set"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="Collection"&gt;collection&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_impersonation_set&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-23 23:00:12&lt;/sys_created_on&gt;&lt;sys_id&gt;3022949e4f5d6740d1676bd18110c75b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_impersonation_set&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_impersonation_set_null&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-23 23:00:12&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-646767645</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>3d3264e7db06730094407f6bbf961991</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772623ed0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>7022949eff5d6740afacae7e36088fa4</update_guid>
+<update_guid_history>7022949eff5d6740afacae7e36088fa4:-646767645</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_f022949e4f5d6740d1676bd18110c77c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_impersonation_set</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:00:13</sys_created_on><sys_id>f022949e4f5d6740d1676bd18110c77c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_impersonation_set</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_f022949e4f5d6740d1676bd18110c77c</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:00:13</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>442778042</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>3d3264e7db06730094407f6bbf961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772623e50000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table/>
+<target_name>u_impersonation_set</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>b822949e6f5d6740ab9608bd42c28aa2</update_guid>
+<update_guid_history>b822949e6f5d6740ab9608bd42c28aa2:442778042</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_impersonation_set_u_active_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_active" label="Active" language="en" table="u_impersonation_set"><sys_documentation action="INSERT_OR_UPDATE"><element>u_active</element><help/><hint/><label>Active</label><language>en</language><name>u_impersonation_set</name><plural>Active</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:00:13</sys_created_on><sys_id>b422949e4f5d6740d1676bd18110c770</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Active</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_impersonation_set_u_active_en</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:00:13</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>505824858</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>713264e7db06730094407f6bbf961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772624040000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set.Active</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b822949e4c5d6740df6a61527bbf37a7</update_guid>
+<update_guid_history>b822949e4c5d6740df6a61527bbf37a7:505824858</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_impersonation_set_u_name</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_name" table="u_impersonation_set"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Name&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_impersonation_set&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-23 23:00:12&lt;/sys_created_on&gt;&lt;sys_id&gt;49a1d05e4f5d6740d1676bd18110c7d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Name&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_impersonation_set_u_name&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-23 23:00:12&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>174094439</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>753264e7db06730094407f6bbf961992</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772623ba0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>u_impersonation_set.u_name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>e422949e655d674013ad4ee84c60b622</update_guid>
+<update_guid_history>e422949e655d674013ad4ee84c60b622:174094439</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_86e21c9e4f5d6740d1676bd18110c7a6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>M2m Users Impersonation Sets</label><live_feed_enabled>false</live_feed_enabled><name>u_m2m_users_impersonation_sets</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:03:34</sys_created_on><sys_id>86e21c9e4f5d6740d1676bd18110c7a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>M2m Users Impersonation Sets</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_86e21c9e4f5d6740d1676bd18110c7a6</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:03:34</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>1646906647</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>793264e7db06730094407f6bbf961991</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b7726242f0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_m2m_users_impersonation_sets</table>
+<target_name>M2m Users Impersonation Sets</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>c2e258dece5d6740e45bc9f2aa62f47f</update_guid>
+<update_guid_history>c2e258dece5d6740e45bc9f2aa62f47f:1646906647</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_cae258de4f5d6740d1676bd18110c77b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>u_m2m_users_impersonation_sets</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:03:35</sys_created_on><sys_id>cae258de4f5d6740d1676bd18110c77b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_m2m_users_impersonation_sets</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>ua_table_licensing_config_cae258de4f5d6740d1676bd18110c77b</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:03:35</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>-1826662326</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>793264e7db06730094407f6bbf961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772624210000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table/>
+<target_name>u_m2m_users_impersonation_sets</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>4ee258de565d674093611256640ed97c</update_guid>
+<update_guid_history>4ee258de565d674093611256640ed97c:-1826662326</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_3822949e4f5d6740d1676bd18110c749</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Impersonation Set</name><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:00:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3822949e4f5d6740d1676bd18110c749</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Impersonation Set</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_3822949e4f5d6740d1676bd18110c749</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:00:12</sys_updated_on><title>Impersonation Set</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>-1876497766</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>7d3264e7db06730094407f6bbf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772623d40000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table/>
+<target_name>Impersonation Set</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>fc22949e985d67404aa90437d7027857</update_guid>
+<update_guid_history>fc22949e985d67404aa90437d7027857:-1876497766</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_m2m_c0a214de4f5d6740d1676bd18110c79c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m"><sys_m2m action="INSERT_OR_UPDATE"><from_table>u_impersonation_set</from_table><m2m_from_field>u_impersonation_set</m2m_from_field><m2m_from_label>Users</m2m_from_label><m2m_table>u_m2m_users_impersonation_sets</m2m_table><m2m_to_field>u_user</m2m_to_field><m2m_to_label>Impersonation sets</m2m_to_label><sys_class_name>sys_m2m</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:03:34</sys_created_on><sys_id>c0a214de4f5d6740d1676bd18110c79c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_m2m_users_impersonation_sets</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_m2m_c0a214de4f5d6740d1676bd18110c79c</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:03:34</sys_updated_on><to_table>sys_user</to_table></sys_m2m></record_update>]]></payload>
+<payload_hash>2112395429</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>7d3264e7db06730094407f6bbf961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772624450000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table/>
+<target_name>u_m2m_users_impersonation_sets</target_name>
+<type>Many to Many Definition</type>
+<update_domain>global</update_domain>
+<update_guid>5ee258dedc5d67408f27715772843e96</update_guid>
+<update_guid_history>5ee258dedc5d67408f27715772843e96:2112395429</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_impersonation_set_u_description</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_description" table="u_impersonation_set"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Description&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_description&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;name&gt;u_impersonation_set&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-23 23:00:12&lt;/sys_created_on&gt;&lt;sys_id&gt;13e1145e4f5d6740d1676bd18110c7e2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Description&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_impersonation_set_u_description&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-23 23:01:08&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1572474351</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>b13264e7db06730094407f6bbf961992</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b7726241a0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set.Description</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>5a52989e245d67403b2cb95a0bf5b745</update_guid>
+<update_guid_history>5a52989e245d67403b2cb95a0bf5b745:1572474351,6422949e015d6740976331cddd375f45:-2092353279</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_7ca1d85e4f5d6740d1676bd18110c792</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Impersonation set</label><live_feed_enabled>false</live_feed_enabled><name>u_impersonation_set</name><number_ref/><provider_class/><read_access>true</read_access><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:00:12</sys_created_on><sys_id>7ca1d85e4f5d6740d1676bd18110c792</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Impersonation set</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_object_7ca1d85e4f5d6740d1676bd18110c792</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:00:44</sys_updated_on><update_access>false</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>895933636</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>b53264e7db06730094407f6bbf961991</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772624120000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>a442d89e885d67400ec41d7a40488de4</update_guid>
+<update_guid_history>a442d89e885d67400ec41d7a40488de4:895933636,7c22949ef95d67401865b907871176a9:895933636</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_248354124f9d6740d1676bd18110c7fa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="248354124f9d6740d1676bd18110c7fa" sys_domain="global" table="u_m2m_users_impersonation_sets" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:12</sys_created_on><sys_id>a48394124f9d6740d1676bd18110c700</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_m2m_users_impersonation_sets" sys_domain="global" view="Default view">248354124f9d6740d1676bd18110c7fa</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:12</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_impersonation_set</element><position>1</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:12</sys_created_on><sys_id>ac8394124f9d6740d1676bd18110c700</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_m2m_users_impersonation_sets" sys_domain="global" view="Default view">248354124f9d6740d1676bd18110c7fa</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:12</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:12</sys_created_on><sys_id>208394124f9d6740d1676bd18110c701</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_m2m_users_impersonation_sets" sys_domain="global" view="Default view">248354124f9d6740d1676bd18110c7fa</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:12</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_user</element><position>3</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:12</sys_created_on><sys_id>a08394124f9d6740d1676bd18110c701</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_m2m_users_impersonation_sets" sys_domain="global" view="Default view">248354124f9d6740d1676bd18110c7fa</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:12</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>4</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:12</sys_created_on><sys_id>248394124f9d6740d1676bd18110c701</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_m2m_users_impersonation_sets" sys_domain="global" view="Default view">248354124f9d6740d1676bd18110c7fa</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:12</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_m2m_users_impersonation_sets</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>248354124f9d6740d1676bd18110c7fa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_m2m_users_impersonation_sets</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_248354124f9d6740d1676bd18110c7fa</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:12</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1744557877</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>b53264e7db06730094407f6bbf961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772624540000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_m2m_users_impersonation_sets</table>
+<target_name>M2m Users Impersonation Sets</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>a8839412629d6740593af3d46e238f02</update_guid>
+<update_guid_history>a8839412629d6740593af3d46e238f02:1744557877,68835412e49d6740a3f6f4ed72e81cfc:-115388804</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_23f3dc124f9d6740d1676bd18110c78b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($window) {
+  /* widget controller */
+  var c = this;
+
+	c.impersonate = function(name){
+		c.server.get({ "name": name }).then(function(r) {
+            if(r.data.old_user){
+				$window.location.reload();
+			}
+		});
+	};
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.user{&amp;#13;
+padding:5px;&amp;#13;
+  display:block;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.h3-heading{&amp;#13;
+	text-decoration:underline;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;impersonation_utility&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Impersonation Utility&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	if(!input){
+		//$sp.log("in if, name is "+input.name);
+
+		data.impersonationUsers = [];
+		var gr = new GlideRecord('u_impersonation_set');
+		gr.addActiveQuery();
+		gr.query();
+		if(gr.next()){
+			var m2mGr = new GlideRecord('u_m2m_users_impersonation_sets');
+			m2mGr.addQuery('u_impersonation_set', gr.getDisplayValue('sys_id'));
+			m2mGr.query();
+			while(m2mGr.next()){
+				var temp = {};
+					temp.sys_id = m2mGr.u_user.sys_id.getDisplayValue();
+					temp.name = m2mGr.u_user.name.getDisplayValue();
+					temp.user_id = m2mGr.u_user.user_name.getDisplayValue();
+					data.impersonationUsers.push(temp);
+				}
+			$sp.log(data.impersonationUsers);
+			}
+		} else if(input.name) {
+			gs.info("in else, name is "+input.name);
+			data.old_user = session.onlineImpersonate(input.name);
+		}
+
+
+
+
+
+	})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-23 23:24:42&lt;/sys_created_on&gt;&lt;sys_id&gt;23f3dc124f9d6740d1676bd18110c78b&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Impersonation Utility&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_23f3dc124f9d6740d1676bd18110c78b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-20 23:12:03&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;section class="information-links-widget"&gt;
+  &lt;sp-panel rect="rect" ng-if="c.data.impersonationUsers.length"&gt;
+    &lt;div ng-repeat="user in c.data.impersonationUsers"&gt;
+      &lt;a href="javascript:void(0)" ng-click="c.impersonate(user.user_id)" class="a-list"&gt;
+        {{::user.name}}
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/sp-panel&gt;
+&lt;/section&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1049540070</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>b93264e7db06730094407f6bbf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b77294d890000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table/>
+<target_name>Impersonation Utility</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>9e62586fd1c273003f7471b19cc677e2</update_guid>
+<update_guid_history>9e62586fd1c273003f7471b19cc677e2:-1049540070,830765838133a740ebe8279bfa5767f3:-667703625,2b5b7362ffb367407605f6998ab817a3:-1308461244,67fafb22b2b36740d5aead843c9ee2a9:-630554652,979228e6af11e74073427b3963024e19:1121198570,ca62eca66111e7400a70c64713c6462c:249986856,6b4f546e76dda740295644a7397dcc2d:-164822356,837b40663b9da740d6cff759494d0d95:-798405992,61ba4426569da74009ac485b5c6b938c:-357497029,b1d804aea65da74006d476d751700131:-1205299127,7168802e945da7405e6c79f08e61138e:-597171687,ff080cea925da740de5cf53be6e1ce0a:1612978393,5bd744ea625da740766e33f7d0739ad6:-893950662,1066c46a2e5da740f2dfeb62c6697d54:-1937433799,297a1c56499d67403120efe1cc6a166d:-488566150,29185056bc9d674084a4aeed8dd13d17:-662437496,2fb71092599d674057d2d431ae8f84f8:-1331947084</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_impersonation_set__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="Impersonation set" language="en" table="u_impersonation_set"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>Impersonation set</label><language>en</language><name>u_impersonation_set</name><plural>Impersonation sets</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:00:13</sys_created_on><sys_id>3422949e4f5d6740d1676bd18110c762</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Impersonation set</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_impersonation_set__en</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:00:13</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1471150691</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>b93264e7db06730094407f6bbf961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772623f50000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>b422949e225d67406d97f46a1d1679a5</update_guid>
+<update_guid_history>b422949e225d67406d97f46a1d1679a5:1471150691</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_m2m_users_impersonation_sets_u_user</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_user" table="u_m2m_users_impersonation_sets"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>User</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_user</element><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>u_m2m_users_impersonation_sets</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="sys_user">sys_user</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:03:35</sys_created_on><sys_id>42e258de4f5d6740d1676bd18110c781</sys_id><sys_mod_count>0</sys_mod_count><sys_name>User</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_m2m_users_impersonation_sets_u_user</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:03:35</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>511755627</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>bd3264e7db06730094407f6bbf961992</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772624360000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_m2m_users_impersonation_sets</table>
+<target_name>M2m Users Impersonation Sets.User</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>1ae258de865d67402c2ec58c2142148a</update_guid>
+<update_guid_history>1ae258de865d67402c2ec58c2142148a:511755627</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_aff1146fdbc2730094407f6bbf96191b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">6cc8a193d7333100a9ad1e173e24d4de</sp_column><sp_widget display_value="Impersonation Utility">23f3dc124f9d6740d1676bd18110c78b</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2019-06-20 23:10:14</sys_created_on><sys_id>aff1146fdbc2730094407f6bbf96191b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Impersonate</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_aff1146fdbc2730094407f6bbf96191b</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2019-06-21 00:18:53</sys_updated_on><title>Impersonate</title><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=aff1146fdbc2730094407f6bbf96191b"/></record_update>]]></payload>
+<payload_hash>2115372985</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>f13264e7db06730094407f6bbf961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b77667bf90000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table/>
+<target_name>Impersonate</target_name>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>51b120e71706730059658ef8b800fe8c</update_guid>
+<update_guid_history>51b120e71706730059658ef8b800fe8c:2115372985,c3725c6f8cc27300f0e817b307938927:1846087369,abf1146f3cc27300ed71d33b872cb51d:-1476797670</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_8c139cde4f5d6740d1676bd18110c709</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Impersonation Set">3822949e4f5d6740d1676bd18110c749</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Impersonation Relations</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_m2m_users_impersonation_sets</name><order>20</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:05:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8c139cde4f5d6740d1676bd18110c709</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Impersonation Relations</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_8c139cde4f5d6740d1676bd18110c709</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:05:55</sys_updated_on><timeline_page/><title>Impersonation Relations</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>981618284</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>f13264e7db06730094407f6bbf961991</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b7726244d0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_m2m_users_impersonation_sets</table>
+<target_name>Impersonation Relations</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>d4731cdea25d6740c3e530dd3db37bfe</update_guid>
+<update_guid_history>d4731cdea25d6740c3e530dd3db37bfe:981618284</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_1a839cde4f5d6740d1676bd18110c77b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="1a839cde4f5d6740d1676bd18110c77b" sys_domain="global" table="u_impersonation_set" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:19</sys_created_on><sys_id>968394124f9d6740d1676bd18110c785</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_impersonation_set" sys_domain="global" view="Default view">1a839cde4f5d6740d1676bd18110c77b</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:19</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_name</element><position>1</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:19</sys_created_on><sys_id>1a8394124f9d6740d1676bd18110c785</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_impersonation_set" sys_domain="global" view="Default view">1a839cde4f5d6740d1676bd18110c77b</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:19</sys_created_on><sys_id>9a8394124f9d6740d1676bd18110c785</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_impersonation_set" sys_domain="global" view="Default view">1a839cde4f5d6740d1676bd18110c77b</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:19</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_active</element><position>3</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:19</sys_created_on><sys_id>1e8394124f9d6740d1676bd18110c785</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_impersonation_set" sys_domain="global" view="Default view">1a839cde4f5d6740d1676bd18110c77b</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>4</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:19</sys_created_on><sys_id>9e8394124f9d6740d1676bd18110c785</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_impersonation_set" sys_domain="global" view="Default view">1a839cde4f5d6740d1676bd18110c77b</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:19</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_description</element><position>5</position><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:19</sys_created_on><sys_id>128394124f9d6740d1676bd18110c786</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="u_impersonation_set" sys_domain="global" view="Default view">1a839cde4f5d6740d1676bd18110c77b</sys_ui_section><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>u_impersonation_set</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:06:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1a839cde4f5d6740d1676bd18110c77b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_impersonation_set</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_1a839cde4f5d6740d1676bd18110c77b</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:06:19</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>1567682582</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>f13264e7db06730094407f6bbf961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b7726245c0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>1a839412619d6740f04080010231de87</update_guid>
+<update_guid_history>1a839412619d6740f04080010231de87:1567682582,5a839412359d674059b858f4b55e3a81:1068737938</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_u_impersonation_set_u_name_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="u_name" label="Name" language="en" table="u_impersonation_set"><sys_documentation action="INSERT_OR_UPDATE"><element>u_name</element><help/><hint/><label>Name</label><language>en</language><name>u_impersonation_set</name><plural>Names</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:00:13</sys_created_on><sys_id>7822949e4f5d6740d1676bd18110c772</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_impersonation_set_u_name_en</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:00:13</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-2069536133</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>f53264e7db06730094407f6bbf961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772623fc0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>Impersonation set.Name</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>3822949ee35d6740f6c836603870bea6</update_guid>
+<update_guid_history>3822949ee35d6740f6c836603870bea6:-2069536133</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_m2m_users_impersonation_sets_u_impersonation_set</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="u_impersonation_set" table="u_m2m_users_impersonation_sets"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Impersonation set</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>u_impersonation_set</element><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>u_m2m_users_impersonation_sets</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference display_value="" name="u_impersonation_set">u_impersonation_set</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>sush</sys_created_by><sys_created_on>2018-10-23 23:03:35</sys_created_on><sys_id>9ee258de4f5d6740d1676bd18110c78b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Impersonation set</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_u_m2m_users_impersonation_sets_u_impersonation_set</sys_update_name><sys_updated_by>sush</sys_updated_by><sys_updated_on>2018-10-23 23:03:35</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-836261321</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>f93264e7db06730094407f6bbf961992</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b7726243e0000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_m2m_users_impersonation_sets</table>
+<target_name>M2m Users Impersonation Sets.Impersonation set</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>5ee258de085d67407dab1ee23b583394</update_guid>
+<update_guid_history>5ee258de085d67407dab1ee23b583394:-836261321</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_u_impersonation_set_u_active</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_dictionary action="INSERT_OR_UPDATE" element="u_active" table="u_impersonation_set"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Active&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_active&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;name&gt;u_impersonation_set&lt;/name&gt;&lt;next_element/&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_dictionary&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-10-23 23:00:12&lt;/sys_created_on&gt;&lt;sys_id&gt;16d1985e4f5d6740d1676bd18110c7c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Active&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_dictionary_u_impersonation_set_u_active&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-10-23 23:00:12&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_dictionary&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-466444495</payload_hash>
+<remote_update_set display_value="SP - Impersonation Util ">bd3264e7db06730094407f6bbf96198f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>sush.chan</sys_created_by>
+<sys_created_on>2019-06-21 00:21:06</sys_created_on>
+<sys_id>fd3264e7db06730094407f6bbf961991</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b772623c70000001</sys_recorded_at>
+<sys_updated_by>sush.chan</sys_updated_by>
+<sys_updated_on>2019-06-21 00:21:06</sys_updated_on>
+<table>u_impersonation_set</table>
+<target_name>u_impersonation_set.u_active</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>a422949e545d67408cac1a5a9f690b40</update_guid>
+<update_guid_history>a422949e545d67408cac1a5a9f690b40:-466444495</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
