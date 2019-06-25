@@ -1,0 +1,84 @@
+<div ng-if="::data.hasProject" class="panel panel-primary b">
+  <div class="panel-heading">
+    <h4 class="panel-title">${{{c.options.title}}}</h4>
+  </div>
+  <div class="status-color-bar" ng-style="c.statusBar"></div>
+  <div class="panel-body">
+    <div class="card-block">
+      <div class="row">
+        <div class="col-md-10 col-xs-10 header-container">
+          <p class="card-title" uib-tooltip="Project Name" tooltip-placement="top">{{::data.proj.name}}</p>
+          <span class="card-caption" uib-tooltip="Planned Start Date" tooltip-placement="top" tooltip-append-to-body="true">{{::data.proj.start}}</span>
+          <span class="icon icon-circle-solid card-caption" ng-show="::data.proj.end"></span>
+          <span class="card-caption" uib-tooltip="Planned End Date" tooltip-placement="top" tooltip-append-to-body="true">{{::data.proj.end}}</span>
+          <p class="card-caption" uib-tooltip="State" tooltip-placement="top" tooltip-append-to-body="true">{{::data.proj.state}}</p>
+        </div>
+        <div class="col-md-2 col-xs-2 header-user-img" ng-if="data.proj.prj_mngr">
+          <sn-avatar-once
+                          uib-tooltip="{{::data.proj.prj_mngr}}"
+                          tooltip-placement="top" 
+                          tooltip-append-to-body="true"
+                          ng-if="hasLiveProfile(data.proj.prj_mngr)"
+                          primary="getLiveProfileByUserId(data.proj.prj_mngr)"
+                          class="avatar-medium"
+                          show-presence="false"
+                          enable-context-menu="false">
+          </sn-avatar-once>
+        </div>
+      </div>
+    </div>
+    <div class="card-block content">
+      <div class="row title-row">
+        <div class="col-xs-4 content">
+          <p class="cell-title" title="Status">Status</p>
+        </div>
+        <div class="col-xs-4 content">
+          <p class="cell-title" title="Percent complete">Percent complete</p>
+        </div>
+        <div class="col-xs-4 content">
+          <p class="cell-title" title="Phase">Phase</p>
+        </div>
+      </div>
+      <div class="row content-row">
+        <div class="col-xs-4 content">
+          <p class="cell-content">{{::data.proj.status}}</p>
+        </div>
+        <div class="col-xs-4 content">
+          <p class="cell-content">{{::data.proj.percent_complete}}%</p>
+        </div>
+        <div class="col-xs-4 content">
+          <p class="cell-content">{{::data.proj.phase}}</p>
+        </div>
+      </div>
+      <div class="row media-row" >
+        <div class="col-xs-4 content">
+          <p class="cell-title" title="Status">Status</p>
+          <p class="cell-content">{{::data.proj.status}}</p>
+        </div>
+        <div class="col-xs-4 content">
+          <p class="cell-title" title="Percent complete">Percent complete</p>
+          <p class="cell-content">{{::data.proj.percent_complete}}%</p>
+        </div>
+        <div class="col-xs-4 content">
+          <p class="cell-title" title="Phase">Phase</p>
+          <p class="cell-content">{{::data.proj.phase}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-block card-footer">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 content">
+          <p class="cell-title">Updates</p>
+          <p class="cell-content-foot">{{::data.proj.risks}} Risks, {{::data.proj.issues}} Issues, {{::data.proj.actions}} Actions, {{::data.proj.delayed_tasks}} Delayed tasks</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-xs-12 content">
+          <p class="cell-title">Last missed milestone</p>
+          <p ng-if="::data.proj.milestone.name" class="cell-content-foot" id="foot-text">{{::data.proj.milestone.date}} - {{::data.proj.milestone.name}}</p>
+          <p ng-if="!data.proj.milestone.name" class="cell-content-foot" id="foot-text">No last missed milestone</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
