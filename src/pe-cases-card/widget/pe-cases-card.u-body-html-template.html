@@ -1,3 +1,43 @@
-<div>
-  <!-- your widget template -->
+<div class="container search">
+  <div class="search-cases">
+    <div class="form-group has-feedback">
+      <input type="text" class="form-control" ng-model="keyword" placeholder="Search Cases">
+      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+    </div>
+    <div class="my-button">
+      <button type="button" class="btn btn-primary space" ng-click="goLink()">Create Case</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-6" dir-paginate="item in data.listItems | filter:keyword | itemsPerPage:pageSize">
+      <div class="thumbnail">
+        <div class="card-body">
+          <div class="card-title">
+            <h4>{{item.number}}</h4>
+            <h5>{{item.short_description}}</h5>
+            <span class='fa fa-circle circle-{{getColor(item.state)}}'>
+              <h5>{{item.state}}</h5>
+            </span>
+          </div>
+          <div class="card-text">
+            <p>
+              <b>Owner: </b>{{item.owner}}</p>
+            <p>
+              <b>Created on: </b>{{item.created_on}}</p>
+            <p>
+              <b>Due on: </b>{{item.due_date}}</p>
+          </div>
+          <div class="link">
+            <a href="your-url-page">
+              <b>View details</b>
+            </a>
+            <span class='fa fa-chevron-right'></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <dir-pagination-controls></dir-pagination-controls>
 </div>
