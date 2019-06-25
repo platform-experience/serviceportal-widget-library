@@ -1,0 +1,112 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Major Incident Summary</div>
+  <div class="panel-body" style="padding: 15px 35px 0 35px;">
+
+    <div ng-if="c.major_inc[0]" id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <div class="carousel-inner">
+        <div class="item date" ng-class="{active:!$index}" ng-repeat="inc in c.major_inc">
+          <div>
+            <div class="row">
+              <div class="col-md-10">
+                <h3 class="head">{{inc.short_desc}}</h3>
+                <p>
+                  Created: {{inc.created}}&nbsp;&nbsp;•&nbsp;&nbsp;Assigment group: {{inc.assign_group}}&nbsp;&nbsp;•&nbsp;&nbsp;Priority: {{inc.priority}}&nbsp;&nbsp;•&nbsp;&nbsp;Category: {{inc.category}}
+                </p>
+              </div>
+              <div class="col-md-2">
+                <p id="dur" style="margin:0;font-size:12px;text-align:right;">Duration</p>
+                <p id="dur" style="font-size:16px;margin:0;text-align:right;">{{inc.duration}}</p>
+                <p id="dur" style="font-size:10px;margin-bottom:5px;text-align:right;">(HH:MM:SS)</p>
+              </div>
+            </div>
+            <hr>
+            <div id="overview">
+              <h4 class="section-head">Overview</h4>
+              <p style="font-size:12px;">{{inc.desc}}</p>
+            </div>
+            <hr>
+            <div id="findings">
+              <h4 class="section-head">Findings</h4>
+              <p style="font-size:12px;">{{inc.findings}}</p>
+            </div>
+            <hr>
+            <div id="details">
+              <h4 class="section-head">Details</h4>
+              <ul class="list-group" style="margin-bottom:10px;"> <!-- list-group-1-impacted-services -->
+                <li class="list-group-item" style="font-weight: bold;"><span id="badge" class="badge pull-left">{{inc.service.length}}</span>Impacted Services</li>
+                <li id="content-item" class="list-group-item" ng-repeat="serv in inc.service">
+                  <ul class="sub-list-row row">
+                    <li class="col-xs-6 sub-list-row-item">
+                      <p class="col-title">Configuration Item</p>
+                      <p class="col-text">{{serv.service}}</p>
+                    </li>
+                    <li class="col-xs-6 sub-list-row-item">
+                      <p class="col-title">Owned by</p>
+                      <p class="col-text">{{serv.owner}}</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul> 
+              <ul class="list-group" style="margin-bottom:10px;"> <!-- list-group-2-outages -->
+                <li class="list-group-item" style="font-weight: bold;"><span id="badge" class="badge pull-left">{{inc.outage.length}}</span>Outages</li>
+                <li id="content-item" class="list-group-item" ng-repeat="out in inc.outage">
+                  <ul class="sub-list-row row">
+                    <li class="col-md-4 sub-list-row-item">
+                      <p class="col-title">Configuration Item</p>
+                      <p class="col-text">{{out.ci}}</p>
+                    </li>
+                    <li class="col-md-3 sub-list-row-item">
+                      <p class="col-title">Type</p>
+                      <p class="col-text">{{out.type}}</p>
+                    </li>
+                    <li class="col-md-3 sub-list-row-item">
+                      <p class="col-title">Begin</p>
+                      <p class="col-text">{{out.begin}}</p>
+                    </li>
+                    <li class="col-md-2 sub-list-row-item">
+                      <p class="col-title">End</p>
+                      <p class="col-text">{{out.end}}</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="list-group" style="margin:0;"> <!-- list-group-3-affected-locations -->
+                <li class="list-group-item" style="font-weight: bold;"><span id="badge" class="badge pull-left">{{inc.location.length}}</span>Affected Locations</li>
+                <li id="content-item" class="list-group-item" ng-repeat="loc in inc.location">
+                  <ul class="sub-list-row row">
+                    <li id="loc" class="col-sm-4 sub-list-row-item">
+                      <p class="col-title">Name</p>
+                      <p class="col-text">{{loc.name}}</p>
+                    </li>
+                    <li id="loc" class="col-sm-4 sub-list-row-item">
+                      <p class="col-title">City</p>
+                      <p class="col-text">{{loc.city}}</p>
+                    </li>
+                    <li id="loc" class="col-sm-4 sub-list-row-item">
+                      <p class="col-title">Country</p>
+                      <p class="col-text">{{loc.country}}</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>    
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left gray"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right gray"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div ng-if="!c.major_inc[0]">
+      <p class="no-inc-message">There are no active major incidents</p>
+    </div>
+
+  </div>
+</div>

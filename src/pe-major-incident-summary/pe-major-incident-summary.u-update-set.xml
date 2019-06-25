@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-24 21:52:02">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Major Incident Summary Widget">050b18abdb867300ae20f78eaf961925</application>
+<application_name>Major Incident Summary Widget</application_name>
+<application_scope>x_snc_maj_inc_sum</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Automatically created by the system</description>
+<inserted/>
+<name>Major Incident Summary Widget</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>1c856834dbd637009a3a9c64db9619e3</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>madison.spina</sys_created_by>
+<sys_created_on>2019-06-24 21:52:02</sys_created_on>
+<sys_id>017668f4dbd637009a3a9c64db9619a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>madison.spina</sys_updated_by>
+<sys_updated_on>2019-06-24 21:52:02</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Major Incident Summary Widget">050b18abdb867300ae20f78eaf961925</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_050b18abdb867300ae20f78eaf961925</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><can_edit_in_studio>false</can_edit_in_studio><enforce_license>none</enforce_license><js_level>helsinki_es5</js_level><licensable>true</licensable><license_category>none</license_category><license_model>none</license_model><logo/><menu display_value="Major Incident Summary Widget">410b9cabdb867300ae20f78eaf96194b</menu><name>Major Incident Summary Widget</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_snc_maj_inc_sum</scope><scoped_administration>false</scoped_administration><short_description/><source>x_snc_maj_inc_sum</source><store_correlation_id/><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>madison.spina</sys_created_by><sys_created_on>2019-06-20 23:49:39</sys_created_on><sys_id>050b18abdb867300ae20f78eaf961925</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>madison.spina</sys_updated_by><sys_updated_on>2019-06-20 23:49:39</sys_updated_on><template/><trackable>true</trackable><user_role display_value="x_snc_maj_inc_sum.user" name="x_snc_maj_inc_sum.user">cd0b9cabdb867300ae20f78eaf96194d</user_role><vendor/><vendor_prefix/><version>1.0.0</version></sys_app></record_update>]]></payload>
+<payload_hash>874272717</payload_hash>
+<remote_update_set display_value="Major Incident Summary Widget">017668f4dbd637009a3a9c64db9619a4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>madison.spina</sys_created_by>
+<sys_created_on>2019-06-24 21:52:02</sys_created_on>
+<sys_id>0d7668f4dbd637009a3a9c64db9619a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b75acc80000001</sys_recorded_at>
+<sys_updated_by>madison.spina</sys_updated_by>
+<sys_updated_on>2019-06-24 21:52:02</sys_updated_on>
+<table/>
+<target_name>Major Incident Summary Widget</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid>4d0b9cabfd867300b76a362924df30df</update_guid>
+<update_guid_history>4d0b9cabfd867300b76a362924df30df:874272717</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Major Incident Summary Widget">050b18abdb867300ae20f78eaf961925</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_dd4b902fdb867300ae20f78eaf961926</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+
+	c.major_inc = c.data.major_inc;
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.panel-heading {
+  font-size: 16px;
+}
+
+.no-inc-message {
+  text-align: center;
+}
+
+h3.head {
+  margin: 0;
+}
+
+hr { 
+  margin: 5px 0 5px 0;
+}
+
+.section-head {
+  font-size: 16px; 
+}
+
+#content-item {
+  padding-bottom: 0 ! important;
+}
+
+.sub-list-row {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-list-row-item {
+  padding: 0 ! important;
+  margin-bottom: 0;
+}
+
+.badge {
+  background-color: $brand-primary;
+  margin-right: 8px;
+}
+
+.col-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.col-text {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.carousel-inner {
+  margin-bottom: 20px;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image:none !important;
+  filter:none !important;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  right: 0; 
+  margin-right: -30px;
+  color: #2c3d36;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  left: 0;
+  margin-left: -30px;
+  color: #2c3d36;
+}
+
+@media screen and (max-width: 990px){
+  #dur {
+    text-align: left ! important;
+  }
+}
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;major-incident-summary&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) { 
+
+ }]]&gt;&lt;/link&gt;&lt;name&gt;Major Incident Summary&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;x_snc_maj_inc_sum.user&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.major_inc = [];
+	data.service = [];
+	
+	var inc = new GlideRecord('incident');
+	inc.addQuery('major_incident_state', 'accepted'); // pull all major incidents
+	inc.addActiveQuery();
+	inc.query();
+	
+	while(inc.next()){
+		data.major_inc.push({
+			sys_id: inc.getUniqueValue(),
+			number: inc.getValue('number'),
+			short_desc: inc.getValue('short_description'),
+			desc: inc.getValue('description'),
+			ci: inc.getValue('cmdb_ci'),
+			created: formatDate(inc.getDisplayValue('sys_created_on')),
+			priority: inc.getDisplayValue('priority'),
+			category: inc.getDisplayValue('category'),
+			assign_group: inc.getDisplayValue('assignment_group'),
+			assign_to: inc.getDisplayValue('assigned_to'),
+			duration: getDur(inc.getValue('calendar_duration')),
+			findings: inc.getValue('lessons_learned'),
+			service: getServices(inc.getUniqueValue()),
+			outage: getOutages(inc.getUniqueValue()),
+			location: getLocations(inc.getUniqueValue())
+		})
+	}
+	
+	// Sort array by number 
+	data.major_inc.sort(function(a, b) {
+			if (a.number &lt; b.number) return -1;
+			if (a.number &gt; b.number) return 1;
+			return 0;
+		});
+		
+	data.major_inc.reverse(); // Newest to oldest
+	
+	function getServices(task){
+		var arr = [];
+		
+		var serv = new GlideRecord('task_cmdb_ci_service');
+		serv.addQuery('task', task);
+		serv.query();
+		
+		while(serv.next()){
+			arr.push({
+				sys_id: serv.getUniqueValue(),
+				service: serv.getDisplayValue('cmdb_ci_service'),
+				owner: getOwner(serv.getValue('cmdb_ci_service'))
+			})
+		}
+
+		function getOwner(service){
+			var servRec = new GlideRecord('cmdb_ci');
+			servRec.get('sys_id', service);
+
+			return servRec.getDisplayValue('owned_by');
+		}
+
+		return arr;
+	}
+
+	function getOutages(task){
+		var arr = [];
+
+		var out = new GlideRecord('task_outage');
+		out.addQuery('task', task);
+		out.query();
+
+		while(out.next()){
+			arr.push({
+				sys_id: out.getUniqueValue(),
+				outage: out.getDisplayValue('outage'),
+				ci: getDetails(out.getValue('outage'), 'ci'),
+				type: getDetails(out.getValue('outage'), 'type'),
+				begin: getDetails(out.getValue('outage'), 'begin'),
+				end: getDetails(out.getValue('outage'), 'end')
+			})
+		}
+
+		function getDetails(outage, field){
+			var outRec = new GlideRecord('cmdb_ci_outage');
+			outRec.get('sys_id', outage);
+			
+			if(field == 'type'){
+				return outRec.getDisplayValue('type');
+			} else if(field == 'begin'){
+				return outRec.getDisplayValue('begin');
+			} else if(field == 'ci'){
+				return outRec.getDisplayValue('cmdb_ci');
+			} else {
+				return outRec.getDisplayValue('end');
+			}
+		}
+		
+		return arr;
+	}
+	
+	function getLocations(task){
+		var arr = [];
+		
+		var serv = new GlideRecord('task_cmdb_ci_service');
+		serv.addQuery('task', task);
+		serv.query();
+		
+		while(serv.next()){	
+			if(getDetails(serv.getValue('cmdb_ci_service'), 'name')){
+				arr.push({
+					sys_id: serv.getUniqueValue(),
+					service: serv.getDisplayValue('cmdb_ci_service'),
+					name: getDetails(serv.getValue('cmdb_ci_service'), 'name'),
+					city: getDetails(serv.getValue('cmdb_ci_service'), 'city'),
+					country: getDetails(serv.getValue('cmdb_ci_service'), 'country')
+				})
+			}
+		}
+
+		function getDetails(service, field){
+			var servRec = new GlideRecord('cmdb_ci');
+			servRec.get('sys_id', service);
+
+			if(field == 'name'){
+				return servRec.getDisplayValue('location');
+			} else if (field == 'city'){
+				return getLocationInfo(servRec.getValue('location'), 'city');
+			} else {
+				return getLocationInfo(servRec.getValue('location'), 'country');
+			}
+
+			function getLocationInfo(location, field){
+				if(location){
+					var loc = new GlideRecord('cmn_location');
+					loc.get('sys_id', location);
+
+					if(field == 'city'){
+						return loc.getDisplayValue('city') || '     ';
+					} else {
+						return loc.getDisplayValue('country') || '     ';
+					}
+				} else return '';	
+			}
+		}
+
+		return arr;
+	}
+
+	// Return a duration in hh:mm:ss format
+	function getDur(dateTime){
+		if(dateTime){
+			var dur = new GlideDuration();
+			dur.setValue(dateTime);
+			var durTime = dur.getByFormat('HH:mm:ss');
+
+			return durTime;
+		} else return '00:00:00';
+	}
+
+	// Return a formatted date/time ex. Dec-11-19 12:00AM
+	function formatDate(dateTime){
+		var gdt = new GlideDateTime(dateTime);
+		var date = gdt.getDate();
+		var fd = date.getByFormat('MMM-dd-yy h:mma');
+
+		return fd;
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;madison.spina&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-20 23:53:15&lt;/sys_created_on&gt;&lt;sys_id&gt;dd4b902fdb867300ae20f78eaf961926&lt;/sys_id&gt;&lt;sys_mod_count&gt;96&lt;/sys_mod_count&gt;&lt;sys_name&gt;Major Incident Summary&lt;/sys_name&gt;&lt;sys_package display_value="Major Incident Summary Widget" source="x_snc_maj_inc_sum"&gt;050b18abdb867300ae20f78eaf961925&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Major Incident Summary Widget"&gt;050b18abdb867300ae20f78eaf961925&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_dd4b902fdb867300ae20f78eaf961926&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;madison.spina&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-24 21:38:45&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default"&gt;
+  &lt;div class="panel-heading"&gt;Major Incident Summary&lt;/div&gt;
+  &lt;div class="panel-body" style="padding: 15px 35px 0 35px;"&gt;
+
+    &lt;div ng-if="c.major_inc[0]" id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"&gt;
+      &lt;div class="carousel-inner"&gt;
+        &lt;div class="item date" ng-class="{active:!$index}" ng-repeat="inc in c.major_inc"&gt;
+          &lt;div&gt;
+            &lt;div class="row"&gt;
+              &lt;div class="col-md-10"&gt;
+                &lt;h3 class="head"&gt;{{inc.short_desc}}&lt;/h3&gt;
+                &lt;p&gt;
+                  Created: {{inc.created}}&amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp;Assigment group: {{inc.assign_group}}&amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp;Priority: {{inc.priority}}&amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp;Category: {{inc.category}}
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="col-md-2"&gt;
+                &lt;p id="dur" style="margin:0;font-size:12px;text-align:right;"&gt;Duration&lt;/p&gt;
+                &lt;p id="dur" style="font-size:16px;margin:0;text-align:right;"&gt;{{inc.duration}}&lt;/p&gt;
+                &lt;p id="dur" style="font-size:10px;margin-bottom:5px;text-align:right;"&gt;(HH:MM:SS)&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;hr&gt;
+            &lt;div id="overview"&gt;
+              &lt;h4 class="section-head"&gt;Overview&lt;/h4&gt;
+              &lt;p style="font-size:12px;"&gt;{{inc.desc}}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;hr&gt;
+            &lt;div id="findings"&gt;
+              &lt;h4 class="section-head"&gt;Findings&lt;/h4&gt;
+              &lt;p style="font-size:12px;"&gt;{{inc.findings}}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;hr&gt;
+            &lt;div id="details"&gt;
+              &lt;h4 class="section-head"&gt;Details&lt;/h4&gt;
+              &lt;ul class="list-group" style="margin-bottom:10px;"&gt; &lt;!-- list-group-1-impacted-services --&gt;
+                &lt;li class="list-group-item" style="font-weight: bold;"&gt;&lt;span id="badge" class="badge pull-left"&gt;{{inc.service.length}}&lt;/span&gt;Impacted Services&lt;/li&gt;
+                &lt;li id="content-item" class="list-group-item" ng-repeat="serv in inc.service"&gt;
+                  &lt;ul class="sub-list-row row"&gt;
+                    &lt;li class="col-xs-6 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;Configuration Item&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{serv.service}}&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class="col-xs-6 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;Owned by&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{serv.owner}}&lt;/p&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt; 
+              &lt;ul class="list-group" style="margin-bottom:10px;"&gt; &lt;!-- list-group-2-outages --&gt;
+                &lt;li class="list-group-item" style="font-weight: bold;"&gt;&lt;span id="badge" class="badge pull-left"&gt;{{inc.outage.length}}&lt;/span&gt;Outages&lt;/li&gt;
+                &lt;li id="content-item" class="list-group-item" ng-repeat="out in inc.outage"&gt;
+                  &lt;ul class="sub-list-row row"&gt;
+                    &lt;li class="col-md-4 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;Configuration Item&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{out.ci}}&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class="col-md-3 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;Type&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{out.type}}&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class="col-md-3 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;Begin&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{out.begin}}&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class="col-md-2 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;End&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{out.end}}&lt;/p&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;ul class="list-group" style="margin:0;"&gt; &lt;!-- list-group-3-affected-locations --&gt;
+                &lt;li class="list-group-item" style="font-weight: bold;"&gt;&lt;span id="badge" class="badge pull-left"&gt;{{inc.location.length}}&lt;/span&gt;Affected Locations&lt;/li&gt;
+                &lt;li id="content-item" class="list-group-item" ng-repeat="loc in inc.location"&gt;
+                  &lt;ul class="sub-list-row row"&gt;
+                    &lt;li id="loc" class="col-sm-4 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;Name&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{loc.name}}&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li id="loc" class="col-sm-4 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;City&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{loc.city}}&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li id="loc" class="col-sm-4 sub-list-row-item"&gt;
+                      &lt;p class="col-title"&gt;Country&lt;/p&gt;
+                      &lt;p class="col-text"&gt;{{loc.country}}&lt;/p&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;    
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!-- Left and right controls --&gt;
+      &lt;a class="left carousel-control" href="#myCarousel" data-slide="prev"&gt;
+        &lt;span class="glyphicon glyphicon-chevron-left gray"&gt;&lt;/span&gt;
+        &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a class="right carousel-control" href="#myCarousel" data-slide="next"&gt;
+        &lt;span class="glyphicon glyphicon-chevron-right gray"&gt;&lt;/span&gt;
+        &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div ng-if="!c.major_inc[0]"&gt;
+      &lt;p class="no-inc-message"&gt;There are no active major incidents&lt;/p&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1906306063</payload_hash>
+<remote_update_set display_value="Major Incident Summary Widget">017668f4dbd637009a3a9c64db9619a4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>madison.spina</sys_created_by>
+<sys_created_on>2019-06-24 21:52:02</sys_created_on>
+<sys_id>457668f4dbd637009a3a9c64db9619a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b75ad000000001</sys_recorded_at>
+<sys_updated_by>madison.spina</sys_updated_by>
+<sys_updated_on>2019-06-24 21:52:02</sys_updated_on>
+<table/>
+<target_name>Major Incident Summary</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>2a6360307c12b300ae5b79bfaa4d2489</update_guid>
+<update_guid_history>2a6360307c12b300ae5b79bfaa4d2489:1906306063,4c232cfc87de7300b895e34be927a76d:1943042359,9b6224fce6de730034f363881e8832f7:-983224772,a352a0fc38de7300db88d3d0519fc8e4:190649093,e121287c68de73006ddba056c0ee0473:715775603,cc20683cfcde7300cde4936595818f41:190649093,22df183c9fde7300e3e04c2ce494dc99:-1367324893,5ecf183c81de730028bf37b7ea7d6891:-909907656,1abe14f8b2de73008620640aba57783d:1701855129,e15e14f8e0de7300d531b2e43b784436:-2063850892,c34ed0f8cfde7300f9032c03da673eab:-552950764,023e58b802de730044de7b67a3077119:-1760788420,892e18b847de7300e9c32977ba2fc3b7:898802334,520e9cb808de7300c161ca3d330ec0f8:1577658673,a9edd8b87cde7300dfb45fb743e43296:-514895283,c1cd5cb8f2de7300d067ea3f5dda3881:-1077988723,b68dd8b8fcde7300365f757dd94b9c8f:-1773200689,4bacd878efde730065cdf94084715f35:-2064764951,61db9c387fde7300b5109de7e092de6c:1717863899,247b507810de73000ebcf2046a01de12:1743452919,5c6b5c383ede730072709b71bef23853:1303481368,318a10384bde7300346c90c1bf3253cb:-2107339734,2a3a9cf423de7300fe5e0e09a3ee637b:-2087399190,f80a103838de730051da7951c75febc3:-1029747732,bf391cb40dde73009e455099b193252a:-634067239,0909d4b499de73001d7fe03ecdedc85e:524677391,00e7d8b442de7300d0c7a08f566a8657:-1364716847,7fc69c741dde73007d3a9d6549047fe2:1322508955,6f16d47460de73004ab141ed1e01998f:-2037007199,cdb5d83427de7300647087673f07ba65:1700390790,1da51c3429de730001889cb637a2251a:603475856,f575d8349ede730023e1f7f89184e6f8:-842836373,4ea41cb01fde7300b7b065cc58b502af:1847699312,0f9418f0dcde7300ba250dd17642b030:342717360,4224d4b045de73007de324a35070a723:-883624432,749358f0fdde730012ade95a069c924e:1033338282,9d63d8b0d7de7300e952b15d931d417a:1791149198,d9b25cb00cde73006d514afa43ee0c9b:2133871552,f6425cb0d3de730075457dbcfca92893:-882844227,48321cb0aede7300a3d0f7d3084056a8:663066566,4d12d8b012de730042ee103012260870:1403616141,0ce194b010de730080d0749cd51eb11e:-685271324,2bc118b025de73003be78c94ecad4988:781822913,69a110b0d6de730080872b75a45042b0:436200057,789194b05fde7300522f1a7f56aae317:1133263730,ef51547001de7300c0f7208669786ab1:-965830607,df0110b044de73006dcd053bc235a1a7:1762968236,29f05c7062de73005a9b46e1072ce0c1:-1992558596,21e0d070f7de73003f0609c892e5d238:298070585,e2c058702ede730095ace7b2ce019529:1509503681,7fa01c308ade73006013497a29b682e8:285121960,016058708cde73004774631bacf73622:-769190569,b110183001de7300ed724f9dfb1e3d0d:1721016141,f8df48fcc29e7300b5499b8237ce3f3d:241743404,e14f0c30a1de7300bb5863b97c66a1e0:467702818,28fe08bcdd9e7300a9915eb7727c6a77:194528629,ffce08309bde73001b11fa150dfcc404:-495720673,301e003076de730043edab574a071ecb:-1911326262,ce5d48fcfa9e730085a0a33c17145534:1948619569,c79c48bca39e7300bb502fb988803fa3:1501880075,572c0cbce99e7300f5d210d79d80d0d2:-1867300570,93db48bc4d9e7300f6c163cf5bb3af9c:-1540827278,e7ab487c509e730005ff5aac0e4bdea5:-151475693,059b04bc109e73004bb342b7d9e4aaec:-1093717817,106b04bc839e73004554ce8b465328e5:-653545715,575a887cc29e730012b8abd8b45271b3:210562881,714a407c8e9e7300292cd3b7f89dabf1:537501473,bef9407ce29e7300610eb7ea0d89afe9:-1840170584,0fb90cf8039e730077c807e7c3f57a58:1161658376,5359c03cce9e7300780010e9f2eed7df:-98894866,fc49843ca49e7300c64fc2c4f266a2fe:1944965547,2ba80cf8419e73004779fb452acce865:-2097177871,4688843c359e730003c63c7d730986f6:-827258999,5148003c389e7300fc537626424146fa:-2097177871,d608003c2d9e7300cef81425efab64f1:-1413428175,c33704f8b89e7300cb13a5c0f524a787:-375990768,1ef648b8fb9e7300d13ee1a7a353f2b6:-713848406,63b600f87b9e7300842a9995c3127073:-828696996,5e9600f8ef9e73005c5af8328337dc6b:858248803,947608b8b79e730022f6442423b4ac0d:641632084,00668cb85e9e73006b6007684447443c:1259531618,2b3648b8629e73002378e5ed2461c4af:1204222631,1d2644b8509e730099e71e223d5d1f50:-1846698186,200688b8209e7300c8ba394c51d67ab4:943663608,14c508b86c9e73002bdea68a83412d05:-740728906,b5130c383f9e730071ad6efbfd5afddd:-1042300863,d0134038599e730018c217807e1305dd:-817119879,c4a200f4b29e730099e2a8b01050c638:282146506,d7620cb4ed9e73005f200e53d6be3afa:1508760089,e33288f4e99e73008b88d6ae22371f97:-1310981317,4a9effa05b9e730048f8e7bf5c64dfbf:577661820,af3effa0fa9e7300d100cd512b1c90cf:2064952943,38bdffa0a89e7300fa055e75c651b7b4:-895720526,e5ecffa0a59e73002a69bded7846adc8:520491202,266cf7e01d9e730026f68bdac54d8b51:-602812012,c8fbffa0179e73005f0dbc636cd3fea8:1421249177,31db982fa38673006c99cacbede110fe:-452666857</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Major Incident Summary Widget">050b18abdb867300ae20f78eaf961925</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_cd0b9cabdb867300ae20f78eaf96194d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_snc_maj_inc_sum.user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>madison.spina</sys_created_by><sys_created_on>2019-06-20 23:49:39</sys_created_on><sys_id>cd0b9cabdb867300ae20f78eaf96194d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_maj_inc_sum.user</sys_name><sys_package display_value="">050b18abdb867300ae20f78eaf961925</sys_package><sys_policy/><sys_scope display_value="">050b18abdb867300ae20f78eaf961925</sys_scope><sys_update_name>sys_user_role_cd0b9cabdb867300ae20f78eaf96194d</sys_update_name><sys_updated_by>madison.spina</sys_updated_by><sys_updated_on>2019-06-20 23:49:39</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>1236418870</payload_hash>
+<remote_update_set display_value="Major Incident Summary Widget">017668f4dbd637009a3a9c64db9619a4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>madison.spina</sys_created_by>
+<sys_created_on>2019-06-24 21:52:02</sys_created_on>
+<sys_id>817668f4dbd637009a3a9c64db9619a5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b75aca10000001</sys_recorded_at>
+<sys_updated_by>madison.spina</sys_updated_by>
+<sys_updated_on>2019-06-24 21:52:02</sys_updated_on>
+<table/>
+<target_name>x_snc_maj_inc_sum.user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>490b9cab058673001ecde550a65c3d51</update_guid>
+<update_guid_history>490b9cab058673001ecde550a65c3d51:1236418870</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Major Incident Summary Widget">050b18abdb867300ae20f78eaf961925</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_410b9cabdb867300ae20f78eaf96194b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category/><description/><device_type>browser</device_type><hint/><name>Major Incident Summary Widget</name><order/><roles>x_snc_maj_inc_sum.user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>madison.spina</sys_created_by><sys_created_on>2019-06-20 23:49:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>410b9cabdb867300ae20f78eaf96194b</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Major Incident Summary Widget</sys_name><sys_overrides/><sys_package display_value="Major Incident Summary Widget" source="x_snc_maj_inc_sum">050b18abdb867300ae20f78eaf961925</sys_package><sys_policy/><sys_scope display_value="Major Incident Summary Widget">050b18abdb867300ae20f78eaf961925</sys_scope><sys_update_name>sys_app_application_410b9cabdb867300ae20f78eaf96194b</sys_update_name><sys_updated_by>madison.spina</sys_updated_by><sys_updated_on>2019-06-20 23:49:40</sys_updated_on><title>Major Incident Summary Widget</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>1074871349</payload_hash>
+<remote_update_set display_value="Major Incident Summary Widget">017668f4dbd637009a3a9c64db9619a4</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>madison.spina</sys_created_by>
+<sys_created_on>2019-06-24 21:52:02</sys_created_on>
+<sys_id>cd7668f4dbd637009a3a9c64db9619a4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8b75accf0000001</sys_recorded_at>
+<sys_updated_by>madison.spina</sys_updated_by>
+<sys_updated_on>2019-06-24 21:52:02</sys_updated_on>
+<table/>
+<target_name>Major Incident Summary Widget</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>510b9cab45867300c6747accda14c1e3</update_guid>
+<update_guid_history>510b9cab45867300c6747accda14c1e3:1074871349,890b9cab1586730030779c143660634c:-1598231991</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
