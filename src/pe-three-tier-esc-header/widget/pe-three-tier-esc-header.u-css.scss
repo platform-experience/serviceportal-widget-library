@@ -1,0 +1,171 @@
+.navbar {
+    background-color: $navbar-inverse-bg;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+  }
+  
+  .navbar-row {
+    max-width: 1276px;
+    margin: 0 auto;
+  }
+  
+  .fa-home {
+    font-size: 25px;
+    color: $navbar-inverse-link-color;
+    margin-left: 30px;
+  }
+  
+  .navbar-subnav {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid $light-gray;
+    background-color: $tier-2-background;
+  }
+  
+  .subnav-container {
+    height: 175px;
+  }
+  
+  .center-logo {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .header-list {
+    margin-bottom: 0;
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .header-list-item {
+    padding-bottom: 21px;
+    margin: 0 20px;
+    display: block;
+    flex: 0 1 auto; 
+    list-style-type: none;
+    font-size: 20px;
+  }
+  
+  .a-list-item {
+    color: $tier-2-text;
+  }
+  
+  .header-list-item:hover {
+    color: $navbar-inverse-bg;
+    border-bottom: 1.5px solid $navbar-inverse-bg;
+  }
+  
+  .dropdown-toggle {
+    height: 60px;
+  }
+  
+  .dropdown-toggle:active, .open .dropdown-toggle {
+    background: none !important; 
+    color: $brand-success !important;
+  }
+  
+  .navbar-default .navbar-toggle {
+      border-color: $navbar-inverse-link-color ! important;
+  }
+  
+  .navbar-default .navbar-toggle .icon-bar {
+      background-color: $navbar-inverse-link-color ! important;
+  }
+  
+  .dropdown-menu {
+    border-radius: 0;
+    border-top: 0;
+  }
+  
+  .label {
+    display: inline;
+    padding: 2px 5px;
+    color: #fff;
+    text-align: center;
+    background-color: $brand-success;
+  }
+  
+  .nav-item {
+    color: $navbar-inverse-link-color !important;
+  }
+  
+  .cond-show-item {
+    display: none;
+  }
+  
+  .navbar-brand {
+    display: none;
+  }
+  
+  .navbar-home-icon {
+    display: block;
+    float: left;
+    padding: 20px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 60px;
+  }
+  
+  .navbar-default .navbar-nav > li > a {
+      color: $navbar-inverse-link-color ! important;
+  }
+  
+  .navbar-search {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $tier-3-background;
+  }
+  
+  // Typeahead search styling
+  .input-typeahead {
+    border: 1px solid $text-color !important;
+    border-right: 0;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-color ! important;
+  }
+  
+  .input-group-btn {
+    border: 0 !important;
+  }
+  
+  .btn {
+    border: 1px solid $text-color;
+    border-left: 0;
+    border-radius: 0 ! important;
+    color: $text-color ! important;
+  }
+  
+  .btn:hover {
+    background-color: $navbar-inverse-bg !important;
+    color: white;
+  }
+  
+  .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    border-top: 0;
+    color: $text-color;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .navbar-home-icon {
+      display: none;
+    }
+    .navbar-brand {
+      display: block;
+    }
+    .navbar-subnav {
+      display: none;
+    }
+    .cond-show-item {
+      display: block;
+    }
+    .avatar-dropdown {
+      color: #fff !important;
+    }
+  }

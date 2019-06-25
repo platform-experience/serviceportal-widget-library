@@ -1,0 +1,77 @@
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-row">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-home-icon" href="/{{data.urlSuffix}}"><i class="fa fa-home"></i></a>
+      <a class="navbar-brand" href="/{{data.urlSuffix}}"><img src="{{data.logo}}" class="d-inline-block align-top"  width="140" height="30"  /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="cond-show-item"><a href="?id={{data.knowledge}}" class="nav-item">Knowledge</a></li>
+        <li class="cond-show-item"><a href="?id={{data.catalog}}" class="nav-item">Catalog</a></li>
+        <li class="cond-show-item"><a href="?id=community_home" class="nav-item">Forums</a></li>
+        <li class="cond-show-item"><a href="?id=my_org_chart" class="nav-item">Org Chart</a></li>
+        <li class="cond-show-item">
+          <a href ng-click="dynamicOpenPopUp()" id="va_chat" aria-label="${Live Chat}" class="nav-item">Chat</a>
+          <div ng-if="!data.isMobile" ng-show="showChat">
+            <sp-widget widget="::data.va_chat"></sp-widget>
+          </div>
+        </li>
+        <li class="header-item-first"><a href="?id=hrm_todos_page" class="nav-item" id="todos_link" aria-label="${To-dos}">
+          <span ng-bind-html="'${To-dos}'" aria-hidden="true"></span>
+          <span ng-show="data.todoCount" class="label label-as-badge label-primary">{{data.todoCount}}</span>
+          </a></li>
+        <li><a href="?id=my_requests" class="nav-item">Requests</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-label="${User Profile}">
+            <span class="navbar-avatar"><sn-avatar class="avatar-small-medium avatar-container" show-presence="false" primary="user.sys_id" />
+              <i class="m-l-xs fa fa-caret-down"/>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="{{data.link}}" class="avatar-dropdown">Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="{{::portal.logoutUrl}}" class="avatar-dropdown">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse --> 
+  </div>
+  <div class="navbar-subnav">
+    <div class="row subnav-container">
+      <div class="center-logo">
+        <a href="/{{data.urlSuffix}}"><img src="{{data.logo}}" height="45" width="290" /></a>
+      </div>
+      <div class="header-options">
+        <ul class="header-list">
+          <a class="a-list-item" href="?id={{data.knowledge}}"><li class="header-list-item ">Knowledge</li></a>
+          <a class="a-list-item" href="?id={{data.catalog}}"><li class="header-list-item">Catalog</li></a>
+          <a class="a-list-item" href="?id=community_home"><li class="header-list-item">Forums</li></a>
+          <a class="a-list-item" href="?id=my_org_chart"><li class="header-list-item">Org Chart</li></a>
+          <a href class="a-list-item" ng-click="dynamicOpenPopUp()" id="va_chat" aria-label="${Live Chat}"><li class="header-list-item">Chat</li></a>
+          <div ng-if="!data.isMobile" ng-show="showChat">
+            <sp-widget widget="::data.va_chat"></sp-widget>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-search">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <sp-widget widget="data.typeahead"></sp-widget>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</nav>
