@@ -1,3 +1,26 @@
-<div>
-  <!-- your widget template -->
+<div class="conversation-button-container">
+	<div class="conversation-region fade"
+       ng-class="{'open': $ctrl.isWindowVisible}">
+    <div class="sn-connect sn-connect-floating">
+      <div class="sn-connect-floating-wrapper loaded">
+        <div class="conversation-container">
+          <iframe class = "chat-frame" scrolling="no"  horizontalscrolling="no" verticalscrolling="no" frameborder="none" ng-src="{{$ctrl.vaSource}}">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button aria-label="${Start Support Conversation}"
+          class="help-button"
+          ng-attr-tabindex="0"
+          ng-class="{'state-open': $ctrl.isWindowVisible, 'state-unread': $ctrl.hasUnreadMessages}"
+          ng-click="$ctrl.toggleWindow()"
+          ng-style="{'background-color': $ctrl.options.button_color}"
+          ng-attr-tabindex="0">
+    <div class="hover-overlay"></div>
+    <span aria-hidden="true" ng-style="{'color': $ctrl.options.floating_button_cross_icon_color}" ng-if="$ctrl.isWindowVisible" class="help-icon icon-close icon-cross"></span>
+    <span aria-hidden="true" ng-if="!$ctrl.isWindowVisible" class="help-icon icon-open sn-va-widget-icon">
+      <img ng-src="{{$ctrl.options.floating_button_icon}}" class="icon-img" />
+    </span>
+  </button>
 </div>
