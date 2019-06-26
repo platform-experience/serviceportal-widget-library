@@ -33,7 +33,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 * **Floating Button Color** use this to configure the Background color of the Flaoting button. In our case I have configured it to be **white**.
 * **Floating Button Icon** use this to configure new Icon  for the Floating button. This is `db_image` file name. In my case I have uploaded a new icon to `db-image` table called **now.png**. 
 
-**_For Best result make sure the icon image is not a long word_**
+**_For Best result make sure the image is not a long words like company names_**
 
 ![Va Sp Widget V2](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-va-sp-widget-v2/images/options-explain1.png)
 
