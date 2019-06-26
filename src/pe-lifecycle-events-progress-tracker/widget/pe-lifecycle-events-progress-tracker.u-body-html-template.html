@@ -1,3 +1,44 @@
-<div>
-  <!-- your widget template -->
+<div class="panel panel-default b" ng-if="!c.no_data || c.data.errorLink">
+  
+  <div class="container" ng-if="c.data.errorLink">
+    <h3>
+      <span class="fa fa-exclamation-triangle m-r-xs"></span>
+      <strong> ${Action}: </strong>
+      <a href="{{::c.data.errorLink}}" target="_blank">${Allow Restricted Caller Access Link}</a>
+    </h3>
+  </div>
+
+  <div class="panel-heading text-center" ng-if="!c.no_data">
+    <div class="dropdown" ng-if="data.events.length > 1">
+      <button class="btn dropdown-toggle" type="button" id="dropdownLE" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <h1 class="panel-title">
+          {{c.selectedEvent}} <span class="caret"></span>
+        </h1>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownLE">
+        <li ng-repeat="event in data.events track by $index" ng-show="event != c.selectedEvent"><a ng-click="c.select(event)" href="javascript:void(0)">{{event}}</a></li>
+      </ul>
+    </div>
+    <div ng-if="data.events.length == 1">
+      <h1 class="panel-title">
+        {{c.selectedEvent}}
+      </h1>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <div class="flex-container">
+      <div class="donut text-center" ng-repeat="donut in data.donuts | filter:{event: c.selectedEvent}">
+        <a href="{{donut.href}}">
+        <donut-directive data-count="donut.complete" data-displayvalue="{{donut.percentage}}" data-total="donut.total"
+                         data-show-value="true" data-show-value-as-count="true" data-width="data.chart_width" data-font-size="{{data.font_size}}"
+                         data-font-weight="data.font_weight" data-color-fill="{{data.primary_color}}" data-color-bg="{{data.background_color}}">
+        </donut-directive>
+          <h4>{{donut.title}}</h4>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
 </div>

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-26 01:41:18">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<application_name>Human Resources: Service Portal</application_name>
+<application_scope>sn_hr_sp</application_scope>
+<application_version>5.0.29</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Innovation Factory - Progress Tracker</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>eae6e845dbdabb009310fa56bf9619d4</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>1d84aa81dbd6fb009310fa56bf961954</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_6326ec8ddb1ab7000f9ea422ca961914</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css"><sp_css action="INSERT_OR_UPDATE"><css>/* Donut CSS */&#13;
+&#13;
+.progress-pie-chart {&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    border-radius: 50%;&#13;
+    background-color: #E5E5E5;&#13;
+    position: relative;&#13;
+    display: inline-block;&#13;
+    cursor: pointer;&#13;
+}&#13;
+&#13;
+.progress-pie-chart.gt-50 {&#13;
+    background-color: #81CE97;&#13;
+}&#13;
+&#13;
+.ppc-progress {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 50px);&#13;
+    top: calc(50% - 50px);&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    clip: rect(0, 100px, 100px, 50px);&#13;
+}&#13;
+&#13;
+.ppc-progress .ppc-progress-fill {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 50px);&#13;
+    top: calc(50% - 50px);&#13;
+    width: 100px;&#13;
+    height: 100px;&#13;
+    clip: rect(0, 50px, 100px, 0);&#13;
+    background: #81CE97;&#13;
+    transform: rotate(60deg);&#13;
+}&#13;
+&#13;
+.gt-50 .ppc-progress {&#13;
+    clip: rect(0, 50px, 100px, 0);&#13;
+}&#13;
+&#13;
+.gt-50 .ppc-progress .ppc-progress-fill {&#13;
+    clip: rect(0, 100px, 100px, 50px);&#13;
+    background: #E5E5E5;&#13;
+}&#13;
+&#13;
+.ppc-percents {&#13;
+    content: "";&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    left: calc(50% - 80px/2);&#13;
+    top: calc(50% - 80px/2);&#13;
+    width: 80px;&#13;
+    height: 80px;&#13;
+    background: #fff;&#13;
+    text-align: center;&#13;
+    display: table;&#13;
+}&#13;
+&#13;
+.ppc-percents span {&#13;
+    display: block;&#13;
+    font-size: inherit;&#13;
+    color: #81CE97;&#13;
+}&#13;
+&#13;
+.pcc-percents-wrapper {&#13;
+    display: table-cell;&#13;
+    vertical-align: middle;&#13;
+}</css><name>donutDirective.css</name><sys_class_name>sp_css</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-06-25 16:29:34</sys_created_on><sys_id>6326ec8ddb1ab7000f9ea422ca961914</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.css</sys_name><sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp">3d1da2705b021200a4656ede91f91ab6</sys_package><sys_policy/><sys_scope display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</sys_scope><sys_update_name>sp_css_6326ec8ddb1ab7000f9ea422ca961914</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-06-25 16:29:34</sys_updated_on></sp_css></record_update>]]></payload>
+<payload_hash>-1215559903</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>2184aa81dbd6fb009310fa56bf961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8f7b509a0000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>donutDirective.css</target_name>
+<type>Style Sheet</type>
+<update_domain>global</update_domain>
+<update_guid>d736ec8d3a1ab70061137f200fcaa118</update_guid>
+<update_guid_history>d736ec8d3a1ab70061137f200fcaa118:-1215559903</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_15d8c8eddbceff0064976583ca961987</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function LEProgressTrackerController(spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	if (!c.data.events || c.data.events.length &lt;= 0) {
+		c.no_data = true;
+		
+		if (c.data.errorLink) {
+			spUtil.addInfoMessage('&lt;h3&gt;&lt;span class="fa fa-exclamation-triangle m-r-xs"&gt;&lt;/span&gt; &lt;strong&gt;${Action}: &lt;/strong&gt;&lt;a href="' + c.data.errorLink + '" target="_blank"&gt;${Allow Restricted Caller Access Link}&lt;/a&gt;&lt;/h3&gt;');
+		}
+		return;
+	}
+
+	c.selectedEvent = c.data.events[0];	
+	c.select = function(event) {
+		c.selectedEvent = event;
+	};
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.panel-heading {&amp;#13;
+  display: block;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.dropdown-menu {&amp;#13;
+  border-radius: 0px; &amp;#13;
+  &amp;#13;
+  left: 50%;&amp;#13;
+  right: auto;&amp;#13;
+  transform: translate(-50%, 0);&amp;#13;
+}&amp;#13;
+&amp;#13;
+.flex-container {&amp;#13;
+  display: flex;&amp;#13;
+  flex-wrap: wrap;&amp;#13;
+  justify-content: center;&amp;#13;
+  height: auto;&amp;#13;
+  width: auto;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.flex-container &amp;gt; div {&amp;#13;
+  flex-grow: 1;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.donut {&amp;#13;
+  margin-left: 10px;&amp;#13;
+  margin-right: 10px;&amp;#13;
+  width: 120px;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;pe-lifecycle-events-progress-tracker&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Lifecycle Events Progress Tracker&lt;/name&gt;&lt;option_schema&gt;[&amp;#13;
+  {&amp;#13;
+    "name": "primary_color",&amp;#13;
+    "default_value": "#04B5E5",&amp;#13;
+    "label": "Color",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "background_color",&amp;#13;
+    "default_value": "#E5E5E5",&amp;#13;
+    "label": "Background Color",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "chart_width",&amp;#13;
+    "default_value": "80",&amp;#13;
+    "label": "Donut Width",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "font_size",&amp;#13;
+    "default_value": "24px",&amp;#13;
+    "label": "Percent Font Size",&amp;#13;
+    "type": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "font_weight",&amp;#13;
+    "default_value": "800",&amp;#13;
+    "label": "Font Weight",&amp;#13;
+    "type": "string"&amp;#13;
+  }&amp;#13;
+]&amp;#13;
+&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+	data.primary_color = options.primary_color || input.primary_color;
+	data.background_color = options.background_color || input.background_color;
+	data.chart_width = options.chart_width || input.chart_width;
+	data.font_size = options.font_size || input.font_size;
+	data.font_weight = options.font_weight || input.font_weight;
+
+	var events = [];
+
+	var assigned_to = $sp.getParameter('assigned_to') || gs.getUserID();
+	var grTask = new GlideRecord('sn_hr_core_task');
+	grTask.addNotNullQuery();
+	grTask.addQuery('assigned_to', assigned_to);
+	grTask.addEncodedQuery('sn_hr_le_activityISNOTEMPTY');
+
+	grTask.query();
+
+	while (grTask.next()) {
+		try {
+			var grCase = new GlideRecord('sn_hr_le_case');
+			grCase.get(grTask.getValue('parent'));
+			var util = new hr_PortalUtil(grCase);
+
+			var event = {
+				sys_id: grTask.sn_hr_le_activity.activity_set.le_type.toString(),
+				parent: grCase.getUniqueValue(),
+				title: util.getCaseTitle()
+			};
+			var set = {
+				sys_id: grTask.sn_hr_le_activity.activity_set.toString(),
+				complete: grTask.getValue('state') == 3 ? 1 : 0, // Closed complete
+				total: 1
+			};
+
+			if (!events.some(function(ev) { return event.sys_id == ev.sys_id; })) { // First LE occurrence
+				// Get all activity sets
+				var activitySetInfo = util.getActivitySetContexts(grCase.getUniqueValue());
+				$sp.log(activitySetInfo.contexts);
+
+				var activitySets = activitySetInfo.contexts.map(function(context) {
+					var grContext = new GlideRecord('sn_hr_le_activity_set_context');
+					grContext.get(context.id);
+					var activitySet = {
+						sys_id: grContext.getValue('activity_set'),
+						title: context.name,
+						state: context.state,
+						complete: 0,
+						total: 0
+					};
+					if (set.sys_id == activitySet.sys_id) { // Current task activity set
+						return {
+							sys_id: activitySet.sys_id,
+							title: activitySet.title,
+							state: activitySet.state,
+							complete: set.complete,
+							total: set.total
+						};
+					}
+					return activitySet;
+				});
+
+				events.push({
+					sys_id: event.sys_id,
+					title: event.title,
+					parent: event.parent,
+					activity_set: activitySets
+				});
+			} else {
+				events.forEach(function(e) {
+					if (event.sys_id == e.sys_id) {
+						e.activity_set.forEach(function(s) {
+							if (set.sys_id == s.sys_id) {
+								s.complete += set.complete;
+								s.total += 1;
+							}
+						});
+					}
+				});
+			}
+		} catch (e) {
+			var tableName = '';
+			e.toString().split(' ').forEach(function(word) {
+				if (word.startsWith('sn_hr')) {
+					tableName = word;
+				}
+			});
+
+			var grWidget = $sp.getInstanceRecord();
+			var grTable = new GlideRecord('sys_db_object');
+			var widgetID = grWidget.getValue('sp_widget')
+			grTable.get('name', tableName);
+			
+			var grRCA = new GlideRecord('sys_restricted_caller_access');
+			grRCA.addQuery('source', widgetID);
+			grRCA.addQuery('target', grTable.getUniqueValue());
+			grRCA.query();
+			if (grRCA.next()) {
+				data.errorLink = '/nav_to.do?uri=/sys_restricted_caller_access.do?sys_id=' + grRCA.getUniqueValue();
+			} else {
+				data.errorLink = '/nav_to.do?uri=/sys_restricted_caller_access_list.do?sysparm_query=source=' + widgetID;
+			}
+			break;
+		}
+	}
+
+	data.events = events.map(function(evnt) { return evnt.title; });
+
+	if (data.events.length &lt;= 0) {
+		return;
+	}
+
+	data.donuts = [];
+	events.forEach(function(evt) {
+		evt.activity_set.forEach(function(aSet) {
+			if (aSet.state == 'finished') {
+				aSet.percentage = '100%';
+				aSet.total = 1;
+				aSet.complete = 1;
+			} else if (aSet.total == 0) {
+				aSet.percentage = '0%';
+				aSet.total = 1;
+				aSet.complete = 0;
+			} else {
+				aSet.percentage = Math.round(aSet.complete / aSet.total * 100) + '%';
+			}
+			data.donuts.push({
+				percentage: aSet.percentage,
+				complete: aSet.complete,
+				total: aSet.total,
+				title: aSet.title,
+				event: evt.title,
+				href: '?id=hrm_ticket_page&amp;sys_id=' + evt.parent
+			});
+		});
+	});
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-14 17:22:21&lt;/sys_created_on&gt;&lt;sys_id&gt;15d8c8eddbceff0064976583ca961987&lt;/sys_id&gt;&lt;sys_mod_count&gt;221&lt;/sys_mod_count&gt;&lt;sys_name&gt;Lifecycle Events Progress Tracker&lt;/sys_name&gt;&lt;sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Human Resources: Service Portal"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_15d8c8eddbceff0064976583ca961987&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-26 01:34:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default b" ng-if="!c.no_data || c.data.errorLink"&gt;
+  
+  &lt;div class="container" ng-if="c.data.errorLink"&gt;
+    &lt;h3&gt;
+      &lt;span class="fa fa-exclamation-triangle m-r-xs"&gt;&lt;/span&gt;
+      &lt;strong&gt; ${Action}: &lt;/strong&gt;
+      &lt;a href="{{::c.data.errorLink}}" target="_blank"&gt;${Allow Restricted Caller Access Link}&lt;/a&gt;
+    &lt;/h3&gt;
+  &lt;/div&gt;
+
+  &lt;div class="panel-heading text-center" ng-if="!c.no_data"&gt;
+    &lt;div class="dropdown" ng-if="data.events.length &gt; 1"&gt;
+      &lt;button class="btn dropdown-toggle" type="button" id="dropdownLE" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;
+        &lt;h1 class="panel-title"&gt;
+          {{c.selectedEvent}} &lt;span class="caret"&gt;&lt;/span&gt;
+        &lt;/h1&gt;
+      &lt;/button&gt;
+      &lt;ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownLE"&gt;
+        &lt;li ng-repeat="event in data.events track by $index" ng-show="event != c.selectedEvent"&gt;&lt;a ng-click="c.select(event)" href="javascript:void(0)"&gt;{{event}}&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div ng-if="data.events.length == 1"&gt;
+      &lt;h1 class="panel-title"&gt;
+        {{c.selectedEvent}}
+      &lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="panel-body"&gt;
+    &lt;div class="flex-container"&gt;
+      &lt;div class="donut text-center" ng-repeat="donut in data.donuts | filter:{event: c.selectedEvent}"&gt;
+        &lt;a href="{{donut.href}}"&gt;
+        &lt;donut-directive data-count="donut.complete" data-displayvalue="{{donut.percentage}}" data-total="donut.total"
+                         data-show-value="true" data-show-value-as-count="true" data-width="data.chart_width" data-font-size="{{data.font_size}}"
+                         data-font-weight="data.font_weight" data-color-fill="{{data.primary_color}}" data-color-bg="{{data.background_color}}"&gt;
+        &lt;/donut-directive&gt;
+          &lt;h4&gt;{{donut.title}}&lt;/h4&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2044999059</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>2d84aa81dbd6fb009310fa56bf961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b916bc4d50000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>Lifecycle Events Progress Tracker</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>79032201ced6fb00eae20b149d064aa0</update_guid>
+<update_guid_history>79032201ced6fb00eae20b149d064aa0:-2044999059,643886451016fb0027b7c05369591287:1297479000,b7080245be16fb0027bb5c42598399be:-1209681546,50c7ce052516fb00d8290aec13d29f4e:-1834211334,f5c682c14116fb0015c1c4bd87cb1c62:430464039,4036c6819116fb00fe4b75ffa9a77efb:-1168183940,d63402cd37d2fb00fcc265c24d09f3de:1649610590,05248e8d40d2fb00803282c58cf25a31:-1309694384,c614ca8d3cd2fb00314db0aff902ddbb:450520078,c3f3868d13d2fb003a1026feb3bda02f:-1994251518,27a3028db0d2fb00d11e46232dd6b882:-613989374,76838e4d85d2fb00a4a410416798ae74:-2055140667,e373ca4d51d2fb00f31cbc69c304e3ca:855892267,ee63864d7ad2fb00abe23e9e903362c8:-675234767,a103424db4d2fb008028270114d64b5a:-519444533,bbe20a0d86d2fb003132eb11e19b5cb5:2076633716,5282860d0ad2fb006ba79303bad17920:1630988232,9b620ec9b0d2fb0050762ee0fd4824db:223509663,ab514e49edd2fb0051af904bf5b3b853:-962713692,63318a49a1d2fb00d506e71f61ec54bb:1877115562,d1b08e0965d2fb00b81feb79f1cb6e86:1227910415,a5508209fdd2fb00fef32d69bcd644fc:1135660545,211042092ad2fb008998174fb8101b75:-383138766,adecb10543d2fb002add496c2d9b9d28:42978173,8f6cb5c10ed2fb00a3b09910fb065d85:-1152068087,64db758104d2fb0024b7a4eeb4c4e2d9:479985087,06bbb18163d2fb000e6a3b335f61c31c:887221086,9fab3941e2d2fb00591f3c0da0e45ce1:437628446,d68b754154d2fb006170246491a9c111:-164161331,bb3bb98df392fb00bc750ac6555cd3a2:825125011,6e3ce189db52fb00b09e348aae7247c4:-1024869323,8a1c838769c23300d04bd07225506808:1211050987,54598b4bdc8233007701df719479e1b9:1349844070,9568c3034f82330025eba7ef5ec6aced:-1686518224,ab18438be4423300a18fe989bf7c6f6b:2006313060,b2f783c3b9423300486e34327a4b9ad7:-758403035,ddaf3a8fb442b7408bc996d9a5000e1b:706508335,12a876c33642b7405c48e64c5756e1e1:-1566541057,ee81f6030542b740b1ea97d3a241b593:-530069897,3561f6037742b740afe8b4d81807bb8d:2077039064,743e624f6a02b740cc34728835a1803b:1286034924,2e886ec78d02b74094f121970e13a857:2008374770,f45822875a02b740ab304022f047fbf1:577984825,e1b722c79602b740c1672de2d8cc2936:-1548849175,81772287d302b7401bd7b909bad2e642:556966575,de372247e402b74034ea1b1adacf4de5:985880149,38e6ea077b02b740b21cb2008bc8df9a:823651605,6826aa078002b740fbf9dfea0cfbc69d:-768091515,e6e5ea072002b7402f786a71ec2f6d94:1031701113,a8a56ac31502b74067532807140c7f0a:1725740749,35f46ac31602b740118c8160c9cf1c05:2136962353,934f1e0f2e8e77400984a13324667ddc:228781177,e24fd68f2bce7740b561ab4967bf3799:-193020944,fdaa390fb64e774067660aa788b089bf:-1159258509,d1483d4ba34e7740f9804b347581415f:-1352031105,f0d7b50b2d4e774093c0469ea39b1442:-866398968,89b7310bf64e7740a553f15ea8d5b6fd:177442440,1b77fdc74f4e774013851449ce8c770e:-621324964,7627b5c7574e77402616400fe883746f:-1734937252,fc4679873e4e7740a42a38c63fdfb753:-571774546,0616f587374e7740710667e71aff81cb:2093784440,6cf53187194e77406155bc4088f09e85:175637778,8c857d47ad4e7740721b930397e1bb46:1895277474,a205f147614e774064fac4ddee7ce81e:318374414,f9f3fdc3774e7740bc4bf3365003de89:679401969,6de37dc3d14e774089e56f9dea745401:-306205637,24c3f9c3244e774035083d9a7b0946c3:-1597177127,9ba3b9c3c84e774095f04c05e8da8537:-2016261119,7363b5c3eb4e77403b8b958d3180350c:526786487,022371c3b04e7740fb6b1abc532b70ad:-603843354,8703fd83cc4e77404de1ce0407a89e85:-1188050915,86e2f983914e7740a2e696bb30e034c6:32429595,6da2b583fb4e7740ff51b9701f1b1c77:1318962163,3582f183574e7740f942cc45ba4e97cb:50190983,33523183e24e7740f9c8167f53632c9a:2081124141,60a175434d4e7740d4dfae4568115b99:1303203767,96313d03a54e77407154f07dd6b00444:-37087466,98f0b503fa4e774006343de1d282d6ef:1677608884,a3b0bdcf620e7740d036312da073fcbc:436024483,b86ee18f2c0e77405c83fddb89a1f869:-791424182,8d18a5c7020e7740cbc33f0fe55af1b3:-1026009396,3ec5597ed10e3740ed4d891b8b4386a7:-1338195743,d7a5d57ea90e3740fb2df491748a6e2e:-1680764090,09b1343e2b8a3740c4e316b7fa5d30a8:1833895832,cecfe8ba518a374045399bd4c2544d95:1588635148,371f60ba5d8a3740d848fd471fd49b0d:1953478440,f0fea07ab18a37406721fce1140f365a:981078514,83fdec3a2f8a3740b69aae14bdcc3dc1:-54463904,57ad2c3aaf8a37404a2a6c414f413d42:-876574874,187d683a3e8a3740abfd6966bb499514:-947026612,0c4d643af68a374099492659d3960b21:-876574874,343d243aa28a3740a1b7ea0d99f3da1e:187994724,981d203aa78a374053f7ecf1add50142:-938998618,8bfcecf68e8a3740da2466711bce9d2b:857280542,78bcecb6218a37408aa4bde8a3d0ce90:-1377085751,a71cacb69a8a374008171142d817faf1:702734841,e6fb2cb6978a374067189eb7c87c9777:-1722978204,d50be476608a3740b8dc5682e5598a1b:274774736,1a9aa076608a37402ad38f54bc8ea9c3:795175113,754aa836ff8a3740b04786966ef007dd:727766505,942a6836bc8a37403db2fbdccb6b4f54:-691619998,c596ecbe314a37402281fc544526775a:-806624523,2c06e8be6d4a37401afc6715e9e4cf43:-91025157,f9c5e4be164a37401ab91f526b068884:-1155324137,7c95a4be004a37407d64660aac3bd4c4:-271900855,6bf3a8fa0d4a374011c16c62fa6ad170:-1001188897,f33d98b6ac4a3740ddb15ebad887af94:-525067002,5c2dd076654a374052f784398fdc7d9d:-1930555831,804a58f2694a3740895efb6fead849f9:-1766520424,f93a9cf2d14a37403595ab0debcc3d9d:-888248552,11e958f2c44a3740a961ad2421023320:1347763996,f3a914f2924a3740bbb0063d26e600f2:1473052763,bc8950f25b4a3740c7f98c0c284c19be:-1242395707,d17990b2604a374097943e154b60f91d:794854214,27b45c7e0d0a3740fe50ce3c0f1c5af8:349518539,a41490be8c0a3740aeb731cea17a0781:-712595326,7aa31c7ec30a3740a8770e48ca1ada30:272885207,2193987e190a374072ec0b50b381f0a7:1696624761,ff1434e6440ef3406a2af9f512c705be:-1489573289,d173b866b10ef340328ddc6bcc9502ba:-1827230459,3b433c66d90ef340321a16dda839c323:23547812,1e81fc26ce0ef340c7b36c25bf814e4e:-1064336428,22717c26e00ef34008c43d8c22aa219a:1581301300,1c617826710ef340e0a8b7d9ea40dace:96480348,2a7bacaee3caf3404bcfade907e32415:1762126222,1d4d00e2478af3409619dc060c677d55:658271841,242dcca29f8af34053ad5aab6ca76d9e:-1515479440,6f2c8c62f88af340692a05f26c7ed951:1223580173,40fbc0625c8af340649b603a5875a884:1320724768,3a5b04eedd4af3401116665153e875d1:-1679173923,38ecbfd2ff4af34083d60705c11fdd65:637344124,9089f3129e4af340169f888091bded06:-591405173,df3973de690af340cd8a645ed2d91921:-124253045,6a48bf9e6a0af3408d20d560195f0179:1725974196,e0c7b79ec50af340797745d22513eaaf:-1160723208,19b7779e500af340a66dd4de7c8417b0:1770725001,9e77739eac0af34019bd853f0c810afc:-2056746133,f9377f5e410af340503d727e007cf834:-1647250008,5707775ec00af3409cf2138a4a920ce0:-241673722,97f6fb5e540af340fba680a1b91da002:1895681577,c996375e470af340b2a2fed4510129af:1686683173,f506bb1efc0af340623a47572a773263:131313230,6ff4f3dadf0af3409197138c49e9c979:-1841384215,1c8473da560af340e24799f68dd62fd6:-1797220141,af64779a440af340b1c99b2eada3f42f:1833955059,0a73f75aed0af3408288405a47d97ebf:1414333425,94c2f75a690af3400efc4d2566bf9d39:-1645586349,ab627f1a8d0af340560f15f1a26f4e47:1892285352,f712f31ad90af3400767b4f4ba542091:406715601,35613fd61e0af340cd5d025cd7417b88:1228842761,f6313bd6c70af340f68ce236d3fadd69:253702191,aef0f7d6780af340e73452ce482b381d:-467573458,2ad037d6780af340f86646d60e086b40:-662777813,6780bf96270af340e68cf3d5d3c03b1c:-1614803165,2c60bb965b0af3400ba0467ef514f596:919720387,e6103796810af3404225a7427c266d55:1163778254,6ccfab56b30af3402fedc15447d97aa0:-1917954279,ddce2356620af340be3baae95251b94f:74452669,d1ace3d2010af340921b4df5a5d9d137:-1844854178,366ca3d2d30af3404acbc976e610fb99:457249916,621caf92420af340d887d77c05a59915:490152580,31dba792c20af34001f83c5dcd601918:-395520665,bd9be3924c0af340e225b395269a7821:340935926,267beb527b0af340baaf0605596b07a4:-227997985,8b1b2b52e40af340d4a8c62e0189323c:858919288,930be352790af340ad5613880e4af77d:689242036,30da2352230af340563055196c307c49:-1327426032,367a6f12870af340afc0c315ce612ce3:-1404607567,4b1aab128b0af34095ed6066246f6208:183003660,bf39ebde3fc6f340f28811b9cadd7755:-1725079186,1a39ebde5ec6f3400c4d0dabbf96556f:-1724863634,9ff8ef9e92c6f3407f80b177ea3fb3c7:-2106511312,6606635effc6f3408a7fead3c93d32cd:1601355681,57c5ef1eb2c6f340183f1e3c90423e82:-1177511071,0482e3d65fc6f34013054812279f4fd6:311478467,448127965dc6f3402260efdac0781cea:-312651763,f6512396d2c6f34084fc988c934dda1d:812556984,c55d1f522cc6f34040f306437e813c0e:1864690623,a7ec9f128bc6f340d47c34e693ce467f:1388204319,ab2c5f12b3c6f340d7e6d691c55ca810:-272701719,0d2bdbde1686f34010614f2835562d5f:1630852614,d00b97de6f86f340eb9cd41a48c11b0d:-1943298074,9604535af486f340c773aafbd887b9a2:-1652795565,5a131f1a1486f340872506a80634b2db:-2081699763,3fa19bd62a86f3407f66e41f316e268a:1337490190,cf9193d68486f340df59905f261352e0:-1603354898,78ce8f16ec86f340d55adea7b8ee7f62:867381173,7d8e8716cf86f34075ee0874d8ef1dc6:914207549,bf2e47169586f3406d4639249e13cb24:-994153012,d0884f9e1a46f3403e6a010d7eb27ab7:1203791842,bab7cf1e7f46f3401118742d0ce663aa:1589862850,5e02d5ed1b0633408ddf251a95f41243:-1757565573,5d7f492d80063340209b7162e18828c7:1206078268,aa4f452d1306334013da360b822d9c86:140034355,eaf9012583063340c950940816d0fc11:341271972,4311b02de28233404e49ad4295b14aee:49733235,8330302d43823340c039bd31fd02a61e:-131334574,fc00bce9b88233400630188b5bfe02e9:2061900673,f19fa4e92a823340a102130a8db3bca7:-631882327,289fa4e936823340e78292d0edd42612:1517619040,e23f942dc042334085ae6d75821bba2f:-1423557346,1e2f102d954233402a4cd18f4af932b2:1814052082,aa5e58e948423340da131e34f34fc881:-1152375764,403e94e9524233404600c6f104dbafe0:1881459623,ad0e14e9284233403a0e5e8b6222d90f:1147385858,becd50e9fb4233402503130b85f6e419:70501339,f5cd10e95a4233407ab979f159208e09:-1857090376,02bd9ca93a4233408ec8c48f6faa4af9:1735939150,efadd4a9814233408a729c628d294957:-489112285,6a6dd4a9e742334066d01b3c9abfda50:1743659000,513d94a917423340d7de8d007ab85138:-1554208465,bbfc50a9e74233408e98afac7dc940e8:1340798870,32fc9869f24233404e934acd1b3a2f46:-258601814,5d1b50292a423340f35117036b7cf4c0:153852416,127894a11a423340140337edcc2efa8e:1506638731,52019829370233403afed9d79d5b3114:1611227902,24afc8e59a023340782e55bc94c094e4:1202605045,ac9f4ce512023340adc543902d9570a2:-339579136,f66f0ce55c0233400b1a1fe415456172:-1387558088,365f44e5cf02334068101726d8c5b85f:1652689390,bc4f88e5b2023340526553c34b95ba0c:642130423,1dd8c8ed77ceff00b24d37537bf2d588:648477106</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_bb65208ddb1ab7000f9ea422ca96193b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>donutDirective</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-06-25 16:28:11</sys_created_on><sys_id>bb65208ddb1ab7000f9ea422ca96193b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp">3d1da2705b021200a4656ede91f91ab6</sys_package><sys_policy/><sys_scope display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</sys_scope><sys_ui_script display_value="sn_hr_sp.donutDirective">a985a08ddb1ab7000f9ea422ca96199c</sys_ui_script><sys_update_name>sp_js_include_bb65208ddb1ab7000f9ea422ca96193b</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-06-25 16:28:11</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
+<payload_hash>687595778</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>6984aa81dbd6fb009310fa56bf961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8f7b508a0000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>cbe5208dc71ab700c86d641c2c7acfde</update_guid>
+<update_guid_history>cbe5208dc71ab700c86d641c2c7acfde:687595778</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_a8382089dbdabb009310fa56bf9619ec</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="donutDirective">bc456c4ddb1ab7000f9ea422ca9619c8</sp_dependency><sp_widget display_value="Lifecycle Events Progress Tracker">15d8c8eddbceff0064976583ca961987</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-06-25 16:38:07</sys_created_on><sys_id>a8382089dbdabb009310fa56bf9619ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.Lifecycle Events Progress Tracker</sys_name><sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp">3d1da2705b021200a4656ede91f91ab6</sys_package><sys_policy/><sys_scope display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</sys_scope><sys_update_name>m2m_sp_widget_dependency_a8382089dbdabb009310fa56bf9619ec</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-06-25 16:38:07</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>-1628965540</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>6d84aa81dbd6fb009310fa56bf961955</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8f8070340000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>donutDirective.Lifecycle Events Progress Tracker</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>28382089c0dabb003e0364b0831d1eee</update_guid>
+<update_guid_history>28382089c0dabb003e0364b0831d1eee:-1628965540</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_css_include_3b3620cddb1ab7000f9ea422ca96196d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_css_include"><m2m_sp_dependency_css_include action="INSERT_OR_UPDATE"><order>100</order><sp_css_include display_value="donutDirective">5526ac8ddb1ab7000f9ea422ca961948</sp_css_include><sp_dependency display_value="donutDirective">bc456c4ddb1ab7000f9ea422ca9619c8</sp_dependency><sys_class_name>m2m_sp_dependency_css_include</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-06-25 16:29:36</sys_created_on><sys_id>3b3620cddb1ab7000f9ea422ca96196d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.donutDirective</sys_name><sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp">3d1da2705b021200a4656ede91f91ab6</sys_package><sys_policy/><sys_scope display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</sys_scope><sys_update_name>m2m_sp_dependency_css_include_3b3620cddb1ab7000f9ea422ca96196d</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-06-25 16:29:36</sys_updated_on></m2m_sp_dependency_css_include></record_update>]]></payload>
+<payload_hash>1495654661</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>a184aa81dbd6fb009310fa56bf961955</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8f7b50a90000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>donutDirective.donutDirective</target_name>
+<type>Dependency CSS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>bf3620cd971ab700078feaf1da5dc36e</update_guid>
+<update_guid_history>bf3620cd971ab700078feaf1da5dc36e:1495654661</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_bc456c4ddb1ab7000f9ea422ca9619c8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>donutDirective</module><name>donutDirective</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-06-25 16:25:26</sys_created_on><sys_id>bc456c4ddb1ab7000f9ea422ca9619c8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp">3d1da2705b021200a4656ede91f91ab6</sys_package><sys_policy/><sys_scope display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</sys_scope><sys_update_name>sp_dependency_bc456c4ddb1ab7000f9ea422ca9619c8</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-06-25 16:25:26</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>382074232</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>a584aa81dbd6fb009310fa56bf961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8f7b50750000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>3a456c4d881ab7005dbe8241fb0d3fe1</update_guid>
+<update_guid_history>3a456c4d881ab7005dbe8241fb0d3fe1:382074232</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_8be5a88ddb1ab7000f9ea422ca96191a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="donutDirective">bc456c4ddb1ab7000f9ea422ca9619c8</sp_dependency><sp_js_include display_value="donutDirective">bb65208ddb1ab7000f9ea422ca96193b</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-06-25 16:28:11</sys_created_on><sys_id>8be5a88ddb1ab7000f9ea422ca96191a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective.donutDirective</sys_name><sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp">3d1da2705b021200a4656ede91f91ab6</sys_package><sys_policy/><sys_scope display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</sys_scope><sys_update_name>m2m_sp_dependency_js_include_8be5a88ddb1ab7000f9ea422ca96191a</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-06-25 16:28:11</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>48414783</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>a984aa81dbd6fb009310fa56bf961955</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8f7b50920000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>donutDirective.donutDirective</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>43e5a88d301ab700f1749fdb804c691c</update_guid>
+<update_guid_history>43e5a88d301ab700f1749fdb804c691c:48414783</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>sp_css_include_5526ac8ddb1ab7000f9ea422ca961948</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>donutDirective</name><source>local</source><sp_css display_value="donutDirective.css">6326ec8ddb1ab7000f9ea422ca961914</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-06-25 16:29:36</sys_created_on><sys_id>5526ac8ddb1ab7000f9ea422ca961948</sys_id><sys_mod_count>0</sys_mod_count><sys_name>donutDirective</sys_name><sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp">3d1da2705b021200a4656ede91f91ab6</sys_package><sys_policy/><sys_scope display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</sys_scope><sys_update_name>sp_css_include_5526ac8ddb1ab7000f9ea422ca961948</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-06-25 16:29:36</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+<payload_hash>990209687</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>e184aa81dbd6fb009310fa56bf961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8f7b50a10000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>donutDirective</target_name>
+<type>CSS Include</type>
+<update_domain>global</update_domain>
+<update_guid>fb3620cd3b1ab700ff5163e38c0e986c</update_guid>
+<update_guid_history>fb3620cd3b1ab700ff5163e38c0e986c:990209687</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_script_a985a08ddb1ab7000f9ea422ca96199c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;sn_hr_sp.donutDirective&lt;/name&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+    var donutTemplate = '&lt;div class="progress-pie-chart ppc-{{randomID}}"&gt;' +
+        '&lt;div class="ppc-progress"&gt;' +
+        '&lt;div class="ppc-progress-fill"&gt;&lt;/div&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;div class="ppc-percents"&gt;' +
+        '&lt;div class="pcc-percents-wrapper"&gt;' +
+        '&lt;span ng-style="{\'font-size\':fontSize , \'font-weight\':fontWeight}"&gt;{{displayvalue}}&lt;/span&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;/div&gt;';
+
+    angular.module('donutDirective', []).directive('donutDirective', function($timeout) {
+        return {
+            restrict: 'AE',
+            // templateUrl: function (element, attrs) {
+            //     return attrs.href;
+            // },
+            template: donutTemplate,
+            scope: {
+                count: '=',
+                total: '=',
+                displayvalue: '@',
+                showValue: '=',
+                showValueAsCount: '=',
+                width: '=',
+                colorFill: '@',
+                colorBg: '@',
+                inverted: '=',
+                fontSize: '@',
+                fontWeight: '='
+            },
+            link: function(scope, element, attrs) {
+                //console.log("displayvalue " + scope.displayvalue);
+                var randomId = Math.round((Math.random() * 100000000)),
+                    percent = (scope.count / scope.total) * 100,
+                    colors = undefined;
+
+                if (scope.colorFill || scope.colorBg) {
+                    colors = {
+                        fill: scope.colorFill,
+                        bg: scope.colorBg
+                    };
+                }
+                scope.randomID = randomId;
+                /*  $timeout(function(){
+                 calculateDonut(scope.width, percent, scope.showValue,
+                 scope.showValueAsCount, scope.count, colors, scope.inverted, randomId);
+                 }, 1);*/
+
+
+                scope.$watch(function(scope) {
+                        return scope.count
+                    },
+                    function() {
+                        percent = (scope.count / scope.total) * 100;
+                        calculateDonut(scope.width, percent, scope.showValue,
+                            scope.showValueAsCount, scope.count, colors, scope.inverted, randomId, scope.displayvalue);
+                    }
+                );
+            }
+
+        };
+
+        function calculateDonut(width, percent, showValue, showValueAsCount, count, colors, inverted, id, displayvalue) {
+            var $ = jQuery,
+                ppc = $('.progress-pie-chart.ppc-' + id),
+                ppcProgress = $('.ppc-' + id + ' .ppc-progress'),
+                ppcProgressFill = $('.ppc-' + id + ' .ppc-progress-fill'),
+                ppcPercents = $('.ppc-' + id + ' .ppc-percents'),
+                deg = 360 * percent / 100,
+                fontSize = width * 20 / 55;
+
+            percent = parseInt(percent);
+            width = parseInt(width);
+
+            //Value display control - start
+            if (showValue) {
+                if (showValueAsCount)
+                    ppcPercents.find('span').html(displayvalue);
+                else
+                    ppcPercents.find('span').html(percent + '%');
+            }
+            //Value display control - end
+
+            //Invert the colors if needed
+            if (inverted) {
+                percent = 100 - percent;
+                deg = 360 * percent / 100;
+                colors = {
+                    fill: colors.bg,
+                    bg: colors.fill
+                };
+            }
+
+            if (percent &gt; 50) {
+                ppc.addClass('gt-50');
+            }
+            ppcProgressFill.css('transform', 'rotate(' + deg + 'deg)');
+
+            //Donut re-Size - start : change as per width specified
+            ppc.add(ppcProgress).add(ppcProgressFill)
+                .css({
+                    "width": width + 'px',
+                    "height": width + 'px'
+                });
+            ppcProgress.add(ppcProgressFill)
+                .css({
+                    "left": 'calc(50% - ' + width / 2 + 'px)',
+                    "top": 'calc(50% - ' + width / 2 + 'px)'
+                });
+
+            if (percent &gt; 50) {
+                $('.gt-50.ppc-' + id + ' .ppc-progress').css("clip", 'rect(0,' + width / 2 + 'px,' + width + 'px,0)');
+                $('.gt-50.ppc-' + id + ' .ppc-progress .ppc-progress-fill').css("clip", 'rect(0,' + width + 'px,' + width + 'px,' + width / 2 + 'px)');
+            } else {
+                ppcProgress.css("clip", 'rect(0,' + width + 'px,' + width + 'px,' + width / 2 + 'px)');
+                ppcProgressFill.css("clip", 'rect(0,' + width / 2 + 'px,' + width + 'px,0)');
+            }
+
+            ppcPercents.css({
+                "left": 'calc(50% - ' + (width - width / 5) / 2 + 'px)',
+                "top": 'calc(50% - ' + (width - width / 5) / 2 + 'px)',
+                "font-size": fontSize + 'px',
+                "width": function() {
+                    if (width % 10 &gt; 0)
+                        return width - width / 5 - 1;
+                    else return width - width / 5;
+                },
+                "height": function() {
+                    if (width % 10 &gt; 0)
+                        return width - width / 5 - 1;
+                    else return width - width / 5;
+                }
+            });
+            //Donut re-Sizing - end
+
+            //change colors accordingly
+            if (colors) {
+                if (percent &gt; 50) {
+                    if (colors.fill) {
+                        $('.progress-pie-chart.gt-50.ppc-' + id).css('background-color', colors.fill);
+                        ppcPercents.find('span').css('color', colors.fill);
+                    }
+                    if (colors.bg) {
+                        $('.gt-50.ppc-' + id + ' .ppc-progress .ppc-progress-fill').css('background-color', colors.bg);
+                    }
+                } else {
+                    if (colors.fill) {
+                        ppcProgressFill.css('background-color', colors.fill);
+                        ppcPercents.find('span').css('color', colors.fill);
+                    }
+                    if (colors.bg) {
+                        ppc.css('background-color', colors.bg);
+                    }
+                }
+                if (inverted) {
+                    ppcPercents.find('span').css('color', colors.bg);
+                }
+            }
+            //color change - end
+        }
+    });
+})();
+]]&gt;&lt;/script&gt;&lt;script_name&gt;donutDirective&lt;/script_name&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-25 16:28:00&lt;/sys_created_on&gt;&lt;sys_id&gt;a985a08ddb1ab7000f9ea422ca96199c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;sn_hr_sp.donutDirective&lt;/sys_name&gt;&lt;sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Human Resources: Service Portal"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_a985a08ddb1ab7000f9ea422ca96199c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-25 16:28:00&lt;/sys_updated_on&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-423174703</payload_hash>
+<remote_update_set display_value="Innovation Factory - Progress Tracker">1d84aa81dbd6fb009310fa56bf961954</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-26 01:41:18</sys_created_on>
+<sys_id>ed84aa81dbd6fb009310fa56bf961956</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b8f7b507e0000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-26 01:41:18</sys_updated_on>
+<table/>
+<target_name>sn_hr_sp.donutDirective</target_name>
+<type>UI Script</type>
+<update_domain>global</update_domain>
+<update_guid>68e5a08dcb1ab700cf31890f480c9c82</update_guid>
+<update_guid_history>68e5a08dcb1ab700cf31890f480c9c82:-423174703</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

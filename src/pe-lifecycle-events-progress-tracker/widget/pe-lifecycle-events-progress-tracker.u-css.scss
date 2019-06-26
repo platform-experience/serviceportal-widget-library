@@ -1,0 +1,29 @@
+.panel-heading {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    border-radius: 0px; 
+    
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: auto;
+  }
+  
+  .flex-container > div {
+    flex-grow: 1;
+  }
+  
+  .donut {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+  }
