@@ -20,6 +20,10 @@ A Simple and clean alternative to the Stock Header.  The name is a bit mis-leadi
 ### Example of Dropdown Menus
 ![Menus](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-simple-header/images/menus.png)
 
+### Mobile Responsive
+![Mobile Default](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-simple-header/images/mobile-default.png)<br/>
+![Mobile Transparent](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-simple-header/images/mobile-transparent.png)
+
 
 ---
 ## Installation
