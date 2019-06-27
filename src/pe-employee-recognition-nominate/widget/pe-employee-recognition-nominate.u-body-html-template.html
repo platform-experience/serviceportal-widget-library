@@ -1,3 +1,71 @@
-<div>
-  <!-- your widget template -->
+<div class="row" ng-repeat="cycle in data.cycles">
+  <div class="col-sm-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"ng-bind="::cycle.name"></h3>
+      </div>
+      <div class="panel-body" ng-if="!responses[$index]">
+
+        <h4 ng-bind="::cycle.question"></h4>
+        <form>
+          <div class="form-group">
+            <i ng-if="!cycle.selected.value" 
+               class="fa fa-plus-circle text-info avatar-large-icon"></i>
+            <sn-avatar ng-if="cycle.selected.value" class="avatar-large" 
+                       primary="cycle.selected.value" show-presence="false">
+            </sn-avatar>
+            <div class="empra-select">
+              <select class="form-control" sn-focus="true"
+                      ng-change="cycle.achievement = ''" ng-model="cycle.selected" 
+                      ng-options="opt.displayValue for opt in cycle.options track by opt.value"/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" ng-class="{'text-muted': !cycle.selected.value}" 
+                   for="achievement">${Achievement}</label>
+            <textarea class="form-control" rows="3" maxlength="280" 
+                      ng-model="cycle.achievement" id="achievement"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <button ng-disabled="!(cycle.selected && cycle.achievement.length > 4)"
+                      class="btn btn-primary btn-block" ng-click="submit(cycle)" role="button">
+                ${Nominate}
+              </button>
+            </div>
+            <div class="col-sm-8">
+              <div class="alert alert-info m-n" ng-if="cycle.status">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x text-{{responses[cycle.status].context}}"></i>
+                  <i class="fa fa-{{responses[cycle.status].icon}} fa-stack-1x fa-inverse"></i>
+                </span>
+                <div class="empra-inline-block">
+                  <div ng-bind="responses[cycle.status].message"></div>
+                  <div ng-bind="cycle.message"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-default" ng-if="cycle.myCandidates.length">
+      <div class="panel-heading">
+        <h4 class="panel-title" ng-bind="::data.msgs.my_candidates"></h4>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item" ng-repeat="candidate in cycle.myCandidates">
+          <sn-avatar class="avatar-medium" primary="candidate.user_id" show-presence="false"></sn-avatar>
+          <div class="empra-inline-block">
+            <div ng-bind="candidate.name"></div>
+            <div ng-bind="candidate.approval"></div>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

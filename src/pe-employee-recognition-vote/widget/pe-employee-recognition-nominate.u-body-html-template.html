@@ -1,0 +1,36 @@
+<div class="panel panel-default" ng-repeat="ballot in data.ballots">
+  <div class="panel-heading">
+    <h3 class="panel-title" ng-bind="::ballot.name"></h3>
+  </div>
+  <div ng-if="!ballot.alreadyVoted" class="panel-body">
+    <div class="ballot-details">
+      <h4 ng-bind="::ballot.question" ng-show="::ballot.question"></h4>
+      <div ng-bind="::ballot.short_description" ng-show="::ballot.short_description"></div>
+    </div>
+    <div ng-repeat="opt in ballot.options track by $index"
+         ng-id="::opt.id" ng-click="ballot.selectedOptId = opt.id"
+         class="ballot-opt">
+      <sn-avatar class="avatar-large" primary="opt.user" show-presence="false"></sn-avatar>
+      <div class="ballot-opt-label">
+        <h4>
+          {{::opt.name}}
+          <i class="fa favorite-icon {{opt.id == ballot.selectedOptId ? 'fa-heart' : 'fa-heart-o'}}"></i>
+        </h4>
+        <div ng-bind="::opt.achievement"></div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-block" ng-click="submit(ballot.id, ballot.selectedOptId, $index)"
+            ng-disabled="!ballot.selectedOptId">
+      ${Submit}
+    </button>
+  </div>
+  <div ng-if="ballot.alreadyVoted" class="panel-body text-center">
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x text-info"></i>
+      <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+    </span>
+    <br>
+    ${Thank you for voting}
+  </div>
+  <a href="?id=empra_nominate" class="btn btn-link btn-block">${Nominate someone for next time}</a>
+</div>

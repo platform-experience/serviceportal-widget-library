@@ -2,11 +2,15 @@
 
 ## Description
 
-> None
+Part of the Employee Recognition Assessment application.
 
 ## Screenshot
 
-![Employee Recognition Nominate](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-employee-recognition-nominate/images/pe-employee-recognition-nominate.png)
+![Employee Recognition Nominate](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-employee-recognition-nominate/images/empra_nom_1.png)
+
+![Employee Recognition Nominate](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-employee-recognition-nominate/images/empra_nom_2.png)
+
+![Employee Recognition Nominate](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-employee-recognition-nominate/images/empra_nom_3.png)
 
 ## Additional Information/Notes
 

@@ -1,0 +1,26 @@
+.ballot-details {
+  margin-bottom: 15px;
+}
+
+.ballot-opt {
+  margin-bottom: 15px;
+  padding: 10px;
+  &:hover {
+    background-color: $gray-lighter;
+  }
+}
+
+.avatar-large {
+  position: absolute;
+}
+
+.ballot-opt-label {
+  display: block;
+  margin-left: 6rem;
+  h4 { margin: 5px 0; }
+}
+
+.favorite-icon {
+  color: $brand-primary;
+  margin-left: 5px;
+}
