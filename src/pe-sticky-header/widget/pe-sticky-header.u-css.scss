@@ -1,0 +1,162 @@
+$pe-top-navbar-background-color: #293E40 !default; 
+$pe-top-navbar-background-img: none !default;
+$pe-top-navbar-height: 70px !default;
+
+/* Sticky navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .body {
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 768px){
+  .top-navbar {
+    z-index: 9001;
+    top: 0px;
+  }
+
+  nav.navbar {
+    top: 0px;
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+}
+
+nav {
+  //overflow: hidden;
+  z-index: $zindex-navbar;
+}
+
+.top-navbar {
+  background-color: $pe-top-navbar-background-color;
+  background-image: $pe-top-navbar-background-img;
+  height: $pe-top-navbar-height;
+
+  position: relative;
+  
+  a, button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  button {
+    right: 2rem;
+  }
+
+}
+
+#nav-logo {
+  margin-left: 10px;
+}
+
+.navbar-toggle { 
+  padding: 14px 0 9px;
+}
+
+.navbar-toggle span {
+  background-color: #fff; 
+}
+
+.navbar {
+  transition: 250ms opacity ease-in-out;
+  -webkit-transition: 250ms opacity ease-in-out;
+  border: 0;
+  border-bottom: solid thin $sp-navbar-divider-color;
+}
+
+.navbar-fade {
+  opacity: 0.4;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+header[role="banner"],
+.nav > li > a {
+  max-height: 60px;
+}
+
+@media screen and (max-width: 768px){
+  .nav > li > a {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.navbar-brand {
+  max-height: 60px;
+  padding: 0;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand img, .navbar-brand span {
+  margin-left: $sp-logo-margin-x;
+  margin-right: $sp-logo-margin-x;
+  margin-top: $sp-logo-margin-y;
+  margin-bottom: $sp-logo-margin-y;
+  display: block;
+  max-height: $sp-logo-max-height;
+  max-width: $sp-logo-max-width;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.breadcrumb-container {
+  background-color: $panel-bg;
+}
+
+/* for mobile app */
+.navbar-inverse.is-native {
+  background-color: #405060;
+}
+
+nav {
+  margin-bottom: 0px;
+  border-radius: 0px;
+
+ .toggle-dropdown {
+    height: 60px;
+  }
+
+}
+
+.navbar-right {
+  padding-right: 0px;
+  padding-left: 7px;
+}
+
+.navbar-nav {
+margin: 0px;
+}
+
+// PRB711244: Dropdown menu is scrollable when too many items
+.scrollable-dropdown {
+  max-height: 80vh;
+  overflow: auto;
+  height: auto;
+}
+
+.is-native {
+ .scrollable-dropdown {
+  max-height: 100vh;
+  overflow: scroll;
+  height: auto;
+	}
+}
+
+
+/* PRB923910: Fix for Service Portal - Header Poorly Aligned in Safari */
+@media screen and (min-width: 768px) {
+  .navbar-right {
+    display: flex !important;
+  }
+}

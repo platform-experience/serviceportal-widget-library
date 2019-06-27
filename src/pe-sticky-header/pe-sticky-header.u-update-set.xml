@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-27 04:33:20">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Sticky Header</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>a1e0803bdb8e3f00120e7b931f961909</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-27 04:33:20</sys_created_on>
+<sys_id>0f7594a9db563740120e7b931f961993</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-27 04:33:20</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_header_footer_d8b336eedb7133002acef5131f961902</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_header_footer"&gt;&lt;sp_header_footer action="INSERT_OR_UPDATE"&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function StickyHeaderController($rootScope, $scope, snRecordWatcher, spUtil, $location, $uibModal, cabrillo, $timeout, $window) {
+	var c = this;
+
+	if (c.data.error) {
+		spUtil.addErrorMessage(c.data.error);
+	}
+
+	$scope.collapse = function() {
+		$rootScope.$emit('sp-navbar-collapse');
+	};
+
+	$scope.avatarProfile = {
+		userID: $scope.user.sys_id,
+		name: $scope.user.name,
+		initials: $window.NOW.user_initials
+	};
+
+	if ($window.NOW.user_avatar) {
+		$scope.avatarProfile.userImage = $window.NOW.user_avatar;
+	}
+
+	if (cabrillo.isNative()) {
+		if ($window.innerWidth &lt; 767) {
+			$scope.isViewNative = true;
+		} else {
+			$scope.isViewNativeTablet = true;
+		}
+	}
+
+	$scope.openPopUp = function() {
+		var url = '$chat_support.do?queueID=' + $scope.data.connect_support_queue_id;
+		var popup = window.open(url, 'popup', 'width=900, height=600');
+	};
+
+	$scope.openLogin = function() {
+		$scope.modalInstance = $uibModal.open({
+			templateUrl: 'modalLogin',
+			scope: $scope
+		});
+	};
+
+	var xsScreenSize = isXSScreenSize();
+	$scope.showXSAvatar = isXSScreenSize();
+	$scope.showAvatar = !isXSScreenSize();
+
+	angular.element($window).on('resize', function() {
+		if (xsScreenSize !== isXSScreenSize() &amp;&amp; (!$scope.showXSAvatar || !$scope.showAvatar)) {
+			$scope.showXSAvatar = true;
+			$scope.showAvatar = true;
+		}
+	});
+
+	function isXSScreenSize() {
+		return $window.matchMedia('(max-width: 767px)').matches;
+	}
+
+	$rootScope.$on('sp.avatar_changed', function() {
+		$scope.userID = '';
+		$timeout(function() {
+			$scope.userID = $scope.user.sys_id;
+		});
+	});
+
+	$scope.isHomepage = function() {
+		if (!$scope.page.id)
+			return true;
+
+		if ($scope.page.id == $scope.portal.homepage_dv)
+			return true;
+
+		return false;
+	};
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-top-navbar-background-color: #293E40 !default; &amp;#13;
+$pe-top-navbar-background-img: none !default;&amp;#13;
+$pe-top-navbar-height: 70px !default;&amp;#13;
+&amp;#13;
+/* Sticky navbar */&amp;#13;
+.sticky {&amp;#13;
+  position: fixed;&amp;#13;
+  top: 0;&amp;#13;
+  width: 100%;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.sticky + .body {&amp;#13;
+  padding-top: 60px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+@media screen and (max-width: 768px){&amp;#13;
+  .top-navbar {&amp;#13;
+    z-index: 9001;&amp;#13;
+    top: 0px;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  nav.navbar {&amp;#13;
+    top: 0px;&amp;#13;
+    margin-top: -60px;&amp;#13;
+    padding-top: 60px;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+nav {&amp;#13;
+  //overflow: hidden;&amp;#13;
+  z-index: $zindex-navbar;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.top-navbar {&amp;#13;
+  background-color: $pe-top-navbar-background-color;&amp;#13;
+  background-image: $pe-top-navbar-background-img;&amp;#13;
+  height: $pe-top-navbar-height;&amp;#13;
+&amp;#13;
+  position: relative;&amp;#13;
+  &amp;#13;
+  a, button {&amp;#13;
+    margin: 0;&amp;#13;
+    position: absolute;&amp;#13;
+    top: 50%;&amp;#13;
+    transform: translate(0, -50%);&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  button {&amp;#13;
+    right: 2rem;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+}&amp;#13;
+&amp;#13;
+#nav-logo {&amp;#13;
+  margin-left: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-toggle { &amp;#13;
+  padding: 14px 0 9px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-toggle span {&amp;#13;
+  background-color: #fff; &amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar {&amp;#13;
+  transition: 250ms opacity ease-in-out;&amp;#13;
+  -webkit-transition: 250ms opacity ease-in-out;&amp;#13;
+  border: 0;&amp;#13;
+  border-bottom: solid thin $sp-navbar-divider-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-fade {&amp;#13;
+  opacity: 0.4;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-inverse .navbar-toggle {&amp;#13;
+  border-color: rgba(255, 255, 255, 0.25);&amp;#13;
+}&amp;#13;
+&amp;#13;
+header[role="banner"],&amp;#13;
+.nav &amp;gt; li &amp;gt; a {&amp;#13;
+  max-height: 60px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+@media screen and (max-width: 768px){&amp;#13;
+  .nav &amp;gt; li &amp;gt; a {&amp;#13;
+    padding-right: 0.5rem;&amp;#13;
+    padding-left: 0.5rem;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-brand {&amp;#13;
+  max-height: 60px;&amp;#13;
+  padding: 0;&amp;#13;
+  padding-bottom: 0.5rem;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-brand img, .navbar-brand span {&amp;#13;
+  margin-left: $sp-logo-margin-x;&amp;#13;
+  margin-right: $sp-logo-margin-x;&amp;#13;
+  margin-top: $sp-logo-margin-y;&amp;#13;
+  margin-bottom: $sp-logo-margin-y;&amp;#13;
+  display: block;&amp;#13;
+  max-height: $sp-logo-max-height;&amp;#13;
+  max-width: $sp-logo-max-width;&amp;#13;
+  position: relative;&amp;#13;
+  top: 50%;&amp;#13;
+  -webkit-transform: translateY(-50%);&amp;#13;
+  -ms-transform: translateY(-50%);&amp;#13;
+  transform: translateY(-50%);&amp;#13;
+}&amp;#13;
+.breadcrumb-container {&amp;#13;
+  background-color: $panel-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* for mobile app */&amp;#13;
+.navbar-inverse.is-native {&amp;#13;
+  background-color: #405060;&amp;#13;
+}&amp;#13;
+&amp;#13;
+nav {&amp;#13;
+  margin-bottom: 0px;&amp;#13;
+  border-radius: 0px;&amp;#13;
+&amp;#13;
+ .toggle-dropdown {&amp;#13;
+    height: 60px;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-right {&amp;#13;
+  padding-right: 0px;&amp;#13;
+  padding-left: 7px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-nav {&amp;#13;
+margin: 0px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+// PRB711244: Dropdown menu is scrollable when too many items&amp;#13;
+.scrollable-dropdown {&amp;#13;
+  max-height: 80vh;&amp;#13;
+  overflow: auto;&amp;#13;
+  height: auto;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.is-native {&amp;#13;
+ .scrollable-dropdown {&amp;#13;
+  max-height: 100vh;&amp;#13;
+  overflow: scroll;&amp;#13;
+  height: auto;&amp;#13;
+	}&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+/* PRB923910: Fix for Service Portal - Header Poorly Aligned in Safari */&amp;#13;
+@media screen and (min-width: 768px) {&amp;#13;
+  .navbar-right {&amp;#13;
+    display: flex !important;&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;sticky-header&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope, element) {
+	$(document).keyup(function(event) {
+		if (event.which == 9) { // tab key handler + arrow keys
+			if ($(event.target).parents('.dropdown-menu').length == 0) { //if we are NOT inside a dropdown...
+				// close the dropdowns
+				$('.dropdown').removeClass('open');
+				$('[data-toggle=\'dropdown\']').attr('aria-expanded', 'false');
+			}
+		}
+	});
+
+	$(element).on('click.nav', '.navbar-collapse.in', function(e) {
+		var target = $(e.target);
+		if (target.is('a')) {
+			if (target.hasClass('sp-menu-has-items'))
+				return; // menu item has a submenu, so just toggle it
+
+			// collapse mobile nav if clicked an anchor
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+
+		if (target.parent().hasClass('toggle-dropdown')) {
+			// collapse mobile nav if parent has toggle-dropdown class
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+
+		// if neither target nor parent is an anchor, do nothing
+		if (!target.parent().is('a'))
+			return;
+
+		// collapse mobile nav if target is part of a submenu
+		if (target.parents('ul.dropdown-menu').length &gt; 0)
+			$(this).removeClass('in').addClass('collapse');
+	});
+
+	var navbar = document.getElementById('navbar');
+	var sticky = navbar.offsetTop;
+	var top = document.getElementById('top-navbar');
+	
+	document.addEventListener('scroll', function(e) {
+
+		if (window.innerWidth &gt;= 980) {
+
+			if (e.srcElement.scrollTop - top.offsetTop &gt;= sticky) {
+				navbar.classList.add('sticky')
+				$('body').css('padding-top', '60px');
+				$('#nav-logo').fadeIn('fast');
+			} else {
+				navbar.classList.remove('sticky');
+				$('body').css('padding-top', '');
+				$('#nav-logo').fadeOut('fast');
+			}
+		}
+	}, true);
+}]]&gt;&lt;/link&gt;&lt;name&gt;Sticky Header&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+	var grPortal = $sp.getPortalRecord();
+	if(grPortal.theme.navbar_fixed.toString() == 'true') {
+		data.error = 'Sticky Header Error: Fixed header must be left unchecked in &lt;a href="/nav_to.do?uri=/sp_theme.do?sys_id=' + grPortal.getValue('theme') + '" target="_blank"&gt;' + grPortal.getDisplayValue('theme') + ' Theme&lt;/a&gt;.';
+	}
+	
+	// Defines the support queue ID that will be linked to by the Live Chat link in header
+	data.connect_support_queue_id = $sp.getValue('sp_chat_queue');
+	data.login_page = $sp.getValue('login_page');
+	data.profileBtnMsg = gs.getMessage('User options');
+	var menu = $sp.getValue('sp_rectangle_menu');
+	data.menu = $sp.getWidgetFromInstance(menu);
+	if (data.menu &amp;&amp; data.menu.data) {
+		data.menu.data.replace = true;
+		// Hide login if menu already has link to login
+		data.hasLogin = false;
+		if (data.menu.data.menu.items) {
+			data.menu.data.menu.items.forEach(function(item) {
+				if (item.type == 'page' &amp;&amp; item.sp_page == data.login_page)
+					data.hasLogin = true;
+			});
+		}
+	}
+
+	data.loginWidget = $sp.getWidgetFromInstance('login-modal');
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_header_footer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-05 22:07:05&lt;/sys_created_on&gt;&lt;sys_id&gt;d8b336eedb7133002acef5131f961902&lt;/sys_id&gt;&lt;sys_mod_count&gt;198&lt;/sys_mod_count&gt;&lt;sys_name&gt;Sticky Header&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_header_footer_d8b336eedb7133002acef5131f961902&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-27 04:22:45&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="top-navbar" id="top-navbar"&gt;
+    &lt;a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"&gt;&lt;span ng-bind="portal.title"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" ng-href="?id={{::portal.homepage_dv}}" ng-click="collapse()" aria-label="${Go to homepage}"&gt;
+      &lt;img ng-src="{{::portal.logo}}" title="ServiceNow" role="presentation" alt="${Portal Logo}" /&gt;
+    &lt;/a&gt;
+    &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sp-nav-bar"&gt;
+      &lt;span class="sr-only"&gt;${Toggle navigation}&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;nav class="navbar navbar-default" id="navbar" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
+       role="navigation"&gt;
+    &lt;div ng-show="::!isViewNative" class="navbar-header" id="nav-logo" style="display:none;"&gt;
+
+      &lt;a class="navbar-brand" ng-if="::!portal.icon" href="?id={{::portal.homepage_dv}}"&gt;&lt;span ng-bind="portal.title"&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;a class="navbar-brand navbar-brand-logo" ng-if="::portal.icon" href="?id={{::portal.homepage_dv}}" ng-click="collapse()" aria-label="${Go to homepage}"&gt;
+        &lt;img src="{{::portal.icon}}" title="ServiceNow" role="presentation" alt="${Portal Logo}" /&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div sp-navbar-toggle="" class="collapse navbar-right" id="sp-nav-bar"&gt;
+      &lt;!-- Include The Menu --&gt;
+      &lt;sp-widget widget="::data.menu"&gt;&lt;/sp-widget&gt;
+      &lt;ul ng-if="(!user.logged_in &amp;&amp; page.id != portal.login_page_dv &amp;&amp; !data.hasLogin)" class="nav navbar-nav" role="presentation"&gt;
+        &lt;li role="presentation"&gt;&lt;a href ng-click="::openLogin()"&gt;${Login}&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul ng-if="user.logged_in" class="nav navbar-nav" role="menubar"&gt;
+        &lt;!-- chat, avatar, and logout --&gt;
+        &lt;li ng-if="::data.connect_support_queue_id" role="presentation"&gt;&lt;a href ng-click="openPopUp()" role="menuitem"&gt;${Live Chat}&lt;/a&gt;&lt;/li&gt;
+        &lt;li ng-if="showAvatar" class="hidden-xs dropdown" role="presentation"&gt;
+          &lt;a href class="toggle-dropdown" data-toggle="dropdown" aria-expanded="false" title="{{::data.profileBtnMsg}}" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true"&gt;
+            &lt;span class="navbar-avatar" aria-hidden="true"&gt;&lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;&lt;/span&gt;
+            &lt;span class="visible-lg-inline"&gt;{{::user.name}}&lt;/span&gt;
+          &lt;/a&gt;
+          &lt;ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}"&gt;
+            &lt;li role="presentation"&gt;&lt;a tabindex="-1" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}" role="menuitem"&gt;${Profile}&lt;/a&gt;&lt;/li&gt;
+            &lt;li ng-if="::!(isViewNative || isViewNativeTablet)" role="presentation"&gt;&lt;a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem"&gt;${Logout}&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li ng-if="showXSAvatar" class="visible-xs-block" role="presentation"&gt;&lt;a role="menuitem" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}" ng-click="collapse()"&gt;
+          &lt;span class="navbar-avatar"&gt;&lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;&lt;/span&gt;{{::user.name}}&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li ng-if="::!(isViewNative || isViewNativeTablet)" class="visible-xs-block" role="presentation"&gt;&lt;a role="menuitem" ng-href="{{::portal.logoutUrl}}" ng-click="collapse()"&gt;${Logout}&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_header_footer&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1448811985</payload_hash>
+<remote_update_set display_value="Sticky Header">0f7594a9db563740120e7b931f961993</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-06-27 04:33:20</sys_created_on>
+<sys_id>c37594a9db563740120e7b931f961994</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16b972be8b00000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-06-27 04:33:20</sys_updated_on>
+<table/>
+<target_name>Sticky Header</target_name>
+<type>Header | Footer</type>
+<update_domain>global</update_domain>
+<update_guid>9413102961563740891f61484375ce5a</update_guid>
+<update_guid_history>9413102961563740891f61484375ce5a:1448811985,d303102984563740e0c65ba6d9544956:792979724,dfc290653e5637408b180c4721aeabcc:-1196901976,28221c65cd563740a9d911c4675b9311:-2009347200,43e11065aa563740b8adef41d2977a54:-46904419,4ae190652f563740090792ad6b625ac8:4050390,be3110653f56374043138a72c0628d4f:-385414195,00e098a110563740bf726c77fa787c3b:1044219524,54b09065665637405cfc296e256b6fc4:-31997318,a9a01065735637401095c4ef7cd2804b:-288460062,1880d42d3a163740b5007a0444b4d607:-159272600,d3005461a85637409d46a1c2c9c5ee58:758115745,041fc42df21637402dbf9278dc66dc02:-1171505300,da6e88a1ed5637408e2def115e5fc834:1365996182,874e40694b1637407f91a73da2acdfed:115180278,8d5d44616b56374058ccdbbf85308151:-397779233,db4dcc25671637404aded6165252f96b:-1147924942,99eeb0fc53567340d2abdcc320dbe611:-1922434608,3cdef87863567340e042180835a709ab:907068685,59aef8782d5673406eb77212d76499a7:-945643346,519e74bcf0567340bbd166fdfa5e9be8:968887729,be8e74bcf0567340d2098fb6927b38e3:-328770262,8d8eb4bce95673409cabbf3985ee46f1:-2128761789,db7e74bc38567340ef82ba6c020e6edf:-231075320,1f3efc3c4d56734045366e16427ce62b:-1450968256,6b9dfc3c8d5673401226fff6bcf04927:-1616029366,a54dfc3c24567340472a1be59a30f023:160738346,860d38b8685673405d8d13971c72a9e1:921437848,7aacb07831567340fed774abea17ed32:-401459797,a41cb07835567340bfc5e65fd3aa612e:-1565076767,b2fb38b8b35673405c7a36c1758240dc:416488157,79aa7838bc567340354b6ba535117499:-1565076767,569af878bb567340a8938b5c854894a2:1207353127,858a78384b56734052f299b0d307fc95:-1565076767,a02ab078b2567340f1e01636ec444029:1867484448,b2c9b0f4205673402d237fc2e773d76b:-1797146600,c3b97838eb567340f81eed1eeb0a7691:417697297,68993c742d567340dac4e35a679867cc:40105878,f478b0f4b45673407c0a6d2241556565:-279035034,a828f8f04b567340152f9dbb7c5707aa:-974103061,2a08b0b4075673402f93b4f10ddae1ff:240576787,1ff7f474af5673408f7d436617585a8f:-1617535429,45f73c742e567340adc5428568616bc7:1190595666,90c77c3855167340212b88eb5e7ac5bf:163466599,79b7f474845673409fbfda6d9127388b:-120074332,135774f0db567340770bafd10d21258d:-66422716,a747f474615673402e68e36bb2035987:1046864500,304638fc5f167340cadb5dc1d3570c6f:1348435092,46c5f8f00a567340ff1f26c2d4a653a4:1046864500,c5c574f0e8567340856a4991064c7087:-562642416,f07574f092567340ebfa7b551852ab82:1354719952,c5457cbc24167340c47e1bb2d5bc8f42:1357976583,2f8438fcb0167340ab1aa32a5d8fb969:1340120347,c3147cbc6c16734050322f7a3f73a03d:353016802,c1a37c3cc8167340f6676308399c17e8:-911963299,eb12b0f8951673403638936bcf38dc3b:1557434754,19e0f838131673407b1c5fff965d3ee5:917272878,7dc07c387216734045a45c6906f737b8:-850388009,c6efa0f89b167340d2075d534b5ae236:-1993088409,edcf6c3ce81673408209c586013981e2:-75952594,915facf428167340c2dc962faa35d14a:235653813,145ea0f8c5167340e8fd6fdb43723232:1487600635,48fb6c385c1673403ab9a60974ca11b3:1424842645,02ebe83899167340b84de3c55c4b27dc:1120954682,8dcbacf4bb1673400d7d2a9009a1bc44:-70368999,2ebb68f88ad27340a431255f04f11883:-1454916330,0a7b2c74e5167340ae693eebe3b6829d:19892495,d84bacf4e616734005f2f0cf0942ee40:-1354285361,743b2c7cf1d27340cdb041ea2eeff3e3:200367606,a21b2c7cd0d2734018cc4118b6fb8bdf:-365356756,f63aa474c3167340016f0480dc11ec96:-167701951,15a92c745f16734036b3bf0916c48898:-1924717518,52f8a47445167340e60404f3ed3dc590:-457276440,400d776452527340ebf969185cbf964f:41096740,9fec7764e252734048d30b47fdbfa44a:-115930362,1cec33a00f527340b440725357b7a19a:-447294520,3a0cbfa046527340215878f627413880:-1964883610,699b7fe0cc527340d87ba7bd99e9cb9e:-579653469,164bbfa01c5273407fac16cd1053497b:-580535555,d61b37e0ae527340da8fe73ea87b59d4:416058464,02cabfa05f5273405af394df66da3f76:-1509705984,268a3f2072527340c94988ad0d52f64a:25417306,146a37a02a527340f8f06ac597d10b0c:1511800598,714a37a05a5273407d6262ecd8c7f208:-1744523286,bf3a37a046527340df82df048fcb5803:-425278390,182a33a07952734013a6f075078ff495:-1229231918,671a33a093527340c4e4db1317fb2991:297804000,20f93f20e752734086689466af156045:-1254681718,88c67f6cdb1273403552e302692cc926:-594329657,44963728cb127340fffb85aa36fa1f2a:127863073,2f86b36c991273409daeb3c15694615f:-526188706,476677e4de127340cb3904d0662498d1:2089280987,32f5f7a4ac127340914de28279b5e69a:1383932272,2b65b36cc3127340af070174bb79ff5b:734550695,bef03728ff12734010a5d0d4e9d42921:1742336418,e80077e4891273403299286f87e9a3ca:36647583,eebbeba0a9127340f7033c4fadd92148:-2071797638,ae7e183fb4027f00c6046e37e6d067ec:1580843576,280208bb668e3f00cc96edf2b8a662dd:-653761720</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
