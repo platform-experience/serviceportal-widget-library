@@ -1,3 +1,60 @@
-<div>
-  <!-- your widget template -->
+<div class="x-pisn-sp-launchp" ng-show="load">
+  <ul class="list-unstyled b-b x-pisn-sp-launchp__header">
+    <li class="pointer" role="presentation" ng-class="{'active': c.currentMenuItem == item.sys_id }"
+      ng-repeat="item in c.data.menu_items track by item.sys_id" ng-click="c.currentMenuItem = item.sys_id;"><a
+        href>{{::item.label}} <span class="badge"
+          ng-if="item.scriptedItems.data.count">{{item.scriptedItems.data.count}}</span></a>
+    </li>
+  </ul>
+  <div class="x-pisn-sp-launchp__body" ng-repeat="item in c.data.menu_items track by item.sys_id"
+    ng-show="c.currentMenuItem == item.sys_id">
+    <!-- type 'apps'-->
+    <div class="x-pisn-sp-launchp__body--apps" ng-if="item.scriptedItems.type == 'apps'">
+      <div class="row">
+        <div class="col-xs-4 col-sm-2 col-md-2 text-center"
+          ng-repeat="record in item.scriptedItems.data.records track by record.sys_id">
+          <a href class="thumbnail no-border m-b-none" ng-click="c.select(record,item)">
+            <img class="img-circle m-b-xs" ng-src="{{record.dv[item.scriptedItems.data.fields[1].name]}}" />
+            <div class="caption">
+              <p class="m-b-none">{{record.dv[item.scriptedItems.data.fields[0].name]}}</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 col-md-2 text-center"
+          ng-if="item.scriptedItems.data.count > item.scriptedItems.data.limit">
+          <a href class="thumbnail thumbnail-primary no-border m-b-none" ng-click="c.goTo(item)">
+            <div class="img-circle see-all text-center"><img class="" ng-src="x_pisn_sp_launchp-img-see_all.svg" />
+            </div>
+            <div class="caption">
+              <p class="m-b-none">${See All}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- type 'list'-->
+    <div class="x-pisn-sp-launchp__body--list" ng-if="item.scriptedItems.type == 'list'">
+      <div class="table-responsive">
+        <table class="table table-hover m-b-none">
+          <thead>
+            <tr>
+              <th ng-repeat="field in item.scriptedItems.data.fields | filter:c.filterFields">{{field.field.label}}</th>
+            </tr>
+          </thead>
+          <tr ng-repeat="record in item.scriptedItems.data.records track by record.sys_id"
+            ng-click="c.select(record,item)">
+            <td ng-repeat="field in item.scriptedItems.data.fields | filter:c.filterFields">{{record.dv[field.name]}}
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="text-center wrapper-sm b-t x-pisn-sp-launchp__footer" ng-if="item.scriptedItems.type == 'list'">
+        <button type="button" class="btn btn-link" ng-click="c.goTo(item)">${See All}</button>
+      </div>
+    </div>
+    <!-- type 'widget'-->
+    <div class="x-pisn-sp-launchp__body--widget" ng-if="item.scriptedItems.type == 'widget'">
+      <sp-widget widget="item.scriptedItems.widget"></sp-widget>
+    </div>
+  </div>
 </div>
