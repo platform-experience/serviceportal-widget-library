@@ -2,11 +2,15 @@
 
 ## Description
 
-> None
+> Having a Business Service in input, this minimalistic Bootstrap card is using the contextual colours, inherited from Bootstrap or customised in the Service Portal theme, to represent the outages and the Incident associated to them.
 
 ## Screenshot
 
-![Sp Service Outage Card](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-sp-service-outage-card/images/pe-sp-service-outage-card.png)
+![Sp Service Outage Card with active outage](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-sp-service-outage-card/images/pe-sp-service-outage-card-01.png)
+
+![Sp Service Outage Card with solved outage](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-sp-service-outage-card/images/pe-sp-service-outage-card-02.png)
+
+![See the incident record in a modal dialog without loosing the context](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-sp-service-outage-card/images/pe-sp-service-outage-card-03.png)
 
 ## Additional Information/Notes
 
@@ -22,13 +26,15 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+> Drag the widget on the page. The widget needs a Business Service sysid in input. It can be retrieved from the URL, in input or from the options if the widget is embedded.
 
 ## Platform Dependencies
 
+> Configuration Management (CMDB) plugin
+
 ### SN System Tables
 
-> None
+> cmdb_ci_service, cmdb_ci_outage, incident
 
 ### UI Dependencies
 
@@ -38,4 +44,9 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-> None
+> Bootstrap variables
+
+``` sass
+$brand-danger
+$brand-success
+```
