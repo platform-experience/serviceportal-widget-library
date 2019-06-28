@@ -1,0 +1,253 @@
+$x-pisn-sp-task-child-activity-state-past: $text-muted !default;
+$x-pisn-sp-task-child-activity-state-current: $brand-success !default;
+$x-pisn-sp-task-child-activity-state-future: $brand-primary !default;
+
+.x-pisn-sp-task-child-activity {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+.x-pisn-sp-task-child-activity__flow {
+  display: inline-block;
+}
+
+.x-pisn-sp-task-child-activity__task-list,
+.x-pisn-sp-task-child-activity__task-list li,
+.x-pisn-sp-task-child-activity__task-list ol {
+  list-style: none;
+}
+
+.x-pisn-sp-task-child-activity__task-list {
+  padding-left: 0;
+}
+
+.x-pisn-sp-task-child-activity__task {
+  border-top: 1px solid $panel-default-border;
+  padding-bottom: 8px;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.x-pisn-sp-task-child-activity__task-list>li:first-child>.x-pisn-sp-task-child-activity__task {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.x-pisn-sp-task-child-activity__task .x-pisn-sp-procflow-lite__stage:first-of-type {
+  padding-left: 0;
+}
+
+.x-pisn-sp-task-child-activity__task {
+
+  .x-pisn-sp-procflow-lite__breadcrumb {
+    color: $text-muted !important;
+  }
+
+  .x-pisn-sp-procflow-lite__stage--past {
+    color: $x-pisn-sp-task-child-activity-state-past !important;
+
+    .x-pisn-sp-procflow-lite__breadcrumb {
+      color: $x-pisn-sp-task-child-activity-state-past !important;
+    }
+  }
+
+  .x-pisn-sp-procflow-lite__stage--current {
+    color: $text-color !important;
+
+    .x-pisn-sp-procflow-lite__breadcrumb {
+      color: $text-color !important;
+    }
+  }
+
+  .x-pisn-sp-procflow-lite__stage--future {
+    color: $x-pisn-sp-task-child-activity-state-future !important;
+
+    .x-pisn-sp-procflow-lite__breadcrumb {
+      color: $x-pisn-sp-task-child-activity-state-future !important;
+    }
+  }
+
+  .x-pisn-sp-procflow-lite__container,
+  .x-pisn-sp-procflow-lite__stage {
+    background-color: unset !important;
+  }
+
+  .x-pisn-sp-procflow-lite__stage {
+    height: unset !important;
+  }
+
+  .x-pisn-sp-procflow__container::-webkit-scrollbar {
+    width: 0 !important
+  }
+
+  .x-pisn-sp-procflow__container {
+    overflow: -moz-scrollbars-none;
+  }
+
+  .x-pisn-sp-procflow__container {
+    -ms-overflow-style: none;
+  }
+}
+
+.x-pisn-sp-task-child-activity__task--active .x-pisn-sp-procflow-lite__stage--current {
+  color: $x-pisn-sp-task-child-activity-state-current !important;
+
+  .x-pisn-sp-procflow-lite__breadcrumb {
+    color: $x-pisn-sp-task-child-activity-state-current !important;
+  }
+}
+
+.collapse-circle-plus-container {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.collapse-closed {
+  .collapse-vertical {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+  }
+
+  .collapse-horizontal {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+}
+
+.collapse-opened {
+  opacity: 1;
+
+  .collapse-vertical {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+  }
+
+  .collapse-horizontal {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.collapse-circle-plus {
+  font-size: 1em;
+  opacity: .7;
+}
+
+.collapse-circle-plus .collapse-circle {
+  position: relative;
+  width: 2em;
+  height: 2em;
+}
+
+.collapse-circle-plus .collapse-circle .collapse-horizontal {
+  position: absolute;
+  background-color: $brand-primary;
+  width: 16px;
+  height: 2px;
+  left: 50%;
+  margin-left: -7px;
+  top: 50%;
+}
+
+.collapse-circle-plus .collapse-circle .collapse-vertical {
+  position: absolute;
+  background-color: $brand-primary;
+  width: 2px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  margin-top: -7px;
+}
+
+.pf-mobile>.v4e74afaddb98bb00d033df8b4b961922,
+.pf-mobile>.x-pisn-sp-procflow__show {
+  display: none;
+}
+
+.pf-mobile .x-pisn-sp-procflow-lite {
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0.5px solid lighten($gray-base, 87%);
+  height: 41px;
+}
+
+.v4e74afaddb98bb00d033df8b4b961922 .x-pisn-sp-procflow-popup-container {
+  position: absolute;
+  bottom: -8px;
+  left: 35px;
+  right: 0px;
+}
+
+.v4e74afaddb98bb00d033df8b4b961922 .x-pisn-sp-procflow-popup-starter .fa-sort-desc {
+  position: absolute;
+  bottom: 0px;
+  transform: rotate(90deg);
+  left: 22px;
+  font-size: 20px;
+  color: lighten($gray-base, 87%);
+}
+
+.v4e74afaddb98bb00d033df8b4b961922 .x-pisn-sp-procflow-lite__container {
+  height: 100% !important;
+}
+
+.btn-view {
+  position: absolute;
+  right: 12px;
+  top: 2px;
+}
+
+.relative {
+  position: relative;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .x-pisn-sp-task-child-activity__task .x-pisn-sp-procflow-lite {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  .x-pisn-sp-task-child-activity__task {
+    .col-xs-2 {
+      padding-left: 0px;
+    }
+  }
+
+  .pf-mobile>.v4e74afaddb98bb00d033df8b4b961922 {
+    display: inline-block;
+  }
+
+  .pf-desktop>.vbb6b8a4edb439b0085895845dc961917 {
+    display: none;
+  }
+
+  .btn-view {
+    right: 7px;
+  }
+
+  .panel-heading {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .panel-body {
+    padding-left: 10px;
+  }
+
+  .collapse-circle-plus-container {
+    right: 5px;
+  }
+}

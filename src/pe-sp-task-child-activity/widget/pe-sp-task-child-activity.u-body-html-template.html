@@ -1,3 +1,15 @@
-<div>
-  <!-- your widget template -->
+<div class="x-pisn-sp-task-child-activity">
+  <div class="panel panel-{{::c.options.color}}">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{::c.options.title}} <small class="pull-right m-t-xs"><a role="button" href
+            ng-click="c.editTask({sys_id: c.data.sys_id, table: c.data.task_table, number: c.data.task_number})">{{::c.data.task_number}}</a><i
+            class="fa fa-tasks m-l-xs m-r-xs" aria-hidden="true"></i></small></h3>
+    </div>
+    <div class="panel-body">
+      <ol ng-model="c.task_hierarchy" class="x-pisn-sp-task-child-activity__task-list">
+        <li ng-repeat="task in c.task_hierarchy track by task.id" ng-include="'x-pisn-sp-task-child-activity__task'">
+        </li>
+      </ol>
+    </div>
+  </div>
 </div>
