@@ -2,7 +2,7 @@
 
 ## Description
 
-> With this widget you will be able to impersonate Users from a Service Portal page.
+With this widget you will be able to impersonate Users from a Service Portal page.
 
 ## Screenshot
 
@@ -41,22 +41,18 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 * Your new set should look something like below.
 
    ![Add Widget](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/create-new-set.png)
-   
+
 * Now Lets drag and drop the widget **Impersonation Utility** widget onto the portal page.
 * Configure the options by clicking on the pencil icon. Give it a title and Save.
 
-
 	![Widget options](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/widget-option.png)
-
-
 
 ## Platform Dependencies
 
 ### Custom Tables
 
->  `u_impersonation_set`
-
-> `	u_m2m_users_impersonation_sets`
+* `u_impersonation_set`
+* `	u_m2m_users_impersonation_sets`
 
 ### UI Dependencies
 
