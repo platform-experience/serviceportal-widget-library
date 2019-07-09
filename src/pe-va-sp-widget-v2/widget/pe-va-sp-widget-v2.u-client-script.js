@@ -1,4 +1,4 @@
-function vaController($log, $scope, $element, $document, spModal, $q, $timeout, $window) {
+function VirtualAgentController($log, $scope, $element, $document, spModal, $q, $timeout, $window) {
 	'use strict';
 
 	/* widget controller */
