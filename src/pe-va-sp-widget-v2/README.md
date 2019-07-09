@@ -2,7 +2,7 @@
 
 ## Description
 
->It is not straight forward to change the VA floating button icon without editing the css of the widget, because the icon url is hardcoded. 
+It is not straight forward to change the VA floating button icon without editing the css of the widget, because the icon url is hardcoded. 
 >
 >In this widget I have extracted the icon url into widget options. If you use this widget instead of OOTB **Virtual Agent Service Portal Widget** you can switch out the icon easily. Also added an option to change color of the close icon that is visible when the VA is open.
 
