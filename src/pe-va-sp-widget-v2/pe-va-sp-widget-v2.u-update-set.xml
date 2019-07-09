@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-26 19:09:07">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-07-09 19:58:22">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Virtual Agent Service Portal Widgets">a650d4923b201300778f6da0a3efc4c3</application>
 <application_name>Virtual Agent Service Portal Widgets</application_name>
@@ -20,11 +20,11 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2019-06-26 19:09:07</sys_created_on>
-<sys_id>0e549ad9db56b30006d1295748961978</sys_id>
+<sys_created_on>2019-07-09 19:58:22</sys_created_on>
+<sys_id>1e4c51a9dbe63f0006d1295748961934</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2019-06-26 19:09:07</sys_updated_on>
+<sys_updated_on>2019-07-09 19:58:22</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -35,7 +35,7 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_75953995db16b30006d12957489619c7</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($log, $scope, $element, $document, spModal, $q, $timeout, $window) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function VirtualAgentController($log, $scope, $element, $document, spModal, $q, $timeout, $window) {
 	'use strict';
 
 	/* widget controller */
@@ -304,9 +304,9 @@ $sn-chatbot-animation-speed: 300ms;
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;sn-va-sp-widget-v2&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(){}]]&gt;&lt;/link&gt;&lt;name&gt;Virtual Agent Service Portal Widget-V2&lt;/name&gt;&lt;option_schema&gt;[{"hint":"The color of the floating button which opens the virtual agent service portal widget button.","name":"button_color","section":"Presentation","default_value":"#8D8DE0","label":"Floating Button Color","type":"string"},{"hint":"The URL parameters to pass to the VA client, for example: sysparm_live_agent_queue=abc123&amp;amp;sysparm_conversation=xzy456","name":"va_url_params","section":"Behavior","label":"Virtual Agent Client URL Parameters","type":"string"},{"hint":"The icon for the floating button","name":"floating_button_icon","section":"Presentation","default_value":"sn-va-sp-widget/sn-va-sp-widget-icon.svg","label":"Floating Button Icon","type":"string"},{"hint":"This is the color of the Cross icon that is visible when the VA is open","name":"floating_button_cross_icon_color","section":"Presentation","default_value":"#fff","label":"Floating Button Cross Icon Color","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-
+	
 	var instanceGR = $sp.getInstanceRecord();
-
+	
 	options.va_url_params = options.va_url_params || "";
 	options.button_color = options.button_color || "red";
 })();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-26 16:54:44&lt;/sys_created_on&gt;&lt;sys_id&gt;75953995db16b30006d12957489619c7&lt;/sys_id&gt;&lt;sys_mod_count&gt;23&lt;/sys_mod_count&gt;&lt;sys_name&gt;Virtual Agent Service Portal Widget-V2&lt;/sys_name&gt;&lt;sys_package display_value="Virtual Agent Service Portal Widgets" source="sn_va_sp_widgets"&gt;a650d4923b201300778f6da0a3efc4c3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Virtual Agent Service Portal Widgets"&gt;a650d4923b201300778f6da0a3efc4c3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_75953995db16b30006d12957489619c7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-26 19:08:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="conversation-button-container"&gt;
@@ -336,15 +336,15 @@ $sn-chatbot-animation-speed: 300ms;
   &lt;/button&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-252032340</payload_hash>
-<remote_update_set display_value="Virtual Agent Service portal widget V2">0e549ad9db56b30006d1295748961978</remote_update_set>
+<remote_update_set display_value="Virtual Agent Service portal widget V2">1e4c51a9dbe63f0006d1295748961934</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2019-06-26 19:09:07</sys_created_on>
-<sys_id>02549ad9db56b30006d1295748961979</sys_id>
+<sys_created_on>2019-07-09 19:58:22</sys_created_on>
+<sys_id>124c51a9dbe63f0006d1295748961935</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_recorded_at>16b9530a4c40000001</sys_recorded_at>
 <sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2019-06-26 19:09:07</sys_updated_on>
+<sys_updated_on>2019-07-09 19:58:22</sys_updated_on>
 <table/>
 <target_name>Virtual Agent Service Portal Widget-V2</target_name>
 <type>Widget</type>
