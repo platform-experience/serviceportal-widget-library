@@ -41,9 +41,6 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ![Va Sp Widget V2](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-va-sp-widget-v2/images/cross-icon.png)
 
-
-
-
 ## Platform Dependencies
 
 ### SN System Tables
