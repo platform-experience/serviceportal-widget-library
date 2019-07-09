@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-07-09 19:58:22">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-07-09 21:26:08">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Virtual Agent Service Portal Widgets">a650d4923b201300778f6da0a3efc4c3</application>
 <application_name>Virtual Agent Service Portal Widgets</application_name>
@@ -15,16 +15,16 @@
 <release_date/>
 <remote_base_update_set display_value=""/>
 <remote_parent_id/>
-<remote_sys_id>b3d5fd95db16b30006d1295748961941</remote_sys_id>
+<remote_sys_id>a6182565dbaa7b00239bf9741d961916</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2019-07-09 19:58:22</sys_created_on>
-<sys_id>1e4c51a9dbe63f0006d1295748961934</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-07-09 21:26:07</sys_created_on>
+<sys_id>f750312ddbaa7b00239bf9741d9619ea</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2019-07-09 19:58:22</sys_updated_on>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-07-09 21:26:07</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -36,86 +36,84 @@
 <comments/>
 <name>sp_widget_75953995db16b30006d12957489619c7</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function VirtualAgentController($log, $scope, $element, $document, spModal, $q, $timeout, $window) {
-	'use strict';
+  'use strict';
 
-	/* widget controller */
-	var $ctrl = this;
-	var $spContainer = $document.find('.sp-page-root');
-	var $widgetParent = $element.parent();
+  var $ctrl = this;
+  var $spContainer = $document.find('.sp-page-root');
+  var $widgetParent = $element.parent();
 
-	$ctrl.isWindowVisible = false;
-	$ctrl.hasUnreadMessages = false;
-	$ctrl.firstPress = false;
-	$ctrl.vaSource = '';
+  $ctrl.isWindowVisible = false;
+  $ctrl.hasUnreadMessages = false;
+  $ctrl.firstPress = false;
+  $ctrl.vaSource = '';
 
+  $ctrl.toggleWindow = function() {
+    if ($ctrl.isWindowVisible) {
+      $ctrl.isWindowVisible = false;
+      $timeout(function() {
+        if (!$ctrl.isWindowVisible) {
+          $element.find('.conversation-container').css('display', 'none');
+          $element.find('.sn-connect-floating').css('display', 'none');
+          $element.find('.sn-connect-floating-wrapper').css('display', 'none');
 
-	$ctrl.toggleWindow = function () {
-		if ($ctrl.isWindowVisible) {
-			$ctrl.isWindowVisible = false;
-			$timeout(function () {
-				if (!$ctrl.isWindowVisible) {
-					$element.find('.conversation-container').css("display", "none");
-					$element.find('.sn-connect-floating').css("display", "none");
-					$element.find('.sn-connect-floating-wrapper').css("display", "none");
+          // ios overlay hacky fix.
+          $document.find('.touch_scroll').css('-webkit-overflow-scrolling', 'touch');
+        }
+      }, 300);
+    } else {
+      if (!$ctrl.firstPress) {
+        $ctrl.firstPress = true;
+        $ctrl.vaSource = '/$sn-va-web-client-app.do?sysparm_nostack=true&amp;sysparm_stack=no';
+        if ($ctrl.options.va_url_params) {
+          $ctrl.vaSource = $ctrl.vaSource + '&amp;' + $ctrl.options.va_url_params;
+        }
+      }
+      $ctrl.isWindowVisible = true;
+      $ctrl.hasUnreadMessages = false;
+      $element.find('.conversation-container').css('display', 'block');
+      $element.find('.sn-connect-floating').css('display', 'block');
+      $element.find('.sn-connect-floating-wrapper').css('display', 'block');
 
-					// ios overlay hacky fix.
-					$document.find('.touch_scroll').css("-webkit-overflow-scrolling", "touch");
-				}
-			}, 300);
-		} else {
-			if (!$ctrl.firstPress) {
-				$ctrl.firstPress = true;
-				$ctrl.vaSource = '/$sn-va-web-client-app.do?sysparm_nostack=true&amp;sysparm_stack=no';
-				if ($ctrl.options.va_url_params) {
-					$ctrl.vaSource = $ctrl.vaSource + '&amp;' + $ctrl.options.va_url_params;
-				}
-			}
-			$ctrl.isWindowVisible = true;
-			$ctrl.hasUnreadMessages = false;
-			$element.find('.conversation-container').css("display", "block");
-			$element.find('.sn-connect-floating').css("display", "block");
-			$element.find('.sn-connect-floating-wrapper').css("display", "block");
+      // ios overlay hacky fix.
+      $document.find('.touch_scroll').css('-webkit-overflow-scrolling', 'auto');
+    }
+  };
 
-			// ios overlay hacky fix.
-			$document.find('.touch_scroll').css("-webkit-overflow-scrolling", "auto");
-		}
-	};
+  $window.addEventListener('message', function(e) {
+    if (e.data === 'sn-va-web-client-app-new-message' &amp;&amp; $ctrl.isWindowVisible === false) {
+      $ctrl.hasUnreadMessages = true;
+    } else if (e.data === 'sn-va-web-client-app-trigger-login') {
+      $window.location.reload(true);
+    }
+  });
 
-	$window.addEventListener("message", function (e) {
-		if (e.data === 'sn-va-web-client-app-new-message' &amp;&amp; $ctrl.isWindowVisible === false) {
-			$ctrl.hasUnreadMessages = true;
-		} else if (e.data === 'sn-va-web-client-app-trigger-login') {
-			$window.location.reload(true);
-		}
-	});
+  $element.find('.help-button').on('mouseup', function(e) {
+    e.target.blur();
+    e.stopPropagation();
+  });
 
-	$element.find('.help-button').on("mouseup", function (e) {
-		e.target.blur();
-		e.stopPropagation();
-	});
+  $element.find('.help-icon').on('mouseup', function(e) {
+    e.target.blur();
+    e.stopPropagation();
+  });
 
-	$element.find('.help-icon').on("mouseup", function (e) {
-		e.target.blur();
-		e.stopPropagation();
-	});
+  $ctrl.openWindow = function() {
+    $ctrl.isWindowVisible = true;
+    // delay before clearing unread message indicator
+    // in-case user opens and closes quickly
+    $timeout(function() {
+      if ($ctrl.isWindowVisible) {
+        $ctrl.hasUnreadMessages = false;
+      }
+    }, 500);
+  };
 
-	$ctrl.openWindow = function () {
-		$ctrl.isWindowVisible = true;
-		// delay before clearing unread message indicator
-		// in-case user opens and closes quickly
-		$timeout(function () {
-			if ($ctrl.isWindowVisible) {
-				$ctrl.hasUnreadMessages = false;
-			}
-		}, 500);
-	};
-
-	var _closeWindow = function () {
-
-		$ctrl.isWindowVisible = false;
-		$ctrl.hasActiveConversation = false;
-	};
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;$ctrl&lt;/controller_as&gt;&lt;css&gt;$color-darker: #485563;
+  var _closeWindow = function() {
+    $ctrl.isWindowVisible = false;
+    $ctrl.hasActiveConversation = false;
+  };
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;$ctrl&lt;/controller_as&gt;&lt;css&gt;$color-darker: #485563;
 $color-white: #ffffff;
 
 $window-width: 375px;
@@ -304,12 +302,11 @@ $sn-chatbot-animation-speed: 300ms;
 }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;sn-va-sp-widget-v2&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(){}]]&gt;&lt;/link&gt;&lt;name&gt;Virtual Agent Service Portal Widget-V2&lt;/name&gt;&lt;option_schema&gt;[{"hint":"The color of the floating button which opens the virtual agent service portal widget button.","name":"button_color","section":"Presentation","default_value":"#8D8DE0","label":"Floating Button Color","type":"string"},{"hint":"The URL parameters to pass to the VA client, for example: sysparm_live_agent_queue=abc123&amp;amp;sysparm_conversation=xzy456","name":"va_url_params","section":"Behavior","label":"Virtual Agent Client URL Parameters","type":"string"},{"hint":"The icon for the floating button","name":"floating_button_icon","section":"Presentation","default_value":"sn-va-sp-widget/sn-va-sp-widget-icon.svg","label":"Floating Button Icon","type":"string"},{"hint":"This is the color of the Cross icon that is visible when the VA is open","name":"floating_button_cross_icon_color","section":"Presentation","default_value":"#fff","label":"Floating Button Cross Icon Color","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-	
-	var instanceGR = $sp.getInstanceRecord();
-	
-	options.va_url_params = options.va_url_params || "";
-	options.button_color = options.button_color || "red";
-})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-26 16:54:44&lt;/sys_created_on&gt;&lt;sys_id&gt;75953995db16b30006d12957489619c7&lt;/sys_id&gt;&lt;sys_mod_count&gt;23&lt;/sys_mod_count&gt;&lt;sys_name&gt;Virtual Agent Service Portal Widget-V2&lt;/sys_name&gt;&lt;sys_package display_value="Virtual Agent Service Portal Widgets" source="sn_va_sp_widgets"&gt;a650d4923b201300778f6da0a3efc4c3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Virtual Agent Service Portal Widgets"&gt;a650d4923b201300778f6da0a3efc4c3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_75953995db16b30006d12957489619c7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-26 19:08:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="conversation-button-container"&gt;
+  var instanceGR = $sp.getInstanceRecord();
+  options.va_url_params = options.va_url_params || '';
+  options.button_color = options.button_color || 'red';
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-26 16:54:44&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;75953995db16b30006d12957489619c7&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;Virtual Agent Service Portal Widget-V2&lt;/sys_name&gt;&lt;sys_package display_value="Virtual Agent Service Portal Widgets" source="sn_va_sp_widgets"&gt;a650d4923b201300778f6da0a3efc4c3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Virtual Agent Service Portal Widgets"&gt;a650d4923b201300778f6da0a3efc4c3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_75953995db16b30006d12957489619c7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;steven.gregory&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-07-09 21:02:53&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="conversation-button-container"&gt;
 	&lt;div class="conversation-region fade"
        ng-class="{'open': $ctrl.isWindowVisible}"&gt;
     &lt;div class="sn-connect sn-connect-floating"&gt;
@@ -335,22 +332,22 @@ $sn-chatbot-animation-speed: 300ms;
     &lt;/span&gt;
   &lt;/button&gt;
 &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-252032340</payload_hash>
-<remote_update_set display_value="Virtual Agent Service portal widget V2">1e4c51a9dbe63f0006d1295748961934</remote_update_set>
+<payload_hash>-1884340672</payload_hash>
+<remote_update_set display_value="Virtual Agent Service portal widget V2">f750312ddbaa7b00239bf9741d9619ea</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>sush.chan</sys_created_by>
-<sys_created_on>2019-07-09 19:58:22</sys_created_on>
-<sys_id>124c51a9dbe63f0006d1295748961935</sys_id>
+<sys_created_by>steven.gregory</sys_created_by>
+<sys_created_on>2019-07-09 21:26:07</sys_created_on>
+<sys_id>7f50312ddbaa7b00239bf9741d9619ea</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16b9530a4c40000001</sys_recorded_at>
-<sys_updated_by>sush.chan</sys_updated_by>
-<sys_updated_on>2019-07-09 19:58:22</sys_updated_on>
+<sys_recorded_at>16bd88bdfa30000001</sys_recorded_at>
+<sys_updated_by>steven.gregory</sys_updated_by>
+<sys_updated_on>2019-07-09 21:26:07</sys_updated_on>
 <table/>
 <target_name>Virtual Agent Service Portal Widget-V2</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
-<update_guid>f73416998356b300600596698a7110ff</update_guid>
-<update_guid_history>f73416998356b300600596698a7110ff:-252032340,a8d3529d8292b30011cfe41feb4796b7:1995434424,7bb2529dba92b300d804e431f39a71b3:1352021411,d9b21e55d656b3005906db6e6267d455:-593348628,a972d6555d56b300b92c9c64eeea206e:-673870619,a1221a5d2b92b300b5d3287366a813a3:-1731074655,50021a5d9e92b300cde9ded612be4d9f:411400565,c5c15e59b656b300053fdc24e0033ce4:-1504498298,5381da198492b300bfc9b918e0e63deb:-2042977063,0731121d8792b300b2760ef66dbcf0c5:-758691282,77211a114d56b3006135946492f8fef7:69923863,a4f01619ba56b300b3961b53f36bff0c:-47192150,92908addfc52b3004e0dd27c39a8db2d:-1946239559,23504a1dcf16b300344853bc1e486e27:-1413876542,7cdfbd5dd316b3003f2055f5c8251b9b:1055562243,42fc75996916b300b426267efee6ecbf:-1130180151,2c4c3951cf16b3006eb8a9e49c331885:574351346,cf3c3d517392b3000b5e36c6259bff90:-1564529120,861c3d518092b3006b59384783556e8c:-745336506,44fab1d50d16b300250f9f9fd1526371:1761838340,a9da31d56816b3001f5872993543c05d:-1632093010,b6e97dd18316b3000f875ec4c1f74e6e:594998408,64f5fd955216b3007b941173af6c87c4:907275964,7d9539959416b300c5c4b4b9b05b5dc8:-428288226</update_guid_history>
+<update_guid>eb0b2529a2aa7b004d9b3df03ce85e28</update_guid>
+<update_guid_history>eb0b2529a2aa7b004d9b3df03ce85e28:-1884340672,f73416998356b300600596698a7110ff:-252032340,a8d3529d8292b30011cfe41feb4796b7:1995434424,7bb2529dba92b300d804e431f39a71b3:1352021411,d9b21e55d656b3005906db6e6267d455:-593348628,a972d6555d56b300b92c9c64eeea206e:-673870619,a1221a5d2b92b300b5d3287366a813a3:-1731074655,50021a5d9e92b300cde9ded612be4d9f:411400565,c5c15e59b656b300053fdc24e0033ce4:-1504498298,5381da198492b300bfc9b918e0e63deb:-2042977063,0731121d8792b300b2760ef66dbcf0c5:-758691282,77211a114d56b3006135946492f8fef7:69923863,a4f01619ba56b300b3961b53f36bff0c:-47192150,92908addfc52b3004e0dd27c39a8db2d:-1946239559,23504a1dcf16b300344853bc1e486e27:-1413876542,7cdfbd5dd316b3003f2055f5c8251b9b:1055562243,42fc75996916b300b426267efee6ecbf:-1130180151,2c4c3951cf16b3006eb8a9e49c331885:574351346,cf3c3d517392b3000b5e36c6259bff90:-1564529120,861c3d518092b3006b59384783556e8c:-745336506,44fab1d50d16b300250f9f9fd1526371:1761838340,a9da31d56816b3001f5872993543c05d:-1632093010,b6e97dd18316b3000f875ec4c1f74e6e:594998408,64f5fd955216b3007b941173af6c87c4:907275964,7d9539959416b300c5c4b4b9b05b5dc8:-428288226</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
