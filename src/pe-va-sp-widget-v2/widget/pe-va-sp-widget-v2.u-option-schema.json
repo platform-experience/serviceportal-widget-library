@@ -1,28 +1,33 @@
-[{
-  "hint": "The color of the floating button which opens the virtual agent service portal widget button.",
-  "name": "button_color",
-  "section": "Presentation",
-  "default_value": "#8D8DE0",
-  "label": "Floating Button Color",
-  "type": "string"
-}, {
-  "hint": "The URL parameters to pass to the VA client, for example: sysparm_live_agent_queue=abc123&sysparm_conversation=xzy456",
-  "name": "va_url_params",
-  "section": "Behavior",
-  "label": "Virtual Agent Client URL Parameters",
-  "type": "string"
-}, {
-  "hint": "The icon for the floating button",
-  "name": "floating_button_icon",
-  "section": "Presentation",
-  "default_value": "sn-va-sp-widget/sn-va-sp-widget-icon.svg",
-  "label": "Floating Button Icon",
-  "type": "string"
-}, {
-  "hint": "This is the color of the Cross icon that is visible when the VA is open",
-  "name": "floating_button_cross_icon_color",
-  "section": "Presentation",
-  "default_value": "#fff",
-  "label": "Floating Button Cross Icon Color",
-  "type": "string"
-}]
+[
+  {
+    "hint": "The color of the floating button which opens the virtual agent service portal widget button.",
+    "name": "button_color",
+    "section": "Presentation",
+    "default_value": "#8D8DE0",
+    "label": "Floating Button Color",
+    "type": "string"
+  },
+  {
+    "hint": "The URL parameters to pass to the VA client, for example: sysparm_live_agent_queue=abc123&sysparm_conversation=xzy456",
+    "name": "va_url_params",
+    "section": "Behavior",
+    "label": "Virtual Agent Client URL Parameters",
+    "type": "string"
+  },
+  {
+    "hint": "The icon for the floating button",
+    "name": "floating_button_icon",
+    "section": "Presentation",
+    "default_value": "sn-va-sp-widget/sn-va-sp-widget-icon.svg",
+    "label": "Floating Button Icon",
+    "type": "string"
+  },
+  {
+    "hint": "This is the color of the Cross icon that is visible when the VA is open",
+    "name": "floating_button_cross_icon_color",
+    "section": "Presentation",
+    "default_value": "#fff",
+    "label": "Floating Button Cross Icon Color",
+    "type": "string"
+  }
+]
