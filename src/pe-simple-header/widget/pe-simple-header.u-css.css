@@ -72,7 +72,6 @@ $boxshadow: 0px 0px 6px 1px $boxshadow-color;
   padding-right: 10px !important;
 }
 .secondNav > ul > li > a {
-  //padding-right: 10px !important;
 }
 
 .navbar-nav > li > .dropdown-menu{
@@ -101,14 +100,11 @@ $boxshadow: 0px 0px 6px 1px $boxshadow-color;
 .navbar-inverse .navbar-nav > li > a:focus{
   background-color: transparent !important;
   transition: all .25s ease;
-  //border-bottom: 4px solid;
-  //border-color: $navbar-inverse-link-hover-color;
 }
 
 .navbar-nav .menu-links.active a {
   border-color: #293e40;
 }
-//----------
 
 .navbar-brand {
   max-height: $navbar-brand-height;
@@ -196,6 +192,7 @@ ul.dropdown-menu{
 .v9cfd91940b4103002600425663673a31 .button-to-top{
   display: none !important;
 }
+
 //Mobile Device Viewing - Less than 1024px wide
 @media only screen and (max-width: 1024px) {
   .navbar-collapse{

@@ -1,4 +1,4 @@
-function($rootScope, $scope, $window, $location,$anchorScroll, $interval, $timeout, $uibModal, $sce, snRecordWatcher, cabrillo, spUtil, spAriaUtil) {
+function($rootScope, $scope, $window, $location,$anchorScroll, $timeout, $uibModal, cabrillo, spUtil, spAriaUtil) {
 /* widget controller */
 	var c = this;
 	
