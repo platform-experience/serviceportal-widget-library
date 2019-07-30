@@ -2,7 +2,7 @@
 
 ## Description
 
-> Tabs component with options and SASS variables for an easy customisation. It is using a provided API / Script Include and Service Portal Menu Items as data source.
+Tabs component with options and SASS variables for an easy customisation. It is using a provided API / Script Include and Service Portal Menu Items as data source.
 
 ## Screenshot
 
