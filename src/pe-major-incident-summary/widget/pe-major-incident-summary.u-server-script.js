@@ -1,15 +1,15 @@
 (function() {
-  /* populate the 'data' object */
-  /* e.g., data.table = $sp.getValue('table'); */
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
 
 	data.major_inc = [];
 	data.service = [];
-	
+
 	var inc = new GlideRecord('incident');
 	inc.addQuery('major_incident_state', 'accepted'); // pull all major incidents
 	inc.addActiveQuery();
 	inc.query();
-	
+
 	while(inc.next()){
 		data.major_inc.push({
 			sys_id: inc.getUniqueValue(),
@@ -29,23 +29,23 @@
 			location: getLocations(inc.getUniqueValue())
 		})
 	}
-	
+
 	// Sort array by number 
 	data.major_inc.sort(function(a, b) {
-			if (a.number < b.number) return -1;
-			if (a.number > b.number) return 1;
-			return 0;
-		});
-		
+		if (a.number < b.number) return -1;
+		if (a.number > b.number) return 1;
+		return 0;
+	});
+
 	data.major_inc.reverse(); // Newest to oldest
-	
+
 	function getServices(task){
 		var arr = [];
-		
+
 		var serv = new GlideRecord('task_cmdb_ci_service');
 		serv.addQuery('task', task);
 		serv.query();
-		
+
 		while(serv.next()){
 			arr.push({
 				sys_id: serv.getUniqueValue(),
@@ -53,15 +53,15 @@
 				owner: getOwner(serv.getValue('cmdb_ci_service'))
 			})
 		}
-
-		function getOwner(service){
-			var servRec = new GlideRecord('cmdb_ci');
-			servRec.get('sys_id', service);
-
-			return servRec.getDisplayValue('owned_by');
-		}
-
+		
 		return arr;
+	}
+
+	function getOwner(service){
+		var servRec = new GlideRecord('cmdb_ci');
+		servRec.get('sys_id', service);
+
+		return servRec.getDisplayValue('owned_by');
 	}
 
 	function getOutages(task){
@@ -85,7 +85,7 @@
 		function getDetails(outage, field){
 			var outRec = new GlideRecord('cmdb_ci_outage');
 			outRec.get('sys_id', outage);
-			
+
 			if(field == 'type'){
 				return outRec.getDisplayValue('type');
 			} else if(field == 'begin'){
@@ -96,17 +96,17 @@
 				return outRec.getDisplayValue('end');
 			}
 		}
-		
+
 		return arr;
 	}
-	
+
 	function getLocations(task){
 		var arr = [];
-		
+
 		var serv = new GlideRecord('task_cmdb_ci_service');
 		serv.addQuery('task', task);
 		serv.query();
-		
+
 		while(serv.next()){	
 			if(getDetails(serv.getValue('cmdb_ci_service'), 'name')){
 				arr.push({

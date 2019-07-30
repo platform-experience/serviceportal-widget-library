@@ -1,77 +1,115 @@
 .panel-heading {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+.panel-body {
+  padding: 15px 35px 0 35px;
+}
+
+.no-inc-message {
+  text-align: center;
+}
+
+h3.head {
+  margin: 0;
+}
+
+hr { 
+  margin: 5px 0 5px 0;
+}
+
+p {
+  font-size: 12px;
+}
+
+.dur {
+  margin: 0;
+  text-align: right;
+}
+
+.dur-top {
+  font-size: 12px;
+}
+
+.dur-middle {
+  font-size: 16px;
+}
+
+.dur-bottom {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.section-head {
+  font-size: 16px; 
+}
+
+.content-item {
+  padding-bottom: 0;
+}
+
+.list-group {
+  margin-bottom: 10px;
+}
+
+.last-group {
+  margin: 0;
+}
+
+.sub-list-row {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-list-row-item {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.item-header {
+  font-weight: bold;
+}
+
+.badge {
+  background-color: $brand-primary;
+  margin-right: 8px;
+}
+
+.col-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.col-text {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.carousel-inner {
+  margin-bottom: 20px;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  filter :none;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  right: 0; 
+  margin-right: -30px;
+  color: #2c3d36;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  left: 0;
+  margin-left: -30px;
+  color: #2c3d36;
+}
+
+@media screen and (max-width: 990px){
+  .dur {
+    text-align: left;
   }
-  
-  .no-inc-message {
-    text-align: center;
-  }
-  
-  h3.head {
-    margin: 0;
-  }
-  
-  hr { 
-    margin: 5px 0 5px 0;
-  }
-  
-  .section-head {
-    font-size: 16px; 
-  }
-  
-  #content-item {
-    padding-bottom: 0 ! important;
-  }
-  
-  .sub-list-row {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sub-list-row-item {
-    padding: 0 ! important;
-    margin-bottom: 0;
-  }
-  
-  .badge {
-    background-color: $brand-primary;
-    margin-right: 8px;
-  }
-  
-  .col-title {
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .col-text {
-    margin-bottom: 15px;
-    font-size: 12px;
-  }
-  
-  .carousel-inner {
-    margin-bottom: 20px;
-  }
-  
-  .carousel-control.left, .carousel-control.right {
-    background-image:none !important;
-    filter:none !important;
-  }
-  
-  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-    right: 0; 
-    margin-right: -30px;
-    color: #2c3d36;
-  }
-  
-  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-    left: 0;
-    margin-left: -30px;
-    color: #2c3d36;
-  }
-  
-  @media screen and (max-width: 990px){
-    #dur {
-      text-align: left ! important;
-    }
-  }
+}
