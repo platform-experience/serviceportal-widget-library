@@ -9,8 +9,9 @@ function ChildActivityController($scope, $log, spUtil, spModal, $rootScope) {
 
   var buildChildNodes = function (parentID) {
     return c.data.tasks.filter(function (t) {
-      if (t.parent == parentID)
+      if (t.parent == parentID) {
         t.child = true;
+      }
       return t.parent == parentID;
     }).map(createTaskNode);
   };

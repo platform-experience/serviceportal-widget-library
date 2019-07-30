@@ -37,15 +37,16 @@
     var gr = new GlideRecord(data.table);
     gr.addQuery('parent', sys_id);
     if (options.order_by) {
-      if (options.order_direction == 'desc')
+      if (options.order_direction == 'desc') {
         gr.orderByDesc(options.order_by);
-      else
+      } else {
         gr.orderBy(options.order_by);
+      }
     }
     gr.query();
-    while (gr.next())
+    while (gr.next()) {
       records.push(GetAttributes(gr));
-
+    }
     return records;
   }
 
@@ -58,8 +59,9 @@
     return;
   }
 
-  if (!data.sys_id)
+  if (!data.sys_id) {
     return;
+  }
 
   var parentTaskGR = new GlideRecord(data.table);
   if (parentTaskGR.get(data.sys_id)) {
@@ -71,10 +73,11 @@
   taskGR.addQuery('parent', data.sys_id);
 
   if (options.order_by) {
-    if (options.order_direction == 'desc')
+    if (options.order_direction == 'desc') {
       taskGR.orderByDesc(options.order_by);
-    else
+    } else {
       taskGR.orderBy(options.order_by);
+    }
   }
 
   taskGR.query();

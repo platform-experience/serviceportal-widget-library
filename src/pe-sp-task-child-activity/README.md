@@ -2,7 +2,7 @@
 
 ## Description
 
-> Sp Task Child Activity is a powerful component for displaying not only a flat list of Tasks, but their children too. On both entities it will be possible to monitor their process flow in real time, manage approvals, attach and download any types of content allowed by the system attachments table, view/edit parent and child tasks on their configured default form view through a modal dialog. The component is also configured to offer the same capabilities on its mobile variant.
+Sp Task Child Activity is a powerful component for displaying not only a flat list of Tasks, but their children too. On both entities it will be possible to monitor their process flow in real time, manage approvals, attach and download any types of content allowed by the system attachments table, view/edit parent and child tasks on their configured default form view through a modal dialog. The component is also configured to offer the same capabilities on its mobile variant.
 
 ## Screenshot
 
@@ -46,7 +46,7 @@ _CSS/SASS variables are given default values that can be overridden with theming
 
 > In addition to inherit the Theme configuration, below the other additional custom SASS variables:
 
-``` css
+``` scss
 $x-pisn-sp-task-child-activity-state-past: $text-muted !default;
 $x-pisn-sp-task-child-activity-state-current: $brand-success !default;
 $x-pisn-sp-task-child-activity-state-future: $brand-primary !default;
