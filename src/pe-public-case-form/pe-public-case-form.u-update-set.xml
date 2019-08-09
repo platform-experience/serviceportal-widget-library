@@ -972,7 +972,6 @@
 <comments/>
 <name>sp_widget_a8285928dbf43740993fdc965e961951</name>
 <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ContactUsController($scope, spModal){
-	/* widget controller */
 	var c = this;
 	c.$onInit = function(){
 		c.reply = "Yes";

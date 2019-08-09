@@ -1,5 +1,4 @@
 function ContactUsController($scope, spModal){
-	/* widget controller */
 	var c = this;
 	c.$onInit = function(){
 		c.reply = "Yes";
