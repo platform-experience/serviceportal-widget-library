@@ -1,6 +1,12 @@
 (function() {
+<<<<<<< HEAD
 
 	data.apiKey = options.mapbox_apikey;
+=======
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.apiKey = 'pk.eyJ1Ijoic3VzaC1jaGFuZHJhc2hla2FyIiwiYSI6ImNqMnFwcnplZTAwMDEycWt6cm1yNDF0bzEifQ.krI_R9WCDI_GBKrfY6bf1g';//gs.getProperty('x_snc_guide.mapbox.apikey');
+>>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 	var currentUser = gs.getUserID();
 
 	var userAccount = '';
