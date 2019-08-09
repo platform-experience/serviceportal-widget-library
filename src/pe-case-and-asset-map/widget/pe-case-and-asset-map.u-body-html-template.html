@@ -1,3 +1,47 @@
-<div>
-  <!-- your widget template -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+  <symbol id="icon-flippy" width="20" height="12" viewBox="0 0 20 12">
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M1 1h18M1 6h18M1 11h18"/>
+    </g>
+  </symbol>
+</svg>
+<div class="row near-by">
+    <flippy class="fancy" flip-duration="900" timing-function="ease-in-out">
+        <flippy-front id='ff'>
+            <leaflet lf-center="c.centerLocation" markers="c.markers" tiles="c.tile" defaults="defaults"></leaflet>
+        </flippy-front>
+        <flippy-back>
+            <div class="back-part">
+                <div class="each-marker" ng-repeat="eachmarker in c.list" ng-if='eachmarker.name.length>0'>
+                  <a href="https://jhermann5demo.service-now.com/csm?id=csm_ticket&table=sn_customerservice_case&sys_id={{eachmarker.sysId}}&view=csp" ng-if="eachmarker.types == 'Case'">  
+                    <h3>{{eachmarker.name}}</h3></a>
+                  <h3 ng-if="eachmarker.types == 'Asset'">{{eachmarker.name}}</h3>
+                  	
+   
+                    <a target="_blank" href="https://www.google.com/maps/dir/?api=1&destination={{eachmarker.lat}},{{eachmarker.lng}}"><h4>{{eachmarker.address}}</h4> Start Driving</a>
+                </div>
+            </div>
+        </flippy-back>
+    </flippy>
+    <div class="type-icons">
+        <span class="each-type exp" ng-click="c.filterMarkers('Asset')" name='Show ATMs'>
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+        </span>
+        <span class="each-type exp" ng-click="c.filterMarkers('Case')">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+        </span>
+      <span class="each-type exp fa-stack fa-2x" ng-click="c.filterMarkers('Case and Asset')">
+        <i class="fa fa-desktop fa-stack-2x" aria-hidden="true"></i>    
+        <i class="fa fa-exclamation fa-stack-1x" aria-hidden="true"></i>
+        </span>
+        <span class="each-type exp" ng-click="c.flipIt()" ng-if="!c.map">
+          <i class="fa fa-car" aria-hidden="true"></i>
+        </span>
+      <span class="each-type exp" ng-click="c.flipIt()" ng-if="c.map">
+          <i class="fa fa-globe" aria-hidden="true"></i>
+        </span>
+    </div>
+    <div class="spinny" ng-show="c.loading">
+        <div class="sk-spinner sk-spinner-pulse"></div>
+    </div>
 </div>
