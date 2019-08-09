@@ -1,25 +1,10 @@
-<<<<<<< HEAD
 function MapPageController($scope, $rootScope, $window,$location, $anchorScroll, $timeout, leafletData, $q) {
-=======
-function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $timeout, leafletData, $q) {
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 	/* widget controller */
 	var c = this;
 	$scope.firstFlip = true;
 	$location.hash('ff');
 	
-<<<<<<< HEAD
 	
-=======
-	$rootScope.$broadcast('refreshFooterUrl');
-	
-	c.loading = true;
-	c.liveApp = false;
-	c.masterMarkers = [];
-	c.markers = [];	
-	c.masterList = [];
-	c.list = []
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 
 	c.awesomeMarkerIconCurrentLocation = {
 		type: 'awesomeMarker',
@@ -91,19 +76,11 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 		}
 		return defer.promise;
 	}
-<<<<<<< HEAD
 
 	c.mapbox = {
 		mapbox_layer: {
 			name: 'Mapbox',
 			
-=======
-		
-	c.mapbox = {
-		mapbox_layer: {
-			name: 'Mapbox',
-			// url: 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token={apikey}',
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 			url: 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token={apikey}',
 			type: 'xyz',
 			options: {
@@ -112,7 +89,6 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 			}
 		}
 	};
-<<<<<<< HEAD
 
 	c.$onInit = function() {
 		$rootScope.$broadcast('refreshFooterUrl');
@@ -123,11 +99,6 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 		c.markers = [];	
 		c.masterList = [];
 		c.list = []
-=======
-	
-	c.$onInit = function() {
-		//debugger;
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 		c.searchObject = $location.search();
 
 		c.tile = c.mapbox.mapbox_layer;	
@@ -151,11 +122,7 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 
 	function demoMarkers(){
 		var list = [];
-<<<<<<< HEAD
 		for(var j = 0; j < c.data.list.length; j++){
-=======
-		for(var j = 0; j <c.data.list.length; j++){
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 			list[j] = {
 				name: c.data.list[j].name,
 				address: c.data.list[j].street +' ' + c.data.list[j].city +', '+ c.data.list[j].state +' '+ c.data.list[j].zip,
@@ -168,11 +135,7 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 
 		}
 		var markers = [];
-<<<<<<< HEAD
 		for(var i = 0; i < c.data.sites.length; i++){
-=======
-		for(var i=0;i<c.data.sites.length;i++){
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 			markers[i] = {
 				name: '',
 				icon: c.awesomeMarkerIconBank,
@@ -182,11 +145,7 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 				lng: parseFloat(c.data.sites[i].lng),
 				getMessageScope: function(){ return $scope; }
 			};
-<<<<<<< HEAD
 			
-=======
-			console.log(c.data.sites[i].location);
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 			var msg = [];
 			msg.push('<div class="flex-it">');
 			if(c.data.sites[i].types.indexOf('Case')>-1){
@@ -195,19 +154,11 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 				} else{
 					markers[i].name = c.data.sites[i].caseCount + ' Cases';
 				}
-<<<<<<< HEAD
 				
 				markers[i].icon = c.awesomeMarkerIconCase;
 				markers[i].type = 'Case';
 				markers[i].address = c.data.sites[i].street +' ' + c.data.sites[i].city +', '+ c.data.sites[i].state +' '+ c.data.sites[i].zip;
 
-=======
-				//markers[i].image = 'city_financial_bank.jpg';
-				markers[i].icon = c.awesomeMarkerIconCase;
-				markers[i].type = 'Case';
-				markers[i].address = c.data.sites[i].street +' ' + c.data.sites[i].city +', '+ c.data.sites[i].state +' '+ c.data.sites[i].zip;
-				//msg.push('<div class="image" style="background-image:url(city_financial_bank.jpg)"></div>');
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 					msg.push('<div><div class="info-title"> # of Cases: '+ c.data.sites[i].caseCount +'</div>');
 				msg.push('<div><div class="info-title"> # of my Assets: '+ c.data.sites[i].assetCount +'</div>');
 				msg.push('<div class="info">'+ c.data.sites[i].street +'</div>');
@@ -217,19 +168,11 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 
 			}else	if(c.data.sites[i].types.indexOf('Asset')>-1){
 			
-<<<<<<< HEAD
 				
-=======
-				//markers[i].image = 'city_financial_atm.jpg';
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 				markers[i].icon = c.awesomeMarkerIconComputer;
 				markers[i].name = c.data.sites[i].asset;
 				markers[i].type = 'Asset';
 				markers[i].address = c.data.sites[i].street +' ' + c.data.sites[i].city +', '+ c.data.sites[i].state +' '+ c.data.sites[i].zip;
-<<<<<<< HEAD
-=======
-				//msg.push('<div class="image" style="background-image:url(city_financial_atm.jpg)"></div>');
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 				msg.push('<div><div class="info-title"> # of my Assets: '+ c.data.sites[i].assetCount +'</div>');
 				msg.push('<div class="info">'+ c.data.sites[i].street +'</div>');
 				msg.push('<div class="info">'+ c.data.sites[i].city +', '+ c.data.sites[i].state +' '+ c.data.sites[i].zip +'</div>');
@@ -255,31 +198,17 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 
 
 	function insertMarkers(markers) {
-<<<<<<< HEAD
 
-=======
-		//console.log('loading');
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 		for (var i = 0; i < markers.length; i++) {
 			markers[i].message = '<div class="flex-it">';
 			if (markers[i].type == 'ATM') {
 				markers[i].icon = c.awesomeMarkerIconComputer;
-<<<<<<< HEAD
 				markers[i].message = markers[i].message; 
 
 			} else if (markers[i].type == 'Bank') {
 				markers[i].name = markers[i].name + " - Branch"
 				markers[i].icon = c.awesomeMarkerIconBank;
 				markers[i].message = markers[i].message; 
-=======
-				markers[i].message = markers[i].message; //+ '<div class="image" style="background-image:url(city_financial_atm.jpg)"></div>';
-				//markers[i].image = 'city_financial_atm.jpg';
-			} else if (markers[i].type == 'Bank') {
-				markers[i].name = markers[i].name + " - Branch"
-				markers[i].icon = c.awesomeMarkerIconBank;
-				markers[i].message = markers[i].message; //+ '<div class="image" style="background-image:url(city_financial_bank.jpg)"></div>';
-				//markers[i].image = 'city_financial_bank.jpg';
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 			} else {
 				markers[i].name = '';
 				markers[i].message = markers[i].message + 'You are Here!';
@@ -332,16 +261,8 @@ function mapPageCtrl($scope, $rootScope, $window,$location, $anchorScroll, $time
 	c.flipFilter = function(location, type){
 		// Need to force the moving of the page to the top 
 		// because of scrolling on the back-part page
-<<<<<<< HEAD
 		var listArray = []
 		for(var i = 0; i < c.masterList.length; i++){
-=======
-		console.log(location);
-		console.log(type);
-		var listArray = []
-		for(var i = 0; i < c.masterList.length; i++){
-			console.log(c.masterList[i].location);
->>>>>>> 6e89d1966f9d390bbf8c0d9f0b7eaa97d292bf42
 				if(c.masterList[i].location == location && c.masterList[i].types == type){
 					listArray.push(c.masterList[i]);
 				}
