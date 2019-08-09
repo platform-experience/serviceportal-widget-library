@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+This widget displays your cases and apps on a Google Maps like interface. You can click on each to view more detailed information about the location, as well as see the list of cases and assets, and click on them for more information. You can also click on an option to be redirected to Google Maps and have coordinate information automatically put in.
 
 ## Screenshot
 
@@ -10,7 +10,7 @@
 
 ## Additional Information/Notes
 
-> None
+Best used if tested through Julie Lewis. Cases and Assets are tied to the user's account.
 
 ## Installation
 
