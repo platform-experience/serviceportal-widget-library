@@ -1,6 +1,5 @@
 (function() {
 	if(input){
-		//userName = input.firstName.toLowerCase() + "." + input.lastName.toLowerCase();
 		var contact = new GlideRecord('csm_consumer');
 		contact.addQuery('email', input.email);
 		contact.query();
