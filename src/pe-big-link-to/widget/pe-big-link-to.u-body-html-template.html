@@ -1,0 +1,14 @@
+<div class="sassvars panel">
+  <div class="panel-body biglinkto">
+    <a ng-href="{{::data.href}}" ng-if='!data.missingConfig'>
+      <div>
+        <h3>{{::c.options.title}}</h3>
+        <p>{{::c.options.annotation}}</p>
+      </div>
+    </a>
+    <div ng-if='data.missingConfig'>
+      <h3>Missing Link Configuration</h3>
+      <p>Use Instance Options (Ctrl+Right Click) to configure the widget</p>
+    </div>
+  </div>
+</div>

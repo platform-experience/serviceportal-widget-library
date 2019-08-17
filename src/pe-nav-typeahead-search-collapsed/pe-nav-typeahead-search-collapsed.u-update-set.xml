@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-28 21:13:14">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Typeahead for Header</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>2aff15df4f77e7008272ece24210c755</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-28 21:13:13</sys_created_on>
+<sys_id>f12583974f7fe7008272ece24210c74f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-28 21:13:13</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_7fe53c744ff3a74005be4d6e0210c794</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;nav-typeahead.html&lt;/id&gt;&lt;sp_widget display_value="Typeahead Search for Header"&gt;396534744ff3a74005be4d6e0210c731&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-20 16:22:57&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;7fe53c744ff3a74005be4d6e0210c794&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;nav-typeahead.html&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_7fe53c744ff3a74005be4d6e0210c794&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-20 16:22:57&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;a class="ta-item" ng-href="{{match.model.target != '_blank' ? match.model.url : ''}}" target="{{match.model.target}}"&gt;
+  &lt;div ng-if="!match.model.templateID"&gt;
+    &lt;i class="ta-icon fa fa-{{match.model.glyph}}" ng-if="match.model.glyph"&gt;&lt;/i&gt;
+    &lt;span ng-bind-html="match.label | uibTypeaheadHighlight:query"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div ng-if="match.model.templateID" ng-include="match.model.templateID"&gt;&lt;/div&gt;
+&lt;/a&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-738482752</payload_hash>
+<remote_update_set display_value="Typeahead for Header">f12583974f7fe7008272ece24210c74f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-28 21:13:13</sys_created_on>
+<sys_id>312583974f7fe7008272ece24210c750</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169346070aa0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-28 21:13:13</sys_updated_on>
+<table/>
+<target_name>nav-typeahead.html</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>fc30e5df5c77e700e08f6fd90cd1c899</update_guid>
+<update_guid_history>fc30e5df5c77e700e08f6fd90cd1c899:-738482752,b3f5f474f8f3a74053ec3eafc46d2af7:-738482752</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_0306bc744ff3a74005be4d6e0210c770</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;nav-typeahead-popup.html&lt;/id&gt;&lt;sp_widget display_value="Typeahead Search for Header"&gt;396534744ff3a74005be4d6e0210c731&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-20 16:23:20&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;0306bc744ff3a74005be4d6e0210c770&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;nav-typeahead-popup.html&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_0306bc744ff3a74005be4d6e0210c770&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-28 19:39:38&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;ul class="dropdown-menu" ng-show="isOpen() &amp;&amp; !moveInProgress" role="listbox" aria-hidden="{{!isOpen()}}"&gt;
+    &lt;li role='option' aria-hidden='true' style='display: none'&gt;&lt;/li&gt;    
+  	&lt;li ng-repeat="match in matches track by $index" ng-class="{active: isActive($index) }" 
+        ng-mouseenter="selectActive($index)" 
+        ng-click="selectMatch($index, $event)" 
+        role="option" id="{{::match.id}}"&gt;
+        &lt;div uib-typeahead-match index="$index" match="match" query="query" template-url="templateUrl"&gt;&lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-297222036</payload_hash>
+<remote_update_set display_value="Typeahead for Header">f12583974f7fe7008272ece24210c74f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-28 21:13:13</sys_created_on>
+<sys_id>792583974f7fe7008272ece24210c74f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>169359e94b30000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-28 21:13:13</sys_updated_on>
+<table/>
+<target_name>nav-typeahead-popup.html</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>c7bf6e5f75bbe70011bbd1d42f5f5fb4</update_guid>
+<update_guid_history>c7bf6e5f75bbe70011bbd1d42f5f5fb4:-297222036,5116bc740ef3a740b17e7d7388c0577e:-1962845954</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_396534744ff3a74005be4d6e0210c731</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($http, $filter, $location,spAriaUtil, $window, $scope, spAriaFocusManager,$timeout) {
+	var c = this;
+	
+	c.options.glyph = c.options.glyph || 'search';
+	c.options.title = c.options.title || c.data.searchMsg;
+	c.searchTerm = c.data.q;
+	c.showSearch = false;
+	
+	c.$onInit = function(){
+		$timeout(function(){
+			var nav = angular.element(document.querySelector('nav'));
+			c.dynamicHeight = nav[0].offsetHeight;
+		});
+	}
+	
+	c.onSelect = function($item, $model, $label) {
+		c.searchTerm = ""; // prevents unexpected result if user quickly clicks search button after selecting
+		c.showSearch = false;
+		if ($item.target)
+			window.open($item.url, $item.target);
+		else {
+			var newUrl = $location.url($item.url);
+			spAriaFocusManager.navigateToLink(newUrl.url());
+		}
+	};
+
+	c.getResults = function(query) {
+		var payload = {
+			"query": query,
+			"portal": c.data.portalID,
+			"source": c.data.searchSources,
+			"include_facets": false,
+			"searchType": "typeahead"
+		};
+		if (c.options.limit || c.options.limit == 0)
+			payload.count = c.options.limit;
+
+		return $http.post("/api/now/sp/search", payload).then(function(response) {
+
+			// Prevents typeahead from displaying suggestions if queries from page and input are the same
+			if ($location.search().q == query)
+				return;
+
+			var result = response.data.result;
+			spAriaUtil.sendLiveMessage(result.results.length + " " +
+									   c.data.resultMsg + " " +
+									   c.data.navigationMsg +
+									   getNavigationKeys());
+			return result.results.map(function(item) {
+				var config = c.data.searchSourceConfiguration[item.__search_source_id__];
+				if (config.type == "ADVANCED") {
+					item.templateID = config.template;
+				} else {
+					item.glyph = config.glyph;
+					if (!item.url &amp;&amp; config.linkToPage) {
+						item.url = "?id=" + config.linkToPage;
+						if (item.sys_id)
+							item.url += "&amp;sys_id=" + item.sys_id;
+						if (item.table)
+							item.url += "&amp;table=" + item.table
+							}
+				}
+				return item;
+			});
+		});
+	}
+
+	c.searchType = c.data.searchType;
+
+	c.toggleSearch = function(){
+		c.showSearch = !c.showSearch;
+		var el = angular.element(document.getElementsByClassName("btn-search"));
+		if(c.showSearch){
+			document.getElementById("nav-typeahead").focus();
+			el.addClass('active');
+		}else{
+			el.removeClass('active').blur();
+		}
+	}
+
+	$scope.$on('$locationChangeSuccess', onLocationChangeSuccess);
+
+	function onLocationChangeSuccess(event, newUrl, oldUrl) {
+		c.showSearch = false;
+		var el = angular.element(document.getElementsByClassName("btn-search"));
+		el.removeClass('active').blur();
+		
+		if(searchSourceChanged(newUrl, oldUrl)) {
+			var newUrlParams = newUrl.match(/t=.+/);
+			if(!newUrlParams) {
+				c.searchType = null;
+			} else {
+				c.searchType = newUrlParams[0].split("&amp;")[0].substring(2);
+			}
+		}
+	}
+
+	function searchSourceChanged(newUrl, oldUrl) {
+		var newUrlParams = newUrl.match(/t=.+/),
+			oldUrlParams = oldUrl.match(/t=.+/);
+
+		if(!newUrlParams &amp;&amp; !oldUrlParams) {
+			return false;
+		}
+
+		if((!newUrlParams &amp;&amp; oldUrlParams) || (newUrlParams &amp;&amp; !oldUrlParams)) {
+			return true;
+		}
+
+		return newUrlParams[0].split("&amp;")[0] !== oldUrlParams[0].split("&amp;")[0];
+	}
+
+	c.submitSearch = function() {
+
+		if(c.searchTerm===null || c.searchTerm===''){
+			c.toggleSearch();
+			return;
+		}else{
+			var shouldReloadPage = c.data.refreshPageOnSearch &amp;&amp; $location.search().id === 'search';
+
+			if (c.searchTerm) {
+				var newUrl = $location.search({
+					id: 'search',
+					spa: '1',
+					t: c.searchType,
+					q: c.searchTerm
+				});
+				
+				if (shouldReloadPage)
+					$scope.$emit("sp.page.reload");
+
+				spAriaFocusManager.navigateToLink(newUrl.url());
+				c.searchTerm='';
+				c.toggleSearch();
+			}
+		}
+	}
+
+	function getNavigationKeys() {
+		if($window.navigator.userAgent.indexOf("Mac OS X") &gt; -1)
+			return '⌘';
+		return 'Control';
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$search-text-color: #f4f4f4  !default;
+$search-placeholder-color: $text-muted !default;
+
+$search-bg: rgba(0, 0, 0, .25) !default;
+$search-height: 40px !default;
+$search-font-size: 14px !default;
+$search-showing-width: 250px !default;
+$search-dropdown-border-radius: 4px !default;
+
+.nav-search{
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  .search-toggle{
+    height: 34px;
+    width: 36px;
+    z-index: 1;
+    padding-left: 8px;
+    display: none; //flex;
+	
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .toggle-show{
+    display: none;
+  }
+  .nav-search-container{
+    border-radius: 0;
+    background-color: transparent;
+    form{
+
+    }
+    ul.dropdown-menu {
+      margin:0px;
+      border-radius: $search-dropdown-border-radius;
+      min-width: max-content;
+      margin-right: calc( $search-height / 2 );
+    }
+
+    ul.dropdown-menu a.ta-item {
+      line-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    ul.dropdown-menu i.ta-icon, i.ta-img {
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      text-align: center;
+      line-height: 20px;
+      float:left;
+      margin-right: 8px;
+    }
+    .btn-search{
+      border: 0 solid transparent;
+      background-color: transparent;
+      color: $navbar-inverse-link-color;
+      font-size: calc( $search-font-size + 4px );
+      height: unset;
+    }
+
+    .btn-search:active,
+    .btn-search:focus,
+    .btn-search:visited,
+    .btn-search:hover{
+      color: $navbar-inverse-link-hover-color;
+      outline:0;
+    }
+    .active{
+      color: $navbar-inverse-link-hover-color;
+    }
+    .input-group{
+      display: flex;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      .input-showing {
+        color: $search-text-color;
+        border: 0 solid transparent;
+        box-shadow: unset;
+        background-color: transparent;
+        overflow: hidden;
+        max-width: 0px;
+        width: $search-showing-width;
+        font-size: $search-font-size;
+        padding: 0;
+      }
+      .input-slide{
+        display: block;
+        max-width: $search-showing-width;
+        transition: max-width 1s;
+        padding-left: calc($search-height / 2);
+      }
+    }
+  }
+  .show-bg{
+    border-radius: calc($search-height / 2);
+    background-color: $search-bg;
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $search-placeholder-color;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $search-placeholder-color;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $search-placeholder-color;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;typeahead-search-for-header&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function ($scope,$el,$attrs,$ctrl) {
+	var lazyLoader = $injector.get("lazyLoader");
+	lazyLoader.putTemplates($scope.data.typeaheadTemplates);
+	
+}]]&gt;&lt;/link&gt;&lt;name&gt;Typeahead Search for Header&lt;/name&gt;&lt;option_schema&gt;[{"name":"title","section":"Presentation","label":"Title","type":"string"},{"name":"glyph","section":"Presentation","label":"glyph","type":"string"},	{"name":"size","section":"Presentation","label":"Size","type":"string"},{"hint":"Number of typeahead search results returned (default 15)","name":"limit","section":"Behavior","label":"Limit","type":"integer"},{"displayValue":"Search Source","hint":"If provided, limit the scope of the typeahead search to the given search sources","name":"contextual_search_sources","display_value_list":[],"section":"Behavior","label":"Contextual Search Sources","type":"glide_list","value":"sp_search_source","ed":{"reference":"sp_search_source"}}]&amp;#13;
+	&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	
+/*
+Need to implement the OPTIONS variables
+*/
+	if (options.title) {
+		options.title = gs.getMessage(options.title);
+	}
+
+	if (options.refresh_page_on_search_submission == undefined)
+		data.refreshPageOnSearch = true;
+	else
+		data.refreshPageOnSearch = options.refresh_page_on_search_submission;
+
+	data.resultMsg = gs.getMessage("Search results");
+	data.navigationMsg = gs.getMessage("To navigate, use up and down arrow keys while holding ");
+	data.portalID = $sp.getPortalRecord().getUniqueValue();
+	data.searchMsg = gs.getMessage("Search");
+	data.q = $sp.getParameter('q');
+
+	var searchSources;
+	data.searchType = null;
+	data.searchSources = [];
+	if ($sp.getParameter("id") == "search" &amp;&amp; $sp.getParameter("t")) {
+		data.searchType = $sp.getParameter("t");
+		searchSources = $sp.getSearchSources(data.portalID);
+	} else {
+		var contextualSearchSourceIDs = options.contextual_search_sources || null;
+		searchSources = $sp.getSearchSources(data.portalID, contextualSearchSourceIDs);
+		if (searchSources.length == 1) {
+			data.searchType = searchSources[0].id;
+		}
+	}
+
+	data.typeaheadTemplates = {};
+	data.searchSourceConfiguration = {};
+	searchSources.forEach(function(source) {
+		if (source.isTypeaheadEnabled) {
+			data.searchSources.push(source.id);
+		}
+		var sourceTemplateConfiguration = {};
+		if (source.isAdvancedTypeaheadConfig) {
+			sourceTemplateConfiguration.type = "ADVANCED";
+			sourceTemplateConfiguration.template = "nav-typeahead-" + source.id + ".html";
+			data.typeaheadTemplates["nav-typeahead-" + source.id + ".html"] = $sp.translateTemplate(source.typeaheadTemplate);
+		} else {
+			sourceTemplateConfiguration.type = "SIMPLE";
+			sourceTemplateConfiguration.glyph = source.typeaheadGlyph;
+			sourceTemplateConfiguration.linkToPage = source.typeaheadPage;
+			if (!sourceTemplateConfiguration.linkToPage)
+				console.log("Warning: No typeahead page or URL provided for search source " + source.name);
+		}
+		data.searchSourceConfiguration[source.id] = sourceTemplateConfiguration;
+	});
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-20 16:21:18&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;396534744ff3a74005be4d6e0210c731&lt;/sys_id&gt;&lt;sys_mod_count&gt;95&lt;/sys_mod_count&gt;&lt;sys_name&gt;Typeahead Search for Header&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_396534744ff3a74005be4d6e0210c731&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-28 21:12:34&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class='nav-search' ng-style='{ "min-height" : c.dynamicHeight }'&gt;
+  &lt;div class='nav-search-container' ng-class="{'show-bg': c.showSearch}"&gt;
+    &lt;form ng-submit="c.submitSearch()"&gt;
+      &lt;input type="hidden" name="id" value="search"/&gt;
+      &lt;input type="hidden" name="t" value="{{c.searchType}}"/&gt;
+      &lt;div class="input-group input-group-{{::c.options.size}}"&gt;
+        &lt;!-- uses ui.bootstrap.typeahead --&gt;
+        &lt;input name="q" type="text" placeholder="{{::c.options.title}}" ng-model="c.searchTerm"
+               id="nav-typeahead"
+               autocomplete="off"
+               uib-typeahead="item as item.primary for item in c.getResults($viewValue)"
+               typeahead-wait-ms="250"
+               typeahead-min-length="2"
+               typeahead-focus-first="false"
+               typeahead-on-select="c.onSelect($item, $model, $label)"
+               typeahead-template-url="nav-typeahead.html"
+               typeahead-popup-template-url="nav-typeahead-popup.html"
+               class="form-control input-typeahead input-hidden input-showing"
+               ng-class="{'input-slide': c.showSearch}"
+               role="textbox"
+               aria-label="{{::c.options.title}}" tabindex="0" aria-haspopup="true"&gt;
+        &lt;span class="input-group-btn"&gt;
+          &lt;button name="search" type="submit" class="btn btn-search" title="{{::c.data.searchMsg}}" aria-label="{{::c.data.searchMsg}}"&gt;&lt;i ng-if="::c.options.glyph" class="fa fa-{{::c.options.glyph}}"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;    
+  &lt;/div&gt;
+
+  &lt;div role='button' class='search-toggle' ng-click='c.toggleSearch()' ng-class="{'toggle-show': c.showSearch}"&gt;
+    &lt;i ng-if="::c.options.glyph" class="fa fa-{{::c.options.glyph}}"&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1244635983</payload_hash>
+<remote_update_set display_value="Typeahead for Header">f12583974f7fe7008272ece24210c74f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-28 21:13:13</sys_created_on>
+<sys_id>f12583974f7fe7008272ece24210c750</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16935f3a63e0000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-28 21:13:13</sys_updated_on>
+<table/>
+<target_name>Typeahead Search for Header</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>80050397297fe700ba026a1b7c2b3f9d</update_guid>
+<update_guid_history>80050397297fe700ba026a1b7c2b3f9d:-1244635983,f3c307d3367fe700a946ff115137f879:539117752,91928fdfaa3fe700937d2f5293244a85:-1423728259,2c604f9b5c3fe700021a51a335c27461:747652222,b0308f9b653fe7008620a7d73445137b:-192857753,5a108b9b753fe700e40584f60737429d:441457487,c8eff65b1c3fe70092f1cd7ded4f2346:1902430021,70af3a5b8a3fe700017f2c709ed5396a:177374427,aa8f365b043fe700c971017f48bd71b0:2064382895,4e5ff25b513fe7000214b3f9f58635f3:649797131,394ffa1b653fe700b48f24eef92ac577:-1275730122,0c2f325bd93fe700adf3d35b057ce971:1500850931,5ecef61bfc3fe700c10df19c8a09fcee:1668273322,7a8ef21bde3fe7007e396b00f7def710:72264099,2e4d7697333fe700e10e15db36ea7db8:-1094896978,263d7697623fe7005fb7dce11ad7a9a7:855892576,05ac3a57913fe700acca67bc06fd5cab:1797427442,22a8fa93ba3fe7005a7d0470e77df27d:2106395950,6f787a93ea3fe70083c1d47b9766488a:-1693543249,09d77e530e3fe700ac8fec4f0eef3281:-1535117699,5e77be13cd3fe7009b943c1c468b4c53:-491695647,db57b653573fe700622f3137902bfa40:619653634,0f56bedf02fbe700b1154cc3c0c9e322:411296032,f7c5fe5f65fbe70054331fb23859a7d7:1419819589,19a53e1f8dfbe700b2b7636421976c7a:-1170700406,8185fa1f54fbe7000b4cccd8acf0116d:-1190560052,e075fa1f5ffbe700dda6da62f7022c4d:1492101783,e755ba1f5dfbe700eca0fa774c360147:1756442643,b035f61f5efbe700f38573b9042361c1:218566171,0825b21f63fbe70099aea8672113b3ba:1679435092,c5d4bedbfbfbe7003c1d403543245e62:197617974,ee843adbf7fbe70050f160b62939467a:154617039,0604729bfbfbe700e58b57743807dfdc:2007567873,be93fe1b32fbe7001502ef33f34c74fa:1589282188,ec83361b2bfbe70042b8d0529e9b89de:61377365,6303b6d797fbe7007ac3c3eb126a3073:-1483023680,e4e2ba97e9fbe70070754612c30f8596:1490563816,34a2ba97c2fbe700cfbac0586fbaa78e:-2043095083,b372b2972bfbe7008d3dc5d4038fd88e:1539016853,5ef1ba93d9fbe70077cf82da330f6caf:492131997,33b1729380fbe700e4da5ff553fa2509:232082904,fd71765399fbe70024dde82ca2187fe5:-105794722,f741fadf04bbe700752b646e2f1624ea:1799834818,38a0f2df9cbbe700abdbc5c9146274b2:-1638537246,4620f2df0cbbe700d3e9a216691c0c65:1188507304,7800fe9f5ebbe700650cec1ac045f07d:-1499890853,8f3f229f0ebbe70060ccea54d9877393:-1317504167,7a76969b7a7be700de563603b19e8443:-588483078,e656169b9c7be700a8080dbf4640dd69:2009606516,4b46d29b597be700414ed97e1c0ef62c:1959931192,a236529bbb7be70082a9086aa8092fd7:502780154,46835e97727be700474ec40c5b75d33e:579265972,a84352d7077be7003f104121d6926cd3:1895779130,c8821297e87be70031b8681926bae2fd:1916882211,3581d2570e7be700b8705fd1394e19bf:-821500540,3a61da17b67be7009f3f5621bd904275:564200478,d40e8a13197be7000c9744f12e36ec1b:-118311546,014d86df553be70062de741987f113d7:284651803,8d1d06df983be70010274ee119f67df2:179785558,c8fc06df083be700e55dc5c9624339b7:-542140472,187c4a9f373be70078a3f9df3c7b10ab:-1450433023,7f2c4a9f2a3be70024e8dfae64ab3e70:1503522082,5afbce5f103be700c3e7311317b01878:176894949,a37b8e5fbb3be7008270af0870476aee:658912839,f07b4a5fd93be70022d1190957cfda26:2039331356,f93b4a5f5e3be7004f0b3886b38b2b33:-1300829240,dcdace1f313be7004cbef2e268313df4:1613629432,768a4e1fe43be7005ab4b9faa303eb6c:1818413825,30d0f51315f7e700c203d85e1cdc1aaf:-420924789,2920711f18b7e700f0a86ceb998f696d:2028989845,fedeed9b1db7e700141b495e9df69da1:-425460597,8c5ca15b7eb7e700e31617af2f66bc5f:1402345699,86dbe91b16b7e7006e81c791c7faa6c7:-556693936,555be91be6b7e700c1589d887b22eca9:1717744058,b11b291bf3b7e7000a12a8042b8f081e:-1212838679,b0aa611b85b7e7004cd13f142e2bb3ea:-355081478,438a211b03b7e700c7a804253667db40:169718072,4e6aedd751b7e70020ab944e3abb388e:344561529,bcf965d7acb7e7008c248d5175420e50:1743826396,1fa96d979bb7e700ab758fecc382528f:1394866972,f0092d9780b7e700bcddff1b92f8e1cf:-1214222923,be47a55701b7e700af94c17d50d04712:-1795008986,abe6659316b7e7007e3755a2702fd0bd:460526353,3b8cd54137b3e740af0fa7b2b0cbe0da:1220584833,ca5691743877a7407d2120e9d09060dd:-1967425543,da5781b4b137a7402dba525e15adc18c:1996417956,7fa649740c37a740fa0fcf035ea7bda5:-1116300982,3236c1742c37a74069f102bfd7ed20d2:-8262607,5f16c174ee37a740301c3a55cdd381c8:1740535097,7ebef0fcc5f3a7409ace217cd88a354a:498871883,913ef0bc66f3a740e4bb2ddab0fb185b:2080471632,18cdfc7c7cf3a74026a2cb4a719d04a8:-1601715783,203db4f858f3a740282b905e81411529:1028756102,9d0ab8b8a4f3a7406b8fee0a10e0a2a7:228848542,ede5f8743bf3a7407e7326a5eabca094:203949442,eb95347466f3a74099e9336cc30d7e8a:539217634</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

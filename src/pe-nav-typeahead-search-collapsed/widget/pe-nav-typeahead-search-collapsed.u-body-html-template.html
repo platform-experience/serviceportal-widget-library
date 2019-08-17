@@ -1,0 +1,33 @@
+<div class='nav-search' ng-style='{ "min-height" : c.dynamicHeight }'>
+  <div class='nav-search-container' ng-class="{'show-bg': c.showSearch}">
+    <form ng-submit="c.submitSearch()">
+      <input type="hidden" name="id" value="search"/>
+      <input type="hidden" name="t" value="{{c.searchType}}"/>
+      <div class="input-group input-group-{{::c.options.size}}">
+        <!-- uses ui.bootstrap.typeahead -->
+        <input name="q" type="text" placeholder="{{::c.options.title}}" ng-model="c.searchTerm"
+               id="nav-typeahead"
+               autocomplete="off"
+               uib-typeahead="item as item.primary for item in c.getResults($viewValue)"
+               typeahead-wait-ms="250"
+               typeahead-min-length="2"
+               typeahead-focus-first="false"
+               typeahead-on-select="c.onSelect($item, $model, $label)"
+               typeahead-template-url="nav-typeahead.html"
+               typeahead-popup-template-url="nav-typeahead-popup.html"
+               class="form-control input-typeahead input-hidden input-showing"
+               ng-class="{'input-slide': c.showSearch}"
+               role="textbox"
+               aria-label="{{::c.options.title}}" tabindex="0" aria-haspopup="true">
+        <span class="input-group-btn">
+          <button name="search" type="submit" class="btn btn-search" title="{{::c.data.searchMsg}}" aria-label="{{::c.data.searchMsg}}"><i ng-if="::c.options.glyph" class="fa fa-{{::c.options.glyph}}"></i></button>
+        </span>
+      </div>
+    </form>    
+  </div>
+
+  <div role='button' class='search-toggle' ng-click='c.toggleSearch()' ng-class="{'toggle-show': c.showSearch}">
+    <i ng-if="::c.options.glyph" class="fa fa-{{::c.options.glyph}}"></i>
+  </div>
+</div>
+

@@ -1,0 +1,7 @@
+<a class="ta-item" ng-href="{{match.model.target != '_blank' ? match.model.url : ''}}" target="{{match.model.target}}">
+  <div ng-if="!match.model.templateID">
+    <i class="ta-icon fa fa-{{match.model.glyph}}" ng-if="match.model.glyph"></i>
+    <span ng-bind-html="match.label | uibTypeaheadHighlight:query"></span>
+  </div>
+  <div ng-if="match.model.templateID" ng-include="match.model.templateID"></div>
+</a>

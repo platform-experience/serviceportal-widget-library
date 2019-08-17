@@ -1,0 +1,37 @@
+<a href ng-click="menuItemClicked(item)" ng-if="item.items.length == 0 && !item.scriptedItems" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" role="menuitem" 
+   ng-class="{'anchor-expanded': navExpanded}" >
+  <i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length>0 && item.glyph!="empty"'/>
+  <i class='fa {{navpilldefaulticon}}' ng-if='item.glyph.length<=0 || item.glyph=="empty"'/>
+  <span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"></span>
+</a>
+<a href ng-if="item.items.length > 0" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.label}}" ng-click='toggleSubMenu($event,item.sys_id)'
+   class="sp-menu-has-items" ng-class="{'anchor-expanded': navExpanded}" role="menuitem">
+  <i class='fa fa-caret-down'/>
+  <span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"></span>
+</a>
+<ul id="{{::item.sys_id}}" class='nav navbar-nav nav-pills nav-stacked submenu' ng-class="{ submenushow : xsScreenSize }" ng-if="item.items.length > 0">
+  <li ng-repeat="item in item.items" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" />
+</ul>
+<a href id="scripted-dropdown" ng-if="item.scriptedItems.count > 0" aria-haspopup="true" 
+   data-toggle="dropdown" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" 
+   uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+   name='{{::item.label}}' title="{{::item.hint}} : {{item.scriptedItems.count}}" role="menuitem"
+   ng-class="{'anchor-expanded': navExpanded}" >
+  <i class='fa fa-{{::item.glyph}}' ng-if='item.glyph.length>0 && item.glyph!="empty"'/>
+  <i class='fa {{navpilldefaulticon}}' ng-if='item.glyph.length<=0 || item.glyph=="empty"'/>
+  <span class='linktext' ng-if='(navExpanded)' ng-bind-html="::item.label"></span>
+  <span ng-if="!item.scriptedItems.omitBadge && navExpanded" class="label label-as-badge label-primary sp-navbar-badge-count">{{item.scriptedItems.count}}</span>
+</a>
+<ul ng-if="item.scriptedItems.count > 0" class="dropdown-menu" role="menu" aria-label="{{::item.label}} : {{item.scriptedItems.count}}" >
+  <li role="presentation" ng-repeat="mi in item.scriptedItems.items"
+      class="ng-scope dropdown-menu-line">
+    <a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="menuItemClicked(mi)">
+      <span ng-if='mi.number'>{{::mi.number | characters:60}}</span>
+      <span ng-if='mi.title'>{{::mi.title | characters:60}}</span>
+      <span ng-if='!mi.title'>{{::mi.short_description | characters:60}}</span>
+    </a>
+  </li>
+</ul>

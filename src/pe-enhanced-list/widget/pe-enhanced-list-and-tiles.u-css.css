@@ -1,0 +1,212 @@
+$heading-color: #717171 !default;
+$table-background: #ffffff !default;
+$title-color: $text-color !default;
+$wide-header-text-color: #4a4a4a !default;
+$wide-header-text-size: 16px !default;
+$details-color: $text-muted !default;
+$table-bg-hover: rgba(0,0,0,0.05);
+
+.d-hide{
+  display: none;
+}
+.d-show{
+  display: block;
+  overflow-x: visible;
+}
+.panel-none {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: unset !important;
+}
+.panel-none > .panel-heading {
+  color: $heading-color;
+  background-color: transparent;
+  border-color: transparent;
+}
+.panel-none > .panel-heading  + .panel-collapse > .panel-body {
+  border-top-color: transparent;
+}
+.panel-none > .panel-heading .badge {
+  color: $btn-default-bg;
+  background-color: transparent;
+}
+.panel-footer{
+  min-height: 39px;
+}
+.pagenav-footer{
+  min-height: 43px;
+}
+.panel-none > .panel-footer  + .panel-collapse > .panel-body {
+  border-bottom-color: transparent;
+}
+.panel-none > .panel-footer{
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  background-color: transparent;
+}
+.panel-none > .panel-heading {
+  word-wrap: break-word;
+}
+
+.panel-nopadding{
+  padding: 0;
+}
+.panel-menu{
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: 0;
+  display: inline-block;
+}
+.btn-menu{
+  border: unset !important;
+  background: transparent !important;
+}
+.btn-menu:focus{
+  outline: unset !important;
+}
+.btn-menu:active {
+  box-shadow: none;
+}
+.dropdown-menu-right{
+  border-radius: 4px;
+  right: 0px;
+  top: 20px;
+  color: $link-color;
+  line-height: 28px;
+  padding: 10px 0px;
+  li{
+    padding-left: 15px;
+  }
+  li:hover{
+    background-color: $table-bg-hover;
+  }
+}
+
+
+.data-item{
+  height: 5.5rem;
+  display: flex;
+  background-color: $table-background !important;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  .data-img{
+    display: inline-flex;
+    float: left;
+    margin-right: 6px;
+    margin-top: 2px;
+    img{
+      max-width: 40px;
+    	max-height: 40px;
+    }
+  }
+  .data-title{
+    width: 100%;
+    display: initial;
+    color: $title-color;
+    margin-bottom: 8px;
+    max-width: calc(100% - 35px);
+    a{
+      color: $link-color;
+    }
+  }
+  .data-details{
+    width: 100%;
+    color: $details-color !important;
+  }
+  .data-menu{
+    color: $title-color !important;
+    cursor: pointer;
+    float: right;
+  }
+}
+.data-item-sm{
+  height: 6.5rem;
+  padding: 0 5px;
+}
+.data-header-wide{
+  height: 4.5rem;
+  display: table-row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 2px #c2c2c2 outset;
+  text-transform: capitalize;
+  color: $wide-header-text-color;
+  font-size: $wide-header-text-size;
+}
+.data-header-wide:hover{
+  background-color: transparent !important;
+}
+.data-item-wide{
+  display: table-row;
+  border-bottom: 1px #c2c2c2 solid;  
+  .data-title{
+    margin: 0;
+    a{
+      position: relative;
+    }
+  }
+  .data-img{
+    float: unset;
+    margin: 0 auto;
+  }
+  .data-menu-wide{
+    float: unset;
+    text-align: center;
+  }
+}
+
+.data-item-noborder{
+  border: unset;
+}
+
+.table {
+  margin: unset !important;
+  background-color: $table-background !important;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tbody > tr > td{
+  border: unset !important;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+.data-item, .table-hover > tbody > tr{
+  box-shadow: unset;
+}
+.data-item:hover, .table-hover > tbody > tr:hover {
+  background-color: unset;
+  -webkit-box-shadow: 0 0px 28px rgba(0,0,0,0), 0 0px 10px rgba(0,0,0,0.22);
+  -moz-box-shadow: 0 0px 28px rgba(0,0,0,0), 0 0px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 0px 28px rgba(0,0,0,0), 0 0px 10px rgba(0,0,0,0.22);
+}
+
+.data-tiles{
+  border: 1px solid #c2c2c2;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+.pagenav-padding{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.pagenav-select{
+  position: relative;
+  top: -2px;
+  select{
+    text-indent: 5px;
+    width: 45px;
+  }
+}

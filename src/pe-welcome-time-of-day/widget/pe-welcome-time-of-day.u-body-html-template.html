@@ -1,0 +1,7 @@
+<div class="sassvars panel panel-transparent">
+  <div class="panel-body">
+    <div class='greeting' ng-if='options.timeofday'>Good {{timeOfDay}}, {{user.first_name}}</div>
+    <div class='greeting' ng-if='!options.timeofday'>Hi, {{user.first_name}}</div>
+    <div class='message'>{{options.welcomemsg}}</div>
+  </div>
+</div>

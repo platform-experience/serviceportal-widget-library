@@ -1,0 +1,20 @@
+<div class='sassvars panel'>
+  <div class="panel-body smalllinkto">
+    <a ng-href="{{data.href}}" ng-if='!data.missingConfig'>
+      <div class="content-column">
+        <div class='icon' ng-if='options.image_thumbnail'>
+          <img src='{{options.image_thumbnail}}'/>
+        </div>
+        <div class='icon' ng-if='!options.image_thumbnail && options.image_as_glyph'>
+          <i class="fa fa-{{options.image_as_glyph}}"></i>
+        </div>
+        <h3>{{::c.options.title}}</h3>
+        <p>{{::c.options.annotation}}</p>
+      </div>
+    </a>
+    <div ng-if='data.missingConfig'>
+      <h3>Missing Link Configuration</h3>
+      <p>Use Instance Options (Ctrl+Right Click) to configure the widget</p>
+    </div>
+  </div>
+</div>

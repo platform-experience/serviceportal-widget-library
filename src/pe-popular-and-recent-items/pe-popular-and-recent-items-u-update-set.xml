@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-06 19:16:00">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Popular and Recent Items</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>cee1b8d04fefe70005be4d6e0210c76e</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-06 19:16:00</sys_created_on>
+<sys_id>8a57551c4f632b0005be4d6e0210c7d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-06 19:16:00</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_505b326b4f5b670005be4d6e0210c760</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $location) {
+	
+	$scope.goItem = function(item){
+		$location.url('?id=' + item.page + '&amp;sys_id=' + item.sys_id);
+	}
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$link-font-color: $brand-warning !default;&amp;#13;
+.panel-{&amp;#13;
+  background-color: transparent !important;&amp;#13;
+}&amp;#13;
+.panel-warning{&amp;#13;
+  max-width: 50%;&amp;#13;
+  margin:0 auto;&amp;#13;
+  background-color: unset !important;&amp;#13;
+  .panel-body{&amp;#13;
+    margin: 0 !important;&amp;#13;
+    padding: 15px !important;&amp;#13;
+    color: #B33A3A;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.item-header {&amp;#13;
+  display: flex;&amp;#13;
+  align-items: center;&amp;#13;
+  justify-content: center;&amp;#13;
+  margin-bottom: 18px;&amp;#13;
+  color: $text-color;&amp;#13;
+  font-size: 30px;&amp;#13;
+  font-weight: bold;&amp;#13;
+  letter-spacing: -0.51px;&amp;#13;
+  line-height: 50px;&amp;#13;
+  text-align: center;&amp;#13;
+}&amp;#13;
+.item-buttons{&amp;#13;
+  max-width: 825px;&amp;#13;
+  margin: 0 auto;&amp;#13;
+  display: flex;&amp;#13;
+  flex-wrap: wrap;&amp;#13;
+  align-items: flex-end;&amp;#13;
+  justify-content: space-between;&amp;#13;
+  -webkit-box-pack: justify;&amp;#13;
+  -moz-box-pack: justify;&amp;#13;
+  -ms-flex-pack: justify;&amp;#13;
+  -webkit-box-align: center;&amp;#13;
+  -webkit-align-items: center;&amp;#13;
+  -moz-box-align: center;&amp;#13;
+  -ms-flex-align: center;&amp;#13;
+  align-items: center;&amp;#13;
+  .btn-{&amp;#13;
+    background-color: #f3f3f3;&amp;#13;
+    border: 0;&amp;#13;
+  }&amp;#13;
+  .item-btn{&amp;#13;
+    max-width: 400px;&amp;#13;
+    width: 100%;&amp;#13;
+    margin-bottom: 10px;&amp;#13;
+    height: 64px;&amp;#13;
+    border-radius: 8px 8px 8px 8px;&amp;#13;
+    display:flex;&amp;#13;
+    -webkit-box-pack: justify;&amp;#13;
+    -moz-box-pack: justify;&amp;#13;
+    -ms-flex-pack: justify;&amp;#13;
+    -webkit-box-align: center;&amp;#13;
+    -webkit-align-items: center;&amp;#13;
+    -moz-box-align: center;&amp;#13;
+    -ms-flex-align: center;&amp;#13;
+    align-items: center;&amp;#13;
+    padding: 0px 32px;&amp;#13;
+    div{&amp;#13;
+      height: 32px;&amp;#13;
+      font-size: 21px;&amp;#13;
+      font-weight: normal;&amp;#13;
+      letter-spacing: -0.3px;&amp;#13;
+      width: 100%;&amp;#13;
+      display: inline-block;&amp;#13;
+      text-align: left;&amp;#13;
+      white-space: normal;&amp;#13;
+      overflow: hidden;&amp;#13;
+      text-overflow: ellipsis;&amp;#13;
+      margin: 0;&amp;#13;
+    }&amp;#13;
+    i{&amp;#13;
+      float: right;&amp;#13;
+      display: inline-block;&amp;#13;
+      font-size: 22px;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;popular-items&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link($scope,$el,$attrs,$ctrl){
+	
+	
+
+}
+]]&gt;&lt;/link&gt;&lt;name&gt;Popular and Recent Items&lt;/name&gt;&lt;option_schema&gt;[{"name":"btn_context","section":"Presentation","default_value":"","label":"Button context - Bootstrap Panel's Contextual alternatives - changes the background to Bootstrap defined context colors","type":"choice","choices":[{"label":"default","value":"default"},{"label":"primary","value":"primary"},{"label":"success","value":"success"},{"label":"info","value":"info"},{"label":"warning","value":"warning"},{"label":"danger","value":"danger"}]},{"name":"show_recent","section":"Data","default_value":"false","label":"Show user's recent items vs. popular items","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	// Get current user for quick filtering of data to user only
+	var currentUser = gs.getUser(); 
+	
+	data.limit = 6;
+	data.title = options.title || "Popular Items";
+	data.show_recent = (options.show_recent=='true');
+	
+	/* Data Variables */
+	data.missingConfig = false;
+
+	data.portal_record = $sp.getPortalRecord();
+	
+	var recent_by = options.recent_by || 'view';
+
+	function getPopularItems () {
+		var catalog = $sp.getValue('sc_catalog');
+	
+		var items = [];
+		var catItems = [];
+		var item = {};
+		var catalogItemJS,catItemDetails;
+		
+		var count = new GlideAggregate('sc_req_item');
+		count.addAggregate('COUNT','cat_item');
+		count.groupBy('cat_item');
+		count.addQuery('cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_guide,sc_cat_item_wizard,sc_cat_item_content');
+		count.addQuery('cat_item.sc_catalogs', 'IN', catalog);
+		count.addEncodedQuery('cat_item.hide_sp=false^ORcat_item.hide_spISEMPTY');
+		count.orderByAggregate('COUNT', 'cat_item');
+		count.query();
+		while (count.next() &amp;&amp; items.length &lt; data.limit) {
+			catalogItemJS = new sn_sc.CatItem(count.cat_item.sys_id);
+			if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+				continue;
+			item = {};
+			catItemDetails = catalogItemJS.getItemSummary();
+
+			item.order = 0 - count.getAggregate('COUNT', 'cat_item');
+			item.name = catItemDetails.name;
+			item.short_description = catItemDetails.short_description;
+			item.sys_id = catItemDetails.sys_id;
+			item.page = catItemDetails.type == 'order_guide'? 'sc_cat_item_guide' : 'sc_cat_item';
+			catItems.push(item);
+		}
+
+		var producers = 0;
+		var prodItems = [];
+		count = new GlideAggregate('sc_item_produced_record');
+		count.addQuery('producer.sc_catalogs', 'IN', catalog);
+		count.addEncodedQuery('producer.hide_sp=false^ORproducer.hide_spISEMPTY');
+		count.addAggregate('COUNT', 'producer');
+		count.groupBy('producer');
+		count.orderByAggregate('COUNT', 'producer');
+		count.query();
+		while (count.next() &amp;&amp; producers &lt; data.limit) {
+			catalogItemJS = new sn_sc.CatItem(count.getValue('producer'));
+			if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+				continue;
+			catItemDetails = catalogItemJS.getItemSummary();
+			item = {};
+
+			item.order = 0 - count.getAggregate('COUNT', 'producer');
+			item.name = catItemDetails.name;
+			item.short_description = catItemDetails.short_description;
+			item.sys_id = catItemDetails.sys_id;
+			item.page = catItemDetails.type == 'order_guide'? 'sc_cat_item_guide' : 'sc_cat_item';
+			prodItems.push(item);
+			producers++;
+		}
+
+		if (catItems.length == 0)
+			return prodItems;
+		if (prodItems.length == 0)
+			return catItems;
+
+		items = [];
+		for (var i=0; i &lt; data.limit/2; i++) {
+			if (i &lt; catItems.length){
+				items.push(catItems[i])
+			}
+		}
+
+		if(items.length &lt; (data.limit/2)){
+			var limit = (data.limit - items.length);
+			for (var i=0; i &lt; limit; i++) {
+				if (prodItems[i]){
+					items.push(prodItems[i])
+				}
+			}
+		}else{
+			for (var i=0; i &lt; data.limit/2; i++) {
+				if (i &lt; prodItems.length){
+					items.push(prodItems[i])
+				}
+			}	
+		}
+
+		return items;
+	}
+
+	function getRecentItems(){
+		var recent = new GlideAggregate('sp_log');
+		recent.addAggregate('COUNT', 'id');
+		if (recent_by === 'view'){
+			recent.addEncodedQuery('userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^type=Cat Item View^sys_created_onONThis quarter@javascript:gs.beginningOfThisQuarter()@javascript:gs.endOfThisQuarter()');
+		}else{
+			recent.addEncodedQuery('userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^type=Cat Item Request^sys_created_onONThis quarter@javascript:gs.beginningOfThisQuarter()@javascript:gs.endOfThisQuarter()');
+		}
+
+		recent.groupBy('id');
+		recent.orderByAggregate('COUNT', 'id');
+		recent.query();
+		var recentItems = [];
+		var catalog = $sp.getValue('sc_catalog');
+
+		data.showPrices = $sp.showCatalogPrices();
+
+		while (recent.next() &amp;&amp; recentItems.length &lt; data.limit) {
+			var catalogItemJS = new sn_sc.CatItem(recent.getValue('id'));
+			if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+				continue;
+			var item = {};
+			var catItemDetails = catalogItemJS.getItemSummary();
+			var inCatalog = false;
+			for (var i=0; i&lt;catItemDetails.catalogs.length; i++) {
+				if (catItemDetails.catalogs[i].sys_id == catalog) {
+					inCatalog = true;
+					break;
+				}
+			}
+			if (inCatalog) {
+				item.name = catItemDetails.name;
+				item.short_description = catItemDetails.short_description;
+				item.picture = catItemDetails.picture;
+				item.price = catItemDetails.price;
+				item.sys_id = catItemDetails.sys_id;
+				item.hasPrice = item.price != 0;
+				item.page = catItemDetails.type == 'order_guide'? 'sc_cat_item_guide' : 'sc_cat_item';
+				recentItems.push(item);
+			}
+		}
+
+		return recentItems;
+	}
+
+	
+
+	try{
+		if(data.show_recent){
+			data.title = "My Recent Items";
+			data.items =  getRecentItems();
+		}else{
+			data.items = getPopularItems();
+		}
+	}catch(e){
+		/*
+			If for any reason something above errors, then lets at least show a message in the Panel's Body that there 
+			is a problem.  And, post a message to the browser with what the problem is.
+		*/
+		data.missingConfig = true;
+		data.err_msg = e;
+		//gs.addErrorMessage('Portal: ' + data.portal_record.getDisplayValue('url_suffix') + " Message: " + e );
+		return;
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-02-04 18:37:56&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;505b326b4f5b670005be4d6e0210c760&lt;/sys_id&gt;&lt;sys_mod_count&gt;91&lt;/sys_mod_count&gt;&lt;sys_name&gt;Popular and Recent Items&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Widgets" source="com.snc.spenh.widgets"&gt;608a82c24f1d6f008272ece24210c773&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_505b326b4f5b670005be4d6e0210c760&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-06 18:56:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-"&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;div class="item-header"&gt;
+      &lt;span id="header-title"&gt;{{::c.data.title}}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class='item-buttons' ng-if='::c.data.missingConfig==false'&gt;
+      &lt;div class='btn btn-{{options.btn_context}} item-btn' role='button' title='{{item.short_description}}' ng-if='data.items' ng-repeat='item in data.items' ng-click='goItem(item)'&gt;
+        &lt;div&gt;{{item.name}}&lt;/div&gt;
+         &lt;i class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='panel panel-warning' ng-if='::c.data.missingConfig'&gt;
+      &lt;div class='panel-heading'&gt;
+        Missing Configuration
+      &lt;/div&gt;
+      &lt;div class='panel-body bg-warning'&gt;
+        {{c.data.err_msg}}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>910309036</payload_hash>
+<remote_update_set display_value="Popular and Recent Items">8a57551c4f632b0005be4d6e0210c7d8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-02-06 19:16:00</sys_created_on>
+<sys_id>ce57551c4f632b0005be4d6e0210c7d8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168c42b93f70000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-02-06 19:16:00</sys_updated_on>
+<table/>
+<target_name>Popular and Recent Items</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>7ef2d9d4db632b00179cb50c46bccd46</update_guid>
+<update_guid_history>7ef2d9d4db632b00179cb50c46bccd46:910309036,8c7d4d1053632b005f8e435e35be7f1e:-1845563232,bddcc110ab632b00d7285ce5ac5f59d8:-529050103,088c411028632b001c217a126492c484:-1795118448,5b90fcc0c963e70083230fe5817542db:806995073,6980fcc04663e700da9cf95293eb34d3:117980620,21607cc04863e7002927e11d547e812c:-415516675,71cfec804c63e700ce4a2d8cedbc2377:1016885504,1ffe68800d63e700c72b8d0968f7a620:770203427,68eeec404c63e700876f8d27012188c5:-811851356,e55eec40f563e700caa9149eff84babf:583681113,ea0ee840ac63e7003126bb57731293d3:-1763922466,40eda4407d63e700445a32d679884aca:1998250830,37cda4400d63e700c807f8252ee4c1a8:-1388092162,6d9d2440c663e700527aec98da91f20c:-381155815,b17d20403463e70011fa23bba7913b9c:-1997029442,795d2c007963e700f8a532c84633917f:-1461162733,2efc68000263e7006eca362ba6342b47:1557081869,df7c24001063e700ea97029b8a6ced1c:1272709589,c40ce8cc6b23e700e736b236e31e51af:-1042641195,3a6be04ca223e7002f2547ab73211659:589329040,0fe5a4487223e7005a0f5368c0aca1f4:-373010856,b745e808aa23e70053fdb3de67537a2c:-104595905,ca15e484c423e700491597abc45dfa8c:-117062228,7ef12c440223e7009a332291eddb0da1:-1995389271,ecc12c44ff23e700c8b5f139d8d3489a:1067705019,68b1e4444323e7004c894920a3189a5b:67352746,4a91e4448223e700ff45b8dea6edbc50:896657738,087068040f23e700e6f4c8ad24bbd424:-299574981,6310a004a023e700ffb4cfea3d88b31a:501932123,6400e8c00023e700f9e492c98a1cb3e1:497801874,c31fd8c01123e700a1bea9e2c846580c:420448391,060f94c01f23e7004f0de855cd6f2530:1304815049,f00fd4c02d23e70038d0f291ff5f43fa:-604593398,83fe94c09c23e700cc471e6b7de37027:-843724754,b8dedc807e23e70088c9abedac745a57:-493943380,e05ed080bf23e7008b11b4fab32164c9:1519900396,3feddc40ff23e70003ae11073106206a:807151373,a36d5c402423e70017d634fd33a03a43:1816083518,e61d5c405823e7002430bd2aedf8862f:-388744542,36fc18403223e700ca6f417c85c3a375:-1202017016,dfbc5400c623e700cb6bc19233d1c8a6:-1381498680,327c54000623e700c65ae66976aa5aa0:293225099,046cd000f623e700e330e77400871ff8:1837990532,8c5c50007423e700eec08501a469e538:-602909715,df2c94cc1defa700f14682850d781a8b:-1872850192,35db54cc0fefa700fe421a2791534491:253118101,db6b54cc2eefa700866aac8173b85a7d:-1501910695,b42b50ccf8efa7000513907ecbd85605:-1874659782,220bdc8c65efa700ed6177fca4b8543d:-1557884930,feaa588cd7efa70069e74f49ca21e350:-406215835,749a148c34efa70002b9b00bfba15356:-648456347,d57ad48c9defa700e4e5affb04a30104:-1794957721,a44a100ceeefa700964b1755f9591a0b:-648456347,34b910c8c4efa700a627da244294f859:-243118799,18e8d0c842efa70054dbf26217aa2f62:-156491848,706814080cefa7004e17472dc3107d7f:-908792428,a0381cc45fefa700f2e0f2d4db1dd1e1:-496807042,7ec714c437efa7007f68c8feff84fa71:959119492,7c7750c407efa700b3a4ab7337236281:-220799566,b917d484c5efa70008e509d766686491:-1751316694,3ee69c844defa7001cb37160b7babb6d:1734939514,09d6988483efa700065f9ac893dd9884:-1093646451,bfa6988455efa700f28c4af5eafd6174:1702281708,f1869084e5efa7004880a517b889ec47:587272408,06269084c9efa700dcba82fe2aadeb3f:-1414679778,abd59844aeefa70002fbc601186f1d88:-2048643227,39b5184463efa7008a5415ce4ae4deed:-1390722294,48a594448aefa70035b2bb544183ad2a:1384061553,76755044ecefa700ec38cb9db22306b4:1996574996,0935504424efa700fffa0d8660ca8fa1:1176663229,ba159c0472efa7001f6656718901c086:-1508434738,4705d4040defa700629c02825a3b00fc:653327656,55f4980457efa700de66d315e3882cea:1168112288,89c4d4048aefa700350d720877b809f3:653327656,cf7498c0cfefa7009f64b7dbd41cc8f5:-2105002617,8c14588015efa700801e3758d04b139c:433579651,14c39480f3efa70033d9cddb79663bd6:-1846270717,ef43d080e6efa700fcf625dfed360362:-849324259,c513d440c4efa70080d9d001827013be:-1027047847,f2319000b0efa700def9701fedd2eb04:-2006604330,5ca0500004efa70061dcb33bcbbb70a8:1121406565,9050d48c9bafa700967347f21ce27aca:-1865502001,ddadc04c7aafa7009bdffc908c005197:-1302556756,fdffecff3413a7007fdfe9b23b118851:893687980,f4cfe8ff1413a70053cafafc051fc9b5:1992300779,619f68ff1d13a70079f3302f34dbb37a:-218854410,817fe4ff7213a700cb69bc512bb4a633:2037765488,3e4f24ffa713a700f34bbea2252b1b92:-1861652018,2d2f24ff6f13a7005856a75c0d624265:142791726,b4fe20ff7113a7001516cf9967e29c65:-1585840428,c57bb26b795b6700c1431873c183d478:1453537632</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

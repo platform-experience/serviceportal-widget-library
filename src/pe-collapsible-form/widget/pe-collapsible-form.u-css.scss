@@ -1,0 +1,177 @@
+.btn-form-menu {
+	vertical-align: inherit;
+  padding: inherit;
+  background: none;
+}
+
+.panel-title {
+  word-wrap: break-word;
+}
+
+.panel-heading {
+  .dropdown-menu {
+    a {
+      white-space: normal;
+    }
+  }
+}
+
+.comment {
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.mce-panel, .mce-btn {
+	background-image: none;
+	background-color: #f0f3f4;
+}
+
+.action-btn {
+  margin-right: 5px;
+}
+
+.timeline-container {
+   max-height: 50vh;
+   height: 100%;
+   overflow-y: auto;
+}
+
+.panel .panel {
+    height: auto !important;
+}
+
+.attachment-button {
+  .glyphicon-paperclip {
+    font-size: 18px;
+  }
+}
+
+.dropdown {
+  .glyphicon-menu-hamburger:focus {
+ 		outline: thin dotted;
+		outline: 5px auto -webkit-focus-ring-color;
+		outline-offset: -2px; 
+	}
+}
+
+.empty-state-wrapper {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 20px 20px;
+
+  .empty-state {
+    border: 1px solid #e7e9eb;
+    border-radius: 10px;
+    max-width: 700px;
+    padding: 30px 40px 20px;
+    position: relative;
+
+    .empty-state-badge {
+      top: -36px;
+      left: 50%;
+      position: absolute;
+      height: 72px;
+      width: 72px;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 100%;
+      color: #ffffff;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 40px;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-left: -36px;
+      text-align: center;
+    }
+
+    .empty-state-header {
+      font-size: 30px;
+      text-align: center;
+      color: #343d47;
+    }
+
+    .empty-state-content {
+      ul {
+        list-style: disc outside;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 30px;
+      }
+    }
+  }
+}
+
+
+// COLLAPSE ELEMENTS
+
+// size and shape of tile/circle
+$collapse-indicator-size: 30px !default;
+$collapse-indicator-border-radius: $border-radius-base !default; // 50% for circles
+
+// replace context, or define other colors
+$collapse-indicator-bg: $panel-default-heading-bg !default;
+$collapse-indicator-border: $btn-default-border !default;
+$collapse-indicator-color: $btn-default-color !default;
+
+// these, and icon element, could/should be replaced with widget options.
+// better behavior might be 'accordion' where each section stands alone,
+// and ideally could be made aware of individual section validation/completion,
+// but we're limited without completely replacing form directive
+
+$collapse-additional-gutter: 5px !default; // added between indicators and form, along with Bootstrap gutter
+
+$computed-h4-btn-height: ($headings-line-height * $font-size-h4) + ($padding-base-vertical * 2) + 2px;
+
+.section-heading {
+  margin-left: $collapse-indicator-size/2;
+  border-left: 1px solid $collapse-indicator-border;
+}
+.section-heading button {
+  color: inherit;
+  position: relative;
+  top: -($computed-h4-btn-height/2);
+  margin-left: -($collapse-indicator-size/2 + $padding-base-horizontal + 1px);
+}
+.section-heading:first-of-type {
+  margin-top: $computed-h4-btn-height/2;
+}
+.section-heading:last-of-type {
+  border-left: 1px solid transparent;
+}
+.section-heading > button > legend {
+  margin: 0;
+}
+.section-heading > button > legend > .collapse-indicator {
+  font-size: $collapse-indicator-size/2;
+  border: 1px solid $collapse-indicator-border;
+  width: $collapse-indicator-size;
+  height: $collapse-indicator-size;
+  line-height: $collapse-indicator-size - 2px;
+  border-radius: $collapse-indicator-border-radius;
+  margin-right: ($grid-gutter-width/2) + $collapse-additional-gutter;
+  background-color: $collapse-indicator-bg;
+  color: $collapse-indicator-color;
+  vertical-align: middle;
+}
+.section-heading > button:hover > legend > .collapse-indicator {
+  background-color: darken($collapse-indicator-bg, 10%);
+  border-color: darken($collapse-indicator-border, 12%);
+}
+.section-form, .nav-continue {
+  margin-left: $collapse-indicator-size/2;
+  border-left: 1px solid $collapse-indicator-border;
+  padding-left: ($collapse-indicator-size/2) + $collapse-additional-gutter;
+}
+.section-heading:last-of-type ~ .section-form {
+  border-left: 1px solid transparent;
+}
+.nav-continue {
+  padding-left: ($collapse-indicator-size/2) + $collapse-additional-gutter + ($grid-gutter-width/2);
+  padding-bottom: $computed-h4-btn-height/2 + $form-group-margin-bottom;
+}

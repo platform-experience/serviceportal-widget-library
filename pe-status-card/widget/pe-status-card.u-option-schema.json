@@ -1,33 +1,41 @@
 [{
   "name": "title",
+  "default_value": "Business Critical Services",
   "label": "Title",
   "type": "string"
 }, {
   "name": "status_number1",
+  "default_value": "5",
   "label": "Status Number 1",
   "type": "integer"
 }, {
   "name": "status_number2",
+  "default_value": "148",
   "label": "Status Number 2",
   "type": "integer"
 }, {
   "name": "status_number3",
+  "default_value": "78",
   "label": "Status Number 3",
   "type": "integer"
 }, {
   "name": "sub_text1",
+  "default_value": "With Critical Incidents",
   "label": "Sub Text 1",
   "type": "string"
 }, {
   "name": "sub_text2",
+  "default_value": "Severe Vulnerabilities",
   "label": "Sub Text 2",
   "type": "string"
 }, {
   "name": "sub_text3",
+  "default_value": "Control Effectiveness",
   "label": "Sub Text 3",
   "type": "string"
 }, {
   "name": "status_indicator2",
+  "default_value": "warning",
   "label": "Status Indicator 2",
   "type": "choice",
   "choices": [{
@@ -42,6 +50,7 @@
   }]
 }, {
   "name": "status_indicator3",
+  "default_value": "normal",
   "label": "Status Indicator 3",
   "type": "choice",
   "choices": [{

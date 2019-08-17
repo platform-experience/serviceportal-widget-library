@@ -1,0 +1,24 @@
+<div class="search">
+  <div class="search-container">
+    <img src="/icon-search.svg" />
+    <form ng-submit="c.submitSearch()">
+      <input type="hidden" name="id" value="search"/>
+      <input type="hidden" name="t" value="{{c.searchType}}"/>
+      <input name="q" type="text" placeholder="{{::c.options.title}}" ng-model="c.searchTerm"
+           autocomplete="off"
+           uib-typeahead="item as item.primary for item in c.getResults($viewValue)"
+           typeahead-wait-ms="250"
+           typeahead-focus-first="false"
+           typeahead-on-select="c.onSelect($item, $model, $label)"
+           typeahead-template-url="sp-typeahead-flat.html"
+           typeahead-popup-template-url="sp-typeahead-flat-popup.html"
+           role="textbox"
+           tabindex="0" autocomplete="off"
+           aria-label="{{::c.options.title}}" tabindex="0" aria-haspopup="true">
+      <!-- ng-change="c.getResults()" -->
+    </form>
+    <i class="fa fa-times-circle" ng-if="c.searchResults" ng-click="c.clearResults()"></i>
+  </div>
+  
+</div>
+

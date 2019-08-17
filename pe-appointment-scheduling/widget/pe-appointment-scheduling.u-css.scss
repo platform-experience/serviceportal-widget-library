@@ -1,0 +1,382 @@
+$time-slot-bg:#e4edf9;
+$time-slot-text:#607795;
+$brand-primary:#4b8cfb !default;
+.btn-submit {
+    width: 10%;
+    min-width: 80px;
+    @media screen and (max-width: 769px) {
+        width: 100%;
+    }
+}
+
+.switch-part {
+    width: 25%;
+    float: left;
+    min-width: 160px;
+    @media screen and (max-width: 769px) {
+        width: 50%;
+    }
+}
+
+.time-selector {
+    width: 30%;
+    min-width: 150px;
+    float: left;
+    @media screen and (max-width: 769px) {
+        width: 50%;
+    }
+}
+
+.time-card-container {
+    clear: both;
+    overflow: hidden;
+}
+
+.time-cards {
+    width: 47%;
+    height: 60px;
+    float: left;
+    padding: 10px;
+    color: $time-slot-text;
+    margin: 5px;
+    font-size: 18px;
+    background: $time-slot-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 414px) {
+        width: 100%;
+    }
+    &.btn-selected {
+        background: $brand-primary;
+        color: #fff;
+        .fa {
+            color: #fff;
+        }
+    }
+    p {
+        margin: 0px;
+    }
+}
+
+.appointment-scheduler {
+    min-width: 320px;
+    background: #fff;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    .btn.disabled {
+        opacity: .35;
+    }
+    .reminder-setup {
+        padding: 10px;
+        span {
+            font-size: 16px;
+        }
+        .reminder-select {
+            display: inline-block;
+            width: 100px;
+            margin-left: 5px;
+            margin-right: 5px;
+            height: 30px;
+        }
+    }
+    h3 {
+        margin-top: 10px;
+        font-weight: 300;
+    }
+    .uib-datepicker .btn-default {
+        border: 1px solid #fff;
+    }
+    table.uib-daypicker thead tr:nth-child(2) {
+        background-color: aliceblue;
+    }
+    .btn-info.active {
+        border-radius: 50%;
+        color: #fff;
+        .text-info {
+            color: #fff;
+        }
+    }
+    .btn[disabled] {
+        opacity: 0.35;
+    }
+    .uib-button-bar {
+        .uib-datepicker-current {
+            background: inherit;
+            color: $brand-info;
+            border: 0px;
+        }
+        .uib-clear {
+            background: inherit;
+            color: $brand-danger;
+            border: 0px;
+        }
+        .uib-close {
+            background: inherit;
+            color: $brand-success;
+            border: 0px;
+        }
+    }
+    .remove-padding-left {
+        padding-left: 0px;
+    }
+    .flex-it {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-div {
+        display: inline-block;
+    }
+    .alert-div {
+        margin-top: 30px;
+        position: relative;
+        clear: both;
+        .close {
+            position: absolute;
+            right: 6px;
+            top: 3px;
+        }
+    }
+    .slot-selector {
+        margin-top: 20px;
+        .appt-dateformatted {
+            float: left;
+            margin: 0;
+            margin-left: 57px;
+            margin-top: -38px;
+            margin-right: 15px;
+            height: 18px;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1;
+            z-index: 400;
+            color: #aaaaaa;
+            background-color: #ffffff;
+            position: relative;
+        }
+        .appt-change {
+            float: right;
+            margin-top: -38px;
+            margin-right: 15px;
+            letter-spacing: 1.1px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: $brand-primary;
+            z-index: 400;
+            position: relative;
+            @media screen and (max-width: 300px) {
+                display: none;
+            }
+        }
+        .appt-datepicker {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        .input-group,
+        .form-group {
+            margin: 0 auto;
+            width: 100%;
+        }
+        .uidatepicker {
+            border-radius: 0px;
+            height: 60px;
+            background: no-repeat scroll 20px 15px;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDIzIDI2Ij4gICAgPGcgZmlsbD0iI0RERCIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICAgIDxwYXRoIGQ9Ik0yMC45MjcgMjZIMS45MDJBMS44NjggMS44NjggMCAwIDEgMCAyNC4wOThWNS4wNzNjMC0xLjA3OC44MjQtMS45MDIgMS45MDItMS45MDJoMTkuMDI1YzEuMDc4IDAgMS45MDIuODI0IDEuOTAyIDEuOTAydjE5LjAyNUExLjg2OCAxLjg2OCAwIDAgMSAyMC45MjcgMjZ6TTEuOTAyIDQuNDM5Yy0uMzggMC0uNjM0LjI1NC0uNjM0LjYzNHYxOS4wMjVjMCAuMzguMjU0LjYzNC42MzQuNjM0aDE5LjAyNWMuMzggMCAuNjM0LS4yNTQuNjM0LS42MzRWNS4wNzNjMC0uMzgtLjI1NC0uNjM0LS42MzQtLjYzNEgxLjkwMnpNNS4wNzMgMGgxLjI2OHYzLjE3MUg1LjA3M3pNMTYuNDg4IDBoMS4yNjh2My4xNzFoLTEuMjY4eiIvPiAgICAgICAgPHBhdGggZD0iTTExLjQxNSAxMC4xNDZBMi41NDQgMi41NDQgMCAwIDEgOC44NzggNy42MWEyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNy0yLjUzN0EyLjU0NCAyLjU0NCAwIDAgMSAxMy45NSA3LjYxYTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM2IDIuNTM2em0wLTMuODA1Yy0uNjk4IDAtMS4yNjkuNTcxLTEuMjY5IDEuMjY5IDAgLjY5Ny41NzEgMS4yNjggMS4yNjkgMS4yNjguNjk3IDAgMS4yNjgtLjU3IDEuMjY4LTEuMjY4IDAtLjY5OC0uNTctMS4yNjktMS4yNjgtMS4yNjl6TTE3Ljc1NiAxMC4xNDZBMi41NDQgMi41NDQgMCAwIDEgMTUuMjIgNy42MWEyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNi0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNyAyLjUzNyAyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNyAyLjUzNnptMC0zLjgwNWMtLjY5NyAwLTEuMjY4LjU3MS0xLjI2OCAxLjI2OSAwIC42OTcuNTcgMS4yNjggMS4yNjggMS4yNjguNjk4IDAgMS4yNjgtLjU3IDEuMjY4LTEuMjY4IDAtLjY5OC0uNTctMS4yNjktMS4yNjgtMS4yNjl6TTUuMDczIDE2LjQ4OGEyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNi0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNi0yLjUzNkEyLjU0NCAyLjU0NCAwIDAgMSA3LjYxIDEzLjk1YTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM3IDIuNTM3em0wLTMuODA1Yy0uNjk3IDAtMS4yNjguNTctMS4yNjggMS4yNjggMCAuNjk4LjU3IDEuMjY5IDEuMjY4IDEuMjY5LjY5OCAwIDEuMjY4LS41NzEgMS4yNjgtMS4yNjkgMC0uNjk3LS41Ny0xLjI2OC0xLjI2OC0xLjI2OHpNMTEuNDE1IDE2LjQ4OGEyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNy0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNy0yLjUzNiAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNiAyLjUzNiAyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNiAyLjUzN3ptMC0zLjgwNWMtLjY5OCAwLTEuMjY5LjU3LTEuMjY5IDEuMjY4IDAgLjY5OC41NzEgMS4yNjkgMS4yNjkgMS4yNjkuNjk3IDAgMS4yNjgtLjU3MSAxLjI2OC0xLjI2OSAwLS42OTctLjU3LTEuMjY4LTEuMjY4LTEuMjY4ek0xNy43NTYgMTYuNDg4YTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM2LTIuNTM3IDIuNTQ0IDIuNTQ0IDAgMCAxIDIuNTM2LTIuNTM2IDIuNTQ0IDIuNTQ0IDAgMCAxIDIuNTM3IDIuNTM2IDIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM3IDIuNTM3em0wLTMuODA1Yy0uNjk3IDAtMS4yNjguNTctMS4yNjggMS4yNjggMCAuNjk4LjU3IDEuMjY5IDEuMjY4IDEuMjY5LjY5OCAwIDEuMjY4LS41NzEgMS4yNjgtMS4yNjkgMC0uNjk3LS41Ny0xLjI2OC0xLjI2OC0xLjI2OHpNNS4wNzMgMjIuODNhMi41NDQgMi41NDQgMCAwIDEtMi41MzYtMi41MzcgMi41NDQgMi41NDQgMCAwIDEgMi41MzYtMi41MzcgMi41NDQgMi41NDQgMCAwIDEgMi41MzcgMi41MzcgMi41NDQgMi41NDQgMCAwIDEtMi41MzcgMi41MzZ6bTAtMy44MDZjLS42OTcgMC0xLjI2OC41NzEtMS4yNjggMS4yNjkgMCAuNjk3LjU3IDEuMjY4IDEuMjY4IDEuMjY4LjY5OCAwIDEuMjY4LS41NyAxLjI2OC0xLjI2OCAwLS42OTgtLjU3LTEuMjY5LTEuMjY4LTEuMjY5eiIvPiAgICA8L2c+PC9zdmc+);
+            background-color: #fff;
+            padding-left: 60px;
+            @media (max-width: 320px) {
+                max-width: 290px;
+                background: no-repeat scroll 10px 15px;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDIzIDI2Ij4gICAgPGcgZmlsbD0iI0RERCIgZmlsbC1ydWxlPSJub256ZXJvIj4gICAgICAgIDxwYXRoIGQ9Ik0yMC45MjcgMjZIMS45MDJBMS44NjggMS44NjggMCAwIDEgMCAyNC4wOThWNS4wNzNjMC0xLjA3OC44MjQtMS45MDIgMS45MDItMS45MDJoMTkuMDI1YzEuMDc4IDAgMS45MDIuODI0IDEuOTAyIDEuOTAydjE5LjAyNUExLjg2OCAxLjg2OCAwIDAgMSAyMC45MjcgMjZ6TTEuOTAyIDQuNDM5Yy0uMzggMC0uNjM0LjI1NC0uNjM0LjYzNHYxOS4wMjVjMCAuMzguMjU0LjYzNC42MzQuNjM0aDE5LjAyNWMuMzggMCAuNjM0LS4yNTQuNjM0LS42MzRWNS4wNzNjMC0uMzgtLjI1NC0uNjM0LS42MzQtLjYzNEgxLjkwMnpNNS4wNzMgMGgxLjI2OHYzLjE3MUg1LjA3M3pNMTYuNDg4IDBoMS4yNjh2My4xNzFoLTEuMjY4eiIvPiAgICAgICAgPHBhdGggZD0iTTExLjQxNSAxMC4xNDZBMi41NDQgMi41NDQgMCAwIDEgOC44NzggNy42MWEyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNy0yLjUzN0EyLjU0NCAyLjU0NCAwIDAgMSAxMy45NSA3LjYxYTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM2IDIuNTM2em0wLTMuODA1Yy0uNjk4IDAtMS4yNjkuNTcxLTEuMjY5IDEuMjY5IDAgLjY5Ny41NzEgMS4yNjggMS4yNjkgMS4yNjguNjk3IDAgMS4yNjgtLjU3IDEuMjY4LTEuMjY4IDAtLjY5OC0uNTctMS4yNjktMS4yNjgtMS4yNjl6TTE3Ljc1NiAxMC4xNDZBMi41NDQgMi41NDQgMCAwIDEgMTUuMjIgNy42MWEyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNi0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNyAyLjUzNyAyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNyAyLjUzNnptMC0zLjgwNWMtLjY5NyAwLTEuMjY4LjU3MS0xLjI2OCAxLjI2OSAwIC42OTcuNTcgMS4yNjggMS4yNjggMS4yNjguNjk4IDAgMS4yNjgtLjU3IDEuMjY4LTEuMjY4IDAtLjY5OC0uNTctMS4yNjktMS4yNjgtMS4yNjl6TTUuMDczIDE2LjQ4OGEyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNi0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNi0yLjUzNkEyLjU0NCAyLjU0NCAwIDAgMSA3LjYxIDEzLjk1YTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM3IDIuNTM3em0wLTMuODA1Yy0uNjk3IDAtMS4yNjguNTctMS4yNjggMS4yNjggMCAuNjk4LjU3IDEuMjY5IDEuMjY4IDEuMjY5LjY5OCAwIDEuMjY4LS41NzEgMS4yNjgtMS4yNjkgMC0uNjk3LS41Ny0xLjI2OC0xLjI2OC0xLjI2OHpNMTEuNDE1IDE2LjQ4OGEyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNy0yLjUzNyAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNy0yLjUzNiAyLjU0NCAyLjU0NCAwIDAgMSAyLjUzNiAyLjUzNiAyLjU0NCAyLjU0NCAwIDAgMS0yLjUzNiAyLjUzN3ptMC0zLjgwNWMtLjY5OCAwLTEuMjY5LjU3LTEuMjY5IDEuMjY4IDAgLjY5OC41NzEgMS4yNjkgMS4yNjkgMS4yNjkuNjk3IDAgMS4yNjgtLjU3MSAxLjI2OC0xLjI2OSAwLS42OTctLjU3LTEuMjY4LTEuMjY4LTEuMjY4ek0xNy43NTYgMTYuNDg4YTIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM2LTIuNTM3IDIuNTQ0IDIuNTQ0IDAgMCAxIDIuNTM2LTIuNTM2IDIuNTQ0IDIuNTQ0IDAgMCAxIDIuNTM3IDIuNTM2IDIuNTQ0IDIuNTQ0IDAgMCAxLTIuNTM3IDIuNTM3em0wLTMuODA1Yy0uNjk3IDAtMS4yNjguNTctMS4yNjggMS4yNjggMCAuNjk4LjU3IDEuMjY5IDEuMjY4IDEuMjY5LjY5OCAwIDEuMjY4LS41NzEgMS4yNjgtMS4yNjkgMC0uNjk3LS41Ny0xLjI2OC0xLjI2OC0xLjI2OHpNNS4wNzMgMjIuODNhMi41NDQgMi41NDQgMCAwIDEtMi41MzYtMi41MzcgMi41NDQgMi41NDQgMCAwIDEgMi41MzYtMi41MzcgMi41NDQgMi41NDQgMCAwIDEgMi41MzcgMi41MzcgMi41NDQgMi41NDQgMCAwIDEtMi41MzcgMi41MzZ6bTAtMy44MDZjLS42OTcgMC0xLjI2OC41NzEtMS4yNjggMS4yNjkgMCAuNjk3LjU3IDEuMjY4IDEuMjY4IDEuMjY4LjY5OCAwIDEuMjY4LS41NyAxLjI2OC0xLjI2OCAwLS42OTgtLjU3LTEuMjY5LTEuMjY4LTEuMjY5eiIvPiAgICA8L2c+PC9zdmc+);
+                padding-left: 40px;
+            }
+        }
+    }
+    .reminder-select {
+        width: 100px;
+        height: 28px;
+        margin-top: 10px;
+        padding: 0px;
+        padding-left: 3px;
+        display: inline-flex;
+        @media (max-width: 320px) {
+            margin-left: -25px;
+        }
+    }
+    .reminder-select-label {
+        position: absolute;
+        margin-left: 8px;
+        margin-top: 14px;
+        font-size: 16px;
+        color: $brand-primary;
+    }
+    /* line 1, sass/custom/_switches.scss */
+    input[type=checkbox] {
+        visibility: hidden;
+    }
+    .switch-label {
+        position: absolute;
+        margin-left: 8px;
+        margin-top: 4px;
+        font-size: 16px;
+        color: $brand-primary;
+    }
+    .input-switch {
+        height: 28px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: -10px;
+        @media (max-width: 320px) {
+            margin-left: -15px;
+        }
+    }
+    /* line 21, sass/custom/_switches.scss */
+    .input-switch input[type=checkbox]~.switch {
+        background-color: #aaaaaa;
+        width: 50px;
+        height: 27px;
+        border-radius: 12.5px;
+        position: relative;
+        display: inline-block;
+        transition: all 0.4s;
+        /*box-shadow: inset 0px 0px 3px 0px #777;*/
+    }
+    /* line 31, sass/custom/_switches.scss */
+    .input-switch input[type=checkbox]~.switch:before {
+        content: '';
+        color: transparent;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 45%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: 2px;
+        transition: all 0.4s;
+        /*box-shadow: 0 6px 18px -9px #000000;*/
+    }
+    /* line 51, sass/custom/_switches.scss */
+    .input-switch input[type=checkbox]:checked~.switch {
+        background-color: $brand-primary;
+    }
+    /* line 54, sass/custom/_switches.scss */
+    .input-switch input[type=checkbox]:checked~.switch:before {
+        left: 23.5px;
+    }
+    /* line 61, sass/custom/_switches.scss */
+    .input-switch input[type=checkbox]:disabled~.switch {
+        opacity: 0.5;
+    }
+    /* line 69, sass/custom/_switches.scss */
+    .input-switch input[type=checkbox]:hover~.switch:before {
+        box-shadow: 0px;
+        /*box-shadow: 0 6px 18px -5px #000000;*/
+    }
+    /* line 76, sass/custom/_switches.scss */
+    .input-switch input[type=checkbox]:focus~.switch {
+        border: 0px;
+        box-shadow: 0px;
+        /*border: 1px solid #278efc;*/
+        /*box-shadow: 0px 0px 6px 1px #278efc, inset 0px 0px 3px 0px #777;*/
+    }
+    /* line 87, sass/custom/_switches.scss */
+    .input-switch.input-switch-accessibility input[type=checkbox]~.switch:after {
+        content: '0';
+        color: #485563;
+        width: 45%;
+        position: absolute;
+        left: 23.5px;
+        top: 0;
+        bottom: 0;
+        margin: 2px;
+        line-height: 23px;
+        text-align: center;
+        font-weight: bold;
+    }
+    /* line 104, sass/custom/_switches.scss */
+    .input-switch.input-switch-accessibility input[type=checkbox]:checked~.switch:after {
+        content: '1';
+        color: #fff;
+        left: 0;
+    }
+    button {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        &.btn-slots {
+            border-color: transparent;
+            background: $time-slot-bg;
+            color: $time-slot-text;
+            width: 70px;
+            height: 34px;
+            @media (max-width: 414px) {
+                width: 75px;
+            }
+        }
+        &.btn-selected {
+            background: $brand-primary;
+            color: #fff;
+        }
+    }
+    .no-slots {
+        color: $brand-danger;
+    }
+    .chiclets {
+        clear: both;
+    }
+    .appt-field textarea {
+        border-radius: 0px;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+        width: 100%;
+        resize: none;
+        font-size: 18px;
+        color: $bam-dark-gray;
+        margin-top: 4px;
+        padding-bottom: 0px;
+        background-color: transparent;
+        border: 0px solid transparent;
+        border-bottom: 1px solid #aaa;
+    }
+    .appt-field-placeholder {
+        opacity: 0.6;
+        position: relative;
+    }
+    .appt-field {
+        border-bottom: 0px solid transparent;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        clear: both;
+         :focus {
+            border-bottom: 1px solid $brand-primary;
+            color: $brand-primary;
+        }
+    }
+    .appt-field :focus {
+        border-bottom: 1px solid $brand-primary;
+        color: $brand-primary;
+    }
+    .appt-field input {
+        padding-left: 0px;
+        height: 53px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        border-radius: 0px;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+        color: #7f7f7f;
+        padding-bottom: 0px;
+        background-color: transparent;
+        border: 0px solid transparent;
+        border-bottom: 1px solid #aaa;
+    }
+}

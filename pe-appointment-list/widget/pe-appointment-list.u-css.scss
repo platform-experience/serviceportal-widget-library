@@ -1,0 +1,206 @@
+$brand-primary:#4b8cfb !default;
+$icon-color:red;
+.bg-darkblue {
+    margin-bottom: 10px;
+}
+
+.upcoming-appointments {
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ghost-container {
+    margin: 0 auto;
+    background-color: transparent;
+    position: relative;
+}
+
+.no-slots {
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #FB4B4B;
+    text-align: center;
+}
+
+.appt-title {
+    font-weight: 300;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1;
+    color: $bam-darkblue;
+    @media (max-width: 375px) {}
+    @media (max-width: 320px) {
+        width: 285px;
+    }
+}
+
+.appt-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $bam-dark-gray;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    @media (max-width: 320px) {
+        width: 285px;
+    }
+}
+
+.btn.btn-primary {
+    margin: 0 auto !important;
+    @include border-radius(6px);
+    background-color: $bam-blue;
+    color: $bam-white;
+    border-color: transparent;
+    width: 325px;
+    height: 50px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    @media (max-width: 375px) {
+        margin-left: 0px;
+    }
+    @media (max-width: 320px) {
+        width: 285px;
+    }
+}
+
+.container-appts {
+    margin: 0;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.appts {
+    font-size: 14px;
+    color: $bam-blue;
+}
+
+.appt-container {
+    color: #676767;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.appt-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    min-height: 79px;
+    background-color: #fff;
+    padding: 0px;
+    border: solid 1px #dfdfdf;
+    margin-left: 0px;
+    font-size: 16px;
+}
+
+.appt-delete {
+    line-height: 72px;
+}
+
+.appt-site {
+    display: block;
+    font-weight: 500;
+}
+
+.padding-override {
+    padding: 0px;
+}
+
+.appt-when {
+    display: inline-block;
+    padding: 0 20px;
+    width: 15%;
+}
+
+.appt-where-location {
+    width: 35%;
+    text-align: left;
+    display: inline-block;
+}
+
+.appt-where-time {
+    width: 15%;
+    text-align: left;
+    display: inline-block;
+}
+
+.appt-short-description {
+    width: 35%;
+    text-align: left;
+    display: inline-block;
+    @media (max-width: 414px) {
+        display: none;
+    }
+}
+
+.appt-tools {
+    display: inline-block;
+}
+
+.appt-datetime {
+    display: block;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 45px;
+}
+
+.appt-short-description-font {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.appt-weekday {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 40px;
+}
+
+.appt-icon {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-right: 15px;
+    object-fit: contain;
+    height: 22px;
+    width: 22px;
+    stroke: $icon-color;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    width: 87px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #676767;
+    border-radius: 4px;
+    border: solid 2px #dfdfdf;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn-delete {
+    background-color: transparent;
+    width: 114px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: $brand-primary;
+    border-radius: 4px;
+    border: solid 2px $brand-primary;
+}

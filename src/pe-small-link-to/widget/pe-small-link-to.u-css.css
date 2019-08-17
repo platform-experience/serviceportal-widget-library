@@ -1,0 +1,112 @@
+$brand-default: #f2f2f2 !default;
+
+.sassvars {
+  --button-bg-color: $brand-default;
+  --button-min-height: 225px;
+  --button-border-radius: unset;
+  --title-color: $text-color;
+  --annotation-color: $text-color;
+  --image-height: 6rem;
+  --image-width: 6rem;
+  --image-margin: 20px;
+  --glyph-color: rgba(0,0,0,0.6);
+  
+  --bs-context-default: $brand-default;
+  --bs-context-primary: $brand-primary;
+  --bs-context-success: $brand-success;
+  --bs-context-warning: $brand-warning;
+  --bs-context-danger: $brand-danger;
+  --bs-context-info: $brand-info;
+}
+
+.panel{
+  border: unset !important;
+  background-color: transparent !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+}
+
+
+.smalllinkto {
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  
+  color: var(--title-color);
+  background-color: var(--button-bg-color);
+  min-height: var(--button-min-height);
+  border-radius: var(--button-border-radius);
+  
+  a {
+    display: content;
+  }
+  
+  .content-column {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .icon {
+      margin-bottom: 10px;
+      max-width: auto;
+      max-height: 70px;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      text-align: center;
+      img{
+        max-width: auto;
+        max-height: 70px;
+      }
+    }
+    
+    i{
+      font-size: 70px;
+      color: var(--glyph-color);
+    }
+    
+    h3 {
+      font-weight: bold;
+      font-size: 32px;
+      margin: 0 0 10px 0;
+      color: var(--title-color);
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      color: var(--annotation-color)
+    }
+    @media (max-width: 767px) {
+      i{
+        font-size: 64px;
+      }
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+}
+
+

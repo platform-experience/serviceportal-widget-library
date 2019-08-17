@@ -1,0 +1,38 @@
+.sassvars {
+  --greeting-color: $text-color;
+  --message-color: $text-color;
+  --greeting-font-size: 5em;
+}
+.panel{
+  margin-top: 22px;
+}
+.panel-transparent{
+  border: 0px solid transparent;
+  background-color: transparent;
+  box-shadow: none !important;
+  color: var(--greeting-color);
+  padding: 0 !important;
+  .panel-body{
+    padding: 0 !important;
+  }
+  @media screen and (max-width: 30em){
+    max-width: 100%;
+  }
+}
+.greeting{
+  font-size: var(--greeting-font-size);
+  line-height: 1.1em;
+  font-weight: 600;
+  letter-spacing: -1.14px;
+  margin-left: -5px;
+  @media screen and (max-width: 30em){
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-left: -2px;
+  }
+}
+.message{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--message-color);
+}

@@ -1,0 +1,38 @@
+.panel-body {
+  padding: 0px !important;
+  .show {
+    padding: 10px;
+  }
+  .text {
+    overflow: hidden;
+  }
+  .no-issues {
+    padding: 10px;
+  }
+  .each-issue {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    a {
+      display: flex;
+      align-items: center;
+      img {
+        width: 30px;
+        margin-right: 10px;
+      }
+    }
+    .summary {
+      font-size: 14px;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .desc {
+      font-size: 11px;
+      margin-bottom: 0px;
+      line-height: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 12px;
+    }
+  }
+}

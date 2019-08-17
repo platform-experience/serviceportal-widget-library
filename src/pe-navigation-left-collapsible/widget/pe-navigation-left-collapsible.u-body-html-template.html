@@ -1,0 +1,281 @@
+<div class='navsass hidden-xs secondary' ng-if='data.secondaryMenu'>
+  <div class='header'>
+    <ul ng-if="::(!user.logged_in && page.id != portal.login_page_dv && !data.hasLogin)" class="nav pull-right" role="presentation">
+      <li role="presentation"><a href ng-click="openLogin()">${Login}</a></li>
+    </ul>
+    <ul ng-if="::user.logged_in" class='nav pull-right' role="menubar">
+      
+      <li ng-if="::data.connect_support_queue_id">
+        <a href ng-click="dynamicOpenPopUp()" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'" name='${Live Chat}' title="${Live Chat}" role="menuitem" >
+          <i class='fa {{data.qsConfig.chatIcon}}'/>
+          <span>${Live Chat}</span>
+        </a>
+        <div ng-if="!data.isMobile" ng-show="showChat">
+          <sp-widget widget="::data.va_chat"></sp-widget>
+        </div>
+      </li>
+      <!-- chat, avatar, and logout -->
+      <li ng-if="showAvatar" class="hidden-xs dropdown" role="presentation">
+        <a href class="toggle-dropdown" data-toggle="dropdown" aria-expanded="false"
+           uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+           title="{{::data.profileBtnMsg}}" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true">
+          <span class="navbar-avatar" aria-hidden="true"><sn-avatar class="avatar-small-medium" primary="avatarProfile" /></span>
+          <span class="visible-lg-inline">{{::user.name}}</span>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}">
+          <li role="presentation"><a tabindex="-1" ng-href="?id=user_profile&sys_id={{::user.sys_id}}" role="menuitem">${Profile}</a></li>
+          <li ng-if="::!isViewNative" role="presentation"><a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem">${Logout}</a></li>
+        </ul>
+      </li>
+      <li ng-if="showXSAvatar" class="visible-xs-block" role="presentation"><a role="menuitem" ng-href="?id=user_profile&sys_id={{::user.sys_id}}">
+        <span class="navbar-avatar"><sn-avatar class="avatar-small-medium" primary="avatarProfile" /></span>{{::user.name}}</a>
+      </li>
+      <li ng-if="::!isViewNative" class="visible-xs-block" role="presentation">
+        <a role="menuitem" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'" name='Logout' title="Logout" href="{{::portal.logoutUrl}}">${Logout}</a>
+      </li>
+    </ul>
+    <ul class='nav pull-right' role='menubar'>
+      <li ng-repeat="item in data.secondaryMenu.data.menu.items" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsSecondaryNavTemplate'" role="presentation"></li>
+    </ul>
+  </div>
+</div>
+<div class='navsass hidden-xs primary'>
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header" ng-class="{'navbar-expanded': navExpanded}">
+      <a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"><span>{{::portal.title}}</span></a>
+      <a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" href="?id={{::portal.homepage_dv}}" aria-label="${Go to homepage}">
+        <img ng-if='(navExpanded)' ng-src="{{::portal.logo}}" title="{{::portal.title}}" role="presentation" alt="${Portal Logo}" />
+        <img ng-if='(!navExpanded) && portal.icon.length>0'ng-src="{{::portal.icon}}" title="{{::portal.title}}" role="presentation" alt="${Portal Logo}" />
+        <img ng-if='(!navExpanded) && (portal.icon.length==0)' ng-src="{{::portal.logo}}" title="{{::portal.title}}" role="presentation" alt="${Portal Logo}" />
+      </a>
+    </div>
+    <div class="header-loader">
+      <div class="sp-loading-indicator la-sm" ng-show="loadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class='navbar-pills' ng-class="{ 'navbar-pills-collapsed' : !navExpanded }">
+      <!-- Begin Login -->
+      <ul ng-if="::user.logged_in" class='nav navbar-nav nav-pills nav-stacked' role="menubar" ng-if='!data.secondaryMenu'>
+        <li ng-if="( navExpanded )" class="dropdown" role="presentation">
+          <a href class="avatarlink toggle-dropdown" data-toggle="dropdown" aria-expanded="false" title="{{::data.profileBtnMsg}}" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true">
+            <sn-avatar class="avatar-small-medium" primary="avatarProfile" />{{::user.name}}
+            <!--<span class="navbar-avatar" aria-hidden="true"></span><span class="visible-lg-inline"></span>-->
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}">
+            <li role="presentation"><a tabindex="-1" ng-href="?id=user_profile&sys_id={{::user.sys_id}}" role="menuitem">${Profile}</a></li>
+            <li ng-if="::!isViewNative" role="presentation"><a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem">${Logout}</a></li>
+          </ul>
+        </li>
+        <li ng-if="( !navExpanded )" role="presentation"><a role="menuitem" ng-href="?id=user_profile&sys_id={{::user.sys_id}}">
+          <span ng-class="{'navbar-avatar': navExpanded}"><sn-avatar class="avatar-small-medium" primary="avatarProfile" /></span></a>
+        </li>
+      </ul>
+      <!-- End Login -->      
+      <!-- Check if there are any menu items -->
+      <div class='nav-scroll' ng-if="::data.menu.data.menu.items.length > 0">
+        <ul class='nav navbar-nav nav-pills nav-stacked'>
+          <li ng-repeat="item in visibleItems" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" role="presentation"></li>
+          <!-- Wishlist menu -->
+          <li ng-if="data.menu.options.enable_wishlist && data.isLoggedIn && data.menu.data.showWishlist" ng-show="!accessibilityEnabled" class="dropdown" ng-class='{ active : checkActive(item.href) }' role="presentation">
+            <a role="menuitem" href="javascript:void(0)"
+               data-toggle="dropdown"
+               id="wishlist-menu"
+               title="${Your Wish List currently has} {{wishlistItemCount}} ${items}"
+               aria-label="${Wish List}"
+               ng-class="{'anchor-expanded': navExpanded}">
+              <i class='fa fa-list' />
+              <span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Wish List}'" aria-hidden="true"></span>
+              <span ng-if="wishlistItemCount > 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count">{{wishlistItemCount}}</span>
+            </a>
+            <div class="dropdown-menu wishlist-menu">
+              <sp-widget widget="data.menu.data.wishlistWidget"></sp-widget>
+            </div>
+          </li>
+          <li ng-if="data.menu.options.enable_wishlist && data.isLoggedIn && data.menu.data.showWishlist" class="dropdown" ng-class="{active : checkActive(item.href), 'visible-xs': !accessibilityEnabled}" role="presentation">
+            <a href="?id=sc_wishlist"
+               title="${Wish List}"
+               class="toggle-dropdown"
+               role="menuitem"
+               aria-label="${Your Wish List currently has} {{wishlistItemCount}} ${items}"
+               ng-class="{'anchor-expanded': navExpanded}">
+              <i class='fa fa-list' />
+              <span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Wish List}'" aria-hidden="true"></span>
+              <span ng-if="wishlistItemCount > 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count">{{wishlistItemCount}}</span>
+            </a>
+          </li>
+          <!-- Shopping cart stuff -->
+          <li ng-if="data.menu.options.enable_cart && data.isLoggedIn" ng-class="{ active : checkActive(item.href)}" class="dropdown" role="presentation">
+            <a href
+               data-toggle="dropdown"
+               id="cart-dropdown"
+               uib-tooltip-template="'item-added-tooltip-leftnav.html'"
+               tooltip-placement="bottom"
+               tooltip-trigger="'none'"
+               tooltip-is-open="$parent.itemAddedTooltipOpen"
+               title="${Your shopping cart currently has} {{cartItemCount}} ${items}"
+               aria-label="${Shopping cart}"
+               role="menuitem"
+               ng-class="{'anchor-expanded': navExpanded}">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Cart}'" aria-hidden="true"></span>
+              <span ng-if="cartItemCount > 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count">{{cartItemCount}}</span>
+            </a>
+            <div class="dropdown-menu cart-dropdown">
+              <sp-widget widget="data.menu.data.cartWidget"></sp-widget>
+            </div>
+          </li>
+          <li ng-if="data.menu.options.enable_cart && data.isLoggedIn" class="dropdown" ng-class="{ active : checkActive(item.href), 'visible-xs': !accessibilityEnabled}"  role="presentation">
+            <a ng-href="?id=sc_cart"
+               ng-click="collapse()"
+               title="${Cart}"
+               class="toggle-dropdown"
+               role="menuitem"
+               aria-label="${Your shopping cart currently has} {{cartItemCount}} ${items}">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Cart}'" aria-hidden="true"></span>
+              <span ng-if="cartItemCount > 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count">{{cartItemCount}}</span>
+            </a>
+          </li>
+          <li ng-if="data.isLoggedIn && data.guidedTours && data.guidedTours.collection.length > 0" ng-class="{ active : checkActive(item.href)}" class="dropdown" role="presentation">
+            <a href
+               data-toggle="dropdown"
+               id="tour-dropdown"
+               tooltip-placement="bottom"
+               tooltip-trigger="'none'"
+               title="${This page currently has {{data.guidedTours.collection.length}} tours}"
+               aria-label="{{data.guidedTours.label}}"
+               role="menuitem"
+               ng-class="{'anchor-expanded': navExpanded}" >
+              <i class="fa fa-map-signs" aria-hidden="true"></i>
+              <span class='linktext' ng-if='(navExpanded)' ng-bind-html="'${Tours}'" aria-hidden="true"></span>
+              <span class='badge-container' ng-if="(navExpanded && data.guidedTours.collection.length > 0)">
+                <span aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count">
+                  {{data.guidedTours.collection.length}}
+                </span>
+              </span>
+            </a>
+            <div ng-if="data.guidedTours.collection.length < 1" class="dropdown-menu empty-dropdown">
+              <div class="panel ng-scope">
+                <div class="panel-body" aria-hidden="false">
+                  <div class="empty-tour-content">
+                    <div class="h4">${You have no tours on this page}</div>
+                    <p>${Tours appear when your administrator creates them on specific pages}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul ng-if="data.guidedTours.collection.length > 0" class="dropdown-menu"
+                role="menu" aria-label="${Tours}">
+              <li role="presentation" ng-repeat="mi in data.guidedTours.collection"
+                  class="ng-scope dropdown-menu-line">
+                <a role="menuitem" href title="{{::mi.title}}" target="{{::mi.target}}" ng-click="mi.clicked()">
+                  {{::mi.title | characters:60}}
+                </a>
+              </li>
+            </ul>
+          </li>  
+          <li ng-if='(!data.secondaryMenu && data.connect_support_queue_id)' ng-class="{ active : checkActive(item.href)}" role="presentation">
+            <a href ng-click="openPopUp()"  uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+               name='${Live Chat}' title="${Live Chat}" role="menuitem" ng-class="{'anchor-expanded': navExpanded}" >
+              <i class='fa {{data.qsConfig.chatIcon}}'/>
+              <span class='linktext' ng-if='(navExpanded)'>${Live Chat}</span>
+            </a>
+          </li>
+          <li ng-if="(!data.secondaryMenu && !user.logged_in && page.id != portal.login_page_dv && !data.hasLogin)" role="presentation">
+            <a role="menuitem" href uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'" name='Login' title="Login" ng-click="openLogin()">
+            <i class="fa fa-sign-in" aria-hidden="true"/><span class='linktext' ng-if='(navExpanded)'>${Login}</span></a>
+          </li>
+          <li ng-if="(!data.secondaryMenu && user.logged_in && !navExpanded)" role="presentation">
+            <a role="menuitem" uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'" 
+               name='Logout' title="Logout" href="{{::portal.logoutUrl}}">
+            <i class="fa fa-sign-out" aria-hidden="true"/></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navhide-toggle" ng-click="toggle()" ng-class="{'navhide-toggle-expanded': navExpanded}">
+        <i class="fa" ng-class="{'fa-caret-square-o-left': navExpanded, 'fa-caret-square-o-right': !navExpanded}"></i>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class='navsass visible-xs primary'>
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"><span>{{::portal.title}}</span></a>
+      <a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" href ng-click="goMobile(portal.homepage_dv)" aria-label="${Go to homepage}">
+        <img ng-src="{{::portal.logo}}" title="{{::portal.title}}" role="presentation" alt="${Portal Logo}" />
+      </a>
+      <div class="header-loader">
+        <div class="sp-loading-indicator la-sm" ng-show="loadingIndicator">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sp-nav-bar">
+        <span class="sr-only">${Toggle navigation}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    
+    <div sp-navbar-toggle="" class="collapse navbar-collapse navbar-right scrollable-dropdown" id="sp-nav-bar">
+      <div class='mobile-nav-scroll'>
+        <ul class="nav navbar-nav" ng-if="::(!user.logged_in && page.id != portal.login_page_dv && !data.hasLogin)" role="menubar">
+          <li role="presentation"><a href ng-click="openLogin()">${Login}</a></li>
+        </ul>
+        <ul class='nav navbar-nav nav-pills nav-stacked' ng-if="::user.logged_in" role="menubar">
+          <li role="presentation">
+            <a class="avatarlink toggle-dropdown" role="menuitem" ng-href="?id=user_profile&sys_id={{::user.sys_id}}">
+              <sn-avatar class="avatar-small-medium" primary="avatarProfile" />{{::user.name}}</a>
+          </li>
+        </ul>
+        <ul class='nav navbar-nav nav-pills nav-stacked' ng-if="data.menu.data.menu.items.length > 0" role="menubar">
+          <li ng-repeat="item in visibleItems" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" role="presentation"></li>
+          <li ng-repeat="item in data.secondaryMenu.data.menu.items" ng-class='{ active : checkActive(item.href) }' ng-include="'visibleItemsLeftNavTemplate'" role="presentation"></li>
+          
+          <!-- Wishlist menu -->
+          <li ng-if="data.menu.options.enable_wishlist && data.isLoggedIn && data.menu.data.showWishlist" class="dropdown" ng-class="{active : checkActive(item.href), 'visible-xs': !accessibilityEnabled}" role="presentation">
+            <a href ng-click="menuItemClicked('?id=sc_wishlist',true)"
+               title="${Wish List}"
+               class="toggle-dropdown"
+               role="menuitem"
+               aria-label="${Your Wish List currently has} {{wishlistItemCount}} ${items}"
+               ng-class="{'anchor-expanded': navExpanded}">
+              <i class='fa fa-list' />
+              <span class='linktext' ng-bind-html="'${Wish List}'" aria-hidden="true"></span>
+              <span ng-if="wishlistItemCount > 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count">{{wishlistItemCount}}</span>
+            </a>
+          </li>
+          <!-- Shopping cart stuff -->
+          <li ng-if="data.menu.options.enable_cart && data.isLoggedIn" class="dropdown" ng-class="{ active : checkActive(item.href), 'visible-xs': !accessibilityEnabled}"  role="presentation">
+            <a href ng-click="menuItemClicked('?id=sc_cart',true)"
+               title="${Cart}"
+               class="toggle-dropdown"
+               role="menuitem"
+               aria-label="${Your shopping cart currently has} {{cartItemCount}} ${items}">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span class='linktext' ng-bind-html="'${Cart}'" aria-hidden="true"></span>
+              <span ng-if="cartItemCount > 0" aria-hidden="true" class="label label-as-badge label-primary sp-navbar-badge-count">{{cartItemCount}}</span>
+            </a>
+          </li>
+          <!--No Tours as they are not visible on Mobile Devices-->
+          <li ng-if='!data.secondaryMenu && data.connect_support_queue_id' ng-class="{ active : checkActive(item.href)}" role="presentation">
+            <a href ng-click="openPopUp()"  uib-tooltip-template="'item-added-tooltip-leftnav.html'" tooltip-placement="bottom" tooltip-trigger="'none'"
+               name='${Live Chat}' title="${Live Chat}" role="menuitem" ng-class="{'anchor-expanded': navExpanded}" >
+              <i class='fa fa-commenting'/>
+              <span class='linktext'>${Live Chat}</span>
+            </a>
+          </li>
+          <li ng-if="data.isLoggedIn" style='margin-bottom:90px;' role="presentation"><a role="menuitem" href ng-click="menuItemClicked(portal.logoutUrl,true)">
+            <i class="fa fa-sign-out" aria-hidden="true"/><span class='linktext'>${Logout}</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

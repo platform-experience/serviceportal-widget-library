@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-04-03 15:50:30">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Enhanced List</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>c374b0544fefe70005be4d6e0210c743</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-04-03 15:50:29</sys_created_on>
+<sys_id>795185964f24f3808272ece24210c7a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-04-03 15:50:29</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_4ffb3d924f252b0005be4d6e0210c726</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function EnhancedList($scope,$location) {
+  /* widget controller */
+  var c = this;
+
+	//Let's simplify the dataset in order to minimize the Angular coding in the HTML
+	c.table = c.data.instance_table;
+	
+	//Some initilization
+	c.$onInit = function(){
+		c.currentPage = c.selectedItem = 1;
+		c.itemsPerPage = c.table.viewby;
+	};
+	
+	//What to do if the View All in the panel header is clicked
+	$scope.headerMenu = function(){
+			$location.url('?id='+ c.table.list_page + '&amp;t=' + c.table.name);
+	};
+	
+	//Return the proper date/time format
+	$scope.getFormat = function(val,type){
+		var d = moment(val);
+		switch(type){
+			case '1':
+				return d.format('MM/DD/YYYY');
+			case '2':
+				return d.format('hh:mm:ss');
+			case '3':
+				return d.format('MM/DD/YYYY hh:mm:ss');
+			default:
+				return val;
+		}
+	};
+	//What to do if an item's submenu choice is clicked
+	$scope.itemMenu = function(item,choice,cat_item){
+		if(choice=='view'){
+			$scope.goItem(item);
+		}
+		if(choice=='sc'){
+			if($scope.options.sc_item_id){
+				cat_item = cat_item + '&amp;item_sysid=' + item;
+			}
+			$location.url('?id=sc_cat_item&amp;sys_id=' + cat_item);
+		}
+	};
+	
+	//What to do if the item is clicked
+	$scope.goItem = function(item){
+		var location = '?id='+ c.table.detail_page;
+		//Add the item sys_id
+		location += '&amp;sys_id=' + item.sys_id.value;
+		//Add the table
+		location += '&amp;t=' + c.table.name;
+		//Add the view
+		location += '&amp;v=' + c.table.detail_view;
+		$location.url( location );
+	};
+	
+	//Function to determine the width of the widget and what to do about it
+	$scope.ifWidth = function(size){
+		var rtn = false;
+		var el = angular.element(document.getElementById('x' + $scope.widget.rectangle_id));
+		var width = parseInt(el[0].clientWidth);
+		switch(size){
+			case 'xs'	:
+				rtn = (width &lt;= 420);
+				break;
+			case 'sm' :
+				rtn = ((width &gt; 420) &amp;&amp; (width &lt;= 768));
+				break;
+			case 'md' :
+				rtn = ((width &gt; 768) &amp;&amp; (width &lt;= 1024));
+				break;
+			case 'lg' :
+				rtn = (width &gt; 1024);
+				break;				
+			default: 
+				rtn = false;
+		}
+	
+		return rtn;
+	};
+	
+	//Function to set the currently being view pagination page
+	$scope.setPage = function() {
+		c.currentPage = c.selectedItem;
+	};
+	
+	//Function to control the page being viewed when the left/right pagination arrows are clicked
+	$scope.setPageNext = function(inc) {
+		c.currentPage = c.currentPage + inc;
+		if((c.currentPage&lt;1) || (c.currentPage&gt;c.table.pages.length)){
+			c.currentPage = 1;
+		}
+		c.selectedItem = c.currentPage;
+	};
+	
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$heading-color: #717171 !default;
+$table-background: #ffffff !default;
+$title-color: $text-color !default;
+$wide-header-text-color: #4a4a4a !default;
+$wide-header-text-size: 16px !default;
+$details-color: $text-muted !default;
+$table-bg-hover: rgba(0,0,0,0.05);
+
+.d-hide{
+  display: none;
+}
+.d-show{
+  display: block;
+  overflow-x: visible;
+}
+.panel-none {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: unset !important;
+}
+.panel-none &amp;gt; .panel-heading {
+  color: $heading-color;
+  background-color: transparent;
+  border-color: transparent;
+}
+.panel-none &amp;gt; .panel-heading  + .panel-collapse &amp;gt; .panel-body {
+  border-top-color: transparent;
+}
+.panel-none &amp;gt; .panel-heading .badge {
+  color: $btn-default-bg;
+  background-color: transparent;
+}
+.panel-footer{
+  min-height: 39px;
+}
+.pagenav-footer{
+  min-height: 43px;
+}
+.panel-none &amp;gt; .panel-footer  + .panel-collapse &amp;gt; .panel-body {
+  border-bottom-color: transparent;
+}
+.panel-none &amp;gt; .panel-footer{
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  background-color: transparent;
+}
+.panel-none &amp;gt; .panel-heading {
+  word-wrap: break-word;
+}
+
+.panel-nopadding{
+  padding: 0;
+}
+.panel-menu{
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: 0;
+  display: inline-block;
+}
+.btn-menu{
+  border: unset !important;
+  background: transparent !important;
+}
+.btn-menu:focus{
+  outline: unset !important;
+}
+.btn-menu:active {
+  box-shadow: none;
+}
+.dropdown-menu-right{
+  border-radius: 4px;
+  right: 0px;
+  top: 20px;
+  color: $link-color;
+  line-height: 28px;
+  padding: 10px 0px;
+  li{
+    padding-left: 15px;
+  }
+  li:hover{
+    background-color: $table-bg-hover;
+  }
+}
+
+
+.data-item{
+  height: 5.5rem;
+  display: flex;
+  background-color: $table-background !important;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  .data-img{
+    display: inline-flex;
+    float: left;
+    margin-right: 6px;
+    margin-top: 2px;
+    img{
+      max-width: 40px;
+    	max-height: 40px;
+    }
+  }
+  .data-title{
+    width: 100%;
+    display: initial;
+    color: $title-color;
+    margin-bottom: 8px;
+    max-width: calc(100% - 35px);
+    a{
+      color: $link-color;
+    }
+  }
+  .data-details{
+    width: 100%;
+    color: $details-color !important;
+  }
+  .data-menu{
+    color: $title-color !important;
+    cursor: pointer;
+    float: right;
+  }
+}
+.data-item-sm{
+  height: 6.5rem;
+  padding: 0 5px;
+}
+.data-header-wide{
+  height: 4.5rem;
+  display: table-row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 2px #c2c2c2 outset;
+  text-transform: capitalize;
+  color: $wide-header-text-color;
+  font-size: $wide-header-text-size;
+}
+.data-header-wide:hover{
+  background-color: transparent !important;
+}
+.data-item-wide{
+  display: table-row;
+  border-bottom: 1px #c2c2c2 solid;  
+  .data-title{
+    margin: 0;
+    a{
+      position: relative;
+    }
+  }
+  .data-img{
+    float: unset;
+    margin: 0 auto;
+  }
+  .data-menu-wide{
+    float: unset;
+    text-align: center;
+  }
+}
+
+.data-item-noborder{
+  border: unset;
+}
+
+.table {
+  margin: unset !important;
+  background-color: $table-background !important;
+}
+.table &amp;gt; thead &amp;gt; tr &amp;gt; th, .table &amp;gt; tbody &amp;gt; tr &amp;gt; th, .table &amp;gt; tbody &amp;gt; tr &amp;gt; td{
+  border: unset !important;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+.data-item, .table-hover &amp;gt; tbody &amp;gt; tr{
+  box-shadow: unset;
+}
+.data-item:hover, .table-hover &amp;gt; tbody &amp;gt; tr:hover {
+  background-color: unset;
+  -webkit-box-shadow: 0 0px 28px rgba(0,0,0,0), 0 0px 10px rgba(0,0,0,0.22);
+  -moz-box-shadow: 0 0px 28px rgba(0,0,0,0), 0 0px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 0px 28px rgba(0,0,0,0), 0 0px 10px rgba(0,0,0,0.22);
+}
+
+.data-tiles{
+  border: 1px solid #c2c2c2;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+.pagenav-padding{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.pagenav-select{
+  position: relative;
+  top: -2px;
+  select{
+    text-indent: 5px;
+    width: 45px;
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;A more enhanced and feature rich version of the Simple List widget.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;enhanced-list&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope,el,attrs,ctrl){
+}]]&gt;&lt;/link&gt;&lt;name&gt;Enhanced List&lt;/name&gt;&lt;option_schema&gt;[{"displayValue":"Table","hint":"Name of table to retrieve data from - e.g. task","name":"table","section":"Data","label":"Table","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"Fields to use and order controls column presentation order","name":"fields","section":"Data","default_value":"number,short_description,assigned_to","label":"Fields - Recommended maximum of 4 fields, comma delimited, in order of presentation","type":"string"},{"hint":"User defined field labels in order of field list","name":"field_labels","section":"Data","default_value":"","label":"Field Label Override - comma delimited and order must match Field order","type":"string"},{"hint":"Field name in table for storing an image on the record","name":"image_field","section":"Data","default_value":"","label":"Image Field","type":"string"},{"hint":"Limit query results to current user. Expects field named - assigned_to","name":"limit_to_user","section":"Data","default_value":"true","label":"Limit to User - Limit query results to current user. Expects field named - assigned_to","type":"boolean"},{"hint":"Additional query parameters to help reduce data set","name":"encoded_query","section":"Data","label":"Additional Data Filter - using Encoded Query format, e.g.  active=true^start_date=today","type":"string"},{"hint":"Service Portal target page to view data in a larger list","name":"list_page","section":"Data","label":"List Page Target - Target Page for View All panel header link","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"hint":"Service Portal target page to view or edit an individual item","name":"detail_page","section":"Data","label":"Detail Page Target - Detail page target for item menu 'View Details' link","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"hint":"View to use when target detail page is 'form', leave empty to use 'default' view","name":"view","section":"Data","default_value":"default","label":"Detail Page View - leave empty to use 'default' view","type":"reference","value":"sys_ui_view","ed":{"reference":"sys_ui_view"}},{"hint":"Show the Panel's Header Div","name":"show_panel_header","section":"Behavior","default_value":"true","label":"Show Widget's Panel Header","type":"boolean"},{"hint":"Text to display in the Panel's Header. Depends on Show Panel Header being True.","name":"panel_header_text","section":"Behavior","default_value":"","label":"User defined Panel Header Text","type":"string"},{"hint":"Show the Panel's Footer Div","name":"show_panel_footer","section":"Behavior","default_value":"false","label":"Show Panel Footer","type":"boolean"},{"hint":"Additional item menu links to Service Catalog","name":"sc_cat_item","section":"Presentation","default_value":"","label":"Sys ID of Service Catalog Menu Items - comma delimited, links added to item's action menu","type":"string"},{"hint":"Pass the Item's Sys ID as a parameter to the Catalog Item selected","name":"sc_item_id","section":"Presentation","default_value":"true","label":"Pass Item's Sys ID to Service Catalog Item","type":"boolean"},{"hint":"Easily make a panel more meaningful to a particular context by adding any of the contextual state classes.","name":"context","section":"Presentation","default_value":"none","label":"Bootstrap Panel's Contextual alternatives - changes the header and border to Bootstrap defined context colors","type":"choice","choices":[{"label":"default","value":"default"},{"label":"primary","value":"primary"},{"label":"success","value":"success"},{"label":"info","value":"info"},{"label":"warning","value":"warning"},{"label":"danger","value":"danger"}]},{"hint":"Paginate the list","name":"list_pagination","section":"Behavior","default_value":"0","label":"List Pagination","type":"choice","choices":[{"label":"5","value":"5"},{"label":"10","value":"10"},{"label":"15","value":"15"},{"label":"25","value":"25"},{"label":"50","value":"50"},{"label":"100","value":"100"}]},{"name":"maxrecords","section":"Behavior","default_value":"500","label":"MAX Record Count","type":"string"},{"name":"order_by","section":"Data","default_value":"sys_created_on","label":"Order By Field","type":"string"},{"name":"order_by_direction","section":"Data","default_value":"false","label":"Use Order By in Descending Order","type":"boolean","choices":""},{"name":"show_date_time","section":"Presentation","default_value":"4","label":"Show all Date/Time fields as 1 - 'MM/DD/YYYY', 2- 'hh:mm:ss' , 3- 'MM/DD/YYYY hh:mm:ss', or 4 - ''","type":"choice","choices":[{"label":"1","value":"1"},{"label":"2","value":"2"},{"label":"3","value":"3"},{"label":"4","value":"4"}]}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/*
+		Widget: Enhanced List
+		Version/Date: v1.0 - Nov 2018
+		By: Solution Innovation - Factory
+		Purpose: Provide a flexible, enhanced feature set, and a more configurable version
+						 of the Service Portal Out of the Box Simple List widget.
+		
+	*/
+	
+	// Get current user for quick filtering of data to user only
+	var currentUser = gs.getUser(); 
+	
+	//Get Option (Instance) Schema Configuration values
+	options.list_pagination = parseInt(options.list_pagination);
+	options.show_panel_header = (options.show_panel_header=='true');
+	options.show_panel_footer = (options.show_panel_footer=='true');
+	options.limit_to_user = (options.limit_to_user=='true');
+	options.order_by_direction = (options.order_by_direction=='true');
+	options.sc_item_id = (options.sc_item_id=='true');
+	
+	
+
+	/* 'q' - URL parameter for adding a filter to the dataset dynamically */
+	options.encoded_query = options.encoded_query || $sp.getParameter('q');
+
+	/* Data Variables */
+	data.missingConfig = false;
+
+	data.portal_record = $sp.getPortalRecord();
+	
+	data.instance_table = {
+		count: 0,
+		dataSet : [],
+		dateformat: options.show_date_time,
+		detail_page: undefined,
+		detail_view: undefined,
+		direction: options.order_by_direction,
+		fieldLabels: [],
+		fieldSplit: [],
+		fields : options.fields || $sp.getParameter('f'),
+		image: options.image_field,
+		isValid : false,
+		itemMenu: [],
+		label : undefined,
+		list_page: undefined,
+		name : $sp.getParameter('t'), // - not sure we want to use the URL Param with this ??? 
+		order_by : options.order_by,
+		pages: [],
+		showActions: false,
+		sys_id: options.table,
+		viewby: options.list_pagination
+	};
+
+	try{
+		/* Get the Panel's Header Text*/
+		var grTableMeta = new GlideRecordSecure('sys_db_object');
+		if(data.instance_table.name){
+			grTableMeta.addQuery('name',data.instance_table.name);	
+		}else{
+			grTableMeta.addQuery('sys_id',data.instance_table.sys_id);	
+		}
+		
+		grTableMeta.query();
+		
+		if(grTableMeta.next()){
+			data.instance_table.sys_id = grTableMeta.getUniqueValue();
+			data.instance_table.name = grTableMeta.getDisplayValue('name');
+			data.instance_table.label = grTableMeta.getDisplayValue('label');
+		}else{
+			data.missingConfig = true;
+			return;
+		}
+
+		options.panel_header_text = options.panel_header_text || data.instance_table.label;
+
+		// If provided, get the sys_id of the List Page from the Option (Instance) Schema
+		if (options.list_page) {
+			var list_page = GlideRecordSecure('sp_page');
+			if (list_page.get(options.list_page))
+				data.instance_table.list_page = list_page.getDisplayValue('id');
+		}
+
+		// If provided, get the sys_id of the Detail Page from the Option (Instance) Schema
+		if (options.detail_page) {
+			var detail_page = GlideRecordSecure('sp_page');
+			if (detail_page.get(options.detail_page)){
+				data.instance_table.detail_page = detail_page.getDisplayValue('id');
+				data.instance_table.showActions = true;
+			}
+		}
+
+		// If provided, get the name of the View from the Option (Instance) Schema
+		if (options.view) {
+			var view_name = GlideRecordSecure('sys_ui_view');
+			if (view_name.get(options.view))
+				data.instance_table.detail_view = view_name.getDisplayValue('name');
+		}
+		
+		/* Table to use */
+		//grValid - Used for table and field validation only
+		var grValid = new GlideRecord(data.instance_table.name);
+		var grTable = new GlideRecordSecure(data.instance_table.name); // does ACL checking for us
+
+		//Validate if table exists
+		data.instance_table.isValid = grValid.isValid();
+		if(!data.instance_table.isValid){
+			throw('Missing Table Configuration');
+		}
+
+	
+
+		// If select, limit the results to the current user based on the Option (Instance) Schema
+		if(options.limit_to_user){
+			grTable.addQuery('assigned_to',currentUser.getID());
+		}
+
+		// If provided, append the additional filter criteria to the GlideRecord from the Option (Instance) Schema
+		if(options.encoded_query){
+			grTable.addEncodedQuery(options.encoded_query);
+		}
+
+		// Lets figure out the fields we are going to need
+		var fields = data.instance_table.fields || "";
+		fields = data.instance_table.fields.split(',');
+
+		// Lets figure out how we are going to label the fields
+		var labels = options.field_labels;
+		if(labels.length&gt;0){
+			labels = options.field_labels.split(',');
+		}else{
+			labels = [null];
+		}
+
+		// If provided, lets figure out the image situation and push it as the first field in the data array
+		if(data.instance_table.image){
+			fields.splice(0,0,data.instance_table.image);
+			labels.splice(0,0,null);
+		}else{
+			fields.splice(0,0,null);
+			labels.splice(0,0,null);
+		}
+		
+		// Lets fix all the labeling
+		labels.forEach(function(el,idx){ 
+			if(el != null &amp;&amp; el.length &gt; 0){
+				labels[idx] = el; 
+			}else if(el == null){
+				labels[idx] = null; 
+			}
+		});
+
+		// Stuff the fields and labels into the Instance Table data variable
+		data.instance_table.fieldLabels = labels;
+		data.instance_table.fieldSplit = fields;
+
+		// Get the MAX Record count - to minimize and mitigate LARGE data pulls
+		data.maxCount = options.maxrecords;
+		grTable.setLimit(data.maxCount);
+		
+		// If provided, set the orderBy parameter of the GlideRecord from the Option (Instance) Schema
+		if(grValid.isValidField(data.instance_table.order_by)){
+			if(options.order_by_direction){
+				grTable.orderByDesc(data.instance_table.order_by);	
+			}else{
+				grTable.orderBy(data.instance_table.order_by);
+			}
+		}
+		
+		// LETS GO!
+		grTable.query();
+		while(grTable.next()){
+			//Lets build our data set
+			var record = {};
+			record.sys_id = { displayValue: grTable.getUniqueValue(), value: grTable.getUniqueValue() };
+
+			//Only need the fields based on the Option (Instance) Schema
+			for(var x=0;x&lt;fields.length;x++){
+				if(fields[x] &amp;&amp; fields[x] !== null){
+					var f = getField(grTable,fields[x]);
+					if(f.displayValue != ''){
+						if(labels[x] &amp;&amp; labels[x]!==null){
+							f.label = labels[x];
+						}
+						record[fields[x]] = f;
+					}else{
+						record[fields[x]] = { displayValue: undefined, value: undefined, type: undefined, label: fields[x]};	
+					}	
+				}
+			}
+			data.instance_table.dataSet.push(record);
+		}
+
+		data.instance_table.count = grTable.getRowCount();
+		
+		//Show message if the MAX record count was reached
+		if(data.instance_table.count &gt;= data.maxCount){
+			gs.addInfoMessage('MAX record count reached for Widget - '+ options.panel_header_text +'. MAX Records displayed: ' + data.maxCount);
+		}
+
+		//Lets figure out the pagination situation
+		if(data.instance_table.viewby&gt;0 &amp;&amp; data.instance_table.count&gt;0){
+			var pages = parseInt(data.instance_table.count / options.list_pagination);
+			var last_page = data.instance_table.count % options.list_pagination;
+			data.pages_value = pages;
+			if(pages &lt;= 0){
+				options.list_pagination = 0;
+			}else{
+				options.show_panel_footer = true;
+				for(var m=0; m &lt; pages; m++){
+					data.instance_table.pages.push( m+1 );
+				}
+				if(last_page &gt; 0){
+					data.instance_table.pages.push( pages+1 );
+				}
+			}
+		}else{
+			data.instance_table.viewby = data.instance_table.count;
+		}
+
+		//Lets append the catalog items to the individual item's submenu
+		if(options.sc_cat_item){
+			var sc_items = new GlideRecordSecure('sc_cat_item');
+			sc_items.addActiveQuery();
+			sc_items.addEncodedQuery('sys_idIN'+options.sc_cat_item);
+			sc_items.query();
+			data.instance_table.itemMenu = [];
+			while(sc_items.next()){
+				data.instance_table.itemMenu.push({
+					title : sc_items.getDisplayValue('name'),
+					sys_id : sc_items.getUniqueValue()
+				});
+				data.instance_table.showActions = true;
+			}
+		}
+
+	}catch(e){
+		/*
+			If for any reason something above errors, then lets at least show a message in the Panel's Body that there 
+			is a problem.  And, post a message to the browser with what the problem is.
+		*/
+		data.missingConfig = true;
+		data.err_msg = e;
+		gs.addErrorMessage('Portal: ' + data.portal_record.getDisplayValue('url_suffix') + " Message: " + e );
+		return;
+	}
+
+	/* Function to Get our Field info */
+	function getField(gr, name) {
+		var f = {};
+		f.field = name;
+		f.displayValue = gr.getDisplayValue(name);
+		f.value = gr.getValue(name);
+		
+		var ge = gr.getElement(name);
+		if (ge == null)
+			return f;
+
+		f.type = ge.getED().getInternalType();
+		f.label = ge.getLabel();
+		return f;
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;chris.stoll&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-11-05 16:59:14&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;4ffb3d924f252b0005be4d6e0210c726&lt;/sys_id&gt;&lt;sys_mod_count&gt;834&lt;/sys_mod_count&gt;&lt;sys_name&gt;Enhanced List&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Widgets" source="com.snc.spenh.widgets"&gt;608a82c24f1d6f008272ece24210c773&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4ffb3d924f252b0005be4d6e0210c726&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;chris.stoll&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-02-13 16:50:44&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class='panel panel-warning' ng-if='::c.data.missingConfig'&gt;
+  &lt;div class='panel-heading'&gt;
+    Missing Configuration
+  &lt;/div&gt;
+  &lt;div class='panel-body bg-warning'&gt;
+    &lt;div ng-if='::!c.table.isValid'&gt;
+      Please configure a table in the Instance Options (Ctrl+RightClick)
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- your widget template --&gt;
+&lt;/div&gt;
+&lt;div class='panel panel-{{options.context}}' ng-if='::c.data.missingConfig==false'&gt;
+  &lt;div class='panel-heading' ng-if='::options.show_panel_header'&gt;
+    &lt;div class='panel-title'&gt;
+      {{options.panel_header_text}}
+      &lt;div class="panel-menu" ng-if='c.table.list_page'&gt;
+        &lt;span ng-click='headerMenu()'&gt;View All&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='panel-body bg-{{options.context}}' ng-if="c.table.dataSet.length &lt;= 0" &gt;
+    No Data Available
+  &lt;/div&gt;
+  &lt;div class='panel-body panel-nopadding' ng-if="c.table.dataSet.length &gt; 0" &gt;
+    &lt;!-- XS - 420px width or less --&gt;    
+    &lt;div class='d-hide' ng-class="{'d-show' : ifWidth('xs')}"&gt;
+      &lt;div class='data-item data-item-sm' ng-repeat="item in c.table.dataSet.slice(((c.currentPage-1)*c.itemsPerPage), ((c.currentPage)*c.itemsPerPage)) track by item.sys_id.value"&gt;
+        &lt;div class='col-xs-11 col-sm-11'&gt;
+          &lt;div class='data-img' ng-if='c.table.image &amp;&amp; item[c.table.image].displayValue'&gt;
+            &lt;img src='{{item[c.table.image].displayValue}}' ng-if='!options.list_page'/&gt;
+            &lt;a href ng-click='goItem(item)' style='cursor:pointer;' ng-if='options.list_page'&gt;
+              &lt;img src='{{item[c.table.image].displayValue}}'/&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class="data-title"&gt;
+            &lt;div&gt;
+              &lt;a href ng-click='goItem(item)' style='cursor:pointer;' ng-if='options.list_page'&gt;
+                {{item[c.table.fieldSplit[1]].displayValue}}
+              &lt;/a&gt;  
+              &lt;span ng-if='!options.list_page'&gt;
+                {{item[c.table.fieldSplit[1]].displayValue}}
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class='data-details'&gt;
+              &lt;span ng-repeat="field in c.table.fieldSplit track by $index" ng-if='$index&gt;1 &amp;&amp; field!=c.table.image'&gt;
+                &lt;span ng-switch="item[field].type" title="{{::item[field].label}}"&gt;
+                  &lt;span ng-switch-when="glide_date_time"&gt;
+                    &lt;span ng-if="c.table.dateformat==='4'" title="{{::item[field].label}}"&gt;
+                      &lt;sn-time-ago timestamp="::item[field].value" /&gt;
+                    &lt;/span&gt;
+										&lt;span ng-if="c.table.dateformat!=='4'"&gt;{{::getFormat(item[field].value,c.table.dateformat)}}&lt;/span&gt;
+                  &lt;/span&gt;
+                  
+                  &lt;span ng-switch-when="glide_date"&gt;
+                    &lt;span ng-if='c.table.dateformat==4' title="{{::item[field].label}}"&gt;
+                      &lt;sn-time-ago timestamp="::item[field].value" /&gt;
+                    &lt;/span&gt;
+                    &lt;span ng-if='c.table.dateformat!=4'&gt;{{::getFormat(item[field].value,c.table.dateformat)}}&lt;/span&gt;
+                  &lt;/span&gt;
+                  
+                  &lt;span ng-switch-default=""&gt;{{::item[field].displayValue}}&lt;/span&gt;
+                &lt;/span&gt;
+                &lt;span ng-if='!$last'&gt;&amp;nbsp;&amp;nbsp;&amp;bull;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='col-xs-1 col-sm-1' ng-if='c.table.showActions'&gt;
+          &lt;div class="data-menu btn-group"&gt;
+            &lt;button class="btn btn-menu toggle-dropdown" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true"&gt;&lt;i class="fa fa-ellipsis-h" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;ul class="dropdown-menu dropdown-menu-right"&gt;
+              &lt;li ng-click='itemMenu(item,"view")'  ng-if='c.table.detail_page'&gt;View this Item&lt;/li&gt;
+              &lt;li ng-if='options.sc_cat_item' ng-repeat='menuItem in c.table.itemMenu' ng-click='itemMenu(item.sys_id.value,"sc",menuItem.sys_id)'&gt;{{menuItem.title}}&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;  
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+    &lt;!-- 421px width or greater --&gt;    
+    &lt;div class='table-responsive d-hide' ng-class="{'d-show' : !ifWidth('xs')}"&gt;
+      &lt;table class='table table-hover'&gt;
+        &lt;thead&gt;
+          &lt;tr class='data-header-wide'&gt;
+            &lt;th class='col-xs-1' ng-if='options.image_field'&gt;
+              &amp;nbsp;
+            &lt;/th&gt;
+            &lt;th&gt;
+              {{c.table.dataSet[0][c.table.fieldSplit[1]].label}}
+            &lt;/th&gt;
+            &lt;th ng-repeat='field in c.table.fieldSplit track by $index' ng-if='$index &gt; 1'&gt;
+              {{c.table.dataSet[0][field].label}}
+            &lt;/th&gt;
+            &lt;th style='width:30px;text-align:center;' ng-if='c.table.showActions'&gt;
+              Actions
+            &lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr class='data-item data-item-wide' ng-class="{ 'data-item-noborder' : $last }" ng-repeat="item in c.table.dataSet.slice(((c.currentPage-1)*c.itemsPerPage), ((c.currentPage)*c.itemsPerPage)) track by item.sys_id.value"&gt;
+            &lt;td style='text-align:center' ng-if='options.image_field'&gt;
+              &lt;span class='data-img' ng-if='c.table.image &amp;&amp; item[c.table.image].displayValue'&gt;
+                &lt;img src='{{item[c.table.image].displayValue}}' ng-if='!options.detail_page'/&gt;
+                &lt;a href ng-click='goItem(item)' style='cursor:pointer;' ng-if='options.detail_page'&gt;
+                  &lt;img src='{{item[c.table.image].displayValue}}'/&gt;
+                &lt;/a&gt;
+              &lt;/span&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;span class="data-title"&gt;
+                &lt;a href ng-click='goItem(item)' style='cursor:pointer;' ng-if='options.detail_page'&gt;
+                  {{item[c.table.fieldSplit[1]].displayValue}}
+                &lt;/a&gt;
+                &lt;span ng-if='!options.detail_page'&gt;
+                  {{item[c.table.fieldSplit[1]].displayValue}}
+                &lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/td&gt;
+            &lt;td ng-repeat='field in c.table.fieldSplit track by $index' ng-if='$index &gt; 1'&gt;
+              &lt;span class='data-details'&gt;
+                &lt;span ng-switch="item[field].type" title="{{::item[field].label}}"&gt;
+                  &lt;span ng-switch-when="glide_date_time"&gt;
+                    &lt;span ng-if="c.table.dateformat==='4'" title="{{::item[field].label}}"&gt;
+                      &lt;sn-time-ago timestamp="::item[field].value" /&gt;
+                    &lt;/span&gt;
+										&lt;span ng-if="c.table.dateformat!=='4'"&gt;{{::getFormat(item[field].value,c.table.dateformat)}}&lt;/span&gt;
+                  &lt;/span&gt;
+                  
+                  &lt;span ng-switch-when="glide_date"&gt;
+                    &lt;span ng-if="c.table.dateformat==='4'" title="{{::item[field].label}}"&gt;
+                      &lt;sn-time-ago timestamp="::item[field].value" /&gt;
+                    &lt;/span&gt;
+                    &lt;span ng-if="c.table.dateformat!=='4'"&gt;{{::getFormat(item[field].value,c.table.dateformat)}}&lt;/span&gt;
+                  &lt;/span&gt;
+                  
+                  &lt;span ng-switch-default=""&gt;{{::item[field].displayValue}}&lt;/span&gt;
+                &lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/td&gt;
+            &lt;td class="data-menu data-menu-wide" ng-if='c.table.showActions'&gt;
+              &lt;div class="btn-group"&gt;
+                &lt;button class="btn btn-menu toggle-dropdown" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true"&gt;&lt;i class="fa fa-ellipsis-h" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+                &lt;ul class="dropdown-menu dropdown-menu-right"&gt;
+                  &lt;li ng-click='itemMenu(item,"view")' ng-if='options.detail_page'&gt;View this Item&lt;/li&gt;
+                  &lt;li ng-if='options.sc_cat_item' ng-repeat='menuItem in c.table.itemMenu' ng-click='itemMenu(item.sys_id.value,"sc",menuItem.sys_id)'&gt;{{menuItem.title}}&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='panel-footer' ng-class="{ 'pagenav-footer' : (options.list_pagination != 0) }" ng-if='::options.show_panel_footer'&gt;
+    &lt;div class='pull-right' ng-if='(options.list_pagination != 0)'&gt;
+      &lt;div ng-click='setPageNext(-1)' class='pagenav-padding pull-left'&gt;
+        &lt;i class="fa fa-step-backward" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div class='pagenav-padding pagenav-select pull-left'&gt;
+        &lt;select ng-change="setPage()" ng-model='c.selectedItem' ng-options="page for page in c.table.pages track by page"&gt;&lt;/select&gt;
+      &lt;/div&gt;
+      &lt;div ng-click='setPageNext(1)' class='pagenav-padding pull-right'&gt;
+        &lt;i class="fa fa-step-forward" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1257877827</payload_hash>
+<remote_update_set display_value="Enhanced List">795185964f24f3808272ece24210c7a7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>chris.stoll</sys_created_by>
+<sys_created_on>2019-04-03 15:50:29</sys_created_on>
+<sys_id>bd5185964f24f3808272ece24210c7a7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>168e7c48d980000001</sys_recorded_at>
+<sys_updated_by>chris.stoll</sys_updated_by>
+<sys_updated_on>2019-04-03 15:50:29</sys_updated_on>
+<table/>
+<target_name>Enhanced List</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>aa3970629967ef00ac99a581a30a4038</update_guid>
+<update_guid_history>aa3970629967ef00ac99a581a30a4038:1257877827,e013e06edce3ef001bae4960a8a69367:882427675,04e2606e22e3ef0025e67c3e894fc9fe:-1962960497,3cd2ec2ef2e3ef00544e620c10b423b9:1414091673,f5a2a02ec5e3ef0014067061fd90726a:1895715955,5e22a42ecee3ef006bf4469df5948a49:-1820075632,2802a02eb9e3ef00a58bdd4076dfe903:-907115509,d3b16caa85e3ef008ef0170e52ffc53c:-1182448975,169168ea60e3ef0052fa8b6a646957ff:-226328143,ff7164eac4e3ef00b65389fd6490b80e:-398150180,2f4f186ae2e3ef008288aab45fd27b30:1133700541,b8c9e510c4e32b00741edb8d1878682f:705633926,2e192110d3e32b006bd03658ec786734:150353597,b088e1dcb6a32b00d7dcb7a4aa301b1c:928317844,67d1ad5423a32b00ec0af273cf190867:-1082055337,c380a914e5a32b006e37ca37b6c2f3e3:-65916366,d370e914b4a32b0091919fc8efb37144:-966210648,e810e11442a32b00dba8f7795616c54e:-65916366,547fd1148fa32b0077615f9c7bfe5f3c:-1139260129,f90f5dd0dca32b00df8f4befb60600fc:247966672,e9be59d030a32b00f5b9f1276ed37d6d:701003067,fc2dd91051a32b0013bf1014b50523ce:395177727,86dbd59ccd632b007eab5f8e2b5f87eb:905769031,a9b9559ce1632b0041ab082c215d6d29:-284070154,9590cbefdb5b6700a04467696f96ce0f:1642627019,2332368928eee74028de0f3b993eec0f:-1634578285,1960d5186a9a2b00261eeae052ef3899:-1079668831,0f10d9d4a29a2b007beedd66dd8504b5:-1642808823,6d7fc9d42c9a2b008b79fa6b1b83050d:-1079668831,e3fc8954c69a2b000e6bc2bb64bce968:-133550921,277c0154969a2b001e539ee42312df71:-2078747783,073c0d148d9a2b0023d9266327f6c812:505433816,a4984950909a2b00daa1d2f4f16d06b0:-494273131,7c687f95bcc62300c3567fc24b081308:332541767,9da737958ec62300d25764a391969e87:-977485481,d090005151ca2b00e85a28a6d8cde455:-428383745,d10f334117ca2b00da33a4586afec8cd:-1215093743,23eebfcdd58a2b007490591321ae79e5:-966519291,ab4dbf0d60ce2f00f23bc8a8b116a52f:-1578194608,75fbf3c9c8ce2f00e3874267e8dcf085:539056413,b6db37c994ce2f002a0702664d7fa546:623876359,a07b7f892ece2f00c497de1c6f7029bb:-655785891,7d1b7f096ece2f00eb330200031f27f7:938536918,d9ea3f097dce2f0046f85e1d923cd2ea:-678645876,b3aa7309d1ce2f00dfa4e8611e983fb6:-1978929582,d81a3bc5dece2f00284c61c81263d93d:-490781060,39a937c5e9ce2f006063f730ae787cfe:-2058285535,1d5977c538ce2f008b98705ff592b1e6:-2051098581,eb19f3c5d7ce2f00d784b275ca3886d6:-1522265113,55f873c5b9ce2f0000e7c62383c7ba2d:-1096799836,f4c8bf8590ce2f0099566478300d7133:130176412,f7787b85b3ce2f00fe8451d5a4d686ba:-23452757,556837858cce2f00eb564fc853c050b3:-1571375054,13183785f6ce2f008c314038a861623f:-1856356486,01c73f45adce2f007a914c72c407c5d1:971958877,ec663f05d0ce2f000f73f9988433f6ac:511628660,7946f705b0ce2f00468250a8d37cd7bd:1427026976,caf5b7c1cece2f00c89fea70bd1d7668:-1531681740,15c5bf8106ce2f00eb14dc983d481ad7:-1565137804,66357f81efce2f00c69f4a458391b2ee:-282732182,3f257f815bce2f001ea71d98b18533a1:468800170,80f4ff4126ce2f002e5a3c5bbc2ae36b:1677408508,e0047b01ecce2f008ad7573498746cce:-1382991074,89137341f3ce2f00d9580328d8e7a95e:929649422,3472f701f4ce2f00c80d5290a802b62e:-2042250386,32223701aace2f005e77bcf934b66073:2131097882,bad1bfcd258e2f00c00763ab27ed8a52:-250739952,5c91ff0df88e2f00f652a1be6abd804f:-664564759,af70f74d078e2f009402c3dbcb33774e:961437102,f9ffaf0d928e2f002985d83af1b438f7:-1461815202,c1ef2fc97f8e2f003d328064c01e1342:-905525751,140d2b89648e2f00a862b65b020019e6:-397529684,beeb2f49648e2f00509ffd8584664377:961245784,ebeaef09878e2f00f165dc4f0a9beb9a:470270978,ebcaabc54f8e2f00cbe45e1e262b2595:293827505,2e7aaf459e8e2f00c6bd3bfb62eef4b0:1583815741,d3f96b45da8e2f002b9170bf9b4378af:-870099570,db89ef05058e2f00e5a40f6990f09032:1654146093,ff69ef05ac8e2f00e9d16c01aa36046c:-581500602,ff982b05f58e2f003f1d0c1fc983acd6:-913947706,0f38e3c1698e2f0070928b359e1cfa83:231686016,a9e7e3c1bb8e2f0059c47623ab27037b:-1113094975,95bd5749904e2f0051b873807024ec30:-1673325243,ab0bdb056a4e2f0048e908ff4a2ceacc:985975577,a90b5b45ed4e2f002a6530427226aec5:1427111605,729713c1304e2f00c441b96c71eaeeec:-546887725,71779781684e2f00c9fc8d671d335ee2:-534165420,5b0797815d4e2f0000467a85a9849eef:-546887725,c2f697815e4e2f00d224a274ecead5db:-611005891,31a653818d4e2f001666300c6efc9984:1839719946,fb46d741744e2f001058ca949b2b05e9:-1730181101,7cf5d7419d4e2f001065eb6733a7d7bd:-1278575700,9ea5db01934e2f00049daa706eb1a34c:419962133,3015db01094e2f00232b9fd25b933245:712512090,d5e49fcd310e2f001afbe6800ecbe678:693339155,0b749fcdba0e2f000214006003afde82:786152955,52f39bcdf60e2f000c0d793e818912d1:-1292259695,d6c3dbcdfc0e2f00c73363115f818d39:-571154575,abb35f8d8a0e2f005be95bdab5a54497:-1806871639,b8039f8d790e2f00a16938399a7df1b1:1007635939,9a22938d6c0e2f000092cb9786c00ab1:-702327395,3cf19b4df90e2f0079da4663b5ebade4:-1477397795,17c15b4d280e2f009c0f6544bbc652a4:-979341281,dba5e209608a2f00d4e8a05864d9d550:-304877598,8485eac5998a2f004c4de1a3e24deada:1851905198,bfd46ac5858a2f0045ee53064c69ab1a:-1790030718,c3612e05578a2f007261ac6f52fc402a:-1340241341,6750eac1ea8a2f0013edfdb8b94298cc:-1423432255,3040eac1bc8a2f00d10016aa7ac6aaad:-1276739615,20306ac1de8a2f004103eea222c79ecf:-637908714,1420a6c1718a2f00fcc35e0f1ac4b4b7:-34242762,c4591a4d034a2f00f30dfac6afbd6c39:-637908714,57295e0d3a4a2f003be93e828145eaa0:-724487976,44f8164d714a2f0052e45df5d881b6fa:1685186884,bc581e0d5e4a2f00ea53dd0941a37b4e:1489768196,fe381e89264a2f00261b1a076615ffeb:378173142,ecb65e895e4a2f009ac7ee34b1e1fc84:-348588270,e4369a89334a2f00116da320b9037c55:-1625487469,34a5d6498d4a2f008cb9c9eb668f226f:2076493044,98e35605c94a2f00c2be2597b44e5935:-1851017793,858b2909e1c62f004ef3e906b610eb7f:-2084035973,2e6b650952c62f008d653dbb5fee311a:1785855684,364b2509c6c62f00ecc823eb61897885:-2084035973,030b21098ec62f000a8482020bdd9604:1316029272,d4faedc5b3c62f00039189d719dc82f0:-1483229383,62ba2dc5fdc62f00b043863c2b763adf:1598439824,128aad85f4c62f00a35d1c5fde80069b:-1194801516,fe3aa145e9c62f009ba190f889823287:1125656525,f2382d458dc62f000b4b0f3f754654e6:-1140080069,7cd7214540c62f0006213d86c7c0d155:599125817,7207e905c8c62f00c8f2555653bd6361:84437311,13f621059fc62f0043c96ee9e3c1bf9c:909041089,c7366dc117c62f0090f28940467939ee:129048445,c91669c118c62f00f5e8c0bf9fe47a14:-1187791637,67b529c1fec62f007f718a4b33a21afd:-1595196731,5955ad819fc62f00c2de88c0b32fa9b7:-1797467895,86f4258155c62f005c0b0c15a32d4417:57909481,add4a981b4c62f0034ac4e001aa99d49:165054629,c64425811ac62f00d026be37f76f6c11:392301761,4983a5418ac62f000e64429a1ba7f739:-2054182258,eb92a90112c62f009da5c82f9904cb2c:318631314,e342290114c62f0079d37e5c931d2a16:1941717216,0721bc3f89f127004f391d420561272d:-1072750696,8fe0b83ff9f1270026784cabd728e911:1748707100,b81f64fbe1f1270048fd820af5d56c11:429143346,ea5e68bb49f127006a3eb60a9c0354d0:-1830132983,ab0d2cd361b9a30068d3d400699128f7:604153618,480d2cd3bfb9a3004fbcb1426f8f7ad1:-1219155565,a89ca4d324b9a300d7ce6b16658c5e1a:317073039,6b7ce0d353b9a300b5a898d97ad4b19e:-604856117,6f0ce893eeb9a3004b9eff63526d04d4:2072286509,2efb2c93bcb9a300c6223cf70832916a:-1665638170,e4dbe4934cb9a300e66c5f5b8a73e9e6:-2021580538,02d754936179a3009b66af64987aa470:-125483771,2367d0934179a300e6afa9b31ffcbb59:-363798933,0fa1185f0d39a300a9b3b60369567958:-1834327291,febec45b8c39a300f87529db3554cfff:172356506,a3fc0c1b2339a30050868be76bd8743b:-14941182,bb9b44d7d339a3000c49845943ea2d13:-1523629159,f71b4c97f639a30086d5ad9592df3cc7:1038555776,aaaa4c974939a3008e333f38f55aaeb4:274868085,949a88974139a3007f0bb1d84dee0e6c:-53532190,b87a48175a39a3001dfac90affaef8ba:-1850955249,135a0057dc39a3004ae1b0220f38220c:-577703894,c4e78017e739a30030da76464cc90a25:-973913088,4017c8d37639a3008e5ae40424682a2e:198589333,17d584936d39a3005b2d73e979fbcf4e:-624982830,0e7504930839a3003f6fcf397a1f7d6e:-1954475571,a5550493ff39a300f66322ff3ab27e67:1475224397,fc1500937c39a300bce2a30c696c40d9:-1046815534,e97488135e39a3007a687ef3abbf2dad:-626057427,91630813b839a3003c5c6d22d430cebf:-467760287,3b234413e539a300b8e1e7c759dd1696:2015954425,2de288df25f5a300a3cebc8c7e681c0a:604976411,13b2c4df57f5a300422d78b08ee889c6:-129325703,1262cc9f7af5a3008661e7fefa463b74:-271683054,0652c4dfc9f5a30006b7934517d46eb2:-518993238,28a1889fdef5a3002943d722ada772b0:-1581933841,1d51449fbbf5a300877aa695064b29b0:-125457108,f111c49f2cf5a300c8aa5165c232c8dc:-240534604,aaf0449f5cf5a3003646a8481dee199e:-419728280,68e0885faff5a3007d0f83ccc3eed2bb:-1707666489,80d0cc5f59f5a300e8a75775ba33ea58:476736271,3f80c85fe3f5a300d69d1227aa8a1be4:657874996,d550c85f79f5a30041b7798d8501e25b:54590187,0940045f12f5a300597309081b5f5b81:645926210,a110085ff9f5a30069979b96438d0a51:-1992902156,2ecff34f4af5a300c26af62a9291e7be:1724385974,3e2f770fd9f5a300546901e98dcdee67:-1356225994,5c203f8f5ab5a3009fab7955acb23fdc:-714648705,02c72b8b70b5a300cd9fc6de2f0d148a:1869787214,fa97a78bd2b5a3006e36b83c7090632a:-1211767035,f367678b28b5a30011cfe30922f8649b:-1479726862,f391a347f6b5a30081ca7bee26da8b87:-714648705,cc312f07c3b5a300fb0477db681d3474:905327225,0f01a3072db5a300b50d5bcd73796b51:-165273095,725023c359b5a30034405504f4c86672:215741099,8a3f93c32ab5a30058f292eede8b7729:905327225,cf1fdf835bb5a30005d9745b206787c8:-1634015510,b5ce978396b5a300f7e22520486e94bd:-1671779317,909e97839ab5a3000732654e0ff1d6b5:704981387,7bfd9f436db5a300e3a5856799c033ff:-476578250,23dd9b43f3b5a3007320d0d1e75c9592:1670753249,485d13432bb5a3007a5b190f2f4d823e:931053131,f62d1f0301b5a300af364cff4942d31a:-330050325,98bc134327b5a3005028fe3c029e6237:-2003633134,1a6c13cfc675a300cfc075a8445b886a:-2145258369,8bab530333b5a30023e8efc673eaf4e1:-1832558840,75fa17cfba75a3000bf2f73144fdd1be:-1721612857,deba13cff475a300b50838f1768fd05f:-847008184,546a9b8fd875a300e770f3796ed341b9:-911835391,950a9b8f5575a30092cff935bd12e3b2:1192668268,05d9178f3775a300136228030abc2141:-1915359231,e589538f9c75a300d0b5e207166e837b:1730976021,b1e8174f5d75a300756a3a828c83f41f:1511413692,9b68574fd775a30028e5aa3f051dad23:-208861885,9017d7cb3475a300dfabd4f2ffc64744:391096690,3b63174bcf75a30029e973e8d3e1fcaf:1611381202,b2a197c7af75a3008c1a5bf9cb16c2c6:675339608,0211c3cf4275a700253c6672224a7d5d:338103246,5011cfcff075a700ea328c4c26fc387e:1933926056,59e0cbcf5975a700f163b127d14f7520:-1567744098,2bff32cf6d75a700cb9ab59f16cd0dfa:558609802,efaf3e8fc175a70088e939d3a4cf5971:1171631882,289ffa8f9575a700e66f53a69fa45784:605291210,be7fb28fbf75a7005a370029330161a6:2117067402,7c3f724fed75a7005648c23a08c5015a:660206986,732fb28f4075a7004c734f82ab0f4ca0:-987313370,cc8d724fd775a7004863e5170678ba45:1097857132,8bac36cbfd75a700e277bbcab08c6798:-347615354,995c3e8b6d75a700aa862cdf677519e6:-2051500908,3b0c3e8b0375a700856dd7cd5ac6c70e:1760367924,77ebb68bfa75a700417b10a291b5ce7a:-73985101,f4bb728b7075a700a5f141ba7f142daa:-1217417613,cb4b728b0075a700bf09ca3fcef86b7a:1005646265,bc4b328b1075a700ad6e672b313953bd:1453870069,9eda3e0bb375a7005212160cde90bc25:-832430123,5b2a324b4575a700a50ae223307f0c13:-2094074389,ccd93e0bc175a700b2d479aa54b37e0a:440924361,d449720b3a75a70003d4a044d38a99f7:479768862,4e29720b2d75a700ed9359c34490f056:245550768,4ee8f2c7a075a700a3daec4855ad92da:-1248674884,24a87e879e75a7007f0c43286d923d8e:233744348,8c08fe871675a7005ca2a6d5b13444ce:-1248674884,b0d77e879275a7007ca84da601a5d20c:-1709742022,e9c73e87f575a700b767aea1f9cb411f:-1323780030,9d87b6878075a700d8e51607654d6da7:1452041014,cb47fe479f75a700151e242ae3349760:-412591454,6207fe472275a70093636e85d42583f3:357921412,68d6fe474a75a7004f7976152d472f26:95201148,6db63247bc75a7008d72875b9aeca58d:1217830600,22b53247bf75a7003a4e8eaa319b5a85:1371861593,84e37ac33f75a700a8665548a6adb219:-1591101814,b72332c33775a70086619e60f4bc841b:-1367036196,6122b6432a75a700564b03c498dfeec8:885519893,ae00facf3035a70002c7418726c8bcc2:-622222329,a1ff6acf0735a700f0e574a9b3cbb06d:1503062457,c9cde60fa235a700dc8b478c971652fa:1267641691,17ad2a0fbd35a7008cf7abcb13b4346c:-1040440843,ff2beacbca35a7006cc74fd71c639798:1471148867,a7cae20fed35a7003d661fafc2818f0c:524218419,93baaa8b9635a700043a3ae19120b2b1:1410910247,8ef8a68baa35a7003885c143a793d53e:342799304,8ed8668b7435a700e686bfef9f31d8cf:-762552472,b488e28b5535a7007fd660410f57e5a4:1734274404,e668e24b2635a7009aa8ef9ffba7d44f:-1293241487,e738e24b3335a700f07e2c66953fcbce:152190987,b028ae4b7635a700f00a2b9ddcd114ff:-691777747,40176a0b9f35a700f4753d351dd4a0a2:54145164,17e6ea87fe35a700ee8fd228a377270a:584389468,c6c3e647a735a700a22aa9a09ff29e72:699410256,5fd22a478b35a7000822150b63c43d3b:-389532608,ec922a471935a700cc796955d04a9733:-573618752,1e722e07a935a70096cb7fe7d1ea249e:1666244928,1f522207e035a700a97ad98be08df156:144496964,51916a07e935a7000712510eaf961060:-941343676,03712a073335a700d15834217058e5b7:-1638381277,f830a6c35335a70084968503cca5e8cf:-659453467,2e20a6c30735a7006e63730838b424c8:-1732030258,a5de9e43af35a7004c121eed48f3be60:-370061369,477dbeba30396700435e04a3b52bad0c:1938982559,84e276b2c3396700fbc02a7687a76e05:218155302,94a23ab2033967002e6dbb1de4144d71:-1220359356,a152f2b2433967003200c07724cd2c36:-2070082699,efe1f6722f39670095b1f27e0afe31e7:-1938974824,b2c13a72ca396700aa1cd36815ae4106:-1126563005,936176727c39670041a3fdd96eb74cbb:489586990,9061fa3253396700637b97a5f6cd1fcc:298845397,28903a327c39670026c108fa3159c2e7:1726593801,ce60b632e2396700a2876b041a20dd23:-1964426427,ac307232a63967005d40b239205246a4:310321222,6e103232de396700da9becdde66526c5:691399949,7b00323235396700ae0d5aa17a285e81:-292837621,18ef6efef4f5670050b8ae5ad1036a7c:-533738635,80bf6afe83f5670026d7439ea7a1a1c2:-1175859144,229f22fe78f5670065d69100503e1572:-913624818,0beeaebeb8f567009b2f134a2ec3d5af:1592443281,63de62be1df567005a01571572de5e87:1500106464,f0be667eeaf567000753027a21630f56:-2009384309,e5d9427257b567008242b6d857743cf3:-2020257217,912861763e356700d1ce9ea756349a85:1657245548,3dc7e136d73567004177dc758e376907:-1445152776,fea66136a23567002475fc0b61ce3f69:-1803454767,c69621360a356700bf94b7999e8ca6c8:956102395,928625721a3567003def2b7a6a9ac2ef:-977424245,0903217239356700992bc2b975c47d99:-1031747831,afa2e93241356700d9ee4d7ae48b9036:246904834,40c1253214356700892da5dee1999917:1746363340,0cb1e13248356700d04b60935584dd4e:1461874236,46a161329b3567009d977d296f3d0adf:1421285939,2891edfec8f16700913d669e04f93df2:1746363340,df61a9fe9bf16700e3ec3dbd22a00788:998764838,160129fe8ff16700f1c90aa1bb960dda:-2080682471,e6e0e1fe2ef167003d7a7b467d1ff088:847843200,0fcf55be42f16700bca499db708f3d76:-2080682471,5c9f15bed7f1670035428f92a57c5432:1963978573,737f15be6ff16700e3fe9378c8c36c2c:1422662585,f19ed13e2df16700f9285a9324941fbc:-1645179769,b1d7d13a1bf167003a2f57bed8d2985f:473469996,32c7d13a7bf16700d936eac94775b200:129168815,83b7113aeaf1670021dbb69fd1eb814f:265698967,6947d9f6a4f1670049ddef99c89b625e:473469996,9d17d1f61ff16700de047b9057414784:647783172,fcb615f6c7f16700754a77aca0bb6921:-1231208422,ab96ddb6c3f167008ecc25e2b4021196:885051874,dd56ddb632f1670057a421d838d9983a:-1971802857,00461db686f16700d056fe035c4e5221:1108847824,b43695b6a2f16700d9d4c08130c0f37e:1814274837,be1651b663f16700e6cec0a195aa9881:-1462913255,f145dd7605f167000304c0684102f903:-331933614,fc255d7661f16700f07ba680231626d1:-1798078143,c4155d76a3f16700d5057e6b58a607bc:815428512,a7b45976c3f1670040cc3ebe6f1da383:1874237835,44b4d176b3f167003c36b3236b491f76:-2023947805,fb049136a7f16700dfbd7c8934299d82:1874237835,2f7255f226f16700bf8b94b38420696d:844648818,4f62d1b24af16700c11d93e03c6fce97:646067872,ea6e246a5d3527006c5f4c2eee63ba0a:1887935612,4eed242a8f352700919c008e7b91d765:681159064,803d6ce6ef352700da963afdd665c490:1466397184,26bca8e6b235270079bc9ea2d305c73e:-809096131,de8c6ca6ce352700a7589790232a126d:-975185715,914ce0e60a352700bf1071d85d0fd632:492972146,590c2ca6a43527004a39e6f888076abb:-86304054,d8cb6ca657352700cf2eec4e7456294e:1738613345,f49b60a6dd352700dc51432b6e7b5821:1347745989,9b6b20a6e83527008e3875be264b6401:1086455605,11da2c26d1352700a90e94674e4c4a29:829346723,2a3aa026933527002e5f1ffeae61700d:-1794248396,fc2ae82641352700702d4feece1854d4:829346723,80d9ace2bb352700c213698544ba66ed:-914708072,b38920e2bf3527006895fee3a2c01a9c:-1596908978,88a868a2e135270088108a5cf1477766:1492730032,f898a8a20a352700f23349226fd3c1dc:1632586064,da28a8a2e5352700935ca516d260b5d5:1438835075,0408a0a218352700e3feb1c71e1115d6:710588874,e74768625035270097669f8f00323baa:887605554,6d172c626a3527002cac703400d7998d:-864694566,28d6ec2254352700dd098c73bd188b76:1445927322,ff06ec22273527006bb3f9a58d44f864:1428798269,03f568220435270056f280c54257a8d4:-1043050706,d99568228d35270000310f0bdb591207:-99778466,67556422c235270050fd7dce53cb7cab:1826792700,5a15e8eed7f12700d9534ce3e1008b58:114435996,098464ee7cf127003c06fc75372e933d:-143048350,201460ee3ef127003db8578994196953:-1126716839,c5e3acae57f127001d795fd888474a73:1539677045,145364aed4f12700ea162d6f39b564fd:-514114866,7112206e11f1270009315ae10bfb4329:1539677045,f2a1ec2ed4f12700e8668a2fa4fb3efb:1802667736,5911e42e50f12700d8432d1daeb764e2:1229933900,1780602e0bf12700cd6962b234a9272b:735549308,c900a8ea70f12700b3ba7432c35c58b4:2021219356,0e6f9caa97f12700958ecf1f1ba9cb1b:1892415805,354f10ea65f127005ac9c3a6a6e78dc0:-1631410893,6f0f1caa27f12700121e4876e93f6e82:737008774,9cfe18aa20f12700c5f3d8ebedadcdf0:-1056447781,a99edc2a44f127000322eaa7d41da07f:-1173050203,e61edc6aa9f1270083576933b1720c4a:-1086256222,0dfd9c6a4df12700162f8b1c4aad80ad:1310102731,e9dc106a0ef127000840c68025e8691a:-1510452817,e1cc982aecf12700ae6d3ab7df09c0ca:-1946383410,3c9c982ae3f12700bf7f1c2592fa2c3d:894816581,797c582a3ff127006c7d4ebba401d454:-1841513004,e06c182a12f12700a25d1e7579c237dd:-757668764,b8abd8a6b5f127008ec618b0a6162875:-1620919713,ed3a98a6a1f12700f17b990ffb03a6d6:2075116996,f1f954a68ff127008013e962dd70e93d:827715247,c2c990a624f1270081f50324f8783fe3:-1969453475,f6995c267df127009a6b08a1e8055e55:1037325075,93e89c2699f127007e3b6ef5b7ebb731:-275635799,eae75826e9f127002a8a3a5eaa637f79:39260205,61a75426aaf1270079e9af14356682ca:-1883030653,055790265af12700577c64ed818c736d:412242938,69079ce219f127003f665737790566b5:-681046730,d4e618e2f7f127007a52efb8aab0dea2:-1711620452,627690a231f127002f373620da33f55d:-584959747,e3622f3d6575a300c526cea09ac27cdc:-88592132,cd01abbd3275a30069e9760ccc9a28db:852561320,32c0237d7c75a3004dae58369f5bdb0f:377908841,0adedff9e375a3001c140ba6fcbad54d:-1440272094,439e573dc775a300fd1a8ffce1f69583:160118589,364e173dff75a300d45eb657ced60235:-1888749295,863e173d3075a30018b75f2cadbcbe2e:-110055473,09ed97f9e775a3007dec59089e8991d6:-610598290,2e4d97f92075a3003a40aa87ea2b3b92:-333004270,ae8c5bb91175a300817ba07ed2e2f839:-346246170,d25cd3b9f075a300c61dc8a713a5dbf3:267060885,4f2c57b96475a3008f350f8d31d8afb6:490206857,041c1b79f775a300702733924303f52d:1905702546,38db1b791b75a300243b54f27fcf4ce8:-1649485739,b28b97795b75a3006f0d18d399bd5be1:-1961650378,862b97795475a300f41b077a52917bd8:1340206182,79aa1b392775a300de53a73ab3acb22f:2096316942,ed891bf57475a3008e04e3a46d7d207e:1275265823,5f88d375a775a3000cb24bab17576ed2:-1081683486,843557f10175a30095bdfa348c563207:-374873288,02d29bb1e375a300cdaa86afbd17f3e8:647048035,86b19771ff75a30077fe0d4e12b6b63a:-192747647,1e619f719775a300c00f3f7e654c5a03:1146531603,cf41dffd9535a300acb2630d931152dd:-6635309,c3ae87bda635a300e5131744d11e2fc1:-1451834707,e52e07bd3035a300ea340658ea404a33:822230916,51fd43bd6435a300811600c70c75ac58:-1816114114,339c7631fd35a3002bbf5a58bb41edfb:-1859031828,fa4c7afd57f1a3004eaa13768a15c7f4:-1774053524,e22cb6bdfff1a30079d6718e14c2be52:893023190,5c2cbefd6cf1a300362117fc0090eab3:-1188835378,36abfebd80f1a300ffd5f2b9445953a6:-1658650912,f67a76bde4f1a30001b61e57af9453f0:-1452234276,f71af23da2f1a300bf2285dbc304b8fb:-660264860,501af27deaf1a30079c1950ffab7b3bb:804405999,63c8f27d3ef1a300d11c9aefed88a5b2:1406061681,62c7f23dbff1a300eb28a41e5e5308a2:-1274292228,2357bef93ff1a30058983b543aec6d42:-982793255,9ed63ef9a4f1a3001ed7e87327de03f4:736454492,0826a2fd8bb1a300c7ee7b2e950241e7:1795892709,10f522fddfb1a300e5c4a1df5fb0be3b:347050262,35b5aebd69b1a300f7ce8c16e958e954:507638480,93c4aa7d46b1a300ef00b3658007420e:-1509018418,87c3aa3dc0b1a30017dfb477b3f2c5a3:694366561,2713a23d8fb1a3006ccd5085f9150f9d:-1509018418,ab03aa3d37b1a30090dbb44c3b70779e:-1472724185,a8722af9d9b1a300606c84e0415f4eea:-817253745,b0c126f983b1a300d977e4a1892d1693:1354437685,6c71a6b92eb1a30056f035dc46a1d695:-1454693639,8c51eeb9e3b1a300ea04a19309424725:-421517959,560166b991b1a300c1b0caaef1b75808:-556437150,78e806758c71a3002ebcf0017514b401:987000616,f118ce355671a300b7c29f61753a98e1:-1373391113,0858a66814b5ef008226ec0702c4bd5f:295760614,12386668ceb5ef00759ba6d2f98ac3ce:1860535047,6cff56a0c9b5ef000f39f978b5c74ecd:865048649,bc7f56a0c8b5ef009efdf6c99fdd15c4:-637530380,4eee9a60d7b5ef00b97234c0ba3b53fa:-1008860453,74ae9a60efb5ef0020f7d76c1b7745d8:39263694,ec3e926042b5ef006dae2ec727a11da7:888589497,e4ed5e206db5ef004ca99bafa350ef92:-601037864,287d5e201db5ef003f74adb63dc7ad1a:-1613095428,78fc5620d2b5ef00083ebb7c1f2a1d44:-185471572,3b9cdeecd775ef001356999f121442e4:-1004519633,7a7c1eec7575ef00f89503cbdf07bd59:-1395748926,a25c9eec7475ef0068ee9c8c54e4169f:-1300536611,e7fbd66cd975ef00ddf9bdd91832bdec:-791973093,295a166ca475ef00051ae7e0f67cb275:279773435,9e4a5a682875ef0008d97f23657c8657:-1634290037,171452282b75ef005818ebca969a962b:2051858159,10c31ee48d75ef0022ea41d625582f6a:-1659716907,20835ae4cd75ef0065cbb5b09ab00468:-1687575458,18531ea42a75ef002baf5a8fe83c68fc:1513720095,f7c212e4ce75ef003cc5186b2f880437:-547424736,fa72daa48f75ef001ae8415ea3f403a9:1064364970,296212a47075ef00ebe42ac097d96df2:1031017598,dc3112208c75ef000944719dd66967c8:-156678280,dba092201075ef001a3c3f1c4a63dd5d:1554658980,4680daece335ef00be56812397d76565:1704006579,7c509eece035ef0029731f085f08273c:-1121183706,80cecaac0835ef0030b45bec09b39bf9:-883397316,115a02e84835ef00f85bc5dc4d00bc69:564811764,cd31a1e8bbb1ef0042f312c44b0164e0:-82367207,06a029a8d9b1ef00cddc70dcf5cd178c:-471815368,a660ada8a2b1ef0041c3a2bfe0cb0a3a:-994621955,f630ada8a7b1ef00b47d51ea94a7e332:-1122925912,0b5ad5a46db1ef0018d3032cf327a773:502491921,682a15a493b1ef004bb66caf4ef833c9:721820770,4de951a4c8b1ef00e2876ac5fe843695:-416266414,c1d99d6465b1ef00dedeb67fe54f18b0:281838155,ea499564b0b1ef0051c547ebfcd99ded:-534042601,2c39956414b1ef005e365446066938e6:-912973702,61885164aeb1ef007b7fc8c21ad4505b:257779090,1cc74dd86075af00a55190b0337bb22d:-1903084194,367789d8b375af00d2e98fb8084a4d73:11540254,3d078598de75af006cd0e9e0085d51a0:634441757,dbd64598c175af00ecf33760de35f144:310994015,0dc60598fc75af00129e1b7dbb171adc:94738005,3f8601988075af000c98a212af482322:-1705488685,cc564d585675af00888835a60a5b140f:406433939,26360d58c175af00f07a695feea01f2f:-555570381,530685586a75af00dbcd85ccb1e914ab:-118316933,37f5c5582c75af00130d74862e437501:1230812600,91c58558b975af0073b3531589ac9ea3:-1090827345</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

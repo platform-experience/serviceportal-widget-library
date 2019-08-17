@@ -1,0 +1,21 @@
+<div class="panel panel-">
+  <div class="panel-body">
+    <div class="item-header">
+      <span id="header-title">{{::c.data.title}}</span>
+    </div>
+    <div class='item-buttons' ng-if='::c.data.missingConfig==false'>
+      <div class='btn btn-{{options.btn_context}} item-btn' role='button' title='{{item.short_description}}' ng-if='data.items' ng-repeat='item in data.items' ng-click='goItem(item)'>
+        <div>{{item.name}}</div>
+         <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class='panel panel-warning' ng-if='::c.data.missingConfig'>
+      <div class='panel-heading'>
+        Missing Configuration
+      </div>
+      <div class='panel-body bg-warning'>
+        {{c.data.err_msg}}
+      </div>
+    </div>
+  </div>
+</div>

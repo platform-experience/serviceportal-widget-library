@@ -1,4 +1,3 @@
-function DonutChartWizard() {
-  /* widget controller */
+function DonutChartController() {
   var c = this;
 }

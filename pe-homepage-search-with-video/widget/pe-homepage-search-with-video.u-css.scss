@@ -1,0 +1,64 @@
+.round-btn{
+  	border-radius:20px;
+  }
+.input-group input{
+	height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33333;
+    border-radius: 6px;
+}
+.input-group-btn button{
+	height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33333;
+    border-radius: 6px;
+}
+.center-this form{
+	width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.page{
+	overflow-x: hidden;
+}
+
+
+
+.center-this{
+  h2{
+	color:#fff;
+    @media screen and (max-width: 600px) {
+        font-size:40px;
+    }
+  }
+  .h4{
+  color:#fff;
+  }
+
+}
+
+.video-section .pattern-overlay {
+    background-color: rgba(71, 71, 71, 0.59);
+    min-height: 400px;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+ 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	display: -ms-flexbox;      /* TWEENER - IE 10 */
+  	display: -webkit-flex;     /* NEW - Chrome */
+  	display: flex;
+    align-items: center;
+    /* Incase of overlay problems just increase the min-height*/
+}
+
+.center-this{
+	position: absolute;
+    top: 50%;
+  left:50%;
+        transform: translate(-50%,-50%);
+}
+
+.player {
+    font-size: 1px;
+}
