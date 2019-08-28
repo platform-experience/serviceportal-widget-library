@@ -2,7 +2,7 @@
 
 ## Description
 
-Tabs component with options and SASS variables for an easy customisation. It is using a provided API / Script Include and Service Portal Menu Items as data source.
+Tabs component with options and SASS variables for an easy customization. It is using a provided API / Script Include and Service Portal Menu Items as data source.
 
 ## Screenshot
 
@@ -47,7 +47,6 @@ t.page_sys_id = 'cmdb_ci_service.sys_id';
 t.record_watchers = [];
 t.record_watchers.push({'table':t.table,'filter':t.filter});
 ```
-
 
 Type 'list':
 
