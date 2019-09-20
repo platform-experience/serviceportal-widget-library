@@ -1,0 +1,38 @@
+.x_pisn_sp_pdf_view {
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.pdf-viewer-modal {
+  margin-bottom: -7px;
+}
+
+.left a {
+  margin-right: 10px;
+}
+
+input {
+  color: $brand-primary;
+  height: 19px;
+  padding: 0;
+  border: 0;
+  background-color: rgba(245, 245, 245, 1);
+  border-radius: 4px;
+  text-align: center;
+  min-width: 20px;
+}
+
+@media (max-width: 760px) {
+  div.mb2 {
+    text-align: left;
+    padding: 0px 10px;
+  }
+  .left a {
+    margin-right: 10px;
+  }
+  .check-mobile {
+    display: none;
+  }
+}

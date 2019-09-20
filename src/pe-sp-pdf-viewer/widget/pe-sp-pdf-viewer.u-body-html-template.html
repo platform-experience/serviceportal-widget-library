@@ -1,3 +1,14 @@
-<div>
-  <!-- your widget template -->
+<div
+  class="x_pisn_sp_pdf_view"
+  ng-if="c.data.url.length>0"
+  ng-class="{'pdf-viewer-modal': c.options.modal}"
+>
+  <pdf-viewer
+    delegate-handle="my-pdf-container"
+    url="c.data.url"
+    scale="0.90"
+    show-toolbar="true"
+  >
+  </pdf-viewer>
+  <div id="check-mobile"></div>
 </div>

@@ -1,12 +1,14 @@
-# SP PDF Viewer
+# Sp PDF Viewer
 
 ## Description
 
-> None
+> A simple and quick way to show a PDF within Service Portal
 
 ## Screenshot
 
-![SP PDF Viewer](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-sp-pdf-viewer/images/pe-sp-pdf-viewer.png)
+![SP PDF Viewer with a classic A4 PDF](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-sp-pdf-viewer/images/pe-sp-pdf-viewer-01.png)
+
+![SP PDF Viewer ](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-sp-pdf-viewer/images/pe-sp-pdf-viewer-02.png)
 
 ## Additional Information/Notes
 
@@ -22,20 +24,24 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+> In input the component needs the attachment sys_id from sys_attachment table, and it can be used with a companion widget too which is showing a list of PDFs having in input a table, and/or the sys_id of the associated record where the attachments are dragged on. In this case, the PDFs are opened inside a modal.
 
 ## Platform Dependencies
 
 ### SN System Tables
 
-> None
+sys_attachment
 
 ### UI Dependencies
 
-> None
+PDF.js and Angular PDF Viewer
 
 ## CSS/SASS Variables
 
 _CSS/SASS variables are given default values that can be overridden with theming or portal-level CSS._
 
-> None
+Bootstrap variables
+
+```sass
+$link-color
+```
