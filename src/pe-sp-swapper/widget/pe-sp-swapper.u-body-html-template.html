@@ -1,0 +1,40 @@
+<div
+  class="x_pisn_sp_swapper m-l-xs"
+  ng-if="c.logo"
+  ng-class="{'x_pisn_sp_swapper-open': c.open}"
+>
+  <div class="x_pisn_sp_swapper__logo">
+    <img
+      class="pointer m-n m-l-sm"
+      ng-src="{{ c.logo }}"
+      ng-click="c.goToHomepage()"
+    />
+    <a
+      href
+      class="wrapper-sm"
+      ng-if="c.data.portals.length>0"
+      aria-hidden="true"
+      data-toggle="collapse"
+      data-target="#portals"
+      ng-click="c.open = ! c.open"
+    >
+      <i class="fa fa-chevron-down fa-lighter" ng-if="!c.open"></i>
+      <i class="fa fa-chevron-up fa-lighter" ng-if="c.open"></i>
+    </a>
+  </div>
+  <div id="portals" class="collapse" ng-if="c.data.portals.length>0">
+    <ul class="list-unstyled m-n m-t-lg">
+      <li
+        class="no-border no-radius no-padder"
+        ng-repeat="item in ::c.data.portals track by item.sys_id"
+        ng-if="item.logo != c.logo"
+      >
+        <img
+          class="pointer"
+          ng-src="{{::item.logo}}"
+          ng-click="c.goToPortal(item)"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
