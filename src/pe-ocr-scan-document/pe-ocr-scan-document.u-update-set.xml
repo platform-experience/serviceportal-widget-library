@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-09-24 17:01:11">
+<sp_widget action="INSERT_OR_UPDATE">
+<category>custom</category>
+<client_script><![CDATA[function scanMainController($scope, spUtil) {
+	/* widget controller */
+	var c = this;
+
+	//c.currCase = c.data.currCase;
+
+
+
+	c.disable = function(){
+
+		document.getElementById("caseBox");
+
+
+	}
+	c.swichForm = function(parm){
+		c.currForm = parm;
+
+		if(parm =='2'){
+			c.data.showForm = false;
+			c.loading = true;	
+		}
+
+
+
+	}
+
+
+	c.upload = function(image){
+		console.log(image);
+	}
+
+	//$scope.isDisabled = true;
+	
+		//	$scope.isDisabled = false;
+		$scope.isDisabled = true;
+
+
+
+
+
+
+	c.previewFile = function() {
+
+
+		var preview = document.querySelector('img');
+		var file = document.querySelector('input[type=file]').files[0];
+		var reader  = new FileReader();
+
+
+		reader.addEventListener("load", function () {
+
+
+			var r = reader.result;
+			console.log(r);
+			console.log(file);
+			c.image = r;
+			//document.getElementById('output').src = r; //html
+			
+			//image loaded
+			$scope.isDisabled= false;
+			
+			
+
+
+			//preview.src = r;
+		}, false);
+		if (file) {
+			reader.readAsDataURL(file);
+		}
+	}
+
+
+	$scope.submit = function(){
+
+
+		var newElements = {};
+		var file    = document.querySelector('input[type=file]').files[0];
+		var reader  = new FileReader();
+		reader.addEventListener("load", function (e) {
+			console.log(e);
+			c.something = 'mobile';
+			var r = reader.result;
+
+			// resize image
+			var img = document.createElement("img");
+			img.src = e.target.result;
+			var canvas = document.createElement("canvas");
+			var ctx = canvas.getContext("2d");
+			ctx.drawImage(img, 0, 0);
+
+			var MAX_WIDTH = 1050;
+			var scaleFactor = MAX_WIDTH / img.width;
+			canvas.width = MAX_WIDTH;
+			canvas.height = img.height * scaleFactor;
+			var ctx = canvas.getContext("2d");
+			ctx.drawImage(img, 0, 0, MAX_WIDTH, img.height * scaleFactor);
+			dataurl = canvas.toDataURL(file.type);
+			console.log("dataurl");
+			console.log(dataurl);
+
+
+			// OCR API Integration
+
+			//Prepare form data
+			var formData = new FormData();
+			//formData.append("file", file);
+			formData.append("base64Image", dataurl);
+			formData.append("language", "eng");
+			formData.append("apikey", "abdea129e188957");
+			formData.append("isOverlayRequired", true);
+			formData.append("detectOrientation", true);
+
+
+			//Send OCR Parsing request asynchronously
+			jQuery.ajax({
+				url: 'https://api.ocr.space/parse/image',
+				data: formData,
+				dataType: 'json',
+				cache: false,
+				contentType: false,
+				processData: false,
+				type: 'POST',
+				success: function (ocrParsedResult) {
+
+					//Get the parsed results, exit code and error message and details
+					var parsedResults = ocrParsedResult["ParsedResults"];
+					console.log(parsedResults);
+					var ocrExitCode = ocrParsedResult["OCRExitCode"];
+					var isErroredOnProcessing = ocrParsedResult["IsErroredOnProcessing"];
+					var errorMessage = ocrParsedResult["ErrorMessage"];
+					var errorDetails = ocrParsedResult["ErrorDetails"];
+					var processingTimeInMilliseconds = ocrParsedResult["ProcessingTimeInMilliseconds"];
+
+					//If we have got parsed results, then loop over the results to do something
+					if (parsedResults!= null) {
+						//Loop through the parsed results
+						$.each(parsedResults, function (index, value) {
+							var exitCode = value["FileParseExitCode"];
+							var parsedText = value["ParsedText"];
+							console.log(parsedText);
+							var errorMessage = value["ParsedTextFileName"];
+							var errorDetails = value["ErrorDetails"];
+							var textOverlay = value["TextOverlay"];
+							var pageText = '';
+							switch (+exitCode) {
+								case 1:
+									pageText = parsedText;
+									break;
+								case 0:
+								case -10:
+								case -20:
+								case -30:
+								case -99:
+								default:
+									pageText += "Error: " + errorMessage;
+									break;
+							}
+							console.log('yes');
+							// Get description text
+							var dearIndex = parsedText.indexOf('Dear Sir/Madam:');
+							var infoIndex = parsedText.indexOf('Here is information on me:');
+							var descriptionText = parsedText.slice(dearIndex + 16, infoIndex).trim();
+							console.log(descriptionText);
+							console.log('file typeeeee');
+							console.log(r.slice(5, r.indexOf(';base64')));
+
+							// Loop over doc text elements, split on each new line, find index of element, slice value from text
+							var docElements = {
+								name: 'Name:',
+								dob: 'DOB:',
+								ss: 'SS#:',
+								currentAddress: 'Current Address:',
+								phone: 'Phone:',
+								description: 'Dear Sir/Madam:'
+							}
+							console.log(docElements.description)
+
+							for (var key in docElements) {
+								if (docElements.hasOwnProperty(key)) {
+									var element = docElements[key];
+									parsedText.split('\n').forEach(function(line) {
+										if(line.indexOf(element) != -1) {
+											newElements[key] = line.slice(element.length).trim();
+										}
+									});
+									newElements.description = descriptionText;
+									console.log(newElements.description);
+								}
+							}
+							console.log(newElements);
+							c.server.get({
+								dataUrl:  r.slice(r.indexOf(';base64,')+8),
+								fileTypze: r.slice(5, r.indexOf(';base64')),
+								dataObj: newElements
+							}).then(function(response){
+								c.loading = false;
+								c.currCase = response.data.currCase;
+								c.sysID = response.data.sysID;
+								c.swichForm(3);
+
+
+							});
+
+						});
+					}
+				}
+			});
+		}, false);
+
+		if (file) {
+			reader.readAsDataURL(file);
+		}
+		window.location = '#';
+	}
+
+	//https://tmerajcsm.service-now.com/csm?id=ticket&is_new_order=true&table=sn_customerservice_case&sys_id=0636a810dbc777008e897646bf961940
+
+
+}]]></client_script>
+<controller_as>c</controller_as>
+<css>
+
+
+
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #002a5c; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin:auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*
+.box1:active {
+ border-color: #007299;
+	color: #007299;
+	box-shadow: none;
+}
+
+.box1:hover {
+color: rgba(255, 255, 255, 1);
+ box-shadow: 0 5px 15px rgba(0, 42, 92, .4);
+}
+*/
+
+.previewImage{
+  
+	margin:auto;
+  
+  
+}
+
+img{
+  max-width:180px;
+}
+
+
+.button{
+  margin-top:100px;
+  float:left;
+  clear:both;
+}
+.upload{
+  margin-top:10px;
+  float:left;
+}
+.profile-picture{
+  clear:both;
+  float:left;
+  max-height:300px;
+
+}
+
+h3{
+    text-align: center;
+  color:#002a5c;
+}
+
+.submit{
+  //position:center;
+  width:80px;
+  height:80px;
+  bottom:40px;
+  right:40px;
+  background-color:#fff;
+  color:#002a5c;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#0f65ef;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-submit{
+  margin-top:30px;
+  padding-top: 30px;
+}
+
+
+
+.my-float{
+  margin-top:22px;
+}
+
+
+
+.wrapper{
+  //background-color: #d7e1e7;
+  display:grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  grid-gap:1em;
+
+}
+.nested{
+  //display: flex;
+  // align-items: center;
+  //  justify-content: center;
+  margin: auto;
+ // margin-top: -60px;
+
+
+}
+
+.wrapper &gt; div{
+  background:#002a5c;
+  padding:1em;
+  color:white;
+  border-radius: 10px;
+  //grid-column-gap:1em;
+  //box-shadow: 5px 5px 15px 5px #000000;
+
+}
+.wrapper &gt; div:nth-child(3){
+//  background:#002a5c;
+  background:#d7e1e7;
+  //border-radius: 50px;
+  // display:grid;
+  // grid-template-columns: 50%;
+
+}
+.wrapper &gt; div{
+  p{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+}
+
+.encloser {
+  // background:rgba(1,1,1,0.3);
+  background: #002a5c;
+  clear: both;
+  margin-bottom: 10px;
+  border-radius:15px;
+  /*hu*/
+  .buttons {
+
+
+    overflow: hidden;
+    clear: both;
+    .approve-button {
+      //background:rgba(255,255,255,0.6);
+      border-radius:15px;
+
+      //color: $pe-brand-success;
+      // border-bottom: 3px solid $pe-brand-success;
+    }
+    .reject-button {
+      //color: $pe-brand-danger;
+      // border-bottom: 3px solid $pe-brand-dangnner;
+    }
+    .view-button {
+      //color: $pe-brand-warning;
+      //border-bottom: 3px solid $pe-brand-warning;
+    }
+    .each-button {
+      width: 33.3%;
+      float: left;
+      padding: 15px 20px;
+      text-align: center;
+      border-right: solid 1px #e6e8ea;
+      p {
+        margin-bottom: 0px;
+        font-size: 15px;
+        color:black;
+      }
+    }
+    .last-button {
+      border-right: 0px;
+    }
+  }
+}
+}</css>
+<data_table>sp_instance</data_table>
+<demo_data/>
+<description/>
+<docs display_value=""/>
+<field_list/>
+<has_preview>true</has_preview>
+<id>scan_main</id>
+<internal>false</internal>
+<link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+<name>Scan Main</name>
+<option_schema/>
+<public>false</public>
+<roles/>
+<script><![CDATA[(function() {
+
+	data.showForm = true;
+
+
+
+	data.name = gs.getUserDisplayName();
+	if (input && input.dataUrl && input.dataObj) {
+		$sp.log('fileType');
+		$sp.log(input.fileType);
+		var grCase = new GlideRecord('sn_customerservice_case');
+		var userId = input.dataObj.name.split(' ').join('.');
+		var userName = input.dataObj.name.split(' ');
+		var shortDesc = input.dataObj.description.split('.')[0];
+		$sp.log(shortDesc);
+		var SS = input.dataObj.ss;
+		$sp.log(SS); 
+		$sp.log(userId);
+		var grUser = new GlideRecord("customer_contact");
+		grUser.query('u_social_security', SS);
+		if(grUser.next()) {
+			$sp.log('if');
+			grCase.initialize();
+			grCase.setValue('contact', grUser.getUniqueValue());
+			grCase.setValue('description', input.dataObj.description);
+			grCase.setValue('short_description', shortDesc);
+			grCase.insert();
+
+			data.sysID = grCase.getUniqueValue();
+			data.currCase = grCase.getValue('number');
+			$sp.log("case" + data.currCase)
+
+
+			var CreateAttachment = Class.create();
+			CreateAttachment.prototype = {
+				initialize: function(record,name,contentType, data) {
+					var attCreator = new GlideRecord('ecc_queue');
+					attCreator.agent = "AttachmentCreator";
+					attCreator.topic = "AttachmentCreator";
+					attCreator.name =   name + ":" + contentType;
+					attCreator.source = record.getTableName()+":"+record.sys_id;
+					attCreator.payload = data;
+					attCreator.insert();
+				},
+
+				type: 'CreateAttachment'
+			};
+			new CreateAttachment(grCase,input.dataObj.name, input.fileType, input.dataUrl);
+
+			grUser.mobile_phone = input.dataObj.phone;
+			grUser.u_current_address = input.dataObj.currentAddress;
+			grUser.update();
+
+		} else {
+			$sp.log('else');
+			grUser.initialize();
+			grUser.setValue('first_name', userName[0]);
+			grUser.setValue('last_name', userName[1]);
+			grUser.setValue('account', '3D86837a386f0331003b3c498f5d3ee4ca');
+			grUser.setValue('email', userId + '@gmail.com');
+			grUser.insert();
+		}
+
+	}
+})();
+
+]]></script>
+<servicenow>false</servicenow>
+<sys_class_name>sp_widget</sys_class_name>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-07-25 20:18:24</sys_created_on>
+<sys_id>fb4ab3eedb7233006c777646bf9619d2</sys_id>
+<sys_mod_count>551</sys_mod_count>
+<sys_name>Scan Main</sys_name>
+<sys_package display_value="Scan Application" source="x_snc_scan_applica">b41a33aedb7233006c777646bf961974</sys_package>
+<sys_policy/>
+<sys_scope display_value="Scan Application">b41a33aedb7233006c777646bf961974</sys_scope>
+<sys_update_name>sp_widget_fb4ab3eedb7233006c777646bf9619d2</sys_update_name>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-07-30 18:24:28</sys_updated_on>
+<template><![CDATA[<div ng-show="c.data.showForm">
+
+  <div class="main-container">
+    <div class="title">
+      <h3>Welcome, {{data.name}}</h3>
+    </div>  
+  </div>
+
+  <div class="wrapper">
+    <div class="box1" type="file" id="picture" name="fileToUpload" id="fileToUpload" accept="image/*" capture='user'
+         ng-file-select="c.previewFile()">
+    
+      <h1>Scan Now</h1>
+      <p>Scan documents</p>
+    </div>
+    <div class="previewImage">
+      <img src="{{c.image}}">
+    </div>
+    
+    
+    <div clas="box2" id ="caseBox"  ng-if="!isDisabled" >
+       <div id ="caseBox" ng-click="submit(); c.swichForm(2)" ng-if="!isDisabled">
+     <h1> Create Case </h1>
+         <p>
+           Create a Case
+         </p>
+      </div>
+    </div>
+
+
+    <!--a type="file" id="picture" name="fileToUpload" id="fileToUpload" accept="image/*" capture='user' ng-file-select="c.previewFile()" class="float">
+      <i class="fa fa-plus my-float"></i>
+
+    </a-->
+
+  </div>
+
+</div>
+<div class="loader" ng-show="c.currForm==2 "  >
+</div>
+
+<div ng-show="c.currForm==3"> 
+  <h3>
+    Case
+      <a href="?id=ticket&is_new_order=true&table=sn_customerservice_case&sys_id={{c.sysID}}"> #{{c.currCase}}</a>
+ has been created successfully. 
+  </h3>
+</div>
+
+
+
+
+]]></template>
+</sp_widget>
+</unload>

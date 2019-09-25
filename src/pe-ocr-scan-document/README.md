@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+A custom widget that uses [OCR](https://ocr.space) to create a case in ServiceNow with the text obtained from a document that is scanned by a mobile phone. 
 
 ## Screenshot
 
@@ -10,7 +10,11 @@
 
 ## Additional Information/Notes
 
-> None
+This widget utilizes [OCR](https://ocr.space/ocrapi) technology to take text from an image and convert it to data that can be used in ServiceNow. You will need to add your own API key into the widget for it to work properly.
+
+* Download the step by step guide **[pe-ocr-scan-tutorial.pdf](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-ocr-scan-document/docs/pe-ocr-scan-tutorial.pdf)**
+
+* Print this document so you can scan once you have configure the widget **[pe-ocr-scan-document.pdf](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-ocr-scan-document/docs/pe-ocr-scan-document.pdf)**
 
 ## Installation
 
@@ -22,13 +26,13 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> None
+See Additional Information/Notes 
 
 ## Platform Dependencies
 
 ### SN System Tables
 
-> None
+Case - sn_customerservice_case is need for this widget function properly.
 
 ### UI Dependencies
 
