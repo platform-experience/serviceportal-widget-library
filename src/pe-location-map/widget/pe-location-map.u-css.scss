@@ -1,0 +1,347 @@
+#mapid {
+    height: 100vh;
+    width: 100vw;
+  }
+  .drive, .information{
+      color: #0645AD;
+    display: table;
+  }
+  .information:hover{
+      border-bottom: 1px solid #0645AD;
+  }
+  .map{
+      margin-top:20px;
+  }
+  .main-search{
+    float:left;
+    width: 12vw;
+  }
+  .fa-arrow-left{
+    margin-left:12vw;
+  }
+  .search-icon{
+    height:34px;
+    float:left;
+    width:2vw;
+      padding-top:0.5vw;
+    padding-bottom:0.3vw;
+      text-align:center;
+    background-color: #ddd;
+    font-size:18px;
+     border-bottom: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+  }
+  .search-bar{
+    margin-bottom:30px;
+  }
+  
+  .fa-stack-1x {
+    color: red;
+  }
+  .fa-exclamation-circle{
+    color: red;
+  }
+  .sk-spinner-pulse {
+    width: 60px;
+    height: 60px;
+    margin: 60px auto;
+    background-color: $bam-darkblue;
+    border-radius: 100%;
+    -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+    animation: sk-pulseScaleOut 1s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-pulseScaleOut {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes sk-pulseScaleOut {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  
+  .flex-it {
+    display: flex;
+    //align-items: center;
+    .image {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      margin-right: 5px;
+    }
+    .info-title{
+      color: $bam-blue;
+      font-weight: 500;
+      display: block;
+    }
+    .info{
+      color: $bam-blue;
+      font-weight: 400;
+      display: block;
+    }
+  }
+  .redirect{
+      color: #0645AD;
+      font-weight: 400;
+      display: block;
+   }
+  .type-icons {
+    position: absolute;
+    z-index: 1200;
+    top:15px;
+    right:15px;
+    .each-type {
+      margin: 0px;
+      margin-top: 20px;
+    }
+    .exp {
+      width: 34px;
+      height: 34px;
+      background-color: white;
+      border-radius: 100%;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.54);
+      border: 0;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      color: $bam-white;
+      justify-content: center;
+      .fa {
+        color: $bam-blue;
+        font-size: 16px;
+      }
+    }
+  }
+  .back-type-icons {
+    position: absolute;
+    z-index: 1200;
+    top:15px;
+    right:75px;
+    .each-type {
+      margin: 0px;
+      margin-top: 20px;
+    }
+    .exp {
+      width: 34px;
+      height: 34px;
+      background-color: white;
+      border-radius: 100%;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.54);
+      border: 0;
+      line-height: 80px;
+      text-align: center;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      color: $bam-white;
+      justify-content: center;
+      .fa {
+        color: $bam-blue;
+        font-size: 16px;
+      }
+    }
+  }
+  .map-icon {
+    fill: $bam-white;
+    stroke: $bam-blue;
+    object-fit: contain;
+    height: 20px;
+    width: 20px;
+  }
+  .near-by {
+    min-height: 100vh;
+    background: $brand-secondary;
+    margin-top: -10px;
+    float:left;
+    margin-left:10px;
+  }
+  
+  .angular-leaflet-map {
+    margin-top: 20px;
+    height: 80vh;
+    width: 80vw;
+    .leaflet-popup-content p {
+      margin: 5px 0px !important;
+    }
+  }
+  
+  .loading {
+    color: $brand-primary;
+    .loading-span {
+      padding-left: 10px;
+    }
+  }
+  
+  .spinny {
+    position: absolute;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 12000;
+  }
+  
+  
+  .side-bar {
+    margin-top:10px;
+    float:left;
+    width: 15vw;
+    height: 80vh;
+    overflow-y:scroll;
+    background: $bam-white;
+    color: $bam-dark-gray;
+    .each-marker {
+      background: $bam-white;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: -4px;
+      }
+      a {
+        font-size: 14px;
+        color: $bam-blue;
+      }
+    }
+  }
+  
+  /*******************leaflet overrides**********************/
+  .leaflet-bar {
+    border: 0px solid transparent;
+    margin-left: 14px;
+  }
+  .leaflet-bar a,
+  .leaflet-bar a:hover {
+    background-color: $bam-white;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: $bam-black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.54);
+    border: 0;
+    z-index: 810;
+  }
+  .leaflet-bar a,
+  .leaflet-control-layers-toggle {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  .leaflet-bar a:hover {
+    background-color: #f4f4f4;
+  }
+  .leaflet-bar a:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .leaflet-bar a:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    
+  }
+  .leaflet-bar a.leaflet-disabled {
+    cursor: default;
+    background-color: #f4f4f4;
+    color: #bbb;
+  }
+  
+  .leaflet-touch .leaflet-bar a {
+    border-radius: 50%;
+    background-color: $bam-white;
+    color: $bam-blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 34px;
+    height: 34px;
+  }
+  
+  
+  /* zoom control */
+  
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out {
+    font-family : 'SFUIDisplay','SourceSansPro', Helvetica, Arial, sans-serif !important;
+    font-size: 34px;
+    font-weight: 200;
+    text-indent: 0px;
+    padding-top: 1px;
+  }
+  .leaflet-control-zoom-out {
+    font-size: 36px;
+    padding-top: 2px;
+  }
+  
+  .leaflet-touch .leaflet-control-zoom-in {
+    font-size: 34px;
+  }
+  .leaflet-touch .leaflet-control-zoom-out {
+    font-size: 36px;
+    padding-top: 2px;
+  }
+  
+  
+  
+  /*******************flippy animations**********************/
+  
+  flippy {
+    float: left;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -ms-perspective: 600px;
+    perspective: 600px;
+  }
+  
+  flippy-front {
+    position: absolute;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    -ms-transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  

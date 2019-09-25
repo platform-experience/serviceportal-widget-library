@@ -1,3 +1,48 @@
-<div>
-  <!-- your widget template -->
+<div class="map">
+  <div class="side-bar">
+    <div class="search-bar">
+
+
+      <input autocomplete="off" ng-value="c.siteName" name='acct' id="picker" type="text" ng-model="accountSelected" uib-typeahead="item as item.name for item in search($viewValue)" typeahead-on-select="sitePicked($item)"  class="form-control ng-valid ng-dirty ng-valid-parse ng-touched main-search"/>
+      <i class="fa fa-search search-icon" aria-hidden="true"></i>
+      <i class="fa fa-arrow-left search-icon" aria-hidden="true" ng-click="clearSearch()" ng-if="c.search"></i>
+    </div>
+    
+    <div class="each-marker" ng-repeat="eachmarker in c.list" ng-if='eachmarker.name.length>0'>
+      <div target="_blank" ng-click="changeLocation(eachmarker)">  
+        <h3>{{eachmarker.name}}</h3>
+        <h4>{{eachmarker.address}}</h4>
+       
+      </div>
+
+			
+      
+ 
+			<div class="information" ng-click="information(eachmarker.sysId, eachmarker.attachmentSysId)">
+        Site Information
+      </div>
+      <a class="drive" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination={{eachmarker.lat}},{{eachmarker.lng}}">Google Maps Directions</a>
+      
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <symbol id="icon-flippy" width="20" height="12" viewBox="0 0 20 12">
+      <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M1 1h18M1 6h18M1 11h18"/>
+      </g>
+    </symbol>
+  </svg>
+  <div class="row near-by">
+    <flippy class="fancy" flip-duration="900" timing-function="ease-in-out">
+
+      <flippy-front id='ff'>
+        <leaflet lf-center="c.centerLocation" markers="c.markers" tiles="c.tile" defaults="defaults"></leaflet>
+        <div class="spinny" ng-show="c.loading">
+          <div class="sk-spinner sk-spinner-pulse"></div>
+        </div>
+      </flippy-front>
+      
+    </flippy>
+
+  </div>
 </div>
