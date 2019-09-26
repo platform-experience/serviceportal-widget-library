@@ -20,7 +20,7 @@ Download and install update set **[pe-sp-pdf-viewer.u-update-set.xml](https://gi
 
 After installation, the widget can be accessed via the `Service Portal > Widgets` section for use and customization.
 
-* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/kingston-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
+* SN Product Documentation - ['Load a customization from a single XML file'](https://docs.servicenow.com/bundle/newyork-application-development/page/build/system-update-sets/task/t_SaveAnUpdateSetAsAnXMLFile.html)
 
 ## Configuration
 
