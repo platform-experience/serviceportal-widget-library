@@ -1,8 +1,8 @@
-# Sp PDF Viewer
+# SP PDF Viewer
 
 ## Description
 
-> A simple and quick way to show a PDF within Service Portal
+A simple and quick way to show a PDF within Service Portal.
 
 ## Screenshot
 
@@ -24,7 +24,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ## Configuration
 
-> In input the component needs the attachment sys_id from sys_attachment table, and it can be used with a companion widget too which is showing a list of PDFs having in input a table, and/or the sys_id of the associated record where the attachments are dragged on. In this case, the PDFs are opened inside a modal.
+In input the component needs the attachment sys_id from sys_attachment table, and it can be used with a companion widget too which is showing a list of PDFs having in input a table, and/or the sys_id of the associated record where the attachments are dragged on. In this case, the PDFs are opened inside a modal.
 
 ## Platform Dependencies
 
