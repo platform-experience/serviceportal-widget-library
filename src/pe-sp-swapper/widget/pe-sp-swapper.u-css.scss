@@ -1,0 +1,55 @@
+$x_pisn_sp_swapper-height: $navbar-height !default;
+$x_pisn_sp_swapper-max-height: $sp-logo-max-height !default;
+$x_pisn_sp_swapper-max-width: $sp-logo-max-width !default;
+$x_pisn_sp_swapper-link-color: $navbar-inverse-link-color !default;
+$x_pisn_sp_swapper-bg: $navbar-inverse-bg !default;
+$x_pisn_sp_swapper-b-radius: 10px !default;
+
+.x_pisn_sp_swapper {
+  background-color: $x_pisn_sp_swapper-bg;
+  max-width: calc($x_pisn_sp_swapper-max-width + 60x);
+  position: absolute;
+  z-index: 999;
+}
+
+.x_pisn_sp_swapper-open {
+  background: rgba($x_pisn_sp_swapper-bg, 0.7);
+  border-radius: $x_pisn_sp_swapper-b-radius;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.x_pisn_sp_swapper__logo {
+  height: $x_pisn_sp_swapper-height;
+  display: inline-flex;
+  align-items: center;
+}
+
+.x_pisn_sp_swapper img {
+  margin: 8px 0px 8px 10px;
+  height: 100%;
+  width: auto;
+  max-height: $x_pisn_sp_swapper-max-height;
+  max-width: $x_pisn_sp_swapper-max-width;
+}
+
+.x_pisn_sp_swapper i {
+  color: $x_pisn_sp_swapper-link-color;
+}
+
+.x_pisn_sp_swapper ul {
+  padding: 0px 0px 15px 0px;
+}
+
+.x_pisn_sp_swapper__logo a {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.x_pisn_sp_swapper__logo a:hover {
+  opacity: 1;
+}
+
+.fa-lighter {
+  -webkit-text-stroke: 1.5px $x_pisn_sp_swapper-bg;
+  -webkit-font-smoothing: antialiased;
+}
