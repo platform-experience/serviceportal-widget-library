@@ -1,0 +1,89 @@
+.x-pisn-sp-outcard {
+  position: relative;
+  max-width: 500px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.navigation {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  span.info {
+    vertical-align: bottom;
+  }
+
+  .btn {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+  }
+}
+
+.panel-heading {
+  .glyphicon {
+    color: white;
+  }
+
+  .add-info {
+    margin-top: 3px;
+  }
+}
+
+.btn:focus,
+.btn.focus,
+.btn:active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-link-danger {
+  color: $brand-danger !important;
+}
+
+.btn-link-success {
+  color: $brand-success !important;
+}
+
+.btn-link .glyphicon-arrow-right {
+  float: right;
+  margin-top: 2px;
+}
+
+.table-incident {
+  border: 0 !important;
+
+  td:first-child {
+    padding-left: 15px;
+  }
+
+  td:last-child {
+    padding-right: 15px;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+@media (min-width: 768px) {}
+
+@media (max-width: 768px) {
+  .just-desktop {
+    display: none;
+  }
+}

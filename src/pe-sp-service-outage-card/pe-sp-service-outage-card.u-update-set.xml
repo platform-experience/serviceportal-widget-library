@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2019-06-28 16:49:50">
+  <sys_remote_update_set action="INSERT_OR_UPDATE">
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <application_name>SP Outage Card</application_name>
+    <application_scope>x_pisn_sp_outcard</application_scope>
+    <application_version>1.0.0</application_version>
+    <collisions/>
+    <commit_date/>
+    <deleted/>
+    <description></description>
+    <inserted/>
+    <name>SP Outage Card</name>
+    <origin_sys_id/>
+    <parent display_value=""/>
+    <release_date/>
+    <remote_base_update_set display_value=""/>
+    <remote_parent_id/>
+    <remote_sys_id>1c97408edbd6bb00efd54a92ba96198c</remote_sys_id>
+    <state>loaded</state>
+    <summary/>
+    <sys_class_name>sys_remote_update_set</sys_class_name>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>1da7884edbd6bb00efd54a92ba961991</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <update_set display_value=""/>
+    <update_source display_value=""/>
+    <updated/>
+  </sys_remote_update_set>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sp_widget_88298656db2df380d033df8b4b961906</name>
+    <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function SPServiceOutageCardController($location, spModal, $rootScope) {
+  /* widget controller */
+  var c = this;
+
+  c.isResolved = function (outage) {
+    if (outage.outage_detail &amp;&amp; outage.outage_detail.state &amp;&amp;
+				(outage.outage_detail.state.toLowerCase() == 'resolved' || outage.outage_detail.state.toLowerCase() == 'closed'))
+      return true;
+    return false;
+  };
+
+  c.getColor = function (outage) {
+    var color = 'danger';
+    if (c.isResolved(outage))
+      color = 'success';
+    return color;
+  };
+
+  c.getTaskColor = function (task) {
+    var color = 'danger';
+    if (task.state == 'Resolved' || task.state == 'Closed')
+      color = 'success';
+    return color;
+  };
+
+  c.current = '';
+  c.currentColor = 'default';
+  c.currentIndex = 0;
+  if (c.data.outages.length &gt; 0) {
+    c.current = c.data.outages[0].sys_id;
+    c.currentColor = c.getColor(c.data.outages[0]);
+  }
+
+  c.createIncident = function (outage) {
+    c.server.get({
+      action: "create",
+      sys_id: c.data.sys_id,
+      outage_sys_id: outage.sys_id
+    }).then(function (response) {
+      c.data = response.data;
+    });
+  };
+
+  c.prev = function () {
+    c.currentIndex--;
+    c.current = c.data.outages[c.currentIndex].sys_id;
+    c.currentColor = c.getColor(c.data.outages[c.currentIndex]);
+  };
+
+  c.next = function () {
+    c.currentIndex++;
+    c.current = c.data.outages[c.currentIndex].sys_id;
+    c.currentColor = c.getColor(c.data.outages[c.currentIndex]);
+  };
+
+  c.goToPage = function (params) {
+    $location.search(params);
+  };
+
+  c.openTask = function (params) {
+    spModal.open({
+      title: '${You are viewing }' + ' ' + params.number,
+      widget: 'widget-form',
+      buttons: [{
+        label: '${Close}',
+        cancel: true
+      }],
+      footerStyle: {
+        'display': 'none'
+      },
+      size: 'lg',
+      widgetInput: {
+        table: params.table,
+        sys_id: params.sys_id,
+        view: 'sp'
+      }
+    });
+  };
+
+  $rootScope.$on('spModel.gForm.initialized', function (event, gFormInstance) {
+    c.cssModal();
+    if (gFormInstance.getUniqueValue() == c.data.sys_id) {
+      var fields = gFormInstance.getFieldNames();
+      for (var i = 0; i &lt; fields.length; i++)
+        gFormInstance.setReadOnly(fields[i], true);
+    }
+  });
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.x-pisn-sp-outcard {
+  position: relative;
+  max-width: 500px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.navigation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  span.info {
+    vertical-align: bottom;
+  }
+  .btn {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+  }
+}
+
+.panel-heading {
+  .glyphicon {
+    color: white;
+  }
+  .add-info {
+    margin-top: 3px;
+  }
+}
+
+.btn:focus, .btn.focus, .btn:active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-link-danger {
+  color: $brand-danger !important;
+}
+
+.btn-link-success {
+  color: $brand-success !important;
+}
+
+.btn-link .glyphicon-arrow-right {
+  float: right;
+  margin-top: 2px;
+}
+
+.table-incident {
+  border: 0 !important;
+  td:first-child {padding-left: 15px;}
+  td:last-child {padding-right: 15px;}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 768px) {
+  .just-desktop {
+    display: none;
+  }
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;x-pisn-sp-outcard&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  scope.c.closeModal = function () {
+    var button = $('body').find('button.close');
+    angular.element(button).scope().$dismiss();
+  };
+  scope.c.cssModal = function () {
+    var modalBody = $('body').find('.modal-body');
+    modalBody.css('padding', '0');
+    modalBody.css('-webkit-font-smoothing', 'antialiased');
+    modalBody.css('-moz-osx-font-smoothing', 'grayscale');
+    modalBody.css('text-rendering', 'optimizeLegibility');
+    var panel = modalBody.find('.panel');
+    panel.css('border', '0');
+    panel.css('box-shadow', 'none');
+  };
+ }]]&gt;&lt;/link&gt;&lt;name&gt;Service Outage Card&lt;/name&gt;&lt;option_schema&gt;[{"displayValue":"Business Service","name":"service","section":"other","label":"Service","type":"reference","value":"cmdb_ci_service","ed":{"reference":"cmdb_ci_service"}},{"name":"task_creation_label","section":"other","default_value":"I'm Affected","label":"Task Creation Label","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function () {
+  input = input || {};
+  data.sys_id = options.sys_id || input.sys_id || $sp.getParameter("sys_id");
+  data.outages = [];
+
+  if (!data.sys_id)
+    return;
+
+  var serviceGR = new GlideRecord("cmdb_ci_service");
+  if (serviceGR.get(data.sys_id))
+    data.name = serviceGR.getDisplayValue();
+
+  if (input.action &amp;&amp; input.action == 'create') {
+    var gr = new GlideRecord('cmdb_ci_outage');
+    if (gr.get(input.outage_sys_id)) {
+      if (!gr.getValue('task_number')) {
+        var grIncInsert = new GlideRecord('incident');
+        grIncInsert.caller_id = gs.getUserID();
+        grIncInsert.cmdb_ci = serviceGR.getUniqueValue();
+        grIncInsert.business_service = serviceGR.getUniqueValue();
+        grIncInsert.contact_type = 'email';
+        grIncInsert.short_description = gs.getMessage('Major incident for outage affected by') + ' ' + gr.getDisplayValue('short_description');
+        data.incident_sys_id = grIncInsert.insert();
+        var grUpdate = new GlideRecord('cmdb_ci_outage');
+        grUpdate.get(input.outage_sys_id);
+        grUpdate.setValue('task_number', data.incident_sys_id);
+        grUpdate.update();
+      }
+    }
+  }
+
+  var outageGR = x_pisn_mso.ServiceOutage.outagesGR(data.sys_id);
+  outageGR.addQuery('type', 'Outage');
+  outageGR.orderByDesc('sys_updated_on');
+  outageGR.query();
+  var outage = {};
+  var task = {};
+
+  while (outageGR.next()) {
+
+    outage = new x_pisn_mso.ServiceOutage(outageGR).serialize();
+    outage.message = outageGR.getDisplayValue('message');
+    outage.short_description = outageGR.getDisplayValue('short_description');
+    outage.begin_ts = outageGR.getValue('begin');
+    outage.sys_updated_on = outageGR.getValue('sys_updated_on');
+    outage.incidents = [];
+    if (outageGR.task_number &amp;&amp; outageGR.task_number.sys_class_name == 'incident') {
+      var incidentID = outageGR.task_number.toString();
+      var incidentGR = new GlideRecord('incident');
+      incidentGR.get(incidentID);
+      if (incidentGR.caller_id.toString() == gs.getUserID()) {
+        task = {};
+        task.sys_id = incidentGR.getUniqueValue();
+        task.number = incidentGR.number.getDisplayValue();
+        task.short_description = incidentGR.short_description.getDisplayValue();
+        task.state = incidentGR.state.getDisplayValue();
+        task.__table = incidentGR.getTableName();
+        outage.incidents.push(task);
+      }
+
+      outage.outage_detail = new x_pisn_mso.MajorIncident(incidentID).getMainInfo();
+      outage.services_impacted = x_pisn_mso.ServiceData.getImpactedServices(incidentID);
+      outage.task = incidentID;
+      outage.task_caller = incidentGR.caller_id.toString();
+      outage.is_affected = outage.task_caller == gs.getUserID() &amp;&amp; outage.incidents.length == 0;
+
+      if (!outage.is_affected) {
+        var childGR = new GlideRecord('incident');
+        childGR.addQuery('caller_id', gs.getUserID());
+        childGR.addQuery('parent', incidentID);
+        childGR.query();
+        outage.is_affected = childGR.hasNext();
+      }
+    }
+    data.outages.push(outage);
+  }
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-05-23 14:07:38&lt;/sys_created_on&gt;&lt;sys_id&gt;88298656db2df380d033df8b4b961906&lt;/sys_id&gt;&lt;sys_mod_count&gt;225&lt;/sys_mod_count&gt;&lt;sys_name&gt;Service Outage Card&lt;/sys_name&gt;&lt;sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard"&gt;5c198252db2df380d033df8b4b9619d4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Outage Card"&gt;5c198252db2df380d033df8b4b9619d4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_88298656db2df380d033df8b4b961906&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-17 15:20:51&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="x-pisn-sp-outcard" ng-if="c.data.outages.length&gt;0"&gt;
+  &lt;h3&gt;{{::c.data.name}}&lt;/h3&gt;
+  &lt;div class="navigation noselect" ng-if="c.data.outages.length &gt; 1"&gt;
+    &lt;span class="info m-r-xs text-muted"&gt;{{c.currentIndex + 1}} ${of} {{::c.data.outages.length}}&lt;/span&gt;
+    &lt;div class="btn-group" role="group" aria-label="..."&gt;
+      &lt;button type="button" class="btn btn-default m-r-xs padder" ng-click="c.prev()" ng-disabled="c.currentIndex == 0"&gt;&lt;span class="glyphicon glyphicon-chevron-left font-thin"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button type="button" class="btn btn-default m-l-xs padder" ng-click="c.next()" ng-disabled="c.currentIndex == (c.data.outages.length - 1)"&gt;&lt;span class="glyphicon glyphicon-chevron-right font-thin"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel panel-{{c.getColor(outage)}}" ng-repeat="outage in c.data.outages | filter: { sys_id: c.current } track by outage.sys_id"&gt;
+    &lt;div class="panel-heading"&gt;&lt;span class="m-r-sm glyphicon" ng-class="{'glyphicon-remove-circle': c.getColor(outage)=='danger', 'glyphicon-ok-circle': c.getColor(outage)=='success' }"&gt;&lt;/span&gt;${Affected
+      by} &lt;span ng-if="outage.short_description"&gt;{{outage.short_description}}&lt;/span&gt;&lt;span ng-if="!outage.short_description"&gt;${outage}&lt;/span&gt;&lt;small class="pull-right add-info"&gt;${Opened}
+        &lt;sn-time-ago timestamp="outage.begin_ts" /&gt;&lt;/small&gt;&lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+      &lt;div class="outage-details" ng-if="!c.isResolved(outage)"&gt;
+        &lt;p ng-bind-html="outage.details"&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;${Estimate resolution}&lt;/strong&gt; ${at} &lt;span ng-if="outage.outage_detail &amp;&amp; outage.outage_detail.estd_timestamp" class="font-bold"&gt;
+            &lt;sn-time-ago timestamp="outage.outage_detail.estd_timestamp" /&gt;
+          &lt;/span&gt;
+          &lt;span ng-if="!outage.outage_detail || !outage.outage_detail.estd_timestamp"&gt;${unknown}&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;button type="button" class="btn btn-danger pull-right" ng-click="c.createIncident(outage)" ng-if="!outage.is_affected &amp;&amp; !c.isResolved(outage) &amp;&amp; outage.incidents.length == 0"&gt;{{::c.options.task_creation_label}}&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div ng-if="c.isResolved(outage)"&gt;
+        &lt;p&gt;${We put in place a fix to address timeout issue reported by users of} {{c.data.name}}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;button type="button" class="btn btn-link btn-link-{{c.getColor(outage)}} no-padder m-t" ng-click="c.goToPage({id: 'service_status', service: c.data.sys_id})"&gt;${View details}&lt;span class="glyphicon glyphicon-arrow-right font-thin m-l-xs"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;table class="table table-incident m-b-none"&gt;
+        &lt;tr class="b-t" ng-repeat="task in outage.incidents" ng-click="c.openTask({sys_id: task.sys_id, number: task.number, table: task.__table})"&gt;
+          &lt;td class="text-{{c.getTaskColor(task)}} font-bold"&gt;{{task.number}}&lt;/td&gt;
+          &lt;td&gt;{{task.short_description}}&lt;/td&gt;
+          &lt;td class="just-desktop text-right text-{{c.getTaskColor(task)}} font-bold"&gt;{{task.state}}&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+    <payload_hash>658374169</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>11a7884edbd6bb00efd54a92ba961993</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef710000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>Service Outage Card</target_name>
+    <type>Widget</type>
+    <update_domain>global</update_domain>
+    <update_guid>3ac9031e9542f780a059ce359a062b27</update_guid>
+    <update_guid_history>3ac9031e9542f780a059ce359a062b27:658374169,fdb90fdacc42f7804f1ef0d4c73d2bd1:1959540966,db994fda8042f7806d49e3ae5280a3e7:-1884613329,91898bdaa042f780057f40cb48682502:-1557242809,b179c7dae242f780fbdbea32013eac56:1462939172,f2594bdaf942f7806223b3e612a5a34c:-119020377,a13903dad242f780394f9fcecc821616:-366752553,31f8c3da5242f780be5d99cb3f50799c:-1018598851,c6b84b9a7e42f780c2f690b9bf102d3e:-366752553,c4980b9ae942f780a22510b2a215c098:-865831806,5de70f5a8d42f7800b66bfd694f6ffff:256874901,7c24fa1c81023380ffa95ced5e2fc7c3:1164085037,f204fa1c27023380fd219af156bd5633:1873503191,aac3f61c10023380731849f162014044:430590046,f5237ed8ed0233805c06f823922d71ec:-1074979577,21137ed8b90233806861ef224a38832a:-385580727,19e2bad82002338006699d6546bf0a1a:-1226393271,6e523e981a0233803cbe4481f01d7a6b:-1020399389,b4c1f698b5023380ff20244fcf99332b:-1859159458,80a17698b70233807db5d95435d9a283:-1540932588,a191f298c8023380e14f3874e80362e1:-1835650252,5a81f298b9023380a98befb5f52278d9:1993130004,3e017e58e60233805ef954f660f8e223:-1835650252,34357dbebf39bb4018edeb54d2a278ff:345081986,261d12eeb43d7b40b48002938788307f:-1083546917,12bc9aae1a3d7b40f722f67493bf4eb5:2005652847,4b6bd66e813d7b4063a609b49e0947cf:-1351046880,d43b9aeacd3d7b40370ffc2771e8df4d:1753054043,346a9aea453d7b4001fb4df9b3c24696:-1393437586,af08d66a3e3d7b4043194784ee53aa34:-2039556425,5017926a8e3d7b40c51503a2d7d53c80:1589704,c1e61e2ab83d7b40e35d01111c2aaa34:-134432222,de865ee6173d7b405641c6b6991e3215:-1805196819,d6e6e9aeb7797b40a787173a787f6dd1:1589704,d9a5ed2ee4797b4094cf1c8b2b87f8b7:-1037339150,a895e16e83797b407f9fe2d2163cc0c2:1420000393,e3352d2e6d797b400bd3b2f50d025788:1636532754,3df4612e88797b40c44f1f1872c26eb7:-1348678829,e21461ea8f797b40b05758d249725341:1636532754,c0d1ad2a08797b4068075ccf3de1ff03:-698617172,1311a52a6d797b40deda59ad3c41be71:424436133,b1906de6ad797b405879c7be2879172c:2020974762,1c80a12a78797b40a6def5d7d24d694d:57813868,8350e1e624797b40351f983e59838266:-1836724725,f7006de6f4797b404b2f0763bb4bfa0b:-1492453671,144fd166f7797b40d793f3ce9bd1cb87:-2115179367,d41f5d66d4797b409d03e031959a22e1:91956103,65ae5d6652797b407cc041e07c36c6c1:1861111091,6c6ed16670797b40fa9fab917be64813:-718874376,1c0e11664c797b40e7aab4d21dc5e59e:600466744,71cdd92627797b40fb9cda355845128b:-488643536,e43911ee2a397b402ded43768d85bb81:1029615119,e567d1ee35397b40e25c3c8d36477ded:-572148681,ce5711ee44397b40e114e63cf4c2e668:1476788803,cc5751eebb397b402c33ded3286ebc20:-1880818599,2137ddaea2397b401badd7537749741e:1517581274,ae179daeee397b4078dcdfc47e77097e:1564019729,c6c619ae11397b404b527738669c89ed:-595355145,619651ae41397b4040542568439881d9:1627746893,3b2651ae83397b404bcf34cee74789d1:-595355145,c2e55d6e4e397b402ab1c9d0077313c7:1475823885,d4c5556e65397b404592d9d865d4a031:-595355145,a9155d2e71397b402151e4d65ca4c9ad:1891434755,90051d2ebc397b40b8a325a726c9371d:382574512,1e94592ede397b4066e354456d18d99c:297127623,db54912e13397b407adb6df6f03308a3:2043503796,3024512e61397b40aaf1227fd1ce3f9b:-165938165,0dc3d1ea19397b408ddafd776c51d725:-1996029954,b7f295aa96397b4040931f345aa6826f:900554428,ecc21daae9397b40c966879ac53e51f6:2146979685,c27295aa54397b408a009feef0f62b79:-1873867162,8e5e8da6bc397b40d28410e420c0de71:-1895942410,1c3e4da6aa397b403a966ab3c1804aaf:-1734338010,c82e4da6cd397b4000060044e8483929:525374611,91fdc5a665397b40c91c39235208dae1:-1734338010,657dc966a8397b40eec039f648d911db:778421278,db0dc96658397b403811cd7e4cf37864:1981730307,23fcc926ce397b403b5c920e01381dea:-1278635056,1e5c412608397b4086c607ab693946c4:1981730307,e5fbc926f3397b402995dee55688c3e2:-2094868964,61db41262f397b40ed3c5dc429ecfc9b:-410825349,392a41e2ac397b40636c73006111beb4:-1358271939,860acda2a4397b405c18ebad91457378:1691733335,7f7985a2cc397b406265c10f695b0401:-1358271939,087941627f397b4046b71f0897847177:521408826,b47841627d397b4065411201c22bd208:-1722824734,2f18016265397b407cb3120afb5e88cd:560508514,f451416ac7f57b403e9352906db36d1b:-983463540,d6dbfb2281a17780b69e04f1e97d3f14:-2028668705,953bffeebd6177808947e657bf1986e8:1096701850,fcca77eeb3617780ca9aa7de585e8a6c:813901914,b07abbae3561778009db6033f875e659:-222868614,4af93fae396177807fd7776fb5635139:-2009219363,14d973ae07617780f6965413132a8b84:1584502724,62497f6eec617780933be72af04d775e:-1036298759,a729fb6ed0617780ef200f4414aa2371:799759811,ebf8776eb26177808d99113b5adff159:-618054983,a2a8fb2e33617780c2c656bfb61043ef:907941385,37a7bfea35617780ae97031f5b46d5fc:730796858,0e62f3a6876177803476671ee65d9879:258697081,b60237a66e61778090f2437fde306029:342788040,f8d137a642617780e9d3049365ec337f:-1462873290,5261f3a6a66177801d22e02c084abfcb:936720544,3b21bb6651617780b743fbf08434a14f:-1780981286,3fa07b669d6177803f26c4af5a9ec699:-1943723782,4c70776650617780365aae2e6351cf90:-15581048,f88f63e20461778089448ff6dfc76957:-435415250,e21f67e2006177803e1717e4d4f74623:1311302703,7f5d6ba22c6177802a8baff66856c672:43925133,3e2da7a2126177809f21490ea35319ad:-41246789,2b8cab6277617780e776fc75e0585f05:-1079355133,932ce762b36177800051f8b070a06fe7:221952334,99e8af6ee22177809f3f4bd7f531b8aa:-1053381699,ded823ae9f217780c8b770ab7cd3e0c2:-1316555581,0e782b6eeb2177804144297bd7edd921:-298414889,1828ef2ed12177800d1bc417adfd2957:694690136,3508e72eb9217780ae9445ab2105c0f7:-1354922335,1737e72e01217780625b9126df664bc9:213279749,d5b36b2aa8217780dbdf9689153f31f8:1472123218,ed936f2af8217780f4c5cee73cb8fded:-250489152,8a83e72ad7217780025f00e7ea774b3e:1978558048,0323a72ac721778009738e103b8f6aca:-1608256360,6da2afe6f021778054920057ee06d6c4:-1571723208,d8522be6f3217780cf646e600e058627:1839116105,606fd3e291217780f1951f08f968fd1c:701365884,585f5b262121778001bb03d96b897956:-1135541364,b00f1726c421778075270dd37a47f0ea:-351818764,3bfe1726622177808ab12d4b31bb27d0:-1507189722,39ce1326ec21778044457a8d34c4ed8d:-117757381,34bedfe201217780f1a65905fcf197aa:-537096977,0fcd93e239217780a5782617665a50f9:1607972623,262faae6ad6d3780cce6a03bea4c165b:208475592,fade2ae63b6d37807362eee4e44733fa:1805047339,406e2ea6f06d37802d3c56c9f4563836:1149815932,4eeda6a6696d378046081aa1f8c857d8:86215162,4cdd22a6906d37804445ec59ee6a41a7:-1536404225,a18d22a6896d3780b3cf255b15d56e96:-1208380913,a36962a2306d3780b1cd2fa5cf43824f:-1827962322,5b5962a2466d3780d958e567eae73547:725806370,dc75a2aef02d378048d61b3b87e21c28:1272694081,ea05ae6e322d37809ed7e9d340dcfb67:1311260081,cfc4ae6e492d37809496724720f0585e:-1304209775,4af06aaa912d37804920b05963052ee7:725276505,e9102e6a0f2d3780d7e6e300ba2ff512:445224745,e05e96e6b22d3780f569f5cad5ec390a:2006516077,7b3edea6c62d37801718bedef9377b35:1374297490,48dddea61c2d37806c312c3cb590412b:989124051,73ad92a6f22d378010e92c005c680a05:-1304689346,d2ecdee2332d37807c123b3d96fda9e2:-51154412,fcb59aae6ae93780122d42c6367e0112:544920067,7a759eae0ee93780949cd308413a8ec1:1444579747,93635e2e62e937803c6b91b5e1d383da:-316009223,ef03da2e77e937800c00fb4b1eb432bd:-1296366825,07d2deea0be93780525b87c5a361e95f:-992654696,bcc2d62e01e93780596a25de6ec1bec1:-127637681,cf22d6ea9be93780e22e370504c680ee:1967051653,66a1d6ea43e93780c43de56fb3544708:-1243482492,1871d2eadde93780d2de76e8834abba5:-2047018907,25519aaa96e93780d582649295121a84:-1833612661,c1d0d2aa67e937806a16430cb1db2eea:-807289132,3c5012aa3de937806053f228fe860f13:1473903165,c810de6a87e93780d5583550ddcee653:673049503,d1dfc26a4ae93780326fcc123eeb1133:-1653731401,68cf866a6de93780be587383dcf82fd6:-1646388418,f17f866ae3e93780d383920b24ce78c9:1656839340,02faca2641e93780ba030c3111292d4a:312535974,eecac62636e93780d6a1cc91d01238c2:-24589067,a69ac62670e93780752cba92322c03bb:1573599740,b81a86e2b5e93780901ce36f09856f29:-1847336232,609946e23be93780504f1550538f0ce8:-389266470,056806a220e93780c1cca9aca76ffc07:-1948754663,aa588e622fe93780d6d5fd0d44739837:-1728026650,a72802a2d4e93780764d8c54281e8bb9:639407417,7a278e22a8e93780f2d3e097e207bbda:1958288637,2fe60622a8e9378098208e6ff83bed92:549205341,b4568aeeeca93780d2f2050cbab5ca83:2084142778,5ca58aee9ea93780b7d6ebe8b7bbb67b:524276031,0c950aee55a9378043a4f50f4ccd51d6:1900435728,e57542ee70a93780771744211960b2b4:990979551,6345ceae2ea937808cb27e8a9cabdcf9:-1667019346,05f4ceae87a93780c64a3d4ee945bb4f:1553139335,b07402ae8ca937807ab7ab962e263bff:-858017967,1ea3ce2e0fa937803278bdd648e8d08e:1715247383,c5caee962fadf3802b6fedbb5d96569a:-1519359806,eb1a269656adf3808d71746cfb34cfa8:43766101,47b9a69643adf38015361cc981cbbf26:1254096681,6b79ae560cadf3807ad5ce92245c484f:-1206194423,6cb626921dadf380a8633f2e87949a6e:-2070426028,8b36aa92ccadf3801d7cecd42d162356:1773109545,8ec56e527dadf380014fe200b592db88:-359738812,f0c5269247adf380fcebea8a61babd1e:1893930678,5b156252f2adf380522a1abf76b175d3:1111232054,e1742ede6f6df380d8230569ab0a6ce2:1893509260,a2642252f5adf380b5f618aed2e250c7:-347126531,fec3a6123eadf38006a37501401e6dc6:882168867,38e226de1f6df3800e50a4a29fdf7f1a:-244542243,1dc226dee86df380fd1b9951e13ac011:-717121498,27a2a2ded56df38038db3e038b030952:-1140195394,34122a9e3c6df38011edd871b1b71bf9:1840976208,fa022a9e136df38052c3dc8c224c7cf1:-1645996047,b2e1a29e1d6df380d5c2d2fb2d1246ef:-510334423,52b1229e766df3805e7bebbfcc03da20:-310129204,a3816e5e0b6df3808f7e91c4289aaa57:359216068,7581225ec96df38097b78453b6f52900:2124090687,c7316a5e7d6df38061c3601e3ef59414:706778681,c221665eae6df38058f4257f164ce2d6:-1716547700,bbf0665e206df3801f9911cb337392ce:347760453,6380a61e706df38055ebab144ef6053a:-2089218106,5ddf9ada556df3808fdccdfc351c51c4:1057832457,8cbf921ebd6df380346525a7c9c978ab:-1972662433,744fd6da516df380b13f362cb52514e5:329415444,332f9adad46df380ad3138e15e93febe:822696292,727ede9ae76df38029d6a198d8095de1:-1892786233,120eda9ab86df38060dc92b37e833ea0:632332669,e2cbd61afd6df380be1b5652af9fb36b:299702072,b8cbd61ad06df3808adf89293bf5ab63:-1101430844,51fa1ad68d6df3802c09e8b105cfdae4:-1006918967,44ca1ad6dc6df38021afc275d74959db:-1199535911,c80716169d6df3802948a8e75f3bb6f7:-1231174114,525c8a5ac32df3807b7534b913b25f0c:1843169020,fb1cca1aff2df3808db64f923f69c2c7:-2068050190,369b8ad6752df38040c03be218a15bb3:418185113,74e9c296152df380beb73cc184a125f9:-2106333094,a1894a56aa2df38011f723eb9b222a09:-312379375,c879ca563e2df380f1c3249aa0c57d88:192049786,96490656492df380599d4a88a54583da:1157440612</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_dd5fa22adb6d3780d033df8b4b9619a7</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-24 11:32:20</sys_created_on><sys_id>dd5fa22adb6d3780d033df8b4b9619a7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.setValue</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_dd5fa22adb6d3780d033df8b4b9619a7</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-24 11:32:20</sys_updated_on><target_name>GlideRecord.setValue</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>1004369537</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>11a7884edbd6bb00efd54a92ba961996</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef280000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>GlideRecord.setValue</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>115fa22a236d37805b86d27b6f3beda9</update_guid>
+    <update_guid_history>115fa22a236d37805b86d27b6f3beda9:-224529823</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sp_container_c4f982d6db2df380d033df8b4b9619a8</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Demo SP Service Outage Card - Container 1</name><order>1</order><sp_page display_value="x_pisn_sp_outcard">6ca9ce56db2df380d033df8b4b9619e8</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:10:29</sys_created_on><sys_id>c4f982d6db2df380d033df8b4b9619a8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Demo SP Service Outage Card - Container 1</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sp_container_c4f982d6db2df380d033df8b4b9619a8</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:10:29</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+    <payload_hash>-849465353</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>15a7884edbd6bb00efd54a92ba961992</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdee720000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>Demo SP Service Outage Card - Container 1</target_name>
+    <type>Container</type>
+    <update_domain>global</update_domain>
+    <update_guid>4cf982d6b52df380fae4288adf20d1a9</update_guid>
+    <update_guid_history>4cf982d6b52df380fae4288adf20d1a9:1255736354</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_9f8c8e5adb2df380d033df8b4b96196e</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:21:54</sys_created_on><sys_id>9f8c8e5adb2df380d033df8b4b96196e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MajorIncident</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_9f8c8e5adb2df380d033df8b4b96196e</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:21:54</sys_updated_on><target_name>MajorIncident</target_name><target_scope display_value="SP - MIM Service Outages">f3b39630db9a57405c025a6adc9619df</target_scope><target_type>sys_script_include</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>-889655717</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>15a7884edbd6bb00efd54a92ba961995</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdeedc0000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>MajorIncident</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>5b8c8e5a832df380da0476079b40156f</update_guid>
+    <update_guid_history>5b8c8e5a832df380da0476079b40156f:609363121</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_578c8e5adb2df380d033df8b4b96196d</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:21:54</sys_created_on><sys_id>578c8e5adb2df380d033df8b4b96196d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_578c8e5adb2df380d033df8b4b96196d</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:21:54</sys_updated_on><target_name>incident</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>-1171257199</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>19a7884edbd6bb00efd54a92ba961994</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdeef80000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>incident</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>138c8e5afb2df380e301d3cad36f8e6e</update_guid>
+    <update_guid_history>138c8e5afb2df380e301d3cad36f8e6e:-1180756687</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_30896296dbadf380d033df8b4b961969</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 16:28:26</sys_created_on><sys_id>30896296dbadf380d033df8b4b961969</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.insert</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_30896296dbadf380d033df8b4b961969</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 16:28:26</sys_updated_on><target_name>GlideRecord.insert</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>-1547131839</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>1da7884edbd6bb00efd54a92ba961993</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef070000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>GlideRecord.insert</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>f889629673adf380bf7028c3e5a61c69</update_guid>
+    <update_guid_history>f889629673adf380bf7028c3e5a61c69:-1079399199</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sp_column_fa2ac2d6db2df380d033df8b4b961997</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">aa2ac2d6db2df380d033df8b4b961995</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:11:29</sys_created_on><sys_id>fa2ac2d6db2df380d033df8b4b961997</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sp_column_fa2ac2d6db2df380d033df8b4b961997</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:11:29</sys_updated_on></sp_column></record_update>]]></payload>
+    <payload_hash>-2072687664</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>51a7884edbd6bb00efd54a92ba961992</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdee8f0000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>1</target_name>
+    <type>Column</type>
+    <update_domain>global</update_domain>
+    <update_guid>7e2ac2d6162df380a88bad530d7d4998</update_guid>
+    <update_guid_history>7e2ac2d6162df380a88bad530d7d4998:1064817285</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_9d5fa22adb6d3780d033df8b4b9619a9</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-24 11:32:20</sys_created_on><sys_id>9d5fa22adb6d3780d033df8b4b9619a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GlideRecord.update</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_9d5fa22adb6d3780d033df8b4b9619a9</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-24 11:32:20</sys_updated_on><target_name>GlideRecord.update</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>-1364653503</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>51a7884edbd6bb00efd54a92ba961995</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef390000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>GlideRecord.update</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>595fa22a076d3780e7f4fddbcac702aa</update_guid>
+    <update_guid_history>595fa22a076d3780e7f4fddbcac702aa:490406625</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_578c8e5adb2df380d033df8b4b961966</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:21:54</sys_created_on><sys_id>578c8e5adb2df380d033df8b4b961966</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ServiceOutage</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_578c8e5adb2df380d033df8b4b961966</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:21:54</sys_updated_on><target_name>ServiceOutage</target_name><target_scope display_value="SP - MIM Service Outages">f3b39630db9a57405c025a6adc9619df</target_scope><target_type>sys_script_include</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>-1112817691</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>55a7884edbd6bb00efd54a92ba961994</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdeeef0000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>ServiceOutage</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>538c8e5a992df38062ab508232c51067</update_guid>
+    <update_guid_history>538c8e5a992df38062ab508232c51067:-991895237</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_178c8e5adb2df380d033df8b4b961964</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:21:53</sys_created_on><sys_id>178c8e5adb2df380d033df8b4b961964</sys_id><sys_mod_count>0</sys_mod_count><sys_name>cmdb_ci_service</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_178c8e5adb2df380d033df8b4b961964</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:21:53</sys_updated_on><target_name>cmdb_ci_service</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>1788181277</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>59a7884edbd6bb00efd54a92ba961993</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdeeaa0000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>cmdb_ci_service</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>978c8e5ab02df380219d2498ea203265</update_guid>
+    <update_guid_history>978c8e5ab02df380219d2498ea203265:-524608441</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sp_row_aa2ac2d6db2df380d033df8b4b961995</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Demo SP Service Outage Card - Container 1">c4f982d6db2df380d033df8b4b9619a8</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:11:29</sys_created_on><sys_id>aa2ac2d6db2df380d033df8b4b961995</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sp_row_aa2ac2d6db2df380d033df8b4b961995</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:11:29</sys_updated_on></sp_row></record_update>]]></payload>
+    <payload_hash>-1329511677</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>5da7884edbd6bb00efd54a92ba961992</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdee820000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>1</target_name>
+    <type>Row</type>
+    <update_domain>global</update_domain>
+    <update_guid>be2ac2d6a22df38040e4f82a37253896</update_guid>
+    <update_guid_history>be2ac2d6a22df38040e4f82a37253896:2047180142</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_db8c8e5adb2df380d033df8b4b96196b</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:21:54</sys_created_on><sys_id>db8c8e5adb2df380d033df8b4b96196b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ScopedGlideElement</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_db8c8e5adb2df380d033df8b4b96196b</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:21:54</sys_updated_on><target_name>ScopedGlideElement</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>1913318529</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>5da7884edbd6bb00efd54a92ba961995</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdeec60000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>ScopedGlideElement</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>978c8e5a6d2df380c63a677173a0556c</update_guid>
+    <update_guid_history>978c8e5a6d2df380c63a677173a0556c:-1414619359</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_571f6326db617780d033df8b4b9619f7</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-24 16:11:00</sys_created_on><sys_id>571f6326db617780d033df8b4b9619f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident_task</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_571f6326db617780d033df8b4b9619f7</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-24 16:11:00</sys_updated_on><target_name>incident_task</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>1445666971</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>91a7884edbd6bb00efd54a92ba961994</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef440000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>incident_task</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>d71f63263e617780e7c262be30c20df8</update_guid>
+    <update_guid_history>d71f63263e617780e7c262be30c20df8:-935563643</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_138c8e5adb2df380d033df8b4b961971</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:21:54</sys_created_on><sys_id>138c8e5adb2df380d033df8b4b961971</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ServiceData</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_138c8e5adb2df380d033df8b4b961971</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:21:54</sys_updated_on><target_name>ServiceData</target_name><target_scope display_value="SP - MIM Service Outages">f3b39630db9a57405c025a6adc9619df</target_scope><target_type>sys_script_include</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>2009613235</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>95a7884edbd6bb00efd54a92ba961993</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdeee60000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>ServiceData</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>db8c8e5ac62df3802d38a30592d68171</update_guid>
+    <update_guid_history>db8c8e5ac62df3802d38a30592d68171:-970171831</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sp_page_6ca9ce56db2df380d033df8b4b9619e8</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>x_pisn_sp_outcard</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:10:20</sys_created_on><sys_id>6ca9ce56db2df380d033df8b4b9619e8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_pisn_sp_outcard</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sp_page_6ca9ce56db2df380d033df8b4b9619e8</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:10:20</sys_updated_on><title>Demo SP Service Outage Card</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=6ca9ce56db2df380d033df8b4b9619e8"/></record_update>]]></payload>
+    <payload_hash>-2120067087</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>99a7884edbd6bb00efd54a92ba961992</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdee640000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>x_pisn_sp_outcard</target_name>
+    <type>Page</type>
+    <update_domain>global</update_domain>
+    <update_guid>42e9c296e92df380ae357857fa51b8ff</update_guid>
+    <update_guid_history>42e9c296e92df380ae357857fa51b8ff:820265126</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_d38c8e5adb2df380d033df8b4b961968</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:21:54</sys_created_on><sys_id>d38c8e5adb2df380d033df8b4b961968</sys_id><sys_mod_count>0</sys_mod_count><sys_name>cmdb_ci_outage</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_d38c8e5adb2df380d033df8b4b961968</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:21:54</sys_updated_on><target_name>cmdb_ci_outage</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>-1464426127</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>99a7884edbd6bb00efd54a92ba961995</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdeebb0000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>cmdb_ci_outage</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>9f8c8e5a342df380fad42641cce22268</update_guid>
+    <update_guid_history>9f8c8e5a342df380fad42641cce22268:-1510642863</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_955fa22adb6d3780d033df8b4b9619ab</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>write</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-24 11:32:20</sys_created_on><sys_id>955fa22adb6d3780d033df8b4b9619ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>cmdb_ci_outage</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_955fa22adb6d3780d033df8b4b9619ab</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-24 11:32:20</sys_updated_on><target_name>cmdb_ci_outage</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>-1598056792</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>9da7884edbd6bb00efd54a92ba961994</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef300000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>cmdb_ci_outage</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>515fa22a676d3780f0ee5b87101c06ac</update_guid>
+    <update_guid_history>515fa22a676d3780f0ee5b87101c06ac:1945309832</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_app_5c198252db2df380d033df8b4b9619d4</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><can_edit_in_studio>false</can_edit_in_studio><enforce_license>log</enforce_license><js_level>helsinki_es5</js_level><licensable>true</licensable><license_category>none</license_category><license_model>none</license_model><logo/><menu/><name>SP Outage Card</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_pisn_sp_outcard</scope><scoped_administration>false</scoped_administration><short_description/><source>x_pisn_sp_outcard</source><store_correlation_id>REPOAPP0000001319</store_correlation_id><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:06:41</sys_created_on><sys_id>5c198252db2df380d033df8b4b9619d4</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-06-17 12:58:52</sys_updated_on><template/><trackable>true</trackable><user_role/><vendor/><vendor_prefix/><version>1.0.0</version></sys_app></record_update>]]></payload>
+    <payload_hash>1044236439</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>d1a7884edbd6bb00efd54a92ba961993</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdee440000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>SP Outage Card</target_name>
+    <type>Custom Application</type>
+    <update_domain>global</update_domain>
+    <update_guid>3a49669e4cceb780302742ffc6fe978d</update_guid>
+    <update_guid_history>3a49669e4cceb780302742ffc6fe978d:1044236439,4a45f1fe8139bb40e2f32aec807d8def:-84749846,ac19c256cc2df380fbe07fdc681f72a1:-2049379111</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_df8c8e5adb2df380d033df8b4b961969</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:21:54</sys_created_on><sys_id>df8c8e5adb2df380d033df8b4b961969</sys_id><sys_mod_count>0</sys_mod_count><sys_name>MSO</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_df8c8e5adb2df380d033df8b4b961969</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:21:54</sys_updated_on><target_name>MSO</target_name><target_scope display_value="SP - MIM Service Outages">f3b39630db9a57405c025a6adc9619df</target_scope><target_type>sys_script_include</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>1697484703</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>d1a7884edbd6bb00efd54a92ba961996</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdeed10000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>MSO</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>9b8c8e5a332df3809f3ee1a273b97e6a</update_guid>
+    <update_guid_history>9b8c8e5a332df3809f3ee1a273b97e6a:-457957067</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sp_instance_6f3ac6d6db2df380d033df8b4b961912</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">fa2ac2d6db2df380d033df8b4b961997</sp_column><sp_widget display_value="Service Outage Card">88298656db2df380d033df8b4b961906</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 14:11:49</sys_created_on><sys_id>6f3ac6d6db2df380d033df8b4b961912</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sp_instance_6f3ac6d6db2df380d033df8b4b961912</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 14:11:49</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=6f3ac6d6db2df380d033df8b4b961912"/></record_update>]]></payload>
+    <payload_hash>1883811823</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>d5a7884edbd6bb00efd54a92ba961992</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdee9d0000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name/>
+    <type>Instance</type>
+    <update_domain>global</update_domain>
+    <update_guid>f73ac6d6a62df38075a6c11bf5239f14</update_guid>
+    <update_guid_history>f73ac6d6a62df38075a6c11bf5239f14:986912548</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_bc896296dbadf380d033df8b4b961966</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 16:28:26</sys_created_on><sys_id>bc896296dbadf380d033df8b4b961966</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Glide API: string utilities</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_bc896296dbadf380d033df8b4b961966</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 16:28:26</sys_updated_on><target_name>Glide API: string utilities</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>-589489477</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>d5a7884edbd6bb00efd54a92ba961995</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef110000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>Glide API: string utilities</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>30896296edadf3807c274faa969c4968</update_guid>
+    <update_guid_history>30896296edadf3807c274faa969c4968:-1054138543</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_9042bfa6db617780d033df8b4b961916</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>create</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-24 16:24:44</sys_created_on><sys_id>9042bfa6db617780d033df8b4b961916</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident_task</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_9042bfa6db617780d033df8b4b961916</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-24 16:24:44</sys_updated_on><target_name>incident_task</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>1245845493</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>d9a7884edbd6bb00efd54a92ba961994</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef530000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>incident_task</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>184233e688617780b54b03cdd819c8cf</update_guid>
+    <update_guid_history>184233e688617780b54b03cdd819c8cf:289239519</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <application display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</application>
+    <category>customer</category>
+    <comments/>
+    <name>sys_scope_privilege_38896296dbadf380d033df8b4b96196a</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>create</operation><source_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-05-23 16:28:26</sys_created_on><sys_id>38896296dbadf380d033df8b4b96196a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="SP Outage Card" source="x_pisn_sp_outcard">5c198252db2df380d033df8b4b9619d4</sys_package><sys_policy/><sys_scope display_value="SP Outage Card">5c198252db2df380d033df8b4b9619d4</sys_scope><sys_update_name>sys_scope_privilege_38896296dbadf380d033df8b4b96196a</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-05-23 16:28:26</sys_updated_on><target_name>incident</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+    <payload_hash>2115602539</payload_hash>
+    <remote_update_set display_value="SP Outage Card">1da7884edbd6bb00efd54a92ba961991</remote_update_set>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <sys_created_by>fabio</sys_created_by>
+    <sys_created_on>2019-06-28 16:49:50</sys_created_on>
+    <sys_id>dda7884edbd6bb00efd54a92ba961993</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_recorded_at>16b9efdef1f0000001</sys_recorded_at>
+    <sys_updated_by>fabio</sys_updated_by>
+    <sys_updated_on>2019-06-28 16:49:50</sys_updated_on>
+    <table/>
+    <target_name>incident</target_name>
+    <type>Cross scope privilege</type>
+    <update_domain>global</update_domain>
+    <update_guid>c189629664adf380f6a17eb1c883e46b</update_guid>
+    <update_guid_history>c189629664adf380f6a17eb1c883e46b:-2125356789</update_guid_history>
+    <update_set display_value=""/>
+    <view/>
+  </sys_update_xml>
+</unload>

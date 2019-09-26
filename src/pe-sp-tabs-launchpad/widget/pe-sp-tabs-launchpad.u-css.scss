@@ -1,0 +1,94 @@
+$x-pisn-sp-launchp: lighten($gray-base, 85%);
+$x-pisn-sp-launchp-active: $brand-primary;
+
+$x-pisn-sp-launchp-text: $x-pisn-sp-launchp !default;
+$x-pisn-sp-launchp-badge: $x-pisn-sp-launchp !default;
+$x-pisn-sp-launchp-badge-bg: white !default;
+$x-pisn-sp-launchp-badge-b: $x-pisn-sp-launchp !default;
+
+$x-pisn-sp-launchp-border: $x-pisn-sp-launchp-text-active !default;
+$x-pisn-sp-launchp-text-active: $x-pisn-sp-launchp-active !default;
+$x-pisn-sp-launchp-badge-active: white !default;
+$x-pisn-sp-launchp-badge-bg-active: $x-pisn-sp-launchp-active !default;
+$x-pisn-sp-launchp-badge-b-active: $x-pisn-sp-launchp-active !default;
+
+.x-pisn-sp-launchp__body {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.x-pisn-sp-launchp__header {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    font-size: $font-size-h2;
+    font-weight: $headings-font-weight;
+    color: $x-pisn-sp-launchp-text;
+
+    .badge {
+      color: $x-pisn-sp-launchp-badge;
+      background-color: $x-pisn-sp-launchp-badge-bg;
+      border: 1px solid $x-pisn-sp-launchp-badge-b;
+    }
+  }
+}
+
+.x-pisn-sp-launchp__header>li {
+  padding-bottom: 15px;
+  border-bottom: 5px solid transparent;
+}
+
+.x-pisn-sp-launchp__header>li.active {
+  border-color: $x-pisn-sp-launchp-border;
+
+  a {
+    color: $x-pisn-sp-launchp-text-active;
+
+    .badge {
+      color: $x-pisn-sp-launchp-badge-active;
+      background-color: $x-pisn-sp-launchp-badge-bg-active;
+      border-color: $x-pisn-sp-launchp-badge-b-active;
+    }
+  }
+
+}
+
+.img-circle,
+.see-all {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $table-border-color;
+}
+
+.see-all {
+  margin: auto;
+  margin-bottom: 5px;
+  background-color: $brand-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.table-responsive {
+  border-radius: $border-radius-base;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    border: 0;
+    margin-bottom: 0px;
+  }
+
+  .x-pisn-sp-launchp__header {
+    a {
+      font-size: $font-size-h5;
+    }
+  }
+
+}
