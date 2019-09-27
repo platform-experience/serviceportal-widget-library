@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-06-25 16:38:48">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-09-27 22:46:44">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -15,43 +15,43 @@
 <release_date/>
 <remote_base_update_set display_value=""/>
 <remote_parent_id/>
-<remote_sys_id>dc106409db5ef30046215ff25e9619fe</remote_sys_id>
+<remote_sys_id>a18b781fdbc4005087295275ca961984</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-06-25 16:38:48</sys_created_on>
-<sys_id>665828cddb5ef30046215ff25e9619b0</sys_id>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>18024e53db00405087295275ca96192b</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-06-25 16:38:48</sys_updated_on>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
 </sys_remote_update_set>
 <sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
+<action>DELETE</action>
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sp_dependency_554aa0ae13c67740dd4e3192e144b03e</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>angular.dirPagination</module><name>angular.dirPagination</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>Claudita</sys_created_by><sys_created_on>2019-06-17 22:22:35</sys_created_on><sys_id>554aa0ae13c67740dd4e3192e144b03e</sys_id><sys_mod_count>3</sys_mod_count><sys_name>angular.dirPagination</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_554aa0ae13c67740dd4e3192e144b03e</sys_update_name><sys_updated_by>Claudita</sys_updated_by><sys_updated_on>2019-06-17 22:33:58</sys_updated_on></sp_dependency></record_update>]]></payload>
-<payload_hash>1148399102</payload_hash>
-<remote_update_set display_value="cases-widget-cc">665828cddb5ef30046215ff25e9619b0</remote_update_set>
+<name>sp_instance_table_467e79dbdbcc005087295275ca9619c9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="DELETE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list/><filter/><glyph/><id/><maximum_entries>5</maximum_entries><order>1</order><order_by/><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="">ca7e79dbdbcc005087295275ca9619c7</sp_column><sp_page/><sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:31:16</sys_created_on><sys_id>467e79dbdbcc005087295275ca9619c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_table_467e79dbdbcc005087295275ca9619c9</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:31:16</sys_updated_on><table/><title/><url/><widget_parameters/></sp_instance_table><sys_translated_text action="delete_multiple" query="documentkey=467e79dbdbcc005087295275ca9619c9"/></record_update>]]></payload>
+<payload_hash>401737856</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-06-25 16:38:48</sys_created_on>
-<sys_id>265828cddb5ef30046215ff25e9619b1</sys_id>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>14028293db00405087295275ca96197a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16b8f5feb9d0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-06-25 16:38:48</sys_updated_on>
+<sys_recorded_at>16d74dccf9c0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
 <table/>
-<target_name>angular.dirPagination</target_name>
-<type>Widget Dependency</type>
+<target_name/>
+<type>Instance with Table</type>
 <update_domain>global</update_domain>
-<update_guid>57eca8621b0a7740255130b9a860cd30</update_guid>
-<update_guid_history>57eca8621b0a7740255130b9a860cd30:1148399102,338cec22a20a7740edd3a61e1289f1fe:711520259,965ae0ae37c6774053bb45dcbc1f0eb4:1148399102,105aec6e19c67740d8ca14176d221868:211698905</update_guid_history>
+<update_guid>ae4ffd1faccc0050cca5774f6c6aaa4a</update_guid>
+<update_guid_history>ae4ffd1faccc0050cca5774f6c6aaa4a:401737856,867e79db67cc00505710cb5086b10eca:58459505</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -63,21 +63,99 @@
 <name>m2m_sp_widget_dependency_5c5aec6e13c67740dd4e3192e144b068</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="angular.dirPagination">554aa0ae13c67740dd4e3192e144b03e</sp_dependency><sp_widget display_value="Verizon Cards">41c54c2d1382ff00dd4e3192e144b0c3</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>Claudita</sys_created_by><sys_created_on>2019-06-17 22:22:35</sys_created_on><sys_id>5c5aec6e13c67740dd4e3192e144b068</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular.dirPagination.Verizon Cards</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_5c5aec6e13c67740dd4e3192e144b068</sys_update_name><sys_updated_by>Claudita</sys_updated_by><sys_updated_on>2019-06-17 22:22:35</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
 <payload_hash>-1522665508</payload_hash>
-<remote_update_set display_value="cases-widget-cc">665828cddb5ef30046215ff25e9619b0</remote_update_set>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-06-25 16:38:48</sys_created_on>
-<sys_id>625828cddb5ef30046215ff25e9619b1</sys_id>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>18024e53db00405087295275ca96192c</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16b8f5feb3b0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-06-25 16:38:48</sys_updated_on>
+<sys_recorded_at>16d73cdc37d0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
 <table/>
 <target_name>angular.dirPagination.Verizon Cards</target_name>
 <type>Widget Dependency</type>
 <update_domain>global</update_domain>
 <update_guid>1c5ae0ae6fc677404ab75b9f4ff535b0</update_guid>
 <update_guid_history>1c5ae0ae6fc677404ab75b9f4ff535b0:-1522665508</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_7ec68dd3db48005087295275ca96193b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>CARD WIDGET EXAMPLE PAGE - Container 1</name><order>1</order><sp_page display_value="card_widget_example_page">bac68dd3db48005087295275ca961938</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 18:28:02</sys_created_on><sys_id>7ec68dd3db48005087295275ca96193b</sys_id><sys_mod_count>6</sys_mod_count><sys_name>CARD WIDGET EXAMPLE PAGE - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_7ec68dd3db48005087295275ca96193b</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:35:02</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-427111916</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>18028293db00405087295275ca961979</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dcfbd10000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>CARD WIDGET EXAMPLE PAGE - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>115ffd1f0dcc0050125c051f52d983c1</update_guid>
+<update_guid_history>115ffd1f0dcc0050125c051f52d983c1:-427111916,e24f715f70cc0050fe332193732fb0f0:-633143981,e14f715fdfcc0050d28f4d68573f4059:-839176046,bf2e31dba2cc0050138bf2895a8b1537:-633143981,e92e31db88cc0050ae9478d05e92b1f6:-427111916,37edf19b47cc0050b32e23d06dfc35bd:-633143981,83c68517c64800507c80ea3ed7af5fbe:-427111916</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_ca7e79dbdbcc005087295275ca9619c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="DELETE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="">027e79dbdbcc005087295275ca9619c6</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:31:16</sys_created_on><sys_id>ca7e79dbdbcc005087295275ca9619c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_ca7e79dbdbcc005087295275ca9619c7</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:31:16</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>852035372</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>1c028293db00405087295275ca961978</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dccfd60000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>2a4f715fe6cc0050dc1faedecfda2ad4</update_guid>
+<update_guid_history>2a4f715fe6cc0050dc1faedecfda2ad4:852035372,c67e79dbf7cc0050708484a9dea779c8:1115707665</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_387ef5dbdbcc005087295275ca96194f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="DELETE"><class_name/><order>2</order><sp_column/><sp_container display_value="">593e71dbdbcc005087295275ca96190b</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:31:11</sys_created_on><sys_id>387ef5dbdbcc005087295275ca96194f</sys_id><sys_mod_count>1</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_387ef5dbdbcc005087295275ca96194f</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:34:46</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1645299737</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>20028293db00405087295275ca96197b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dcd0800000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>ae4f715f29cc00504312afda8232dadf</update_guid>
+<update_guid_history>ae4f715f29cc00504312afda8232dadf:-1645299737,d94f715fbdcc005030809adba74eec20:866845227,b47ef5db80cc00503c2afff58223c550:1666612653</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -729,15 +807,15 @@
     }
 })();]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Claudita&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-17 22:24:50&lt;/sys_created_on&gt;&lt;sys_id&gt;858a28ae13c67740dd4e3192e144b01d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;dirPagination.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_858a28ae13c67740dd4e3192e144b01d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Claudita&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-17 22:24:50&lt;/sys_updated_on&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-1356787652</payload_hash>
-<remote_update_set display_value="cases-widget-cc">665828cddb5ef30046215ff25e9619b0</remote_update_set>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-06-25 16:38:48</sys_created_on>
-<sys_id>6e5828cddb5ef30046215ff25e9619b1</sys_id>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>2c028293db00405087295275ca96197b</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16b8f5feb7a0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-06-25 16:38:48</sys_updated_on>
+<sys_recorded_at>16d73cdc3bc0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
 <table/>
 <target_name>dirPagination.js</target_name>
 <type>UI Script</type>
@@ -752,24 +830,81 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>m2m_sp_dependency_js_include_5bdaecae13c67740dd4e3192e144b058</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="angular.dirPagination">554aa0ae13c67740dd4e3192e144b03e</sp_dependency><sp_js_include display_value="angular.dirPagination">506a64ae13c67740dd4e3192e144b04a</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>Claudita</sys_created_by><sys_created_on>2019-06-17 22:24:58</sys_created_on><sys_id>5bdaecae13c67740dd4e3192e144b058</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular.dirPagination.angular.dirPagination</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_5bdaecae13c67740dd4e3192e144b058</sys_update_name><sys_updated_by>Claudita</sys_updated_by><sys_updated_on>2019-06-17 22:24:58</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
-<payload_hash>1720149340</payload_hash>
-<remote_update_set display_value="cases-widget-cc">665828cddb5ef30046215ff25e9619b0</remote_update_set>
+<name>sp_instance_30d68517db48005087295275ca9619f3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;bbc68517db48005087295275ca9619c2&lt;/sp_column&gt;&lt;sp_widget display_value="CSM Card"&gt;41c54c2d1382ff00dd4e3192e144b0c3&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;claudia.cruz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-27 18:28:09&lt;/sys_created_on&gt;&lt;sys_id&gt;30d68517db48005087295275ca9619f3&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_30d68517db48005087295275ca9619f3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;claudia.cruz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-27 22:45:31&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"table": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=30d68517db48005087295275ca9619f3"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>489361131</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-06-25 16:38:48</sys_created_on>
-<sys_id>aa5828cddb5ef30046215ff25e9619b0</sys_id>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>50028293db00405087295275ca96197a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16b8f5feb960000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-06-25 16:38:48</sys_updated_on>
+<sys_recorded_at>16d74e696610000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
 <table/>
-<target_name>angular.dirPagination.angular.dirPagination</target_name>
-<type>Dependency JS Includes</type>
+<target_name/>
+<type>Instance</type>
 <update_domain>global</update_domain>
-<update_guid>93daecae65c67740b081b0c70cb8335a</update_guid>
-<update_guid_history>93daecae65c67740b081b0c70cb8335a:1720149340</update_guid_history>
+<update_guid>f2b10a538700405006aa11e571b4367e</update_guid>
+<update_guid_history>f2b10a538700405006aa11e571b4367e:489361131,3ca10653e9004050d2b458c0818cae9a:1666787143,70d6851744480050420c080ad764bbf5:113756508</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_632e31dbdbcc005087295275ca961935</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="DELETE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>CARD WIDGET EXAMPLE PAGE - Container 1</name><order>1</order><sp_page display_value="card_widget_example_page">bac68dd3db48005087295275ca961938</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:30:01</sys_created_on><sys_id>632e31dbdbcc005087295275ca961935</sys_id><sys_mod_count>2</sys_mod_count><sys_name>CARD WIDGET EXAMPLE PAGE - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_632e31dbdbcc005087295275ca961935</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:34:51</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>77046664</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>54028293db00405087295275ca961979</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dce1db0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>CARD WIDGET EXAMPLE PAGE - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>634fb15fc0cc0050e2b34cb247910151</update_guid>
+<update_guid_history>634fb15fc0cc0050e2b34cb247910151:77046664,ee4f715fd1cc0050576c9b25de228ded:-427111916,214f715f26cc005036fdd37c60549057:-633143981,232e31db97cc0050dd1c236593d33936:-427111916</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_bbc68517db48005087295275ca9619c2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">77c68517db48005087295275ca9619c0</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 18:28:05</sys_created_on><sys_id>bbc68517db48005087295275ca9619c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_bbc68517db48005087295275ca9619c2</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 18:28:05</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-1022928843</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>58028293db00405087295275ca961978</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d73fae4de0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>33c68517d5480050a60cc0dcd888f4c4</update_guid>
+<update_guid_history>33c68517d5480050a60cc0dcd888f4c4:-1022928843</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -783,7 +918,7 @@
 	/* widget controller */
 	var c = this;
 
-	$scope.getColor = function(state) {
+	c.getColor = function(state) {
 		switch(state) {
 			case 'New': 
 				return 'gray';
@@ -791,112 +926,151 @@
 				return 'gray';
 			case 'Awaiting Info':
 				return 'blue';
-
 			case'Resolved':
 				return 'green';
-
 			case 'Closed':
 				return 'green';
-
 			case 'Cancelled':
 				return 'red';
+			default:
+				return 'gray';
 
 		}
 	}
+	c.pageSize = 12;
 
-	$scope.currentPage = 0;
-	$scope.pageSize = 12;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;
+.circle-green{
+  color: #33ab45;
+}
+.circle-red{
+  color: #d92912;
+}
 
-	$scope.numberOfPages=function(){
-		return Math.ceil($scope.c.data.listItems.length/$scope.pageSize);                              
-	}
+.circle-yellow{
+  color: #e0cc27;
+}
+.circle-blue{
+  color: #0085d2;
+}
+.circle-gray{
+  color: #dcd8d9;
+}
 
-	$scope.startFrom  = function(){
-		return c.data.listItem.slice($scope.currentPage*$scope.pageSize);
+.form-control-feedback {
+  color: #666;
+}
 
-	}
+.form-control:focus + .form-control-feedback {
+  color: #74ACBB;
+}
+
+.form-control {
+  border: 1px solid #74ACBB !important;
+}
+
+.search-cases{
+  float:right;
+}
+.container.search{
+  padding-bottom: 20px;
+  padding-top:20px;
+}
+
+
+//here new code
+.body{
+  font-family: "Source Sans Pro script=all rev=2", "SourceSansPro", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #666;
+}
+
+.card-wrapper{
+  display:flex;
+  align-items:center;
+  align-content:center;
+  flex-direction:column;
+}
+
+.card{
+  color: #293E40;
+  padding: 28px 28px 5px 28px;
+  width:32rem;
+  background-color: white;
+  display:flex;
+  flex-direction:column;
+  align-items:start;
+  justify-content:flex-start;
+  margin:2rem 0;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+  .event-title{
+    margin: 0;
+    color: #293E40;
+    font-size: 20px;
+    font-weight: 600
+  }
+  h5{
+    display:inline;
+    color: #293E40 !important; 
+    font-family: "Source Sans Pro script=all rev=2", "SourceSansPro", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+
+@media screen and (min-width: 700px) { 
+  .card-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    margin: 2rem;
+    transition:transform .5s;
+  }
+
+
+  .card:hover{
+    transform: scale(1.05); 
+  }
+}
+
+.body-card{
+  margin-top:12px;
+  border-top: 1px solid #DBE1E7;
+  color: #666;
+  width:100%;
+  list-style:none;
+  display:flex;
+  justify-content:flex-start;
+  padding: 2rem 0;
+  margin-top: 1.5 rem;
+  text-decoration: none; 
+
+}
+}
 
 
 
-}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;h4{&amp;#13;
-  font-weight:bold;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.card-text{&amp;#13;
-  margin-top:40px;&amp;#13;
-  border-top: 1px solid black;&amp;#13;
-  color: black;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.thumbnail{&amp;#13;
-  border-radius: 0 !important;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.circle-green{&amp;#13;
-  color: #33ab45;&amp;#13;
-}&amp;#13;
-.circle-red{&amp;#13;
-  color: #d92912;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.circle-yellow{&amp;#13;
-  color: #e0cc27;&amp;#13;
-}&amp;#13;
-.circle-blue{&amp;#13;
-  color: #0085d2;&amp;#13;
-}&amp;#13;
-.circle-gray{&amp;#13;
-  color: #dcd8d9;&amp;#13;
-}&amp;#13;
-&amp;#13;
-&amp;#13;
-span{&amp;#13;
-  h5{&amp;#13;
-    color:black !important; &amp;#13;
-    display:inline;&amp;#13;
-    font-family: "SourceSansPro", Helvetica, Arial, sans-serif;&amp;#13;
-  }&amp;#13;
-&amp;#13;
-}&amp;#13;
-&amp;#13;
-.search-cases{&amp;#13;
-  display:flex;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.card-body{&amp;#13;
-  margin: 15px !important;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.link{&amp;#13;
-  text-align: right;&amp;#13;
-  padding-top: 40px;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.search-cases{&amp;#13;
-  float:right;&amp;#13;
-}&amp;#13;
-.container.search{&amp;#13;
-  padding-bottom: 20px;&amp;#13;
-  padding-top:20px;&amp;#13;
-}&amp;#13;
-&amp;#13;
-.btn.btn-primary.space{&amp;#13;
-  color: #fff;&amp;#13;
-  background-color: #29250d;&amp;#13;
-  border-color: #29250d;&amp;#13;
-  border-radius: 50px; &amp;#13;
-}&amp;#13;
-.my-button{&amp;#13;
-  margin-left:20px; &amp;#13;
-}&amp;#13;
-&amp;#13;
-&amp;#13;
-&amp;#13;
-&amp;#13;
-&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;csm_cards&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;CSM Card&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;cards-widget&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Cards Widget&lt;/name&gt;&lt;option_schema&gt;[{"name":"table","section":"other","default_value":"sn_customerservice_case","label":"table","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
 	/* populate the 'data' object */
 	/* e.g., data.table = $sp.getValue('table'); */
-	var grCases = new GlideRecord('sn_customerservice_case')
+	
+	var grCases = new GlideRecord(options.table)
 	grCases.query();
 	data.listItems = [];
 	while(grCases.next()){
@@ -915,60 +1089,242 @@ span{&amp;#13;
 
 
 
-]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Claudita&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-14 17:08:58&lt;/sys_created_on&gt;&lt;sys_id&gt;41c54c2d1382ff00dd4e3192e144b0c3&lt;/sys_id&gt;&lt;sys_mod_count&gt;320&lt;/sys_mod_count&gt;&lt;sys_name&gt;CSM Card&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_41c54c2d1382ff00dd4e3192e144b0c3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-06-25 16:34:50&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class ="container search"&gt;
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Claudita&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-14 17:08:58&lt;/sys_created_on&gt;&lt;sys_id&gt;41c54c2d1382ff00dd4e3192e144b0c3&lt;/sys_id&gt;&lt;sys_mod_count&gt;438&lt;/sys_mod_count&gt;&lt;sys_name&gt;Cards Widget&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_41c54c2d1382ff00dd4e3192e144b0c3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;claudia.cruz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-27 22:46:14&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class ="container search"&gt;
   &lt;div class="search-cases"&gt;
     &lt;div class="form-group has-feedback"&gt;
-      &lt;input type="text" class="form-control" ng-model="keyword" placeholder="Search Cases"&gt; 
+      &lt;input type="text" class="form-control" ng-model="keyword" placeholder="Search"&gt; 
       &lt;span class="glyphicon glyphicon-search form-control-feedback"&gt;&lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class ="container"&gt;
-  &lt;div class="row"&gt;
-    &lt;div class="col-md-3 col-sm-6" dir-paginate="item in data.listItems | filter:keyword | itemsPerPage:pageSize"&gt;  
-      &lt;div class="thumbnail" &gt;
-        &lt;div class="card-body"&gt;
-          &lt;div class ="card-title"&gt;
-            &lt;h4&gt;{{item.number}}&lt;/h4&gt;
-            &lt;h5&gt;{{item.short_description}}&lt;/h5&gt;
-            &lt;span class='fa fa-circle circle-{{getColor(item.state)}}' &gt;
-              &lt;h5&gt;{{item.state}}&lt;/h5&gt;
-            &lt;/span&gt;
-          &lt;/div&gt;
-          &lt;div class="card-text" &gt;
-            &lt;p&gt;&lt;b&gt;Owner: &lt;/b&gt;{{item.owner}}&lt;/p&gt;
-            &lt;p&gt;&lt;b&gt;Created on: &lt;/b&gt;{{item.created_on}}&lt;/p&gt;
-            &lt;p&gt;&lt;b&gt;Due on: &lt;/b&gt;{{item.due_date}}&lt;/p&gt;
-          &lt;/div&gt;
-          &lt;div class ="link"&gt;
-            &lt;a href="?id=ticket&amp;table=sn_customerservice_case&amp;sys_id={{item.sys_id}}"&gt;&lt;b&gt;View details&lt;/b&gt;&lt;/a&gt;
-            &lt;span class='fa fa-chevron-right' &gt;&lt;/span&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
+
+
+&lt;div class="container"&gt;
+  &lt;div class="card-wrapper"&gt;
+    &lt;div class="card" dir-paginate="item in data.listItems | filter:keyword | itemsPerPage:c.pageSize"&gt;
+      &lt;!-- flex container --&gt;
+      &lt;div&gt;
+        &lt;h4 class="event-title"&gt;{{item.number}}&lt;/h4&gt;
+        &lt;p class=""&gt;{{item.short_description}} &lt;/p&gt;
+        &lt;span class='fa fa-circle circle-{{c.getColor(item.state)}}'&gt;
+          &lt;h5&gt;{{item.state}}&lt;/h5&gt;
+        &lt;/span&gt;
       &lt;/div&gt;
+      &lt;u class="body-card"&gt;
+        &lt;li&gt;
+          &lt;p&gt;${Owner: }{{item.owner}}&lt;/p&gt;
+          &lt;p&gt;${Created on: }{{item.created_on}}&lt;/p&gt;
+          &lt;p&gt;${Due on: }{{item.due_date}}&lt;/p&gt;
+          &lt;a href="?id=ticket&amp;table=sn_customerservice_case&amp;sys_id={{item.sys_id}}"&gt;${View Details}&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/u&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;dir-pagination-controls&gt;&lt;/dir-pagination-controls&gt;
 &lt;/div&gt;
 
 
+
+
 ]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
-<payload_hash>-1434962755</payload_hash>
-<remote_update_set display_value="cases-widget-cc">665828cddb5ef30046215ff25e9619b0</remote_update_set>
+<payload_hash>615407609</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-06-25 16:38:48</sys_created_on>
-<sys_id>aa5828cddb5ef30046215ff25e9619b1</sys_id>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>68028293db00405087295275ca96197b</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16b8f7d6c9e0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-06-25 16:38:48</sys_updated_on>
+<sys_recorded_at>16d74e73e240000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
 <table/>
-<target_name>CSM Card</target_name>
+<target_name>Cards Widget</target_name>
 <type>Widget</type>
 <update_domain>global</update_domain>
-<update_guid>1877e88ded5ef300ad9ec960b3a5d0e2</update_guid>
-<update_guid_history>1877e88ded5ef300ad9ec960b3a5d0e2:-1434962755,b027e88d605ef30049b88cb68c44b1da:-110736030,3535ecc9b15ef300a718122329d6c612:-2125238605,3415e44d1b5ef300c14e0a6d44ff96e5:507709489,28d4acc9125ef300a3b4ee12a7d98c31:-466464126,5ea1a8c96c5ef300a33509e29b491675:-1959895736,429164c9365ef30072cfd676fbddfb1e:-582750252,9763a94b818e33009830d87d6b620085:-250821998,6133a54b1c8e3300f45f3f4a8e6a6fa5:1443565423,6613a54ba48e330041ef74bdfa389e9d:2114393807,42433c76fa42f740887111aaa02c1244:1536566611,6b1278f2f142f74069cfefb73d653dee:-217249802,bc0278f2e242f7407969d482ebd82fe4:406594990,63b17cb28642f7407449de0fc084ecf4:-108714358,dba1f8b25842f740c8364300032163a2:-1286619030,f74134b29d42f740b1334387419acac5:1723258044,f541f0b2ed42f740d1e7c348138712c3:1653069345,32117c72ca42f740bf93f4f980b9b480:713811723,e7d03c326642f740b6b5d9b69a80b3fd:-1626646099,5d7f2cbeca02f74007a73c347b997d9d:1507429234,585f20fef502f740d2be6dfd2dc03b34:1382967056,192f2cbe8702f7406d23e7ccf1de686a:1289116849,770fa8becf02f740139ab43b77014e5e:1662597463,17acecba0402f7402d77932c730ff162:1049004437,309c28bae602f740ef4daa0dd324ab5c:-1967939147,7538e4722102f7401c26180a97152972:859894972,820868325202f7400b69dbab8b6da670:1293371334,cfd720327202f7402a0032f5c4be7053:1227992761,8ec72cfe9eceb7402c9f9509b6c39095:-1672106963,76b72cfecdceb740a40585e42a0a4e8e:-1111564461,53d6287e67ceb7402f9ece69d56b68b9:-1263897422,dd46acbafaceb740f8edf48f3ecaeaba:-1489562618,370668badeceb740c8563cefc5962c34:1118719173,bcb5ac7a2cceb7400aa0f12f0ab0ecdc:689325231,8798dcf2c88eb740e994a21bab092b7a:-659864096,fb0854b2418eb74072405913c2517fb0:-1468375474,66f798b2878eb7405faa17f6d2b8c56f:413661679,05871472d38eb740c763b4600607b581:-2030588563,d14618fece4eb7403600907cd47e4d04:48007630,d51650fe4e4eb7402541b4eda756e8d9:221840988,67065cbe184eb7401aca00d91612ea8a:-515621776,19a454fa5d4eb7409350f72c7d6770d4:-1545327728,178490fa384eb740364dff1c78a95e48:1772462000,e24490ba154eb740df522a5c5bf322f7:443852592,a534dc7a184eb740368b1fa3d2ef3ca6:-1758222248,d514dc3a864eb74082b682728eaf59b4:-179634148,e6f3bc22a74a7740f987f810f0164bea:1040542872,39d3b022b24a774047b908f0e5106985:-615166987,4843f8ee590a7740c15f99f4e030f223:1763889200,2133f8eea40a77404b2078d240b6171c:776387896,092338ee220a77400cc379baa5598454:-2001460408,cfd2f8ae150a7740f3dd6a4d6ff02d20:776387896,519278ae3d0a7740b176e4c5fa3471c2:1905964298,dd72b4aef80a7740ab43383d65129a90:640389162,3152fc6e440a77405c5d5324a44c8bc8:-402167030,405234ae6f0a7740bb5d19e00c1715b5:1511488740,f142386e680a7740d251b04afd304318:1028356228,9c027c6ea20a7740f56030ab330a739d:-1050675170,7f81782e210a7740d5070549f94f0fe7:2076281107,9451302eca0a7740cb94fb6ff0c5e995:-1314441078,bb8f286a040a77405315b79ab33b0481:-948041002,5aeee8a60a0a7740f3aed1f362c09a44:-1063094712,67bea8a6a60a77402572f1a9804b9405:413412136,8e9e2826be0a7740e3d10585b21832c6:-1348666774,6dcd60e2e60a77402f6854b9cfe7ab65:688346986,1dbd24a2210a7740899ec5bcd19ceed3:223998858,b58de8a2de0a77401ac6cc48ba90ba75:-1935667358,d55dec620c0a7740c4f16d61d993ffb9:1941687986,c3fc6c62870a7740e4e091daba7aeaa7:-108610015,36cc6462f70a77401f22bca8e990b5bc:825646595,094ca822bc0a77408e83688bb729fd92:-108610015,c83c2022c30a77400320620ed46c9d96:825646595,a327a0aa28c6774056af586d26d49eeb:-352368552,7bf6a0aaa0c67740d3bc539d3bc6cde3:-753638708,e4f6a86a06c67740bb791d3d48d7b1e5:1872218220,f216ec2aa4c6774073fec5756c5b1d80:-510849960,e1842ca641c6774038b929d3ff324a01:-502674952,f36468a6d4c67740235086954d1ff2cc:-1651755464,1ef3ec6648c67740e741189a726c7628:-1304303797,8d7320268fc67740e91cb356fc505b02:544216683,9253a8e20ac677401eaa3a59bbe98b7f:-1015600725,4a4328e208c67740b8de2e9b65079b56:607861275,d22320e2afc6774054ca0a26c6cd9dbb:1782448253,90f26ca26dc677403468ceb4eeda56e7:111639710,0ce268a2eec677406176e892dd4052a7:-2091108041,a3116422e5c67740c00b5417edd28418:1974469179,18ee186ec0867740fa29175ae5a18ad1:-339485237,7d0d50eadb867740bbfd7572d46ff34b:-2105647886,99dc14ea92867740cc90492869e534a1:-1824475066,e9cc50ea3e867740b98c1204f0377efa:-618511138,96ac5caa06867740a82f085cac2adbfc:-218999921,a1ac50eab8867740c649ac0cf0a060f3:35025948,003c98aab0867740b52483d40df03856:725695865,570a54e6e28677408447ab7976136a86:1880209919,e0f9d0e6ae86774055764a28c627cc46:-99735770,06d8d0660386774043f2ba6537d5b82e:1838501483,be98946684867740d0bd3f6556894d01:599054039,8f5854661e867740b63341e61f127e35:869959277,014850663286774022930a59b8d808fa:-960027261,28385066e58677402aaba41190569606:1698648067,33089c26a086774042fcbff3a82579ce:371692972,a7c75426038677406c6c244c88101e4e:-1414413468,a8b7dce278867740e93579088b194c1d:-1238826712,587718e2cf8677406212175ca0184c7c:857413781,a4171ca22e867740a7b17a4bb1c9b818:1617088417,4ef65ca2f48677409963aed522daaab5:1360611244,fab618a2238677408730218a68beb39f:-1101559122,76a654a2128677405d3aae612e5ab3ed:897596243,3e9654a2c4867740a2eea84d5fcf66e5:905686882,2b761c628986774063b2f4c36aa920b1:639078852,4a0618620786774000a0e192617a4efc:1390524328,55f59462e7867740b70647a3c87c6e28:-145372057,3ee59062638677407137b5b1b2de5520:-257001135,74c5dc2280867740dca9f2be0153dcf8:-1765341474,8d65d422768677400e2e611e8d7c5517:784123441,ed5514228886774012fe1b35752f6ab2:-208420687,2e359cee74467740da7a1eb25346abe2:-563929121,86e418eef2467740dd6713405ea7c06b:784123441,f7d410eeb9467740f963af72cdfb69ff:725745219,8cc450eeb846774048b64007429fe11f:784123441,47b4d0ae25467740683d7de3dd5e98cd:-1402769423,c794d8ae52467740bc8f4aef7151316a:-1684555639,6e7454aec04677405939610c0a23f5d4:1700701556,9464d0aea34677403205868edc017fac:243668421,5f44906e43467740c58277a1ad833a71:1165131519,c2345c6ef04677400bde4ec1d95b471c:1892232257,6fb3142eb54677401aa5ef7335502da0:-1485450389,0be2102a1f46774015197483c6d06575:-459580845,9ac2d0e6a64677409f8f17ae1e3b7170:-963611366,c57250a6574677406f5c423494a5ec9e:-244387082,1e52586626467740c6224d81db25f1cf:556102471,b232dc2646467740bc90b299cc928b0f:-244387082,f022d46630467740e990a6c0d28b3dc9:796943436,621290667146774082c1717ead97aeb6:1288043896,b5c19826bb46774054c6ed5aec9d9451:1079282796,daa198267a46774099346eed0ae7f448:1483120486,d2905ca247467740287c688314bf3084:-736975453,d380d8a2f0467740e28e4c2b1d203b54:548751803,b970d8a21f467740fcb9b9a7120cb84c:337617273,956050a290467740837540f0f18a32e7:1495092621,734050a29d467740300a48ced1d00775:1757799793,3d4050a2e5467740520c912d022df0dc:1580607751,6d10d8622c4677409892c68512504bfd:-650479699,997f442267467740382870a5e3d2c484:-914708729,a12f8022744677401211dd4eb04aeb03:1203391602,ba1f8022f04677409d32e44f1053b1bb:980799411,92fe48eebc0677401bd8d79701fd5f23:-185097794,d19e40eeae06774008fa97e8926bdd34:1477216465,5a6e88ae6d067740dc555f432c3246fd:-1776104892,156eccae170677407acc014893941c2e:-721863612,424e88aef60677401b59623dce28e97f:2025401939,0b7dc86e7b067740952e736a46a6772c:-282915087,324d446e25067740a2cc7d80b233187c:56345069,09a8c0e6b2067740433edb5ec80f5e3b:-120177895,61184066100677406c69a613fe24998f:-2041417090,81b70866e7067740a5b4ee1030a2b115:-120177895,5e574066350677401767375cf8e29e53:-1306292511,0747406661067740d74a24ff3ee4474c:149076614,1b9608e2d006774002b36076825ebc8b:1285821790,f896002674067740c6b125dbc3bde289:1894434078,d9864ce221067740e312553a6abf50dc:1663531756,c806c862f806774057a07fca653aee94:1894434078,8e2500620d067740863d1639493254cd:2127224217,09f44062f7067740931d8684b333b4da:1219376744,75e44c2246067740586888787120ce98:-1591598812,aef63f1e06427740d1eb27b683f20559:-859103760,3ea6ffdabb427740d4d908c1bb4f3559:-327286879,6376f7da4b427740ced7c0218487e3d3:-612490113,ea66f7da33427740a0cc66061cf4865c:-1108056995,4246b3dafa427740dce445c550cec7f2:-852538555,e906ff9afa427740f95a1526e0a6fe63:-852645499,9015735af6427740e9d0ea02e0523d3b:667507281,aca4f31a274277407546a50e07142fdd:-1119417991,cba37f16fa427740efd0e701dee0673c:-480961996,1bf2ffd27a427740d79703541c9f0f75:-462462025,97b23792c54277406f3085771ce2fc5e:854171529,6071bf12e54277405c38690756ab1098:764547290,db51bb12424277401ecab43c058298ba:1662213164,7b313f9eb00277405f7fcd2c4f748eca:764547290,8780f31ea502774060f71c512938b334:-1239395037,ec803fda260277409bab99da069e33b9:1475216963,0070b3da87027740a952ffc58450a3d4:-1239395037,7f7f2f5a3b027740b68351950e46d394:-1967255980,a07fab5a1902774097639f887272955d:-1831293893,956feb1a610277405036a2c6fe6caed0:553041005,b83f6f1a320277406d00aeb06293aee3:-349263530,d45e67d6cb0277403a8768f57f1b856a:1905427586,27cde396ee027740c05dfbbc400dfccd:-1562739384,5cbdaf56b40277408431a72d9243f579:-700080361,8abe49ed068aff005877c93702673f96:880325600,93ae09ed558aff00b2bf6242fdced9e0:1005358080,94ed49ad7f8aff00a4d8e0ceb8aeb23e:880325600,19ddc1ade78aff000cd371e27e6ddd13:1432456478,278c892dd38aff0090797d3d28818a20:371341624,4a6c892d378aff00f1808bf095ba6017:-426139656,0b4c852de18aff0083ec17c17dab5b76:-473624273,613c85a95f8aff00e9ee53d5a74f15ef:1737967869,110c85a9fd8aff008407859787914b7b:-542313433,99eb81a9fb8aff00ca2c4bcedcf64c9e:-1492288295,aadb4569888aff00fb2bf344e80fc3f8:566203509,d0ea09651e8aff006c2089ab7884a0d7:-675353067,b5c94da12a8aff00b3196ffe3ac1b812:1212395170,e949c1a1ce8aff00584f43bc0192ced5:1692046288,6ce7c521778aff0061163d16001daf4c:1455070154,7fc7c521d48aff008ccfd50265807505:-183045588,48c7c121168aff0039ceff5e34fe574f:1149332473,eeb78121398aff007c111d47055c1f24:1259444810,93a74121f28aff00b0c006bf548e88b6:1263889630,aca78121238aff004b6954650ca2af1d:-282487157,7097cdedde4aff006c94103f43af7ef1:1547581117,c8d641edf14aff00a7d79856674f816c:58470911,c9c601ede94aff0077201e4f7a629eeb:-755433958,2cf541ad084aff00bd70fe4c296fe586:-1614680091,68c5496db64aff000051ff17e0e31c0c:-1708826821,42e445e9294aff009d7925fc9b3da73a:-743046851,ae2d3069780aff003512f96755cf56ee:-1157745903,5c0d78e51d0aff00641df4b1f271bea2:1034110428,93ec38e5ad0aff00354bcae8cc610bcc:978459393,08ecb4e56c0aff0069133a42d337549a:1034110428,0dbc78a5cc0aff00bb68d1b8a0279526:-1301797402,6bac3ca57f0aff003944656049de2af8:1193876872,b87cb0a5f00aff00d871c4d3b45c5c41:341842183,d93c30a5670aff0028ff075d1776afbe:989404389,c09bf065a90aff008ca1df830ba30904:1969746027,7b1bf425290aff00878de4dcb10c4a33:-546523929,29ea74251d0aff007ed55ab8bc007d83:-1912412257,c88a70e1340aff00298f9b32f5d72c03:-721597431,115a30e1370aff005e10b30d445a0ffc:143871505,a01ab4a1290aff0083d210f6fb9b0f42:974358696,9a497861060aff00cf50d7fc3790be6e:13261991,3e387421ac0aff0093866f5e60d3401a:-1146051759,72d6346d3bc6ff0059fc84d7d1c24bfb:17400436,c124f8a5b5c6ff00494150c9f23d7052:2031253407,ee14b8a52dc6ff008e3afc4ccf3d1c72:357100423,4a04b8a50bc6ff00663df756cdb7433b:-1101725300,600438a5bcc6ff007aa9676da7716936:-1200695280,05f378a533c6ff00f4f8768ec3dde926:17400436,31e3b4a59fc6ff00581a907295ba488a:-443498575,3b93b4656cc6ff0094684d437dfc81d1:-1196962075,d12d2c6d3086ff004c99baf59f70a8a1:17400436,7a4bece99a86ff0029bc8c12c761b3fc:1382805974,49c9e0a94986ff0019c1a7a1481db431:-2051580372,c9b96c69f986ff007993cd02240175be:936956524,b969a4297e86ff00f4d1a0502da7d03e:1021750232,0f88a0654986ff004825656156c521c3:214520055,a84824e15c86ff008e92cd335d1c8b39:-1821250510,6328a0e19686ff008305cda0cd39593a:-1268212909,d408aca1f486ff00530f3c608f52b4ec:-65085375,96e7a0a14d86ff00b4a5275fba3355f1:-389494254,dd77a0a15586ff00038bbc87553df9e7:-232479982,7367a0a1e086ff0040b8c681d0415360:-1324275368,1927e4613786ff0047584dca94d521dd:521520588,ab17e4615686ff007ba0817943e8aefd:-1869113844,3d17a4614786ff007d09762c683c6281:-449669461,c307a4615786ff00ba101fd2e674207a:1378131086,c9072461e086ff001ef75eda58d30605:-449669461,91f6e061db86ff00181c504103bffbfe:-1869113844,ccb620613a86ff00f92951f0a46f0859:908000263,95a6ac21d186ff0093e410e7dbfb773e:-731640171,4e966c21f686ff00ea01d51090c3840f:-902595995,07762c21bf86ff00e44393ddad32550a:-1696788392,7166e8213686ff004c19ae385534cf85:24374221,f5b568ed6c46ff008fb765d193675afd:1749425522,44a564ed3346ff00a407bce80bbb85f5:2022049842,3b85a4ed0946ff0042c990b07e564e52:933424706,c98564ed3f46ff00918ea744d5072dea:1749425522,b6456cadbc46ff007b0b0eed522a300f:-1368314181,1b33ece99046ff0091339d9dab910472:316069889,53a164a96646ff00cb151289a4807628:1153004669,4ca1ac69c446ff00fc863d007cdeae26:-1279221031,e3612c693e46ff00cf2490243a0a3fe1:-244735929,8c51e4693346ff0051d5c246684a0859:-1585732823,8c116069b546ff007c68f6c7bfaf620a:-1457160070,2b40a0299946ff00aabfc6cd0f7f233a:1121051302,37306029d546ff00fb3c5d67a164ed73:769517767,e120e8e5ca46ff006425304efefa1875:417984232,1a8dd0255146ff00ba23334bf9a7820b:732366993,921d18e17c46ff00ba9dcb8ca4d3c7af:1737236860,54fcd0e15046ff00bb780d50803a3495:1538072220,171cd4610f46ff005ee6511bf80abb53:1598535069,33fbd0617546ff00daf4fd72cd10fd23:-438060612,02fb90615d46ff00fdad7b3e1ad39b75:2915209,bbab5c215d46ff00e6e9d2748824039a:1668918700,4c6bd021e946ff00eed49e978fde2c5f:31096531,a5cad4edce06ff00b08f49f3309a90a2:-560863721,f7aa14edbd06ff008bf13b059152ee1c:226119433,cf9a14edcc06ff00ca5b036ab4779723:1215667413,5a6adcadc506ff00d0346fbc32f4ddd7:256638070,ee1a90ad9506ff00591809fb50f33963:427539977,fa0a90ad2e06ff00a40dfd49b117c058:-1800320439,4df95c6dcf06ff00a917eec65edb9b35:-686390231,7ab9546dc206ff00dfea8fff7e5dfc54:-1426943458,47695c2ddf06ff00d4fd2d632b34f409:31291185,f459582d0d06ff003cee52cdd7685ba1:1295157889,5849142d0106ff007ef015b0bedc381d:1935033285,ae09dce9de06ff0085c490d4fc815d38:-229854139,9ce858e96d06ff00f7390308ca334264:704052373,61d894e9f006ff0066d5a2d2d5ff80bf:778365400,2fc8d4e94d06ff0029bb66fa39681fc9:-115264814,f7b8d0e92306ff00b1b16d967eff240b:-330836674,f88890e96f06ff00d2d00d9455b44ae1:-641372934,fb58dca9c306ff0005d08f1673414e7d:-1032643584,ee585ca97e06ff0072b7eb4b27406b54:-2114140715,57481ca97806ff00d4c022fd3437d691:1962994389,a63858a93406ff0053ec1b6e7713acc9:-1566826166,7b2858a9f606ff00bf5592db13aa5108:146321790,6cf790a9f306ff00a9d2e0c4a42dd581:1613701930,f0275c29f206ff00aa268692ee0e7a61:189959589,f2171c29be06ff005ca5ed165f6dd02d:441709277,6b07d8294406ff00ad42d965714fab96:189959589,c8769ce51b06ff00e801c4c408a34a0c:507068802,6716d0e51406ff000902d7359078e460:-995926990,50e59ca5af06ff008f20e47d1b577e5c:759184989,d18518a5f706ff00151f4d223a5ec0a1:-2023991770,46a450656406ff005a82d1d66ba30b30:-427131590,fd0418251d06ff00974bfa2a1fc3942a:1967560638,18d314258806ff00529f400a4525ed47:-1142396133,56a3dce1f606ff00da2583f55425cb42:-652626717,2d00dc6d34c2ff00228332d9339702ba:-985850895,7dcf0c6da4c2ff003910574daef00ff7:1590987046,9dc5006d0582ff00a6527cb320c0c43e:-1891684114</update_guid_history>
+<update_guid>91e1ce53230040505c3b1db153f88c08</update_guid>
+<update_guid_history>91e1ce53230040505c3b1db153f88c08:615407609,e3814253430040505bd9203a5336487f:-825222180,eb510e131000405059b1f0589d16ba64:-608235924,f7410a13ed00405020ba09612ab3c03b:1426607003,5d418a13a10040507ed1c07a16eeb5bb:802875848,f8210613e80040500ab2adb25b23e42a:-1556728887,c67046df04cc0050cd3acfaaf6f8a894:-778390186,df000a9faecc0050ce3ab91194ef35d9:1693947500,d27ff15f97cc0050b2bed29866e398a8:-127159409,532f7d1f3fcc0050fa4352fa612a3cfd:1693947500,28ad719b1dcc0050d851feb76901112b:990513737,a06df55bb4cc00503e8a373846073a06:812293961,704d7d1b27cc0050332d155c34318d97:854862012,538cfdd756cc005038d99a198fcfcb74:812293961,ddfb31d756cc0050950ff2ee3da3eb79:873427787,aebbf59781cc0050a01b64372961c15e:1409256991,dde939534ecc00504d6693dc0484ea62:-1371673974,69d9f91345cc00502de415c826cec8e0:-1683808217,b9b9bd137ecc00506a46e5dbe05995c6:-1912607892,bf493d9fc48c0050eae21c29a254c1e4:1494958300,f149f99f108c00507aaf1ac1da2213a2:725381022,9d39b59fec8c0050d6174fc4ab4e126a:1982226552,66f8bd5ff58c00507346dd0ad6825cfc:1808402886,53e87d5f3f8c0050cbf6030e011e09d2:-533828576,c9e87d5fd58c00501e189c5735af3f8a:-1886189152,c7c8795f078c0050b26711239160fe30:1588775164,b3b8315fd58c0050dc538919445a08e5:-1622084858,5e78f91f4a8c0050f0eb7408db593b1e:1667014556,b248f91f968c00504640e2c25dfeab17:674188798,3538391fad8c00509ce33ee79bc1b5f2:1780575520,4708f11fe88c00508c6a1164f70db9cb:674188798,70f7311f258c0050eba113d8a1df07d7:1780575520,19e7bddbda8c0050913193b4d1ca26f4:-1133744829,e3c77ddb118c005076dcc8f51bc3800d:-1437900233,c8c7b99bef8c005007fd02500cc38c54:503055959,72a779db978c0050c250a64eefc82d1b:1177237121,4b97f5db378c005048b50f85823e5c5b:-941950663,9c27b99ba58c00506ab45bce7f9acd26:1500937051,2ff6759b1e8c0050575f305ae8887619:-765033589,5905b597158c0050ddf3c80298e84f27:-1499083135,d6d43597438c0050ec1cfd7de071c0dc:-1743494498,a8b4fd577b8c00502f79cd54aecb2e96:1584824479,05447d178f8c005079734bb971de1a6f:1103817065,7dd37517468c0050095022ce0564b1b2:-434873508,b1c371177d8c00501df5451039a2c3e7:-438845096,c8a33117288c0050b165410799c51eac:171699414,a753f5931a8c0050ace7471c879c4414:1656649549,a282f1932f8c00502b25f7d6458e3016:1023149743,68827953708c0050c1fff2690b0f3573:-1677177169,872279535a8c00508a6eeca5b0f1fc5d:-1335601622,d2027553488c00507bdb761f50c870ec:-510138308,9ff13553378c0050fad63b87a7a50d29:29730752,64f1b153f38c00508be7dd2f35b89863:-510138308,14e17d13f88c005004f7a4f813672265:-100780262,8db1f513138c0050753ee2ab6de59067:-225920588,55a1f513928c005073d422b1753d99cc:656323381,1891bddf034c00500338edbe62c5baba:576574405,0071b113b18c005091fca30871c28bee:-879879558,5c51bddf814c0050d4b0d6ab589fc2b2:1625378956,3cb0f99f374c0050fd249261b5330377:1967738182,00a0b99fce4c0050c911fd3b8814a497:894292902,0a80f59f114c00506d308a526b8d57c1:-100780262,8440755f274c0050c454bd959bba6e09:-579871174,0c00355f3e4c0050d4ff0ca32ccc42a3:-2042228682,a9df615f5f4c0050d06182fc450d2b67:-579871174,dccfa51fcd4c00502dc242856624f1f1:-1294066027,4b7f691f264c00505c4ed58b9b90e48a:-2042228682,69fe69dba74c0050cd07151a63d4edb5:767948797,f89ee59b674c005022c224d58ea3c15f:-2116446301,834ea19be94c005081553296ee2405b7:1098851198,071eed1b454c00506d5a8fa26c5c5114:531548503,3fed695bb34c0050f7fa4e5b6811be44:963378625,cc7dad1bbc4c0050add6eb49afed8e84:-85632075,156d251b584c0050661eb6b14614f2fb:-1612398804,f4cca5d7624c00503c2487226cd173dd:-687712691,9e9c65d7b14c0050e13b7dcbf9768587:-1838831763,009c21d7054c0050f5cc345f53dcc530:-687712691,fa5ced97674c0050978887dcfddc3cb5:178731634,89fb6d57ed4c005015c799fb8b463d14:-612376615,53bb65571e4c00504fad169f20ad93e4:-934169733,8a5be117c64c0050d1315f5652e95c5e:192333222,74dae117e44c0050355c4224f26b9842:1122004366,34aa2dd3734c0050fc9b02021fb8e520:2038909173,33a96d535e4c0050873a2577be1d0e25:1075823462,4216211f9f0c0050e7a2c5fee16deb92:-350773459,2be3edd78d0c0050b442c19e323e95fb:522128562,7ec3edd7660c00501ad63b26bd8b5c74:-1181572250,f62325976c0c0050cc2e186d11904cf6:-145102700,7eb26197710c0050b6bd7b7215e99d72:-911514508,6a822517e70c00500c1a8bc08d6c8412:-1023272219,fc912dd3de0c0050231f348316edf210:-2008111974,e351e9d3cd0c0050f8146636d119a6ee:-1294144454,7a2165939b0c0050fb6e215850f54da8:1031510603,5440a953680c00506b72a3344740293b:-689232040,f110e1539f0c00501794744afacb4594:-235935859,73cfd913b90c005093385383a17235ac:966808138,edbf9ddf22c800506facd3d8c35de04a:938213630,6ade91df4bc80050bb3c2c7676baaf24:19774912,daae51dfa9c800503cf7dea02e7c680e:-2082602784,ba5e199fa8c80050297322b3327dec82:1681989759,55ed1d1f96c8005019085e1fd66750ff:-1550062858,541d951f0fc80050aeea15736b4b8e06:-1114331053,d05cd15bb6c80050fa41b867d7b5a129:-1566027838,edfb191bbac8005018e69103b5bb47c2:-478550058,4fdb951b32c80050b7f0d9e93f74ef79:649024961,2c8b55d707c80050f6f794a7cfca0d28:1437773999,dc0a895b77480050720f57d927782017:753387423,0b3585534f48005048869ba1c721cb06:2061822841,24050d1334480050170964ea9f7eb7f1:-182697075,5a84899ff30800501e6ee239a4107c71:2061822841,3e74099ffc0800504b140691dd7a499a:-498655092,edd0c51baf08005003f00300998d32ef:-909008607,9fb0811b970800502976627264432833:-1881448574,0220cd974d080050aace48b8fcdee9d5:1542989314,055f70979c080050ff3e3d1c134a7237:-717370809,794f3c570508005025114182cfd3a84e:1633122588,d53ffc571c080050cd873f5e0670e97f:1421953776,021ff4578c08005027b4883031c20d38:-2014411783,1877e88ded5ef300ad9ec960b3a5d0e2:-1434962755,b027e88d605ef30049b88cb68c44b1da:-110736030,3535ecc9b15ef300a718122329d6c612:-2125238605,3415e44d1b5ef300c14e0a6d44ff96e5:507709489,28d4acc9125ef300a3b4ee12a7d98c31:-466464126,5ea1a8c96c5ef300a33509e29b491675:-1959895736,429164c9365ef30072cfd676fbddfb1e:-582750252,9763a94b818e33009830d87d6b620085:-250821998,6133a54b1c8e3300f45f3f4a8e6a6fa5:1443565423,6613a54ba48e330041ef74bdfa389e9d:2114393807,42433c76fa42f740887111aaa02c1244:1536566611,6b1278f2f142f74069cfefb73d653dee:-217249802,bc0278f2e242f7407969d482ebd82fe4:406594990,63b17cb28642f7407449de0fc084ecf4:-108714358,dba1f8b25842f740c8364300032163a2:-1286619030,f74134b29d42f740b1334387419acac5:1723258044,f541f0b2ed42f740d1e7c348138712c3:1653069345,32117c72ca42f740bf93f4f980b9b480:713811723,e7d03c326642f740b6b5d9b69a80b3fd:-1626646099,5d7f2cbeca02f74007a73c347b997d9d:1507429234,585f20fef502f740d2be6dfd2dc03b34:1382967056,192f2cbe8702f7406d23e7ccf1de686a:1289116849,770fa8becf02f740139ab43b77014e5e:1662597463,17acecba0402f7402d77932c730ff162:1049004437,309c28bae602f740ef4daa0dd324ab5c:-1967939147,7538e4722102f7401c26180a97152972:859894972,820868325202f7400b69dbab8b6da670:1293371334,cfd720327202f7402a0032f5c4be7053:1227992761,8ec72cfe9eceb7402c9f9509b6c39095:-1672106963,76b72cfecdceb740a40585e42a0a4e8e:-1111564461,53d6287e67ceb7402f9ece69d56b68b9:-1263897422,dd46acbafaceb740f8edf48f3ecaeaba:-1489562618,370668badeceb740c8563cefc5962c34:1118719173,bcb5ac7a2cceb7400aa0f12f0ab0ecdc:689325231,8798dcf2c88eb740e994a21bab092b7a:-659864096,fb0854b2418eb74072405913c2517fb0:-1468375474,66f798b2878eb7405faa17f6d2b8c56f:413661679,05871472d38eb740c763b4600607b581:-2030588563,d14618fece4eb7403600907cd47e4d04:48007630,d51650fe4e4eb7402541b4eda756e8d9:221840988,67065cbe184eb7401aca00d91612ea8a:-515621776,19a454fa5d4eb7409350f72c7d6770d4:-1545327728,178490fa384eb740364dff1c78a95e48:1772462000,e24490ba154eb740df522a5c5bf322f7:443852592,a534dc7a184eb740368b1fa3d2ef3ca6:-1758222248,d514dc3a864eb74082b682728eaf59b4:-179634148,e6f3bc22a74a7740f987f810f0164bea:1040542872,39d3b022b24a774047b908f0e5106985:-615166987,4843f8ee590a7740c15f99f4e030f223:1763889200,2133f8eea40a77404b2078d240b6171c:776387896,092338ee220a77400cc379baa5598454:-2001460408,cfd2f8ae150a7740f3dd6a4d6ff02d20:776387896,519278ae3d0a7740b176e4c5fa3471c2:1905964298,dd72b4aef80a7740ab43383d65129a90:640389162,3152fc6e440a77405c5d5324a44c8bc8:-402167030,405234ae6f0a7740bb5d19e00c1715b5:1511488740,f142386e680a7740d251b04afd304318:1028356228,9c027c6ea20a7740f56030ab330a739d:-1050675170,7f81782e210a7740d5070549f94f0fe7:2076281107,9451302eca0a7740cb94fb6ff0c5e995:-1314441078,bb8f286a040a77405315b79ab33b0481:-948041002,5aeee8a60a0a7740f3aed1f362c09a44:-1063094712,67bea8a6a60a77402572f1a9804b9405:413412136,8e9e2826be0a7740e3d10585b21832c6:-1348666774,6dcd60e2e60a77402f6854b9cfe7ab65:688346986,1dbd24a2210a7740899ec5bcd19ceed3:223998858,b58de8a2de0a77401ac6cc48ba90ba75:-1935667358,d55dec620c0a7740c4f16d61d993ffb9:1941687986,c3fc6c62870a7740e4e091daba7aeaa7:-108610015,36cc6462f70a77401f22bca8e990b5bc:825646595,094ca822bc0a77408e83688bb729fd92:-108610015,c83c2022c30a77400320620ed46c9d96:825646595,a327a0aa28c6774056af586d26d49eeb:-352368552,7bf6a0aaa0c67740d3bc539d3bc6cde3:-753638708,e4f6a86a06c67740bb791d3d48d7b1e5:1872218220,f216ec2aa4c6774073fec5756c5b1d80:-510849960,e1842ca641c6774038b929d3ff324a01:-502674952,f36468a6d4c67740235086954d1ff2cc:-1651755464,1ef3ec6648c67740e741189a726c7628:-1304303797,8d7320268fc67740e91cb356fc505b02:544216683,9253a8e20ac677401eaa3a59bbe98b7f:-1015600725,4a4328e208c67740b8de2e9b65079b56:607861275,d22320e2afc6774054ca0a26c6cd9dbb:1782448253,90f26ca26dc677403468ceb4eeda56e7:111639710,0ce268a2eec677406176e892dd4052a7:-2091108041,a3116422e5c67740c00b5417edd28418:1974469179,18ee186ec0867740fa29175ae5a18ad1:-339485237,7d0d50eadb867740bbfd7572d46ff34b:-2105647886,99dc14ea92867740cc90492869e534a1:-1824475066,e9cc50ea3e867740b98c1204f0377efa:-618511138,96ac5caa06867740a82f085cac2adbfc:-218999921,a1ac50eab8867740c649ac0cf0a060f3:35025948,003c98aab0867740b52483d40df03856:725695865,570a54e6e28677408447ab7976136a86:1880209919,e0f9d0e6ae86774055764a28c627cc46:-99735770,06d8d0660386774043f2ba6537d5b82e:1838501483,be98946684867740d0bd3f6556894d01:599054039,8f5854661e867740b63341e61f127e35:869959277,014850663286774022930a59b8d808fa:-960027261,28385066e58677402aaba41190569606:1698648067,33089c26a086774042fcbff3a82579ce:371692972,a7c75426038677406c6c244c88101e4e:-1414413468,a8b7dce278867740e93579088b194c1d:-1238826712,587718e2cf8677406212175ca0184c7c:857413781,a4171ca22e867740a7b17a4bb1c9b818:1617088417,4ef65ca2f48677409963aed522daaab5:1360611244,fab618a2238677408730218a68beb39f:-1101559122,76a654a2128677405d3aae612e5ab3ed:897596243,3e9654a2c4867740a2eea84d5fcf66e5:905686882,2b761c628986774063b2f4c36aa920b1:639078852,4a0618620786774000a0e192617a4efc:1390524328,55f59462e7867740b70647a3c87c6e28:-145372057,3ee59062638677407137b5b1b2de5520:-257001135,74c5dc2280867740dca9f2be0153dcf8:-1765341474,8d65d422768677400e2e611e8d7c5517:784123441,ed5514228886774012fe1b35752f6ab2:-208420687,2e359cee74467740da7a1eb25346abe2:-563929121,86e418eef2467740dd6713405ea7c06b:784123441,f7d410eeb9467740f963af72cdfb69ff:725745219,8cc450eeb846774048b64007429fe11f:784123441,47b4d0ae25467740683d7de3dd5e98cd:-1402769423,c794d8ae52467740bc8f4aef7151316a:-1684555639,6e7454aec04677405939610c0a23f5d4:1700701556,9464d0aea34677403205868edc017fac:243668421,5f44906e43467740c58277a1ad833a71:1165131519,c2345c6ef04677400bde4ec1d95b471c:1892232257,6fb3142eb54677401aa5ef7335502da0:-1485450389,0be2102a1f46774015197483c6d06575:-459580845,9ac2d0e6a64677409f8f17ae1e3b7170:-963611366,c57250a6574677406f5c423494a5ec9e:-244387082,1e52586626467740c6224d81db25f1cf:556102471,b232dc2646467740bc90b299cc928b0f:-244387082,f022d46630467740e990a6c0d28b3dc9:796943436,621290667146774082c1717ead97aeb6:1288043896,b5c19826bb46774054c6ed5aec9d9451:1079282796,daa198267a46774099346eed0ae7f448:1483120486,d2905ca247467740287c688314bf3084:-736975453,d380d8a2f0467740e28e4c2b1d203b54:548751803,b970d8a21f467740fcb9b9a7120cb84c:337617273,956050a290467740837540f0f18a32e7:1495092621,734050a29d467740300a48ced1d00775:1757799793,3d4050a2e5467740520c912d022df0dc:1580607751,6d10d8622c4677409892c68512504bfd:-650479699,997f442267467740382870a5e3d2c484:-914708729,a12f8022744677401211dd4eb04aeb03:1203391602,ba1f8022f04677409d32e44f1053b1bb:980799411,92fe48eebc0677401bd8d79701fd5f23:-185097794,d19e40eeae06774008fa97e8926bdd34:1477216465,5a6e88ae6d067740dc555f432c3246fd:-1776104892,156eccae170677407acc014893941c2e:-721863612,424e88aef60677401b59623dce28e97f:2025401939,0b7dc86e7b067740952e736a46a6772c:-282915087,324d446e25067740a2cc7d80b233187c:56345069,09a8c0e6b2067740433edb5ec80f5e3b:-120177895,61184066100677406c69a613fe24998f:-2041417090,81b70866e7067740a5b4ee1030a2b115:-120177895,5e574066350677401767375cf8e29e53:-1306292511,0747406661067740d74a24ff3ee4474c:149076614,1b9608e2d006774002b36076825ebc8b:1285821790,f896002674067740c6b125dbc3bde289:1894434078,d9864ce221067740e312553a6abf50dc:1663531756,c806c862f806774057a07fca653aee94:1894434078,8e2500620d067740863d1639493254cd:2127224217,09f44062f7067740931d8684b333b4da:1219376744,75e44c2246067740586888787120ce98:-1591598812,aef63f1e06427740d1eb27b683f20559:-859103760,3ea6ffdabb427740d4d908c1bb4f3559:-327286879,6376f7da4b427740ced7c0218487e3d3:-612490113,ea66f7da33427740a0cc66061cf4865c:-1108056995,4246b3dafa427740dce445c550cec7f2:-852538555,e906ff9afa427740f95a1526e0a6fe63:-852645499,9015735af6427740e9d0ea02e0523d3b:667507281,aca4f31a274277407546a50e07142fdd:-1119417991,cba37f16fa427740efd0e701dee0673c:-480961996,1bf2ffd27a427740d79703541c9f0f75:-462462025,97b23792c54277406f3085771ce2fc5e:854171529,6071bf12e54277405c38690756ab1098:764547290,db51bb12424277401ecab43c058298ba:1662213164,7b313f9eb00277405f7fcd2c4f748eca:764547290,8780f31ea502774060f71c512938b334:-1239395037,ec803fda260277409bab99da069e33b9:1475216963,0070b3da87027740a952ffc58450a3d4:-1239395037,7f7f2f5a3b027740b68351950e46d394:-1967255980,a07fab5a1902774097639f887272955d:-1831293893,956feb1a610277405036a2c6fe6caed0:553041005,b83f6f1a320277406d00aeb06293aee3:-349263530,d45e67d6cb0277403a8768f57f1b856a:1905427586,27cde396ee027740c05dfbbc400dfccd:-1562739384,5cbdaf56b40277408431a72d9243f579:-700080361,8abe49ed068aff005877c93702673f96:880325600,93ae09ed558aff00b2bf6242fdced9e0:1005358080,94ed49ad7f8aff00a4d8e0ceb8aeb23e:880325600,19ddc1ade78aff000cd371e27e6ddd13:1432456478,278c892dd38aff0090797d3d28818a20:371341624,4a6c892d378aff00f1808bf095ba6017:-426139656,0b4c852de18aff0083ec17c17dab5b76:-473624273,613c85a95f8aff00e9ee53d5a74f15ef:1737967869,110c85a9fd8aff008407859787914b7b:-542313433,99eb81a9fb8aff00ca2c4bcedcf64c9e:-1492288295,aadb4569888aff00fb2bf344e80fc3f8:566203509,d0ea09651e8aff006c2089ab7884a0d7:-675353067,b5c94da12a8aff00b3196ffe3ac1b812:1212395170,e949c1a1ce8aff00584f43bc0192ced5:1692046288,6ce7c521778aff0061163d16001daf4c:1455070154,7fc7c521d48aff008ccfd50265807505:-183045588,48c7c121168aff0039ceff5e34fe574f:1149332473,eeb78121398aff007c111d47055c1f24:1259444810,93a74121f28aff00b0c006bf548e88b6:1263889630,aca78121238aff004b6954650ca2af1d:-282487157,7097cdedde4aff006c94103f43af7ef1:1547581117,c8d641edf14aff00a7d79856674f816c:58470911,c9c601ede94aff0077201e4f7a629eeb:-755433958,2cf541ad084aff00bd70fe4c296fe586:-1614680091,68c5496db64aff000051ff17e0e31c0c:-1708826821,42e445e9294aff009d7925fc9b3da73a:-743046851,ae2d3069780aff003512f96755cf56ee:-1157745903,5c0d78e51d0aff00641df4b1f271bea2:1034110428,93ec38e5ad0aff00354bcae8cc610bcc:978459393,08ecb4e56c0aff0069133a42d337549a:1034110428,0dbc78a5cc0aff00bb68d1b8a0279526:-1301797402,6bac3ca57f0aff003944656049de2af8:1193876872,b87cb0a5f00aff00d871c4d3b45c5c41:341842183,d93c30a5670aff0028ff075d1776afbe:989404389,c09bf065a90aff008ca1df830ba30904:1969746027,7b1bf425290aff00878de4dcb10c4a33:-546523929,29ea74251d0aff007ed55ab8bc007d83:-1912412257,c88a70e1340aff00298f9b32f5d72c03:-721597431,115a30e1370aff005e10b30d445a0ffc:143871505,a01ab4a1290aff0083d210f6fb9b0f42:974358696,9a497861060aff00cf50d7fc3790be6e:13261991,3e387421ac0aff0093866f5e60d3401a:-1146051759,72d6346d3bc6ff0059fc84d7d1c24bfb:17400436,c124f8a5b5c6ff00494150c9f23d7052:2031253407,ee14b8a52dc6ff008e3afc4ccf3d1c72:357100423,4a04b8a50bc6ff00663df756cdb7433b:-1101725300,600438a5bcc6ff007aa9676da7716936:-1200695280,05f378a533c6ff00f4f8768ec3dde926:17400436,31e3b4a59fc6ff00581a907295ba488a:-443498575,3b93b4656cc6ff0094684d437dfc81d1:-1196962075,d12d2c6d3086ff004c99baf59f70a8a1:17400436,7a4bece99a86ff0029bc8c12c761b3fc:1382805974,49c9e0a94986ff0019c1a7a1481db431:-2051580372,c9b96c69f986ff007993cd02240175be:936956524,b969a4297e86ff00f4d1a0502da7d03e:1021750232,0f88a0654986ff004825656156c521c3:214520055,a84824e15c86ff008e92cd335d1c8b39:-1821250510,6328a0e19686ff008305cda0cd39593a:-1268212909,d408aca1f486ff00530f3c608f52b4ec:-65085375,96e7a0a14d86ff00b4a5275fba3355f1:-389494254,dd77a0a15586ff00038bbc87553df9e7:-232479982,7367a0a1e086ff0040b8c681d0415360:-1324275368,1927e4613786ff0047584dca94d521dd:521520588,ab17e4615686ff007ba0817943e8aefd:-1869113844,3d17a4614786ff007d09762c683c6281:-449669461,c307a4615786ff00ba101fd2e674207a:1378131086,c9072461e086ff001ef75eda58d30605:-449669461,91f6e061db86ff00181c504103bffbfe:-1869113844,ccb620613a86ff00f92951f0a46f0859:908000263,95a6ac21d186ff0093e410e7dbfb773e:-731640171,4e966c21f686ff00ea01d51090c3840f:-902595995,07762c21bf86ff00e44393ddad32550a:-1696788392,7166e8213686ff004c19ae385534cf85:24374221,f5b568ed6c46ff008fb765d193675afd:1749425522,44a564ed3346ff00a407bce80bbb85f5:2022049842,3b85a4ed0946ff0042c990b07e564e52:933424706,c98564ed3f46ff00918ea744d5072dea:1749425522,b6456cadbc46ff007b0b0eed522a300f:-1368314181,1b33ece99046ff0091339d9dab910472:316069889,53a164a96646ff00cb151289a4807628:1153004669,4ca1ac69c446ff00fc863d007cdeae26:-1279221031,e3612c693e46ff00cf2490243a0a3fe1:-244735929,8c51e4693346ff0051d5c246684a0859:-1585732823,8c116069b546ff007c68f6c7bfaf620a:-1457160070,2b40a0299946ff00aabfc6cd0f7f233a:1121051302,37306029d546ff00fb3c5d67a164ed73:769517767,e120e8e5ca46ff006425304efefa1875:417984232,1a8dd0255146ff00ba23334bf9a7820b:732366993,921d18e17c46ff00ba9dcb8ca4d3c7af:1737236860,54fcd0e15046ff00bb780d50803a3495:1538072220,171cd4610f46ff005ee6511bf80abb53:1598535069,33fbd0617546ff00daf4fd72cd10fd23:-438060612,02fb90615d46ff00fdad7b3e1ad39b75:2915209,bbab5c215d46ff00e6e9d2748824039a:1668918700,4c6bd021e946ff00eed49e978fde2c5f:31096531,a5cad4edce06ff00b08f49f3309a90a2:-560863721,f7aa14edbd06ff008bf13b059152ee1c:226119433,cf9a14edcc06ff00ca5b036ab4779723:1215667413,5a6adcadc506ff00d0346fbc32f4ddd7:256638070,ee1a90ad9506ff00591809fb50f33963:427539977,fa0a90ad2e06ff00a40dfd49b117c058:-1800320439,4df95c6dcf06ff00a917eec65edb9b35:-686390231,7ab9546dc206ff00dfea8fff7e5dfc54:-1426943458,47695c2ddf06ff00d4fd2d632b34f409:31291185,f459582d0d06ff003cee52cdd7685ba1:1295157889,5849142d0106ff007ef015b0bedc381d:1935033285,ae09dce9de06ff0085c490d4fc815d38:-229854139,9ce858e96d06ff00f7390308ca334264:704052373,61d894e9f006ff0066d5a2d2d5ff80bf:778365400,2fc8d4e94d06ff0029bb66fa39681fc9:-115264814,f7b8d0e92306ff00b1b16d967eff240b:-330836674,f88890e96f06ff00d2d00d9455b44ae1:-641372934,fb58dca9c306ff0005d08f1673414e7d:-1032643584,ee585ca97e06ff0072b7eb4b27406b54:-2114140715,57481ca97806ff00d4c022fd3437d691:1962994389,a63858a93406ff0053ec1b6e7713acc9:-1566826166,7b2858a9f606ff00bf5592db13aa5108:146321790,6cf790a9f306ff00a9d2e0c4a42dd581:1613701930,f0275c29f206ff00aa268692ee0e7a61:189959589,f2171c29be06ff005ca5ed165f6dd02d:441709277,6b07d8294406ff00ad42d965714fab96:189959589,c8769ce51b06ff00e801c4c408a34a0c:507068802,6716d0e51406ff000902d7359078e460:-995926990,50e59ca5af06ff008f20e47d1b577e5c:759184989,d18518a5f706ff00151f4d223a5ec0a1:-2023991770,46a450656406ff005a82d1d66ba30b30:-427131590,fd0418251d06ff00974bfa2a1fc3942a:1967560638,18d314258806ff00529f400a4525ed47:-1142396133,56a3dce1f606ff00da2583f55425cb42:-652626717,2d00dc6d34c2ff00228332d9339702ba:-985850895,7dcf0c6da4c2ff003910574daef00ff7:1590987046,9dc5006d0582ff00a6527cb320c0c43e:-1891684114</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_027e79dbdbcc005087295275ca9619c6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="DELETE"><class_name/><order>1</order><sp_column/><sp_container display_value="">593e71dbdbcc005087295275ca96190b</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:31:16</sys_created_on><sys_id>027e79dbdbcc005087295275ca9619c6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_027e79dbdbcc005087295275ca9619c6</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:31:16</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1484987351</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>6c028293db00405087295275ca96197a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dcd0060000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>a64f715f34cc0050f2ce776dc4dabfd7</update_guid>
+<update_guid_history>a64f715f34cc0050f2ce776dc4dabfd7:-1484987351,8e7e79db00cc0050497dda15860be2c6:1666612653</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_593e71dbdbcc005087295275ca96190b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="DELETE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>CARD WIDGET EXAMPLE PAGE - Container 1</name><order>1</order><sp_page display_value="card_widget_example_page">bac68dd3db48005087295275ca961938</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:30:07</sys_created_on><sys_id>593e71dbdbcc005087295275ca96190b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CARD WIDGET EXAMPLE PAGE - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_593e71dbdbcc005087295275ca96190b</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:30:07</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>77046664</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>90028293db00405087295275ca961979</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dcd1350000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>CARD WIDGET EXAMPLE PAGE - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>2e4f715f04cc0050721a46642697a5eb</update_guid>
+<update_guid_history>2e4f715f04cc0050721a46642697a5eb:77046664,193e71dbc6cc00508753c679ec3dd40c:-427111916</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_685e35dbdbcc005087295275ca96197f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="DELETE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="">ac5e35dbdbcc005087295275ca96197d</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:30:37</sys_created_on><sys_id>685e35dbdbcc005087295275ca96197f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_685e35dbdbcc005087295275ca96197f</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:30:37</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-817411224</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>94028293db00405087295275ca961978</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dcd0df0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>6a4f715f88cc00500d66674d5f484ee5</update_guid>
+<update_guid_history>6a4f715f88cc00500d66674d5f484ee5:-817411224,645e35db7fcc0050204751942d6b4080:-553738931</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_bac68dd3db48005087295275ca961938</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>card_widget_example_page</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 18:28:01</sys_created_on><sys_id>bac68dd3db48005087295275ca961938</sys_id><sys_mod_count>0</sys_mod_count><sys_name>card_widget_example_page</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_bac68dd3db48005087295275ca961938</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 18:28:01</sys_updated_on><title>CARD WIDGET EXAMPLE PAGE</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=bac68dd3db48005087295275ca961938"/></record_update>]]></payload>
+<payload_hash>-1161467027</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>98028293db00405087295275ca96197a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d73fad7400000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>card_widget_example_page</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>bec68dd3124800507b66be6e5b8e253a</update_guid>
+<update_guid_history>bec68dd3124800507b66be6e5b8e253a:-1161467027</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_5bdaecae13c67740dd4e3192e144b058</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="angular.dirPagination">554aa0ae13c67740dd4e3192e144b03e</sp_dependency><sp_js_include display_value="angular.dirPagination">506a64ae13c67740dd4e3192e144b04a</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>Claudita</sys_created_by><sys_created_on>2019-06-17 22:24:58</sys_created_on><sys_id>5bdaecae13c67740dd4e3192e144b058</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular.dirPagination.angular.dirPagination</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_5bdaecae13c67740dd4e3192e144b058</sys_update_name><sys_updated_by>Claudita</sys_updated_by><sys_updated_on>2019-06-17 22:24:58</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>1720149340</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>9c024e53db00405087295275ca96192b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d73cdc3d30000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>angular.dirPagination.angular.dirPagination</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>93daecae65c67740b081b0c70cb8335a</update_guid>
+<update_guid_history>93daecae65c67740b081b0c70cb8335a:1720149340</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_554aa0ae13c67740dd4e3192e144b03e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>angular.dirPagination</module><name>angular.dirPagination</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>Claudita</sys_created_by><sys_created_on>2019-06-17 22:22:35</sys_created_on><sys_id>554aa0ae13c67740dd4e3192e144b03e</sys_id><sys_mod_count>3</sys_mod_count><sys_name>angular.dirPagination</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_554aa0ae13c67740dd4e3192e144b03e</sys_update_name><sys_updated_by>Claudita</sys_updated_by><sys_updated_on>2019-06-17 22:33:58</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>1148399102</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>9c028293db00405087295275ca961979</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d73cdc3dc0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>angular.dirPagination</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>57eca8621b0a7740255130b9a860cd30</update_guid>
+<update_guid_history>57eca8621b0a7740255130b9a860cd30:1148399102,338cec22a20a7740edd3a61e1289f1fe:711520259,965ae0ae37c6774053bb45dcbc1f0eb4:1148399102,105aec6e19c67740d8ca14176d221868:211698905</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_ac5e35dbdbcc005087295275ca96197d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="DELETE"><class_name/><order>3</order><sp_column/><sp_container display_value="">593e71dbdbcc005087295275ca96190b</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:30:37</sys_created_on><sys_id>ac5e35dbdbcc005087295275ca96197d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>3</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_ac5e35dbdbcc005087295275ca96197d</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:34:47</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1805612123</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>a4028293db00405087295275ca96197b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dcd1050000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>3</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>e64f715f4dcc0050fb0db1c70713e3e8</update_guid>
+<update_guid_history>e64f715f4dcc0050fb0db1c70713e3e8:-1805612123,ed4f715f06cc0050eb44af9aa1256622:67077801,2c5e35db7ecc005032e18a193975027e:1666612653</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -980,21 +1336,99 @@ span{&amp;#13;
 <name>sp_js_include_506a64ae13c67740dd4e3192e144b04a</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>angular.dirPagination</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>Claudita</sys_created_by><sys_created_on>2019-06-17 22:24:58</sys_created_on><sys_id>506a64ae13c67740dd4e3192e144b04a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular.dirPagination</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="dirPagination.js">858a28ae13c67740dd4e3192e144b01d</sys_ui_script><sys_update_name>sp_js_include_506a64ae13c67740dd4e3192e144b04a</sys_update_name><sys_updated_by>Claudita</sys_updated_by><sys_updated_on>2019-06-17 22:24:58</sys_updated_on><url/></sp_js_include></record_update>]]></payload>
 <payload_hash>1461598734</payload_hash>
-<remote_update_set display_value="cases-widget-cc">665828cddb5ef30046215ff25e9619b0</remote_update_set>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-06-25 16:38:48</sys_created_on>
-<sys_id>e65828cddb5ef30046215ff25e9619b1</sys_id>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>d4028293db00405087295275ca96197a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16b8f5feb8f0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-06-25 16:38:48</sys_updated_on>
+<sys_recorded_at>16d73cdc3c80000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
 <table/>
 <target_name>angular.dirPagination</target_name>
 <type>JS Include</type>
 <update_domain>global</update_domain>
 <update_guid>93da28ae78c6774020c325910ed2810e</update_guid>
 <update_guid_history>93da28ae78c6774020c325910ed2810e:1461598734</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_f3edf19bdbcc005087295275ca9619b9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="DELETE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>CARD WIDGET EXAMPLE PAGE - Container 1</name><order>1</order><sp_page display_value="card_widget_example_page">bac68dd3db48005087295275ca961938</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:28:56</sys_created_on><sys_id>f3edf19bdbcc005087295275ca9619b9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CARD WIDGET EXAMPLE PAGE - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_f3edf19bdbcc005087295275ca9619b9</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:28:56</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>77046664</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>d8028293db00405087295275ca961979</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dcbeac0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>CARD WIDGET EXAMPLE PAGE - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>514f715f1ccc0050939fa2b9651b731c</update_guid>
+<update_guid_history>514f715f1ccc0050939fa2b9651b731c:77046664,ffedf19baecc00503bb9bb3eede177ba:-427111916</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_f07ef5dbdbcc005087295275ca961951</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="DELETE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="">387ef5dbdbcc005087295275ca96194f</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 22:31:11</sys_created_on><sys_id>f07ef5dbdbcc005087295275ca961951</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_f07ef5dbdbcc005087295275ca961951</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 22:31:11</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-885860613</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>dc028293db00405087295275ca961978</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d74dcd0590000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>224f715f60cc00509044c0124e9a70dd</update_guid>
+<update_guid_history>224f715f60cc00509044c0124e9a70dd:-885860613,fc7ef5dbb3cc0050df9ed4126e47d751:-622188320</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_77c68517db48005087295275ca9619c0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="CARD WIDGET EXAMPLE PAGE - Container 1">7ec68dd3db48005087295275ca96193b</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>claudia.cruz</sys_created_by><sys_created_on>2019-09-27 18:28:05</sys_created_on><sys_id>77c68517db48005087295275ca9619c0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_77c68517db48005087295275ca9619c0</sys_update_name><sys_updated_by>claudia.cruz</sys_updated_by><sys_updated_on>2019-09-27 18:28:05</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>1850790556</payload_hash>
+<remote_update_set display_value="cases-widget-cc">18024e53db00405087295275ca96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>claudia.cruz</sys_created_by>
+<sys_created_on>2019-09-27 22:46:43</sys_created_on>
+<sys_id>e0028293db00405087295275ca96197b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d73fae48d0000001</sys_recorded_at>
+<sys_updated_by>claudia.cruz</sys_updated_by>
+<sys_updated_on>2019-09-27 22:46:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>3fc68517cc480050555844d99bd1f8c1</update_guid>
+<update_guid_history>3fc68517cc480050555844d99bd1f8c1:1850790556</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
