@@ -2,7 +2,7 @@
 
 ## Description
 
-Simple Map is a widget which will quickly make you able to use all the available Google Maps APIs in Service Portal. The initial rendering is minimal, so you can easily enable and show what you need through the all available widget and directives options. The only requisite is to signup on [Google Cloud](https://cloud.google.com/free/ "Google Cloud Platform Free Tier") and obtain a valid API key https://cloud.google.com/free/
+Simple Map is a widget which will quickly make you able to use all the available Google Maps APIs in Service Portal. The initial rendering is minimal, so you can easily enable and show what you need through the all available widget and directives options. The only requisite is to signup on [Google Cloud](https://cloud.google.com/free/ "Google Cloud Platform Free Tier") and obtain a valid API key
 
 ## Screenshot
 
@@ -38,6 +38,6 @@ Available options:
 
 ### UI Dependencies
 
-* ngMap - ['Google Maps AngularJS Directive'](https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/docs/index.html)
+* [ngMap](https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/docs/index.html)
 
-* valid API key - ['Google Cloud Platform'](https://console.cloud.google.com/home/dashboard)
+* valid API key from [Google Cloud Platform](https://console.cloud.google.com/home/dashboard)
