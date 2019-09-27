@@ -1,3 +1,54 @@
-<div>
-  <!-- your widget template -->
+<div class="x_pisn_sp_ng_map">
+  <ng-map
+    id="my-map-{{ c.widget.rectangle_id }}"
+    center="[{{ c.options.current_position }}]"
+    zoom="{{ c.options.zoom }}"
+    zoom-to-include-markers="false"
+    style="height:100%;"
+    scrollwheel="false"
+    street-view-control="false"
+    zoom-control="false"
+    fullscreen-control="false"
+    map-type-id="terrain"
+  >
+    <directions
+      draggable="false"
+      travel-mode="{{ c.options.travel_mode }}"
+      suppress-info-windows="true"
+      origin="{{ c.options.origin }}"
+      destination="{{ c.options.destination }}"
+      suppress-markers="true"
+    >
+    </directions>
+
+    <custom-marker
+      id="my-map-origin-{{ c.widget.rectangle_id }}"
+      position="{{ c.options.origin }}"
+      label="{{ c.options.origin }}"
+    >
+      <div>
+        <div class="x_pisn_sp_ng_map__label-container text-center wrapper">
+          <h4 class="text-primary m-n">{{ c.options.origin }}</h4>
+        </div>
+      </div>
+    </custom-marker>
+    <custom-marker
+      id="my-map-destination-{{ c.widget.rectangle_id }}"
+      position="{{ c.options.destination }}"
+      label="{{ c.options.destination }}"
+      ><div>
+        <div class="x_pisn_sp_ng_map__label-container text-center wrapper">
+          <h4 class="text-primary  m-n">{{ c.options.destination }}</h4>
+        </div>
+      </div>
+    </custom-marker>
+
+    <custom-marker
+      ng-if="c.options.current_position"
+      id="my-map-current-position-{{ c.widget.rectangle_id }}"
+      position="[{{ c.options.current_position }}]"
+    >
+      <div><img src="x_pisn_sp_ng_map_ship.png" width="41" height="19" /></div>
+    </custom-marker>
+  </ng-map>
 </div>

@@ -1,0 +1,16 @@
+$x-pisn-sp-ng-map-height: 90vh;
+
+.x_pisn_sp_ng_map {
+  height: $x-pisn-sp-ng-map-height;
+}
+
+.x_pisn_sp_ng_map__label-container {
+  border-radius: $border-radius-large;
+  background: rgba($body-bg, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.gmnoprint,
+a {
+  display: none !important;
+}

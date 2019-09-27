@@ -1,0 +1,46 @@
+[
+  {
+    "name": "origin",
+    "section": "other",
+    "default_value": "Paris Montmartre",
+    "label": "Origin",
+    "type": "string"
+  },
+  {
+    "name": "destination",
+    "section": "other",
+    "default_value": "Paradise Road, Richmond, London",
+    "label": "Destination",
+    "type": "string"
+  },
+  {
+    "hint": "Latitude, Longitude (you can find them from https://www.latlong.net/)",
+    "name": "current_position",
+    "section": "other",
+    "default_value": "",
+    "label": "Current Position",
+    "type": "string"
+  },
+  {
+    "name": "current_position_image",
+    "section": "other",
+    "default_value": "x_pisn_sp_ng_map_ship.png",
+    "label": "Current Position Image",
+    "type": "string"
+  },
+  {
+    "name": "travel_mode",
+    "section": "other",
+    "default_value": "DRIVING",
+    "label": "Travel Mode",
+    "type": "string"
+  },
+  {
+    "name": "zoom",
+    "section": "other",
+    "default_value": "18",
+    "label": "Zoom",
+    "type": "string"
+  },
+  { "name": "styles", "section": "other", "label": "Styles", "type": "json" }
+]
