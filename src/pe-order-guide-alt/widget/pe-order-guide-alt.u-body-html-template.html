@@ -1,0 +1,286 @@
+<div class="sc-order-guide-alt" sn-atf-blacklist="IS_SERVICE_CATALOG">
+  <sp-widget widget="orderGuideModal" ng-if="orderGuideModal"></sp-widget>
+	<!-- <div ng-if="::data.sc_cat_item" class="row">
+		<div class="col-sm-12"> -->
+			<div  ng-if="::data.sc_cat_item"> 
+          <!-- class="panel panel-default" -->
+				<div>
+					<div class="break-word">
+						<h1 class="h2 m-n" ng-if="::data.sc_cat_item.name">{{::data.sc_cat_item.name}}</h1>
+            <div class="text-muted hidden-xs hidden-sm" ng-if="::data.sc_cat_item.short_description">{{::data.sc_cat_item.short_description}}</div>
+          </div>
+          
+					<div class="og-timeline step-{{guide_step}}">
+
+            <div class="og-timeline-item" ng-class="guide_step == 0 ? 'active' : 'past'" ng-click="goToStepItem(0)">
+              <div class="og-timeline-title">{{m.step1}}</div>
+							<div class="og-timeline-indicator"></div>
+            </div>
+
+            <div class="og-timeline-inner" style="margin: 0 {{40 / includedItems.length}}%;">
+              <div ng-repeat="step in includedItems" class="og-timeline-item" style="width: calc(100% / {{includedItems.length}});" ng-click="goToStepItem(1,$index)"
+                  ng-class="{'active': guide_step == 1 && item_step == $index, 'future': guide_step < 2 && item_step < $index, 'past': (guide_step == 1 && item_step > $index) || guide_step == 2}">
+                <div class="og-timeline-title">{{step.name}}</div>
+                <div class="og-timeline-indicator">
+                </div>
+              </div>
+            </div>
+            
+            <div class="og-timeline-item" ng-class="guide_step == 2 ? 'active' : 'future'" ng-click="goToStepItem(2)" ng-disabled="guide_step === 0">
+              <div class="og-timeline-title">{{m.step3}}</div>
+              <div class="og-timeline-indicator">
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+				<div ng-if="guide_step == 0">
+            <!-- class="panel-body" -->
+          <div class="row m-b-lg">
+            <div ng-if="::data.sc_cat_item.picture" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+              <img class="img-responsive catalog-item-image guide-image" ng-src="{{::data.sc_cat_item.picture}}?t=medium" />
+            </div>
+            <div ng-if="data.sc_cat_item.description" class="col-xs-12 col-sm-12 col-md-9 col-lg-9 break-word">
+              <div class="col-md-9 col-lg-9 visible-md visible-lg" ng-class="{false : 'visible-xs visible-sm', true : 'hidden-xs hidden-sm'}[options.show_less_orderguide === 'true']">	
+              	<div class="m-t guide-description" ng-bind-html="::data.sc_cat_item.description"></div>
+              </div>
+              <div class="visible-xs visible-sm col-xs-12 col-sm-12" ng-if="::(options.show_less_orderguide === 'true')">
+            		<sc-toggle-data sn-data="::data.sc_cat_item.description"></sc-toggle-data>
+            	</div>
+            </div>
+	        </div>
+					<sp-model form-model="data.sc_cat_item" mandatory="data.sc_cat_item._mandatory" template-url="row-based-form-template"></sp-model>
+				</div>
+				<div ng-if="guide_step == 1" >
+            <!-- class="panel-body" -->
+          <div ng-if="evaluatingIncludes" class="include-loader">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+						<span class="sr-only">${Loading...}</span>
+          </div>
+					<div ng-repeat="item in includedItems track by item.sys_id | orderBy: 'order'" ng-show="item_step == $index" ng-init="initAttachmentCallbacks($index);">
+            <h3>
+              <span id="item_name_{{::item.sys_id}}">
+                <!-- <img ng-if="::item.icon" ng-src="{{::item.icon}}" class="item-icon m-r-xs"/> -->
+                <span aria-role="heading" aria-level="3" class="break-word">{{::item.name}}</span>
+              </span>
+              <small>{{::item.short_description}}</small>
+              <span ng-if="::showIncludeToggle">	
+                <div class="input-switch inline v-middle m-l" ng-click="$event.stopPropagation()" uib-tooltip="{{item.included ? '${Included}' : '${Not Included}'}}" tooltip-placement="top" tooltip-append-to-body="true" role="none">
+                  <input type="checkbox"
+                      ng-model="item.included"
+                      tabindex="0"
+                      aria-label="${Included}"
+                      id="enable_switch_{{::item.sys_id}}"  />
+                  <label class="switch" for="enable_switch_{{::item.sys_id}}" ng-click="toggleItemState(item)"></label>
+                </div>
+              </span>
+            </h3>
+              
+            <div id="item_details_{{::item.sys_id}}" role="region" aria-labelledby="{{::item.sys_id}}" sp-pause-child-watchers-if-hidden>
+              <!-- <div class="wrapper"> -->
+                <!-- <div class="panel-body"> -->
+                  <div class="row m-b-lg">
+                    <div class="col-lg-3 col-md-3 hidden-xs hidden-sm" ng-if="::item.picture">
+                      <img ng-if="::item.picture" class="img-responsive catalog-item-image guide-item-image" ng-src="{{::item.picture}}" />  
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-xs-12 col-sm-12">
+                      <div class="font-normal pull-right m-r-sm hidden-xs hidden-sm">
+                        <span class="" ng-if="data.showPrices && item.price">{{item.price_display}} {{item.recurring_price ? '+' : ''}}</span> <span class="" ng-if="data.showPrices && item.recurring_price"> {{item.recurring_price_display}} {{item.recurring_price_frequency}}</span>
+                        <div class="" ng-if="!data.hideDeliveryTime && item.sys_class_name != 'sc_cat_item_producer' && item.sys_class_name != 'sc_cat_item_guide' && (!item.no_delivery_time && item.estimated_delivery_time)">{{::item.estimated_delivery_time}} ${Delivery}</div>
+                      </div>
+                      <img ng-if="::item.picture" class="img-responsive catalog-item-image guide-item-image-xs hidden-lg hidden-md" ng-src="{{::item.picture}}" />  
+                      <div ng-if="::item.description" class="m-t guide-description clearfix visible-md visible-lg break-word" ng-bind-html="::item.description" ng-class="::{false : 'visible-xs visible-sm', true : 'hidden-xs hidden-sm'}[options.show_less_orderguide === 'true']"></div>
+                        <div class="visible-xs visible-sm break-word" ng-if="::(options.show_less_orderguide === 'true')">
+                        <sc-toggle-data sn-data="::item.description"></sc-toggle-data>
+                      </div>
+                    </div>
+                  </div>
+                  <fieldset ng-class="{'disabled-mask': !item.included}"></fieldset>
+                  <sp-cat-item item="item" />
+                  <sp-model form-model="item" mandatory="item._mandatory" template-url="row-based-form-template"></sp-model>
+                  <div class="clearfix">
+                    <div ng-if="item.attachments.length" class="file-list-wrap">
+                      <ul class="list-group" style="margin-bottom: 0; padding:0">
+                        <li class="list-group-item" ng-repeat="attachment in item.attachments">
+                          <div class="sp-attachment-block-single-line file-attachment row" id="{{::attachment.sys_id}}">
+                            <a aria-label="{{::(attachment.thumbSrc ? m.viewAttachedImage : m.downloadAttachment)}}" tabindex="0" class="col-md-1 col-sm-1 col-xs-2 view-attachment m-b-none text-center" style="border: none;"
+                                ng-click="item.attachmentHandler.viewAttachment($event, attachment)" href="javascript:void(0)" title="View" >
+                              <img alt="" ng-if="attachment.thumbSrc" class="attachment-thumbnail img-responsive" ng-src="{{attachment.thumbSrc}}"/>
+                              <span ng-if="::!attachment.thumbSrc">
+                                <span class="glyphicon glyphicon-file text-2x"/>
+                              </span>
+                            </a>
+                            <div class="col-md-9 col-sm-8 col-xs-7 file-name v-middle">
+                              <a tabindex="0" class="get-attachment" ng-click="item.attachmentHandler.downloadAttachment(attachment)" ng-attr-title="${Download} {{::attachment.file_name}}" href="javascript:void(0)">
+                                {{::attachment.file_name}} ({{::attachment.size}})
+                              </a>
+                              <input tabindex="-1" ng-keydown="item.attachmentHandler.onKeyDown($event, attachment)" ng-blur="item.attachmentHandler.updateAttachment($event, attachment)" style="display: none;"/>
+                              <div>
+                                <time><sn-time-ago timestamp="::attachment.sys_updated_on" /></time>
+                              </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-3 tools v-middle align-right">
+                              <div class="btn-group" ng-if="::(attachment.canWrite || attachment.canDelete)">
+                                <button type="button" tabindex="0" class="btn btn-default btn-clear" ng-click="item.attachmentHandler.editAttachment($event, attachment)" title="${Edit file name}" aria-label="${Edit file name}"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                <button type="button" tabindex="0" class="btn btn-default btn-clear" ng-click="item.confirmDeleteAttachment(attachment, $event)" title="${Delete}" aria-label="${Delete}"><i class="fa fa-times" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="errors-wrap" ng-hide="errorMessages.length == 0">
+                        <div class="error-msg icon-cross" ng-repeat="error in errorMessages" ng-click="item.attachmentHandler.dismissMsg($event, $index, errorMessages)">
+                          <span>{{error.msg}}</span>
+                          <span class="file-name">{{error.fileName}}</span>
+                        </div>
+                      </div>
+                    </div>
+                      
+                    <label ng-if="!submitted && !item.no_attachments" class="attachment-label">
+                      <span class="file-upload-input">
+                        <input type="file" style="display: none" multiple="true" ng-file-select="item.attachmentHandler.onFileSelect($files)" class="sp-attachments-input"/>
+                        <button title="" ng-click="item.attachmentHandler.openSelector($event)" class="panel-button sp-attachment-add btn btn-link" aria-label="${Add attachment}"><span class="glyphicon glyphicon-paperclip"></span></button>
+                      </span>
+                      <span class="fa fa-asterisk mandatory" 
+                            ng-if="item.mandatory_attachment && item.included" 
+                            ng-class="{'mandatory-filled': item.mandatory_attachment && item.attachment_submitted}"
+                            style="vertical-align:super"></span>
+                      <span>${Add attachments}</span>
+                    </label>
+                  </div>
+                <!-- </div> -->
+              <!-- </div> -->
+						</div>
+					</div>
+					<div class="empty-state-content" ng-if="includedItems.length == 0 && !evaluatingIncludes">
+            <h3>${Order Guide has no items to order}</h3>
+          </div>
+				</div>
+				<div ng-if="guide_step == 2">
+            <!-- class="panel-body" -->
+          <h3>${Review}</h3>
+					<div class="list-group">
+						<table class="table table-striped m-b-sm light-border-bottom summary add-margin-bottom-xs" 
+                   summary="${Summary of order}" >
+							<thead ng-repeat-start="item in ::includedItems track by item.sys_id| orderBy: 'order'" ng-class="::{'summary-excluded': !item.included}">
+								<tr>
+									<th class="col-md-6 padder-t" scope="col"><h4>{{item.name}}</h4></th>
+                  <th class="hidden-xs">
+										<span ng-if="::(totalIncluded == includedItems.length) && !item.included" class="wrapper-xs not-included not-included-pill">${NOT INCLUDED}</span>
+									</th>
+								</tr>
+							</thead>
+							<tbody ng-repeat-end ng-hide="!item.included">
+                <tr ng-repeat="field in item.field_values" ng-if="field.visible">
+                  <td class="hidden-xs"><strong>{{::field.label}}</strong></td>
+                  <td>
+                    <div class="visible-xs"><strong>{{::field.label}}</strong></div>
+                    {{::field.display_value}}
+                  </td>
+                </tr>
+                <tr ng-if="item.attachments.length">
+                  <td colspan="2">
+                    <div class="file-list-wrap">
+                      <ul class="list-group" style="margin-bottom: 0; padding:0">
+                        <li class="list-group-item" ng-repeat="attachment in item.attachments">
+                          <div class="sp-attachment-block-single-line file-attachment row">
+                            <div class="col-md-1 col-sm-1 col-xs-2 m-b-none text-center">
+                              <img alt="" ng-if="attachment.thumbSrc" class="attachment-thumbnail img-responsive" ng-src="{{attachment.thumbSrc}}"/>
+                              <span ng-if="::!attachment.thumbSrc">
+                                <span class="glyphicon glyphicon-file text-2x"/>
+                              </span>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-10 file-name v-middle">
+                              {{::attachment.file_name}} ({{::attachment.size}})
+                              <div>
+                                <time><sn-time-ago timestamp="::attachment.sys_updated_on" /></time>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+							</tbody>
+						</table>
+						<div class="padder-v clearfix hidden-xs hidden-sm" style="padding-top: 25px !important">
+              
+						  <div class="pull-right m-r-lg m-l wrapper-sm" ng-if="data.showPrices" style="top: -10px;position: relative;">
+								<div class="pull-left"><strong>${Total} : </strong>
+								</div>
+								<div class="pull-left m-l-xs">
+									<div><strong> {{price_display}}</strong>
+									</div>
+									<div ng-repeat="freq in ::frequencySequence">
+										<span class="clearfix" ng-if="frequencyMap.hasOwnProperty(freq)" style="font-size:13px"> + {{(frequencyMap[freq] + ' ' + freq)}}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+            
+            <div class="clearfix visible-xs visible-sm">
+              <div class="pull-left m-r-lg m-b-sm" ng-if="::data.showPrices">
+								<div class="pull-left"><strong>${Total : }</strong>
+								</div>
+								<div class="pull-left m-l-xs">
+									<div><strong> {{price_display}}</strong>
+									<div ng-repeat="freq in ::frequencySequence">
+										<span class="clearfix" ng-if="frequencyMap.hasOwnProperty(freq)" style="font-size:13px"> + {{(frequencyMap[freq] + ' ' + freq)}}</span>
+									</div>
+									</div>
+								</div>
+							</div>
+            </div>
+            
+					</div>
+				</div>
+				<div class="m-t-lg clearfix" ng-hide="evaluatingIncludes">  <!-- class="panel-footer clearfix" -->
+          <div class="pull-right">
+            <button class="btn btn-default btn-lg" ng-if="guide_step == 2 && options.show_add_cart_button == 'true' && !data.sc_cat_item.no_cart" ng-disabled="submitted" 
+                    ng-click="triggerAddToCart()" name="add_to_cart" >
+              {{::m.cartMsg}}
+            </button>
+            <button class="btn btn-default btn-lg" ng-if="guide_step > 0 && !submitted" ng-click="goPrev()">
+              {{::m.prevMsg}}
+            </button>
+            <button class="btn btn-primary btn-lg" ng-if="guide_step < 2" 
+                    ng-disabled="submitted || data.sc_cat_item._mandatory.length > 0 || (totalIncluded <= 0 && guide_step != 0)"
+                    ng-click="goNext()" id="submit" sn-focus="guide_step < 2">
+              {{::m.nextMsg}}
+            </button>
+            <button class="btn btn-primary btn-lg" ng-if="guide_step == 2" ng-disabled="submitted" 
+                    ng-click="triggerSubmit()" name="order" sn-focus="guide_step == 2">
+              {{::submitButtonMsg}}
+            </button>
+          </div>
+				</div>
+			</div>
+		<!-- </div>
+	</div> -->
+	<div ng-if="::!data.sc_cat_item">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">${Item not found}</h4>
+			</div>
+			<div class="panel-body wrapper">
+				<p>${This item is not found or currently not available}</p>
+				<p>${Suggestions}:</p>
+				<ul>
+					<li>${Try searching for the item}</li>
+					<li>${Go to the Service Catalog homepage}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-if="::!data.recordFound" class="alert alert-info">{{::m.invalidRecordMsg}}</div>
+<now-message key="Items have been added successfully" value="${Items have been added successfully}"/>
+<now-message key="Catalog Home" value="${Catalog Home}"/>
+<now-message key="View Cart" value="${View Cart}"/>
+<now-message key="Attachment(s) are not added" value="${Attachment(s) are not added}"/>
+<now-message key="Leave page?" value="${Leave page?}"/>
+<now-message key="Changes you made will be lost." value="${Changes you made will be lost.}"/>
+<now-message key="Cancel" value="${Cancel}"/>
+<now-message key="Leave" value="${Leave}"/>
