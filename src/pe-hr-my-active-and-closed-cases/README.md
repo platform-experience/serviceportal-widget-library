@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> Stylized widget for an HR Portal that consolidates active and closed case data into a clean, tabbed format.
 
 ## Screenshot
 
@@ -28,7 +28,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 ### SN System Tables
 
-> None
+> sn_hr_core_case
 
 ### UI Dependencies
 

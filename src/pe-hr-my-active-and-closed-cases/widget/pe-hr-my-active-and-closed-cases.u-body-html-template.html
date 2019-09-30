@@ -1,3 +1,29 @@
-<div>
-  <!-- your widget template -->
+<div class="panel panel-default">
+  <div class="tab-container btn-group-justified btn-group" role="group">
+    <div class="btn-group">
+      <button class="btn btn-active" href="#active" data-toggle="tab">
+        <p class="list-name">Open Cases</p>
+        <p class="list-count">{{data.myActiveCaseCount}}</p>
+      </button>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-inactive" href="#closed" data-toggle="tab">
+        <p class="list-name">Closed Cases</p>
+        <p class="list-count">{{data.myClosedCaseCount}}</p>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="active">
+    <h3>My Open Cases</h3>
+    <sp-widget widget="data.myActiveCaseListWidget" ng-if="data.myActiveCaseCount"></sp-widget>
+    <p ng-if="!data.myActiveCaseCount" class="no-records">You don't have any open cases at this time</p>
+  </div>
+  <div class="tab-pane fade in" id="closed">
+    <h3>My Closed Cases</h3>
+    <sp-widget widget="data.myClosedCaseListWidget" ng-if="data.myClosedCaseCount"></sp-widget>
+    <p ng-if="!data.myClosedCaseCount" class="no-records">You don't have any closed cases at this time</p>
+  </div>
 </div>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-09-30 20:56:12">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<application_name>Human Resources: Service Portal</application_name>
+<application_scope>sn_hr_sp</application_scope>
+<application_version>6.0.37</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>HR - My Active and Closed Cases</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>4c24bc9c1b908490855c32e8cd4bcbf0</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>madison.spina</sys_created_by>
+<sys_created_on>2019-09-30 20:56:12</sys_created_on>
+<sys_id>ba7585981bd48490855c32e8cd4bcb0d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>madison.spina</sys_updated_by>
+<sys_updated_on>2019-09-30 20:56:12</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_8e1bdfc8db3b3b00c58ff05e0f961953</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+	/* widget controller */
+	var c = this;
+
+	$(document).ready(function() {
+		$(".tab-container .btn").click(function () {
+			$(".tab-container .btn").removeClass("btn-active").addClass("btn-inactive");
+			$(this).removeClass("btn-inactive").addClass("btn-active");   
+		});
+	});
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.tab-container {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.btn-group {
+  border: 0;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.tab-container .btn {
+  background-color: transparent;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-radius: 0;
+  padding-bottom: 0;
+}
+
+.btn-active {
+  border-bottom: 4px solid $brand-primary;
+}
+
+.btn-inactive {
+  border-bottom: 4px solid transparent;
+}
+
+.list-name {
+  opacity: 0.8;
+  font-size: 1.4rem;
+  margin: 10px 0 0;
+}
+
+@media (max-width: 400px) {
+  .list-name {
+    white-space: normal;
+  }
+
+  .btn-active {
+    min-height: 101px;
+  }
+
+  .btn-inactive {
+    min-height: 101px;
+  }
+} 
+
+.list-count {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.no-records {
+  font-weight: 300;
+}
+
+.tab-content .tab-pane p {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  .tab-content .tab-pane p {
+    margin-bottom: 0;
+  }
+
+  .btn-primary {
+    margin-bottom: 0;
+  }
+
+  #cases .panel {
+    margin-bottom: 0;
+  }
+}
+
+
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;hr-my-cases&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;HR - My Active and Closed Cases&lt;/name&gt;&lt;option_schema&gt;[{"hint":"","name":"tab_underline_color","section":"other","default_value":"$brand-primary","label":"Tab Underline Color","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	
+	data.myActiveCaseCount = getCaseCount('true');
+	data.myClosedCaseCount = getCaseCount('false');
+	
+	var openCaseOptions = {"is_active":"true"};
+	var closedCaseOptions = {"is_active":"false"};
+	
+	data.myActiveCaseListWidget = $sp.getWidget('hr-my-cases-list', openCaseOptions);
+	data.myClosedCaseListWidget = $sp.getWidget('hr-my-cases-list', closedCaseOptions);
+	
+	function getCaseCount(isActive){
+		var gr = new GlideRecord('sn_hr_core_case');
+		gr.addEncodedQuery('active=' + isActive + '^subject_personDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORopened_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORopened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe');
+		gr.query();
+		
+		return gr.getRowCount();
+	}
+	
+	function getToDoCount(){
+		var arr = [];
+		var util = new sn_hr_sp.todoPageUtils();
+		data.queryLimit = todoPageUtils.QUERY_LIMIT;
+		data.todosToShow = util.getMyTodos(data.queryLimit);
+		arr = data.todosToShow.recordsToShow;
+
+		return arr.length;
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;madison.spina&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-05 17:05:04&lt;/sys_created_on&gt;&lt;sys_id&gt;8e1bdfc8db3b3b00c58ff05e0f961953&lt;/sys_id&gt;&lt;sys_mod_count&gt;153&lt;/sys_mod_count&gt;&lt;sys_name&gt;HR - My Active and Closed Cases&lt;/sys_name&gt;&lt;sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Human Resources: Service Portal"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8e1bdfc8db3b3b00c58ff05e0f961953&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;madison.spina&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-30 20:51:44&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default"&gt;
+  &lt;div class="tab-container btn-group-justified btn-group" role="group"&gt;
+    &lt;div class="btn-group"&gt;
+      &lt;button class="btn btn-active" href="#active" data-toggle="tab"&gt;
+        &lt;p class="list-name"&gt;Open Cases&lt;/p&gt;
+        &lt;p class="list-count"&gt;{{data.myActiveCaseCount}}&lt;/p&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="btn-group"&gt;
+      &lt;button class="btn btn-inactive" href="#closed" data-toggle="tab"&gt;
+        &lt;p class="list-name"&gt;Closed Cases&lt;/p&gt;
+        &lt;p class="list-count"&gt;{{data.myClosedCaseCount}}&lt;/p&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="tab-content"&gt;
+  &lt;div class="tab-pane fade in active" id="active"&gt;
+    &lt;h3&gt;My Open Cases&lt;/h3&gt;
+    &lt;sp-widget widget="data.myActiveCaseListWidget" ng-if="data.myActiveCaseCount"&gt;&lt;/sp-widget&gt;
+    &lt;p ng-if="!data.myActiveCaseCount" class="no-records"&gt;You don't have any open cases at this time&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="tab-pane fade in" id="closed"&gt;
+    &lt;h3&gt;My Closed Cases&lt;/h3&gt;
+    &lt;sp-widget widget="data.myClosedCaseListWidget" ng-if="data.myClosedCaseCount"&gt;&lt;/sp-widget&gt;
+    &lt;p ng-if="!data.myClosedCaseCount" class="no-records"&gt;You don't have any closed cases at this time&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1192095282</payload_hash>
+<remote_update_set display_value="HR - My Active and Closed Cases">ba7585981bd48490855c32e8cd4bcb0d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>madison.spina</sys_created_by>
+<sys_created_on>2019-09-30 20:56:12</sys_created_on>
+<sys_id>327585981bd48490855c32e8cd4bcb0e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d83f17d280000001</sys_recorded_at>
+<sys_updated_by>madison.spina</sys_updated_by>
+<sys_updated_on>2019-09-30 20:56:12</sys_updated_on>
+<table/>
+<target_name>HR - My Active and Closed Cases</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>9d748d5446d484907e5a377fc1d78170</update_guid>
+<update_guid_history>9d748d5446d484907e5a377fc1d78170:1192095282,2ef3c590e3d48490433ef590d63a5e16:-1916446151,84f20d9cd49484905decb85e274311b6:221516037,9082c5d828948490d7a9367b09f6ad6f:1840447599,45710994cb9484908bd7449837e54c05:-2131271347,7de08d54a8948490eb89dd482514582b:-645122823,b2ef7cdc6f5484900eb337cc87963d43:-120154293,ba7f3c1c04548490214c954f26662dbf:-1003109143,372ffcd48554849027605c1d0301afe8:225016199,37ad341cb7148490d05522cf2df2a05d:-1905644653,296df058ae1484907e87990ea414e4de:-818154571,751c3c501114849088607c1fb04b45bd:-1914021999,3fc9789c23d0849036862e1fd2ad33cb:-569489736,edc3b498b094405072e7caafdfadabd9:-140166370,87b3b49825944050f52b5bf556095d2a:1981668606,84b33498bd944050befcec46f90a65ab:1327853630,36e274589b944050d65b01e405cdde37:759881601,ccc2b81878944050f389e93b5ca422fb:1397252355,b29230581b944050ad3f4e3140579c05:-970283140,02d17cd49e944050e2bfd42cd2d0a6a0:-1853338671,599178d4de9440505b694c27af650ff2:-1377734976,216178d44e944050ec8343cd082f6eeb:-51920800,2fc074945e9440509fd489709b16adc5:1878738200,d1707494979440508283237bb6e2f8be:-1278869348,06ff6814529440509624805e7981a43f:1619802178,298f20145294405072ff1fe4407bcb3b:1231155310,0e2f20145c944050933527bca36ec133:-811399213,6eac605072944050b8e1d9984100f30c:-245967973,531cac9cd854405085dddf8995724c4e:961211707,f6f9e45ca454405021a95e8dae6eaf75:-447390016,aed9e85c9e5440509a1a2c76a7831970:1526230716,e46920d8d35440505161674f8fc56c07:-1337958684,ae41185c24d04050e0d186bf3b927801:-520611181,04ddcc1865d04050e61e6d0aefc2c826:1265276857,815a4c1410d04050b98c7734beb30ae3:-1160301313,5a894014ecd04050e690976e72b98725:-1476068469,ff5948d012d04050dcad4f57a7d33cbb:-254920067,8729009082d04050649b74468420e857:-1721009966,869ebf8070904050d82dadb30e661e34:-2094189355,d86f30dfc40cc8103649f28b05cdeb51:-352113512,434ff89fd70cc810efac4435760df610:1355063629</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Human Resources: Service Portal">3d1da2705b021200a4656ede91f91ab6</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_fc2ec458dbd0405024707d67f49619f0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($location) {
+  /* widget controller */
+  var c = this;
+	
+	c.redirect = function(sys_id) {
+		$location.url('?id=hrm_ticket_page&amp;sys_id=' + sys_id);
+	}
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.panel-body {
+  max-height: 400px;
+  padding: 0;
+  overflow: auto;
+}
+
+.list-group {
+  margin-bottom: 0;
+}
+
+.list-group-item {
+    border: 0;
+  	margin: -1px;
+}
+
+.description {
+  color: $brand-primary;
+  font-size: 1.6rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.secondary-fields &amp;gt; p {
+  margin-bottom: 0 !important;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  margin: 0 7px 2px;
+  background-color: $text-color;
+  border-radius: 50%;
+  display: inline-block;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;hr-my-cases-list&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;HR - My Cases List&lt;/name&gt;&lt;option_schema&gt;[{"name":"is_active","section":"other","default_value":"true","label":"Is Active","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.caseList = [];
+	data.active = options.is_active;
+	
+	var gr = new GlideRecord('sn_hr_core_case');
+	gr.orderByDesc('sys_updated_on');
+	gr.addEncodedQuery('active=' + data.active + '^subject_personDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORopened_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORopened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe');
+	gr.query();
+	
+	while(gr.next()) {
+		data.caseList.push({
+			sysid: gr.getUniqueValue(),
+			description: gr.getDisplayValue('hr_service'),
+			number: gr.getValue('number'),
+			state: gr.getDisplayValue('state'),
+			updated: formatDate(gr.getDisplayValue('sys_updated_on'))
+		});
+		
+	}
+	
+	function formatDate(dateTime) {
+		var gdt = GlideDateTime();
+		gdt.setValue(dateTime);
+		var gd = new GlideDate(gdt.getDate());
+		
+		return gd.getByFormat('MMM-dd-yy');
+	}	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Madison.Spina&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-30 16:55:11&lt;/sys_created_on&gt;&lt;sys_id&gt;fc2ec458dbd0405024707d67f49619f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;49&lt;/sys_mod_count&gt;&lt;sys_name&gt;HR - My Cases List&lt;/sys_name&gt;&lt;sys_package display_value="Human Resources: Service Portal" source="sn_hr_sp"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Human Resources: Service Portal"&gt;3d1da2705b021200a4656ede91f91ab6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fc2ec458dbd0405024707d67f49619f0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;madison.spina&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-30 20:55:26&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default"&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;div class="list-group"&gt;
+      &lt;button type="button" class="list-group-item list-group-item-action" ng-repeat="case in ::data.caseList" ng-click="c.redirect(case.sysid)"&gt;
+        &lt;div class="description"&gt;
+          {{case.description}}
+        &lt;/div&gt;
+        &lt;div class="secondary-fields flex"&gt;
+          &lt;p&gt;{{case.number}}&lt;/p&gt;
+          &lt;p&gt;&lt;span class="dot"&gt;&lt;/span&gt;{{case.state}}&lt;/p&gt;
+          &lt;p&gt;&lt;span class="dot"&gt;&lt;/span&gt; {{case.updated}}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2023823976</payload_hash>
+<remote_update_set display_value="HR - My Active and Closed Cases">ba7585981bd48490855c32e8cd4bcb0d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>madison.spina</sys_created_by>
+<sys_created_on>2019-09-30 20:56:12</sys_created_on>
+<sys_id>3e7585981bd48490855c32e8cd4bcbbc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d83f4e00b0000001</sys_recorded_at>
+<sys_updated_by>madison.spina</sys_updated_by>
+<sys_updated_on>2019-09-30 20:56:12</sys_updated_on>
+<table/>
+<target_name>HR - My Cases List</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>ef450dd41cd48490138d89ab1cbd4646</update_guid>
+<update_guid_history>ef450dd41cd48490138d89ab1cbd4646:-2023823976,64c34d50d7d48490beb854b6ce256b3c:2036024723,de938d5042d48490af4d13cf2dd9c30b:1960807546,44838d5068d484902e01630217909907:908324047,faf1c118c0948490067654870cc82ac4:-359146675,772d705812148490ba277c16b22fad06:-1394781142,112dbc18bb148490af07ba8f8568c69e:1442541660,f67af8dc6fd084904e5121ff248a17c3:1301560032,6a0a3c9cf5d08490cc97210fdd61d327:-523672631,41d8e01cbc5440506a0a19ebdfb5c80a:-1856388448,aaa8ecd8f554405040c6420dd04d8bc8:-1215826016,189824d8bb544050c9ff7fefe9c97beb:-1046323523,17c7a8184b544050371533ddaae8adb9:-1902081779,2e16ecd4dc5440507bcfabbc1f85c56d:-1056602838,1af5e818bc5440502f744d76cf3a088b:-575024160,fcd5e818635440507114583a80df7483:52283812,e7c5a818db5440508b6ec3c9d0a9afaf:1932465446,3da5a018e8544050569e7ddf862ff333:-710863925,69952cd47a5440506a2e252ee0a4ce25:-1222388404,dd65acd407544050a25adf9be819097a:843014849,a735acd46f544050086d296b7508f473:-184240925,cc252cd4325440504018237fd602f21d:-284445392,e2f4a4940a54405018ca6ab8a7cabdb2:1947507614,0fc46c94af5440500c8b92d8b0379e06:-1178250762,50b4a814ba54405097c6883b297e5456:-172016215,16642c943b544050e02901cf69bcaafe:573348510,147610d0b1144050c97553dda22fbf35:134960029,c8661850a8144050d06861d831afc013:786006717,4f4690d013144050304ad0cdb89a979b:134960029,db2610d050144050731ed1695d0b412d:-621604116,94f5549038144050dc3db06e44f6d712:1995333671,16d59c109b144050b74db360f06f930f:407781063,9df49450251440500c87da30f1cf4368:1119872891,73d4dc1028144050efc1086a112dbd5b:-1614280478,71b414dcf0d040502ad76df33f2a1dd9:193663567,4694945026144050af2c93755e1afe61:1870490414,b7341c10a8144050d87e92a271ade4a7:1022588871,f524d4dc95d040506bae5bb70b88b49e:-1258324485,7f041c1057144050cbe500ffcd25b49f:671172506,a4a3d0108e1440509fb214f4b80bffc8:2087771088,5653d0dce0d0405049fd68d8c035a20a:-1456151156,bbd2d4dcdcd04050b6b9de6b29d89b94:1922460391,84b2d85cb2d04050bf2cf62de0257271:-1621104480,d392185c92d04050efb7fc6edc52673c:-1608006117,8682d09ccad04050b0826d3bd3955e7d:1437514136,e952d09cacd04050e263d5734a58e0a1:-2047284269,b681185c01d040500b8a81ef7909ba9c:-98898738,0571d85ce2d04050358ca88ef8fb9b67:2029164166,f711dc1caad040509ee7de770ac3d9cc:462502058,045ec4580ad04050e6d8d415b772b8fd:1804853771</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

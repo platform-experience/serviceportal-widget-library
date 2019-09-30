@@ -1,0 +1,85 @@
+.tab-container {
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .btn-group {
+    border: 0;
+  }
+  
+  .btn:focus {
+      outline: none;
+  }
+  
+  .tab-container .btn {
+    background-color: transparent;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 0;
+    padding-bottom: 0;
+  }
+  
+  .btn-active {
+    border-bottom: 4px solid $brand-primary;
+  }
+  
+  .btn-inactive {
+    border-bottom: 4px solid transparent;
+  }
+  
+  .list-name {
+    opacity: 0.8;
+    font-size: 1.4rem;
+    margin: 10px 0 0;
+  }
+  
+  @media (max-width: 400px) {
+    .list-name {
+      white-space: normal;
+    }
+  
+    .btn-active {
+      min-height: 101px;
+    }
+  
+    .btn-inactive {
+      min-height: 101px;
+    }
+  } 
+  
+  .list-count {
+    font-weight: 600;
+    font-size: 2.2rem;
+  }
+  
+  h3 {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  
+  .no-records {
+    font-weight: 300;
+  }
+  
+  .tab-content .tab-pane p {
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .tab-content .tab-pane p {
+      margin-bottom: 0;
+    }
+  
+    .btn-primary {
+      margin-bottom: 0;
+    }
+  
+    #cases .panel {
+      margin-bottom: 0;
+    }
+  }
