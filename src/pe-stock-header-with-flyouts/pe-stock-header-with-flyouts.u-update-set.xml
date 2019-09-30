@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-09-30 21:42:20">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Flyouts menu</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>89a3051313004050be3d33e2e144b0ab</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-09-30 21:42:19</sys_created_on>
+<sys_id>6600d59813d00850be3d33e2e144b0b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-09-30 21:42:19</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_theme_a7a6e78277002300a6e592718a10617a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme"><sp_theme action="INSERT_OR_UPDATE"><css_variables>// Grays&#13;
+$gray-base: #000000;&#13;
+$gray-dark: lighten($gray-base, 18.04%);&#13;
+$gray-darker: lighten($gray-base, 8.24%);&#13;
+$gray-light: lighten($gray-base, 40%);&#13;
+$gray-lighter: lighten($gray-base, 94.51%);&#13;
+$gray: lighten($gray-base, 29.02%);&#13;
+&#13;
+////// Branding variables //////&#13;
+// should always end with !default and no other variable should have !default&#13;
+$brand-primary: #1F8476 !default;&#13;
+$body-bg: #ffffff !default;&#13;
+$brand-success: #48C891 !default;&#13;
+$state-success-text: darken(desaturate(adjust-hue($brand-success, 3), 15.64%), 34.31) !default;&#13;
+$sp-navbar-divider-color: #5A7F71 !default;&#13;
+$text-color: $gray-dark !default;&#13;
+$navbar-inverse-link-hover-color: #ffffff !default;&#13;
+$navbar-inverse-bg: #293e40 !default;&#13;
+$brand-warning: #DFD139 !default;&#13;
+$brand-danger: #C83C36 !default;&#13;
+$sp-tagline-color: #ffffff !default;&#13;
+$navbar-inverse-link-color: #A7B0B2 !default;&#13;
+$brand-info: #6ABECF !default;&#13;
+$link-color: $brand-primary !default;&#13;
+$sp-logo-margin-x: 15px !default;&#13;
+$text-muted: $gray-light !default;&#13;
+////////////////////////////////////&#13;
+&#13;
+// Link hover decoration&#13;
+$link-hover-decoration: underline !default;&#13;
+&#13;
+// La Jolla variables&#13;
+$dropdown-link-disabled-color: $gray-light;&#13;
+$link-hover-color: darken(desaturate(adjust-hue($link-color, 1), 0.42%), 16.67);&#13;
+$navbar-inverse-link-active-bg: #213234;&#13;
+$navbar-inverse-link-hover-bg: $brand-primary;&#13;
+$panel-primary-border: $brand-primary ;&#13;
+$panel-primary-heading-bg: $brand-primary ;&#13;
+$panel-primary-text: #ffffff;&#13;
+$primary: $brand-primary;&#13;
+$input-border-focus: #54AC98;&#13;
+$quicklinks-background: #EDF7F5;&#13;
+$btn-success-bg: $brand-success;&#13;
+$btn-primary-color: #ffffff;&#13;
+$btn-primary-bg: $brand-primary;&#13;
+$btn-primary-border: darken($btn-primary-bg, 5%);&#13;
+$btn-success-bg: $brand-success;&#13;
+$btn-success-border: darken($btn-success-bg, 5%);&#13;
+$btn-success-color: darken(desaturate(adjust-hue($brand-success, 3), 15.64%), 34.31);&#13;
+$component-active-color: $gray;&#13;
+$component-active-bg: #f5f5f5;&#13;
+$state-danger-bg: lighten(saturate(adjust-hue($brand-danger, 354), 42.52%), 42.94);&#13;
+$state-danger-border: $brand-danger;&#13;
+$state-danger-text: darken(saturate(adjust-hue($brand-danger, 2), 1.25%), 25.10);&#13;
+$state-info-bg: lighten(desaturate($brand-info, 3.27%), 19.02);&#13;
+$state-info-border: $brand-info;&#13;
+$state-info-text: darken(desaturate(adjust-hue($brand-info, 1), 2.75%), 41.57);&#13;
+$state-success-bg: lighten(saturate($brand-success, 3.67%), 28.24);&#13;
+$state-success-border: $brand-success;&#13;
+$state-warning-bg: lighten(saturate(adjust-hue($brand-warning, -3), 17.70%), 29.61);&#13;
+$state-warning-border: $brand-warning;&#13;
+$state-warning-text: darken(desaturate(adjust-hue($brand-warning, -4), 20.32%), 44.31);&#13;
+$alert-danger-bg: $state-danger-bg;&#13;
+$alert-danger-border: $state-danger-border;&#13;
+$alert-danger-text: $state-danger-text;&#13;
+$alert-info-bg: $state-info-bg;&#13;
+$alert-info-border: $state-info-border;&#13;
+$alert-info-text: $state-info-text;&#13;
+$alert-success-bg: $state-success-bg;&#13;
+$alert-success-border: $state-success-border;&#13;
+$alert-success-text: $state-success-text;&#13;
+$alert-warning-bg: $state-warning-bg;&#13;
+$alert-warning-border: $state-warning-border;&#13;
+$alert-warning-text: $state-warning-text;&#13;
+&#13;
+// To get service status messages consistent with brand colors&#13;
+$primary: $brand-primary;&#13;
+$warning: $brand-warning;&#13;
+$success: $brand-success;&#13;
+$info: $brand-info;&#13;
+$danger: $brand-danger;&#13;
+$input-border-placeholder: white;&#13;
+&#13;
+&#13;
+// Service Catalog panel hover highlight&#13;
+$panel-list-item: lighten(desaturate(adjust-hue($panel-primary-heading-bg, -6), 20.79%), 58.04);&#13;
+$panel-primary-heading-bg: #47a992;&#13;
+&#13;
+$multiple-issues-color: #7070B3;&#13;
+$no-issue-color: lighten($brand-success, 40%);&#13;
+$planned-maintenance-color: lighten($brand-info, 35%);&#13;
+$service-degredation-color: lighten($brand-warning, 40%);&#13;
+$service-outage-color: lighten($brand-danger, 45%);&#13;
+&#13;
+$no-issue-border-color: $brand-success;&#13;
+$planned-maintenance-border-color: $brand-info;&#13;
+$service-degredation-border-color: $brand-warning;&#13;
+$service-outage-border-color: $brand-danger;&#13;
+&#13;
+$no-issues-text: $state-success-text;&#13;
+$planned-maintenance-text: $state-info-text;&#13;
+$service-degredation-text: $state-info-text;&#13;
+$service-outage-text: $state-danger-bg;&#13;
+&#13;
+$login-btn-bg: $btn-primary-bg;&#13;
+$login-btn-border: $btn-primary-border;&#13;
+&#13;
+$qa-tag-color: $state-info-text;&#13;
+$qa-tag-bg: $state-info-bg;&#13;
+$qa-tag-border: $state-info-bg;&#13;
+$qa-tag-hover-color: darken($qa-tag-color, 10%);&#13;
+$qa-tag-hover-bg: darken($qa-tag-bg, 10%);&#13;
+&#13;
+$qa-thread-tag-color: $state-info-text;&#13;
+$qa-thread-tag-bg: $state-info-bg;&#13;
+$qa-thread-tag-hover-color: darken($qa-thread-tag-color, 10%);&#13;
+$qa-thread-tag-hover-bg: darken($qa-thread-tag-bg, 10%);&#13;
+&#13;
+$qa-panel-link-color: $link-color;&#13;
+$select2-container-active: $input-border-focus;&#13;
+&#13;
+$not-webkit-outline-color: $input-border-focus;&#13;
+$webkit-outline-color: $input-border-focus;&#13;
+&#13;
+$label-success-bg: lighten(saturate($brand-success, 3.67%), 28.24);&#13;
+$label-info-bg: lighten(desaturate($brand-info, 3.27%), 19.02);&#13;
+$label-warning-bg: lighten(saturate(adjust-hue($brand-warning, -3), 17.70%), 29.61);&#13;
+$label-danger-bg: lighten(saturate(adjust-hue($brand-danger, 354), 42.52%), 42.94);&#13;
+&#13;
+$data-table-selected: $brand-primary;&#13;
+&#13;
+$button-selected-color: $btn-primary-bg;&#13;
+$dropdown-link-active-bg: $brand-primary;&#13;
+$dropdown-link-active-color: #ffffff;&#13;
+$widget-editor-fa-bg: $brand-primary;&#13;
+&#13;
+$input-border-tab-focus: $input-border-focus;&#13;
+&#13;
+$fav-star-color: $brand-warning;&#13;
+$fav-star-color-off: #ffffff;&#13;
+$fav-star-outline-color: #6b611f;&#13;
+$fav-star-outline: -1px 0 $fav-star-outline-color, 0 1px $fav-star-outline-color, 1px 0$fav-star-outline-color, 0 -1px $fav-star-outline-color;&#13;
+&#13;
+$sc-field-error-color: #1a424b;&#13;
+$qa-star-color-on: $brand-warning;&#13;
+$qa-star-color-off: #ffffff;&#13;
+&#13;
+$list-group-link-color: $brand-primary;&#13;
+$list-group-hover-bg: lighten($panel-primary-heading-bg, 40%);&#13;
+&#13;
+$accessible-placeholder-gray: #565656;&#13;
+</css_variables><footer/><footer_fixed>true</footer_fixed><header display_value="Flyout Stock Header">2717055713004050be3d33e2e144b00a</header><name>La Jolla</name><navbar_fixed>true</navbar_fixed><sys_class_name>sp_theme</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-22 16:34:59</sys_created_on><sys_id>a7a6e78277002300a6e592718a10617a</sys_id><sys_mod_count>82</sys_mod_count><sys_name>La Jolla</sys_name><sys_package display_value="Service Portal La Jolla Branding" source="com.glide.service-portal.themes.la-jolla">d19365ee13f03300be3d33e2e144b093</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_theme_a7a6e78277002300a6e592718a10617a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-09-27 18:39:57</sys_updated_on></sp_theme></record_update>]]></payload>
+<payload_hash>-1530299507</payload_hash>
+<remote_update_set display_value="Flyouts menu">6600d59813d00850be3d33e2e144b0b7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-09-30 21:42:19</sys_created_on>
+<sys_id>2a00d59813d00850be3d33e2e144b0b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d7405c40b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-09-30 21:42:19</sys_updated_on>
+<table/>
+<target_name>La Jolla</target_name>
+<type>Theme</type>
+<update_domain>global</update_domain>
+<update_guid>f189c15ba10040501fc128cb6e05468d</update_guid>
+<update_guid_history>f189c15ba10040501fc128cb6e05468d:-1530299507,3d89c15bcd004050a1b0306ae4a8c68b:-449205217</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_header_footer_2717055713004050be3d33e2e144b00a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_header_footer"&gt;&lt;sp_header_footer action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($rootScope, $scope, snRecordWatcher, spUtil, $location, $uibModal, cabrillo, $timeout, $window) {
+
+	$(function () {
+		$('[data-toggle="popover"]').popover();
+	});
+
+	$scope.collapse = function() {
+		$rootScope.$emit('sp-navbar-collapse');
+	};
+
+	$scope.avatarProfile = {
+		userID: $scope.user.sys_id,
+		name: $scope.user.name,
+		initials: $window.NOW.user_initials
+	};
+
+	if ($window.NOW.user_avatar) {
+		$scope.avatarProfile.userImage = $window.NOW.user_avatar;
+	}
+
+	if (cabrillo.isNative()) {
+		if ($window.innerWidth &lt; 767) {
+			$scope.isViewNative = true;
+		} else {
+			$scope.isViewNativeTablet = true;
+		}
+	}
+
+
+	$scope.openPopUp = function() {
+		var url = "$chat_support.do?queueID=" + $scope.data.connect_support_queue_id;
+		var popup = window.open (url, "popup", "width=900, height=600");
+	};
+
+	$scope.openLogin = function () {
+		$scope.modalInstance = $uibModal.open({
+			templateUrl: 'modalLogin',
+			scope: $scope
+		});
+	};
+
+	var xsScreenSize = isXSScreenSize();
+	$scope.showXSAvatar = isXSScreenSize();
+	$scope.showAvatar = !isXSScreenSize();
+
+	angular.element($window).on('resize', function () {
+		if(xsScreenSize !== isXSScreenSize() &amp;&amp; (!$scope.showXSAvatar || !$scope.showAvatar)){
+			$scope.showXSAvatar = true;
+			$scope.showAvatar = true;
+		}
+	});
+
+
+	function isXSScreenSize() {
+		return $window.matchMedia('(max-width: 767px)').matches;
+	}
+
+	$rootScope.$on('sp.avatar_changed', function() {
+		$scope.userID = "";
+		$timeout(function(){
+			$scope.userID = $scope.user.sys_id;
+		});
+	});
+
+	$scope.isHomepage = function() {
+		if (!$scope.page.id)
+			return true;
+
+		if ($scope.page.id == $scope.portal.homepage_dv)
+			return true;
+
+		return false;
+	};
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;&amp;#13;
+.navbar {&amp;#13;
+  transition: 250ms opacity ease-in-out;&amp;#13;
+  -webkit-transition: 250ms opacity ease-in-out;&amp;#13;
+  border: 0;&amp;#13;
+  border-bottom: 4px solid $sp-navbar-divider-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-fade {&amp;#13;
+  opacity: 0.4;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-inverse .navbar-toggle {&amp;#13;
+  border-color: rgba(255, 255, 255, 0.25);&amp;#13;
+}&amp;#13;
+&amp;#13;
+header[role="banner"],&amp;#13;
+.nav &amp;gt; li &amp;gt; a {&amp;#13;
+  max-height: 60px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+@media screen and (max-width: 768px){&amp;#13;
+  .nav &amp;gt; li &amp;gt; a {&amp;#13;
+    padding-right: 0.5rem;&amp;#13;
+    padding-left: 0.5rem;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-brand {&amp;#13;
+  max-height: 60px;&amp;#13;
+  padding: 0;&amp;#13;
+  padding-bottom: 0.5rem;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-brand img, .navbar-brand span {&amp;#13;
+  margin-left: $sp-logo-margin-x;&amp;#13;
+  margin-right: $sp-logo-margin-x;&amp;#13;
+  margin-top: $sp-logo-margin-y;&amp;#13;
+  margin-bottom: $sp-logo-margin-y;&amp;#13;
+  display: block;&amp;#13;
+  max-height: $sp-logo-max-height;&amp;#13;
+  max-width: $sp-logo-max-width;&amp;#13;
+  position: relative;&amp;#13;
+  top: 50%;&amp;#13;
+  -webkit-transform: translateY(-50%);&amp;#13;
+  -ms-transform: translateY(-50%);&amp;#13;
+  transform: translateY(-50%);&amp;#13;
+}&amp;#13;
+.breadcrumb-container {&amp;#13;
+  background-color: $panel-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* for mobile app */&amp;#13;
+.navbar-inverse.is-native {&amp;#13;
+  background-color: #405060;&amp;#13;
+}&amp;#13;
+&amp;#13;
+nav {&amp;#13;
+  margin-bottom: 0px;&amp;#13;
+  border-radius: 0px;&amp;#13;
+&amp;#13;
+  .toggle-dropdown {&amp;#13;
+    height: 60px;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-right {&amp;#13;
+  padding-right: 0px;&amp;#13;
+  padding-left: 7px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.navbar-nav {&amp;#13;
+  margin: 0px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+// PRB711244: Dropdown menu is scrollable when too many items&amp;#13;
+.scrollable-dropdown {&amp;#13;
+  max-height: 80vh;&amp;#13;
+  overflow: auto;&amp;#13;
+  height: auto;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.is-native {&amp;#13;
+  .scrollable-dropdown {&amp;#13;
+    max-height: 100vh;&amp;#13;
+    overflow: scroll;&amp;#13;
+    height: auto;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+/* PRB923910: Fix for Service Portal - Header Poorly Aligned in Safari */&amp;#13;
+@media screen and (min-width: 768px) {&amp;#13;
+  .navbar-right {&amp;#13;
+    display: flex !important;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* FLYOUT ADDITION */&amp;#13;
+.popovers {&amp;#13;
+  position: fixed;&amp;#13;
+  right: 0;&amp;#13;
+  top: 600px;&amp;#13;
+  z-index: 1000;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.flyout-panel {&amp;#13;
+  position: fixed;&amp;#13;
+  right: 0;&amp;#13;
+  top: 250px;&amp;#13;
+  z-index: 100;&amp;#13;
+  height: auto;&amp;#13;
+  width: 40px;&amp;#13;
+  background-color: $navbar-inverse-bg;&amp;#13;
+  border-radius:3px;&amp;#13;
+  padding: 12px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.tooltip {&amp;#13;
+  margin-left: -60px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.popover {&amp;#13;
+  width: 100px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+.fa-sidepanel {&amp;#13;
+  color: $navbar-inverse-link-color;&amp;#13;
+  font-size: 3rem;&amp;#13;
+  margin-left: -5px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.fa-bug {&amp;#13;
+  margin-bottom: 10px;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope, element) {
+	$(document).keyup(function(event) {
+		if (event.which == 9) { //tab key handler + arrow keys
+			if ($(event.target).parents(".dropdown-menu").length == 0) { //if we are NOT inside a dropdown...
+				//close the dropdowns
+				$(".dropdown").removeClass("open");
+				$("[data-toggle='dropdown']").attr("aria-expanded", "false");
+			}
+		}
+	});
+
+	$(element).on('click.nav','.navbar-collapse.in',function(e) {
+		var target = $(e.target);
+		if (target.is('a')) {
+			if (target.hasClass('sp-menu-has-items'))
+				return; // menu item has a submenu, so just toggle it
+
+			// collapse mobile nav if clicked an anchor
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+
+		if (target.parent().hasClass("toggle-dropdown")) {
+			// collapse mobile nav if parent has toggle-dropdown class
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+
+		// if neither target nor parent is an anchor, do nothing
+		if (!target.parent().is('a'))
+			return;
+
+		// collapse mobile nav if target is part of a submenu
+		if (target.parents("ul.dropdown-menu").length &gt; 0)
+			$(this).removeClass('in').addClass('collapse');
+	});
+}]]&gt;&lt;/link&gt;&lt;name&gt;Flyout Stock Header&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[// Defines the support queue ID that will be linked to by the Live Chat link in header
+data.connect_support_queue_id = $sp.getValue('sp_chat_queue');
+data.login_page = $sp.getValue('login_page');
+data.profileBtnMsg = gs.getMessage("User options");
+var menu = $sp.getValue("sp_rectangle_menu");
+data.menu = $sp.getWidgetFromInstance(menu);
+if (data.menu &amp;&amp; data.menu.data) {
+	data.menu.data.replace = true;
+	// Hide login if menu already has link to login
+	data.hasLogin = false;
+	if (data.menu.data.menu.items) {
+		for(var i in data.menu.data.menu.items) {
+			var item = data.menu.data.menu.items[i];
+			if (item.type == 'page' &amp;&amp; item.sp_page == data.login_page)
+				data.hasLogin = true;
+		}
+	}
+}
+
+data.loginWidget = $sp.getWidgetFromInstance('login-modal');]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_header_footer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-27 18:31:46&lt;/sys_created_on&gt;&lt;sys_id&gt;2717055713004050be3d33e2e144b00a&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;Flyout Stock Header&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_header_footer_2717055713004050be3d33e2e144b00a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-30 21:37:34&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
+       role="navigation"&gt;
+    &lt;div ng-show="::!isViewNative" class="navbar-header"&gt;
+      &lt;a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"&gt;&lt;span ng-bind="portal.title"&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" ng-href="?id={{::portal.homepage_dv}}" ng-click="collapse()" aria-label="${Go to homepage}"&gt;
+        &lt;img ng-src="{{::portal.logo}}" title="ServiceNow" role="presentation" alt="${Portal Logo}" /&gt;
+      &lt;/a&gt;
+
+      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sp-nav-bar"&gt;
+        &lt;span class="sr-only"&gt;${Toggle navigation}&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div sp-navbar-toggle="" class="collapse navbar-right" id="sp-nav-bar"&gt;
+      &lt;!-- Include The Menu --&gt;
+      &lt;sp-widget widget="::data.menu"&gt;&lt;/sp-widget&gt;
+      &lt;ul ng-if="(!user.logged_in &amp;&amp; page.id != portal.login_page_dv &amp;&amp; !data.hasLogin)" class="nav navbar-nav" role="presentation"&gt;
+        &lt;li role="presentation"&gt;&lt;a href ng-click="::openLogin()"&gt;${Login}&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul ng-if="user.logged_in" class="nav navbar-nav" role="menubar"&gt;
+        &lt;!-- chat, avatar, and logout --&gt;
+        &lt;li ng-if="::data.connect_support_queue_id" role="presentation"&gt;&lt;a href ng-click="openPopUp()" role="menuitem"&gt;${Live Chat}&lt;/a&gt;&lt;/li&gt;
+        &lt;li ng-if="showAvatar" class="hidden-xs dropdown" role="presentation"&gt;
+          &lt;a href class="toggle-dropdown" data-toggle="dropdown" aria-expanded="false" title="{{::data.profileBtnMsg}}" aria-label="{{::data.profileBtnMsg}}: {{::user.name}}" id="profile-dropdown"  role="menuitem" aria-haspopup="true"&gt;
+            &lt;span class="navbar-avatar" aria-hidden="true"&gt;&lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;&lt;/span&gt;
+            &lt;span class="visible-lg-inline"&gt;{{::user.name}}&lt;/span&gt;
+          &lt;/a&gt;
+          &lt;ul class="dropdown-menu" role="menu" aria-label="{{::data.profileBtnMsg}}"&gt;
+            &lt;li role="presentation"&gt;&lt;a tabindex="-1" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}" role="menuitem"&gt;${Profile}&lt;/a&gt;&lt;/li&gt;
+            &lt;li ng-if="::!(isViewNative || isViewNativeTablet)" role="presentation"&gt;&lt;a tabindex="-1" href="{{::portal.logoutUrl}}" role="menuitem"&gt;${Logout}&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li ng-if="showXSAvatar" class="visible-xs-block" role="presentation"&gt;&lt;a role="menuitem" ng-href="?id=user_profile&amp;sys_id={{::user.sys_id}}" ng-click="collapse()"&gt;
+          &lt;span class="navbar-avatar"&gt;&lt;sn-avatar class="avatar-small-medium" primary="avatarProfile" /&gt;&lt;/span&gt;{{::user.name}}&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li ng-if="::!(isViewNative || isViewNativeTablet)" class="visible-xs-block" role="presentation"&gt;&lt;a role="menuitem" ng-href="{{::portal.logoutUrl}}" ng-click="collapse()"&gt;${Logout}&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+  
+ &lt;!--Flyout sidepanel addition--&gt;
+  
+  &lt;div class="flyout-panel"&gt;
+    &lt;div class="debugbox" tabindex="0" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Click here to report a defect!"&gt;
+    &lt;a href="?id=sc_cat_item&amp;sys_id=6377b7a77f000001070ec31b396896fe"&gt;
+      &lt;i class="fa-sidepanel fa fa-bug"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+     &lt;/div&gt;
+    &lt;div class="submitTic" tabindex="0" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Click here to open an incident!"&gt;
+    &lt;a href="?id=sc_cat_item&amp;sys_id=3f1dd0320a0a0b99000a53f7604a2ef9"&gt;
+      &lt;i class="fa-sidepanel fa fa-file-text-o"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_header_footer&gt;&lt;/record_update&gt;</payload>
+<payload_hash>427301948</payload_hash>
+<remote_update_set display_value="Flyouts menu">6600d59813d00850be3d33e2e144b0b7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-09-30 21:42:19</sys_created_on>
+<sys_id>6600d59813d00850be3d33e2e144b0b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d841b71570000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-09-30 21:42:19</sys_updated_on>
+<table/>
+<target_name>Flyout Stock Header</target_name>
+<type>Header | Footer</type>
+<update_domain>global</update_domain>
+<update_guid>f0fe09d42bd008500d76f9b052c3da09</update_guid>
+<update_guid_history>f0fe09d42bd008500d76f9b052c3da09:427301948,b7be0d9423d00850c2476979fe247fcb:910426473,d52688d464d8c450430bfc3beaeb3a5a:1580856579,af070ad793c44050e1b0575f18ba91cf:-1210339954,b247351f0d4440508400898aeffefb84:1395238735,1e37711f2f444050ed36f1c53143c473:2045764661,791775db1d444050ff59eb21c9139db0:1395238735,69e4791bad444050f90f5c73d03445e4:275241190,63c271d300444050251e6bbd388c0316:-1436816227,3892399320444050c32636093346b8f4:-522172541,3c4271938544405054decca32bf2b039:-543713285,1fa1b553b4444050e0835c19ccf5b7f0:-1657543539,7f50bddfbc04405084fd014d380b2960:-275552186,7e3039dfff0440503f036e76c3e4b362:465230801,4a00f1df8d0440501b2688c91b724549:-547347942,18de295f3e0440507ad092e977feeba9:-230211309,89cee55fcf0440502f0e17b401302120:633110676,eeaead1f90044050194155e3296cca15:-987957343,a11a8d1f160040500585c06f8d774569:-1449411944,9b180997d4004050d404301e9786136c:-1536099976,c2a7c557c9004050a436c84505b29a82:-1941577783</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>customer</category>
+<comments/>
+<name>dynamic_schedule_task_filter_f52fc1d83b41320014544d72f3efc4a5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dynamic_schedule_task_filter"><dynamic_schedule_task_filter action="INSERT_OR_UPDATE"><active>true</active><assignment_frequency>interval</assignment_frequency><assignment_interval>30</assignment_interval><assignment_rule/><auto_assign>true</auto_assign><condition table="wm_task">parent.ref_sm_order.maintenance_planISNOTEMPTY^state=10^EQ<item endquery="false" field="parent.ref_sm_order.maintenance_plan" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/><item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><dynamic_scheduling_config display_value="Work OrderTask Dynamic Scheduling Config">3c10d525c32322001c845cb981d3ae72</dynamic_scheduling_config><matching_options>recommendation criteria</matching_options><name>Planned Maintenance Tasks</name><next_action>2019-09-30 22:05:24</next_action><order>900</order><resource_type_table>sys_user</resource_type_table><schedule_filter>false</schedule_filter><script/><supply_user_condition/><supply_user_field_name>sysuser_sys_id</supply_user_field_name><supply_user_table>matching_user_group_skills</supply_user_table><sys_class_name>dynamic_schedule_task_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-02-15 23:30:46</sys_created_on><sys_id>f52fc1d83b41320014544d72f3efc4a5</sys_id><sys_mod_count>17301</sys_mod_count><sys_name>Planned Maintenance Tasks</sys_name><sys_package/><sys_policy/><sys_scope display_value="Customer Service">51d811fad7223100b7490ee60e61034f</sys_scope><sys_update_name>dynamic_schedule_task_filter_f52fc1d83b41320014544d72f3efc4a5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-09-30 21:35:24</sys_updated_on><table>wm_task</table><user/></dynamic_schedule_task_filter></record_update>]]></payload>
+<payload_hash>864930118</payload_hash>
+<remote_update_set display_value="Flyouts menu">6600d59813d00850be3d33e2e144b0b7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-09-30 21:42:19</sys_created_on>
+<sys_id>a200d59813d00850be3d33e2e144b0b8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d8419760a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-09-30 21:42:19</sys_updated_on>
+<table>wm_task</table>
+<target_name>Planned Maintenance Tasks</target_name>
+<type>Task Filter</type>
+<update_domain>global</update_domain>
+<update_guid>c57ec99476d008508dbbbd6b09875eb4</update_guid>
+<update_guid_history>c57ec99476d008508dbbbd6b09875eb4:864930118,034545d40c900850e12a490ad074b609:1593830662,392c7c942e50085058f39eaafa59d113:1109872907,a8453c983e100850e205dd1b7836cda7:2035384939,c31c6c1861dcc4505088e4be1ea895ee:-1921035346,cef26c58869cc450b7db155d5539154b:-1303427982,64d9d4986a5cc4505d19529cd6668604:-485064720,f8f2949c5e1cc45070278da3c84df87a:562204273,5fc9081cc5d8c450a686c57b5985cab9:1380567535,bee2c410a9d8c450ca2783083e8d7fdb:-1755837588,760c77009198c450da4c4154553eb488:-1609377816,cae27740fa58c45069c4a742fb5fe16b:-2093335571,c50c67440518c4509a247076d4814fad:1824822740,01e227841fd4c4503ffe258d33b4b455:-1329268435,cfb91b049f94c45003765353104b4126:-1701933010,95901b448254c450d34567ed52cae350:1118804592,876703845b14c45042c870ae7e826f15:2048461034,584e7204fcd0c450852792382f9f2926:685524520,a125be802990c4504e4958d0c0077e74:-577485495,c33e6a84b850c450b288e56b05c21c9e:-642245402,c6152ac42110c4506f44fb43dcac8371:-848797610,bfebde04a7dc8450bda1424ba25152de:-1020706287,a3055208409c8450f2fc513dc82f241d:-2065274352,c03e8ec8075c8450408a9a5918125ed8:-1918814580,9b050208021c84508f299145007a678b:790629842,ae2e310cb4d88450a3d81ef98c1cfb2a:1949192015,f905f90c13988450c7b7306033bd01a1:-537140080,b3db6d88125884507eb039d16c8c59ae:-909804655,2af4ad8c351884509de0ade245329350:1551078535,26db95cc5ad48450a3eee1e3f185d29e:2057392719,5af455c033d48450ff42d235d35b0ff4:1012824654,28db4504379484503dd12620e93b12f5:-1362214261,97a289809b54845000593b007da8d622:356958222,a2cbb8843a148450a2e8ecf93fa44de2:614711174,f5a278c4c7d084502fc6d7865c6df2d7:-970811700,69cba8c8f89084507210932326649a86:-2015379765,00a2680cc6508450429cfac3a412147c:-95451384,03bb980025508450cb113c3782a7291e:1917428893,5a921c8c09dc4450f15eb0bef00949b6:-568903202,42bb4c806bdc44500417f45c18484183:-511906148,62d44884259c44504f12519b2baf883d:-365446376,f8bb3bf7e84c445084fb3301726549c7:-1839676070,3f823b3b920c44507fa288dd8c21834c:1971333471,7babe73f71c84450ee92199c396f9280:-1075608934,e682abbbd38844501df37b4a336f3ce6:-180596023,4c699bfb70484450bf569860b1f38cef:-1543532537,6930973fd308445063b83a08786c4998:-1715441214,80170bbbe1c44450bc6ba8a28145cb2a:1105296388,af200bbfa78444501d273a145eb8cbd4:1919515240,4207f6fff14444505cb1fef121e2bcdc:1980656704,92203af3a944445051553fcac701fdfa:1492554539,16072a375d044450d9c5b80060db73a1:-1661536636,a0ed5eb3c4c04450553229ff723f3e12:1159200966,9c079eb760804450bb12989a2d6e1533:315388799,a0205ebb04404450a995fef79eda97e9:1362657792,1ef64efbaa0044500e9f5a0c673b0dfc:2091558336,f9ddf53f53cc0450f1d6e689115d6b11:-1496338878,7ba4f5bbba8c0450d2190a482751de54:-1869003453,8ecde53f4a4c04503c66b924f00c84c4:1259638817,ada4253f6c0c0450f2caccba4ba4c036:107921982,a9cd91ff3bc8045010c9e1b2251a1d32:-659240536,10a45133d2c80450de060103675bd8ad:-942442393,7a7b0d7f2a4804502ae43d0cc08e658e:776730090,5c5249bf3c0804502408114be277c2e7:-1687771543,5729f4bb00c404502379051064b85bf9:-1970973400,a000b83b158404502221eaf3a2c8263a:961057382,c7d6247b44440450ec972518e4961171:-513172312,a4bd14bb0804045032a0559b3ae64329:-685080989,2384d43bc1c004509013b726bd46752d:-67473625,606b007b498004500883b3fbeb786d67:-328845020,a33200bbe8400450c8f00696b55ab821:-612046877,4b5b73af0b000450912a4a0d7f8f6a31:-555049823,c77473a3ef0004506db27c32f1a03d10:692975068,255b27238dccc0503bf93b21082ac10f:-1882819745,1b22e363f18cc050aa8a1204009126f2:-1153919201,b609d3a3f54cc050ad88431943fdb17d:-446849119,1cef8723a60cc050d0db2a74391f0a8a:1566361475,18094727b4c8c050b12178d88fe2397d:-1480580930,abdfb2673b88c0501c571841a9350044:-1964538685,4cb6fe675248c0506a58680b70bb2222:-22779842,868da2278e08c050c18ed75e24e862d1:-194688519,2964a2671dc4c0504cf10b8a8d1e2da5:1413190784,623b52a72a84c050944c72d331ac5abc:1429224936,f81292271144c050d81146c6cf54070d:-945813979,1ee84267ed04c050629273186a766753:1986216803,f9cf7d67c4c0c05000621d2c04389b33:-1802436309,99e8bd6b0980c050db164deaeaf04166:-1544683357,58cfa12b8b40c050c020bcd632fd3014:-2028641112,e4e8a12f9d00c0506392c9b194f0b5f3:-780616221,4002e1232900c0501b78a334ad869b89:-1825184286,5c2b152784cc80505692bb3527c5fade:-577159395,eaf11567558c80505958796de74e2672:-2051389089,41d8c1a7dc4c80505ec4cb336e448419:769348513,c1f141abe50c8050d5165ba5aded08d2:2017373404,ebc8342ba0c880503b9175f4a94deda0:-558421409,87af2c2b9a8880506a3e1c6771aa7baf:1049457894,b9c868ab28488050ea284eac398f58fd:-784626212,fcaf94eb280880502e0a8ddec1d500a1:-167018848,10c850ef4ec480506e8c40158e1d8aaa:-1010831015,739f046f4f8480503f4621089f865dde:-227111284,8d768c6fab4480502251bfdc30b86f4b:613082440,709fbb534d448050f2dce0457cba0bc0:1861107331,ec76bb938c048050377f2b1c5e1a05f3:-825980662,c34da3dbd5808050b72cd17f01e4ecf9:-7617400,0c242fdb074080503834ff4aa617d4e6:-268988795,f2fa9b1f78008050bf369799ce644fe6:348618569,4dd19f9b85cc40509fbed6932bc78724:-924855227,80fa4f9fe18c4050850693a39ca4a3dc:1335272065,0bc10bdf504c40502ca67474c9ed74a7:851314310,10a8f6136a4c4050c24c51563be9f596:-1412431425,7cc1b617ab0c405054f775505993f0de:-365162432,2798aa93a0c84050e4b316d5dc448fba:-648364289,757f5ad3c1884050e23f40406b046658:-2122593983,00561a173c484050ac98fc4854b9ab86:698143619,912d8a930f0840507ecc886b0a5e0a89:-1565602116,6946c69774c44050fd2fa9ea735368e1:765976927,012d75d755844050b07f986cff3b3819:1272291111,84467d9b024440500a19812741e9c47a:539772124,c71d2d9b80044050c10341edd409b43c:55814369,7236e59f44c04050f54cb43d58727d9e:-1889562917,311d991f26804050e2d23deea8902442:1921446624,8d365913f1804050f4bb990a091423b5:-2115767720,381d09537d40405078b89cac6ff03d09:-1332047989,dde38d13e50040503adc2f4238dbcf55:1711275973,b4caf49f668c00504f772ef6897ba06f:-1876621241,6bd370df874c00507956435a59a39452:-1151865107,8fba6013f54c00501c7a694d6211c580:-1202016823,61912053aa0c00503d0d1515b7ff2ac7:-383653561,a8ba5057a3c8005048bed38ef7171442:1876473731,c38154d3838800505a7a4933e9b1deda:-498565184,72aac4d74348005045efc8bc72461a1e:1216462889,0f81c41bb90800505a36f15f2204e1c5:1055017993,bb58b74bc8c40050769f2a29878c877b:994402496,873fabc7d5840050422b2c7563497c9a:-591120378,b55827cbc14400506cebf381ede1c606:-1323639365,343f538bf90400508f921e5927e67967:-706032001,4558138f3fc00050b756bde6a19d2d25:341236992,572f4b8ff4800050fc76aefb0bc5566a:1159600254,16060f0f7840005080b42879c8d8e333:2054613165,c7dcb20f00000050d34aae62a509f54c:-1400160407,02b37e0fc0cccc104a4c9b24dbbc9954:-1683362264,e49aee8b718ccc109a11b1b071155afb:-1065754900,70b3a28bd04ccc10fa03c704dc01a5f7:182269991,98dc928f0d0ccc10c47f65a9318100dc:239267045,e9b39e8f87c8cc102bfc328e9bbdea00:-2125308089,c58a4ecf6b88cc102bead32fab1c0f89:-416599387,1251ce4f6348cc1066b10249536440e3:-1779535901,f438798f5008cc1057e76502a8f67cf7:1041201701,7451f983f308cc1084d8bd52b7784ec8:-2005740704,2f28e9c3dac4cc1081f56b9fb2366229:-286568221,2a0f9d432e84cc100bd9bac778731d1b:-1671335197,c1285d471244cc10fd5f9b5d4e97928b:1256551175,cd0f8d872904cc10800ba869ecfe977a:-2098295898,62d54dc779c0cc10838cc386872da116:-1168639456,28bcfc47c680cc101a0529ec4e9e8584:-256993981,bfc57c4b0e40cc102f0e3e1cabb5cdd4:1658789990,b3aca88b0800cc108c903e79be05e05c:-594491964,ed83a8cbc8cc8c10f1805efbe9ea2e44:134408580,91ac58cf078c8c10ecc5ec4cb438b9ce:-709403587,60835c4fbd4c8c1059724e85d03422c6:898475716,255a4c8fcb0c8c107df2f336c67a03cd:2016074987,703108cfffc88c10e5c59aef6b396e3f:631308011,674a7bf27cc88c104bcfadd5090cb256:-1403531993,d3217b7206888c104585b716a4c1bf9d:-1798027030,524a6b76ff488c10d1d2181e4cbfdd2f:1563665381,58212bb6b6088c10c3bcdf193c207b9b:-2002401371,d7f71bf619c48c10f7d897b10839deb3:-193766170,8ade0f765b848c106bacd57914bf1561:423841194,99f74f7ad5448c10d88999d225eb37ad:1783159265,fecebeba89048c104e5b7e352005ea10:-681342368,b5a57efa4dc08c10c95c55cd26f9ca61:-1165300123,637c22bae1808c101256f8e1bb767ee2:-1337208800,5b9562be26408c10156c55ad88be8bd1:377819273,df7cdabe0a008c101baed38758a77954:-1875462681,9953d67eeacc4c1076b209374fb64fd0:1146030819,df2a0afab08c4c104b392b5743450257:773366244,774306fe9b4c4c10d014e7a81a81b9ed:919826016,062ab132ca4c4c10265667fd0800672a:-276998131,3d437df22f0c4c10d2687f32fd7ffe7b:-1321566196,282a6936e5c84c10125dae965e491aa8:-503202934,a2f0e97246884c10e77728edf296da1a:-1977432628,de1a91720c484c10b3f2fee01935b312:1473722501,d8f0d972c5084c102ebea2bddf994ae8:1101057926,2bc789b2d6c44c10f67831dc3cb323fa:617100171,69ae7c3210844c1077890b503e65ad4f:-1757938744,61c77c3693444c10bd98ea3959a9454f:390895368,08aee47623044c1019e32b29b042be30:-1083334326,8575a4b6ddc04c109c260cea84076657:2049452354,999ed4ba3b804c103302fc9be4c70221:-1198245949,6075583a32404c100feff22d7c6fb39a:610389252,2f8ec43ee8004c1010be6a3f857ca76e:-322885633,2a65087e3acc0c106f786caa2b5fc423:-806843388,c94cf7ae4c8c0c10ed1b8d3fde1b6473:1113084993,3c65f7a2768c0c104d91dd0b02fcc27d:-850303260,444ce7225f4c0c109d1ce21d5e613eff:2059897060,f1132762a80c0c10235801920f2b61d6:-1506169692,c93c5766e7c80c1015b6fc1a8246fb0c:753957600,5f0317a626880c1091b0324a42c50112:-1621081315,62e98726ed480c10561ca93d75ea1336:-13202012,7903872a58080c103f2259f94f5bb194:1346116059,94e9b66a13c40c107e824afd2b1acb22:-952273207,eeb076aad1840c10cc2000e9badb6eab:1868464395,bad9a2ae9b440c10e2460523541b5204:-1178478010,56b0662e3a040c107f9b9e5b47875aa4:429401293,a787566e0bc00c10e09bc7f289e7fe62:-933535221,316e46ae09800c104bccd5bab3377c08:2087958279,18450a2e31400c10b1d5cff96d746bbe:-487836534,e61cf56eeb000c100721ac88810defa4:-1962066228,54f2f5ae85ccc8101c9cac94df289864:-2133974905,3f0ce5a2c1ccc8102df49b0f247ab488:-2076977851,403529a6298cc810e60f7870ad5cf440:-828952960,5f0c1d26434cc81079a0f31f1fa066e6:778926343,9ce25566f70cc810c8d57fb3f829daba:-1574282110,840c05e60cc8c8108ec2e9d47ca97834:-1861628377,c0e2012a0388c810ffe08c2f8d1e3702:-921508154,16b9fc668648c810999cdd96797c5736:2099985346,1dd27c2aa308c810c014b1b4cf43acce:342550889,74b9e46ab1c4c810a6c50d3ab9ded4e5:1950430192,d7c2a06e2184c810ad573f08da6015e4:-1419025072,6aa914aed244c810926b4a87f2cbab44:733953450,b88018e64d04c81098ecb5c7b2fa74f1:1552316712,cb57442a7dc0c810cc6354c3c46dfb10:1179652137,7b2e335a0580c8103ee631c6c186e635:484474703,8015f3d6cc40c8106c4432ef4df7af8c:523785705,aa2e27da1b00c8101a6ad919febbac5f:-409489180,ce05afdae1cc881048c209b4f494ab6f:-1995012054,73db1f1e468c8810dd65e27c694f4c9b:2128046565,56b2df9a894c8810b74c76a44f92c5f0:653816871,2ddbcf9edf0c8810a7ae5d7deb1c0cfa:911569823,35f4cf92250c881061e85eecc462217f:1958838816,24dbbed2e7c888104fb1661ed6316d74:-1718521116,f2a27e162b888810b82ed9c0e801dcba:201407265,d0896e92164888107fd5d5c5e09b9464:-2080349437,c0a2ea96a9088810260d962bb50e75af:-1266130585,ac89d6d62ac48810a8526bc99769d5d4:-326010362,e39296daba848810527e181e1e98dffb:832551811,be79461ec64488101138ce4ad5987ec1:-552215165,ae9286129744881016cdfbd4e921655e:1596618947,9abb75164f048810b8beb497295025db:752806780,bd9239920dc08810cb79a63f09ecd5e7:-1656875666,a1bb29962b80881041c52026c56a3d63:692714344,61d4a59a464088102f1a0b97c934fa09:-1453418840,04bbd19a7e008810e3b8ad0767340957:265753643,d782d5560acc4810daa0f436cdd333c2:-1119013333,f7abc55a4d8c48108a163d7113e08194:-71744340,7bc4095efc4c48102837a34c6f0a7827:74715432,12abf8da820c481030e6abf0e5e81e13:-1399514262,6dc4f8debfc84810ab16730e01d36d89:-1141761310,b8abe812e5c848100eb0a8e3030263db:1567683112,73b4e81682884810ee77909384a982e5:-2002528050,939bd856d14848102959c931db12832b:1341478309,8fb4d85ac90848106d88aa4e19e4e0f2:296910244,069bc4d651c44810534d911aee0d36a4:-1087856732,99b4c4dabf8448108cdbd5a2bdd9ae54:1172270560,549b378aba444810c9a64d5f48b10cc8:688312805,63a4ff4ea00448109c5c13b37813b248:-1690870520,828baf8ee4c04810794f73128f49527e:-1352323509,a962234e0a8048105e10d8c2640e5aed:-645253427,308bd7ce25404810f70b8740ff2aa658:1614873865,d0621702e5404810f338bd677232fe52:-1072214128,5c8b4bce88cc0810882d9e81f07d727e:175810763,6e52070298cc0810597a6ea7c72d4d1b:-1298418931,ca7b3206fa8c08104e378f86aeb89d68:-1040665979,6c52b282524c08102a67218d8b4ad986:-423058615,eb29a2c2fb0c0810d2c719b159846467:194548749,15002ec20fc80810d0da4a127204f4fa:22640072,a9291ec6e0880810b57f2cc437748ce9:1069909065,4800de466a480810d363cdeef2d751ce:-1305129850,e719028ad2080810496c618e63deb1e2:-1248132796,32ff31ca88c40810f3e8032e628a59b1:1461311626,74d6fdca15840810babd9a988f3df025:187837830,96ada18a4a44081020b8f782d59ee162:2018303493,898421caaf0408109ae256877c6968af:-374746389,98addd8e2ec00810a524fca221706b60:-1218558556,d4c6dd82a3c00810065bc15f797bd019:2031840675,d39dc9c2fd8008107bd900071437b69a:1748638818,a6b689c6e2400810adb1710158c9fff7:-831300405,629d7c46820008109a90e7ee214827c0:309575716,91b6bc4a8eccc410f93e17196b2d4d44:2135896969,259d2c8a468cc4100b107dcee5f9dba4:-941544557,ef642cca694cc4105c2d399f0c3d3183:2079948943,a94bdc4a5b0cc4109a9cc30bd32d6f8b:1707284368,c1641c4e94c8c410f5939cbef7da0954:1965037320,633bc88e9888c41091ff8aa29d556024:-610757493,a51288ce1048c410598cfdee6b61bed8:-983422068,d8f87f7dfb08c41026172f7bfb3b083a:-165058806,9302bf71d208c4100f0a7113ee812007:2095068486,72e8afb1b4c4c410f339f31ae9bc7645:-592019507,24cf5ff13584c4101fa84039c8844da7:-763928184,d7d81ff5ee44c410a742256ec6a09798:-39172050,afbf43b55804c410e58e174683949da5:1101704071,aad883b90ac0c410f9fddc8328107e23:-933135933,99bfbab95480c4108f9875358d2ce36e:-315528569,98963a791340c41071f1512a5acee094:-1700295545,28bf667d7100c4107f22d8590304a6ab:448538567,e4d862719600c4104c458959a915d6d2:1696563458,d8f16275a1cc8410e70f62a747a4842b:-172164179,b81b9ef5288c841030a1323ce1a376a7:1075860712,33e15a75fe4c84102cebf395505fe5ed:591902957,ef0b0a79310c841038342ab1ddeb4661:1839927848,cae10a7539c88410e0321e9577991c8e:-735866965,41c839b5a0888410f5a7cadbb1496cf5:-118259601,c9e135b991488410b112044ded9163f7:1129765290,17b8e539f70884103fc0cacb5c63ff41:-344464404,d19f957982c484100c2fe91262173cdd:-717128979,fcb8dd3de084841064dd44c4add6a3c0:-459376027,989fcd7d1f4484107e60688cf1d22713:1148503276,90b801b1ca4484106c595a47da31f687:-1898439129,3cd141b5f7048410b3b682b235bf0a0a:-851170136,97a83435efc084101346fa9a34ab9cb3:-32806874,a98f2475c4808410f06019189c09d74c:-1507036568,65a8647966408410778260cad5fa384e:641797544,af7f14b942008410210dcbf438d65fb9:-631676252,65561839c5cc441073e3b50d16849357:279969223,a07fc43dde8c44101dc5635646561824:-997648983,1856407d7d4c4410f6b5a1e9d6d6617d:2145601478,607fb3610a4c4410341fc8751fdd269d:-1102096825,ba46b3a19d0c44101daa0d505199c279:817831556,aa6fa3a5a7c844103762cd1a911c7bc3:874828610,0d466725d1884410ae0654c5516560b6:1693191872,561d57651e484410692efc1772c8c99d:607660905,16f397a53f0844102849fc62c94a5a18:12409970,521d83a921c44410309e9ddea61a8dc9:-1932967316,713643ad338444105a920338f1b8d1c4:-1875970262,041d762d61444410a186d965cebba188:43958119,9836b621e8444410e9edd05578d1ea93:-2102175065,481d6661d604441089daf10f5d20e6d8:-1595860881,b726e66520c04410f2af1dfea075ae2e:753729129,550dd6a519804410211e733c2b9dc76b:-1710772504,2d261aa9c84044106ef0303274069a40:-1564312732,600dca29640044107ca69177a59b7e56:-2048270487,abd38a69f5cc04107a897930dad14508:-1430663123,9afcf16d258c041086b1f75e16034ace:1030220067,35d3f1ad624c041044c2472c9daa1dfa:-1656867926,a4fce121dc4c04101cf2ad8983524b38:804015264,d7c325ad2cc80410be70004d08fafd04:-1771779549,26aad1ad98880410d0d35eed902907a0:113505301,6ac3d1a12c88041052c4c0986e27dd9f:-1831871985,09aa0961d0480410b572d668b0ec5c11:-112699502,ecc3856591080410f84fa341c8eec036:145053450,039a38e16fc4041077581d982add6df0:1864225933,8d71f8edb14404100df2e3cca27b3e48:1491561358,c4586421e2440410a4f9659e960c6f56:106794382,bd2f18ada1c004105b46ee419be68b31:1937260045,d94818a124c0041032e52d33d351518a:1093447878,6e1f80e1cd8004101658abcb3f1257bb:1388542383,3af58025e5400410b38b5ab74a538d36:-1966304690,451ff319aa000410489a80ac4f94390b:60772461,78f5f795a4ccc0103849057be9279964:-1090944374,701fe7997d8cc0108ee2dd9de8dcb743:157080517,11382b9d2a4cc01053be543866a45a26:1204349510,bf0fd7dd100cc0107b206f8109bd8a58:-1371445303,4ae5d711fa0cc010435c7db0f0a6cb9d:548483078,560f0b156bc8c010541b61793fb881cf:-1414905175,1bd54b91e488c010aee47d2a429ce1eb:1717881505,71bcf6d1ad48c010af4b6b4301ebc566:-857913308,d893b6152008c0104d7c7e2ae68fd939:1962824294,166a2a916ac4c010f2c0e07f274450f9:-412214621,2e83aa954c84c010f603b7aaf4694364:1736619491,f96a5ad5ec44c010096677384b4bcf7e:428502164,9c839ad9cd04c0104ff51c8e2983c86f:-1839387981,146a8a1d24c0c01034900b69f8cb01ef:-899267758,ea318a99ba80c010b302745ea60a89db:2122225742,455ab99df340c01050fd2db8c8374a58:-346420301,3721b9dd4900c0101d0f654d993115d4:-1386843956,f74ae9d17600c0109ea5a06483999159:-138819065,1721e91582cc8010098c7f4816e2b6ad:-1724341939,1908dd91f78c8010b7dc7128595b19a4:195586442,b421dd95384c8010ace35831e0e93d85:1354148615,0c08cdd5be0c80109e0d04a25035a46f:-231374259,d6de3c1906c88010b7f1e2f99caf2242:1688554122,61f77c1da3888010ed8e2aea7bbbfb5b:-346285882,f0de6899df488010901753dbb52ddffd:1462349319,70f7689df1088010531e4f97a9f9cd44:-683783865,5ace945d8bc48010faec954963e092fe:1146681798,bda5109d3a8480105aa33171566b6d37:-1339650297,8ace0091fe8480102215195831166401:-14975757,2b954011ca448010644178d9cc6f5300:914680685,357cf701a30480108694f0ef36294b0e:-559549009,4695f705c8c0801064aad81a8c2391b5:1589285103,c6be6b8172808010854140c4ba904bfb:-1457657302,a195e7c153408010387359b7e258d6fb:150222001,f36c9741d4008010031d01c4353c2e50:-1123251795,6b85974524cc4010cccf62cf4edda16f:1025582317,a7ae8749ef8c401047d08cdfbca86b0f:-919794969,8185cf49084c401021aa5e7524a5958f:910670694,246cfe89dc0c4010fadee99cd0a8ca2d:-1776417299,b633b24952c84010a421b950687d0a8b:143511082,6a5ca24d0e884010ec0dd1d4634216a7:200508136,6275a241258840102d151a077510ab8e:346967908,425c9281af484010e37af2d08755c309:-1238554966,eb2312c12b084010ca41e764a220cf2b:591910697,b00a8641afc44010e6e99dd0ef9c8c58:-1671835038,0d238645b28440107ad178fae9163d2e:659744005,97f9f185074440106a1c0821c58949ff:-814485689,e1d071c5830440101c731836540db219:-2087959485,e5f961c9a8c040107c0a86070d743822:1718905646,01d02549dc8040100264d7afd8c1e0d4:-333620410,d3a715892e404010989d03b56ed54306:-706284985,818e05c9af004010053da68a2bfe419b:300021106,d35509498dcc00105c0ff6117cfa831c:-2075017809,243cf4891d8c001074dd49feb33148db:857012973,6855748db64c001066826decef7ea414:-187555092,cb2c24cd020c0010697d074b38a49d37:630808170,1603a44dc1c800105b43da6b0cc541d6:-954714704,5ce9d48d44880010373c80f093828ad9:-225814160,f2b0d4cd464800108b77c74f13dff42c:592549102,2ed908c1774800108ceb75d41c6fe29b:-452018963,1db0c8418e080010f74de3f2dcee0be2:-735220820,f4d93f7435c40010ec59023ccaae66e0:423341353,87a07fb49a8400109bc552f8c666bf36:-1050888341,93c9a7b8c0440010a3a99fc2ac79b7ce:-904428569,90d1ebb07bc0001008580df46379f988:1258914602,920c0f74d58cc8d0ef2534f1f800ceb4:-1038469726,a5e2cff09a4cc8d09c9cbd00c8534f25:1948380243,8fb9f634150cc8d071febd6350afbca7:585443729,0290b2748dc8c8d01728049d86f32aee:-799323247,a07766f0e388c8d06e157aa9e43c6b53:919849236,674ed6bc4d08c8d0ee37ae6b8f97058a:2082555819,de67d2b04008c8d0e3343dd41979022a:-1398192625,7f3ec2f0ffc4c8d07fa40b674f11b36f:1533838157,3a15c6704684c8d0c293d58717381e7e:149071181,5a3ef5740644c8d0365fb8db10d58a41:206068235,691531b4a604c8d042f1938ce93521fc:-1379454639,b03e21b89fc0c8d0b637f4923803e2b4:-20136568,e45761bc1180c8d0352acf42c0f6ca77:593326386,a83e11fc3240c8d0e6bc384b52b1c342:1734202507,0605917c4700c8d09bcb86ac7d1cc67d:-730299126,6a2ec170ca00c8d0d512c45c750e4451:-583839354,aa47c17440cc88d02e5f371ff41f0515:1564994758,1c2eb0b4be8c88d0f208099bb2ca591f:-1146753890,0bf4fcb4754c88d089f03e2b43e377de:-328390628,41dba074730c88d09b0789a748619b5a:-701055203,60f42078c1c888d0b4a5340676034145:1648534807,76cb9c78968888d0e61b5209aed0c7a5:1275870232,fda25cb81e4888d09e7d2526910f24cc:791912477,6dcb4cbc840888d0ba46e0664c40b21f:-1153464809,b4a2cc3c83c488d0c176396556b43df3:1833385160,cf7937a85d8488d00ec22224db258afd:1460720585,719277ac5d4488d0f224e1d947975a67:-1908734679,3179efac440488d080e9796ea64af8c5:132950663,c99223e0ad0488d0e85f28f8f2eb439c:390703615,a079176015c088d093a4831bda835b17:1998582918,3b821764c08088d0817390357c535126:-937066307,526983a4da4088d03fa5b4e90cbceadd:-319458943,8d4083e4bd0088d0aba1aba85cb68e2d:1399713540,3a177664c9cc48d0a84c5baaa5304a5c:1227804863,71307668348c48d0c61af353da883b13:850995878,441726a8ac4c48d0c51daf660ced1abe:2013702461,93ed5ea8b90c48d04413a6ec05011384:628935485,b8c49e28f6c848d02b93a51cb871038e:-1835566148,0cabcae4a28848d05173d5aa530b78c7:873878274,62b486e8fc4848d0cde49bc72c917e6a:1799390306,1e9b352ce40848d08fc4935190ea21a9:925079018,936239a8a3c448d00a2100dca4fcc5b4:864463521,15496da8ea8448d0939544dbec8ed7e9:491798946,e820e9e8b24448d094520feb04b7d3cd:-1093723928,62f61164810448d0e390208c37e93cfe:1927769572,58ddc92461c048d0865642998b1e16d5:-536732061,98f60d28668048d0ebb876973e451dd1:1612102051,6fcdb868fc4048d054d117351e872fd5:-874230044,e5a47ce40f0048d0b63aa9e8151976f5:-1246894619,8b7b282848cc08d035b0ba6745f85337:1685136163,4694282c0b8c08d0d0e9a93b580f006f:407517957,de7b946c5c4c08d0db8f2a8a8a9b7bf3:1347638180,234298e8300c08d038495e36e75b185d:185457564,8629082c7cc808d055e912c4078741e6:803064928,4000086cd68808d0cc74b2f173f22fbb:1531965472,f7193b50598808d0007e5f85f3a8c5a4:-413411814,b6ffebdc6c0808d01288637c7570455e:-714624638,f0d66b10980808d01c73aa0a3a2aea69:-1087289213,48ff571418c408d08eceb5c2311def81:272028858,90199718bd8408d0b3aae5c009fad610:-1317638426,1cffc358434408d078d702571c5d4af4:-176762305,9819c35c150408d0906424abbca531a8:-1221330370,9b22c3503e0408d001ea80b79771e185:1796018720,eb09b6dc9c8008d095354838f68599b8:-1281422806,a1ef6610bf8008d0125c1bb04b4bcd94:-1654087381,67b662500d4008d0416a14364c0296e5:1367406119,f19d16dcb2ccc4d09cb32ecc75ae0320:994741544,c9b61e9090ccc4d0f08020810f64e097:1252494496,149dcad01a8cc4d00d04867431030701:-333028378,3ba60ed4be4cc4d00887dbc9d20a112f:-276031324,fa8df918190cc4d0240166d203541a82:-559233181,e864bd9469c8c4d04577c51ee9c73f02:169667363,277ded98a688c4d0ea418f4d5414aa08:-1107950843,8ca6ed9c4248c4d0e8021bcfa46cf75a:-60681850,737ddddc1708c4d0fd22fc9c7d8f657d:1981003492,079619d07608c4d0cb587a353083b6bc:-2056210852,767d0914fec4c4d0345fb0c51153a6b4:-1549896668,539641946f84c4d00abe92fd35465c0f:-1403436896,febf7c58ed44c4d0df9b1b39df8872d9:-1346439842,b596f8d42204c4d0561164cba672480a:1563760478,b1bfa8d864c0c4d0bcdf7bf48cc8ac85:796597960,2386a01c6f80c4d057fb9f42875a8af2:1525498504,fbafdcdc2040c4d04fdfde912c12646b:1671958276,5286dc101740c4d0d61feb60bf946744:-903836537,e9af8c9cf7cc84d0a84179cc0f848d5a:2113512553,f186405c978c84d033e9284a353b382a:-1241334520,0c6dfb4c474c84d0fa4b3d2ec3507a09:1579403082,9886fb40974c84d094994ba2c9d42530:1725862854</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>customer</category>
+<comments/>
+<name>dynamic_schedule_task_filter_9c3ef67f3b81320014544d72f3efc47f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dynamic_schedule_task_filter"><dynamic_schedule_task_filter action="INSERT_OR_UPDATE"><active>true</active><assignment_frequency>interval</assignment_frequency><assignment_interval>30</assignment_interval><assignment_rule/><auto_assign>true</auto_assign><condition table="wm_order">maintenance_planISNOTEMPTY^state=10^EQ<item endquery="false" field="maintenance_plan" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/><item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><dynamic_scheduling_config display_value="Work Order Dynamic Scheduling Config">6691f2bb3b81320014544d72f3efc4a0</dynamic_scheduling_config><matching_options>recommendation criteria</matching_options><name>Planned Maintenance Work Order</name><next_action>2019-09-30 21:35:27</next_action><order>900</order><resource_type_table>sys_user</resource_type_table><schedule_filter>false</schedule_filter><script/><supply_user_condition/><supply_user_field_name>sysuser_sys_id</supply_user_field_name><supply_user_table>matching_user_group_skills</supply_user_table><sys_class_name>dynamic_schedule_task_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-02-27 04:34:35</sys_created_on><sys_id>9c3ef67f3b81320014544d72f3efc47f</sys_id><sys_mod_count>18649</sys_mod_count><sys_name>Planned Maintenance Work Order</sys_name><sys_package/><sys_policy/><sys_scope display_value="Customer Service">51d811fad7223100b7490ee60e61034f</sys_scope><sys_update_name>dynamic_schedule_task_filter_9c3ef67f3b81320014544d72f3efc47f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-09-30 21:05:27</sys_updated_on><table>wm_order</table><user/></dynamic_schedule_task_filter></record_update>]]></payload>
+<payload_hash>1424608308</payload_hash>
+<remote_update_set display_value="Flyouts menu">6600d59813d00850be3d33e2e144b0b7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-09-30 21:42:19</sys_created_on>
+<sys_id>aa00d59813d00850be3d33e2e144b0b7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d83fe0c810000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-09-30 21:42:19</sys_updated_on>
+<table>wm_order</table>
+<target_name>Planned Maintenance Work Order</target_name>
+<type>Task Filter</type>
+<update_domain>global</update_domain>
+<update_guid>9697459825900850300e1a4101f8f1f0</update_guid>
+<update_guid_history>9697459825900850300e1a4101f8f1f0:1424608308,b76ef0d85a500850e8630a070c5ffdac:-1921523341,37877c5c62100850e224f463c4bf9fde:1092215789,e56e2c9ca2dcc4504b6bd557dfab473f:-365782312,0145ac1cbf9cc450a2fecfc18ce25ca9:861649370,0b1c1c5c4a5cc450ad0ed1cd3d17f8a8:-465679333,4b351850ad5cc450657a7f6ecaf193da:1754740954,7a5ec454ea1cc4500d6ae615a7ec9029:473512788,92358494d2d8c45052ef408d3084a917:907625627,5d5eb3881798c4503ebdf5ac3d93859f:893160338,0535b7048658c45046a9ee828771ba7d:-1958292646,c85e67086118c450f78aa04d9b0ad2ec:1312807888,9477a70c7bd4c450d9034152e9eec05d:525067899,2b4ed74c2c94c45019ed6ba67c562298:681775191,f125978ce154c4500522b3dd498637d0:147765331,9c0c4b0c5a14c4508136c60597403433:839239574,f315c3004914c450d8a6b8435f9f7a4d:-1451390065,104e72045fd0c450f1ada0bbab553124:-1507134128,0925be809490c4501baecb1a487f5d71:668376110,4b3e6a845250c45030f37e30260dbf9b:-78085105,4e152ac48a10c450b56697f981cd836e:-784043137,37ebde04b0dc8450b402a8071cf2c7dc:1967512826,6b0552085a9c8450b66c601d6a06ca1a:-107034183,483e8ec8b45c84509a441f72296901d5:630540597,5705cec4221c84500cb813254f16332d:55251963,262e310c0ad88450a474542129742228:256869304,7105b90cf798845029294679059ba2d8:474899513,73db6d88e7588450cfd635622cbadeac:-1861830663,aef4ad8c141884503d0366549dfc454d:1686675418,d2db95cc1ad484505032b881c74b7c9c:-432781640,1af455c0add48450093b926920aeabf2:1787638647,e4db450464948450a6db5b18d1e2f5f3:1253628787,57a28980915484506b08439ee2da5120:-1340462793,2acbb8846c1484501905a2f5a61869df:-345526609,79a278c40fd08450b069e3fbe56b9c4c:-920815243,29cba8c846908450402510bfd7587684:1299605044,cca2680cf45084505769dbcb61421f79:1774996657,0bbb5800945084507ccf8aaab93b6f3b:828098416,1a921c8cb8dc4450cf89a25d79a433b4:1778124551,0abb0c8000dc44504956a44c5c915f49:-1305823931,e6d44884649c445085cc349c14df053a:-568249151,b8bb3bf7444c4450bc57dba225cfe0c5:-886176381,3382f73b390c44509e9984195b3e06a9:1824100808,3babe73fd1c8445008596e18b4149d7e:1552274115,a682abbb31884450e9e5e14c242d4de4:-163085390,84699bfb9b484450a5a80d480222bbec:-223651216,ed30973f4c084450cdd997ddc5a62595:-1767062549,40170bbb00c44450ad2c23433cf23428:-2084989779,27200bbfbe84445018791335066181d2:196753425,0207f6ffff4444503792ece2f80ef3da:610822121,52203af3a0444450d867c54d480703f8:-176917868,d2072a37bb044450718691c5ceecb99f:-1503056083,60ed5eb337c0445026668d0e6acd7910:-1820983313,14079eb7d8804450cc18d3b1d8ec9a31:183354344,18205ebba240445097c39266c07e2ee6:127610281,daf64efb77004450c2de34344b66f7fa:2085847401,7ddd753f6dcc0450a186ef1ed0af73b2:-981688213,33a4f5bb968c04502331073e1fbad252:976548907,0ecde53f8a4c0450cd4dc180164abe5e:-1788715254,25a4253ff20c04506ad2d5443ed96e34:-1632007962,11cd91ff42c80450df03930e33e86830:-1818421423,94a451331bc804502c6f709940322daa:675773136,7a7bc97fc74804502698bd4789f337b8:357845906,d05249bf2c0804503c9f3c097523c2e5:-1978884270,1729f4bb57c40450913809f65cbd77f7:515310289,2800b83b028404500178c21062729d37:454744463,4fd6247ba3440450271886fe5d53db6e:136817233,64bd14bb0604045008e5645b2cb8b927:-1406594100,9784d43b88c00450a50d50c022da962a:294281616,e46bcc3b2f800450ec1d0c15c41cafaa:-775685683,533200bbbf4004509416a10798ffbd1f:1718508876,0b5b73af270004503c66fc5642334f2f:-1365439606,4f7473a335000450841826baa7d2830d:-1637266299,995b272328ccc050d3f4b2852bb4580c:-1955193529,d722e363d48cc05095463bbaeadcf3f0:1012445064,7609d3a38a4cc05097f26c54f228697b:-2055090550,5cef4723e90cc050c55ad5fb9d3b5f9b:-2004351764,9c09472710c8c050f642fa63e2dd5b7a:1009387366,23dfb2671788c050a2c6f29ff0cc7142:434098732,0cb6fe677648c05075f61c8d08b8e520:1640295783,4e8da2274308c05008da8eef39dc48ce:96884450,a564a267dec4c050dcb95776766c9ba3:530997289,e63b52a73b84c0502ecac0d559a7e2b9:339762065,701292274144c050b966ba9f3ac8920b:815153678,1ee842670404c05091df711d1acc4f4f:754587852,b9cf7d67bec0c0502628496399c21c31:1188700691,59e8bd6b3e80c050784422b1e65b3b64:-1101928948,18cfa12b8e40c050474f7f7a5585b212:1608348241,a4e8a12f3600c05030214a61c3cb82f1:1336521548,0002e1235000c0509536a60564b43e87:-738025461,d42bd12772cc80507fd5635127c521f0:-1009852154,aaf11567058c8050dbd75afc23e83770:-1327779384,01d8c1a7f74c80508898b7614570ee17:-1645706614,81f141ab820c80507074655d7cf75fd0:-1917533307,63c8342b9ec88050153ec64f4507d99e:-1226059064,47afe82b9b8880500a9cbb0b238031d9:-1801347698,f5c868ab85488050f31353aa27493240:-1815812987,f4af54ebdf08805051ce24cc5b5752bf:-114937271,e376546b56c480507b6a1bed33b8420d:-1915710008,f79f046f87848050494e12562f83d0db:-1092721996,34768c6fd5448050628a7b302b5d7049:2132278001,309fbb530b448050a5d8e3357a9622be:1860451308,2c76bb935e0480505c6bea68d3e83536:-2000403149,7a4da3db2c8080501038c0bc076da7f6:-515610063,c8242fdb3c4080508ec4e26fae26b1e4:-1585577362,b2fa9b1f390080501d5f68d863d3b4e4:115298354,0dd19f9b79cc4050ef09b002df583c22:-418711506,08fa4f9f698c4050ffd0097b7efa11d9:-1226495638,c7c10bdf104c405054d36c851401c7a5:1483781551,dca8f613a74c4050c8a792f23ac9f793:-2078432728,3cc1b617170c4050465948f6bf7812dc:-2134176791,ab98aa939ac84050d480b52433cd6bb7:360017768,797f1ad356884050cee0bd735e84adb4:42090538,cc561a179b484050b9115180578ac083:-275836692,d52d8a935e084050573389bf31340c86:456916325,ad46c69702c44050bb670dff139d8dde:-1506326072,892d35d7f2844050000373c57d9a9b1d:-1072213233,80467d9b224440503f7509c258b98b78:-2096079995,3e1d2d9b4c04405035082944c0eeca39:614197194,ee36e59feac04050ea7c6f8edc7fb59b:-667030972,711d591f25804050e0aea9f8be184eaa:2043246217,c1365913e98040509c6dfac0af4011b3:-1256784895,7c1d0953654040504ad009d28827fd06:1065461492,d1e38d1328004050397263ae5299eb52:1262257070,3ccaf49fa28c005049a1fa48c732f66c:-1805278544,2bd370df794c0050e02ed4bf11ec4a50:949908694,4fba60138e4c0050034a60b141926f7e:1106615986,219120538a0c0050e9a28c8bdcbb10c5:-1703558224,68ba5057f4c80050c653d6aa875b1340:1783624940,838154d3c8880050d4020de7de812bd8:-2035950743,22aac4d73a480050cc3e8d9fc6d6181c:-547526382,8381c41bc10800508ce55204c55206c3:-648180494,7b58b74b83c40050aa99206440a83179:-1934230423,0f3fabc7458400509ec6286439651797:776046766,7d5827cb07440050f3fbda16e13e8f03:-247819996,b83f538b28040050d4d95173fb7a8864:1453055720,b458df4f2ec000509e9c845795edc036:1397311657,db2f4b8f75800050299c92b74f59f667:-1412862553,5206cb0f42400050ab25b5c4146f9576:1166745238,83dc720f22000050f758034c63ad1ea8:-912623534,ceb37e0fdbcccc1065b38dc24d898651:1581571025,6c9aee8bb88ccc104e4a7281fb0f97f8:-2021922028,30b3a28bf94ccc100e3490863077a4f5:-1284347248,10dc928f640ccc10ae567a445749afda:-1082729907,51b35e8fa2c8cc109b12ff4723ab44fe:-173982546,c18a4ecf0a88cc1076ad958ff0bd3449:1093537422,9651ce4f4048cc10eba8ff230156f2e0:23570123,b438798f9c08cc10b854a6508742dcf5:715044366,3451f9831208cc10e7a6a51c78cc8cc6:443217673,eb28e9c34dc4cc10ed28d05e0b00cc27:1134691916,e60f9d43a084cc1090656ca5927fbe19:343320652,b0285d473844cc1096d2c764e603ec89:1079704944,8d0f8d875c04cc10426c16746b2a7d78:-30350641,22d54dc715c0cc1016d5154332c93414:1711803849,acbcfc475480cc109b2cf2077895be81:-1523023188,b7c53c4bfd40cc1000cd0d56522e1eff:-250681457,73aca88b8500cc101a812ef4b48b125a:1924828781,2d8368cb1acc8c106e016ab15f834194:-411901395,51ac58cf768c8c106a5b2e5cad0990cc:1592436262,e4835c4f874c8c10f64e9a4b3e1b25c3:1017147628,e15a0c8f7e0c8c1002c26a3b471227f7:-183489069,303108cfbdc88c1077b1d58b67caed3d:34541140,af4a7bf2aac88c103c1af0807042f352:-773242992,13213b7236888c10d231f0dfda2510ed:1463590163,124a6b767d488c10f8e5b7e7cf9c302d:-353595442,18212bb6d5088c107c6c39aa10af7999:1604641678,97f71bf649c48c1098909c7c91154bb1:1822671887,4ade0f76c1848c10266e6db4344deb5f:-771419693,59f74f7a0a448c1061e7cb92ebecd2ab:-785884982,becebeba3d048c1062587eac1203000e:162950665,75a57efa18c08c10dd0d93dc67b5d85f:-1421739442,237c22ba53808c1019527ecc658b34e0:320415048,df9562be17408c109eb82e8135c636ce:-1476726414,977cdabed8008c1054da301de7119e52:698783824,5953d67ed3cc4c10414287bf0c5082ce:164773964,572a0afa258c4c10235d9b8bb0515e55:-1162554739,fb4306fe824c4c102c661301d06d83ea:-424979959,c22ab132bd4c4c106558835e599ee228:135824886,b1437df2320c4c1049dbcafd66e37679:-1938722123,9c2a69366dc84c10f485fb1e5c34b3a5:-453929037,22f0697279884c109c5fb325bc3a24ed:-771856267,9e1a517274484c1026977ef91770db3c:1232481390,98f0d972e1084c109f4c11665d8b5ee6:-94847313,d7c789b2b6c44c1020e541d809f7e3f8:-1679537420,29ae7c32b7844c1079b588be0abefe4d:-1204145807,e5c77c36d5444c105e55717e6ad15d4c:2025675953,c4aee47642044c10db9155436ab1952e:1707748723,4575a4b675c04c10ab484f6661da9d55:1431100267,599ed4badc804c100e4972b7100abe1f:1375356204,2075583ac2404c10cbd97ba053c62798:1593386413,eb8ec43ebd004c100a1e14572d64066c:-223799192,e665087ec8cc0c1016ea27cb19531421:-1808489299,894cf7aeeb8c0c106af37ae024390271:-1333097686,b065f7a29f8c0c10b53ebac98ae26b7b:998627213,fb3ce722d14c0c10fcc04260ca30f1fc:207255949,751327626a0c0c10769c203511dfe34b:-2129474227,413c57668cc80c10603811c0774e4c0a:1357708937,1f0317a619880c103e7a1e7bcb3a7410:1833100550,22e9872659480c100f299e4dfd95e834:1257811916,3903872acf080c10514e71296eaee892:1243346627,54e9b66a47c40c109e218ce89127ac20:-1481414351,2ab076aa0d840c100b234078986838a8:-789940108,32d9a2ae5d440c10545136db64cd8d02:-1061766801,16b0662e41040c10574ad105d70763a2:-627653962,6787566e40c00c102e05430e0bbb0960:-688219788,b16e06ae72800c106ca46161f756a57d:-1222229648,d4450a2eed400c10a18e3acb590455bc:-530755405,961cf56e9d000c1060539075e34070a2:-848682635,14f2f5aeadccc810e51ac2dd5beafa62:1902873328,fb0ce5a2feccc810b34882fa13155786:-1181075154,003529a67f8cc810404ab12b3efe6d3e:-1452901847,d30c1d262b4cc8100ebaedf2eebd4be4:-2028190481,98e25566a70cc8106bf9cb4eccc61116:187408043,c40c05e66bc8c8102bf18a329a9d0519:-816414576,48e2cde61788c810db8eece6054d60ff:-1926470161,9ab9fc667848c810eccf7af30f3cd033:1834487275,91d27c2ada08c810d1d070f0f0b2f2cc:1905435218,f8b9e46a12c4c810087402f85eff51e2:-1955419239,97c2a06e4084c8100274c36ba507bee2:583685369,eea914ae9f44c8106ea9ad1d7953c641:-1278410285,fc80d4e6bd04c810a5ba7e9b9e27f1d0:-803018672,8b57442ac3c0c8109a3f631db9d8190e:-1120945902,3b2e335a7f80c810c81b061c4bd56b33:362656696,4015f3d6ee40c810eeeadf22a944a38a:45919954,222e27dad700c810c868f9316476aa5d:1514300172,8e05afda15cc88109a7889e3bab1dd6d:1948413011,33db1f1e668c881021826a8025080999:405001678,16b2df9a1c4c8810857732c6dc4018ee:87074448,47898fda260c8810e21dae2198bc0594:-1992294324,9e600f1ec2c888109738d7a332f106be:-1774264115,604732daff8888107008ec46d696027c:1193374478,c860fe9e5c48881073c2a211b8952438:-1097255161,58896e92bc4888100f185c2f507b2b61:-2051096085,40a2ea969e08881039b49aeb600288ad:1240048592,1c89d6d6f1c488100bc9d745ac8923d2:129993007,2b9296da0a848810d6fdd1ca1ea3eef8:331610348,3e79461e9c44881063a8490a787c1cbf:-459760916,2e928612754488108fae401ddc09f65c:-1524906452,5abb751607048810dde32bfbe9e66ed9:479431205,f1923992d5c08810c6055489fde75ae5:782874646,21bb2996208088109e304e134ecdf861:511047953,21d4a59a74408810aee40900c1b88905:-1563499056,88bbd19a3c0088109f18907d8855e754:-872024813,9782d55680cc4810d16afb50100ce4c0:-653994604,a7abc55aec8c48101bb427b8bf02c192:-709738667,3bc4095efb4c481050a17acc1ce7e025:27836113,deabf8da490c4810950f0d109237c810:-290091117,2dc4f8de5cc84810b9e74838565ce987:704845067,f4abe81220c84810f180451f36834a2b:129556433,f7b4e816f4884810b9e91caf5cd583e2:-1410223625,439b9856fd484810cce959f3921b9562:-460197490,47b4d85ac90848107f79d2408f9f15f0:1760222797,c29bc4d699c448101993e35a34a237a2:968851533,41b4c4da998448102b44084c0d65ee52:161067401,d89b378a3d444810ef5be07184ab3fc5:-1423622706,e7a4ff4e8f04481060fc428a88ce5745:-151280975,428b6f8e59c048101afe1136abf734a8:1141519796,2162234e67804810d218327b330298eb:-1926015818,f48bd7ce2e404810c59e2e9b7b692c55:1561167346,58621702b14048104209071fa7cdaf4f:1995280185,d08b4bce8fcc08105cd51993ab8d637c:1723453492,d25207021ecc0810665dd488abb08c19:396124789,717b3206808c0810d33fc9f3a5329c66:-1894504850,2c52b282cd4c08106e1c0a06206bfa84:-1203030607,ef2922c2790c08102ecc9f50b27792fc:1507246582,d1002ec266c80810e7e493a2c98e77f8:-36164751,69291ec6538808105c2d456e50b90fe7:-91908814,0800de46f4480810b3bc375f85e803cc:383482799,a719028a570808107501f7b45f7e93e0:1594501613,b6ff31ca8dc40810b22b0adf274a46ae:1019212979,34d6fdca61840810671e6073651bd223:485203119,56ada18ab444081013ffe7e11ba8d460:424637293,018421ca9804081064a5ee3c5489c0ad:1227416148,58addd8e79c0081070b308ae50fd2b5e:-1063213491,54c65d82bec00810e8cacb7a95f79ff9:1157206796,939dc9c237800810d1c78d60d8554e98:-643565941,66b689c691400810e1dd1d14c7fa10f5:844858420,229d7c4669000810de7a12d17ee7c8be:-481279795,19b6bc4a1accc410e24fd603f092de41:1264505970,e19d2c8a578cc410305294807f03a9a2:1033182460,af642ccabb4cc410cea726890b323881:499172600,e14bdc4ad40cc410be3b55690dfb6088:-828156103,49641c4ea5c8c410e61d7120e5441e51:166780081,233bc88e0188c410a922f66a7cf12122:858254324,651288cecd48c4108bccde7e66f789d6:-469074379,98f87f7de208c41013f4bdf48d90ab38:1015718707,5302bf711108c4100732cc0b2b70ea05:207934575,32e8afb1f4c4c4104d341b34a89d0443:642047414,e0cf5ff1c584c4105e3b8a2a17a451a5:-901363919,97d81ff57244c41088be35d782232396:1853823319,6fbf03b5f104c410e7f1462ce6bca8dc:527685104,6ad883b9c4c0c4107dedf2515ce94021:-280099028,51bfbab9e180c410447d25bf6a6c356c:1420776688,9c96f6799d40c4108ff8c110ffae5d29:629405424,acbf667d4f00c41027321cf3d9de74a8:-435740112,24d86271e800c4105edc11d60c536422:-707566805,50f162753bcc8410b0dfab38e259ef29:-1903381739,781b9ef5758c841066df33d818e96ba5:-1165806959,e7e15a75994c84102ad3193e88bb0bea:1544470230,670b0a79b90c84100644053f983d465f:1272643537,8ae10a75f4c884104b70bcf15985238c:954716307,c5c839b5868884106abe5de12e530cf2:-629973800,41e135b9db488410bdb22eff0ee430f5:-1911201966,d3b8e539a908841077eb814f34f8133f:-1219727723,919f957990c48410093100e9502930db:738509397,bcb8dd3d78848410767f765b6606c3be:-1552120242,589fcd7dcd4484106759e1bd87353911:-1118007403,50b801b1644484100da97d0641968b85:-1389834096,f8d101b50004841039a43d4b7cf81741:-1445578159,1fa834358ec084104390db2d169e77b0:39214927,698f2475a38084106a3e45cc34f8254a:-278712303,e9a82479e9408410429b87a0183be091:-1343857839,6f7f14b9f1008410766488b64f5383b7:-1877867699,d956183995cc441023c60b91a3a06254:-817727440,ec7f843dc78c44105645b3bb4ec40766:-554787182,d456407d5d4c4410bd30ca1bd16ba77b:611321583,e07fb361a14c44109aaceaafc85c1105:555577520,7a46b3a12c0c4410c0321448a96ddf77:21567660,226fa3a5aac84410001826841a3f6fc1:-2052979349,c9466725cb884410fe229a847fecaeb4:-568186263,161d576515484410d5ff14263750fd9b:-482015940,5ef397a5f70844106faa4b6efeff4f14:1693494298,121d83a904c444106ba61ae1aec21dc7:1421667605,313643ad3684441010c27f0b0d6e5cc2:-1662280877,001d362d3e444410d2e5352e72afd781:-1186889264,5036b62192444410f95177c289b3a391:2042932496,081d66618904441094c22ee2eba5bfd6:-808520488,7726e66553c044109111df089c70bd2c:-2089748654,150dd6a5b5804410970978c175fcb769:-1140913007,e9261aa988404410de24b36f0c86ec3e:-403338227,e40d8a29c0004410fa206017719d3899:-1988028334,5bd38a6996cc0410549014f7b7234006:-287152618,5afcf16d268c04105714de8e043059cc:-1311019380,f9d3f1adff4c0410bcc6554c3bcdc0f7:-876906541,64fce121964c041053b46034a9936836:-1900773303,5fc325ad8dc80410b590aeb66ddedf01:-1209299060,aaaad1ad7f88041050a5337d90132c9d:-905855619,eec3d1a1eb88041090f929eac54a7e9c:-1177682312,cdaa0961e2480410aebbf103dff56a0e:-486208069,acc385650a08041079ba469bf22b0c34:508728115,879a38e181c40410f4ec82c9406d61ed:1200202358,0571f8ed4b440410f35f770e2a289c46:-127126345,8458642149440410689c7fd08693de54:-918497609,6d2f18add6c0041010991718ee91d42f:30338038,914818a139c004102051f4fa7cc50588:2034675695,2e1f80e1f2800410b7601c4b8351f3b9:-2043451880,f6f580256f4004107a63a4d2e5696634:1141459831,051ff319760004100fad99b466d4b109:-1623804330,38f5f795a1ccc0100533a2c93d491a62:-1467097038,301fe799738cc0100acd0b784bddf141:-729522258,dd38e79d784cc0105916175b3e2bda5c:-785266321,7f0fd7dd3d0cc010a0f58c85ddda9c56:-93792078,0ae5d711720cc0108e99fcbeedc97d9b:-627801938,da0f0b1544c8c0109729300a294088cc:-1581642862,d7d54b916e88c01009051166dc6f45e9:-1858291318,31bcb6d1a048c010f5ab98442dceb190:-1166817075,509376155508c010ffe7244dd7fbb77d:-1484744305,d26a2a9182c4c010c03a27b33ceeecf7:-1009352692,6e83aa95ab84c0105201f67c8716153c:-2074498228,b96a5ad59944c010e4a23e0ea2627e7c:-1771054787,5c839ad99404c01015bb5d9656b1af6d:-241351652,5c6a8a1d1cc0c010a0818ee08bd2f6eb:-1351407237,62314a998d80c010d893ef45cf970758:-1885417097,055ab99d2440c010cb42db86c4841056:-139631332,f321b9dd9d00c010e3cd28ce80f1c0d2:1283838837,b74ae9d10500c010a0e881b6c8340957:1012012144,d321e91578cc8010dcc77e3b025ff7ab:436723510,d9089d91dc8c801018312bf7e80e03a9:912115123,7421dd959c4c80108abfdcf9ccf13383:1113732464,8008cdd5990c80103bf73d6abe14996d:538443830,96de3c194ac88010964953b83513c940:4433970,21f77c1dbc888010285116d08a824959:206051311,b0de68993548801067b4bcf5b34f3434:424081520,38f7689d56088010c0ca9019aca8e941:-1650465489,d2ce945db7c480103ed481a8d849f4ca:307771631,35a5109d898480100b25667ae637df35:525801840,02cecc5165848010c7cfbd41f201d2ff:1348789852,af95001177448010ef9e628f961258fd:-1204022954,f17cf701bf048010d678d710e99bbd0c:-1521950184,ca95f705cbc0801054dcd851eb5fd6b2:1707871576,86be6b8182808010fb0cc9c67786abf9:1436044883,2995e7c1904080105c99f1cb1baf61f8:1870157722,a36c974163008010c5490b4b80f5b14e:1336147862,ef85574506cc4010bb52abb940b212b2:271002326,67ae8749598c40102cbd66429e15490d:-1010225840,4185cf49c94c401072b36aa68e82d88d:-61390193,e06cfe89790c4010a23e616ed5901b2b:372722646,7633b24951c840109f68c47986651589:848114259,2a5ca24de78840103b475be9d6eebca5:2059133073,e675a2412288401001ca6c4063bbf28b:1787306380,025c9281c4484010902ca4bd212f9007:-2073548077,ab2312c19e084010aaa08ab7ff5dc529:-1124712430,bc0a46414bc44010a492a6df49d04d50:-391959413,81238645528440102d750defe27a582c:1939765486,57f9f1854544401037bbc38cad909afd:1621838256,a1d071c55e0440106c478a6dff7f7c17:1087828396,a5f961c9c4c04010a0993cc39ed6f820:300088407,cdd0254962804010948c82874862bad1:-2035451281,93a7158985404010e866980e6f6ed404:932187312,c18ec1c90a00401094e85341e4bef1b9:-525810789,9355094992cc0010252a4556b001cb1a:-50419176,e83cf489698c00104e15e6cc8cb7da29:-1120386475,a855348d964c001040435204a8baceec:2109435285,8b2c24cdf40c00107caa5038d1fc6b35:-700738925,d203a44d78c80010b79cb1e75c9112d4:-1276027559,1ce9d48d67880010049354df1d3d42d7:682209561,b2b0d4cda3480010a3bb3fc9f7b6812a:-2127964649,ead908c1b4480010e3d14f8846628299:92455638,d9b0c841c0080010387fce3b3ae57ce0:-1708317099,b4d93f74f0c400105b01807706c5ecde:-1506699758,76a07fb4ab840010010d6e50618ab234:-1824626988,1bc9a7b8d4440010fc9a14cf464cc3cb:-1087052208,10d1ebb07bc00010fceac99b8b3fcc86:883763027,1a0c0f747e8cc8d01c6ae66d62505cb1:14426059,65e28ff0554cc8d0eaeefad0b6714f4f:317869500,87b9f6342b0cc8d0c807c07bfb400b8c:257303674,ce90b2744ac8c8d02ae3e340fe7adfeb:-534067590,287766f09788c8d0e693348bd4be5c50:-851994820,474e96bcd408c8d0faf09b17ecb52951:-437926124,d26792b0a408c8d0fe0c1a251a35f97a:1843817080,3f3ec2f065c4c8d0f807ea2a5c1edc6d:1783251254,f615c6701884c8d0ed91f5fa52e5197c:991879990,de3ef574fd44c8d06d6cfa4f7716833e:-2092068492,291531b40a04c8d0199ace7263e5c1fa:618208697,703e21b885c0c8d0672bc9e006ff99b2:1613144881,a45761bc4780c8d0d660a26f4a1ad275:-183996581,203e11fc6340c8d0706ab003da152340:-1510134796,c205917cb900c8d00866d36a936f3a7b:-561299149,9e2ec170ac00c8d06d332dd67b4bf804:176275631,6a47c174adcc88d04a4b1eb5d488cc13:-888869905,902eb0b49d8c88d04f3edfd4c60dde1d:652847559,c7f4fcb4ca4c88d055714795f753c0dc:2137640645,01dba0747e0c88d09a3dcd54bf1af458:810311942,e4f420780ac888d042a7cb320efe9542:-1202912150,36cb9c78d48888d0493f9e8280e977a3:-1798244927,bda25cb8524888d0e7777d28fce502ca:912032262,2dcb4cbcde0888d01e9be9216bdb9b1d:-1378597377,3ca2cc3cb8c488d03d2d0cfbf0886df0:-1075153936,8f7937a85a8488d062b510e6dddeb8fb:-1393081166,719277ac884488d0c08935e07e231a63:1146023442,fd79efacbd0488d0ae2eedd3099f05c2:-973433616,899223e0d90488d0468ef9bd2c30139a:21502568,a879d36050c088d0ce439c05a40b8741:455615407,f7821764358088d04470045a4dad2724:441150118,126983a4174088d0b287aa60c01817db:2142025834,4d4083e4e80088d0e6c1619b46094d2b:-1461467219,f6177664eccc48d0b9a716a1766e7e5a:1290088744,31307668848c48d0a1d62daad413ae11:759710159,0417e2a81f4c48d0cd1d763902ee7ce8:164377382,1bed5ea8140c48d02fcad752989e4a81:-626993882,70c49e28a2c848d0273be7aad784f38c:321841765,80abcae4758848d01f36ccd7cf74e3c5:-253446869,e6b486e8ff4848d054196f031dde8e67:-2009309557,929b352c390848d04515de3fc7b7c0a7:35531283,1b6239a838c448d05350e9333f760db1:-1250518646,d1496da8418448d0a5421d2dd4f4fde7:1717119947,6020e9e87c4448d0a2808225b1f24dcb:1141831313,26f6dd24c70448d0d99f477cf663e9f6:-401580020,08ddc9244fc048d076a5ad02ce68d4d3:1556657100,1cf60d28468048d062520cfe5bd1f339:491511564,2fcdb868784048d0878c24d5991349d3:709541773,6da47ce4b80048d0b1e5f7cd2cea2ff2:-1627188403,4b7b28289acc08d0cae3391686e21d35:-678352756,0694282cd98c08d0f96d1377fef9556d:-415412498,9e7b946c8c4c08d04d304ecc928ae5f1:-1525468083,974298e8c00c08d0d15f37b5a381135a:-1802116539,4629082cdcc808d07e148dde279b43e4:-101240823,0000086ca28808d04ff771acd468dab9:1856996297,7319f750a48808d0defaa72e668c63b6:575768131,3effebdc230808d02f119b31066ddb5b:-1907018837,78d62b10b80808d0218b63baa52f17ac:1060619756,08ff57149cc408d03d256e32a3c75b7f:1046154467,18199718238408d05043a9d906228b0d:1267815951,5cffc358734408d01593631de1af9812:-58322264,9019835c610408d00a4fdeb3e63340d3:-2132869273,5b22c350d00408d0e431bf4ac6a6be83:-1869929015,ab09b6dc3a8008d059c71429d0665db6:-2101252525,e9ef6610f58008d074ab9f705fb68790:866386068,6fb66250ef4008d0502784e605e3ce02:-677025265,b99d16dcadccc4d0ac5b367f69778f1d:-994952495,70b61e90edccc4d045d52a2d4c2d4295:-16311,c09d8ad02f8cc4d087c7cb56c71607ff:-575304945,b3a60ed4c04cc4d0e57f2950c185e408:-373687604,aa8df9181e0cc4d0c298dedbf8ca1f80:-1165058868,a864bd942fc8c4d0b3ef6781b67aca00:793178252,e37ded984b88c4d011d9dcc9ff876e06:1056118510,4ca6ed9cba48c4d01f173e075f203258:1000374447,337ddddcc808c4d05f9566e4e2d6777b:-1119082611,c39619d0ea08c4d01f90cce65c47cbba:-124146427,767dc51490c4c4d075b04d8c6e438dde:1319367885,9f960194ac84c4d0811d4d105f45cb5e:2056942665,7abf3c588f44c4d0f6f5590e06512cde:-1027005817,7596f8d44604c4d0f83e9f7afa22b808:-1818377081,39bfa8d844c0c4d01ea2bc977111c782:1280775281,9786a01cd180c4d0cc27c75e177b56ef:-1055954895,bbafdcdc5d40c4d0f5ba942a621d4c69:-318380115,d686dc103c40c4d0458b257b4e019041:-636307345,a9af8c9c5ccc84d0ad1f90c6654b3558:636034386,6986405cd38c84d024d815bdad206127:-474021199,806dfb4c684c84d0c6c0e26b57987807:-791948429,5886fb40ad4c84d06f395487f5b5ff2e:-54373649</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

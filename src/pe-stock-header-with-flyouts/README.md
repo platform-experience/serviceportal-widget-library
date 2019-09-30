@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> The stock header with added static quicklinks to help users open incidents and report bugs faster from any page on the portal.
 
 ## Screenshot
 
@@ -10,7 +10,7 @@
 
 ## Additional Information/Notes
 
-> None
+> This addition requires demo data to be installed within the instance
 
 ## Installation
 
