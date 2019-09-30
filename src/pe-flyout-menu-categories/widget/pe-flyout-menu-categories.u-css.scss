@@ -1,0 +1,98 @@
+#floating_panel{
+    position: fixed;
+    right: 0;
+    top:250px;
+    z-index:100 !important;
+  
+    > ul{ 
+      border-radius: $border-radius-small 0 0 $border-radius-small;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      width: 60px;   
+      -webkit-transition: width .5s; /* Safari */
+      transition: width .5s;
+      border-color: #3f5153;  
+      > li{
+        margin: 0;
+        padding: 0;    
+  
+        > a{
+          background: #3B9D92;
+          display: block;
+          height: 60px;
+          line-height: 30px;
+          color: #fff;
+          text-align: left;
+          font-weight: normal;   
+          padding: 12px 0 12px 12px;
+          position: relative;
+          i.sn-icon{
+            margin-left: -5px;
+            &:before {
+              font-size: 3.6rem;
+            }
+          }
+          span{
+            display: block;
+            white-space: nowrap;
+            position: absolute;
+            left: 60px;
+            top: 15px;
+            font-size: 18px;
+          }
+  
+          &:hover{          
+            background: lighten(#4a5f61,10%);      
+          }
+          &.itemSelected{
+            background: #FFFFFF;
+            i{
+              -webkit-filter: brightness(0);
+              filter: brightness(0);
+            }
+            span{
+              background: #FFFFFF !important;
+              border-color: #293E40 !important;
+              color: #293E40 !important;       
+            }
+            img{
+              -webkit-filter: brightness(0);
+              filter: brightness(0);
+            }
+          }
+        }
+      }
+    }
+    .servicePanel{
+      position: absolute;
+      top:-100px;
+      z-index:1071;
+    }
+    .panel{
+      position:absolute;
+      right:0;
+      /* min-width:440px;    */
+      display:block;   
+    }  
+    .close-btn {
+      width: 27px;
+      position: absolute;
+      right: 20px;     
+      z-index: 200; 
+      top:15px;
+    }
+  }
+  .sn-icon-close:before{
+    font-weight: 700;
+    font-size: 120%;
+  }
+  
+  
+  .panel{
+    min-width: 440px;
+  }
+  
+  
+  

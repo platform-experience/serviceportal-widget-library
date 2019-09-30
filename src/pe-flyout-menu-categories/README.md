@@ -2,7 +2,7 @@
 
 ## Description
 
-> None
+> A flyout menu that dynamically displays Categories from the Service Catalog Item.
 
 ## Screenshot
 

@@ -1,3 +1,17 @@
-<div>
-  <!-- your widget template -->
+<div id="floating_panel">
+  <ul>
+    <li data-toggle="tooltip" title="Categories" data-placement="left"  >
+      <a href="javascript:void(0)" ng-class="{'itemSelected':showSelectedPanel}" ng-click="c.showPanel('showSelectedPanel');">
+     <i class="fa fa-plus"></i>
+      </a>  
+      <div class="servicePanel" ng-hide="!showSelectedPanel">
+        <div class="close-btn pull-right" ng-click="c.closePanel('showSelectedPanel')">
+          <i class="fa fa-times"></i></div>  
+        <sp-widget widget="c.data.tab_panel"></sp-widget>
+      </div>
+    </li>
+  </ul>  
 </div>
+
+
+
