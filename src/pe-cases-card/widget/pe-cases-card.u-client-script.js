@@ -1,7 +1,5 @@
-function CaseCardsController($scope, $filter, $window, $rootScope) {
-	/* widget controller */
+function CaseCardsController() {
 	var c = this;
-
 	c.getColor = function(state) {
 		switch(state) {
 			case 'New': 
