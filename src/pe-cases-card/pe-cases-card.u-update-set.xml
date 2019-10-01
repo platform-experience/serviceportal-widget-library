@@ -914,7 +914,7 @@
 <category>customer</category>
 <comments/>
 <name>sp_widget_41c54c2d1382ff00dd4e3192e144b0c3</name>
-<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $filter, $window, $rootScope) {
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function CaseCardsController($scope, $filter, $window, $rootScope) {
 	/* widget controller */
 	var c = this;
 

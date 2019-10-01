@@ -1,4 +1,4 @@
-function($scope, $filter, $window, $rootScope) {
+function CaseCardsController($scope, $filter, $window, $rootScope) {
 	/* widget controller */
 	var c = this;
 
