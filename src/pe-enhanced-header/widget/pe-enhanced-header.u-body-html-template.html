@@ -1,3 +1,131 @@
 <div>
-  <!-- your widget template -->
+  <nav class="navbar-default csm-navbar" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
+    role="navigation">
+    
+      <!-- navbar-header -->
+      <div ng-show="::!isViewNative" class="navbar-header navbar-padding-left"
+        ng-class="::getMobileClassIfNeeded() ? 'is-mobile': ''">
+        <a class="navbar-brand-logo" ng-if="::portal.logo" href="?id={{::portal.homepage_dv}}"
+          aria-label="${Go to homepage}">
+          <img ng-src="{{::portal.logo}}" alt="{{::portal.title}}" />
+        </a>
+
+        <!-- mobile search -->
+        <div ng-show="::isMobileView()" ng-click="toggleTypeaheadSearch()" class="navbar-toggle collapsed mobile-search"><span class="fa fa-search"></span></div>
+
+        <!-- hamburger -->
+        <button ng-click="toggleNavBarClicked($event)" type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#sp-nav-bar">
+          <span class="sr-only">${Toggle navigation}</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Main Menu icons -->
+      <div class="csm-unified-secondary-menu navbar-collapse collapse" aria-expanded="true" sp-navbar-toggle=""
+        id="sp-nav-bar">
+
+        <!-- csm-navbar-clear -->
+        <div id="sp-nav-bar-global" class="navbar-global" ng-class="::getMobileClassIfNeeded() ? 'is-mobile' : ''">
+
+        <!-- Include The Menu -->
+        <div ng-show="::!isMobileView()">
+          <sp-widget widget="data.menu"></sp-widget>
+        </div>
+
+        <!-- search bar and user profile dropdown -->
+        <div class="navbar-right navbar-padding-right">
+          <ul class="nav navbar-nav navbar-login csm-align-center-vertical">
+            <li ng-show="::!isMobileView()">
+              <a>
+                <div class="header-loader" ng-if="loadingIndicator" id="community_loading_indicator">
+                  <div class="hidden-xs sp-loading-indicator la-sm">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li ng-if="::!isMobileView() && data.iscommunity && (!user.logged_in)" class="navbar-action-login">
+              <a href="javascript:void(0);" ng-click="c.openSignLogin()"
+                aria-label="{{::data.login_label}}">{{::data.login_label}}</a>
+            </li>
+            <li ng-if="::isMobileView() && data.iscommunity && (!user.logged_in)"
+              class="csm-unified-panel panel-heading navbar-action-login-mobile">
+              <h4 class="panel-title">
+                <a href="javascript:void(0);" ng-click="c.openSignLogin()"
+                  aria-label="{{::data.login_label}}">{{::data.login_label}}</a>
+              </h4>
+            </li>
+            <li ng-repeat="notification in data.notifications" ng-if="notification.scriptedItems.count > 0"
+              ng-class="{dropdown: notification.scriptedItems.items.length > 0}" class="hidden-xs">
+              <a ng-if="notification.scriptedItems.count > 0" href="javascript:void(0)" data-toggle="dropdown"
+                title="{{notification.hint}}" aria-label="{{notification.hint}}">
+                <fa ng-if="notification.glyph" name="{{::notification.glyph}}"></fa>
+                <span ng-if="!notification.scriptedItems.omitBadge"
+                  class="label label-as-badge label-primary sp-navbar-badge-count notif-badge">{{notification.scriptedItems.count}}</span>
+              </a>
+              <ul class="dropdown-menu ng-scope ng-isolate-scope">
+                <li ng-repeat="mi in notification.scriptedItems.items" ng-include="'caUnifiedDropdownTreeTemplate'"
+                  class="ng-scope dropdown-menu-line">
+              </ul>
+            </li>
+
+            <li ng-if="(!user.logged_in && isCSPPortal() && page.id != portal.login_page_dv)" class="hidden-xs">
+              <a href ng-click="openAnonymousChatPopUp()" aria-label="${Live Chat}"><i class="fa fa-comment" />
+                ${Chat}</a>
+            </li>
+            <li ng-if="!data.iscommunity && ((!user.logged_in && page.id != portal.login_page_dv) && !isMobileView())"
+              class="hidden-xs navbar-action-login">
+              <a href ng-click="openLogin()" aria-label="${Login}">${Login}</a>
+            </li>
+            <li ng-if="(user.logged_in && data.connect_support_queue_id)" class="hidden-xs">
+              <a href class="navbar-action-icon" ng-click="dynamicOpenPopUp()" id="va_chat" aria-label="${Live Chat}"
+                class="inactive-chat"><i class="fa fa-comment" /> ${Chat}</a>
+              <div ng-if="!data.isMobile" ng-show="showChat">
+                <sp-widget widget="::data.va_chat"></sp-widget>
+              </div>
+            </li>
+            <li ng-if="user.logged_in" class="dropdown hidden-xs">
+              <a href="javascript:void(0)" class="dropdown-toggle navbar-user-profile-dropdown-link"
+                data-toggle="dropdown" aria-label="{{::user.name}}" role="button">
+                <span class="visible-lg-inline">{{::user.name}}</span>
+                <span class="navbar-avatar">
+                  <sn-avatar class="avatar-small-medium" primary="userID" /></span>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu navbar-user-profile-dropdown-menu">
+                <li>
+                  <a ng-show="::isCommunityPortal() || data.isCommunityDemoDataEnabled"
+                    ng-href="?id=community_user_profile&user={{::data.liveProfileId}}"
+                    aria-label="${Community Profile}">${Community Profile}</a>
+                  <a ng-show="::!isCommunityPortal() && !data.isCommunityDemoDataEnabled"
+                    ng-href="?id={{::data.supportProfilePortal}}&user={{::userID}}"
+                    aria-label="${Support Profile}">${Profile}</a>
+                </li>
+                <li><a ng-show="::data.isCommunityEnabled"
+                    ng-href="?id=community_user_profile&user={{::data.liveProfileId}}&tab=bookmarks">${My
+                    Bookmarks}</a></li>
+                <li><a ng-show="::data.isCommunityEnabled" ng-href="?id=actsub_notif_pref"
+                    aria-label="${Notification Settings}">${Notifications and Subscriptions}</a></li>
+                <li><a href="{{::portal.logoutUrl}}" aria-label="${Logout}">${Logout}</a></li>
+              </ul>
+            </li>
+            <li ng-click="$event.stopPropagation();" class="csm-unified-panel"
+              ng-include="'pe-enhanced-header-mobile-nav-template'" role="group" tabindex="-1"></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Search popup outside nav -->
+  <div class="navbar-container head-search" ng-show="showTypeaheadSearch">
+    <sp-widget widget="data.typeahead"></sp-widget><span class="fa fa-times-thin"
+      ng-click="collapseTypeaheadSearch()"></span>
+  </div>
+  <!-- End Search popup -->
 </div>

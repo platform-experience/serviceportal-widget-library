@@ -1,0 +1,2241 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-10-01 14:54:10">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Enhanced Header</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>b054ecd7db880c109310fa56bf9619b5</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>5d3cfc24db98c0509310fa56bf9619a8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_f0bfad80db9040509310fa56bf961974</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;enhancedHeaderMenuTemplate&lt;/id&gt;&lt;sp_widget display_value="Enhanced Header Menu Widget"&gt;39b40957db4c0c109310fa56bf9619dd&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-30 05:22:39&lt;/sys_created_on&gt;&lt;sys_id&gt;f0bfad80db9040509310fa56bf961974&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;enhancedHeaderMenuTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_f0bfad80db9040509310fa56bf961974&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-10-01 14:02:29&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="::item.items.length == 0" class="unifiedMenuPrimaryMenuItem"&gt;
+  &lt;a ng-href="{{::item.href}}" target="{{::item.url_target}}" aria-label="{{::item.label}}"&gt;
+    &lt;span class="fa fa-{{::item.glyph}}"&gt;&lt;/span&gt;
+    &lt;h5 class="nav-link unifiedMenuPrimaryMenuText"&gt;{{::item.label}}&lt;/h5&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="unifiedMenuPrimaryMenuItem" ng-if="::item.items.length &gt; 0"&gt;
+  &lt;!-- &lt;a uib-popover-template="'caUnifiedMenuPopoverTemplate'" popover-trigger="outsideClick" popover-animation="false"
+    popover-is-open="item.popoverIsOpen" role="button" type="button" tabindex="0" href="javascript:void(0)"&gt; --&gt;
+  &lt;a&gt;
+    &lt;span class="fa fa-{{::item.glyph}}"&gt;&lt;/span&gt;
+    &lt;h5 class="nav-link unifiedMenuPrimaryMenuText"&gt;{{::item.label}}&lt;/h5&gt;
+  &lt;/a&gt;
+  &lt;div class="unified-menu-popover container"&gt;
+    &lt;div&gt;
+      &lt;div ng-repeat="subitem in ::item.items"&gt;
+        &lt;a class="unified-menu-popover-image" href="{{subitem.href}}"&gt;
+          &lt;img src="{{subitem.sc_cat_item_icon}}"&gt;
+        &lt;/a&gt;
+        &lt;div class="unified-menu-popover-title"&gt;
+          &lt;a href="{{subitem.href}}"&gt;{{subitem.label}}&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="unified-menu-popover-body"&gt;
+          &lt;p&gt;{{subitem.sc_cat_item_short_description}}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1821679252</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>113cfc24db98c0509310fa56bf9619ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d87a12c5f0000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>enhancedHeaderMenuTemplate</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>586078ec4118c0508c42e36e97e8bd72</update_guid>
+<update_guid_history>586078ec4118c0508c42e36e97e8bd72:-1821679252,bbcf61c0569040508f2e2b92d1903ea0:284777704</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_menu_73740557db4c0c109310fa56bf961993</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu"><sp_instance_menu action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column/><sp_widget display_value="Enhanced Header Menu Widget">39b40957db4c0c109310fa56bf9619dd</sp_widget><sys_class_name>sp_instance_menu</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-27 18:18:14</sys_created_on><sys_id>73740557db4c0c109310fa56bf961993</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Enhanced Header Menu</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_menu_73740557db4c0c109310fa56bf961993</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-09-27 19:04:09</sys_updated_on><title>Enhanced Header Menu</title><url/><widget_parameters/></sp_instance_menu><sys_translated_text action="delete_multiple" query="documentkey=73740557db4c0c109310fa56bf961993"/></record_update>]]></payload>
+<payload_hash>910596654</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>153cfc24db98c0509310fa56bf9619aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d741beab10000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Enhanced Header Menu</target_name>
+<type>Instance with Menu</type>
+<update_domain>global</update_domain>
+<update_guid>9c1fcd17688c0c109199085d5870e076</update_guid>
+<update_guid_history>9c1fcd17688c0c109199085d5870e076:910596654,55450597964c0c10c67096072dc22981:131016190,3f840157e54c0c10f02fb306b1e54675:-236084789</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_1297281fdb880c109310fa56bf961995</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="angular-truncate">09e1f1416712220023c82e08f585ef1e</sp_dependency><sp_widget display_value="Copy of CA CSM Header">4697281fdb880c109310fa56bf961992</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-27 16:11:42</sys_created_on><sys_id>1297281fdb880c109310fa56bf961995</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-truncate.Copy of CA CSM Header</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_1297281fdb880c109310fa56bf961995</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-09-27 16:11:42</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>908111762</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>193cfc24db98c0509310fa56bf9619a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d737e09d00000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>angular-truncate.Copy of CA CSM Header</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>9e97281fa3880c10e9aa8d7efbc15996</update_guid>
+<update_guid_history>9e97281fa3880c10e9aa8d7efbc15996:908111762</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rectangle_menu_item_50113c20db58c0509310fa56bf961907</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph>cog</glyph><hint/><kb_article/><kb_category/><kb_topic/><label>Menu Item 2</label><order>200</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="index">46cc384147532100ba13a5554ee49009</sp_page><sp_rectangle_menu display_value="Enhanced Header Menu">73740557db4c0c109310fa56bf961993</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-10-01 14:05:30</sys_created_on><sys_id>50113c20db58c0509310fa56bf961907</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Menu Item 2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rectangle_menu_item_50113c20db58c0509310fa56bf961907</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-10-01 14:05:30</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=50113c20db58c0509310fa56bf961907"/></record_update>]]></payload>
+<payload_hash>663282805</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>1d3cfc24db98c0509310fa56bf9619ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d87a3ec890000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Menu Item 2</target_name>
+<type>Menu Item</type>
+<update_domain>global</update_domain>
+<update_guid>90113c20d158c050a07e0c27d95dc108</update_guid>
+<update_guid_history>90113c20d158c050a07e0c27d95dc108:663282805</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_header_footer_4697281fdb880c109310fa56bf961992</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_header_footer"&gt;&lt;sp_header_footer action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($rootScope, $scope, snRecordWatcher, spUtil, $location, $uibModal, cabrillo, $timeout, enhancedHeaderMenuDeviceType, $window) {
+	var c=this;
+	$scope.userID = $scope.user.sys_id;
+	$scope.mobileNavBarToggledOnce = false;
+	$scope.showTypeaheadSearch = false;
+
+	$scope.$on('sp_loading_indicator', function(e, value) {
+		$scope.loadingIndicator = value;
+	});
+
+	$scope.$on('toggle-typeahead-search', function(e, r) {
+		$scope.toggleTypeaheadSearch();
+	});
+
+	$scope.getMobileClassIfNeeded = function() {
+		return $scope.isMobileView() ? 'is-mobile' : '';
+	};
+	
+	$(window).resize(function() {
+		handleResize();
+	});
+	
+	function handleResize(){
+	   var view = $scope.isMobileView();
+	   if( view != $scope.currentView) {
+		   if (!view) {
+			   $('.csm-unified-panel').hide();			   
+			   $('.navbar-action-search').show();
+		   }
+			else {
+			   $('.csm-unified-panel').show();			   
+			   $('.navbar-action-search').hide();
+			}
+		   $scope.currentView = !$scope.currentView;
+	   }
+	}
+	
+	var setNavBarMaxHeight = function() {		
+
+		var navBarDiv = $('#sp-nav-bar');
+		if (!navBarDiv) {
+			return;
+		}
+		
+		var navBarHeaderHeight = $('.navbar-header') ? $('.navbar-header').height() : 0;
+		var navBarMaxHeight = $(window).innerHeight() - navBarHeaderHeight;
+		
+		navBarDiv.css({'max-height': navBarMaxHeight + 'px'});			
+	};
+	
+	$(window).on('orientationchange', function(e) {
+		$timeout(function(){
+			setNavBarMaxHeight();
+		});
+	});
+	
+	$scope.toggleNavBarClicked = function(e) {
+
+		// Set the max-height on navBarDiv equal to window height 
+		// to make sure the overflow on this div can take effect
+		if (!$scope.mobileNavBarToggledOnce) {			
+			setNavBarMaxHeight();
+			$scope.mobileNavBarToggledOnce = true;			
+		}
+	};
+
+	$scope.collapseTypeaheadSearch = function(e) {
+		$scope.showTypeaheadSearch = false;	
+	};	
+	
+	$scope.expandTypeaheadSearch = function(e) {
+		$scope.showTypeaheadSearch = true;
+		$timeout(function() {
+			$('.navbar-action-search input[name="q"]').focus();
+		});
+	};		
+	
+	$scope.toggleTypeaheadSearch = function(e) {		
+		$scope.showTypeaheadSearch ? $scope.collapseTypeaheadSearch(e) : $scope.expandTypeaheadSearch(e);	
+	};	
+	
+	$('.navbar-action-search').focusout(function() {
+		$scope.collapseTypeaheadSearch();
+	});
+	
+	$rootScope.$on('$locationChangeSuccess', function(e, newUrl, oldUrl) {
+		$scope.collapseTypeaheadSearch();
+		$('.navbar-action-search input[name="q"]').val('');
+	});
+	
+// 	$rootScope.$on('sp_loading_indicator', function(e, value) {
+		
+// 		// value is true  =&gt; show loading indicator, need to hide the footer
+// 		// value is false =&gt; show loading indicator, need to show the footer
+// 		value ? $('.navbar.csm-unified-footer').hide() : $('.navbar.csm-unified-footer').show();
+// 	});	
+
+	if (cabrillo.isNative())
+		$scope.isViewNative = true;
+	
+	$scope.isMobileView = enhancedHeaderMenuDeviceType.isMobileView;
+	console.log($scope.currentView)
+	$scope.currentView = $scope.isMobileView();
+	
+	function popupCenter(url, title, w, h) {
+		// Fixes dual-screen position                         Most browsers      Firefox
+		var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+		var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+
+		var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+		var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+		var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+		var top = ((height / 2) - (h / 2)) + dualScreenTop;
+		var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+		// Puts focus on the newWindow
+		if (window.focus) {
+			newWindow.focus();
+		}
+		newWindow.onload = function() {
+			var jq = newWindow.$j;
+			console.log(jq);
+			jq('#back_cell').hide();
+			jq('#sc_attachment_button').hide();
+		};
+		return newWindow;
+	}
+	
+	$scope.openAnonymousChatPopUp = function() {
+		var url = "com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=2ee88dafdb416200f6c270f5bf9619cf&amp;sysparm_preview=true&amp;sysparm_domain_restore=false&amp;sysparm_stack=no&amp;sysparm_queue_id=3a40c019c333120071d07bfaa2d3ae17&amp;sysparm_live_agent_only="+$scope.data.live_agent_only;
+		popupCenter (url, "chat_popup", 450, 580);
+	};
+	
+	$scope.dynamicOpenPopUp = function() {
+		if (!$scope.data.isCSPPortal &amp;&amp; $scope.data.useChatWidgetForCSM) {
+			$scope.toggleChat();
+		} else {
+			$scope.openPopUp();
+		}
+	};
+		//Show VA Chat
+	var MOBILE_DEVICE_SCREEN_WIDTH = 767;
+	$scope.mobileDevice = c.data.isMobile || ($(window).width() &lt; MOBILE_DEVICE_SCREEN_WIDTH);
+	$scope.showChat = $scope.mobileDevice;
+	$scope.toggleChat = function () {
+		$scope.showChat = !$scope.showChat;
+		$('a#va_chat').toggleClass('inactive-chat active-chat');
+		if($scope.showChat &amp;&amp; $('div.conversation-region.open').length&lt;=0){
+			$scope.$$postDigest(function(){
+				$('div.conversation-button-container button.help-button').trigger('click');
+			});
+		}
+	};
+
+	$scope.openPopUp = function() {
+		var url;
+		var queue_id;
+		if ($scope.data.queueType == "connect") {
+			queue_id = $scope.data.connect_support_queue_id;
+		} 
+		if ($scope.data.isCSPPortal &amp;&amp; $scope.data.live_agent_only) {
+			url = "com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=2bd27963fc241300964fabc2fdf10ea4&amp;sysparm_preview=true&amp;sysparm_domain_restore=false&amp;sysparm_stack=no&amp;sysparm_queue_id="+queue_id;
+		} else if ($scope.data.isCSPPortal) {
+			url = "CustomerServiceChat.do?portal=csp&amp;queue_id="+queue_id+"&amp;user_id="+$scope.userID+"&amp;live_agent_only="+$scope.data.live_agent_only;
+		} else {
+			url ="CustomerServiceChat.do?portal=csm&amp;queue_id="+queue_id+"&amp;user_id="+$scope.userID+"&amp;live_agent_only="+$scope.data.live_agent_only;
+		}
+		var popup = window.open (url, "chat_popup", "width=450, height=600"); 
+	};
+	c.openSignLogin = function () {
+		$location.url('?id=community_login');
+	};
+	$scope.openLogin = function () {
+		$scope.modalInstance = $uibModal.open({
+			template: '&lt;div class="login_widget"&gt;\
+								   &lt;sp-widget widget="data.loginWidget"&gt;&lt;/sp-widget&gt;\
+								   &lt;style&gt;\
+								     .modal-content { border: 0px solid transparent; }\
+								   &lt;/style&gt;\
+								 &lt;/div&gt;',
+			scope: $scope
+		});
+	};
+	
+	$scope.isCommunityPortal = function() {
+		return $scope.data.isCommunityPortal;
+	};	
+	
+	$scope.isCSMPortal = function() {
+		return $scope.data.isCSMPortal;
+	};	
+	
+	$scope.isCSPPortal = function() {
+		return $scope.data.isCSPPortal;
+	};	
+	
+	$scope.showCommunitySupportProfile = function() {
+		return $scope.portal.url_suffix === "community" &amp;&amp; $scope.data.enableSupportProfile;
+	};
+
+	$rootScope.$on('sp.avatar_changed', function() {
+		$scope.userID = "";
+		$timeout(function(){
+			$scope.userID = $scope.user.sys_id;
+		});
+	});	
+
+	$scope.isHomepage = function() {
+		if (!$scope.page.id)
+			return true;
+
+		if ($scope.page.id == $scope.portal.homepage_dv)
+			return true;
+
+		return false;
+	};
+
+	$scope.skipToMain = function() {
+		var nextFocusableEl  = $("main.body [tabindex != '-1']:visible")[0];
+		$(nextFocusableEl).attr('tabindex', '0');
+		$timeout(function() {
+			$(nextFocusableEl).focus();
+		});
+	};
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$pe-enhanced-header-icon-color: $navbar-default-link-color !default;
+$pe-enhanced-header-icon-hover-color: $navbar-default-link-hover-color !default;
+$pe-enhanced-header-divider-color: $sp-navbar-divider-color !default;
+$pe-enhanced-header-divider-hover-color: $brand-primary !default;
+$pe-enhanced-header-menu-item-bg: $navbar-default-bg !default;
+
+// Styles for the menu widget
+.unifiedMenuPrimaryMenuItem &amp;gt; a {
+  color: $pe-enhanced-header-icon-color;
+  
+  &amp;amp;:hover, &amp;amp;:focus {
+    color: $pe-enhanced-header-icon-hover-color;
+  }
+  
+  &amp;amp;:hover::after, &amp;amp;:focus::after {
+    background-color: $pe-enhanced-header-divider-hover-color;
+  }
+}
+
+.unified-menu-popover &amp;gt; div &amp;gt; div {
+  background-color: $pe-enhanced-header-menu-item-bg;
+  
+  &amp;amp;:hover {
+    background-color: #fff;
+  }
+}
+
+.unified-menu-popover {
+  border-bottom: 5px solid $pe-enhanced-header-divider-color;
+}
+
+// Navbar
+.navbar {
+  margin-bottom: 0px;
+  border: none;
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 9px;
+  margin-bottom: 11px;
+  margin-left: 15px;
+  background-color: inherit;
+
+  position: absolute;
+  right: 0;
+  padding-top: 25px;
+}
+
+.navbar-header {
+  .skip-links {
+    position: absolute;
+    z-index: 1000;
+    padding: 6px 12px;
+    left: 0;
+  }
+}
+
+.navbar-collapse {
+  flex: auto;
+}
+
+.unified-menu-flex-container {
+  margin-bottom: -5px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+// width of searchbar/user dropdown
+@media screen and (min-width: 768px) {
+  .unified-menu-flex-container {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .unified-menu-flex-container {
+    width: 660px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .unified-menu-flex-container {
+    width: 760px;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $navbar-default-link-hover-color;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color: $navbar-default-bg;
+  border-bottom: 5px solid $pe-enhanced-header-divider-color;
+}
+
+.navbar-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    padding-left: calc(50vw - 375px);
+    padding-right: calc(50vw - 375px);
+  }
+
+  .navbar-padding-left {
+    padding-left: calc(50vw - 375px);
+  }
+
+  .navbar-padding-right {
+    padding-right: calc(50vw - 375px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-container {
+    padding-left: calc(50vw - 485px);
+    padding-right: calc(50vw - 485px);
+  }
+
+  .navbar-padding-left {
+    padding-left: calc(50vw - 485px);
+  }
+
+  .navbar-padding-right {
+    padding-right: calc(50vw - 485px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-container {
+    padding-left: calc(50vw - 585px);
+    padding-right: calc(50vw - 585px);
+  }
+
+  .navbar-padding-left {
+    padding-left: calc(50vw - 585px);
+  }
+
+  .navbar-padding-right {
+    padding-right: calc(50vw - 585px);
+  }
+}
+
+
+header[role="banner"],
+.nav&amp;gt;li&amp;gt;a {
+  max-height: 60px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav&amp;gt;li&amp;gt;a {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+// top icon logo
+.navbar-brand {
+  height: 40px;
+  padding: 0;
+}
+
+.navbar-brand img,
+.navbar-brand span {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: block;
+  max-height: 36px;
+  position: relative;
+  top: 50%;
+  color: $navbar-default-link-color;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// second logo
+.navbar-brand-logo &amp;gt; img {
+  margin-top: $sp-logo-margin-y;
+  margin-bottom: $sp-logo-margin-y;
+
+  max-height: 70px;
+  max-width: 200px;
+  max-height: $sp-logo-max-height;
+  max-width: $sp-logo-max-width;
+
+  // commented out because it messes with the calculation for menu icons
+  //margin-left: $sp-logo-margin-x;
+  //margin-right: $sp-logo-margin-x;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand-logo &amp;gt; img {
+    margin-left: $sp-logo-margin-x;
+    margin-right: $sp-logo-margin-x;
+  }
+}
+
+.breadcrumb-container {
+  background-color: $panel-bg;
+}
+
+.navbar-header.is-mobile {
+  margin-top: 2px;
+}
+
+.navbar-header.is-mobile .navbar-action-search {
+  display: table;
+}
+
+.navbar-header.is-mobile .navbar-action-search {
+  margin-top: 8px;
+}
+
+.navbar-global.is-mobile .navbar-nav {
+  display: block;
+}
+
+.navbar-action-icon {
+  padding-right: 10px;
+  color: $navbar-default-link-color;
+}
+
+.navbar-action-login {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-action-login-mobile {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  h4 {
+    font-size: 18px;
+    font-weight: normal;
+    color: $navbar-default-link-color;
+    width: 100%
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.navbar-nav&amp;gt;li&amp;gt;a.navbar-user-profile-dropdown-link,
+.navbar-action-icon {
+  color: $navbar-default-link-color;
+  
+  &amp;amp;:hover {
+    color: $navbar-default-link-hover-color !important;
+  }
+}
+
+.navbar-nav &amp;gt; li.open &amp;gt; a.navbar-user-profile-dropdown-link {
+  color: $navbar-default-link-hover-color !important;
+}
+
+.navbar-nav &amp;gt; li &amp;gt; a {
+  color: $navbar-default-link-color;
+}
+
+.navbar-global .navbar-action-search {
+  display: table;
+
+  .input-group {
+    padding-bottom: 0px;
+
+    input[name="q"] {
+      width: 270px;
+      border-color: $text-muted;
+      border-radius: 3px;
+      float: right;
+      color: $text-color;
+    }
+
+    ul.dropdown-menu {
+      min-width: 110%;
+
+      a.ta-item {
+        line-height: 20px;
+        font-size: 14px;
+        white-space: normal;
+
+        i.ta-icon,
+        span {
+          display: table-cell;
+        }
+
+        span {
+          vertical-align: top;
+        }
+      }
+    }
+
+    span.input-group-btn {
+      float: left;
+
+      button {
+        background-color: inherit;
+        border: none;
+        color: inherit;
+        outline: none;
+        margin-right: 10px;
+        padding-top: 8px;
+      }
+    }
+  }
+}
+
+/* for mobile app */
+.navbar-default.is-native {
+  background-color: #405060;
+}
+
+.navbar-collapse {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.navbar-top, .navbar-top + .clearfix {
+  background-color: $brand-primary;
+}
+
+.navbar-collapse.collapsing &amp;gt; .navbar-header, .navbar-collapse.in &amp;gt; .navbar-header {
+  border-bottom-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-header {
+    border-bottom: 5px solid $sp-navbar-divider-color;
+    background-color: $csm-secondary-header-bg;
+    height: 88px;
+
+    display: flex;
+    flex-wrap: nowrap;  
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .navbar-login {
+    max-width: 250px;
+  }
+}
+
+.navbar-global ul.dropdown-menu {
+  border-color: $csm-navbar-global-user-profile-dropdown-border;
+  padding: 10px 0;
+  padding-right: 0px;
+  box-shadow: none;
+}
+
+.navbar-global .navbar-user-profile-dropdown-menu a {
+  line-height: 23px;
+  color: $link-color;
+}
+
+.navbar-primary ul {
+  padding-left: $sp-logo-margin-x;
+  line-height: 16px;
+}
+
+.navbar-primary ul.dropdown-menu {
+  margin-top: 8px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+}
+
+.navbar-primary .navbar-left&amp;gt;ul.navbar-nav&amp;gt;li:first-of-type&amp;gt;a {
+  padding-left: 0px;
+}
+
+.navbar-default .navbar-nav&amp;gt;.open&amp;gt;a,
+.navbar-default .navbar-nav&amp;gt;.open&amp;gt;a:hover,
+.navbar-default .navbar-nav&amp;gt;.open&amp;gt;a:focus {
+  background-color: inherit;
+}
+
+.nav-bar-separator-pipe {
+  margin-top: 10px;
+  height: 30px;
+  border: 1px solid #979797;
+}
+
+.csm-nav-bar-separator-pipe {
+  border-color: $csm-navbar-separator-color;
+}
+
+.navbar-nav&amp;gt;li&amp;gt;a.navbar-user-profile-dropdown-link {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.navbar-nav&amp;gt;li&amp;gt;a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-global.is-mobile .navbar-nav {
+  margin: 0px;
+}
+
+.navbar-global.is-mobile .panel-heading,
+.csm-unified-mobile-menu .panel-heading,
+.navbar-global.is-mobile .navbar-nav&amp;gt;li&amp;gt;a,
+.navbar-global.is-mobile .csm-unified-panel .panel-body&amp;gt;div,
+.unified-mobile-header-menu-level3 .panel-body&amp;gt;div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-global.is-mobile .panel-body,
+.csm-unified-mobile-menu .panel-body {
+  background-color: $panel-bg;
+  color: $text-color;
+  padding: 0px;
+}
+
+.navbar-global.is-mobile .panel-group .panel-heading+.panel-collapse&amp;gt;.panel-body,
+.csm-unified-mobile-menu .panel-group .panel-heading+.panel-collapse&amp;gt;.panel-body {
+  border: none;
+}
+
+.navbar-global.is-mobile .panel-body,
+.csm-unified-mobile-menu .panel-body {
+  color: $navbar-default-link-color;
+}
+
+.unified-mobile-header-menu-level1-link a {
+  color: $navbar-default-link-color;
+}
+
+.navbar-global.is-mobile .panel-group .panel+.panel {
+  margin-top: 0px;
+}
+
+.active-chat {
+  color: $color-lightest !important;
+}
+
+.inactive-chat {
+  color: $color-light !important;
+}
+
+.link-align {
+  text-align: center;
+  margin: 0 auto;
+  border-top: 1px solid #E6E8EA;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  padding-bottom: 10px;
+}
+
+.notif-badge {
+  position: absolute;
+  top: -3px;
+  right: 10px;
+  font-size: 60%;
+}
+
+.dropdown-menu-line {
+  min-width: 20em;
+}
+
+.dropdown-menu&amp;gt;li&amp;gt;a {
+  white-space: nowrap;
+  padding: 6px 20px;
+  color: $link-color;
+}
+
+.dropdown-menu&amp;gt;li&amp;gt;a:hover,
+.dropdown-menu&amp;gt;li&amp;gt;a:focus {
+  text-decoration: underline;
+  background-color: inherit;
+  color: darken($link-color, 15%);
+}
+
+.navbar-primary.navbar-align-content {
+  justify-content: space-between;
+}
+
+.head-search {
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #d6d6d6;
+  width: 100%;
+
+  .input-group {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    display: block;
+    font-size: 18px;
+    border-radius: 0;
+    border: 3px solid transparent;
+    padding: 0 10px;
+    
+
+    &amp;amp;:focus {
+      z-index: 2;
+    }
+
+  }
+
+  .input-group-btn &amp;gt; button {
+    height: 50px;
+    margin-left: -45px;
+    border: none;
+    background: transparent;
+  }
+
+  .input-group-btn &amp;gt; button &amp;gt; i {
+    font-size: 24px;
+    color: $navbar-default-link-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .head-search {
+    padding: 10px 0 10px 10px;
+  }
+}
+
+.head-search &amp;gt; div {
+  flex: auto;
+}
+
+.head-search &amp;gt; span {
+  margin: auto 10px;
+  color: $navbar-default-link-color;
+  font-size: 32px;
+  flex: 0 0 32px;
+  align-self: center;
+}
+
+.mobile-search {
+  right: 50px !important;
+  font-size: 20px;
+  color: $navbar-default-link-hover-color;
+}
+
+.fa-times-thin:before {
+	content: '\00d7';
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-enhanced-header&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function(scope, element) {	
+	$(element).on('click.nav','.navbar-collapse.in',function(e) {	
+		var target = $(e.target);
+		if (target.is('a')) {
+			// collapse mobile nav if clicked an anchor
+			$(this).removeClass('in').addClass('collapse');
+			return;
+		}
+		
+		// if neither target nor parent is an anchor, do nothing
+		if (!target.parent().is('a'))
+			return;
+		
+		// collapse mobile nav if target is part of a submenu
+		if (target.parents("ul.dropdown-menu").length &gt; 0)
+			$(this).removeClass('in').addClass('collapse');
+	});
+}]]&gt;&lt;/link&gt;&lt;name&gt;Enhanced Header&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[// Defines the support queue ID that will be linked to by the Live Chat link in header
+data.url_suffix = $sp.getValue('url_suffix');  
+if(data.url_suffix=="community"){
+	data.iscommunity=true;
+	data.show_signup=GlidePluginManager.isActive('com.sn_customer_communities');
+	if(data.show_signup)
+		data.login_label=gs.getMessage("Sign up/Login");
+	else
+		data.login_label=gs.getMessage("Login");
+}
+data.isMobile = gs.isMobile();
+data.connect_support_queue_id = $sp.getValue('sp_chat_queue');
+data.login_page = $sp.getValue('login_page');
+
+var menu = $sp.getValue("sp_rectangle_menu");
+data.menu = $sp.getWidgetFromInstance(menu);
+
+// Load the Secondary Menu Widget
+var qsConfig = $sp.getValue("quick_start_config");
+var qsConfigJson = qsConfig ? JSON.parse(qsConfig)[0] : {};
+var secondaryMenuInstance = qsConfigJson.secondaryMenu ? qsConfigJson.secondaryMenu.sys_id : '';
+data.secondaryMenu = $sp.getWidgetFromInstance(secondaryMenuInstance);
+data.isCommunityPortal = qsConfigJson.isCommunityPortal;
+data.isCSPPortal = qsConfigJson.isCSPPortal;
+data.isCSMPortal = qsConfigJson.isCSMPortal;
+
+data.isVAActive = false;
+data.queueType = "connect";
+var liveAgent = new GlideRecord("sys_cs_live_agent_setup");
+if (liveAgent.isValid()) {
+	liveAgent.query();
+	if (liveAgent.next()) {
+	data.queueType = liveAgent.getValue("csm_fulfiller");
+	}
+}
+data.isVAActive = GlidePluginManager.isActive('com.glide.cs.chatbot');
+
+// changes data.live_agent_only to true to allow only live agent
+data.live_agent_only = false;
+if (!data.live_agent_only) {
+	data.live_agent_only = !data.isVAActive;
+}
+
+data.useChatWidgetForCSM = false;
+var chatW = new GlideRecord("sp_widget");
+chatW.addQuery("id", "sn-va-sp-widget");
+chatW.query();
+if (chatW.next()){
+	data.useChatWidgetForCSM = true;
+	var contactUrl = "";
+	var accountUrl = "";
+	var cc = new GlideRecord('customer_contact');
+	cc.addQuery("sys_id", gs.getUserID());
+	cc.query();
+	if (cc.next()) {
+		contactUrl = "&amp;sysparm_liveagent_interaction_contact=" + cc.getUniqueValue();
+		accountUrl = "&amp;sysparm_liveagent_interaction_account=" + cc.getValue("account");
+	}
+	var liveAgentUrl = data.live_agent_only ? "&amp;sysparm_live_agent_only=true":"";
+	var csmQueue;
+	if (data.queueType == 'connect') {
+		csmQueue = data.connect_support_queue_id;
+	} 
+		
+	var portal = "";
+	if(data.isCSPPortal == true){
+		portal = "csp";
+	} else{
+		portal = "csm";
+	}
+	
+	var va_parms = "sysparm_portal="+portal+"&amp;sysparm_liveagent_application=csm&amp;sysparm_liveagent_queue="+csmQueue+contactUrl+accountUrl+liveAgentUrl;
+	
+	data.va_chat = $sp.getWidget('sn-va-sp-widget',{
+		va_url_params:va_parms
+	});
+}
+var liveProfileGR = new GlideRecord("live_profile");
+liveProfileGR.addQuery("document",gs.getUser().getID());
+liveProfileGR.query();
+
+data.liveProfileId = "";
+
+if (liveProfileGR.next()) {
+	data.liveProfileId = liveProfileGR.getUniqueValue();
+}
+if (data.menu &amp;&amp; data.menu.data) {
+	data.menu.data.replace = true;
+	// Hide login if menu already has link to login
+	data.hasLogin = false;
+	if (data.menu.data.menu.items) {
+		var notifications = [];
+		for(var i in data.menu.data.menu.items) {
+			var item = data.menu.data.menu.items[i];
+			if (item.type == 'page' &amp;&amp; item.sp_page == data.login_page)
+				data.hasLogin = true;
+			if(item.type == 'scripted')
+				notifications.push(item);
+		}
+		data.notifications = notifications;
+	}
+}
+
+// Determine if Support profile should be enabled
+// This is needed to correctly configure the "Support profile" link in the dropdown
+// Show the Support profile only if the logged in user has customer/consumer roles and sys_user_class
+// The sys_user_class check is for Systme Admin so that system admin does not see the Support Profile link
+data.enableSupportProfile = false;
+data.enableCommProfile = false;
+data.supportProfilePortal = "";
+data.supportPortalPrefix = "";
+data.hasConsumerRole = gs.getUser().hasRole('sn_customerservice.consumer');
+data.hasCustomerRole = gs.getUser().hasRole('sn_customerservice.customer');
+data.isCommunityEnabled = GlidePluginManager().isActive('com.sn_communities');
+data.isCommunityDemoDataEnabled = GlidePluginManager().isActive('com.sn_communities_demo');
+var CSM_CONSUMER_USER = 'csm_consumer_user';
+var CSM_CONTACT_USER = 'customer_contact';
+var csp_profile = 'csp_profile';
+var csm_profile = 'csm_profile';
+var default_profile = 'user_profile';
+
+var sysUserGR = new GlideRecord("sys_user");
+if (sysUserGR.get(gs.getUser().getID())) {
+	data.userClass = sysUserGR.getValue("sys_class_name");
+}
+
+if ((GlidePluginManager().isActive('com.glide.service-portal.consumer-portal') ||
+     GlidePluginManager().isActive('com.glide.service-portal.customer-portal')) &amp;&amp; ( (data.hasConsumerRole &amp;&amp; data.userClass == CSM_CONSUMER_USER) || (data.hasCustomerRole &amp;&amp; data.userClass == CSM_CONTACT_USER))) {
+    data.enableSupportProfile = true;
+}
+
+if ((GlidePluginManager().isActive('com.sn_communities')) &amp;&amp; ((data.hasConsumerRole &amp;&amp; data.userClass == CSM_CONSUMER_USER) || (data.hasCustomerRole &amp;&amp; data.userClass == CSM_CONTACT_USER))) {
+    data.enableCommProfile = true;
+}
+
+if (data.hasConsumerRole &amp;&amp; data.userClass == CSM_CONSUMER_USER) {
+    data.supportProfilePortal = csp_profile;
+	data.supportPortalPrefix = "csp";
+	
+} else if (data.hasCustomerRole &amp;&amp; data.userClass == CSM_CONTACT_USER) {
+    data.supportProfilePortal = csm_profile;
+	data.supportPortalPrefix = "csm";
+} else {
+	data.supportProfilePortal = default_profile;
+	data.supportPortalPrefix = "csm";
+}
+data.optionsSearch = "{title: 'Search All Sources', limit: 10}";
+data.loginWidget = $sp.getWidgetFromInstance('login-modal-unified');
+data.typeahead = $sp.getWidget('typeahead-search', data.optionsSearch);]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_header_footer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-27 16:11:42&lt;/sys_created_on&gt;&lt;sys_id&gt;4697281fdb880c109310fa56bf961992&lt;/sys_id&gt;&lt;sys_mod_count&gt;28&lt;/sys_mod_count&gt;&lt;sys_name&gt;Enhanced Header&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_header_footer_4697281fdb880c109310fa56bf961992&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-10-01 14:37:50&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;nav class="navbar-default csm-navbar" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
+    role="navigation"&gt;
+    
+      &lt;!-- navbar-header --&gt;
+      &lt;div ng-show="::!isViewNative" class="navbar-header navbar-padding-left"
+        ng-class="::getMobileClassIfNeeded() ? 'is-mobile': ''"&gt;
+        &lt;a class="navbar-brand-logo" ng-if="::portal.logo" href="?id={{::portal.homepage_dv}}"
+          aria-label="${Go to homepage}"&gt;
+          &lt;img ng-src="{{::portal.logo}}" alt="{{::portal.title}}" /&gt;
+        &lt;/a&gt;
+
+        &lt;!-- mobile search --&gt;
+        &lt;div ng-show="::isMobileView()" ng-click="toggleTypeaheadSearch()" class="navbar-toggle collapsed mobile-search"&gt;&lt;span class="fa fa-search"&gt;&lt;/span&gt;&lt;/div&gt;
+
+        &lt;!-- hamburger --&gt;
+        &lt;button ng-click="toggleNavBarClicked($event)" type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#sp-nav-bar"&gt;
+          &lt;span class="sr-only"&gt;${Toggle navigation}&lt;/span&gt;
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Main Menu icons --&gt;
+      &lt;div class="csm-unified-secondary-menu navbar-collapse collapse" aria-expanded="true" sp-navbar-toggle=""
+        id="sp-nav-bar"&gt;
+
+        &lt;!-- csm-navbar-clear --&gt;
+        &lt;div id="sp-nav-bar-global" class="navbar-global" ng-class="::getMobileClassIfNeeded() ? 'is-mobile' : ''"&gt;
+
+        &lt;!-- Include The Menu --&gt;
+        &lt;div ng-show="::!isMobileView()"&gt;
+          &lt;sp-widget widget="data.menu"&gt;&lt;/sp-widget&gt;
+        &lt;/div&gt;
+
+        &lt;!-- search bar and user profile dropdown --&gt;
+        &lt;div class="navbar-right navbar-padding-right"&gt;
+          &lt;ul class="nav navbar-nav navbar-login csm-align-center-vertical"&gt;
+            &lt;li ng-show="::!isMobileView()"&gt;
+              &lt;a&gt;
+                &lt;div class="header-loader" ng-if="loadingIndicator" id="community_loading_indicator"&gt;
+                  &lt;div class="hidden-xs sp-loading-indicator la-sm"&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li ng-if="::!isMobileView() &amp;&amp; data.iscommunity &amp;&amp; (!user.logged_in)" class="navbar-action-login"&gt;
+              &lt;a href="javascript:void(0);" ng-click="c.openSignLogin()"
+                aria-label="{{::data.login_label}}"&gt;{{::data.login_label}}&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li ng-if="::isMobileView() &amp;&amp; data.iscommunity &amp;&amp; (!user.logged_in)"
+              class="csm-unified-panel panel-heading navbar-action-login-mobile"&gt;
+              &lt;h4 class="panel-title"&gt;
+                &lt;a href="javascript:void(0);" ng-click="c.openSignLogin()"
+                  aria-label="{{::data.login_label}}"&gt;{{::data.login_label}}&lt;/a&gt;
+              &lt;/h4&gt;
+            &lt;/li&gt;
+            &lt;li ng-repeat="notification in data.notifications" ng-if="notification.scriptedItems.count &gt; 0"
+              ng-class="{dropdown: notification.scriptedItems.items.length &gt; 0}" class="hidden-xs"&gt;
+              &lt;a ng-if="notification.scriptedItems.count &gt; 0" href="javascript:void(0)" data-toggle="dropdown"
+                title="{{notification.hint}}" aria-label="{{notification.hint}}"&gt;
+                &lt;fa ng-if="notification.glyph" name="{{::notification.glyph}}"&gt;&lt;/fa&gt;
+                &lt;span ng-if="!notification.scriptedItems.omitBadge"
+                  class="label label-as-badge label-primary sp-navbar-badge-count notif-badge"&gt;{{notification.scriptedItems.count}}&lt;/span&gt;
+              &lt;/a&gt;
+              &lt;ul class="dropdown-menu ng-scope ng-isolate-scope"&gt;
+                &lt;li ng-repeat="mi in notification.scriptedItems.items" ng-include="'caUnifiedDropdownTreeTemplate'"
+                  class="ng-scope dropdown-menu-line"&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+
+            &lt;li ng-if="(!user.logged_in &amp;&amp; isCSPPortal() &amp;&amp; page.id != portal.login_page_dv)" class="hidden-xs"&gt;
+              &lt;a href ng-click="openAnonymousChatPopUp()" aria-label="${Live Chat}"&gt;&lt;i class="fa fa-comment" /&gt;
+                ${Chat}&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li ng-if="!data.iscommunity &amp;&amp; ((!user.logged_in &amp;&amp; page.id != portal.login_page_dv) &amp;&amp; !isMobileView())"
+              class="hidden-xs navbar-action-login"&gt;
+              &lt;a href ng-click="openLogin()" aria-label="${Login}"&gt;${Login}&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li ng-if="(user.logged_in &amp;&amp; data.connect_support_queue_id)" class="hidden-xs"&gt;
+              &lt;a href class="navbar-action-icon" ng-click="dynamicOpenPopUp()" id="va_chat" aria-label="${Live Chat}"
+                class="inactive-chat"&gt;&lt;i class="fa fa-comment" /&gt; ${Chat}&lt;/a&gt;
+              &lt;div ng-if="!data.isMobile" ng-show="showChat"&gt;
+                &lt;sp-widget widget="::data.va_chat"&gt;&lt;/sp-widget&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li ng-if="user.logged_in" class="dropdown hidden-xs"&gt;
+              &lt;a href="javascript:void(0)" class="dropdown-toggle navbar-user-profile-dropdown-link"
+                data-toggle="dropdown" aria-label="{{::user.name}}" role="button"&gt;
+                &lt;span class="visible-lg-inline"&gt;{{::user.name}}&lt;/span&gt;
+                &lt;span class="navbar-avatar"&gt;
+                  &lt;sn-avatar class="avatar-small-medium" primary="userID" /&gt;&lt;/span&gt;
+                &lt;span class="caret"&gt;&lt;/span&gt;
+              &lt;/a&gt;
+              &lt;ul class="dropdown-menu navbar-user-profile-dropdown-menu"&gt;
+                &lt;li&gt;
+                  &lt;a ng-show="::isCommunityPortal() || data.isCommunityDemoDataEnabled"
+                    ng-href="?id=community_user_profile&amp;user={{::data.liveProfileId}}"
+                    aria-label="${Community Profile}"&gt;${Community Profile}&lt;/a&gt;
+                  &lt;a ng-show="::!isCommunityPortal() &amp;&amp; !data.isCommunityDemoDataEnabled"
+                    ng-href="?id={{::data.supportProfilePortal}}&amp;user={{::userID}}"
+                    aria-label="${Support Profile}"&gt;${Profile}&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a ng-show="::data.isCommunityEnabled"
+                    ng-href="?id=community_user_profile&amp;user={{::data.liveProfileId}}&amp;tab=bookmarks"&gt;${My
+                    Bookmarks}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a ng-show="::data.isCommunityEnabled" ng-href="?id=actsub_notif_pref"
+                    aria-label="${Notification Settings}"&gt;${Notifications and Subscriptions}&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="{{::portal.logoutUrl}}" aria-label="${Logout}"&gt;${Logout}&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li ng-click="$event.stopPropagation();" class="csm-unified-panel"
+              ng-include="'pe-enhanced-header-mobile-nav-template'" role="group" tabindex="-1"&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+  &lt;!-- Search popup outside nav --&gt;
+  &lt;div class="navbar-container head-search" ng-show="showTypeaheadSearch"&gt;
+    &lt;sp-widget widget="data.typeahead"&gt;&lt;/sp-widget&gt;&lt;span class="fa fa-times-thin"
+      ng-click="collapseTypeaheadSearch()"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;!-- End Search popup --&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_header_footer&gt;&lt;/record_update&gt;</payload>
+<payload_hash>366686923</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>513cfc24db98c0509310fa56bf9619aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d87c187390000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Enhanced Header</target_name>
+<type>Header | Footer</type>
+<update_domain>global</update_domain>
+<update_guid>8278f46c5f58c0501bc2b6b7cf0b121d</update_guid>
+<update_guid_history>8278f46c5f58c0501bc2b6b7cf0b121d:366686923,3b36f4a86258c0509ba0e27f84eefc0b:2028183566,7b75b8686558c050aec39fbf900578a7:1272181067,a30530689f58c050b92cf675d8f26d2f:-335075046,de05fc281e58c050ef5aa91008558653:-1456451856,34147ce4fd58c050f02cd0e0b248371e:19845221,f8937ca43d58c050e128ff1cbb8dd529:2083573695,506338a41d58c050285b795923ff9dc7:-852820999,5ec2f4645658c050974e5c9423b16541:1301326488,e72274a0b158c050bb336cd5b6e265f3:684293983,e8e1f8607e58c050d2680ba6c9774dca:1080487990,a2fe20ac7418c05045f2174ebd4a1744:-1082637735,e5deec6c7618c0508ca5a97fd8a7c642:1488567634,76ace068e218c050d96c00bf66cb6cb8:344059115,384c6c281218c0508c77f184c774e09b:-1849324326,c2ab20288118c050675b501a66b13976:1499249018,ac548d177d4c0c1095f9f42dd184ed94:-225385131,18448d17b14c0c10a29ed78d9bb81767:-1622365424,a6048517544c0c101dffde78cb368040:1268074553,029305d38d4c0c1015e33220b307923d:429861481,9890c113364c0c109ee5b4ca4cb8b7d8:818892726,6fcff89fd60c0c101ee51682eecf86a7:-1282630065,699f74df850c0c1004cd316ed1a45e1a:2088898385,d5fef09f6f0c0c10154b23f0359dc425:-1688105453,c7ad305ffe0c0c103244201263fdecb7:-1817651837,544d381f410c0c103daaa99fdf193c81:982307194,c7eb3c1bab0c0c101d27459cc204e0b1:1902569967,748ea8d33ac80c10b92f454b3488f801:2024476096,4297281f8f880c10f418a90aaebe7c94:1575011247</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_b32ea06cdb18c0509310fa56bf961973</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="enhancedHeaderMenuDeviceType">c5763d88db9040509310fa56bf96193b</sp_angular_provider><sp_widget display_value="Enhanced Header">4697281fdb880c109310fa56bf961992</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-10-01 13:52:53</sys_created_on><sys_id>b32ea06cdb18c0509310fa56bf961973</sys_id><sys_mod_count>0</sys_mod_count><sys_name>enhancedHeaderMenuDeviceType.Enhanced Header</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_b32ea06cdb18c0509310fa56bf961973</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-10-01 13:52:53</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>-60534948</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>553cfc24db98c0509310fa56bf9619a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d879861c50000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>enhancedHeaderMenuDeviceType.Enhanced Header</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>3f2ea06c7618c05072ead2feadbd7c74</update_guid>
+<update_guid_history>3f2ea06c7618c05072ead2feadbd7c74:-60534948</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_39b40957db4c0c109310fa56bf9619dd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, spUtil, $rootScope, $timeout, enhancedHeaderMenuDeviceType) {
+	var c = this;
+
+	$scope.isMobileView = enhancedHeaderMenuDeviceType.isMobileView;
+	$scope.maxPopoverCols = 5;
+	
+	c.toggleTypeaheadSearch = function() {
+	    $rootScope.$broadcast('toggle-typeahead-search');
+	}
+
+	$(".csm-unified-float-right").click(function() {
+		$(this).toggleClass("down"); 
+	});
+
+/*			
+	// Get list of record watchers
+	var record_watchers = [];
+	if ($scope.data.menu.items) {
+		for(var i in $scope.data.menu.items) {
+			var item = $scope.data.menu.items[i];
+			if (item.type == 'scripted') {
+				if (item.scriptedItems.record_watchers)
+					record_watchers = record_watchers.concat(item.scriptedItems.record_watchers);
+			}
+			if (item.type == 'filtered') {
+				record_watchers.push({'table':item.table,'filter':item.filter});
+			}
+		}
+	}
+
+	// Init record watchers
+	for (var y in record_watchers){
+		var watcher = record_watchers[y];
+		spUtil.recordWatch($scope, watcher.table, watcher.filter);
+	}
+*/	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.unified-menu-popover {&amp;#13;
+  &amp;#13;
+  background-color: #fff;&amp;#13;
+  border-left: 1px solid #d6d6d6;&amp;#13;
+  border-right: 1px solid #d6d6d6;&amp;#13;
+  //border-bottom: 5px solid #046B99;&amp;#13;
+  &amp;#13;
+  position: absolute;&amp;#13;
+  left: 50%;&amp;#13;
+  transform: translateX(-50%);&amp;#13;
+  z-index: 1000;&amp;#13;
+&amp;#13;
+  padding: 0;&amp;#13;
+&amp;#13;
+  visibility: hidden;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-popover &amp;gt; div {&amp;#13;
+  display: grid;&amp;#13;
+  grid-template-columns: auto auto;&amp;#13;
+&amp;#13;
+  text-align: left;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-popover &amp;gt; div &amp;gt; div {&amp;#13;
+  border: 3px solid #fff;&amp;#13;
+  padding: 15px;&amp;#13;
+&amp;#13;
+  //background: #F5F9FB;&amp;#13;
+  &amp;amp;:hover {&amp;#13;
+    //background-color: #fff;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-popover-image {&amp;#13;
+  float: left;&amp;#13;
+  margin-right: 10px;&amp;#13;
+&amp;#13;
+  img {&amp;#13;
+    max-height: 70px;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-popover-title {&amp;#13;
+  margin: 10px;&amp;#13;
+  font-size: 18px;&amp;#13;
+&amp;#13;
+  a {&amp;#13;
+    color: $navbar-default-link-hover-color;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  a:hover {&amp;#13;
+    text-decoration: underline;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-popover-body {&amp;#13;
+  margin: 10px;&amp;#13;
+  color: $navbar-default-link-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-popover &amp;gt; div &amp;gt; div &amp;gt; a &amp;gt; img {&amp;#13;
+  height: 77px;&amp;#13;
+  float: left;&amp;#13;
+  margin-right: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem &amp;gt; a:hover {&amp;#13;
+  &amp;amp; + .unified-menu-popover {&amp;#13;
+    visibility: visible;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-popover:hover {&amp;#13;
+  visibility: visible;&amp;#13;
+  background-color: #F5F9FB;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-flex-container {&amp;#13;
+  display: flex;&amp;#13;
+  flex-wrap: nowrap;&amp;#13;
+  justify-content: space-around;&amp;#13;
+  align-items: center;&amp;#13;
+  align-content: center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unified-menu-list-item {&amp;#13;
+  flex: 1 1 auto;&amp;#13;
+  //background-color: #FFCCCC;&amp;#13;
+  position: unset;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem {&amp;#13;
+  color: $navbar-default-link-color;&amp;#13;
+  text-align: center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem &amp;gt; a {&amp;#13;
+  padding: 25px 0 0;&amp;#13;
+  min-height: 50px;&amp;#13;
+  display: block;&amp;#13;
+  &amp;#13;
+  //color: $pe-enhanced-header-icon-color;&amp;#13;
+  &amp;#13;
+  &amp;amp;:hover, &amp;amp;:focus {&amp;#13;
+    //color: $pe-enhanced-header-icon-hover-color;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem &amp;gt; a &amp;gt; span.fa {&amp;#13;
+  font-size: 32px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem &amp;gt; a::after {&amp;#13;
+  background-color: transparent;&amp;#13;
+  content: " ";&amp;#13;
+  height: 5px;&amp;#13;
+  width: 100%;&amp;#13;
+  display: block;&amp;#13;
+&amp;#13;
+  &amp;amp;:hover::after, &amp;amp;:focus::after {&amp;#13;
+    //background-color: $brand-primary;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuText {&amp;#13;
+  color: $navbar-default-link-color;&amp;#13;
+  font-weight: 400;&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem:focus, .unifiedMenuPrimaryMenuItem:hover {&amp;#13;
+  color: $navbar-default-link-hover-color;&amp;#13;
+  text-decoration: none;&amp;#13;
+  &amp;#13;
+  .unifiedMenuPrimaryMenuText {&amp;#13;
+    color: $navbar-default-link-hover-color;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+&amp;#13;
+&amp;#13;
+/* popover */&amp;#13;
+.unifiedMenuPrimaryMenuItem .popover &amp;gt; .arrow {&amp;#13;
+  display: none;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.unifiedMenuPrimaryMenuItem .popover &amp;gt; .arrow:after {&amp;#13;
+  //	border-bottom-color: $csm-navbar-popover-background-color;&amp;#13;
+  border-bottom-color: $panel-bg;&amp;#13;
+}&amp;#13;
+.unifiedMenuPrimaryMenuItem .popover {&amp;#13;
+  //box-shadow: 0 2px 4px 0 $csm-navbar-popover-box-shadow-color;&amp;#13;
+  font-family: inherit;&amp;#13;
+  &amp;#13;
+  margin-top: 0 !important;&amp;#13;
+  &amp;#13;
+  top: 92px !important;&amp;#13;
+  &amp;#13;
+  border-radius: 0;&amp;#13;
+  &amp;#13;
+  border-bottom: 5px solid #046B99;&amp;#13;
+  border-left: 1px solid #d6d6d6;&amp;#13;
+  border-right: 1px solid #d6d6d6;&amp;#13;
+  &amp;#13;
+  // background-color: $csm-navbar-popover-background-color;&amp;#13;
+  background: #F5F9FB;&amp;#13;
+&amp;#13;
+  .popoverText {&amp;#13;
+    //	color: $csm-navbar-popover-text-color;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .popover-separator-line {&amp;#13;
+    border-bottom: 1px solid $text-muted;&amp;#13;
+    padding-bottom: 7px;&amp;#13;
+    width: 125%&amp;#13;
+      margin-bottom: 10px;&amp;#13;
+    border-color: #E6E8EA;&amp;#13;
+    min-width: 100px;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .popoverHeader h5 {&amp;#13;
+    margin-top: 0px;&amp;#13;
+    margin-bottom: 0px;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .popoverCsmHeader {&amp;#13;
+    color: $text-color;&amp;#13;
+    // color: $csm-navbar-popover-separator-text-color;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .popover-content {&amp;#13;
+    padding-left: 30px;&amp;#13;
+    padding-top: 20px;&amp;#13;
+    padding-bottom: 30px;&amp;#13;
+    padding-right: 30px;&amp;#13;
+    letter-spacing: 1px; &amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .popoverSubItem1 {&amp;#13;
+    padding-top: 13px;&amp;#13;
+    white-space: nowrap;&amp;#13;
+  } &amp;#13;
+&amp;#13;
+  .popoverSubItem2 {&amp;#13;
+    padding-top: 13px;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .popoverItemSeparator {&amp;#13;
+    padding-top: 12px;&amp;#13;
+    color: $text-muted;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .popoverMenu {&amp;#13;
+    .popoverContent {&amp;#13;
+      display: table-row;&amp;#13;
+    }&amp;#13;
+    .popoverContentColumn {&amp;#13;
+      display: table-cell;&amp;#13;
+      padding-right:50px;&amp;#13;
+      white-space: nowrap;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+    [class~='popoverContentColumn']:last-of-type {&amp;#13;
+      padding-right: 0px;&amp;#13;
+    }&amp;#13;
+    ul {&amp;#13;
+      padding-left: 0px;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+.csm-unified-mobile-menu span.fa {&amp;#13;
+  color: #9fc7da;&amp;#13;
+  margin-right: 8px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.csm-unified-mobile-menu .unified-mobile-header-menu-level3-item { &amp;#13;
+  border-bottom: 0.5px solid #828890;	&amp;#13;
+  border-color: $csm-navbar-panel-separator-color;&amp;#13;
+  border-radius: 0px; &amp;#13;
+}&amp;#13;
+.unified-mobile-header-menu-level3-item h4 {&amp;#13;
+  padding-left: 20px;&amp;#13;
+}&amp;#13;
+.csm-unified-mobile-menu .panel-body li {&amp;#13;
+  list-style-type: none;&amp;#13;
+}&amp;#13;
+.unified-mobile-header-menu-level3 .panel-heading h4 {&amp;#13;
+  cursor: default;&amp;#13;
+}&amp;#13;
+.unified-mobile-header-menu-level3 .panel .panel-heading,&amp;#13;
+.unified-mobile-header-menu-level3-item {&amp;#13;
+  padding-left: 40px;&amp;#13;
+}&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance_menu&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;pe-enhanced-header-menu-widget&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Enhanced Header Menu Widget&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function(){
+	// build menus
+	var menu_id = $sp.getValue('sys_id'); // instance sys_id
+	data.menu = {};
+	data.menu.items = $sp.getMenuItems(menu_id);
+	
+	var hasSubItems = function (elem, ind, arr) { 
+		return elem.items &amp;&amp; elem.items.length &gt; 0;
+	};
+	
+	// For an item to be a header, it should 
+	// - have subitems and 
+	// - should not have a page or url defined (type == "page" or "url" with no href value)
+	var isHeaderItem = function(item) {
+		if (!item) {
+			return false;
+		}
+		
+		return (hasSubItems(item) &amp;&amp; 
+			    ((item.type === 'page' &amp;&amp; item.href === '?id=') || 
+			    (item.type === 'url' &amp;&amp; item.href === ''))
+			   );
+	};
+
+	var determineHeaderItems = function(itemsLevel2) {
+		if (!itemsLevel2) {
+			return;
+		}
+		
+		// Only level2 and level3 items can act as headers
+		itemsLevel2.forEach(function(itemLevel2) {
+			itemLevel2.isHeader = isHeaderItem(itemLevel2);
+			
+			var itemsLevel3 = itemLevel2.items;
+			if (itemsLevel3) {
+				itemsLevel3.forEach(function(itemLevel3) {
+					itemLevel3.isHeader = isHeaderItem(itemLevel3);
+				});
+			}		
+		});
+	};
+		
+	for (var i = 0; i &lt; data.menu.items.length; i++) {
+		var item = data.menu.items[i];
+		
+		// If level2 does not have subitems, ie there is no level3 &amp; level4
+		// then render everything in one column
+		item.renderInOneColumn = item.items &amp;&amp; !item.items.some(hasSubItems);
+
+		// TR: add images from SC catalog
+		if (item.items.length &gt; 0) {
+			for (var j = 0; j &lt; item.items.length; j++) {
+				var subitem = item.items[j];
+				
+				// TR: would have other types in the future
+				if (subitem.type == 'sc_cat_item') {
+					var grItem = new GlideRecord('sc_cat_item');
+					if (grItem.get(subitem.sc_cat_item)) {
+						subitem.sc_cat_item_short_description = grItem.getDisplayValue('short_description');
+						subitem.sc_cat_item_icon = grItem.getDisplayValue('picture');
+					}
+				}
+			}
+		}
+		
+		determineHeaderItems(item.items);
+	}
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-27 18:18:55&lt;/sys_created_on&gt;&lt;sys_id&gt;39b40957db4c0c109310fa56bf9619dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Enhanced Header Menu Widget&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_39b40957db4c0c109310fa56bf9619dd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-10-01 14:30:17&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[  &lt;ul class="nav navbar-nav unified-menu-flex-container"&gt;
+  &lt;li class="unified-menu-list-item" ng-if="::!isMobileView()" ng-repeat="item in ::data.menu.items" ng-include="'enhancedHeaderMenuTemplate'"&gt;&lt;/li&gt;
+  &lt;li class="unified-menu-list-item" ng-if="::!isMobileView()"&gt;
+    &lt;div class="unifiedMenuPrimaryMenuItem"&gt;
+      &lt;a href ng-click="c.toggleTypeaheadSearch()" aria-label="${Search}"&gt;
+        &lt;span class="fa fa-search"&gt;&lt;/span&gt;
+        &lt;h5 class="nav-link unifiedMenuPrimaryMenuText"&gt;${Search}&lt;/h5&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;div ng-if="::isMobileView()" ng-init="menu=data.menu" ng-include="'enhancedHeaderMenuMobileTemplate'"&gt;&lt;/div&gt;
+    &lt;!-- Printing the menu in hidden state for SEO--&gt;
+  &lt;li class="hide" ng-repeat="item in ::data.menu.items" ng-include="'enhancedHeaderMenuPopoverTemplate'"&gt;&lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-224792206</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>553cfc24db98c0509310fa56bf9619ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d87ba9da70000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Enhanced Header Menu Widget</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>23b670e8ab58c050027e1039f32a71d7</update_guid>
+<update_guid_history>23b670e8ab58c050027e1039f32a71d7:-224792206,c215b428f858c050ab4139f095c352af:570098834,bd24bce46758c050b822740ec90bd519:-1463196782,32b2f0643d58c05048c2a76bb27ecea4:1180822386,2acf24ec6d18c0500faf90f56bc7e9f0:983475314,0eed2c2c9e18c050bf81978394634313:1262468838,cba63d882590405018267e2db6b52f11:-1798357370,aa1fe5002690405050f8045e4ec07f29:-1610338840,4ae44d57b64c0c105cc0a211c485375c:-1550381684,71b40957dd4c0c1015f1de823968f1df:1633462696</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rectangle_menu_item_181dcd53db8c0c109310fa56bf9619e6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph>plane</glyph><hint/><kb_article/><kb_category/><kb_topic/><label>Menu Item 1</label><order>100</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="index">46cc384147532100ba13a5554ee49009</sp_page><sp_rectangle_menu display_value="Enchanced Header Menu">73740557db4c0c109310fa56bf961993</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-27 19:03:38</sys_created_on><sys_id>181dcd53db8c0c109310fa56bf9619e6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Menu Item 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rectangle_menu_item_181dcd53db8c0c109310fa56bf9619e6</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-09-27 19:03:38</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=181dcd53db8c0c109310fa56bf9619e6"/></record_update>]]></payload>
+<payload_hash>-1691005654</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>593cfc24db98c0509310fa56bf9619ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d741b72570000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Menu Item 1</target_name>
+<type>Menu Item</type>
+<update_domain>global</update_domain>
+<update_guid>bcfec517f08c0c10fe8323065ee9359e</update_guid>
+<update_guid_history>bcfec517f08c0c10fe8323065ee9359e:-1691005654</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_e86cb89bdb0c0c109310fa56bf961945</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;pe-enhanced-header-mobile-nav-template&lt;/id&gt;&lt;sp_widget display_value="Enhanced Header"&gt;4697281fdb880c109310fa56bf961992&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-27 17:43:47&lt;/sys_created_on&gt;&lt;sys_id&gt;e86cb89bdb0c0c109310fa56bf961945&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;pe-enhanced-header-mobile-nav-template&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_e86cb89bdb0c0c109310fa56bf961945&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-27 17:43:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;uib-accordion ng-if="isMobileView() &amp;&amp; !data.iscommunity" close-others="false"&gt;
+  &lt;uib-accordion-group ng-if="(!user.logged_in &amp;&amp; page.id != portal.login_page_dv)" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+  	&lt;uib-accordion-heading&gt;
+    	&lt;div class="unified-mobile-header-menu-level1-link"&gt;
+        	&lt;h4&gt;&lt;a href ng-click="$event.stopPropagation();openLogin();" aria-label="${Login}"&gt;${Login}&lt;/a&gt;&lt;/h4&gt;
+        &lt;/div&gt; 
+    &lt;/uib-accordion-heading&gt;
+  &lt;/uib-accordion-group&gt;  
+  &lt;uib-accordion-group ng-if="user.logged_in" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+    &lt;uib-accordion-heading&gt;
+        &lt;div&gt;
+          &lt;span class="navbar-avatar"&gt;&lt;sn-avatar class="avatar-small-medium" primary="userID" /&gt;&lt;/span&gt;
+          &lt;h4&gt;{{::user.name}}&lt;i class="csm-unified-float-right" ng-class="status.isOpen ? 'fa fa-minus' : 'fa fa-plus'"/&gt;&lt;/h4&gt;
+        &lt;/div&gt;
+    &lt;/uib-accordion-heading&gt;
+    &lt;uib-accordion class="csm-unified-mobile-level2"&gt;
+        &lt;uib-accordion-group ng-if="user.logged_in" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+            &lt;uib-accordion-heading&gt;
+              &lt;div class="csm-unified-mobile-level2-item"&gt;
+                &lt;h4&gt;&lt;a ng-if="isCommunityPortal()" ng-click="$event.stopPropagation();" class="csm-unified-heading-link" ng-href="?id=community_user_profile&amp;user={{::data.liveProfileId}}" aria-label="${Community Profile}"&gt;${Community Profile}&lt;/a&gt;&lt;/h4&gt;
+                &lt;h4&gt;&lt;a ng-if="!isCommunityPortal()" ng-click="$event.stopPropagation();" class="csm-unified-heading-link" ng-href="?id={{::data.supportProfilePortal}}&amp;user={{::userID}}" aria-label="${Profile}"&gt;${Support Profile}&lt;/a&gt;&lt;/h4&gt;  
+              &lt;/div&gt;
+            &lt;/uib-accordion-heading&gt;
+        &lt;/uib-accordion-group&gt;
+        &lt;uib-accordion-group ng-if="user.logged_in &amp;&amp; isCommunityPortal() &amp;&amp; data.enableSupportProfile" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+            &lt;uib-accordion-heading&gt;
+              &lt;div class="csm-unified-mobile-level2-item"&gt;
+                &lt;h4&gt;&lt;a ng-if="isCommunityPortal() &amp;&amp; data.enableSupportProfile" ng-click="$event.stopPropagation();" class="csm-unified-heading-link" ng-href="/{{::data.supportPortalPrefix}}?id={{::data.supportProfilePortal}}&amp;user={{::userID}}" aria-label="${Support Profile}"&gt;${Support Profile}&lt;/a&gt;&lt;/h4&gt;
+              &lt;/div&gt;
+            &lt;/uib-accordion-heading&gt;
+        &lt;/uib-accordion-group&gt;
+       &lt;uib-accordion-group ng-if="user.logged_in" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+            &lt;uib-accordion-heading&gt;
+              &lt;div class="csm-unified-mobile-level2-item"&gt;
+                &lt;h4&gt;&lt;a ng-show="data.isCommunityEnabled" ng-click="$event.stopPropagation();" ng-href="?id=community_user_profile&amp;tab=bookmarks" aria-label="${My Bookmarks}"&gt;${My Bookmarks}&lt;/a&gt;&lt;/h4&gt;
+              &lt;/div&gt;
+            &lt;/uib-accordion-heading&gt;
+        &lt;/uib-accordion-group&gt;
+        &lt;uib-accordion-group ng-if="user.logged_in" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+            &lt;uib-accordion-heading&gt;
+              &lt;div class="csm-unified-mobile-level2-item"&gt;
+                &lt;h4&gt;&lt;a ng-show="data.isCommunityEnabled" ng-click="$event.stopPropagation();" ng-href="?id=actsub_notif_pref" aria-label="${Notification Settings}"&gt;${Notification Settings}&lt;/a&gt;&lt;/h4&gt;
+              &lt;/div&gt;
+            &lt;/uib-accordion-heading&gt;
+        &lt;/uib-accordion-group&gt;
+    &lt;/uib-accordion&gt;
+  &lt;/uib-accordion-group&gt;
+&lt;/uib-accordion&gt; 
+&lt;div ng-show="isMobileView()" class=""&gt;
+	&lt;li ng-show="isMobileView()"&gt;
+      &lt;sp-widget widget="data.menu"&gt;&lt;/sp-widget&gt;
+	&lt;/li&gt;
+&lt;/div&gt;   
+&lt;uib-accordion ng-show="isMobileView()" close-others="false"&gt;
+  &lt;uib-accordion-group ng-repeat="notification in data.notifications" ng-if="(user.logged_in &amp;&amp; notification.scriptedItems.count &gt; 0)" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+    &lt;uib-accordion-heading &gt;
+      &lt;div class="unified-mobile-header-menu-level1-link"&gt;
+        &lt;h4&gt;&lt;a ng-click="$event.stopPropagation();" ng-repeat="link in notification.scriptedItems.items | filter:{ type: 'link' }" href={{link.href}} style='color:white' aria-label="{{notification.label}}"&gt;{{notification.label}} &lt;/a&gt;&lt;span ng-if="!notification.scriptedItems.omitBadge" class="label label-as-badge label-primary sp-navbar-badge-count"&gt;{{notification.scriptedItems.count}}&lt;/span&gt;&lt;/h4&gt;
+      &lt;/div&gt;
+    &lt;/uib-accordion-heading&gt;
+  &lt;/uib-accordion-group&gt;  
+&lt;/uib-accordion&gt;
+&lt;div ng-show="isMobileView()" class=""&gt;
+	&lt;li ng-show="isMobileView()"&gt;
+      &lt;sp-widget widget="data.secondaryMenu"&gt;&lt;/sp-widget&gt;
+	&lt;/li&gt;
+&lt;/div&gt;   
+&lt;uib-accordion ng-show="isMobileView()"&gt;  
+   &lt;uib-accordion-group ng-if="(!user.logged_in &amp;&amp; isCSPPortal() &amp;&amp; page.id != portal.login_page_dv)" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+        &lt;uib-accordion-heading&gt;
+            &lt;div class="unified-mobile-header-menu-level1-link"&gt;
+              &lt;h4&gt;&lt;a href ng-click="$event.stopPropagation();openAnonymousChatPopUp()" aria-label="${Live Chat}"&gt;&lt;i class="fa fa-comment"/&gt; ${Chat}&lt;/a&gt;&lt;/h4&gt;
+            &lt;/div&gt; 
+        &lt;/uib-accordion-heading&gt;
+   &lt;/uib-accordion-group&gt;
+   &lt;uib-accordion-group ng-if="user.logged_in &amp;&amp; data.connect_support_queue_id" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+        &lt;uib-accordion-heading&gt;
+            &lt;div class="unified-mobile-header-menu-level1-link"&gt;
+              &lt;h4&gt;&lt;a href ng-click="$event.stopPropagation();openPopUp()" aria-label="${Live Chat}"&gt;&lt;i class="fa fa-comment"/&gt; ${Chat}&lt;/a&gt;&lt;/h4&gt;
+            &lt;/div&gt; 
+        &lt;/uib-accordion-heading&gt;
+   &lt;/uib-accordion-group&gt;
+   &lt;uib-accordion-group ng-if="user.logged_in" ng-init="status = {isOpen: false}" is-open="status.isOpen"&gt;
+        &lt;uib-accordion-heading&gt;
+            &lt;div class="unified-mobile-header-menu-level1-link"&gt;
+              &lt;h4&gt;&lt;a ng-click="$event.stopPropagation();" href="{{::portal.logoutUrl}}" aria-label="${Logout}"&gt;${Logout}&lt;/a&gt;&lt;/h4&gt;
+            &lt;/div&gt; 
+        &lt;/uib-accordion-heading&gt;
+   &lt;/uib-accordion-group&gt;                      
+&lt;/uib-accordion&gt;  ]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2126732997</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>5d3cfc24db98c0509310fa56bf9619aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d73d254960000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>pe-enhanced-header-mobile-nav-template</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>beacb8db0a0c0c103ff67a2bca02bd02</update_guid>
+<update_guid_history>beacb8db0a0c0c103ff67a2bca02bd02:-2126732997</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_48c6f1c8db9040509310fa56bf9619cd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="enhancedHeaderMenuDeviceType">c5763d88db9040509310fa56bf96193b</sp_angular_provider><sp_widget display_value="Enhanced Header Menu Widget">39b40957db4c0c109310fa56bf9619dd</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-30 05:52:58</sys_created_on><sys_id>48c6f1c8db9040509310fa56bf9619cd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>enhancedHeaderMenuDeviceType.Enhanced Header Menu Widget</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_48c6f1c8db9040509310fa56bf9619cd</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-09-30 05:52:58</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>-613938908</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>913cfc24db98c0509310fa56bf9619a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d80baa6140000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>enhancedHeaderMenuDeviceType.Enhanced Header Menu Widget</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>c0c6f1c886904050f7e8e684d66d09cf</update_guid>
+<update_guid_history>c0c6f1c886904050f7e8e684d66d09cf:-613938908</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_theme_665af926db0048109310fa56bf961995</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme"><sp_theme action="INSERT_OR_UPDATE"><css_variables>/* Enhanced Header */&#13;
+$sp-logo-margin-y: 15px;&#13;
+$sp-logo-max-height: 92px;&#13;
+$sp-logo-max-width: 200px;&#13;
+&#13;
+$navbar-default-bg: #f8f8f8 !default;&#13;
+$navbar-default-link-color: $brand-primary !default;&#13;
+$navbar-default-link-hover-color: darken($brand-primary, 6.5%) !default;&#13;
+&#13;
+$pe-enhanced-header-icon-color: $navbar-default-link-color !default;&#13;
+$pe-enhanced-header-icon-hover-color: $navbar-default-link-hover-color !default;&#13;
+$pe-enhanced-header-divider-color: $sp-navbar-divider-color !default;&#13;
+$pe-enhanced-header-divider-hover-color: $brand-primary !default;&#13;
+$pe-enhanced-header-menu-item-bg: $navbar-default-bg !default;</css_variables><footer/><footer_fixed>false</footer_fixed><header display_value="Enhanced Header">4697281fdb880c109310fa56bf961992</header><name>Enhanced Header Sample Theme</name><navbar_fixed>false</navbar_fixed><sys_class_name>sp_theme</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-25 14:18:04</sys_created_on><sys_id>665af926db0048109310fa56bf961995</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Enhanced Header Sample Theme</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_theme_665af926db0048109310fa56bf961995</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-10-01 14:49:26</sys_updated_on></sp_theme></record_update>]]></payload>
+<payload_hash>-798292731</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>913cfc24db98c0509310fa56bf9619ac</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d87cc272f0000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Enhanced Header Sample Theme</target_name>
+<type>Theme</type>
+<update_domain>global</update_domain>
+<update_guid>482b74e0c598c050608932083bef2b99</update_guid>
+<update_guid_history>482b74e0c598c050608932083bef2b99:-798292731,e4eaf0e0fa98c0501630f9af5de89197:831762245,59aa3ca03098c0502751b7b5ffb78dbd:-2086889237,b67930200b98c05092ec283750086aa1:193256446,73fea0d7b8c80c106d366b75c50e7666:1537942295,4e6af9264300481075d4fb98ea8ab14e:702052235</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rectangle_menu_item_0ca0f420db58c0509310fa56bf96192a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph/><hint/><kb_article/><kb_category/><kb_topic/><label>Menu Subitem 1</label><order>100</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="index">46cc384147532100ba13a5554ee49009</sp_page><sp_rectangle_menu/><sp_rectangle_menu_item display_value="Menu Item 1">181dcd53db8c0c109310fa56bf9619e6</sp_rectangle_menu_item><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-10-01 14:04:01</sys_created_on><sys_id>0ca0f420db58c0509310fa56bf96192a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Menu Subitem 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rectangle_menu_item_0ca0f420db58c0509310fa56bf96192a</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-10-01 14:04:01</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=0ca0f420db58c0509310fa56bf96192a"/></record_update>]]></payload>
+<payload_hash>-1059530444</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>953cfc24db98c0509310fa56bf9619ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d87a295320000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Menu Subitem 1</target_name>
+<type>Menu Item</type>
+<update_domain>global</update_domain>
+<update_guid>3ab07820ed58c050b33c3cde2640ab25</update_guid>
+<update_guid_history>3ab07820ed58c050b33c3cde2640ab25:-1059530444</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_727fa980db9040509310fa56bf9619ab</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;enhancedHeaderMenuMobileTemplate&lt;/id&gt;&lt;sp_widget display_value="Enhanced Header Menu Widget"&gt;39b40957db4c0c109310fa56bf9619dd&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-30 05:21:57&lt;/sys_created_on&gt;&lt;sys_id&gt;727fa980db9040509310fa56bf9619ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;enhancedHeaderMenuMobileTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_727fa980db9040509310fa56bf9619ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-30 05:21:57&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;!-- Check if there are any menu items --&gt;
+&lt;div ng-if="::menu.items.length &gt; 0" class="csm-unified-mobile-menu"&gt;
+    
+	&lt;!-- LEVEL1 --&gt;
+	&lt;uib-accordion close-others="false"&gt;
+      
+        &lt;uib-accordion-group ng-if="::menu.items.length &gt; 0" ng-init="status = {isOpen: false}" is-open="status.isOpen" ng-repeat="item in ::menu.items" ng-if="::item.items.length &gt;= 0"&gt;
+          
+            &lt;!-- LEVEL1 Label - has sub items --&gt;
+            &lt;uib-accordion-heading ng-if="::item.items.length &gt; 0"&gt;
+                &lt;h4&gt;&lt;span class="fa fa-{{::item.glyph}}"&gt;&lt;/span&gt;{{::item.label}}&lt;i class="csm-unified-float-right" ng-class="status.isOpen ? 'fa fa-chevron-down' : 'fa fa-chevron-right'"/&gt;&lt;/h4&gt;
+            &lt;/uib-accordion-heading&gt;
+            
+          	&lt;!-- LEVEL1 Label - does not have subitems --&gt;
+            &lt;uib-accordion-heading ng-if="::item.items.length == 0"&gt;
+	            &lt;div class="unified-mobile-header-menu-level1-link"&gt;
+    	          &lt;h4&gt;&lt;span class="fa fa-{{::item.glyph}}"&gt;&lt;/span&gt;&lt;a ng-click="$event.stopPropagation();" ng-href="{{::item.href}}" target="{{::item.url_target}}" aria-label="{{::item.label}}"&gt;{{::item.label}}&lt;/a&gt;&lt;/h4&gt;
+        	    &lt;/div&gt; 
+            &lt;/uib-accordion-heading&gt;
+
+            &lt;!-- LEVEL2 --&gt;
+            &lt;uib-accordion class="csm-unified-mobile-level2" close-others="false"&gt;
+              		&lt;!-- LEVEL2 - when level2 menu items have subitems --&gt;
+                    &lt;uib-accordion-group ng-if="::item.items.length &gt; 0" ng-init="status = {isOpen: false}" is-open="status.isOpen" ng-repeat="item in ::item.items"&gt;
+                        &lt;!-- LEVEL2 Label --&gt;
+                        &lt;uib-accordion-heading&gt;
+                          	&lt;h4&gt;{{::item.label}}&lt;i class="csm-unified-float-right" ng-class="status.isOpen ? 'fa fa-chevron-down' : 'fa fa-chevron-right'"/&gt;&lt;/h4&gt;
+                      	&lt;/uib-accordion-heading&gt;
+
+                        &lt;!-- LEVEL3 --&gt;
+                      	&lt;uib-accordion class="unified-mobile-header-menu-level3" close-others="false"&gt;
+                          
+                            &lt;!-- LEVEL3 Label when there are subitems ie there is Level4 --&gt;
+                          	&lt;uib-accordion-group ng-if="::item.items.length &gt; 0" ng-init="level3 = {isOpen: true}" is-open="::level3.isOpen" ng-repeat="item in ::item.items"&gt;                              
+                              	&lt;!-- LEVEL3 Label --&gt;
+		                        &lt;uib-accordion-heading&gt;
+                                  &lt;h4 ng-click="$event.stopPropagation();$event.preventDefault();"&gt;{{::item.label}}&lt;/h4&gt;
+                              	&lt;/uib-accordion-heading&gt;
+                                &lt;!-- LEVEL4 items --&gt;
+                              	&lt;div class="unified-mobile-header-menu-level3-item" ng-repeat="item in ::item.items"&gt;
+                                  &lt;h4&gt;&lt;a class="csm-unified-heading-link" ng-href="{{::item.href}}" target="{{::item.url_target}}" aria-label="{{::item.label}}"&gt;{{::item.label}}&lt;/a&gt;&lt;/h4&gt;
+                                &lt;/div&gt;                              
+                            &lt;/uib-accordion-group&gt;
+                          
+                            &lt;!-- LEVEL3 Label when there are NO subitems --&gt;
+                          	&lt;uib-accordion-group ng-if="::item.items.length == 0" ng-init="level3 = {isOpen: true}" is-open="::level3.isOpen" ng-repeat="item in ::item.items"&gt;                              
+                              	&lt;!-- LEVEL3 Label --&gt;
+                              	&lt;uib-accordion-heading&gt;
+                                  &lt;h4&gt;&lt;a class="csm-unified-heading-link" ng-click="$event.stopPropagation();" ng-href="{{::item.href}}" target="{{::item.url_target}}" aria-label="{{::item.label}}"&gt;{{::item.label}}&lt;/a&gt;&lt;/h4&gt;
+                              	&lt;/uib-accordion-heading&gt;
+                            &lt;/uib-accordion-group&gt;
+                          
+                        &lt;/uib-accordion&gt;
+                      
+                    &lt;/uib-accordion-group&gt;                
+
+                &lt;!-- LEVEL2 - RENDERS ONE COLUMN LAYOUT - when NO level2 menu items have subitems --&gt;
+				&lt;uib-accordion-group ng-if="::item.items.length == 0" ng-init="level2 = {isOpen: true}" is-open="::level2.isOpen" ng-repeat="item in ::item.items"&gt;
+                  &lt;!-- LEVEL2 Label --&gt;
+	              &lt;uib-accordion-heading&gt;
+                    	&lt;div class="csm-unified-mobile-level2-item"&gt;
+                          &lt;!-- TR: START --&gt;
+                          &lt;div ng-if="item.type == 'sc_cat_item'"&gt;
+                            &lt;a class="unified-menu-popover-image" href="{{item.href}}"&gt;
+                              &lt;img src="{{item.sc_cat_item_icon}}"&gt;
+                            &lt;/a&gt;
+                            &lt;div class="unified-menu-popover-title"&gt;
+                              &lt;a href="{{item.href}}"&gt;{{item.label}}&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class="unified-menu-popover-body"&gt;
+                              &lt;p&gt;{{item.sc_cat_item_short_description}}&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- TR: END --&gt;
+                          &lt;h4 ng-if="::item.type != 'sc_cat_item'"&gt;&lt;a class="csm-unified-heading-link" ng-click="$event.stopPropagation();" ng-href="{{::item.href}}" target="{{::item.url_target}}" aria-label="{{::item.label}}"&gt;{{::item.label}}&lt;/a&gt;&lt;/h4&gt;
+                    	&lt;/div&gt;
+                  &lt;/uib-accordion-heading&gt;                  
+                  
+                &lt;/uib-accordion-group&gt;
+              
+          	&lt;/uib-accordion&gt;
+            
+        &lt;/uib-accordion-group&gt;
+    &lt;/uib-accordion&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2003346151</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>993cfc24db98c0509310fa56bf9619aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d809e40ee0000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>enhancedHeaderMenuMobileTemplate</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>21af69809c90405042bccfc741c45c4b</update_guid>
+<update_guid_history>21af69809c90405042bccfc741c45c4b:-2003346151</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_angular_provider_c5763d88db9040509310fa56bf96193b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_angular_provider"&gt;&lt;sp_angular_provider action="INSERT_OR_UPDATE"&gt;&lt;name&gt;enhancedHeaderMenuDeviceType&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function($window) {
+		var cache = {};
+		
+		function isHandHeld(){
+			if(cache.isHandHeld === undefined) {
+				if( navigator.userAgent.match(/Android/i)
+					|| navigator.userAgent.match(/iPhone/i)
+				|| navigator.userAgent.match(/webOS/i)
+				|| navigator.userAgent.match(/iPhone/i)
+				|| navigator.userAgent.match(/iPod/i)
+				|| navigator.userAgent.match(/BlackBerry/i)
+				|| navigator.userAgent.match(/Windows Phone/i)) {
+					cache.isHandHeld = true;
+				} else {
+					cache.isHandHeld = false;
+				}
+			}
+			return cache.isHandHeld;
+		}
+	
+	    function isSmallScreen() {
+				if ($window.matchMedia) {
+					var mm = $window.matchMedia('(max-width: 767px)');
+					if (mm) {
+						return mm.matches;
+					}
+				}
+				
+				var dpr = 1;
+				if ($window.devicePixelRatio)
+					dpr = $window.devicePixelRatio;
+				if (angular.element($window).width() / dpr &lt; 768)
+					return true;
+				
+				return false;
+		}
+		
+		return {
+			isMobileView: function () {
+				//Below Function is commented since we can't decide device size based on os. So isSmallScreen function handles checks required for screen size.
+				/*if(isHandHeld())
+					return true;*/
+				if(isSmallScreen())
+					return true;
+				return false;
+			}
+		};
+	}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sp_angular_provider&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-30 05:52:14&lt;/sys_created_on&gt;&lt;sys_id&gt;c5763d88db9040509310fa56bf96193b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;enhancedHeaderMenuDeviceType&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_angular_provider_c5763d88db9040509310fa56bf96193b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-30 05:52:14&lt;/sys_updated_on&gt;&lt;type&gt;service&lt;/type&gt;&lt;/sp_angular_provider&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1879413143</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>9d3cfc24db98c0509310fa56bf9619a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d80b9f9c30000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>enhancedHeaderMenuDeviceType</target_name>
+<type>Widget Angular Provider</type>
+<update_domain>global</update_domain>
+<update_guid>d5963d881e9040509b932367b267803f</update_guid>
+<update_guid_history>d5963d881e9040509b932367b267803f:1879413143</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_portal_75baaea5dbd2bf009310fa56bf961953</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><css_variables/><default>false</default><homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage><icon/><kb_knowledge_base/><kb_knowledge_page/><login_page/><logo>722b39a6db0048109310fa56bf9619e8</logo><notfound_page/><quick_start_config/><sc_catalog/><sc_catalog_page/><sc_category_page/><sp_chat_queue/><sp_rectangle_menu display_value="Enhanced Header Menu">73740557db4c0c109310fa56bf961993</sp_rectangle_menu><sqanda_knowledge_base/><sys_class_name>sp_portal</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-06-27 15:25:48</sys_created_on><sys_id>75baaea5dbd2bf009310fa56bf961953</sys_id><sys_mod_count>37</sys_mod_count><sys_name>Enhanced Header Sample</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_portal_75baaea5dbd2bf009310fa56bf961953</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-10-01 14:43:37</sys_updated_on><theme display_value="Enhanced Header Sample Theme">665af926db0048109310fa56bf961995</theme><title>Enhanced Header Sample</title><url_suffix>enhanced_header</url_suffix></sp_portal><sys_translated_text action="delete_multiple" query="documentkey=75baaea5dbd2bf009310fa56bf961953"/><sys_attachment action="INSERT_OR_UPDATE"><average_image_color>#293e40</average_image_color><chunk_size_bytes>734003</chunk_size_bytes><compressed>true</compressed><content_type>image/png</content_type><encryption_context/><file_name>logo</file_name><image_height>605</image_height><image_width>2106</image_width><size_bytes>44176</size_bytes><size_compressed>38874</size_compressed><state>available</state><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-25 14:21:24</sys_created_on><sys_id>722b39a6db0048109310fa56bf9619e8</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>guest</sys_updated_by><sys_updated_on>2019-09-25 14:21:25</sys_updated_on><table_name>ZZ_YYsp_portal</table_name><table_sys_id>75baaea5dbd2bf009310fa56bf961953</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>45112</length><position>0</position><sys_attachment display_value="logo" sys_id="722b39a6db0048109310fa56bf9619e8">722b39a6db0048109310fa56bf9619e8</sys_attachment><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-25 14:21:24</sys_created_on><sys_id>b22b39a6db0048109310fa56bf9619e8</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>6724</length><position>1</position><sys_attachment display_value="logo" sys_id="722b39a6db0048109310fa56bf9619e8">722b39a6db0048109310fa56bf9619e8</sys_attachment><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-25 14:21:24</sys_created_on><sys_id>072b39a6db0048109310fa56bf9619e8</sys_id></sys_attachment_doc></record_update>]]></payload>
+<payload_hash>-1438195194</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>d13cfc24db98c0509310fa56bf9619ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d87c6d4570000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Enhanced Header Sample</target_name>
+<type>Service Portal</type>
+<update_domain>global</update_domain>
+<update_guid>fac9bc604198c050b11f78bc5a02255f</update_guid>
+<update_guid_history>fac9bc604198c050b11f78bc5a02255f:-1438195194,7d693020ff98c05018a8537a93bf7b9a:1459147350,39e8b86c4958c05060c63c519dfdce44:231131570,9188786cc258c0508c9ae5c747cec23b:-305352046,6348b42c5e58c050adc5cc131215a55f:-269091371,b038706c1f58c05003169e65d145242c:570167580,34b7742cbd58c050e136223a914afddd:-1479106601,daa7342c8e58c0507ed56f51f498f1c7:58801201,cf2738e81e58c050474ae8dea8e33680:2108829614,5c0774e8fe58c0502d5840fbf6f9a195:-227083186,16d634e89e58c0504fb502bf1d376618:-699869164,44a6f4a88858c050858f1df9b2a8c9dc:179480820,db967ca83b58c050eb2f22871b2174f3:-1423044986,48f370e4f558c050e28ac3c4e2a4a031:2095239214,8352bce0d358c050dd36fa5e23e0b1d7:639371441,9b42b8e04558c050bb57f30bff2918c0:1270301209,c170f0200058c050ed834bdea23775db:482313379,1100f4ec8618c050d46d27bfe0f53be5:1121915803,f3ff68ecbb18c050f84f05356715482e:1264758352,814fa0acab18c0500799350498d0793a:482313379,8d1de868a418c050b0c8a02df5bdc5d5:1121915803,6cece4681218c0505251f7e2f3b3f09f:482313379,b8eb6428cd18c050ee638619fa09ba6e:1121915803,7cc8a95f23004c107d3969fb01f8c952:84053705,7c1fcd17a18c0c10e83fd01ed645b59a:-470750127,4911349bcec80c1081a66bf33cad866d:84053705,a4ab71e6ba004810c691250b481ef234:421730215,7b3bf9a62a004810e54a483e17350270:-599497620,432bf9a62b00481034ed42fb150e845e:-451310713,cf2bf9a69e004810fb62719abdd64857:29400939,b2eaf5a65800481012e13eee95956265:-1109273549,beeaf5a63900481026c28ecce678d75e:-833526486,b79afd66ef004810872eb5945e80f931:-1554250383,a58a7d663300481065114725387a8d75:1172320785,ec7a7d2699004810709c790c2afe759c:-570782831,500c94ad0422f380a20ab3a45a6a6d7c:1608186643,6babd06d8322f38038014adc13e7f595:976369166,e50b9ce93b22f380ffd87a4f231871d2:1274912940,51ba5ce9d722f38020aa28225f108476:663276038,f4daeea54ad2bf00f7e22e83ec2a211e:1806832971</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_ng_template_40ef25c0db9040509310fa56bf96190a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;enhancedHeaderMenuPopoverTemplate&lt;/id&gt;&lt;sp_widget display_value="Enhanced Header Menu Widget"&gt;39b40957db4c0c109310fa56bf9619dd&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;trevor.roberts&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-30 05:44:37&lt;/sys_created_on&gt;&lt;sys_id&gt;40ef25c0db9040509310fa56bf96190a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;enhancedHeaderMenuPopoverTemplate&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_40ef25c0db9040509310fa56bf96190a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;trevor.roberts&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-09-30 05:44:37&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="popoverMenu"&gt;
+   &lt;ul ng-if="::item.items.length &gt; 0" ng-init="oneColumn=item.renderInOneColumn" role="menu"&gt;
+     &lt;li class="popoverContent"&gt; 
+       
+        &lt;!-- Loop over all LEVEL2 items --&gt;
+        &lt;div ng-if="::$index &lt; maxPopoverCols" ng-init="" ng-repeat="itemLevel2 in ::item.items" ng-class="::{'popoverContentColumn': !oneColumn}"&gt;
+          &lt;div ng-if="::!itemLevel2.isHeader" class="popoverSubItem1"&gt;
+            &lt;a ng-click="item.popoverIsOpen = false" ng-href="{{::itemLevel2.href}}" target="{{::itemLevel2.url_target}}" class="popoverText" aria-label="{{::itemLevel2.label}}"&gt;{{::itemLevel2.label}}&lt;/a&gt;
+          &lt;/div&gt;
+          
+	      &lt;div ng-if="::itemLevel2.isHeader" class="popover-separator-line popoverHeader popoverCsmHeader"&gt;
+		      &lt;h5&gt;{{::itemLevel2.label}}&lt;/h5&gt;  
+      	  &lt;/div&gt;
+
+          &lt;div ng-if="::itemLevel2.items.length &gt; 0" class="popoverSubItem1" ng-repeat="itemLevel3 in ::itemLevel2.items"&gt;
+            &lt;div ng-if="::!itemLevel3.isHeader"&gt;
+                &lt;a ng-click="item.popoverIsOpen = false" ng-href="{{::itemLevel3.href}}" target="{{::itemLevel3.url_target}}" class="popoverText" aria-label="{{::itemLevel3.label}}"&gt;{{::itemLevel3.label}}&lt;/a&gt;                              
+            &lt;/div&gt;
+            &lt;div ng-if="::itemLevel3.isHeader" class="popoverHeader popoverCsmHeader popoverItemSeparator"&gt;
+              &lt;h5&gt;{{::itemLevel3.label}}&lt;/h5&gt;
+            &lt;/div&gt;
+
+            &lt;div ng-if="::itemLevel3.items.length &gt; 0" class="popoverSubItem2" ng-repeat="itemLevel4 in ::itemLevel3.items"&gt;
+                &lt;a ng-click="item.popoverIsOpen = false" ng-href="{{::itemLevel4.href}}" target="{{::itemLevel4.url_target}}" class="popoverText" aria-label="{{::itemLevel4.label}}"&gt;{{::itemLevel4.label}}&lt;/a&gt;
+            &lt;/div&gt;              
+          &lt;/div&gt; 
+        &lt;/div&gt;
+    &lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1424368446</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>d53cfc24db98c0509310fa56bf9619aa</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d80b302160000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>enhancedHeaderMenuPopoverTemplate</target_name>
+<type>Angular ng-template</type>
+<update_domain>global</update_domain>
+<update_guid>71d4f1086c90405061a18d5880d7fd0d</update_guid>
+<update_guid_history>71d4f1086c90405061a18d5880d7fd0d:-1424368446</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_fdb40957db4c0c109310fa56bf9619df</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="angular-truncate">09e1f1416712220023c82e08f585ef1e</sp_dependency><sp_widget display_value="Copy of CA CSM Header Menu">39b40957db4c0c109310fa56bf9619dd</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-09-27 18:18:55</sys_created_on><sys_id>fdb40957db4c0c109310fa56bf9619df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>angular-truncate.Copy of CA CSM Header Menu</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_fdb40957db4c0c109310fa56bf9619df</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-09-27 18:18:55</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>-573730952</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>d93cfc24db98c0509310fa56bf9619a9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d73f2820b0000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>angular-truncate.Copy of CA CSM Header Menu</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>35b40957ec4c0c10d832b98c7d266be1</update_guid>
+<update_guid_history>35b40957ec4c0c10d832b98c7d266be1:-573730952</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_rectangle_menu_item_77c0f420db58c0509310fa56bf96191c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph/><hint/><kb_article/><kb_category/><kb_topic/><label>Menu Subitem 2</label><order>200</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="index">46cc384147532100ba13a5554ee49009</sp_page><sp_rectangle_menu/><sp_rectangle_menu_item display_value="Menu Item 1">181dcd53db8c0c109310fa56bf9619e6</sp_rectangle_menu_item><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>trevor.roberts</sys_created_by><sys_created_on>2019-10-01 14:04:22</sys_created_on><sys_id>77c0f420db58c0509310fa56bf96191c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Menu Subitem 2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_rectangle_menu_item_77c0f420db58c0509310fa56bf96191c</sys_update_name><sys_updated_by>trevor.roberts</sys_updated_by><sys_updated_on>2019-10-01 14:04:22</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=77c0f420db58c0509310fa56bf96191c"/></record_update>]]></payload>
+<payload_hash>-1858717099</payload_hash>
+<remote_update_set display_value="Enhanced Header">5d3cfc24db98c0509310fa56bf9619a8</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>trevor.roberts</sys_created_by>
+<sys_created_on>2019-10-01 14:54:10</sys_created_on>
+<sys_id>dd3cfc24db98c0509310fa56bf9619ab</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16d87a2e3760000001</sys_recorded_at>
+<sys_updated_by>trevor.roberts</sys_updated_by>
+<sys_updated_on>2019-10-01 14:54:10</sys_updated_on>
+<table/>
+<target_name>Menu Subitem 2</target_name>
+<type>Menu Item</type>
+<update_domain>global</update_domain>
+<update_guid>b7c0f4200858c050c7b41a6fecf4131d</update_guid>
+<update_guid_history>b7c0f4200858c050c7b41a6fecf4131d:-1858717099</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
