@@ -24,7 +24,7 @@ After installation, the widget can be accessed via the `Service Portal > Widgets
 
 > Follow these steps to configure Impersonation Users.
 
-* In left nav search for **Impersonation**. You can all the parts that make the Widget Packs app.
+* In left nav search for **Impersonation**. You can see all the parts that make the Widget Packs app.
 
 	![Left Search](https://raw.githubusercontent.com/platform-experience/serviceportal-widget-library/master/src/pe-widget-packs/images/left-nav.png)
 
