@@ -1,0 +1,48 @@
+<div class="x-pisn-sp-outcard" ng-if="c.data.outages.length>0">
+  <h3>{{::c.data.name}}</h3>
+  <div class="navigation noselect" ng-if="c.data.outages.length > 1">
+    <span class="info m-r-xs text-muted">{{c.currentIndex + 1}} ${of} {{::c.data.outages.length}}</span>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default m-r-xs padder" ng-click="c.prev()"
+        ng-disabled="c.currentIndex == 0"><span class="glyphicon glyphicon-chevron-left font-thin"></span></button>
+      <button type="button" class="btn btn-default m-l-xs padder" ng-click="c.next()"
+        ng-disabled="c.currentIndex == (c.data.outages.length - 1)"><span
+          class="glyphicon glyphicon-chevron-right font-thin"></span></button>
+    </div>
+  </div>
+  <div class="panel panel-{{c.getColor(outage)}}"
+    ng-repeat="outage in c.data.outages | filter: { sys_id: c.current } track by outage.sys_id">
+    <div class="panel-heading"><span class="m-r-sm glyphicon"
+        ng-class="{'glyphicon-remove-circle': c.getColor(outage)=='danger', 'glyphicon-ok-circle': c.getColor(outage)=='success' }"></span>${Affected
+      by} <span ng-if="outage.short_description">{{outage.short_description}}</span><span
+        ng-if="!outage.short_description">${outage}</span><small class="pull-right add-info">${Opened}
+        <sn-time-ago timestamp="outage.begin_ts" /></small></div>
+    <div class="panel-body">
+      <div class="outage-details" ng-if="!c.isResolved(outage)">
+        <p ng-bind-html="outage.details"></p>
+        <p><strong>${Estimate resolution}</strong> ${at} <span
+            ng-if="outage.outage_detail && outage.outage_detail.estd_timestamp" class="font-bold">
+            <sn-time-ago timestamp="outage.outage_detail.estd_timestamp" />
+          </span>
+          <span ng-if="!outage.outage_detail || !outage.outage_detail.estd_timestamp">${unknown}</span>
+        </p>
+        <button type="button" class="btn btn-danger pull-right" ng-click="c.createIncident(outage)"
+          ng-if="!outage.is_affected && !c.isResolved(outage) && outage.incidents.length == 0">{{::c.options.task_creation_label}}</button>
+      </div>
+      <div ng-if="c.isResolved(outage)">
+        <p>${We put in place a fix to address timeout issue reported by users of} {{c.data.name}}</p>
+      </div>
+      <button type="button" class="btn btn-link btn-link-{{c.getColor(outage)}} no-padder m-t"
+        ng-click="c.goToPage({id: 'service_status', service: c.data.sys_id})">${View details}<span
+          class="glyphicon glyphicon-arrow-right font-thin m-l-xs"></span></button>
+    </div>
+    <table class="table table-incident m-b-none">
+      <tr class="b-t" ng-repeat="task in outage.incidents"
+        ng-click="c.openTask({sys_id: task.sys_id, number: task.number, table: task.__table})">
+        <td class="text-{{c.getTaskColor(task)}} font-bold">{{task.number}}</td>
+        <td>{{task.short_description}}</td>
+        <td class="just-desktop text-right text-{{c.getTaskColor(task)}} font-bold">{{task.state}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
