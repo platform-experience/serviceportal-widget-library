@@ -1,4 +1,4 @@
-function($scope, spUtil,$uibModal, $timeout, $rootScope) {
+function flyoutMenuCategoriesController($scope, spUtil,$uibModal, $timeout, $rootScope) {
 	var c = this;
 	var optionsCat = c.data.optionsCat;
 	$scope.showSelectedPanel = false;
