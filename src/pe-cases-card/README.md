@@ -2,7 +2,7 @@
 
 ## Description
 
-A modern card widget that allows authorized user to visualize the details of active cases.
+A modern card widget that allows authorized users to visualize the details of active cases.
 
 ## Screenshot
 
