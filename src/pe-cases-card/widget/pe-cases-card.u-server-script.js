@@ -1,8 +1,6 @@
 (function() {
-	/* populate the 'data' object */
-	/* e.g., data.table = $sp.getValue('table'); */
-	
-	var grCases = new GlideRecord(options.table)
+	var table = options.src_table || 'sn_customerservice_case';
+	var grCases = new GlideRecord(table)
 	grCases.query();
 	data.listItems = [];
 	while(grCases.next()){

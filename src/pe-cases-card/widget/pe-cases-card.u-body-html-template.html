@@ -6,12 +6,9 @@
     </div>
   </div>
 </div>
-
-
 <div class="container">
   <div class="card-wrapper">
     <div class="card" dir-paginate="item in data.listItems | filter:keyword | itemsPerPage:c.pageSize">
-      <!-- flex container -->
       <div>
         <h4 class="event-title">{{item.number}}</h4>
         <p class="">{{item.short_description}} </p>

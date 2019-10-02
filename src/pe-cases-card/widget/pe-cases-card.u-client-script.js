@@ -20,5 +20,4 @@ function CaseCardsController() {
 		}
 	}
 	c.pageSize = 12;
-
 }
