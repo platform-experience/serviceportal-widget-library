@@ -1,0 +1,124 @@
+
+.circle-green{
+  color: #33ab45;
+}
+.circle-red{
+  color: #d92912;
+}
+
+.circle-yellow{
+  color: #e0cc27;
+}
+.circle-blue{
+  color: #0085d2;
+}
+.circle-gray{
+  color: #dcd8d9;
+}
+
+.form-control-feedback {
+  color: #666;
+}
+
+.form-control:focus + .form-control-feedback {
+  color: #74ACBB;
+}
+
+.form-control {
+  border: 1px solid #74ACBB !important;
+}
+
+.search-cases{
+  float:right;
+}
+.container.search{
+  padding-bottom: 20px;
+  padding-top:20px;
+}
+
+.body{
+  font-family: "Source Sans Pro script=all rev=2", "SourceSansPro", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #666;
+}
+
+.card-wrapper{
+  display:flex;
+  align-items:center;
+  align-content:center;
+  flex-direction:column;
+}
+
+.card{
+  color: #293E40;
+  padding: 28px 28px 5px 28px;
+  width:32rem;
+  background-color: white;
+  display:flex;
+  flex-direction:column;
+  align-items:start;
+  justify-content:flex-start;
+  margin:2rem 0;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+  .event-title{
+    margin: 0;
+    color: #293E40;
+    font-size: 20px;
+    font-weight: 600
+  }
+  h5{
+    display:inline;
+    color: #293E40 !important; 
+    font-family: "Source Sans Pro script=all rev=2", "SourceSansPro", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+@media screen and (min-width: 700px) { 
+  .card-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    margin: 2rem;
+    transition:transform .5s;
+  }
+
+
+  .card:hover{
+    transform: scale(1.05); 
+  }
+}
+
+.body-card{
+  margin-top:12px;
+  border-top: 1px solid #DBE1E7;
+  color: #666;
+  width:100%;
+  list-style:none;
+  display:flex;
+  justify-content:flex-start;
+  padding: 2rem 0;
+  margin-top: 1.5 rem;
+  text-decoration: none; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

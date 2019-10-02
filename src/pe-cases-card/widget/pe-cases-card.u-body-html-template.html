@@ -1,0 +1,34 @@
+<div class ="container search">
+  <div class="search-cases">
+    <div class="form-group has-feedback">
+      <input type="text" class="form-control" ng-model="keyword" placeholder="Search"> 
+      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card-wrapper">
+    <div class="card" dir-paginate="item in data.listItems | filter:keyword | itemsPerPage:c.pageSize">
+      <div>
+        <h4 class="event-title">{{item.number}}</h4>
+        <p class="">{{item.short_description}} </p>
+        <span class='fa fa-circle circle-{{c.getColor(item.state)}}'>
+          <h5>{{item.state}}</h5>
+        </span>
+      </div>
+      <u class="body-card">
+        <li>
+          <p>${Owner: }{{item.owner}}</p>
+          <p>${Created on: }{{item.created_on}}</p>
+          <p>${Due on: }{{item.due_date}}</p>
+          <a href="?id=ticket&table=sn_customerservice_case&sys_id={{item.sys_id}}">${View Details}</a>
+        </li>
+      </u>
+    </div>
+  </div>
+  <dir-pagination-controls></dir-pagination-controls>
+</div>
+
+
+
+
