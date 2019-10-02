@@ -10,7 +10,7 @@ A modern card widget that allows authorized user to visualize the details of act
 
 ## Additional Information/Notes
 
-> None
+Please install the Customer Service plugin before uploading the Update Set.
 
 ## Installation
 
