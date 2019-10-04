@@ -1,5 +1,4 @@
-function SpNgMapController(NgMap, $scope) {
-  /* widget controller */
+function SpNgMapController(NgMap) {
   var c = this;
 
   c.$onInit = function() {
