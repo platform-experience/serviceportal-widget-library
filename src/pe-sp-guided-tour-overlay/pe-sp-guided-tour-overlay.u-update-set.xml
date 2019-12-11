@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-12-11 09:59:37">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<application_name>SP Guided Tour Overlay</application_name>
+<application_scope>x_pisn_sp_gtour_ov</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description> </description>
+<inserted/>
+<name>SP Guided Tour Overlay</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>2991e19bdb654c10d033df8b4b9619f0</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>03a1a99bdb654c10d033df8b4b96192b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_element_40113755dbe988109aa27e8f299619ba</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_element"><sys_embedded_tour_element action="INSERT_OR_UPDATE"><cell_edit/><cell_types/><col/><cxs_results/><element_type>button</element_type><field/><field_action/><field_header/><filters/><form_buttons>additional_actions</form_buttons><form_element>field</form_element><form_section/><frameset>nav_filter</frameset><list_element>ui_action</list_element><list_header/><manual_css>[ng-click="c.goTo('x_pisn_sp_gtour_ov')"]</manual_css><name>xpath</name><record_id/><related_field/><related_links/><related_list_element>ui_action</related_list_element><related_lists/><related_table/><row/><sys_class_name>sys_embedded_tour_element</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-05 15:18:16</sys_created_on><sys_domain>global</sys_domain><sys_id>40113755dbe988109aa27e8f299619ba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>xpath</sys_name><sys_overrides/><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_embedded_tour_element_40113755dbe988109aa27e8f299619ba</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-05 15:18:16</sys_updated_on><table/><type>manual_css</type><ui_action/></sys_embedded_tour_element></record_update>]]></payload>
+<payload_hash>-331120672</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>03a1a99bdb654c10d033df8b4b96192e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46602b10000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>xpath</target_name>
+<type>Guided Tour Element</type>
+<update_domain>global</update_domain>
+<update_guid>d811375560e9881010ee430b48afdfba</update_guid>
+<update_guid_history>d811375560e9881010ee430b48afdfba:2035806470</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_step_d4113755dbe988109aa27e8f299619bb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="xpath"&gt;40113755dbe988109aa27e8f299619ba&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[Go back if you like!]]&gt;&lt;/content&gt;&lt;guide display_value="Test Guided Tours For Overlay 2"&gt;f6d07755dbe988109aa27e8f299619ca&lt;/guide&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"url":"/sp?id=x_pisn_sp_gtour_ov_2"}&lt;/options&gt;&lt;order&gt;2&lt;/order&gt;&lt;placement&gt;top&lt;/placement&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-05 15:18:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;d4113755dbe988109aa27e8f299619bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Guided Tour Overlay"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_d4113755dbe988109aa27e8f299619bb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-05 15:18:16&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="xpath"&gt;40113755dbe988109aa27e8f299619ba&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;sp&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d4113755dbe988109aa27e8f299619bb"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2080745391</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>03a1e99bdb654c10d033df8b4b96195a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef466029e0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name/>
+<type>Guided Tour Step</type>
+<update_domain>global</update_domain>
+<update_guid>54113755a2e98810b1c3bb64802c98bc</update_guid>
+<update_guid_history>54113755a2e98810b1c3bb64802c98bc:-1082252471</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_6250f315dbe988109aa27e8f2996191a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Test Guided Tour - Container 2">8250ff15dbe988109aa27e8f299619e9</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-05 15:15:09</sys_created_on><sys_id>6250f315dbe988109aa27e8f2996191a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_row_6250f315dbe988109aa27e8f2996191a</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-05 15:15:09</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>1156498377</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>07a1a99bdb654c10d033df8b4b96192d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef466024e0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>e250f31541e988104bab0d1566dfdd1b</update_guid>
+<update_guid_history>e250f31541e988104bab0d1566dfdd1b:1156498377</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_guide_f6d07755dbe988109aa27e8f299619ca</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_guide"><sys_embedded_tour_guide action="INSERT_OR_UPDATE"><active>true</active><additional_parameters/><autolaunch_order>0</autolaunch_order><context>sp?id=x_pisn_sp_gtour_ov_2&amp;gtd_portal_title=Service Portal &amp;gtd_page_title=Test Guided Tour  2</context><description/><has_concl>false</has_concl><has_intro>false</has_intro><name>Test Guided Tours For Overlay 2</name><options/><roles/><sp_page/><sp_portal display_value="Service Portal ">81b75d3147032100ba13a5554ee4902b</sp_portal><status>published</status><sys_class_name>sys_embedded_tour_guide</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-05 15:17:21</sys_created_on><sys_domain>global</sys_domain><sys_id>f6d07755dbe988109aa27e8f299619ca</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Test Guided Tours For Overlay 2</sys_name><sys_overrides/><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_embedded_tour_guide_f6d07755dbe988109aa27e8f299619ca</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-05 15:18:19</sys_updated_on><type>service_portal</type></sys_embedded_tour_guide></record_update>]]></payload>
+<payload_hash>-876869223</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>07a1e99bdb654c10d033df8b4b961959</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46602bc0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>Test Guided Tours For Overlay 2</target_name>
+<type>Guided Tour</type>
+<update_domain>global</update_domain>
+<update_guid>4d113f55ade9881038ec6c48b2183b53</update_guid>
+<update_guid_history>4d113f55ade9881038ec6c48b2183b53:-1195786736,4d113f55ade9881038ec6c48b2183b53:-1195786736,f6d07755f7e988100f0aa1171b5a25cc:-1597980733</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_00607355dbe988109aa27e8f29961941</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">ee50f315dbe988109aa27e8f2996191b</sp_column><sp_widget/><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-05 15:15:15</sys_created_on><sys_id>00607355dbe988109aa27e8f29961941</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_instance_00607355dbe988109aa27e8f29961941</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-05 15:15:15</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=00607355dbe988109aa27e8f29961941"/></record_update>]]></payload>
+<payload_hash>-1253166405</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>0ba1a99bdb654c10d033df8b4b96192c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46602630000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>0860735580e98810a2c32ef9fe8f0542</update_guid>
+<update_guid_history>0860735580e98810a2c32ef9fe8f0542:1874836624,0860735580e98810a2c32ef9fe8f0542:1874836624</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_5b4a1989db6548109aa27e8f299619de</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Test Guided Tour - Container 1">044ad589db6548109aa27e8f299619e7</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-04 09:41:05</sys_created_on><sys_id>5b4a1989db6548109aa27e8f299619de</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_row_5b4a1989db6548109aa27e8f299619de</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-04 09:41:05</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>1948446239</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>43a1a99bdb654c10d033df8b4b96192d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef466014f0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>d34a1989b7654810b6a9a10fde2f8ae0</update_guid>
+<update_guid_history>d34a1989b7654810b6a9a10fde2f8ae0:1948446239</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_guide_4d5b190ddb6548109aa27e8f299619f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_guide"><sys_embedded_tour_guide action="INSERT_OR_UPDATE"><active>true</active><additional_parameters/><autolaunch_order>0</autolaunch_order><context>sp?id=x_pisn_sp_gtour_ov&amp;gtd_portal_title=Service Portal &amp;gtd_page_title=Test Guided Tour</context><description/><has_concl>false</has_concl><has_intro>false</has_intro><name>Test Guided Tours For Overlay</name><options/><roles/><sp_page display_value="x_pisn_sp_gtour_ov">262ad589db6548109aa27e8f29961961</sp_page><sp_portal display_value="Service Portal ">81b75d3147032100ba13a5554ee4902b</sp_portal><status>published</status><sys_class_name>sys_embedded_tour_guide</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-04 09:45:34</sys_created_on><sys_domain>global</sys_domain><sys_id>4d5b190ddb6548109aa27e8f299619f6</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Test Guided Tours For Overlay</sys_name><sys_overrides/><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_embedded_tour_guide_4d5b190ddb6548109aa27e8f299619f6</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-04 09:46:52</sys_updated_on><type>service_portal</type></sys_embedded_tour_guide></record_update>]]></payload>
+<payload_hash>693260460</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>43a1e99bdb654c10d033df8b4b961959</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46601ed0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>Test Guided Tours For Overlay</target_name>
+<type>Guided Tour</type>
+<update_domain>global</update_domain>
+<update_guid>f79bd90d9a654810960bb3eb2cb9d93b</update_guid>
+<update_guid_history>f79bd90d9a654810960bb3eb2cb9d93b:-874516142,4d5b190def6548102ee7bf7ec24a6ff8:1256430533</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_8250ff15dbe988109aa27e8f299619e9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Test Guided Tour - Container 2</name><order>2</order><sp_page display_value="x_pisn_sp_gtour_ov">262ad589db6548109aa27e8f29961961</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-05 15:15:07</sys_created_on><sys_id>8250ff15dbe988109aa27e8f299619e9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Test Guided Tour - Container 2</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_container_8250ff15dbe988109aa27e8f299619e9</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-05 15:15:07</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-1038220452</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>47a1a99bdb654c10d033df8b4b96192c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46602190000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>Test Guided Tour - Container 2</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>0650ff15e6e98810be736688ab2282ea</update_guid>
+<update_guid_history>0650ff15e6e98810be736688ab2282ea:-1038220452</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_f51e0838db2508109aa27e8f29961999</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-03 09:29:39</sys_created_on><sys_id>f51e0838db2508109aa27e8f29961999</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sp_page</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_scope_privilege_f51e0838db2508109aa27e8f29961999</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-03 09:29:39</sys_updated_on><target_name>sp_page</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-769248797</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>4ba1e99bdb654c10d033df8b4b96195a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46600ed0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>sp_page</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>f11e0838162508107d4b0ea948da739a</update_guid>
+<update_guid_history>f11e0838162508107d4b0ea948da739a:-769248797</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_element_2d7bd90ddb6548109aa27e8f2996198b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_element"><sys_embedded_tour_element action="INSERT_OR_UPDATE"><cell_edit/><cell_types/><col/><cxs_results/><element_type>textbox</element_type><field/><field_action/><field_header/><filters/><form_buttons>additional_actions</form_buttons><form_element>field</form_element><form_section/><frameset>nav_filter</frameset><list_element>ui_action</list_element><list_header/><manual_css>#exampleInputEmail1</manual_css><name>xpath</name><record_id/><related_field/><related_links/><related_list_element>ui_action</related_list_element><related_lists/><related_table/><row/><sys_class_name>sys_embedded_tour_element</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-04 09:46:10</sys_created_on><sys_domain>global</sys_domain><sys_id>2d7bd90ddb6548109aa27e8f2996198b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>xpath</sys_name><sys_overrides/><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_embedded_tour_element_2d7bd90ddb6548109aa27e8f2996198b</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-04 09:46:10</sys_updated_on><table/><type>manual_css</type><ui_action/></sys_embedded_tour_element></record_update>]]></payload>
+<payload_hash>665797733</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>4fa1a99bdb654c10d033df8b4b96192d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46601990000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>xpath</target_name>
+<type>Guided Tour Element</type>
+<update_domain>global</update_domain>
+<update_guid>297bd90df46548105b0dd09a32d56a8d</update_guid>
+<update_guid_history>297bd90df46548105b0dd09a32d56a8d:1331861259</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_step_657bd90ddb6548109aa27e8f2996198e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="xpath"&gt;2d7bd90ddb6548109aa27e8f2996198b&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[Lorem ipsum 1]]&gt;&lt;/content&gt;&lt;guide display_value="Test Guided Tours For Overlay"&gt;4d5b190ddb6548109aa27e8f299619f6&lt;/guide&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"url":"/sp?id=x_pisn_sp_gtour_ov"}&lt;/options&gt;&lt;order&gt;1&lt;/order&gt;&lt;placement&gt;bottom&lt;/placement&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-04 09:46:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;657bd90ddb6548109aa27e8f2996198e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Guided Tour Overlay"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_657bd90ddb6548109aa27e8f2996198e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-04 09:46:10&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="xpath"&gt;2d7bd90ddb6548109aa27e8f2996198b&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;sp&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=657bd90ddb6548109aa27e8f2996198e"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1069940942</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>4fa1e99bdb654c10d033df8b4b961959</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46601860000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name/>
+<type>Guided Tour Step</type>
+<update_domain>global</update_domain>
+<update_guid>2d7bd90d856548104b62dcb012755d90</update_guid>
+<update_guid_history>2d7bd90d856548104b62dcb012755d90:-1507571480</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_044ad589db6548109aa27e8f299619e7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Test Guided Tour - Container 1</name><order>1</order><sp_page display_value="x_pisn_sp_gtour_ov">262ad589db6548109aa27e8f29961961</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-04 09:40:52</sys_created_on><sys_id>044ad589db6548109aa27e8f299619e7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Test Guided Tour - Container 1</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_container_044ad589db6548109aa27e8f299619e7</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-04 09:40:52</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>282429149</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>83a1a99bdb654c10d033df8b4b96192c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef466011a0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>Test Guided Tour - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>044ad5897f654810ac86e3c69e0a81e9</update_guid>
+<update_guid_history>044ad5897f654810ac86e3c69e0a81e9:282429149</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_134a1989db6548109aa27e8f299619e1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">5b4a1989db6548109aa27e8f299619de</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-04 09:41:05</sys_created_on><sys_id>134a1989db6548109aa27e8f299619e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_column_134a1989db6548109aa27e8f299619e1</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-04 09:41:05</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>-537276018</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>87a1a99bdb654c10d033df8b4b96192b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46601320000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>5b4a1989876548102c2b9c248d6e30e2</update_guid>
+<update_guid_history>5b4a1989876548102c2b9c248d6e30e2:-537276018</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_element_ebf07b55dbe988109aa27e8f29961945</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_element"><sys_embedded_tour_element action="INSERT_OR_UPDATE"><cell_edit/><cell_types/><col/><cxs_results/><element_type>textbox</element_type><field/><field_action/><field_header/><filters/><form_buttons>additional_actions</form_buttons><form_element>field</form_element><form_section/><frameset>nav_filter</frameset><list_element>ui_action</list_element><list_header/><manual_css>#exampleInputPassword1</manual_css><name>xpath</name><record_id/><related_field/><related_links/><related_list_element>ui_action</related_list_element><related_lists/><related_table/><row/><sys_class_name>sys_embedded_tour_element</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-05 15:17:56</sys_created_on><sys_domain>global</sys_domain><sys_id>ebf07b55dbe988109aa27e8f29961945</sys_id><sys_mod_count>0</sys_mod_count><sys_name>xpath</sys_name><sys_overrides/><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_embedded_tour_element_ebf07b55dbe988109aa27e8f29961945</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-05 15:17:56</sys_updated_on><table/><type>manual_css</type><ui_action/></sys_embedded_tour_element></record_update>]]></payload>
+<payload_hash>-183061816</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>87a1a99bdb654c10d033df8b4b96192e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46602780000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>xpath</target_name>
+<type>Guided Tour Element</type>
+<update_domain>global</update_domain>
+<update_guid>e7f07b557ce988104093fb5c6a9fa347</update_guid>
+<update_guid_history>e7f07b557ce988104093fb5c6a9fa347:1813106670</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_8a270cacdba5c4109aa27e8f29961916</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-02 14:20:52</sys_created_on><sys_id>8a270cacdba5c4109aa27e8f29961916</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_embedded_tour_step</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_scope_privilege_8a270cacdba5c4109aa27e8f29961916</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-02 14:20:52</sys_updated_on><target_name>sys_embedded_tour_step</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>1023311089</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>87a1e99bdb654c10d033df8b4b96195a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46600d20000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>sys_embedded_tour_step</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>c6270cac0da5c4100271aeade7286e18</update_guid>
+<update_guid_history>c6270cac0da5c4100271aeade7286e18:1023311089</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_49334354dbe1c4109aa27e8f29961969</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><can_edit_in_studio>false</can_edit_in_studio><enforce_license>none</enforce_license><guided_setup_guid/><js_level>helsinki_es5</js_level><licensable>true</licensable><license_category>none</license_category><license_model>none</license_model><logo/><menu/><name>SP Guided Tour Overlay</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_pisn_sp_gtour_ov</scope><scoped_administration>false</scoped_administration><short_description/><source>x_pisn_sp_gtour_ov</source><store_correlation_id>REPOAPP0000001343</store_correlation_id><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-02 09:23:59</sys_created_on><sys_id>49334354dbe1c4109aa27e8f29961969</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-11 09:51:01</sys_updated_on><template/><trackable>true</trackable><user_role/><vendor/><vendor_prefix/><version>1.0.0</version></sys_app></record_update>]]></payload>
+<payload_hash>1810819582</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>8ba1a99bdb654c10d033df8b4b96192d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef466009d0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>SP Guided Tour Overlay</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid>4dbfd9d72c654c107ce91d51be937466</update_guid>
+<update_guid_history>4dbfd9d72c654c107ce91d51be937466:1810819582,15334f54bbe1c4108c600cbc9f423061:1391568060</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_step_579bd90ddb6548109aa27e8f29961937</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="xpath"&gt;df9bd90ddb6548109aa27e8f29961935&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[Lorem ipsum Submit!]]&gt;&lt;/content&gt;&lt;guide display_value="Test Guided Tours For Overlay"&gt;4d5b190ddb6548109aa27e8f299619f6&lt;/guide&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"url":"/sp?id=x_pisn_sp_gtour_ov"}&lt;/options&gt;&lt;order&gt;2&lt;/order&gt;&lt;placement&gt;right&lt;/placement&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-04 09:46:49&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;579bd90ddb6548109aa27e8f29961937&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Guided Tour Overlay"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_579bd90ddb6548109aa27e8f29961937&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-04 09:46:49&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="xpath"&gt;df9bd90ddb6548109aa27e8f29961935&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;sp&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=579bd90ddb6548109aa27e8f29961937"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2137456948</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>8ba1e99bdb654c10d033df8b4b961959</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46601b50000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name/>
+<type>Guided Tour Step</type>
+<update_domain>global</update_domain>
+<update_guid>d39bd90d9f6548107875314c76288d38</update_guid>
+<update_guid_history>d39bd90d9f6548107875314c76288d38:-96085682</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_262ad589db6548109aa27e8f29961961</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>x_pisn_sp_gtour_ov</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-04 09:40:44</sys_created_on><sys_id>262ad589db6548109aa27e8f29961961</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_pisn_sp_gtour_ov</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_page_262ad589db6548109aa27e8f29961961</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-04 09:40:44</sys_updated_on><title>Test Guided Tour</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=262ad589db6548109aa27e8f29961961"/></record_update>]]></payload>
+<payload_hash>1716953158</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>8fa1a99bdb654c10d033df8b4b96192c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46601040000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>x_pisn_sp_gtour_ov</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>023ad58940654810093d6b6eb64f4ee4</update_guid>
+<update_guid_history>023ad58940654810093d6b6eb64f4ee4:1716953158</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_element_df9bd90ddb6548109aa27e8f29961935</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_tour_element"><sys_embedded_tour_element action="INSERT_OR_UPDATE"><cell_edit/><cell_types/><col/><cxs_results/><element_type>button</element_type><field/><field_action/><field_header/><filters/><form_buttons>additional_actions</form_buttons><form_element>field</form_element><form_section/><frameset>nav_filter</frameset><list_element>ui_action</list_element><list_header/><manual_css>[type="submit"]</manual_css><name>xpath</name><record_id/><related_field/><related_links/><related_list_element>ui_action</related_list_element><related_lists/><related_table/><row/><sys_class_name>sys_embedded_tour_element</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-04 09:46:49</sys_created_on><sys_domain>global</sys_domain><sys_id>df9bd90ddb6548109aa27e8f29961935</sys_id><sys_mod_count>0</sys_mod_count><sys_name>xpath</sys_name><sys_overrides/><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_embedded_tour_element_df9bd90ddb6548109aa27e8f29961935</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-04 09:46:49</sys_updated_on><table/><type>manual_css</type><ui_action/></sys_embedded_tour_element></record_update>]]></payload>
+<payload_hash>-552027094</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>c3a1a99bdb654c10d033df8b4b96192e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46601d00000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>xpath</target_name>
+<type>Guided Tour Element</type>
+<update_domain>global</update_domain>
+<update_guid>5b9bd90d47654810d03ae14d84916f36</update_guid>
+<update_guid_history>5b9bd90d47654810d03ae14d84916f36:1774342224</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_156ac074db2508109aa27e8f29961969</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-03 09:13:30</sys_created_on><sys_id>156ac074db2508109aa27e8f29961969</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_embedded_tour_guide</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sys_scope_privilege_156ac074db2508109aa27e8f29961969</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-03 09:13:30</sys_updated_on><target_name>sys_embedded_tour_guide</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>1790032305</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>c3a1e99bdb654c10d033df8b4b96195a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46600e10000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>sys_embedded_tour_guide</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>d96ac0741c2508106660d793801d0e6a</update_guid>
+<update_guid_history>d96ac0741c2508106660d793801d0e6a:1790032305</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_a5838f54dbe1c4109aa27e8f299619a1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function GtdOverlayController($scope, $rootScope, $timeout, $location, spGtd) {
+  /* widget controller */
+  var c = this;
+
+  c.$onInit = function() {
+    c.tour_id = "";
+  };
+
+  var eventListenerStepStarted = function(data) {
+    $timeout(function() {
+      if (c.tour_id.length == 0) {
+        c.server
+          .get({
+            tour_id: data.tour
+          })
+          .then(function(response) {
+            c.tour_id = data.tour;
+            c.data = response.data;
+            $scope.stepStarted(data.step);
+          });
+      } else {
+        $scope.stepStarted(data.step);
+      }
+    }, 0);
+  };
+
+  var eventListenerTourEnded = function(data) {
+    $timeout(function() {
+      $scope.tourEnded();
+    }, 0);
+  };
+
+  $rootScope.$on("$locationChangeStart", function(event, current, previous) {
+    c.$onInit();
+  });
+
+  top.NOW.guided_tours.events.on("stepStarted", eventListenerStepStarted);
+  top.NOW.guided_tours.events.on("tourEnded", eventListenerTourEnded);
+
+}
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;x-pisn-sp-gtd-ov-wdg&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  function setBeautyfication() {
+    setTimeout(function() {
+      controller.bodyEl
+        .find(".tour-tour_" + controller.data.tour.sys_id)
+        .css("box-shadow", "none");
+    }, 1500);
+  }
+
+  function removeStylesFromElement(tourEl, cssObj) {
+    for (var key in cssObj) {
+      if (cssObj.hasOwnProperty(key)) {
+        tourEl.css(key, "");
+      }
+    }
+  }
+
+  function removeAllStylesFromTargets() {
+    var sylesCSS = JSON.parse(controller.options.tour_css);
+    var target_refs = controller.data.tour.target_refs;
+
+    for (i = 0; i &lt; target_refs.length; i++) {
+      var tourEl = $(target_refs[i].css);
+      var specificCSS = target_refs[i].added_styles;
+
+      removeStylesFromElement(tourEl, sylesCSS);
+      removeStylesFromElement(tourEl, specificCSS);
+
+      if (target_refs[i].added_styles_td) {
+        var tdEls = tourEl.find("td");
+        removeStylesFromElement(tdEls, target_refs[i].added_styles_td);
+      }
+    }
+  }
+
+  function addOverlay() {
+    var overlayEl = controller.bodyEl.find("#x-pisn-sp-gtd-overlay");
+    if (overlayEl.length == 0) {
+      var newOverlayEl = $(
+        '&lt;div id="x-pisn-sp-gtd-overlay" class="modal-backdrop fade in"&gt;&lt;/div&gt;'
+      );
+      newOverlayEl.appendTo("body");
+    } else {
+      overlayEl
+        .removeClass("out")
+        .addClass("in")
+        .css("display", "block");
+    }
+  }
+
+  function removeOverlay() {
+    var overlayEl = controller.bodyEl.find("#x-pisn-sp-gtd-overlay");
+    if (overlayEl.length) {
+      overlayEl
+        .removeClass("in")
+        .addClass("out")
+        .css("display", "none");
+    }
+  }
+
+  function addStyleToTarget(id) {
+    var tourEl = $(controller.data.tour.target_refs[id].css);
+    if (tourEl.length) {
+      var cssStyles = JSON.parse(controller.options.tour_css);
+      cssStyles = setCustomStyles(cssStyles, tourEl, id);
+      controller.data.tour.target_refs[id].added_styles = cssStyles;
+      tourEl.css(cssStyles);
+    }
+  }
+
+  function setCustomStyles(cssStyles, tourEl, id) {
+    switch (controller.data.tour.target_refs[id].element_type) {
+      case "generic":
+        if (tourEl.css("background-color") != "rgba(0, 0, 0, 0)")
+          cssStyles["background-color"] = tourEl.css("background-color");
+        else
+          cssStyles["background-color"] =
+            controller.options.tour_element_selected_bg;
+        break;
+      case "button":
+        if (tourEl[0].nodeName == "TR") {
+          var tdEls = tourEl.find("td");
+          var cssStylesForTd = JSON.parse(controller.options.tour_css);
+
+          tdEls.each(function(i, link) {
+            if ($(link).css("background-color") == "rgba(0, 0, 0, 0)") {
+              cssStylesForTd["background-color"] =
+                controller.options.tour_element_selected_bg;
+              $(link).css(cssStylesForTd);
+              controller.data.tour.target_refs[
+                id
+              ].added_styles_td = cssStylesForTd;
+            }
+          });
+        }
+        break;
+      case "link":
+        // code block
+        break;
+      default:
+      // code block
+    }
+
+    return cssStyles;
+  }
+
+  scope.tourEnded = function() {
+    removeOverlay();
+    removeAllStylesFromTargets();
+  };
+
+  scope.stepStarted = function(id) {
+    controller.bodyEl = element.closest("body");
+    setBeautyfication();
+    if (id &gt; 0) {
+      removeAllStylesFromTargets();
+    }
+    addStyleToTarget(id);
+    addOverlay();
+  };
+}
+]]&gt;&lt;/link&gt;&lt;name&gt;SP Guided Tour Overlay&lt;/name&gt;&lt;option_schema&gt;[{"hint":"JSON","name":"tour_css","section":"Presentation","default_value":"{\"z-index\": \"9999\", \"opacity\": \"1\", \"position\": \"relative\"}","label":"Tour CSS","type":"string"},{"hint":"Background color for the selected Tour target element, used only if its background-color property is not defined.","name":"tour_element_selected_bg","section":"Presentation","default_value":"#FFFFFF","label":"Tour Element Selected BG","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  input = input || {};
+  data.tour = {};
+  data.tour.target_refs = [];
+	
+	if(!input.tour_id)
+		return;
+
+  data.tour.sys_id = input.tour_id;
+
+  var gr = new GlideRecord("sys_embedded_tour_step");
+  gr.addQuery("guide=" + data.tour.sys_id + "^step_type=step");
+  gr.orderBy("order");
+  gr.query();
+  while (gr.next()) {
+    data.tour.target_refs.push({
+      sys_id: gr.getUniqueValue(),
+      css: gr.getDisplayValue("action_target_ref.manual_css"),
+      element_type: gr.getDisplayValue("action_target_ref.element_type")
+    });
+  }
+})();
+]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-02 09:25:22&lt;/sys_created_on&gt;&lt;sys_id&gt;a5838f54dbe1c4109aa27e8f299619a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;358&lt;/sys_mod_count&gt;&lt;sys_name&gt;SP Guided Tour Overlay&lt;/sys_name&gt;&lt;sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Guided Tour Overlay"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a5838f54dbe1c4109aa27e8f299619a1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-11 09:50:04&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="x-pisn-sp-gtd-ov-wdg"&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1280517663</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>c7a1a99bdb654c10d033df8b4b96192d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46602dc0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>SP Guided Tour Overlay</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>437fd1d771654c10ed3f945203761ad1</update_guid>
+<update_guid_history>437fd1d771654c10ed3f945203761ad1:-1280517663,457f1d5380654c1029f38130ff50f269:1820623646,40fc11dfcd254c1080f42054b4d119e1:959387215,ceeb91dfc3254c10f77fdcf5ed199a6f:-1930267080,512f5ba68fe98c109fae1bb0e6beb68b:251728467,0d1fd7a695e98c1022d7fc0761e6105e:605155193,4e0fd7a6a1e98c1047da3b0ec8c1a450:1707771378,9bded3a6b7e98c10432c908c45bb4d8a:-1800400149,15de93a61ae98c10222f0a438083c091:999885065,18ae93664ee98c102ba25eba7bcc237c:1713572910,616d536660e98c10228d05eccba1e6dd:653374616,5cec9b26fde98c10ccfa6d9accd7f1df:2083337898,e1dc9b268be98c10d67c34eb77461c3e:1528455578,f29c172625e98c10fb939f046c93f672:-27539312,f96cdbe293e98c10fe1e10246701a3df:-1391720880,97ab57e2f9e98c10bc8fb0fc3a10a4de:-120597647,049bd3e291e98c100c9b14636264b7df:-1556038731,614b57e2eee98c10253afd30258b1e59:-218529356,872bd3e2d3e98c10330cb9104b91a6d7:-1404611038,8dcadf221ee98c1043a9e60a5fcdb71f:-66099451,1f781f22d4e98c10c8f3a1d450039a47:-323453801,6a489f225ce98c10ec204f18a49fa970:838288891,bf18db224fe98c103d15273608bbdbf2:-302210910,75c7d722e7e98c10895a8c9a5fbe0b0e:-1920537189,c6471322b1e98c107cffac63524ec634:-55565071,c207dbeeeea98c108b407d99cb21aa12:-142663215,18e69bee75a98c1032a90e51d55d858e:-1725412577,c5a6d7ee6ba98c102edbc5246976045a:1954999699,22b5dbae5ca98c10e08e967f4dc383a4:1028101313,11b59baea9a98c10ea685557a92f760d:1785354947,43955baed2a98c104a83c86d89b71ae4:1483274786,f5e413aea9a98c1074d037d9fa4f9a92:-497045941,7944576ed7a98c10ab9c3b967da7659c:-1219163165,1504576e97a98c10ab7717f608f09031:1042091948,f8e3d36ea8a98c10fb002971dc83be37:661838395,22635f2e19a98c101562ab7c66f62884:-1506284551,162217ea2ca98c10c0a6f0fcdd7eac07:2066557792,63615f6a65a98c10700eca14091e9999:2019241498,17705f6aaaa98c102e317b86a6291270:197034538,a29f836a51a98c1086ec4b3ca5a0a46b:-838182231,3f8fc36a1ba98c10f11860b006d59a7a:-125502967,76ce472a16a98c108cea601a478a03fc:-1954443586,7b2d0fe61ca98c109fbbdcab942c704b:-1810192294,19fc4be65ca98c10500779aaffb17820:-239897899,44fc0be604a98c10a4f4ada313636be3:717021181,88cc43e634a98c10170b2abbc0b169c7:-1995016931,5b5c43e631a98c10318f294814e55004:-199932191,81abcb6604a98c10b79f69a8f178b900:-159002024,d19bc7a677a98c10f1191b61661bff10:-1760052136,70bacb666ea98c102a6aba955564c368:988918846,bdaa8b66f0a98c10141656e6fd7189f4:-126381444,062a8b26bba98c10bae414667fcc82ff:561453186,c4798b26e9a98c1076cfc59f22be0c66:1016484608,8f098326f7a98c10933f84261c94a85c:-577345377,4ff8432650a98c10b7c12ce93edb88d0:185846383,5fa8cfe240a98c107100cf03f53d74e8:1197137207,fbf783e222a98c1041d1538fb032ac50:1622961210,d7674722e9a98c10b053b30cd72bb070:224181208,18670f22bda98c10d8b920d60fdceece:-151227262,f3118871c569c8103f7f240f17a6ae94:1955615417,f50108714769c8108cdfb6ac0980507a:1896781597,9ee00871c469c81061b3928510dd3335:-595374602,d5b0c071ca69c810f1ddcb0ff1ec5406:1051080089,e3708c310769c810101f6e6b14fed3eb:1955615417,4040c8316869c810ceb03b18dd6091c9:181802041,26affbed6b29c810496a0738ba47e955:409301163,e9ce33ed9229c81097a9e2f5f2086672:66650015,26ad7badcd29c8107b5c4a2a466c8f64:1070289310,a5adfbadb929c810a9c31df17b88af69:438957224,727db76d8429c81061ed4e48d945f55b:-278969525,f90140e1172d881011ee0ed637e741b0:-243477859,07b080e1412d88102a33cb34b0018612:-1065380420,f2708ca1dc2d88101999cd09f98a57da:2128736950,9e604ca19b2d881088b9d6520cfae3de:1415828735,273088a1752d8810c94544f8ba94dc72:-664182827,c32048a17d2d881069e656f93119e5ca:-1012562096,0b00c4a17b2d88108f112348f3043892:1328588229,06ff3791272d8810d30440a7fcb04460:373968817,36bfff51542d88109c45041743b43fe5:-1368953741,fc9f73511a2d881014a928c29ea990e8:827189564,fb5e37117f2d8810ac3ee8424f9e639d:-1127103907,f1cdb7118b2d881005db3d4f55811110:-86539900,fcbd3711e12d8810c4ba163ec9772ecd:-92702843,ef9dffddf3e9881013a61544f7d7928c:-105028729,5b5d3311512d8810fc58096a11afb7d7:-435232028,433dbfdd38e98810525fecea323ed5ff:-939240016,dd1d77dd88e9881008dbc3c382b8f4a4:-447557914,bfac77dda2e98810ce53cac808dc9595:-435232028,653bf39d9fe9881019d685b2601c3d47:-1690039540,4d2bf39dc4e98810b41edabcd244023f:248577176,402bf39d65e9881097a55376bcf1b704:1862736140,a2aafb5d08e98810732cb50597334857:-297274099,339a7b5d99e98810476a3b65c475f1bf:-1754425137,968a7b5d68e988109a5cc36eaba45132:520739985,1d6a775db4e98810cc275092ceb5db47:-1950532019,4f3a375d84e98810c05bff6cef605ab7:-1356958043,262abbd9dce98810787d305785e19560:1479293733,ab647b1984e988104299fda088504822:1290543659,e0e33319eae988104655fe0bcbb0dce5:1544280454,7fb37fd516e98810d10ec8a12bf5fe18:-2044931921,6465c3ddf1298810d143a3d8e8bb5248:1171949725,98a403dd0f29881065c29ed065f38001:-132910632,74830f1df629881026f9ddd58a419183:1771240670,b1428b1d8029881084b6ca28e5c111e4:1353308131,c010c79992298810d233d0aed49aa18f:-699450434,dddf7a998a29881017297290e746a815:-748410639,0dc9b6917d298810532bea7243380a17:235063184,c9a9b29154298810b5581b6cf932a3e7:1625203970,256932911e29881060be24cadfd306bf:1547460387,f0077211ca2988105e26cdc15d757b53:1745409574,a5f6beddf6e58810c4f0ab92f703b687:-1244557666,eef532dd3be58810dfdb74204203e18e:434626687,8ec5fa9dffe588104887ae6f68dfbb9a:-1635164472,f3a5be5de0e588103a764682e5e756b5:-1827882182,3b55329d1ce588103aa8c0be1b4c5806:1042303428,b2e4fe5de6e58810594654eb30401681:1466189035,79d4f65d79e588101c45b2fcf30b3743:693834202,93a4365d98e58810a46c7d98a374eaa5:-917661846,63d3ba1dede588109496c8c31c9507d7:1502189470,69933a1db3e58810ef24aa7f3ceddead:159672684,b373bed9d5e58810a56a23e11a966231:547199203,4372b2d9b2e58810c640e8f014691249:159672684,7412be59a6e58810bce75d5c56ccc6ea:-504304219,aff1329937e588102eec02d892cdca56:-1783339687,64b1b65998e58810369ebc3b7db39105:2081754185,bc413619a8e588102d5b256f210a51ec:-182341564,9400b2199fe58810ba90e1db68ed7298:-857472524,0bdfa21971e588105ed438b8c1a20b90:1058023237,098fead59fe58810184956a3507f46c0:722331787,1b7f2ed51ae58810586212038e494769:1614824139,cd6fead527e58810caaf6d616a21ecb4:-756650774,0925f5b0c1a90810c090694d30e58cf7:-394366548,380535b019a90810b3c2e8a9a220c39c:-1757315635,71c471b0f8a90810365dd1914d349676:-584919992,039431b00fa90810ea4d41f4704b5c27:-1480064717,6c84f1704ba90810b7a301ea0dad32bc:-31096089,5e14b9701ca908100ced747b58f3fdd0:1480812785,8f73b1709fa9081007b32fce57439d76:731492903,fd33bd3039a9081091564f8afabe09a0:-1542847286,d872f9fc236908108ca341efd150e7cd:1317316715,42a175fc46690810cfa00e961cdfa100:1620203707,5341f1fc71690810a7ce8f744fa47335:-706667620,243131fc4f690810e82635a7674d9e46:-1886627746,74013dbcb7690810c0e1fdfea772e75a:-30227861,35b075bcc0690810c3c298885b5c804f:-961117767,1690b9bc9c6908104dae595e0171c10a:-1348687733,8130f1bcee690810b74b9e75d8a47967:499828429,701071bc636908102b8e27f2263b699c:1949093877,66ffed7c686908109ddd14f23db1b54a:-1330925327,37cfad7c95690810aa8db39fc91c4cb7:-1233610556,146f69f8b7690810c70fbb8318c825af:1130938306,4c5fe57cb26908104686fb3e1b4e6dbb:305227846,fa4ce17855690810ac6681d90e885e4f:2012644588,ff3ced382969081018fb9e66b42485ce:254649062,141ced38706908105efd9be8536773c5:-1803894954,b909e5b42d690810540ea4defcc82e64:-937420776,dcf8a5b4206908106004f7a9f650d43a:1833298585,b7f729f0396908107d0d910f56bade86:1031853717,2e55a5f0e0690810a201f7492d4a8597:1510780905,89509d70a429081076915f1e42921955:1679231483,f2e9cdf8ebe508100ad7118f6c633b32:1527056959,de036c788c65081035107db3588d72d4:1704795810,14c26c78686508108614e191d0e47aa4:-645095343,4d422478a5650810c5760ae4aeda218a:-707181244,c312a838b7650810cf9b87dc414061fe:1373002671,d7512838c76508109a084e7362799bc1:-176258869,76316438666508106d8c14642f12256f:-2108808788,d6f028f4de65081030f82f0b8b405354:1714173644,304068f461650810ef9f20c8f497b40b:217306956,66cfd0f4e8650810536492c3266f35eb:1213253754,49fed874826508100005199ebcf3abc2:111134712,9edd9874b665081017da8c27be70b154:1513701206,4fbd5474686508103d0c2dc7561de218:1003925060,739d147409650810f29f5c7e55fafe83:-941236484,219d547434650810bc92212f47785861:-119098765,b07d1474f0650810ddeadb733e85b4fa:-1573291149,ca6ddc3432650810813a22bfa0d53dd8:-1254343563,c01ddc3498650810cfe77f7f7c4fff56:-1636209337,93ec1c3482650810f181a40cfc53eff0:-1528172535,e4ecd8340e650810b330cbed1d8af2a3:-536870055,6eccd8343a650810db34d9cba7811044:980882034,9eac18343065081056fefac9478f23ba:-1528172535,2bba98b076650810f087b146d4fdbc40:785277840,881ad4b0a4650810fd76e7c424d34342:-1236219502,9ce81470c5650810e9bbcd4fe0868a6d:627355122,5188dc300d6508107ecf90caf7fbe20b:-285649396,453810fc0b25081084b8e0375d73a554:2081228388,0db4dc3c72250810e50e766c561136f1:-490139989,3f845c7c9e250810267f1f9ac54d9482:451014020,bf04947cff2508105f7c52056be5aaf4:-1972383535,f8c3dc3cab250810671de0df806fa0f9:-1629667442,04b3983ce1250810011f3d15ff047c71:2140967994,3183103c3b2508109b352dc60d64b4a4:-1354577455,a2f2943c27250810d08c063c1e9b0fe2:-1384330081,a9d250b8df250810c378ab86027e0362:2134230613,6fef00b895250810e5ed52b4d543cbf7:1036307170,76cf0c38c1250810ba7528c9b289dc4e:-1131145993,b47e4c384e25081004d53e0ba434425b:1289048534,025ec83891250810e5324c2de49612cd:1980383304,c33e083895250810e56f0e9341cc6ea9:-741412213,701e04380225081073ea7944b7d5f600:-11086228,5bdd40381c2508102c01ef047bbeeae7:-951979399,d09dc8f4ff250810b57c04dc829ae9fb:811269581,d95d08f4962508108dbcce80f9d58da2:-1352603539,174d4cf4de2508109646c4bd71476782:672728174,d72dc8f4d72508103690d67a0d07ada8:-779460501,4c1d48f41225081042df1afb3525fbeb:672728174,c6fc08f4ac250810beeb7e1f5fc35950:-322102148,40ec04f416250810fa0680c6e7d8c296:-318913422,55dc04f4892508109f67d32a1cbd0a8f:-548884270,83ac4cb4f7250810462337e88b2f44a4:1708505658,e92cc8b4a7250810cb5657164a9191da:2036428665,d30cc8b4fc2508105349495b971c90d3:1904463001,11fbc4b456250810840a313885550978:14985127,ddca0874802508108b1a7792164656ac:-1480263555,775ac0741d25081059eef9b8f3e31c23:577745310,f3680cb0c5250810a4560e982ffdc69a:-89305207,0e6800b090250810ee76269c4375a275:-1480092440,a86e38200ca9c410ceb3579ea10b6a3d:-465242026,b03efcec0c69c41041ba680df472dbd9:1124844733,b0bdf4ec3d69c410baa472579e9d29cb:84833674,f02d74eca969c410ea7fb7f609412715:-1015858352,bcfc34eccc69c4106ed46e6c371d62b5:-1614188587,a07b702c0c69c410d300d72e21f67ca4:-1198765820,12cab0e88d69c410270d3417dc1108b5:926753992,755af4a87269c4100113204944d19365:657321282,4968f4680069c410b6c5b825966c4476:2049341442,cae77068a569c410147026b4aa17dbd5:573187537,bb8730288b69c4107157065f93bc712b:775056415,ff57fce4c469c4105e16c22fe05818ce:38879201,c0477ce43569c41070126b7742a78dfa:1905097611,69d6b4e49069c4108b8d35d853fb6318:-1312172179,155678a48769c410723898db15efab51:236970599,a036f4a48669c410614b0c9f6e26d294:758814580,a6a5bc64e269c4102b76da5893def77d:-1027609010,d5a5bc649069c410eb7677b8fcfa3a19:800782014,11e3f8e05b69c410feff417015f2f357:674640802,5cb3b0244469c41051a3a7d428f77abd:1147304577,c5537ce0e769c4107d4936f5e787f7a7:-1006502345,f9233c2c9b29c4103f74fccc7c74ec3c:-1548506264,2a9a282c1829c410557233eeac7b86f8:-1011605818,1f6ae42c6129c410136e4cabd3135f52:-1101906321,63e9242c2e29c4106b8a7adc227d4dab:-1331613776,37c9e4a86629c4109182302295347b4e:216948398,a3b968a87e29c4101338fb29de549eae:-1524665899,89592ce8ae29c4105fb3f4c5a5697ea7:-1484217002,7ba7a4a80f29c410b859dd486a746b07:-1295497781,6377e0686c29c410102e8bdb5c57e16f:-1583381830,19f6ec288729c41062940a9eb28b6490:-1430843272,4466e428b929c4108ed560a85ef26dd9:153312408,35f5e8e42e29c4102b62a25fd7d4266d:-1250358074,c5652464a729c4105bba7147f0f6316e:-457945681,7152e064e729c4105d83020484046ae9:-837766819,f7c16c247529c41026c3c50c3bb32802:2135074256,c63028e0e829c410133a0a8d693e64c0:-24445322,265f10a04729c41055c7a24bf2ec720e:1193676060,c74edc60da29c4109d94a04a7770cfdf:-1593931563,462e58606c29c410dee5047b9778d4fb:1284398805,03dd90608f29c4109dc5779eadade0d2:-1314242520,69dd1860f229c410fd54ebabe40465ef:1284398805,fa5d9020e829c4109187cf358dbac4e5:118124635,9bfc5c201f29c410e75a8152053ef35a:-571388819,722c9020ec29c410d0869b0f8abc224a:925076528,884ad0acfde5c410f1fe93b6be4d62d8:-772508476,79c910aca1e5c4103a2d98013223d6b1:1850492947,e789102c7ee5c410a4c63b40a70935ed:-1633070243,1058106cf2e5c410bd946ade05d75330:562584647,1af550e88ee5c410247784dcde14efbb:1452298554,03a55ca898e5c4102d26b73a535ff476:-1057409454,3f9558a84ae5c410fda3acfea9ea7cdf:1754820146,346518a85ee5c4108b68bceae80143f1:-855813998,1245d4a825e5c410dad5f95c02c54719:618890993,f43554a872e5c410f7b0aaf041d0a0ec:-1582458762,5615d0a814e5c4100e079d36da47d9dc:116160426,9c0510a85ce5c41054b7931c276dd050:875057318,03b4dc68ace5c410d93aad189c5784b4:2098013142,6074d0685ee5c410f2378a645b41cf8a:-1599774894,943414685de5c4102143f49693b09d0f:2030166504,14e3982859e5c4102dd3e11b35c76e37:1564051537,0123982847e5c410e9d45ec5d2fd2930:-2012970859,c7c2dc642ae5c410274d582f556f2d10:677539076,c8cf486495e5c4104375b87a623a079f:1687024365,a4bf486486e5c41028ce0e00936599ac:-953402163,124944202be5c410a19d873c560c98af:-1942113811,71b840201ae5c410716c41db6d5955f6:870448260,48a8002079e5c4103a75994d4389468c:140634446,67784cece3a5c4108e43c1a53eb6d848:-250950482,4a684cecd3a5c410a1989ee2fa5d673d:1461782767,f84844ec14a5c41091f224ac70693d75:-2135320838,2ea780ec8aa5c4104b34b37fa35b04cb:-697677647,15970cac4aa5c410c0dccb2c9d354d20:-805295790,bde48c2c4ea5c41008e20bbee3bc5c77:12280802,f423bb9c0c65c4100e55ab12f3a362b0:-990563197,1382739cec65c41018bc0d0747491ff2:-1912813599,9d223f5cfa65c4101dbcdd1d340489cd:-916818093,1102bb5cff65c410e383c38af5c4e7c3:1468449162,d591335c7f65c4108078f3b7bd8d3b41:1041084854,d781335c8b65c410a10dfc10e85c2684:-459405562,a931731ca265c41069978fe86e327f11:289544221,ad10731ce465c4104c4c84b6d02e6c0d:-1927861655,e7aeaf980165c410f69164b840be1d7f:1030468106,ed5ee7585065c41036e2d5d62a7d0bbf:-680446131,036de7580265c410e8a4a5290d9b05c7:-1568423876,afcc67588365c410bbd14e4500b6105f:1120196380,ba4c67183a65c41065253a8476300bb6:-182101689,679b2fd43365c4109a0736418d36dced:-246208974,100b2fd47065c41090b3b45f444f20cc:182249993,40ca6bd44465c410daa9ebfd351e4158:1668781875,7fa9eb94f665c4105745237a2e4a7b73:832848704,9a792b94dc65c41031e6267df4a153ed:-79107632,bef8a3944765c4102cc8b1b32edc6a08:369472815,55b5e3d03365c4103c5acedbcaa998b8:409372706,30946f109465c410ab44e48f343e7df4:-1729823903,d443efdce025c410bee178a5d2d65adf:631997064,9e23af105665c41003a2dae7c713b007:-91263073,4bd263107b65c410a827d2e19f5fa794:475340838,3df1efdc0e25c410eb455ad37ab5fe9a:-1691802830,f271e7dca925c410cd78f21276f29b7e:2108459597,2101a3dc7525c4109250687ab22df0f2:675718097,74f0af9c6525c4107f44922dcf05dbd2:-1299639801,e4a0eb9c2b25c4106e1a1078f4f3a146:1272107117,d470eb9cd725c410c7651d402412fdb8:1182037520,77506b9cea25c4108a75facd0fbea5fc:-1977361007,21506b9ca425c41030d8c97b194363c7:-1619198150,bd30679c1125c410a6e20af95fc8e100:-2100033313,8e00279ce425c410532439b1e7f0fdae:-59141100,93ef139c1825c410f904127e9e108d48:-431058126,62af1f5c5825c410af9aaf6096d67267:899430524,106fdb5c6125c41032b2343bfe853de4:409476459,5e1f9b1c0e25c410b35d593adc59b748:-110722668,63aedbd87225c4107e48b38c1f39dae2:1807080373,e10e9bd86b25c410c6cf36e5486fc071:595996768,7cfcdbd8a525c4101bc2b731e8a7cf54:-2035784054,dbdc57d8b525c410723b079a3cdd5a89:-1198425026,4bacd7d89a25c4104159c9617454f92a:1786827699,a38c57d8d925c4103b2a8ad4c54fe15d:-414087906,8c4c9f987125c410f6538d5c74f776c7:-429857699,221c13187f25c4108d5b4e017d14a19f:2131115005,785b9318b625c41092f03857428f2bdb:938497181,d4e55b541125c410e69c0e0c52889f45:69988616,f9b59b54f425c410910c6b56ab45e96d:925781615,cd855b54b925c410f7d285f3e4e2bb3c:-839116209,79a45f14c025c41070964f2519d67f3f:-174930874,ef649b141725c410ea1b99335627296d:605677145,148057507e25c41085a0410d51624a7f:1519367300,02509b10dc25c410c7263af709fb1cf7:-939804259,261053509125c410b17f45ab332e58b0:1506588237,65101f100e25c410d73ec5481686ae90:390181037,18bf47106625c4100e6f793c6bfc77b5:-1200732079,fa2f87dce5e1c41000e8b700963aa272:-2134594592,a52f0b9c1de1c410dede272b3e37dc78:77848896,974d8b9c37e1c410d162dce01af27631:-1372946918,57fc8bd852e1c410d9abbe38aaa8748a:-645776141,ed898bd8a1e1c41097b4b8bc19777754:1747269080,01e803d8ece1c410871e5fc9f580ef86:-199675463,e2c8cf98d6e1c410caaae3cf550bfce4:642010981,e7b8cf9834e1c4101e3cb467a0f5cb57:-199675463,b588c798dae1c41063da1d37f3ee7a64:1677320149,6d838f54e3e1c410487b4029e21e0da3:292416343</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_tour_step_27f07b55dbe988109aa27e8f29961948</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_embedded_tour_step"&gt;&lt;sys_embedded_tour_step action="INSERT_OR_UPDATE"&gt;&lt;action&gt;false&lt;/action&gt;&lt;action_event&gt;next&lt;/action_event&gt;&lt;action_target/&gt;&lt;action_target_ref display_value="xpath"&gt;ebf07b55dbe988109aa27e8f29961945&lt;/action_target_ref&gt;&lt;active&gt;true&lt;/active&gt;&lt;content&gt;&lt;![CDATA[Write a complex word!]]&gt;&lt;/content&gt;&lt;guide display_value="Test Guided Tours For Overlay 2"&gt;f6d07755dbe988109aa27e8f299619ca&lt;/guide&gt;&lt;implicit&gt;false&lt;/implicit&gt;&lt;link/&gt;&lt;name/&gt;&lt;options&gt;{"url":"/sp?id=x_pisn_sp_gtour_ov_2"}&lt;/options&gt;&lt;order&gt;1&lt;/order&gt;&lt;placement&gt;bottom&lt;/placement&gt;&lt;step_type&gt;step&lt;/step_type&gt;&lt;sys_class_name&gt;sys_embedded_tour_step&lt;/sys_class_name&gt;&lt;sys_created_by&gt;fabio&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-12-05 15:17:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;27f07b55dbe988109aa27e8f29961948&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SP Guided Tour Overlay"&gt;49334354dbe1c4109aa27e8f29961969&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_embedded_tour_step_27f07b55dbe988109aa27e8f29961948&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;fabio&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-12-05 15:17:57&lt;/sys_updated_on&gt;&lt;target/&gt;&lt;target_ref display_value="xpath"&gt;ebf07b55dbe988109aa27e8f29961945&lt;/target_ref&gt;&lt;title/&gt;&lt;ui_version&gt;dynamic&lt;/ui_version&gt;&lt;view/&gt;&lt;window&gt;sp&lt;/window&gt;&lt;/sys_embedded_tour_step&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=27f07b55dbe988109aa27e8f29961948"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-558250740</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>c7a1e99bdb654c10d033df8b4b961959</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef466028a0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name/>
+<type>Guided Tour Step</type>
+<update_domain>global</update_domain>
+<update_guid>abf07b55d6e98810c074439717433d4a</update_guid>
+<update_guid_history>abf07b55d6e98810c074439717433d4a:-1640988634</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_685a1989db6548109aa27e8f299619f8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">134a1989db6548109aa27e8f299619e1</sp_column><sp_widget/><sys_class_name>sp_instance</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-04 09:41:11</sys_created_on><sys_id>685a1989db6548109aa27e8f299619f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_instance_685a1989db6548109aa27e8f299619f8</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-04 09:41:11</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=685a1989db6548109aa27e8f299619f8"/></record_update>]]></payload>
+<payload_hash>1054718321</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>cba1a99bdb654c10d033df8b4b96192c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef466016b0000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>2c5a1989e9654810670479b800ea1efa</update_guid>
+<update_guid_history>2c5a1989e9654810670479b800ea1efa:-2120817997,2c5a1989e9654810670479b800ea1efa:-2120817997</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_ee50f315dbe988109aa27e8f2996191b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">6250f315dbe988109aa27e8f2996191a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>fabio</sys_created_by><sys_created_on>2019-12-05 15:15:09</sys_created_on><sys_id>ee50f315dbe988109aa27e8f2996191b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="SP Guided Tour Overlay" source="x_pisn_sp_gtour_ov">49334354dbe1c4109aa27e8f29961969</sys_package><sys_policy/><sys_scope display_value="SP Guided Tour Overlay">49334354dbe1c4109aa27e8f29961969</sys_scope><sys_update_name>sp_column_ee50f315dbe988109aa27e8f2996191b</sys_update_name><sys_updated_by>fabio</sys_updated_by><sys_updated_on>2019-12-05 15:15:09</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>292169459</payload_hash>
+<remote_update_set display_value="SP Guided Tour Overlay">03a1a99bdb654c10d033df8b4b96192b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>fabio</sys_created_by>
+<sys_created_on>2019-12-11 09:59:37</sys_created_on>
+<sys_id>cfa1a99bdb654c10d033df8b4b96192b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16ef46602380000001</sys_recorded_at>
+<sys_updated_by>fabio</sys_updated_by>
+<sys_updated_on>2019-12-11 09:59:37</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>a250335535e988107a5c19ef08c4e0e9</update_guid>
+<update_guid_history>a250335535e988107a5c19ef08c4e0e9:292169459</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
