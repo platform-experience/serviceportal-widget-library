@@ -1,3 +1,38 @@
-<div>
-  <!-- your widget template -->
+<div class="x_pisn_sp_ctx_view">
+  <h3 class="m-l">{{::c.options.title}} <small>{{::c.options.short_description}}</small></h3>
+  <div class="row x_pisn_sp_ctx_view__container">
+    <div id="x_pisn_sp_ctx_view_sidebar" class="col-sm-4 x_pisn_sp_ctx_view-col-left">
+      <div class="list-group">
+        <a ng-href="" class="list-group-item pointer" ng-class="{'active': c.current == task.sys_id}"
+          ng-repeat="task in c.data.tasks track by task.sys_id" ng-click="c.select(task); $event.stopPropagation();">
+          <h4 class="list-group-item-heading">
+            {{task.display_name}}
+          </h4>
+          <p class="list-group-item-text" ng-repeat="field in task.fields">
+            <strong class="text-capitalize">{{field.label}}: </strong>
+            <span ng-if="field.label == 'State'"><span
+                class="text-{{c.getColor(task)}}">{{field.display_value}}</span></span>
+            <span ng-if="field.label != 'State'">{{field.display_value}}</span>
+          </p>
+        </a>
+      </div>
+    </div>
+    <div id="x_pisn_sp_ctx_view_content" class="col-sm-8 x_pisn_sp_ctx_view-col-right">
+      <div ng-show="c.currentView" ng-class="{'animated fadeIn delay-2s': c.currentView}"
+        class="x_pisn_sp_ctx_view-col-toggle" ng-click="c.toggleSidebar()">
+        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+      </div>
+      <div ng-if="c.currentView" class="x_pisn_sp_ctx_view_container">
+        <sp-widget widget="c.currentView"></sp-widget>
+      </div>
+      <div class="no-view-message" ng-if="!c.currentView && !c.selecting">
+        <p class="m-n text-lg">{{::c.options.no_view_selected_message}}</p>
+      </div>
+      <div class="no-view-message" ng-if="!c.currentView && c.selecting">
+        <div class="lds-dual-ring">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

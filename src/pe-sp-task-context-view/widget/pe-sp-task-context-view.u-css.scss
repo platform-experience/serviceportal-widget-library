@@ -1,0 +1,139 @@
+$x_pisn_sp_ctx_view-height: calc(100vh - $navbar-height - 90px) !default;
+$x_pisn_sp_ctx_view-loading-animation: $brand-info !default;
+
+.x_pisn_sp_ctx_view {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.x_pisn_sp_ctx_view__container {
+    height: $x_pisn_sp_ctx_view-height;
+}
+
+.x_pisn_sp_ctx_view-col-left,
+.x_pisn_sp_ctx_view-col-right {
+    height: 100%;
+}
+
+.x_pisn_sp_ctx_view_container {
+    height: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.x_pisn_sp_ctx_view_container::-webkit-scrollbar {
+    display: none;
+}
+
+
+div.list-group {
+    margin-bottom: 0px;
+    overflow-y: auto;
+    height: 100%;
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div.list-group::-webkit-scrollbar {
+    display: none;
+}
+
+.no-view-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 70px);
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid $x_pisn_sp_ctx_view-loading-animation;
+    border-color: $x_pisn_sp_ctx_view-loading-animation transparent $x_pisn_sp_ctx_view-loading-animation transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.x_pisn_sp_ctx_view-col-toggle {
+    position: absolute;
+    left: 0px;
+    top: 49%;
+}
+
+#x_pisn_sp_ctx_view_sidebar {
+    transition: margin 0.3s ease;
+}
+
+.collapsed {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .collapsed {
+        display: block;
+        margin-left: -35%;
+    }
+}
+
+#x_pisn_sp_ctx_view_content {
+    transition: width 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .x_pisn_sp_ctx_view_container {
+        padding-left: 15px;
+    }
+
+    .x_pisn_sp_ctx_view-col-left {
+        padding-right: 4px;
+    }
+
+    .x_pisn_sp_ctx_view__container {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .x_pisn_sp_ctx_view-col-left {
+        height: calc(50vh - $navbar-height);
+        margin-bottom: 15px;
+    }
+
+    .x_pisn_sp_ctx_view-col-right {
+        height: unset;
+    }
+
+    .x_pisn_sp_ctx_view {
+        padding: 10px;
+    }
+
+    .no-view-message {
+        margin-top: 100px;
+    }
+
+    .x_pisn_sp_ctx_view-col-toggle {
+        display: none;
+    }
+}

@@ -1,0 +1,26 @@
+[{
+  "displayValue": "Widget",
+  "hint": "In case there are no filters defined for the selected record",
+  "name": "default_view_widget",
+  "section": "other",
+  "default_value": "widget-form",
+  "label": "Default View Widget",
+  "type": "reference",
+  "value": "sp_widget",
+  "ed": {
+    "reference": "sp_widget"
+  }
+}, {
+  "name": "default_view_widget_options",
+  "section": "other",
+  "default_value": "{}",
+  "label": "Default View Widget Options",
+  "type": "json"
+}, {
+  "hint": "Message showed when there are no tasks selected",
+  "name": "no_view_selected_message",
+  "section": "other",
+  "default_value": "Please select a task.",
+  "label": "No View Selected Message",
+  "type": "string"
+}]
